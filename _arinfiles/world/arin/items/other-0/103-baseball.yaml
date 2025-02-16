@@ -1,0 +1,10 @@
+itemid: 103
+value: 5
+hands: 0
+name: baseball
+namesimple: baseball
+description: A traditional baseball with red stitching.
+type: object
+subtype: throwable
+damage:
+  diceroll: 0@0d0

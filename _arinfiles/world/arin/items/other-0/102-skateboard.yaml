@@ -1,0 +1,11 @@
+itemid: 102
+value: 5
+hands: 0
+name: skateboard
+namesimple: skateboard
+description: A green and yellow skateboard with the slogan "Cville Skate Shop" emblazoned
+  on its underside.
+type: object
+subtype: mundane
+damage:
+  diceroll: 0@0d0

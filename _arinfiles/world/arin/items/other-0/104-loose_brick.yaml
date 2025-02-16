@@ -1,0 +1,10 @@
+itemid: 104
+value: 5
+hands: 0
+name: loose brick
+namesimple: loose brick
+description: A red brick made of Charlottesville clay.
+type: object
+subtype: throwable
+damage:
+  diceroll: 0@0d0

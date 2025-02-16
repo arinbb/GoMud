@@ -1,0 +1,25 @@
+roomid: 1004
+zone: UVA
+title: Underground Club
+description: Dim, pulsing lights flicker against concrete walls, casting shifting
+  patterns across the dance floor. The bassline vibrates through the floor, syncing
+  with the rhythm of moving bodies. A haze lingers in the air, catching the glow of
+  neon strips lining the bar, where drinks slide across the polished counter into
+  waiting hands. The DJ booth, elevated at the back, glows with shifting LED panels,
+  the turntables spinning beneath deft hands. Scattered high-top tables hold half-empty
+  glasses, their condensation pooling in tiny circles. A row of plush booths hugs
+  the far wall, their deep cushions inviting a brief retreat from the energy of the
+  dance floor. Near the entrance, a set of heavy doors seals off the outside world,
+  keeping time and daylight at bay.
+exits:
+  south:
+    roomid: 1003
+sign:
+- visibleuserid: 0
+  displaytext: Welcome to the UNDERGROUND DANCE PARTY!
+  expires: 2025-02-19T14:32:57.144213-05:00
+idlemessages:
+- Confetti falls from the ceiling.
+- The bass thumps.
+- The dance lights move to the beat.
+- The DJ throws their hands in the air.

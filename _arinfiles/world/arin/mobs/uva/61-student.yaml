@@ -1,0 +1,35 @@
+mobid: 61
+zone: UVA
+itemdropchance: 0
+activitylevel: 10
+hostile: false
+groups: []
+angrycommands: []
+character:
+  name: student
+  description: A student at the University of Virginia, donned in their seasonal outfit
+    and carrying a book bag.
+  roomid: 0
+  zone: Nowhere
+  raceid: 1
+  stats:
+    strength:
+      base: 1
+    smarts:
+      base: 1
+    vitality:
+      base: 1
+    perception:
+      base: 1
+  level: 1
+  experience: 1
+  trainingpoints: 0
+  statpoints: 0
+  health: 0
+  mana: 0
+  actionpoints: 0
+  alignment: 0
+  gold: 0
+  bank: 0
+  created: 2025-02-12T14:01:51.90649-05:00
+scripttag: ""

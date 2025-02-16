@@ -1,0 +1,11 @@
+itemid: 101
+value: 5
+hands: 0
+name: chalk
+namesimple: chalk
+description: A simple piece of white chalk.
+questtoken: DD01
+type: object
+subtype: usable
+damage:
+  diceroll: 0@0d0

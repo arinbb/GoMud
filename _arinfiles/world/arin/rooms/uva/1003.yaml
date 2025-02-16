@@ -1,0 +1,53 @@
+roomid: 1003
+zone: UVA
+title: The Lawn
+description: The expanse of the Lawn stretches wide, framed by rows of historic red-brick
+  pavilions and white-columned arcades. At its head, the Rotunda looms, its grand
+  steps worn smooth by generations of footsteps. A bouncer stands at the top. Nearby,
+  the bronze statue of Homer stands in quiet contemplation, a single flyer taped to
+  its base, edges curling in the breeze. A grungy looking man sits cross-legged on
+  the lawn, his eyes closed.
+exits:
+  north:
+    roomid: 1004
+  south:
+    roomid: 1002
+nouns:
+  Homer: Perched atop its pedestal, the bronze figure of Homer gazes outward with
+    a timeless, unseeing wisdom. A laurel wreath crowns his head, and his fingers
+    rest lightly on a scroll, as if caught mid-verse. At his feet, a loyal dog curls
+    in eternal vigilance, its form worn smooth by generations of hands seeking luck,
+    knowledge, or just a fleeting connection to history.
+  baseball: The white leather is smudged with dirt, the red stitching still taut and
+    unbroken. It rests half-buried in the grass, as if abandoned mid-play. The faint
+    scuff marks hint at a hard throw or a missed catch.
+  bloom: A single bloom stands among the greenery, its petals open wide to the sun.
+    Dew clings to its edges, catching the light in tiny, glistening beads. The stem
+    sways slightly with the wind, rooted but restless.
+  flyer: A single sheet of paper, slightly crumpled at the edges, flutters in the
+    faint breeze where it’s been taped. Bold, uneven lettering announces an upcoming
+    improv night, the details scrawled in permanent marker. A small doodle in the
+    corner—a hastily drawn laughing face—adds a personal touch.
+  loose brick: A red brick juts unevenly from the dirt, its edges worn and chipped.
+    A faint gap beneath it suggests it’s been shifted before. A single blade of grass
+    sprouts through the crack, thriving in the tiny pocket of space.
+  skateboard: The deck is scratched and worn, the grip tape darkened from repeated
+    use. One wheel spins lazily, clicking as it slows. A faded sticker on the underside
+    peels at the edges, its design barely recognizable.
+  steps: Wide and worn by time, these marble steps rise in graceful tiers toward the
+    towering columns of the Rotunda. Each footfall echoes with the weight of history—generations
+    of students, scholars, and dreamers passing through. In the quiet hours, the steps
+    are a place of reflection; in moments of celebration, they become a stage for
+    voices raised in triumph.
+items:
+- itemid: 102
+- itemid: 103
+- itemid: 104
+spawninfo:
+- mobid: 63
+  message: The bouncer emerges and closes the door behind him.
+  level: 10
+  respawnrate: 1 real minutes
+idlemessages:
+- Some students hurry by.
+- A calm breeze blows.

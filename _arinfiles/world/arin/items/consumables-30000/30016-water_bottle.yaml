@@ -1,0 +1,11 @@
+itemid: 30016
+value: 5
+hands: 0
+name: water bottle
+namesimple: water bottle
+description: A plastic blue and orange water bottle. The top looks like it has been
+  chewed on.
+type: drink
+subtype: usable
+damage:
+  diceroll: 0@0d0

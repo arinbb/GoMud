@@ -1,0 +1,47 @@
+roomid: 1002
+zone: UVA
+zoneconfig:
+  roomid: 1002
+title: 'Bryan Hall, Classroom #310'
+description: A chalkboard spans the front wall, its surface streaked with faint traces
+  of past lessons. A projector screen hangs above it, rolled up and waiting. A few
+  rolling chairs are scattered across the scuffed linoleum floor, their wheels unevenly
+  worn. Against one wall, a plastic water bottle sits abandoned on a desk, half-filled,
+  its surface slightly crinkled. The opposite wall is solid and unbroken, offering
+  no view beyond. The air carries the scent of old paper and dry erase markers.
+exits:
+  north:
+    roomid: 1003
+nouns:
+  chairs: You see a cluster of rolling chairs scattered across the room, their wheels
+    resting idly on the worn floor. Each chair bears the marks of constant use—scuffed
+    armrests, faint indentations in the seat cushions, and the occasional wobble that
+    betrays a slightly misaligned caster. Some sit perfectly upright, poised for their
+    next occupant, while others lean slightly, turned at odd angles as if abandoned
+    mid-thought.
+  chalkboard: 'A broad slate of dark green, its surface streaked with faint remnants
+    of past lessons. A fine layer of chalk dust clings to the tray below, where a
+    lone eraser rests, its edges worn soft. A message is scribbled at the bottom in
+    a messy handwriting, saying simply: [DISSOLVE IT!]'
+  projector: A wide, matte-white screen hangs from a metal casing, rolled up and waiting.
+    Faint smudges and dust specks cling to its surface, visible only at the right
+    angle. When pulled down, it sways slightly before settling into place, ready to
+    catch the glow of a projected image.
+  wall: A solid stretch of painted cinder blocks, unbroken and unyielding. The surface
+    bears faint scuffs and smudges, remnants of past encounters. Light from the room
+    casts subtle shadows, emphasizing its stark presence.
+items:
+- itemid: 101
+- itemid: 30016
+spawninfo:
+- mobid: 62
+  message: Devin the instructor walks in.
+  level: 10
+  respawnrate: 1 real minutes
+- itemid: 101
+  respawnrate: 1 real minutes
+- itemid: 30016
+  respawnrate: 1 real minutes
+idlemessages:
+- The lights above you hum.
+- Some students outside in the hallway shuffle past.

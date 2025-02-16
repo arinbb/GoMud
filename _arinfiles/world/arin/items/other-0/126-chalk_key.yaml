@@ -1,0 +1,11 @@
+itemid: 126
+value: 5
+hands: 0
+name: chalk key
+namesimple: chalk key
+description: A simple key made from compressed chalk dust. It looks fragile.
+type: key
+subtype: usable
+damage:
+  diceroll: 0@0d0
+keylockid: 1002-north

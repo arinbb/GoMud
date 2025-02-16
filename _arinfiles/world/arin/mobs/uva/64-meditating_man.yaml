@@ -1,0 +1,36 @@
+mobid: 64
+zone: UVA
+itemdropchance: 0
+activitylevel: 10
+hostile: false
+groups: []
+angrycommands: []
+character:
+  name: meditating man
+  description: A man sitting cross-legged on lawn, eyes closed, in grass-stained pants.
+  roomid: 0
+  zone: Nowhere
+  raceid: 1
+  stats:
+    strength:
+      base: 1
+    smarts:
+      base: 1
+    vitality:
+      base: 1
+    perception:
+      base: 1
+  level: 1
+  experience: 1
+  trainingpoints: 0
+  statpoints: 0
+  health: 0
+  mana: 0
+  actionpoints: 0
+  alignment: 0
+  gold: 0
+  bank: 0
+  created: 2025-02-15T19:57:30.87453-05:00
+maxwander: -1
+scripttag: ""
+questflags: [1000000-start]
