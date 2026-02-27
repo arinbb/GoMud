@@ -2,6 +2,12 @@
 
 const magic_phrase = "zyphrial lumara vorthos";
 
+// EventFlags constants
+const EventFlags = {
+    CmdSkipScripts: 1,
+    CmdBlockInputUntilComplete: 2
+};
+
 function onCommand_west(rest, user, room) {
 
     if ( !user.HasQuest("3-end") ) {
@@ -49,7 +55,7 @@ function onCommand_say(rest, user, room) {
         return true;
     }
 
-    user.GiveQuest("3-end");
+    user.GetParty().GiveQuest("3-end");
 
     user.GiveBuff(3, "enchantment");
 

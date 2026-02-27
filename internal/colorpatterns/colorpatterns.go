@@ -10,8 +10,11 @@ import (
 	"strings"
 	"time"
 
+	"unicode"
+
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/mudlog"
+	"github.com/GoMudEngine/GoMud/internal/util"
 	"github.com/GoMudEngine/ansitags"
 	"github.com/mattn/go-runewidth"
 	"github.com/pkg/errors"
@@ -61,6 +64,94 @@ func ApplyColorPattern(input string, pattern string, method ...ColorizeStyle) st
 	}
 
 	return ApplyColors(input, patternValues, method...)
+}
+
+func ApplyCharacterWarping(input string) string {
+
+	randomSymbols := []rune{'°', '•', '·', '˚', '˙', '✧', '✦', '✺', '~', '≈', '⋆'}
+	newString := strings.Builder{}
+
+	inTagPlaceholder := false
+
+	//
+	// Tokenize existing ansi tags to avoid colorizing them
+	//
+	// Regular expression to match <ansi ...>...</ansi> tags
+	re := regexp.MustCompile(`<ansi[^>]*>.*?</ansi>`)
+	// Counter to keep track of the unique numbers
+	counter := 0
+	preExistingTags := map[string]string{}
+	// Function to replace each match with a unique number
+	input = re.ReplaceAllStringFunc(input, func(match string) string {
+		counter++
+		tag := `:` + strconv.Itoa(counter)
+		preExistingTags[tag] = match
+		return tag
+	})
+	//
+	// End tokenization
+	//
+
+	// Color change on a per character basis (not spaces), reverses at the end
+	for _, runeChar := range input {
+
+		// Handle placeholder tags that look like :123
+		if inTagPlaceholder {
+			if runeChar != 32 {
+				newString.WriteString(string(runeChar))
+				continue
+			}
+			inTagPlaceholder = false
+		} else {
+			if runeChar == ':' {
+				inTagPlaceholder = true
+				newString.WriteString(string(runeChar))
+				continue
+			}
+		}
+
+		if runeChar == 32 { // space
+
+			if util.Rand(5) == 0 {
+				runeChar = randomSymbols[util.Rand(len(randomSymbols))]
+			}
+
+		} else {
+			if util.Rand(3) == 0 {
+				runeChar = unicode.ToUpper(runeChar)
+			}
+			if util.Rand(5) == 0 {
+				switch runeChar {
+				case 'a':
+					runeChar = 'ɑ'
+				case 'A':
+					runeChar = 'Λ'
+				case 'b':
+					runeChar = 'Ƅ'
+				case 'E':
+					runeChar = 'Ξ'
+				case 'O':
+					runeChar = 'Θ'
+				case 'S':
+					runeChar = '§'
+				case 't':
+					runeChar = 'τ'
+				case 'u':
+					runeChar = 'υ'
+				}
+
+			}
+		}
+		newString.WriteRune(runeChar)
+	}
+
+	finalString := newString.String()
+
+	for tmp, replacement := range preExistingTags {
+		finalString = strings.Replace(finalString, tmp, replacement, -1)
+	}
+
+	return finalString
 }
 
 func ApplyColors(input string, patternValues []int, method ...ColorizeStyle) string {

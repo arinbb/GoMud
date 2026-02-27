@@ -23,7 +23,7 @@ function onAsk(mob, room, eventDetails) {
             mob.Command("say I forgot my lunch today, and I'm so hungry.");
             mob.Command("say Do you think you could find a cheese sandwich for me?");
 
-            user.GiveQuest("4-start");
+            user.GetParty().GiveQuest("4-start");
 
         } else if ( user.HasQuest("4-end") ) {
             mob.Command("sayto @" + String(user.UserId()) + " Thanks, but you've done enough. Too much, really.");
@@ -70,7 +70,7 @@ function onGive(mob, room, eventDetails) {
 
     if ( user.HasQuest("4-start") ) {
 
-        user.GiveQuest("4-end");
+        user.GetParty().GiveQuest("4-end");
         mob.Command("say Thanks! I can get on with my day now.");
         mob.Command("eat !"+String(eventDetails.item.ItemId) );
 
@@ -137,10 +137,10 @@ function onIdle(mob, room) {
 
     if ( sizeAfter != sizeBefore ) {
         if ( sizeAfter == 0 ) {
+            mob.SetTempData('playersTold', null);
+        } else {
             mob.SetTempData('playersTold', playersTold);
         }
-    } else {
-        mob.SetTempData('playersTold', null);
     }
 
     action = round % 3;

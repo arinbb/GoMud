@@ -21,7 +21,6 @@ import (
 )
 
 func Start(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
-
 	if user.Character.RoomId != -1 {
 		return false, errors.New(`only allowed in the void`)
 	}
@@ -249,6 +248,9 @@ func Start(rest string, user *users.UserRecord, room *rooms.Room, flags events.E
 		user.SendText(`The Tutorial zone is fully occupied right now. Please try again in a few minutes`)
 		return true, nil
 	}
+
+	// Send them back to the void if they leave the game in the middle of the tutorial
+	user.Character.RoomIdOnReset = -1
 
 	ephemeralStartRoomId := createdRoomIds[startRoom]
 
