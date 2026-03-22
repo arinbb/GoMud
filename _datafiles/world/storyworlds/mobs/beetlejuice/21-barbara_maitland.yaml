@@ -20,6 +20,10 @@ idlecommands:
   - ""
   - emote catches her reflection in the window and waves at it. Her reflection waves back a half-second late.
   - ""
+  - say Have you looked in the vanity mirror upstairs? Really LOOKED? There's something not quite right about it.
+  - ""
+  - say There's a graveyard behind the house. Some of those headstones are... interesting. If you look closely.
+  - ""
 activitylevel: 25
 character:
   name: Barbara Maitland

@@ -28,3 +28,21 @@
     - ["#2 emote nods quietly"]
     - ["#1 say I think she needs us, Adam. She's lonely. Her stepmother certainly isn't helping."]
     - ["#2 say Then we'll be there for her. Being dead doesn't mean we can't be family."]
+-
+  Supported:
+    "adam maitland": ["barbara maitland"]
+  Conversation:
+    - ["#1 say Barbara, did you know there's a headstone in the graveyard with HIS name on it?"]
+    - ["#2 emote shudders", "#2 say Don't even think about it, Adam. You know what happens if you say it three times."]
+    - ["#1 say In the living room, right? That's where it works?"]
+    - ["#2 say ADAM. We are NOT discussing this. We learned our lesson last time."]
+    - ["#1 say Right. Right. Sorry. Forget I mentioned it."]
+-
+  Supported:
+    "barbara maitland": ["adam maitland"]
+  Conversation:
+    - ["#1 say Adam, have you looked in the bedroom mirror lately? It's been acting... strange."]
+    - ["#2 say Strange how?"]
+    - ["#1 say My reflection was wearing different clothes. And it winked at me. I didn't wink."]
+    - ["#2 say Maybe you should look at it again. Really look. The handbook says mirrors are thin spots between worlds."]
+    - ["#1 emote hugs herself", "#1 say I'd rather not. But someone brave might want to try it. Three times, at least."]

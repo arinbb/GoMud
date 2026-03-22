@@ -43,7 +43,11 @@ function onCommand(cmd, rest, user, room) {
                 SendUserMessage(user.UserId(), "");
                 SendRoomMessage(room.RoomId(), "The floor CRACKS open. Green light. Exploding sculptures. And rising from the chaos -- BEETLEJUICE, grinning from ear to ear!", user.UserId());
 
-                room.SpawnMob(22);
+                // Guard against duplicate spawning
+                var existingBJ = room.GetMobs(22);
+                if (existingBJ.length == 0) {
+                    room.SpawnMob(22);
+                }
                 room.AddTemporaryExit("crack in the floor", ":green", 615, "10 real minutes");
                 user.SetTempData("bj_count", "0");
                 user.SetTempData("bj_summoned", "true");

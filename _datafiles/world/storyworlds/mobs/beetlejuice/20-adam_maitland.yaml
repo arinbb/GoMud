@@ -20,6 +20,11 @@ idlecommands:
   - ""
   - say The handbook says we get the house for 125 years. But it doesn't say we have to SHARE it.
   - ""
+  - say Nobody ever compliments the model. I've been working on it for years and nobody's ever said anything nice about it.
+  - emote glances at the model town with a look of longing, waiting for someone to notice it.
+  - ""
+  - say You know, the handbook says chalk can be used to draw doors. Doors to... other places. I found some in the art supplies.
+  - ""
 activitylevel: 25
 character:
   name: Adam Maitland

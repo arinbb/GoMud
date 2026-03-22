@@ -20,8 +20,11 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " says 'nice model' and the entire miniature town lights up, as if it heard the compliment.", user.UserId());
 
-        // Reward with XP for finding the easter egg
-        user.GrantXP(500, "nice model easter egg");
+        // One-time XP reward per player
+        if (user.GetMiscCharacterData("easter_nice_model") != "found") {
+            user.GrantXP(500, "nice model easter egg");
+            user.SetMiscCharacterData("easter_nice_model", "found");
+        }
         return false; // let the say still process
     }
 

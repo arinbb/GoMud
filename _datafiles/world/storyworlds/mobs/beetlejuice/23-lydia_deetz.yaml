@@ -4,12 +4,20 @@ hostile: false
 maxwander: 2
 angrycommands: []
 idlecommands:
-  - 'emote raises her camera and takes a photograph of something invisible.'
-  - 'emote adjusts her black veil with a sigh.'
-  - 'say My whole life is a dark room. One big dark room.'
-  - ''
-  - ''
-activitylevel: 10
+  - emote raises her camera and takes a photograph of something invisible.
+  - emote adjusts her black veil with a sigh.
+  - say My whole life is a dark room. One big dark room.
+  - ""
+  - say I myself am strange and unusual. If anyone bothered to ask.
+  - ""
+  - emote peers through her camera viewfinder and gasps softly at something only she can see.
+  - say There's a name on a headstone in the graveyard. Say it three times in the living room and... well. Things happen.
+  - ""
+  - say Have you tried taking a photo with my camera? It shows things the eye can't see.
+  - ""
+  - emote scribbles something in her journal, then crosses it out.
+  - ""
+activitylevel: 20
 character:
   name: Lydia Deetz
   description: >-

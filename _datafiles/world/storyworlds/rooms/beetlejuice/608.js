@@ -23,7 +23,10 @@ function onCommand(cmd, rest, user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You look in the mirror again. This time you're sure of it -- your reflection's smile is slightly wider than yours. And its eyes are tracking something behind you. You turn around. Nothing's there. When you look back, the reflection shrugs.</ansi>");
         } else if (looked == 3) {
             SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The mirror again. Your reflection is wearing different clothes than you are -- a black-and-white striped suit. It winks. Then it's you again, wearing what you've always been wearing. Your heart is hammering.</ansi>");
-            user.GrantXP(300, "mirror easter egg");
+            if (user.GetMiscCharacterData("easter_mirror") != "found") {
+                user.GrantXP(300, "mirror easter egg");
+                user.SetMiscCharacterData("easter_mirror", "found");
+            }
         } else {
             SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You look in the mirror. Your reflection raises an eyebrow, as if to say, 'Haven't you seen enough?' Then it goes back to mimicking your movements. Mostly.</ansi>");
         }
@@ -37,7 +40,10 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Then it snaps back to normal with a rubbery THWACK. That... should not have been possible. But then again, this is Beetlejuice's world.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " pulls their own face into an impossible shape, then lets it snap back to normal. The mirror seems impressed.", user.UserId());
-        user.GrantXP(200, "face pulling easter egg");
+        if (user.GetMiscCharacterData("easter_face_pull") != "found") {
+            user.GrantXP(200, "face pulling easter egg");
+            user.SetMiscCharacterData("easter_face_pull", "found");
+        }
         return true;
     }
 
