@@ -1,0 +1,13 @@
+mutatorid: starry-night
+namemodifier:
+  behavior: append
+  text: (starlit)
+  colorpattern: blue-white
+descriptionmodifier:
+  behavior: append
+  text: The swirling painted sky bathes everything in luminous starlight.
+  colorpattern: blue-white
+alertmodifier:
+  text: Thick brushstrokes of blue and gold light swirl overhead.
+  colorpattern: blue-white
+playerbuffids: [50]

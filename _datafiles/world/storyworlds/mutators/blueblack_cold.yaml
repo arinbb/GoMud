@@ -1,0 +1,13 @@
+mutatorid: blueblack-cold
+namemodifier:
+  behavior: append
+  text: (frozen)
+  colorpattern: ice
+descriptionmodifier:
+  behavior: append
+  text: The blueblack cold presses in through every crack and seam.
+  colorpattern: ice
+alertmodifier:
+  text: Your breath hangs in the air, a small cloud that fades slowly.
+  colorpattern: ice
+playerbuffids: [51]

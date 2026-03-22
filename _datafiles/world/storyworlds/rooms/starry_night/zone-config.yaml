@@ -4,6 +4,8 @@ autoscale:
   minimum: 1
   maximum: 5
 defaultbiome: land
+mutators:
+- mutatorid: starry-night
 idlemessages:
 - The stars above pulse with a slow, rhythmic light, like breathing.
 - A thick brushstroke of wind sweeps across the landscape, smelling of oil paint and night air.

@@ -1,0 +1,8 @@
+buffid: 51
+name: Blueblack Cold
+description: A deep, bone-aching winter cold seeps into you. The kind of cold that makes love visible through labor.
+secret: false
+triggerrate: 10 real minutes
+triggercount: 1
+flags:
+  - superhearing

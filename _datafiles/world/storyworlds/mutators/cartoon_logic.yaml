@@ -1,0 +1,13 @@
+mutatorid: cartoon-logic
+namemodifier:
+  behavior: append
+  text: (zany)
+  colorpattern: rainbow
+descriptionmodifier:
+  behavior: append
+  text: The laws of physics seem more like guidelines here.
+  colorpattern: rainbow
+alertmodifier:
+  text: Reality wobbles. Somewhere, a rubber chicken honks.
+  colorpattern: rainbow
+playerbuffids: [52]

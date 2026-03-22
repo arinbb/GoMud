@@ -1,0 +1,9 @@
+buffid: 52
+name: Cartoon Logic
+description: The rules of reality feel... flexible here. Anything could happen, and probably will.
+secret: false
+triggerrate: 10 real minutes
+triggercount: 1
+flags:
+  - see-nouns
+  - see-hidden

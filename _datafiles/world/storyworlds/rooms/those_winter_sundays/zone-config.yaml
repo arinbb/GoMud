@@ -4,6 +4,8 @@ autoscale:
   minimum: 1
   maximum: 3
 defaultbiome: house
+mutators:
+- mutatorid: blueblack-cold
 idlemessages:
 - The cold seeps in through the walls, patient and persistent.
 - A floorboard creaks somewhere in the house, settling in the chill.

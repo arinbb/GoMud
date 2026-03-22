@@ -1,0 +1,10 @@
+buffid: 50
+name: Painted Starlight
+description: The swirling light of Van Gogh's stars illuminates hidden details all around you.
+secret: false
+triggerrate: 10 real minutes
+triggercount: 1
+flags:
+  - see-nouns
+  - nightvision
+  - lightsource

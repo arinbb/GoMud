@@ -4,6 +4,8 @@ autoscale:
   minimum: 1
   maximum: 5
 defaultbiome: city
+mutators:
+- mutatorid: cartoon-logic
 idlemessages:
 - The world feels slightly too bright, slightly too colorful, like a Saturday morning cartoon come to life.
 - Somewhere in the distance, a bicycle bell rings with improbable cheerfulness.
