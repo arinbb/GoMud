@@ -1,0 +1,24 @@
+mobid: 44
+zone: starry_night
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote pulses with golden light, its spiral arms slowly turning."
+  - "emote drifts higher, then settles back down to eye level."
+  - "say We have turned in the sky since the first night. We will turn until the last."
+  - "emote leaves a trail of luminous paint droplets in the air."
+  - ''
+  - ''
+activitylevel: 15
+character:
+  name: A Star Spirit
+  description: >-
+    A being of pure light, roughly human-shaped but composed entirely of
+    swirling brushstrokes of gold, white, and pale blue. It has no fixed
+    features — its face shifts and reforms like the spirals in the sky,
+    now suggesting eyes, now a mouth, now dissolving back into abstract
+    radiance. It hovers just above the ground, leaving faint traces of
+    luminous paint in the air. When it speaks, its voice sounds like wind
+    chimes made of starlight.
+  raceid: 27
+  level: 15

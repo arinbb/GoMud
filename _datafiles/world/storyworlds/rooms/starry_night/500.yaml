@@ -1,0 +1,60 @@
+roomid: 500
+zone: Starry Night
+title: Cypress Hill
+description: >-
+  You stand atop a low hill dominated by a towering <ansi fg="itemname">cypress
+  tree</ansi>, its dark form twisting upward like a flame of black and green. The
+  tree seems alive with movement, each branch a thick impasto brushstroke frozen
+  mid-sway. Behind it, the sky is a vast canvas of swirling blues and luminous
+  yellows — great spiraling <ansi fg="itemname">stars</ansi> wheel overhead in
+  halos of light, and a crescent <ansi fg="itemname">moon</ansi> blazes in the
+  upper right like a second sun. Below the hill, a small <ansi fg="exit">village</ansi>
+  sleeps in a valley, its windows dark, its church spire reaching toward the
+  turbulent heavens. A <ansi fg="exit">wheat field</ansi> stretches to the west,
+  golden even under starlight. The path of swirling sky leads <ansi fg="exit">east</ansi>.
+mapsymbol: C
+maplegend: Cypress Hill
+biome: land
+exits:
+  east:
+    roomid: 501
+    exitmessage: You descend the hill along a path that seems painted into the landscape.
+  west:
+    roomid: 505
+    exitmessage: You walk toward the golden wheat field.
+  south:
+    roomid: 506
+    exitmessage: You descend the southern slope toward the orchard.
+  up:
+    roomid: 508
+    exitmessage: You step upward into the swirling sky itself.
+nouns:
+  cypress: >-
+    The cypress tree rises like a dark tongue of flame against the luminous sky.
+    Its surface is a mass of thick, curving brushstrokes — dark greens, blacks,
+    and deep blues layered so thickly you could press your finger into them.
+    It sways constantly, though the wind on this hill is gentle.
+  stars: >-
+    The stars are not points of light but great spiraling orbs, each one
+    surrounded by concentric rings of radiance. They pulse and turn slowly,
+    like pinwheels of pure light set spinning by an unseen hand. Eleven
+    stars burn in the sky, each one unique.
+  moon: >-
+    The crescent moon blazes with an intensity that rivals the sun, its yellow
+    light painting the clouds around it in warm amber. It seems too close, too
+    vivid, too alive — more like a living thing than a celestial body.
+  village: >-
+    The village below is a cluster of small houses with blue and orange roofs,
+    gathered around a church with a tall spire. No lights burn in the windows.
+    The whole settlement seems to sleep beneath the churning sky, peaceful and
+    unaware of the cosmic drama above.
+spawninfo:
+- mobid: 40
+  message: "A thin man in a paint-stained smock stands near the cypress, gazing at the sky."
+idlemessages:
+- The cypress tree shudders, its painted branches rippling like dark water.
+- A star overhead flares brighter for a moment, its spiral arms reaching outward.
+- The wind carries a faint sound — brush on canvas? — then silence.
+- The moon's glow intensifies, casting long shadows from the cypress across the hillside.
+- A nightbird calls from somewhere in the dark branches of the cypress tree.
+- The thick paint of the landscape seems to shift slightly underfoot, soft and yielding.

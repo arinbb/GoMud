@@ -1,0 +1,44 @@
+roomid: 512
+zone: Starry Night
+title: Starlit Meadow
+description: >-
+  The alley opens onto a wide <ansi fg="itemname">meadow</ansi> at the village's
+  southern edge, where the last houses give way to open countryside. The grass is
+  painted in long, flowing strokes of dark green and blue, dotted with tiny
+  <ansi fg="itemname">wildflowers</ansi> of white and yellow. The full panorama
+  of the <ansi fg="itemname">starry sky</ansi> is visible here, unobstructed by
+  rooftops or trees — a vast dome of swirling light stretching from horizon to
+  horizon. The cypress hill is visible to the <ansi fg="exit">northwest</ansi>,
+  dark against the luminous sky. The <ansi fg="exit">north</ansi> leads back
+  into the village alley. This meadow feels like the edge of the painting itself —
+  beyond it, the world simply stops.
+mapsymbol: M
+maplegend: Starlit Meadow
+biome: land
+exits:
+  north:
+    roomid: 510
+    exitmessage: You walk back into the village alley.
+nouns:
+  meadow: >-
+    The meadow is a sea of dark grass, each blade a stroke of green or blue
+    paint. It undulates gently, moved by a wind that exists only in the
+    brushwork. At its edges, the paint thins — the world becoming less
+    defined, more abstract, as if this is the very boundary of creation.
+  wildflowers: >-
+    Tiny wildflowers are scattered through the grass — dots of white,
+    yellow, and pale pink, each one a single touch of the brush. They
+    glow faintly in the starlight, like earthbound stars.
+  sky: >-
+    From this meadow, the full glory of the starry night is visible. The
+    entire sky is a symphony of motion — eleven stars, a crescent moon,
+    and great flowing spirals of light, all turning in a slow cosmic dance.
+    It is the most beautiful thing you have ever seen, painted with a
+    passion that borders on madness.
+idlemessages:
+- The entire sky wheels slowly overhead, stars and spirals turning in stately procession.
+- A wildflower at your feet catches the starlight and seems to glow from within.
+- The meadow grass sways in a painted breeze, its strokes rippling like water.
+- From this vantage, the village behind you looks like a toy town beneath a vast ocean of sky.
+- You feel very small beneath the immensity of the starry night, but not afraid. Awed.
+- The edge of the painting shimmers in the distance — beyond the meadow, the world softens into pure color.

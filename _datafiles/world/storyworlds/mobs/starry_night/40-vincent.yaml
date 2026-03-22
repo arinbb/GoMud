@@ -1,0 +1,25 @@
+mobid: 40
+zone: starry_night
+hostile: false
+maxwander: 2
+idlecommands:
+  - "emote dabs at a small canvas he carries, adding a stroke of yellow."
+  - "say The night is more alive and richly colored than the day..."
+  - "emote gazes upward at the swirling sky, his eyes reflecting the stars."
+  - "emote adjusts his straw hat and squints at the landscape."
+  - ''
+  - ''
+activitylevel: 25
+character:
+  name: Vincent
+  description: >-
+    A thin, intense man with a close-cropped red beard and piercing blue eyes
+    that seem to see the world in colors no one else can perceive. He wears
+    a rumpled blue smock stained with every color of the palette, a battered
+    straw hat, and heavy boots caked with Provencal dust. A bandage is wrapped
+    around his left ear. He carries a portable easel and a box of paints,
+    and his fingers are permanently stained with cadmium yellow and prussian
+    blue. Despite his ragged appearance, there is a fierce, burning energy
+    about him — a man consumed by his vision.
+  raceid: 1
+  level: 10

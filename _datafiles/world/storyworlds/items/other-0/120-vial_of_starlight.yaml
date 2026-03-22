@@ -1,0 +1,14 @@
+itemid: 120
+name: vial of starlight
+namesimple: vial
+displayname: a glowing <ansi fg="itemname">vial of starlight</ansi>
+description: >-
+  A small glass vial filled with swirling, luminous liquid that shifts between
+  gold, white, and pale blue. The light inside moves in slow spirals, mirroring
+  the great turning stars of Van Gogh's sky. When held up to the eye, the world
+  around you seems painted in thick, passionate brushstrokes for just a moment.
+  A souvenir from the world of Starry Night.
+type: object
+subtype: usable
+uses: 0
+value: 1

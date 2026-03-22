@@ -1,0 +1,41 @@
+roomid: 505
+zone: Starry Night
+title: Wheat Field
+description: >-
+  A vast <ansi fg="itemname">wheat field</ansi> stretches before you, painted in
+  thick horizontal strokes of gold, amber, and burnt sienna. The wheat sways in
+  a wind you can barely feel, its movement more like breathing than blowing. Above,
+  the swirling sky presses close, and <ansi fg="itemname">crows</ansi> — black
+  dashes of paint — circle in the turbulent air. The field has a restless, urgent
+  energy to it, each brushstroke laid down with fierce conviction. A <ansi fg="exit">path</ansi>
+  cuts through the wheat heading <ansi fg="exit">east</ansi> back to Cypress Hill.
+  The wheat closes in on all other sides, impenetrable and golden.
+mapsymbol: W
+maplegend: Wheat Field
+biome: farmland
+exits:
+  east:
+    roomid: 500
+    exitmessage: You follow the path back through the wheat toward the cypress hill.
+nouns:
+  wheat: >-
+    The wheat is painted in urgent, almost violent strokes — thick ridges of
+    cadmium yellow, yellow ochre, and raw sienna. Each stalk bends under the
+    weight of its painted grain. This is the wheat field of Auvers, painted
+    in the last weeks of Vincent's life. There is beauty here, and desperation.
+  crows: >-
+    Black dashes of paint wheel overhead — crows, or the idea of crows. They
+    are simple and stark against the blue and gold sky, each one a single
+    brushstroke given wings. Are they arriving or departing? Even Vincent
+    could not say.
+  path: >-
+    A narrow dirt path cuts through the wheat, a line of red-brown paint
+    between the golden walls. It leads east toward the cypress hill but seems
+    to go nowhere else — a path that begins and ends in the field.
+idlemessages:
+- The crows wheel overhead, their cries sharp and distant.
+- The wheat sways in a wave, each stalk bending in turn like a painted ocean.
+- A thick smell of ripe grain fills the air, warm and heavy.
+- One of the crows dips low over the field, its black form vivid against the gold.
+- The path through the wheat seems to shift slightly, as if the field is slowly closing around it.
+- For a moment, the wind carries the sound of someone painting — quick, determined strokes.

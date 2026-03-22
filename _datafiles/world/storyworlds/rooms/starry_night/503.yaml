@@ -1,0 +1,49 @@
+roomid: 503
+zone: Starry Night
+title: Church Square
+description: >-
+  A small square surrounds the village <ansi fg="itemname">church</ansi>, whose dark
+  spire pierces the swirling sky above. The church itself is rendered in deep blues
+  and grays, its walls solid against the turbulence overhead. A few <ansi fg="itemname">benches</ansi>
+  sit along the square's edge, painted in simple browns. The square is paved with
+  cobblestones that catch the starlight in tiny flecks of white and yellow. To the
+  <ansi fg="exit">north</ansi>, the lane leads back toward the village edge. The
+  <ansi fg="exit">south</ansi> continues deeper into the sleeping village. An
+  old <ansi fg="itemname">fountain</ansi> stands dry in the center of the square,
+  its basin filled with fallen leaves of painted gold.
+mapsymbol: '+'
+maplegend: Church Square
+biome: city
+exits:
+  north:
+    roomid: 502
+    exitmessage: You walk back up the lane toward the village edge.
+  south:
+    roomid: 504
+    exitmessage: You continue through the square into the sleeping village.
+nouns:
+  church: >-
+    The church is the heart of the village, its stone walls cool and dark. The
+    steeple rises in sharp geometric lines — the one rigid, structured form in
+    a world of flowing curves. The door is closed but not locked. Through a
+    small window, you see only darkness within.
+  benches: >-
+    Simple wooden benches where the villagers might sit on Sunday mornings. They
+    are painted in quick, assured strokes of brown and amber. A pipe has been
+    left on one bench, still faintly warm.
+  fountain: >-
+    A stone fountain, its basin dry. Golden-brown leaves have collected in its
+    bowl, painted in thick daubs. The fountain's carved figures are worn smooth,
+    their features softened by time and the artist's broad brush.
+  pipe: >-
+    A well-worn briar pipe sits on the bench, a curl of painted smoke still
+    rising from its bowl. It smells of cheap tobacco and Provence.
+spawninfo:
+- mobid: 42
+  message: "A sturdy man in a blue postal uniform stands in the square, sorting letters."
+idlemessages:
+- The church bell gives a single low tone, though no one pulled the rope.
+- A leaf detaches from the fountain's stone lip and drifts down into the basin.
+- The starlight catches the church's stained glass, casting faint colors on the cobblestones.
+- A painted breeze stirs the leaves in the fountain.
+- The spire's shadow rotates slowly across the square as the stars wheel overhead.

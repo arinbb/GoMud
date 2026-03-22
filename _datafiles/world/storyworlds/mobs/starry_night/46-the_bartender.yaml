@@ -1,0 +1,23 @@
+mobid: 46
+zone: starry_night
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote polishes a glass with a cloth, holding it up to the garish gaslight."
+  - "say Another night in this place. Always night. Always this place."
+  - "emote glances at the slumped figures at the tables, then looks away."
+  - "emote wipes down the counter with slow, mechanical strokes."
+  - ''
+  - ''
+activitylevel: 20
+character:
+  name: The Bartender
+  description: >-
+    A man in a white apron standing behind the cafe counter, his face
+    rendered in broad, weary strokes. He has the look of someone who has
+    seen too many late nights and poured too many glasses of absinthe.
+    His eyes are kind but tired, painted in quick dabs of brown and white.
+    He moves with the unhurried patience of someone who knows the night
+    will never end in this place.
+  raceid: 1
+  level: 5

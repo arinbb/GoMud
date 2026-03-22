@@ -1,0 +1,41 @@
+roomid: 506
+zone: Starry Night
+title: Orchard
+description: >-
+  Gnarled <ansi fg="itemname">olive trees</ansi> stand in crooked rows, their trunks
+  painted in twisting strokes of brown and gray, their leaves a shimmering mass of
+  silver-green. The orchard floor is dappled with <ansi fg="itemname">fallen
+  blossoms</ansi> — small dabs of white and pink paint scattered across the dark earth.
+  Fireflies drift between the trees, tiny points of yellow light that echo the
+  stars above. The <ansi fg="exit">north</ansi> leads back up to Cypress Hill. A
+  <ansi fg="exit">south</ansi> path winds down toward the sound of running water.
+mapsymbol: O
+maplegend: Orchard
+biome: forest
+exits:
+  north:
+    roomid: 500
+    exitmessage: You climb the slope back toward the cypress hill.
+  south:
+    roomid: 507
+    exitmessage: You follow the path downhill toward the sound of water.
+nouns:
+  trees: >-
+    The olive trees are ancient and twisted, each trunk a study in movement —
+    they coil and bend like dancers frozen mid-step. Vincent painted orchards
+    obsessively in Provence, finding in their gnarled forms something honest
+    and enduring.
+  blossoms: >-
+    Fallen blossoms dot the orchard floor like scattered confetti. Each one
+    is a tiny masterwork — three or four strokes of white and pink, somehow
+    perfect. They smell faintly of almond and spring.
+  fireflies: >-
+    The fireflies drift lazily between the olive trees, their light warm and
+    golden. They seem to pulse in rhythm with the great stars overhead, as
+    if all light in this world shares the same heartbeat.
+idlemessages:
+- A firefly drifts close to your face, its tiny light warm and golden, then floats away.
+- An olive falls from a branch with a soft thud, rolling across the painted earth.
+- The silver-green leaves of the olive trees shimmer as if brushed by an invisible hand.
+- A nightingale sings from deep within the orchard — three clear notes, then silence.
+- The gnarled trunk of the nearest tree seems to shift, its painted bark rippling.

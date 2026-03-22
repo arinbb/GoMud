@@ -1,0 +1,46 @@
+roomid: 510
+zone: Starry Night
+title: Cobbled Alley
+description: >-
+  A narrow <ansi fg="itemname">alley</ansi> winds between the backs of buildings,
+  lit only by the swirling starlight that filters between the rooftops above.
+  The cobblestones are uneven, painted in dark purples and blues with occasional
+  flecks of reflected light. <ansi fg="itemname">Shuttered windows</ansi> line both
+  sides, all closed. The air is cooler here, away from the cafe's oppressive glow.
+  The <ansi fg="exit">north</ansi> leads back to the Night Cafe. To the <ansi fg="exit">south</ansi>,
+  the alley opens onto a starlit meadow. You notice a faint <ansi fg="itemname">light</ansi>
+  seeping from beneath a door to the <ansi fg="secret-exit">east</ansi>, barely visible
+  in the shadows.
+mapsymbol: a
+maplegend: Alley
+biome: city
+exits:
+  north:
+    roomid: 509
+    exitmessage: You return to the garish glow of the Night Cafe.
+  south:
+    roomid: 512
+    exitmessage: You follow the alley south to where it opens onto a meadow.
+  east:
+    roomid: 511
+    secret: true
+nouns:
+  alley: >-
+    The alley is narrow and intimate, the buildings pressing close on both
+    sides. The cobblestones are worn smooth and painted in dark, cool colors.
+    It feels like a secret place, hidden from the rest of the village.
+  windows: >-
+    The shuttered windows are closed tight, their blue wooden slats painted
+    in quick vertical strokes. Behind one, you think you see a faint
+    flickering light — candle or lamp — but it might be a trick of the
+    starlight.
+  light: >-
+    A warm, golden light seeps from beneath a door in the eastern wall. It
+    has the quality of lamplight falling on canvas — steady, focused, alive.
+    The door itself is unremarkable, but the light beneath it beckons.
+idlemessages:
+- A painted moth flutters between the rooftops, drawn toward the starlight above.
+- The golden light beneath the eastern door flickers, as if someone moved past a lamp.
+- Your footsteps echo softly off the close walls of the alley.
+- A cat's eyes gleam from a high windowsill, then blink and vanish.
+- The strip of swirling sky visible between the rooftops seems impossibly beautiful from down here.

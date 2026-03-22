@@ -1,0 +1,22 @@
+-
+  Supported:
+    "vincent": ["the postman"]
+  Conversation:
+    - ["#1 say Roulin! My friend! Will you sit for me again?"]
+    - ["#2 emote strokes his beard thoughtfully", "#2 say Again, Vincent? You have already painted me six times."]
+    - ["#1 say But the light is different today! Your beard — it catches the starlight in a way I have not seen before."]
+    - ["#2 say You say that every time.", "#2 emote chuckles warmly."]
+    - ["#1 say Because it is true every time! Every moment is unique, Roulin. Every brushstroke matters."]
+    - ["#2 say Very well, very well. But this time, make my uniform look dignified. The last portrait made me look like a sea captain."]
+    - ["#1 emote laughs and pulls out a small canvas", "#1 say You ARE a captain, my friend. A captain of letters!"]
+-
+  Supported:
+    "the postman": ["vincent"]
+  Conversation:
+    - ["#1 say Vincent, I brought you a letter from Paris. From your brother."]
+    - ["#2 emote 's eyes light up", "#2 say From Theo? Give it here, give it here!"]
+    - ["#1 emote hands over a thin envelope"]
+    - ["#2 emote tears open the letter and reads eagerly, his lips moving silently"]
+    - ["#2 say He sold a painting. He sold one of my paintings, Roulin!"]
+    - ["#1 say That is wonderful news! Which one?"]
+    - ["#2 say The Red Vineyard. Four hundred francs. Someone out there understands...", "#2 emote clutches the letter to his chest."]

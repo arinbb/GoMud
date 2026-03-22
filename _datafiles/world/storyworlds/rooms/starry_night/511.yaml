@@ -1,0 +1,63 @@
+roomid: 511
+zone: Starry Night
+title: The Hidden Studio
+description: >-
+  A small, cluttered room lit by a single <ansi fg="itemname">oil lamp</ansi>. An
+  <ansi fg="itemname">easel</ansi> stands in the center, holding a half-finished
+  canvas. The walls are splattered with paint — blues, yellows, greens, reds —
+  evidence of furious, passionate work. Dozens of <ansi fg="itemname">canvases</ansi>
+  lean against the walls in stacks: sunflowers, bedrooms, self-portraits, starry
+  skies. A narrow <ansi fg="itemname">bed</ansi> sits in one corner, its sheets
+  twisted. A wooden <ansi fg="itemname">chair</ansi> holds a battered straw hat and
+  a pipe. This is where the artist lives — where he pours his visions onto canvas
+  in a fever of color and light. The door <ansi fg="exit">west</ansi> leads back
+  to the alley.
+mapsymbol: S
+maplegend: Hidden Studio
+biome: house
+exits:
+  west:
+    roomid: 510
+    exitmessage: You slip back out through the door into the alley.
+nouns:
+  lamp: >-
+    A simple oil lamp with a brass base, its flame steady and warm. It casts
+    a golden light over the studio that makes every color sing. The lamp is
+    the one fixed point of calm in this room of creative chaos.
+  easel: >-
+    The easel holds a canvas showing a swirling night sky above a sleeping
+    village — the very world you stand in, painted from within. The paint
+    is still wet, the brushstrokes fresh. A palette rests on the easel's
+    shelf, crowded with thick daubs of cobalt blue, cadmium yellow, zinc
+    white.
+  canvases: >-
+    Dozens of canvases lean against the walls in stacks. You recognize
+    sunflowers in wild yellow profusion, a blue bedroom with a simple bed,
+    self-portraits with bandaged ears and haunted eyes, irises in purple
+    and blue, a cafe terrace under stars. A lifetime of vision compressed
+    into this small room.
+  bed: >-
+    A narrow iron-framed bed with twisted sheets of blue and white. It
+    looks slept in but not restfully — the sheets are knotted, the pillow
+    dented with the shape of a restless head. Beside it, a stack of letters
+    in careful handwriting.
+  chair: >-
+    A simple wooden chair holds a battered straw hat, yellowed with sun
+    and paint, and a well-chewed pipe. The hat is the one Vincent wore in
+    his self-portraits — you would know it anywhere.
+  hat: >-
+    Vincent's straw hat, its brim stained with smudges of yellow and blue
+    paint. It smells of sunlight and turpentine. Wearing it, you might
+    see the world as he did — in great swirls of color and light.
+  letters: >-
+    Letters in a neat, careful hand, addressed to "Dear Theo." They speak
+    of loneliness and beauty, of the terrible difficulty of the work and
+    the desperate need to continue it. They speak of starry nights and
+    wheat fields and the hope that someday the paintings will be understood.
+idlemessages:
+- The oil lamp flickers, sending shadows dancing across the paint-spattered walls.
+- A drop of blue paint falls from the easel's canvas, still wet after all this time.
+- The letters on the bedside table rustle in a draft you cannot feel.
+- The straw hat on the chair seems to glow faintly in the lamplight.
+- The smell of turpentine and linseed oil is thick in this small room.
+- You hear the faint scratch of brush on canvas, though the room is empty.

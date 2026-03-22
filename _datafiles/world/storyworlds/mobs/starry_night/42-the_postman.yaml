@@ -1,0 +1,24 @@
+mobid: 42
+zone: starry_night
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote adjusts the brim of his blue cap and smooths his magnificent beard."
+  - "say The mail must be delivered, rain or starlight."
+  - "emote checks the letters in his bag, counting them carefully."
+  - "say Monsieur Vincent painted me six times. Six! I told him, once is enough for any postman."
+  - ''
+  - ''
+activitylevel: 20
+character:
+  name: The Postman
+  description: >-
+    A sturdy, dignified man in a blue uniform with brass buttons, wearing a
+    blue cap embroidered with the word POSTES. His most remarkable feature
+    is his enormous beard — a flowing cascade of chestnut brown, almost
+    as impressive as the swirling sky overhead. His eyes are kind and steady.
+    This is Joseph Roulin, the postal worker of Arles and one of Vincent's
+    closest friends in Provence. He carries a leather mail bag over one
+    shoulder.
+  raceid: 1
+  level: 8

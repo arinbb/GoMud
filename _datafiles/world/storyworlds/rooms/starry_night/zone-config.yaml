@@ -1,0 +1,13 @@
+name: Starry Night
+roomid: 500
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: land
+idlemessages:
+- The stars above pulse with a slow, rhythmic light, like breathing.
+- A thick brushstroke of wind sweeps across the landscape, smelling of oil paint and night air.
+- The sky churns overhead, great spirals of blue and gold turning like slow whirlpools.
+- Somewhere in the village below, a dog barks once and falls silent.
+- The cypress tree on the hill sways in a wind you cannot feel, its dark form writhing against the luminous sky.
+- You catch a faint scent of turpentine and linseed oil on the breeze.

@@ -1,0 +1,52 @@
+roomid: 508
+zone: Starry Night
+title: The Starry Sky
+description: >-
+  You stand among the stars. The ground beneath your feet is a thick swirl of
+  <ansi fg="itemname">dark blue paint</ansi>, and above — all around — the great
+  <ansi fg="itemname">spirals</ansi> of the night sky turn slowly, majestically.
+  Each <ansi fg="itemname">star</ansi> is a blazing orb wrapped in concentric halos
+  of light — white at the center, then yellow, then gold, fading to blue at the
+  edges. You can almost reach out and touch them. The crescent <ansi fg="itemname">moon</ansi>
+  hangs nearby, a massive curved blade of brilliant yellow. Far below, the dark
+  shape of the cypress tree and the sleeping village are barely visible. The way
+  <ansi fg="exit">down</ansi> leads back to Cypress Hill.
+mapsymbol: '*'
+maplegend: Starry Sky
+biome: cliffs
+exits:
+  down:
+    roomid: 500
+    exitmessage: You descend back to the hilltop, leaving the stars behind.
+nouns:
+  spirals: >-
+    The spirals are enormous up close — great rivers of light flowing in
+    curves that seem to follow invisible currents in the sky. Each one is
+    composed of hundreds of brushstrokes, short dashes of blue and white
+    laid side by side, building a turbulence that feels both chaotic and
+    perfectly ordered.
+  star: >-
+    Up close, each star is not a point but a world — a blazing center
+    surrounded by ring after ring of diminishing light, like ripples from
+    a stone dropped in a luminous pond. They pulse with a slow rhythm,
+    each one slightly out of phase with its neighbors.
+  moon: >-
+    The crescent moon is overwhelming at this distance — a massive arc of
+    yellow-white light that illuminates everything around it. The paint is
+    laid on so thickly that the moon seems to project from the sky's surface,
+    three-dimensional and almost sculptural.
+  paint: >-
+    The dark blue beneath your feet is the sky itself, rendered in thick
+    impasto. You can feel the ridges of individual brushstrokes through your
+    shoes. Prussian blue, ultramarine, touches of violet — the colors blend
+    and separate in an endless dance.
+spawninfo:
+- mobid: 44
+  message: "A luminous figure of swirling golden light drifts among the stars."
+idlemessages:
+- A star near you flares brighter, its spiral arms reaching outward before contracting.
+- The moon's light washes over you in a warm golden wave.
+- You feel the slow rotation of the sky, the spirals turning around you like a cosmic carousel.
+- A streak of light — a painted meteor — arcs across the sky and vanishes.
+- The dark blue paint beneath your feet ripples, as if the sky is a sea and you stand upon its surface.
+- Up here among the stars, the silence is total and perfect.

@@ -1,0 +1,41 @@
+roomid: 507
+zone: Starry Night
+title: Riverbank
+description: >-
+  A small <ansi fg="itemname">river</ansi> winds through the valley below the orchard,
+  its surface painted in long, fluid strokes of blue, green, and reflected
+  starlight. The water moves slowly, carrying streaks of color downstream like
+  a liquid palette. <ansi fg="itemname">Willows</ansi> droop along the banks,
+  their trailing branches brushing the surface. The <ansi fg="itemname">reflections</ansi>
+  in the water are remarkable — the stars above are mirrored below, but
+  distorted, elongated, wavering. The <ansi fg="exit">north</ansi> path leads
+  back up to the orchard.
+mapsymbol: R
+maplegend: Riverbank
+biome: shore
+exits:
+  north:
+    roomid: 506
+    exitmessage: You climb the path back up toward the orchard.
+nouns:
+  river: >-
+    The river moves with a slow, dream-like current. Its surface is a mirror
+    of liquid paint — blues and greens swirling together, catching the light
+    of the stars overhead. Small eddies form and dissolve, each one a tiny
+    spiral echoing the great spirals in the sky.
+  willows: >-
+    The willow trees bend over the water like mourners, their long branches
+    trailing in the current. They are painted in sweeping downward strokes
+    of green and yellow-green, graceful and melancholy.
+  reflections: >-
+    The reflections of the stars in the water are stretched and wavering,
+    their perfect spirals pulled into long ribbons of light by the current.
+    Staring at them too long makes you dizzy — the line between water and
+    sky becomes uncertain.
+idlemessages:
+- The river carries a streak of yellow starlight downstream, elongating it into a golden thread.
+- A willow branch dips into the water and draws a line of silver across the surface.
+- The reflections of the stars waver and reform, never quite settling.
+- A small fish — or a painted suggestion of one — breaks the surface with a tiny splash.
+- The sound of the water is soft and musical, like a lullaby in a language you almost understand.
+- You catch your own reflection in the water, but it is rendered in bold brushstrokes, not quite you.

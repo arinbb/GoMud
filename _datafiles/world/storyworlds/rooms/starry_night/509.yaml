@@ -1,0 +1,59 @@
+roomid: 509
+zone: Starry Night
+title: The Night Cafe
+description: >-
+  You step into a room blazing with <ansi fg="itemname">color</ansi>. The walls are
+  a violent red, the ceiling a poisonous green, the floor a checkerboard of
+  clashing yellows and greens. A <ansi fg="itemname">billiard table</ansi> dominates
+  the center of the room, its green felt garish under the four great <ansi fg="itemname">gas
+  lamps</ansi> that radiate halos of orange and yellow light. A few <ansi fg="itemname">tables</ansi>
+  and chairs line the walls, occupied by slumped, indistinct figures. This is the
+  Night Cafe of Arles — a place of insomnia, madness, and the terrible passions
+  of humanity, rendered in colors that clash like arguments. The <ansi fg="exit">north</ansi>
+  leads back to the sleeping village. A narrow <ansi fg="exit">south</ansi> door
+  leads to a cobbled alley.
+mapsymbol: N
+maplegend: Night Cafe
+biome: house
+exits:
+  north:
+    roomid: 504
+    exitmessage: You step out of the cafe's oppressive glow into the cool village night.
+  south:
+    roomid: 510
+    exitmessage: You slip through the narrow door into a cobbled alley.
+nouns:
+  color: >-
+    The colors in this room are deliberately nauseating — blood-red walls,
+    acid-green ceiling, floors of jaundiced yellow. Vincent described this
+    painting as expressing the terrible passions of humanity through red and
+    green. The colors do not harmonize. They fight.
+  billiard: >-
+    The billiard table sits in a pool of garish light, its green surface
+    bright against the red walls. The perspective is slightly off — the table
+    seems to tilt toward you, the room bending around it. A game is in
+    progress, but the players are nowhere to be seen.
+  lamps: >-
+    Four gas lamps hang from the green ceiling, each one surrounded by a
+    radiating halo of orange and yellow. They cast a light that is too
+    bright, too harsh — the light of sleepless nights and bad decisions.
+  tables: >-
+    Small round tables line the walls, each with a single glass of absinthe
+    or wine. The figures seated at them are rendered in quick, loose strokes —
+    they slump, they doze, they stare at nothing. They are the night's
+    casualties, waiting for a dawn that never comes here.
+  figures: >-
+    The figures at the tables are not quite people — they are suggestions of
+    people, painted in broad strokes of ochre and brown. A drunk leaning on
+    his elbows. A woman with her head on the table. They are the lost souls
+    of the night cafe.
+spawninfo:
+- mobid: 46
+  message: "A weary bartender stands behind the counter, polishing a glass."
+idlemessages:
+- The gas lamps flicker, their halos of light pulsing like headaches.
+- One of the slumped figures at a table shifts slightly, then is still.
+- The billiard balls roll on their own, clicking softly in the garish light.
+- The red walls seem to pulse, pressing inward, then relaxing.
+- The smell of cheap wine, tobacco smoke, and gas light hangs heavy in the air.
+- A glass of absinthe on the nearest table glows a faint, toxic green.

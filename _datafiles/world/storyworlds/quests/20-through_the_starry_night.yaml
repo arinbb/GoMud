@@ -1,0 +1,19 @@
+questid: 20
+name: Through the Starry Night
+description: >-
+  Explore the world of Van Gogh's Starry Night. Walk among the swirling
+  stars, visit the sleeping village, and discover the artist's hidden studio.
+reward:
+  experience: 5000
+  item_id: 120
+  playermessage: >-
+    You have walked through the painting and seen the world as Vincent saw
+    it — alive with color and motion. As a memento, you receive a vial of
+    captured starlight that glows with the same luminous energy as the
+    swirling sky.
+steps:
+- description: Enter the world of Starry Night through the painting.
+- description: Speak with Vincent about the stars.
+- description: Visit the Night Cafe and speak with the Bartender.
+- description: Discover the hidden artist's studio.
+- description: Walk among the stars in the swirling sky above Cypress Hill.

@@ -1,0 +1,40 @@
+roomid: 501
+zone: Starry Night
+title: Swirling Sky Path
+description: >-
+  A path winds between the cypress hill and the village, but here the boundary
+  between earth and sky blurs. The ground beneath your feet is painted in thick
+  rolling waves of blue and green, and overhead the sky presses close, its great
+  <ansi fg="itemname">spirals</ansi> of light seeming almost within reach. The
+  <ansi fg="itemname">air</ansi> itself has texture — you can feel the brushstrokes
+  as you walk, thick ridges of paint that make up the world. To the <ansi fg="exit">east</ansi>,
+  the village edge is visible. The <ansi fg="exit">west</ansi> leads back up
+  to Cypress Hill.
+mapsymbol: '~'
+maplegend: Sky Path
+biome: road
+exits:
+  west:
+    roomid: 500
+    exitmessage: You climb back up toward the cypress tree on the hill.
+  east:
+    roomid: 502
+    exitmessage: You continue toward the edge of the village.
+nouns:
+  spirals: >-
+    The spirals in the sky are mesmerizing — great curving streams of light that
+    wheel around invisible centers. Some astronomers might see turbulence patterns;
+    Vincent saw the face of the infinite.
+  air: >-
+    The air has a physical quality here, thick and textured. You can almost see
+    the individual brushstrokes that make it up — short dashes of blue and white
+    layered over each other. Breathing feels like inhaling color.
+  path: >-
+    The path is less a road and more a current in the landscape, a flowing line
+    of darker paint that guides your feet between the hill and the village.
+idlemessages:
+- A ripple runs through the sky overhead, like wind across the surface of a painted lake.
+- The brushstrokes beneath your feet shift slightly, the paint soft and warm.
+- A spiral of stars tightens momentarily, then slowly unwinds again.
+- The colors along the path deepen from cobalt to ultramarine and back.
+- You hear a soft sound, like a brush being drawn across rough canvas.

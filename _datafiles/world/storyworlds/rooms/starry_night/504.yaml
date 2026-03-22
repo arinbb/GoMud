@@ -1,0 +1,42 @@
+roomid: 504
+zone: Starry Night
+title: Sleeping Village
+description: >-
+  You stand in the heart of the village, surrounded by small <ansi fg="itemname">houses</ansi>
+  with blue and orange roofs. Every window is dark, every door closed. The
+  villagers sleep the deep sleep of painted figures — eternal, undisturbed. The
+  cobbled street is narrow and winding, the buildings pressing close on either
+  side. Overhead, the swirling sky is visible in a narrow band between the
+  rooftops, its luminous spirals framed by eaves and chimneys. A warm glow
+  spills from a doorway to the <ansi fg="exit">south</ansi> — the Night Cafe.
+  The <ansi fg="exit">north</ansi> leads back to the church square.
+mapsymbol: H
+maplegend: Sleeping Village
+biome: city
+exits:
+  north:
+    roomid: 503
+    exitmessage: You walk back toward the church square.
+  south:
+    roomid: 509
+    exitmessage: You follow the warm glow toward the Night Cafe.
+nouns:
+  houses: >-
+    The houses are painted in thick, warm strokes — ochre walls, blue shutters,
+    orange tile roofs. Each one is slightly different, slightly crooked, full
+    of character and age. They are homes dreamed into being by a man who
+    desperately wanted one of his own.
+  windows: >-
+    The windows are dark rectangles set deep in thick walls. No candlelight,
+    no movement. The people who live here exist only in the spaces between
+    brushstrokes, sleeping a sleep from which they will never wake.
+  street: >-
+    The cobbled street curves gently, following the contour of the hillside.
+    The stones are painted in quick dabs of gray and brown, each one catching
+    a fleck of starlight.
+idlemessages:
+- A painted cat stretches on a windowsill, then curls back into sleep.
+- The warm glow from the cafe to the south flickers invitingly.
+- Somewhere a clock ticks, measuring time that does not pass here.
+- The houses seem to lean slightly closer together, as if sharing secrets.
+- Starlight drips between the rooftops like slow honey.

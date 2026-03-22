@@ -1,0 +1,43 @@
+roomid: 502
+zone: Starry Night
+title: Village Edge
+description: >-
+  The path from the hills ends at the edge of a small Provencal <ansi fg="itemname">village</ansi>.
+  Simple stone houses with blue-tiled roofs huddle together, their walls painted
+  in warm ochres and cool grays. No lights burn in the windows — the village
+  sleeps deeply beneath the swirling sky. A narrow <ansi fg="exit">lane</ansi>
+  leads south into the heart of the settlement, toward a tall <ansi fg="itemname">church
+  spire</ansi> that rises dark against the luminous heavens. The <ansi fg="exit">west</ansi>
+  leads back along the sky path. Cobblestones underfoot are thick with painted
+  texture, each one a distinct dab of gray and brown.
+mapsymbol: V
+maplegend: Village Edge
+biome: city
+exits:
+  west:
+    roomid: 501
+    exitmessage: You head back along the path toward the hills.
+  south:
+    roomid: 503
+    exitmessage: You walk down the lane toward the church square.
+nouns:
+  village: >-
+    The village is Saint-Remy-de-Provence — or Vincent's dream of it, painted
+    from the window of his asylum room. The houses are small and sturdy, built
+    of stone with blue and orange tile roofs. They seem to sleep as deeply as
+    their unseen inhabitants.
+  spire: >-
+    The church spire rises sharp and dark against the swirling sky, a needle
+    of solid geometry amid all the turbulent curves. It is the tallest thing
+    in the village, reaching toward the stars as if trying to pin the spinning
+    sky in place.
+  houses: >-
+    The houses are painted in thick, confident strokes — warm walls under cool
+    roofs, each window a dark rectangle. They look real enough to enter, but
+    no doors are visible from here.
+idlemessages:
+- A shutter creaks somewhere in the sleeping village, though no wind touches it.
+- The church spire seems to lean slightly toward the brightest star, then straightens.
+- A cat made of amber brushstrokes slinks along a rooftop and vanishes.
+- The cobblestones shift subtly underfoot, their painted surfaces warm to the touch.
+- From somewhere deep in the village comes the sound of a clock striking an impossible hour.
