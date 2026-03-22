@@ -1,0 +1,54 @@
+roomid: 800
+zone: Peewees Big Adventure
+title: Pee-wee's House
+description: >-
+  You stand in the most wonderfully chaotic house imaginable. Every surface is
+  covered with <ansi fg="itemname">toys</ansi>, gadgets, and colorful knick-knacks.
+  A massive <ansi fg="itemname">Rube Goldberg breakfast machine</ansi> dominates
+  the kitchen area -- a labyrinth of tracks, pulleys, conveyor belts, and tiny
+  flags connected to a toaster, a juicer, and what appears to be a robotic
+  pancake flipper. Pee-wee's signature gray <ansi fg="itemname">suit</ansi> and
+  red bow tie hang neatly by the door, the only tidy thing in the entire place.
+  The front door leads <ansi fg="exit">east</ansi> toward town.
+mapsymbol: H
+maplegend: Pee-wees House
+biome: house
+exits:
+  east:
+    roomid: 801
+nouns:
+  machine: >-
+    The Rube Goldberg breakfast machine is an engineering marvel of absurd
+    proportions. A marble rolls down a track, tips a lever, which lights a
+    match, which heats a kettle, which whistles to wake a mechanical rooster,
+    which pecks a button, which starts the conveyor belt that delivers toast,
+    eggs, and orange juice to the table. It looks like it might actually work
+    if someone were to start it.
+  toys: >-
+    There are toys EVERYWHERE. A Mr. T cereal bowl, a gumball machine, a
+    dinosaur family on the windowsill, a magic eight ball, a Viewmaster, a
+    giant connect-the-dots on the wall, and approximately four hundred other
+    things competing for your attention.
+  suit: >-
+    A perfectly pressed gray suit with a red bow tie, white dress shirt,
+    and impossibly shiny black shoes. It is the uniform of a man who takes
+    fun VERY seriously.
+idlemessages:
+- The breakfast machine clicks and whirs faintly, as if eager for someone to start it.
+- A toy monkey on a shelf claps its tiny cymbals once, then goes still.
+- The gumball machine in the corner dispenses a single gumball onto the floor. It rolls under the couch.
+- A mechanical bird in a cage near the window chirps a tinny three-note melody.
+- Somewhere in the house, a cuckoo clock goes off at entirely the wrong time.
+- The refrigerator hums a tune that sounds suspiciously like "Tequila."
+spawninfo:
+- mobid: 70
+  message: Pee-wee Herman bounces into the room with manic energy.
+  idlecommands:
+  - say I know you are, but what am I?
+  - ""
+  - emote adjusts his red bow tie with precision.
+  - say I'm a loner, Dottie. A rebel.
+  - ""
+  - emote laughs his signature laugh -- HEH-HEH!
+  - ""
+  - say There's a lotta things about me you don't know anything about, Dottie.

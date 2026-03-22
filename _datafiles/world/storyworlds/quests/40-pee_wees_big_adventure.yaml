@@ -1,0 +1,19 @@
+questid: 40
+name: Pee-wee's Big Adventure
+description: >-
+  Follow Pee-wee's cross-country journey to find his stolen bicycle.
+  From the breakfast machine to the biker bar, from Madame Ruby's parlor
+  to the basement-less Alamo, retrace the most epic bike quest in history.
+reward:
+  experience: 5000
+  item_id: 130
+  playermessage: >-
+    You've completed Pee-wee's Big Adventure! As a memento, you receive
+    a miniature red bicycle, complete with working horn and streamers.
+    The tiny horn goes HONK HONK when you squeeze it.
+steps:
+- description: Enter the world of Pee-wee's Big Adventure through the film reel.
+- description: Visit Pee-wee's house and witness the amazing breakfast machine.
+- description: Search for the basement at the Alamo.
+- description: Dance the Tequila at the biker bar.
+- description: Find the bike at the Warner Bros. studio lot.

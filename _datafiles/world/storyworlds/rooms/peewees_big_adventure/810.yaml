@@ -1,0 +1,46 @@
+roomid: 810
+zone: Peewees Big Adventure
+title: Warner Bros. Studio Gate
+description: >-
+  The iconic Warner Bros. studio <ansi fg="itemname">gate</ansi> looms before
+  you -- a grand arched entrance with the WB shield logo gleaming in California
+  sunshine. A <ansi fg="itemname">guard booth</ansi> sits beside the gate, staffed
+  by a security officer checking credentials. Beyond the gate, you can see rows
+  of massive <ansi fg="itemname">soundstages</ansi> -- enormous beige buildings
+  numbered with huge black digits. Golf carts zip along the studio streets
+  carrying people who look important and stressed. The air smells of fresh paint,
+  sawdust, and ambition. The road leads <ansi fg="exit">west</ansi> and the
+  studio lot opens <ansi fg="exit">south</ansi>.
+mapsymbol: W
+maplegend: Studio Gate
+biome: city
+exits:
+  west:
+    roomid: 809
+  south:
+    roomid: 811
+nouns:
+  gate: >-
+    The famous Warner Bros. gate is surprisingly imposing in person. Wrought
+    iron topped with gold-painted spikes, flanked by tall stucco walls. The
+    WB shield logo is mounted at the apex of the arch, polished to a high
+    gleam. Every aspiring actor in Hollywood has dreamed of driving through
+    this gate.
+  guard: >-
+    The guard booth is a small white structure with tinted windows and a
+    striped barrier arm. The security guard inside wears a crisp uniform
+    and an expression that says he has turned away thousands of people who
+    "just want to look around." His clipboard holds a list of names. Yours
+    is probably not on it.
+  soundstages: >-
+    The soundstages are enormous windowless buildings, each one big enough
+    to contain an entire world inside. Stage 7 has its massive rolling door
+    cracked open, revealing a glimpse of artificial fog and colored lights.
+    Stage 12 has a sign that reads "CLOSED SET - ABSOLUTELY NO VISITORS."
+    Somewhere inside one of them is Pee-wee's bike.
+idlemessages:
+- A golf cart carrying someone in a gorilla costume zips past at an unsafe speed.
+- The guard checks his clipboard, shakes his head, and waves away another hopeful visitor.
+- A set crew pushes a rolling backdrop of a Parisian street scene between soundstages.
+- Someone in a spacesuit walks past eating a burrito, apparently on a lunch break from the future.
+- The California sun glints off the WB shield logo, momentarily blinding you.

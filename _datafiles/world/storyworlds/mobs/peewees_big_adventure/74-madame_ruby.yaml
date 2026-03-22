@@ -1,0 +1,24 @@
+mobid: 74
+zone: peewees_big_adventure
+hostile: false
+maxwander: 0
+angrycommands:
+  - "say The spirits are VERY displeased with you!"
+idlecommands:
+  - "say I see great things in your future! Also small things!"
+  - "emote waves her hands mysteriously over the crystal ball."
+  - "say The spirits are telling me... wait... that's just my stomach."
+  - ''
+  - ''
+activitylevel: 20
+character:
+  name: Madame Ruby
+  description: >-
+    A theatrical fortune teller draped in scarves and costume jewelry,
+    surrounded by candles and incense smoke. Her crystal ball has a
+    visible crack in it and what appears to be a price sticker from a
+    thrift store. Her predictions are wildly inaccurate but delivered
+    with supreme confidence and dramatic hand gestures. Every finger
+    has at least two rings on it.
+  raceid: 1
+  level: 8

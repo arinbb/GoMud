@@ -1,0 +1,62 @@
+roomid: 805
+zone: Peewees Big Adventure
+title: Truck Stop Diner
+description: >-
+  A classic chrome-and-neon truck stop diner glowing like a beacon in the desert
+  night. Red vinyl booths line the windows, and a long Formica <ansi fg="itemname">counter</ansi>
+  runs the length of the place with spinning stools bolted to the floor. A glass
+  case displays an impressive collection of <ansi fg="itemname">pie</ansi> -- cherry,
+  apple, coconut cream, and something that might be boysenberry. In the corner, a
+  <ansi fg="itemname">jukebox</ansi> glows with warm amber light. On the wall near
+  the restrooms, someone has erected a small <ansi fg="itemname">shrine</ansi> --
+  a framed photograph surrounded by plastic flowers. The highway leads
+  <ansi fg="exit">west</ansi> and a desert road continues <ansi fg="exit">south</ansi>.
+mapsymbol: D
+maplegend: Truck Stop Diner
+biome: house
+exits:
+  west:
+    roomid: 804
+  south:
+    roomid: 806
+nouns:
+  shrine: >-
+    A framed black-and-white photograph of a stern-looking woman trucker is
+    mounted on the wall, surrounded by plastic carnations and a few real
+    ones that have dried to paper. A small brass plaque reads "IN MEMORY OF
+    LARGE MARGE - THE GREATEST TRUCKER WHO EVER LIVED." Someone has left
+    a tiny ceramic angel and a pack of beef jerky as offerings.
+  pie: >-
+    The pie case is a thing of beauty. Towering meringue peaks on the lemon,
+    glistening cherries in a lattice crust, a chocolate cream pie so perfect
+    it looks fake, and a slice of something labeled "Trucker's Special" that
+    appears to contain bacon. A hand-lettered sign says "BEST PIE IN THE
+    DESERT - NO ARGUMENTS."
+  counter: >-
+    The Formica counter is worn smooth by decades of elbows. Sugar dispensers,
+    ketchup bottles, and laminated menus are spaced at regular intervals.
+    Each spinning stool has its own personality -- one squeaks, one wobbles,
+    one spins too freely.
+  jukebox: >-
+    A beautiful old Wurlitzer jukebox with bubbling tubes of colored light.
+    The song list includes "Tequila" by The Champs, some Hank Williams, a
+    lot of trucker ballads, and one entry that just says "LARGE MARGE'S
+    FAVORITE" with no song title listed.
+idlemessages:
+- The jukebox cycles through its colored lights even though nobody has put in a quarter.
+- A trucker at the counter slurps coffee and stares out the window at the empty highway.
+- The pie case hums quietly, keeping its treasures at the perfect temperature.
+- A waitress refills coffee cups without being asked. It's that kind of place.
+- The neon sign outside buzzes and flickers, casting pink light through the blinds.
+spawninfo:
+- mobid: 72
+  message: The air grows cold. Large Marge materializes on a stool at the counter, translucent and imposing.
+  idlecommands:
+  - say On this very night, ten years ago, on this same stretch of road...
+  - ""
+  - emote stares straight ahead with unblinking, ghostly eyes.
+  - say It was the worst accident I ever seen.
+  - ""
+  - emote turns slowly and fixes you with a look that goes right through you.
+  - ""
+  - say Tell 'em Large Marge sent ya!

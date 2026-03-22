@@ -1,0 +1,23 @@
+mobid: 75
+zone: peewees_big_adventure
+hostile: false
+maxwander: 0
+angrycommands: []
+idlecommands:
+  - "say And if you'll follow me, we'll see the next exhibit!"
+  - "emote waves her little flag enthusiastically."
+  - "say The Alamo was built in the 18th century as a mission..."
+  - ''
+  - ''
+activitylevel: 20
+character:
+  name: Tina the Tour Guide
+  description: >-
+    A perky, relentlessly cheerful tour guide in a khaki uniform with an
+    Alamo name badge, carrying a small flag on a stick. Her smile never
+    wavers, not even for a second. She has the unshakeable enthusiasm of
+    someone who has given this tour ten thousand times and still finds
+    every single fact absolutely riveting. Her khaki shorts have perfectly
+    ironed creases.
+  raceid: 1
+  level: 5

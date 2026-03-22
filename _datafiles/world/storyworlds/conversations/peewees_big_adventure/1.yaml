@@ -1,0 +1,32 @@
+-
+  Supported:
+    "pee-wee herman": ["francis buxton"]
+  Conversation:
+    - ["#1 say Hey Francis! What are you doing here?"]
+    - ["#2 say I want your bike, Pee-wee. I NEED your bike!", "#2 emote stamps his foot."]
+    - ["#1 say You can't HAVE my bike! It's MY bike!"]
+    - ["#2 say I'll give you a THOUSAND dollars for it!", "#2 emote pulls out a wad of cash."]
+    - ["#1 say I wouldn't sell my bike for all the money in the world!"]
+    - ["#2 say Everyone has a price, Pee-wee. My father says so."]
+    - ["#1 say Well your father sounds like a real JERK!"]
+    - ["#2 say You take that back! YOU TAKE THAT BACK!", "#2 emote 's face turns bright red."]
+    - ["#1 say I know you are, but what am I?"]
+    - ["#2 say You're an IDIOT!"]
+    - ["#1 say I know you are, but what am I?"]
+    - ["#2 say A BUFFOON!"]
+    - ["#1 say I know you are, but what am I?"]
+    - ["#2 say AAAAARGH!", "#2 emote looks like he might actually explode."]
+    - ["#1 emote laughs his signature high-pitched laugh.", "#1 say Heh heh!"]
+-
+  Supported:
+    "francis buxton": ["pee-wee herman"]
+  Conversation:
+    - ["#1 say There you are, Pee-wee! I've been looking for you!"]
+    - ["#2 emote crosses his arms defiantly.", "#2 say What do you want, Francis?"]
+    - ["#1 say My father says I can have anything I want. And I want YOUR BIKE."]
+    - ["#2 say Then your father should buy you a different bike!"]
+    - ["#1 say I don't WANT a different bike! I want YOURS!", "#1 emote pouts dramatically."]
+    - ["#2 say Well too bad! It's not for sale. Not now, not ever, not in a million billion years!"]
+    - ["#1 say You'll be sorry, Pee-wee! You'll be SO sorry!", "#1 emote shakes his fist."]
+    - ["#2 say I'm rubber, you're glue! Whatever you say bounces off me and sticks to YOU!"]
+    - ["#1 emote turns purple with rage and storms away muttering about his father's lawyers."]

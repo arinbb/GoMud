@@ -1,0 +1,23 @@
+mobid: 73
+zone: peewees_big_adventure
+hostile: false
+maxwander: 0
+angrycommands: []
+idlecommands:
+  - "emote gazes wistfully at a postcard of the Eiffel Tower."
+  - "say Someday I'll get to Paris..."
+  - "emote sighs dreamily."
+  - ''
+  - ''
+activitylevel: 20
+character:
+  name: Simone
+  description: >-
+    A dreamy-eyed waitress in a dinosaur-themed uniform, gazing at
+    postcards of Paris pinned above the register. Her name tag is
+    shaped like a little brontosaurus. She has an air of quiet longing,
+    as though she is always looking past wherever she is toward somewhere
+    she has never been. The Eiffel Tower postcard above the register is
+    dog-eared and faded from years of wistful touching.
+  raceid: 1
+  level: 5

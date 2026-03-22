@@ -1,0 +1,44 @@
+roomid: 809
+zone: Peewees Big Adventure
+title: Hospital Room
+description: >-
+  A small, sterile hospital room painted in that particular shade of green that
+  only hospitals use. A narrow <ansi fg="itemname">bed</ansi> with thin white sheets
+  sits against the wall, and a rolling tray holds a cup of Jello and a bendy straw.
+  <ansi fg="itemname">Bandages</ansi> and medical supplies are stacked on a side table.
+  The most important thing in the room is the wall-mounted <ansi fg="itemname">TV</ansi>,
+  which is tuned to the evening news. A reporter is interviewing someone about a
+  bicycle spotted on a movie studio lot. The room has exits <ansi fg="exit">west</ansi>
+  and <ansi fg="exit">east</ansi>.
+mapsymbol: "+"
+maplegend: Hospital
+biome: house
+exits:
+  west:
+    roomid: 808
+  east:
+    roomid: 810
+nouns:
+  bed: >-
+    A standard hospital bed with metal rails and a thin mattress that
+    crinkles when you sit on it. The pillow is flat and smells like
+    industrial laundry detergent. A call button on a cord dangles over
+    the side rail. It is the least comfortable bed in the world, and
+    yet somehow you could sleep for a year.
+  tv: >-
+    The TV is showing a news segment about child star Kevin Morton, who
+    has been spotted riding a distinctive custom bicycle around the Warner
+    Bros. studio lot. The reporter mentions that the bike was purchased
+    at a Hollywood prop auction. The camera zooms in on the bike. Even
+    on the grainy hospital TV, there is no mistaking it. That's Pee-wee's
+    bike. It's at Warner Bros.
+  bandages: >-
+    A roll of gauze, some adhesive tape, a box of band-aids with cartoon
+    characters on them, a bottle of antiseptic, and an ice pack. Evidence
+    of a rough journey across America.
+idlemessages:
+- The TV flickers to a commercial for a local car dealership, then back to the news.
+- The heart monitor beeps with steady, mechanical patience. Beep. Beep. Beep.
+- A nurse's shoes squeak past in the hallway outside, quick and purposeful.
+- The Jello on the tray wobbles slightly whenever a door opens or closes nearby.
+- Fluorescent lights hum overhead with the particular drone unique to medical facilities.

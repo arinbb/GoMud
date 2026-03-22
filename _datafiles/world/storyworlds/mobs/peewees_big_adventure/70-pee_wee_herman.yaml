@@ -1,0 +1,25 @@
+mobid: 70
+zone: peewees_big_adventure
+hostile: false
+maxwander: 2
+angrycommands:
+  - "say I know you are, but what am I?!"
+  - "emote does a frantic little tap dance."
+idlecommands:
+  - "say I know you are, but what am I?!"
+  - "emote laughs maniacally."
+  - "say I'm a loner, Dottie. A rebel."
+  - "emote does a little dance."
+  - ''
+  - ''
+activitylevel: 30
+character:
+  name: Pee-wee Herman
+  description: >-
+    An eccentric man-child in a too-tight gray suit and red bow tie, with a
+    white face, red lips, and slicked-back dark hair. He moves with manic
+    energy and child-like wonder, his eyes darting around as though every
+    single thing in the world is the most fascinating thing he has ever
+    seen. His laugh is a high-pitched staccato that borders on unhinged.
+  raceid: 1
+  level: 10

@@ -1,0 +1,76 @@
+roomid: 814
+zone: Peewees Big Adventure
+title: Mario's Magic Shop
+description: >-
+  A wonderfully cluttered magic shop with purple velvet walls and a ceiling
+  painted with stars and moons. Glass <ansi fg="itemname">display cases</ansi> are
+  packed with magic supplies -- decks of trick cards, linking rings, cups and
+  balls, silk scarves in every color. A full-sized <ansi fg="itemname">magic cabinet</ansi>
+  stands against one wall with swords sticking through it at alarming angles.
+  Shelves hold <ansi fg="itemname">masks</ansi>, fake mustaches, rubber chickens,
+  joy buzzers, whoopee cushions, and squirting flowers. A <ansi fg="itemname">top hat</ansi>
+  sits on the counter with a pair of white gloves beside it. The back wall is
+  covered with autographed <ansi fg="itemname">photos</ansi> of magicians. The
+  <ansi fg="exit">west</ansi> door leads back to the outdoor mall. A beaded
+  <parameter name="content">roomid: 814
+zone: Peewees Big Adventure
+title: Mario's Magic Shop
+description: >-
+  A wonderfully cluttered magic shop with purple velvet walls and a ceiling
+  painted with stars and moons. Glass <ansi fg="itemname">display cases</ansi> are
+  packed with magic supplies -- decks of trick cards, linking rings, cups and
+  balls, silk scarves in every color. A full-sized <ansi fg="itemname">magic cabinet</ansi>
+  stands against one wall with swords sticking through it at alarming angles.
+  Shelves hold <ansi fg="itemname">masks</ansi>, fake mustaches, rubber chickens,
+  joy buzzers, whoopee cushions, and squirting flowers. A <ansi fg="itemname">top hat</ansi>
+  sits on the counter with a pair of white gloves beside it. The back wall is
+  covered with autographed <ansi fg="itemname">photos</ansi> of magicians. The
+  <ansi fg="exit">west</ansi> door leads back to the outdoor mall. A beaded
+  curtain in the back leads to the <ansi fg="exit">props room</ansi>.
+mapsymbol: '!'
+maplegend: Magic Shop
+biome: house
+exits:
+  west:
+    roomid: 813
+    exitmessage: You step back out into the sunny outdoor mall.
+  props:
+    roomid: 815
+    exitmessage: You push through the beaded curtain into the back room.
+nouns:
+  cases: >-
+    The glass display cases hold a magician's arsenal: Svengali decks, stripper
+    decks, marked cards, trick coins that bend and bite, Chinese linking rings
+    in three sizes, cups-and-balls sets in brass and chrome, thumb tips, flash
+    paper, appearing canes, and a sign reading "NO REFUNDS ON REVEALED SECRETS."
+  cabinet: >-
+    A full-sized magic cabinet painted in red and gold, with six swords
+    thrust through it at various angles. A small sign says "PLEASE DO NOT
+    ENTER THE CABINET. Seriously. Last guy is still in there." You hear
+    a faint knocking from inside.
+  masks: >-
+    An entire wall of masks and disguises -- rubber Nixon faces, Groucho
+    Marx glasses with attached nose and mustache, full gorilla heads, alien
+    faces with bulging eyes, a very convincing nun's habit, and one extremely
+    realistic mask of a face that looks unsettlingly like your own.
+  hat: >-
+    A classic black top hat, silk-lined, sitting on the counter beside a pair
+    of immaculate white gloves. It looks empty, but you have the distinct
+    feeling that if you reached inside, your hand would keep going much
+    further down than it should.
+  photos: >-
+    Autographed headshots of magicians cover the back wall: Houdini (probably
+    fake), Doug Henning (definitely real, complete with rainbow), Amazing Larry
+    (signed in crayon), The Great Spaldini, and one photo of a rabbit in a
+    top hat signed simply "Mr. Whiskers - The REAL Star."
+  chicken: >-
+    A rubber chicken hangs from a hook near the register. It is yellow, floppy,
+    and has a facial expression that suggests it has seen things. Squeezing it
+    would probably produce a noise that science cannot explain.
+idlemessages:
+- Something knocks from inside the magic cabinet. Three times. Then silence.
+- A deck of cards on the display case riffles itself. You look again. It's still.
+- The top hat on the counter shifts slightly, as if something inside is getting comfortable.
+- A rubber chicken falls off its hook, bounces twice, and somehow ends up back on the hook.
+- The beaded curtain to the back room sways though no one passed through it.
+- You catch a whiff of flash paper and greasepaint.

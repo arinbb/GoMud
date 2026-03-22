@@ -1,0 +1,25 @@
+mobid: 72
+zone: peewees_big_adventure
+hostile: false
+maxwander: 0
+angrycommands: []
+idlecommands:
+  - "say On this very night, ten years ago..."
+  - "emote stares into her coffee with hollow eyes."
+  - "say ...along this very stretch of road..."
+  - "emote 's face flickers like bad reception."
+  - ''
+  - ''
+  - ''
+activitylevel: 15
+character:
+  name: Large Marge
+  description: >-
+    A heavyset woman trucker with a weathered face and distant eyes. She
+    sits at the counter nursing a coffee, her trucker cap pulled low.
+    Something about her seems not quite right. The light passes through
+    her slightly, and her coffee never seems to get any emptier no matter
+    how many sips she takes. When she speaks, her voice has a hollow
+    quality, as though it is coming from very far away.
+  raceid: 27
+  level: 15

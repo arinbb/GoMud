@@ -1,0 +1,44 @@
+roomid: 812
+zone: Peewees Big Adventure
+title: The Drive-In Theater
+description: >-
+  A classic outdoor drive-in theater under a canopy of stars. Rows of
+  <ansi fg="itemname">cars</ansi> are parked on the gentle slope facing a massive
+  white <ansi fg="itemname">screen</ansi> that towers against the night sky. Each
+  parking spot has a metal <ansi fg="itemname">speaker</ansi> on a post that you
+  can hang on your car window. Tonight is the premiere of the Pee-wee Herman
+  movie -- the story of his big adventure, now immortalized on film. The screen
+  glows with the opening credits. Pee-wee is here, sitting on the hood of a car,
+  his beloved bicycle parked beside him at last. There is a feeling of joyful
+  completion in the warm night air. The backlot is <ansi fg="exit">west</ansi>.
+mapsymbol: "*"
+maplegend: Drive-In Theater
+biome: land
+exits:
+  west:
+    roomid: 811
+nouns:
+  screen: >-
+    The drive-in screen is four stories tall and glowing with projected
+    light. The movie playing is "Pee-wee's Big Adventure" -- a
+    dramatization starring James Brolin as P.W. Herman, secret agent and
+    action hero. It bears very little resemblance to what actually happened,
+    but Pee-wee does not seem to mind. He has his bike back, and that is
+    all that matters.
+  cars: >-
+    Rows of cars are parked in neat lines on the gravel lot -- station
+    wagons, convertibles, pickup trucks, a VW Bug. People sit on hoods
+    and in truck beds with popcorn and blankets. Kids in pajamas peer
+    through back windows. It is a perfect American evening.
+  speaker: >-
+    A metal speaker on a post, the kind you unhook and hang on your car
+    window. It is slightly tinny and crackly, but that is part of the
+    charm. The movie's soundtrack plays through it -- triumphant music
+    swelling as the hero (supposedly Pee-wee) saves the day. Again.
+idlemessages:
+- The drive-in screen flickers with an action sequence. James Brolin does something heroic and implausible.
+- Someone in the next car over passes a bucket of popcorn. Buttery, salty perfection.
+- Crickets sing in the scrubby field beyond the parking lot, harmonizing with the movie soundtrack.
+- A kid in a station wagon presses their face against the window, watching the movie with enormous eyes.
+- The warm night air smells of popcorn, car exhaust, and freshly mown grass.
+- Pee-wee's bicycle gleams in the reflected light from the movie screen, as beautiful as the day it was stolen.

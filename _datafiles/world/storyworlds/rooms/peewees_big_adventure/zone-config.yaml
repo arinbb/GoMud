@@ -1,0 +1,13 @@
+name: Peewees Big Adventure
+roomid: 800
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: city
+idlemessages:
+- The world feels slightly too bright, slightly too colorful, like a Saturday morning cartoon come to life.
+- Somewhere in the distance, a bicycle bell rings with improbable cheerfulness.
+- A faint whiff of breakfast cereal and rubber cement drifts by on the breeze.
+- Everything here has that peculiar Pee-wee logic where the absurd is perfectly normal.
+- You get the distinct feeling that every object in this world has a secret purpose.
+- A chain reaction of small, delightful sounds echoes from somewhere nearby -- clicks, whirs, and a tiny bell.

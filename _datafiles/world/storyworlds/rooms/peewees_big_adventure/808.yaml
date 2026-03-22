@@ -1,0 +1,47 @@
+roomid: 808
+zone: Peewees Big Adventure
+title: The Biker Bar
+description: >-
+  You push through a heavy wooden door into a dark, loud roadhouse thick with
+  cigarette smoke and menace. <ansi fg="itemname">Motorcycles</ansi> -- dozens
+  of them, all chrome and black leather -- are parked in a row outside the
+  windows. Inside, a scratched-up <ansi fg="itemname">pool table</ansi> sits
+  under a low-hanging lamp, and a long wooden <ansi fg="itemname">bar</ansi>
+  is lined with the largest, meanest-looking bikers you have ever seen. These
+  are Satan's Helpers, and they do not look happy to see you. The neon signs
+  behind the bar advertise beers you've never heard of. A jukebox in the corner
+  has "Tequila" on it. The exit leads <ansi fg="exit">north</ansi> and
+  a side door leads <ansi fg="exit">east</ansi>.
+mapsymbol: X
+maplegend: Biker Bar
+biome: house
+exits:
+  north:
+    roomid: 807
+  east:
+    roomid: 809
+nouns:
+  motorcycles: >-
+    A line of gleaming Harley-Davidsons, each one customized and chrome-plated
+    to within an inch of its life. Skull emblems, flame paint jobs, leather
+    saddlebags with iron crosses, ape-hanger handlebars. One of them has a
+    bumper sticker that reads "IF YOU CAN READ THIS THE BIKER FELL OFF."
+    You probably should not touch any of them.
+  pool: >-
+    The pool table has seen better decades. The felt is torn in two places,
+    burn marks dot the rails, and someone has carved their initials into the
+    wood with a knife. A cue stick leans against the wall with its tip
+    missing. Despite all this, an intense game is in progress.
+  bar: >-
+    The bar is a slab of dark wood scarred with knife marks, cigarette
+    burns, and what might be axe marks. Behind it, a mirror reflects
+    bottles of whiskey, tequila, and something in an unlabeled jar that
+    glows faintly green. The bartender is the size of a refrigerator and
+    has roughly the same personality.
+idlemessages:
+- A biker cracks his knuckles one at a time. Each one sounds like a small firecracker.
+- The pool balls crack together with a sharp report. Someone curses.
+- The jukebox sits silent and waiting. It has opinions about what should be played next.
+- Cigarette smoke drifts through the neon beer signs, creating halos of colored light.
+- A leather-clad arm reaches across the bar for a beer. The tattoo on it reads "BORN TO LOSE."
+- The floorboards creak ominously under the weight of very large men in very heavy boots.

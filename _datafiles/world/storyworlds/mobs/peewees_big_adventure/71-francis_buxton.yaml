@@ -1,0 +1,25 @@
+mobid: 71
+zone: peewees_big_adventure
+hostile: false
+maxwander: 0
+angrycommands:
+  - "say I'll tell my father!"
+  - "emote stamps his foot like a petulant child."
+idlecommands:
+  - "say I want that bike! TODAY!"
+  - "emote pouts and stamps his foot."
+  - "say I'll give you a million dollars for it!"
+  - ''
+  - ''
+activitylevel: 20
+character:
+  name: Francis Buxton
+  description: >-
+    A pudgy, spoiled rich man-child in expensive clothes that somehow still
+    look rumpled. His face is set in a permanent pout, lower lip jutting
+    out with practiced entitlement. He has the air of someone who has never
+    been told no in his entire life and simply cannot fathom the concept.
+    A gold watch dangles from his wrist and his shoes cost more than most
+    people's cars.
+  raceid: 1
+  level: 8

@@ -1,0 +1,14 @@
+itemid: 130
+name: miniature red bicycle
+namesimple: bicycle
+displayname: a tiny <ansi fg="itemname">miniature red bicycle</ansi>
+description: >-
+  A tiny perfect replica of Pee-wee's beloved red bicycle, complete with
+  working horn, white streamers on the handlebars, and a little basket
+  on the front. Every detail is exact, right down to the chrome fenders
+  and the banana seat. When you squeeze the handlebars, the horn actually
+  honks. A souvenir from the world of Pee-wee's Big Adventure.
+type: object
+subtype: usable
+uses: 0
+value: 1

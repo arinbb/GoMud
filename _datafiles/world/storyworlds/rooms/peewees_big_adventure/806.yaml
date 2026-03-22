@@ -1,0 +1,59 @@
+roomid: 806
+zone: Peewees Big Adventure
+title: Cabazon Dinosaurs
+description: >-
+  Two enormous concrete dinosaurs tower over the desert landscape beside the
+  highway, absurd and magnificent. <ansi fg="itemname">Mr. Rex</ansi>, a massive
+  Tyrannosaurus Rex, stands sixty-five feet tall with tiny useless arms and a
+  permanent snarl. <ansi fg="itemname">Dinny</ansi>, a hundred-and-fifty-foot
+  Brontosaurus, is so large you can walk inside through a door in her belly to
+  reach the <ansi fg="itemname">gift shop</ansi>. The desert sun beats down on
+  cracked concrete and bleached asphalt. A few dusty cars are parked in the lot.
+  The highway leads <ansi fg="exit">north</ansi> back to the truck stop and
+  continues <ansi fg="exit">south</ansi> toward Texas.
+mapsymbol: "!"
+maplegend: Cabazon Dinosaurs
+biome: land
+exits:
+  north:
+    roomid: 805
+  south:
+    roomid: 807
+nouns:
+  rex: >-
+    Mr. Rex is a towering T-Rex made of concrete and steel, painted a faded
+    greenish-gray. His mouth is open in a permanent roar, showing rows of
+    blunt concrete teeth. His little arms stick out uselessly. There are
+    stairs inside leading up to a viewing platform in his head, but they
+    look like they might not meet current safety codes. He has been standing
+    here since 1975, roaring at traffic.
+  dinny: >-
+    Dinny the Brontosaurus is ENORMOUS -- one hundred and fifty feet long,
+    her concrete body curving up to a small smiling head on a long neck.
+    Her belly has been hollowed out and fitted with a door, turning her
+    interior into the world's most unusual gift shop. She is painted a
+    cheerful green that has faded to sage in the desert sun.
+  giftshop: >-
+    Inside Dinny's belly, a cramped gift shop sells dinosaur figurines,
+    postcards of the Cabazon Dinosaurs, "I SURVIVED THE DESERT" t-shirts,
+    turquoise jewelry of questionable authenticity, and small bags of
+    polished rocks. A bored-looking attendant sits behind the register
+    reading a magazine.
+idlemessages:
+- The desert wind whistles through Mr. Rex's open mouth, producing a low moan.
+- Heat shimmers rise from the parking lot, making Dinny's legs ripple like a mirage.
+- A tourist snaps a photo standing in front of Mr. Rex with their arms stuck out, doing the tiny arms pose.
+- The gift shop door bangs open and shut in the wind. Nobody goes in or out.
+- A lizard suns itself on Dinny's concrete toe, utterly unimpressed by the giant fake reptile above it.
+- Somewhere inside Dinny, the gift shop radio plays a tinny country song.
+spawninfo:
+- mobid: 73
+  message: Simone steps out of the gift shop, shielding her eyes from the sun.
+  idlecommands:
+  - say I'm just biding my time until I can get to Paris. The real Paris.
+  - ""
+  - emote gazes wistfully at the horizon, dreaming of somewhere far away.
+  - say Everyone I know has a big BUT. What's your big but?
+  - ""
+  - emote brushes desert dust off the gift shop counter with a weary sigh.
+  - ""

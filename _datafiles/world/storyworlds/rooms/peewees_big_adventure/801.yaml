@@ -1,0 +1,50 @@
+roomid: 801
+zone: Peewees Big Adventure
+title: Chuck's Bike-O-Rama
+description: >-
+  A cheerful bicycle shop packed wall to wall with <ansi fg="itemname">bikes</ansi>
+  of every conceivable type -- ten-speeds, BMX racers, unicycles, tandems, penny
+  farthings, and one bike with an impossibly tall seat. Wheels hang from the
+  ceiling like a chrome mobile. A glass <ansi fg="itemname">counter</ansi> near the
+  register displays cycling accessories, and a workbench in back is littered with
+  <ansi fg="itemname">tools</ansi>, inner tubes, and grease rags. The air smells
+  of rubber and chain oil. Exits lead <ansi fg="exit">west</ansi> to Pee-wee's
+  neighborhood, <ansi fg="exit">east</ansi> toward the rich part of town, and
+  <ansi fg="exit">south</ansi> to a narrow alley. Through the front windows
+  you can see an <ansi fg="exit">outdoor mall</ansi> with bike racks and storefronts.
+mapsymbol: B
+maplegend: Bike-O-Rama
+biome: city
+exits:
+  west:
+    roomid: 800
+  east:
+    roomid: 802
+  north:
+    roomid: 813
+    exitmessage: You step out the front door into the sunny outdoor mall.
+  south:
+    roomid: 803
+nouns:
+  bikes: >-
+    So many bikes. A gleaming red Schwinn, a mountain bike caked with mud,
+    a tandem built for two (or possibly three), racing bikes with drop
+    handlebars, a child's bike with training wheels, and one magnificent
+    custom bike with streamers, a horn, and playing cards in the spokes.
+    None of them are Pee-wee's bike, though.
+  tools: >-
+    The workbench holds tire levers, spoke wrenches, chain breakers, a
+    truing stand, several cans of lubricant, a rubber mallet, and a
+    mysterious device that might be for straightening handlebars or might
+    be a medieval torture instrument.
+  counter: >-
+    The glass counter displays bells, horns, reflectors, water bottles,
+    cycling gloves, and a framed photo of Chuck shaking hands with someone
+    who might be Greg LeMond. A small sign reads "IF WE DON'T HAVE IT, YOU
+    DON'T NEED IT."
+idlemessages:
+- A bicycle wheel hanging from the ceiling spins lazily in the draft from the door.
+- The smell of rubber tires and chain grease is oddly comforting.
+- Someone has left a half-eaten sandwich on the workbench next to an open tube of rubber cement.
+- A bell on one of the display bikes rings softly as a truck rumbles past outside.
+- The fluorescent lights buzz and flicker, casting everything in a slightly greenish glow.

@@ -1,0 +1,47 @@
+roomid: 804
+zone: Peewees Big Adventure
+title: The Lonely Highway
+description: >-
+  A dark two-lane highway stretches into the infinite American night. The
+  <ansi fg="itemname">road</ansi> is cracked and faded, the yellow center line
+  barely visible. Sparse desert scrub lines both shoulders, and the occasional
+  pair of headlights sweeps past with a doppler whoosh. The <ansi fg="itemname">sky</ansi>
+  overhead is vast and full of stars, the Milky Way a pale smear across the
+  darkness. Weathered <ansi fg="itemname">signs</ansi> advertise things that
+  no longer exist -- motels that closed decades ago, diners that burned down,
+  attractions that time forgot. This is the kind of road where you might accept
+  a ride from anyone. Even a ghost. The highway runs <ansi fg="exit">west</ansi>
+  back toward town and <ansi fg="exit">east</ansi> into the unknown.
+mapsymbol: "~"
+maplegend: Highway
+biome: road
+exits:
+  west:
+    roomid: 803
+  east:
+    roomid: 805
+nouns:
+  road: >-
+    The asphalt is old and weathered, cracked like dry skin. Rumble strips
+    vibrate under your feet near the shoulder. The road seems to go on
+    forever in both directions, vanishing into darkness at the edge of your
+    vision. You can feel the residual heat of the day radiating up from the
+    pavement.
+  sky: >-
+    Without any city light pollution, the sky is an overwhelming dome of
+    stars. The Milky Way arcs overhead like a river of light. A shooting
+    star streaks across the darkness. Somewhere up there, a satellite blinks
+    its slow, patient orbit.
+  signs: >-
+    Faded highway signs tick past like mile markers of forgotten America.
+    "LAST GAS 47 MILES." "DESERT DAN'S REPTILE RANCH - NEXT EXIT." "MOTEL
+    CALIFORNIA - VACANCY" with most of the letters missing. "LARGE MARGE
+    SENT ME" has been scratched into one sign in what looks like fingernail
+    marks.
+idlemessages:
+- Headlights appear in the distance, grow blinding, then sweep past with a rush of wind and diesel.
+- The desert is eerily silent between passing trucks. You can hear your own heartbeat.
+- A tumbleweed rolls across the highway with quiet, papery rustling.
+- Something howls in the desert -- a coyote, probably. Probably.
+- The road shimmers with phantom heat mirages even in the darkness.
+- You hear the low rumble of a big rig approaching from somewhere behind you.

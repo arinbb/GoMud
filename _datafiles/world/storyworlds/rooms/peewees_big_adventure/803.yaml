@@ -1,0 +1,54 @@
+roomid: 803
+zone: Peewees Big Adventure
+title: Madame Ruby's Fortune Parlor
+description: >-
+  You push through a curtain of clinking glass beads into a dim, heavily draped
+  room thick with <ansi fg="itemname">incense</ansi> smoke. Madame Ruby's parlor
+  is crammed with arcane paraphernalia -- tarot cards fanned across a velvet
+  cloth, star charts pinned to the walls, jars of mysterious herbs, and a human
+  skull that is almost certainly plastic. At the center of it all, a large
+  <ansi fg="itemname">crystal ball</ansi> glows with an eerie inner light atop
+  a table draped in dark purple silk. Heavy <ansi fg="itemname">curtains</ansi>
+  block every window. The exit leads <ansi fg="exit">north</ansi> back to the
+  bike shop, and a back door leads <ansi fg="exit">east</ansi> to the highway.
+mapsymbol: M
+maplegend: Fortune Parlor
+biome: house
+exits:
+  north:
+    roomid: 801
+  east:
+    roomid: 804
+nouns:
+  crystal: >-
+    The crystal ball pulses with a faint inner light, swirling with what
+    might be fog or might be something more supernatural. If you stare at
+    it long enough, you can almost see shapes forming -- a bicycle, a long
+    road, a giant dinosaur. Madame Ruby says the ball knows where Pee-wee's
+    bike is. The Alamo, she says. The basement of the Alamo.
+  curtains: >-
+    Heavy velvet curtains in deep purple and midnight blue cover every window
+    and most of the walls. They smell of patchouli and old cigarette smoke.
+    Behind one curtain you can see a small kitchenette with a microwave and
+    a cat food bowl.
+  incense: >-
+    Three sticks of incense smolder in a brass holder shaped like an elephant.
+    The smoke curls upward in lazy spirals, filling the room with a heady
+    mixture of sandalwood, nag champa, and what might be vanilla air freshener.
+idlemessages:
+- The crystal ball flickers, and for a moment you think you see a bicycle spinning in its depths.
+- Incense smoke curls into shapes that almost look like letters before dispersing.
+- A cat you hadn't noticed slinks between the curtains and disappears.
+- The tarot cards on the table seem to have rearranged themselves when you weren't looking.
+- A draft from somewhere makes the glass bead curtain click and chatter like tiny teeth.
+spawninfo:
+- mobid: 74
+  message: Madame Ruby sweeps in from behind a curtain, her many bracelets jangling.
+  idlecommands:
+  - say I see your future... and it involves a very long trip.
+  - ""
+  - emote gazes into the crystal ball, her eyes going wide.
+  - say The spirits are restless today. Very restless.
+  - ""
+  - emote waves her ring-covered hands over the crystal ball in slow circles.
+  - ""

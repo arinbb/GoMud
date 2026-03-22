@@ -1,0 +1,14 @@
+itemid: 108
+name: Pee-wee's Big Adventure film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Pee-wee's Big Adventure</ansi>
+description: >-
+  A film reel in a battered canister with "PEE-WEE'S BIG ADVENTURE" written
+  in crayon on the side in big, childish letters. The canister is decorated
+  with stickers of bicycles, dinosaurs, and stars. It rattles when you shake
+  it, and faintly, impossibly, you can hear Danny Elfman's score playing
+  from inside.
+type: object
+subtype: usable
+uses: 0
+value: 0

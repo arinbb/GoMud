@@ -1,0 +1,72 @@
+roomid: 815
+zone: Peewees Big Adventure
+title: The Props Room
+description: >-
+  The back room of the magic shop is a treasure trove of theatrical props and
+  stage equipment. A <ansi fg="itemname">ventriloquist dummy</ansi> sits in a
+  chair, staring at you with glassy eyes. Racks of <ansi fg="itemname">costumes</ansi>
+  hang along one wall -- a gorilla suit, a nun's habit, a matador's outfit,
+  a space suit, and what appears to be a full Godzilla costume. A shelf holds
+  <ansi fg="itemname">trick props</ansi>: a bouquet of flowers that squirts water,
+  a cane that collapses, a box of flash powder, and a fake hand on a spring.
+  In the corner, a <ansi fg="itemname">mirror</ansi> leans against the wall, but
+  your reflection seems to be wearing a different outfit than you are. A dusty
+  <ansi fg="itemname">trunk</ansi> sits beneath a bare lightbulb. The beaded
+  <parameter name="content">roomid: 815
+zone: Peewees Big Adventure
+title: The Props Room
+description: >-
+  The back room of the magic shop is a treasure trove of theatrical props and
+  stage equipment. A <ansi fg="itemname">ventriloquist dummy</ansi> sits in a
+  chair, staring at you with glassy eyes. Racks of <ansi fg="itemname">costumes</ansi>
+  hang along one wall -- a gorilla suit, a nun's habit, a matador's outfit,
+  a space suit, and what appears to be a full Godzilla costume. A shelf holds
+  <ansi fg="itemname">trick props</ansi>: a bouquet of flowers that squirts water,
+  a cane that collapses, a box of flash powder, and a fake hand on a spring.
+  In the corner, a <ansi fg="itemname">mirror</ansi> leans against the wall, but
+  your reflection seems to be wearing a different outfit than you are. A dusty
+  <ansi fg="itemname">trunk</ansi> sits beneath a bare lightbulb. The beaded
+  curtain to the <ansi fg="exit">shop</ansi> sways gently behind you.
+mapsymbol: P
+maplegend: Props Room
+biome: house
+exits:
+  shop:
+    roomid: 814
+    exitmessage: You push back through the beaded curtain into the magic shop.
+nouns:
+  dummy: >-
+    A wooden ventriloquist dummy in a tiny tuxedo, propped in a folding chair.
+    Its painted eyes follow you around the room. Its jaw hangs slightly open
+    as if about to say something. When you look away and look back, you could
+    swear it moved. It did not move. It definitely did not move.
+  costumes: >-
+    A rack of theatrical costumes: a full gorilla suit with a surprisingly
+    realistic head, a nun's habit complete with wimple, a matador's outfit
+    with sequined jacket, a silver space suit with a cracked fishbowl helmet,
+    a Godzilla costume with foam-rubber spikes, and a hot-dog suit that
+    someone appears to have actually worn in public.
+  props: >-
+    The trick props shelf is a prankster's paradise: a bouquet of plastic
+    flowers with a hidden water reservoir, a silver-tipped cane that
+    telescopes into nothing, a box of flash powder with a warning label
+    that just says "WHOOSH," a spring-loaded fake hand, chattering teeth
+    that walk across the table, and a can labeled "PEANUTS" that definitely
+    does not contain peanuts.
+  mirror: >-
+    A tall mirror in a gilded frame. Your reflection stares back at you,
+    but something is wrong -- the reflection is wearing a top hat and cape
+    that you definitely do not have on. As you watch, your reflection
+    winks at you. You did not wink.
+  trunk: >-
+    A battered steamer trunk with brass fittings and old travel stickers
+    from places like "TRANSYLVANIA" and "THE BERMUDA TRIANGLE." It is
+    padlocked shut. Something inside shifts when you lean close. Probably
+    just the settling of old props. Probably.
+idlemessages:
+- The ventriloquist dummy's head turns slightly. You were definitely not looking at it when it moved.
+- The chattering teeth on the props shelf suddenly activate, walking to the edge and falling off. They chatter angrily on the floor.
+- Your reflection in the mirror adjusts a top hat you are not wearing.
+- Something inside the locked trunk thumps once. Then twice. Then is still.
+- The gorilla suit on the costume rack sways gently, as if breathing.
+- A puff of flash powder goes off on its own, leaving a small cloud of smoke and the smell of sulfur.

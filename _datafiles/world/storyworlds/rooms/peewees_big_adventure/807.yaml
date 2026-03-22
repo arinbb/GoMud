@@ -1,0 +1,61 @@
+roomid: 807
+zone: Peewees Big Adventure
+title: The Alamo
+description: >-
+  The Alamo rises before you, its famous limestone facade glowing pale gold in
+  the Texas sun. The old Spanish mission is smaller than you imagined but somehow
+  more impressive -- thick <ansi fg="itemname">walls</ansi> pocked with bullet
+  holes, a weathered wooden door, and that iconic curved parapet you've seen in
+  every history textbook. A dusty <ansi fg="itemname">courtyard</ansi> stretches
+  behind the main building, shaded by gnarled live oak trees. Tourists mill
+  about, snapping photos and buying coonskin caps from vendors. You can't shake
+  the feeling that you should be looking for a <ansi fg="itemname">basement</ansi>.
+  The road leads <ansi fg="exit">north</ansi> back through the desert and
+  continues <ansi fg="exit">south</ansi> deeper into Texas.
+mapsymbol: A
+maplegend: The Alamo
+biome: city
+exits:
+  north:
+    roomid: 806
+  south:
+    roomid: 808
+nouns:
+  walls: >-
+    The limestone walls of the Alamo are three feet thick and scarred with
+    the marks of battle. You can run your fingers over actual bullet holes
+    from 1836. The stone is warm from the sun and rough under your hand.
+    There are definitely no secret passages in these walls. Definitely no
+    basement entrance hidden behind them. Definitely not.
+  courtyard: >-
+    The courtyard is a peaceful square of packed earth and scattered gravel
+    shaded by ancient live oaks draped with Spanish moss. A few wooden
+    benches line the walls. It is hard to believe this tranquil spot was
+    once the site of one of the most famous battles in American history.
+    There is no trapdoor in the courtyard. You checked.
+  basement: >-
+    You look around frantically for any sign of a basement -- a door, a
+    hatch, a staircase going down, ANYTHING. There's nothing. You check
+    behind displays, under ropes, around corners. A tour guide notices
+    your desperate searching and shakes her head slowly. "There's no
+    basement at the Alamo," she says, with the weariness of someone who
+    has said this many, many times before.
+idlemessages:
+- A tour group shuffles past, the guide reciting dates and casualty figures in a practiced monotone.
+- A child in a coonskin cap aims a toy rifle at the parapet and says "POW POW POW."
+- The Texas sun beats down mercilessly. Someone's ice cream cone is losing the battle against physics.
+- A tourist asks a guard where the basement is. The guard's eye twitches almost imperceptibly.
+- The Alamo gift shop plays "The Yellow Rose of Texas" on an endless loop.
+- You could swear you hear Davy Crockett's ghost sigh somewhere inside the mission walls.
+spawninfo:
+- mobid: 75
+  message: Tina the tour guide approaches with a practiced smile and a laminated badge.
+  idlecommands:
+  - say The Alamo was originally known as Mission San Antonio de Valero, founded in 1718.
+  - ""
+  - emote adjusts her official Alamo tour guide badge with visible pride.
+  - say Please do not touch the walls. They are over two hundred years old.
+  - ""
+  - say No, there is no basement. I cannot stress this enough.
+  - ""
+  - emote herds a group of tourists away from a restricted area with polite determination.

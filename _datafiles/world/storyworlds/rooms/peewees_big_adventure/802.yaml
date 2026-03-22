@@ -1,0 +1,51 @@
+roomid: 802
+zone: Peewees Big Adventure
+title: Francis's Mansion
+description: >-
+  An outrageously opulent mansion dripping with new money. The foyer alone is
+  bigger than most houses, with a marble floor, a crystal chandelier the size of
+  a Volkswagen, and a grand staircase that curves up to a second floor landing.
+  Through arched windows you can see a kidney-shaped <ansi fg="itemname">pool</ansi>
+  in the back with a diving board and an inflatable swan. Expensive
+  <ansi fg="itemname">toys</ansi> are scattered everywhere -- radio-controlled
+  cars, a pinball machine, an arcade cabinet. A uniformed <ansi fg="itemname">butler</ansi>
+  stands at attention near the door. The exit leads <ansi fg="exit">west</ansi>
+  back to town.
+mapsymbol: F
+maplegend: Francis Mansion
+biome: house
+exits:
+  west:
+    roomid: 801
+nouns:
+  pool: >-
+    A sparkling kidney-shaped pool surrounded by Italian tile. An inflatable
+    swan, a floating bar, and three different pool noodles drift lazily on
+    the surface. A waterslide shaped like a dragon curls down from a second-
+    story balcony. It is aggressively luxurious.
+  butler: >-
+    The butler stands with perfect posture, white gloves folded behind his
+    back, expression betraying nothing. He has clearly seen things in this
+    household that no amount of money could make him discuss.
+  toys: >-
+    Francis has every expensive toy money can buy and none of the joy that
+    comes from earning them. A pinball machine with a cracked glass top, an
+    arcade cabinet someone has clearly kicked, radio-controlled cars with
+    missing wheels. Everything is top-of-the-line and slightly broken.
+idlemessages:
+- The chandelier tinkles faintly as someone stomps around upstairs.
+- The butler sighs almost imperceptibly, then resumes his perfect posture.
+- A radio-controlled car whirs to life, drives in a circle, and crashes into a wall.
+- Somewhere deeper in the mansion, something expensive-sounding breaks.
+- The inflatable swan in the pool rotates slowly, staring at you through the window with dead plastic eyes.
+spawninfo:
+- mobid: 71
+  message: Francis Buxton struts in, smirking like he owns the place. Which he does.
+  idlecommands:
+  - say I know you are, but what am I? Ha! Just kidding. I'm RICH.
+  - ""
+  - emote polishes a golden trophy that says "FRANCIS" on it.
+  - say I'll buy and sell you, Pee-wee!
+  - ""
+  - emote snaps his fingers at the butler for another glass of chocolate milk.
+  - ""

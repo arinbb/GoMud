@@ -1,0 +1,56 @@
+roomid: 813
+zone: Peewees Big Adventure
+title: Outdoor Mall
+description: >-
+  A sun-drenched open-air shopping plaza with pastel-colored storefronts and
+  striped awnings. A row of <ansi fg="itemname">bike racks</ansi> runs down the
+  center median, most of them occupied by colorful bikes locked with chains and
+  combination locks. Potted palm trees and wooden benches line the walkway.
+  <ansi fg="itemname">Skateboard kids</ansi> weave between pedestrians. A
+  <ansi fg="itemname">fountain</ansi> shaped like a bicycle wheel sprays water in
+  the center of the plaza. To the <ansi fg="exit">south</ansi>, Chuck's Bike-O-Rama
+  beckons with spinning wheels in its window. A purple storefront to the
+  <ansi fg="exit">east</ansi> advertises MARIO THE MAGICIAN in gold letters.
+  An <ansi fg="itemname">ice cream cart</ansi> is parked near the fountain.
+mapsymbol: M
+maplegend: Outdoor Mall
+biome: city
+exits:
+  south:
+    roomid: 801
+    exitmessage: You head back into Chuck's Bike-O-Rama.
+  east:
+    roomid: 814
+    exitmessage: You push through the purple door into Mario's Magic Shop.
+nouns:
+  racks: >-
+    A long row of chrome bike racks shaped like interlocking loops. At least
+    a dozen bikes are locked up here -- a pink Huffy with a banana seat, a
+    chrome Mongoose BMX, a rusty Schwinn with a basket, and several that
+    are just wheels and frames, the rest presumably stolen. One empty rack
+    has a small brass plaque that reads "RESERVED FOR PEE-WEE."
+  kids: >-
+    Three skateboard kids in neon shorts and backwards caps practice kickflips
+    near the fountain. One of them does a perfect ollie over a bench. Another
+    eats the concrete. The third films everything on a camcorder the size of
+    a shoebox.
+  fountain: >-
+    The fountain is shaped like a giant bicycle wheel laid flat, with water
+    jets sprouting from each spoke. Pennies and nickels glint at the bottom.
+    Someone has thrown a sneaker in there. The water smells faintly of chlorine
+    and wishes.
+  cart: >-
+    A cheerful ice cream cart with a striped umbrella and a hand-painted menu
+    board listing flavors like "Strawberry Surprise," "Chocolate Thunder," and
+    the suspicious "Mystery Flavor (DON'T ASK)." The vendor is nowhere to be
+    seen.
+  plaque: >-
+    A small brass plaque on one of the empty bike racks reads "RESERVED FOR
+    PEE-WEE." Below it, in tiny letters: "Seriously, DO NOT park here."
+idlemessages:
+- A skateboard kid wipes out near the fountain and bounces up shouting "I meant to do that!"
+- The bicycle-wheel fountain sends a rogue spray of water across the walkway.
+- Someone's bike alarm goes off at the racks, whooping twice before falling silent.
+- The ice cream cart's umbrella flaps in a warm breeze that smells of sunscreen and waffle cones.
+- A kid on a BMX bike does a wheelie the entire length of the plaza, weaving between pedestrians.
+- The brass plaque on Pee-wee's reserved bike rack catches the sunlight and glints.
