@@ -18,6 +18,14 @@ function onCommand_play(user, item, room) {
     return enterWorld(user, item, room);
 }
 
+function onCommand_watch(user, item, room) {
+    return enterWorld(user, item, room);
+}
+
+function onCommand_enter(user, item, room) {
+    return enterWorld(user, item, room);
+}
+
 function enterWorld(user, item, room) {
     SendUserMessage(user.UserId(), "");
     SendUserMessage(user.UserId(), "<ansi fg=\"green\">" + ENTER_MSG_SELF + "</ansi>");
