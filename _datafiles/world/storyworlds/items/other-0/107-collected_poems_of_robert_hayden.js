@@ -18,6 +18,10 @@ function onCommand_open(user, item, room) {
     return enterWorld(user, item, room);
 }
 
+function onCommand_enter(user, item, room) {
+    return enterWorld(user, item, room);
+}
+
 function enterWorld(user, item, room) {
     SendUserMessage(user.UserId(), "");
     SendUserMessage(user.UserId(), "<ansi fg=\"6\">" + ENTER_MSG_SELF + "</ansi>");

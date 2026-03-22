@@ -18,6 +18,14 @@ function onCommand_enter(user, item, room) {
     return enterWorld(user, item, room);
 }
 
+function onCommand_touch(user, item, room) {
+    return enterWorld(user, item, room);
+}
+
+function onCommand_step(user, item, room) {
+    return enterWorld(user, item, room);
+}
+
 function enterWorld(user, item, room) {
     SendUserMessage(user.UserId(), "");
     SendUserMessage(user.UserId(), "<ansi fg=\"14\">" + ENTER_MSG_SELF + "</ansi>");
