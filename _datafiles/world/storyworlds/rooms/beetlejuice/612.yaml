@@ -53,6 +53,8 @@ nouns:
     Gardens" has a spread on mausoleum decorating. "Cosmopolidead" promises "Get
     That Deathly Glow in Just 30 Days." They're all at least forty years out of
     date.
+containers:
+  tickets: {}
 spawninfo:
 - mobid: 28
   message: Miss Argentina adjusts her faded sash and sighs from behind the reception counter.

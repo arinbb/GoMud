@@ -55,6 +55,9 @@ nouns:
     pile, the carousel horses, the coffin lid. They are Beetlejuice's only
     consistent companions, and they seem almost affectionate. A jar near the
     coffin contains even more of them, swirling in lazy patterns.
+containers:
+  flies: {}
+  junk: {}
 spawninfo:
 - itemid: 118
   container: flies

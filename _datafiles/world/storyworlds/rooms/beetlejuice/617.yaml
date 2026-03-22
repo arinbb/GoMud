@@ -51,6 +51,8 @@ nouns:
     can't see what she sees. The margins are filled with tiny sketches of
     beetles, moons, and a figure in a striped suit. The last line on the page
     reads: "My whole life is a dark room. One big dark room."
+containers:
+  camera: {}
 spawninfo:
 - mobid: 23
   message: Lydia Deetz emerges from behind the black curtains, camera in hand, studying you with dark eyes.

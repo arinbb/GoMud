@@ -36,6 +36,8 @@ nouns:
     The shelves are made of rich mahogany, each one hand-carved with scenes from
     famous stories. Running your fingers along the wood, you feel tiny figures
     of heroes, monsters, and ships beneath your touch.
+containers:
+  shelves: {}
 spawninfo:
 - itemid: 101
   container: shelves

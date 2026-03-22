@@ -37,6 +37,9 @@ nouns:
   supplies: >-
     A cardboard box of art supplies. Brushes, acrylic paints in various colors,
     turpentine, and -- sitting right on top -- a thick piece of white chalk.
+containers:
+  supplies: {}
+  workbench: {}
 spawninfo:
 - mobid: 20
   message: Adam Maitland looks up from his model town with a distracted wave.

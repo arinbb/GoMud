@@ -36,6 +36,8 @@ nouns:
     from a central sphere of crumpled aluminum foil. It sways gently even when
     there's no breeze. Delia has named it "The Unbearable Lightness of Being
     Delia." It occasionally drops a piece of foil on visitors' heads.
+containers:
+  sculptures: {}
 spawninfo:
 - mobid: 25
   message: Delia Deetz sweeps into the room, gesturing dramatically at her latest creation.

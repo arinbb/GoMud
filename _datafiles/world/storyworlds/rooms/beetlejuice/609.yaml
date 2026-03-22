@@ -51,6 +51,8 @@ nouns:
     rearranged themselves since you last looked. The woman is now facing a
     different direction. The man with the dog is closer to the bridge. The
     children are gone.
+containers:
+  buildings: {}
 spawninfo:
 - itemid: 115
   container: buildings

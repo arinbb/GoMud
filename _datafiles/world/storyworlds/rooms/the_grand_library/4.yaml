@@ -34,6 +34,8 @@ nouns:
     The art catalog describes available works by era and movement. Each entry
     includes the artist, title, medium, and a note about what world lies within
     the frame.
+containers:
+  wall: {}
 spawninfo:
 - itemid: 105
   container: wall

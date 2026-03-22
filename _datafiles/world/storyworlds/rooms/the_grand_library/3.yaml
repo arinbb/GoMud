@@ -36,6 +36,8 @@ nouns:
   curtains: >-
     Heavy burgundy velvet curtains frame the room, muffling sound and creating
     an intimate atmosphere. They smell faintly of popcorn and old celluloid.
+containers:
+  shelves: {}
 spawninfo:
 - itemid: 103
   container: shelves

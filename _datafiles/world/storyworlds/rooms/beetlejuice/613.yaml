@@ -44,6 +44,8 @@ nouns:
     A grey, featureless void that extends in all directions. No horizon, no sky,
     no ground. If you stare at it too long, you begin to feel that the nothing
     is staring back, taking notes, filing them in triplicate.
+containers:
+  desk: {}
 spawninfo:
 - mobid: 27
   message: Juno sits behind her desk, lighting a new cigarette from the butt of the old one.

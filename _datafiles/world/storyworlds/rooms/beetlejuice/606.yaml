@@ -37,6 +37,8 @@ nouns:
     A bowl of tropical fruit -- bananas, papayas, mangos. The bananas are
     perfectly ripe. Almost too perfectly. They seem to vibrate with a faint
     calypso rhythm.
+containers:
+  table: {}
 spawninfo:
 - itemid: 116
   container: table
