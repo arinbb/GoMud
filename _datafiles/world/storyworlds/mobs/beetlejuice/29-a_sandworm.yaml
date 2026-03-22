@@ -1,7 +1,7 @@
 mobid: 29
 zone: beetlejuice
 hostile: true
-maxwander: 2
+maxwander: 0
 angrycommands:
   - 'emote erupts from the sand with a deafening shriek!'
   - 'say *SCREEEEECH*'

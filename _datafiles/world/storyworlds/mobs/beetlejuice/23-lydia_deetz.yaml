@@ -1,7 +1,7 @@
 mobid: 23
 zone: beetlejuice
 hostile: false
-maxwander: 2
+maxwander: 1
 angrycommands: []
 idlecommands:
   - emote raises her camera and takes a photograph of something invisible.
