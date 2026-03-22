@@ -1,0 +1,54 @@
+roomid: 962
+zone: The Shining
+title: Boiler Room
+description: >-
+  The basement of the Overlook. Rough stone <ansi fg="itemname">walls</ansi>
+  close in around a massive iron <ansi fg="itemname">boiler</ansi> — the dark
+  mechanical heart of the hotel. Pipes snake in every direction, disappearing
+  into the ceiling and walls like arteries. Pressure <ansi fg="itemname">gauges</ansi>
+  twitch and climb, their needles creeping toward the red. The boiler groans
+  and ticks, a rhythm like a giant's pulse. Stacked against the walls are
+  <ansi fg="itemname">boxes</ansi> of old hotel records, and on a dusty table,
+  a <ansi fg="itemname">scrapbook</ansi> lies open. The air is hot and close,
+  thick with the smell of iron and oil. The boiler rumbles. The gauges climb.
+  Something down here has been building pressure for a very long time. The
+  only exit leads <ansi fg="exit">south</ansi>.
+mapsymbol: B
+maplegend: Boiler Room
+biome: dungeon
+exits:
+  south:
+    roomid: 960
+nouns:
+  boiler: >-
+    A massive cast-iron boiler, bristling with pipes, valves, and fittings.
+    It is the size of a small room. It radiates heat and makes a deep,
+    resonant groaning sound, like a living thing in pain. The pressure relief
+    valve is wired shut. Someone did this deliberately.
+  gauges: >-
+    A bank of pressure gauges mounted on the boiler's face. Most are in the
+    yellow zone, needles twitching with each pulse of the machine. Two have
+    crept into the red. The boiler needs to be bled, or it will keep
+    building. And building. And building.
+  scrapbook: >-
+    A leather-bound scrapbook of newspaper clippings about the Overlook
+    Hotel. Murders. Suicides. A mob execution. A child who vanished. A
+    caretaker who killed his family with an axe. Page after page of
+    darkness, pressed flat and preserved like dried flowers.
+  boxes: >-
+    Cardboard boxes filled with old hotel records. Guest books with names
+    from decades past. Financial ledgers. Staff photographs. In one box,
+    you find a photograph of a Fourth of July ball, 1921. You recognize
+    someone in the crowd.
+  walls: >-
+    Rough-cut stone, the original foundation of the hotel. The stones are
+    damp and dark with age. In places, the mortar has crumbled, and you can
+    see into the dark spaces between the walls, where things rustle and
+    shift.
+idlemessages:
+- The boiler groans and a pressure gauge needle jumps, ticking higher into the red.
+- 'Pipes clang overhead in a rhythm that sounds deliberate — a signal, a code, a heartbeat.'
+- 'The scrapbook pages flutter as if turned by an invisible hand, settling on a new article.'
+- Heat radiates from the boiler in waves, making the air shimmer like a desert mirage.
+- 'Something moves in the dark spaces between the foundation stones. Scratching, scrabbling.'
+- A valve hisses, releasing a thin jet of steam that screams like a voice before falling silent.

@@ -1,0 +1,18 @@
+questid: 50
+name: The Shining
+description: >-
+  Survive a winter at the Overlook Hotel. Explore its impossible corridors,
+  meet its ghosts, and uncover its dark history.
+reward:
+  experience: 6000
+  item_id: 135
+  playermessage: >-
+    You have survived the Overlook Hotel. As a memento, you receive a brass
+    room key on a green diamond-shaped fob. The number 237 gleams coldly
+    in the light.
+steps:
+- description: Enter the Overlook Hotel.
+- description: Discover Jack's manuscript in the Colorado Lounge.
+- description: Speak with Lloyd in the Gold Room.
+- description: Find the secret of Room 237.
+- description: Navigate the hedge maze to its heart.

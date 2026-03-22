@@ -1,0 +1,46 @@
+roomid: 957
+zone: The Shining
+title: Room 237
+description: >-
+  You should not be here. The door to Room 237 stands open behind you, and
+  beyond it lies a large hotel suite frozen in the decor of the 1970s. Avocado
+  green carpet, heavy drapes, dark wood furniture. A neatly made <ansi fg="itemname">bed</ansi>
+  with a mint on the pillow. The bathroom is visible through an open door — a
+  <ansi fg="itemname">tub</ansi> with a drawn shower <ansi fg="itemname">curtain</ansi>.
+  Something moves behind the curtain, slow and deliberate. The <ansi fg="itemname">mirror</ansi>
+  above the vanity reflects the room, but the reflection is fogged, as though
+  the bathroom were full of steam. It is not full of steam. The room smells of
+  perfume and decay, the two scents layered so precisely that you cannot tell
+  which is covering which. Time feels wrong here. The light through the windows
+  is always the same flat gray. The only exit leads <ansi fg="exit">south</ansi>.
+mapsymbol: '!'
+maplegend: Room 237
+biome: dungeon
+exits:
+  south:
+    roomid: 958
+nouns:
+  curtain: >-
+    The shower curtain is drawn across the bathtub. It is a faded floral
+    pattern, once cheerful, now sickly. Behind it, something shifts with a
+    wet, sliding sound. The curtain bulges slightly outward, as if pressed
+    from within.
+  tub: >-
+    A claw-foot bathtub, visible only as a dark shape behind the drawn
+    curtain. Water drips from the faucet in a slow, steady rhythm. The
+    water pooling around the drain has a greenish tint.
+  bed: >-
+    The bed is neatly made with crisp white sheets and a heavy green
+    bedspread. A chocolate mint sits on the pillow in a gold wrapper. The
+    sheets feel damp to the touch, though they look perfectly dry.
+  mirror: >-
+    The vanity mirror is fogged at the edges, though the air is not humid.
+    Your reflection is slightly delayed — it follows your movements a
+    fraction of a second late. In the fog at the edges, shapes seem to move.
+idlemessages:
+- 'The shower curtain shifts, pushed by something on the other side. The rings scrape along the rod.'
+- Water drips from the bathroom faucet in a rhythm that sounds almost like laughter.
+- 'The scent of perfume intensifies, thick and cloying, barely masking the rot beneath.'
+- Your reflection in the mirror moves when you do not. Just slightly. Just for a moment.
+- 'The bedspread is smooth and taut. You did not smooth it. It was rumpled a moment ago.'
+- 'A woman laughs softly from behind the shower curtain. The sound is young and old at once.'

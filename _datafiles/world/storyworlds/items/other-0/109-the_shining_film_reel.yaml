@@ -1,0 +1,14 @@
+itemid: 109
+name: The Shining film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">The Shining</ansi>
+description: >-
+  A heavy film reel in a frost-covered canister. "THE SHINING" is stamped
+  in cold metal letters on the lid. The canister is ice-cold to the touch
+  and beads of condensation form on its surface. If you hold it close, you
+  hear a distant sound — the rhythmic clatter of a child's Big Wheel on
+  carpet, then loud on wooden floor, then carpet again.
+type: object
+subtype: usable
+uses: 0
+value: 0

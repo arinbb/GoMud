@@ -1,0 +1,46 @@
+roomid: 950
+zone: The Shining
+title: Hotel Entrance
+description: >-
+  You stand before the <ansi fg="itemname">Overlook Hotel</ansi>, a massive
+  colonial edifice perched impossibly on the mountainside. Its white facade
+  stretches wide against a sky the color of bruised pewter. The <ansi fg="itemname">parking
+  lot</ansi> behind you is completely empty — not a single car, not a single
+  soul. Towering <ansi fg="itemname">mountains</ansi> rise on every side, their
+  peaks lost in low clouds. <ansi fg="itemname">Snow</ansi> has begun to settle
+  on the steps and railings. The hotel's massive wooden <ansi fg="itemname">doors</ansi>
+  stand open to the <ansi fg="exit">east</ansi>, waiting. To the northwest, a
+  wooden sign points toward the <ansi fg="exit">maze</ansi>.
+mapsymbol: E
+maplegend: Entrance
+biome: land
+exits:
+  east:
+    roomid: 951
+  maze:
+    roomid: 963
+    mapdirection: west
+nouns:
+  doors: >-
+    Massive double doors of dark wood, at least ten feet tall. The brass handles
+    are tarnished. They stand open, and the darkness beyond them seems to
+    breathe.
+  mountains: >-
+    The Rocky Mountains surround the hotel on all sides. The access road
+    switchbacks down the valley — but the snow has already closed it. You are
+    not leaving this way.
+  parking: >-
+    A vast empty parking lot. The asphalt is cracked and frost-heaved. There
+    are no cars. No tire tracks. The snow is filling in the emptiness with a
+    blank white nothing.
+  snow: >-
+    Fine, dry snow drifts down steadily. It gathers in the corners of the
+    steps, on the railings, in the crevices of the stonework. It is patient.
+    It has all winter.
+idlemessages:
+- The wind picks up, driving snow against your face in sharp little needles.
+- 'Somewhere inside the hotel, a door slams. The sound echoes across the empty parking lot.'
+- The mountains are silent. No birds. No traffic. No sound at all except the wind.
+- Snow accumulates on the steps, one flake at a time, erasing all evidence of passage.
+- The hotel windows stare down at you like dozens of blank, dark eyes.
+- 'A gust of wind carries something that sounds almost like a whisper: "Welcome."'

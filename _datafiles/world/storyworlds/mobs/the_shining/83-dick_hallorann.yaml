@@ -1,0 +1,22 @@
+mobid: 83
+zone: the_shining
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote hums a low melody while checking the pantry."
+  - "say Some places are like people. Some shine and some don't."
+  - "emote pours a fresh cup of coffee."
+  - ''
+  - ''
+  - ''
+activitylevel: 20
+character:
+  name: Dick Hallorann
+  description: >-
+    A large, warm-faced older man in a white chef's coat. He has kind,
+    knowing eyes and a deep, calm voice. He moves through the kitchen
+    with the ease of someone who belongs. There is something about him —
+    a sensitivity, an awareness of things unseen. He radiates safety in a
+    place that has none.
+  raceid: 1
+  level: 12

@@ -1,0 +1,64 @@
+roomid: 952
+zone: The Shining
+title: The Colorado Lounge
+description: >-
+  A vast writing room stretches before you, high beamed ceilings supported by
+  thick wooden <ansi fg="itemname">pillars</ansi>. Rows of tables and chairs
+  fill the space, all empty, all perfectly arranged. Near the center, a single
+  <ansi fg="itemname">desk</ansi> is occupied — a <ansi fg="itemname">typewriter</ansi>
+  sits upon it, surrounded by scattered <ansi fg="itemname">pages</ansi>. Hundreds
+  of pages. They cover the desk, the floor around it, drift against the legs of
+  nearby chairs. The clatter of typewriter keys echoes faintly, though no one
+  appears to be typing. Warm light filters through tall windows, but it does
+  nothing to dispel the chill. Exits lead <ansi fg="exit">south</ansi> to the
+  lobby, <ansi fg="exit">east</ansi> to the Gold Room, and <ansi fg="exit">north</ansi>
+  to the staff wing.
+mapsymbol: C
+maplegend: Colorado Lounge
+biome: house
+exits:
+  south:
+    roomid: 951
+  east:
+    roomid: 953
+  north:
+    roomid: 956
+nouns:
+  typewriter: >-
+    An Adler Universal typewriter, pale gray, with a fresh page loaded. The
+    keys are slightly warm to the touch. The page in the carriage reads, over
+    and over in different arrangements, the same sentence. All work and no
+    play makes Jack a dull boy.
+  pages: >-
+    Hundreds of pages, maybe thousands. You pick one up. "All work and no play
+    makes Jack a dull boy." You pick up another. The same. Another. The same
+    sentence, but formatted differently — centered, justified, in columns, as
+    poetry, as a screenplay. Every page. Every single page.
+  desk: >-
+    A heavy wooden desk, scarred with use. The typewriter sits in the center,
+    surrounded by a drift of typed pages. A cup of coffee sits beside it,
+    cold and untouched, a skin forming on its surface.
+  pillars: >-
+    Thick wooden pillars march down the length of the lounge, casting long
+    shadows in the window light. Someone has scratched something into one of
+    them, low down, where you would only see it if you were kneeling.
+spawninfo:
+- mobid: 80
+  message: Jack Torrance sits hunched over the typewriter, not looking up.
+  idlecommands:
+  - ""
+  - ""
+  - emote types furiously, the keys clattering like teeth.
+  - ""
+  - say I'm not going to hurt you. I'm just going to bash your brains in.
+  - ""
+  - emote stares at a blank page with hollow, unblinking eyes.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- The typewriter keys clatter briefly, then stop. No one is sitting at the desk.
+- A page slides off the desk and drifts to the floor, joining the hundreds already there.
+- 'The same sentence echoes in your mind, unbidden: all work and no play makes Jack a dull boy.'
+- Wind rattles the tall windows. Outside, snow falls and falls and falls.
+- The coffee cup on the desk is cold. It has always been cold.
+- 'One of the pages on the floor is different — no, you look again, and it says the same thing as all the rest.'

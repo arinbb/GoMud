@@ -1,0 +1,22 @@
+-
+  Supported:
+    "jack torrance": ["lloyd the bartender"]
+  Conversation:
+    - ["#1 say Lloyd. Lloyd, my man. Set 'em up."]
+    - ["#2 emote sets a glass of bourbon on the bar with practiced ease", "#2 say Good evening, Mr. Torrance. The usual?"]
+    - ["#1 say You read my mind, Lloyd. You always do."]
+    - ["#2 say The Overlook takes care of its own, sir. Always has."]
+    - ["#1 emote takes a long drink", "#1 say This hotel, Lloyd. It understands me. It GETS me. Not like Wendy. Not like the rest of them."]
+    - ["#2 emote nods sympathetically", "#2 say Women can be a terrible hindrance, sir. A terrible hindrance."]
+    - ["#1 say You said it, Lloyd. You said it."]
+-
+  Supported:
+    "jack torrance": ["lloyd the bartender"]
+  Conversation:
+    - ["#1 say You know, Lloyd, I have never been this happy. NEVER. The words are just pouring out of me."]
+    - ["#2 say I'm very glad to hear that, Mr. Torrance. The hotel is pleased."]
+    - ["#1 say Wendy doesn't understand. She NEVER understood. She keeps nagging, keeps INTERRUPTING."]
+    - ["#2 emote polishes a glass slowly", "#2 say Perhaps she needs a... talking to, sir. A firm talking to."]
+    - ["#1 emote stares into his empty glass for a long moment"]
+    - ["#1 say You know, Lloyd... maybe you're right. Maybe you're absolutely right."]
+    - ["#2 emote refills the glass without being asked", "#2 say The house always knows best, sir."]

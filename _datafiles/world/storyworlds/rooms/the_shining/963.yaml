@@ -1,0 +1,44 @@
+roomid: 963
+zone: The Shining
+title: Hedge Maze Entrance
+description: >-
+  A gap in the <ansi fg="itemname">hedges</ansi> opens into the Overlook's
+  famous hedge maze. Eight-foot walls of dense, dark green boxwood rise on
+  either side, trimmed with unnatural precision. A wooden <ansi fg="itemname">sign</ansi>
+  stands at the entrance, its letters painted in white. A thin layer of fresh
+  <ansi fg="itemname">snow</ansi> covers the gravel path, unmarked except for
+  a single set of small footprints — a child's — leading inward and not
+  coming back out. The wind moves through the hedges with a low, sustained
+  moan. From deep within the maze, you hear something — the wind, or
+  breathing. The <ansi fg="exit">east</ansi> exit leads back to the hotel. The
+  maze continues to the <ansi fg="exit">north</ansi>.
+mapsymbol: '['
+maplegend: Maze Entrance
+biome: land
+exits:
+  east:
+    roomid: 950
+  north:
+    roomid: 964
+nouns:
+  hedges: >-
+    Eight feet of dense, dark green boxwood, trimmed with razor precision.
+    Not a single branch is out of place. The hedges are so thick that you
+    cannot see through them, even when you press your face to the leaves.
+    They smell of green and cold and something faintly animal.
+  sign: >-
+    A wooden sign reading OVERLOOK HEDGE MAZE in crisp white letters. Below
+    the official text, someone has scratched a word into the wood with a
+    sharp object. The scratches read REDRUM.
+  snow: >-
+    A thin layer of fresh snow covers the ground, bright and clean. A single
+    set of small footprints leads into the maze — a child's sneakers, widely
+    spaced, as if running. The footprints lead in but do not come back out.
+    Your own footprints fill in behind you almost immediately.
+idlemessages:
+- The wind threads through the hedges with a low, sustained moan that sounds almost human.
+- 'Snow falls lightly, each flake vanishing into the white ground. The child''s footprints are already fading.'
+- The hedges shift in the wind, branches scraping against each other with a dry, clicking sound.
+- 'A bird calls from somewhere inside the maze — a single sharp note — then silence.'
+- The maze stretches ahead, its paths curving out of sight. You cannot see the center from here.
+- 'Your breath mists in the cold air. For a moment, you see a second cloud of breath beside your own.'

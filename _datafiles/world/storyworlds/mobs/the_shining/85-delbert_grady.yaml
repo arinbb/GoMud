@@ -1,0 +1,22 @@
+mobid: 85
+zone: the_shining
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote dabs at an invisible spot on his jacket with a white cloth."
+  - "say I beg your pardon, sir."
+  - "emote stands perfectly still, watching."
+  - ''
+  - ''
+  - ''
+  - ''
+activitylevel: 15
+character:
+  name: Delbert Grady
+  description: >-
+    A thin, prim man in a white waiter's jacket. He stands rigidly, his
+    expression controlled and cold. He speaks with an English accent and
+    impeccable diction. His hands are very clean. Too clean. He is the
+    Overlook's messenger, its voice, its will made flesh.
+  raceid: 27
+  level: 20

@@ -1,0 +1,60 @@
+roomid: 961
+zone: The Shining
+title: The Kitchen
+description: >-
+  A massive industrial kitchen stretches before you in gleaming stainless steel
+  and white tile. The <ansi fg="itemname">ovens</ansi> line one wall, industrial-sized,
+  some still radiating warmth. Endless <ansi fg="itemname">shelves</ansi> of canned
+  goods and dry goods fill the pantry area — enough to last a long, long winter.
+  A walk-in <ansi fg="itemname">freezer</ansi> dominates the far wall, its heavy
+  door visible through a frost-covered window. A pot of <ansi fg="itemname">coffee</ansi>
+  sits on a warmer, still hot, steam curling from its surface. Despite the
+  hotel being empty, the kitchen feels alive — warm, functional, the one room
+  in the Overlook that still serves the living. The smell of coffee and
+  something cooking fills the air. The only exit leads <ansi fg="exit">west</ansi>.
+mapsymbol: K
+maplegend: Kitchen
+biome: house
+exits:
+  west:
+    roomid: 956
+nouns:
+  freezer: >-
+    A massive walk-in freezer with a heavy insulated door. Through the small
+    frost-covered window, you can see shelves of frozen goods and hanging
+    sides of beef, swaying gently on their hooks. The latch is solid and
+    heavy — once inside, you would need someone on the outside to let you
+    out.
+  ovens: >-
+    Industrial-sized ovens and ranges, their surfaces scrubbed clean. Some
+    burners glow faintly with residual heat. A cast-iron pan sits on one
+    range, still warm, as if someone was cooking here minutes ago.
+  shelves: >-
+    Floor-to-ceiling shelving packed with provisions. Canned vegetables,
+    fruits, soups, meats. Bags of flour and sugar. Rice, pasta, dried beans.
+    Enough food for months. The labels are orderly and faced outward, the
+    work of a meticulous cook.
+  coffee: >-
+    A stainless steel coffee pot on a warming plate, steam rising from the
+    spout. The coffee is fresh and hot. Someone made this recently. But the
+    hotel has been empty for weeks. You pour a cup anyway. It is excellent.
+spawninfo:
+- mobid: 83
+  message: Dick Hallorann stands by the range, wiping his hands on a towel, smiling warmly.
+  idlecommands:
+  - say This place has a way of talkin' to you. You just gotta know how to listen.
+  - ""
+  - emote stirs a pot on the range, humming a low melody.
+  - ""
+  - say Some places are like people. Some shine and some don't.
+  - ""
+  - emote pours a fresh cup of coffee and sets it on the counter.
+  - ""
+  respawnrate: 4 real minutes
+idlemessages:
+- The coffee pot gurgles softly, filling the kitchen with its rich, warm aroma.
+- Steam rises from a pot on the range, though no one tends it. The contents bubble gently.
+- A hanging side of beef in the freezer sways on its hook, visible through the frosted window.
+- 'The kitchen is warm and bright, a pocket of comfort in the Overlook. It feels safe here. Almost.'
+- Canned goods on the shelves catch the fluorescent light, labels facing out in perfect rows.
+- 'A spoon in a drawer rattles briefly, as if stirred by an invisible hand.'

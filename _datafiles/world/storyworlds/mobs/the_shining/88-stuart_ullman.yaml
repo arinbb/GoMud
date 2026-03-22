@@ -1,0 +1,20 @@
+mobid: 88
+zone: the_shining
+hostile: false
+maxwander: 0
+idlecommands:
+  - "say The hotel has a long and fascinating history."
+  - "emote shuffles papers at the front desk."
+  - "say We had a caretaker once — Grady. Terrible business."
+  - ''
+  - ''
+activitylevel: 20
+character:
+  name: Stuart Ullman
+  description: >-
+    A compact, well-groomed man in a dark suit behind the front desk. He
+    has the officious air of a man who runs things and wants you to know
+    it. His smile is welcoming but his eyes are calculating. He mentions
+    the Grady incident a bit too casually.
+  raceid: 1
+  level: 8

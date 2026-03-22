@@ -1,0 +1,58 @@
+roomid: 954
+zone: The Shining
+title: The Red Bathroom
+description: >-
+  Every surface in this room is the color of blood. Red walls, red floor, red
+  ceiling, red <ansi fg="itemname">stalls</ansi>. The lighting is harsh and
+  fluorescent, bouncing off white <ansi fg="itemname">marble</ansi> countertops
+  and gleaming brass <ansi fg="itemname">sink</ansi> fixtures. A row of
+  <ansi fg="itemname">mirrors</ansi> lines one wall, reflecting the red back
+  infinitely — reflections within reflections, each one slightly more distorted
+  than the last. The air is thick and warm and smells of something floral
+  covering something else. Water runs somewhere. The faucets drip in a rhythm
+  that feels deliberate. This is where civilized men discuss uncivilized things.
+  The only exit leads <ansi fg="exit">north</ansi>.
+mapsymbol: R
+maplegend: Red Bathroom
+biome: house
+exits:
+  north:
+    roomid: 953
+nouns:
+  mirrors: >-
+    The mirrors reflect you back infinitely, each reflection receding into
+    a crimson tunnel. But the reflections are not quite synchronized with your
+    movements. The one furthest back seems to be doing something different
+    with its hands.
+  stalls: >-
+    Red doors, red walls, red everything. The stalls are immaculate, as if
+    just cleaned. One door stands slightly ajar. There is nothing inside.
+    You are certain there is nothing inside.
+  sink: >-
+    Brass fixtures over white marble. Water drips steadily from one faucet.
+    The water is clear. You watch it for a moment, and it is clear. Then it
+    is slightly pink. Then it is clear again.
+  marble: >-
+    White marble countertops, veined with red. Or perhaps the veining is
+    gray, and the red light makes it look like something else. The marble
+    is cold to the touch and slightly damp.
+spawninfo:
+- mobid: 85
+  message: Delbert Grady stands in the corner, dabbing at his white jacket with a cloth.
+  idlecommands:
+  - say I beg your pardon, sir. Clumsy of me.
+  - ""
+  - emote dabs at a stain on his jacket that keeps reappearing.
+  - ""
+  - say I'm sorry to differ with you, sir, but you are the caretaker. You've always been the caretaker.
+  - ""
+  - emote smiles with perfect, terrible politeness.
+  - ""
+  respawnrate: 4 real minutes
+idlemessages:
+- Water drips from a faucet in a slow, metronomic rhythm that sounds almost like words.
+- The reflections in the mirrors seem to multiply, filling the red space with versions of you.
+- 'The floral scent intensifies briefly, then fades, leaving something metallic underneath.'
+- A stall door creaks open an inch, then settles closed again. There is no draft.
+- The fluorescent light flickers once, and in that split second of darkness, the room feels smaller.
+- Your reflection in the nearest mirror blinks. You did not blink.

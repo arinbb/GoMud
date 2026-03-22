@@ -1,0 +1,58 @@
+roomid: 960
+zone: The Shining
+title: Twins Corridor
+description: >-
+  A corridor identical to the guest corridor but shorter. The same hexagonal
+  carpet, the same flocked <ansi fg="itemname">wallpaper</ansi>, the same
+  buzzing fluorescent <ansi fg="itemname">lights</ansi>. But at the far end,
+  two <ansi fg="itemname">girls</ansi> stand side by side, holding hands. They
+  are identical. They wear pale blue dresses and white knee socks. Their hair
+  is dark and neatly parted. They are perfectly still. They are watching you.
+  They have always been watching you. The wallpaper behind them has a faint
+  floral pattern — the flowers are wilting, petals curling inward, as if
+  dying in their presence. Exits lead <ansi fg="exit">south</ansi> back to the
+  guest corridor and <ansi fg="exit">north</ansi> to the boiler room stairs.
+mapsymbol: W
+maplegend: Twins Corridor
+biome: house
+exits:
+  south:
+    roomid: 958
+  north:
+    roomid: 962
+nouns:
+  girls: >-
+    Two identical girls, perhaps eight years old, in pale blue dresses. They
+    stand at the end of the corridor holding hands, perfectly still, perfectly
+    symmetrical. Their faces are blank and pale. Their eyes are dark and
+    unblinking. They do not breathe. They do not move. They wait.
+  wallpaper: >-
+    A faint floral pattern of roses and vines, once cheerful. Near the girls,
+    the flowers have wilted — petals curled, leaves browning, vines
+    withering. The decay radiates outward from where they stand, as if their
+    presence is poison to growing things.
+  lights: >-
+    The fluorescent lights here flicker in perfect unison, creating a
+    disorienting strobe effect. In the flashes of darkness between the light,
+    the corridor seems to change — the carpet is different, the walls are
+    splashed with something, the girls are closer.
+spawninfo:
+- mobid: 86
+  message: The Grady Twins stand at the end of the corridor, holding hands, watching.
+  idlecommands:
+  - say Come and play with us.
+  - ""
+  - ""
+  - say Come and play with us, Danny. Forever and ever and ever.
+  - ""
+  - ""
+  - emote tilt their heads in unison, slowly, to the left.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- The twins stand motionless at the end of the corridor. They have not moved. You are sure they have not moved.
+- The fluorescent lights strobe in unison, and in the darkness between flashes, the corridor is different.
+- 'A child whispers from the end of the hall: "Forever and ever and ever."'
+- The flowers in the wallpaper pattern near the twins have wilted further since you last looked.
+- 'You blink, and the twins are two steps closer. You did not see them move.'
+- The air temperature drops noticeably near the end of the corridor. Your breath mists.

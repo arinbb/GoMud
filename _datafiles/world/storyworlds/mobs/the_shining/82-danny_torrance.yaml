@@ -1,0 +1,22 @@
+mobid: 82
+zone: the_shining
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say Redrum. Redrum. REDRUM."
+  - "emote rides past on his Big Wheel, the sound of plastic wheels on carpet then LOUD on wooden floor."
+  - "say Tony says we can't go in there."
+  - ''
+  - ''
+  - ''
+activitylevel: 20
+character:
+  name: Danny Torrance
+  description: >-
+    A small boy of about five, with a bowl haircut and a denim jacket. He
+    rides a Big Wheel tricycle through the hotel corridors. Sometimes he
+    talks in a croaking voice that isn't his own — the voice of Tony, the
+    little boy who lives in his mouth. His eyes see things no child should
+    see.
+  raceid: 1
+  level: 3

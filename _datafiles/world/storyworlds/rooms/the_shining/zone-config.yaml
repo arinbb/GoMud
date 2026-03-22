@@ -1,0 +1,15 @@
+name: The Shining
+roomid: 950
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: house
+mutators:
+- mutatorid: overlook-dread
+idlemessages:
+- The hotel settles around you with a groan of old timbers, as if adjusting to your presence.
+- A door somewhere down the hall clicks shut on its own.
+- The silence presses in from all sides, dense and heavy, like snow against glass.
+- You catch the faintest scent of something floral and rotting, but it vanishes before you can place it.
+- The architecture feels wrong, a hallway that should end meets another that should not exist.
+- For just a moment, the lights dim, and the shadows in the corners seem to lean toward you.

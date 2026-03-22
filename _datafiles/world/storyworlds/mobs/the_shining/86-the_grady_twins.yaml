@@ -1,0 +1,24 @@
+mobid: 86
+zone: the_shining
+hostile: false
+maxwander: 0
+idlecommands:
+  - "say Come and play with us, Danny."
+  - "say Forever..."
+  - "emote stand perfectly still, holding hands, watching."
+  - "say and ever..."
+  - ''
+  - ''
+  - ''
+  - ''
+activitylevel: 10
+character:
+  name: The Grady Twins
+  description: >-
+    Two identical girls, about eight years old, in pale blue dresses with
+    white sashes. They stand at the end of the corridor, holding hands.
+    Their faces are expressionless. Their eyes are dark and empty. They
+    speak in perfect unison, their voices flat and strange. They have been
+    here a very long time.
+  raceid: 27
+  level: 10

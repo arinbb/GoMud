@@ -1,0 +1,81 @@
+roomid: 951
+zone: The Shining
+title: The Lobby
+description: >-
+  The grand lobby of the Overlook Hotel opens before you in a cathedral of
+  timber and stone. Massive <ansi fg="itemname">columns</ansi> of rough-hewn
+  wood rise to a beamed ceiling lost in shadow. A great stone <ansi fg="itemname">fireplace</ansi>
+  dominates the far wall, cold and unlit. Native American <ansi fg="itemname">rugs</ansi>
+  in geometric patterns cover the flagstone floor. The <ansi fg="itemname">front
+  desk</ansi> stands unmanned to one side, a small bell glinting on its surface.
+  At the far end, brass <ansi fg="itemname">elevator</ansi> doors gleam dully.
+  Mounted <ansi fg="itemname">trophies</ansi> — elk, deer, mountain goat — stare
+  down from the walls with glass eyes. The lobby is vast, grand, and utterly
+  silent. Exits lead <ansi fg="exit">west</ansi> to the entrance, <ansi fg="exit">north</ansi>
+  to the Colorado Lounge, <ansi fg="exit">east</ansi> to the elevator hall, and
+  <ansi fg="exit">south</ansi> to the staff wing.
+mapsymbol: L
+maplegend: Lobby
+biome: house
+exits:
+  west:
+    roomid: 950
+  north:
+    roomid: 952
+  east:
+    roomid: 955
+  south:
+    roomid: 956
+nouns:
+  fireplace: >-
+    A massive stone fireplace, tall enough for a man to stand in. It is cold
+    and dark, filled with old ash. The mantle is carved with images of
+    mountains and forests — but if you look closely, there are faces in the
+    trees.
+  rugs: >-
+    Thick woven rugs in deep reds and browns, with geometric patterns that
+    seem almost to shift when viewed from the corner of your eye. They muffle
+    every footstep to nothing.
+  desk: >-
+    The front desk is polished mahogany, neatly organized with cubbyholes for
+    room keys. Most keys are present — the hotel is empty. A small brass bell
+    sits on the counter. No one comes when you ring it.
+  elevator: >-
+    Twin brass elevator doors, ornately decorated with art deco patterns.
+    They are closed. A thin dark stain runs along the seam where the doors
+    meet, as if something has seeped through from inside.
+  trophies: >-
+    Trophy heads mounted on wooden plaques line the upper walls. Elk, deer,
+    mountain goat, a massive bison. Their glass eyes follow you with the
+    dead patience of things that have all the time in the world.
+  columns: >-
+    Rough-hewn timber columns, massive and ancient-looking, supporting the
+    beamed ceiling far above. The wood is dark with age and polish.
+spawninfo:
+- mobid: 87
+  message: A hotel guest drifts through the lobby, not quite looking at you.
+  idlecommands:
+  - ""
+  - ""
+  - emote adjusts a bow tie that wasn't there a moment ago.
+  - ""
+  - say Wonderful party, isn't it? It's always been here.
+  - ""
+  respawnrate: 3 real minutes
+- mobid: 88
+  message: Stuart Ullman stands near the front desk, clipboard in hand.
+  idlecommands:
+  - say The hotel has a long and colorful history.
+  - ""
+  - emote checks something on his clipboard with a tight smile.
+  - ""
+  - say Best not to dwell on the past. The Overlook takes care of its own.
+  - ""
+  respawnrate: 5 real minutes
+idlemessages:
+- 'The elevator doors at the far end of the lobby reflect a distorted version of the room — and for a moment, there are people in the reflection.'
+- A log shifts in the cold fireplace, though there is no fire and no logs.
+- The glass eyes of the trophy heads seem to track your movement across the lobby.
+- 'Somewhere above, on an upper floor, footsteps cross a room. Slow, deliberate, patient.'
+- The brass bell on the front desk vibrates faintly, as if someone almost rang it.
+- A cold draft moves through the lobby despite every door and window being sealed.

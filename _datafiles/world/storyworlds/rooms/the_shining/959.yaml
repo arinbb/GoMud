@@ -1,0 +1,58 @@
+roomid: 959
+zone: The Shining
+title: Torrance Apartment
+description: >-
+  The Torrance family's quarters are a modest living room that feels out of
+  place in the hotel's grandeur. Worn furniture, a threadbare rug, scattered
+  <ansi fg="itemname">toys</ansi> on the floor. A <ansi fg="itemname">television</ansi>
+  plays nothing but static, its gray light washing over everything. Wendy's
+  baseball <ansi fg="itemname">bat</ansi> leans against the wall near the couch,
+  within easy reach. The bathroom <ansi fg="itemname">door</ansi> is closed. Something
+  has been scratched into its surface from the outside — deep gouges in the
+  wood, made by small fingers with terrible urgency. The room feels temporary
+  and besieged, a fragile pocket of normalcy in a hotel that is anything but.
+  The only exit leads <ansi fg="exit">west</ansi>.
+mapsymbol: T
+maplegend: Torrance Apt
+biome: house
+exits:
+  west:
+    roomid: 958
+nouns:
+  toys: >-
+    Danny's toy cars and trucks are scattered across the carpet in patterns
+    that might be random or might be deliberate. A red Volkswagen Beetle, a
+    fire truck, a school bus. They are arranged in a circle around a small
+    action figure lying face down.
+  tv: >-
+    A large television set plays nothing but static. The gray-white noise
+    fills the room with a constant hiss and flicker. Occasionally, shapes
+    seem to form in the static — a face, a hand, words that vanish before
+    you can read them.
+  bat: >-
+    A Louisville Slugger baseball bat, wooden, well-worn. It leans against
+    the wall near the couch, positioned where someone could grab it quickly.
+    There are scratches on the barrel, not from baseballs.
+  door: >-
+    The bathroom door is scarred with deep scratches on its outside surface.
+    The scratches spell a word, gouged into the wood with desperate force by
+    small fingers. The word is REDRUM. Held up to a mirror, it would read
+    MURDER.
+spawninfo:
+- mobid: 81
+  message: Wendy Torrance sits on the couch, clutching a cigarette, eyes darting to every sound.
+  idlecommands:
+  - emote flinches at a sound only she can hear, her hand tightening on the arm of the couch.
+  - ""
+  - say Jack? Is that you? Jack, please...
+  - ""
+  - emote takes a long drag from her cigarette, hand trembling.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- The television static hisses and pops, filling every silence with white noise.
+- 'A toy car on the floor rolls an inch to the left on its own. Then stops.'
+- 'The word scratched into the bathroom door catches the light: REDRUM.'
+- Cigarette smoke hangs in the still air, unmoving, a gray-blue ghost of anxiety.
+- 'From the TV static, a voice seems to whisper a single word. You lean closer, but it is only noise.'
+- The baseball bat by the wall casts a long shadow across the floor in the flickering TV light.

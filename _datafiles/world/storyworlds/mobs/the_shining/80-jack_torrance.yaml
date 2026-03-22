@@ -1,0 +1,24 @@
+mobid: 80
+zone: the_shining
+hostile: false
+maxwander: 1
+angrycommands:
+  - "say Here's Johnny!"
+  - "emote swings wildly with the axe."
+idlecommands:
+  - "say All work and no play makes Jack a dull boy."
+  - "emote stares at his typewriter with hollow intensity."
+  - "emote 's eye twitches."
+  - "say I'm not gonna hurt ya. I'm just gonna bash your brains in."
+  - ''
+  - ''
+activitylevel: 25
+character:
+  name: Jack Torrance
+  description: >-
+    A man in his late 30s with wild, unkempt hair and a manic gleam in his
+    eyes. He wears a rumpled flannel shirt and brown corduroy jacket. His
+    smile is too wide and doesn't reach his eyes. He mutters to himself
+    between bursts of feverish typing. A man coming apart at the seams.
+  raceid: 1
+  level: 15

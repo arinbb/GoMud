@@ -1,0 +1,13 @@
+mutatorid: overlook-dread
+namemodifier:
+  behavior: append
+  text: (haunted)
+  colorpattern: red
+descriptionmodifier:
+  behavior: append
+  text: Something is deeply wrong here.
+  colorpattern: red
+alertmodifier:
+  text: The hotel breathes around you. It knows you're here.
+  colorpattern: red
+playerbuffids: [53]

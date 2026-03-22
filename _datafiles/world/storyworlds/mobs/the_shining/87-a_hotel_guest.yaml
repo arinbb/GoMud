@@ -1,0 +1,20 @@
+mobid: 87
+zone: the_shining
+hostile: false
+maxwander: 2
+idlecommands:
+  - "emote raises a champagne glass to no one in particular."
+  - "emote laughs at an unheard joke."
+  - "emote adjusts his bow tie, humming a jazzy tune."
+  - ''
+  - ''
+  - ''
+activitylevel: 15
+character:
+  name: A Hotel Guest
+  description: >-
+    A man in a 1920s tuxedo, his face slightly transparent in the light.
+    He holds a champagne glass and laughs at a joke no one told. He
+    doesn't quite seem to notice you — or anyone from this decade.
+  raceid: 27
+  level: 5

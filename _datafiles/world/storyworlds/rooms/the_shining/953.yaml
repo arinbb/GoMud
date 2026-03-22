@@ -1,0 +1,60 @@
+roomid: 953
+zone: The Shining
+title: The Gold Room
+description: >-
+  The grand ballroom of the Overlook unfolds before you in art deco splendor.
+  A long mahogany <ansi fg="itemname">bar</ansi> stretches along one wall, its
+  surface gleaming under the warm light of crystal <ansi fg="itemname">chandeliers</ansi>.
+  The geometric <ansi fg="itemname">carpet</ansi> — hexagons in orange and brown —
+  covers the dance floor. Round <ansi fg="itemname">tables</ansi> with white
+  tablecloths surround the floor, each set with glasses that catch the light.
+  The room is empty. Or it was empty a moment ago. From the corner of your
+  eye, you catch movement — figures in evening dress, the clink of glasses,
+  the murmur of conversation from a party that ended decades ago. When you
+  look directly, there is only the empty room. The <ansi fg="exit">west</ansi>
+  exit leads back to the Colorado Lounge. A doorway to the <ansi fg="exit">south</ansi>
+  leads to a red-tiled corridor.
+mapsymbol: G
+maplegend: Gold Room
+biome: house
+exits:
+  west:
+    roomid: 952
+  south:
+    roomid: 954
+nouns:
+  bar: >-
+    A long mahogany bar, polished to a mirror finish. Behind it, shelves of
+    bottles catch the light — bourbon, gin, vodka, whiskey. The bottles
+    are full. They shouldn't be. The hotel has been closed for months. A
+    clean glass sits on the bar, as if just set down.
+  carpet: >-
+    The carpet is a mesmerizing pattern of interlocking hexagons in burnt
+    orange, brown, and rust red. Stare at it too long and the pattern seems
+    to shift and rotate, pulling your gaze downward into something deeper.
+  chandeliers: >-
+    Crystal chandeliers hang from the high ceiling, their facets throwing
+    tiny rainbows across the walls. They sway gently, though there is no
+    breeze. The light they cast is warm and golden, impossibly inviting.
+  tables: >-
+    Round tables draped in white cloth, each set with crystal glasses and
+    silverware for guests who are not here. Or who are here but cannot be
+    seen. A glass of amber liquid sits at one table, its ice not yet melted.
+spawninfo:
+- mobid: 84
+  message: Lloyd the bartender appears behind the bar, polishing a glass with a white cloth.
+  idlecommands:
+  - emote polishes a glass with slow, methodical strokes, his smile never changing.
+  - ""
+  - say What'll it be, sir? Your money's no good here. Orders from the house.
+  - ""
+  - emote sets a glass on the bar with a soft clink and begins pouring, though you didn't order.
+  - ""
+  respawnrate: 4 real minutes
+idlemessages:
+- 'For just a moment, the Gold Room fills with people — laughing, dancing, drinking. Then they are gone.'
+- A glass on the bar is full. A moment ago it was empty. You are certain of this.
+- The chandeliers sway gently, casting shifting patterns of light across the empty dance floor.
+- Music drifts through the room, faint and tinny, like a band playing somewhere far away and long ago.
+- The ice in an abandoned glass clinks as it settles, though no one has touched it.
+- 'A woman in a red dress crosses the edge of your vision. When you turn, only empty tables.'

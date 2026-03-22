@@ -1,0 +1,24 @@
+mobid: 81
+zone: the_shining
+hostile: false
+maxwander: 0
+angrycommands:
+  - "emote swings the baseball bat desperately."
+  - "say Stay back! Stay BACK!"
+idlecommands:
+  - "emote grips the baseball bat tighter."
+  - "say Danny? Danny, where are you?"
+  - "emote peers nervously around the corner."
+  - ''
+  - ''
+  - ''
+activitylevel: 20
+character:
+  name: Wendy Torrance
+  description: >-
+    A thin, anxious woman with large frightened eyes and dark hair. She
+    clutches a baseball bat, her knuckles white. She flinches at sudden
+    sounds. Despite her fear, there is a fierce determination in her — a
+    mother who will do anything to protect her son.
+  raceid: 1
+  level: 8

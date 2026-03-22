@@ -1,0 +1,49 @@
+roomid: 964
+zone: The Shining
+title: Deep in the Maze
+description: >-
+  The maze has closed in. The <ansi fg="itemname">hedges</ansi> press tighter
+  here, branches reaching across the path like grasping fingers. The
+  <ansi fg="itemname">sky</ansi> is a narrow strip of gray between the dark
+  green walls. <ansi fg="itemname">Snow</ansi> falls steadily, thick flakes
+  that muffle every sound and fill in your footprints almost as fast as you
+  make them. The path branches and doubles back on itself. You are not sure
+  which way you came from. Every turning looks the same. The hedges are taller
+  here — nine feet, maybe ten — blocking out the hotel, the mountains,
+  everything but the snow and the narrow gray sky. Something is following you.
+  You can hear its footsteps in the snow behind you, always stopping when you
+  stop. Paths lead <ansi fg="exit">south</ansi>, <ansi fg="exit">north</ansi>,
+  and <ansi fg="exit">east</ansi>.
+mapsymbol: '~'
+maplegend: Deep Maze
+biome: snow
+exits:
+  south:
+    roomid: 963
+  north:
+    roomid: 965
+  east:
+    roomid: 964
+nouns:
+  hedges: >-
+    The hedges press closer here, their branches scratching at your clothes
+    and skin as you pass. The leaves are dark, almost black-green, and
+    frosted with ice. They seem to lean inward, narrowing the path. When
+    you push a branch aside, it springs back harder than it should.
+  snow: >-
+    Snow falls steadily now, thick and heavy, covering everything in white.
+    Your footprints behind you fill in within minutes, as if the maze is
+    erasing your passage. Ahead, there are no footprints at all — or wait,
+    there are, faintly, already half-buried. Someone came through here
+    recently.
+  sky: >-
+    A narrow strip of overcast gray visible between the hedge walls. No
+    sun, no stars, no landmarks. The sky gives no indication of direction
+    or time. It could be morning or evening. It could be any year at all.
+idlemessages:
+- 'Footsteps crunch in the snow behind you. When you turn, there is nothing. When you walk, they resume.'
+- Snow falls thicker now, reducing visibility to a few yards. The maze walls dissolve into white.
+- A branch snaps somewhere in the hedges, sharp and sudden, then the silence returns.
+- 'You turn a corner and the path looks exactly like the one you just left. Exactly.'
+- Your footprints behind you are already filling with snow. In minutes, they will be gone entirely.
+- 'The hedges seem taller than they were. The sky is narrower. The path is closing in.'

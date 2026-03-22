@@ -1,0 +1,9 @@
+buffid: 53
+name: Overlook Dread
+description: The hotel presses against your mind. You see things in the corners of your vision.
+secret: false
+triggerrate: 10 real minutes
+triggercount: 1
+flags:
+  - see-nouns
+  - superhearing

@@ -1,0 +1,51 @@
+roomid: 965
+zone: The Shining
+title: Heart of the Maze
+description: >-
+  The center of the maze. A small clearing opens between the hedge walls, no
+  more than ten paces across. A stone <ansi fg="itemname">bench</ansi> sits in
+  the center, frosted with ice, snow gathering on its seat. The silence here
+  is absolute — no wind, no birds, no sound at all except the soft hiss of
+  falling snow. <ansi fg="itemname">Footprints</ansi> in the snow circle the
+  clearing endlessly, growing more frantic with each revolution, the stride
+  lengthening, then shortening, then stumbling. Through the heavy curtain of
+  falling <ansi fg="itemname">snow</ansi>, you think you see a <ansi fg="itemname">figure</ansi>
+  hunched on the far side of the clearing — motionless, covered in frost.
+  But when the wind shifts and the snow clears, nothing is there. Or something
+  is there, and you cannot bring yourself to look directly at it. The only
+  path leads <ansi fg="exit">south</ansi>.
+mapsymbol: '*'
+maplegend: Maze Center
+biome: snow
+exits:
+  south:
+    roomid: 964
+nouns:
+  bench: >-
+    A stone bench, simple and heavy, in the exact center of the clearing.
+    It is frosted with a thick layer of ice. Snow accumulates on its seat.
+    No one has sat here in a very long time, and yet the stone is worn
+    smooth in the center, as if someone sat here for years. Decades. Forever.
+  footprints: >-
+    Footprints in the snow, circling the clearing in an endless spiral.
+    They start measured and deliberate, then grow more frantic — longer
+    strides, then shorter, then dragging. Near the bench, they stumble
+    and cluster, as if their maker fell and tried to rise and fell again.
+    The footprints do not leave the clearing.
+  snow: >-
+    Snow falls in thick, heavy flakes, muffling everything. It accumulates
+    fast — the footprints you made entering the clearing are already half
+    buried. The snow is patient. It covers everything eventually.
+  figure: >-
+    Through the falling snow, at the edge of the clearing, you see a shape.
+    Hunched, motionless, covered in frost. A man, frozen solid, his face
+    locked in a rictus of madness and cold. But the snow shifts, the wind
+    changes, and there is nothing there. You look again. Nothing. You look
+    away, and it is back, at the very edge of your vision, grinning.
+idlemessages:
+- 'The silence is total. No wind. No birds. Nothing but the soft hiss of falling snow.'
+- Footprints circle the clearing endlessly, their pattern growing more desperate with each lap.
+- 'Snow settles on the stone bench, building a white mound. Under the snow, something may be sitting there.'
+- 'Through the whiteout, you glimpse a frozen figure. When you look directly, there is only snow.'
+- Your breath mists in the cold. It hangs in the still air far too long before dissipating.
+- 'The maze is perfectly silent. You realize you cannot hear the hotel. You cannot hear anything beyond the hedges. You are completely alone.'

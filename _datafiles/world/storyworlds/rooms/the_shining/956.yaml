@@ -1,0 +1,47 @@
+roomid: 956
+zone: The Shining
+title: Staff Wing
+description: >-
+  The grandeur of the hotel drops away behind you as you enter the staff
+  corridor. Institutional green <ansi fg="itemname">walls</ansi> line a narrow
+  hallway lit by harsh fluorescent <ansi fg="itemname">lights</ansi>, one of
+  which flickers in a slow, rhythmic pulse. Supply <ansi fg="itemname">closets</ansi>
+  line both sides — cleaning materials, linens, maintenance tools. The floor is
+  bare linoleum, scuffed and yellowed. This is the working skeleton of the
+  Overlook, stripped of all pretense. The staff quarters feel abandoned
+  mid-shift — a mop stands in a bucket of gray water, a uniform hangs from a
+  hook, a clipboard with a half-completed checklist lies on a shelf. Exits lead
+  <ansi fg="exit">north</ansi> to the lobby, <ansi fg="exit">south</ansi> to the
+  Colorado Lounge, and <ansi fg="exit">east</ansi> to the kitchen.
+mapsymbol: S
+maplegend: Staff Wing
+biome: house
+exits:
+  north:
+    roomid: 951
+  south:
+    roomid: 952
+  east:
+    roomid: 961
+nouns:
+  lights: >-
+    Fluorescent tubes behind plastic covers. Most burn steadily, but one
+    flickers in a slow rhythm — on, on, off, on, on, off — that feels
+    almost like breathing. When it goes dark, the shadows in the corridor
+    lurch forward.
+  closets: >-
+    Supply closets with metal shelving, stocked with cleaning solutions,
+    folded towels, rolls of toilet paper, spare light bulbs. One closet door
+    stands slightly ajar. Inside, the shelves are bare except for a single
+    key hanging from a hook. It is not labeled.
+  walls: >-
+    Institutional green paint, the color of hospitals and old schools. It is
+    chipping in places, revealing layers beneath — white, then yellow, then
+    a deeper green, like geological strata of neglect.
+idlemessages:
+- The flickering fluorescent light stutters through its breathing rhythm in the silence.
+- Water drips somewhere behind the walls, a steady metronome in the quiet corridor.
+- The mop in the bucket sways gently, though no one has touched it and there is no breeze.
+- 'A clipboard falls from a shelf and clatters on the linoleum. The checklist reads: "Check boiler. Lock 237. DO NOT"'
+- The smell of industrial cleaner mingles with something older and sweeter underneath.
+- 'A uniform hanging on a hook sways as if someone just brushed past it.'

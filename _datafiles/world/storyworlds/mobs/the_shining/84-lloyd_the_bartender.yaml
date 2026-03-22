@@ -1,0 +1,23 @@
+mobid: 84
+zone: the_shining
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote polishes a glass with slow, precise movements."
+  - "say What'll it be, Mr. Torrance?"
+  - "emote sets a glass of bourbon on the bar, though no one ordered it."
+  - ''
+  - ''
+  - ''
+  - ''
+activitylevel: 15
+character:
+  name: Lloyd the Bartender
+  description: >-
+    An impeccable bartender in a white jacket and bow tie, standing behind
+    the bar of the Gold Room. His hair is slicked back, his smile is
+    pleasant and professional. He polishes glasses with practiced ease. He
+    does not blink often enough. There is something too perfect about him,
+    as if he is a photograph come to life.
+  raceid: 27
+  level: 15

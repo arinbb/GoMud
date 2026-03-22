@@ -1,0 +1,44 @@
+roomid: 955
+zone: The Shining
+title: Elevator Hall
+description: >-
+  A long corridor stretches before you, its <ansi fg="itemname">carpet</ansi>
+  a hypnotic pattern of interlocking hexagons in orange and red. The <ansi fg="itemname">walls</ansi>
+  are covered in flocked wallpaper, slightly damp to the touch. At the far end,
+  twin <ansi fg="itemname">elevator</ansi> doors stand closed, their brass surfaces
+  dulled and streaked. A thin dark liquid seeps from beneath the elevator doors,
+  pooling on the carpet. The corridor is longer than it should be — much longer
+  than the building could possibly contain. The fluorescent lights hum overhead,
+  their buzz the only sound. Exits lead <ansi fg="exit">west</ansi> to the lobby
+  and <ansi fg="exit">north</ansi> to the guest corridor.
+mapsymbol: V
+maplegend: Elevator Hall
+biome: house
+exits:
+  west:
+    roomid: 951
+  north:
+    roomid: 958
+nouns:
+  elevators: >-
+    Twin brass elevator doors, art deco in style, their surface streaked with
+    tarnish and something darker. A thin, dark liquid — reddish-brown —
+    seeps steadily from the seam between the doors, pooling on the carpet.
+    There is a call button on the wall beside them. It glows faintly.
+  carpet: >-
+    The hexagonal carpet pattern stretches the full length of the impossible
+    corridor. Orange, red, and brown interlock in a design that pulls at
+    your eyes, drawing them downward and forward. The pattern is slightly
+    different every time you look at it.
+  walls: >-
+    Flocked wallpaper in a muted pattern of vines and flowers. It is damp
+    to the touch, as if the walls themselves are sweating. In places, the
+    wallpaper has begun to peel, revealing older paper beneath — and older
+    paper beneath that.
+idlemessages:
+- The dark liquid beneath the elevator doors spreads another inch across the carpet.
+- The elevator call button pulses with a faint amber glow, as if inviting you to press it.
+- 'Something behind the elevator doors shifts with a wet, heavy sound.'
+- The hexagonal carpet pattern seems to rotate slowly when viewed from the corner of your eye.
+- A fluorescent tube flickers and buzzes, casting the corridor in strobing light for a moment.
+- 'The corridor seems longer than it was when you entered. The elevator doors are further away.'

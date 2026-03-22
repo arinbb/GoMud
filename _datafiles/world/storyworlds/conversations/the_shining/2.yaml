@@ -1,0 +1,10 @@
+-
+  Supported:
+    "the grady twins": ["*"]
+  Conversation:
+    - ["#1 say Come and play with us."]
+    - ["#1 say Come and play with us, Danny."]
+    - ["#1 say Forever..."]
+    - ["#1 say and ever..."]
+    - ["#1 say and ever."]
+    - ["#1 emote stand perfectly still, holding hands, staring down the corridor."]

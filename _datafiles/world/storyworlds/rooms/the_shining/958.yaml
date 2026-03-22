@@ -1,0 +1,60 @@
+roomid: 958
+zone: The Shining
+title: Guest Corridor
+description: >-
+  A long hotel corridor stretches in both directions, impossibly long, lined
+  with numbered <ansi fg="itemname">doors</ansi> in the 200s. The hexagonal
+  <ansi fg="itemname">carpet</ansi> — orange and red and brown — rolls out
+  beneath your feet like an endless geometric river. Fluorescent
+  <ansi fg="itemname">lights</ansi> buzz overhead, some dead, creating pools
+  of shadow between islands of harsh light. At the far end of the corridor,
+  something small moves — a flash of color, the whir of wheels on carpet. The
+  doors are all closed. All locked. All except one. Exits lead <ansi fg="exit">south</ansi>
+  to the elevator hall, <ansi fg="exit">east</ansi> to the Torrance apartment,
+  and <ansi fg="exit">north</ansi> deeper into the hotel.
+mapsymbol: H
+maplegend: Guest Corridor
+biome: house
+exits:
+  south:
+    roomid: 955
+  east:
+    roomid: 959
+  north:
+    roomid: 960
+  237:
+    roomid: 957
+    secret: true
+nouns:
+  doors: >-
+    Numbered doors line both sides of the corridor — 231, 233, 235, 237, 239.
+    They are all locked. You try each handle. All locked except 237, which
+    turns with a soft click. The door to Room 237 swings inward on its own.
+  carpet: >-
+    The hexagonal carpet pattern stretches the full length of the corridor,
+    a mesmerizing tessellation of orange, red, and brown. Danny rode his Big
+    Wheel over this pattern. The wheel marks are still visible if you look
+    closely — thin parallel lines worn into the pile.
+  lights: >-
+    Buzzing fluorescent tubes behind plastic covers. Several have died,
+    creating dark stretches of corridor where the carpet pattern seems to
+    shift and writhe. The working lights flicker occasionally in unison.
+spawninfo:
+- mobid: 82
+  message: Danny Torrance rides past on his Big Wheel, not looking at you.
+  idlecommands:
+  - say Redrum. Redrum. REDRUM.
+  - ""
+  - ""
+  - emote rides the Big Wheel down the corridor, the plastic wheels alternating between carpet and bare floor with a rhythmic thudding.
+  - ""
+  - say Tony says we shouldn't be here.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- 'The sound of plastic wheels on carpet echoes from somewhere down the corridor — thud-thud, thud-thud.'
+- A door handle rattles from inside one of the rooms. Then stops.
+- The fluorescent lights flicker in sequence down the corridor, like a wave of darkness rolling toward you.
+- 'The carpet pattern shifts at the edge of your vision. When you look directly, it is still.'
+- 'A child giggles from around the corner. The sound is bright and wrong in this place.'
+- 'Room 237. The door is ajar. It was not ajar a moment ago.'

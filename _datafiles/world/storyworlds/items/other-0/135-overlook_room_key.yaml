@@ -1,0 +1,12 @@
+itemid: 135
+name: Overlook room key
+namesimple: key
+displayname: a brass <ansi fg="itemname">Overlook room key</ansi>
+description: >-
+  A brass room key on a green diamond-shaped fob, stamped with "237." Cold
+  to the touch. The fob reads "OVERLOOK HOTEL" in art deco lettering.
+  Sometimes when you look at the number, it reads "REDRUM" instead.
+type: object
+subtype: usable
+uses: 0
+value: 1
