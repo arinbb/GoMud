@@ -4,11 +4,23 @@ hostile: false
 maxwander: 0
 angrycommands: []
 idlecommands:
-  - 'emote adjusts a tiny shingle on his model town.'
-  - 'emote squints at the Handbook for the Recently Deceased and sighs.'
-  - ''
-  - ''
-activitylevel: 10
+  - emote carefully paints a mailbox the size of a grain of rice with a single-hair brush.
+  - say Barbara, do you think if I pulled my face off it would scare them? I've been practicing.
+  - emote pulls at his own face experimentally. It stretches about two inches then snaps back. He looks disappointed.
+  - ""
+  - emote flips through the Handbook, mutters "what does 'ectoplasmic displacement' even mean," and closes it.
+  - say We tried the bedsheet thing. With the eyeholes? They thought we were performance art.
+  - emote walks straight through a wall, then walks back through looking slightly embarrassed.
+  - ""
+  - say I just want our house back the way it was. Is that so much to ask? We're DEAD. We should get the house.
+  - emote accidentally puts his hand through the model town church steeple and carefully pulls it back out.
+  - ""
+  - say Did you hear Delia wants to knock out the kitchen wall? The KITCHEN WALL, Barbara!
+  - emote tries to pick up a pencil. His hand passes through it twice before he gets a grip.
+  - ""
+  - say The handbook says we get the house for 125 years. But it doesn't say we have to SHARE it.
+  - ""
+activitylevel: 25
 character:
   name: Adam Maitland
   description: >-

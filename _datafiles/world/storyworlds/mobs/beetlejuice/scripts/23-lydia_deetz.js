@@ -70,3 +70,27 @@ function onAsk(mob, room, eventDetails) {
     mob.Command("say I'm not sure what you're asking. You could try asking about my photography, ghosts, or what it's like being strange and unusual.");
     return true;
 }
+
+function onShow(mob, room, eventDetails) {
+    var showText = String(eventDetails);
+
+    if (showText.indexOf("camera") >= 0) {
+        mob.Command("emote 's eyes light up.");
+        mob.Command("say That's MY camera! I can see ghosts through the viewfinder, you know. Things the living aren't supposed to see.", 1);
+        return true;
+    }
+
+    if (showText.indexOf("handbook") >= 0) {
+        mob.Command("say I've read parts of it. It's actually fascinating once you get past all the jargon. Death is just... the next strange thing.");
+        return true;
+    }
+
+    if (showText.indexOf("business card") >= 0 || showText.indexOf("card") >= 0) {
+        mob.Command("emote fidgets with her lace gloves.");
+        mob.Command("say Beetlejuice... he's terrifying. But he's also the most ALIVE dead person I've ever met. If that makes any sense.", 1);
+        return true;
+    }
+
+    mob.Command("say Hmm. That's unusual. I like unusual.");
+    return true;
+}

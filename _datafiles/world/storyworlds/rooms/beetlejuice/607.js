@@ -30,3 +30,20 @@ function onCommand(cmd, rest, user, room) {
 
     return false;
 }
+
+function onIdle(room) {
+    if (!UtilIsDay()) {
+        var messages = [
+            "The model town's tiny streetlights flicker on by themselves. Tiny figures appear in the tiny windows.",
+            "The blank wall pulses faintly, as if something on the other side is breathing.",
+            "Adam's tools rearrange themselves when you're not looking directly at them."
+        ];
+        var pick = Math.floor(Math.random() * messages.length);
+        // 40% chance to show a night message vs normal idle
+        if (Math.random() < 0.4) {
+            room.SendText(messages[pick]);
+            return true;
+        }
+    }
+    return false;
+}

@@ -58,3 +58,26 @@ function onAsk(mob, room, eventDetails) {
     mob.Command("say I'm busy. Ask me something relevant — the rules, the handbook, the waiting process — or get out of my office.");
     return true;
 }
+
+function onShow(mob, room, eventDetails) {
+    var showText = String(eventDetails);
+
+    if (showText.indexOf("handbook") >= 0) {
+        mob.Command("say You're supposed to READ it, not wave it around. I don't have time for show and tell. I have 47,000 cases backlogged.");
+        return true;
+    }
+
+    if (showText.indexOf("business card") >= 0 || showText.indexOf("card") >= 0) {
+        mob.Command("emote 's eyes narrow. Smoke pours from the slit in her throat.");
+        mob.Command("say Where did you get this? If that maniac is loose again I swear to... never mind. Just don't say his name. Don't even THINK it too loudly.", 1);
+        return true;
+    }
+
+    if (showText.indexOf("ticket") >= 0 || showText.indexOf("waiting room") >= 0) {
+        mob.Command("say Your number will be called when it's called. Bothering me about it won't speed things up.");
+        return true;
+    }
+
+    mob.Command("say I don't have time for this. File a form.");
+    return true;
+}

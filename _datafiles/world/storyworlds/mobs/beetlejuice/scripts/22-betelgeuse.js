@@ -88,3 +88,25 @@ function onAsk(mob, room, eventDetails) {
     mob.Command(defaults[pick]);
     return true;
 }
+
+function onShow(mob, room, eventDetails) {
+    var showText = String(eventDetails);
+
+    if (showText.indexOf("handbook") >= 0) {
+        mob.Command("say The HANDBOOK?! Oh man, what a piece of garbage. I've been dead 600 years and even I can't understand Chapter 9.");
+        return true;
+    }
+
+    if (showText.indexOf("chalk") >= 0) {
+        mob.Command("say Ooh, chalk! You know what you can do with chalk? DOORS, baby! Draw a door anywhere and BAM — instant portal to the bureaucratic nightmare!");
+        return true;
+    }
+
+    if (showText.indexOf("ticket") >= 0 || showText.indexOf("waiting room") >= 0) {
+        mob.Command("say HA! A ticket! I haven't waited in line since 1638. Perks of being freelance.");
+        return true;
+    }
+
+    mob.Command("say Whatcha got there? Lemme see lemme see lemme see!");
+    return true;
+}

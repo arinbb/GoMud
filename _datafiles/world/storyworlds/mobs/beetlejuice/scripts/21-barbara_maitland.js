@@ -53,3 +53,25 @@ function onAsk(mob, room, eventDetails) {
     mob.Command("say Oh, I'm not sure about that, dear. You could ask me about Adam, the house, cooking, or... well, our rather unusual situation.");
     return true;
 }
+
+function onShow(mob, room, eventDetails) {
+    var showText = String(eventDetails);
+
+    if (showText.indexOf("business card") >= 0 || showText.indexOf("card") >= 0) {
+        mob.Command("say Oh no. Oh no no no. Please tell me you didn't call him. PLEASE tell me you didn't say his name.");
+        return true;
+    }
+
+    if (showText.indexOf("handbook") >= 0) {
+        mob.Command("say That thing! I tried to follow the instructions for scaring people and ended up turning my own head into a basketball.");
+        return true;
+    }
+
+    if (showText.indexOf("chalk") >= 0) {
+        mob.Command("say Be careful with that. Adam drew a door with chalk once and we ended up in the waiting room for THREE HOURS.");
+        return true;
+    }
+
+    mob.Command("say Oh my, what's that? Let me see...");
+    return true;
+}

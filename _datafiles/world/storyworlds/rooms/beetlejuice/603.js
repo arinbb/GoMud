@@ -9,3 +9,20 @@ function onCommand(cmd, rest, user, room) {
     }
     return false;
 }
+
+function onIdle(room) {
+    if (!UtilIsDay()) {
+        var messages = [
+            "The staircase creaks with heavy, deliberate footsteps. No one is on it.",
+            "A cold draft blows through the hallway, carrying the scent of earth and old flowers.",
+            "The coat rack shadows stretch across the wall like reaching fingers."
+        ];
+        var pick = Math.floor(Math.random() * messages.length);
+        // 40% chance to show a night message vs normal idle
+        if (Math.random() < 0.4) {
+            room.SendText(messages[pick]);
+            return true;
+        }
+    }
+    return false;
+}

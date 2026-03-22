@@ -4,12 +4,23 @@ hostile: false
 maxwander: 1
 angrycommands: []
 idlecommands:
-  - 'emote straightens a doily on the counter out of habit.'
-  - 'emote gazes wistfully at the kitchen, remembering better days.'
-  - 'say I do miss cooking. The smells, at least.'
-  - ''
-  - ''
-activitylevel: 10
+  - emote rearranges the spice jars alphabetically, then rearranges them by color, then puts them back alphabetically.
+  - say I tried making that scary face from Chapter Three of the handbook. Adam said I looked like I was sneezing.
+  - emote reaches for a coffee mug. Her hand passes through it. She sighs and pretends to drink from an invisible cup instead.
+  - ""
+  - say Have you seen what Delia did to the living room? There's a sculpture in there that looks like a coat rack having a nightmare.
+  - emote floats six inches off the floor for a moment, then settles back down, looking slightly surprised at herself.
+  - ""
+  - say The handbook says we can haunt the house but we have to fill out Form 27-B first. Where do you even GET Form 27-B?
+  - emote opens the oven and looks inside hopefully. It's empty. It's been empty for a while.
+  - ""
+  - say I keep setting the table for dinner. Force of habit. Adam doesn't have the heart to tell me to stop.
+  - emote tries to slam a cupboard door in frustration. Her hand goes through it. She slams it on the second try. Small victories.
+  - say That Lydia girl was in here yesterday. She actually ate one of my... well, she WOULD have eaten one of my cookies. If I could still bake them.
+  - ""
+  - emote catches her reflection in the window and waves at it. Her reflection waves back a half-second late.
+  - ""
+activitylevel: 25
 character:
   name: Barbara Maitland
   description: >-
