@@ -22,23 +22,19 @@ exits:
   west:
     roomid: 101
 nouns:
-  tree:
-    description: >-
-      The oak tree's branches defy geometry, looping and spiraling in ways that
-      would make Escher nod appreciatively. Claw marks run up the trunk, though
-      the Cheshire Cat doesn't seem the type to climb when it can simply appear.
-  signpost:
-    description: >-
-      The signpost has four arrows. One reads "This Way," another reads "That
-      Way," a third reads "The Other Way," and the fourth reads "Back the Way
-      You Came (but different)." All four arrows point in roughly the same
-      direction.
-  grin:
-    description: >-
-      The Cheshire Cat's grin hangs in the air, detached from any visible cat.
-      It's a very wide grin, stretching from ear to ear -- if the ears were
-      visible. The grin seems amused by something only it understands. Which,
-      given that this is Wonderland, could be anything or nothing at all.
+  tree: >-
+    The oak tree's branches defy geometry, looping and spiraling in ways that
+    would make Escher nod appreciatively. Claw marks run up the trunk, though
+    the Cheshire Cat doesn't seem the type to climb when it can simply appear.
+  signpost: >-
+    The signpost has four arrows. One reads "This Way," another reads "That
+    Way," a third reads "The Other Way," and the fourth reads "Back the Way You
+    Came (but different)." All four arrows point in roughly the same direction.
+  grin: >-
+    The Cheshire Cat's grin hangs in the air, detached from any visible cat.
+    It's a very wide grin, stretching from ear to ear -- if the ears were
+    visible. The grin seems amused by something only it understands. Which,
+    given that this is Wonderland, could be anything or nothing at all.
 spawninfo:
 - mobid: 14
   message: The Cheshire Cat appears, grin-first, on a branch overhead.

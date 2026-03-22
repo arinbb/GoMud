@@ -1,55 +1,13 @@
 roomid: 611
 zone: Beetlejuice
 title: The Afterlife Hallway
-description: >-
-  A long institutional corridor stretches ahead, lit by sickly green
-  <ansi fg="itemname">fluorescents</ansi> that buzz and flicker overhead. The
-  <ansi fg="itemname">walls</ansi> are painted a shade of green that only
-  exists in government buildings and nightmares. Scuffed linoleum
-  <ansi fg="itemname">tiles</ansi> line the floor in a checkerboard pattern of
-  grey and greyer. Behind you, the chalk <ansi fg="itemname">door</ansi> you
-  came through has sealed itself flat against the wall -- just faint white lines
-  on institutional green, already fading. The air smells of formaldehyde, floor
-  wax, and eternal bureaucracy. The corridor extends south toward a set of
-  frosted glass double doors. This place feels like it has been here forever and
-  will be here long after everything else is gone.
-mapsymbol: ">"
+description: A long institutional corridor lit by sickly green fluorescents.
+mapsymbol: H
 maplegend: Hallway
 biome: dungeon
 exits:
   south:
     roomid: 612
-    exitmessage: You push through the frosted glass doors into whatever lies beyond.
-nouns:
-  walls:
-    description: >-
-      The walls are painted institutional green -- the kind of color chosen by
-      committee. Hairline cracks run through the paint like veins. Taped to the
-      wall at intervals are faded notices: "TAKE A NUMBER," "NO HAUNTING WITHOUT
-      A PERMIT," "FORM 27-B STROKE 6 REQUIRED FOR ALL MANIFESTATIONS." A
-      water fountain juts from the wall, but the basin is dry.
-  fluorescents:
-    description: >-
-      The fluorescent tubes cast everything in a flat, merciless green light
-      that makes the living look dead and the dead look worse. One tube at the
-      far end of the corridor flickers arrhythmically, like a dying heartbeat.
-      Flies circle the lights -- the only things that seem comfortable here.
-  tiles:
-    description: >-
-      The linoleum tiles are scuffed with decades (centuries? eternities?) of
-      foot traffic. Some tiles are slightly raised, and your footsteps echo in
-      a way that suggests a vast empty space beneath the floor. A dark stain
-      near the wall could be coffee. Could be ectoplasm.
-  door:
-    description: >-
-      Where the chalk door was, there are now only faint white lines on the
-      green wall, already fading like chalk in rain. You trace them with your
-      finger -- they smudge and blur. There's no going back this way. The
-      afterlife, it seems, has a one-way entrance policy.
 idlemessages:
-- The fluorescent lights flicker in sequence down the corridor, like a wave rolling toward you.
-- A distant intercom crackles to life. A bored voice says "Now serving number three million, four hundred and--" before cutting off.
-- Your footsteps echo longer than they should, as if the corridor extends far beyond what you can see.
-- A fly the size of a marble buzzes past your ear, heading south with purpose.
-- The formaldehyde smell intensifies briefly, then fades to the usual background level of institutional dread.
-- One of the notices on the wall peels off and drifts to the floor. It reads: "YOU ARE DEAD. PLEASE ACT ACCORDINGLY."
+- The fluorescent lights flicker in sequence down the corridor.
+- Your footsteps echo longer than they should.

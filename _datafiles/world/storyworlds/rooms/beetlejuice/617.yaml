@@ -22,41 +22,35 @@ exits:
     roomid: 608
     exitmessage: You leave Lydia's dark sanctuary and step back into the master bedroom.
 nouns:
-  curtains:
-    description: >-
-      Heavy black velvet curtains, pinned shut with safety pins and skull-shaped
-      clasps. A sliver of daylight leaks around the edges, but Lydia has done
-      her best to banish the sun from her domain. The curtains smell faintly
-      of clove smoke and patchouli.
-  candles:
-    description: >-
-      Dripping black candles in iron holders of varying heights, arranged on
-      the dresser, the windowsill, and the floor. The wax has pooled and
-      hardened into dark stalactites. The flames burn steadily despite the
-      occasional draft, as if they've made a deal with the darkness to keep
-      burning no matter what.
-  photographs:
-    description: >-
-      The photographs are all Lydia's work -- stark black-and-white images shot
-      with an old 35mm camera. Abandoned buildings. Dead trees. Her own face in
-      mirrors, always slightly out of focus. One photo shows the Maitland house
-      from below, and in the attic window, two transparent figures are barely
-      visible. Another shows an empty chair with the faintest impression of
-      someone sitting in it. Lydia photographs what others can't see.
-  camera:
-    description: >-
-      A vintage 35mm camera on a wooden tripod, aimed at the vanity mirror. The
-      lens cap is off. The shutter is cocked. A strip of developed negatives
-      hangs from a clothesline nearby -- and in every frame, there are figures
-      that weren't in the room when the photos were taken. Lydia's camera sees
-      the dead. She knows it. That's why she keeps shooting.
-  journal:
-    description: >-
-      Lydia's journal is open to a page of dark, cramped handwriting. The entry
-      visible is a poem about feeling invisible in a house full of people who
-      can't see what she sees. The margins are filled with tiny sketches of
-      beetles, moons, and a figure in a striped suit. The last line on the page
-      reads: "My whole life is a dark room. One big dark room."
+  curtains: >-
+    Heavy black velvet curtains, pinned shut with safety pins and skull-shaped
+    clasps. A sliver of daylight leaks around the edges, but Lydia has done her
+    best to banish the sun from her domain. The curtains smell faintly of clove
+    smoke and patchouli.
+  candles: >-
+    Dripping black candles in iron holders of varying heights, arranged on the
+    dresser, the windowsill, and the floor. The wax has pooled and hardened into
+    dark stalactites. The flames burn steadily despite the occasional draft, as
+    if they've made a deal with the darkness to keep burning no matter what.
+  photographs: >-
+    The photographs are all Lydia's work -- stark black-and-white images shot
+    with an old 35mm camera. Abandoned buildings. Dead trees. Her own face in
+    mirrors, always slightly out of focus. One photo shows the Maitland house
+    from below, and in the attic window, two transparent figures are barely
+    visible. Another shows an empty chair with the faintest impression of
+    someone sitting in it. Lydia photographs what others can't see.
+  camera: >-
+    A vintage 35mm camera on a wooden tripod, aimed at the vanity mirror. The
+    lens cap is off. The shutter is cocked. A strip of developed negatives hangs
+    from a clothesline nearby -- and in every frame, there are figures that
+    weren't in the room when the photos were taken. Lydia's camera sees the
+    dead. She knows it. That's why she keeps shooting.
+  journal: >-
+    Lydia's journal is open to a page of dark, cramped handwriting. The entry
+    visible is a poem about feeling invisible in a house full of people who
+    can't see what she sees. The margins are filled with tiny sketches of
+    beetles, moons, and a figure in a striped suit. The last line on the page
+    reads: "My whole life is a dark room. One big dark room."
 spawninfo:
 - mobid: 23
   message: Lydia Deetz emerges from behind the black curtains, camera in hand, studying you with dark eyes.
@@ -73,7 +67,7 @@ spawninfo:
   - ""
   maxwander: 1
   respawnrate: 3 real minutes
-- itemid: 60017
+- itemid: 117
   container: camera
   respawnrate: 5 real minutes
 idlemessages:

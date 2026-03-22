@@ -17,17 +17,15 @@ exits:
   south:
     roomid: 2
 nouns:
-  alcove:
-    description: >-
-      The reading alcove is small and intimate, just large enough for the chair
-      and a narrow table. The candle flame doesn't flicker -- it burns perfectly
-      still, as if time moves differently here. This would be a good place to
-      open a book and lose yourself in it.
-  shelves:
-    description: >-
-      These shelves hold the oldest volumes in the library. Some titles are in
-      languages you don't recognize. Others have titles that shift and change
-      as you read them, as if the books are deciding what they want to be called.
+  alcove: >-
+    The reading alcove is small and intimate, just large enough for the chair
+    and a narrow table. The candle flame doesn't flicker -- it burns perfectly
+    still, as if time moves differently here. This would be a good place to open
+    a book and lose yourself in it.
+  shelves: >-
+    These shelves hold the oldest volumes in the library. Some titles are in
+    languages you don't recognize. Others have titles that shift and change as
+    you read them, as if the books are deciding what they want to be called.
 idlemessages:
 - One of the chained books rattles against its tether, then settles.
 - The candle in the reading alcove flares briefly, casting long shadows down the aisle.

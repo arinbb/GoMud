@@ -21,24 +21,20 @@ exits:
   south:
     roomid: 617
 nouns:
-  bed:
-    description: >-
-      The four-poster bed is solid maple, passed down through three generations
-      of Maitlands. Barbara's patchwork quilt is a riot of autumn colors. The
-      pillows still hold the impression of two heads, though no one living
-      sleeps here.
-  mirror:
-    description: >-
-      The vanity mirror is old and slightly warped. Your reflection looks normal
-      at first, but if you stare long enough, you notice your reflection blinks
-      a half-second after you do. And is your reflection's smile slightly wider
-      than yours?
-  closet:
-    description: >-
-      The closet is an archaeological dig of clothing -- Adam's flannel and
-      Barbara's cardigans pushed to one side, Charles's suits and Delia's
-      avant-garde outfits claiming the rest. A hatbox on the top shelf is
-      labeled "WEDDING" in Barbara's handwriting.
+  bed: >-
+    The four-poster bed is solid maple, passed down through three generations of
+    Maitlands. Barbara's patchwork quilt is a riot of autumn colors. The pillows
+    still hold the impression of two heads, though no one living sleeps here.
+  mirror: >-
+    The vanity mirror is old and slightly warped. Your reflection looks normal
+    at first, but if you stare long enough, you notice your reflection blinks a
+    half-second after you do. And is your reflection's smile slightly wider than
+    yours?
+  closet: >-
+    The closet is an archaeological dig of clothing -- Adam's flannel and
+    Barbara's cardigans pushed to one side, Charles's suits and Delia's
+    avant-garde outfits claiming the rest. A hatbox on the top shelf is labeled
+    "WEDDING" in Barbara's handwriting.
 idlemessages:
 - The vanity mirror fogs up briefly, as if someone breathed on it from the other side.
 - The closet door creaks open another inch. Then another.

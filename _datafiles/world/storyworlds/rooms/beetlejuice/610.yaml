@@ -19,26 +19,23 @@ exits:
     roomid: 606
     exitmessage: You escape back to the dining room, leaving art behind.
 nouns:
-  sculptures:
-    description: >-
-      The sculptures defy categorization. One is a tangle of coat hangers welded
-      together and spray-painted black -- Delia calls it "Angst IV." Another is
-      a mannequin torso with forks for fingers and a birdcage for a head. A third
-      is simply a brick on a pedestal with a price tag reading $4,500. Each one
-      has a small placard with a pretentious title and artist's statement.
-  paintings:
-    description: >-
-      Delia's paintings are large, loud, and deeply committed to being
-      misunderstood. Canvases splattered with house paint, fingerprints, and what
-      appears to be mustard. One is titled "Suburban Void III." Another is just
-      the word "NO" written backwards in red. They vibrate with a desperate
-      energy, like the visual equivalent of someone screaming at a dinner party.
-  installation:
-    description: >-
-      The ceiling installation is Delia's masterwork -- chrome tentacles radiating
-      from a central sphere of crumpled aluminum foil. It sways gently even
-      when there's no breeze. Delia has named it "The Unbearable Lightness of
-      Being Delia." It occasionally drops a piece of foil on visitors' heads.
+  sculptures: >-
+    The sculptures defy categorization. One is a tangle of coat hangers welded
+    together and spray-painted black -- Delia calls it "Angst IV." Another is a
+    mannequin torso with forks for fingers and a birdcage for a head. A third is
+    simply a brick on a pedestal with a price tag reading $4,500. Each one has a
+    small placard with a pretentious title and artist's statement.
+  paintings: >-
+    Delia's paintings are large, loud, and deeply committed to being
+    misunderstood. Canvases splattered with house paint, fingerprints, and what
+    appears to be mustard. One is titled "Suburban Void III." Another is just
+    the word "NO" written backwards in red. They vibrate with a desperate
+    energy, like the visual equivalent of someone screaming at a dinner party.
+  installation: >-
+    The ceiling installation is Delia's masterwork -- chrome tentacles radiating
+    from a central sphere of crumpled aluminum foil. It sways gently even when
+    there's no breeze. Delia has named it "The Unbearable Lightness of Being
+    Delia." It occasionally drops a piece of foil on visitors' heads.
 spawninfo:
 - mobid: 25
   message: Delia Deetz sweeps into the room, gesturing dramatically at her latest creation.
@@ -68,7 +65,7 @@ spawninfo:
   - ""
   maxwander: 1
   respawnrate: 3 real minutes
-- itemid: 60014
+- itemid: 114
   container: sculptures
   respawnrate: 5 real minutes
 idlemessages:

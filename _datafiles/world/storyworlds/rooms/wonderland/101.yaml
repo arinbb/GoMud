@@ -20,22 +20,19 @@ exits:
   east:
     roomid: 104
 nouns:
-  mushrooms:
-    description: >-
-      The mushrooms are vast and varied. Some have perfectly smooth caps, others
-      are covered in bumps and spots. One side of each mushroom glows faintly
-      in a different color -- eating from one side makes you grow, the other
-      makes you shrink. Or was it the other way around?
-  hookah:
-    description: >-
-      The hookah is an elaborate contraption of brass and glass, producing smoke
-      in shapes that form words, letters, and sometimes small animals before
-      dissolving.
-  smoke:
-    description: >-
-      The smoke from the hookah smells of flowers and something slightly
-      medicinal. It forms shapes as it rises -- vowels mostly, but occasionally
-      a question mark.
+  mushrooms: >-
+    The mushrooms are vast and varied. Some have perfectly smooth caps, others
+    are covered in bumps and spots. One side of each mushroom glows faintly in a
+    different color -- eating from one side makes you grow, the other makes you
+    shrink. Or was it the other way around?
+  hookah: >-
+    The hookah is an elaborate contraption of brass and glass, producing smoke
+    in shapes that form words, letters, and sometimes small animals before
+    dissolving.
+  smoke: >-
+    The smoke from the hookah smells of flowers and something slightly
+    medicinal. It forms shapes as it rises -- vowels mostly, but occasionally a
+    question mark.
 spawninfo:
 - mobid: 10
   message: The Caterpillar regards you with half-closed eyes from atop the mushroom.

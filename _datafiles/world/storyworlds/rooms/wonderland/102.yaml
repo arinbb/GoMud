@@ -18,21 +18,17 @@ exits:
   east:
     roomid: 104
 nouns:
-  pool:
-    description: >-
-      The pool is four and a half feet deep -- the exact depth of tears shed by
-      someone nine feet tall. The water is warm and salty. Various small creatures
-      swim in it, all looking slightly put out.
-  mouse:
-    description: >-
-      The Mouse is swimming with great determination, its whiskers twitching
-      irritably. It seems to have opinions about cats and dogs, none of them
-      favorable.
-  dodo:
-    description: >-
-      The Dodo is a plump, dignified bird with an air of confused authority.
-      It seems to be organizing some kind of race that has no clear beginning
-      or end.
+  pool: >-
+    The pool is four and a half feet deep -- the exact depth of tears shed by
+    someone nine feet tall. The water is warm and salty. Various small creatures
+    swim in it, all looking slightly put out.
+  mouse: >-
+    The Mouse is swimming with great determination, its whiskers twitching
+    irritably. It seems to have opinions about cats and dogs, none of them
+    favorable.
+  dodo: >-
+    The Dodo is a plump, dignified bird with an air of confused authority. It
+    seems to be organizing some kind of race that has no clear beginning or end.
 idlemessages:
 - The Mouse splashes past, muttering something about cats in French.
 - The Dodo announces that the Caucus-Race has begun. Or ended. It's unclear.

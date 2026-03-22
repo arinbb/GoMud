@@ -22,34 +22,17 @@ exits:
   up:
     roomid: 5
 nouns:
-  desk:
-    description: >-
-      A grand oak reception desk, its surface worn smooth by countless hands. A
-      small brass placard reads "Welcome, Traveler. Every story needs a reader."
-  guestbook:
-    description: >-
-      The leather-bound guestbook is filled with names and notes from visitors past.
-      Some entries shimmer faintly, as if written in ink that hasn't quite dried,
-      even after what must be years.
-  constellations:
-    description: >-
-      The painted ceiling depicts constellations you half-recognize -- Orion's belt
-      hangs beside what looks like a dragon in flight, and the Big Dipper shares
-      the sky with a compass rose made of stars.
-sign:
-  signtext: >-
-    <ansi fg="14">Welcome to the Grand Library of StoryWorlds</ansi>
-
-    Step into the pages of your favorite books, the frames of beloved films,
-    or the canvases of timeless artwork.
-
-    <ansi fg="yellow">North</ansi> - The Book Stacks
-    <ansi fg="yellow">East</ansi>  - The Screening Room
-    <ansi fg="yellow">West</ansi>  - The Gallery
-    <ansi fg="yellow">Up</ansi>    - The Mezzanine Reading Lounge
-
-    <ansi fg="3">Pick up a book, film reel, or painting and use it to be transported
-    into that world. Type 'return' from within any world to come back here.</ansi>
+  desk: >-
+    A grand oak reception desk, its surface worn smooth by countless hands. A
+    small brass placard reads "Welcome, Traveler. Every story needs a reader."
+  guestbook: >-
+    The leather-bound guestbook is filled with names and notes from visitors
+    past. Some entries shimmer faintly, as if written in ink that hasn't quite
+    dried, even after what must be years.
+  constellations: >-
+    The painted ceiling depicts constellations you half-recognize -- Orion's
+    belt hangs beside what looks like a dragon in flight, and the Big Dipper
+    shares the sky with a compass rose made of stars.
 spawninfo:
 - mobid: 1
   message: The Librarian quietly appears from behind a shelf.

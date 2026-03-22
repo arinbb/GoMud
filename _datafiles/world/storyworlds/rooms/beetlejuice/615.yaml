@@ -22,49 +22,44 @@ exits:
     roomid: 604
     exitmessage: You scramble up through the crack in the ceiling, hauling yourself back into the living room.
 nouns:
-  neon:
-    description: >-
-      The neon signs flicker and buzz with a manic energy. "BIO-EXORCISMS"
-      strobes between green and white. "GHOST WITH THE MOST" pulses in purple.
-      A smaller sign reads "SATISFACTION GUARANTEED OR YOUR AFTERLIFE BACK."
-      The fine print, written in letters made of tiny beetles, says "No refunds.
-      No exchanges. No escape." Another sign just says "IT'S SHOWTIME" in
-      letters that drip with something luminous.
-  carousel:
-    description: >-
-      The carousel turns slowly, powered by nothing visible. The horses are
-      wrong -- their grins are too wide, their eyes follow you, and one of
-      them has human hands instead of hooves. Calliope music wheezes from
-      somewhere inside the mechanism, playing a tune that's almost recognizable
-      but distorted, like a music box left in the rain for a hundred years.
-  coffin:
-    description: >-
-      The coffin is Beetlejuice's bed, closet, and medicine cabinet. The satin
-      lining is stained with something green. Inside hangs his famous black-and-
-      white striped suit (a spare -- he's wearing the other one). The bottom is
-      littered with beetle shells, playing cards, and a dog-eared copy of "How
-      to Win Friends and Influence Dead People." A mirror on the inside of the
-      lid shows no reflection at all.
-  junk:
-    description: >-
-      The junk pile is archaeological. Layers of stolen and collected debris from
-      across centuries of haunting: Victorian doorknobs, a ventriloquist's dummy
-      with real teeth, carnival game prizes won through cheating, a collection of
-      business cards in various names (all his), license plates from hearses, and
-      a snow globe containing a tiny screaming figure. Every object has a story.
-      None of the stories end well.
-  flies:
-    description: >-
-      The flies are everywhere -- fat, buzzing, iridescent green. They orbit
-      the neon signs like tiny planets around garish suns. They crawl across
-      the junk pile, the carousel horses, the coffin lid. They are Beetlejuice's
-      only consistent companions, and they seem almost affectionate. A jar
-      near the coffin contains even more of them, swirling in lazy patterns.
+  neon: >-
+    The neon signs flicker and buzz with a manic energy. "BIO-EXORCISMS" strobes
+    between green and white. "GHOST WITH THE MOST" pulses in purple. A smaller
+    sign reads "SATISFACTION GUARANTEED OR YOUR AFTERLIFE BACK." The fine print,
+    written in letters made of tiny beetles, says "No refunds. No exchanges. No
+    escape." Another sign just says "IT'S SHOWTIME" in letters that drip with
+    something luminous.
+  carousel: >-
+    The carousel turns slowly, powered by nothing visible. The horses are wrong
+    -- their grins are too wide, their eyes follow you, and one of them has
+    human hands instead of hooves. Calliope music wheezes from somewhere inside
+    the mechanism, playing a tune that's almost recognizable but distorted, like
+    a music box left in the rain for a hundred years.
+  coffin: >-
+    The coffin is Beetlejuice's bed, closet, and medicine cabinet. The satin
+    lining is stained with something green. Inside hangs his famous black-and-
+    white striped suit (a spare -- he's wearing the other one). The bottom is
+    littered with beetle shells, playing cards, and a dog-eared copy of "How to
+    Win Friends and Influence Dead People." A mirror on the inside of the lid
+    shows no reflection at all.
+  junk: >-
+    The junk pile is archaeological. Layers of stolen and collected debris from
+    across centuries of haunting: Victorian doorknobs, a ventriloquist's dummy
+    with real teeth, carnival game prizes won through cheating, a collection of
+    business cards in various names (all his), license plates from hearses, and
+    a snow globe containing a tiny screaming figure. Every object has a story.
+    None of the stories end well.
+  flies: >-
+    The flies are everywhere -- fat, buzzing, iridescent green. They orbit the
+    neon signs like tiny planets around garish suns. They crawl across the junk
+    pile, the carousel horses, the coffin lid. They are Beetlejuice's only
+    consistent companions, and they seem almost affectionate. A jar near the
+    coffin contains even more of them, swirling in lazy patterns.
 spawninfo:
-- itemid: 60018
+- itemid: 118
   container: flies
   respawnrate: 5 real minutes
-- itemid: 60012
+- itemid: 112
   container: junk
   respawnrate: 5 real minutes
 idlemessages:

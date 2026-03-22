@@ -19,22 +19,19 @@ exits:
   north:
     roomid: 105
 nouns:
-  table:
-    description: >-
-      The table stretches on and on, set with more places than could ever be
-      used. The tea things are in various states of disarray -- cups balanced
-      on saucers balanced on other cups, sugar tongs embedded in butter,
-      a watch submerged in a teacup.
-  teapot:
-    description: >-
-      The teapot pours itself, a steady stream of amber tea that never runs out.
-      The tea is exactly the wrong temperature -- too hot to drink quickly, too
-      cool to properly steep.
-  hat:
-    description: >-
-      The Hatter's famous hat, a tall silk topper with a card tucked into the
-      band reading "In this style 10/6." It's seen better days -- the silk is
-      worn and the brim is bent.
+  table: >-
+    The table stretches on and on, set with more places than could ever be used.
+    The tea things are in various states of disarray -- cups balanced on saucers
+    balanced on other cups, sugar tongs embedded in butter, a watch submerged in
+    a teacup.
+  teapot: >-
+    The teapot pours itself, a steady stream of amber tea that never runs out.
+    The tea is exactly the wrong temperature -- too hot to drink quickly, too
+    cool to properly steep.
+  hat: >-
+    The Hatter's famous hat, a tall silk topper with a card tucked into the band
+    reading "In this style 10/6." It's seen better days -- the silk is worn and
+    the brim is bent.
 spawninfo:
 - mobid: 11
   message: The Hatter looks up from his teacup with wild eyes.

@@ -21,25 +21,21 @@ exits:
   north:
     roomid: 105
 nouns:
-  roses:
-    description: >-
-      The rose bushes are covered in white roses that are being hastily painted
-      red. The paint is sloppy and dripping. The card gardeners work with
-      desperate speed, glancing nervously toward the approaching procession.
-  hedges:
-    description: >-
-      The hedges are trimmed into the shapes of chess pieces, hearts, diamonds,
-      clubs, and spades. They're immaculately maintained -- whoever the gardener
-      is, they care more about topiary than roses.
-  hoops:
-    description: >-
-      The croquet hoops are made of bent playing cards. The mallets are live
-      flamingos and the balls are rolled-up hedgehogs. It's the most impossible
-      game of croquet ever conceived.
-  hedgehogs:
-    description: >-
-      The hedgehogs refuse to stay curled up and keep wandering off. They look
-      as confused by the game as you are.
+  roses: >-
+    The rose bushes are covered in white roses that are being hastily painted
+    red. The paint is sloppy and dripping. The card gardeners work with
+    desperate speed, glancing nervously toward the approaching procession.
+  hedges: >-
+    The hedges are trimmed into the shapes of chess pieces, hearts, diamonds,
+    clubs, and spades. They're immaculately maintained -- whoever the gardener
+    is, they care more about topiary than roses.
+  hoops: >-
+    The croquet hoops are made of bent playing cards. The mallets are live
+    flamingos and the balls are rolled-up hedgehogs. It's the most impossible
+    game of croquet ever conceived.
+  hedgehogs: >-
+    The hedgehogs refuse to stay curled up and keep wandering off. They look as
+    confused by the game as you are.
 spawninfo:
 - mobid: 12
   message: The Queen of Hearts sweeps into the garden, her card soldiers marching behind her.

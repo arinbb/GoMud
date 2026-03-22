@@ -18,28 +18,24 @@ exits:
   east:
     roomid: 1
 nouns:
-  paintings:
-    description: >-
-      The paintings span centuries of artistic tradition. Impressionist gardens
-      hang beside surrealist dreamscapes, Renaissance portraits neighbor modern
-      abstractions. Each one is a window into another way of seeing.
-  prints:
-    description: >-
-      Woodblock prints and lithographs line the lower walls -- Japanese ukiyo-e
-      beside Art Nouveau posters, Escher-like impossible geometries beside simple
-      pastoral scenes.
-  easel:
-    description: >-
-      A painter's easel holds an unfinished canvas. The painting seems to change
-      each time you look at it -- sometimes it's a stormy sea, sometimes a quiet
-      forest path, sometimes an empty room that looks remarkably like this one.
-  catalog:
-    description: >-
-      The art catalog describes available works by era and movement. Each entry
-      includes the artist, title, medium, and a note about what world lies
-      within the frame.
+  paintings: >-
+    The paintings span centuries of artistic tradition. Impressionist gardens
+    hang beside surrealist dreamscapes, Renaissance portraits neighbor modern
+    abstractions. Each one is a window into another way of seeing.
+  prints: >-
+    Woodblock prints and lithographs line the lower walls -- Japanese ukiyo-e
+    beside Art Nouveau posters, Escher-like impossible geometries beside simple
+    pastoral scenes.
+  easel: >-
+    A painter's easel holds an unfinished canvas. The painting seems to change
+    each time you look at it -- sometimes it's a stormy sea, sometimes a quiet
+    forest path, sometimes an empty room that looks remarkably like this one.
+  catalog: >-
+    The art catalog describes available works by era and movement. Each entry
+    includes the artist, title, medium, and a note about what world lies within
+    the frame.
 spawninfo:
-- itemid: 50005
+- itemid: 105
   container: wall
   respawnrate: 1 real minutes
 idlemessages:

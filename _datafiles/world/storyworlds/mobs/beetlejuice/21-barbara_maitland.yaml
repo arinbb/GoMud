@@ -1,12 +1,5 @@
 mobid: 21
 zone: beetlejuice
-name: Barbara Maitland
-description: >-
-  A pleasant woman with auburn hair and a warm smile. She wears a floral
-  blouse and cardigan. Like her husband, she is slightly translucent in the
-  right light. She carries herself with the warmth of someone who always
-  has cookies in the oven, even though she can no longer eat them.
-hateraces: []
 hostile: false
 maxwander: 1
 angrycommands: []
@@ -17,5 +10,12 @@ idlecommands:
   - ''
   - ''
 activitylevel: 10
-level: 5
-race: 1
+character:
+  name: Barbara Maitland
+  description: >-
+    A pleasant woman with auburn hair and a warm smile. She wears a floral
+    blouse and cardigan. Like her husband, she is slightly translucent in the
+    right light. She carries herself with the warmth of someone who always
+    has cookies in the oven, even though she can no longer eat them.
+  raceid: 1
+  level: 5

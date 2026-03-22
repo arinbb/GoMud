@@ -25,45 +25,40 @@ exits:
     roomid: 601
     exitmessage: You pass through the iron gate and head downhill toward Main Street.
 nouns:
-  headstones:
-    description: >-
-      The headstones span two centuries of Winter River's dead. Names and dates
-      worn smooth by weather and time. Beloved wives, departed husbands, children
-      taken too soon. Some stones have fresh flowers; most have only moss and
-      lichen. The larger stone in the back bears a name you have to lean close
-      to read: BETELGEUSE. No dates. No epitaph. Just the name, carved deep
-      into dark granite, as if the stone itself is afraid to forget it.
-  betelgeuse:
-    description: >-
-      The Betelgeuse headstone is wrong. Not just the name -- everything about
-      it. The granite is darker than the other stones, almost black. The letters
-      are carved deep, as if clawed rather than chiseled. There are no dates,
-      no "beloved" or "rest in peace." Just the name: BETELGEUSE. The grass
-      around the base is dead in a perfect circle. Flies buzz around it even
-      when there are none elsewhere. And if you listen closely -- very closely --
-      you can hear something underneath the stone. Breathing. Or laughing. It's
-      hard to tell the difference.
-  gate:
-    description: >-
-      The cemetery gate is wrought iron, rusted to a deep orange-brown. It hangs
-      slightly open on one hinge, swaying in breezes that don't seem to exist.
-      The ironwork at the top is shaped into a pattern -- crosses and hourglasses,
-      the traditional symbols of mortality. One of the hourglasses appears to have
-      actual sand running through it, though that's impossible. Isn't it?
-  trees:
-    description: >-
-      The cemetery trees are ancient New England hardwoods -- oaks and elms
-      that were old when the first stones were planted here. Their roots push
-      up through the soil and over grave markers, as if the trees are slowly
-      reclaiming the dead. Knotholes in the bark look unsettlingly like faces.
-      One tree has a low branch from which a frayed rope hangs, swaying.
-  moss:
-    description: >-
-      Thick green moss blankets the headstones, the ground, the base of the
-      trees. It softens every edge and muffles every footstep. The moss is
-      cool to the touch and slightly damp even on dry days. In some places,
-      it grows in patterns that look almost deliberate -- spirals and whorls
-      that suggest something growing according to a plan that isn't nature's.
+  headstones: >-
+    The headstones span two centuries of Winter River's dead. Names and dates
+    worn smooth by weather and time. Beloved wives, departed husbands, children
+    taken too soon. Some stones have fresh flowers; most have only moss and
+    lichen. The larger stone in the back bears a name you have to lean close to
+    read: BETELGEUSE. No dates. No epitaph. Just the name, carved deep into dark
+    granite, as if the stone itself is afraid to forget it.
+  betelgeuse: >-
+    The Betelgeuse headstone is wrong. Not just the name -- everything about it.
+    The granite is darker than the other stones, almost black. The letters are
+    carved deep, as if clawed rather than chiseled. There are no dates, no
+    "beloved" or "rest in peace." Just the name: BETELGEUSE. The grass around
+    the base is dead in a perfect circle. Flies buzz around it even when there
+    are none elsewhere. And if you listen closely -- very closely -- you can
+    hear something underneath the stone. Breathing. Or laughing. It's hard to
+    tell the difference.
+  gate: >-
+    The cemetery gate is wrought iron, rusted to a deep orange-brown. It hangs
+    slightly open on one hinge, swaying in breezes that don't seem to exist. The
+    ironwork at the top is shaped into a pattern -- crosses and hourglasses, the
+    traditional symbols of mortality. One of the hourglasses appears to have
+    actual sand running through it, though that's impossible. Isn't it?
+  trees: >-
+    The cemetery trees are ancient New England hardwoods -- oaks and elms that
+    were old when the first stones were planted here. Their roots push up
+    through the soil and over grave markers, as if the trees are slowly
+    reclaiming the dead. Knotholes in the bark look unsettlingly like faces. One
+    tree has a low branch from which a frayed rope hangs, swaying.
+  moss: >-
+    Thick green moss blankets the headstones, the ground, the base of the trees.
+    It softens every edge and muffles every footstep. The moss is cool to the
+    touch and slightly damp even on dry days. In some places, it grows in
+    patterns that look almost deliberate -- spirals and whorls that suggest
+    something growing according to a plan that isn't nature's.
 idlemessages:
 - Fog rolls between the headstones, thickening and thinning like breathing.
 - A crow lands on the Betelgeuse headstone, cocks its head, and stares at you with one bright eye before flying away.

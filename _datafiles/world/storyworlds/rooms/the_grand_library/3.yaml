@@ -16,39 +16,34 @@ exits:
   west:
     roomid: 1
 nouns:
-  projector:
-    description: >-
-      The projector is a magnificent device of brass gears and crystal lenses. A
-      small slot is designed to accept film reels. When a reel is loaded, the
-      projector hums to life and the screen shimmers with light that seems to
-      pull you forward.
-  reels:
-    description: >-
-      Dozens of film reels sit in their canisters on the shelves. Each is labeled
-      by hand in careful script. Some canisters are dented and well-used, others
-      gleam like new.
-  screen:
-    description: >-
-      The projection screen has an unusual quality -- it isn't flat white fabric
-      but something more like still water, reflecting the room with a slight
-      shimmer. When the projector runs, the images seem to have depth, as if
-      you could step right into them.
-  catalog:
-    description: >-
-      A leather-bound catalog lists available films by genre. Each entry includes
-      a brief description and a shelf location for the reel.
-  curtains:
-    description: >-
-      Heavy burgundy velvet curtains frame the room, muffling sound and creating
-      an intimate atmosphere. They smell faintly of popcorn and old celluloid.
+  projector: >-
+    The projector is a magnificent device of brass gears and crystal lenses. A
+    small slot is designed to accept film reels. When a reel is loaded, the
+    projector hums to life and the screen shimmers with light that seems to pull
+    you forward.
+  reels: >-
+    Dozens of film reels sit in their canisters on the shelves. Each is labeled
+    by hand in careful script. Some canisters are dented and well-used, others
+    gleam like new.
+  screen: >-
+    The projection screen has an unusual quality -- it isn't flat white fabric
+    but something more like still water, reflecting the room with a slight
+    shimmer. When the projector runs, the images seem to have depth, as if you
+    could step right into them.
+  catalog: >-
+    A leather-bound catalog lists available films by genre. Each entry includes
+    a brief description and a shelf location for the reel.
+  curtains: >-
+    Heavy burgundy velvet curtains frame the room, muffling sound and creating
+    an intimate atmosphere. They smell faintly of popcorn and old celluloid.
 spawninfo:
-- itemid: 50003
+- itemid: 103
   container: shelves
   respawnrate: 1 real minutes
-- itemid: 50004
+- itemid: 104
   container: shelves
   respawnrate: 1 real minutes
-- itemid: 50006
+- itemid: 106
   container: shelves
   respawnrate: 1 real minutes
 idlemessages:

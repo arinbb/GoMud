@@ -25,39 +25,34 @@ exits:
     secret: true
     exitmessage: You open the unmarked door. Sand and heat blast your face. This was a mistake.
 nouns:
-  counter:
-    description: >-
-      The reception counter is scratched formica in an institutional green. Behind
-      it sits Miss Argentina, the former beauty queen turned receptionist, her
-      green skin a sharp contrast to her faded sash. A small brass bell sits on
-      the counter with a sign: "Ring for Service (Please Don't)." Behind her,
-      filing cabinets stretch back into impossible depths.
-  tickets:
-    description: >-
-      The ticket dispenser is a chrome box mounted on the wall. A sign reads
-      "TAKE A NUMBER." The numbers appear to be in the nine millions. The
-      current number being served, according to the display, is somewhere in the
-      three millions. This could take a while. An eternity, even.
-  benches:
-    description: >-
-      The benches are hard wood polished smooth by countless dead posteriors. The
-      waiting dead sit in various conditions -- a man cut in half reads a
-      magazine with both halves, a woman covered in bee stings knits placidly,
-      a football team in full gear argues about the play that killed them. Nobody
-      looks happy but nobody looks surprised either. Death, it seems, involves
-      a lot of waiting.
-  number:
-    description: >-
-      The number display clicks from 3,457,892 to 3,457,893. A faint cheer rises
-      from somewhere in the back of the room. At this rate, your number should be
-      called in roughly six hundred years.
-  magazines:
-    description: >-
-      The magazine selection is uniquely morbid. "Afterlife Weekly" features a
-      cover story on "10 Haunting Tricks The Living HATE." "Better Crypts and
-      Gardens" has a spread on mausoleum decorating. "Cosmopolidead" promises
-      "Get That Deathly Glow in Just 30 Days." They're all at least forty
-      years out of date.
+  counter: >-
+    The reception counter is scratched formica in an institutional green. Behind
+    it sits Miss Argentina, the former beauty queen turned receptionist, her
+    green skin a sharp contrast to her faded sash. A small brass bell sits on
+    the counter with a sign: "Ring for Service (Please Don't)." Behind her,
+    filing cabinets stretch back into impossible depths.
+  tickets: >-
+    The ticket dispenser is a chrome box mounted on the wall. A sign reads "TAKE
+    A NUMBER." The numbers appear to be in the nine millions. The current number
+    being served, according to the display, is somewhere in the three millions.
+    This could take a while. An eternity, even.
+  benches: >-
+    The benches are hard wood polished smooth by countless dead posteriors. The
+    waiting dead sit in various conditions -- a man cut in half reads a magazine
+    with both halves, a woman covered in bee stings knits placidly, a football
+    team in full gear argues about the play that killed them. Nobody looks happy
+    but nobody looks surprised either. Death, it seems, involves a lot of
+    waiting.
+  number: >-
+    The number display clicks from 3,457,892 to 3,457,893. A faint cheer rises
+    from somewhere in the back of the room. At this rate, your number should be
+    called in roughly six hundred years.
+  magazines: >-
+    The magazine selection is uniquely morbid. "Afterlife Weekly" features a
+    cover story on "10 Haunting Tricks The Living HATE." "Better Crypts and
+    Gardens" has a spread on mausoleum decorating. "Cosmopolidead" promises "Get
+    That Deathly Glow in Just 30 Days." They're all at least forty years out of
+    date.
 spawninfo:
 - mobid: 28
   message: Miss Argentina adjusts her faded sash and sighs from behind the reception counter.
@@ -92,7 +87,7 @@ spawninfo:
   - ""
   maxwander: 0
   respawnrate: 5 real minutes
-- itemid: 60013
+- itemid: 113
   container: tickets
   respawnrate: 3 real minutes
 idlemessages:

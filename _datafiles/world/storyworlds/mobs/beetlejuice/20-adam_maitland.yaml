@@ -1,13 +1,5 @@
 mobid: 20
 zone: beetlejuice
-name: Adam Maitland
-description: >-
-  A tall, thin man in plaid flannel and khakis. He looks completely normal
-  except for a slight translucency that catches the light at odd angles.
-  His fingers are stained with model paint and there is sawdust in his hair.
-  He has the gentle, slightly bewildered expression of someone still getting
-  used to being dead.
-hateraces: []
 hostile: false
 maxwander: 0
 angrycommands: []
@@ -17,5 +9,13 @@ idlecommands:
   - ''
   - ''
 activitylevel: 10
-level: 5
-race: 1
+character:
+  name: Adam Maitland
+  description: >-
+    A tall, thin man in plaid flannel and khakis. He looks completely normal
+    except for a slight translucency that catches the light at odd angles.
+    His fingers are stained with model paint and there is sawdust in his hair.
+    He has the gentle, slightly bewildered expression of someone still getting
+    used to being dead.
+  raceid: 1
+  level: 5

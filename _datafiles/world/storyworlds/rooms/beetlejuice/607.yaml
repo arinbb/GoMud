@@ -20,28 +20,23 @@ exits:
   north:
     roomid: 609
 nouns:
-  model:
-    description: >-
-      The model town is Adam's life's work -- a perfect 1:87 scale replica of
-      Winter River, Connecticut. Every house has curtains in the windows. The
-      covered bridge has actual water running beneath it (a tiny pump). The
-      cemetery has headstones you'd need a magnifying glass to read. It's
-      beautiful and slightly unsettling, like a world trapped under glass.
-  workbench:
-    description: >-
-      The workbench is organized chaos -- X-Acto knives, tweezers, bottles
-      of model paint, sheets of balsa wood, and a magnifying lamp. A half-
-      finished miniature church sits clamped in a tiny vise.
-  wall:
-    description: >-
-      The blank wall is smooth white plaster, about five feet across. It's
-      the only undecorated surface in the entire attic. Something about it
-      draws your eye. You have the strangest urge to draw a door on it.
-  supplies:
-    description: >-
-      A cardboard box of art supplies. Brushes, acrylic paints in various
-      colors, turpentine, and -- sitting right on top -- a thick piece of
-      white chalk.
+  model: >-
+    The model town is Adam's life's work -- a perfect 1:87 scale replica of
+    Winter River, Connecticut. Every house has curtains in the windows. The
+    covered bridge has actual water running beneath it (a tiny pump). The
+    cemetery has headstones you'd need a magnifying glass to read. It's
+    beautiful and slightly unsettling, like a world trapped under glass.
+  workbench: >-
+    The workbench is organized chaos -- X-Acto knives, tweezers, bottles of
+    model paint, sheets of balsa wood, and a magnifying lamp. A half- finished
+    miniature church sits clamped in a tiny vise.
+  wall: >-
+    The blank wall is smooth white plaster, about five feet across. It's the
+    only undecorated surface in the entire attic. Something about it draws your
+    eye. You have the strangest urge to draw a door on it.
+  supplies: >-
+    A cardboard box of art supplies. Brushes, acrylic paints in various colors,
+    turpentine, and -- sitting right on top -- a thick piece of white chalk.
 spawninfo:
 - mobid: 20
   message: Adam Maitland looks up from his model town with a distracted wave.
@@ -56,10 +51,10 @@ spawninfo:
   - ""
   maxwander: 0
   respawnrate: 3 real minutes
-- itemid: 60011
+- itemid: 111
   container: supplies
   respawnrate: 5 real minutes
-- itemid: 60010
+- itemid: 110
   container: workbench
   respawnrate: 5 real minutes
 idlemessages:

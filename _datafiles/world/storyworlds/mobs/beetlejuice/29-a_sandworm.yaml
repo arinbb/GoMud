@@ -1,0 +1,22 @@
+mobid: 29
+zone: beetlejuice
+hostile: true
+maxwander: 2
+angrycommands:
+  - 'emote erupts from the sand with a deafening shriek!'
+  - 'say *SCREEEEECH*'
+idlecommands:
+  - 'emote burrows beneath the black sand, leaving a rippling trail.'
+  - 'emote rises from the sand and lets out a bone-rattling screech.'
+  - ''
+  - ''
+activitylevel: 20
+character:
+  name: a Sandworm
+  description: >-
+    An enormous creature with black-and-white striped hide, bursting from the
+    black sand with rows of teeth the size of stalactites. Its segmented body
+    stretches endlessly into the desert. Twin orange eyes burn with mindless
+    hunger. The ground trembles with every undulation of its massive form.
+  raceid: 8
+  level: 15

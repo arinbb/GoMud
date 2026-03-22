@@ -21,28 +21,24 @@ exits:
   south:
     roomid: 610
 nouns:
-  table:
-    description: >-
-      The mahogany dining table seats eight. Place settings for six are laid out
-      with meticulous care. One of the napkins has been folded into a swan. Another
-      appears to have been folded into something obscene.
-  chandelier:
-    description: >-
-      The chandelier is original to the house -- wrought iron and crystal.
-      Its candles burn without melting, the flames perfectly still. When the
-      light hits the crystal drops, tiny rainbows scatter across the walls.
-  dish:
-    description: >-
-      A silver serving dish with a domed lid. You lift it and find shrimp
-      cocktail, arranged in a perfect circle. The shrimp seem to be moving
-      slightly. Are they... tapping? To a beat?
-  fruit:
-    description: >-
-      A bowl of tropical fruit -- bananas, papayas, mangos. The bananas are
-      perfectly ripe. Almost too perfectly. They seem to vibrate with a
-      faint calypso rhythm.
+  table: >-
+    The mahogany dining table seats eight. Place settings for six are laid out
+    with meticulous care. One of the napkins has been folded into a swan.
+    Another appears to have been folded into something obscene.
+  chandelier: >-
+    The chandelier is original to the house -- wrought iron and crystal. Its
+    candles burn without melting, the flames perfectly still. When the light
+    hits the crystal drops, tiny rainbows scatter across the walls.
+  dish: >-
+    A silver serving dish with a domed lid. You lift it and find shrimp
+    cocktail, arranged in a perfect circle. The shrimp seem to be moving
+    slightly. Are they... tapping? To a beat?
+  fruit: >-
+    A bowl of tropical fruit -- bananas, papayas, mangos. The bananas are
+    perfectly ripe. Almost too perfectly. They seem to vibrate with a faint
+    calypso rhythm.
 spawninfo:
-- itemid: 60016
+- itemid: 116
   container: table
   respawnrate: 5 real minutes
 idlemessages:

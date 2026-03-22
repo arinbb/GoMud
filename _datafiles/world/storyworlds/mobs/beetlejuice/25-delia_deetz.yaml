@@ -1,12 +1,5 @@
 mobid: 25
 zone: beetlejuice
-name: Delia Deetz
-description: >-
-  A dramatic woman in flowing avant-garde clothing — asymmetric hems, bold
-  geometric patterns, oversized jewelry. Her hair is sculpted into an
-  architectural arrangement that defies both gravity and good taste. She
-  speaks with theatrical intensity about everything, especially her art.
-hateraces: []
 hostile: false
 maxwander: 1
 angrycommands: []
@@ -17,5 +10,12 @@ idlecommands:
   - ''
   - ''
 activitylevel: 10
-level: 5
-race: 1
+character:
+  name: Delia Deetz
+  description: >-
+    A dramatic woman in flowing avant-garde clothing — asymmetric hems, bold
+    geometric patterns, oversized jewelry. Her hair is sculpted into an
+    architectural arrangement that defies both gravity and good taste. She
+    speaks with theatrical intensity about everything, especially her art.
+  raceid: 1
+  level: 5

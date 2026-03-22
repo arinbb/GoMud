@@ -24,20 +24,17 @@ exits:
   east:
     roomid: 618
 nouns:
-  porch:
-    description: >-
-      The porch swing sways gently in the breeze, as if someone just got up
-      from it. A glass of lemonade sits on the railing, still sweating with
-      condensation, though no one seems to be around.
-  garden:
-    description: >-
-      Barbara's garden is a masterwork of New England horticulture. But look
-      closely and you notice: the flowers never quite wilt, the leaves never
-      quite fall. The garden is frozen in a perfect autumn that never ends.
-  door:
-    description: >-
-      The front door is solid oak with a brass knocker shaped like a pineapple.
-      It stands slightly ajar, creaking faintly in the breeze.
+  porch: >-
+    The porch swing sways gently in the breeze, as if someone just got up from
+    it. A glass of lemonade sits on the railing, still sweating with
+    condensation, though no one seems to be around.
+  garden: >-
+    Barbara's garden is a masterwork of New England horticulture. But look
+    closely and you notice: the flowers never quite wilt, the leaves never quite
+    fall. The garden is frozen in a perfect autumn that never ends.
+  door: >-
+    The front door is solid oak with a brass knocker shaped like a pineapple. It
+    stands slightly ajar, creaking faintly in the breeze.
 idlemessages:
 - The porch swing creaks back and forth, pushed by an invisible hand.
 - A monarch butterfly drifts through Barbara's garden, landing on a chrysanthemum.

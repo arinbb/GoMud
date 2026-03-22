@@ -1,13 +1,5 @@
 mobid: 28
 zone: beetlejuice
-name: Miss Argentina
-description: >-
-  A beautiful woman in a sparkly pageant sash and tiara. Her skin has a
-  faint green tinge. She smiles brightly but her wrists tell a different
-  story — deep, permanent marks she makes no effort to hide. She mans the
-  reception counter with the efficiency of someone who has been doing this
-  for a very, very long time.
-hateraces: []
 hostile: false
 maxwander: 0
 angrycommands: []
@@ -20,5 +12,13 @@ idlecommands:
   - ''
   - ''
 activitylevel: 10
-level: 5
-race: 1
+character:
+  name: Miss Argentina
+  description: >-
+    A beautiful woman in a sparkly pageant sash and tiara. Her skin has a
+    faint green tinge. She smiles brightly but her wrists tell a different
+    story — deep, permanent marks she makes no effort to hide. She mans the
+    reception counter with the efficiency of someone who has been doing this
+    for a very, very long time.
+  raceid: 1
+  level: 5

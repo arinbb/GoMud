@@ -11,9 +11,9 @@ function onCommand(cmd, rest, user, room) {
         return true;
     }
 
-    // Draw door mechanic - requires chalk (item 60011)
+    // Draw door mechanic - requires chalk (item 111)
     if (cmd == "draw" && rest.indexOf("door") >= 0) {
-        if (!user.HasItemId(60011)) {
+        if (!user.HasItemId(111)) {
             SendUserMessage(user.UserId(), "You need something to draw with. Maybe there's chalk in the art supplies.");
             return true;
         }

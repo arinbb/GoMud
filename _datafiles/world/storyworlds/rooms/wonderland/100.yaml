@@ -18,25 +18,21 @@ exits:
   east:
     roomid: 102
 nouns:
-  table:
-    description: >-
-      A three-legged glass table, perfectly transparent. The golden key sits upon
-      it. Beside the key is a small bottle labeled "DRINK ME" and a tiny cake
-      with "EAT ME" written in currants.
-  curtain:
-    description: >-
-      Behind the curtain is a tiny door, barely fifteen inches high. Through the
-      keyhole you can glimpse the most beautiful garden you've ever seen -- bright
-      flowers and cool fountains. If only you were small enough to fit through...
-  key:
-    description: >-
-      A tiny golden key, delicately made. It looks like it would fit a very small
-      lock indeed.
-  doors:
-    description: >-
-      The doors come in every conceivable size, from grand double doors tall enough
-      for a giant to tiny doors that a mouse would have to duck through. Each has a
-      different knocker, handle, or keyhole. None of them open.
+  table: >-
+    A three-legged glass table, perfectly transparent. The golden key sits upon
+    it. Beside the key is a small bottle labeled "DRINK ME" and a tiny cake with
+    "EAT ME" written in currants.
+  curtain: >-
+    Behind the curtain is a tiny door, barely fifteen inches high. Through the
+    keyhole you can glimpse the most beautiful garden you've ever seen -- bright
+    flowers and cool fountains. If only you were small enough to fit through...
+  key: >-
+    A tiny golden key, delicately made. It looks like it would fit a very small
+    lock indeed.
+  doors: >-
+    The doors come in every conceivable size, from grand double doors tall
+    enough for a giant to tiny doors that a mouse would have to duck through.
+    Each has a different knocker, handle, or keyhole. None of them open.
 idlemessages:
 - Something scurries behind one of the locked doors. A mouse? Something larger?
 - The tiny door at the end of the hall seems to shimmer, as if the garden beyond it is beckoning.

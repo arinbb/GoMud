@@ -19,25 +19,21 @@ exits:
   east:
     roomid: 606
 nouns:
-  spice:
-    description: >-
-      The spice rack is Barbara's masterpiece -- three dozen jars in perfect
-      alphabetical order, from allspice to za'atar. Each jar is labeled in
-      her careful handwriting. The basil is running low.
-  stove:
-    description: >-
-      The old gas stove has four burners and an oven with a temperamental pilot
-      light. It smells faintly of baked bread and cinnamon, even though nothing
-      has been baked in it for some time.
-  mug:
-    description: >-
-      A yellow coffee mug with "World's Best Wife" printed on it. There's a
-      ring of dried coffee at the bottom. Barbara's last cup.
-  pantry:
-    description: >-
-      The pantry is a study in contrasts -- Barbara's mason jars of homemade
-      preserves share shelf space with Delia's kale chips and activated charcoal
-      water.
+  spice: >-
+    The spice rack is Barbara's masterpiece -- three dozen jars in perfect
+    alphabetical order, from allspice to za'atar. Each jar is labeled in her
+    careful handwriting. The basil is running low.
+  stove: >-
+    The old gas stove has four burners and an oven with a temperamental pilot
+    light. It smells faintly of baked bread and cinnamon, even though nothing
+    has been baked in it for some time.
+  mug: >-
+    A yellow coffee mug with "World's Best Wife" printed on it. There's a ring
+    of dried coffee at the bottom. Barbara's last cup.
+  pantry: >-
+    The pantry is a study in contrasts -- Barbara's mason jars of homemade
+    preserves share shelf space with Delia's kale chips and activated charcoal
+    water.
 spawninfo:
 - mobid: 21
   message: Barbara Maitland appears, absentmindedly straightening the spice rack.

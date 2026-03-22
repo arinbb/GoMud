@@ -21,33 +21,29 @@ exits:
     roomid: 612
     exitmessage: You push back through the frosted glass door to the waiting room.
 nouns:
-  desk:
-    description: >-
-      Juno's desk is a battlefield of bureaucracy. Stacks of "Deceased Person
-      Intake Forms" tower in precarious columns. A coffee mug reading "I Survived
-      Death (Barely)" holds cold coffee and three cigarette butts. Rubber stamps
-      in various colors are scattered like fallen soldiers. Somewhere under the
-      paperwork, a phone rings. It has been ringing for decades. Juno ignores it.
-  filing:
-    description: >-
-      The filing cabinets stretch floor to ceiling and disappear into the walls
-      as if the room extends further than physics should allow. Drawer labels
-      include "HAUNTINGS, UNAUTHORIZED," "POLTERGEIST COMPLAINTS," "EXORCISMS
-      (PENDING)," and one simply marked "HIM" in red ink with three underlines.
-      That drawer is padlocked.
-  ashtrays:
-    description: >-
-      There are at least seven ashtrays visible, all overflowing. The smoke
-      from Juno's cigarettes doesn't dissipate -- it collects near the ceiling
-      in a thick stratum, a geological record of decades of chain-smoking.
-      Despite the lack of ventilation, the smoke never quite fills the room.
-      It knows its place.
-  window:
-    description: >-
-      The window behind Juno's desk looks out on nothing. Not darkness -- nothing.
-      A grey, featureless void that extends in all directions. No horizon, no
-      sky, no ground. If you stare at it too long, you begin to feel that the
-      nothing is staring back, taking notes, filing them in triplicate.
+  desk: >-
+    Juno's desk is a battlefield of bureaucracy. Stacks of "Deceased Person
+    Intake Forms" tower in precarious columns. A coffee mug reading "I Survived
+    Death (Barely)" holds cold coffee and three cigarette butts. Rubber stamps
+    in various colors are scattered like fallen soldiers. Somewhere under the
+    paperwork, a phone rings. It has been ringing for decades. Juno ignores it.
+  filing: >-
+    The filing cabinets stretch floor to ceiling and disappear into the walls as
+    if the room extends further than physics should allow. Drawer labels include
+    "HAUNTINGS, UNAUTHORIZED," "POLTERGEIST COMPLAINTS," "EXORCISMS (PENDING),"
+    and one simply marked "HIM" in red ink with three underlines. That drawer is
+    padlocked.
+  ashtrays: >-
+    There are at least seven ashtrays visible, all overflowing. The smoke from
+    Juno's cigarettes doesn't dissipate -- it collects near the ceiling in a
+    thick stratum, a geological record of decades of chain-smoking. Despite the
+    lack of ventilation, the smoke never quite fills the room. It knows its
+    place.
+  window: >-
+    The window behind Juno's desk looks out on nothing. Not darkness -- nothing.
+    A grey, featureless void that extends in all directions. No horizon, no sky,
+    no ground. If you stare at it too long, you begin to feel that the nothing
+    is staring back, taking notes, filing them in triplicate.
 spawninfo:
 - mobid: 27
   message: Juno sits behind her desk, lighting a new cigarette from the butt of the old one.
@@ -66,7 +62,7 @@ spawninfo:
   - ""
   maxwander: 0
   respawnrate: 3 real minutes
-- itemid: 60012
+- itemid: 112
   container: desk
   respawnrate: 5 real minutes
 idlemessages:

@@ -19,32 +19,28 @@ exits:
   north:
     roomid: 6
 nouns:
-  fiction:
-    description: >-
-      The Fiction section holds novels from every era and tradition. Some spines
-      are cracked and well-loved, others pristine and untouched.
-  fantasy:
-    description: >-
-      Dragons, wizards, enchanted swords -- the Fantasy shelves practically hum
-      with barely-contained magic. A few books tremble slightly as you look at them.
-  classics:
-    description: >-
-      The Classics section smells of age and wisdom. These are the foundational
-      stories, the tales that all others echo and answer.
-  mystery:
-    description: >-
-      The Mystery section is dimly lit compared to the others, as if the shadows
-      themselves are keeping secrets.
-  shelves:
-    description: >-
-      The shelves are made of rich mahogany, each one hand-carved with scenes from
-      famous stories. Running your fingers along the wood, you feel tiny figures
-      of heroes, monsters, and ships beneath your touch.
+  fiction: >-
+    The Fiction section holds novels from every era and tradition. Some spines
+    are cracked and well-loved, others pristine and untouched.
+  fantasy: >-
+    Dragons, wizards, enchanted swords -- the Fantasy shelves practically hum
+    with barely-contained magic. A few books tremble slightly as you look at
+    them.
+  classics: >-
+    The Classics section smells of age and wisdom. These are the foundational
+    stories, the tales that all others echo and answer.
+  mystery: >-
+    The Mystery section is dimly lit compared to the others, as if the shadows
+    themselves are keeping secrets.
+  shelves: >-
+    The shelves are made of rich mahogany, each one hand-carved with scenes from
+    famous stories. Running your fingers along the wood, you feel tiny figures
+    of heroes, monsters, and ships beneath your touch.
 spawninfo:
-- itemid: 50001
+- itemid: 101
   container: shelves
   respawnrate: 1 real minutes
-- itemid: 50002
+- itemid: 102
   container: shelves
   respawnrate: 1 real minutes
 idlemessages:

@@ -18,33 +18,20 @@ exits:
     roomid: 601
     exitmessage: You walk through the covered bridge toward the town.
 nouns:
-  sign:
-    description: >-
-      A wooden sign weathered by New England seasons. "WINTER RIVER - EST. 1648 -
-      Pop. 4,632." Someone has scratched "nice model" in tiny letters at the bottom.
-  river:
-    description: >-
-      The shallow river flows beneath the bridge, brown and leaf-strewn. A spider
-      crawls across the railing. For just a moment, reflected in the water, you
-      think you see a car plunging off the bridge -- but when you blink, the
-      water is still.
-  bridge:
-    description: >-
-      The covered bridge is a classic New England design, its red paint faded
-      and peeling. The timbers are solid but old. There are no guardrails on
-      the outside -- just a gentle wooden lip between the road and the drop
-      to the river below.
-sign:
-  signtext: >-
-    <ansi fg="14">Welcome to Winter River, Connecticut</ansi>
-
-    <ansi fg="yellow">East</ansi> - Winter River Main Street
-
-    <ansi fg="3">You've stepped into the world of Beetlejuice (1988).
-    Explore the Maitland house, discover the afterlife waiting room,
-    and maybe -- if you dare -- summon the Ghost with the Most.
-
-    Type 'return' at any time to go back to the Grand Library.</ansi>
+  sign: >-
+    A wooden sign weathered by New England seasons. "WINTER RIVER - EST. 1648 -
+    Pop. 4,632." Someone has scratched "nice model" in tiny letters at the
+    bottom.
+  river: >-
+    The shallow river flows beneath the bridge, brown and leaf-strewn. A spider
+    crawls across the railing. For just a moment, reflected in the water, you
+    think you see a car plunging off the bridge -- but when you blink, the water
+    is still.
+  bridge: >-
+    The covered bridge is a classic New England design, its red paint faded and
+    peeling. The timbers are solid but old. There are no guardrails on the
+    outside -- just a gentle wooden lip between the road and the drop to the
+    river below.
 idlemessages:
 - A gust of autumn wind sends a flurry of golden leaves spiraling through the bridge.
 - The river beneath the bridge gurgles softly over mossy rocks.

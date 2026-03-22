@@ -1,0 +1,23 @@
+mobid: 30
+zone: beetlejuice
+hostile: false
+maxwander: 0
+angrycommands: []
+idlecommands:
+  - 'emote flips through a magazine sideways. Being flat makes it easier.'
+  - 'say We almost had ''em in the fourth quarter...'
+  - 'emote shuffles in their seats with a papery rustling sound.'
+  - ''
+  - ''
+  - ''
+activitylevel: 10
+character:
+  name: the Football Team
+  description: >-
+    An entire high school football team, still in their uniforms, sitting in
+    the waiting room looking dazed. They are all completely flat, as if a
+    steamroller got them. Their jerseys read "WINTER RIVER WOLVES." They flip
+    through old magazines with their two-dimensional hands, occasionally
+    arguing about the last play in tinny, compressed voices.
+  raceid: 1
+  level: 1

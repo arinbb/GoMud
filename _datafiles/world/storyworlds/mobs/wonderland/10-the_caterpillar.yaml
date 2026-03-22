@@ -1,0 +1,13 @@
+mobid: 10
+zone: wonderland
+hostile: false
+maxwander: 0
+angrycommands: []
+character:
+  name: the Caterpillar
+  description: >-
+    A large blue caterpillar sits languidly atop a mushroom, smoking a hookah.
+    It regards you with an air of sleepy superiority through half-closed eyes.
+    Smoke curls from its mouth in the shape of vowels.
+  raceid: 1
+  level: 5

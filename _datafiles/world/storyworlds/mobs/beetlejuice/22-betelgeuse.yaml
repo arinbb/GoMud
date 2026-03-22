@@ -1,14 +1,5 @@
 mobid: 22
 zone: beetlejuice
-name: Betelgeuse
-description: >-
-  A wild-eyed man in a moldy black-and-white striped suit, his face pale
-  with dark circles under his eyes and wild unkempt hair with green moss
-  growing in it. He smells of grave dirt, cheap cologne, and something
-  indefinably wrong. His grin is too wide and his laugh is too loud. He
-  moves with the manic energy of a carnival barker who has been dead for
-  six hundred years and hasn't slowed down one bit.
-hateraces: []
 hostile: false
 maxwander: 0
 angrycommands:
@@ -22,5 +13,14 @@ idlecommands:
   - ''
   - ''
 activitylevel: 20
-level: 20
-race: 1
+character:
+  name: Betelgeuse
+  description: >-
+    A wild-eyed man in a moldy black-and-white striped suit, his face pale
+    with dark circles under his eyes and wild unkempt hair with green moss
+    growing in it. He smells of grave dirt, cheap cologne, and something
+    indefinably wrong. His grin is too wide and his laugh is too loud. He
+    moves with the manic energy of a carnival barker who has been dead for
+    six hundred years and hasn't slowed down one bit.
+  raceid: 1
+  level: 20

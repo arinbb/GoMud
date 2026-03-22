@@ -20,33 +20,28 @@ exits:
     roomid: 612
     exitmessage: You scramble desperately back through the door, slamming it behind you.
 nouns:
-  suns:
-    description: >-
-      Two suns hang in the purple sky. The larger one pulses like a diseased
-      heart, casting long red shadows across the black sand. The smaller one
-      burns white and furious, creating a second set of shadows that move
-      independently of the first. Where the two shadows overlap, the ground
-      is scorched to glass.
-  sand:
-    description: >-
-      The black sand is coarse and warm, almost hot. It shifts constantly,
-      forming and dissolving patterns that look almost like writing in a
-      language older than language. Ridges in the sand mark the passage of
-      something vast beneath the surface. The ridges are fresh. The something
-      is close.
-  rocks:
-    description: >-
-      The striped rocks are banded in layers of black, white, and deep red,
-      like geological candy canes carved by a mad god. They're warm to the
-      touch and vibrate faintly, as if resonating with a frequency just below
-      hearing. Claw marks -- enormous ones -- score the surface of the
-      nearest rock. Whatever made them was not small.
-  horizon:
-    description: >-
-      The horizon ripples with heat haze. Beyond it, you can just make out the
-      shapes of more striped rock formations, stretching endlessly. There is
-      no shelter. No shade. No safety. Just sand and rocks and the growing
-      certainty that something under the sand knows exactly where you are.
+  suns: >-
+    Two suns hang in the purple sky. The larger one pulses like a diseased
+    heart, casting long red shadows across the black sand. The smaller one burns
+    white and furious, creating a second set of shadows that move independently
+    of the first. Where the two shadows overlap, the ground is scorched to
+    glass.
+  sand: >-
+    The black sand is coarse and warm, almost hot. It shifts constantly, forming
+    and dissolving patterns that look almost like writing in a language older
+    than language. Ridges in the sand mark the passage of something vast beneath
+    the surface. The ridges are fresh. The something is close.
+  rocks: >-
+    The striped rocks are banded in layers of black, white, and deep red, like
+    geological candy canes carved by a mad god. They're warm to the touch and
+    vibrate faintly, as if resonating with a frequency just below hearing. Claw
+    marks -- enormous ones -- score the surface of the nearest rock. Whatever
+    made them was not small.
+  horizon: >-
+    The horizon ripples with heat haze. Beyond it, you can just make out the
+    shapes of more striped rock formations, stretching endlessly. There is no
+    shelter. No shade. No safety. Just sand and rocks and the growing certainty
+    that something under the sand knows exactly where you are.
 spawninfo:
 - mobid: 29
   message: The ground ERUPTS. A sandworm bursts from the dunes, its mouth a ringed horror of teeth and hunger.

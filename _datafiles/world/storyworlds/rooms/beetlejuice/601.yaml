@@ -23,22 +23,19 @@ exits:
   east:
     roomid: 618
 nouns:
-  hardware:
-    description: >-
-      The hardware store has a display of paint cans and garden tools in the
-      window. A bell jingles faintly inside. This is where Adam Maitland used
-      to buy supplies for his model town.
-  diner:
-    description: >-
-      A classic small-town diner with a neon "OPEN" sign that flickers
-      intermittently. Through the window you can see red vinyl booths and
-      a counter with chrome stools.
-  house:
-    description: >-
-      The Maitland house sits high on the hill above town, a handsome Victorian
-      with gabled windows and a wraparound porch. It looks different somehow --
-      the paint seems fresher, the garden more manicured than a house should be
-      after its owners have died.
+  hardware: >-
+    The hardware store has a display of paint cans and garden tools in the
+    window. A bell jingles faintly inside. This is where Adam Maitland used to
+    buy supplies for his model town.
+  diner: >-
+    A classic small-town diner with a neon "OPEN" sign that flickers
+    intermittently. Through the window you can see red vinyl booths and a
+    counter with chrome stools.
+  house: >-
+    The Maitland house sits high on the hill above town, a handsome Victorian
+    with gabled windows and a wraparound porch. It looks different somehow --
+    the paint seems fresher, the garden more manicured than a house should be
+    after its owners have died.
 idlemessages:
 - A pickup truck rumbles slowly down Main Street, then turns the corner and is gone.
 - The hardware store bell jingles as someone enters or exits -- you can't quite see who.

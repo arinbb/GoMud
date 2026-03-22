@@ -18,32 +18,27 @@ exits:
   down:
     roomid: 1
 nouns:
-  orrery:
-    description: >-
-      A beautiful brass orrery depicting not our solar system but something else
-      entirely -- worlds orbit a central light, each one etched with tiny scenes.
-      You recognize some of them from famous stories.
-  globe:
-    description: >-
-      The crystal snow globe contains a perfect miniature castle atop a hill.
-      When you shake it, snow swirls inside, and you swear you can hear faint
-      music playing from within.
-  compass:
-    description: >-
-      The compass is made of dark iron and its face is etched with words instead
-      of cardinal directions: "Wonder," "Danger," "Mystery," and "Home." The
-      needle drifts between them as if sensing what you seek.
-  fireplace:
-    description: >-
-      The fireplace burns with a warm, steady flame that never seems to need
-      tending. The fire crackles contentedly, and occasionally you see shapes
-      in the flames -- a ship, a dragon, a city skyline.
-  curiosities:
-    description: >-
-      The curiosity shelf holds objects that have found their way back from the
-      story worlds: a golden ring, a battered leather hat, a glass slipper, a
-      small blue police box (how did that fit on a shelf?), a lightsaber hilt.
-      Each one hums with residual narrative energy.
+  orrery: >-
+    A beautiful brass orrery depicting not our solar system but something else
+    entirely -- worlds orbit a central light, each one etched with tiny scenes.
+    You recognize some of them from famous stories.
+  globe: >-
+    The crystal snow globe contains a perfect miniature castle atop a hill. When
+    you shake it, snow swirls inside, and you swear you can hear faint music
+    playing from within.
+  compass: >-
+    The compass is made of dark iron and its face is etched with words instead
+    of cardinal directions: "Wonder," "Danger," "Mystery," and "Home." The
+    needle drifts between them as if sensing what you seek.
+  fireplace: >-
+    The fireplace burns with a warm, steady flame that never seems to need
+    tending. The fire crackles contentedly, and occasionally you see shapes in
+    the flames -- a ship, a dragon, a city skyline.
+  curiosities: >-
+    The curiosity shelf holds objects that have found their way back from the
+    story worlds: a golden ring, a battered leather hat, a glass slipper, a
+    small blue police box (how did that fit on a shelf?), a lightsaber hilt.
+    Each one hums with residual narrative energy.
 idlemessages:
 - The orrery clicks softly as its tiny worlds continue their slow orbit.
 - Flames in the fireplace momentarily take the shape of a galloping horse before collapsing into embers.

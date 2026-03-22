@@ -1,13 +1,5 @@
 mobid: 23
 zone: beetlejuice
-name: Lydia Deetz
-description: >-
-  A pale teenage girl dressed entirely in black — black dress, black veil,
-  black lace gloves. Her dark eyes are heavily lined with kohl, and she
-  carries a vintage camera on a strap around her neck. She has the air of
-  someone who is profoundly bored with the living world and fascinated by
-  everything else.
-hateraces: []
 hostile: false
 maxwander: 2
 angrycommands: []
@@ -18,5 +10,13 @@ idlecommands:
   - ''
   - ''
 activitylevel: 10
-level: 3
-race: 1
+character:
+  name: Lydia Deetz
+  description: >-
+    A pale teenage girl dressed entirely in black — black dress, black veil,
+    black lace gloves. Her dark eyes are heavily lined with kohl, and she
+    carries a vintage camera on a strap around her neck. She has the air of
+    someone who is profoundly bored with the living world and fascinated by
+    everything else.
+  raceid: 1
+  level: 3

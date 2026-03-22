@@ -1,12 +1,5 @@
 mobid: 24
 zone: beetlejuice
-name: Charles Deetz
-description: >-
-  A harried-looking man in expensive casual wear that hangs on him like
-  he has lost weight from stress. He has the haunted look of someone who
-  moved to the country to relax and found the opposite. He keeps rubbing
-  his temples and muttering about property values.
-hateraces: []
 hostile: false
 maxwander: 1
 angrycommands: []
@@ -19,5 +12,12 @@ idlecommands:
   - ''
   - ''
 activitylevel: 10
-level: 5
-race: 1
+character:
+  name: Charles Deetz
+  description: >-
+    A harried-looking man in expensive casual wear that hangs on him like
+    he has lost weight from stress. He has the haunted look of someone who
+    moved to the country to relax and found the opposite. He keeps rubbing
+    his temples and muttering about property values.
+  raceid: 1
+  level: 5

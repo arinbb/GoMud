@@ -24,16 +24,14 @@ exits:
   up:
     roomid: 608
 nouns:
-  staircase:
-    description: >-
-      The staircase is solid oak with a carved banister. Halfway up, the wallpaper
-      changes abruptly from floral to Delia's stark geometric pattern. The two
-      styles meet in an ugly seam, like two realities stitched together.
-  coatrack:
-    description: >-
-      Adam's tweed jacket and Barbara's cardigan hang here, undisturbed. They
-      still smell faintly of their owners -- sawdust and lavender. Dust has
-      begun to settle on the shoulders.
+  staircase: >-
+    The staircase is solid oak with a carved banister. Halfway up, the wallpaper
+    changes abruptly from floral to Delia's stark geometric pattern. The two
+    styles meet in an ugly seam, like two realities stitched together.
+  coatrack: >-
+    Adam's tweed jacket and Barbara's cardigan hang here, undisturbed. They
+    still smell faintly of their owners -- sawdust and lavender. Dust has begun
+    to settle on the shoulders.
 idlemessages:
 - The old radiator clanks and hisses, pushing warmth into the hallway.
 - A creak from the staircase -- footsteps? But no one is there.
