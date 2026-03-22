@@ -1,0 +1,16 @@
+questid: 11
+name: Strange and Unusual
+secret: true
+description: >-
+  For those who are themselves strange and unusual. Find the hidden
+  connections in the world of Beetlejuice.
+reward:
+  experience: 3000
+  item_id: 60014
+  playermessage: >-
+    You've proven yourself strange and unusual. Delia would be proud.
+    Well, Delia would call it "derivative." But Lydia would understand.
+steps:
+- description: Ask Lydia about being strange.
+- description: Find Beetlejuice's business card.
+- description: Take a photo with Lydia's camera.

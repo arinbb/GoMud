@@ -1,0 +1,13 @@
+itemid: 60017
+name: Lydia's camera
+namesimple: camera
+displayname: <ansi fg="itemname">Lydia's vintage camera</ansi>
+description: >-
+  A battered vintage camera with a manual film advance and a cracked leather
+  case. It belonged to Lydia Deetz, who used it to photograph things the living
+  couldn't see. The viewfinder shows a slightly different version of whatever
+  you point it at -- more shadows, more ghosts, more truth.
+type: object
+subtype: usable
+uses: 0
+value: 1

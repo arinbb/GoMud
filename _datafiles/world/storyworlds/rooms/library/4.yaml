@@ -1,0 +1,50 @@
+roomid: 4
+zone: The Grand Library
+title: The Gallery
+description: >-
+  A long hall with polished hardwood floors and soft, diffused lighting from
+  skylights above. The walls are hung with <ansi fg="itemname">paintings</ansi>
+  and <ansi fg="itemname">prints</ansi> of every style -- oils, watercolors,
+  woodcuts, charcoal sketches. Some are massive canvases that dominate entire
+  walls, others are tiny miniatures in gilded frames. An <ansi fg="itemname">easel</ansi>
+  stands in one corner with a half-finished work, and a wooden <ansi fg="itemname">art
+  catalog</ansi> rests on a reading stand near the entrance. The paintings seem
+  almost alive -- colors shift subtly when you look away, and figures in the
+  artwork seem to follow you with their eyes.
+mapsymbol: G
+maplegend: Gallery
+biome: house
+exits:
+  east:
+    roomid: 1
+nouns:
+  paintings:
+    description: >-
+      The paintings span centuries of artistic tradition. Impressionist gardens
+      hang beside surrealist dreamscapes, Renaissance portraits neighbor modern
+      abstractions. Each one is a window into another way of seeing.
+  prints:
+    description: >-
+      Woodblock prints and lithographs line the lower walls -- Japanese ukiyo-e
+      beside Art Nouveau posters, Escher-like impossible geometries beside simple
+      pastoral scenes.
+  easel:
+    description: >-
+      A painter's easel holds an unfinished canvas. The painting seems to change
+      each time you look at it -- sometimes it's a stormy sea, sometimes a quiet
+      forest path, sometimes an empty room that looks remarkably like this one.
+  catalog:
+    description: >-
+      The art catalog describes available works by era and movement. Each entry
+      includes the artist, title, medium, and a note about what world lies
+      within the frame.
+spawninfo:
+- itemid: 50005
+  container: wall
+  respawnrate: 1 real minutes
+idlemessages:
+- A figure in one of the paintings turns its head slightly. You blink, and it's facing forward again.
+- Colors in the nearest canvas seem to swirl and deepen, as if responding to your presence.
+- You catch the faint scent of oil paint and turpentine.
+- Light from the skylights shifts, and for a moment every painting in the gallery seems to glow from within.
+- The half-finished work on the easel has changed -- wasn't that a mountain a moment ago?

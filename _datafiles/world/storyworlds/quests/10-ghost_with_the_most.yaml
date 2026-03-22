@@ -1,0 +1,18 @@
+questid: 10
+name: The Ghost with the Most
+description: >-
+  Explore the world of Beetlejuice. Visit the Maitland house, discover the
+  afterlife, and maybe summon the Ghost with the Most himself.
+reward:
+  experience: 5000
+  item_id: 60015
+  playermessage: >-
+    You've experienced the world of Beetlejuice! As a memento, you receive
+    a miniature model of the Maitland house. The tiny lights in its windows
+    flicker warmly.
+steps:
+- description: Enter the world of Beetlejuice through the covered bridge.
+- description: Find the Handbook for the Recently Deceased in the attic.
+- description: Use the chalk to draw a door and enter the afterlife.
+- description: Visit Juno's office and ask her about Beetlejuice.
+- description: Return to the living room and say his name three times.

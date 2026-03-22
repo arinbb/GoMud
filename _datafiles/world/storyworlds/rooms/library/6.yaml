@@ -1,0 +1,36 @@
+roomid: 6
+zone: The Grand Library
+title: The Deep Stacks
+description: >-
+  The shelves here are older, the wood darker, the air thicker with the scent of
+  ancient paper. This is where the rarest and most powerful stories reside. The
+  aisles narrow and twist in ways that don't quite make architectural sense --
+  you turned left twice but somehow ended up further in rather than back where
+  you started. The books here are different: some are chained to their shelves,
+  others float a few inches above their spots, and one appears to be breathing.
+  A <ansi fg="itemname">reading alcove</ansi> is tucked between two massive
+  shelves, furnished with a single chair and a guttering candle.
+mapsymbol: D
+maplegend: Deep Stacks
+biome: house
+exits:
+  south:
+    roomid: 2
+nouns:
+  alcove:
+    description: >-
+      The reading alcove is small and intimate, just large enough for the chair
+      and a narrow table. The candle flame doesn't flicker -- it burns perfectly
+      still, as if time moves differently here. This would be a good place to
+      open a book and lose yourself in it.
+  shelves:
+    description: >-
+      These shelves hold the oldest volumes in the library. Some titles are in
+      languages you don't recognize. Others have titles that shift and change
+      as you read them, as if the books are deciding what they want to be called.
+idlemessages:
+- One of the chained books rattles against its tether, then settles.
+- The candle in the reading alcove flares briefly, casting long shadows down the aisle.
+- You hear a distant sound like pages turning rapidly, coming from deeper in the stacks.
+- A book on the highest shelf opens itself, riffles through its own pages, then snaps shut.
+- The air here feels heavier, denser, as if saturated with unread stories.

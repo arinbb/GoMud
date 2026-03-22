@@ -1,0 +1,68 @@
+roomid: 614
+zone: Beetlejuice
+title: Saturn
+description: >-
+  An alien desert stretches to every horizon under a bruised purple sky lit by
+  two <ansi fg="itemname">suns</ansi> -- one bloated and red, the other small and
+  white-hot. The <ansi fg="itemname">sand</ansi> is black and coarse, rippling in
+  dunes that shift without wind. Massive striped <ansi fg="itemname">rocks</ansi>
+  jut from the ground at impossible angles like the bones of a buried titan. The
+  air is thin and tastes of copper and ozone. The <ansi fg="itemname">horizon</ansi>
+  shimmers with heat distortion, and beneath the surface, something enormous
+  moves -- you can feel it through the soles of your feet. A rhythmic tremor.
+  Getting closer. This is not a place for the living. Or the dead, for that
+  matter. This is the place that both the living AND the dead avoid.
+mapsymbol: S
+maplegend: Saturn
+biome: desert
+exits:
+  south:
+    roomid: 612
+    exitmessage: You scramble desperately back through the door, slamming it behind you.
+nouns:
+  suns:
+    description: >-
+      Two suns hang in the purple sky. The larger one pulses like a diseased
+      heart, casting long red shadows across the black sand. The smaller one
+      burns white and furious, creating a second set of shadows that move
+      independently of the first. Where the two shadows overlap, the ground
+      is scorched to glass.
+  sand:
+    description: >-
+      The black sand is coarse and warm, almost hot. It shifts constantly,
+      forming and dissolving patterns that look almost like writing in a
+      language older than language. Ridges in the sand mark the passage of
+      something vast beneath the surface. The ridges are fresh. The something
+      is close.
+  rocks:
+    description: >-
+      The striped rocks are banded in layers of black, white, and deep red,
+      like geological candy canes carved by a mad god. They're warm to the
+      touch and vibrate faintly, as if resonating with a frequency just below
+      hearing. Claw marks -- enormous ones -- score the surface of the
+      nearest rock. Whatever made them was not small.
+  horizon:
+    description: >-
+      The horizon ripples with heat haze. Beyond it, you can just make out the
+      shapes of more striped rock formations, stretching endlessly. There is
+      no shelter. No shade. No safety. Just sand and rocks and the growing
+      certainty that something under the sand knows exactly where you are.
+spawninfo:
+- mobid: 29
+  message: The ground ERUPTS. A sandworm bursts from the dunes, its mouth a ringed horror of teeth and hunger.
+  idlecommands:
+  - emote circles beneath the sand, its massive body creating a whirlpool of black grit.
+  - ""
+  - emote surfaces briefly, rows of teeth catching the double sunlight, then dives back down.
+  - ""
+  - emote sends a tremor through the ground that nearly knocks you off your feet.
+  - ""
+  maxwander: 0
+  respawnrate: 2 real minutes
+idlemessages:
+- The ground trembles. Something massive shifts beneath the sand, and a ridge of displaced earth snakes toward you before veering away.
+- A gust of hot wind carries the sound of grinding -- like enormous teeth working against stone.
+- The black sand around your feet begins to sink, forming a small whirlpool. You step back just in time.
+- Both suns flare simultaneously, and for a moment every shadow disappears. Then they return, longer and darker.
+- A deep, subsonic rumble vibrates up through the ground and into your chest. The sandworm is circling.
+- Bone fragments surface in the sand near your feet. They're not human bones. They're much, much larger.

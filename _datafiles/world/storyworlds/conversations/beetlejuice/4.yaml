@@ -1,0 +1,25 @@
+-
+  Supported:
+    "lydia deetz": ["barbara maitland"]
+  Conversation:
+    - ["#1 say Barbara? Can I ask you something?"]
+    - ["#2 say Of course, sweetheart. Anything."]
+    - ["#1 say What's it like? Being dead?"]
+    - ["#2 emote pauses thoughtfully", "#2 say Honestly? It's a lot like being alive. Except you can't leave the house. And nobody can see you."]
+    - ["#1 say I can see you."]
+    - ["#2 emote smiles gently", "#2 say Yes. You can. And you have no idea how much that means to us."]
+    - ["#1 say I think the living world is overrated anyway."]
+    - ["#2 say Oh Lydia. Don't say that. You have so much ahead of you."]
+    - ["#1 emote looks at her shoes", "#1 say Maybe. But right now I'd rather be here. With you and Adam."]
+-
+  Supported:
+    "lydia deetz": ["adam maitland"]
+  Conversation:
+    - ["#1 say Adam, can you teach me about the model town?"]
+    - ["#2 emote brightens up", "#2 say You want to learn? Really?"]
+    - ["#1 say It's the most detailed thing I've ever seen. Every tiny mailbox, every little tree."]
+    - ["#2 say Well, the trick is patience. And a very steady hand. Here, let me show you the covered bridge."]
+    - ["#1 emote peers closely at the miniature bridge"]
+    - ["#2 say That's where Barbara and I... well. That's where it happened."]
+    - ["#1 emote touches his arm gently", "#1 say I'm sorry, Adam."]
+    - ["#2 say Don't be. We're still here, aren't we? In a manner of speaking."]

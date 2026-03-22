@@ -1,0 +1,59 @@
+roomid: 604
+zone: Beetlejuice
+title: Maitland House - Living Room
+description: >-
+  A large living room caught between two identities. The original
+  <ansi fg="itemname">fireplace</ansi> is still here, but it's now flanked by
+  Delia's angular black <ansi fg="itemname">sculptures</ansi> -- twisted metal
+  forms that look like tortured stick figures. The comfortable old sofa has been
+  replaced with a severe modernist thing in white leather. A
+  <ansi fg="itemname">coffee table</ansi> holds art magazines and a bowl of
+  decorative stones. Despite Delia's makeover, you can still see traces of the
+  Maitlands' life: a water stain on the ceiling, nail holes where family photos
+  hung. The room feels haunted not by ghosts but by the memory of what it was.
+mapsymbol: L
+maplegend: Living Room
+biome: house
+exits:
+  west:
+    roomid: 603
+  south:
+    roomid: 606
+  north:
+    roomid: 610
+nouns:
+  fireplace:
+    description: >-
+      The brick fireplace is original to the house. A fire crackles in the
+      grate, though no one seems to have lit it. Above the mantle, where a
+      mirror or family portrait should hang, there's one of Delia's abstract
+      paintings -- aggressive slashes of red and black.
+  sculptures:
+    description: >-
+      Delia's sculptures are... ambitious. Twisted black metal forms that
+      might represent human anguish, or might represent a coat rack that
+      fell down a flight of stairs. Art critics would call them "confrontational."
+      Everyone else would call them ugly.
+  coffee:
+    description: >-
+      The coffee table is a slab of glass on chrome legs. The art magazines
+      are all opened to articles about Delia Deetz's work. Someone has circled
+      the quotes in red pen.
+spawninfo:
+- mobid: 24
+  message: Charles Deetz settles into the white leather sofa with a tired sigh.
+  idlecommands:
+  - say I just want some peace and quiet. Is that too much to ask?
+  - ""
+  - ""
+  - emote rubs his temples wearily.
+  - say We moved here to simplify our lives. Ha.
+  - ""
+  maxwander: 1
+  respawnrate: 3 real minutes
+idlemessages:
+- The fire in the fireplace flares briefly, casting long shadows from Delia's sculptures.
+- One of the sculptures catches the light and for a moment looks like it's reaching toward you.
+- A faint smell of sawdust drifts down from the attic above.
+- The white leather sofa squeaks faintly, as if someone invisible just shifted their weight.
+- You hear a distant crash from upstairs, followed by muffled arguing.

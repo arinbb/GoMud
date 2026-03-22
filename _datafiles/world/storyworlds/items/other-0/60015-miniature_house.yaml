@@ -1,0 +1,14 @@
+itemid: 60015
+name: miniature Maitland house
+namesimple: house
+displayname: a tiny <ansi fg="itemname">miniature house</ansi>
+description: >-
+  A perfect 1:87 scale model of the Maitland house, painstakingly built by Adam
+  Maitland. Every detail is exact -- the wraparound porch, the gabled windows,
+  the garden with its miniature chrysanthemums. If you hold it up to your ear,
+  you swear you can hear tiny voices inside. A souvenir from the world of
+  Beetlejuice.
+type: object
+subtype: usable
+uses: 0
+value: 1

@@ -1,0 +1,57 @@
+roomid: 103
+zone: Wonderland
+title: The Mad Tea Party
+description: >-
+  A long table is set out beneath a great tree, laden with teacups, saucers,
+  bread-and-butter, and crumb-covered plates. Despite the abundance of settings,
+  the <ansi fg="mobname">March Hare</ansi>, the <ansi fg="mobname">Hatter</ansi>,
+  and a sleepy <ansi fg="mobname">Dormouse</ansi> are all crowded together at one
+  corner. Every cup is chipped, every saucer cracked, and the teapot pours
+  perpetually without ever running empty. A battered top hat sits on the table,
+  stuffed with price tags reading "10/6." The tree above drops an occasional
+  leaf into someone's cup. It is always six o'clock here. Always teatime.
+mapsymbol: T
+maplegend: Tea Party
+biome: forest
+exits:
+  south:
+    roomid: 101
+  north:
+    roomid: 105
+nouns:
+  table:
+    description: >-
+      The table stretches on and on, set with more places than could ever be
+      used. The tea things are in various states of disarray -- cups balanced
+      on saucers balanced on other cups, sugar tongs embedded in butter,
+      a watch submerged in a teacup.
+  teapot:
+    description: >-
+      The teapot pours itself, a steady stream of amber tea that never runs out.
+      The tea is exactly the wrong temperature -- too hot to drink quickly, too
+      cool to properly steep.
+  hat:
+    description: >-
+      The Hatter's famous hat, a tall silk topper with a card tucked into the
+      band reading "In this style 10/6." It's seen better days -- the silk is
+      worn and the brim is bent.
+spawninfo:
+- mobid: 11
+  message: The Hatter looks up from his teacup with wild eyes.
+  idlecommands:
+  - say Why is a raven like a writing-desk?
+  - ""
+  - say Have some wine!
+  - say No room! No room!
+  - ""
+  - emote dunks the Dormouse headfirst into the teapot.
+  - ""
+  - say It's always six o'clock now. Always teatime.
+  - ""
+  respawnrate: 2 real minutes
+idlemessages:
+- The Hatter moves one seat to the left, dragging the Dormouse along by its ear.
+- '"More tea?" asks the March Hare, pouring tea onto the table instead of into a cup.'
+- The Dormouse opens one eye, murmurs something about treacle, and falls back asleep.
+- A clock on the table reads six o'clock. It always reads six o'clock.
+- The Hatter examines his watch, shakes it, holds it to his ear, then dips it in his tea.

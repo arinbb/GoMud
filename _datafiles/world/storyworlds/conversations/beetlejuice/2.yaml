@@ -1,0 +1,20 @@
+-
+  Supported:
+    "charles deetz": ["delia deetz"]
+  Conversation:
+    - ["#1 say Delia, please. Can we just have one room that doesn't look like a modern art gallery?"]
+    - ["#2 say Charles, I am TRANSFORMING this house. It had absolutely no character."]
+    - ["#1 emote slumps deeper into the sofa", "#1 say It had character. Plenty of character. It had charm."]
+    - ["#2 say It had wallpaper with FLOWERS on it, Charles. Flowers. I nearly wept."]
+    - ["#1 say I liked the flowers."]
+    - ["#2 emote waves dismissively", "#2 say You like everything. That's the problem."]
+-
+  Supported:
+    "delia deetz": ["charles deetz"]
+  Conversation:
+    - ["#1 say Charles, Otho says the dining room needs to be completely reconceived."]
+    - ["#2 emote groans", "#2 say What now?"]
+    - ["#1 say He's thinking suspended installation. Floating metal forms above the table. Very confrontational."]
+    - ["#2 say I just want to eat dinner, Delia. Without being confronted."]
+    - ["#1 say Art doesn't care about your comfort, Charles. Art is supposed to DISTURB."]
+    - ["#2 emote mutters something under his breath about moving back to New York"]

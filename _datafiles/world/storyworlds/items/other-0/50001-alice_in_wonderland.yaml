@@ -1,0 +1,12 @@
+itemid: 50001
+name: Alice's Adventures in Wonderland
+namesimple: book
+displayname: a weathered copy of <ansi fg="itemname">Alice's Adventures in Wonderland</ansi>
+description: >-
+  A small blue cloth-bound book with gold lettering on the spine. The cover shows
+  a girl falling down a rabbit hole, surrounded by playing cards and teacups. The
+  pages smell of old paper and something faintly sweet, like treacle tart.
+type: object
+subtype: usable
+uses: 0
+value: 0

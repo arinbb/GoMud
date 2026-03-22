@@ -1,0 +1,70 @@
+roomid: 607
+zone: Beetlejuice
+title: Maitland House - Attic
+description: >-
+  Adam's sanctuary. The attic is a sprawling workspace dominated by an enormous
+  <ansi fg="itemname">model</ansi> of Winter River spread across a massive table.
+  Every building, tree, and road is recreated in miniature with obsessive detail.
+  A <parameter name="content">  A <ansi fg="itemname">workbench</ansi> along one wall is covered with tiny tools,
+  paint pots, and magnifying lenses. The sloped ceiling is hung with bare bulbs.
+  A <ansi fg="itemname">blank wall</ansi> near the dormer window is conspicuously
+  empty -- smooth plaster, no decoration. As if waiting for something to be drawn
+  on it. A box of <ansi fg="itemname">art supplies</ansi> sits beneath the
+  workbench, including brushes, paints, and a piece of <ansi fg="itemname">chalk</ansi>.
+mapsymbol: A
+maplegend: Attic
+biome: house
+exits:
+  down:
+    roomid: 608
+  north:
+    roomid: 609
+nouns:
+  model:
+    description: >-
+      The model town is Adam's life's work -- a perfect 1:87 scale replica of
+      Winter River, Connecticut. Every house has curtains in the windows. The
+      covered bridge has actual water running beneath it (a tiny pump). The
+      cemetery has headstones you'd need a magnifying glass to read. It's
+      beautiful and slightly unsettling, like a world trapped under glass.
+  workbench:
+    description: >-
+      The workbench is organized chaos -- X-Acto knives, tweezers, bottles
+      of model paint, sheets of balsa wood, and a magnifying lamp. A half-
+      finished miniature church sits clamped in a tiny vise.
+  wall:
+    description: >-
+      The blank wall is smooth white plaster, about five feet across. It's
+      the only undecorated surface in the entire attic. Something about it
+      draws your eye. You have the strangest urge to draw a door on it.
+  supplies:
+    description: >-
+      A cardboard box of art supplies. Brushes, acrylic paints in various
+      colors, turpentine, and -- sitting right on top -- a thick piece of
+      white chalk.
+spawninfo:
+- mobid: 20
+  message: Adam Maitland looks up from his model town with a distracted wave.
+  idlecommands:
+  - say Have you seen the model? I've been working on it for years.
+  - ""
+  - emote carefully adjusts a tiny tree on the model with tweezers.
+  - ""
+  - say The handbook says we're not supposed to leave the house. But there's so much we don't understand.
+  - ""
+  - say Barbara and I... we're still figuring this whole being-dead thing out.
+  - ""
+  maxwander: 0
+  respawnrate: 3 real minutes
+- itemid: 60011
+  container: supplies
+  respawnrate: 5 real minutes
+- itemid: 60010
+  container: workbench
+  respawnrate: 5 real minutes
+idlemessages:
+- A tiny light flickers on in one of the model town's miniature houses, then goes off.
+- Adam's magnifying lamp buzzes faintly, casting a warm circle of light over the model.
+- You hear a train whistle -- impossibly small -- from somewhere in the model town.
+- The blank wall seems to pulse faintly, as if something on the other side is pressing against it.
+- A paint pot on the workbench tips over on its own. Green paint pools on the surface.

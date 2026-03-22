@@ -1,0 +1,70 @@
+roomid: 609
+zone: Beetlejuice
+title: The Model Town
+description: >-
+  You've stepped up close to Adam's model and now it fills your entire field of
+  vision. The miniature <ansi fg="itemname">Winter River</ansi> sprawls before
+  you in breathtaking detail -- every <ansi fg="itemname">building</ansi> has
+  individual shingles, every <ansi fg="itemname">church</ansi> window is stained
+  glass no bigger than a fingernail. The covered <ansi fg="itemname">bridge</ansi>
+  spans a stream of real water fed by a hidden pump. Tiny
+  <ansi fg="itemname">figures</ansi> populate the streets and yards, frozen in
+  mid-stride. A miniature <ansi fg="itemname">cemetery</ansi> crowns a small hill,
+  its headstones inscribed with names too small to read without a lens. The longer
+  you stare, the more you notice things that shouldn't move -- a curtain twitching
+  in a tiny window, a figure that wasn't there a moment ago, a light flickering
+  on in a house that has no wiring.
+mapsymbol: T
+maplegend: Model Town
+biome: house
+exits:
+  south:
+    roomid: 607
+    exitmessage: You step back from the model, the attic reasserting itself around you.
+nouns:
+  buildings:
+    description: >-
+      The buildings are constructed from balsa wood, cardstock, and paint applied
+      with a single-hair brush. The hardware store has a tiny sign you can almost
+      read. The diner has a neon sign made from a bent piece of fiber optic cable.
+      Each building casts a shadow from Adam's carefully positioned lamp -- but
+      the shadows don't all point in the same direction.
+  bridge:
+    description: >-
+      The covered bridge is the crown jewel of the model. Real water flows
+      beneath it, cycling through a hidden pump system. The timber is
+      individually cut and stained. If you lean close, you can hear the water
+      gurgling -- and something else. A faint engine sound, like a car
+      approaching a bridge too fast.
+  cemetery:
+    description: >-
+      The miniature cemetery sits on a hill at the edge of town. The headstones
+      are carved from soapstone, each one unique. One headstone near the back
+      is larger than the rest, slightly crooked, with a name you can't quite
+      make out. The grass around it looks different -- darker, as if something
+      underneath is leaching into the soil.
+  church:
+    description: >-
+      A white clapboard church with a steeple no taller than your thumb. The
+      stained glass windows are made from colored cellophane, and they actually
+      glow when Adam's lamp hits them at the right angle. The front door is
+      slightly open. You could swear something moved inside.
+  figures:
+    description: >-
+      The tiny figures are painted with extraordinary care -- each one has
+      individual features, clothing, expressions. A woman hangs laundry. A man
+      walks a dog. Two children play near the bridge. But the figures have
+      rearranged themselves since you last looked. The woman is now facing a
+      different direction. The man with the dog is closer to the bridge. The
+      children are gone.
+spawninfo:
+- itemid: 60015
+  container: buildings
+  respawnrate: 5 real minutes
+idlemessages:
+- A tiny light winks on in the model church steeple, then slowly fades out.
+- One of the miniature figures has moved. You're sure of it. The woman hanging laundry is now looking directly at you.
+- The water under the covered bridge reverses direction for a moment, then corrects itself.
+- A sound like a tiny music box plays a few notes from somewhere deep in the model, then stops.
+- The shadows of the miniature buildings shift, as though the sun in the model moves on its own schedule.
+- You notice a new figure in the model that wasn't there before -- standing alone in the cemetery, looking up at you.

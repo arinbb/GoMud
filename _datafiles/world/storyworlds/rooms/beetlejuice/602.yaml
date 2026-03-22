@@ -1,0 +1,46 @@
+roomid: 602
+zone: Beetlejuice
+title: Maitland House - Exterior
+description: >-
+  The Maitland house stands proud atop the hill, a handsome Victorian painted
+  in warm earth tones with white trim. A <ansi fg="itemname">wraparound porch</ansi>
+  encircles the front, furnished with a swing and potted mums. The
+  <ansi fg="itemname">garden</ansi> is immaculate -- Barbara's pride and joy --
+  with chrysanthemums, asters, and late-blooming roses. But something feels
+  off. The house looks simultaneously lived-in and abandoned, as though two
+  different realities are layered on top of each other. The front
+  <ansi fg="itemname">door</ansi> stands slightly ajar. A path behind the
+  house leads east to a <ansi fg="itemname">graveyard</ansi>.
+mapsymbol: H
+maplegend: Maitland House
+biome: house
+exits:
+  south:
+    roomid: 601
+    exitmessage: You walk down the winding hill toward Main Street.
+  enter:
+    roomid: 603
+    exitmessage: You push open the front door and step inside.
+  east:
+    roomid: 618
+nouns:
+  porch:
+    description: >-
+      The porch swing sways gently in the breeze, as if someone just got up
+      from it. A glass of lemonade sits on the railing, still sweating with
+      condensation, though no one seems to be around.
+  garden:
+    description: >-
+      Barbara's garden is a masterwork of New England horticulture. But look
+      closely and you notice: the flowers never quite wilt, the leaves never
+      quite fall. The garden is frozen in a perfect autumn that never ends.
+  door:
+    description: >-
+      The front door is solid oak with a brass knocker shaped like a pineapple.
+      It stands slightly ajar, creaking faintly in the breeze.
+idlemessages:
+- The porch swing creaks back and forth, pushed by an invisible hand.
+- A monarch butterfly drifts through Barbara's garden, landing on a chrysanthemum.
+- From inside the house, you hear faint sounds of someone rearranging furniture.
+- The weathervane on the roof spins lazily, though the wind has died down.
+- The lemonade glass on the porch railing never seems to empty.

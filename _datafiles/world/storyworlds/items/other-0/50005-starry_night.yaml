@@ -1,0 +1,14 @@
+itemid: 50005
+name: Starry Night painting
+namesimple: painting
+displayname: a framed print of <ansi fg="itemname">Starry Night</ansi>
+description: >-
+  A reproduction of Van Gogh's Starry Night in a simple wooden frame. The
+  swirling blues and yellows seem impossibly vivid, more alive than any print
+  should be. The thick brushstrokes catch the light and appear to move -- the
+  cypress tree sways, the stars pulse, the village sleeps beneath a sky that
+  churns with cosmic energy.
+type: object
+subtype: usable
+uses: 0
+value: 0

@@ -1,0 +1,11 @@
+name: Wonderland
+roomid: 100
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: forest
+idlemessages:
+- Nothing is quite the right size here. The flowers seem too large, or perhaps you are too small.
+- A grin without a cat floats past, lingering in the air before fading.
+- The rules of logic feel... optional in this place.
+- Time moves strangely here. Your watch, if you had one, would disagree with itself.

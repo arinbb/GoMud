@@ -1,0 +1,11 @@
+itemid: 60010
+name: Handbook for the Recently Deceased
+namesimple: handbook
+displayname: a copy of the <ansi fg="itemname">Handbook for the Recently Deceased</ansi>
+description: >-
+  A thick, government-issue-looking book bound in gray cloth with silver
+  lettering. It has the bureaucratic heft of a tax manual and the readability
+  of stereo instructions. Despite this, it apparently contains everything a
+  newly dead person needs to know about the afterlife.
+type: readable
+subtype: blobcontent

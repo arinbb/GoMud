@@ -1,0 +1,11 @@
+name: The Grand Library
+roomid: 1
+autoscale:
+  minimum: 1
+  maximum: 1
+defaultbiome: house
+idlemessages:
+- The faint scent of old parchment and leather bindings drifts through the air.
+- Somewhere deep in the stacks, a book falls from a shelf with a muffled thud.
+- Dust motes dance in a beam of warm lamplight.
+- The floorboards creak softly beneath your feet.

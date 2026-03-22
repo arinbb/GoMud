@@ -1,0 +1,13 @@
+name: Beetlejuice
+roomid: 600
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: house
+idlemessages:
+- Calypso music drifts from somewhere you can't quite place, then fades.
+- A fat fly buzzes past your ear, louder than it should be.
+- For a moment, the colors around you seem slightly too saturated, like a fever dream.
+- You catch a whiff of something -- old wood? Formaldehyde? Day-old coffee?
+- The floorboards creak even though nobody moved.
+- A distant sound like a game show buzzer echoes from nowhere in particular.

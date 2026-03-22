@@ -1,0 +1,55 @@
+roomid: 101
+zone: Wonderland
+title: The Mushroom Forest
+description: >-
+  Enormous mushrooms tower above you, their caps as wide as parasols, in shades
+  of red, purple, and spotted cream. The ground is soft with moss and fallen
+  spores. Atop the largest mushroom sits a blue <ansi fg="mobname">Caterpillar</ansi>,
+  languidly smoking a hookah. Curling tendrils of sweet-smelling smoke drift
+  down between the mushroom stalks. Paths wind between the massive fungi in
+  several directions. Everything here is either too large or you are too small --
+  a blade of grass reaches your waist, and an acorn could serve as a seat.
+mapsymbol: M
+maplegend: Mushrooms
+biome: forest
+exits:
+  south:
+    roomid: 100
+  north:
+    roomid: 103
+  east:
+    roomid: 104
+nouns:
+  mushrooms:
+    description: >-
+      The mushrooms are vast and varied. Some have perfectly smooth caps, others
+      are covered in bumps and spots. One side of each mushroom glows faintly
+      in a different color -- eating from one side makes you grow, the other
+      makes you shrink. Or was it the other way around?
+  hookah:
+    description: >-
+      The hookah is an elaborate contraption of brass and glass, producing smoke
+      in shapes that form words, letters, and sometimes small animals before
+      dissolving.
+  smoke:
+    description: >-
+      The smoke from the hookah smells of flowers and something slightly
+      medicinal. It forms shapes as it rises -- vowels mostly, but occasionally
+      a question mark.
+spawninfo:
+- mobid: 10
+  message: The Caterpillar regards you with half-closed eyes from atop the mushroom.
+  idlecommands:
+  - say Who... are... YOU?
+  - ""
+  - say That is not the same thing at all.
+  - ""
+  - emote blows a perfect smoke ring that forms the letter O.
+  - ""
+  respawnrate: 2 real minutes
+idlemessages:
+- A mushroom spore drifts past your face, glowing faintly purple.
+- The Caterpillar's hookah bubbles softly, sending up a smoke letter Y.
+- Something small rustles through the moss at the base of a mushroom.
+- The mushroom caps seem to shift color slightly, like a slow-motion kaleidoscope.
+- A tiny door is visible at the base of the largest mushroom, barely an inch tall.

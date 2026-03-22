@@ -1,0 +1,77 @@
+roomid: 613
+zone: Beetlejuice
+title: Juno's Office
+description: >-
+  A cramped, smoke-filled office that smells like an ashtray married a filing
+  cabinet. A heavy wooden <ansi fg="itemname">desk</ansi> dominates the room,
+  buried under stacks of forms, folders, and overflowing
+  <ansi fg="itemname">ashtrays</ansi>. <ansi fg="itemname">Filing cabinets</ansi>
+  line every wall, drawers half-open, papers spilling out like tongues. A single
+  grimy <ansi fg="itemname">window</ansi> behind the desk looks out onto...
+  nothing. Literally nothing -- a featureless grey void where a view should be.
+  A name plate on the desk reads "JUNO - CASEWORKER" in tarnished brass. The
+  smoke from an unseen cigarette curls through the air in lazy spirals, adding
+  new layers to the nicotine stains on the ceiling tiles. There's a chair in
+  front of the desk for clients. It's uncomfortable by design.
+mapsymbol: J
+maplegend: Juno's Office
+biome: city
+exits:
+  south:
+    roomid: 612
+    exitmessage: You push back through the frosted glass door to the waiting room.
+nouns:
+  desk:
+    description: >-
+      Juno's desk is a battlefield of bureaucracy. Stacks of "Deceased Person
+      Intake Forms" tower in precarious columns. A coffee mug reading "I Survived
+      Death (Barely)" holds cold coffee and three cigarette butts. Rubber stamps
+      in various colors are scattered like fallen soldiers. Somewhere under the
+      paperwork, a phone rings. It has been ringing for decades. Juno ignores it.
+  filing:
+    description: >-
+      The filing cabinets stretch floor to ceiling and disappear into the walls
+      as if the room extends further than physics should allow. Drawer labels
+      include "HAUNTINGS, UNAUTHORIZED," "POLTERGEIST COMPLAINTS," "EXORCISMS
+      (PENDING)," and one simply marked "HIM" in red ink with three underlines.
+      That drawer is padlocked.
+  ashtrays:
+    description: >-
+      There are at least seven ashtrays visible, all overflowing. The smoke
+      from Juno's cigarettes doesn't dissipate -- it collects near the ceiling
+      in a thick stratum, a geological record of decades of chain-smoking.
+      Despite the lack of ventilation, the smoke never quite fills the room.
+      It knows its place.
+  window:
+    description: >-
+      The window behind Juno's desk looks out on nothing. Not darkness -- nothing.
+      A grey, featureless void that extends in all directions. No horizon, no
+      sky, no ground. If you stare at it too long, you begin to feel that the
+      nothing is staring back, taking notes, filing them in triplicate.
+spawninfo:
+- mobid: 27
+  message: Juno sits behind her desk, lighting a new cigarette from the butt of the old one.
+  idlecommands:
+  - say I've got a caseload that would kill me if I weren't already dead. What do you want?
+  - ""
+  - emote exhales a cloud of smoke that somehow forms a perfect rectangle before dissolving.
+  - ""
+  - say The handbook covers everything. Read the handbook. Don't come to me with handbook questions.
+  - ""
+  - say That Betelgeuse situation is a nightmare. I should have never taken that case.
+  - ""
+  - emote stamps a form with aggressive finality, then tosses it onto an already-towering pile.
+  - ""
+  - say You want haunting tips? Fine. Don't possess anyone. Don't say his name. Don't go to Saturn. There.
+  - ""
+  maxwander: 0
+  respawnrate: 3 real minutes
+- itemid: 60012
+  container: desk
+  respawnrate: 5 real minutes
+idlemessages:
+- Smoke curls from an ashtray, forming what looks like a tiny screaming face before dispersing.
+- The phone on Juno's desk rings. And rings. And rings. Nobody answers.
+- A filing cabinet drawer slides open on its own, and a folder floats out, hovers briefly, then files itself in a different drawer.
+- The window behind the desk pulses with grey non-light. Something in the void shifts. Or doesn't. Hard to tell with nothing.
+- A rubber stamp rolls off the desk, bounces once, and stamps "DENIED" on the floor.

@@ -1,0 +1,30 @@
+-
+  Supported:
+    "adam maitland": ["barbara maitland"]
+  Conversation:
+    - ["#1 sayto #2 Barbara, have you seen what they've done to the living room?"]
+    - ["#2 emote sighs heavily", "#2 sayto #1 I know, Adam. Those sculptures. They look like something from a nightmare."]
+    - ["#1 say The handbook says we're supposed to haunt them out, but I just... I don't know how to be scary."]
+    - ["#2 sayto #1 Maybe we should try again with the bedsheets. The holes for eyes were a good idea."]
+    - ["#1 emote rubs the back of his neck sheepishly", "#1 say They thought we were performance art, Barbara. Performance art."]
+    - ["#2 say Well, we are NOT hiring that Betelgeuse person. Did you read his ad? The man is clearly unhinged."]
+    - ["#1 say Completely agree. We'll figure this out ourselves."]
+-
+  Supported:
+    "adam maitland": ["barbara maitland"]
+  Conversation:
+    - ["#1 say I was working on the model town again. Added a new mailbox to the post office."]
+    - ["#2 emote smiles warmly", "#2 say Oh Adam, you and that model. At least some things haven't changed."]
+    - ["#1 say It keeps me sane. Well. As sane as a dead man can be."]
+    - ["#2 say We're doing fine, honey. We have each other. And the house. Even if they did ruin the wallpaper."]
+    - ["#1 emote takes Barbara's hand", "#1 say You're right. As always."]
+-
+  Supported:
+    "barbara maitland": ["adam maitland"]
+  Conversation:
+    - ["#1 say Adam, that Lydia girl can see us. Actually see us."]
+    - ["#2 say I know. It's remarkable. She's the only living person who can."]
+    - ["#1 say She reminds me of... well. Of the daughter we never had."]
+    - ["#2 emote nods quietly"]
+    - ["#1 say I think she needs us, Adam. She's lonely. Her stepmother certainly isn't helping."]
+    - ["#2 say Then we'll be there for her. Being dead doesn't mean we can't be family."]

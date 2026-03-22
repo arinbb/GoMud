@@ -1,0 +1,12 @@
+itemid: 60016
+name: Day-O banana
+namesimple: banana
+displayname: a suspiciously rhythmic <ansi fg="itemname">banana</ansi>
+description: >-
+  A perfectly ripe banana that vibrates with a faint calypso beat. It seems to
+  pulse in time with music only it can hear. Eating it might have... side
+  effects.
+type: food
+subtype: edible
+uses: 1
+value: 0

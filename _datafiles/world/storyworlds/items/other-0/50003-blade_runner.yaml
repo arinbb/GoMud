@@ -1,0 +1,13 @@
+itemid: 50003
+name: Blade Runner film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Blade Runner</ansi>
+description: >-
+  A heavy 35mm film reel in a battered metal canister. The label reads "Blade
+  Runner - Final Cut" in typewritten text. The canister is cold to the touch,
+  and when you hold it near your ear you can hear faint rain and distant
+  synthesizer music.
+type: object
+subtype: usable
+uses: 0
+value: 0

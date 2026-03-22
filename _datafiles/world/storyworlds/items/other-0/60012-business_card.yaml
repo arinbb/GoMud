@@ -1,0 +1,9 @@
+itemid: 60012
+name: Beetlejuice's business card
+namesimple: card
+displayname: a grimy <ansi fg="itemname">business card</ansi>
+description: >-
+  A dog-eared business card printed on cheap stock. It's slightly damp and
+  smells of mildew.
+type: readable
+subtype: blobcontent

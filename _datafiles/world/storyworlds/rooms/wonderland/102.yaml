@@ -1,0 +1,41 @@
+roomid: 102
+zone: Wonderland
+title: The Pool of Tears
+description: >-
+  A vast saltwater pool stretches before you, its surface perfectly still and
+  mirror-bright. The pool fills what was once a grand hallway, the water lapping
+  at doorframes and windowsills along the walls. Strange creatures swim in its
+  depths -- a <ansi fg="mobname">Mouse</ansi> paddles past, looking rather
+  annoyed, followed by a procession of birds: a <ansi fg="mobname">Dodo</ansi>,
+  a <ansi fg="mobname">Lory</ansi>, and an <ansi fg="mobname">Eaglet</ansi>.
+  The water tastes of tears. A narrow dry ledge runs along the east wall.
+mapsymbol: P
+maplegend: Pool of Tears
+biome: water
+exits:
+  west:
+    roomid: 100
+  east:
+    roomid: 104
+nouns:
+  pool:
+    description: >-
+      The pool is four and a half feet deep -- the exact depth of tears shed by
+      someone nine feet tall. The water is warm and salty. Various small creatures
+      swim in it, all looking slightly put out.
+  mouse:
+    description: >-
+      The Mouse is swimming with great determination, its whiskers twitching
+      irritably. It seems to have opinions about cats and dogs, none of them
+      favorable.
+  dodo:
+    description: >-
+      The Dodo is a plump, dignified bird with an air of confused authority.
+      It seems to be organizing some kind of race that has no clear beginning
+      or end.
+idlemessages:
+- The Mouse splashes past, muttering something about cats in French.
+- The Dodo announces that the Caucus-Race has begun. Or ended. It's unclear.
+- A wave laps at your feet, warm and salty. Someone must have been very sad indeed.
+- The birds swim in circles, occasionally bumping into each other and apologizing profusely.
+- You see your own reflection in the pool, but it seems to be a slightly different version of you.

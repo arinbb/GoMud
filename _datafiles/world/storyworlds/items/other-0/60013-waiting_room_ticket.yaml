@@ -1,0 +1,12 @@
+itemid: 60013
+name: waiting room ticket
+namesimple: ticket
+displayname: a crumpled <ansi fg="itemname">waiting room ticket</ansi>
+description: >-
+  A small paper ticket torn from a roll, bearing the number 9,998,383,750,000.
+  The number currently being served appears to be 3. You're going to be here
+  a while.
+type: object
+subtype: usable
+uses: 0
+value: 1

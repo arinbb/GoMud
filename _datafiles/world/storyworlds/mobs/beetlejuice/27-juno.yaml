@@ -1,0 +1,23 @@
+mobid: 27
+zone: beetlejuice
+name: Juno
+description: >-
+  A severe older woman in a gray business suit, her hair pulled into a tight
+  bun. She chain-smokes constantly, and the smoke exits not just from her
+  mouth but from a slit across her throat that she makes no effort to hide.
+  Her expression says she has seen every stupid thing the dead can do and
+  is tired of all of it.
+hateraces: []
+hostile: false
+maxwander: 0
+angrycommands: []
+idlecommands:
+  - 'emote takes a long drag on her cigarette. Smoke curls from her throat.'
+  - 'emote stamps out a cigarette and immediately lights another.'
+  - 'emote shuffles through a towering stack of afterlife paperwork.'
+  - 'say Take a number. Everyone takes a number.'
+  - ''
+  - ''
+activitylevel: 10
+level: 30
+race: 1

@@ -1,0 +1,76 @@
+roomid: 615
+zone: Beetlejuice
+title: Beetlejuice's Lair
+description: >-
+  Absolute pandemonium. You've fallen through the crack in the living room floor
+  into a subterranean carnival nightmare. <parameter name="content">  into a subterranean carnival nightmare. <ansi fg="itemname">Neon signs</ansi> in
+  garish green and purple buzz and crackle, advertising "BIO-EXORCISMS" and
+  "BETELGEUSE - GHOST WITH THE MOST" and "SAY IT THREE TIMES." A rotting
+  <ansi fg="itemname">carousel</ansi> spins slowly in the corner, its painted
+  horses grinning with too many teeth. A <ansi fg="itemname">coffin</ansi> stands
+  upright against one wall like a wardrobe, its lid hanging open. Mountains of
+  <ansi fg="itemname">junk</ansi> -- broken toys, stolen gravestones, carnival
+  prizes, shrunken heads -- cover every surface. The air is thick with
+  <ansi fg="itemname">flies</ansi> and the smell of decay masked by cotton candy.
+  This is the domain of the Ghost with the Most, and it reflects his personality
+  perfectly: chaotic, grotesque, and strangely magnetic.
+mapsymbol: "!"
+maplegend: The Lair
+biome: dungeon
+exits:
+  up:
+    roomid: 604
+    exitmessage: You scramble up through the crack in the ceiling, hauling yourself back into the living room.
+nouns:
+  neon:
+    description: >-
+      The neon signs flicker and buzz with a manic energy. "BIO-EXORCISMS"
+      strobes between green and white. "GHOST WITH THE MOST" pulses in purple.
+      A smaller sign reads "SATISFACTION GUARANTEED OR YOUR AFTERLIFE BACK."
+      The fine print, written in letters made of tiny beetles, says "No refunds.
+      No exchanges. No escape." Another sign just says "IT'S SHOWTIME" in
+      letters that drip with something luminous.
+  carousel:
+    description: >-
+      The carousel turns slowly, powered by nothing visible. The horses are
+      wrong -- their grins are too wide, their eyes follow you, and one of
+      them has human hands instead of hooves. Calliope music wheezes from
+      somewhere inside the mechanism, playing a tune that's almost recognizable
+      but distorted, like a music box left in the rain for a hundred years.
+  coffin:
+    description: >-
+      The coffin is Beetlejuice's bed, closet, and medicine cabinet. The satin
+      lining is stained with something green. Inside hangs his famous black-and-
+      white striped suit (a spare -- he's wearing the other one). The bottom is
+      littered with beetle shells, playing cards, and a dog-eared copy of "How
+      to Win Friends and Influence Dead People." A mirror on the inside of the
+      lid shows no reflection at all.
+  junk:
+    description: >-
+      The junk pile is archaeological. Layers of stolen and collected debris from
+      across centuries of haunting: Victorian doorknobs, a ventriloquist's dummy
+      with real teeth, carnival game prizes won through cheating, a collection of
+      business cards in various names (all his), license plates from hearses, and
+      a snow globe containing a tiny screaming figure. Every object has a story.
+      None of the stories end well.
+  flies:
+    description: >-
+      The flies are everywhere -- fat, buzzing, iridescent green. They orbit
+      the neon signs like tiny planets around garish suns. They crawl across
+      the junk pile, the carousel horses, the coffin lid. They are Beetlejuice's
+      only consistent companions, and they seem almost affectionate. A jar
+      near the coffin contains even more of them, swirling in lazy patterns.
+spawninfo:
+- itemid: 60018
+  container: flies
+  respawnrate: 5 real minutes
+- itemid: 60012
+  container: junk
+  respawnrate: 5 real minutes
+idlemessages:
+- A neon sign sputters and the word "SHOWTIME" flickers, each letter lighting up in sequence like a countdown.
+- The carousel speeds up briefly, the calliope shrieking a few bars of something manic, then slows again.
+- A fly lands on your shoulder. Then another. Then six more. They seem to be spelling something.
+- Something in the junk pile shifts and settles. A spring-loaded jack-in-the-box pops open, screams, and closes itself.
+- The coffin lid swings closed with a bang, then creaks back open. Empty. Probably.
+- You step on something that crunches. You choose not to look down.

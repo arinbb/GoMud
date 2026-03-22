@@ -1,0 +1,47 @@
+roomid: 601
+zone: Beetlejuice
+title: Winter River Main Street
+description: >-
+  A sleepy New England main street lined with brick storefronts and clapboard
+  buildings. A <ansi fg="itemname">hardware store</ansi> with a hand-painted sign
+  sits next to a small <ansi fg="itemname">diner</ansi>. American flags hang limply
+  from porch posts. The street is nearly empty -- this is the kind of town where
+  everyone knows your name and nothing much happens. Up the hill to the north,
+  perched among the trees, sits the distinctive silhouette of the
+  <ansi fg="itemname">Maitland house</ansi>, a Victorian beauty overlooking the
+  whole valley. A <ansi fg="itemname">cemetery</ansi> is visible through an iron
+  gate to the east.
+mapsymbol: M
+maplegend: Main Street
+biome: city
+exits:
+  west:
+    roomid: 600
+  north:
+    roomid: 602
+    exitmessage: You walk up the winding hill toward the Maitland house.
+  east:
+    roomid: 618
+nouns:
+  hardware:
+    description: >-
+      The hardware store has a display of paint cans and garden tools in the
+      window. A bell jingles faintly inside. This is where Adam Maitland used
+      to buy supplies for his model town.
+  diner:
+    description: >-
+      A classic small-town diner with a neon "OPEN" sign that flickers
+      intermittently. Through the window you can see red vinyl booths and
+      a counter with chrome stools.
+  house:
+    description: >-
+      The Maitland house sits high on the hill above town, a handsome Victorian
+      with gabled windows and a wraparound porch. It looks different somehow --
+      the paint seems fresher, the garden more manicured than a house should be
+      after its owners have died.
+idlemessages:
+- A pickup truck rumbles slowly down Main Street, then turns the corner and is gone.
+- The hardware store bell jingles as someone enters or exits -- you can't quite see who.
+- Leaves skitter across the empty sidewalk, pushed by a cool autumn breeze.
+- The neon sign on the diner flickers once, buzzes, then steadies.
+- From somewhere up the hill, you hear a faint sound -- hammering? Or maybe a model train?

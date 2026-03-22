@@ -1,0 +1,21 @@
+-
+  Supported:
+    "delia deetz": ["otho"]
+  Conversation:
+    - ["#1 say Otho, darling, what do you think of my latest piece? I call it 'Suburban Entropy.'"]
+    - ["#2 emote adjusts his tinted glasses", "#2 say Mmm. It's derivative of Giacometti, but with a distinctly... you quality."]
+    - ["#1 say Is that good?"]
+    - ["#2 say It's beyond good or bad, Delia. It simply IS. Which is really the point, isn't it?"]
+    - ["#1 emote beams", "#1 say Oh Otho, you understand me like no one else."]
+    - ["#2 say Of course I do. We're both artists. Everyone else is just... furniture."]
+-
+  Supported:
+    "otho": ["delia deetz"]
+  Conversation:
+    - ["#1 say Delia, I've been reading the most fascinating book. Something about the recently deceased."]
+    - ["#2 say Oh? Where did you find it?"]
+    - ["#1 say In the attic. It was just lying there. Full of the most extraordinary information about ghosts, the afterlife, rituals..."]
+    - ["#2 emote leans forward eagerly", "#2 say Rituals? Tell me more."]
+    - ["#1 say Well, there's a passage about summoning spirits. A seance of sorts. Very chic."]
+    - ["#2 say We should do it at the dinner party! Can you imagine the reviews?"]
+    - ["#1 emote smiles conspiratorially", "#1 say Delia, you read my mind."]

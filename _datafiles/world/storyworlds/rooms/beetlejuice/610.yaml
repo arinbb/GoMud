@@ -1,0 +1,79 @@
+roomid: 610
+zone: Beetlejuice
+title: Delia's Gallery
+description: >-
+  Delia Deetz has claimed this room as her personal gallery and studio. The
+  original wallpaper has been ripped away, replaced with stark white walls meant
+  to showcase her <ansi fg="itemname">sculptures</ansi> -- twisted amalgamations
+  of metal, wire, and what might be dryer lint. An enormous abstract
+  <ansi fg="itemname">installation</ansi> hangs from the ceiling like a chrome
+  jellyfish. Half-finished <ansi fg="itemname">paintings</ansi> lean against every
+  wall, all aggressive slashes of color that seem to express Delia's ongoing war
+  with good taste. A table is covered with sculpting tools, wire cutters, and a
+  half-eaten croissant. The room smells of turpentine and ambition.
+mapsymbol: G
+maplegend: Gallery
+biome: house
+exits:
+  north:
+    roomid: 606
+    exitmessage: You escape back to the dining room, leaving art behind.
+nouns:
+  sculptures:
+    description: >-
+      The sculptures defy categorization. One is a tangle of coat hangers welded
+      together and spray-painted black -- Delia calls it "Angst IV." Another is
+      a mannequin torso with forks for fingers and a birdcage for a head. A third
+      is simply a brick on a pedestal with a price tag reading $4,500. Each one
+      has a small placard with a pretentious title and artist's statement.
+  paintings:
+    description: >-
+      Delia's paintings are large, loud, and deeply committed to being
+      misunderstood. Canvases splattered with house paint, fingerprints, and what
+      appears to be mustard. One is titled "Suburban Void III." Another is just
+      the word "NO" written backwards in red. They vibrate with a desperate
+      energy, like the visual equivalent of someone screaming at a dinner party.
+  installation:
+    description: >-
+      The ceiling installation is Delia's masterwork -- chrome tentacles radiating
+      from a central sphere of crumpled aluminum foil. It sways gently even
+      when there's no breeze. Delia has named it "The Unbearable Lightness of
+      Being Delia." It occasionally drops a piece of foil on visitors' heads.
+spawninfo:
+- mobid: 25
+  message: Delia Deetz sweeps into the room, gesturing dramatically at her latest creation.
+  idlecommands:
+  - say This piece represents the void between intention and execution. Obviously.
+  - ""
+  - emote steps back from a sculpture, squints at it, then rotates it two degrees.
+  - ""
+  - say Otho says my work is transcendent. Well, of course it is. It transcends EVERYTHING.
+  - ""
+  - say I'm not an artist, I'm a LIFESTYLE. People don't understand that.
+  - ""
+  - emote splashes paint on a canvas with theatrical fury.
+  - ""
+  maxwander: 0
+  respawnrate: 3 real minutes
+- mobid: 26
+  message: Otho glides in, examining Delia's sculptures with pursed lips and knowing nods.
+  idlecommands:
+  - say The energy in this room is absolutely CRIMINAL. In the best way.
+  - ""
+  - emote adjusts his ascot and peers at a sculpture through an imaginary monocle.
+  - ""
+  - say I've seen this aesthetic in Milan. Well, a version of it. Less dryer lint.
+  - ""
+  - say Have you tried feng shui? No? Oh, you must. This room is practically BEGGING for it.
+  - ""
+  maxwander: 1
+  respawnrate: 3 real minutes
+- itemid: 60014
+  container: sculptures
+  respawnrate: 5 real minutes
+idlemessages:
+- A piece of aluminum foil drops from Delia's ceiling installation and drifts to the floor.
+- One of the sculptures topples over with a tremendous crash. Nobody comes to pick it up.
+- The painting labeled "Suburban Void III" seems darker than it was a moment ago.
+- You hear Delia's voice from somewhere, critiquing something. Possibly the wallpaper. Possibly existence.
+- A wire sculpture catches the light and for a moment looks like a screaming face. Then it's just wire again.

@@ -1,0 +1,12 @@
+itemid: 60011
+name: piece of chalk
+namesimple: chalk
+displayname: a thick piece of <ansi fg="itemname">white chalk</ansi>
+description: >-
+  A fat stick of white chalk, the kind used on chalkboards. It feels heavier
+  than chalk should, as if it knows it's meant for drawing more than just
+  equations. It leaves faint marks on everything it touches.
+type: object
+subtype: usable
+uses: 0
+value: 0

@@ -1,0 +1,13 @@
+itemid: 50006
+name: Beetlejuice film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Beetlejuice</ansi>
+description: >-
+  A 35mm film reel in a scuffed metal canister decorated with crude drawings of
+  beetles and ghosts. The label reads "BEETLEJUICE" in dripping green letters.
+  The canister buzzes faintly, like it's full of flies. It smells of grave dirt
+  and cheap cologne.
+type: object
+subtype: usable
+uses: 0
+value: 0

@@ -1,0 +1,13 @@
+itemid: 60014
+name: Delia's sculpture
+namesimple: sculpture
+displayname: one of <ansi fg="itemname">Delia's sculptures</ansi>
+description: >-
+  A small twisted metal sculpture that might represent human suffering, or might
+  represent a fork that went through a garbage disposal. Delia would call it "a
+  visceral exploration of post-modern angst." Everyone else would call it ugly.
+  It's a souvenir from the world of Beetlejuice.
+type: object
+subtype: usable
+uses: 0
+value: 1

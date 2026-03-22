@@ -1,0 +1,23 @@
+mobid: 31
+zone: beetlejuice
+name: a Flattened Man
+description: >-
+  A man in a business suit who appears to have been ironed completely flat.
+  He sits primly on a waiting room chair, holding his ticket with
+  two-dimensional fingers, occasionally checking a watch that is also flat.
+  He maintains an air of dignity despite being roughly one-sixteenth of an
+  inch thick.
+hateraces: []
+hostile: false
+maxwander: 0
+angrycommands: []
+idlecommands:
+  - 'emote checks his flat watch and sighs a thin, papery sigh.'
+  - 'emote adjusts his two-dimensional tie.'
+  - 'say I''ve been waiting for three hours. Or three years. Hard to tell.'
+  - ''
+  - ''
+  - ''
+activitylevel: 10
+level: 1
+race: 1

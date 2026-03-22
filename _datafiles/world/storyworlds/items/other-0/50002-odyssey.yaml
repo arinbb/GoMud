@@ -1,0 +1,13 @@
+itemid: 50002
+name: The Odyssey
+namesimple: book
+displayname: an ancient copy of <ansi fg="itemname">The Odyssey</ansi>
+description: >-
+  A heavy scroll-bound volume with a cracked leather cover embossed with Greek
+  meanders. The pages are thick vellum, covered in careful calligraphy. It smells
+  of sea salt and olive oil. A faded illustration shows a ship tossed on wine-dark
+  waves.
+type: object
+subtype: usable
+uses: 0
+value: 0

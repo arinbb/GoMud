@@ -1,0 +1,61 @@
+roomid: 105
+zone: Wonderland
+title: The Cheshire Cat's Tree
+description: >-
+  A massive oak tree stands alone in a clearing, its branches twisted into
+  impossible spirals. Perched on the highest limb -- or perhaps floating just
+  above it -- is the famous <ansi fg="mobname">Cheshire Cat</ansi>, its enormous
+  grin visible even when the rest of it is not. The cat fades in and out of
+  view: first the stripes disappear, then the body, then the tail, until
+  nothing remains but the grin, hovering in midair like a luminous crescent.
+  Paths lead in several directions from the clearing, each marked with a
+  <ansi fg="itemname">signpost</ansi> whose arrows point in contradictory
+  directions.
+mapsymbol: C
+maplegend: Cat's Tree
+biome: forest
+exits:
+  south:
+    roomid: 103
+  east:
+    roomid: 104
+  west:
+    roomid: 101
+nouns:
+  tree:
+    description: >-
+      The oak tree's branches defy geometry, looping and spiraling in ways that
+      would make Escher nod appreciatively. Claw marks run up the trunk, though
+      the Cheshire Cat doesn't seem the type to climb when it can simply appear.
+  signpost:
+    description: >-
+      The signpost has four arrows. One reads "This Way," another reads "That
+      Way," a third reads "The Other Way," and the fourth reads "Back the Way
+      You Came (but different)." All four arrows point in roughly the same
+      direction.
+  grin:
+    description: >-
+      The Cheshire Cat's grin hangs in the air, detached from any visible cat.
+      It's a very wide grin, stretching from ear to ear -- if the ears were
+      visible. The grin seems amused by something only it understands. Which,
+      given that this is Wonderland, could be anything or nothing at all.
+spawninfo:
+- mobid: 14
+  message: The Cheshire Cat appears, grin-first, on a branch overhead.
+  idlecommands:
+  - say We're all mad here. I'm mad. You're mad.
+  - ""
+  - emote begins to fade, starting with the tail and ending with the grin.
+  - ""
+  - say Would you tell me, please, which way I ought to go from here?
+  - say That depends a good deal on where you want to get to.
+  - ""
+  - emote reappears suddenly, upside-down on a different branch.
+  - ""
+  respawnrate: 2 real minutes
+idlemessages:
+- The Cheshire Cat's grin floats past at eye level, unattached to any visible cat.
+- A striped tail appears, curling around a branch, then fades away again.
+- '"Did you say something?" asks a voice from nowhere. Or perhaps from everywhere.'
+- The signpost arrows slowly rotate to point in entirely new contradictory directions.
+- For a moment, you see the Cat fully materialized -- a large tabby with an impossibly wide smile. Then it fades again.

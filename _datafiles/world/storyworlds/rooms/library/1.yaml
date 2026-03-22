@@ -1,0 +1,71 @@
+roomid: 1
+zone: The Grand Library
+title: The Grand Atrium
+description: >-
+  You stand in the soaring atrium of the Grand Library, a vast circular chamber
+  with a domed ceiling painted to resemble a night sky full of constellations. Warm
+  light spills from brass lanterns mounted along curving mahogany balustrades. A
+  sweeping staircase spirals upward to the mezzanine level. The air hums with a
+  quiet energy, as though the stories contained within these walls are alive and
+  waiting. A large oak <ansi fg="itemname">reception desk</ansi> stands at the center,
+  and a worn leather <ansi fg="itemname">guestbook</ansi> lies open upon it.
+mapsymbol: A
+maplegend: Atrium
+biome: house
+exits:
+  north:
+    roomid: 2
+  east:
+    roomid: 3
+  west:
+    roomid: 4
+  up:
+    roomid: 5
+nouns:
+  desk:
+    description: >-
+      A grand oak reception desk, its surface worn smooth by countless hands. A
+      small brass placard reads "Welcome, Traveler. Every story needs a reader."
+  guestbook:
+    description: >-
+      The leather-bound guestbook is filled with names and notes from visitors past.
+      Some entries shimmer faintly, as if written in ink that hasn't quite dried,
+      even after what must be years.
+  constellations:
+    description: >-
+      The painted ceiling depicts constellations you half-recognize -- Orion's belt
+      hangs beside what looks like a dragon in flight, and the Big Dipper shares
+      the sky with a compass rose made of stars.
+sign:
+  signtext: >-
+    <ansi fg="14">Welcome to the Grand Library of StoryWorlds</ansi>
+
+    Step into the pages of your favorite books, the frames of beloved films,
+    or the canvases of timeless artwork.
+
+    <ansi fg="yellow">North</ansi> - The Book Stacks
+    <ansi fg="yellow">East</ansi>  - The Screening Room
+    <ansi fg="yellow">West</ansi>  - The Gallery
+    <ansi fg="yellow">Up</ansi>    - The Mezzanine Reading Lounge
+
+    <ansi fg="3">Pick up a book, film reel, or painting and use it to be transported
+    into that world. Type 'return' from within any world to come back here.</ansi>
+spawninfo:
+- mobid: 1
+  message: The Librarian quietly appears from behind a shelf.
+  idlecommands:
+  - say Welcome to the Grand Library. Browse the stacks to the north, or try the screening room to the east.
+  - ""
+  - say Every story here is a doorway. All you have to do is open it.
+  - ""
+  - emote adjusts their spectacles and peers at a dusty tome.
+  - ""
+  - wander
+  levelmod: 50
+  respawnrate: 1 real minutes
+idlemessages:
+- A <ansi fg="mobname">visitor</ansi> crosses the atrium, their footsteps echoing softly on the marble floor.
+- The brass lanterns flicker briefly, casting dancing shadows across the painted ceiling.
+- You hear the distant sound of pages turning from somewhere deeper in the library.
+- A faint melody drifts down from the mezzanine above, like a music box playing far away.
+- The smell of old books mingles with hints of cedar and candle wax.

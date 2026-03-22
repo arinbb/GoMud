@@ -1,0 +1,21 @@
+mobid: 21
+zone: beetlejuice
+name: Barbara Maitland
+description: >-
+  A pleasant woman with auburn hair and a warm smile. She wears a floral
+  blouse and cardigan. Like her husband, she is slightly translucent in the
+  right light. She carries herself with the warmth of someone who always
+  has cookies in the oven, even though she can no longer eat them.
+hateraces: []
+hostile: false
+maxwander: 1
+angrycommands: []
+idlecommands:
+  - 'emote straightens a doily on the counter out of habit.'
+  - 'emote gazes wistfully at the kitchen, remembering better days.'
+  - 'say I do miss cooking. The smells, at least.'
+  - ''
+  - ''
+activitylevel: 10
+level: 5
+race: 1

@@ -1,0 +1,53 @@
+roomid: 606
+zone: Beetlejuice
+title: Maitland House - Dining Room
+description: >-
+  A formal dining room dominated by a long mahogany <ansi fg="itemname">table</ansi>
+  set for dinner. The good china is out -- delicate plates with blue patterns,
+  crystal wine glasses, cloth napkins folded into elaborate shapes. A
+  <ansi fg="itemname">chandelier</ansi> hangs overhead, its candles flickering
+  with an unnatural steadiness. The wallpaper is half-stripped, showing Delia's
+  renovation progress. This room has a strange energy, as if it's waiting for
+  something to happen. A serving cart near the wall holds a covered
+  <ansi fg="itemname">dish</ansi> and a bowl of <ansi fg="itemname">fruit</ansi>.
+mapsymbol: D
+maplegend: Dining Room
+biome: house
+exits:
+  north:
+    roomid: 604
+  west:
+    roomid: 605
+  south:
+    roomid: 610
+nouns:
+  table:
+    description: >-
+      The mahogany dining table seats eight. Place settings for six are laid out
+      with meticulous care. One of the napkins has been folded into a swan. Another
+      appears to have been folded into something obscene.
+  chandelier:
+    description: >-
+      The chandelier is original to the house -- wrought iron and crystal.
+      Its candles burn without melting, the flames perfectly still. When the
+      light hits the crystal drops, tiny rainbows scatter across the walls.
+  dish:
+    description: >-
+      A silver serving dish with a domed lid. You lift it and find shrimp
+      cocktail, arranged in a perfect circle. The shrimp seem to be moving
+      slightly. Are they... tapping? To a beat?
+  fruit:
+    description: >-
+      A bowl of tropical fruit -- bananas, papayas, mangos. The bananas are
+      perfectly ripe. Almost too perfectly. They seem to vibrate with a
+      faint calypso rhythm.
+spawninfo:
+- itemid: 60016
+  container: table
+  respawnrate: 5 real minutes
+idlemessages:
+- The chandelier candles flicker in perfect unison, as if choreographed.
+- You hear faint calypso music. Is it coming from the fruit bowl?
+- A wine glass on the table hums briefly, as if someone ran a finger around its rim.
+- The napkin swan twitches. You look again. It's still. Probably.
+- The shrimp under the serving dish lid seem to have rearranged themselves.

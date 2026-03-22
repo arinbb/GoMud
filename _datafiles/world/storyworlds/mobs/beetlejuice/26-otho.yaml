@@ -1,0 +1,21 @@
+mobid: 26
+zone: beetlejuice
+name: Otho
+description: >-
+  A portly man dressed in all black with a silk scarf and tinted glasses.
+  He carries himself with an air of supreme confidence and drops references
+  to obscure design movements and occult practices with equal nonchalance.
+  His pinky ring catches the light as he gestures expansively about feng shui.
+hateraces: []
+hostile: false
+maxwander: 1
+angrycommands: []
+idlecommands:
+  - 'say The energy in this room is completely wrong. Completely.'
+  - 'emote adjusts his silk scarf with practiced elegance.'
+  - 'emote peers over his tinted glasses disapprovingly.'
+  - ''
+  - ''
+activitylevel: 10
+level: 5
+race: 1

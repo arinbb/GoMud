@@ -1,0 +1,42 @@
+roomid: 603
+zone: Beetlejuice
+title: Maitland House - Front Hallway
+description: >-
+  A warm front hallway with dark wood wainscoting and floral wallpaper that's
+  been half stripped away -- evidence of the Deetz renovation. A grand
+  <ansi fg="itemname">staircase</ansi> curves upward to the second floor. To the
+  south is the front door. The living room opens to the east, and a hallway leads
+  north to the kitchen. The walls show a strange tension between two decorating
+  styles: Barbara's cozy New England warmth and Delia's aggressive modernist
+  makeover. A <ansi fg="itemname">coat rack</ansi> by the door holds a man's
+  tweed jacket and a woman's cardigan that nobody has worn in quite some time.
+mapsymbol: "."
+maplegend: Hallway
+biome: house
+exits:
+  south:
+    roomid: 602
+    exitmessage: You step out through the front door.
+  east:
+    roomid: 604
+  north:
+    roomid: 605
+  up:
+    roomid: 608
+nouns:
+  staircase:
+    description: >-
+      The staircase is solid oak with a carved banister. Halfway up, the wallpaper
+      changes abruptly from floral to Delia's stark geometric pattern. The two
+      styles meet in an ugly seam, like two realities stitched together.
+  coatrack:
+    description: >-
+      Adam's tweed jacket and Barbara's cardigan hang here, undisturbed. They
+      still smell faintly of their owners -- sawdust and lavender. Dust has
+      begun to settle on the shoulders.
+idlemessages:
+- The old radiator clanks and hisses, pushing warmth into the hallway.
+- A creak from the staircase -- footsteps? But no one is there.
+- The contrast between the stripped wallpaper and what remains creates an unsettling patchwork.
+- A draft from somewhere makes the coats on the rack sway slightly.
+- From upstairs, the faint sound of someone humming a tune.

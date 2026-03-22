@@ -1,0 +1,58 @@
+roomid: 605
+zone: Beetlejuice
+title: Maitland House - Kitchen
+description: >-
+  A warm country kitchen with checkered curtains and copper pots hanging from a
+  ceiling rack. Barbara's <ansi fg="itemname">spice rack</ansi> still lines one wall,
+  alphabetically organized with obsessive care. The old gas <ansi fg="itemname">stove</ansi>
+  sits next to a modern espresso machine the Deetzes installed. A
+  <ansi fg="itemname">pantry</ansi> is stocked with both Barbara's canned preserves
+  and Delia's imported organic snacks. The kitchen table is pine, scarred with use,
+  and a single yellow <ansi fg="itemname">mug</ansi> sits on it as if someone just
+  stepped away.
+mapsymbol: K
+maplegend: Kitchen
+biome: house
+exits:
+  south:
+    roomid: 603
+  east:
+    roomid: 606
+nouns:
+  spice:
+    description: >-
+      The spice rack is Barbara's masterpiece -- three dozen jars in perfect
+      alphabetical order, from allspice to za'atar. Each jar is labeled in
+      her careful handwriting. The basil is running low.
+  stove:
+    description: >-
+      The old gas stove has four burners and an oven with a temperamental pilot
+      light. It smells faintly of baked bread and cinnamon, even though nothing
+      has been baked in it for some time.
+  mug:
+    description: >-
+      A yellow coffee mug with "World's Best Wife" printed on it. There's a
+      ring of dried coffee at the bottom. Barbara's last cup.
+  pantry:
+    description: >-
+      The pantry is a study in contrasts -- Barbara's mason jars of homemade
+      preserves share shelf space with Delia's kale chips and activated charcoal
+      water.
+spawninfo:
+- mobid: 21
+  message: Barbara Maitland appears, absentmindedly straightening the spice rack.
+  idlecommands:
+  - say This was always my favorite room in the house.
+  - ""
+  - emote adjusts a spice jar that was slightly out of alphabetical order.
+  - ""
+  - say I keep trying to make it feel like home. Even now.
+  - ""
+  maxwander: 1
+  respawnrate: 3 real minutes
+idlemessages:
+- The kettle on the stove whistles softly, though no flame is lit beneath it.
+- A cupboard door swings open on its own, then slowly closes.
+- The smell of fresh-baked bread wafts through the kitchen, though the oven is cold.
+- A spice jar rattles slightly on the rack, then settles.
+- Steam rises briefly from the yellow mug, then fades. Was there coffee in it a moment ago?

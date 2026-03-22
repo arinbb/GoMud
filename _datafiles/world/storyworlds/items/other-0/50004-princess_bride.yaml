@@ -1,0 +1,12 @@
+itemid: 50004
+name: The Princess Bride film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">The Princess Bride</ansi>
+description: >-
+  A well-loved film reel whose canister is decorated with hand-drawn hearts and
+  swords. The label reads "The Princess Bride" in elegant cursive. The canister
+  is warm to the touch and smells faintly of roses and steel.
+type: object
+subtype: usable
+uses: 0
+value: 0

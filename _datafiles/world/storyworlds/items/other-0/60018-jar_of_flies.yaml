@@ -1,0 +1,13 @@
+itemid: 60018
+name: jar of flies
+namesimple: jar
+displayname: a buzzing <ansi fg="itemname">jar of flies</ansi>
+description: >-
+  A mason jar full of fat, angry flies that buzz against the glass with
+  surprising intensity. The lid is screwed on tight. A label on the side reads
+  "PROPERTY OF BETELGEUSE - DO NOT OPEN." The flies spell out tiny words against
+  the glass when they swarm. Right now they seem to be spelling "HELP."
+type: object
+subtype: usable
+uses: 0
+value: 1

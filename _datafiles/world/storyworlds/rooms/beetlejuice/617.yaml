@@ -1,0 +1,84 @@
+roomid: 617
+zone: Beetlejuice
+title: Lydia's Bedroom
+description: >-
+  A gothic sanctuary in the heart of a suburban house. Black
+  <ansi fg="itemname">curtains</ansi> block the windows, turning afternoon into
+  permanent midnight. <ansi fg="itemname">Candles</ansi> in wrought-iron holders
+  provide the only light, casting dancing shadows across walls covered with
+  <ansi fg="itemname">photographs</ansi> -- dozens of black-and-white prints
+  pinned edge to edge. A <ansi fg="itemname">camera</ansi> on a tripod stands
+  near the window, pointed at the mirror. A <ansi fg="itemname">journal</ansi>
+  lies open on the nightstand, its pages filled with cramped handwriting and
+  dark poetry. The bed is unmade, covered in a black comforter. Incense smoke
+  curls from a brass holder shaped like a dragon. The room smells of clove
+  cigarettes, darkroom chemicals, and adolescent melancholy. This is Lydia
+  Deetz's world -- the one place in this house that makes sense to her.
+mapsymbol: Y
+maplegend: Lydia's Room
+biome: house
+exits:
+  north:
+    roomid: 608
+    exitmessage: You leave Lydia's dark sanctuary and step back into the master bedroom.
+nouns:
+  curtains:
+    description: >-
+      Heavy black velvet curtains, pinned shut with safety pins and skull-shaped
+      clasps. A sliver of daylight leaks around the edges, but Lydia has done
+      her best to banish the sun from her domain. The curtains smell faintly
+      of clove smoke and patchouli.
+  candles:
+    description: >-
+      Dripping black candles in iron holders of varying heights, arranged on
+      the dresser, the windowsill, and the floor. The wax has pooled and
+      hardened into dark stalactites. The flames burn steadily despite the
+      occasional draft, as if they've made a deal with the darkness to keep
+      burning no matter what.
+  photographs:
+    description: >-
+      The photographs are all Lydia's work -- stark black-and-white images shot
+      with an old 35mm camera. Abandoned buildings. Dead trees. Her own face in
+      mirrors, always slightly out of focus. One photo shows the Maitland house
+      from below, and in the attic window, two transparent figures are barely
+      visible. Another shows an empty chair with the faintest impression of
+      someone sitting in it. Lydia photographs what others can't see.
+  camera:
+    description: >-
+      A vintage 35mm camera on a wooden tripod, aimed at the vanity mirror. The
+      lens cap is off. The shutter is cocked. A strip of developed negatives
+      hangs from a clothesline nearby -- and in every frame, there are figures
+      that weren't in the room when the photos were taken. Lydia's camera sees
+      the dead. She knows it. That's why she keeps shooting.
+  journal:
+    description: >-
+      Lydia's journal is open to a page of dark, cramped handwriting. The entry
+      visible is a poem about feeling invisible in a house full of people who
+      can't see what she sees. The margins are filled with tiny sketches of
+      beetles, moons, and a figure in a striped suit. The last line on the page
+      reads: "My whole life is a dark room. One big dark room."
+spawninfo:
+- mobid: 23
+  message: Lydia Deetz emerges from behind the black curtains, camera in hand, studying you with dark eyes.
+  idlecommands:
+  - say I myself am strange and unusual.
+  - ""
+  - emote adjusts the lens on her camera and snaps a photo of something you can't see.
+  - ""
+  - say I've been reading this handbook. The "Handbook for the Recently Deceased." It reads like stereo instructions.
+  - ""
+  - say The living ignore the strange and unusual. I, on the other hand, am quite attracted to it.
+  - ""
+  - emote sits on the bed and writes in her journal with fierce concentration.
+  - ""
+  maxwander: 1
+  respawnrate: 3 real minutes
+- itemid: 60017
+  container: camera
+  respawnrate: 5 real minutes
+idlemessages:
+- A candle flame bends sideways, pointing toward the photographs on the wall as if directing your attention.
+- The camera shutter clicks on its own. When you check the viewfinder, you see a figure in the room that isn't there.
+- Incense smoke forms a shape that could be a face -- hollow eyes, open mouth -- then disperses.
+- Pages of the journal flip in a draft that comes from nowhere, settling on a poem about doors between worlds.
+- One of the photographs on the wall seems to move -- a curtain billowing in a frozen image.

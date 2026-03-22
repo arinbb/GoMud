@@ -1,0 +1,53 @@
+roomid: 600
+zone: Beetlejuice
+title: The Covered Bridge
+description: >-
+  A quaint red covered bridge spans a shallow river in rural Connecticut. Autumn
+  leaves in shades of gold and crimson drift lazily through the open sides. The
+  wooden planks beneath your feet are worn smooth by generations of traffic. Through
+  the far end of the bridge you can see the main street of <ansi fg="itemname">Winter
+  River</ansi>, a sleepy New England town nestled among the hills. A hand-painted
+  <ansi fg="itemname">sign</ansi> near the entrance reads "WINTER RIVER - EST. 1648."
+  The river below murmurs softly. Something about this bridge feels significant, as
+  though the boundary it crosses is more than just water.
+mapsymbol: B
+maplegend: Covered Bridge
+biome: road
+exits:
+  east:
+    roomid: 601
+    exitmessage: You walk through the covered bridge toward the town.
+nouns:
+  sign:
+    description: >-
+      A wooden sign weathered by New England seasons. "WINTER RIVER - EST. 1648 -
+      Pop. 4,632." Someone has scratched "nice model" in tiny letters at the bottom.
+  river:
+    description: >-
+      The shallow river flows beneath the bridge, brown and leaf-strewn. A spider
+      crawls across the railing. For just a moment, reflected in the water, you
+      think you see a car plunging off the bridge -- but when you blink, the
+      water is still.
+  bridge:
+    description: >-
+      The covered bridge is a classic New England design, its red paint faded
+      and peeling. The timbers are solid but old. There are no guardrails on
+      the outside -- just a gentle wooden lip between the road and the drop
+      to the river below.
+sign:
+  signtext: >-
+    <ansi fg="14">Welcome to Winter River, Connecticut</ansi>
+
+    <ansi fg="yellow">East</ansi> - Winter River Main Street
+
+    <ansi fg="3">You've stepped into the world of Beetlejuice (1988).
+    Explore the Maitland house, discover the afterlife waiting room,
+    and maybe -- if you dare -- summon the Ghost with the Most.
+
+    Type 'return' at any time to go back to the Grand Library.</ansi>
+idlemessages:
+- A gust of autumn wind sends a flurry of golden leaves spiraling through the bridge.
+- The river beneath the bridge gurgles softly over mossy rocks.
+- Somewhere in the distance, a church bell tolls once.
+- A spider descends on a thread from the bridge rafters, then climbs back up.
+- The late afternoon light filtering through the bridge slats creates bars of gold and shadow across the road.
