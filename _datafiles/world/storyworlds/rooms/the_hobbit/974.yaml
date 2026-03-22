@@ -1,0 +1,48 @@
+roomid: 974
+zone: The Hobbit
+title: Misty Mountain Pass
+description: >-
+  A terrifyingly narrow <ansi fg="itemname">path</ansi> clings to the side of
+  the Misty Mountains. The wind screams. Rain lashes sideways. Far below, the
+  valley is lost in cloud. Thunder booms and lightning splits the sky, briefly
+  illuminating enormous stone <ansi fg="itemname">giants</ansi> on the far peaks,
+  hurling boulders at each other across the chasm. A <ansi fg="exit">cave</ansi>
+  opens in the rock face beside the path, offering shelter from the storm -- but
+  the back wall has a crack in it, and a cold draft rises from below. The path
+  continues <ansi fg="exit">west</ansi> toward Rivendell and <ansi fg="exit">east</ansi>
+  toward the far side of the mountains. Every step on the wet stone is a gamble
+  with the abyss.
+mapsymbol: '^'
+maplegend: Mountain Pass
+biome: mountains
+exits:
+  west:
+    roomid: 973
+  cave:
+    roomid: 975
+  east:
+    roomid: 977
+nouns:
+  path: >-
+    A narrow ledge of wet grey stone, barely wide enough for two to walk
+    abreast. The rock is slippery with rain and ice. To one side, a sheer
+    cliff face rises into the clouds. To the other, a drop so deep that the
+    bottom is lost in mist. One false step and you would bounce twice before
+    you stopped.
+  giants: >-
+    In the flashes of lightning, you can see them -- stone giants, vast as
+    mountains themselves, standing on the peaks and hurling boulders back and
+    forth across the valley like children throwing balls. The crash of stone
+    on stone sounds like the world breaking apart.
+  cave: >-
+    A dry cave in the rock face, just large enough for a company of dwarves
+    and one hobbit. The floor is sandy. The walls are smooth. It looks safe
+    enough -- but there is a crack in the back wall, and a cold draft rises
+    from it carrying the smell of goblin and deep earth.
+idlemessages:
+- Lightning splits the sky and for an instant you see a stone giant hurl a boulder the size of a house.
+- 'Thunder rolls through the mountains like the drumming of enormous fists on stone.'
+- 'The wind nearly tears you from the path. You press yourself flat against the rock, heart hammering.'
+- Rain runs in rivers down the cliff face, pooling on the narrow path and spilling over the edge into nothing.
+- A boulder crashes into the mountainside above, sending a shower of stones rattling down past the ledge.
+- The storm shows no sign of easing. If anything, the giants seem to be enjoying themselves more.

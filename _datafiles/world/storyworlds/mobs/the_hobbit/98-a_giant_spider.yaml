@@ -1,0 +1,20 @@
+mobid: 98
+zone: the_hobbit
+hostile: true
+maxwander: 1
+angrycommands:
+  - "emote lunges with clicking mandibles!"
+  - "say Hisssss... fresh meat!"
+idlecommands:
+  - ''
+  - ''
+activitylevel: 30
+character:
+  name: A Giant Spider
+  description: >-
+    A bloated, hairy spider the size of a large dog, with eight glittering
+    black eyes and mandibles that drip venom. Its web stretches between the
+    trees in sheets of sticky silk. It clicks and hisses as it moves, hunting
+    by vibration and hunger.
+  raceid: 15
+  level: 12

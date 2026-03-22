@@ -1,0 +1,10 @@
+buffid: 54
+name: Middle-earth Wonder
+description: The ancient magic of Middle-earth sharpens your senses. You see more, hear more, feel the history of this place.
+secret: false
+triggerrate: 10 real minutes
+triggercount: 1
+flags:
+  - see-nouns
+  - see-hidden
+  - nightvision

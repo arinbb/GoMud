@@ -1,0 +1,66 @@
+roomid: 982
+zone: The Hobbit
+title: Elvenking's Halls
+description: >-
+  The underground palace of the Elvenking Thranduil, carved into a great
+  hill beside the Forest River. A vast cavern lit by <ansi fg="itemname">lanterns</ansi>
+  of green and gold. Stone pillars carved like living trees support the
+  ceiling, their branches spreading overhead in an arch of frozen stone.
+  The Elvenking's <ansi fg="itemname">throne</ansi> sits on a raised dais of
+  carved oak, draped in green silk. Wine <ansi fg="itemname">barrels</ansi>
+  are stacked near a passage leading down to the river gate, and the
+  king's <ansi fg="itemname">cellars</ansi> are famous for their Dorwinion
+  vintages. The air smells of old stone, candle wax, and very good wine.
+  Passages lead <ansi fg="exit">west</ansi> back into Mirkwood and
+  <ansi fg="exit">east</ansi> along the Forest River toward Lake-town.
+mapsymbol: K
+maplegend: Elvenking's Halls
+biome: cave
+exits:
+  west:
+    roomid: 981
+  east:
+    roomid: 983
+nouns:
+  throne: >-
+    The Elvenking's throne, carved from living stone and polished to a
+    deep luster. It is draped in green silk embroidered with gold leaves.
+    Thranduil sits here with a crown of autumn berries and red leaves on
+    his golden hair, his eyes cold and proud. He is less wise than Elrond
+    but no less dangerous to those who cross him.
+  lanterns: >-
+    Lanterns of green and gold light hang from the stone branches overhead,
+    casting a warm but eerie glow that makes the cavern feel like an
+    underground forest at twilight. They are elven-made and burn without
+    smoke or heat.
+  barrels: >-
+    Empty wine barrels stacked near a passage that slopes downward to the
+    river gate. The elves float their empty barrels down the Forest River
+    to Lake-town for refilling. A clever burglar might realize that what
+    goes down the river in barrels need not be limited to air. This is
+    how Bilbo smuggled the dwarves to freedom.
+  cellars: >-
+    The Elvenking's wine cellars, famous throughout the north for their
+    collection of Dorwinion wine -- rich, dark red, and extraordinarily
+    potent. The butler Galion is known to sample the vintages freely and
+    fall asleep at his post. A useful weakness for an invisible burglar.
+spawninfo:
+- mobid: 95
+  message: The Elvenking regards you from his throne with cold, appraising eyes.
+  idlecommands:
+  - say The treasure of my people is not to be bartered or stolen.
+  - ""
+  - emote adjusts the crown of autumn leaves on his golden hair.
+  - ""
+  - say I have seen dragon-fire and the ruin of kingdoms. Do not test my patience.
+  - ""
+  - emote sips from a goblet of deep red wine, his expression unreadable.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- An elf guard marches past with a spear and a stern expression, boots clicking on stone.
+- The green and gold lanterns flicker, sending shadows dancing up the carved stone pillars.
+- 'From the cellars below, the faint sound of singing and the clink of goblets: the butler is at it again.'
+- The Elvenking's halls feel ancient and proud, carved by hands that remember the light of the Two Trees.
+- An empty wine barrel rolls down the passage toward the river gate with a hollow rumble.
+- 'The sound of elven harps drifts through the stone corridors: music both beautiful and melancholy.'

@@ -1,0 +1,52 @@
+roomid: 980
+zone: The Hobbit
+title: Deep Mirkwood
+description: >-
+  Deep inside the enchanted forest. The <ansi fg="itemname">path</ansi> is
+  barely visible, a faint trace on the forest floor swallowed by leaves and
+  shadow. Black squirrels chitter in the branches overhead. Pale
+  <ansi fg="itemname">eyes</ansi> gleam from the undergrowth, watching,
+  always watching. Thick <ansi fg="itemname">webs</ansi> stretch between the
+  trees, some large enough to catch a horse. An enchanted
+  <ansi fg="itemname">stream</ansi> crosses the path, its dark water moving
+  sluggishly -- anyone who drinks from it or falls in is overcome by enchanted
+  sleep and strange dreams. No sunlight penetrates the canopy. No breeze stirs
+  the heavy air. The path continues <ansi fg="exit">west</ansi> toward the
+  forest edge and <ansi fg="exit">east</ansi> deeper into the wood.
+mapsymbol: D
+maplegend: Deep Mirkwood
+biome: forest
+exits:
+  west:
+    roomid: 979
+  east:
+    roomid: 981
+nouns:
+  stream: >-
+    A dark enchanted stream crossing the path, its water black and slow-moving.
+    DO NOT drink from it. DO NOT touch it. DO NOT fall in. Those who do fall
+    into a deep enchanted sleep filled with dreams of feasting in the
+    Elvenking's halls. Bombur fell in and slept for days. There is no bridge
+    -- you must find another way across.
+  eyes: >-
+    Dozens of pale, gleaming eyes in the undergrowth, watching you from every
+    direction. They belong to things that do not step into the faint light
+    that filters through the canopy. The eyes do not blink. When you move,
+    they follow.
+  webs: >-
+    Thick grey cobwebs stretched between the trees, some as thick as rope.
+    They are sticky and incredibly strong. Dark shapes are dimly visible
+    wrapped in some of the larger webs. The spiders of Mirkwood have been
+    busy.
+  path: >-
+    Almost invisible now, swallowed by fallen leaves, creeping roots, and
+    encroaching shadow. It takes concentration to follow it. One wrong step
+    and you could wander off into the pathless dark, where the spiders wait
+    and the trees conspire to lead you in circles until you drop.
+idlemessages:
+- 'The eyes in the undergrowth shift position. They are closer now. They are always getting closer.'
+- A black squirrel drops a nut on your head and chatters angrily, as if you are trespassing.
+- 'The enchanted stream gurgles softly, invitingly. You suddenly feel very thirsty. Resist it.'
+- 'Something large moves through the canopy above, setting the branches swaying. You do not look up.'
+- The air is thick and still, heavy with the smell of rotting leaves and something sweet and sickly.
+- 'A strand of web brushes your face. You flinch. Somewhere above, something large adjusts its position.'

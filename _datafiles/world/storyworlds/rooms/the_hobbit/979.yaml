@@ -1,0 +1,63 @@
+roomid: 979
+zone: The Hobbit
+title: Edge of Mirkwood
+description: >-
+  The western edge of the great forest of Mirkwood. An ancient
+  <ansi fg="itemname">path</ansi> leads eastward into <ansi fg="itemname">darkness</ansi>
+  between enormous <ansi fg="itemname">trees</ansi> whose canopy blocks all
+  sunlight. A weathered wooden <ansi fg="itemname">sign</ansi> stands at the
+  forest's edge, its message clear. The air changes at the tree line -- outside,
+  it is warm and clean. One step into the forest and it becomes thick, still,
+  and watchful. This is where Gandalf left the company, turning south on urgent
+  business. He told them to stay on the path. He told them not to drink the
+  water. He told them not to stray. The path leads <ansi fg="exit">west</ansi>
+  back to Beorn's lands and <ansi fg="exit">east</ansi> into Mirkwood.
+mapsymbol: F
+maplegend: Mirkwood Edge
+biome: forest
+exits:
+  west:
+    roomid: 978
+  east:
+    roomid: 980
+nouns:
+  path: >-
+    A narrow dirt path, once well-maintained by the Wood-elves, now choked
+    with fallen leaves and encroaching roots. It vanishes into the gloom
+    between the trees like a thread being swallowed by darkness. This is the
+    only safe way through Mirkwood, and even it is not truly safe.
+  trees: >-
+    Enormous oaks and beeches, their trunks as wide as houses, draped in
+    curtains of grey-green moss. Their branches interlock overhead, blocking
+    the sky completely. No light reaches the forest floor. The trees feel
+    ancient, watchful, and unwelcoming. They do not want you here.
+  sign: >-
+    A weathered wooden sign, its paint peeling, reads in faded letters THE
+    FOREST PATH. Below it, in larger and more urgent script DO NOT LEAVE THE
+    PATH. The message has the tone of someone who has seen what happens to
+    those who do.
+  darkness: >-
+    Beyond the first few trees, Mirkwood is pitch black. Not the friendly
+    darkness of night, which has stars. This is a thick, clinging darkness
+    that swallows sound and light and hope. Things move in it. Things with
+    too many legs.
+spawninfo:
+- mobid: 91
+  message: Gandalf stands at the forest edge, leaning on his staff, looking troubled.
+  idlecommands:
+  - say Do NOT leave the path. I cannot stress this enough.
+  - ""
+  - emote taps his staff on the ground, frowning at the dark trees.
+  - ""
+  - say I have pressing business to the south. You must go on without me.
+  - ""
+  - emote strokes his long grey beard, gazing into the forest with worried eyes.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- The forest breathes. A slow, cold exhalation of air rolls out from between the trees.
+- 'The line between sunlight and shadow is knife-sharp at the tree line: warmth and light on one side, darkness on the other.'
+- A black squirrel watches from a low branch just inside the forest, its eyes gleaming with malice.
+- 'The path ahead looks like a tunnel into nothing. Mirkwood waits, patient and hungry.'
+- Somewhere deep in the forest, something large moves through the undergrowth. Branches crack.
+- 'The sign''s warning feels like an understatement: DON''T LEAVE THE PATH barely covers it.'

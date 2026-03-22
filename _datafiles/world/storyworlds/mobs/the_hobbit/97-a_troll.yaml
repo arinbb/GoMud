@@ -1,0 +1,19 @@
+mobid: 97
+zone: the_hobbit
+hostile: false
+maxwander: 0
+idlecommands:
+  - ''
+  - ''
+  - ''
+  - ''
+activitylevel: 5
+character:
+  name: A Troll
+  description: >-
+    A massive stone figure frozen in mid-gesture, its crude face locked in an
+    expression of permanent annoyance. This was once a living troll — Bert,
+    Tom, or William — turned to stone by the first light of dawn. Moss grows
+    in the creases of its rocky skin. It will never argue about mutton again.
+  raceid: 6
+  level: 1

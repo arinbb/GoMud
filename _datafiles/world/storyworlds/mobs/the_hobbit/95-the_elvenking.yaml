@@ -1,0 +1,22 @@
+mobid: 95
+zone: the_hobbit
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote turns a white gem between long fingers, watching the light play."
+  - "say Why do dwarves wander in my realm without leave?"
+  - "emote sips from a crystal goblet of Dorwinion wine."
+  - ''
+  - ''
+  - ''
+activitylevel: 15
+character:
+  name: The Elvenking
+  description: >-
+    A tall, pale elf with flowing silver-gold hair, wearing a crown of autumn
+    leaves and red berries. His eyes are ancient and cold. He sits on his
+    throne in the underground cavern, regal and suspicious of outsiders. He
+    loves gems and treasure — especially white gems — but is also wise and
+    just in his way.
+  raceid: 2
+  level: 30

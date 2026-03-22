@@ -1,0 +1,13 @@
+name: The Hobbit
+roomid: 970
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: forest
+idlemessages:
+- The wind carries a scent of pine and distant wood-smoke from somewhere far ahead.
+- 'An ancient feeling settles over you: the world is wider and stranger than you ever imagined.'
+- Somewhere behind you, the comfortable certainties of home grow fainter with every step.
+- A thrush sings from a high branch, its melody older than the trees themselves.
+- 'The smell of pipe-weed lingers in your memory: warm, earthy, and impossibly far away.'
+- 'You feel it in your bones: this is a world where dragons are real and maps have edges.'

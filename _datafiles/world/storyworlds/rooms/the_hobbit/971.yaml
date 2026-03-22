@@ -1,0 +1,41 @@
+roomid: 971
+zone: The Hobbit
+title: The Shire Road
+description: >-
+  A winding dirt <ansi fg="itemname">road</ansi> meanders through rolling green
+  <ansi fg="itemname">hills</ansi>, past neatly trimmed <ansi fg="itemname">hedgerows</ansi>
+  and round hobbit-doors set into grassy banks. Smoke rises from chimney-pots.
+  Gardens bloom with snapdragons and sunflowers. Behind you to the
+  <ansi fg="exit">west</ansi>, Bag End sits snug under The Hill. Ahead to the
+  <ansi fg="exit">east</ansi>, the road climbs toward the wild lands where trolls
+  and worse things lurk. The sky is impossibly blue. The grass is impossibly
+  green. Everything in the Shire is impossibly, stubbornly pleasant -- and the
+  road goes ever on and on, down from the door where it began.
+mapsymbol: '~'
+maplegend: Shire Road
+biome: road
+exits:
+  west:
+    roomid: 970
+  east:
+    roomid: 972
+nouns:
+  road: >-
+    The road goes ever on and on, down from the door where it began. Now far
+    ahead the road has gone, and you must follow if you can. It is a good road,
+    well-tended, with wagon ruts and the prints of many hobbit feet.
+  hills: >-
+    Green rolling hills with round doors and windows set into their sides.
+    Chimneys poke through the turf. Clotheslines flutter with tiny waistcoats
+    and trousers. The hills are riddled with comfortable holes.
+  hedgerows: >-
+    Neatly trimmed hedgerows of hawthorn and privet line the road, buzzing
+    with bees and bright with wildflowers. Beyond them, garden plots show
+    rows of potatoes, cabbages, and pipe-weed.
+idlemessages:
+- A hobbit farmer waves cheerfully from behind a hedgerow, a pipe clenched between his teeth.
+- Birdsong fills the air. Somewhere nearby, a dog barks and children laugh.
+- 'The road stretches ahead, patient and inviting: it has seen many travelers and will see many more.'
+- A cart rumbles past loaded with barrels of ale from the Green Dragon inn.
+- The wind bends the tall grass on the hilltops, making them shimmer like green waves.
+- 'A signpost reads: THE WILD LANDS -- PROCEED AT YOUR OWN RISK. Someone has added in chalk: (no really).'

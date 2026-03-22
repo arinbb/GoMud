@@ -1,0 +1,54 @@
+roomid: 985
+zone: The Hobbit
+title: The Secret Door
+description: >-
+  A narrow <ansi fg="itemname">ledge</ansi> high on the western face of the
+  Lonely Mountain. The wind cuts like a knife. Below, the desolation spreads
+  grey and lifeless. Before you, a smooth grey <ansi fg="itemname">wall</ansi>
+  of rock, seamless and featureless -- except that in certain light, at
+  certain times, a <ansi fg="itemname">keyhole</ansi> appears in the stone.
+  Beyond the door, a <ansi fg="itemname">tunnel</ansi> leads down into the
+  mountain's heart, and from far below comes a sound like an enormous bellows
+  breathing, and a smell of hot metal and brimstone. The dragon is home. The
+  path leads <ansi fg="exit">south</ansi> back down to the desolation, and
+  through the <ansi fg="exit">door</ansi> lies the dragon's lair.
+mapsymbol: '?'
+maplegend: Secret Door
+biome: mountains
+exits:
+  south:
+    roomid: 984
+  door:
+    roomid: 986
+nouns:
+  wall: >-
+    Smooth grey rock, seamless and ancient. You could walk past it a
+    thousand times and never know a door was there. But when the last
+    light of a certain autumn day falls upon the grey stone, the rune
+    appears and the keyhole glimmers, and Thorin's key will open what
+    no other force in Middle-earth can budge.
+  keyhole: >-
+    Visible only in the right light -- a keyhole shaped for a single
+    specific key, the key that Gandalf gave to Thorin Oakenshield. It
+    is the last secret of the mountain, passed down from Thorin's
+    grandfather Thror. Turn the key and the door opens. What lies
+    beyond is a treasure beyond measure and a terror beyond imagining.
+  tunnel: >-
+    Beyond the secret door, a long dark tunnel leads downward into the
+    mountain's heart. The air grows warm, then hot. The smell of dragon
+    fills it -- brimstone, hot metal, old smoke, and something reptilian
+    and ancient. The tunnel was made for dwarves, not dragons. It is the
+    only way in that Smaug does not know about. Or so they hope.
+  ledge: >-
+    A narrow ledge of grey stone barely wide enough for a dozen dwarves
+    to stand shoulder to shoulder. The drop is terrifying -- hundreds of
+    feet of sheer cliff face down to the scorched earth below. The wind
+    threatens to pluck you off and hurl you into the void. This is the
+    doorstep of the mountain.
+idlemessages:
+- The wind howls across the ledge, tugging at your clothes with icy fingers.
+- 'A faint glow pulses in the stone wall, like a heartbeat. The keyhole appears, then fades.'
+- 'From far below, deep inside the mountain, you hear breathing. Slow, vast, volcanic breathing.'
+- The smell of brimstone and hot metal wafts up from the tunnel beyond the door.
+- 'The ledge is terrifyingly narrow. You press your back against the stone and try not to look down.'
+- 'A thrush lands on the ledge beside you and taps the stone once, twice, three times. Then flies away.'

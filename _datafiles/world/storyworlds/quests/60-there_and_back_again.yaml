@@ -1,0 +1,19 @@
+questid: 60
+name: There and Back Again
+description: >-
+  Follow Bilbo's journey from Bag End to the Lonely Mountain and back.
+  Experience the wonders and dangers of Middle-earth alongside a company of
+  dwarves, a wizard, and one very reluctant hobbit.
+reward:
+  experience: 7000
+  item_id: 140
+  playermessage: >-
+    You have completed the journey there and back again. As a memento, you
+    receive the Arkenstone — the Heart of the Mountain, blazing with its own
+    inner light. Bilbo would want you to have it.
+steps:
+- description: Leave Bag End and begin the unexpected journey.
+- description: Pass through the valley of Rivendell.
+- description: Survive the Goblin Tunnels beneath the Misty Mountains.
+- description: Cross the dark forest of Mirkwood.
+- description: Enter the Lonely Mountain and face Smaug the Terrible.

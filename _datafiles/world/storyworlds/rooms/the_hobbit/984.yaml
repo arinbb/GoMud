@@ -1,0 +1,56 @@
+roomid: 984
+zone: The Hobbit
+title: Desolation of Smaug
+description: >-
+  The blasted <ansi fg="itemname">wasteland</ansi> surrounding the Lonely
+  Mountain. Nothing grows here. The ground is scorched black, cracked and
+  ashen. Broken tree stumps and scattered <ansi fg="itemname">bones</ansi>
+  are all that remain of what was once the green and pleasant land of Dale.
+  The <ansi fg="itemname">mountain</ansi> looms ahead, grey and massive,
+  filling the sky. A small brown <ansi fg="itemname">thrush</ansi> perches
+  on a flat stone nearby, knocking a snail against the rock with cheerful
+  persistence. The air smells of ash and old fire. No birds sing. No
+  insects hum. The dragon's ruin is complete. The path leads
+  <ansi fg="exit">west</ansi> back to Lake-town and a rocky trail climbs
+  <ansi fg="exit">north</ansi> up the mountain's western face.
+mapsymbol: '!'
+maplegend: Desolation
+biome: desert
+exits:
+  west:
+    roomid: 983
+  north:
+    roomid: 985
+nouns:
+  wasteland: >-
+    Barren scorched earth stretching in every direction around the
+    mountain's base. Once this was the thriving land of Dale, with farms,
+    orchards, and the great town of Men. Smaug burned it all when he came.
+    That was nearly two hundred years ago, and nothing has grown back. The
+    dragon's fire was thorough.
+  bones: >-
+    Bleached bones scattered among the ash and cinders. Deer, cattle,
+    sheep -- and some that look disturbingly human. They are old bones,
+    scoured clean by wind and weather, the last remains of those who
+    could not flee fast enough when the dragon came.
+  mountain: >-
+    The Lonely Mountain, Erebor, fills the sky ahead. A single massive
+    peak rising thousands of feet, its grey stone flanks scarred and
+    bare. Somewhere inside it lies the greatest hoard of treasure in
+    Middle-earth, and the dragon who guards it. The mountain is silent.
+    That is somehow worse than if it roared.
+  thrush: >-
+    A small brown thrush, bright-eyed and unafraid, pecking at a snail
+    on a flat grey stone. The old thrushes of this land were famously
+    long-lived and could understand the speech of men. This one cocks
+    its head and regards you with an intelligence that seems more than
+    merely avian. Stand by the grey stone when the thrush knocks, and
+    the setting sun with the last light of autumn will shine upon the
+    keyhole.
+idlemessages:
+- The thrush knocks its snail against the stone with a sharp tap-tap-tap.
+- 'Ash swirls in a sudden gust of wind, stinging your eyes. Nothing grows here. Nothing.'
+- 'The mountain is utterly silent. No smoke, no sound, no movement. The dragon sleeps. Probably.'
+- A bleached skull grins at you from the ashes. It has been grinning for two hundred years.
+- 'The desolation stretches to every horizon: a grey wasteland of cinders and regret.'
+- 'You feel the mountain watching you. That is impossible, of course. Mountains do not watch. Dragons do.'

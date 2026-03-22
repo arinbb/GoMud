@@ -1,0 +1,45 @@
+roomid: 972
+zone: The Hobbit
+title: Troll Clearing
+description: >-
+  A clearing in the woods where three enormous stone <ansi fg="itemname">trolls</ansi>
+  sit hunched around a cold <ansi fg="itemname">fire</ansi> pit. They are
+  frozen solid, turned to stone by the dawn long ago, their crude faces locked
+  in expressions of permanent annoyance. One has his finger raised as if making
+  a point. Another clutches a leg of mutton. The third looks as though he was
+  about to sneeze. Behind some bushes to the north, a <ansi fg="itemname">cave</ansi>
+  entrance is barely visible, smelling of troll and old leather. The road
+  continues <ansi fg="exit">west</ansi> toward the Shire and <ansi fg="exit">east</ansi>
+  toward the distant valley of Rivendell. Moss and bird droppings have begun to
+  colonize the trolls. They will sit here arguing forever.
+mapsymbol: T
+maplegend: Troll Clearing
+biome: forest
+exits:
+  west:
+    roomid: 971
+  east:
+    roomid: 973
+nouns:
+  trolls: >-
+    Three enormous stone trolls -- Bert, Tom, and William Huggins -- frozen
+    mid-argument for all eternity. Bert has his mouth open. Tom is reaching
+    for the mutton. William looks like he just sat on something unpleasant.
+    Moss grows in their ears. Birds nest in their nostrils. They were arguing
+    about the best way to cook dwarves when the sun caught them.
+  fire: >-
+    A cold fire pit surrounded by cracked stones. The ashes are ancient. A
+    rusted spit still stands over it with the remains of what might once have
+    been roasted mutton. The trolls will never finish their dinner.
+  cave: >-
+    Behind some bushes, a low cave entrance leads into the trolls' hoard.
+    Inside you can see a glint of gold, the gleam of fine elven swords, and
+    a terrible smell. The swords Orcrist and Glamdring were found here, along
+    with a small blade that would come to be called Sting.
+idlemessages:
+- A bird lands on Tom the troll's stone nose, chirps once, and flies away unimpressed.
+- 'The stone trolls sit in eternal silence, their argument frozen at its most heated point.'
+- Moss creeps another fraction of an inch up William's stone leg. He does not notice.
+- The faint smell of old troll lingers around the cave entrance, even after all these years.
+- A squirrel runs across Bert's outstretched arm and disappears into the cave.
+- 'Sunlight falls on the clearing. The trolls remain stone. That is, after all, the point.'

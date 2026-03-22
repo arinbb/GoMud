@@ -1,0 +1,13 @@
+mutatorid: middle-earth-wonder
+namemodifier:
+  behavior: append
+  text: (ancient)
+  colorpattern: green
+descriptionmodifier:
+  behavior: append
+  text: The ancient magic of Middle-earth hums in the air around you.
+  colorpattern: green
+alertmodifier:
+  text: You feel the deep, old magic of the world beneath your feet.
+  colorpattern: green
+playerbuffids: [54]

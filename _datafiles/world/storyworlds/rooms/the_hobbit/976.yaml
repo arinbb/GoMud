@@ -1,0 +1,58 @@
+roomid: 976
+zone: The Hobbit
+title: Gollum's Cave
+description: >-
+  A cold, slimy cave at the very roots of the mountains, far below the goblin
+  tunnels. A dark underground <ansi fg="itemname">lake</ansi> fills most of the
+  cavern, black and still as death. On a small rocky <ansi fg="itemname">island</ansi>
+  in the center, barely visible in the gloom, something pale and thin crouches,
+  muttering to itself. The air is damp and reeks of raw fish and old stone.
+  Water drips from the ceiling in a slow, maddening rhythm. And there -- on the
+  tunnel floor near your feet -- something glints. A small gold
+  <ansi fg="itemname">ring</ansi>, plain and unremarkable, lying where it fell.
+  It is warm to the touch. It seems to whisper. The only exit leads
+  <ansi fg="exit">north</ansi> back up toward the goblin tunnels.
+mapsymbol: g
+maplegend: Gollum's Cave
+biome: cave
+exits:
+  north:
+    roomid: 975
+nouns:
+  lake: >-
+    A cold underground lake, black and perfectly still, with no visible bottom.
+    No fish break the surface. No ripples disturb its glass-like calm. The
+    water is ice-cold and tastes of stone and centuries. Things live in this
+    lake that have never seen the sun and have no names.
+  island: >-
+    A small rocky island in the center of the lake, worn smooth by centuries
+    of use. On it crouches Gollum, thin as famine, pale as cave-fish, with
+    enormous luminous eyes that gleam in the dark. He has lived here alone for
+    nearly five hundred years, eating raw fish and talking to himself. And to
+    his Precious.
+  ring: >-
+    A plain gold ring lying on the cold tunnel floor. It is perfectly smooth,
+    unmarked, and warm to the touch despite the chill of the cave. It seems
+    heavier than it should be. When you look at it, you feel a strange
+    reluctance to look away. It whispers at the edge of hearing, in a language
+    older than the mountains. This is the One Ring. It wants to be found.
+spawninfo:
+- mobid: 93
+  message: Gollum hisses from his island, his pale eyes gleaming in the dark.
+  idlecommands:
+  - say Precious, precious, precious... my precious...
+  - ""
+  - emote catches a blind fish with a horrible wet slap and bites into it raw.
+  - ""
+  - 'say What has it got in its pocketses, precious?'
+  - ""
+  - emote coughs and gags, a wretched sound echoing off the wet stone walls.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- 'Water drips from the ceiling in a maddening rhythm: plip... plip... plip...'
+- 'Something moves on the island. Pale eyes catch the faint light and hold it, unblinking.'
+- 'The ring on the floor glints. You could swear it was not in that exact spot a moment ago.'
+- A cold draft stirs the stagnant air, carrying the smell of deep water and old bones.
+- 'Gollum mutters to himself, a continuous hissing whisper: sss, sss, gollum, gollum.'
+- The darkness here feels alive, pressing against you like a physical weight.

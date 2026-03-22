@@ -1,0 +1,65 @@
+roomid: 978
+zone: The Hobbit
+title: Beorn's Hall
+description: >-
+  A great wooden hall surrounded by gardens of enormous <ansi fg="itemname">flowers</ansi>
+  and humming <ansi fg="itemname">bees</ansi>. The hall is built of massive oak
+  logs, its <ansi fg="itemname">pillars</ansi> carved with bears, horses, and
+  dogs. Inside, a massive oak <ansi fg="itemname">table</ansi> stretches the
+  length of the room, laden with honey-cakes, clotted cream, fresh bread, and
+  golden clover honey in earthenware pots. Carved wooden animals serve as
+  furniture -- bears for chairs, dogs for footstools. The hall smells of honey,
+  wood-smoke, and fresh-mown hay. Its master, Beorn the skin-changer, is as
+  large as a bear and twice as fierce, but his honey-cakes are the best in
+  Middle-earth. The path leads <ansi fg="exit">north</ansi> back to the
+  mountains and <ansi fg="exit">east</ansi> toward the forest of Mirkwood.
+mapsymbol: H
+maplegend: Beorn's Hall
+biome: house
+exits:
+  north:
+    roomid: 977
+  east:
+    roomid: 979
+nouns:
+  table: >-
+    A massive oak table that could seat twenty, laden with food that would make
+    a hobbit weep with joy. Honey-cakes golden as autumn leaves, bowls of
+    clotted cream, loaves of dark bread still warm from the oven, and pots
+    of clover honey so pure it glows. Beorn keeps no meat on his table -- his
+    animals are his friends, not his food.
+  bees: >-
+    Enormous bees, each as large as your thumb, buzzing lazily through fields
+    of clover and wildflowers. They pay you no mind. They are Beorn's bees
+    and they make the finest honey in all the lands between the Mountains and
+    Mirkwood. Their hives are the size of barrels.
+  flowers: >-
+    Sunflowers taller than a man, roses the size of dinner plates, fields of
+    clover so thick they look like green velvet. Beorn's garden is wilder and
+    more exuberant than any hobbit's -- things grow here as if the earth
+    itself is pleased with its master.
+  pillars: >-
+    Massive carved oak pillars supporting the roof of the great hall. Each
+    one is decorated with animals -- bears standing on hind legs, great dogs
+    with intelligent eyes, horses rearing, and bees in flight. The carving
+    is rough but powerful, done with more feeling than finesse.
+spawninfo:
+- mobid: 94
+  message: Beorn looms at the head of the table, honey glistening in his enormous beard.
+  idlecommands:
+  - say I don't need your service, only your truth. Tell me your tale.
+  - ""
+  - emote tears a honey-cake in half with hands the size of shovels.
+  - ""
+  - say I do not like dwarves much. But I like goblins and wargs less.
+  - ""
+  - emote scratches behind his ear in a manner that is distinctly bear-like.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- A bee the size of your thumb drifts past carrying a load of pollen, buzzing contentedly.
+- The smell of honey and fresh bread fills the hall like a warm embrace.
+- 'A carved wooden dog seems to shift position when you are not looking directly at it.'
+- 'Somewhere outside, a horse whinnies. Beorn''s animals come and go as they please.'
+- Golden sunlight streams through the high windows, making the honey-pots glow like amber lanterns.
+- 'The floorboards creak under enormous footsteps -- Beorn paces, as bears and men both do.'

@@ -1,0 +1,20 @@
+mobid: 92
+zone: the_hobbit
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say The Lonely Mountain is our home, and we will reclaim it."
+  - "emote touches the key around his neck."
+  - "emote stares eastward with fierce determination."
+  - ''
+  - ''
+activitylevel: 20
+character:
+  name: Thorin Oakenshield
+  description: >-
+    A dwarf of noble bearing with a long dark beard streaked with silver. He
+    wears a sky-blue hood with a long silver tassel and carries himself with
+    the dignity of a king in exile. His eyes burn with the desire to reclaim
+    his homeland. He is proud, brave, and stubborn to a fault.
+  raceid: 1
+  level: 15

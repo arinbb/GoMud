@@ -1,0 +1,21 @@
+mobid: 91
+zone: the_hobbit
+hostile: false
+maxwander: 2
+idlecommands:
+  - "emote blows a smoke ring that turns into a butterfly and flutters away."
+  - "say A wizard is never late, nor is he early."
+  - "emote gazes into the distance, as if seeing things far away."
+  - ''
+  - ''
+  - ''
+activitylevel: 20
+character:
+  name: Gandalf
+  description: >-
+    A tall old man in a grey cloak and pointed blue hat, leaning on a gnarled
+    wooden staff. His bushy eyebrows overhang keen eyes that twinkle with
+    ancient wisdom and mischief. His long grey beard reaches his waist. He
+    smells of pipe-weed and starlight.
+  raceid: 1
+  level: 50

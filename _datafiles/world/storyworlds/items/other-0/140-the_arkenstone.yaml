@@ -1,0 +1,13 @@
+itemid: 140
+name: the Arkenstone
+namesimple: arkenstone
+displayname: <ansi fg="itemname">the Arkenstone</ansi>
+description: >-
+  A gem of extraordinary beauty — a great white gem that shines with its own
+  inner light, casting rainbows on the walls around it. The Heart of the
+  Mountain. It is warm and heavy in your hand. Looking into it, you see the
+  light of stars.
+type: object
+subtype: usable
+uses: 0
+value: 1

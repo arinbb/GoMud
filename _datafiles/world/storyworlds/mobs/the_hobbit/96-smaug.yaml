@@ -1,0 +1,24 @@
+mobid: 96
+zone: the_hobbit
+hostile: false
+maxwander: 0
+idlecommands:
+  - "say I smell you, thief."
+  - "emote opens one vast golden eye."
+  - "say I am old and strong, strong, STRONG."
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+activitylevel: 10
+character:
+  name: Smaug
+  description: >-
+    A dragon of inconceivable size, his body coiled around and atop a mountain
+    of gold. His scales are red-gold, each one harder than steel, encrusted
+    with gems from lying on his hoard. His belly gleams with a coat of diamonds
+    — except for one bare patch on his left breast. His eyes are hypnotic, his
+    voice like honey poured over knives.
+  raceid: 11
+  level: 99

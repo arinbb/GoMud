@@ -1,0 +1,22 @@
+mobid: 93
+zone: the_hobbit
+hostile: false
+maxwander: 0
+idlecommands:
+  - "say Precious... where is the precious?"
+  - "emote hisses and wrings his hands."
+  - "say We likes riddles, precious, yes we does!"
+  - "emote catches a blind fish and eats it raw."
+  - ''
+  - ''
+  - ''
+activitylevel: 25
+character:
+  name: Gollum
+  description: >-
+    A thin, wretched creature with large luminous eyes and long grasping
+    fingers. He crouches on his rocky island in the underground lake, talking
+    to himself in two voices — one wheedling and pathetic, the other sharp and
+    cruel. His skin is pale and clammy. He calls his ring "my precious."
+  raceid: 1
+  level: 10

@@ -1,0 +1,56 @@
+roomid: 981
+zone: The Hobbit
+title: Spider's Glade
+description: >-
+  A clearing in the forest festooned with enormous <ansi fg="itemname">webs</ansi>
+  stretched between every tree like a canopy of grey silk. Silk-wrapped
+  <ansi fg="itemname">bundles</ansi> hang from the branches, some twitching
+  feebly. Giant <ansi fg="itemname">spiders</ansi> the size of large dogs
+  scuttle in the canopy, their bulbous black bodies glistening, mandibles
+  clicking. The air is thick with the smell of venom and old silk. This is
+  where Bilbo Baggins found his courage -- alone, invisible, armed with
+  nothing but a small elven blade and a great deal of unexpected backbone.
+  He named the sword Sting in this very place. Paths lead
+  <ansi fg="exit">west</ansi> back into deep Mirkwood and <ansi fg="exit">east</ansi>
+  toward the Elvenking's realm.
+mapsymbol: S
+maplegend: Spider's Glade
+biome: forest
+exits:
+  west:
+    roomid: 980
+  east:
+    roomid: 982
+nouns:
+  webs: >-
+    Enormous webs stretched between every tree, some thick as rope, some
+    fine as silk curtains. They catch the faint light and gleam like silver
+    nets. They are immensely strong and sticky. Anything that touches them
+    is held fast while the spiders close in.
+  bundles: >-
+    Silk-wrapped bundles hanging from the branches at various heights. Some
+    are small -- rabbits, birds. Some are disturbingly dwarf-shaped. A few
+    twitch feebly. The spiders wrap their prey alive and save them for
+    later. The silk is white and very strong.
+  spiders: >-
+    Giant spiders with bulbous black bodies, each one as large as a big
+    dog. Their eyes glitter like clusters of black gems. Their mandibles
+    drip with venom. They click and hiss to each other in a horrible
+    language. They are the spawn of Shelob, the great spider of the
+    mountains, and they are always hungry.
+spawninfo:
+- mobid: 98
+  message: A giant spider drops from the canopy, mandibles clicking hungrily.
+  idlecommands:
+  - emote scuttles across its web, legs moving in horrible coordination.
+  - ""
+  - emote wraps a struggling bird in silk with terrible efficiency.
+  - ""
+  respawnrate: 2 real minutes
+idlemessages:
+- A spider drops on a silk thread from the canopy, dangles at eye level, then scurries back up.
+- 'The webs vibrate like harp strings. Something large is moving through the canopy.'
+- 'A bundle on a branch twitches and lets out a muffled sound. Is that... a dwarf?'
+- 'Mandibles click in the darkness above. The spiders are discussing something. Probably dinner.'
+- The smell of spider venom makes your eyes water and your skin crawl.
+- 'Something whispers in spider-speech: attercop, attercop, old tomnoddy. No -- that was Bilbo''s taunt.'

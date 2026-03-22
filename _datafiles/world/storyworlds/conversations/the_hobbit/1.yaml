@@ -1,0 +1,22 @@
+-
+  Supported:
+    "gandalf": ["bilbo baggins"]
+  Conversation:
+    - ["#1 say I am looking for someone to share in an adventure that I am arranging."]
+    - ["#2 emote sputters indignantly", "#2 say An ADVENTURE? No thank you! We are plain quiet folk and have no use for adventures."]
+    - ["#1 emote chuckles knowingly", "#1 say You are quite right, of course. The world is not in your books and maps. It is out there."]
+    - ["#2 say I have no interest in what is out there! I have everything I need right here in my hobbit-hole."]
+    - ["#1 say You have changed, Bilbo Baggins. You are not the same hobbit who left the Shire."]
+    - ["#2 emote pauses, looking conflicted", "#2 say I... well. Perhaps there IS a Took in me after all."]
+    - ["#1 emote blows a smoke ring and smiles", "#1 say That is what I was counting on."]
+-
+  Supported:
+    "gandalf": ["bilbo baggins"]
+  Conversation:
+    - ["#1 say Tell me, Mr. Baggins — have you done much fighting?"]
+    - ["#2 emote blinks nervously", "#2 say Fighting? Certainly not! The most dangerous thing in the Shire is Lobelia Sackville-Baggins."]
+    - ["#1 emote laughs deeply", "#1 say You may surprise yourself before this journey is done."]
+    - ["#2 say I highly doubt that. I can barely surprise myself at breakfast, let alone on an adventure."]
+    - ["#1 say Courage is found in unlikely places, Bilbo."]
+    - ["#2 emote fidgets with his waistcoat buttons", "#2 say You sound just like my mother. She was a Took, you know."]
+    - ["#1 emote nods wisely", "#1 say Indeed she was. And a very fine one."]

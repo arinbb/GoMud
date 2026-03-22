@@ -1,0 +1,47 @@
+roomid: 977
+zone: The Hobbit
+title: Eagles' Eyrie
+description: >-
+  A vast rocky <ansi fg="itemname">shelf</ansi> on the pinnacle of a mountain,
+  high above the world. The wind howls around the edges, cold and clean after the
+  goblin tunnels. The <ansi fg="itemname">view</ansi> is staggering -- forests
+  and rivers spread below like a green and silver map, stretching to the horizon
+  in every direction. Great <ansi fg="itemname">eagles</ansi> wheel in the
+  updrafts, their wingspans enormous, their cries echoing off the peaks. Their
+  nests are built of whole trees, woven together on the highest ledges. The
+  morning sun gilds the mountain tops. The air is thin and sweet and tastes of
+  freedom. A path leads <ansi fg="exit">west</ansi> back toward the mountain
+  pass and another descends <ansi fg="exit">south</ansi> toward the lowlands.
+mapsymbol: E
+maplegend: Eagles' Eyrie
+biome: cliffs
+exits:
+  west:
+    roomid: 974
+  south:
+    roomid: 978
+nouns:
+  shelf: >-
+    A wide ledge of grey stone, polished smooth by wind and the talons of
+    enormous eagles over many generations. Eagle droppings, bones of sheep,
+    and a few shed feathers the size of sword blades litter the surface.
+    The view from here is worth the terror of the climb.
+  eagles: >-
+    The Great Eagles of the Misty Mountains, each one large enough to carry
+    a dwarf in its talons. Their feathers are golden-brown, their eyes
+    fierce and intelligent. They are no mere birds -- they are ancient,
+    proud, and speak the tongues of men and elves. Their lord is Gwaihir
+    the Windlord.
+  view: >-
+    From this height, the world is a map made real. To the west, the dark
+    line of Mirkwood stretches from horizon to horizon. The glint of the
+    Great River Anduin catches the sun. And far to the east, solitary and
+    unmistakable, a single peak rises above all others -- the Lonely
+    Mountain, Erebor, where the dragon waits.
+idlemessages:
+- An eagle swoops past the ledge, so close you feel the wind from its wings in your hair.
+- The sun breaks through the clouds and gilds the mountain tops in liquid gold.
+- 'Far below, the world spreads out like a living map: green forests, silver rivers, golden fields.'
+- An eagle cries from high above, a sound like a trumpet call echoing between the peaks.
+- The wind at this height is a living thing, pushing and pulling with invisible hands.
+- 'A great eagle lands on a nest of woven pine trees nearby, dropping a sheep carcass for its young.'

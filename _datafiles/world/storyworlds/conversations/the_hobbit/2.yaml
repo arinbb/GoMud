@@ -1,0 +1,22 @@
+-
+  Supported:
+    "thorin oakenshield": ["bilbo baggins"]
+  Conversation:
+    - ["#1 emote looks the hobbit up and down with a critical eye", "#1 say So this is the hobbit. He looks more like a grocer than a burglar."]
+    - ["#2 emote draws himself up to his full, not very impressive height", "#2 say I beg your pardon! I am a Baggins of Bag End!"]
+    - ["#1 say Can you fight? Have you ever wielded a weapon?"]
+    - ["#2 say I am quite good at conkers, if you must know."]
+    - ["#1 emote snorts derisively", "#1 say Conkers. Gandalf said you would be useful. I have my doubts."]
+    - ["#2 emote straightens his waistcoat with dignity", "#2 say Well. I shall just have to prove you wrong, then."]
+    - ["#1 emote pauses, studying the hobbit with something approaching respect", "#1 say Perhaps you will, Master Baggins. Perhaps you will."]
+-
+  Supported:
+    "thorin oakenshield": ["bilbo baggins"]
+  Conversation:
+    - ["#1 say I owe you an apology, halfling. You have proven yourself braver than I expected."]
+    - ["#2 emote looks surprised", "#2 say I... well, thank you, Thorin. That means a great deal."]
+    - ["#1 say I doubted you from the beginning. I was wrong."]
+    - ["#2 say To be fair, I doubted myself too. Every step of the way, actually."]
+    - ["#1 emote places a heavy hand on the hobbit's shoulder", "#1 say There is more to you than meets the eye, Bilbo Baggins."]
+    - ["#2 emote smiles awkwardly", "#2 say My mother would have liked you to say that. She was a Took."]
+    - ["#1 emote almost smiles", "#1 say Then the Tooks have my respect. As do you."]

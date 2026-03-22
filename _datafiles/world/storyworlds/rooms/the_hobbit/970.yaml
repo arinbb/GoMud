@@ -1,0 +1,63 @@
+roomid: 970
+zone: The Hobbit
+title: Bag End
+description: >-
+  You stand inside the most comfortable hobbit-hole in all of the Shire. The
+  round green <ansi fg="itemname">door</ansi> behind you opens onto The Hill,
+  and the tunnel-like hallway stretches inward past polished wood paneling and
+  tiled floors. A cheerful <ansi fg="itemname">hearth</ansi> crackles with a
+  well-tended fire, a copper kettle steaming gently on the hob. The air is thick
+  with the smell of baking bread, pipe-weed, and beeswax polish. Every surface
+  gleams. The <ansi fg="itemname">pantry</ansi> door stands ajar, revealing
+  shelves groaning with seed-cakes, cheese wheels, cold chicken, and pickles.
+  Bilbo Baggins's <ansi fg="itemname">pipe</ansi> and a jar of Old Toby sit on
+  the mantelpiece. On the front door, barely visible, a scratched rune glows
+  faintly -- Gandalf's mark. This is home. This is safety. This is where
+  adventures begin whether you want them to or not.
+mapsymbol: B
+maplegend: Bag End
+biome: house
+exits:
+  east:
+    roomid: 971
+nouns:
+  door: >-
+    A perfectly round green door with a shiny brass knob in the exact center,
+    like a porthole. Scratched into the fresh paint is a strange rune -- the mark
+    Gandalf left for the dwarves. It reads, to those who can decipher it, burglar
+    wants a good job, plenty of excitement and reasonable reward.
+  hearth: >-
+    A wide stone hearth with a merrily crackling fire. A copper kettle hisses on
+    the hob. Before it sits a deep armchair with a patchwork cushion, perfectly
+    positioned for smoking a pipe and watching the flames. The mantelpiece holds
+    a clock, two candlesticks, and a jar of Old Toby pipe-weed.
+  pantry: >-
+    The pantry is a hobbit's pride. Shelves from floor to ceiling hold
+    seed-cakes, wheels of yellow cheese, cold chicken, pickles in stone jars,
+    raspberry jam, apple tart, mince pies, pork pies, salads, cold beef, and at
+    least three kinds of bread. There is also a barrel of ale and several
+    bottles of wine. Everything a burglar might need before a long journey.
+  pipe: >-
+    A long-stemmed wooden pipe, well-worn and lovingly cared for, sitting next
+    to a ceramic jar labeled OLD TOBY in neat letters. The finest pipe-weed in
+    the Southfarthing. The bowl still holds a faint warmth.
+spawninfo:
+- mobid: 90
+  message: Bilbo Baggins fusses about the kitchen, looking slightly bewildered.
+  idlecommands:
+  - say Oh dear, oh dear. I do hope they don't chip the plates.
+  - ""
+  - emote polishes a brass button on his waistcoat nervously.
+  - ""
+  - say I never asked for any adventures, you know. Nasty disturbing uncomfortable things.
+  - ""
+  - emote glances wistfully at the pantry.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- The fire pops and sends a shower of sparks up the chimney. The kettle whistles softly.
+- A warm draft carries the smell of seed-cakes from the pantry. Your stomach rumbles.
+- 'Through the round window, the Shire stretches green and golden: a land of peace and plenty.'
+- The clock on the mantelpiece ticks with a reassuring steadiness. All is well. For now.
+- 'A faint scratching comes from the front door -- as if someone is marking it with a rune.'
+- Dust motes drift through a beam of sunlight, turning lazily in the warm air.

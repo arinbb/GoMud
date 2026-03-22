@@ -1,0 +1,21 @@
+mobid: 90
+zone: the_hobbit
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote pats his pockets nervously."
+  - "say I should never have left Bag End."
+  - "emote adjusts his waistcoat and sighs."
+  - "say I wonder what's for tea..."
+  - ''
+  - ''
+activitylevel: 25
+character:
+  name: Bilbo Baggins
+  description: >-
+    A small, fussy hobbit with curly brown hair and large hairy feet. He wears
+    a green waistcoat with brass buttons and constantly pats his pockets
+    nervously. Despite his appearance, there is something unexpected about him
+    — a Tookish gleam in his eye, a quiet courage waiting to emerge.
+  raceid: 1
+  level: 8

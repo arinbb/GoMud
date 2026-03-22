@@ -1,0 +1,65 @@
+roomid: 986
+zone: The Hobbit
+title: Smaug's Hoard
+description: >-
+  The vast treasure chamber beneath the Lonely Mountain. Mountains of gold
+  coins, gems, silver goblets, mithril mail, jeweled swords, and crowns are
+  heaped in glittering piles that fill the cavern from wall to wall. The
+  <ansi fg="itemname">treasure</ansi> catches the faint light and throws it
+  back in a thousand colors. And there, at the center, curled atop the
+  greatest pile like a cat on a cushion of gold, lies the
+  <ansi fg="itemname">dragon</ansi> -- Smaug the Golden, the Chiefest and
+  Greatest of Calamities. He is enormous. His scales are red-gold and hard
+  as diamond. His breath is fire. His cunning is legend. One eye is open.
+  Somewhere in the hoard, blazing with its own inner light, lies the
+  <ansi fg="itemname">arkenstone</ansi>, the Heart of the Mountain. The
+  tunnel leads <ansi fg="exit">west</ansi> back to the secret door.
+mapsymbol: '$'
+maplegend: Dragon's Hoard
+biome: cave
+exits:
+  west:
+    roomid: 985
+nouns:
+  treasure: >-
+    Gold beyond counting. Coins from the ancient dwarf kingdoms, chalices
+    encrusted with emeralds, crowns set with diamonds, necklaces of
+    mithril and pearl, rings of sapphire and ruby, swords with golden
+    hilts, shields chased with silver, bolts of cloth-of-gold. The
+    treasure of Erebor, the greatest hoard in Middle-earth, accumulated
+    over centuries by the dwarves and stolen in a single afternoon by a
+    dragon. It glitters like a sea of frozen flame.
+  dragon: >-
+    Smaug the Golden, the Chiefest and Greatest of Calamities, the last
+    of the great fire-drakes. He is vast -- his body fills a quarter of
+    the cavern. His scales are red-gold, impenetrable as shields, crusted
+    with gems that have pressed into his belly over centuries of sleeping
+    on treasure. His wings could darken a town. His fire could melt
+    stone. His cunning is as sharp as his claws. He is watching you.
+  arkenstone: >-
+    The Arkenstone, the Heart of the Mountain. A great white gem that
+    blazes with its own inner fire, throwing shards of light in every
+    color of the rainbow. It was found at the heart of the mountain by
+    the dwarves of old, and Thorin's grandfather Thror had it set above
+    his throne. Now it lies somewhere in the hoard, and Thorin would
+    give anything to hold it again. Anything at all.
+spawninfo:
+- mobid: 96
+  message: Smaug opens one enormous eye and regards you with ancient, terrible amusement.
+  idlecommands:
+  - say Well, thief. I smell you and I feel your air. I hear your breath. Come along. Help yourself.
+  - ""
+  - emote shifts atop his mountain of gold, sending a cascade of coins ringing down the pile.
+  - ""
+  - say I am old and strong, strong, strong, Thief in the Shadows.
+  - ""
+  - emote yawns, revealing a furnace of white-hot fire in the back of his throat.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- 'Gold coins shift and clink as the dragon breathes. The whole hoard rises and falls like a golden tide.'
+- 'The dragon''s eye gleams in the treasure-light: ancient, cruel, amused, and utterly awake.'
+- 'A ruby the size of your fist rolls down a pile of gold and comes to rest against your foot.'
+- 'The heat in the cavern is intense: the dragon''s body radiates warmth like a forge.'
+- 'Somewhere in the glittering mountains of treasure, a white light pulses: the Arkenstone, calling.'
+- 'Smaug''s tail twitches in his sleep, sweeping aside a fortune in gold coins like autumn leaves.'

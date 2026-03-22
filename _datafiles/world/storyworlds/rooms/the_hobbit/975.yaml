@@ -1,0 +1,45 @@
+roomid: 975
+zone: The Hobbit
+title: Goblin Tunnels
+description: >-
+  Deep beneath the Misty Mountains, rough-hewn <ansi fg="itemname">tunnels</ansi>
+  branch in every direction like the burrows of enormous worms. The stone is
+  damp and slick. Flickering torches in crude iron brackets cast dancing shadows
+  that make the walls seem to writhe. Wooden <ansi fg="itemname">bridges</ansi>
+  span chasms of unknown depth, creaking ominously under any weight. The sound
+  of goblin <ansi fg="itemname">drums</ansi> echoes from somewhere far below --
+  a deep, rhythmic booming that you feel in your teeth. The air smells of
+  smoke, unwashed goblin, and fear. A passage leads <ansi fg="exit">up</ansi>
+  to the mountain pass and another tunnel descends <ansi fg="exit">south</ansi>
+  into deeper, darker places where even goblins do not willingly go.
+mapsymbol: G
+maplegend: Goblin Tunnels
+biome: dungeon
+exits:
+  up:
+    roomid: 974
+  south:
+    roomid: 976
+nouns:
+  tunnels: >-
+    The tunnels branch and rebranch, carved by goblin hands over uncounted
+    centuries. Some are tall enough to walk upright, others force you to
+    crawl. The walls are scratched with crude goblin graffiti -- stick
+    figures torturing prisoners, mostly, and the occasional rude word.
+  bridges: >-
+    Crude wooden bridges lashed together with rope and spite, spanning
+    chasms so deep that a dropped stone takes a long time to hit bottom.
+    The planks creak and shift. Some are missing entirely. The goblins
+    cross them at a run, cackling. You would prefer not to.
+  drums: >-
+    The deep booming of goblin drums rises from far below, a relentless
+    rhythm that speaks of war, mischief, and the cracking of bones. The
+    goblins drum when they are happy. The goblins are always happy when
+    they have prisoners.
+idlemessages:
+- The goblin drums change rhythm, growing faster. Something is happening deeper in the tunnels.
+- A torch gutters and nearly goes out, plunging your section of tunnel into momentary blackness.
+- 'Somewhere in the dark, clawed feet scrape on stone. Many clawed feet.'
+- 'The bridge creaks beneath you. A plank shifts. You freeze. It holds. Barely.'
+- A distant shriek echoes through the tunnels -- goblin laughter, or a prisoner. Hard to tell the difference.
+- Foul-smelling air rises from the chasms below, warm and damp, like the breath of the mountain itself.

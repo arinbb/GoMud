@@ -1,0 +1,48 @@
+roomid: 983
+zone: The Hobbit
+title: Lake-town
+description: >-
+  A town of wooden <ansi fg="itemname">platforms</ansi> built on stilts over
+  the Long Lake, connected by bridges and boardwalks. The
+  <ansi fg="itemname">market</ansi> bustles with fishermen, merchants, and
+  traders. Smoke rises from chimneys. The smell of fish, tar, and wet wood
+  fills the air. The Master's hall rises above the other buildings, its
+  windows glowing with lamplight. To the <ansi fg="exit">east</ansi>, visible
+  across the water and the desolation, the Lonely <ansi fg="itemname">Mountain</ansi>
+  rises solitary and dark against the sky, wreathed in cloud. The people of
+  Lake-town remember the old songs about the King under the Mountain and the
+  river running gold. They also remember the songs about the dragon. The
+  path leads <ansi fg="exit">west</ansi> back along the Forest River.
+mapsymbol: L
+maplegend: Lake-town
+biome: city
+exits:
+  west:
+    roomid: 982
+  east:
+    roomid: 984
+nouns:
+  platforms: >-
+    Wooden platforms on massive wooden stilts driven deep into the lake
+    bed. The planks are weathered grey and creak with every step. The
+    water laps at the stilts below. The whole town sways slightly in a
+    strong wind. It is built for defense against attack from the shore,
+    and from a certain dragon who destroyed the old town of Dale.
+  market: >-
+    Market stalls selling lake-fish (fresh and smoked), rope, lamp oil,
+    warm woolen cloaks, waterproof boots, and barrel-shaped loaves of
+    bread. The merchants shout their wares and argue over prices. Trade
+    comes down the Forest River from the Wood-elves and up from the south.
+  mountain: >-
+    Visible to the east across the lake and the desolation -- the Lonely
+    Mountain, Erebor. A single peak rising above the surrounding wasteland,
+    its summit wreathed in cloud. Once the greatest dwarf kingdom in the
+    north. Now the lair of Smaug the dragon. The people of Lake-town eye
+    it with a mixture of dread and desperate hope.
+idlemessages:
+- A fisherman hauls in a net of silver lake-fish, grunting with the weight.
+- 'The wooden platforms creak and sway beneath your feet. The lake laps at the stilts below.'
+- 'An old man hums a song about the King under the Mountain, then catches himself and falls silent.'
+- Smoke from the chimneys mingles with lake mist, giving the town a dreamlike quality.
+- 'A child points eastward at the Lonely Mountain and asks: is the dragon really in there? No one answers.'
+- 'The market is noisy with the sound of trade: coins clinking, fish slapping, voices haggling.'

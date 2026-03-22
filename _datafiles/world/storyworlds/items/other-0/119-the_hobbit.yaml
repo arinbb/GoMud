@@ -1,0 +1,13 @@
+itemid: 119
+name: The Hobbit
+namesimple: book
+displayname: a green cloth book titled <ansi fg="itemname">The Hobbit</ansi>
+description: >-
+  A well-loved green cloth book with gold lettering on the cover and spine:
+  "The Hobbit, or There and Back Again." The binding is cracked from many
+  readings. A map of Middle-earth is folded inside the front cover. It smells
+  of pipe-weed and adventure.
+type: object
+subtype: usable
+uses: 0
+value: 0

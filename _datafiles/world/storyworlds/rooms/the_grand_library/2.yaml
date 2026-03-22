@@ -55,6 +55,9 @@ spawninfo:
 - itemid: 107
   container: shelves
   respawnrate: 1 real minutes
+- itemid: 119
+  container: shelves
+  respawnrate: 1 real minutes
 idlemessages:
 - A book near the top shelf slides out an inch on its own, then slowly pushes itself back in.
 - The brass ladder rolls a few inches along its rail with a soft metallic whisper.

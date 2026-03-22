@@ -1,0 +1,51 @@
+roomid: 973
+zone: The Hobbit
+title: Rivendell
+description: >-
+  The Last Homely House east of the Sea. You stand in the valley of Imladris,
+  where <ansi fg="itemname">waterfalls</ansi> cascade down mossy cliffs into
+  pools of crystal-clear water. Elegant elven buildings rise among ancient
+  <ansi fg="itemname">trees</ansi>, their tall windows glowing with warm golden
+  light. The air smells of pine needles and honeysuckle. Elven
+  <ansi fg="itemname">singing</ansi> drifts on the evening breeze -- old songs
+  about stars and starlight and the making of the world. The great
+  <ansi fg="itemname">house</ansi> of Elrond stands at the valley's heart, its
+  doors open in welcome. Here you may rest. Here you may find counsel and
+  wisdom. The road continues <ansi fg="exit">west</ansi> toward the Shire and
+  <ansi fg="exit">east</ansi> into the high passes of the Misty Mountains.
+  Rivendell feels like the last safe place in all the world.
+mapsymbol: R
+maplegend: Rivendell
+biome: forest
+exits:
+  west:
+    roomid: 972
+  east:
+    roomid: 974
+nouns:
+  house: >-
+    The Last Homely House is a sprawling elven building of pale stone and dark
+    timber, with tall arched windows and balconies overlooking the waterfalls.
+    Inside, the halls are warm and bright, filled with books, maps, and the
+    sound of harps. Elrond Half-elven is its master, wise and kind, with a face
+    as ageless as the mountains.
+  waterfalls: >-
+    Silver waterfalls pour down the steep valley walls, catching the light and
+    breaking it into rainbows. The water is cold and clear, fed by snow-melt
+    from the Misty Mountains. The sound is like continuous gentle music.
+  trees: >-
+    Ancient elms and beeches with silver-grey bark stand throughout the valley.
+    Their branches arch overhead like the vaulting of a great cathedral. Some
+    of these trees were already old when the first elves awoke under the stars.
+  singing: >-
+    Elven voices weave together in harmonies that seem to make the air itself
+    shimmer. The songs are in Sindarin, the grey-elven tongue, and they speak
+    of things beyond mortal memory -- the light of the Two Trees, the shores
+    of Valinor, the stars at the beginning of days.
+idlemessages:
+- Elven voices rise in a new song, and for a moment the air itself seems to glow with silver light.
+- A waterfall catches the sunset and scatters rubies and diamonds of light across the valley.
+- 'The smell of a feast drifts from the great house: roasted venison, fresh bread, honey-cakes, and wine.'
+- An elf walks past carrying a harp, nodding graciously. The music never quite stops in Rivendell.
+- Fireflies begin to appear in the dusk, drifting among the trees like fallen stars.
+- 'The valley feels timeless, as if centuries pass outside while Rivendell remains forever in gentle autumn.'

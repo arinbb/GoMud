@@ -1,0 +1,22 @@
+mobid: 94
+zone: the_hobbit
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote tears a honey-cake in half with his bare hands."
+  - "say I do not like dwarves. But I like goblins less."
+  - "emote scratches behind the ears of a massive dog."
+  - ''
+  - ''
+  - ''
+activitylevel: 15
+character:
+  name: Beorn
+  description: >-
+    An enormous man, nearly seven feet tall, with a massive black beard and
+    arms like tree trunks. He wears a rough wool tunic and speaks in a deep
+    rumbling voice. His house is full of animals that serve him — dogs that
+    walk on hind legs, ponies that set the table. At night, he becomes a great
+    black bear.
+  raceid: 1
+  level: 25
