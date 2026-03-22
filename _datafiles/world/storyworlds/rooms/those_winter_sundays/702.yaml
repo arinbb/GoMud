@@ -1,0 +1,50 @@
+roomid: 702
+zone: Those Winter Sundays
+title: Hallway
+description: >-
+  A narrow <ansi fg="itemname">hallway</ansi> runs through the center of the house,
+  its walls papered in a faded floral pattern that peels at the seams. The
+  <ansi fg="itemname">floorboards</ansi> are bare and cold underfoot. A coat rack
+  by the front door holds a heavy <ansi fg="itemname">work coat</ansi>, stiff with
+  cold. Family <ansi fg="itemname">photographs</ansi> line one wall in simple frames.
+  The front <ansi fg="exit">door</ansi> leads to the porch. The <ansi fg="exit">boy's
+  bedroom</ansi> is to the west. The <ansi fg="exit">parents' room</ansi> is to the east.
+mapsymbol: H
+maplegend: Hallway
+biome: house
+exits:
+  door:
+    roomid: 700
+    exitmessage: You step out through the front door onto the porch.
+  west:
+    roomid: 703
+    exitmessage: You push open the door to the boy's bedroom.
+  east:
+    roomid: 706
+    exitmessage: You move quietly toward the parents' room.
+nouns:
+  hallway: >-
+    The hallway is the spine of this small house, connecting every room. The
+    wallpaper was once cheerful — tiny pink flowers on a cream background —
+    but time and cold have curled its edges. The air here holds the memory
+    of every argument that echoed off these walls.
+  floorboards: >-
+    The bare wood floors are worn smooth in the center where feet have
+    walked for years. They are cold to the touch and creak with each step,
+    announcing every movement in this house of silences.
+  coat: >-
+    A heavy work coat, dark wool with a frayed collar. It smells of
+    winter air and labor. The hands that wear this coat rise before dawn,
+    work in the cold, and ask for no thanks.
+  photographs: >-
+    Family photographs in simple wooden frames. A wedding portrait — a
+    young couple, stiff and formal. A child's school picture, gap-toothed
+    smile. A family gathered on a porch in summer, squinting in the sun.
+    In every photo, the father stands slightly apart, as if unsure of
+    his place in the frame.
+idlemessages:
+- The hallway floorboards creak, though no one walks on them.
+- The faded wallpaper peels a little further at the seam, curling like a held breath.
+- The work coat on the rack sways slightly, as if just hung there.
+- A draft moves through the hallway, carrying the cold from room to room.
+- The silence in this house is not empty. It is full of things unspoken.

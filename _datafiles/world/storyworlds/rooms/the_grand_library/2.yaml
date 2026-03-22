@@ -8,7 +8,8 @@ description: >-
   manuscripts. Small brass ladders on rails allow access to the highest shelves. Each
   section is marked with ornate wooden placards: <ansi fg="itemname">Fiction</ansi>,
   <ansi fg="itemname">Fantasy</ansi>, <ansi fg="itemname">Science Fiction</ansi>,
-  <ansi fg="itemname">Classics</ansi>, <ansi fg="itemname">Mystery</ansi>.
+  <ansi fg="itemname">Classics</ansi>, <ansi fg="itemname">Mystery</ansi>,
+  <ansi fg="itemname">Poetry</ansi>.
   Certain books seem to glow faintly along their spines, as if calling to be read.
 mapsymbol: B
 maplegend: Book Stacks
@@ -32,6 +33,12 @@ nouns:
   mystery: >-
     The Mystery section is dimly lit compared to the others, as if the shadows
     themselves are keeping secrets.
+  poetry: >-
+    The Poetry section is smaller than the others but no less potent. Slim
+    volumes line the shelves — Hayden, Dickinson, Neruda, Rumi, Hughes.
+    The spines are worn from many hands. A particular volume of Robert
+    Hayden's collected poems seems to radiate a faint cold, as if winter
+    lives between its pages.
   shelves: >-
     The shelves are made of rich mahogany, each one hand-carved with scenes from
     famous stories. Running your fingers along the wood, you feel tiny figures
@@ -43,6 +50,9 @@ spawninfo:
   container: shelves
   respawnrate: 1 real minutes
 - itemid: 102
+  container: shelves
+  respawnrate: 1 real minutes
+- itemid: 107
   container: shelves
   respawnrate: 1 real minutes
 idlemessages:

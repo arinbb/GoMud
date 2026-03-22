@@ -1,0 +1,48 @@
+roomid: 705
+zone: Those Winter Sundays
+title: Back Step
+description: >-
+  A single concrete <ansi fg="itemname">step</ansi> at the back of the house,
+  overlooking a small frozen <ansi fg="itemname">yard</ansi>. A clothesline stretches
+  across the yard, empty and stiff with ice. The <ansi fg="itemname">woodpile</ansi>
+  stands against the back fence, a tarp half-covering it. An <ansi fg="itemname">axe</ansi>
+  is embedded in a chopping block, its handle smooth from use. This is where the
+  father splits the wood — in the cold, alone, with hands that crack and ache.
+  The <ansi fg="exit">living room</ansi> is back through the door to the north.
+  There is nothing else here but cold air, a chopping block, and the evidence
+  of austere and lonely offices.
+mapsymbol: S
+maplegend: Back Step
+biome: land
+exits:
+  north:
+    roomid: 704
+    exitmessage: You step back inside to the living room.
+nouns:
+  step: >-
+    A single concrete step, cracked and cold. The father stands here in the
+    dark of early morning, looking out at the frozen yard before he begins
+    his work. No one sees him here. No one thanks him.
+  yard: >-
+    A small yard, frozen hard. The grass is brown beneath a thin layer of
+    frost. The clothesline is empty. In summer this yard might hold a
+    child's bicycle, a garden. Now it is winter, and the yard is as
+    austere as the love that fills this house.
+  woodpile: >-
+    Split logs stacked neatly against the fence, covered with a weighted
+    tarp. This wood was split by hand, in the cold, by a man whose hands
+    cracked and bled from the labor. Each log is fuel for the furnace
+    that warms the sleeping house.
+  axe: >-
+    A heavy axe, its blade sunk into a scarred chopping block. The handle
+    is smooth and dark from years of grip. This is the tool of the father's
+    Sunday mornings — rising in the blueblack cold to split wood so his
+    family can be warm. What did the boy know of love's austere and lonely
+    offices?
+idlemessages:
+- The wind cuts across the frozen yard, sharp as a blade.
+- The axe in the chopping block catches a glint of pale winter light.
+- The clothesline sways in the wind, stiff and empty.
+- Your hands ache just looking at the woodpile and the chopping block.
+- The cold here is different from inside — honest, open, without walls to muffle it.
+- From inside the house, you hear the radiator begin to tick. The furnace has been lit.

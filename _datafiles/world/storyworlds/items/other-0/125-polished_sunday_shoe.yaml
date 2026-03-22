@@ -1,0 +1,15 @@
+itemid: 125
+name: polished Sunday shoe
+namesimple: shoe
+displayname: a <ansi fg="itemname">polished Sunday shoe</ansi>
+description: >-
+  A single black leather shoe, polished to a mirror shine. It is small — a
+  child's shoe, lovingly maintained by hands that cracked and bled in the
+  cold. When you hold it, you feel the weight of all the mornings a father
+  rose before dawn, in the blueblack cold, to tend the furnace and polish
+  the shoes so his family could step into a warm house and a clean Sunday.
+  A souvenir from the world of Those Winter Sundays.
+type: object
+subtype: usable
+uses: 0
+value: 1

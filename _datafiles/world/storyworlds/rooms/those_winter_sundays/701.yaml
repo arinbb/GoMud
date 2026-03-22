@@ -1,0 +1,50 @@
+roomid: 701
+zone: Those Winter Sundays
+title: Kitchen
+description: >-
+  A small, cold <ansi fg="itemname">kitchen</ansi> with a cracked linoleum floor
+  and a heavy iron <ansi fg="itemname">furnace</ansi> against one wall. The furnace
+  is the heart of this house — when it burns, the whole house warms. Right now it
+  sits dark and cold, waiting to be lit. A <ansi fg="itemname">woodbox</ansi> beside
+  it holds split kindling and a few logs. A plain wooden <ansi fg="itemname">table</ansi>
+  with two chairs stands near the window, where frost obscures the glass. The
+  <ansi fg="exit">front porch</ansi> is through a side door. The <ansi fg="exit">living
+  room</ansi> is to the south.
+mapsymbol: K
+maplegend: Kitchen
+biome: house
+exits:
+  porch:
+    roomid: 700
+    exitmessage: You step outside to the front porch.
+  south:
+    roomid: 704
+    exitmessage: You walk through to the living room.
+nouns:
+  kitchen: >-
+    The kitchen is spare and functional. A few plates on a shelf, a kettle
+    on the cold stove, a cloth draped over the back of a chair. Everything
+    is clean but worn, maintained with quiet pride.
+  furnace: >-
+    The iron furnace is large and old, its surface dark with years of use.
+    When lit, it banishes the cold from the whole house — a daily act of
+    labor and love. The grate holds the ash of yesterday's fire. Someone
+    must rise in the cold darkness each morning to light it again.
+  woodbox: >-
+    A rough wooden box filled with split kindling and a few small logs.
+    The wood is dry and ready. Someone splits this wood regularly, in the
+    cold, with cracked hands. It is not a small thing.
+  table: >-
+    A plain wooden table, scarred with use. Two chairs, not matching. A
+    salt shaker and a folded newspaper. On Sunday mornings, the family
+    gathers here after the house is warm — but no one speaks of who made
+    it warm, or what it cost him.
+spawninfo:
+- mobid: 60
+  message: "A broad-shouldered man kneels before the cold furnace, preparing to light it."
+idlemessages:
+- The furnace sits cold and dark, waiting for hands to bring it back to life.
+- A draft pushes through a gap in the window frame, carrying the scent of ice.
+- The woodbox holds the evidence of labor — each log split with aching hands.
+- The linoleum floor is so cold it seems to pull the warmth from your feet.
+- A slow creak comes from somewhere upstairs. Someone is awake.

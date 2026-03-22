@@ -1,0 +1,14 @@
+itemid: 107
+name: collected poems of Robert Hayden
+namesimple: poetry book
+displayname: a worn volume of <ansi fg="itemname">Robert Hayden's Collected Poems</ansi>
+description: >-
+  A cloth-bound book of poems, its cover a deep indigo blue. The spine is
+  cracked from many readings, the pages soft with use. A bookmark rests at
+  a poem called "Those Winter Sundays." The words on the page seem to glow
+  faintly with cold blue light, and when you hold the book, your hands feel
+  the ghost of a winter chill.
+type: object
+subtype: usable
+uses: 0
+value: 0

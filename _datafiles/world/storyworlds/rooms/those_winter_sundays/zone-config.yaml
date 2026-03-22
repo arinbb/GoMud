@@ -1,0 +1,13 @@
+name: Those Winter Sundays
+roomid: 700
+autoscale:
+  minimum: 1
+  maximum: 3
+defaultbiome: house
+idlemessages:
+- The cold seeps in through the walls, patient and persistent.
+- A floorboard creaks somewhere in the house, settling in the chill.
+- The faint smell of wood polish and old wool lingers in the air.
+- Outside, the winter wind pushes against the windows with a low moan.
+- Silence fills the house — the heavy, complicated silence of unspoken things.
+- Frost traces delicate patterns on the windowpanes, beautiful and cold.

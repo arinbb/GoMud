@@ -1,0 +1,25 @@
+mobid: 60
+zone: those_winter_sundays
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote rubs his cracked hands together slowly, warming them."
+  - "emote kneels before the furnace and adjusts the damper."
+  - "emote picks up a log from the woodbox and places it carefully in the furnace."
+  - "emote glances toward the hallway, listening for sounds of the family waking."
+  - ''
+  - ''
+  - ''
+activitylevel: 15
+character:
+  name: The Father
+  description: >-
+    A broad-shouldered man in work clothes, his hands large and rough, the
+    knuckles cracked from cold and labor. His face is weathered, his eyes
+    tired but steady. He moves through the house with quiet purpose, tending
+    the furnace, polishing shoes, making everything ready for his family
+    before they wake. He does not speak much. His love is not in his words
+    but in the banked fires and polished shoes, in the blueblack cold he
+    faces so others do not have to.
+  raceid: 1
+  level: 8

@@ -1,0 +1,47 @@
+roomid: 703
+zone: Those Winter Sundays
+title: Boy's Bedroom
+description: >-
+  A small, cold <ansi fg="itemname">bedroom</ansi> with a narrow iron <ansi fg="itemname">bed</ansi>
+  pushed against the wall. The blankets are pulled up high — the boy sleeps
+  huddled against the cold, waiting. A pair of <ansi fg="itemname">shoes</ansi> sits
+  beside the bed, freshly polished. A small <ansi fg="itemname">desk</ansi> under the
+  window holds a few schoolbooks and a pencil stub. The window glass is thick
+  with frost, admitting only a gray winter light. The <ansi fg="exit">hallway</ansi>
+  is through the door to the east. From this room, a boy lies and listens
+  to the sounds of the house — the furnace banging awake, the cold splintering
+  and breaking.
+mapsymbol: B
+maplegend: Boy's Bedroom
+biome: house
+exits:
+  east:
+    roomid: 702
+    exitmessage: You step out into the hallway.
+nouns:
+  bedroom: >-
+    The bedroom is small and spare — just room for a bed, a desk, and a
+    boy's few possessions. The walls are thin. You can hear everything
+    through them — the furnace, the footsteps, the silences between.
+  bed: >-
+    A narrow iron bed with a thin mattress and heavy wool blankets. The
+    pillow holds the impression of a child's head. This is where the boy
+    lies on Sunday mornings, slowly waking to the sounds of the house
+    coming to life — someone has risen in the cold to make it warm for him.
+  shoes: >-
+    A pair of Sunday shoes, black leather, freshly polished to a mirror
+    shine. Someone polished these shoes. Not the boy — the father. It is
+    a small act, easily overlooked. The shoes gleam quietly in the gray
+    light, evidence of a love expressed not in words but in labor.
+  desk: >-
+    A small wooden desk with a few schoolbooks stacked neatly. A pencil
+    stub. A composition book with careful handwriting. The boy will grow
+    up to write poems. He will write about this house, this cold, these
+    Sunday mornings. He will write about what he did not know to be
+    grateful for.
+idlemessages:
+- The blankets on the bed shift slightly, as if a sleeping child turns beneath them.
+- The polished shoes catch the gray window light and gleam softly.
+- Through the thin walls, you hear the sound of the furnace banging awake.
+- The frost on the windowpane thickens, tracing patterns like frozen ferns.
+- The room holds the quiet of a child pretending to sleep, listening to everything.

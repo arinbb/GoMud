@@ -1,0 +1,52 @@
+roomid: 704
+zone: Those Winter Sundays
+title: Living Room
+description: >-
+  A modest <ansi fg="itemname">living room</ansi> with worn furniture and thin
+  curtains drawn against the cold. A <ansi fg="itemname">radiator</ansi> stands
+  against one wall, connected to the furnace in the kitchen by pipes that
+  tick and clang as they heat. An <ansi fg="itemname">armchair</ansi> sits beside
+  a small table with a Bible and a pair of reading glasses. A braided
+  <ansi fg="itemname">rug</ansi> covers the center of the floor, offering thin
+  protection from the cold boards beneath. The <ansi fg="exit">kitchen</ansi> is
+  to the north. A door leads to the <ansi fg="exit">back step</ansi> to the south.
+  This is where the family gathers on Sundays, dressed in their good clothes,
+  speaking in careful voices — or not speaking at all.
+mapsymbol: L
+maplegend: Living Room
+biome: house
+exits:
+  north:
+    roomid: 701
+    exitmessage: You walk through to the kitchen.
+  south:
+    roomid: 705
+    exitmessage: You step out onto the back step.
+nouns:
+  radiator: >-
+    The radiator ticks and clangs as heat slowly reaches it from the
+    furnace. It is the sound of the house coming alive, the cold being
+    driven back room by room. Someone labored in the dark to make this
+    warmth possible. The radiator does not explain where warmth comes from.
+    It simply gives it.
+  armchair: >-
+    The father's chair. The leather is cracked and shaped to his body.
+    Beside it, a worn Bible with a ribbon bookmark and a pair of reading
+    glasses with a repaired hinge. He sits here on Sunday afternoons,
+    after church, after the house is warm, in the silence that fills
+    this home like weather.
+  rug: >-
+    A braided rug, made by hand from strips of old fabric. It is the one
+    warm spot on the cold floor, the one soft thing in a room of hard
+    edges. Children's feet have crossed it ten thousand times.
+  bible: >-
+    A well-worn Bible, its pages soft from years of turning. The ribbon
+    marks a place in the Psalms. The man who reads this book rises before
+    dawn in the cold to serve his family. His devotion is not only in
+    these pages.
+idlemessages:
+- The radiator ticks and clangs, slowly warming. The sound of love made mechanical.
+- The curtains sway slightly in a draft from the old windows.
+- The armchair holds the shape of the man who sits in it, even when empty.
+- Pale winter light seeps through the curtains, cold and thin.
+- The room smells of furniture polish, wool, and something baking — no, that is a memory.

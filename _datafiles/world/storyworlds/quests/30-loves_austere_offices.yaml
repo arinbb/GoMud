@@ -1,0 +1,19 @@
+questid: 30
+name: Love's Austere Offices
+description: >-
+  Walk through the house of Robert Hayden's poem. Feel the blueblack cold
+  of winter Sunday mornings and discover the quiet, fierce love of a father
+  who rises in the dark to warm the house for his family.
+reward:
+  experience: 3000
+  item_id: 125
+  playermessage: >-
+    You have walked through the poem and understood something about love
+    that cannot be spoken — only shown through cracked hands, banked fires,
+    and polished Sunday shoes. You receive a polished shoe as a reminder
+    of love's austere and lonely offices.
+steps:
+- description: Enter the world of Those Winter Sundays.
+- description: Find the kitchen and see the cold furnace.
+- description: Speak with the Father about his family.
+- description: Find the boy's bedroom and examine the polished shoes.

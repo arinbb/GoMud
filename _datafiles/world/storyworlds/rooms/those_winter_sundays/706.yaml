@@ -1,0 +1,54 @@
+roomid: 706
+zone: Those Winter Sundays
+title: Parents' Room
+description: >-
+  A small <ansi fg="itemname">bedroom</ansi> at the end of the hallway. A
+  double <ansi fg="itemname">bed</ansi> with a patched quilt, neatly made. A
+  <ansi fg="itemname">dresser</ansi> with a mirror, a comb, a tin of shoe polish.
+  The <ansi fg="itemname">closet</ansi> door is slightly ajar, revealing a Sunday
+  suit on a hanger and a pair of work boots below it. The room is cold — this
+  far from the furnace, the warmth takes longest to arrive. But the bed is
+  made, the suit is pressed, the shoes are polished. Everything is in order.
+  Everything is prepared by hands that rise before the house, before the sun,
+  before anyone is awake to see. The <ansi fg="exit">hallway</ansi> is to the west.
+mapsymbol: R
+maplegend: Parents' Room
+biome: house
+exits:
+  west:
+    roomid: 702
+    exitmessage: You step quietly back into the hallway.
+nouns:
+  bedroom: >-
+    The parents' bedroom is small and tidy. It holds the evidence of two
+    lives lived together in this cold house — the patched quilt, the shared
+    dresser, the closet with room for two. The chronic angers of that house
+    live here too, in the silences between the neatly arranged objects.
+  bed: >-
+    A double bed with an iron frame and a quilt patched many times over.
+    One side is slept in more heavily than the other. The father's side
+    is closest to the door — he rises first, always, leaving the warm
+    bed for the cold house so others will not have to.
+  dresser: >-
+    A plain wooden dresser with a clouded mirror. On its surface: a comb,
+    a tin of black shoe polish, a few coins, a pocket watch. The shoe
+    polish tin is well-used, its lid dented. Every Sunday morning, the
+    father polishes the family's shoes before anyone wakes.
+  closet: >-
+    The closet holds a Sunday suit — dark, carefully pressed, hung with
+    precision. Below it, a pair of heavy work boots, their soles worn
+    thin. Two lives: the Sunday life of church and good clothes, and
+    the weekday life of labor and cracked hands. Both lived with austere
+    dignity.
+  polish: >-
+    A small tin of black shoe polish, its lid worn smooth. Inside, the
+    polish is nearly gone — scraped to the edges by a cloth wrapped
+    around a finger. With this tin and a rag, the father transforms
+    scuffed leather into mirrors. It is an act of care performed in
+    darkness, for a family that does not know to be grateful.
+idlemessages:
+- The quilt on the bed shifts slightly, as if remembering the weight of a sleeping body.
+- The shoe polish tin catches the light, its surface worn smooth by years of opening.
+- The Sunday suit hangs in the closet, pressed and ready, dignified and still.
+- A draft slides under the door, carrying the first hint of warmth from the furnace below.
+- The silence in this room is the deepest in the house. It holds everything that was never said.

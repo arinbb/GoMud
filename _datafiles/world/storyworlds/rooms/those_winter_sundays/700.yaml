@@ -1,0 +1,41 @@
+roomid: 700
+zone: Those Winter Sundays
+title: Front Porch
+description: >-
+  A narrow wooden <ansi fg="itemname">porch</ansi> before a modest clapboard house,
+  its boards silvered with frost. The <ansi fg="itemname">cold</ansi> is immediate
+  and absolute — a Sunday morning cold that makes the air itself feel brittle. Beyond
+  the porch rail, the <ansi fg="itemname">street</ansi> is quiet and white, houses
+  dark, no one stirring. The front <ansi fg="exit">door</ansi> leads inside to
+  a dim hallway. A path around the side of the house leads to the <ansi fg="exit">kitchen</ansi>
+  entrance. The porch boards groan softly underfoot. This is a working family's
+  house — plain, sturdy, full of the weight of things unsaid.
+mapsymbol: P
+maplegend: Front Porch
+biome: house
+exits:
+  door:
+    roomid: 702
+    exitmessage: You push open the front door and step into the dim hallway.
+  kitchen:
+    roomid: 701
+    exitmessage: You walk around the side of the house to the kitchen entrance.
+nouns:
+  porch: >-
+    The porch is plain and functional — three steps up from the frozen yard,
+    a railing on each side, just enough room to stamp the snow from your boots.
+    The boards are worn smooth by years of coming and going.
+  cold: >-
+    The cold is a presence here, not just a temperature. It presses against
+    your skin, turns your breath to vapor, makes the world feel fragile and
+    still. This is the blueblack cold of early Sunday morning.
+  street: >-
+    The street stretches away in both directions, white with frost. The
+    houses on either side are dark — no lights, no smoke from chimneys yet.
+    It is too early. Only one person in this house is awake.
+idlemessages:
+- The cold tightens around you, blueblack and absolute.
+- Your breath makes small clouds that hang in the still air before dissolving.
+- A crow calls from a bare branch down the street — a single, lonely sound.
+- The porch boards creak beneath your weight, loud in the Sunday silence.
+- Inside the house, you hear the faint sound of someone moving. The creak of a floorboard. Then silence.
