@@ -1,0 +1,47 @@
+roomid: 1102
+zone: In Utero
+title: Scentless Apprentice
+description: >-
+  A perfumery built inside an abattoir. Glass <ansi fg="itemname">bottles</ansi>
+  line every shelf from floor to ceiling, each containing a captured scent --
+  thousands of them, glowing faintly in colors that correspond to no known
+  spectrum. The air is impossibly thick, competing smells layered so dense they
+  become physical -- roses, then iron, then rain on hot stone, then something
+  animal and afraid. A wooden <ansi fg="itemname">table</ansi> dominates the center,
+  scrubbed raw but stained deep in the grain. The <ansi fg="itemname">walls</ansi>
+  drip with condensation that changes smell depending on where you stand. The
+  room vibrates at a low frequency -- a churning, grinding riff that lives in
+  the floor and climbs your spine. Somewhere beneath the beautiful and the
+  terrible, a creature is learning to kill by smell alone. You cannot see it.
+  You can smell it getting closer.
+mapsymbol: '2'
+maplegend: Scentless Apprentice
+biome: dungeon
+exits:
+  west:
+    roomid: 1101
+  east:
+    roomid: 1103
+nouns:
+  bottles: >-
+    Thousands of glass bottles, each one stoppered and labeled in an elegant hand.
+    Rose. Iron. Skin. Rain. Fear. Childhood. The moment before thunder. Some labels
+    have no words at all, just colors or symbols. One bottle near the back is
+    labeled simply MURDER and it is the most beautiful amber you have ever seen.
+  table: >-
+    A butcher's table, heavy oak, scrubbed so many times the wood has gone pale
+    and soft. But the stains remain -- deep in the grain, part of the wood now,
+    permanent as memory. Leather straps hang from the edges. A single knife rests
+    in a groove, its blade worn thin from sharpening.
+  walls: >-
+    The walls sweat. Condensation beads and runs in slow rivulets, each droplet
+    carrying a different scent. Stand here and smell lavender. Step left and smell
+    copper. Step right and smell something you have no name for but that makes your
+    heart race and your hands shake.
+idlemessages:
+- A bottle somewhere on the shelves cracks, and the scent of burnt hair fills the room before dissipating.
+- 'The churning riff in the floor shifts key -- lower, heavier, more insistent.'
+- Something moves behind the rows of bottles. A shadow, quick and purposeful, gone before you can focus.
+- The condensation on the walls runs upward for a moment, defying gravity, before resuming its downward course.
+- 'A smell hits you that you cannot name -- equal parts beautiful and horrifying, like flowers growing from a wound.'
+- The table creaks under no visible weight, the wood remembering pressures long removed.

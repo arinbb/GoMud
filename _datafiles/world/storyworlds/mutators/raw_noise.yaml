@@ -1,0 +1,13 @@
+mutatorid: raw-noise
+namemodifier:
+  behavior: append
+  text: (distorted)
+  colorpattern: none
+descriptionmodifier:
+  behavior: append
+  text: Feedback hums at the edge of hearing.
+  colorpattern: none
+alertmodifier:
+  text: The air vibrates with a low, persistent hum of amplified noise.
+  colorpattern: none
+playerbuffids: [55]

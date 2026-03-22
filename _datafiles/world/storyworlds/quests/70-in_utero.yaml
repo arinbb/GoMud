@@ -1,0 +1,18 @@
+questid: 70
+name: In Utero
+description: >-
+  Experience Nirvana's raw, confrontational third album from beginning to end.
+  Walk through the noise and find the silence at the other side.
+reward:
+  experience: 5000
+  item_id: 155
+  playermessage: >-
+    You have walked through the noise and come out the other side. As a memento,
+    you receive a cracked jewel case. The disc is gone, but the liner notes
+    remain — honest, raw, and permanent.
+steps:
+- description: Enter Pachyderm Studios.
+- description: Experience the courtroom of Serve the Servants.
+- description: Walk through the heart-shaped garden.
+- description: Survive the noise of Tourette's.
+- description: Find peace at the lake of All Apologies.

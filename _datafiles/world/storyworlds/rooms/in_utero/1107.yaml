@@ -1,0 +1,47 @@
+roomid: 1107
+zone: In Utero
+title: Very Ape
+description: >-
+  A cave. Low ceiling, rough <ansi fg="itemname">walls</ansi>, the smell of damp
+  stone and primal sweat. Crude <ansi fg="itemname">drawings</ansi> cover every
+  surface -- stick figures in poses that could be fighting or dancing, the
+  distinction irrelevant at this speed. <ansi fg="itemname">Bones</ansi> litter
+  the floor, gnawed clean and scattered without ceremony. The air vibrates with
+  subsonic bass that you feel in your sternum before you hear it -- a riff so
+  compressed and aggressive it has become geology, something tectonic. The cave
+  is small, claustrophobic, every surface within arm's reach. A figure in the
+  corner beats its chest, not in rage but in rhythm, a percussive declaration of
+  something too honest for words. This is punk stripped to marrow. Two minutes
+  of pure, joyful aggression. The cave does not apologize for its simplicity.
+  The cave is proud to be a cave.
+mapsymbol: '7'
+maplegend: Very Ape
+biome: cave
+exits:
+  west:
+    roomid: 1106
+  east:
+    roomid: 1108
+nouns:
+  drawings: >-
+    Crude figures scratched into the cave wall with charcoal and stone. Some fight.
+    Some dance. Some do both simultaneously. One figure stands apart from the
+    others, drawn larger, its mouth open in what might be a scream or a laugh.
+    The art is primitive and perfect. No technique, all truth.
+  walls: >-
+    Close enough to touch from anywhere in the cave. Rough, wet, vibrating with
+    subsonic bass that turns the stone itself into a speaker cone. If you press
+    your palm flat against the rock, you can feel the riff in your bones -- three
+    chords, over and over, faster and faster.
+  bones: >-
+    Scattered across the cave floor, gnawed clean and white. Animal bones, maybe.
+    They are arranged in no pattern, given no ceremony, just the leavings of
+    survival at its most basic. Something ate here and moved on without looking
+    back. There is a freedom in that.
+idlemessages:
+- The figure in the corner beats its chest twice more, the rhythm syncing with the subsonic pulse in the walls.
+- A bone crunches underfoot, the sound sharp and satisfying in the close space.
+- 'The cave walls press closer -- or you are growing larger. Hard to tell. Either way, the space shrinks.'
+- A crude drawing on the wall seems to move in the flickering shadow-light, the stick figure throwing a punch at nothing.
+- 'The riff in the floor accelerates, the tempo climbing, the cave itself headbanging.'
+- Dust falls from the low ceiling in small cascades, shaken loose by frequencies the human ear cannot quite hear.

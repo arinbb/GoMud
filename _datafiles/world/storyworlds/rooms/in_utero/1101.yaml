@@ -1,0 +1,46 @@
+roomid: 1101
+zone: In Utero
+title: Serve the Servants
+description: >-
+  A burned-out courtroom. The judge's <ansi fg="itemname">bench</ansi> is cracked
+  down the middle as if struck by lightning. Newspaper <ansi fg="itemname">headlines</ansi>
+  paper every wall -- tabloid ink bleeding in the humidity. A broken
+  <ansi fg="itemname">television</ansi> in the corner cycles through footage of a
+  band on a stage too big for them, the crowd a faceless ocean of outstretched
+  hands. The witness stand is occupied by the defendant, who is also the
+  plaintiff, who is also the judge. Exhibit A is a platinum record. Exhibit B is
+  a syringe. Exhibit C is a love letter. The jury box is empty. The verdict was
+  decided before the trial began. Scrawled across the wall behind the bench in
+  black marker, barely legible but impossible to ignore, two lines that explain
+  everything and nothing.
+mapsymbol: '1'
+maplegend: Serve the Servants
+biome: city
+exits:
+  west:
+    roomid: 1100
+  east:
+    roomid: 1102
+nouns:
+  headlines: >-
+    Tabloid headlines wallpaper every surface. NIRVANA FRONTMAN IN DRUG SCANDAL.
+    COBAIN AND LOVE -- AMERICA'S NIGHTMARE COUPLE. BAND SELLS OUT, FANS REVOLT.
+    GENIUS OR JUNKIE? The ink runs where the walls are damp, headlines blurring
+    into each other until they become a single accusation with no specific charge.
+  television: >-
+    A broken television with a cracked screen, cycling through MTV footage on a
+    loop. The band on stage. The band in interviews. The band looking uncomfortable
+    at award shows. The signal degrades a little more with each loop, the faces
+    becoming less recognizable, the sound becoming more distorted, until it is just
+    color and noise.
+  bench: >-
+    The judge's bench, split clean down the center. No gavel -- just a guitar pick
+    embedded in the wood where the gavel should be. The nameplate reads nothing. The
+    crack runs deep, and if you look into it, it seems to go down forever.
+idlemessages:
+- The television flickers between footage and static, the signal decaying a little more each time.
+- A newspaper headline peels from the wall and floats to the floor, landing face-down.
+- 'The courtroom smells of old paper, stale ambition, and the particular sadness of someone who got exactly what they wished for.'
+- Feedback whines from the broken television like a sustained scream at a frequency just below pain.
+- Somewhere in the building, a gavel strikes -- but there is no judge, and no verdict that matters.
+- The fluorescent lights above the jury box buzz and flicker, illuminating empty seats.

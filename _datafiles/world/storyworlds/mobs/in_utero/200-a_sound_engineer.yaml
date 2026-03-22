@@ -1,0 +1,21 @@
+mobid: 200
+zone: in_utero
+hostile: false
+maxwander: 0
+activitylevel: 15
+idlecommands:
+  - emote adjusts a fader on the mixing board with surgical precision.
+  - say No computers. Just tape.
+  - emote threads a fresh reel of two-inch tape onto the machine.
+  - ''
+  - ''
+  - ''
+character:
+  name: a Sound Engineer
+  description: >-
+    A thin man with round glasses and an analog recording philosophy. He sits
+    behind the mixing board, adjusting levels with surgical precision. He does
+    not believe in digital recording, royalty points, or unnecessary overdubs. He
+    believes in capturing what the band sounds like in a room.
+  raceid: 1
+  level: 10

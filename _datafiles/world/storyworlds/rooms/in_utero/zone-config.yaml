@@ -1,0 +1,15 @@
+name: In Utero
+roomid: 1100
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: dungeon
+mutators:
+- mutatorid: raw-noise
+idlemessages:
+- A low hum of feedback bleeds through the walls, constant and alive, like the building itself is amplified.
+- The air tastes like cigarette smoke and wet flannel, a ghost of the early nineties that never quite dissipated.
+- 'Tape hiss rises and falls in waves -- the sound of magnetic oxide remembering something painful.'
+- Rain drums against unseen windows, steady and cold, the Minnesota winter pressing in from every side.
+- Something is about to break. You can feel it in the floor, in the air, in the spaces between notes.
+- 'A distorted guitar chord hangs in the atmosphere like weather -- not played, just present, always present.'

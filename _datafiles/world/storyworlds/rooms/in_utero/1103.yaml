@@ -1,0 +1,53 @@
+roomid: 1103
+zone: In Utero
+title: Heart-Shaped Box
+description: >-
+  A garden that should not exist. <ansi fg="itemname">Flowers</ansi> grow from
+  flesh-colored soil, their petals wet and organic, opening and closing like
+  breathing. Heart-shaped <ansi fg="itemname">boxes</ansi> hang from dead trees
+  like grotesque ornaments, swaying in a wind that carries no temperature.
+  Umbilical cords trail across the ground like ivy, connecting nothing to
+  nothing. At the garden's center, a papal <ansi fg="itemname">throne</ansi>
+  stands among the decay, occupied by a figure in a hospital gown whose face
+  you cannot quite resolve. The <ansi fg="itemname">sky</ansi> above is the
+  color of raw meat -- neither day nor night but something wounded and eternal.
+  The melody here is inescapable. It rises from the soil, falls from the branches,
+  hangs in the air like pollen. It is the most beautiful thing on the album,
+  and it is growing from rot.
+mapsymbol: '3'
+maplegend: Heart-Shaped Box
+biome: forest
+exits:
+  west:
+    roomid: 1102
+  east:
+    roomid: 1104
+nouns:
+  boxes: >-
+    Heart-shaped boxes hang from every branch, dangling on cords that might be
+    string, might be vein. Some are open and empty, their lids yawning. Some
+    are closed and pulse faintly, as if something inside is still alive. One,
+    hanging lower than the rest, has your name on it. You do not remember writing
+    it there.
+  flowers: >-
+    They grow from earth that is the color and texture of skin. Their petals are
+    wet, soft, and warm to the touch. They open and close slowly, rhythmically,
+    as if breathing. The colors are wrong -- too vivid, too alive, reds and purples
+    that suggest internal organs more than gardens. They are impossibly beautiful.
+  throne: >-
+    A papal throne, ornate and golden, incongruous among the organic decay. The
+    figure seated in it wears a hospital gown and a tall pointed hat. The figure
+    is old, or young, or both. Tubes trail from beneath the gown into the earth.
+    The figure does not move but is not still.
+  sky: >-
+    The color of raw meat -- deep red shading to purple at the edges, shot through
+    with veins of pink and white. It pulses. It is not a sky so much as a ceiling
+    of living tissue stretched over the garden. No sun, no moon, no stars. Just
+    flesh and light filtering through it, warm and diffuse and wrong.
+idlemessages:
+- A heart-shaped box falls from a branch and splits open on the ground. Inside is nothing. Inside is everything.
+- 'The flowers exhale -- a collective sigh that carries the scent of honey and hospital corridors.'
+- The figure on the throne shifts slightly, tubes pulling taut in the soil, then settles back into stillness.
+- An umbilical cord on the ground twitches, as if remembering a connection long severed.
+- 'The meat-red sky pulses once, slowly, like the world above you is a single enormous heart.'
+- The melody thickens, becomes almost visible -- notes drifting through the air like spores.

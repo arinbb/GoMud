@@ -1,0 +1,13 @@
+itemid: 155
+name: cracked jewel case
+namesimple: case
+displayname: a <ansi fg="itemname">cracked jewel case</ansi>
+description: >-
+  An empty cracked CD jewel case from Nirvana's In Utero. The disc is gone but
+  the liner notes remain — track listings, thank yous, and Kurt's handwritten
+  lyrics in cramped, urgent script. The plastic is cracked right through the
+  angel on the cover art. It smells faintly of cigarette smoke.
+type: object
+subtype: usable
+uses: 0
+value: 1

@@ -1,0 +1,58 @@
+roomid: 1100
+zone: In Utero
+title: Pachyderm Studios
+description: >-
+  February 1993. Cannon Falls, Minnesota. Snow buries the world outside, but in
+  here the air is thick with heat and sound. <ansi fg="itemname">Microphones</ansi>
+  stand like sentinels around a live room strewn with cables, pick slides, and
+  cigarette butts. A massive <ansi fg="itemname">drum kit</ansi> dominates the
+  center -- toms the size of oil drums, cymbals tarnished and cracked. Battered
+  <ansi fg="itemname">guitars</ansi> lean against every wall, their necks scarred
+  with sticker residue and rage. Through a window into the control room, an analog
+  <ansi fg="itemname">mixing board</ansi> glows amber, its faders set to levels
+  that would make a sound engineer weep. Reels of two-inch <ansi fg="itemname">tape</ansi>
+  spin slowly on Steve Albini's machine, capturing everything -- every breath,
+  every mistake, every moment of truth. Coffee cups and empty bottles litter the
+  floor. The red recording light is on. It is always on.
+mapsymbol: S
+maplegend: Pachyderm Studios
+biome: house
+exits:
+  east:
+    roomid: 1101
+nouns:
+  board: >-
+    Albini's analog mixing board -- no computers, no digital trickery. Rows of
+    faders and knobs, each one set with the precision of someone who believes the
+    room IS the sound. Tape saturation. Natural compression. The sound of a band
+    in a room, captured honestly, whether they like it or not.
+  drums: >-
+    Dave Grohl's kit. Massive. The kick drum alone could knock down a wall. The
+    snare is tuned tight and dry -- every hit cracks like a rifle shot. There are
+    dents in the heads from sheer force. This is not a drum kit that is played.
+    It is a drum kit that is attacked.
+  guitars: >-
+    A Fender Mustang, sunburst finish mostly hidden under stickers and grime. A
+    Jaguar with a cracked pickguard. Both strung heavy, tuned low, plugged into
+    amps that are already distorting before you touch the strings. They smell like
+    sweat and rosin and something electric.
+  tapes: >-
+    Reels of two-inch analog tape, each one labeled in Sharpie with track names
+    and take numbers. This is the album in its rawest form -- magnetic oxide
+    holding frequencies that will change everything. No overdubs. No fixing it in
+    the mix. What happened in this room is what you hear.
+  microphones: >-
+    Condenser and dynamic microphones positioned with surgical care around the
+    room. Albini spent longer placing these than the band spent recording most
+    tracks. Every angle, every distance, every reflection calculated to capture
+    the truth of the sound.
+spawninfo:
+- mobid: 200
+  message: "A thin man in round glasses sits behind the mixing board, threading tape."
+idlemessages:
+- The tape reels spin silently, the magnetic heads reading ghosts of performances already laid down.
+- Someone left a half-smoked cigarette balanced on the edge of the mixing board. The ash is two inches long and still growing.
+- 'Snow ticks against the studio windows -- the only audience for miles in any direction.'
+- The red recording light pulses faintly, as if the studio itself has a heartbeat.
+- A guitar string pops somewhere in the live room, the tension finally too much.
+- 'Coffee, cold and black, sits in paper cups on every flat surface -- the fuel of a two-week session.'

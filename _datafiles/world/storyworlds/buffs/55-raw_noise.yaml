@@ -1,0 +1,9 @@
+buffid: 55
+name: Raw Noise
+description: The stripped-back, analog honesty of the recording seeps into you. You perceive everything without filters.
+secret: false
+triggerrate: 10 real minutes
+triggercount: 1
+flags:
+  - see-nouns
+  - superhearing
