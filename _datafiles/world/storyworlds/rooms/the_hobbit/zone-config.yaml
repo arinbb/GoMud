@@ -4,6 +4,8 @@ autoscale:
   minimum: 1
   maximum: 5
 defaultbiome: forest
+mutators:
+- mutatorid: middle-earth-wonder
 idlemessages:
 - The wind carries a scent of pine and distant wood-smoke from somewhere far ahead.
 - 'An ancient feeling settles over you: the world is wider and stranger than you ever imagined.'
