@@ -22,3 +22,12 @@ character:
     of something wonderful, always.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20125
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20174
+    neck:
+      itemid: 20181

@@ -22,3 +22,12 @@ character:
     slowly, as if words cost something and he is spending them carefully.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20108
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20170
+    head:
+      itemid: 20165

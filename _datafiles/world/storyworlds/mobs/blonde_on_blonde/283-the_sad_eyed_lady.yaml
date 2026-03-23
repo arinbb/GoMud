@@ -21,3 +21,8 @@ character:
     She does not come closer. She does not need to. The organ holds.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20111
+    neck:
+      itemid: 20184

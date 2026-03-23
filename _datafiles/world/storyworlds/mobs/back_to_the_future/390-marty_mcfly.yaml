@@ -22,3 +22,10 @@ character:
     impossible and is trying to remain functional.
   raceid: 1
   level: 6
+  equipment:
+    body:
+      itemid: 20127
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

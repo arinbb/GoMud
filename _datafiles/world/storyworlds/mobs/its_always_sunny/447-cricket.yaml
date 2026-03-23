@@ -23,3 +23,8 @@ character:
     himself, which is somehow the saddest part.
   raceid: 1
   level: 2
+  equipment:
+    body:
+      itemid: 20109
+    feet:
+      itemid: 20174

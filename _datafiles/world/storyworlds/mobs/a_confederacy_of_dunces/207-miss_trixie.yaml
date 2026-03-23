@@ -21,3 +21,10 @@ character:
     what year it is. She wants a ham. She has always wanted a ham.
   raceid: 1
   level: 3
+  equipment:
+    body:
+      itemid: 20105
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20172

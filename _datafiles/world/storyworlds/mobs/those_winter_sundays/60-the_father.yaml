@@ -23,3 +23,12 @@ character:
     faces so others do not have to.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170
+    belt:
+      itemid: 20190

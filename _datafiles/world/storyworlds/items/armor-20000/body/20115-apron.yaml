@@ -1,0 +1,7 @@
+itemid: 20115
+name: apron
+namesimple: apron
+description: A white kitchen apron, spotted with grease.
+type: body
+subtype: wearable
+damagereduction: 0

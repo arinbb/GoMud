@@ -23,3 +23,8 @@ character:
     assessment, careful and fair.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20111
+    feet:
+      itemid: 20174

@@ -26,3 +26,10 @@ character:
     attraction is a warning sign. He cannot quite make himself heed it.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20107
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172

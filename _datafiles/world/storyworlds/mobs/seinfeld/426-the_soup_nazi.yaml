@@ -24,3 +24,10 @@ character:
     He will not negotiate. He will not explain. He will simply point.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20115
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

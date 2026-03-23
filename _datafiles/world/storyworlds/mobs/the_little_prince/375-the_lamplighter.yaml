@@ -15,3 +15,10 @@ character:
     with something other than himself. He does not know this.
   raceid: 1
   level: 3
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

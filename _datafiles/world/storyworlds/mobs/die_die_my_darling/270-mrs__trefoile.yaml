@@ -28,3 +28,8 @@ character:
     proprietorial ease.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20110
+    feet:
+      itemid: 20172

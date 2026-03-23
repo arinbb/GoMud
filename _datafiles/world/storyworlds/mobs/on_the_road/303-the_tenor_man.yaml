@@ -27,3 +27,10 @@ character:
     music wearing different bodies.
   raceid: 1
   level: 12
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

@@ -24,3 +24,10 @@ character:
     somewhere on his person at all times. The egg is not to be questioned.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20102
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20172

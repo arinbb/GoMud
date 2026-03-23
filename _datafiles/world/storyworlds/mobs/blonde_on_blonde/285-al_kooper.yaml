@@ -21,3 +21,10 @@ character:
     always one beat behind the moment and always exactly right.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20101
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

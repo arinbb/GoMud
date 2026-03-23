@@ -26,3 +26,10 @@ character:
     helps.
   raceid: 1
   level: 20
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20177

@@ -25,3 +25,8 @@ character:
     a question she finds uninteresting.
   raceid: 1
   level: 15
+  equipment:
+    body:
+      itemid: 20111
+    feet:
+      itemid: 20174

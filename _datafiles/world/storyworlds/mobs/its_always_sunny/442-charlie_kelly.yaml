@@ -25,3 +25,10 @@ character:
     without him. He gets no credit.
   raceid: 1
   level: 4
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

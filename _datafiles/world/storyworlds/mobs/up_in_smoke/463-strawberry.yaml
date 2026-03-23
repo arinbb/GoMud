@@ -23,3 +23,10 @@ character:
     the world consistently more interesting than expected. She is a vibe.
   raceid: 1
   level: 4
+  equipment:
+    body:
+      itemid: 20125
+    legs:
+      itemid: 20155
+    feet:
+      itemid: 20174

@@ -18,3 +18,10 @@ character:
     doesn't quite seem to notice you — or anyone from this decade.
   raceid: 27
   level: 5
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172

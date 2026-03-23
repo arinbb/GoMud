@@ -23,3 +23,10 @@ character:
     in the rooms with them.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20120
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20174

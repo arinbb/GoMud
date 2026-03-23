@@ -1,0 +1,7 @@
+itemid: 20193
+name: sash
+namesimple: sash
+description: A decorative fabric sash.
+type: belt
+subtype: wearable
+damagereduction: 0

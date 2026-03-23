@@ -19,3 +19,10 @@ character:
     believes in capturing what the band sounds like in a room.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20101
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

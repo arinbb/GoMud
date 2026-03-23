@@ -25,3 +25,10 @@ character:
     with the rigidity of a man convinced he has stepped outside it.
   raceid: 1
   level: 12
+  equipment:
+    body:
+      itemid: 20112
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

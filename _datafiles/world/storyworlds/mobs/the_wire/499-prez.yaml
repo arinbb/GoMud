@@ -23,3 +23,10 @@ character:
     which is more than most people in West Baltimore get to discover about themselves.
   raceid: 1
   level: 6
+  equipment:
+    body:
+      itemid: 20106
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

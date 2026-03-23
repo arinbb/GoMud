@@ -26,3 +26,12 @@ character:
     This is Wayne's World. He is Wayne.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20113
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171
+    head:
+      itemid: 20161

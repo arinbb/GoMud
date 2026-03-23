@@ -20,3 +20,8 @@ character:
     of a house. He says a tent is closer to what is real.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20112
+    feet:
+      itemid: 20170

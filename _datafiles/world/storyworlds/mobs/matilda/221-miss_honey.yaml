@@ -22,3 +22,10 @@ character:
     they matter — because to her, they do.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20105
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20174

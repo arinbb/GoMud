@@ -22,3 +22,8 @@ character:
     has at least two rings on it.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20121
+    neck:
+      itemid: 20184

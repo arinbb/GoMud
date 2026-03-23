@@ -1,0 +1,7 @@
+itemid: 20112
+name: trench coat
+namesimple: trench coat
+description: A long trench coat with the collar turned up.
+type: body
+subtype: wearable
+damagereduction: 0

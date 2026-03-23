@@ -1,0 +1,7 @@
+itemid: 20164
+name: hard hat
+namesimple: hard hat
+description: A yellow construction hard hat.
+type: head
+subtype: wearable
+damagereduction: 0

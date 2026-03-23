@@ -13,3 +13,8 @@ character:
     entire garden when she bellows her favorite sentence.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20110
+    feet:
+      itemid: 20175

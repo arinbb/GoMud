@@ -21,3 +21,6 @@ character:
     inch thick.
   raceid: 1
   level: 1
+  equipment:
+    body:
+      itemid: 20103

@@ -25,3 +25,10 @@ character:
     a man and his son live, and they both know it.
   raceid: 1
   level: 6
+  equipment:
+    body:
+      itemid: 20115
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20172

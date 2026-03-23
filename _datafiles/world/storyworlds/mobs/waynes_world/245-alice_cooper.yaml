@@ -24,3 +24,10 @@ character:
     partially applied. It suits him either way.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20177

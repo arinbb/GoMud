@@ -23,3 +23,12 @@ character:
     of his arc.
   raceid: 1
   level: 12
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172
+    neck:
+      itemid: 20180

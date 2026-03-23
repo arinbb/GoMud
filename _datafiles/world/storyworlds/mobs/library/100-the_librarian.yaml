@@ -13,3 +13,10 @@ character:
     around their neck.
   raceid: 1
   level: 50
+  equipment:
+    body:
+      itemid: 20126
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

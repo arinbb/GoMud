@@ -23,3 +23,10 @@ character:
     apology, an arsonist of billboards.
   raceid: 1
   level: 14
+  equipment:
+    body:
+      itemid: 20102
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20174

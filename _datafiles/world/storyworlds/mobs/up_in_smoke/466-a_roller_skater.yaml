@@ -22,3 +22,10 @@ character:
     now. She smiles at everyone. She means it every time.
   raceid: 1
   level: 3
+  equipment:
+    body:
+      itemid: 20125
+    legs:
+      itemid: 20155
+    feet:
+      itemid: 20171

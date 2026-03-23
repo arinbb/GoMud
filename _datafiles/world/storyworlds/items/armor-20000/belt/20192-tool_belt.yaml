@@ -1,0 +1,7 @@
+itemid: 20192
+name: tool belt
+namesimple: tool belt
+description: A utility belt hung with tools.
+type: belt
+subtype: wearable
+damagereduction: 0

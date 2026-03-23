@@ -23,3 +23,8 @@ character:
     quality, as though it is coming from very far away.
   raceid: 27
   level: 15
+  equipment:
+    body:
+      itemid: 20113
+    feet:
+      itemid: 20170

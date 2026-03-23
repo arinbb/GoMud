@@ -25,3 +25,10 @@ character:
     other zones. He mentions this frequently.
   raceid: 1
   level: 7
+  equipment:
+    body:
+      itemid: 20125
+    legs:
+      itemid: 20155
+    feet:
+      itemid: 20174

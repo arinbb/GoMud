@@ -23,3 +23,8 @@ character:
     the least qualified and most effective person in any room he occupies.
   raceid: 1
   level: 15
+  equipment:
+    body:
+      itemid: 20129
+    feet:
+      itemid: 20177

@@ -24,3 +24,10 @@ character:
     beyond reason into something closer to tradition.
   raceid: 1
   level: 6
+  equipment:
+    body:
+      itemid: 20106
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

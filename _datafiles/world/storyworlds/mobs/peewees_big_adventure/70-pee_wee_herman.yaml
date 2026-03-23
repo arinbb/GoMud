@@ -23,3 +23,12 @@ character:
     seen. His laugh is a high-pitched staccato that borders on unhinged.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172
+    neck:
+      itemid: 20180

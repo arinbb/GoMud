@@ -23,3 +23,10 @@ character:
     about the van. He is right about the van. He will not catch the van.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20106
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

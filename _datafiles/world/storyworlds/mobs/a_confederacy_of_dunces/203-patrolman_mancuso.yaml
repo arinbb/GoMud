@@ -19,3 +19,12 @@ character:
     character. He has not yet succeeded. He has a perpetual cold.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20106
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170
+    head:
+      itemid: 20160

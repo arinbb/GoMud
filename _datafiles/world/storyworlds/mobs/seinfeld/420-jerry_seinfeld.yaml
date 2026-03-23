@@ -25,3 +25,10 @@ character:
     and no explanation of why is necessary.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20117
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

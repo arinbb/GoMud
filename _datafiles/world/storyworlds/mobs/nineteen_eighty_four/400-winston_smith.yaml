@@ -22,3 +22,10 @@ character:
     on his face. He is not entirely succeeding.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20129
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

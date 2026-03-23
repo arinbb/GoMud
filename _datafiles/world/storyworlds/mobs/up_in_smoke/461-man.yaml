@@ -23,3 +23,10 @@ character:
     something just past the visible. He is, in his way, a philosopher.
   raceid: 1
   level: 6
+  equipment:
+    body:
+      itemid: 20113
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

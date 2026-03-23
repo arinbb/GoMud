@@ -27,3 +27,8 @@ character:
     thinks no one is listening. Everyone is listening. She is very good.
   raceid: 1
   level: 7
+  equipment:
+    body:
+      itemid: 20111
+    feet:
+      itemid: 20171

@@ -20,3 +20,8 @@ character:
     reassuring or concerning, depending on your temperament.
   raceid: 1
   level: 25
+  equipment:
+    body:
+      itemid: 20121
+    feet:
+      itemid: 20174

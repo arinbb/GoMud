@@ -28,3 +28,10 @@ character:
     the authority of someone who has outlasted a great many certainties.
   raceid: 1
   level: 12
+  equipment:
+    body:
+      itemid: 20105
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20172

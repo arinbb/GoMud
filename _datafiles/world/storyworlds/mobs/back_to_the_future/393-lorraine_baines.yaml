@@ -21,3 +21,8 @@ character:
     She is wrong about the name but not entirely wrong about the boy.
   raceid: 1
   level: 4
+  equipment:
+    body:
+      itemid: 20111
+    feet:
+      itemid: 20174

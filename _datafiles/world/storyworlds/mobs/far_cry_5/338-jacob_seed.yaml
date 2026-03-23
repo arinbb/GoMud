@@ -26,3 +26,10 @@ character:
     knows where they are. They know where he is.
   raceid: 1
   level: 18
+  equipment:
+    body:
+      itemid: 20119
+    legs:
+      itemid: 20153
+    feet:
+      itemid: 20177

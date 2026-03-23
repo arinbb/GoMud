@@ -1,0 +1,7 @@
+itemid: 20162
+name: beret
+namesimple: beret
+description: A black French beret.
+type: head
+subtype: wearable
+damagereduction: 0

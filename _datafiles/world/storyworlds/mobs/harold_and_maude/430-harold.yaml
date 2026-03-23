@@ -21,3 +21,10 @@ character:
     peace with impermanence. He is not morbid. He is simply honest.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20116
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

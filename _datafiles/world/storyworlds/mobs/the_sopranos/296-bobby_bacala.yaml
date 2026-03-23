@@ -24,3 +24,10 @@ character:
     He simply chooses not to be dangerous whenever he has the choice.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20130
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20171

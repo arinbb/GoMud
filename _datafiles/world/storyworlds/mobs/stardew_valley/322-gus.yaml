@@ -19,3 +19,10 @@ character:
     He serves food with love. He keeps secrets well. He worries about Shane.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20115
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

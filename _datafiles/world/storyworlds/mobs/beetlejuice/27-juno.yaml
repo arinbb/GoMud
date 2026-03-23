@@ -21,3 +21,8 @@ character:
     is tired of all of it.
   raceid: 1
   level: 30
+  equipment:
+    body:
+      itemid: 20103
+    feet:
+      itemid: 20175

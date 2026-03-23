@@ -25,3 +25,12 @@ character:
     the most purely alive.
   raceid: 1
   level: 12
+  equipment:
+    body:
+      itemid: 20113
+    legs:
+      itemid: 20153
+    feet:
+      itemid: 20177
+    head:
+      itemid: 20166

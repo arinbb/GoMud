@@ -24,3 +24,10 @@ character:
     entirely good.
   raceid: 1
   level: 7
+  equipment:
+    body:
+      itemid: 20115
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

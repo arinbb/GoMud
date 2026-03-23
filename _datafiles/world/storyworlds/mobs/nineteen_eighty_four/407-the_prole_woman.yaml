@@ -23,3 +23,10 @@ character:
     She is the most free person in Airstrip One. She does not know this.
   raceid: 1
   level: 2
+  equipment:
+    body:
+      itemid: 20120
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20170

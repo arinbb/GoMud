@@ -23,3 +23,10 @@ character:
     which is often, which means he makes a lot of coffee.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172

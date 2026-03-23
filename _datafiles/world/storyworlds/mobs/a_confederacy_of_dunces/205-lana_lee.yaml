@@ -19,3 +19,8 @@ character:
     is cruel to her employees and suspicious of everyone.
   raceid: 1
   level: 12
+  equipment:
+    body:
+      itemid: 20111
+    feet:
+      itemid: 20175

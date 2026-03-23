@@ -25,3 +25,10 @@ character:
     who has never been challenged and the cruelty of someone who enjoys it.
   raceid: 1
   level: 30
+  equipment:
+    body:
+      itemid: 20114
+    legs:
+      itemid: 20157
+    feet:
+      itemid: 20177

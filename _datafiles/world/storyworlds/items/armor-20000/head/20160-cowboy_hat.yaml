@@ -1,0 +1,7 @@
+itemid: 20160
+name: cowboy hat
+namesimple: cowboy hat
+description: A well-worn cowboy hat.
+type: head
+subtype: wearable
+damagereduction: 0

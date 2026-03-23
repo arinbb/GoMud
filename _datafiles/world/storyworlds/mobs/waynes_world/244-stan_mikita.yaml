@@ -24,3 +24,10 @@ character:
     with official approval at what his name has become.
   raceid: 1
   level: 4
+  equipment:
+    body:
+      itemid: 20115
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20171

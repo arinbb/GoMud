@@ -26,3 +26,8 @@ character:
     someone entirely at home in a world that should be impossible.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20111
+    feet:
+      itemid: 20174

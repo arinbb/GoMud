@@ -20,3 +20,10 @@ character:
     noticed Harold before but has chosen not to think about it too carefully.
   raceid: 1
   level: 4
+  equipment:
+    body:
+      itemid: 20116
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

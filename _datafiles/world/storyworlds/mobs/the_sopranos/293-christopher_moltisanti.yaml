@@ -24,3 +24,10 @@ character:
     constantly.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

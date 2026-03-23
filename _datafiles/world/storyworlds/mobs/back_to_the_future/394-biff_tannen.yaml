@@ -27,4 +27,11 @@ character:
     someone intervenes.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20170
   alignment: -50

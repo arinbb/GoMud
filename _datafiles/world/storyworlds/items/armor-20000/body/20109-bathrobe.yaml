@@ -1,0 +1,7 @@
+itemid: 20109
+name: bathrobe
+namesimple: bathrobe
+description: A faded terry cloth bathrobe.
+type: body
+subtype: wearable
+damagereduction: 0

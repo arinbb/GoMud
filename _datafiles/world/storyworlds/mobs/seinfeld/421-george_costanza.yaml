@@ -24,3 +24,10 @@ character:
     is eating something. There is usually something he is eating.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20126
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20171

@@ -23,3 +23,10 @@ character:
     the fence posts as though both tasks are of equivalent importance.
   raceid: 1
   level: 4
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

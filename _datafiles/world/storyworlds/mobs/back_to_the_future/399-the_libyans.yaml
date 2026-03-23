@@ -24,4 +24,11 @@ character:
     delivery on that arrangement. They are 1985's problem.
   raceid: 1
   level: 12
+  equipment:
+    body:
+      itemid: 20119
+    legs:
+      itemid: 20153
+    feet:
+      itemid: 20177
   alignment: -75

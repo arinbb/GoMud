@@ -19,3 +19,12 @@ character:
     life. He will teach anyone to fish who asks. He will not ask why.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20123
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20170
+    head:
+      itemid: 20161

@@ -19,3 +19,8 @@ character:
     — a Tookish gleam in his eye, a quiet courage waiting to emerge.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20105
+    legs:
+      itemid: 20150

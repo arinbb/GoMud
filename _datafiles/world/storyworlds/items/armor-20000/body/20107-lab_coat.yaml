@@ -1,0 +1,7 @@
+itemid: 20107
+name: lab coat
+namesimple: lab coat
+description: A white laboratory coat with various stains.
+type: body
+subtype: wearable
+damagereduction: 0

@@ -20,3 +20,10 @@ character:
     is impossible to miss.
   raceid: 1
   level: 6
+  equipment:
+    body:
+      itemid: 20115
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20171

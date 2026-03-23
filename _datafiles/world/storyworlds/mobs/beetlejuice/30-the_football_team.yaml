@@ -21,3 +21,10 @@ character:
     arguing about the last play in tinny, compressed voices.
   raceid: 1
   level: 1
+  equipment:
+    body:
+      itemid: 20130
+    legs:
+      itemid: 20155
+    feet:
+      itemid: 20171

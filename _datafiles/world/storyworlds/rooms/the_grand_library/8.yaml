@@ -14,7 +14,7 @@ mapsymbol: G
 maplegend: The Arcade
 biome: house
 exits:
-  ne:
+  northeast:
     roomid: 1
     exitmessage: You step back out into the Grand Atrium.
 nouns:

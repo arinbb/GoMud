@@ -22,3 +22,10 @@ character:
     for a very, very long time.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20111
+    feet:
+      itemid: 20175
+    belt:
+      itemid: 20193

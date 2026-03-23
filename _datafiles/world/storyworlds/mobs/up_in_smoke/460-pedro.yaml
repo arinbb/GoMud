@@ -23,3 +23,12 @@ character:
     when he is.
   raceid: 1
   level: 6
+  equipment:
+    body:
+      itemid: 20125
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20174
+    head:
+      itemid: 20166

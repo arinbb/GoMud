@@ -18,3 +18,12 @@ character:
     his homeland. He is proud, brave, and stubborn to a fault.
   raceid: 1
   level: 15
+  equipment:
+    body:
+      itemid: 20119
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170
+    belt:
+      itemid: 20190

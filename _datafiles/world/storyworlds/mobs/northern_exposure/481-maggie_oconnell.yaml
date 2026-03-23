@@ -28,3 +28,10 @@ character:
     two things is where her life actually happens.
   raceid: 1
   level: 9
+  equipment:
+    body:
+      itemid: 20101
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20170

@@ -23,3 +23,10 @@ character:
     Hotel once, in passing.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20120
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20174

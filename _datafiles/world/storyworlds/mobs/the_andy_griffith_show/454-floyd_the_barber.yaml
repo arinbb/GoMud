@@ -25,3 +25,10 @@ character:
     he were not here, the way you miss a comfortable chair.
   raceid: 1
   level: 4
+  equipment:
+    body:
+      itemid: 20115
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

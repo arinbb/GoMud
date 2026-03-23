@@ -20,3 +20,10 @@ character:
     everyone around him combined.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20125
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

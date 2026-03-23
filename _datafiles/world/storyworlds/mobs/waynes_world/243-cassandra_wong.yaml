@@ -24,3 +24,10 @@ character:
     not told him this.
   raceid: 1
   level: 6
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20177

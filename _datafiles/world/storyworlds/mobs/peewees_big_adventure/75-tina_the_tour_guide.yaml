@@ -21,3 +21,10 @@ character:
     ironed creases.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20103
+    feet:
+      itemid: 20175
+    neck:
+      itemid: 20183

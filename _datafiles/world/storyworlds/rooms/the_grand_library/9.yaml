@@ -13,7 +13,7 @@ maplegend: Trophy Room
 biome: house
 isstorage: true
 exits:
-  nw:
+  northwest:
     roomid: 1
     exitmessage: You step back into the Grand Atrium.
 nouns:

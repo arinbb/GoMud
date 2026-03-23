@@ -25,3 +25,10 @@ character:
     The novel does not make her villain enough to justify what happens here.
   raceid: 1
   level: 4
+  equipment:
+    body:
+      itemid: 20105
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20172

@@ -22,3 +22,12 @@ character:
     which in the canyon country amounts to the same thing.
   raceid: 1
   level: 13
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172
+    neck:
+      itemid: 20180

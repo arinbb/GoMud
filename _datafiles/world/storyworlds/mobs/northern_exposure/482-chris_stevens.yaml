@@ -27,3 +27,10 @@ character:
     He is never not broadcasting. The boundary between the two is permeable.
   raceid: 1
   level: 9
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20177

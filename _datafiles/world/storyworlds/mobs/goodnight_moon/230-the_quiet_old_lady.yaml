@@ -27,3 +27,8 @@ character:
     watching everything.
   raceid: 1
   level: 1
+  equipment:
+    body:
+      itemid: 20105
+    feet:
+      itemid: 20174

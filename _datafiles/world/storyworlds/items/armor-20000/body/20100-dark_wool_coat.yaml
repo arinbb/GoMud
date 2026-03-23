@@ -1,0 +1,7 @@
+itemid: 20100
+name: dark wool coat
+namesimple: wool coat
+description: A heavy dark wool coat, the kind a man wears against Buffalo winters and the world.
+type: body
+subtype: wearable
+damagereduction: 0

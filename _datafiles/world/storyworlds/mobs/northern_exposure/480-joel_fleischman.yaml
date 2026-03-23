@@ -25,3 +25,10 @@ character:
     suspicion alarming.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20107
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172

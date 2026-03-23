@@ -26,3 +26,10 @@ character:
     thing. He is based on a real person named Neal Cassady who was also like this.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20125
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

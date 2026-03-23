@@ -25,3 +25,10 @@ character:
     a regular.
   raceid: 1
   level: 2
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

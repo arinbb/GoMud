@@ -25,3 +25,10 @@ character:
     Baptist. The skills transfer more than you would like.
   raceid: 1
   level: 15
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

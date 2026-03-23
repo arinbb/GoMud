@@ -19,3 +19,8 @@ character:
     speaks with theatrical intensity about everything, especially her art.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20121
+    feet:
+      itemid: 20175

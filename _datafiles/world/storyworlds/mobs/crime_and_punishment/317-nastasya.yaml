@@ -26,3 +26,10 @@ character:
     novel needs her.
   raceid: 1
   level: 3
+  equipment:
+    body:
+      itemid: 20115
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20170

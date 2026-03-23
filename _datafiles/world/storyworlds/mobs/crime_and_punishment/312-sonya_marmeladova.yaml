@@ -25,3 +25,12 @@ character:
     is the purest person in this novel. The city does not deserve her.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20120
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20174
+    neck:
+      itemid: 20181

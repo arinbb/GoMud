@@ -23,3 +23,10 @@ character:
     his father, which is the question his whole life is constructed around.
   raceid: 1
   level: 3
+  equipment:
+    body:
+      itemid: 20125
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

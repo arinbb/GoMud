@@ -23,3 +23,10 @@ character:
     She is not stupid. This makes everything more complicated.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20111
+    feet:
+      itemid: 20175
+    neck:
+      itemid: 20184

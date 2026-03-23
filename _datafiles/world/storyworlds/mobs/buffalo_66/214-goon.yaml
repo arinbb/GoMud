@@ -23,3 +23,10 @@ character:
     which makes him more dangerous, not less.
   raceid: 1
   level: 15
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

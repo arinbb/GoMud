@@ -23,3 +23,10 @@ character:
     He is trying, and trying in Baltimore, in the game, on the corners -- it costs.
   raceid: 1
   level: 4
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20170

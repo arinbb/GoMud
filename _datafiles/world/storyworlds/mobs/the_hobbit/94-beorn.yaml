@@ -20,3 +20,8 @@ character:
     black bear.
   raceid: 1
   level: 25
+  equipment:
+    body:
+      itemid: 20108
+    feet:
+      itemid: 20170

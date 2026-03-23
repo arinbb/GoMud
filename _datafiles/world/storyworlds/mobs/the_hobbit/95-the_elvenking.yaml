@@ -20,3 +20,8 @@ character:
     just in his way.
   raceid: 2
   level: 30
+  equipment:
+    body:
+      itemid: 20121
+    feet:
+      itemid: 20174

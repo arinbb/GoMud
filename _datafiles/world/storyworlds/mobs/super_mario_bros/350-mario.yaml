@@ -26,3 +26,8 @@ character:
     eight worlds of this.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20108
+    feet:
+      itemid: 20170

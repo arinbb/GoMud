@@ -22,3 +22,12 @@ character:
     devoted, which is what makes his sabotage feel like prayer rather than crime.
   raceid: 1
   level: 11
+  equipment:
+    body:
+      itemid: 20123
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20173
+    head:
+      itemid: 20160

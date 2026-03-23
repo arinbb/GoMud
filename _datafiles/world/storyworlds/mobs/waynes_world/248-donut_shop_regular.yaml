@@ -23,3 +23,10 @@ character:
     Aurora, the thing underneath all the excellence.
   raceid: 1
   level: 2
+  equipment:
+    body:
+      itemid: 20101
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

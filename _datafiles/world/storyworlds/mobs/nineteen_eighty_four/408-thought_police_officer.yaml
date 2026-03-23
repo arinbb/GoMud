@@ -21,3 +21,10 @@ character:
     redundant. You already know what they are for.
   raceid: 1
   level: 20
+  equipment:
+    body:
+      itemid: 20106
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20177

@@ -25,3 +25,12 @@ character:
     always aware of the nearest exit.
   raceid: 1
   level: 12
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20177
+    head:
+      itemid: 20165

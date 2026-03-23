@@ -21,3 +21,10 @@ character:
     directly at something and not see it if you are looking for something else.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20103
+    feet:
+      itemid: 20175
+    neck:
+      itemid: 20184

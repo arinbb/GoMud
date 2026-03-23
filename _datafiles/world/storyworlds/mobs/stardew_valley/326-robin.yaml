@@ -20,3 +20,10 @@ character:
     has been building this valley, literally, for twenty years.
   raceid: 1
   level: 12
+  equipment:
+    body:
+      itemid: 20101
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20170

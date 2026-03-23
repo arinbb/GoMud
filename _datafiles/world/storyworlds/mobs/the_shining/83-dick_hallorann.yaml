@@ -20,3 +20,10 @@ character:
     place that has none.
   raceid: 1
   level: 12
+  equipment:
+    body:
+      itemid: 20126
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

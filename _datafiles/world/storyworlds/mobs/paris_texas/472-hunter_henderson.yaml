@@ -23,3 +23,10 @@ character:
     watching before committing.
   raceid: 1
   level: 1
+  equipment:
+    body:
+      itemid: 20124
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

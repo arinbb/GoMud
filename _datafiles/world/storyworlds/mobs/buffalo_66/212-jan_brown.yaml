@@ -25,3 +25,10 @@ character:
     of the Super Bowl years.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20130
+    legs:
+      itemid: 20157
+    feet:
+      itemid: 20171

@@ -26,3 +26,10 @@ character:
     attached. Books everywhere. A cigarette. She sees you immediately.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20105
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20174

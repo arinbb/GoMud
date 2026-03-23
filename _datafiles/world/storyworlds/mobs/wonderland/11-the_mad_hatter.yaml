@@ -12,3 +12,8 @@ character:
     always with the desperate energy of someone who knows time has stopped.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20126
+    head:
+      itemid: 20163

@@ -24,3 +24,10 @@ character:
     Baltimore pays attention.
   raceid: 1
   level: 12
+  equipment:
+    body:
+      itemid: 20112
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20170

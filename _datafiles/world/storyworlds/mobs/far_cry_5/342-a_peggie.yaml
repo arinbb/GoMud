@@ -24,3 +24,10 @@ character:
     and watching you with zero ambiguity about what happens next.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20153
+    feet:
+      itemid: 20177

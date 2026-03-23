@@ -22,3 +22,10 @@ character:
     It might. She is already working on that.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20155
+    feet:
+      itemid: 20170

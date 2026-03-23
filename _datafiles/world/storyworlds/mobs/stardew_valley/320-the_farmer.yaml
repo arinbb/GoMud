@@ -19,3 +19,12 @@ character:
     and elbows. There is mud on their boots. They look entirely at home.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20108
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20170
+    head:
+      itemid: 20165

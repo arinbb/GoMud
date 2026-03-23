@@ -22,3 +22,10 @@ character:
     position, which is the exact proportion Dylan intended.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20116
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

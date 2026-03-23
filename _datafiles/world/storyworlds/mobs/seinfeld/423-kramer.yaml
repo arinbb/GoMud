@@ -24,3 +24,10 @@ character:
     scheme, which is always the current scheme.
   raceid: 1
   level: 7
+  equipment:
+    body:
+      itemid: 20102
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

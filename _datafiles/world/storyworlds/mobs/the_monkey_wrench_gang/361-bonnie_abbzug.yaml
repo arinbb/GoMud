@@ -24,3 +24,10 @@ character:
     anger. She is also funnier than any of them, including herself.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20125
+    legs:
+      itemid: 20155
+    feet:
+      itemid: 20174

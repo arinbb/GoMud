@@ -27,3 +27,10 @@ character:
     He will not say anything too useful. That is not how it works.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20116
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

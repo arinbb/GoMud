@@ -25,3 +25,10 @@ character:
     those things with the same unhurried competence.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20106
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

@@ -22,3 +22,8 @@ character:
     check their watches. He radiates genuine delight at the existence of the supernatural.
   raceid: 1
   level: 15
+  equipment:
+    body:
+      itemid: 20129
+    feet:
+      itemid: 20177

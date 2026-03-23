@@ -23,3 +23,8 @@ character:
     checking the Ecto-1.
   raceid: 1
   level: 15
+  equipment:
+    body:
+      itemid: 20129
+    feet:
+      itemid: 20177

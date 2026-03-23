@@ -26,3 +26,10 @@ character:
     He is a man held together by anger and not much else.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20100
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

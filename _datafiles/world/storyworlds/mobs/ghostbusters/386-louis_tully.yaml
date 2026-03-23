@@ -23,3 +23,10 @@ character:
     conclusion.
   raceid: 1
   level: 3
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20171

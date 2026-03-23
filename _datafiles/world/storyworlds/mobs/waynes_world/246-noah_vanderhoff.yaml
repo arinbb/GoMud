@@ -25,3 +25,12 @@ character:
     in a business sense.
   raceid: 1
   level: 3
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172
+    neck:
+      itemid: 20180

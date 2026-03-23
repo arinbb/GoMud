@@ -22,3 +22,14 @@ character:
     very good in a crisis, which surprises him most of all.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20113
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20170
+    head:
+      itemid: 20163
+    neck:
+      itemid: 20185

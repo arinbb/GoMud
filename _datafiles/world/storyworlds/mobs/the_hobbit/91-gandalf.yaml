@@ -19,3 +19,10 @@ character:
     smells of pipe-weed and starlight.
   raceid: 1
   level: 50
+  equipment:
+    body:
+      itemid: 20121
+    feet:
+      itemid: 20170
+    head:
+      itemid: 20163

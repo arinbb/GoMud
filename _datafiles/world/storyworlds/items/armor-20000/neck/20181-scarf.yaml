@@ -1,0 +1,7 @@
+itemid: 20181
+name: scarf
+namesimple: scarf
+description: A wool scarf wrapped loosely.
+type: neck
+subtype: wearable
+damagereduction: 0

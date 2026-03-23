@@ -24,3 +24,10 @@ character:
     is also complicated, though he will not discuss it.
   raceid: 1
   level: 6
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

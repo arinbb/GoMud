@@ -25,3 +25,10 @@ character:
     time for that right now.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20127
+    legs:
+      itemid: 20153
+    feet:
+      itemid: 20177

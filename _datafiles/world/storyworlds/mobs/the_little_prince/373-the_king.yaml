@@ -13,3 +13,8 @@ character:
     like someone to rule. He will settle for you, if you will sit down.
   raceid: 1
   level: 6
+  equipment:
+    body:
+      itemid: 20121
+    feet:
+      itemid: 20172

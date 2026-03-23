@@ -25,3 +25,10 @@ character:
     not need complications to feel alive.
   raceid: 1
   level: 4
+  equipment:
+    body:
+      itemid: 20129
+    feet:
+      itemid: 20170
+    head:
+      itemid: 20161

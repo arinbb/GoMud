@@ -1,0 +1,7 @@
+itemid: 20191
+name: gun belt
+namesimple: gun belt
+description: A thick leather gun belt.
+type: belt
+subtype: wearable
+damagereduction: 0

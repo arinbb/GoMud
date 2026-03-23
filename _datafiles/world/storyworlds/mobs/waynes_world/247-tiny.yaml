@@ -22,3 +22,10 @@ character:
     first took a real look at Tiny.
   raceid: 1
   level: 7
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20177

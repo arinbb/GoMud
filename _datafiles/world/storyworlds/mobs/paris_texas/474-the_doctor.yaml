@@ -21,3 +21,10 @@ character:
     that suggests there is no wrong answer, only information.
   raceid: 1
   level: 5
+  equipment:
+    body:
+      itemid: 20107
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172

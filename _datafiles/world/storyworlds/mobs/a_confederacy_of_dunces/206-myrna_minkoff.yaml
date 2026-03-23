@@ -19,3 +19,10 @@ character:
     problems are all sexual in nature. She is probably right about some things.
   raceid: 1
   level: 8
+  equipment:
+    body:
+      itemid: 20120
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20174

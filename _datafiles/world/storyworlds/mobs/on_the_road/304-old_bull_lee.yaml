@@ -28,3 +28,10 @@ character:
     that Old Bull Lee has not written yet but will.
   raceid: 1
   level: 15
+  equipment:
+    body:
+      itemid: 20112
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

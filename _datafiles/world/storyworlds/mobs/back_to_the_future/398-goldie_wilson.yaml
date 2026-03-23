@@ -21,3 +21,10 @@ character:
     contact when he talks to you. He is going to be somebody.
   raceid: 1
   level: 3
+  equipment:
+    body:
+      itemid: 20115
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20171

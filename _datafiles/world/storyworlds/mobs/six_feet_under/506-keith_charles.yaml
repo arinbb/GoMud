@@ -25,3 +25,10 @@ character:
     people in a show full of complicated ones.
   raceid: 1
   level: 7
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20177

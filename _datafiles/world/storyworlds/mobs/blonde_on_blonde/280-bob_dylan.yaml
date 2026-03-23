@@ -23,3 +23,10 @@ character:
     tend to come from a direction you did not expect.
   raceid: 1
   level: 10
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20177

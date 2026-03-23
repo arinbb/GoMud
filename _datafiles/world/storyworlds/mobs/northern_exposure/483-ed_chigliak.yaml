@@ -28,3 +28,10 @@ character:
     also the other way around.
   raceid: 1
   level: 7
+  equipment:
+    body:
+      itemid: 20127
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20170

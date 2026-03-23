@@ -1,0 +1,7 @@
+itemid: 20190
+name: leather belt
+namesimple: leather belt
+description: A plain leather belt with a brass buckle.
+type: belt
+subtype: wearable
+damagereduction: 0

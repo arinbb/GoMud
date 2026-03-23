@@ -20,3 +20,10 @@ character:
     Overlook's messenger, its voice, its will made flesh.
   raceid: 27
   level: 20
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

@@ -24,3 +24,10 @@ character:
     There's no time now. There's never time now.
   raceid: 1
   level: 6
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170
