@@ -1,0 +1,13 @@
+itemid: 160
+name: green hunting cap
+namesimple: cap
+displayname: a <ansi fg="itemname">green hunting cap</ansi> with earflaps
+description: >-
+  A green hunting cap with earflaps, the most famous hat in American literature.
+  It is slightly greasy, smells of hair tonic and Dr. Nut soda, and when you
+  put it on, the world seems slightly more offensive than usual. The earflaps
+  are down. They are always down.
+type: object
+subtype: usable
+uses: 0
+value: 0

@@ -1,0 +1,54 @@
+roomid: 1203
+zone: A Confederacy of Dunces
+title: The Night of Joy
+description: >-
+  A seedy Bourbon Street bar with <ansi fg="itemname">sticky floors</ansi>,
+  watered-down drinks, and the permanent smell of stale beer and broken dreams.
+  The lighting is dim enough to be flattering and bright enough to be
+  depressing. A small <ansi fg="itemname">stage</ansi> at the back is set up
+  for what promises to be a burlesque act of questionable artistic merit. A
+  white <ansi fg="itemname">cockatoo</ansi> sits on a perch near the bar,
+  eyeing the room with the nervous energy of a performer who knows the act is
+  not ready. The owner watches everything from a corner <ansi fg="itemname">booth</ansi>
+  with the cold eyes of a woman who has built an empire on watered bourbon and
+  other people's desperation. The only exit leads <ansi fg="exit">west</ansi>
+  back to the French Quarter.
+mapsymbol: N
+maplegend: Night of Joy
+biome: house
+exits:
+  west:
+    roomid: 1202
+nouns:
+  stage: >-
+    A tiny stage with a single spotlight, set up for Darlene's debut act. The
+    act involves the cockatoo removing articles of clothing. In theory. In
+    practice, the cockatoo has its own ideas about what constitutes performance
+    art. A sequined costume hangs on a hook backstage, waiting for its moment
+    of glory or catastrophe.
+  cockatoo: >-
+    A large white cockatoo on a perch near the bar, trained to remove articles
+    of clothing from a performer. In theory. The bird has a wild look in its
+    eye that suggests it considers the entire arrangement beneath its dignity.
+    It was not consulted about its career path.
+  booth: >-
+    A corner booth upholstered in cracked red vinyl, where the owner sits
+    counting money and radiating menace. The booth has a view of every corner
+    of the bar. Nothing happens in the Night of Joy that the booth does not
+    see. Several things happen that the booth pretends not to see.
+  floor: >-
+    So sticky your shoes make a sound like tape being pulled off with every
+    step. The floor is a living archaeological record of spilled drinks, dropped
+    cigarettes, and regrettable decisions, layered year upon year into a surface
+    that is less a floor and more a geological formation.
+spawninfo:
+- mobid: 205
+  message: 'The owner of the Night of Joy watches from her booth with eyes that miss nothing and forgive less.'
+  container: ''
+idlemessages:
+- 'The cockatoo ruffles its feathers and makes a sound somewhere between a squawk and a critique.'
+- 'The jukebox plays a scratchy tune that nobody requested and nobody wants to hear.'
+- 'A patron slumps at the bar, nursing a drink that was watered down before it was poured and watered down again after.'
+- 'The sticky floor pulls at your shoes with each step, reluctant to let you leave, like the bar itself.'
+- 'The owner counts bills in her booth, her lips moving silently, her eyes never leaving the room.'
+- 'A cockroach the size of a cigarette lighter crosses the bar top with the confidence of a regular customer.'

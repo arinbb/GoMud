@@ -1,0 +1,51 @@
+roomid: 1206
+zone: A Confederacy of Dunces
+title: Dorian's Party
+description: >-
+  A lavishly decorated French Quarter apartment hosting one of Dorian Greene's
+  legendary parties. Heavy brocade <ansi fg="itemname">curtains</ansi> in
+  burgundy and gold frame the windows. Gilt-framed <ansi fg="itemname">mirrors</ansi>
+  on every wall make the apartment seem infinite, reflecting the flickering
+  light of dozens of <ansi fg="itemname">candles</ansi> in ornate holders. The
+  <ansi fg="itemname">guests</ansi> are fabulous and numerous, dressed in
+  flamboyant attire, drinking champagne and discussing art with the passionate
+  insincerity of people who know the discussion is the point, not the
+  conclusion. Ignatius once attempted to organize these guests into a political
+  movement. The results were spectacular and catastrophic. The only exit leads
+  <ansi fg="exit">west</ansi> back to Bourbon Street.
+mapsymbol: D
+maplegend: Dorian's Party
+biome: house
+exits:
+  west:
+    roomid: 1205
+nouns:
+  mirrors: >-
+    Gilt-framed mirrors on every wall, making the apartment seem infinite. Your
+    reflection bounces between them, multiplied into an army of yourself. The
+    mirrors are positioned so that everyone can see themselves at all times,
+    which is either vanity or honesty depending on your perspective.
+  guests: >-
+    A dazzling assortment of party guests in flamboyant attire, drinking
+    champagne and discussing art, politics, scandal, and the absolute necessity
+    of another drink. They move through the apartment like tropical birds,
+    bright and loud and entirely unconcerned with the opinions of the outside
+    world.
+  candles: >-
+    Dozens of candles in ornate holders, creating a warm flickering glow that
+    makes everyone look better than they are and the apartment more mysterious
+    than it is. Some of the candles have dripped wax onto the brocade curtains.
+    This is either carelessness or atmosphere. In this apartment, the
+    distinction is academic.
+  curtains: >-
+    Heavy brocade curtains in burgundy and gold, slightly singed from proximity
+    to the candles. They frame the windows with theatrical grandeur. Everything
+    in this apartment is theatrical. The curtains are merely the most honest
+    about it.
+idlemessages:
+- A guest in a peacock-blue smoking jacket holds court in the corner, gesturing with a champagne flute.
+- 'The candles flicker in unison as someone opens a window, and for a moment every mirror fills with dancing shadows.'
+- 'Laughter erupts from a group near the mirrors, bright and sharp as breaking glass.'
+- 'A guest reclines on a chaise longue and declares that art is dead, then asks for more champagne to mourn it properly.'
+- 'Someone puts a new record on the phonograph -- Judy Garland, turned up loud enough to compete with the conversation.'
+- The smell of champagne, cigarette smoke, and expensive cologne mingles into something intoxicating and slightly dangerous.

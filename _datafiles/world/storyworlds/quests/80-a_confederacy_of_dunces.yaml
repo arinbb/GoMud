@@ -1,0 +1,18 @@
+questid: 80
+name: A Confederacy of Dunces
+description: >-
+  Navigate the magnificent disaster of Ignatius J. Reilly's New Orleans. Meet
+  the dunces, eat the hot dogs, survive the Night of Joy.
+reward:
+  experience: 5000
+  item_id: 160
+  playermessage: >-
+    You have survived the confederacy of dunces. As a memento, you receive
+    a green hunting cap — slightly greasy, smelling of hair tonic and Dr. Nut
+    soda. The earflaps are down. They are always down.
+steps:
+- description: Meet Ignatius outside D.H. Holmes.
+- description: Visit the Night of Joy bar.
+- description: Read Ignatius's journal in his house.
+- description: Try a Lucky Dog.
+- description: Experience the Crusade for Moorish Dignity at Levy Pants.

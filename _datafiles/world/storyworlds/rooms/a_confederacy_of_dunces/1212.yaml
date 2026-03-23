@@ -1,0 +1,51 @@
+roomid: 1212
+zone: A Confederacy of Dunces
+title: Congo Square
+description: >-
+  The historic public <ansi fg="itemname">square</ansi>, now part of Louis
+  Armstrong Park, but in the 1960s still a gathering place with deep roots and
+  complicated history. Ancient live oak <ansi fg="itemname">trees</ansi> draped
+  in Spanish moss provide shade that is more psychological than physical in
+  this heat. A dented Dr. Nut vending <ansi fg="itemname">machine</ansi> stands
+  at the edge of the square, warm to the touch, dispensing bottles of the
+  now-vanishing local soda for a nickel. The square is quiet and heavy with
+  memory. Somewhere nearby, a man leans against a wall, smoking and watching
+  the world with the weary eyes of someone who knows exactly how the game is
+  rigged and plays it anyway. The exit leads <ansi fg="exit">west</ansi> back
+  to Bourbon Street.
+mapsymbol: S
+maplegend: Congo Square
+biome: land
+exits:
+  west:
+    roomid: 1205
+nouns:
+  square: >-
+    Congo Square, where enslaved Africans were once allowed to gather on Sundays
+    to dance, play music, and keep their cultures alive under the live oaks.
+    This is one of the most important places in the history of American music.
+    Jazz was born here, or at least conceived here. The ground remembers
+    rhythms that the city built itself around. In the 1960s it is a quieter
+    place, but the memory hums in the soil.
+  trees: >-
+    Live oaks draped in Spanish moss, their branches reaching wide and low
+    like arms offering an embrace that falls short. The moss hangs in grey
+    curtains, stirring faintly in a breeze you cannot otherwise feel. The
+    trees have been here longer than the city. They will be here after.
+  machine: >-
+    A Dr. Nut vending machine, dented and warm, its paint faded by sun and
+    years. It dispenses bottles of the local soda for a nickel. Dr. Nut was
+    produced in New Orleans from 1934 until the mid-1970s. It tasted of vanilla
+    and almonds and was beloved by a certain kind of New Orleanian. You cannot
+    buy it anymore except here, in a story, from a machine that remembers.
+spawninfo:
+- mobid: 204
+  message: 'A man in dark glasses leans against the wall, smoking and watching the world with elaborate disinterest.'
+  container: ''
+idlemessages:
+- 'The Spanish moss stirs in a breeze too faint to feel, grey curtains swaying in a theater with no audience.'
+- 'The Dr. Nut machine hums quietly to itself, keeping a soda cold that the rest of the world has forgotten.'
+- 'A mockingbird in the live oak runs through its repertoire -- three songs, a car horn, and something that sounds like a trumpet.'
+- 'The shade beneath the oaks is deep and cool, a different country from the sun-blasted streets beyond.'
+- 'Someone has left a newspaper on a bench. The headlines are about things that seemed important at the time.'
+- 'The square is quiet in the way that places with long memories are quiet -- not empty, but holding something back.'

@@ -1,0 +1,13 @@
+mutatorid: new-orleans-chaos
+namemodifier:
+  behavior: append
+  text: (steamy)
+  colorpattern: none
+descriptionmodifier:
+  behavior: append
+  text: The New Orleans heat and humidity wrap around you like a damp blanket.
+  colorpattern: none
+alertmodifier:
+  text: Somewhere a jazz trumpet plays a slow blue note.
+  colorpattern: none
+playerbuffids: [56]

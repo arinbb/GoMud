@@ -1,0 +1,55 @@
+roomid: 1201
+zone: A Confederacy of Dunces
+title: Canal Street
+description: >-
+  Canal Street stretches wide and loud in both directions, the grandest
+  boulevard in New Orleans and possibly the most chaotic. <ansi fg="itemname">Streetcars</ansi>
+  rattle down the center on iron rails, their bells clanging at pedestrians who
+  cross with the serene fatalism of people who have accepted that fate, not
+  traffic lights, determines survival. <ansi fg="itemname">Neon signs</ansi>
+  advertise Jax Beer, Werlein's Music, and Maison Blanche. The wide
+  <ansi fg="itemname">neutral ground</ansi> -- what the rest of the world calls
+  a median -- divides the street with live oaks and iron benches where old men
+  sit and watch the world fail to improve. Businessmen, tourists, musicians,
+  nuns, and at least one patrolman in a ridiculous costume hurry past in every
+  direction. <ansi fg="exit">West</ansi> leads back to D.H. Holmes.
+  <ansi fg="exit">East</ansi> leads toward the French Quarter.
+  <ansi fg="exit">North</ansi> leads to the Prytania Theater.
+mapsymbol: C
+maplegend: Canal Street
+biome: city
+exits:
+  west:
+    roomid: 1200
+  east:
+    roomid: 1202
+  north:
+    roomid: 1210
+nouns:
+  streetcar: >-
+    A rattling green streetcar with CANAL displayed on its destination sign. It
+    sways and clangs its way down the neutral ground with the unhurried authority
+    of something that has been doing this longer than anyone can remember and
+    intends to continue until the heat death of the universe.
+  signs: >-
+    Neon signs line Canal Street in gaudy profusion. Jax Beer. Werlein's Music.
+    Maison Blanche. Each one buzzing and flickering, turning the sidewalk into a
+    carnival of colored light even in daylight. At night they must be magnificent
+    and slightly terrifying.
+  neutral: >-
+    The wide median strip that New Orleanians call the neutral ground, with
+    ancient live oaks and iron benches where old men sit in judgment of the
+    passing world. The term dates to the early 1800s, when the median on Canal
+    Street was the boundary between the French and American sectors of the city.
+    Neutral territory. The oaks have outlived everyone who planted them.
+spawninfo:
+- mobid: 203
+  message: 'A patrolman in a ridiculous costume attempts to look inconspicuous, which is impossible.'
+  container: ''
+idlemessages:
+- A streetcar clangs its bell twice and rumbles past, swaying on the rails like a drunk trying to walk a straight line.
+- 'A patrolman in what appears to be a matador outfit sidles along the storefronts, trying to arrest someone suspicious and finding only himself.'
+- Two nuns pass by, their habits fluttering in the hot breeze from a storm drain.
+- 'A man selling pralines from a cart calls out his prices in a musical baritone that could sell anything to anyone.'
+- 'The neon signs buzz and flicker, advertising pleasures both refined and otherwise.'
+- An old man on a neutral ground bench shakes his head slowly at the state of the world.

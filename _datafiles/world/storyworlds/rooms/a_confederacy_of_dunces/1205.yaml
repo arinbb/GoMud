@@ -1,0 +1,47 @@
+roomid: 1205
+zone: A Confederacy of Dunces
+title: Bourbon Street
+description: >-
+  The famous street, but in the 1960s -- seedier, less touristy, more dangerous
+  and more real than it will ever be again. Strip clubs with blinking
+  <ansi fg="itemname">neon</ansi> signs compete with jazz joints and oyster
+  bars for attention. The <ansi fg="itemname">gutter</ansi> runs with last
+  night's excess and this morning's regrets. It smells of bourbon and oyster
+  shells and jasmine, a combination that should be terrible but somehow works,
+  like the city itself. The doorways of <ansi fg="itemname">clubs</ansi> pulse
+  with music and colored light. Every third person is a musician, every fifth
+  person is a tourist, and everyone else is working an angle. <ansi fg="exit">North</ansi>
+  leads back to the French Quarter. <ansi fg="exit">East</ansi> leads to a
+  lavish apartment where someone is throwing a party.
+mapsymbol: B
+maplegend: Bourbon Street
+biome: city
+exits:
+  north:
+    roomid: 1202
+  east:
+    roomid: 1206
+nouns:
+  neon: >-
+    Flickering neon signs advertising acts and drinks that would make Ignatius
+    clutch his pyloric valve in horror. GIRLS GIRLS GIRLS blinks in pink. A
+    cocktail glass tips and fills in green. The signs never stop, never sleep,
+    and never tell the whole truth about what waits inside.
+  gutter: >-
+    Running with rainwater, spilled drinks, oyster liquor, and the general
+    effluvia of a street that never sleeps and never cleans up after itself.
+    The gutter is an honest historian. It records everything the street would
+    rather forget.
+  clubs: >-
+    The doorways of strip clubs and jazz bars, each one promising something
+    the next one cannot deliver. Barkers call out from doorways. Music leaks
+    from every entrance -- jazz here, rhythm and blues there, something
+    unidentifiable but enthusiastic from further down the block. The doors
+    are always open. The doors are never really open.
+idlemessages:
+- A barker calls out from a doorway, promising the time of your life for the price of a cover charge.
+- 'Jazz spills from an open door, a saxophone solo that sounds like it knows things about you.'
+- The gutter glistens in the neon light, a river of small indiscretions flowing toward the storm drain.
+- 'A tourist couple consults a map, already lost, already having a better time than they planned.'
+- 'The smell of oysters on ice drifts from a bar, mixing with bourbon and the jasmine that grows on every balcony in the Quarter.'
+- A stray cat picks its way along the gutter with the fastidious disdain of a creature that has standards.

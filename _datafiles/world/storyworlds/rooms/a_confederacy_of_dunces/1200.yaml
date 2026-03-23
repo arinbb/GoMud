@@ -1,0 +1,51 @@
+roomid: 1200
+zone: A Confederacy of Dunces
+title: Outside D.H. Holmes
+description: >-
+  You stand beneath the ornate clock of <ansi fg="itemname">D.H. Holmes</ansi>
+  department store on Canal Street, the grandest boulevard in New Orleans. The
+  year is somewhere in the early 1960s. The air is thick enough to chew, heavy
+  with humidity and the smell of <ansi fg="itemname">Lucky Dogs</ansi> and
+  chicory coffee. A large man in a <ansi fg="itemname">green hunting cap</ansi>
+  with earflaps stands nearby, consulting a Big Chief tablet and radiating
+  contempt for the modern world. Shoe-shine boys work the sidewalk. Streetcars
+  rattle past on iron rails. The department store windows display fashions that
+  were current at least two decades ago and are now displayed with a confidence
+  that borders on defiance. To the <ansi fg="exit">east</ansi>, Canal Street
+  continues toward the French Quarter. To the <ansi fg="exit">south</ansi>,
+  a residential street leads to the neighborhoods of Uptown.
+mapsymbol: H
+maplegend: D.H. Holmes
+biome: city
+exits:
+  east:
+    roomid: 1201
+  south:
+    roomid: 1204
+nouns:
+  clock: >-
+    The D.H. Holmes clock, a grand timepiece mounted above the entrance to the
+    department store. It has been a meeting place for New Orleanians for decades.
+    In the future, a bronze statue of a large man in a hunting cap will stand
+    here, but that is a long way off and a sad story.
+  cap: >-
+    A green hunting cap with earflaps. It is the most recognizable hat in
+    American literature. The earflaps are down despite the heat, giving its
+    wearer the appearance of a large, irritable bloodhound who has read too
+    much Boethius.
+  store: >-
+    D.H. Holmes, the grand Canal Street department store. Its display windows
+    show the latest fashions from at least two decades ago, arranged with the
+    serene confidence of people who believe that style, like geometry, is eternal.
+    The store will close in 1989. Everything closes eventually.
+spawninfo:
+- mobid: 201
+  message: 'A large man in a green hunting cap glares at the passing crowd with magnificent disdain.'
+  container: ''
+idlemessages:
+- A shoe-shine boy works the sidewalk, his rag snapping rhythmically against leather.
+- 'The large man in the green hunting cap consults his Big Chief tablet, mutters something about Fortuna, and adjusts his earflaps.'
+- A Lucky Dog vendor pushes his cart past, the smell of processed meat trailing behind him like a guilty conscience.
+- 'The D.H. Holmes clock ticks steadily overhead, marking time in a city that has never been in any particular hurry.'
+- 'A woman in a floral dress emerges from the department store carrying hat boxes, her heels clicking sharply on the sidewalk.'
+- The air shimmers above the pavement. Everything looks slightly unreal in the heat haze.

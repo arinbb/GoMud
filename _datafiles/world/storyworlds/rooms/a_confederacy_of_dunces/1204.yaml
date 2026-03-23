@@ -1,0 +1,62 @@
+roomid: 1204
+zone: A Confederacy of Dunces
+title: Ignatius's House
+description: >-
+  A decrepit shotgun house in Uptown New Orleans, Constantinople Street. The
+  living room is dominated by an enormous sagging <ansi fg="itemname">bed</ansi>
+  that Ignatius rarely leaves, surrounded by teetering stacks of
+  <ansi fg="itemname">Big Chief tablets</ansi> covered in dense handwriting. The
+  blue glow of a small <ansi fg="itemname">television</ansi> illuminates a
+  landscape of empty <ansi fg="itemname">Dr. Nut bottles</ansi> and cake
+  wrappers that cover every flat surface. A medical <ansi fg="itemname">chart</ansi>
+  showing the human digestive system is pinned to the wall, the pyloric valve
+  circled in red ink. The house smells of mothballs, stale cake, and the faint
+  chemical sweetness of Dr. Nut soda. Everything sags -- the bed, the floor, the
+  ceiling, the prospects of everyone who lives here. The only exit leads
+  <ansi fg="exit">north</ansi> back to Canal Street.
+mapsymbol: I
+maplegend: Ignatius's House
+biome: house
+exits:
+  north:
+    roomid: 1200
+nouns:
+  bed: >-
+    An enormous sagging bed that occupies most of the room, its mattress dented
+    into a permanent crater by years of Ignatius's considerable weight. The
+    sheets are twisted into geological formations. Several Big Chief tablets and
+    a box of animal crackers are half-buried in the bedding.
+  tablets: >-
+    Big Chief writing tablets stacked everywhere, filled with dense, cramped
+    handwriting. This is Ignatius's masterwork -- his journal, his manifesto,
+    his vindication. Thousands of pages denouncing modern civilization, invoking
+    Boethius, lamenting the decline of theology and geometry, and complaining
+    about his pyloric valve. It is brilliant and insane in equal measure.
+  bottles: >-
+    Empty Dr. Nut soda bottles covering every flat surface. Dr. Nut was a real
+    New Orleans soft drink, produced from 1934 until the mid-1970s. It tasted
+    of vanilla and almonds and was Ignatius's beverage of choice. You cannot
+    buy it anymore. Some losses are small but real.
+  tv: >-
+    A small television showing a program that Ignatius is watching only to
+    confirm his hatred of modern entertainment. The picture rolls occasionally.
+    The antenna is wrapped in aluminum foil. Ignatius considers television a
+    symptom of civilization's decline, which does not stop him from watching it
+    constantly.
+  chart: >-
+    A medical chart showing the human digestive system, with the pyloric valve
+    circled emphatically in red ink. A handwritten note beside it reads DO NOT
+    AGITATE in letters large enough to read from across the room. The pyloric
+    valve is Ignatius's barometer of the world's offenses against him. When the
+    world misbehaves, the valve closes. The valve closes often.
+spawninfo:
+- mobid: 202
+  message: 'A small, worried woman fusses with the curtains and mutters about what the neighbors must think.'
+  container: ''
+idlemessages:
+- 'The television emits a tinny laugh track. Somewhere in the house, a valve closes in protest.'
+- 'A Dr. Nut bottle rolls off a stack of tablets and clinks against three other bottles on the floor.'
+- 'The bed creaks ominously under the weight of its absent occupant''s legacy.'
+- 'A page of Big Chief tablet paper, covered in cramped handwriting about the decline of Western civilization, drifts to the floor.'
+- 'The smell of mothballs and stale cake asserts itself, the signature perfume of intellectual stagnation.'
+- 'From somewhere in the house comes the sound of a woman sighing with the practiced despair of decades.'

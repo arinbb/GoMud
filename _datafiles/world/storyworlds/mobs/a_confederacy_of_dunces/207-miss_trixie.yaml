@@ -1,0 +1,23 @@
+mobid: 207
+zone: a_confederacy_of_dunces
+hostile: false
+maxwander: 2
+activitylevel: 10
+angrycommands: []
+idlecommands:
+  - say Is it Easter? I want my ham.
+  - emote shuffles past, her bedroom slippers flapping.
+  - emote falls asleep standing up, then jerks awake.
+  - ''
+  - ''
+  - ''
+  - ''
+character:
+  name: Miss Trixie
+  description: >-
+    An ancient woman in a lab coat and green eyeshade visor, shuffling through
+    the streets in bedroom slippers. She is a senior employee at Levy Pants who
+    should have retired decades ago. She is not entirely sure where she is or
+    what year it is. She wants a ham. She has always wanted a ham.
+  raceid: 1
+  level: 3

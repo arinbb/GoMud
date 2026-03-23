@@ -1,0 +1,14 @@
+itemid: 121
+name: A Confederacy of Dunces
+namesimple: book
+displayname: a yellowed paperback titled <ansi fg="itemname">A Confederacy of Dunces</ansi>
+description: >-
+  A well-worn paperback with a cartoon of a large man in a green hunting cap on
+  the cover. The spine is cracked, the pages yellowed. A Pulitzer Prize medal
+  is embossed on the front. A note on the back says the author died before
+  seeing his work published — his mother spent eleven years getting this book
+  into print. It won the Pulitzer in 1981. He never knew.
+type: object
+subtype: usable
+uses: 0
+value: 0

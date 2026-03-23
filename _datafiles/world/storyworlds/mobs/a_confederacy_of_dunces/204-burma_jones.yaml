@@ -1,0 +1,22 @@
+mobid: 204
+zone: a_confederacy_of_dunces
+hostile: false
+maxwander: 0
+activitylevel: 20
+angrycommands: []
+idlecommands:
+  - emote blows a cloud of smoke that hangs in the humid air.
+  - say Woah! I'm really workin hard here. Sweepin and moppin and all.
+  - emote leans on his broom and watches the world with flat eyes.
+  - ''
+  - ''
+character:
+  name: Burma Jones
+  description: >-
+    A tall, thin Black man wearing dark sunglasses and a cloud of cigarette
+    smoke. He works as a porter at the Night of Joy for twenty dollars a week —
+    if he quits, he gets arrested for vagrancy. He sees everything, says what he
+    thinks in a steady stream of deadpan commentary, and is smarter than
+    everyone around him combined.
+  raceid: 1
+  level: 10

@@ -1,0 +1,57 @@
+roomid: 1202
+zone: A Confederacy of Dunces
+title: The French Quarter
+description: >-
+  The streets narrow and the buildings crowd in close, iron-lace
+  <ansi fg="itemname">balconies</ansi> dripping with ferns and flower boxes
+  overhead. The smell of beignets and powdered sugar drifts from the direction
+  of Cafe Du Monde on thick, humid air that seems to have weight and texture.
+  Street <ansi fg="itemname">musicians</ansi> play jazz on the corner -- trumpet,
+  clarinet, upright bass -- something slow and mournful and perfect. A Paradise
+  Vendors hot dog <ansi fg="itemname">cart</ansi> shaped like a giant wiener on
+  wheels is parked at the curb, its umbrella faded and stained with mustard. The
+  architecture is beautiful and crumbling in equal measure, every surface showing
+  the slow patient work of humidity on plaster and wood. <ansi fg="exit">West</ansi>
+  returns to Canal Street. <ansi fg="exit">South</ansi> leads deeper into the
+  Quarter toward Bourbon Street. <ansi fg="exit">East</ansi> leads toward the
+  Night of Joy bar.
+mapsymbol: Q
+maplegend: French Quarter
+biome: city
+exits:
+  west:
+    roomid: 1201
+  south:
+    roomid: 1205
+  east:
+    roomid: 1203
+nouns:
+  balconies: >-
+    Wrought-iron balconies draped with ferns and flower boxes, laundry hanging
+    between them on lines strung from railing to railing. The ironwork is
+    intricate and old, each balcony a slightly different pattern of curves and
+    flourishes. Some of the ferns are so large they seem to be attempting an
+    escape.
+  cart: >-
+    A Paradise Vendors hot dog cart shaped like a giant wiener on wheels. The
+    umbrella reads PARADISE HOT DOGS in faded lettering. This is a thinly
+    disguised version of the real Lucky Dogs brand, whose carts have been a
+    French Quarter institution since 1948. Ignatius J. Reilly was condemned to
+    work one of these. He ate more inventory than he sold.
+  musicians: >-
+    A trio of jazz musicians on the corner. Trumpet, clarinet, upright bass.
+    They are playing something slow and blue, the notes hanging in the humid
+    air like smoke. The trumpet player has his eyes closed. The bass player
+    taps his foot. The clarinetist watches the crowd with the calm appraisal
+    of a man who has seen everything and found most of it amusing.
+spawninfo:
+- mobid: 207
+  message: 'An ancient woman in a crumpled hat wanders past, looking confused and determined in equal measure.'
+  container: ''
+idlemessages:
+- The jazz trio shifts into a new tune, the trumpet climbing high and clear above the humid street noise.
+- 'A horse-drawn carriage clatters past, the driver narrating history that is approximately forty percent accurate.'
+- The smell of beignets from Cafe Du Monde intensifies, a sugary cloud of powdered temptation.
+- 'Someone on a balcony overhead waters their ferns, and a fine mist drifts down like warm rain.'
+- A cat stretches on a windowsill and regards you with the supreme indifference that only a French Quarter cat can achieve.
+- 'The hot dog cart gleams dully in the sun, a monument to processed meat and questionable life choices.'

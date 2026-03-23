@@ -1,0 +1,54 @@
+roomid: 1207
+zone: A Confederacy of Dunces
+title: Lucky Dog Cart
+description: >-
+  A street corner in the French Quarter where a Paradise Vendors hot dog
+  <ansi fg="itemname">cart</ansi> sits in the merciless sun. The cart is shaped
+  like a giant hot dog on wheels, its faded <ansi fg="itemname">umbrella</ansi>
+  reading PARADISE HOT DOGS. <ansi fg="itemname">Hot dogs</ansi> of questionable
+  provenance turn slowly on the roller grill, glistening with grease. A small
+  cash <ansi fg="itemname">register</ansi> sits on the counter showing more
+  money going out than coming in, because the vendor -- when he is here -- eats
+  more inventory than he sells. The cart is sticky with mustard and condensation.
+  It smells of processed meat and regret. <ansi fg="exit">East</ansi> leads
+  toward the Levy Pants office. <ansi fg="exit">West</ansi> leads back to the
+  French Quarter.
+mapsymbol: L
+maplegend: Lucky Dog Cart
+biome: city
+exits:
+  east:
+    roomid: 1208
+  west:
+    roomid: 1202
+nouns:
+  cart: >-
+    The Paradise Vendors cart, shaped like an enormous hot dog on wheels. Its
+    paint is peeling, its wheels are slightly crooked, and it radiates the smell
+    of processed meat in a five-foot radius. This is a thinly disguised version
+    of the real Lucky Dogs brand. Ignatius considered his employment here a
+    cosmic injustice. The hot dogs considered his employment an existential
+    threat to inventory.
+  dogs: >-
+    Hot dogs of questionable provenance turning slowly on the roller grill,
+    glistening with grease under the New Orleans sun. They have been turning
+    for an indeterminate amount of time. Some may have achieved a kind of
+    immortality. They are available with mustard, relish, and onions. The
+    mustard is the safest bet.
+  umbrella: >-
+    A faded umbrella shading the cart, its fabric stained with mustard, ketchup,
+    and what might be rain or might be condensation from the sheer humidity. The
+    letters PARADISE HOT DOGS are barely legible. Paradise, it turns out, is a
+    relative concept.
+  register: >-
+    A small cash register showing a dispiriting tally. The daily ledger reveals
+    that more hot dogs are consumed by the vendor than purchased by customers.
+    This is not a viable business model. It is, however, an accurate portrait
+    of Ignatius J. Reilly's work ethic.
+idlemessages:
+- A hot dog turns slowly on the grill, achieving a deeper shade of brown that suggests transformation rather than cooking.
+- 'The mustard bottle drips onto the counter, adding another layer to the geological record of condiment stains.'
+- A tourist approaches the cart, considers the hot dogs, considers the heat, and walks away.
+- 'The cart''s wheels creak slightly in the breeze, as if contemplating an escape.'
+- 'The smell of processed meat drifts down the block, attracting flies and repelling gourmets in equal measure.'
+- 'A pigeon lands on the umbrella, surveys the hot dogs below, and decides it has standards.'

@@ -1,0 +1,21 @@
+mobid: 206
+zone: a_confederacy_of_dunces
+hostile: false
+maxwander: 0
+activitylevel: 20
+angrycommands: []
+idlecommands:
+  - say Ignatius, your worldview is a SYMPTOM!
+  - emote waves a protest sign with passionate conviction.
+  - say You need to engage with the world, not hide from it!
+  - ''
+  - ''
+character:
+  name: Myrna Minkoff
+  description: >-
+    A wild-haired young woman from New York City with strong opinions about
+    everything. She wears a folk-singer outfit and carries protest signs. She is
+    Ignatius's nemesis, pen pal, and potential salvation. She believes his
+    problems are all sexual in nature. She is probably right about some things.
+  raceid: 1
+  level: 8

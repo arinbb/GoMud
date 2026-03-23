@@ -1,0 +1,22 @@
+mobid: 202
+zone: a_confederacy_of_dunces
+hostile: false
+maxwander: 0
+activitylevel: 20
+angrycommands: []
+idlecommands:
+  - say Ignatius! Get off that bed!
+  - emote takes a sip of muscatel and sighs.
+  - say What I done to deserve this, Lord?
+  - ''
+  - ''
+character:
+  name: Irene Reilly
+  description: >-
+    A small, worn-out woman in a housedress and slippers, her grey hair in
+    curlers. She has the exhausted expression of someone who has been cleaning
+    up after a natural disaster for thirty years. She clutches a bottle of
+    muscatel in one hand and a rosary in the other. She loves her son but lord
+    above, she is tired.
+  raceid: 1
+  level: 5

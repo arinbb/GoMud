@@ -1,0 +1,21 @@
+mobid: 205
+zone: a_confederacy_of_dunces
+hostile: false
+maxwander: 0
+activitylevel: 15
+angrycommands: []
+idlecommands:
+  - emote counts money behind the bar with practiced fingers.
+  - say You buying a drink or just taking up space?
+  - emote glares at Burma Jones sweeping.
+  - ''
+  - ''
+character:
+  name: Lana Lee
+  description: >-
+    A hard-faced woman with bleached blonde hair, too much makeup, and the cold
+    eyes of someone who has been running hustles since before you were born. She
+    owns the Night of Joy bar and runs various schemes from the back booth. She
+    is cruel to her employees and suspicious of everyone.
+  raceid: 1
+  level: 12

@@ -1,0 +1,25 @@
+mobid: 201
+zone: a_confederacy_of_dunces
+hostile: false
+maxwander: 1
+activitylevel: 30
+angrycommands: []
+idlecommands:
+  - say My valve! My valve is closing!
+  - emote scribbles furiously in his Big Chief tablet.
+  - say I refuse to 'look up.' Optimism nauseates me.
+  - say When a true genius appears, you may know him by this sign, that the dunces are all in confederacy against him.
+  - ''
+  - emote belches magnificently.
+character:
+  name: Ignatius J. Reilly
+  description: >-
+    An enormous man — well over six feet and immensely fat — wearing a green
+    hunting cap with earflaps, a flannel shirt straining at its buttons, baggy
+    tweed trousers, and scuffed desert boots. He carries a plastic cutlass from
+    a costume shop and a Big Chief tablet. His moustache is unkempt, his eyes
+    bulge with outrage at the modern world, and his pyloric valve is in a
+    constant state of agitation. He is the most magnificent failure in American
+    literature.
+  raceid: 1
+  level: 15

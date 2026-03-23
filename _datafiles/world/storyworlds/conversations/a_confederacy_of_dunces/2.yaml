@@ -1,0 +1,21 @@
+-
+  Supported:
+    "burma jones": ["*"]
+  Conversation:
+    - ["#1 emote leans on his broom and surveys the room through a cloud of cigarette smoke."]
+    - ["#1 say Woah. Look at all these people in here. And me sweepin around them like I'm invisible."]
+    - ["#1 emote blows a smoke ring that drifts lazily across the room."]
+    - ["#1 say Twenty dollar a week. That's what my time worth, apparently. Less than a dollar a day to be a human being."]
+    - ["#1 emote pushes his broom in a slow, deliberately unhurried circle."]
+    - ["#1 say But hey, I ain't complaining. Complaining cost extra and I can't afford that neither."]
+-
+  Supported:
+    "burma jones": ["lana lee"]
+  Conversation:
+    - ["#1 emote slowly pushes his broom past the bar, leaving a trail of cigarette smoke."]
+    - ["#2 say Jones! You been sweeping that same spot for an hour!"]
+    - ["#1 say Woah! I'm workin real hard here, Miss Lee. You ain't payin me enough to sweep FAST."]
+    - ["#2 emote slams her hand on the bar", "#2 say I'm paying you to WORK, not to stand around smoking!"]
+    - ["#1 emote blows a cloud of smoke that drifts directly toward Lana", "#1 say Yes ma'am. I'm sweepin. See? Sweepin and moppin and all."]
+    - ["#2 say You're lucky I don't fire you right now!"]
+    - ["#1 emote pushes his broom with elaborate slowness", "#1 say Yes ma'am. Real lucky. That's me. Lucky."]

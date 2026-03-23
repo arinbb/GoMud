@@ -1,0 +1,13 @@
+name: A Confederacy of Dunces
+roomid: 1200
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: city
+idlemessages:
+- The heat rises from the pavement in visible waves, thick as gravy, carrying the smell of frying oysters and spilled beer.
+- 'Somewhere nearby, a trumpet moans a slow blues line that curls through the humid air like cigarette smoke.'
+- The humidity wraps around you like a warm wet towel that someone refuses to take back.
+- 'A streetcar rattles past on iron rails, its bell clanging twice: a sound as old as the city itself.'
+- The smell of chicory coffee and powdered sugar drifts from somewhere nearby, mingling with diesel exhaust and the river.
+- 'New Orleans in the 1960s: a city that runs on jazz, bourbon, and the absolute certainty that tomorrow will take care of itself.'

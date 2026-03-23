@@ -1,0 +1,57 @@
+roomid: 1208
+zone: A Confederacy of Dunces
+title: Levy Pants Office
+description: >-
+  A dismal office in a dismal factory. <ansi fg="itemname">Filing cabinets</ansi>
+  stuffed to bursting line the walls, their drawers refusing to close completely.
+  An ancient manual <ansi fg="itemname">typewriter</ansi> sits on a battered
+  <ansi fg="itemname">desk</ansi>, surrounded by aspirin bottles and unfinished
+  paperwork. Flickering fluorescent lights cast everything in a greenish pallor
+  that makes healthy people look sick and sick people look deceased. A
+  <ansi fg="itemname">memo</ansi> pinned to the wall announces the CRUSADE FOR
+  MOORISH DIGNITY in handwriting that could only belong to someone who considers
+  himself a medieval genius trapped in a modern wasteland. Mr. Gonzalez the
+  office manager is doing his best. His best is not enough.
+  <ansi fg="exit">West</ansi> leads back to the Lucky Dog cart.
+  <ansi fg="exit">East</ansi> leads to the factory floor.
+mapsymbol: O
+maplegend: Levy Pants Office
+biome: house
+exits:
+  west:
+    roomid: 1207
+  east:
+    roomid: 1209
+nouns:
+  cabinets: >-
+    Filing cabinets crammed with decades of unfiled paperwork, invoices, orders,
+    complaints, and documents whose purpose has been forgotten by everyone alive.
+    During his brief tenure, Ignatius discarded most of the contents into the
+    trash, arguing that the filing system was an affront to both theology and
+    geometry. He was not entirely wrong.
+  typewriter: >-
+    An ancient manual typewriter on which Ignatius composed his inflammatory
+    memos to the factory workers. The keys are sticky. The ribbon is nearly
+    spent. Several keys produce letters that are slightly higher than the
+    others, giving everything typed on it the appearance of a ransom note
+    written by someone with strong opinions about Boethius.
+  desk: >-
+    Mr. Gonzalez's desk, covered in aspirin bottles, unfinished paperwork, and
+    the accumulated stress of managing an office where the newest employee has
+    declared himself the spiritual leader of a revolution. The aspirin bottles
+    are mostly empty. The paperwork is mostly unfinished. The stress is entirely
+    justified.
+  memo: >-
+    A memo pinned to the wall in Ignatius's unmistakable handwriting, announcing
+    the CRUSADE FOR MOORISH DIGNITY. It calls upon the workers of Levy Pants to
+    rise up against their oppressors in the name of theology, geometry, and good
+    taste. It is simultaneously a brilliant satire of radical politics and a
+    sincere expression of Ignatius's delusions of grandeur. The workers found
+    it confusing. They were right to.
+idlemessages:
+- 'A fluorescent light flickers overhead, casting the office in alternating shades of despair and slightly worse despair.'
+- 'A filing cabinet drawer slides open an inch of its own accord, pushed by the sheer pressure of unfiled paperwork within.'
+- 'The typewriter sits in accusatory silence, still bearing the last memo Ignatius hammered out on its worn keys.'
+- 'An aspirin bottle rolls off the desk and onto the floor, where it joins several of its fellows.'
+- 'The phone rings once, thinks better of it, and stops.'
+- 'A cockroach emerges from behind a filing cabinet, surveys the office, and retreats -- even it has limits.'

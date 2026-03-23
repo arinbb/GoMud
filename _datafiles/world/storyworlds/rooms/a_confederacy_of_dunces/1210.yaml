@@ -1,0 +1,53 @@
+roomid: 1210
+zone: A Confederacy of Dunces
+title: Prytania Theater
+description: >-
+  A grand old movie palace from a grander era, with velvet <ansi fg="itemname">seats</ansi>
+  worn thin by decades of moviegoers and a gilded proscenium arch that frames
+  the massive <ansi fg="itemname">screen</ansi> like a religious icon. The
+  <ansi fg="itemname">marquee</ansi> outside advertises films that Ignatius
+  considers personal insults to theology, geometry, and good taste. The theater
+  is dark and cool, a blessed relief from the heat outside. A half-eaten box
+  of <ansi fg="itemname">jujubes</ansi> sits wedged into an armrest, left by
+  someone who was here recently and may return to shout abuse at the screen.
+  The air smells of popcorn and the particular mustiness of velvet that has
+  absorbed decades of cigarette smoke and human drama. The exit leads
+  <ansi fg="exit">south</ansi> back to Canal Street.
+mapsymbol: T
+maplegend: Prytania Theater
+biome: house
+exits:
+  south:
+    roomid: 1201
+nouns:
+  screen: >-
+    A massive screen showing a film that would make Ignatius apoplectic. Too
+    much romance, not enough Boethius. The colors are slightly oversaturated
+    in the way of 1960s Technicolor, giving everything an unreal glow. The
+    actors are beautiful and terrible in equal measure. Ignatius would have
+    opinions about every frame. Ignatius has opinions about every frame.
+  seats: >-
+    Velvet seats worn thin by decades of moviegoers, their springs protesting
+    softly when sat upon. One seat, three rows from the back on the aisle, is
+    significantly more depressed than the others, its velvet compressed into a
+    permanent crater. It smells faintly of Dr. Nut and mustard. Its regular
+    occupant is unmistakable.
+  marquee: >-
+    The marquee outside advertises films that Ignatius considers personal
+    affronts. He comes to the Prytania not for entertainment but for
+    ammunition. Every film is evidence of civilization's decline. Every actor
+    is proof that standards have fallen. He shouts his critiques at the screen
+    in real time, providing an alternative commentary track that the other
+    patrons did not request and do not appreciate.
+  jujubes: >-
+    A half-eaten box of jujubes wedged into the armrest of the most depressed
+    seat in the theater. The candies are slightly sticky. They were abandoned
+    mid-consumption, suggesting their owner left in either outrage or haste.
+    Given the owner, outrage is the safer bet.
+idlemessages:
+- 'The projector whirs and clicks, casting flickering light across the gilded ceiling.'
+- 'A dramatic swell of orchestral music rises from the speakers, accompanying a scene that Ignatius would consider an affront to Western civilization.'
+- 'Someone in the back row opens a candy wrapper with agonizing slowness, the crinkling sound filling the theater.'
+- 'The screen flickers for a moment, and the actors freeze in poses of exaggerated emotion before the film resumes.'
+- 'A seat spring creaks as someone shifts position, trying to find comfort in furniture that has forgotten how to provide it.'
+- 'The smell of popcorn drifts from the lobby, buttery and warm and completely at odds with the artistic suffering on screen.'

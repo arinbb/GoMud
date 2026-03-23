@@ -1,0 +1,22 @@
+-
+  Supported:
+    "irene reilly": ["ignatius j. reilly"]
+  Conversation:
+    - ["#1 say Ignatius! You gotta get a JOB! We owe money on the building!"]
+    - ["#2 emote clutches his stomach dramatically", "#2 say My VALVE! You are CLOSING my valve with this incessant nagging about employment!"]
+    - ["#1 say Don't you give me that valve business! Every time I ask you to DO something, it's always the valve!"]
+    - ["#2 say I am a THINKER, Mother! Boethius himself was imprisoned and STILL he wrote the Consolation of Philosophy!"]
+    - ["#1 emote takes a sip of muscatel", "#1 say Boethius didn't owe money on no building, Ignatius!"]
+    - ["#2 say You are comparing my INTELLECTUAL LIFE to a MORTGAGE? The dunces are truly in confederacy against me!"]
+    - ["#1 say Lord, what I done to deserve this?", "#1 emote crosses herself and takes another sip of muscatel."]
+-
+  Supported:
+    "irene reilly": ["ignatius j. reilly"]
+  Conversation:
+    - ["#1 say Santa says I ought to put you out the house, Ignatius."]
+    - ["#2 emote turns purple with outrage", "#2 say That WOMAN! That meddling termagant! She knows NOTHING of the life of the mind!"]
+    - ["#1 say She says a grown man ought to be able to feed himself."]
+    - ["#2 say I FEED myself perfectly well! I consume QUANTITIES of food! It is one of my few consolations!"]
+    - ["#1 emote sighs deeply", "#1 say That ain't what she meant and you know it."]
+    - ["#2 say Mother, I am on the verge of a BREAKTHROUGH. My journal alone will justify my existence to posterity."]
+    - ["#1 say Posterity ain't paying the gas bill, Ignatius.", "#1 emote shuffles away to refill her muscatel."]

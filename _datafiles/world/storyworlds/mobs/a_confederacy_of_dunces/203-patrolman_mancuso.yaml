@@ -1,0 +1,21 @@
+mobid: 203
+zone: a_confederacy_of_dunces
+hostile: false
+maxwander: 2
+activitylevel: 20
+angrycommands: []
+idlecommands:
+  - emote sneezes into a handkerchief.
+  - say I need to find a suspicious character...
+  - emote adjusts his ridiculous cowboy hat.
+  - ''
+  - ''
+character:
+  name: Patrolman Mancuso
+  description: >-
+    A small, defeated policeman in an absurd disguise — today it appears to be a
+    cowboy outfit with a badge pinned to the vest. His sergeant has banished him
+    to patrol in ridiculous costumes until he arrests an actual suspicious
+    character. He has not yet succeeded. He has a perpetual cold.
+  raceid: 1
+  level: 8

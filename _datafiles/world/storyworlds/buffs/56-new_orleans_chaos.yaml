@@ -1,0 +1,9 @@
+buffid: 56
+name: New Orleans Chaos
+description: The humid chaos of 1960s New Orleans sharpens your awareness. You notice every detail, every absurdity.
+secret: false
+triggerrate: 10 real minutes
+triggercount: 1
+flags:
+  - see-nouns
+  - see-hidden

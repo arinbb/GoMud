@@ -1,0 +1,48 @@
+roomid: 1211
+zone: A Confederacy of Dunces
+title: Bus Station Restroom
+description: >-
+  The Greyhound bus station restroom, where Patrolman Mancuso has been sentenced
+  to lurk in <ansi fg="itemname">disguise</ansi>, hoping to arrest suspicious
+  characters. The cracked white <ansi fg="itemname">tiles</ansi> are missing in
+  patches, the grout a shade of grey that suggests decades of inadequate
+  cleaning. A fluorescent light buzzes overhead with the persistence of a fly
+  that will not be swatted. A scratched <ansi fg="itemname">mirror</ansi> above
+  the sinks reflects the face of anyone unfortunate enough to be here, which at
+  the moment is you. It smells of industrial cleaner and despair, two scents
+  that have achieved a permanent symbiosis in this room. This is where ambition
+  comes to die, one ridiculous costume at a time. The exit leads
+  <ansi fg="exit">west</ansi> back to Canal Street.
+mapsymbol: R
+maplegend: Bus Station
+biome: house
+exits:
+  west:
+    roomid: 1201
+nouns:
+  tiles: >-
+    Cracked white tiles, some missing entirely, the grout between them a shade
+    of grey that tells the story of decades of inadequate cleaning budgets and
+    an institutional indifference to aesthetics that borders on philosophy. Where
+    tiles are missing, bare concrete shows through like bones through skin.
+  mirror: >-
+    A scratched mirror above the sinks, reflecting a distorted version of
+    whoever stands before it. The scratches create a web of lines across its
+    surface that makes everyone look older and more defeated than they are. For
+    Patrolman Mancuso, who spends hours here in ridiculous costumes, the mirror
+    is an honest but unkind companion.
+  disguise: >-
+    A pile of ridiculous costumes in the corner -- a matador outfit complete
+    with cape, a sailor suit several sizes too small, a Bozo the Clown wig in
+    alarming orange, a cowboy hat with rhinestones. These are the tools of
+    Patrolman Mancuso's humiliation, assigned to him by his sergeant as
+    punishment for failing to arrest Ignatius. He must wear them while lurking
+    here, hoping to arrest a suspicious character. The suspicious characters
+    avoid this restroom. Everyone avoids this restroom.
+idlemessages:
+- 'The fluorescent light buzzes and flickers, casting the restroom in alternating light and shadow.'
+- 'A faucet drips with metronomic precision, counting the seconds of a shift that will never end.'
+- 'The door swings open and someone enters, sees the restroom, reconsiders their needs, and leaves.'
+- 'A tile falls from the wall and shatters on the floor with a small, defeated sound.'
+- 'The industrial cleaner smell intensifies briefly, as if the restroom is making one last effort at dignity.'
+- 'From somewhere beyond the door, a bus departure is announced to a city that will barely notice its leaving.'

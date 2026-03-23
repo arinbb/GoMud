@@ -1,0 +1,54 @@
+roomid: 1209
+zone: A Confederacy of Dunces
+title: Levy Pants Factory Floor
+description: >-
+  A cavernous, sweltering garment factory. Rows of ancient industrial sewing
+  <ansi fg="itemname">machines</ansi> clatter away, operated by
+  <ansi fg="itemname">workers</ansi> who have long since given up hope of fair
+  treatment or fashionable output. Bolts of cheap <ansi fg="itemname">fabric</ansi>
+  in colors that fashion forgot decades ago lean against every wall. The air is
+  thick with lint that drifts like snow in a world where snow would melt before
+  it landed. A hand-painted <ansi fg="itemname">banner</ansi> reading CRUSADE
+  FOR MOORISH DIGNITY hangs from the ceiling, slightly singed from an incident
+  that no one will discuss in detail. This is where Ignatius attempted his
+  revolution. The revolution did not go as planned. The only exit leads
+  <ansi fg="exit">west</ansi> back to the office.
+mapsymbol: F
+maplegend: Factory Floor
+biome: city
+exits:
+  west:
+    roomid: 1208
+nouns:
+  machines: >-
+    Rows of industrial sewing machines, some older than their operators,
+    clattering away producing pants that no one wants to buy at prices no one
+    can afford. The machines have a rhythm of their own, a mechanical heartbeat
+    that has been pounding in this factory for decades without producing
+    anything that could be called fashionable.
+  fabric: >-
+    Bolts of cheap fabric in colors that fashion forgot decades ago. Lime green.
+    Burnt sienna. A shade of purple that exists nowhere in nature and should not
+    exist in textiles. Levy Pants produces garments from these fabrics and ships
+    them to stores that display them with the quiet shame of establishments that
+    know better but cannot afford to.
+  workers: >-
+    Garment workers at their machines, sewing pants that will never be
+    fashionable, for wages that will never be fair, in a factory that will never
+    be comfortable. They work with the steady rhythm of people who have made
+    their peace with futility. When Ignatius tried to lead them in revolution,
+    they were briefly confused, then briefly hopeful, then briefly on fire.
+  banner: >-
+    A hand-painted banner reading CRUSADE FOR MOORISH DIGNITY in large,
+    enthusiastic letters. It was Ignatius's rallying cry for the factory
+    workers, a bizarre fusion of medieval philosophy and labor activism that
+    made sense to absolutely no one except Ignatius himself. The banner is
+    slightly singed. The crusade did not end well for anyone, least of all
+    the banner.
+idlemessages:
+- 'The sewing machines clatter in unison, a mechanical chorus producing pants that no one will remember wearing.'
+- A drift of lint floats through the air like snow in a place where nothing is cold or clean or quiet.
+- 'The CRUSADE FOR MOORISH DIGNITY banner sways gently in the draft from the ventilation system, a flag for a revolution that never quite happened.'
+- 'A worker pauses to wipe sweat from her forehead, glances at the banner, shakes her head, and returns to sewing.'
+- 'The smell of machine oil and cheap fabric mingles with sweat and the ghost of an ambition that burned too bright and too briefly.'
+- 'A bolt of lime-green fabric slides off its perch and unrolls slowly across the floor, like a surrender flag in an ugly color.'
