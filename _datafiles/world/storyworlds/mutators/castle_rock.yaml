@@ -1,0 +1,6 @@
+mutatorid: castle-rock
+namemodifier:
+  behavior: append
+  text: "(1959)"
+alertmodifier:
+  text: The air smells of pine and hot summer and something that is almost childhood but not quite anymore.

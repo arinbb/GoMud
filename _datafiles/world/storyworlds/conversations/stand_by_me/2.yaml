@@ -1,0 +1,24 @@
+-
+  Supported:
+    "teddy duchamp": ["vern tessio"]
+  Conversation:
+    - ["#1 say You know what your problem is, Vern? You're scared of everything."]
+    - ["#2 say I'm not scared of everything. I'm scared of reasonable things."]
+    - ["#1 say Name one thing you're not scared of."]
+    - ["#2 emote thinks very hard.", "#2 say Ice cream."]
+    - ["#1 emote stares at him.", "#1 say You're scared of ice cream?"]
+    - ["#2 say No, I said I'm NOT scared of ice cream. That's my answer. Ice cream.", "#2 emote appears satisfied with this."]
+    - ["#1 emote shakes his head slowly.", "#1 say I'm going to be in the army and you're going to be scared of ice cream your whole life."]
+    - ["#2 say The army is scary. Ice cream is not. I maintain my position."]
+-
+  Supported:
+    "teddy duchamp": ["vern tessio"]
+  Conversation:
+    - ["#1 say I'd rather die than be a girl."]
+    - ["#2 say What?"]
+    - ["#1 say I'd rather die. Just saying."]
+    - ["#2 say Nobody asked you to be a girl."]
+    - ["#1 say I know. I'm just saying if someone asked me."]
+    - ["#2 emote stares at him for a long moment.", "#2 say Nobody's going to ask you."]
+    - ["#1 say Good.", "#1 emote appears satisfied.", "#1 say That's settled then."]
+    - ["#2 say I don't understand how you work."]

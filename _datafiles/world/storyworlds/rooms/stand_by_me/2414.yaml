@@ -1,0 +1,45 @@
+roomid: 2414
+zone: Stand By Me
+title: The Road Home
+description: >-
+  A county road in late afternoon, <ansi fg="8">gravel</ansi> and dust, the
+  mountains in the distance, everything golden. The boys have called it in
+  from a gas station payphone and now they are walking home. They are not
+  the same boys who left. The <ansi fg="10">woods</ansi> are behind them.
+  Castle Rock is ahead. Everything that was ahead yesterday is now behind.
+  Nobody talks much. There is nothing wrong. There is just a lot to
+  carry, and they are carrying it, and the road goes home.
+mapsymbol: H
+maplegend: Road Home
+biome: road
+exits:
+  north:
+    roomid: 2413
+    exitmessage: You walk back north toward the confrontation.
+nouns:
+  road: >-
+    County gravel, two-lane, stretching north toward town. The dust
+    behind them settles slowly. The dust ahead of them has not yet
+    been raised. They walk in the late afternoon light that makes
+    everything look important and final.
+  mountains: >-
+    The Cascades, blue-grey in the distance, enormous and patient.
+    They were there before Castle Rock and they will be there after.
+    The boys have not thought about this before. They are thinking
+    about it now.
+  woods: >-
+    The forest they have come out of, already looking like a different
+    thing from out here, smaller, more like ordinary trees. Whatever
+    happened in there is already starting to become a story.
+  light: >-
+    The afternoon light that turns everything amber and gold and makes
+    even ordinary gravel roads look like the most significant place
+    in the world, which right now this one is.
+idlemessages:
+- The boys walk north in the late light, spread out, not talking.
+- The shadows are long. The summer is not over but something in it is.
+- Gordie walks with the baseball cap in his hand. He does not put it on.
+- Chris falls into step beside Gordie and they walk together, almost touching, not speaking.
+- The mountains are still there. They will always be there. This is somehow a comfort.
+- 'In twelve years Chris Chambers will be dead, stabbed trying to stop a fight in a fast food restaurant. He will have been kind his whole life, even when it cost him, even at the end. Gordie will write about him. It will not be enough. It will be something.'
+- The road goes home. The boys go with it. This is how it ends.

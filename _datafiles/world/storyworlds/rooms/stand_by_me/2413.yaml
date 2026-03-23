@@ -1,0 +1,48 @@
+roomid: 2413
+zone: Stand By Me
+title: Ace Merrill's Confrontation
+description: >-
+  The older boys have come in from the east: <ansi fg="mobname">Ace Merrill</ansi>
+  and his crew, older and larger and casually menacing, occupying the space
+  between the trees like they own it, which they believe they do. The
+  <ansi fg="itemname">switchblade</ansi> is already out, not doing anything,
+  just there. The body is behind the boys to the west. The four friends
+  stand together. This is the moment where you find out who you are,
+  or confirm what you already knew.
+mapsymbol: A
+maplegend: Confrontation
+biome: forest
+exits:
+  west:
+    roomid: 2412
+    exitmessage: You back up toward the body, away from Ace.
+nouns:
+  switchblade: >-
+    A switchblade knife, stainless, the blade six inches, held casually
+    at his side. Ace Merrill does not threaten with it. He does not have
+    to. Its presence makes the entire situation clear.
+  older: >-
+    Eyeball Chambers, Ace's regulars, slouching against the trees with
+    their arms crossed and their faces carefully neutral. They are
+    seventeen and eighteen and they have the confidence of people who
+    have never lost a fight they started. They are waiting to see if
+    this is going to be something.
+  trees: >-
+    The forest stands around the confrontation, indifferent. Trees do not
+    take sides. They have been here longer than Ace Merrill and they will
+    be here after. This is small and human and temporary. The trees know.
+idlemessages:
+- Ace Merrill turns the switchblade in his fingers without looking at it.
+- Eyeball Chambers watches his little brother Chris with a complicated expression.
+- The four boys have closed together. They are one thing, not four things.
+- 'Ace says, with the patience of someone who has already won: ''Walk away.'''
+- Chris holds Gordie back with one hand, not looking at him, eyes on Ace.
+- The trees make no sound. The flies are the only other thing here.
+- 'Gordie steps forward. This surprises everyone, including Gordie.'
+spawninfo:
+- mobid: 584
+  message: 'Ace Merrill steps out of the trees, switchblade open, a slow smile on his face.'
+  respawnrate: 4 real minutes
+- mobid: 585
+  message: 'Eyeball Chambers comes out behind Ace, hands in his jacket pockets, not smiling.'
+  respawnrate: 4 real minutes

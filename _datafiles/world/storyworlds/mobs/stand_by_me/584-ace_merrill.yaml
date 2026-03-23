@@ -1,0 +1,30 @@
+mobid: 584
+zone: stand_by_me
+hostile: false
+maxwander: 0
+activitylevel: 15
+idlecommands:
+  - "emote flicks the switchblade open and closed with practiced ease."
+  - "emote looks at you like he has already decided what you are."
+  - "say You know what your problem is? You actually believe the rules apply to you."
+  - "emote tilts his head and studies the four boys like a math problem."
+  - "emote lights a cigarette, shielding it from the wind with a cupped hand."
+  - ""
+character:
+  name: Ace Merrill
+  description: >-
+    A seventeen-year-old who fills the space around him with a particular kind
+    of weight. He is tall, handsome in a bruised way, wearing a leather jacket
+    despite the heat -- wearing it like an argument he has already won. He
+    carries himself with the casual confidence of someone who has never had
+    to be afraid of anyone his own age. He is the thing these boys are not
+    yet and will choose whether to become.
+  raceid: 1
+  level: 7
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20177

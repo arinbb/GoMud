@@ -1,0 +1,57 @@
+roomid: 2401
+zone: Stand By Me
+title: Castle Rock Main Street
+description: >-
+  The main street of Castle Rock is two blocks long and unhurried about it.
+  The <ansi fg="8">barbershop</ansi> pole turns in the sun. The <ansi fg="itemname">drugstore</ansi>
+  has a lunch counter and a ceiling fan doing its best. A <ansi fg="itemname">movie
+  theater</ansi> marquee announces a double feature. A <ansi fg="8">1955 Ford</ansi>
+  idles at the light. The mountains look over everything from the north, dark
+  and near. This is the kind of town where everyone knows what you did before
+  you have done it. The <ansi fg="8">railroad tracks</ansi> cut south through
+  town toward the woods.
+mapsymbol: M
+maplegend: Main Street
+biome: city
+exits:
+  north:
+    roomid: 2400
+    exitmessage: You climb back up the rope ladder into the treehouse.
+  east:
+    roomid: 2402
+    exitmessage: You head east toward the junkyard.
+  south:
+    roomid: 2403
+    exitmessage: You follow the tracks south out of town.
+nouns:
+  barbershop: >-
+    Ray Bower's barbershop. The pole turns slow. Inside, two barber chairs
+    face a long mirror with a shelf of Brylcreem and talcum below it. Ray
+    knows everyone's father and grandfather and gives the same haircut to
+    all of them. A fly circles the ceiling fan, counterclockwise.
+  drugstore: >-
+    Castle Rock Drug has a lunch counter with six stools and a milkshake
+    machine that sounds like a small aircraft when it runs. Penny candy in
+    a row of glass jars by the register. A paperback rack by the door with
+    a rotating display of westerns and war novels.
+  theater: >-
+    THE MAJESTIC. The marquee reads: SOME LIKE IT HOT / THE SHAGGY DOG.
+    A double feature for thirty-five cents. The posters in the cases outside
+    are sun-bleached to pale salmon. On Saturday afternoons the front row is
+    always all boys who are twelve.
+  ford: >-
+    A 1955 Ford in two-tone aqua and white. Someone's dad's car. The radio
+    antenna is bent at thirty degrees. The front seat is broad as a sofa.
+    There is a pine air freshener hanging from the mirror, doing nothing.
+  tracks: >-
+    The railroad tracks run straight through town and out the south end into
+    the trees. The ties are dark with creosote. The rails gleam. They go all
+    the way to whatever is at the end of them.
+idlemessages:
+- A screen door slaps shut somewhere on a side street.
+- The barbershop pole turns and turns in the sun.
+- A woman comes out of the drugstore with a paper bag and squints at the sky.
+- Two boys on bikes cut across the intersection and are gone.
+- The clock above the hardware store reads 2:17 and has for several years.
+- The mountains are there above everything, not doing anything, just there.
+- A dog lies on the sidewalk in the exact center of a patch of shade, asleep.

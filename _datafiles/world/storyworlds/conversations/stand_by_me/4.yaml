@@ -1,0 +1,24 @@
+-
+  Supported:
+    "ace merrill": ["eyeball chambers"]
+  Conversation:
+    - ["#1 say Those kids are going to hand over whatever they found."]
+    - ["#2 say They might not."]
+    - ["#1 emote looks at him.", "#1 say What?"]
+    - ["#2 say Chris -- my brother. He doesn't -- he's stubborn."]
+    - ["#1 say He's twelve."]
+    - ["#2 say Yeah.", "#2 emote looks away.", "#2 say He's stubborn."]
+    - ["#1 say I'll handle it."]
+    - ["#2 say Yeah."]
+-
+  Supported:
+    "ace merrill": ["eyeball chambers"]
+  Conversation:
+    - ["#1 say You know what's wrong with Castle Rock?"]
+    - ["#2 say What?"]
+    - ["#1 say Nothing's ever ours. We find something, someone takes it. We want something, someone else has it."]
+    - ["#2 say We're going to get the body."]
+    - ["#1 say We're going to get the body.", "#1 emote says it like the first time he ever felt certain of anything.", "#1 say It's ours. We deserve it."]
+    - ["#2 emote looks toward where the boys came from.", "#2 say Those kids walked here from Castle Rock."]
+    - ["#1 say So?"]
+    - ["#2 say Nothing.", "#2 emote lights a cigarette.", "#2 say Nothing."]

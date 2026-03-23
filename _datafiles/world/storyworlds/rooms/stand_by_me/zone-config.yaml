@@ -1,0 +1,16 @@
+name: Stand By Me
+roomid: 2400
+autoscale:
+  minimum: 1
+  maximum: 6
+defaultbiome: forest
+mutators:
+- mutatorid: castle-rock
+idlemessages:
+- Cicadas drill in the trees, the sound of high summer beating against the air.
+- A train horn calls from somewhere down the line, low and mournful, then gone.
+- The smell of pine resin and hot iron rails hangs in the heavy afternoon.
+- Gravel shifts underfoot. The sun is brutal and the shade is everything.
+- Somewhere in the distance, a crow calls twice and falls silent.
+- The tracks hum faintly under your feet, a vibration you feel before you hear.
+- The year is 1959. Castle Rock, Oregon. You are twelve years old inside your chest whether you want to be or not.

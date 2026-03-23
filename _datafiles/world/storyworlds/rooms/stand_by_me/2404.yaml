@@ -1,0 +1,49 @@
+roomid: 2404
+zone: Stand By Me
+title: Along the Tracks
+description: >-
+  The tracks wind through a cathedral of <ansi fg="10">Douglas fir</ansi>, the
+  trunks wide as cars, the canopy so high it is nearly sky. The gravel is
+  softer here, grown through with <ansi fg="10">grass</ansi> and dandelion.
+  A <ansi fg="itemname">trestle</ansi> crosses a dry creek bed ahead to the south.
+  The rails gleam. Someone has left an old <ansi fg="itemname">penny</ansi> on
+  one of the rails -- the train will flatten it into a copper disk the size
+  of a half-dollar.
+mapsymbol: .
+maplegend: Along the Tracks
+biome: forest
+exits:
+  north:
+    roomid: 2403
+    exitmessage: You walk back north along the tracks toward town.
+  south:
+    roomid: 2405
+    exitmessage: You walk south along the tracks toward the bridge.
+nouns:
+  fir: >-
+    Douglas fir, old growth, straight and enormous. They line both sides of
+    the track cut and lean slightly inward at the top, the light between them
+    broken into green shafts. At the base of one, someone has carved initials
+    thirty years ago and the bark has grown around them, healing.
+  grass: >-
+    Grass grows through the track ballast here where the maintenance crews
+    have not been recently. Dandelion gone to seed, plantain, some kind of
+    wild vetch. The boys walk the rails themselves to avoid it -- a game of
+    balance, seeing who can go farthest without stepping off.
+  trestle: >-
+    A small wooden trestle over a dry creek, ten feet above the dirt. The
+    planking is rotted in two spots. It is nothing like the big bridge
+    ahead. Walking it, though, you can feel that the big bridge is coming.
+  penny: >-
+    A Lincoln cent, 1952. Someone balanced it on the rail deliberately,
+    knowing. When the next train passes it will be transformed into something
+    oval and smooth with only the ghost of Lincoln's profile. The boys all
+    want to put their own pennies on the rail. Teddy already has.
+idlemessages:
+- The trees block the sky. Walking through here is walking through green light.
+- A woodpecker hammers somewhere above, steady as a metronome.
+- The rails sing faintly, a vibration before it is a sound, before it is a train.
+- The boys walk in a loose line, no one talking, listening to the birds.
+- Vern stops to remove a pebble from his sneaker for the second time today.
+- 'Teddy finds a dead bluejay in the grass. He picks it up and examines it with forensic interest.'
+- The creek bed under the little trestle is completely dry. It has been a long summer.

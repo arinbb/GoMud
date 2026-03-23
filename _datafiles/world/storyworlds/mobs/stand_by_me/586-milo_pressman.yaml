@@ -1,0 +1,29 @@
+mobid: 586
+zone: stand_by_me
+hostile: false
+maxwander: 0
+activitylevel: 10
+idlecommands:
+  - "emote wipes his hands on a rag that makes them no cleaner."
+  - "say This is private property. You want to tell me what you're doing on it?"
+  - "emote squints at everything with suspicion that extends to the weather."
+  - "say Chopper! Come here, boy!"
+  - ""
+  - ""
+character:
+  name: Milo Pressman
+  description: >-
+    The junkyard owner, fifties, wearing overalls over a plaid shirt, work
+    boots, a baseball cap with a seed company logo. He has the face of a
+    man who has been arguing with the county about something for years and
+    is currently winning. He knows every car in this yard and he does not
+    like you.
+  raceid: 1
+  level: 4
+  equipment:
+    body:
+      itemid: 20108
+    feet:
+      itemid: 20170
+    head:
+      itemid: 20161

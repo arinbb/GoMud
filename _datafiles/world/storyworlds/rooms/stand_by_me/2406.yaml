@@ -1,0 +1,52 @@
+roomid: 2406
+zone: Stand By Me
+title: The River Crossing
+description: >-
+  On the south side of the bridge, the <ansi fg="10">river</ansi> slows
+  and widens into a <ansi fg="itemname">ford</ansi> -- knee-deep, cold,
+  the bottom smooth grey stones. <ansi fg="10">Willows</ansi> trail their
+  fingers in the current on the far bank. The boys have made it across
+  the bridge and now they rest on the gravel bar, some sitting, some
+  lying flat, all of them silent for a moment with the fact of having
+  made it. The tracks continue south across the ford and into the woods.
+  The water is cold and clear and you can see every stone on the bottom.
+mapsymbol: X
+maplegend: River Crossing
+biome: shore
+exits:
+  north:
+    roomid: 2405
+    exitmessage: You walk back to the bridge.
+  south:
+    roomid: 2407
+    exitmessage: You cross the ford and follow the tracks south into the swamp.
+nouns:
+  river: >-
+    The Castle Rock River, shallow here where it spreads over a gravel bar.
+    The water is snow-melt, cold even in August. You can see the tracks
+    going straight into it and straight out the other side. The boys cross
+    one at a time, shoes in hand, the cold a shock every time.
+  ford: >-
+    The crossing is maybe thirty feet wide and nowhere above the knee.
+    The bottom is smooth round stones, treacherous for bare feet. Everyone
+    takes off their sneakers and holds them up and wades across, the cold
+    water making them gasp and Vern saying the word damn quietly and
+    repeatedly to himself.
+  willows: >-
+    Weeping willows on the far bank, the longest branches reaching to the
+    water's surface. In the shade under them the air is five degrees cooler
+    and smells of mud and moss. A pair of kingfishers are doing something
+    to the water from a low branch.
+  stones: >-
+    Water-smoothed granite, grey and white and pink, every one unique. The
+    boys pick some up and pocket them. Chris finds one that is nearly
+    perfectly round and does not say anything about it, just puts it in
+    his pocket.
+idlemessages:
+- The river moves over the stones, the sound of it continuous and indifferent.
+- Gordie puts his feet back in the water and holds them there longer than is comfortable.
+- Teddy tries to catch a crayfish with his bare hands and fails and considers this amusing.
+- 'Chris sits on the gravel bar with his knees up, staring at the water, saying nothing.'
+- Vern finds a leech on his ankle and removes it with a sound like his soul leaving his body.
+- The willows trail in the current. A kingfisher drops like an arrow and comes up with something.
+- The afternoon light on the water makes coins of light that shift and dissolve on the bottom.

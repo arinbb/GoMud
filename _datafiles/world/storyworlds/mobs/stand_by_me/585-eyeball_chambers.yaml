@@ -1,0 +1,30 @@
+mobid: 585
+zone: stand_by_me
+hostile: false
+maxwander: 0
+activitylevel: 10
+idlecommands:
+  - "emote leans against a tree with his arms folded, watching."
+  - "emote looks at Chris with an expression that is not quite readable from here."
+  - "say I'm not here to make any speeches."
+  - "emote turns away when Chris looks at him."
+  - ""
+  - ""
+character:
+  name: Eyeball Chambers
+  description: >-
+    Chris Chambers's older brother, seventeen, wearing a leather jacket
+    that matches Ace's. He has his brother's face but used differently --
+    harder at the edges, more closed. He is one of Ace's regulars. He is
+    not cruel the way Ace is cruel. He is just present where Ace is
+    present, which amounts to the same thing. He does not look at Chris
+    for very long.
+  raceid: 1
+  level: 6
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20177

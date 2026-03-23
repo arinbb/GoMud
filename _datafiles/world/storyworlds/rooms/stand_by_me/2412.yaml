@@ -1,0 +1,54 @@
+roomid: 2412
+zone: Stand By Me
+title: The Body
+description: >-
+  A shallow <ansi fg="10">embankment</ansi> beside the tracks, screened from
+  the road by a stand of young alders. The body of <ansi fg="itemname">Ray Brower</ansi>
+  lies where it fell when the train struck him, half-hidden in the ferns.
+  He is twelve years old. He is wearing a <ansi fg="itemname">baseball cap</ansi>
+  that has come off his head and lies six feet away. The four boys stand at
+  the top of the embankment and look down and no one says anything.
+  The <ansi fg="8">flies</ansi> are the only thing moving.
+mapsymbol: X
+maplegend: The Body
+biome: forest
+exits:
+  north:
+    roomid: 2411
+    exitmessage: You leave the body and walk back north.
+  east:
+    roomid: 2413
+    exitmessage: Ace Merrill and the older boys come through the trees from the east.
+nouns:
+  brower: >-
+    Ray Brower. Twelve years old. He was berry picking on the other side of
+    the tracks and got hit. He did not know the train was coming, or he
+    knew too late. He looks young. He looks like someone's little brother.
+    He looks the way the boys suddenly understand they themselves could look.
+    None of them says this out loud. They do not have to.
+  cap: >-
+    A baseball cap, blue and white, sitting in the ferns six feet from the
+    body. The impact took it off his head. The cap is barely dirty.
+    The embroidery on the front reads CASTLE ROCK in red thread. Gordie
+    picks it up. He does not know why. He will keep it.
+  flies: >-
+    The flies are the unsentimental part of this. They do not care about
+    the journey or the boys or the friendship or any of it. They are just
+    doing what they do. This is the lesson. The boys are old enough to
+    receive it, young enough to be destroyed by it.
+  ferns: >-
+    Lady ferns, head-high, grown thick in the shade. They were here before
+    the accident and they will be here after. The body is in them and the
+    ferns do not care about that either. The forest goes on.
+  tracks: >-
+    The tracks run straight through, north and south, indifferent. They were
+    here before Ray Brower and they will be here after. The rails gleam.
+    The ties are dark. The train came through and it is long gone.
+idlemessages:
+- Nobody speaks. The four boys stand and look down at Ray Brower.
+- The flies move. Nothing else moves.
+- 'Teddy, of all of them, is the quietest. His face has gone very still.'
+- Gordie holds the baseball cap. He does not know what to do with his hands.
+- 'Chris stands apart from the others, looking at the body with his jaw tight, working.'
+- Vern crosses himself. He is not Catholic. He does it anyway.
+- The sun is still out. The birds are still singing somewhere. Everything else is going on.

@@ -1,0 +1,21 @@
+mobid: 587
+zone: stand_by_me
+hostile: true
+maxwander: 2
+activitylevel: 40
+idlecommands:
+  - "emote circles the yard with its nose down."
+  - "emote stops and raises its head and stares in your direction."
+  - "emote barks once, sharp and absolute."
+  - "emote rattles through the gap in the fence and stands its ground."
+  - ""
+character:
+  name: Chopper
+  description: >-
+    A large mixed-breed dog -- shepherd and something else, something with
+    a bigger jaw -- with a brown-and-black coat and eyes that have made a
+    decision about you. Milo Pressman says Chopper can be set on specific
+    body parts with the appropriate command. Teddy Duchamp says this is not
+    true. One of them has tested this theory and one of them has not.
+  raceid: 11
+  level: 4

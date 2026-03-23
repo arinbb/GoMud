@@ -1,0 +1,27 @@
+-
+  Supported:
+    "gordie lachance": ["*"]
+  Conversation:
+    - ["#1 say You want to hear a story?"]
+    - ["#2 emote looks up.", "#2 say What kind of story?"]
+    - ["#1 say A true one. Well. Mostly true.", "#1 emote opens his notebook."]
+    - ["#2 say Okay."]
+    - ["#1 say So there was this kid in Castle Rock they called Lardass. His real name was Davie Hogan. He was twelve years old and he weighed a hundred and seventy pounds."]
+    - ["#2 emote leans forward.", "#2 say Keep going."]
+    - ["#1 say He had decided to get revenge on everyone in Castle Rock who had ever laughed at him. And his weapon -- his instrument of revenge -- was the Fourth of July Pie Eat Contest."]
+    - ["#2 say What happened?"]
+    - ["#1 say It was beautiful.", "#1 emote smiles.", "#1 say It was the most beautiful thing I ever imagined."]
+-
+  Supported:
+    "gordie lachance": ["*"]
+  Conversation:
+    - ["#1 emote closes his notebook."]
+    - ["#2 say What are you writing?"]
+    - ["#1 say Stories."]
+    - ["#2 say What kind of stories?"]
+    - ["#1 say The kind where things happen that wouldn't happen in real life, except they do. Somewhere. They do."]
+    - ["#2 say You want to be a writer?"]
+    - ["#1 emote pauses.", "#1 say I don't know. Maybe.", "#1 say I just know that when I write things down, they become -- real in a different way. A way I can look at."]
+    - ["#2 say Yeah."]
+    - ["#1 say Is that stupid?"]
+    - ["#2 say No. That's not stupid at all."]

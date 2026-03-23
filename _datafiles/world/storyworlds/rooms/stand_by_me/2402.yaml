@@ -1,0 +1,56 @@
+roomid: 2402
+zone: Stand By Me
+title: The Junkyard
+description: >-
+  Milo Pressman's junkyard is a cathedral of rust and broken things. Towers of
+  <ansi fg="8">crushed cars</ansi> stand three and four high, chrome still
+  catching sun. A chain-link <ansi fg="itemname">fence</ansi> runs the perimeter
+  with a hand-painted sign: DANGER KEEP OUT. The smell is hot metal and old oil
+  and something animal underneath. The ground is gravel and rust flakes. A
+  <ansi fg="itemname">shack</ansi> near the fence is Milo's office. A dog chain
+  runs from a stake near the shack, empty -- somewhere in this maze, <ansi fg="mobname">Chopper</ansi>
+  is waiting. The junkyard runs back west to the fence.
+mapsymbol: J
+maplegend: Junkyard
+biome: land
+exits:
+  west:
+    roomid: 2401
+    exitmessage: You back out through the junkyard gate.
+nouns:
+  fence: >-
+    Chain-link, eight feet high, topped with three strands of barbed wire
+    that lean outward. The gate is padlocked when Milo is not here and
+    sometimes when he is. Signs wired to the fence at intervals read
+    KEEP OUT and PRIVATE PROPERTY and, in one case, just the word NO in
+    letters six inches tall.
+  cars: >-
+    Stacked in rows, crushed to cubes or just piled on each other's hoods.
+    A 1941 Packard sits on top of a 1948 Plymouth on top of something that
+    might have been a truck. The chrome grilles are pulled back in permanent
+    smiles. The glass is all gone. Birds nest in the interiors.
+  shack: >-
+    Milo's office and probably sometimes his home. A thermometer on the
+    wall reads ninety-two. A radio on the windowsill plays something
+    country. Inside: paperwork, a coffee can, a rifle hanging on two nails
+    above the door. Milo knows every car in this yard by number.
+  chain: >-
+    A heavy chain, the kind you use for large dogs. It runs from a ground
+    stake to a ring on the post and terminates in an empty collar. The
+    collar is not where the dog is. The dog is somewhere in the yard.
+idlemessages:
+- Metal creaks somewhere in a tower of cars, then goes silent.
+- The dog chain clanks against the post, though there is no wind.
+- A crow settles on top of the highest car stack and watches everything.
+- The smell of hot metal and old oil bakes out of the gravel.
+- Milo Pressman looks up from whatever he is doing and watches you with small eyes.
+- Somewhere in the labyrinth of crushed cars, something is moving.
+- 'Teddy Duchamp leans toward the fence and shouts: ''Chopper! Sic em!'''
+spawninfo:
+- mobid: 586
+  message: 'Milo Pressman comes out of the shack wiping his hands on a rag, squinting.'
+  respawnrate: 5 real minutes
+- mobid: 587
+  message: 'Chopper comes barreling around a stack of cars, barking hard enough to rattle the chain-link.'
+  forcehostile: true
+  respawnrate: 3 real minutes

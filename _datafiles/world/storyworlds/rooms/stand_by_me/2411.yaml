@@ -1,0 +1,44 @@
+roomid: 2411
+zone: Stand By Me
+title: Back Harlow Road
+description: >-
+  The tracks cross <ansi fg="8">Back Harlow Road</ansi>, a dirt road that
+  runs east into the forest and west toward nothing much. The road has not
+  been graded in years. The <ansi fg="itemname">forest</ansi> presses in on
+  both sides, the trees older here, bigger. The tracks go straight south.
+  Something is in the air here -- a change in quality, a slight thickening.
+  Not smell, exactly. More like the knowledge that you are close now.
+  The boys are quiet in a different way than they were yesterday.
+mapsymbol: .
+maplegend: Harlow Road
+biome: road
+exits:
+  north:
+    roomid: 2409
+    exitmessage: You walk back north toward the logging road and campsite.
+  south:
+    roomid: 2412
+    exitmessage: You cross Back Harlow Road and continue south toward the body.
+nouns:
+  road: >-
+    Back Harlow Road, two dirt tracks through the trees with grass growing
+    in the center strip. The ruts are hard and dry. It connects to the
+    county road several miles east, but that road is far away. There is
+    no traffic here. There has not been for weeks.
+  forest: >-
+    The trees are bigger here -- old growth that was somehow missed by the
+    loggers. Firs three and four feet across, the canopy so high it is
+    nearly its own sky. In the shade under them, it is cool even at midday.
+    The woods have a weight to them here that feels different.
+  crossing: >-
+    Where the rails cross the road, the ballast is higher and the ties are
+    newer. Someone maintains this section. Someone still cares about this
+    crossing, for reasons that have nothing to do with the boys.
+idlemessages:
+- The road goes east and west and nothing moves on it.
+- The forest here is older. The trees know things the second-growth trees do not.
+- Gordie does not stop walking, but his pace has changed. Everyone has noticed.
+- 'Chris says, quietly: ''We''re close.'' Nobody argues.'
+- The tracks go straight south. The boys look that way and then at each other.
+- A raven crosses the road overhead from west to east, slow and deliberate.
+- The air has changed. You feel it before you can name it.

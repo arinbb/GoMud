@@ -1,0 +1,31 @@
+mobid: 588
+zone: stand_by_me
+hostile: false
+maxwander: 0
+activitylevel: 10
+idlecommands:
+  - "emote watches the boys below with a look of something that is past sadness, into the country beyond it."
+  - "emote writes a sentence on a notepad, reads it, crosses it out."
+  - "say I was twelve going on thirteen the first time I saw a dead human being."
+  - "emote watches Chris Chambers specifically, for a long time."
+  - "emote sets down his pen and just watches the treehouse. Just that."
+  - ""
+character:
+  name: the Narrator
+  description: >-
+    A man in his thirties, wearing a corduroy jacket over a dark shirt,
+    loafers, the look of someone who has been sitting at this desk for
+    a long time. He is writing something. Or he has finished writing
+    something and is sitting with it. He has the face of the boy in the
+    treehouse, older, the same eyes, the same quality of watching and
+    taking in more than he shows. He is looking back, which is the only
+    direction that does not lie.
+  raceid: 1
+  level: 10
+  equipment:
+    body:
+      itemid: 20126
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

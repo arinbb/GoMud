@@ -1,0 +1,31 @@
+mobid: 583
+zone: stand_by_me
+hostile: false
+maxwander: 1
+activitylevel: 20
+idlecommands:
+  - "emote trips over a root and catches himself and looks around to see if anyone saw."
+  - "say Are we almost there yet?"
+  - "emote eats something from his pocket with an air of deep concentration."
+  - "say What if a bear smells our food?"
+  - "emote jumps at a sound from the woods and then pretends he was just stretching."
+  - "say I'm not scared. I'm just cautious. Those are different things."
+  - ""
+character:
+  name: Vern Tessio
+  description: >-
+    A heavyset twelve-year-old in a cable-knit sweater despite the heat,
+    khakis, sneakers -- he is always slightly overdressed, slightly overheated,
+    slightly behind. He is scared most of the time and he is honest about it
+    in ways the other boys are not, which is its own kind of courage. He is
+    here because this is where his friends are, and his friends being here
+    is reason enough for anything.
+  raceid: 1
+  level: 2
+  equipment:
+    body:
+      itemid: 20124
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20171

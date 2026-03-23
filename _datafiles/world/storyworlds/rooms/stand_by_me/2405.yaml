@@ -1,0 +1,51 @@
+roomid: 2405
+zone: Stand By Me
+title: The Railroad Bridge
+description: >-
+  The railroad bridge spans the <ansi fg="itemname">Castle Rock gorge</ansi>,
+  a wooden trestle bridge four hundred feet long and sixty feet above the
+  river. The <ansi fg="8">planking</ansi> between the rails has gaps you can
+  see straight down through to the water and the rocks below. There is no
+  guardrail. There is no railing of any kind. There is just the two rails
+  and the ties and the sixty-foot drop and the other side. Halfway across,
+  you cannot go back as fast as you can go forward. This is known. The
+  <ansi fg="8">far side</ansi> is visible to the south, real and reachable.
+mapsymbol: B
+maplegend: Railroad Bridge
+biome: land
+exits:
+  north:
+    roomid: 2404
+    exitmessage: You step back off the bridge to the north side.
+  south:
+    roomid: 2406
+    exitmessage: You make it across the bridge, heart hammering, to the south side.
+nouns:
+  gorge: >-
+    Sixty feet down: the Castle Rock River running dark and fast over pale
+    granite. The rocks at the bottom are the size of cars, smooth from ten
+    thousand years of water. If you fell from here and the fall did not kill
+    you, the rocks would, and if the rocks did not, the current would. The
+    boys look down only once and then not again.
+  planking: >-
+    The boards between the rails are old, grey, gapped. Looking straight
+    down through the gaps you can see the water moving. The wind that comes
+    up through the gaps smells of the river and something mineral and cold.
+    Some of the boards are missing entirely. You step around those.
+  rails: >-
+    The iron rails are the only solid thing out here. The boys walk them
+    like tightrope walkers, arms out, eyes forward, not looking down.
+    Chris goes first without hesitation. Gordie goes second. Teddy,
+    laughing. Vern, not laughing.
+  water: >-
+    The river visible below, moving faster than it looks from here. The
+    sound of it reaches you as a low roar. The sun on the water makes the
+    light bounce up in fragments against the trestle beams.
+idlemessages:
+- The bridge sways almost imperceptibly in the wind. Almost.
+- The river sounds like something that does not care whether you make it across.
+- 'Chris stops at the midpoint and looks north, then south. There is no way back that is faster than forward.'
+- The planks creak under each step, a different note for each gap.
+- A train horn sounds somewhere to the north. Distant. How distant?
+- Vern is not okay. Vern is not pretending to be okay.
+- 'You can see both ends of the bridge from here. You are exactly halfway. This is the point of no return.'

@@ -1,0 +1,34 @@
+mobid: 582
+zone: stand_by_me
+hostile: false
+maxwander: 2
+activitylevel: 30
+idlecommands:
+  - "emote ducks behind a rock, returns fire at an invisible enemy, announces he got them."
+  - "say My dad stormed the beach at Normandy! He was in the rangers!"
+  - "emote leans out over the edge of whatever is nearest, for no reason."
+  - "say You know what the difference between me and a normal person is? I don't care."
+  - "emote makes the sound of a diving bomber with apparent conviction."
+  - "say I'm gonna be in the army. The 82nd airborne."
+  - ""
+character:
+  name: Teddy Duchamp
+  description: >-
+    A twelve-year-old in a work shirt and baseball cap, with thick glasses
+    and the energy of someone who has decided that if you move fast enough
+    you will outrun the things that are chasing you. His left ear is scarred
+    from when his father held it to a stove burner. He talks about his father
+    with pride that is also a kind of prayer: please let this be the version
+    that is true. He is reckless and funny and broken and he knows it and he
+    does not let that stop him from anything.
+  raceid: 1
+  level: 3
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171
+    head:
+      itemid: 20161

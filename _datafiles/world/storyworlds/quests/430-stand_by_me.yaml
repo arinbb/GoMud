@@ -1,0 +1,25 @@
+questid: 430
+name: Stand By Me
+description: >-
+  Four boys from Castle Rock, Oregon. Summer 1959. Two days along the
+  railroad tracks to find a dead boy no one is looking for yet. The
+  journey is the point. Something will be lost on the way back that
+  cannot be recovered. Something will be found that cannot be named.
+reward:
+  experience: 5000
+  item_id: 335
+  playermessage: >-
+    You made it home. The boys made it home. You called it in from the payphone
+    at the Gulf station on Route 9 and let someone else find Ray Brower properly.
+    You stood up to Ace Merrill. You walked the tracks and crossed the bridge and
+    waded the swamp and sat by the campfire under the stars. In your pocket
+    is a faded baseball cap with CASTLE ROCK embroidered in red thread. It smells
+    like pine trees and summer and 1959 and everything that was about to end.
+    You will not be twelve again. But you were, once. That is not nothing.
+steps:
+- description: Leave the treehouse and start down the tracks.
+- description: Cross the railroad bridge without being hit by a train.
+- description: Survive the leech swamp.
+- description: Sleep by the campfire.
+- description: Find the body of Ray Brower.
+- description: Stand your ground against Ace Merrill and his crew.

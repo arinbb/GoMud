@@ -1,0 +1,24 @@
+-
+  Supported:
+    "gordie lachance": ["chris chambers"]
+  Conversation:
+    - ["#1 say Do you think I'm weird?"]
+    - ["#2 emote thinks about this seriously.", "#2 say Yeah. But so what? Everyone's weird somehow. The only difference is some people know it and some people don't."]
+    - ["#1 say My dad doesn't even look at me anymore. After Denny."]
+    - ["#2 emote is quiet for a moment.", "#2 say Your dad is grieving. That's real. But it's not -- it's not about you. You know that, right?"]
+    - ["#1 say I know. I know that."]
+    - ["#2 say You're going to get out of Castle Rock, Gordie. You're going to be a writer. I've been watching you long enough to know that."]
+    - ["#1 emote stares at him.", "#1 say How do you know that?"]
+    - ["#2 say Because you're the only one of us who looks at things and actually sees them."]
+-
+  Supported:
+    "gordie lachance": ["chris chambers"]
+  Conversation:
+    - ["#2 say I took the milk money. You knew that."]
+    - ["#1 say I didn't say anything."]
+    - ["#2 say You didn't have to. Everybody knew. I gave it back and she still thought I stole it and told everyone.", "#2 emote looks away."]
+    - ["#1 say That wasn't right."]
+    - ["#2 say No. It wasn't. But people have already decided what they think about me.", "#2 say Maybe they're right."]
+    - ["#1 emote turns to face him.", "#1 say They're not right. I know they're not right."]
+    - ["#2 emote is quiet for a long moment.", "#2 say You're the only one who says that."]
+    - ["#1 say Then I'll keep saying it until other people hear it."]

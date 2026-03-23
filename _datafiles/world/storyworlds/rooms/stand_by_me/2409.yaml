@@ -1,0 +1,44 @@
+roomid: 2409
+zone: Stand By Me
+title: The Tracks (continued)
+description: >-
+  Morning. The tracks run south through <ansi fg="10">second-growth forest</ansi>,
+  the light coming in low from the east, gold through the trees, the dew heavy
+  on everything. The boys are quieter this morning. Last night happened and
+  the body is somewhere ahead and the first excitement has settled into something
+  that is more like purpose, or maybe dread. The tracks here are older,
+  less maintained, the ties softer underfoot, the rail joints clicking
+  with more authority. A logging road crosses the tracks to the south.
+mapsymbol: .
+maplegend: Tracks Continued
+biome: forest
+exits:
+  north:
+    roomid: 2408
+    exitmessage: You walk back north toward the campsite.
+  south:
+    roomid: 2411
+    exitmessage: You cross the logging road and continue south.
+nouns:
+  forest: >-
+    Second-growth -- not old growth, but not young either. The trees are
+    sixty, seventy feet, Douglas fir and hemlock and cedar. The morning
+    light makes long bars of gold through the forest at this hour. A deer
+    watches from the tree line, still as a carving, then is gone.
+  dew: >-
+    The dew is heavy on the grass beside the tracks, on the ferns, on
+    the spiderwebs between the rail spikes. In the early light each
+    web is a constellation. The boys' sneakers are soaked through within
+    a hundred yards of the campsite.
+  road: >-
+    A logging road, unpaved, cutting across the track at right angles.
+    The ruts are deep from heavy equipment. Tire tracks in the mud,
+    both directions. The road is empty this morning.
+idlemessages:
+- The morning birds are in full voice -- robins, thrushes, a Stellar's jay like a car alarm.
+- Dew falls from the ferns onto the rails, hissing briefly against the steel.
+- The boys walk in single file, Chris at the front, nobody saying much.
+- 'Gordie stops and looks back the way they came, then forward. Then he walks on.'
+- A freight train passed through during the night. You can see the recently disturbed gravel.
+- The light through the trees changes as the sun rises, the gold becoming ordinary white.
+- Teddy finds something in the logging-road mud and decides it is a bear print. It might be.

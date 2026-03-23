@@ -1,0 +1,18 @@
+itemid: 335
+name: Castle Rock cap
+namesimple: cap
+displayname: a faded <ansi fg="itemname">Castle Rock baseball cap</ansi>
+description: >-
+  A baseball cap, cotton, blue-white with age and sun. The front panel has
+  CASTLE ROCK embroidered in red thread, the letters slightly uneven, hand-done.
+  The bill is curved from being gripped and adjusted a thousand times by a
+  twelve-year-old's hands. It smells of pine trees and summer dust and hot rail
+  iron and the particular smell of a July that is almost over. When you hold it,
+  something in you goes quiet and twelve for just a moment -- the distance
+  between here and the railroad tracks feels enormous and possible and worth
+  walking. This belonged to Ray Brower. He does not need it anymore. Gordie
+  Lachance kept it. Now you have it.
+type: object
+subtype: usable
+uses: 0
+value: 0

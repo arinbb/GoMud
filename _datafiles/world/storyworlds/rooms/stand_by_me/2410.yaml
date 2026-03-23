@@ -1,0 +1,44 @@
+roomid: 2410
+zone: Stand By Me
+title: The Clearing by the Creek
+description: >-
+  Off the main trail, a small <ansi fg="10">clearing</ansi> opens beside a
+  creek that is still running despite the summer drought. Flat rocks line
+  the bank. The water is clear and cold and shallow. The <ansi fg="itemname">grass</ansi>
+  is bent where a deer stood recently. This is a place of brief peace in the
+  middle of the journey, a place where the boys stop without deciding to,
+  drawn by the water and the openness after the dark of the trees.
+mapsymbol: .
+maplegend: Creek Clearing
+biome: shore
+exits:
+  west:
+    roomid: 2408
+    exitmessage: You head back west to the campfire clearing.
+nouns:
+  clearing: >-
+    A flat circle of grass and moss, maybe forty feet across, where the
+    trees have stepped back from the creek. The light here is open and warm.
+    You can hear the water and see a slice of blue sky and for a moment
+    the whole journey feels possible and worth it.
+  grass: >-
+    The grass is pressed down in an oval -- a deer bedded here last night
+    or this morning. Still warm when Gordie puts his hand in it, though
+    that might just be the sun. He does not say anything about it.
+  creek: >-
+    Clear and cold, running over white gravel. The boys lie on their stomachs
+    and drink from it directly. The water is the best thing any of them
+    has ever tasted, though that is partially the walking and the heat
+    and the fact that they are twelve.
+  tracks: >-
+    From here you can see the railroad tracks through a gap in the trees,
+    heading south. The body is somewhere along them. The thought sits
+    with you here in the clearing, heavier than it was at the start.
+idlemessages:
+- The creek runs over white gravel, finding its way around stones as it has for centuries.
+- Gordie puts his hand in the grass where the deer slept and stares at nothing.
+- The light here is open and warm, a brief reprieve from the dark of the trail.
+- Chris fills his canteen from the creek and hands it to Gordie without being asked.
+- A damselfly hovers over the water, holding perfectly still in the moving air.
+- They rest here longer than they should, and none of them points this out.
+- The whole journey stops here for a moment. A held breath. Then they stand up and go back.

@@ -1,0 +1,31 @@
+mobid: 580
+zone: stand_by_me
+hostile: false
+maxwander: 1
+activitylevel: 15
+idlecommands:
+  - "emote writes something in his notebook, looks at it, crosses it out."
+  - "emote stares at the middle distance with the look of someone composing a sentence."
+  - "say You know what I keep thinking about? What Ray Brower was thinking about, before."
+  - "emote runs a hand through his hair, then picks up his pencil again."
+  - "say I could tell you a story, if you want. Not a true one. But a good one."
+  - ""
+  - ""
+character:
+  name: Gordie Lachance
+  description: >-
+    A thin twelve-year-old in flannel and jeans, with quiet eyes that take in
+    more than they give back. He carries a notebook in his back pocket, a
+    stubby pencil behind his ear. He is the one in the group who watches
+    things and then finds the words for them later, which is a gift he does
+    not know yet is a gift. He looks like his dead brother's little brother,
+    which is what he is.
+  raceid: 1
+  level: 3
+  equipment:
+    body:
+      itemid: 20101
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

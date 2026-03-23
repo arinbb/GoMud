@@ -1,0 +1,48 @@
+roomid: 2403
+zone: Stand By Me
+title: The Railroad Tracks (start)
+description: >-
+  The tracks leave Castle Rock going south into the trees and do not look back.
+  Two rails of hot steel run through cut grass and into the dark of the
+  <ansi fg="10">forest</ansi>, converging somewhere ahead into a single bright
+  point. The <ansi fg="8">ties</ansi> are black with creosote, the gravel
+  between them bleached. The town is at your back. The woods are ahead. This
+  is the moment before the adventure, which always looks like a path going
+  somewhere and is actually a path going somewhere you cannot come back from.
+mapsymbol: R
+maplegend: Track Start
+biome: road
+exits:
+  north:
+    roomid: 2401
+    exitmessage: You walk back toward Castle Rock along the tracks.
+  south:
+    roomid: 2404
+    exitmessage: You follow the tracks south into the trees.
+nouns:
+  tracks: >-
+    Steel rails pressed into the earth, gleaming on top and rust-dark on the
+    sides. They come from somewhere and go somewhere. Everything alive next
+    to them eventually learns not to notice. The boys are twelve and they
+    cannot not notice.
+  ties: >-
+    Railroad ties soaked in creosote, hard as iron. The gaps between them are
+    irregular -- too close to walk naturally, too far apart to skip. Every
+    step has to be chosen. Vern trips on the third one.
+  forest: >-
+    The trees come right up to the edge of the gravel. Douglas fir, mostly,
+    ninety feet tall and blocking the sky. In the shade under them, the
+    temperature drops ten degrees instantly. The forest knows something is
+    in there and is not telling you what.
+  gravel: >-
+    Track ballast -- crushed grey granite packed under the ties. It crunches
+    with every step. It is impossible to be quiet on this gravel. The train
+    knows you are here.
+idlemessages:
+- The tracks stretch south into shadow, the rails converging to a bright point.
+- Something rustles in the ferns at the tree line and goes still.
+- The air is hotter in the open than under the trees, and the rails radiate it back.
+- Gordie checks the paper in his pocket with the directions for the fifth time.
+- Chris takes the first step onto the tracks heading south and does not look back.
+- The cicadas in the trees cut out all at once, then start again.
+- A hawk hangs motionless above the first bend, watching something in the grass.

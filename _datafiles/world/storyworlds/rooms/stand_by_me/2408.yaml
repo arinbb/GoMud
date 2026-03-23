@@ -1,0 +1,68 @@
+roomid: 2408
+zone: Stand By Me
+title: The Campfire
+description: >-
+  A <ansi fg="yellow">fire</ansi> burns in a ring of stones on a flat
+  pine-needle clearing just off the tracks. This is where they sleep
+  the first night. The <ansi fg="itemname">woods</ansi> press close on
+  three sides, the <ansi fg="8">tracks</ansi> visible to the north. The
+  fire has burned down to orange coals that pulse with the breeze.
+  A clearing to the east leads to the creek. <ansi fg="itemname">Sleeping
+  bags</ansi> are spread in a rough circle. Overhead, through a break in
+  the canopy, the stars are extraordinary.
+mapsymbol: C
+maplegend: Campfire
+biome: forest
+exits:
+  north:
+    roomid: 2407
+    exitmessage: You head back through the swamp toward the bridge.
+  south:
+    roomid: 2409
+    exitmessage: You move on south along the tracks in the morning.
+  east:
+    roomid: 2410
+    exitmessage: You follow the sound of water east to the creek clearing.
+nouns:
+  fire: >-
+    A campfire burned down to coals, still giving heat and the smell of
+    pine smoke. The boys built it when the dark came and the dark here
+    is complete -- no town lights, no moon, just the fire and the stars.
+    The coals pulse orange to black to orange with each breath of air.
+  stars: >-
+    Through the break in the canopy, the stars are the kind of stars you
+    only see away from towns. The Milky Way is a smear of white. Scorpius
+    hangs low to the south. Gordie lies on his back and names them,
+    making up names for the ones he does not know.
+  sleeping: >-
+    Sleeping bags unrolled on pine needles, the occupants nowhere visible.
+    Or everywhere visible -- it is dark and the woods have sounds and no
+    one is fully asleep. The sleeping bags smell of canvas and the summer
+    inside them.
+  woods: >-
+    The trees come right up to the light of the fire and stop there, held
+    back by nothing real. Beyond the firelight it is black as a closed room.
+    Something rustles in the dark about forty feet out. It is probably
+    a raccoon. Chris says it is probably a raccoon. Teddy says it is
+    a bear. Vern does not say anything.
+idlemessages:
+- The fire coals shift and resettle, sending up one bright spark that rises and goes dark.
+- Gordie lies on his back and names the stars, inventing the names for the ones he does not know.
+- 'Chris pokes the fire with a stick and stares into it and does not say what he is thinking.'
+- Something moves at the edge of the firelight and is gone before anyone can see it clearly.
+- 'Teddy says, from the darkness: ''I bet there are wolves out there.'' Nobody answers.'
+- Vern falls asleep first and snores a small, uncertain snore.
+- The woods are so quiet that the fire sounds loud, the crack of a coal like a shot.
+spawninfo:
+- mobid: 580
+  message: 'Gordie Lachance lies on his back looking at the stars, notebook closed beside him.'
+  respawnrate: 3 real minutes
+- mobid: 581
+  message: 'Chris Chambers sits close to the fire, staring into the coals, a stick in his hand.'
+  respawnrate: 3 real minutes
+- mobid: 582
+  message: 'Teddy Duchamp stands at the edge of the firelight, hands in his pockets, staring into the dark.'
+  respawnrate: 3 real minutes
+- mobid: 583
+  message: 'Vern Tessio is already in his sleeping bag, not fully asleep, eyes open.'
+  respawnrate: 3 real minutes

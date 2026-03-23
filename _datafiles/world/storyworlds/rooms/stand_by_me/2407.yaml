@@ -1,0 +1,52 @@
+roomid: 2407
+zone: Stand By Me
+title: The Leech Swamp
+description: >-
+  The tracks drop into a low area where the ground has gone soft and black.
+  The trees are <ansi fg="10">alder and cottonwood</ansi>, the light filtered
+  and grey-green. The water is not deep -- ankle to knee at most -- but it is
+  opaque and warm and full of things you cannot see. <ansi fg="itemname">Cattails</ansi>
+  crowd the edges. The air is thick and smells of decay and something sweet
+  underneath. The tracks continue through on a raised bed, but the approach
+  is flooded and there is no going around it.
+mapsymbol: W
+maplegend: Leech Swamp
+biome: swamp
+exits:
+  north:
+    roomid: 2406
+    exitmessage: You back out of the swamp to the river crossing.
+  south:
+    roomid: 2408
+    exitmessage: You wade through the swamp and come out on the other side, checking yourself.
+nouns:
+  water: >-
+    Black and opaque, warm as bathwater, ankle to knee depending on where
+    you step. The bottom is soft mud that releases bubbles when you step in it.
+    The smell is vegetable rot and something animal. You do not want to know
+    what is in this water. The boys know what is in this water. They go in
+    anyway. They go in slow.
+  cattails: >-
+    Brown velvet cylinders on long stalks, swaying slightly. They crowd the
+    edges of the swamp and form walls you cannot see through. Something is
+    moving in them -- probably a bird. Probably.
+  mud: >-
+    The bottom gives way when you step. Your foot sinks to the ankle and
+    the mud takes a moment to give it back, making a sucking sound each time.
+    The mud is cold below and warm on the surface. Things live in it.
+  trees: >-
+    Alder and cottonwood, their roots in the water, the trunks black with
+    moisture to six feet. Their canopy makes the light green and diffuse.
+    The algae on the surface catches the light in rings around each step.
+idlemessages:
+- Something ripples under the surface twenty feet to your left, then still.
+- The mud releases a bubble from somewhere below, slow and deliberate.
+- Vern makes a very small sound and nobody asks what.
+- A red-winged blackbird shouts from the cattails and is gone.
+- The warm black water comes over your sneakers. There is no avoiding this.
+- 'Teddy wades through with his arms up and his eyes ahead, grinning with something that is not joy.'
+- The smell deepens here -- vegetable rot and mud and something alive underneath.
+spawninfo:
+- mobid: 583
+  message: 'Vern Tessio wades into the swamp up to his knees, making a face that contains several emotions simultaneously.'
+  respawnrate: 4 real minutes

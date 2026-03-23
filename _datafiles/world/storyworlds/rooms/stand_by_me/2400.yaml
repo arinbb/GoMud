@@ -1,0 +1,61 @@
+roomid: 2400
+zone: Stand By Me
+title: The Treehouse
+description: >-
+  High in the branches of an enormous <ansi fg="10">oak tree</ansi>, the treehouse
+  is a single plank-walled room roughly the size of a car. Someone has nailed
+  up a hand-lettered sign: <ansi fg="itemname">NO GIRLS ALLOWED</ansi>. A
+  <ansi fg="itemname">window</ansi> looks out over the rooftops of Castle Rock,
+  the whole town spread out below like a map of somewhere that will not exist
+  much longer, not the way it is now. Milk crates serve as furniture. The
+  <ansi fg="itemname">walls</ansi> are covered in carvings and names. A rope
+  ladder descends to the ground <ansi fg="8">south</ansi>.
+mapsymbol: T
+maplegend: Treehouse
+biome: forest
+exits:
+  south:
+    roomid: 2401
+nouns:
+  sign: >-
+    NO GIRLS ALLOWED. The letters are deliberate, slightly crooked, painted in
+    red. It is the kind of sign twelve-year-old boys put up when they have
+    claimed something as theirs and mean to keep it. The paint is sun-faded.
+    This treehouse has been here a while.
+  window: >-
+    From the window you can see Castle Rock spreading out below -- the main
+    street, the barbershop, the movie theater, the mill. The mountains rise
+    behind it all, dark with timber. It is 1959 and the town is small and
+    permanent-feeling, the kind of place that seems like it will always be
+    exactly like this. It will not.
+  walls: >-
+    Names and dates carved into the wood: Gordie + Chris, 1958. Teddy was here.
+    A rough rendering of a skull. Someone has scratched in THE CASTLE ROCK
+    LOSERS CLUB and underneath it, in different handwriting: WE ARE NOT LOSERS.
+  rope: >-
+    A rope ladder, homemade, the knots slightly uneven but holding. It has been
+    climbed a thousand times. The wood rungs are worn smooth in the middle.
+idlemessages:
+- The treehouse sways almost imperceptibly in the wind, creaking once, then still.
+- Castle Rock hums below -- a lawn mower, a screen door, a mother calling someone in for dinner.
+- The afternoon sun comes through the window at an angle and lights the dust motes like gold.
+- A notebook lies open on the floor, covered in Gordie's careful handwriting. You do not read it.
+- The smell of pine sap and dry wood and summer fills the small room entirely.
+- A train horn sounds in the distance. All four boys look up at the same moment.
+- Somewhere in town, something is happening that they will remember for the rest of their lives.
+spawninfo:
+- mobid: 588
+  message: 'The Narrator stands at the window, watching the town below with the careful eyes of someone who lived here once.'
+  respawnrate: 3 real minutes
+- mobid: 580
+  message: 'Gordie Lachance sits on a milk crate, writing in his notebook, chewing the end of his pencil.'
+  respawnrate: 3 real minutes
+- mobid: 581
+  message: 'Chris Chambers leans against the wall with his arms folded, watching the door.'
+  respawnrate: 3 real minutes
+- mobid: 582
+  message: 'Teddy Duchamp paces the small floor, talking to himself about something involving a B-52 and the Germans.'
+  respawnrate: 3 real minutes
+- mobid: 583
+  message: 'Vern Tessio climbs in through the window, out of breath, holding a crumpled piece of paper.'
+  respawnrate: 3 real minutes

@@ -1,0 +1,30 @@
+mobid: 581
+zone: stand_by_me
+hostile: false
+maxwander: 1
+activitylevel: 15
+idlecommands:
+  - "emote lights a match, watches it burn to his fingers, lets it go."
+  - "emote looks down the tracks ahead, measuring the distance with his eyes."
+  - "say I don't care what people think. I stopped caring about what people think."
+  - "emote stands between Gordie and whatever might be coming, without making a thing of it."
+  - "emote looks at Eyeball's jacket and looks away, jaw tight."
+  - ""
+  - ""
+character:
+  name: Chris Chambers
+  description: >-
+    A twelve-year-old who looks like someone has already tried to break him
+    and he has decided they are not going to. He wears a denim jacket over
+    a flannel shirt, jeans, sneakers. His face is angular and watchful and
+    kind in ways he works hard not to show. He is the leader of these boys
+    because he is braver than anyone else and smarter than he is supposed to be.
+  raceid: 1
+  level: 4
+  equipment:
+    body:
+      itemid: 20113
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171
