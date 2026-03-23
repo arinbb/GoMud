@@ -114,7 +114,7 @@ func GetDetails(r *Room, user *users.UserRecord, tinymap ...[]string) RoomTempla
 
 	if len(tinymap) > 0 {
 		desclineWidth := 80 - 7 // 7 is the width of the tinymap
-		padding := 1
+		padding := 2
 		description := util.SplitString(details.Description, desclineWidth-padding)
 
 		for i := 0; i < len(tinymap[0]); i++ {
