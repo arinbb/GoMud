@@ -2,8 +2,7 @@ roomid: 2249
 zone: Harvest
 title: The Needle and the Damage Done
 description: >-
-  A small stage. One <ansi fg="itemname">man</ansi>. One <ansi fg="itemname">
-  guitar</ansi>. No microphone stand -- just a condenser mic on a boom, close.
+  A small stage. One <ansi fg="itemname">man</ansi>. One <ansi fg="itemname"> guitar</ansi>. No microphone stand -- just a condenser mic on a boom, close.
   The rest of the room is dark and perfectly still. The stage is small enough
   that you could reach out and touch the guitar if you stepped forward. You
   do not step forward. The sound in here is the <ansi fg="8">quietest sound</ansi>

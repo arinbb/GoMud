@@ -3,13 +3,9 @@ zone: Up in Smoke
 title: 'Mans Pad'
 description: >-
   A studio apartment somewhere in the hills above East LA, perpetually dim, lit
-  primarily by a <ansi fg="itemname">black light</ansi> that makes the <ansi fg="itemname">
-  poster</ansi> of a melting face glow violet and green. A <ansi fg="itemname">lava lamp
-  </ansi> on the floor shifts its orange blobs upward in slow philosophical arcs. The <ansi fg="itemname">beanbag chairs</ansi> are the furniture. <ansi fg="itemname">Album
-  covers</ansi> paper the walls where drywall should be: Hendrix, Santana, Cream, ZZ Top.
+  primarily by a <ansi fg="itemname">black light</ansi> that makes the <ansi fg="itemname"> poster</ansi> of a melting face glow violet and green. A <ansi fg="itemname">lava lamp </ansi> on the floor shifts its orange blobs upward in slow philosophical arcs. The <ansi fg="itemname">beanbag chairs</ansi> are the furniture. <ansi fg="itemname">Album covers</ansi> paper the walls where drywall should be: Hendrix, Santana, Cream, ZZ Top.
   A battered <ansi fg="itemname">guitar</ansi> leans against the far wall. The whole place
-  smells like incense and whatever Man was just doing, which is hazy. Exit <ansi fg="exit">
-  south</ansi> leads back to the street corner.
+  smells like incense and whatever Man was just doing, which is hazy. Exit <ansi fg="exit"> south</ansi> leads back to the street corner.
 mapsymbol: P
 maplegend: Mans Pad
 biome: house

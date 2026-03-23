@@ -9,10 +9,8 @@ description: >-
   one who understands that belief requires enforcement. The forest shows his
   influence: <ansi fg="red">wolf traps</ansi> along the game trails, motion
   sensors on the approach routes, <ansi fg="itemname">conditioned soldiers</ansi>
-  who move through the trees with military efficiency. And the <ansi fg="itemname">
-  wolves</ansi> themselves — Jacob's wolves, trained, numerous, loyal to nothing
-  and no one but the conditioning that has replaced their instincts. A <ansi fg="itemname">
-  mountain lion</ansi> watches from a rock above. The county road is to the <ansi fg="exit">east</ansi>. The Veterans Center is <ansi fg="exit">north</ansi>.
+  who move through the trees with military efficiency. And the <ansi fg="itemname"> wolves</ansi> themselves — Jacob's wolves, trained, numerous, loyal to nothing
+  and no one but the conditioning that has replaced their instincts. A <ansi fg="itemname"> mountain lion</ansi> watches from a rock above. The county road is to the <ansi fg="exit">east</ansi>. The Veterans Center is <ansi fg="exit">north</ansi>.
 mapsymbol: M
 maplegend: Whitetail Mountains
 biome: forest

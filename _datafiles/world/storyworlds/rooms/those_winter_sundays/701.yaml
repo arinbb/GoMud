@@ -7,8 +7,7 @@ description: >-
   is the heart of this house — when it burns, the whole house warms. Right now it
   sits dark and cold, waiting to be lit. A <ansi fg="itemname">woodbox</ansi> beside
   it holds split kindling and a few logs. A plain wooden <ansi fg="itemname">table</ansi>
-  with two chairs stands near the window, where frost obscures the glass. The <ansi fg="exit">front porch</ansi> is through a side door. The <ansi fg="exit">living
-  room</ansi> is to the south.
+  with two chairs stands near the window, where frost obscures the glass. The <ansi fg="exit">front porch</ansi> is through a side door. The <ansi fg="exit">living room</ansi> is to the south.
 mapsymbol: K
 maplegend: Kitchen
 biome: house

@@ -3,13 +3,11 @@ zone: Ghostbusters
 title: The Library Basement Stacks
 description: >-
   The basement of the New York Public Library is a labyrinth of metal shelving
-  ten feet high, stretching into shadow in every direction. The <ansi fg="itemname">fluorescent
-  lights</ansi> buzz and flicker. Dust motes hang in the air in patterns that suggest
+  ten feet high, stretching into shadow in every direction. The <ansi fg="itemname">fluorescent lights</ansi> buzz and flicker. Dust motes hang in the air in patterns that suggest
   they have been recently disturbed -- by movement, by breath, by something passing
   through. <ansi fg="itemname">Books</ansi> are strewn across the floor in a wide arc,
   as if thrown by a force emanating from the center of the stacks. In the deepest
-  shadow between two shelves, you can barely make out the shape of the <ansi fg="itemname">Grey
-  Lady</ansi> -- the ghost, the reading ghost, the one who has been here since 1924
+  shadow between two shelves, you can barely make out the shape of the <ansi fg="itemname">Grey Lady</ansi> -- the ghost, the reading ghost, the one who has been here since 1924
   and was not disturbing anyone until three researchers with unlicensed proton packs
   burst in and shouted at her.
 mapsymbol: B

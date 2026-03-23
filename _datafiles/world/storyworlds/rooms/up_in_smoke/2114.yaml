@@ -2,12 +2,10 @@ roomid: 2114
 zone: Up in Smoke
 title: On Stage at the Roxy
 description: >-
-  The stage of the Roxy Theatre, Sunset Strip, 1978. The <ansi fg="itemname">spotlights
-  </ansi> are in your eyes, hot and white, converting the audience into a wall of
+  The stage of the Roxy Theatre, Sunset Strip, 1978. The <ansi fg="itemname">spotlights </ansi> are in your eyes, hot and white, converting the audience into a wall of
   invisible sound. From up here the <ansi fg="itemname">crowd</ansi> is a single
   thing: a hundred people transformed by the same music into one organism. A <ansi fg="itemname">microphone</ansi> stands at center stage. The monitor wedge
-  in front of your feet sends back a wash of your own sound. The <ansi fg="itemname">
-  instruments</ansi> are set and ready. The <ansi fg="itemname">Battle Judge</ansi>
+  in front of your feet sends back a wash of your own sound. The <ansi fg="itemname"> instruments</ansi> are set and ready. The <ansi fg="itemname">Battle Judge</ansi>
   below has his clipboard raised. All of 1978 is waiting to hear what you do next.
   Exit <ansi fg="exit">venue</ansi> leads back to the floor.
 mapsymbol: X

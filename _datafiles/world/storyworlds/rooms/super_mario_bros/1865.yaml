@@ -2,8 +2,7 @@ roomid: 1865
 zone: Super Mario Bros
 title: World 2-1 Overworld
 description: >-
-  The second world opens into a different sky. The same <ansi fg="cyan">Nintendo
-  blue</ansi> overhead, but the trees here have a different shape -- round,
+  The second world opens into a different sky. The same <ansi fg="cyan">Nintendo blue</ansi> overhead, but the trees here have a different shape -- round,
   dark-green pixel-art trees with thick trunks, more stylized than the first
   world's greenery. The ground has a slightly different hue, warmer brown,
   as if you have traveled somewhere south. <ansi fg="itemname">Koopa Paratroopas</ansi>

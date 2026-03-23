@@ -2,14 +2,12 @@ roomid: 1564
 zone: Jurassic Park
 title: The Hatchery
 description: >-
-  The hatchery is warm and humid, its walls lined with <ansi fg="cyan">incubator
-  units</ansi> humming at precise temperatures. The room smells of warm, moist
+  The hatchery is warm and humid, its walls lined with <ansi fg="cyan">incubator units</ansi> humming at precise temperatures. The room smells of warm, moist
   air and something animal — the first breath of creatures that have not existed
   on earth for sixty-five million years. <ansi fg="cyan">Eggs</ansi> fill the
   incubators: leathery, cream-colored, slightly larger than a football. Some
   are in varying stages of hatch — fragments of shell at the bottom of
-  incubator trays, tiny forms curled in the warmth. A <ansi fg="itemname">baby
-  raptor</ansi> the size of a large chicken moves along the floor near the
+  incubator trays, tiny forms curled in the warmth. A <ansi fg="itemname">baby raptor</ansi> the size of a large chicken moves along the floor near the
   incubators, blinking and investigating everything with the intense attention
   of the newly born. It is <ansi fg="cyan">absurdly charming</ansi>. You keep
   having to remind yourself what it will become. Dr. Wu keeps detailed <ansi fg="itemname">hatch records</ansi> on a clipboard nearby. The DNA

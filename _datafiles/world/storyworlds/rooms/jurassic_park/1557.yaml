@@ -3,11 +3,9 @@ zone: Jurassic Park
 title: The Electric Fence
 description: >-
   The perimeter <ansi fg="red">electric fence</ansi> runs along the hill here
-  in a nine-foot grid of chain-link and electrified wire, its <ansi fg="itemname">voltage
-  indicators</ansi> cycling between green and the terrible amber of a warning
+  in a nine-foot grid of chain-link and electrified wire, its <ansi fg="itemname">voltage indicators</ansi> cycling between green and the terrible amber of a warning
   state. This is the fence Tim Murphy climbed in the dark while it was off,
-  and which came back on while he was still on it. The <ansi fg="itemname">scorch
-  marks</ansi> are still there — on the wire, on the post where someone grabbed
+  and which came back on while he was still on it. The <ansi fg="itemname">scorch marks</ansi> are still there — on the wire, on the post where someone grabbed
   it. The current runs through everything: fence, posts, ground rods, and if
   you touch the wrong thing at the wrong moment the current runs through you.
   The fence here is climbable — barely — up to the <ansi fg="exit">north</ansi>

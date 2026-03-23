@@ -6,8 +6,7 @@ description: >-
   its walls papered in a faded floral pattern that peels at the seams. The <ansi fg="itemname">floorboards</ansi> are bare and cold underfoot. A coat rack
   by the front door holds a heavy <ansi fg="itemname">work coat</ansi>, stiff with
   cold. Family <ansi fg="itemname">photographs</ansi> line one wall in simple frames.
-  The front <ansi fg="exit">door</ansi> leads to the porch. The <ansi fg="exit">boy's
-  bedroom</ansi> is to the west. The <ansi fg="exit">parents' room</ansi> is to the east.
+  The front <ansi fg="exit">door</ansi> leads to the porch. The <ansi fg="exit">boy's bedroom</ansi> is to the west. The <ansi fg="exit">parents' room</ansi> is to the east.
 mapsymbol: H
 maplegend: Hallway
 biome: house

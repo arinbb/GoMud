@@ -7,8 +7,7 @@ description: >-
   cannot see into this corner. You know this because Winston measured it,
   carefully, over several days, watching where the telescreen's angle of
   view ended. This is the only unwatched square meter in Victory Mansions,
-  possibly in all of London. A small wooden <ansi fg="itemname">writing
-  table</ansi> has been wedged in here, and on it the <ansi fg="itemname">diary</ansi> lies open. The <ansi fg="exit">flat</ansi> is accessible above.
+  possibly in all of London. A small wooden <ansi fg="itemname">writing table</ansi> has been wedged in here, and on it the <ansi fg="itemname">diary</ansi> lies open. The <ansi fg="exit">flat</ansi> is accessible above.
 mapsymbol: A
 maplegend: The Alcove
 biome: house
