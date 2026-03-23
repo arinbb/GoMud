@@ -21,6 +21,9 @@ const guideMobId = 38
 
 func SpawnGuide(e events.Event) events.ListenerReturn {
 
+	// Guide disabled for StoryWorlds — exploration-focused, no combat escort needed
+	return events.Continue
+
 	evt := e.(events.RoomChange)
 
 	// If this isn't a user changing rooms, just pass it along.
