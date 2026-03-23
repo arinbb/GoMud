@@ -1,0 +1,57 @@
+roomid: 1802
+zone: Crime and Punishment
+title: Stolyarny Lane
+description: >-
+  The street outside the building, a narrow lane between tenement walls that
+  lean toward each other as if in confidence. The <ansi fg="itemname">summer
+  heat</ansi> here is worse than anywhere — trapped between the stones, no
+  breeze, the smell of <ansi fg="itemname">horse dung</ansi> and dust and
+  something rotting in a gutter. A drunk is already asleep against the wall
+  at midmorning. Workmen in sheepskin coats — somehow, even in this heat —
+  move past with purpose. The lane opens to larger streets in several
+  directions: <ansi fg="exit">north</ansi> to Haymarket Square, <ansi
+  fg="exit">east</ansi> to the pawnbroker's building, <ansi
+  fg="exit">south</ansi> toward the canal, <ansi fg="exit">west</ansi> to the
+  police station. The building entrance is <ansi fg="exit">up</ansi> the
+  staircase.
+mapsymbol: L
+maplegend: Stolyarny Lane
+biome: city
+exits:
+  up:
+    roomid: 1801
+  north:
+    roomid: 1803
+  east:
+    roomid: 1805
+  south:
+    roomid: 1807
+  west:
+    roomid: 1809
+nouns:
+  heat: >-
+    The heat of St. Petersburg in summer is a specific punishment. It does
+    not shimmer or dance the way southern heat does. It simply presses down,
+    flat and yellow, smelling of lime and horse and the canal, making
+    everything seem slightly unreal.
+  drunk: >-
+    A man in a greatcoat, sleeping against the wall. His face is red. His
+    coat is not appropriate for the season. He is breathing, which is
+    something. He will be here when you come back. He will probably be here
+    when you come back after that.
+  gutter: >-
+    A gutter running along the base of the building wall, carrying something
+    dark and slow toward the canal. The smell from it is specific and
+    unignorable.
+  building: >-
+    The building is four floors of yellow-grey plaster, the kind that once
+    had pretensions and has since given them up. The windows are small, the
+    courtyard inside is darker than the street. This is where Raskolnikov
+    lives. This is where the theory was born.
+idlemessages:
+- A cart horse stands in the lane, its head down, steaming. Its owner is somewhere else.
+- The drunk against the wall shifts position without waking, as if even unconsciousness is uncomfortable here.
+- 'Two women cross the lane quickly, their voices dropping to whispers as they pass the sleeping drunk, rising again after.'
+- The heat trapped between the tenement walls is its own weather, unrelated to the sky above.
+- A workman in a sheepskin coat walks past. The coat is impenetrable to reason. He does not appear to suffer.
+- 'From an upper window: a pot empties into the lane below. The splash goes unacknowledged by everyone.'

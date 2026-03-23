@@ -1,0 +1,60 @@
+roomid: 2128
+zone: Paris Texas
+title: The Peep Show Booth
+description: >-
+  A small <ansi fg="8">booth</ansi> barely large enough to stand in. A
+  <ansi fg="itemname">telephone receiver</ansi> on the wall. A
+  <ansi fg="8">one-way mirror</ansi> that occupies most of the wall in front of
+  you. On the other side of the mirror, visible to you but not to her, a woman
+  sits in a soft <ansi fg="cyan">pink light</ansi>. She is
+  <ansi fg="itemname">Jane</ansi>. She is <ansi fg="cyan">beautiful</ansi> in
+  the particular way of someone who has stopped trying to be. She arranges
+  her hair without hurry. She waits. She has been waiting for a long time and
+  she does not know for what. You can see her. She cannot see you. The receiver
+  connects to her room. If you pick it up and speak, she will hear your voice
+  through a speaker in her room. She will not know who you are unless you tell
+  her. The exit back to the <ansi fg="exit">hotel</ansi> is the door behind you.
+mapsymbol: P
+maplegend: The Booth
+biome: house
+exits:
+  hotel:
+    roomid: 2127
+    mapdirection: west
+nouns:
+  mirror: >-
+    One-way glass. You see her. She sees her own reflection. This is
+    the entire architecture of the scene — one person visible and one
+    person hidden, and the mirror between them the glass of everything
+    that went wrong.
+  receiver: >-
+    Black telephone receiver, slightly warm. If you pick it up, a
+    small red light in her room will glow and she will know someone
+    is there. She will pick up her receiver and wait. It is your
+    voice that must go first.
+  jane: >-
+    She sits in the pink light and she is the most beautiful and
+    the most damaged thing you have seen in this whole film. She
+    adjusts her hair. She does not look toward the mirror. She has
+    learned not to look toward the mirror.
+  light: >-
+    Pink and soft and designed to be flattering and it is flattering
+    but not in the way it was designed to be. It makes her look
+    like she is already somewhere else, somewhere warmer.
+  phone: >-
+    Black telephone receiver, slightly warm. If you pick it up, a
+    small red light in her room will glow and she will know someone
+    is there. She will pick up her receiver and wait. It is your
+    voice that must go first.
+spawninfo:
+- mobid: 473
+  message: '<ansi fg="cyan">Jane sits in the pink light on the other side of the glass, adjusting her hair, waiting without knowing she is waiting.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Jane adjusts her hair in the mirror. She is adjusting your reflection without knowing it.
+- The pink light hums faintly. The booth is very small. The silence is enormous.
+- She picks up a small brush and puts it down. Picks up the receiver and puts it down. Waits.
+- You can see the exact moment when she decides not to think about something. Her face goes neutral and she looks away.
+- The receiver in your hand is heavier than it should be.
+- 'On her side: pink light, her reflection, the receiver, a chair, a small table. Everything necessary. Nothing comfortable.'
+- She turns toward the mirror and you stop breathing and then she turns away and you were wrong, she was looking at herself.

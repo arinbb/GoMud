@@ -1,0 +1,15 @@
+mobid: 373
+zone: the_little_prince
+hostile: false
+maxwander: 0
+activitylevel: 20
+character:
+  name: The King
+  description: >-
+    An elderly man in a magnificent ermine robe, sitting with the
+    unassailable dignity of someone who has been in complete control of
+    a completely empty kingdom for a very long time. His crown is slightly
+    too large. His eyes are kind, behind the authority. He would very much
+    like someone to rule. He will settle for you, if you will sit down.
+  raceid: 1
+  level: 6

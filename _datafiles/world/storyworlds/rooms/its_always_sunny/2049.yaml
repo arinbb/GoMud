@@ -1,0 +1,50 @@
+roomid: 2049
+zone: its_always_sunny
+title: Denniss Room
+description: >-
+  Dennis Reynolds's room is pristine in the way that suggests not cleanliness
+  but control. The bed is made with hotel precision. The mirror above the
+  dresser is clean. The closet is organized by color and then by season and
+  then by occasion. There is a <ansi fg="itemname">locked box</ansi> on the
+  shelf that was not here last year. There are <ansi fg="itemname">tools</ansi>
+  on the shelf that you are not going to examine closely, that you are going
+  to look past, that you are going to decide are innocuous without verifying
+  this because the alternative is a line of thinking you do not want to follow
+  to its conclusion. The window looks out over the street. The room has the
+  quality of a stage set — too arranged, too considered. To the
+  <ansi fg="exit">south</ansi> is the main apartment.
+mapsymbol: DR
+maplegend: Denniss Room
+biome: house
+exits:
+  south:
+    roomid: 2048
+nouns:
+  bed: >-
+    The bed has been made with the precision of someone who considers the
+    state of their bed a reflection of their inner life. It is, in Dennis's
+    case, perfectly correct. Everything on the outside is arranged and
+    controlled and immaculate. The inside is a different question. One that
+    the bed does not answer.
+  mirror: >-
+    The mirror above the dresser is polished and angled precisely to show
+    the full face at the exact correct height. Dennis has calibrated this.
+    Someone has placed a small note on the edge of the mirror in very small
+    handwriting that says "always." It is in Dennis's handwriting. It is
+    for Dennis, from Dennis.
+  closet: >-
+    The closet is organized with startling thoroughness. Colors grade from
+    light to dark. Seasons divide. Occasions have their own sections. There
+    is a section labeled in small text that you squint at and then decide
+    you misread. You probably misread it. You are going to move on.
+  box: >-
+    A locked box on the shelf that will not open without a key you do not
+    have and, on reflection, do not want. Some doors are better closed.
+    Dennis knows this too — that is why it is locked.
+idlemessages:
+- The room is very quiet. The quiet has texture. It is not the quiet of emptiness but the quiet of something kept very still.
+- The mirror reflects an empty room with perfect accuracy. The room does not look different without Dennis in it. It looks exactly the same.
+- 'The locked box sits on the shelf. The box does not move. You are aware of the box in the way you are aware of some things: unable to stop being aware.'
+- From below, muffled, the television. Mac watching something. The apartment sounds normal. This room does not sound normal. It is perfectly quiet.
+- The closet door is slightly ajar. The organized clothes inside are visible. The section labels are too small to read from here. You do not move closer.
+- A hair product on the dresser is the only personal item visible on any surface. Everything else has been put away. The put-away-ness is its own statement.

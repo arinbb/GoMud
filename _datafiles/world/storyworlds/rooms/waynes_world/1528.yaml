@@ -1,0 +1,49 @@
+roomid: 1528
+zone: Waynes World
+title: Backstage at the Gasworks
+description: >-
+  The green room behind the Gasworks stage. <ansi fg="itemname">Equipment cases</ansi>
+  stack against the walls, stickered with tour dates from cities you've never
+  visited. A <ansi fg="itemname">folding table</ansi> holds a spread of rider
+  requirements: cold cuts, a specific brand of mineral water, and an alarming
+  number of <ansi fg="itemname">M&Ms</ansi> with the brown ones removed. The
+  <ansi fg="itemname">mirror</ansi> is surrounded by bare bulbs like a Hollywood
+  vanity. Tonight someone very famous is using it. The energy back here is
+  different — focused, pre-show, charged. You can feel the stage through
+  the floor, already alive. To the <ansi fg="exit">stage</ansi> leads back to the
+  main floor.
+mapsymbol: k
+maplegend: Backstage
+biome: house
+exits:
+  stage:
+    roomid: 1526
+    mapdirection: east
+nouns:
+  cases: >-
+    Road cases, black with chrome corners, stickered obsessively. Detroit, Chicago,
+    Cleveland, Milwaukee. Someone has been everywhere and still comes to Aurora.
+    This is correct behavior.
+  table: >-
+    The backstage rider spread. Cold cuts, mineral water, fresh fruit, and a bowl
+    of M&Ms with the brown ones picked out. This is not a request. This is a
+    requirement. Nobody discusses it.
+  m&ms: >-
+    All the non-brown M&Ms. Someone went through the whole bag. Picked every
+    single brown one out. This is both absurd and completely understandable.
+  mirror: >-
+    A full-length mirror surrounded by bare bulbs, turned bright enough to see
+    everything. The person using this mirror tonight looks equally comfortable
+    with the scrutiny.
+spawninfo:
+- mobid: 245
+  message: "<ansi fg=\"yellow\">Alice Cooper is backstage, sorting through M&Ms with focused calm.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The floor vibrates with the bass from the stage warming up on the other side of the wall.
+- Someone picks up a case of M&Ms and immediately sets it back down without explaining why.
+- The bare bulbs around the mirror hum at a frequency that feels significant.
+- A roadie crosses the room quickly, on an errand too important to explain.
+- The energy back here is coiled, pre-show, waiting to be released into the crowd.
+- The cold cuts have been artfully arranged and no one is eating them yet.
+- The smell of stage fog machine fluid seeps under the door from the stage side.

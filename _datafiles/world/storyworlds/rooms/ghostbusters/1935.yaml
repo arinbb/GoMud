@@ -1,0 +1,48 @@
+roomid: 1935
+zone: Ghostbusters
+title: Inside the Containment Grid
+description: >-
+  You are inside the containment grid. This is not a place that was designed for
+  occupancy by living persons. The space is impossible -- larger on the inside
+  than the container that holds it, a void of pulsing <ansi fg="itemname">red-black
+  energy</ansi> that extends in all directions without edge. The <ansi fg="itemname">ghosts</ansi>
+  are everywhere, thousands of them: every entity the Ghostbusters have ever trapped,
+  free within the grid, doing whatever ghosts do in a holding space with no exits and
+  no oversight. They are curious about you. Several are very close. The air tastes of
+  electricity and something that has no physical name. In the far distance, if distances
+  mean anything here, a <ansi fg="itemname">wall of light</ansi> marks the boundary
+  of the laser confinement field. Beyond it is the basement of the firehouse, which
+  is several dimensions away. A slot of relative normalcy is barely visible -- the
+  way back out, if you can reach it.
+mapsymbol: G
+maplegend: Containment Grid Interior
+biome: dungeon
+exits:
+  out:
+    roomid: 1923
+    exitmessage: You reach the confinement boundary and are ejected back into the basement, considerably shaken.
+nouns:
+  ghosts: >-
+    The ghosts in the grid have had time to relax. They are no longer being hunted
+    and they are not in the Underworld bureaucracy. They have formed what could
+    generously be called a community, and less generously called a mob. They are
+    aware of you. The larger ones are considering you with an attention that does
+    not feel recreational.
+  energy: >-
+    The energy in here is raw PKE -- psychokinetic energy in its undiluted form,
+    the substrate of the supernatural. It presses on your skin like static, makes
+    your hair stand up, produces a synesthetic experience in which you can almost
+    hear colors and almost see sounds. It is deeply unpleasant and deeply fascinating
+    and you should leave.
+  light: >-
+    The wall of laser confinement light marks the edge of the grid's interior. On
+    the other side is the physical basement. The wall pulses at a frequency that
+    the human nervous system reads as "wrong, go away." This is a correct reading.
+idlemessages:
+- A ghost drifts past very close, pauses, and seems to make a decision about you. It moves on. You are grateful.
+- The energy shifts and for a moment you can hear the city above, filtered through several dimensions and the entire mass of the building.
+- Something large and green presses against the confinement wall from your side and then retreats.
+- The red-black energy pulses in a rhythm that matches nothing biological and everything geological.
+- A ghost that was a Victorian banker regards you with profound disapproval. Ghosts maintain their personalities.
+- The slot of light that leads back out flickers. The grid is destabilizing. You should leave.
+- From everywhere and nowhere, the sound of thousands of entities doing whatever it is entities do when nobody is watching them.

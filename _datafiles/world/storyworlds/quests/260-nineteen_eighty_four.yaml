@@ -1,0 +1,24 @@
+questid: 260
+name: Nineteen Eighty Four
+description: >-
+  Follow Winston Smith through the grey corridors of Oceania. Write the diary.
+  Work at the Ministry of Truth. Find Julia. Visit the room above the shop.
+  Read the book at O'Brien's. Survive Room 101. Reach the Chestnut Tree.
+  He loves Big Brother. You do not have to.
+reward:
+  experience: 5000
+  item_id: 250
+  playermessage: >-
+    You have walked the full arc of 1984. As a memento of the world Winston
+    Smith inhabited and lost, you receive a glass paperweight -- a dome of
+    clear glass with a piece of pink coral at its center, soft and luminous.
+    It belonged to a different age. It belongs to you now.
+steps:
+- description: Write in the diary in the Alcove.
+- description: Work at the Ministry of Truth Records Department.
+- description: Meet Julia in the room above the shop.
+- description: Visit Charrington's antique shop in the prole quarter.
+- description: Read the book at O'Brien's flat.
+- description: Be captured and held in the Ministry of Love.
+- description: Survive Room 101.
+- description: Find Winston at the Chestnut Tree Cafe.

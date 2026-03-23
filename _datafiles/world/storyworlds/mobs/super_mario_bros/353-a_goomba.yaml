@@ -1,0 +1,28 @@
+mobid: 353
+zone: super_mario_bros
+hostile: true
+maxwander: 2
+hates:
+  - human
+idlecommands:
+  - "emote waddles left with slow, implacable purpose."
+  - "emote waddles right with slow, implacable purpose."
+  - "emote frowns at the horizon. The frown is doing a lot of work."
+  - ""
+  - "emote bumps into a pipe, reverses direction, continues waddling."
+  - ""
+activitylevel: 35
+character:
+  name: a Goomba
+  description: >-
+    A small brown mushroom-like creature the size of a large football,
+    with two stubby feet and no arms and an expression of permanent,
+    concentrated anger. The Goomba is the first enemy in the most
+    famous video game ever made, which means it is perhaps the most
+    important enemy in the history of games. It waddles left. It
+    waddles right. It cannot jump. It cannot do anything except walk
+    toward you. It has been doing this since 1985. If you jump on it,
+    it flattens. That is the entirety of its existence and it has
+    earned its place in history anyway.
+  raceid: 1
+  level: 2

@@ -1,0 +1,24 @@
+mobid: 284
+zone: blonde_on_blonde
+hostile: false
+maxwander: 0
+activitylevel: 10
+idlecommands:
+  - emote checks his pocket watch with the expression of a man whose schedule has been complicated by desire.
+  - emote adjusts his black hat with professional solemnity.
+  - emote sighs, deeply and formally, the way one sighs when guilt is one's occupation.
+  - say 'Professional matter. Purely professional.'
+  - emote looks at the door, looks at you, looks back at the door.
+  - ''
+character:
+  name: the Guilty Undertaker
+  description: >-
+    Formal as a funeral, which is his business. Hat, dark coat, the whole
+    apparatus of professional mourning brought to bear on a doorstep at
+    evening. His guilt is not for the dead; it is for something more specific
+    and less forgivable -- the guilt of someone who knows exactly what is
+    on the other side of this door and is standing here on the wrong side
+    of it anyway, checking his watch. He is a comic figure in a non-comic
+    position, which is the exact proportion Dylan intended.
+  raceid: 1
+  level: 5

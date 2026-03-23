@@ -1,0 +1,24 @@
+mobid: 395
+zone: back_to_the_future
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say You! No running in the halls!"
+  - "emote marks something on his clipboard with a precise, damning notation."
+  - "say I have my eye on you."
+  - "emote patrols the corridor at exactly the speed of institutional authority."
+  - "say That boy is a slacker. Always has been. Always will be."
+  - "emote issues a detention slip to no one in particular, just to stay sharp."
+  - ""
+activitylevel: 20
+character:
+  name: Mr. Strickland
+  description: >-
+    The Hill Valley High School disciplinarian, a narrow man in his
+    early 40s with a gray crewcut and a clipboard he wields like a
+    weapon. His suit is pressed, his tie is precise, his eyes miss
+    nothing. He has opinions about slackers and he will share them.
+    He has never, in his professional life, issued a single warning.
+    Only detentions.
+  raceid: 1
+  level: 8

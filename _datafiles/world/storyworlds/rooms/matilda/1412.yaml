@@ -1,0 +1,49 @@
+roomid: 1412
+zone: Matilda
+title: Playground
+description: >-
+  A bleak rectangle of <ansi fg="8">cracked asphalt</ansi> surrounded by a high
+  chain-link <ansi fg="itemname">fence</ansi>. The playground equipment is ancient
+  and hostile: a rusting <ansi fg="itemname">climbing frame</ansi> with sharp
+  edges, a <ansi fg="itemname">see-saw</ansi> with a splintered seat, and a set
+  of <ansi fg="itemname">swings</ansi> with chains that squeal in protest. A faded
+  white <ansi fg="itemname">line</ansi> on the asphalt marks the boundary beyond
+  which children must not step during break. The Trunchbull's office window
+  overlooks the entire space from above. The school gates are back to the
+  <ansi fg="exit">north</ansi>.
+mapsymbol: P
+maplegend: Playground
+biome: land
+exits:
+  north:
+    roomid: 1406
+nouns:
+  fence: >-
+    A high chain-link fence topped with a curl of wire that might be barbed.
+    It surrounds the playground on three sides. The fourth side is the school
+    building itself. The fence is not here to keep strangers out — it is here
+    to keep children in.
+  climbing: >-
+    A rusting metal climbing frame with sharp, unprotected edges. The paint
+    has long since peeled away, leaving bare metal that is scorching in summer
+    and freezing in winter. Several bars are bent at odd angles, suggesting
+    impacts of considerable force.
+  see-saw: >-
+    A wooden see-saw with a splintered seat on one end and a crack running the
+    length of the other. The fulcrum squeaks with every movement. Using it is
+    an act of faith and recklessness.
+  swings: >-
+    Two swings on rusted chains that shriek when moved. The rubber seats are
+    cracked and hardened. One swing hangs at an odd angle, its chain twisted.
+    Children still use them, because even a hostile swing is better than
+    standing still in the Trunchbull's line of sight.
+  line: >-
+    A faded white line painted on the asphalt. Children know exactly what it
+    means: cross this line during break and the Trunchbull will see you from
+    her window. What happens next is the subject of playground legend.
+idlemessages:
+- 'The swing chains creak in the wind, a slow, rhythmic squealing like a rusty complaint.'
+- 'A group of children huddle near the fence, speaking in whispers and glancing up at the office window.'
+- 'The climbing frame casts angular shadows across the cracked asphalt.'
+- 'Someone kicks a ball against the fence. It bounces back with a metallic rattle.'
+- 'The white line on the ground gleams in the grey light like a warning.'

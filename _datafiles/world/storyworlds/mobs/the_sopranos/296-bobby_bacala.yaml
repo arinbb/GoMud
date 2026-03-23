@@ -1,0 +1,26 @@
+mobid: 296
+zone: the_sopranos
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say I got a Lionel set at home -- the O gauge, the big one. You should see the detail on these things."
+  - "emote sits with his large hands folded on the table, looking slightly uncomfortable in his own size."
+  - "emote eats something slowly and with evident enjoyment, not making a show of it."
+  - "say Model trains are a legitimate hobby. People don't give them enough credit."
+  - ''
+  - "emote shifts in his chair, the chair expressing concern about this."
+  - "say I'm not gonna say anything wrong about anybody here. That's just my policy."
+activitylevel: 25
+character:
+  name: Bobby Bacala
+  description: >-
+    A very large, broad man with a gentle face that seems to have been
+    issued to the wrong body. He moves carefully through spaces, aware
+    of his own dimensions, with the particular delicacy of big men who
+    have learned not to knock things over. He loves model trains with
+    a pure, unguarded enthusiasm that is the most honest thing about him.
+    He is Tony's brother-in-law and an earner for the family, though
+    he would rather be talking about locomotives. He is not stupid.
+    He simply chooses not to be dangerous whenever he has the choice.
+  raceid: 1
+  level: 8

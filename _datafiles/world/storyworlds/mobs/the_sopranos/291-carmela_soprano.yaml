@@ -1,0 +1,25 @@
+mobid: 291
+zone: the_sopranos
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote moves along the counter, rearranging things that do not need rearranging."
+  - "emote opens the oven, checks whatever is inside, and closes it again with quiet authority."
+  - "emote pages through a real estate listings magazine, marking something with a pen."
+  - "emote pours another half-inch of wine into her glass and sets it back with precision."
+  - ''
+  - "say I made the gravy at seven this morning and nobody will appreciate it. That's fine."
+  - "emote wipes down a counter that is already clean."
+activitylevel: 30
+character:
+  name: Carmela Soprano
+  description: >-
+    An attractive, well-maintained woman in her early forties, blonde and
+    put-together in the specific way of women who have made an identity out
+    of their household. She wears good clothes that are not flashy. Her
+    expression is one of careful composure, maintained over something that
+    is not composure at all. She is the moral center of this household in
+    that she knows exactly what is wrong and has chosen to continue anyway.
+    She is not stupid. This makes everything more complicated.
+  raceid: 1
+  level: 8

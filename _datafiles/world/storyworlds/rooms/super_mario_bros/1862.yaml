@@ -1,0 +1,55 @@
+roomid: 1862
+zone: Super Mario Bros
+title: World 1-2 End Zone
+description: >-
+  The end of a level, made real. A broad staircase of stone blocks descends
+  from left to right, each step a generous brick-wide platform, making an
+  enormous pixelated pyramid that catches the late afternoon light. At its
+  base, a tall white <ansi fg="itemname">flagpole</ansi> rises against the
+  blue sky, the flag at its top printed with a white circle on black. A
+  small stone <ansi fg="itemname">castle</ansi> squats to the right, its
+  drawbridge down, a small flag on its turret. Colored <ansi fg="yellow">fireworks</ansi>
+  burst overhead -- red, green, blue -- launched automatically the moment
+  you arrived, as if the level itself is congratulating you. The air smells
+  of gunpowder and triumph. The world went west to get here; north leads
+  to <ansi fg="exit">deeper</ansi> worlds.
+mapsymbol: F
+maplegend: End Zone Flagpole
+biome: land
+exits:
+  west:
+    roomid: 1861
+  north:
+    roomid: 1863
+nouns:
+  flagpole: >-
+    A tall white pole with a pennant at the top. The flag itself is a white
+    circle on black -- the flag of no particular kingdom, the universal
+    symbol of I made it. The pole stands at the base of the stairs. The
+    higher you are on the stairs when you grab it, the more points you
+    score. The top of the pole is the highest. There is always a Koopa on
+    the stairs who will bump you off if you are not careful. The flagpole
+    descends with a slow dignity once you grab it. The fireworks start.
+  castle: >-
+    A small stone castle to the right of the flagpole, modestly proportioned,
+    with a single turret and a small dark doorway. The drawbridge is always
+    down. Inside, according to Toad, the princess is not here. But you go
+    in anyway, because the game requires it, and because the small flame
+    over the doorway burns cheerfully and Toad is very polite about the
+    whole thing.
+  fireworks: >-
+    Fireworks bursting in colored clusters overhead -- red, green, blue,
+    in threes or sixes depending on your score. They bloom and fade and
+    bloom again, the world celebrating itself. Each one makes a cheerful
+    pop. The number of fireworks tells you something, if you are paying
+    attention -- three fireworks, your score ended in 1, 3, or 6. The game
+    tracks everything, even the things you do not notice.
+spawninfo: []
+idlemessages:
+- 'Fireworks burst overhead: pop, pop, pop. The level is over. You survived.'
+- The flagpole sways slightly in the wind, its pennant snapping with a satisfying crack.
+- The castle drawbridge is down and the torchlight inside flickers invitingly.
+- The staircase of stone blocks catches the sun, each step casting a precise square shadow.
+- 'A coin total spins up somewhere in the ether: every coin you collected, counted and celebrated.'
+- The sky has gone a slightly deeper blue here, as if the world knows you are further along.
+- 'You hear the end-of-level fanfare distantly: the short triumphant melody that means you did it.'

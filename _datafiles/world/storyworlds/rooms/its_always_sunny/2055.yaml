@@ -1,0 +1,45 @@
+roomid: 2055
+zone: its_always_sunny
+title: The Gang Breaks Dee
+description: >-
+  This is not a room with a proper name on the door. It is a room that
+  exists whenever the Gang decides to make Dee cry as a collective activity,
+  which happens with a frequency that says something very specific about all
+  of them. The <ansi fg="8">walls</ansi> are just bar walls — the same
+  sticky, close, inadequate walls of Paddys Pub. But the <ansi fg="itemname">attention</ansi>
+  in the room has a direction. Every joke has a target. Every bit of cruelty
+  is delivered with the practiced timing of a group that has done this many
+  times and knows what lands. <ansi fg="itemname">Dee</ansi> is at the center
+  of it, cycling through dignity and collapse, trying to hold on to something
+  the Gang peels away layer by layer with cheerful dedication. And then — beneath
+  it — something else. Something Dee has that none of them will admit: the fact
+  that she keeps coming back. Every single day. That means something. The Gang
+  will never say what. To the <ansi fg="exit">bar</ansi> is the way out.
+mapsymbol: BD
+maplegend: Break Dee
+biome: city
+exits:
+  bar:
+    roomid: 2040
+    mapdirection: east
+nouns:
+  attention: >-
+    The focused attention of the Gang is a powerful thing. It has been deployed
+    against Dee in this room and it is not comfortable to witness. They are not
+    bad people, exactly. They are people who have found each other and formed a
+    closed system that reinforces every impulse. Dee is part of the system.
+    That is also the tragedy. She built this with them.
+  dee: >-
+    Dee Reynolds, aspiring actress, bird — she hates that — and the most
+    resilient person in the bar, in the way that things that bend without
+    breaking are more resilient than things that do not bend at all. She is
+    being broken in this room. She will reassemble. She will be here tomorrow.
+    The Gang will never quite understand what that means about her, or about
+    them, or about all of it.
+idlemessages:
+- 'The Gang has deployed several routines in this room. They have favorites. They cycle through them with the ease of a practiced ensemble.'
+- Dee attempts a counter-joke. It is not bad. The Gang does not acknowledge this. The room goes on.
+- 'A moment of something — almost genuine, almost connection — and then Dennis says something and it closes again.'
+- 'Mac has a karate bit he does when roasting Dee. It is exactly as effective as his other karate.'
+- Frank produces the egg. Even in this room, even now, the egg. It cannot be explained. It is simply part of the furniture.
+- 'Dee laughs. For a moment, she is in on the joke. For a moment, she is one of them. The moment passes. The room continues.'

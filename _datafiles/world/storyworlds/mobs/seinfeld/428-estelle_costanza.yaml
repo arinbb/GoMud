@@ -1,0 +1,26 @@
+mobid: 428
+zone: seinfeld
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote yells at Frank about something from the other room."
+  - "say GEORGE! What are you doing with your life, George?"
+  - "emote worries about George out loud."
+  - "say Frank, I don't know WHY you have that pole in the living room."
+  - "emote calls someone on the telephone to discuss something that is none of their business in a loving way."
+  - ''
+  - "emote makes a face that communicates an entire paragraph of disappointment."
+  - "say I just worry. Is it wrong to worry? It is not wrong to worry."
+activitylevel: 25
+character:
+  name: Estelle Costanza
+  description: >-
+    A woman in her late sixties wearing a housedress and the expression of
+    someone who has been worried for thirty years and has gotten very good
+    at it. She loves her son George in the specific way that makes George
+    what he is, which is to say completely and without useful perspective.
+    She and Frank argue constantly, loudly, about things that are proxies
+    for older things. Her voice carries. Her worries are sincere. Her
+    judgment is not always sound but her love is not in question.
+  raceid: 1
+  level: 5

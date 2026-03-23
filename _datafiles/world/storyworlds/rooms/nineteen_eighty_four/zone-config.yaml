@@ -1,0 +1,16 @@
+name: Nineteen Eighty Four
+roomid: 1960
+autoscale:
+  minimum: 1
+  maximum: 10
+defaultbiome: city
+mutators:
+- mutatorid: oceania-surveillance
+idlemessages:
+- 'The telescreen hums at the edge of hearing — always on, always watching, always recording.'
+- 'Somewhere a telescreen voice drones on about production figures. The numbers are bigger than last year. They are always bigger than last year.'
+- 'You have the feeling of being watched. You have learned not to show it on your face.'
+- 'A helicopter skims low over the rooftops, peering into windows with its camera. The Thought Police at work.'
+- 'The smell of Victory Gin hangs in the cold air — oily, sharp, tasting of something that was never quite food.'
+- 'BIG BROTHER IS WATCHING YOU. The poster is everywhere. The eyes follow you.'
+- 'In the distance, a telescreen announces another victory against Eurasia. Or was it Eastasia? It does not matter. There has always been a war.'

@@ -1,0 +1,43 @@
+roomid: 1525
+zone: Waynes World
+title: Stan Mikita's Back Booth
+description: >-
+  The sacred back <ansi fg="itemname">booth</ansi> of Stan Mikita's Donuts. This
+  is where the important conversations happen. The <ansi fg="itemname">vinyl</ansi>
+  of the seat has cracked along a fault line that corresponds exactly to Wayne's
+  preferred sitting position. The <ansi fg="itemname">table</ansi> bears rings from
+  a thousand coffee cups, a palimpsest of social history. A <ansi fg="itemname">window</ansi>
+  looks out onto the parking lot, which is ideal for monitoring the arrival of
+  interesting cars and/or Benjamin Kane. From here you can see everything that
+  matters in Aurora without technically being observed. The <ansi fg="exit">counter</ansi>
+  leads back to the main shop.
+mapsymbol: B
+maplegend: Back Booth
+biome: house
+exits:
+  counter:
+    roomid: 1524
+    mapdirection: north
+nouns:
+  booth: >-
+    The booth of legend. Wayne and Garth have solved every major philosophical
+    problem of late adolescence and early adulthood in this booth. It smells
+    of coffee and possibility.
+  vinyl: >-
+    Red vinyl, cracked along the armrest in a pattern that maps directly to
+    Wayne's enthusiasm. He gestures when he talks. He has always gestured.
+  table: >-
+    The table top is a record of Aurora social life: coffee rings layered on
+    coffee rings, a faint phone number in blue ballpoint that might be important,
+    Garth's initials scratched near the napkin dispenser.
+  window: >-
+    A perfect view of the parking lot. You can see who's arriving before they
+    see you. This is strategically important in Wayne's world.
+idlemessages:
+- The conversations from the counter drift back here in warm, indistinct waves.
+- A napkin drifts off the dispenser and settles on the table like a tiny surrender.
+- The window shows the parking lot, quiet and Aurora-ish in the afternoon light.
+- The booth seat creaks whenever you shift, as if encouraging you to stay put.
+- Two people in the next booth are having an argument about whether Hendrix or Clapton and they will not resolve it today.
+- The smell of fresh glazed donuts rolls back from the counter in waves.
+- The coffee here is the same coffee as at the counter. The booth makes it better somehow.

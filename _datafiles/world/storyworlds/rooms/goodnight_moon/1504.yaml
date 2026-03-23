@@ -1,0 +1,66 @@
+roomid: 1504
+zone: Goodnight Moon
+title: The Window
+description: >-
+  The west wall of the great green room, where the <ansi fg="itemname">window</ansi>
+  is. You stand very close to the glass. The moon is here, filling the
+  upper portion of the window -- <ansi fg="15">white</ansi> and enormous,
+  risen higher now than when you first arrived. Through the lower panes
+  you see the <ansi fg="itemname">outside world</ansi>: a dark lawn, a
+  tree bare of leaves, the rooftops of other houses with their quiet
+  lighted windows. The air near the glass is cooler than the rest of the
+  room -- you can almost smell the night through it, that cold clean
+  smell of late evening, of frost beginning, of the world settling into
+  its night posture. <ansi fg="blue">Stars</ansi> are visible now at
+  the moon's edges, more than before. The <ansi fg="itemname">curtains</ansi>
+  beside you are green and heavy and they move very slightly in a draft
+  that makes no sense in this warm sealed room. You press your forehead
+  against the glass. The moon does not move, or moves too slowly to see
+  moving, which is the same thing from inside a window on a quiet night.
+mapsymbol: W
+maplegend: The Window
+biome: house
+exits:
+  east:
+    roomid: 1500
+nouns:
+  window: >-
+    The window itself: old glass in a wooden frame, slightly wavy in the
+    way old glass is, so the moon seen through it has a faint shimmer, a
+    slight unreality. The latch is a small brass hook, closed. The glass
+    is cool. Your breath fogs it, then clears. The moon remains.
+  outside: >-
+    A lawn gone dark, a tree bare-branched, the silhouettes of rooftops
+    and chimneys against a sky that is deepening from indigo to black.
+    Far away, one light is on in a window across the way. Someone else
+    is still awake. You and the moon are watching them without meaning to.
+  curtains: >-
+    Green curtains, the same green as the walls, heavy and floor-length.
+    They move in a draft you cannot explain. Perhaps the window is not
+    entirely sealed. Perhaps the room breathes. The curtains hang in great
+    slow folds, shifting now and again as if the room is exhaling.
+  stars: >-
+    More visible now than they were at first. The moon has risen and
+    taken its full brightness with it, and in its wake a few stars have
+    appeared, far at the edges of the sky where the darkness is deepest.
+    They are not many. They are enough. They are exactly the right number
+    of stars for this particular window on this particular night.
+spawninfo:
+- mobid: 233
+  message: A little mouse sits on the windowsill, looking out at the moon.
+  respawnrate: 4 real minutes
+  idlecommands:
+  - "emote sits very still on the windowsill, nose pressed to the glass."
+  - ""
+  - "emote glances back at you, then returns to watching the moon."
+  - ""
+  - "emote breathes a small fog-patch onto the cold window glass."
+  - ""
+idlemessages:
+- The moon has risen another fraction. Its light is brighter now against the dark lawn.
+- Your breath fogs the glass, obscures the moon briefly, then clears.
+- The curtains stir. You cannot find the source of the draft.
+- Outside, the bare tree does not move. The night is very still out there.
+- A star appears at the window's corner that was not there before. Or you did not notice it before.
+- The glass is cool against your forehead. The room behind you is warm. You are between things.
+- The light in the distant window goes out. Someone else has said goodnight.

@@ -1,0 +1,58 @@
+roomid: 1841
+zone: Far Cry 5
+title: The County Road
+description: >-
+  The road runs through the heart of <ansi fg="10">Hope County, Montana</ansi>,
+  and the county is brutally, heartbreakingly beautiful. <ansi fg="10">Mountains</ansi>
+  rise in every direction, their slopes dark with pine forest, their peaks white
+  against a sky so blue it looks painted. Wildflowers edge the road. A hawk
+  circles somewhere overhead. And there, at the intersection ahead, a <ansi fg="red">
+  cult roadblock</ansi> — orange barriers, a white pickup with an Eden's Gate
+  seal on the door, a Peggie with a rifle watching the road. The beauty and the
+  menace occupy exactly the same space, and neither acknowledges the other.
+  Roads lead <ansi fg="exit">north</ansi> toward Falls End, <ansi fg="exit">east</ansi>
+  into Holland Valley, <ansi fg="exit">south</ansi> toward the Henbane River,
+  and <ansi fg="exit">west</ansi> into the Whitetail Mountains. The bunker
+  hatch is <ansi fg="exit">down</ansi>.
+mapsymbol: R
+maplegend: County Road
+biome: road
+exits:
+  down:
+    roomid: 1840
+  north:
+    roomid: 1842
+  east:
+    roomid: 1845
+  south:
+    roomid: 1848
+  west:
+    roomid: 1851
+nouns:
+  mountains: >-
+    The Whitetails to the west, the ranges flanking Holland Valley to the east.
+    They have been here for millions of years and will be here millions more.
+    Right now they are hosting a conflict that would have seemed insane to anyone
+    describing it from the outside. From the inside it feels completely real.
+  roadblock: >-
+    Orange plastic barriers across the road, an Eden's Gate logo printed on
+    each one. A white pickup. A cultist with a rifle. A handmade sign reads
+    "THE COLLAPSE IS COMING. JOSEPH SEED OFFERS SALVATION." The rifle is real.
+    The salvation is debatable.
+  hawk: >-
+    A red-tailed hawk riding thermals above the valley, unhurried and
+    indifferent to the human chaos below. You envy it. It doesn't know
+    about Eden's Gate. It doesn't know about any of this.
+  flowers: >-
+    Wildflowers along the roadside — Indian paintbrush, blue lupine, yellow
+    sunflowers. Montana in summer, insisting on its beauty despite everything.
+    You notice some of the flowers to the south have a faintly purple tint.
+    Bliss. The cult's drug. Growing wild now, spreading.
+idlemessages:
+- A white Eden's Gate pickup rolls slowly past on a parallel road, the driver watching you through aviator glasses.
+- The mountains stand in every direction, beautiful and immovable, completely indifferent to the county at their feet.
+- A hawk circles overhead in a thermal, riding it higher until it is a speck against the blue.
+- Somewhere north, a church bell rings. Once. Twice. Stops on the third.
+- The road is empty for long stretches. Then a Peggie patrol walks past, rifles up, eyes forward, hymns on their lips.
+- Wild roses grow along the fence line, blooming as if this were any summer, any year, any peaceful place.
+- The smell of pine and clean air carries from the west. From the south comes something sweeter. Wrong-sweet.

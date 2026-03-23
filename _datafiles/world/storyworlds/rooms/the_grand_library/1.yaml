@@ -24,6 +24,15 @@ exits:
   south:
     roomid: 7
     exitmessage: You follow the sound of distant music down a corridor to the south.
+  arcade:
+    roomid: 8
+    mapdirection: southwest
+    exitmessage: You follow the glow of CRT monitors through a side passage.
+  trophies:
+    roomid: 9
+    mapdirection: southeast
+    exitmessage: You step into a warm, amber-lit alcove lined with glass shelves.
+    exitmessage: You follow the glow of CRT monitors through a side passage.
 nouns:
   desk: >-
     A grand oak reception desk, its surface worn smooth by countless hands. A
@@ -40,7 +49,7 @@ spawninfo:
 - mobid: 1
   message: The Librarian quietly appears from behind a shelf.
   idlecommands:
-  - say Welcome to the Grand Library. Browse the stacks, the screening room, or the listening room to the south.
+  - say Welcome to the Grand Library. Browse the stacks, the screening room, the listening room, or the arcade.
   - ""
   - say Every story here is a doorway. All you have to do is open it.
   - ""

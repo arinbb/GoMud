@@ -1,0 +1,28 @@
+mobid: 357
+zone: super_mario_bros
+hostile: true
+maxwander: 0
+idlecommands:
+  - "emote rises from the pipe to full extension, teeth bared and snapping."
+  - ""
+  - "emote pauses at full height, head swaying slightly side to side."
+  - ""
+  - "emote descends back into the pipe with a soft shlupp."
+  - ""
+  - "emote rises again immediately, the rhythm unbroken."
+  - ""
+activitylevel: 35
+character:
+  name: a Piranha Plant
+  description: >-
+    A large round green head on a white stalk with a white collar,
+    emerging from a pipe in a steady rhythmic bob. The mouth is
+    circular and filled with white teeth arranged in two rows. The
+    Piranha Plant has no eyes, no limbs, no ability to pursue you.
+    It rises and falls. That is its entire existence. The danger is
+    purely positional -- if you are where the plant is when it is
+    up, it bites you. If you are where it is when it is down, you
+    can walk past. The Piranha Plant is the game's first lesson in
+    timing.
+  raceid: 1
+  level: 4

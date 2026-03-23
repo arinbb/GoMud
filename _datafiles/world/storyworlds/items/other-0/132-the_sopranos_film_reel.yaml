@@ -1,0 +1,18 @@
+itemid: 132
+name: The Sopranos film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">The Sopranos</ansi>
+description: >-
+  A film reel in a substantial metal canister, heavier than you expect.
+  "THE SOPRANOS" is printed on a label in the clean sans-serif type of
+  an HBO production. The canister is warm to the touch, as if the film
+  inside has been running recently. When you hold it up to the light you
+  can see through the celluloid: a large man in a bathrobe walking down
+  a driveway. A suburban house in North Caldwell, New Jersey. Ducks in
+  a pool. If you listen closely, you can hear the opening notes of something
+  that sounds like Alabama 3, faint and insistent, and underneath that,
+  the constant low hum of the New Jersey Turnpike.
+type: object
+subtype: usable
+uses: 0
+value: 0

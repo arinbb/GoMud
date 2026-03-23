@@ -1,0 +1,20 @@
+-
+  Supported:
+    "marmeladov": ["*"]
+  Conversation:
+    - ["#1 say Sir -- or madam -- will you permit me to address you? I am a Titular Councillor. Or I was. These things change."]
+    - ["#1 say My name is Marmeladov. Semyon Zakharovich Marmeladov. I was in the civil service. I had a coat with all its buttons.", "#1 emote straightens with the dignity of a remembered self."]
+    - ["#1 say I drink. I admit this freely. Not because it is pleasant -- although it is -- but because I have already fallen and have nothing further to lose by it."]
+    - ["#1 emote weeps briefly and theatrically, then recovers.", "#1 say My daughter -- my Sonya -- she works. You understand what I mean by works. She does this so that we may eat."]
+    - ["#1 say And I take her money. I take it and I drink it. Is that not magnificent? Is that not the purest expression of human wretchedness available?"]
+    - ["#1 say But I dare to believe that He will forgive even me. There will be a judgment and He will call out: Come forth, you drunkards! Come forth, you weak ones! And we will all come out, unashamed.", "#1 emote delivers this to the ceiling with the conviction of a man who has rehearsed it many times and means every word."]
+-
+  Supported:
+    "marmeladov": ["nastasya"]
+  Conversation:
+    - ["#1 say Nastasya! A kopek. One kopek for a small glass. I will repay it."]
+    - ["#2 say You will not repay it. You never repay it.", "#2 emote sets down her tray and looks at him with exasperated kindness."]
+    - ["#1 say I know. You are correct. And yet the kopek would be an act of mercy."]
+    - ["#2 say The last act of mercy got used up and bought more vodka.", "#2 emote crosses her arms."]
+    - ["#1 emote spreads his hands with the grandeur of a man with no remaining cards to play.", "#1 say I am what I am, Nastasya Ivanovna. I do not pretend otherwise."]
+    - ["#2 say At least you don't pretend.", "#2 emote picks up her tray, shaking her head, and goes back to work."]

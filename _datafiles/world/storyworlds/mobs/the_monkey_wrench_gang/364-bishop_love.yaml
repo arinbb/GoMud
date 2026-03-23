@@ -1,0 +1,24 @@
+mobid: 364
+zone: the_monkey_wrench_gang
+hostile: false
+maxwander: 1
+activitylevel: 35
+angrycommands: []
+idlecommands:
+  - emote scans the canyon with his binoculars, slow and methodical, covering every yard of the rim.
+  - emote radios his position to the helicopter, his voice flat and professional.
+  - emote adjusts his hat and resumes scanning. He is a patient man.
+  - say We will find them. The canyon is large. We will find them anyway.
+  - emote consults his topographic map, traces a route with one finger, nods.
+  - say The law is the law. The land is the land. They are not the same thing, but they are both mine to enforce.
+character:
+  name: Bishop Love
+  description: >-
+    A large, square-jawed man in his late forties, the Bishop of the LDS ward at
+    Blanding and the effective commander of the Garfield County Search and Rescue
+    operation. He wears a county sheriff auxiliary jacket and carries military binoculars.
+    His face is the color of a man who has spent forty years in the desert sun and has
+    never reconsidered his relationship to it. He is not cruel. He is absolutely certain,
+    which in the canyon country amounts to the same thing.
+  raceid: 1
+  level: 13

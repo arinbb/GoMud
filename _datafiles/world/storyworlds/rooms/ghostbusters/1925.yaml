@@ -1,0 +1,51 @@
+roomid: 1925
+zone: Ghostbusters
+title: The Library Basement Stacks
+description: >-
+  The basement of the New York Public Library is a labyrinth of metal shelving
+  ten feet high, stretching into shadow in every direction. The <ansi fg="itemname">fluorescent
+  lights</ansi> buzz and flicker. Dust motes hang in the air in patterns that suggest
+  they have been recently disturbed -- by movement, by breath, by something passing
+  through. <ansi fg="itemname">Books</ansi> are strewn across the floor in a wide arc,
+  as if thrown by a force emanating from the center of the stacks. In the deepest
+  shadow between two shelves, you can barely make out the shape of the <ansi fg="itemname">Grey
+  Lady</ansi> -- the ghost, the reading ghost, the one who has been here since 1924
+  and was not disturbing anyone until three researchers with unlicensed proton packs
+  burst in and shouted at her.
+mapsymbol: B
+maplegend: Basement Stacks
+biome: dungeon
+exits:
+  up:
+    roomid: 1924
+    exitmessage: You climb the stairs back up to the main reading room.
+nouns:
+  lights: >-
+    The fluorescent lights in this section of the basement have been failing for
+    two weeks. Facilities management has been called. Facilities management has
+    not come. The flickering creates a strobing effect that makes the stacks look
+    different each time the light catches them -- new, then old, then new again.
+  books: >-
+    Hundreds of books scattered across the concrete floor in a perfect arc, as if
+    propelled by an explosion from the center of the room. The titles are eclectic:
+    a 1922 atlas, a volume of Victorian ghost stories, nine copies of Dewey Decimal
+    System documentation, and -- significantly -- a memoir published in 1927 by
+    one Eleanor Twitty, a librarian at this very institution who died in 1924 and,
+    according to the dedication page, considered herself "a permanent fixture."
+  grey: >-
+    She was a librarian in life and a librarian in death. She stands between two
+    shelves in the deepest shadow, translucent grey, in the dress of the 1920s,
+    her hair in a severe updo. She is reading -- still reading, always reading --
+    and the books around her float and rearrange in the slow orbit of her continued
+    research. She is not malevolent. She is not even particularly interested in you.
+    She is just here, doing her work, and she has been for sixty years, and the
+    presence of living humans in her stacks is a minor annoyance she has learned
+    to ignore.
+idlemessages:
+- A book rises slowly from the pile on the floor, drifts to a shelf, and slots itself into the wrong place. This happens continuously.
+- The Grey Lady turns a page. The sound of it is the only sound in the basement.
+- The fluorescent light in aisle 7 gives up entirely. The darkness there is complete.
+- From somewhere in the deep stacks, you hear whispering in a voice that might be reading aloud.
+- A card catalog drawer slides out of its cabinet across the room and hangs suspended in midair, cards fanning slowly.
+- The temperature is ten degrees below street level. You are glad you have a coat. You wish you had a coat.
+- The Grey Lady looks up from her book. She looks directly at you. Then she looks back down.

@@ -1,0 +1,50 @@
+roomid: 1823
+zone: Stardew Valley
+title: Cindersap Forest
+description: >-
+  Ancient trees press close on all sides, their canopies filtering green light
+  onto a carpet of ferns and mushrooms. <ansi fg="itemname">Forageables</ansi>
+  dot the undergrowth — spring onions, fiddlehead ferns, red mushrooms, holly —
+  depending on the season. The <ansi fg="itemname">old log</ansi> blocking the
+  deeper path requires a proper axe to clear. Through the trees to the
+  <ansi fg="exit">southwest</ansi>, a lone <ansi fg="itemname">tower</ansi> of
+  dark stone rises above the canopy, its windows glowing faint purple. The
+  forest leads <ansi fg="exit">north</ansi> back to the farm, <ansi
+  fg="exit">south</ansi> to Marnies Ranch, and <ansi fg="exit">east</ansi>
+  to the beach path.
+mapsymbol: C
+maplegend: Cindersap Forest
+biome: forest
+exits:
+  north:
+    roomid: 1820
+  south:
+    roomid: 1826
+  east:
+    roomid: 1825
+  tower:
+    roomid: 1827
+    mapdirection: southwest
+nouns:
+  forageables: >-
+    The forest floor offers gifts depending on the season. In spring, wild
+    garlic and daffodils. In summer, red spice berry and fern. In fall,
+    chanterelle mushrooms and wild plum. In winter, holly and crystal fruit.
+    Each item useful, each one requiring only patience and attention to find.
+  log: >-
+    A massive fallen log, too thick to step over, blocking the path into
+    the deeper forest. It is old enough to have grown its own ecosystem of
+    moss, lichen, and small insects. With a good upgraded axe you could
+    clear it and reach the Secret Woods beyond.
+  tower: >-
+    Visible through gaps in the trees: a lone dark tower of ancient stone,
+    draped in climbing ivy. No path leads to it directly — or rather, the
+    path is hidden. The upper windows glow with a soft purple light at all
+    hours. Someone lives there who has lived there a very long time.
+idlemessages:
+- 'A woodpecker hammers at a hollow oak somewhere in the canopy: rapid, insistent, alive.'
+- The forest floor rustles with small unseen creatures going about their hidden business.
+- Morning mist hangs between the trunks, softening everything to watercolor.
+- A flash of green — a frog, or maybe something stranger — vanishes under the ferns.
+- The smell of pine resin and damp earth is overwhelming and entirely pleasant.
+- 'Light shifts through the canopy as clouds pass: the forest breathes with the sky.'

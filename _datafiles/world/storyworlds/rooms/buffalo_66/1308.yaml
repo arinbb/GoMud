@@ -1,0 +1,50 @@
+roomid: 1308
+zone: Buffalo 66
+title: Bowling Alley
+description: >-
+  A <ansi fg="itemname">bowling alley</ansi> bathed in strange, dreamlike light.
+  The <ansi fg="12">lanes</ansi> stretch away in parallel lines of polished wood,
+  impossibly long, converging toward the <ansi fg="itemname">pins</ansi> at the far
+  end like a lesson in perspective. The lighting shifts between deep <ansi fg="12">blue</ansi>
+  and warm <ansi fg="6">amber</ansi>, giving the space an underwater quality.
+  <ansi fg="itemname">Bowling shoes</ansi> sit in cubbies along one wall. A
+  <ansi fg="itemname">scoring console</ansi> glows softly. The <ansi fg="itemname">balls</ansi>
+  sit in their return rack, heavy and patient. Something about this place feels
+  more real than real — the colors too saturated, the geometry too perfect. The
+  diner is back to the <ansi fg="exit">west</ansi>. A dim alcove leads
+  <ansi fg="exit">south</ansi>.
+mapsymbol: B
+maplegend: Bowling Alley
+biome: house
+exits:
+  west:
+    roomid: 1307
+  south:
+    roomid: 1309
+nouns:
+  lanes: >-
+    Eight lanes of polished maple, gleaming under the shifting blue light. The
+    gutters are dark channels on either side. The lanes seem to stretch further
+    than physics should allow.
+  pins: >-
+    White pins at the end of each lane, arranged in perfect triangles. Under
+    the shifting light they seem to glow from within. They are waiting.
+  shoes: >-
+    Rows of two-tone bowling shoes in their cubbies. Red and cream. Each pair
+    identical, each pair waiting for feet that may never fill them.
+  console: >-
+    An electronic scoring console with a CRT screen. Green text on black. It
+    displays names that are not yours.
+  balls: >-
+    Bowling balls in the return rack. Black, marbled blue, speckled red. Heavy
+    in the hand, smooth and cold. They want to roll.
+  alley: >-
+    The whole space hums with a low frequency you feel in your chest. The
+    colors shift. It is more beautiful than a bowling alley has any right to be.
+idlemessages:
+- The pins at the far end of the lane reset with a mechanical clatter, though no one is bowling.
+- Light shifts across the lanes, blue to amber and back, like the inside of a dream.
+- A bowling ball rolls from somewhere unseen, rumbles down a lane, and strikes. The sound reverberates.
+- The scoring console flickers, displaying names and scores from games that may never have happened.
+- You should bowl a frame sometime. The lanes are waiting for you. They have always been waiting.
+- The ventilation system hums a low note, almost musical, and the air smells of wax and ozone.

@@ -1,0 +1,52 @@
+roomid: 1800
+zone: Crime and Punishment
+title: Raskolnikovs Garret
+description: >-
+  A coffin. That is the word for it. Six paces one way, five the other, and
+  the ceiling slopes so sharply you cannot stand upright at the far wall. The
+  wallpaper was once yellow with small white flowers and now peels in long
+  curling strips. A sofa with torn oilcloth serves as a bed. A small table
+  with a <ansi fg="itemname">cracked teacup</ansi>. Three books with broken
+  spines. The <ansi fg="itemname">stove</ansi> has not been lit in weeks. The
+  heat of the St. Petersburg summer comes through the single low window and
+  lies on everything like a weight. Under the young man's <ansi
+  fg="itemname">coat</ansi> on the chair there is something long and heavy that
+  he does not look at directly. A narrow <ansi fg="exit">staircase</ansi> leads
+  down.
+mapsymbol: G
+maplegend: Raskolnikovs Garret
+biome: house
+exits:
+  down:
+    roomid: 1801
+nouns:
+  coat: >-
+    A student's coat, summer-thin, grey with use. It lies across the back
+    of the chair. There is a weight beneath it, something wrapped in cloth.
+    You find you do not want to lift the coat. You find you cannot stop
+    thinking about lifting it.
+  stove: >-
+    An iron stove, cold, its grate choked with old ash. Even in summer it
+    feels like a presence in the room, like a thing that used to give warmth
+    and no longer does.
+  books: >-
+    Three books with broken spines — the titles are in German, in French.
+    Philosophy. Logic. The margins are filled with annotations in a student's
+    hand, small and urgent, arguments building toward some terrible conclusion.
+  window: >-
+    A single low window that looks onto a blank wall and a sliver of yellow
+    sky. The glass is filmed with dust. The heat comes through it anyway,
+    indifferent to barriers.
+  teacup: >-
+    A cracked teacup, empty, stained dark. It has been empty for some time.
+spawninfo:
+- mobid: 310
+  message: 'A gaunt young man sits on the edge of the sofa, staring at the floor.'
+  respawnrate: 10 real minutes
+idlemessages:
+- The room feels smaller every time you look up. The walls have not moved. You are simply more aware of them.
+- A fly beats against the low window, trying to reach the yellow sky outside, and fails.
+- The peeling wallpaper stirs in a draft that comes from nowhere. The heat does not lessen.
+- 'From below, muffled through the floor, comes the sound of voices arguing, then silence, then a child crying.'
+- The young man on the sofa sometimes gets up and paces — three steps, turn, three steps — and does not seem to see the walls.
+- 'A smell drifts up from the stairwell: cabbage water, lime, the particular sourness of poverty compressed into a building.'

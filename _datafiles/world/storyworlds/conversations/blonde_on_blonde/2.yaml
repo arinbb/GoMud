@@ -1,0 +1,22 @@
+-
+  Supported:
+    "bob dylan": ["*"]
+  Conversation:
+    - ["#1 say You know what everybody gets wrong about this place?"]
+    - ["#1 say They think it's about the songs. It's about the spaces between the songs."]
+    - ["#1 emote adjusts his sunglasses and goes back to writing."]
+-
+  Supported:
+    "bob dylan": ["*"]
+  Conversation:
+    - ["#1 emote looks up from the lyric sheet."]
+    - ["#1 say Did you find Johanna?"]
+    - ["#1 say Nobody finds Johanna. That's not what the song is for."]
+    - ["#1 emote goes back to writing."]
+-
+  Supported:
+    "bob dylan": ["*"]
+  Conversation:
+    - ["#1 say The ragman's been here longer than me. I'm not sure what that means."]
+    - ["#1 say Maybe it doesn't mean anything. Maybe it means he got here first."]
+    - ["#1 emote plays a harmonica phrase that doesn't quite finish itself."]

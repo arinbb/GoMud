@@ -1,0 +1,30 @@
+-
+  Supported:
+    "travis henderson": ["hunter henderson"]
+  Conversation:
+    - ["#1 emote walks. #2 emote walks beside him at a distance of about three feet."]
+    - ["#2 say Where are we going?", "#1 emote says nothing."]
+    - ["#2 say It's okay. I don't mind.", "#1 emote glances down."]
+    - ["#1 say East.", "#2 emote considers this."]
+    - ["#2 say Okay.", "#1 emote keeps walking."]
+-
+  Supported:
+    "travis henderson": ["hunter henderson"]
+  Conversation:
+    - ["#2 say Did you really live in the desert?"]
+    - ["#1 emote is quiet for a moment."]
+    - ["#1 say For a while.", "#2 emote watches him."]
+    - ["#2 say Was it nice?", "#1 emote thinks about this seriously."]
+    - ["#1 say It was quiet.", "#2 say Oh."]
+    - ["#1 say I like quiet.", "#2 emote walks closer. About two feet now."]
+-
+  Supported:
+    "travis henderson": ["hunter henderson"]
+  Conversation:
+    - ["#2 say Can I ask you something?", "#1 emote nods."]
+    - ["#2 say Do you remember me?"]
+    - ["#1 emote stops walking. Turns to look at Hunter for a long moment."]
+    - ["#1 say I remember everything about you.", "#2 emote does not look away."]
+    - ["#2 say I don't really remember you.", "#1 say I know."]
+    - ["#1 say That's all right.", "#1 emote starts walking again."]
+    - ["#2 emote follows. One foot now. Almost beside him."]

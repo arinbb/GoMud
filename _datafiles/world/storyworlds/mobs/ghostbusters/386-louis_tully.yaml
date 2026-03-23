@@ -1,0 +1,25 @@
+mobid: 386
+zone: ghostbusters
+hostile: false
+maxwander: 0
+activitylevel: 25
+idlecommands:
+- "emote tries another key on his enormous key ring, fails, moves to the next."
+- "say I'm locked out again. This is a recurring deductible situation."
+- "emote looks behind him with the specific terror of a man who has recently been chased."
+- "say Do you know what the tax implications are of being possessed by an ancient deity? I've been thinking about this."
+- "emote shuffles in place with barely-contained anxiety."
+- ""
+character:
+  name: Louis Tully
+  description: >-
+    A slight man in an accountant's suit, somewhat rumpled, clutching an enormous
+    key ring with the desperation of a man who knows the door works in theory.
+    His glasses are slightly askew. His tie is slightly loose. Everything about him
+    is slightly askew and slightly loose, as if he was assembled by someone who was
+    working from a description of a normal person rather than direct observation.
+    He has the specific haunted expression of a man who has recently been chased
+    by a supernatural dog and has not yet processed this information to its logical
+    conclusion.
+  raceid: 1
+  level: 3

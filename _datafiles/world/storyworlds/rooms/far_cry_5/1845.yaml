@@ -1,0 +1,57 @@
+roomid: 1845
+zone: Far Cry 5
+title: Holland Valley
+description: >-
+  The valley spreads before you in a wash of <ansi fg="yellow">gold</ansi> —
+  wheat fields at the end of summer, miles of them, the stalks heavy-headed
+  and bending in the breeze. <ansi fg="itemname">Silos</ansi> rise against the
+  mountain backdrop like silver pillars. <ansi fg="itemname">Farmhouses</ansi>
+  sit at intervals along the roads, most of them with Eden's Gate symbols
+  painted or mounted on the doors. John Seed's country. The Baptist's domain.
+  The valley is beautiful in the way that all occupied territories are beautiful
+  when the occupier has done nothing to the land itself and everything to the
+  people on it. <ansi fg="itemname">Crop dusters</ansi> buzz somewhere over
+  the fields. The county road is to the <ansi fg="exit">west</ansi>. The valley
+  runs <ansi fg="exit">north</ansi> toward Johns Gate. The Seed Ranch lies
+  to the <ansi fg="exit">ranch</ansi> (east).
+mapsymbol: V
+maplegend: Holland Valley
+biome: farmland
+exits:
+  west:
+    roomid: 1841
+  north:
+    roomid: 1846
+  ranch:
+    roomid: 1847
+    mapdirection: east
+nouns:
+  wheat: >-
+    Golden wheat, end-of-summer ripe, the heads heavy and nodding in the
+    breeze. It should be harvest time. The harvest is not happening. The
+    equipment stands idle in some fields. In others, Eden's Gate members
+    work the land — a tithe crop, food for the compound. The valley feeds
+    itself and its occupiers with equal indifference.
+  silos: >-
+    Grain silos rising silver against the mountains. Some still hold last
+    year's harvest. Some have Eden's Gate symbols painted on them in
+    white. One has a cross. One has the words 'YES' in enormous black
+    letters, John's signature affirmation, his brand, his demand.
+  farmhouses: >-
+    Farmhouses along the valley roads. Some are intact, their residents
+    converted or compliant or hiding. Some show signs of the occupation —
+    symbols on the doors, vehicles in the yard that don't belong. One
+    is abandoned, its windows dark, a child's bicycle on the porch.
+  duster: >-
+    A crop duster making lazy passes over the eastern fields. It is
+    spraying something. Probably fertilizer. Probably. The sweet chemical
+    smell that drifts over when the wind shifts suggests it might not
+    be only fertilizer.
+idlemessages:
+- The wheat bends in a slow wave as the wind crosses the valley from the mountains. Gold and perfect.
+- A crop duster banks over the eastern fields. The chemical smell drifts over on the shift of wind.
+- 'Someone has painted ''YES'' on a silo in letters ten feet high. John Seed, signing his territory.'
+- A hawk hunts the field margins, dropping and rising in that patient, precise way.
+- Distantly, a tractor engine. Someone is still farming. Life insisting on itself despite everything.
+- The mountains frame the valley perfectly. You understand why the Seeds chose this place. You hate that you understand.
+- A white Eden's Gate vehicle rolls along a farm road. The driver does not look at you. Or looks too carefully.

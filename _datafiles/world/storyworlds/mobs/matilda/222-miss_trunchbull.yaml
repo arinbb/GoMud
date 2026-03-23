@@ -1,0 +1,27 @@
+mobid: 222
+zone: matilda
+hostile: false
+maxwander: 2
+idlecommands:
+  - "say I have never been able to understand why small children are so disgusting."
+  - "emote cracks her knuckles with a sound like snapping twigs."
+  - ""
+  - ""
+  - "say Discipline! That is the cornerstone of a proper education!"
+  - "emote swishes a riding crop through the air with practiced menace."
+  - "say I was not put on this earth to teach the alphabet to a bunch of foul little grubs."
+activitylevel: 30
+character:
+  name: Miss Trunchbull
+  description: >-
+    An absolutely enormous woman with a thick bull-neck and massive shoulders.
+    She wears a green cotton smock cinched at the waist with a wide leather
+    belt, beneath which her body swells outward in every direction. Her face
+    is neither pretty nor ugly — it is terrifying. A chin like the bow of a
+    battleship. Small, glittering, hostile eyes. She is built like a
+    competitive shot-putter because she was one — an Olympic-level athlete
+    who has channeled every ounce of her physical power into the terrorizing
+    of small children. She carries herself with the confidence of someone
+    who has never been challenged and the cruelty of someone who enjoys it.
+  raceid: 1
+  level: 30

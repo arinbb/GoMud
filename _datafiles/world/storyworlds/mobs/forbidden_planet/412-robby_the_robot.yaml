@@ -1,0 +1,29 @@
+mobid: 412
+zone: forbidden_planet
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say Good afternoon. I am prepared to synthesize any compound, element, or material you require within reason."
+  - ""
+  - "emote stands with perfect, attentive stillness, his internal gyroscopes humming at a frequency just below hearing."
+  - ""
+  - "say My sensors detect no immediate threat in this sector. This status is subject to change."
+  - ""
+  - "emote tilts his dome-head thirty degrees, as if listening to something several miles below."
+  - ""
+  - "say I have completed 847 batches of Kentucky bourbon mash. I find the optimization process satisfying in a way I cannot fully account for."
+  - ""
+activitylevel: 20
+character:
+  name: Robby the Robot
+  description: >-
+    Seven feet of gleaming steel and polished perspex, built by Morbius using
+    Krell technology filtered through human engineering. Robby moves with the
+    fluid certainty of something designed from first principles rather than
+    evolved. His dome-shaped head rotates independently of his body. His voice
+    is warm and precise and carries a slight electronic resonance. He is bound
+    by his programming never to harm a human being, which creates, in the
+    current situation, some operational difficulties. He is also, in his quiet
+    way, one of the most considerate presences on Altair IV.
+  raceid: 1
+  level: 15

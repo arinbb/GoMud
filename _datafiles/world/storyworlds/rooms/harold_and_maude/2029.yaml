@@ -1,0 +1,54 @@
+roomid: 2029
+zone: Harold and Maude
+title: Maudes Rooftop Garden
+description: >-
+  The roof of the railroad car has been transformed into a <ansi fg="10">garden</ansi>
+  of riotous, improbable beauty. Raised beds of rough lumber hold <ansi fg="10">herbs</ansi>
+  and <ansi fg="10">flowers</ansi> in improbable variety: lavender, rosemary, marigolds,
+  something purple that nobody has bothered to identify. A <ansi fg="itemname">wooden bench</ansi>
+  faces west, toward the afternoon <ansi fg="yellow">sky</ansi>, which from up here
+  is enormous and unmediated, all horizon and California gold. The
+  <ansi fg="itemname">herbs</ansi> release their scent in the warm air -- rosemary
+  and thyme and something sweet. Below, through the hatch, is the railroad car. To
+  the <ansi fg="exit">down</ansi>, the ladder descends.
+mapsymbol: G
+maplegend: Maudes Rooftop Garden
+biome: land
+exits:
+  down:
+    roomid: 2028
+    exitmessage: You climb down the ladder back into the railroad car.
+nouns:
+  garden: >-
+    Not a tidy garden -- a living argument for abundance. Every inch of the
+    roof that will hold soil holds something growing. Maude planted it all
+    herself, over years, with the attitude of someone who does not distinguish
+    between the garden and the gardener. It has grown accordingly.
+  herbs: >-
+    Rosemary, thyme, sage, lavender, mint that has escaped its bed and gone
+    everywhere. When the wind moves through them, the rooftop smells like the
+    idea of a Mediterranean hillside that has been transplanted to Northern
+    California by someone with absolute conviction.
+  flowers: >-
+    Marigolds in orange and gold, a few stragglers from the lavender, something
+    white and small that grows in the cracks between the raised beds. Bees move
+    through them unhurried. A butterfly lands on the bench and stays.
+  bench: >-
+    A simple wooden bench, weathered to soft grey. Two people have sat here
+    many times, watching the sun go down over the city. Harold sits on the
+    right. Maude sits on the left. From here, on a clear day, you can just
+    see the shimmer of the bay.
+  sky: >-
+    The California sky from up here is a different thing than the sky from
+    the street. Up here it fills everything. Maude understands this -- that
+    the sky is better experienced without buildings in the way, that some
+    things need room to be what they are.
+idlemessages:
+- The herbs in the raised beds sway in the warm afternoon wind, releasing rosemary and lavender and thyme.
+- A bee moves from flower to flower with a focused professionalism, making no time for the view.
+- The sky to the west is beginning to consider becoming golden. It has not committed yet.
+- The rooftop is warm underfoot and smells of everything good that grows.
+- A sparrow lands on the edge of the raised bed and pulls at something, then flies.
+- From up here you can see the whole neighborhood arranged in its California afternoon, small and real.
+- The bench sits in the last patch of direct sun, which Maude planned, of course.
+- Somewhere below, through the hatch, the phonograph plays something faint and warm.

@@ -1,4 +1,4 @@
-const teacherMobId = 57;
+var teacherMobId = 57;
 
 function onDie(mob, room, eventDetails) {
 

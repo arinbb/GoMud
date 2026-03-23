@@ -1,0 +1,24 @@
+mobid: 464
+zone: up_in_smoke
+hostile: false
+maxwander: 0
+idlecommands:
+  - "say Sit down, sit down! You want tamales? I made too many tamales."
+  - ""
+  - "emote yells something in Spanish through the doorway. Laughter answers."
+  - ""
+  - "say Pedro! Pedro did not call. He never calls. He just shows up. I always have enough."
+  - "emote emerges with a plate and offers it to you without asking."
+  - ""
+  - "emote chases a kid back through the room, laughing."
+activitylevel: 20
+character:
+  name: Pedros Cousin
+  description: >-
+    A warm, broad-shouldered woman in her thirties wearing an apron and an
+    expression of comprehensive welcome. She is always doing three things at
+    once and excelling at all of them. Her house is always full and she
+    prefers it that way. She knows everyone in the neighborhood by name and
+    has fed all of them.
+  raceid: 1
+  level: 5

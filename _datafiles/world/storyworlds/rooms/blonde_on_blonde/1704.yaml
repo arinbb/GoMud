@@ -1,0 +1,53 @@
+roomid: 1704
+zone: Blonde on Blonde
+title: One of Us Must Know
+description: >-
+  A <ansi fg="8">snowy street at dusk</ansi>, the light failing fast, the kind
+  of cold that settles an argument by making it too difficult to continue.
+  <ansi fg="itemname">Footprints</ansi> in the snow trace the path of an
+  argument -- two sets approaching each other, one set standing, one set
+  pacing back and forth in the pattern of someone saying something they will
+  regret. A <ansi fg="itemname">coat</ansi> has been left on a bench. The coat
+  belongs to someone who left in a hurry or left in a fury. The snow is filling
+  in the footprints, patient and absolute. Sooner or later, one of you must
+  know that the other didn't mean to be so cruel. The understanding arrives
+  too late, the way understanding always does, a season after the moment it
+  would have changed something. The <ansi fg="exit">studio</ansi> is back to
+  the northwest.
+mapsymbol: 4
+maplegend: One of Us Must Know
+biome: snow
+exits:
+  studio:
+    roomid: 1700
+    mapdirection: northwest
+    exitmessage: The snow seals over your footprints before you reach the door.
+nouns:
+  footprints: >-
+    Two sets coming from opposite directions, meeting in the middle of the
+    sidewalk. One set stops. The other paces a small agitated oval. Then the
+    pacing set walks away quickly, long strides, the kind that means something
+    was said that cannot be unsaid. The snow is filling in the oval. In an
+    hour there will be no evidence of anything.
+  coat: >-
+    A wool coat, gray, left folded over the back of a bench as if set down
+    for a moment. The moment has lasted long enough for snow to collect on
+    the shoulders. The pockets hold a ticket stub, a matchbook, and nothing
+    else. The person who left it did not think they would be gone long. Or
+    did not think about the coat at all.
+  snow: >-
+    It falls steadily, without drama, covering everything at the same rate --
+    the argument, the bench, the coat, the footprints. Snow does not take
+    sides. Snow just continues. That is what makes it so final.
+  bench: >-
+    A park bench, iron, the kind that has been here through many winters and
+    will be here through many more. The coat sits on it like a question.
+    The snow answers it in its own way.
+idlemessages:
+- 'The snow fills in the smaller footprints first -- the ones that paced.'
+- A streetlamp comes on overhead, yellowish and cold, illuminating nothing that helps.
+- Wind sifts the snow across the sidewalk in thin scalloped lines.
+- 'You can almost hear the argument still: not the words, but the shape of them -- sharp, then defeated.'
+- The coat shifts slightly in the wind. The collar turns up as if making a point.
+- 'Dusk becomes dark. The snow continues. Sooner or later, one of us must know.'
+spawninfo: []

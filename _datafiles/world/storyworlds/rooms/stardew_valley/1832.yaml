@@ -1,0 +1,61 @@
+roomid: 1832
+zone: Stardew Valley
+title: Robins Carpenter Shop
+description: >-
+  The smell of fresh sawdust and pine resin hits you before you reach the door.
+  Robin's shop is organized with a craftsperson's precision — <ansi
+  fg="itemname">wood</ansi> stacked and sorted by type, <ansi
+  fg="itemname">stone</ansi> in careful piles, <ansi
+  fg="itemname">blueprints</ansi> pinned to every surface. A large <ansi
+  fg="itemname">workbench</ansi> dominates the center, tools arranged around
+  it like a constellation. Robin will build you anything you can afford: a
+  coop, a barn, a well, a silo, a house extension. She says building is her
+  form of love — she makes spaces for people to live in, and in that way she
+  is always present in her neighbors' lives. The town is <ansi
+  fg="exit">south</ansi>.
+mapsymbol: R
+maplegend: Robins Shop
+biome: house
+exits:
+  town:
+    roomid: 1821
+    mapdirection: south
+nouns:
+  wood: >-
+    Hardwood stacked separately from softwood, each sorted by plank thickness.
+    Robin sources locally when possible — the forest provides, she says, if
+    you take only what it offers. Some of the rarer hardwood comes from the
+    Secret Woods. She will not say more about that.
+  stone: >-
+    Stone in careful stacks: granite, limestone, river stone. Some is quarried,
+    some is collected from the mines. Stone is patient, Robin says. Stone
+    has been waiting longer than any of us. Working with it teaches you
+    something about time.
+  blueprints: >-
+    Blueprints covering every vertical surface. Barn layouts with dimensions.
+    Farmhouse extensions with multiple configuration options. Coop designs
+    in varying sizes. Each one is annotated in Robin's handwriting, dense
+    with practical knowledge. You could learn a lot just reading the margins.
+  workbench: >-
+    A massive workbench made from a single slab of hardwood, its surface
+    worn and marked by decades of craft. Every tool has a shadow painted
+    on the pegboard behind it so Robin knows at a glance if something
+    is missing. Nothing is ever missing. She is that kind of person.
+spawninfo:
+- mobid: 326
+  message: Robin looks up from a blueprint, measuring tape still in hand.
+  idlecommands:
+  - emote measures a plank of wood with careful attention, then marks it with a pencil.
+  - say I have been doing this since I was seventeen. Every building teaches you something.
+  - emote sketches quickly on a piece of paper, then pins it to the wall.
+  - say The new barn design is more efficient. Better airflow for the animals.
+  - emote tests the weight of a hammer, swings it once, nods with satisfaction.
+  - ''
+  respawnrate: 3 real minutes
+idlemessages:
+- The sound of a saw from the back workshop — a long, steady stroke — fills the room with the smell of pine.
+- Robin measures something twice, looks at it, measures it again, then cuts. Once.
+- Sawdust drifts in a shaft of light from the high windows, settling slowly on everything.
+- A cat sits on the wood pile and watches Robin work with what appears to be professional interest.
+- The blueprints on the wall flutter when the back door opens, all the plans dreaming of being real.
+- 'A receipt board shows recent jobs: well, coop upgrade, farmhouse extension. Good work being done.'

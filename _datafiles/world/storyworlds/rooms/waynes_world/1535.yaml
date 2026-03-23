@@ -1,0 +1,51 @@
+roomid: 1535
+zone: Waynes World
+title: Alice Cooper's Concert
+description: >-
+  The <ansi fg="itemname">concert</ansi> is in full roar. The stage blazes with
+  light, the crowd surges in waves, and somewhere up there Alice Cooper moves
+  through the show with the confident authority of a man who has been doing this
+  since before most of the audience was born. <ansi fg="itemname">Smoke</ansi>
+  pours from machines at stage level, lit blue and green. The <ansi fg="itemname">sound</ansi>
+  is a physical wall. <ansi fg="itemname">Stage props</ansi> — a guillotine,
+  a straight jacket, a boa constrictor nowhere in particular — surround the
+  performance space. The <ansi fg="itemname">crowd</ansi> around you moves as one
+  organism, unified in the kind of joyful surrender that only great rock concerts
+  produce. This is where "We're not worthy!" makes perfect sense. Through the
+  <ansi fg="exit">crowd</ansi> below is the Gasworks main floor.
+mapsymbol: c
+maplegend: Concert
+biome: city
+exits:
+  crowd:
+    roomid: 1526
+    mapdirection: down
+nouns:
+  concert: >-
+    Alice Cooper's show. Not just a concert — a theatrical event that happens to
+    include some of the greatest rock songs ever written. The production is immaculate.
+    The music is real. Both things can be true.
+  smoke: >-
+    Fog machine smoke, rolling across the stage floor and spilling into the front
+    rows. It smells of glycerin and electricity and the particular excitement of
+    being exactly where you should be.
+  sound: >-
+    The full force of a professional concert PA system tuned to the Gasworks.
+    It is too loud in the technical sense. In every other sense, it is exactly
+    right. Your chest knows before your ears do.
+  crowd: >-
+    The audience as a single moving thing — arms raised, voices together, every
+    person briefly freed from the weight of being themselves. This is what concerts
+    are for. This is what Wayne and Garth came here to feel.
+  props: >-
+    A guillotine gleams upstage. A straight jacket hangs on a stand. Somewhere
+    a boa constrictor lives its best life as theatrical accessory. The props are
+    real. The danger is theatrical. The music is both.
+idlemessages:
+- The guitars hit a chord that reverberates through every bone in your body.
+- The crowd surges forward during the chorus and you move with it, one organism.
+- Alice Cooper points directly at a section of the crowd and that section loses its mind.
+- The smoke rolls across the stage and for a moment the whole band is silhouettes.
+- Someone near you screams the lyrics word for word, eyes closed, totally committed.
+- The concert lights shift from red to white and the room transforms in an instant.
+- This is exactly what Wayne and Garth feel all the time about everything. Now you understand.

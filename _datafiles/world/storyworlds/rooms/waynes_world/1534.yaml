@@ -1,0 +1,41 @@
+roomid: 1534
+zone: Waynes World
+title: Donut Shop Parking Lot
+description: >-
+  The <ansi fg="itemname">parking lot</ansi> of Stan Mikita's Donuts, a slab of
+  cracked asphalt under the big Aurora sky. Cars arrive and depart with the
+  rhythm of a small community maintaining itself. The <ansi fg="itemname">sign</ansi>
+  above the shop buzzes with neon. An <ansi fg="itemname">overhead flight path</ansi>
+  sends commercial <ansi fg="itemname">jets</ansi> directly over this spot every
+  few minutes, close enough that the noise fills everything and then recedes,
+  leaving silence more noticeable than before. Wayne and Garth used to come
+  out here to watch the planes. They still do. It is a legitimate form of
+  appreciation. <ansi fg="exit">South</ansi> leads into the donut shop.
+mapsymbol: P
+maplegend: Parking Lot
+biome: city
+exits:
+  south:
+    roomid: 1524
+nouns:
+  lot: >-
+    Cracked asphalt with parking space lines that have faded to suggestion.
+    Every car here belongs to someone inside. The community sustains itself
+    in the parking lot as much as at the counter.
+  sign: >-
+    The Stan Mikita's sign buzzes its neon endorsement: a stylized hockey stick,
+    a donut, and the name in letters that look like they're having a good time.
+    Some of the letters work better than others. It doesn't matter.
+  jets: >-
+    Commercial jets, enormous and loud and somehow beautiful, crossing directly
+    overhead on their approach to O'Hare. The noise is total. And then it's gone.
+    Each plane contains a few hundred people going somewhere that isn't Aurora.
+    That's fine. Aurora is where the donuts are.
+idlemessages:
+- A jet screams overhead and the parking lot fills with noise for five full seconds, then silence.
+- The neon sign buzzes a note that turns out to be a minor third when you really listen.
+- A car pulls in and parks, its driver clearly operating on automatic donut-acquisition protocols.
+- 'Another jet. Another five seconds of everything being too loud to think. Then: coffee.'
+- The sky over Aurora is crossed by contrails. Someone is always going somewhere.
+- The cracked asphalt has a pothole near the entrance that everyone drives around. It is known.
+- Wayne and Garth's favorite viewing spot has worn the asphalt smooth from standing.

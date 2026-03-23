@@ -1,0 +1,15 @@
+name: Buffalo 66
+roomid: 1300
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: city
+mutators:
+- mutatorid: buffalo-desolation
+idlemessages:
+- The wind cuts across the flat grey expanse of Buffalo, carrying ice crystals that sting your face.
+- A gust rattles a chain-link fence somewhere, the only sound for blocks.
+- The sky is the color of old concrete, pressing down on the city like a lid.
+- Your breath hangs in the air, a small ghost that dissolves into nothing.
+- Somewhere far off, a car horn blares once and then silence reclaims everything.
+- The cold seeps through your clothes and settles into your bones like it plans to stay.

@@ -1,0 +1,24 @@
+mobid: 392
+zone: back_to_the_future
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote scribbles in his notebook, covering the page with hasty revisions."
+  - "emote glances toward the window and then back down quickly."
+  - "say Darth Vader? From outer space?"
+  - "emote ducks as if something has been thrown near his head."
+  - "emote writes a sentence, reads it, and immediately crosses it out."
+  - "emote stares into the middle distance with an expression of hopeless longing."
+  - ""
+  - ""
+activitylevel: 15
+character:
+  name: George McFly
+  description: >-
+    A slight, round-shouldered boy of seventeen in a plaid shirt and
+    khakis, his hair carefully combed in an attempt at authority his
+    body language refuses to support. He has his father's nervous habits
+    and his own nascent creative life, a notebook perpetually in hand.
+    His eyes are intelligent and fearful in equal measure.
+  raceid: 1
+  level: 3

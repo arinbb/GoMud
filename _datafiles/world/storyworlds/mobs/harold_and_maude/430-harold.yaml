@@ -1,0 +1,23 @@
+mobid: 430
+zone: harold_and_maude
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote stands very still, watching whatever is in front of him with enormous quiet eyes."
+  - ""
+  - "emote adjusts the lapel of his black suit jacket with two precise fingers."
+  - "say 'You know, most people don't really look at things. They see the category and move on.'"
+  - ""
+  - "emote tilts his head slightly and appears to be doing math about something."
+activitylevel: 15
+character:
+  name: Harold
+  description: >-
+    A pale young man of about twenty, dressed in an immaculate black suit
+    that he wears as naturally as other people wear jeans. His eyes are
+    very large and very dark and very attentive -- the eyes of someone who
+    has spent a great deal of time watching things that other people look
+    away from. He moves with the unhurried ease of someone who has made
+    peace with impermanence. He is not morbid. He is simply honest.
+  raceid: 1
+  level: 8

@@ -1,0 +1,18 @@
+itemid: 235
+name: tiny rose in a glass dome
+namesimple: rose
+displayname: a <ansi fg="itemname">tiny rose in a glass dome</ansi>
+description: >-
+  A miniature glass dome, the kind you would use to cover a cake, but very
+  small -- small enough to fit in your palm. Beneath the dome, a single
+  rose: four petals, four thorns, the precise red of something simultaneously
+  vain and beloved. The rose is made of some material that is not quite wax
+  and not quite glass, but catches the light the way a real rose would. The
+  dome is fitted to a tiny wooden base. If you hold it close and listen,
+  you may hear -- very faintly, possibly only in your imagination -- a
+  small cough, three times, for effect. The rose is not impressed by you.
+  She never will be. But she is yours, and that is the whole point.
+type: object
+subtype: usable
+uses: 0
+value: 0

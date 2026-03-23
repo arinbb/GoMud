@@ -1,0 +1,52 @@
+roomid: 2052
+zone: its_always_sunny
+title: The Sewer
+description: >-
+  Frank Reynolds's sewer is not a sewer in the crisis-management sense but
+  in the residential sense, and that distinction is important and also
+  very strange. The <ansi fg="itemname">brick walls</ansi> are old and damp
+  and the <ansi fg="itemname">water</ansi> runs slow along the channel in the
+  center. There is a <ansi fg="itemname">rum ham</ansi> sitting on a ledge
+  above the waterline, wrapped in butcher paper with FRANK written on it
+  in black marker. Around it, evidence of occupation: a lawn chair, a battery-powered
+  radio playing something faint and country, a cooler. Frank has been here.
+  Frank lives here sometimes. Frank considers this an acceptable living arrangement.
+  Frank has money. The smell is sewer. Above, through an access hatch, is
+  the <ansi fg="exit">basement</ansi> of Paddys Pub.
+mapsymbol: SW
+maplegend: The Sewer
+biome: cave
+exits:
+  up:
+    roomid: 2045
+nouns:
+  rum_ham: >-
+    A whole ham, cured in rum by Frank Reynolds personally, labeled FRANK
+    in black marker, sitting on a ledge above the waterline where it has been
+    for some time. It smells powerfully of rum and meat and the particular
+    joy of a man who has rejected conventional living. The ham is Frank's
+    primary accomplishment in the sewer and he is proud of it. You should
+    not eat the rum ham. You want to eat the rum ham. This is Frank's power.
+  chair: >-
+    A lawn chair that has been brought down into the sewer and set up on the
+    drier section of floor. It is the kind of lawn chair you get at a hardware
+    store. It has been here long enough that it has dried rust rings on the
+    legs from the ambient moisture. Frank sits in this chair. He considers
+    this recreational. He has money. He bought this chair. He put it in a sewer.
+  radio: >-
+    A battery-powered radio on the ledge next to the rum ham, playing something
+    country at low volume. The batteries are getting low — the sound warps
+    slightly on the low notes. Frank has not changed the batteries. He may
+    not have noticed. He may consider the warping an artistic choice.
+  water: >-
+    The sewer water moves slowly in the channel, dark and indeterminate. It is
+    not clean. It is not trying to be clean. It is sewer water doing sewer
+    things. Frank has made his peace with the sewer water. Frank and the sewer
+    water have an understanding.
+idlemessages:
+- 'The rum ham sits on its ledge above the waterline. The radio plays low. The sewer hums with the sound of a city''s underbelly going about its business.'
+- Water drips from the ceiling into the channel, rippling outward in a circle that closes and opens again. Endless small disruptions.
+- 'The lawn chair creaks slightly in the ambient humidity. Frank has sat in this chair many times. The chair has absorbed some of Frank. This is the nature of lawn chairs.'
+- The radio warps on a low note, recovers, plays on. Something country about hard times and good whiskey. Frank approves of this message.
+- 'A rat — not one of Charlie''s — moves along the far edge of the sewer and disappears into a gap. This is the sewer''s rat, not the basement''s rat. Jurisdictions apply.'
+- The smell of rum ham drifts through the sewer air and mixes with everything else down here, creating something that is both worse and somehow appealing.

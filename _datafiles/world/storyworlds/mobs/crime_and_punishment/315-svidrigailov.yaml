@@ -1,0 +1,28 @@
+mobid: 315
+zone: crime_and_punishment
+hostile: false
+maxwander: 1
+activitylevel: 20
+angrycommands: []
+idlecommands:
+  - emote lights a cigar with unhurried elegance and watches the canal.
+  - say We are alike, you and I. You know this. I suspect you have known it for some time.
+  - emote watches a woman cross the bridge with an expression of pleasant, bottomless corruption.
+  - say Eternity. Have you considered what eternity might actually be? A bathhouse, perhaps. Small. Spiders in the corners.
+  - ''
+  - emote exhales a long slow breath of cigar smoke and smiles at nothing.
+  - say I have done worse things than you. Much worse. I sleep perfectly well.
+  - emote regards you with the amused patience of a man who has already decided how things will end.
+character:
+  name: Svidrigailov
+  description: >-
+    A tall man, elegantly dressed by the standards of the district, not by
+    the standards of the district where he was born. Broad-shouldered, with
+    handsome regular features going to fat, and eyes of a very pale blue
+    that look at everything with the same pleasant, considering expression.
+    He has done things that cannot be undone and does not appear to lose
+    sleep over them. He is Raskolnikov's dark mirror — the ordinary man
+    who did the extraordinary man's arithmetic and arrived at a simpler
+    answer.
+  raceid: 1
+  level: 15

@@ -1,0 +1,25 @@
+mobid: 382
+zone: ghostbusters
+hostile: false
+maxwander: 0
+activitylevel: 15
+idlecommands:
+- "emote takes a careful PKE reading and notes the result in a small notebook."
+- "say Interesting."
+- "emote adjusts his glasses with one finger while continuing to look at data."
+- "emote makes a modification to the equipment on the workbench without looking up."
+- "say The psychokinetic energy accumulation is accelerating. The slope of the curve has changed."
+- ""
+- ""
+character:
+  name: Egon Spengler
+  description: >-
+    A tall man in a Ghostbusters jumpsuit who moves with the deliberate efficiency
+    of someone who has calculated the optimal path to every location. His expression
+    is neutral in the specific way that suggests enormous activity behind it. He
+    holds a PKE meter with the reverence of a craftsman holding a fine instrument.
+    His hair is tall and his glasses are serious and he radiates the particular
+    aura of someone whose intelligence is the primary fact about them, everything
+    else being secondary detail.
+  raceid: 1
+  level: 15

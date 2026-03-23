@@ -1,0 +1,58 @@
+roomid: 1807
+zone: Crime and Punishment
+title: The Canal Embankment
+description: >-
+  The embankment along the <ansi fg="itemname">Ekaterininsky Canal</ansi>,
+  where the dirty green water moves slowly between stone walls below the street
+  level. Here there is slightly more sky than in the lanes, and a breath of
+  something that is almost a breeze off the water. The smell changes — still
+  the city, still lime and dust, but underneath it the damp cold smell of
+  the canal itself, of deep water and old stone. This is where Raskolnikov
+  walks when the garret becomes unbearable. He does not find peace here.
+  He finds more space for his thoughts, which is different. People cross the
+  <ansi fg="itemname">iron bridge</ansi> to the <ansi fg="exit">east</ansi>.
+  The lane goes <ansi fg="exit">north</ansi>. A vacant lot lies to the
+  <ansi fg="exit">northwest</ansi>.
+mapsymbol: E
+maplegend: Canal Embankment
+biome: road
+exits:
+  north:
+    roomid: 1802
+  east:
+    roomid: 1808
+  northwest:
+    roomid: 1814
+    mapdirection: northwest
+spawninfo:
+- mobid: 315
+  message: 'A well-dressed man leans against the embankment railing, watching the canal water with an expression of pleasant contempt.'
+  respawnrate: 12 real minutes
+nouns:
+  canal: >-
+    The Ekaterininsky Canal, its water a dark greenish-grey between stone
+    embankment walls. Boats pass slowly. Things float on the surface that
+    you do not examine. In winter this canal freezes and people cross on
+    foot. In summer it smells of itself and of the city. It accepts
+    everything. It gives nothing back.
+  bridge: >-
+    An iron footbridge across the canal, its railings worn smooth where
+    hands have gripped them over years of crossings. The view from the
+    middle of the bridge is east and west along the canal — a long grey
+    stripe between stone walls, narrowing to a point in both directions.
+  water: >-
+    The canal water is cold below, you can feel it rising even in the
+    summer heat. It is the temperature of deep things, things that do not
+    change with the seasons.
+  sky: >-
+    More sky here than in the lanes — a strip of yellow-grey above the
+    embankment walls and the rooftops opposite. Sometimes a pigeon crosses
+    it. Sometimes a cloud. It is not beautiful but it is open, which here
+    means the same thing.
+idlemessages:
+- A boat moves slowly along the canal below, its load covered in canvas, its boatman standing at the back pole without expression.
+- The water of the canal catches the yellow sky and holds it darkly, like a mirror that has given up trying.
+- 'On the bridge, two women stop to talk, their voices carrying over the water, the words lost in the distance.'
+- The slight breeze off the canal is the only moving air in the city. It smells of green water and old stone.
+- 'A cart crosses the bridge, the horse''s hooves ringing on the iron. The sound travels a long way in the heat.'
+- Someone leans on the embankment railing and looks down at the water for a long time, then walks on without expression.

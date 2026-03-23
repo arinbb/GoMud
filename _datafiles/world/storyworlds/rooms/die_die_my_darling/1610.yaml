@@ -1,0 +1,61 @@
+roomid: 1610
+zone: Die Die My Darling
+title: The Guest Bedroom
+description: >-
+  The guest bedroom is spare and cheerless in the manner of rooms prepared by
+  someone who views comfort as a moral failing. A <ansi fg="8">bed</ansi> with a
+  white cover, smoothed to military precision. A <ansi fg="8">chair</ansi> without
+  cushions. A <ansi fg="8">wardrobe</ansi> of dark wood, its door left slightly
+  open to reveal hangers for clothes that have been removed — the wardrobe holds
+  only a plain grey nightdress. On the dressing table, no mirror. The hook where
+  a mirror would hang is still in the wall; a pale rectangle of wallpaper marks
+  where it was. On the dressing table itself, a <ansi fg="white">Bible</ansi> and
+  a glass of water. Nothing else. The single <ansi fg="8">window</ansi> looks out
+  to the <ansi fg="exit">south</ansi> landing.
+mapsymbol: G
+maplegend: Guest Bedroom
+biome: house
+exits:
+  south:
+    roomid: 1609
+nouns:
+  bed: >-
+    A single bed with an iron frame, its white cover pulled so tightly that you
+    could bounce a coin off it. There is one pillow. The mattress is thin. Sleeping
+    here will be uncomfortable, which may be the point.
+  wardrobe: >-
+    A large dark wood wardrobe, its interior holding only a plain grey nightdress
+    on a single hanger. The rest of the hangers are empty. Whatever clothes were
+    here have been removed and replaced with this. It is not a nightdress anyone
+    would choose.
+  window: >-
+    The window looks out over the rear of the property — the garden below, and
+    beyond it, the barn. From here you can see the barn doors clearly. As you
+    watch, a figure crosses from the barn back toward the house without looking up.
+    The barn doors have been chained shut. Your car is in there.
+  barn: >-
+    The window looks out over the rear of the property — the garden below, and
+    beyond it, the barn. From here you can see the barn doors clearly. As you
+    watch, a figure crosses from the barn back toward the house without looking up.
+    The barn doors have been chained shut. Your car is in there.
+  mirror: >-
+    There is no mirror here. The hook is still in the wall, and a pale square of
+    wallpaper — lighter than the rest — marks exactly where a mirror used to hang.
+    It was removed deliberately and recently. Someone does not want you to see yourself.
+  bible: >-
+    A Bible on the dressing table, placed where a mirror should be. It has been
+    opened to a page and left there: Deuteronomy, a passage about abomination
+    underlined in red. A bookmark falls out as you touch it — a photograph of a
+    young man. Stephen.
+  nightdress: >-
+    The nightdress is plain grey cotton, long, with a high neck and long sleeves.
+    It is the garment of someone who believes that sleep, too, should be modest.
+spawninfo: []
+idlemessages:
+- The window looks down on the garden and the barn beyond. Your car is in there.
+- The white bedcover is so tightly made it barely acknowledges that a person is meant to sleep under it.
+- The pale rectangle where a mirror should hang draws the eye with the logic of an absence.
+- The Bible on the dressing table sits where a mirror would naturally go. Open. Waiting.
+- From the window, the chain on the barn doors is just visible, glinting.
+- The room smells of lavender and plain soap. No perfume. No colour. No warmth.
+- The grey nightdress in the wardrobe has been waiting for you. For this specific visit.

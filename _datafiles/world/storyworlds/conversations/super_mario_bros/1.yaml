@@ -1,0 +1,21 @@
+-
+  Supported:
+    "mario": ["luigi"]
+  Conversation:
+    - ["#1 emote jumps straight up and points east with great excitement."]
+    - ["#2 emote follows Mario's gaze east, then back to Mario, then east again.", "#2 emote nods slowly."]
+    - ["#1 emote runs in place, boots pattering on the brick, then grins."]
+    - ["#2 emote takes a deep breath, squares his shoulders, and nods with more conviction."]
+    - ["#1 emote pumps his fist."]
+    - ["#2 emote pumps his fist, slightly less enthusiastically but no less sincerely."]
+-
+  Supported:
+    "mario": ["luigi"]
+  Conversation:
+    - ["#1 emote gestures at a question mark block overhead with both hands."]
+    - ["#2 emote squints at the block, then at Mario, then at the block."]
+    - ["#1 emote jumps and punches the block from below. A coin pops out with a ding!"]
+    - ["#2 emote watches the coin vanish and then looks at his own fist speculatively."]
+    - ["#2 emote jumps and punches a different block. Another coin pops out."]
+    - ["#1 emote gives Luigi a thumbs up."]
+    - ["#2 emote stands a little taller."]

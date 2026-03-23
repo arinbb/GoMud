@@ -1,0 +1,58 @@
+roomid: 1726
+zone: The Sopranos
+title: Satriales Pork Store
+description: >-
+  The smell hits you first: pork fat, sawdust, and espresso in a dense combination
+  that is specific to this <ansi fg="red">pork store</ansi> and nowhere else on earth.
+  <ansi fg="itemname">Meat</ansi> hangs in the window — sausage links, a whole ham,
+  various cuts labeled in hand-lettered cards. A glass <ansi fg="itemname">counter</ansi>
+  holds cold cuts and prepared foods. Behind it, a <ansi fg="itemname">deli slicer</ansi>
+  gleams under fluorescent light. The <ansi fg="itemname">espresso machine</ansi> on the
+  counter produces a constant small drama of steam and pressure. This is where the crew
+  gathers, where business gets discussed under the cover of cold cuts and small talk,
+  where alliances are maintained over coffee and someone's cousin's problem gets solved
+  at a table in the back. The highway is <ansi fg="exit">south</ansi>, and the
+  <ansi fg="exit">back</ansi> room is through a curtained doorway.
+mapsymbol: S
+maplegend: Satriales
+biome: house
+exits:
+  south:
+    roomid: 1725
+  back:
+    roomid: 1727
+    mapdirection: north
+nouns:
+  meat: >-
+    Sausage, capicola, prosciutto, coppa, various cuts of pork identified by
+    cards in Italian. All of it is fresh and excellent. This is a real pork
+    store that also happens to be the office of a criminal organization.
+  counter: >-
+    Glass and chrome, cold inside. The cold cuts are arrayed with professional
+    care. You could order a pound of mortadella and someone would slice it
+    for you and wrap it in white paper and make change with absolute normality.
+  slicer: >-
+    A Berkel deli slicer, old and well-maintained, the blade worn thin from
+    decades of use. It could slice anything very thin. The crew appreciates this.
+  espresso: >-
+    A La Pavoni espresso machine that someone bought in 1987 and has maintained
+    with religious devotion. The espresso it produces is dense, bitter, and
+    completely necessary.
+  table: >-
+    Plastic patio tables out front, incongruously casual for the conversations
+    that happen at them. Important things are discussed at plastic patio tables.
+    The location provides a certain plausible deniability.
+spawninfo:
+- mobid: 294
+  message: "<ansi fg=\"8\">Silvio Dante leans against the counter reading a newspaper, his hair immaculate, his expression calm, the way an unsheathed knife is calm.</ansi>"
+  respawnrate: 5 real minutes
+- mobid: 295
+  message: "<ansi fg=\"8\">Paulie Walnuts paces near the window, silver wings catching the fluorescent light, inspecting his fingernails with deep suspicion.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The espresso machine releases a long hiss of steam and the smell of coffee intensifies.
+- Someone's cell phone rings and is answered with a single word that means nothing specific.
+- The deli slicer runs for a moment in the back, then stops. Nobody ordered anything.
+- A car pulls up outside, idles for a long moment, then drives away.
+- The refrigerated case hums steadily. The cold cuts maintain their positions.
+- Silvio makes a small, precise comment about something. Paulie takes moderate offense.

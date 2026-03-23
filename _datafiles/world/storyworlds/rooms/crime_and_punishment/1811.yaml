@@ -1,0 +1,61 @@
+roomid: 1811
+zone: Crime and Punishment
+title: Sonyas Room
+description: >-
+  A large room but somehow not large — the largeness comes from its
+  bareness. The walls show their plaster. The floor is bare boards.
+  There is a <ansi fg="itemname">bed</ansi>, a <ansi fg="itemname">table
+  </ansi>, a chair. On the table a <ansi fg="itemname">candle</ansi> in a
+  tin holder, burning low. Beside the candle, a worn <ansi fg="itemname">
+  Bible</ansi> — the New Testament, the pages soft from use, certain passages
+  marked with a dried flower. The room is clean. This is not easy to achieve
+  when you are poor and it is an achievement. The window looks onto a back
+  court where nothing grows. The room smells of <ansi fg="itemname">tallow
+  </ansi> and clean linen. Sonya Marmeladova sits in the chair by the
+  candle and reads. Her face in the candlelight is very young and very old
+  at the same time. The street is to the <ansi fg="exit">east</ansi>.
+mapsymbol: S
+maplegend: Sonyas Room
+biome: house
+exits:
+  east:
+    roomid: 1802
+    mapdirection: east
+spawninfo:
+- mobid: 312
+  message: Sonya looks up from her Bible with enormous pale eyes. She does not ask what brought you here.
+  respawnrate: 10 real minutes
+nouns:
+  bible: >-
+    A New Testament, the cover worn soft as cloth from years of hands.
+    Some pages are tissue-thin with use. Certain passages are marked
+    with a dried flower — Lazarus, the resurrection, the call from the
+    tomb. She has read these passages enough times that she could say
+    them in her sleep. She does, sometimes.
+  candle: >-
+    A tallow candle in a tin holder, burning with a small steady flame
+    that gives more light than it has any right to. In this bare room,
+    by this candle, she reads. This is what she does when she is not
+    doing what she has to do to survive. The candle burns. She reads.
+  bed: >-
+    The bed is narrow and very clean, the coverlet plain white. It is
+    the bed of a person who makes the most of what they have. It is
+    also the bed of a person who sleeps as much as possible, because
+    sleep is the one time that being Sonya Marmeladova costs nothing.
+  table: >-
+    The table where she reads. There is nothing else on it but the candle
+    and the Bible and the tin dish where the candle stands. This is
+    everything she needs for the part of herself that does not belong
+    to her circumstances.
+  tallow: >-
+    The smell of tallow candle and clean linen, the particular smell of
+    this room, is something you remember afterward. It is the smell of
+    poverty that has refused to become squalor. It takes effort, that
+    refusal. She provides the effort.
+idlemessages:
+- Sonya turns a page of the Bible carefully, as if the paper is something that could be damaged by carelessness.
+- The candle flame straightens in a draft from somewhere, then bends back, then straightens again.
+- She reads with her lips slightly moving, not quite forming words, almost.
+- 'Her hands in her lap, not reading, not doing anything: she is somewhere inside herself, somewhere the room cannot reach.'
+- The bare floor reflects the candlelight. Two small trembling rectangles where the window light falls.
+- She looks up suddenly as if she heard something outside. Then back to the Bible. Nothing was there.

@@ -1,0 +1,28 @@
+mobid: 338
+zone: far_cry_5
+hostile: false
+maxwander: 0
+activitylevel: 25
+idlecommands:
+- emote cleans his rifle with practiced, automatic strokes, not looking at his hands.
+- say The weak talk about belief. The strong build something that survives belief.
+- ""
+- emote whistles two short notes. From outside, a wolf call responds. He nods once.
+- say Joseph saved my soul. I do not know if I had one. I built his army. That I know how to do.
+- ""
+- emote watches the forest through the window with the flat patience of a man reading a threat assessment he has run a thousand times.
+character:
+  name: Jacob Seed
+  description: >-
+    A large man with a red beard and the particular stillness of someone
+    who spent years in situations where movement meant death. Military
+    dog tags hang at his neck. His clothes are functional, military surplus,
+    nothing chosen for appearance. He carries a rifle the way other people
+    carry keys — naturally, without thought, as an extension of the body.
+    He is the eldest of the Seeds, the one who was in the world longest
+    before Joseph found him or he found Joseph. He understands force and
+    he understands conditioning and he has taken both seriously in ways
+    that will outlast the current conflict. His wolves are outside. He
+    knows where they are. They know where he is.
+  raceid: 1
+  level: 18

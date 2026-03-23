@@ -1,0 +1,23 @@
+mobid: 285
+zone: blonde_on_blonde
+hostile: false
+maxwander: 0
+activitylevel: 20
+idlecommands:
+  - emote adjusts the Leslie speaker speed and the organ sound blooms outward.
+  - emote plays a three-note phrase on the organ, watches Dylan for a reaction, gets none.
+  - emote adjusts his headphones and leans toward the keys.
+  - say 'I think it goes -- like this. Does it go like this?'
+  - emote runs through the chord changes again, finding the version that sits under the vocal.
+  - emote looks at the control room glass. The engineer is adjusting faders. He cannot tell what for.
+character:
+  name: Al Kooper
+  description: >-
+    A young session musician who was not hired to play organ -- he talked his
+    way into the studio and talked his way onto the bench and played the organ
+    part on Like a Rolling Stone having never played the changes before, one
+    measure behind the rest of the band the entire take, and Dylan loved it.
+    He is doing the same thing here: nervous, brilliant, finding it by ear,
+    always one beat behind the moment and always exactly right.
+  raceid: 1
+  level: 10

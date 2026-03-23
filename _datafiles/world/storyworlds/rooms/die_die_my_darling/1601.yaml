@@ -1,0 +1,62 @@
+roomid: 1601
+zone: Die Die My Darling
+title: The Garden
+description: >-
+  The <ansi fg="8">garden</ansi> wraps around the side of the house in a state of
+  deliberate neglect — grass long and wild, flower beds choked with <ansi fg="8">weeds</ansi>,
+  the <ansi fg="8">rose bushes</ansi> unpruned and sprawling. Along the fence that
+  borders the property, a row of <ansi fg="8">tin cans</ansi> has been set up on fence
+  posts at intervals, each one dented from repeated use. A heavy <ansi fg="8">wooden
+  barn</ansi> stands to the <ansi fg="exit">southeast</ansi>. The front door of the
+  house lies to the <ansi fg="exit">north</ansi>, the lane to the <ansi fg="exit">west</ansi>,
+  and a <ansi fg="exit">gate</ansi> to the east leads toward the village road.
+mapsymbol: G
+maplegend: The Garden
+biome: house
+exits:
+  west:
+    roomid: 1600
+  north:
+    roomid: 1602
+  east:
+    roomid: 1607
+  barn:
+    roomid: 1608
+    mapdirection: southeast
+    exitmessage: You push open the heavy barn door.
+nouns:
+  cans: >-
+    Tin cans of various sizes, balanced on the fence posts at roughly head height.
+    Several have been flattened almost completely and re-propped. Look more closely
+    and you can see something pinned to the wood behind each one — a photograph, cut
+    from what looks like a magazine. The face in the photos is always the same.
+    Always hers. An old woman has put these photographs here for someone to shoot at.
+  tin: >-
+    Tin cans of various sizes, balanced on the fence posts at roughly head height.
+    Several have been flattened almost completely and re-propped. Look more closely
+    and you can see something pinned to the wood behind each one — a photograph, cut
+    from what looks like a magazine. The face in the photos is always the same.
+    Always hers. An old woman has put these photographs here for someone to shoot at.
+  weeds: >-
+    The garden has not been cared for in a long time. Dandelions, dock, couch grass —
+    they have reclaimed the beds methodically. Only the vegetable patch near the kitchen
+    window shows any signs of attention.
+  rose: >-
+    The rose bushes have gone completely wild, long canes arching out across the path,
+    thorns catching at clothing. No one has deadheaded them. No one has pruned them
+    back. They grow as they like, unpretty and uncontrolled.
+  barn: >-
+    A solid old barn, its wooden planks grey with weathering. The doors are secured
+    with a heavy iron padlock. Whatever is inside cannot easily get out.
+spawninfo:
+- mobid: 273
+  message: '<ansi fg="8">A pale, lumbering figure is crouching near the fence, resetting tin cans on the posts.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The long grass stirs in the breeze, a slow, reluctant movement.
+- A sharp crack from somewhere near the fence — a pellet striking metal.
+- The tin cans along the fence stand in their crooked row, patient and still.
+- The barn walls creak softly in the wind. Something is inside. Something quiet.
+- The garden smells of damp earth and old leaves, not flowers. There are no flowers.
+- From the house, through a closed window, comes the murmur of a voice reciting something — rhythmic, repeated.
+- The grass is wet underfoot. It has been wet for days.

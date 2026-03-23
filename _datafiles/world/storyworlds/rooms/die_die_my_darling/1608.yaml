@@ -1,0 +1,60 @@
+roomid: 1608
+zone: Die Die My Darling
+title: The Barn
+description: >-
+  The barn interior is dim, lit only by thin lines of daylight between the old
+  planks. The smell of motor oil and straw mixes with something older and mustier —
+  old timber, old leather, the accumulated years of a working outbuilding. A
+  <ansi fg="3">car</ansi> sits in the centre of the space, a bright and incongruous
+  object in this grey world — Patricia's car, a small modern saloon that looks as
+  though it drove here from another century. Its wheels have been <ansi fg="8">blocked</ansi>
+  with heavy wooden chocks. The barn doors are secured by a thick chain and
+  <ansi fg="8">padlock</ansi> on the outside. The car is not going anywhere. Various
+  <ansi fg="8">tools</ansi> hang on the walls — axes, rakes, long-handled implements.
+  Harry has spent time here. His presence is in the careful arrangement of the car's
+  imprisonment. The <ansi fg="exit">garden</ansi> is back through the side door to
+  the <ansi fg="exit">northwest</ansi>.
+mapsymbol: B
+maplegend: The Barn
+biome: house
+exits:
+  garden:
+    roomid: 1601
+    mapdirection: northwest
+    exitmessage: You slip through the side door back into the garden.
+nouns:
+  car: >-
+    Patricia's car — a small, ordinary saloon in a colour that might once have been
+    cheerful. It is blocked front and rear with heavy wooden chocks. The driver's
+    door is unlocked; the keys are not in the ignition. They are not in the car at
+    all. Without the keys, the chocks, and the padlocked barn doors all addressed,
+    the car is as effective as a piece of furniture.
+  chocks: >-
+    Heavy wooden blocks wedged against each tyre front and rear. They are well-made —
+    someone cut and fitted these specifically for this car. This was not improvised.
+    This was planned.
+  padlock: >-
+    You cannot see the padlock from inside; it is on the exterior of the barn doors.
+    But you can see the chain that passes through the door handles — thick, iron,
+    recently oiled. Nothing is getting through those doors without a key or a
+    cutting tool.
+  tools: >-
+    An assortment of garden and farm tools on the walls — a scythe, two axes of
+    different sizes, rakes, forks, a bow saw. All maintained. All sharp. Harry keeps
+    his tools in good order.
+  doors: >-
+    The barn doors are large, double-leafed, and currently chained shut from the
+    outside. The chain is iron. The padlock looks new. There is no way to open them
+    from in here.
+spawninfo:
+- mobid: 271
+  message: '<ansi fg="8">A large, heavy figure is crouching near the car, checking the wooden chocks with satisfied attention.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The padlock on the barn doors gives a faint rattle as the wind pushes against them from outside.
+- The car sits in its wooden chocks, patient as a prisoner.
+- Something drips from the barn roof into a corner — a slow, regular tick of water.
+- Harry moves around the car with the proprietary air of a man who likes things locked up.
+- The thin lines of daylight through the planks shift as clouds pass outside.
+- The smell of motor oil hangs in the still air, sharp and industrial.
+- The barn is very solid. The walls are very thick. No sound from outside reaches in here.

@@ -1,0 +1,25 @@
+mobid: 407
+zone: nineteen_eighty_four
+hostile: false
+maxwander: 0
+activitylevel: 35
+idlecommands:
+  - emote hangs another sheet on the line with the unhurried competence of someone who has done this ten thousand times.
+  - emote sings. Her voice is not beautiful but it means what it says.
+  - emote laughs at something she is thinking about, a full laugh that she makes no effort to moderate.
+  - emote shakes out a shirt before pegging it to the line, snapping it sharply in the air.
+  - ''
+  - emote sings another verse. The melody is old, older than the Party, something the versificator could never have made.
+character:
+  name: The Prole Woman
+  description: >-
+    A woman of enormous girth, perhaps sixty, with great red forearms and a
+    powerful chest. She wears a sacking apron tied around the middle. She is
+    hanging washing on a line strung between two buildings, working with the
+    steady confidence of a woman who has never doubted that what she is doing
+    is worth doing. She sings as she works. Her song is one of the sentimental
+    ones the telescreens play, but she has made it hers by singing it without
+    calculation, without irony, without checking whether anyone is watching.
+    She is the most free person in Airstrip One. She does not know this.
+  raceid: 1
+  level: 2

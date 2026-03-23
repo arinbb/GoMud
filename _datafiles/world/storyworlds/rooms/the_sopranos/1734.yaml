@@ -1,0 +1,54 @@
+roomid: 1734
+zone: The Sopranos
+title: Holstens Diner
+description: >-
+  A clean, ordinary <ansi fg="8">diner</ansi> with a bell on the door. The
+  <ansi fg="itemname">booths</ansi> are red vinyl, the table tops formica. There is a
+  <ansi fg="itemname">jukebox</ansi> on the wall by the entrance. The
+  <ansi fg="itemname">onion rings</ansi> have just arrived at the table in a basket,
+  golden and perfect. The <ansi fg="itemname">music</ansi> playing is 'Don't Stop
+  Believin' by Journey, starting from the beginning, the piano riff walking up and
+  down its four notes. A man sits at the counter. A woman comes in and sits down.
+  The <ansi fg="itemname">door</ansi> opens and closes. You are sitting in a booth
+  and every time the door opens you look up. The room is completely ordinary and
+  feels like the last room in the world. The highway is back <ansi fg="exit">outside</ansi>.
+mapsymbol: H
+maplegend: Holstens Diner
+biome: house
+exits:
+  outside:
+    roomid: 1725
+    mapdirection: west
+nouns:
+  booths: >-
+    Red vinyl booths, clean, well-maintained. Holstens is a real place and it
+    looks after its tables. You are sitting in one of them and you cannot stop
+    looking at the door.
+  jukebox: >-
+    Against the wall near the entrance. An older model, well-maintained. Someone
+    has put on 'Don't Stop Believin.' The opening piano riff. You know this song.
+    Everyone knows this song. It means something different now than it did before
+    you sat down in this booth.
+  onion: >-
+    A basket of onion rings, golden and lightly battered, a small paper cup of
+    ketchup on the side. They are exactly as good as they look. You reach for one.
+  rings: >-
+    See onion rings. They are the last uncomplicated thing in this room.
+  music: >-
+    Journey. Don't Stop Believin. The piano, then the guitar, then Steve Perry
+    singing about a small-town girl and a city boy. It is the most popular ringtone
+    and the most used walk-up music and the song everyone plays at karaoke, and
+    it sounds completely new right now, in this booth, with the door opening and
+    closing.
+  door: >-
+    The glass door with the bell above it. Every time it opens, the bell rings,
+    and you look up. Every person who comes through it is just a person. Then
+    the door opens again and you look up again. You will keep looking up.
+spawninfo: []
+idlemessages:
+- The bell above the door rings. Someone comes in. You look up.
+- Journey plays. The piano figure repeats, ascending, descending. Perfect and relentless.
+- The onion rings sit in the basket, warm and present and uncomplicated.
+- The bell rings again. You look up. Just someone.
+- The jukebox reaches the chorus and the room receives it without comment.
+- The door opens. You look up. Cut to black.

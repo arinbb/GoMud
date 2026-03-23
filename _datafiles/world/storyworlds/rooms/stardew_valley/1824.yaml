@@ -1,0 +1,64 @@
+roomid: 1824
+zone: Stardew Valley
+title: The Stardrop Saloon
+description: >-
+  The warmest place in Pelican Town. Dark wood paneling, low amber light, the
+  smell of beer and fried food. A <ansi fg="itemname">bar</ansi> runs the length
+  of one wall, stools worn smooth by decades of use. A <ansi
+  fg="itemname">pool table</ansi> in the corner holds a game perpetually in
+  progress. A <ansi fg="itemname">jukebox</ansi> against the back wall glows
+  in colors, playing something gentle and country-adjacent. The chalkboard menu
+  lists: Salmonberry Jelly, Autumn's Bounty, Pale Ale, and tonight's special —
+  Miner's Treat. This is where the valley comes together in the evenings, where
+  secrets are kept and gossip is traded. To the <ansi fg="exit">west</ansi>
+  the town square.
+mapsymbol: S
+maplegend: The Saloon
+biome: house
+exits:
+  west:
+    roomid: 1821
+nouns:
+  bar: >-
+    A long wooden bar polished to a warm gleam by Gus's constant attention.
+    Taps gleam at one end — Pale Ale, Stardrop Lager, something seasonal.
+    Gus keeps a bowl of salted nuts at the near end and a small vase of
+    wildflowers at the far end, because he believes in small dignities.
+  pool: >-
+    A pool table showing signs of long, happy use — the felt a little worn
+    at the corners, the cues chalked and smooth. A game is perpetually in
+    progress, as if the players just stepped away. George and Clint play
+    here most evenings, arguing cheerfully about the rules.
+  jukebox: >-
+    An old jukebox with a glowing orange selection panel. The songs change
+    with the seasons. Right now it plays something warm and unhurried, a
+    guitar and a voice that knows how to carry feeling without shouting it.
+    You find yourself staying longer than you intended.
+spawninfo:
+- mobid: 322
+  message: Gus waves from behind the bar, already reaching for a glass.
+  idlecommands:
+  - emote polishes a glass to a high shine and sets it carefully on the shelf.
+  - say What can I get you? The Pale Ale is especially good this season.
+  - emote hums quietly while wiping down the bar.
+  - say Everyone in this valley has a story. I am just grateful they choose to tell them here.
+  - emote slides a bowl of salted nuts down the bar to no one in particular.
+  - ''
+  respawnrate: 3 real minutes
+- mobid: 325
+  message: Shane occupies a corner stool, a bottle in hand and somewhere else in mind.
+  idlecommands:
+  - emote stares into his beer with the focused attention of a man avoiding something.
+  - say Leave me alone.
+  - emote rotates the bottle slowly on the bar top.
+  - say My chickens are fine, at least. They don't judge you.
+  - ''
+  - ''
+  respawnrate: 5 real minutes
+idlemessages:
+- The jukebox shuffles to something new — something that makes a few people look up and smile.
+- Laughter erupts from the pool table corner. Someone called a foul.
+- The smell of frying from the kitchen reaches the bar. Autumn's Bounty soup, probably.
+- The door opens and someone comes in from the cold, their shoulders dropping as the warmth hits them.
+- Gus refills a glass without being asked. He has learned to read the room.
+- 'Shane turns his bottle in slow circles on the bar: round and round, going nowhere.'

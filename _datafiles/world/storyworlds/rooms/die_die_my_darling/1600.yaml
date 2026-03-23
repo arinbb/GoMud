@@ -1,0 +1,43 @@
+roomid: 1600
+zone: Die Die My Darling
+title: The Country Road
+description: >-
+  A narrow <ansi fg="8">English country lane</ansi> winds between close-pressed
+  hedgerows, their dark branches laced together overhead like interlocked fingers.
+  The <ansi fg="8">tarmac</ansi> is cracked and patched and cracked again, the
+  verges overgrown with long grass gone to seed. Ahead to the <ansi fg="exit">east</ansi>,
+  a <ansi fg="8">gravel drive</ansi> curves away toward a large <ansi fg="8">country
+  house</ansi> set back from the road — grey stone, high chimneys, heavy curtains
+  drawn at every window. The house has the self-contained stillness of a place that
+  does not welcome visitors.
+mapsymbol: R
+maplegend: Country Road
+biome: road
+exits:
+  east:
+    roomid: 1601
+nouns:
+  hedgerows: >-
+    The hedgerows are old — decades of growth tangled into walls of branch and briar
+    taller than a person. Nothing moves in them. No birds, no small animals. The lane
+    feels enclosed, like a corridor with walls that breathe.
+  house: >-
+    The house is large and solid and utterly without warmth. Every curtain is drawn.
+    Every window shut. A gravel drive curves toward the front door, which is painted
+    very dark — black, or as close to it as paint comes. There is no light visible
+    anywhere inside.
+  drive: >-
+    Pale gravel, recently raked. Neat lines from the tines of a garden rake still show.
+    Someone tends this drive with care. Someone is always watching what comes and goes.
+  lane: >-
+    Behind you, the lane curves away and disappears behind the hedgerows. The road back
+    to the village. The road to normalcy. It feels further away than it looks.
+spawninfo: []
+idlemessages:
+- The wind moves through the hedgerows with a low, continuous murmur like voices speaking just below hearing.
+- Clouds slide across the sky in a slow procession of greys — pewter, slate, ash.
+- A blackbird sits on the gatepost at the end of the drive, watching. It does not sing.
+- The gravel of the drive is very pale against the dark grass, like a path drawn in chalk.
+- Somewhere behind the house, a door bangs once — then silence.
+- The hedgerows press close on both sides. The lane is barely wide enough for a car.
+- You cannot see any other houses from here. This property is completely alone.

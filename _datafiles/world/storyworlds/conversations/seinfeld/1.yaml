@@ -1,0 +1,37 @@
+-
+  Supported:
+    "jerry seinfeld": ["george costanza"]
+  Conversation:
+    - ["#1 say You know what I've been thinking about?"]
+    - ["#2 say What."]
+    - ["#1 say The word 'somehow.' People say 'somehow' to avoid explaining how. 'Somehow it worked out.' Somehow? How? Specifically how?"]
+    - ["#2 emote considers this with the focus of a man who has nothing else to do"]
+    - ["#2 say That's a good one. I use 'somehow.'"]
+    - ["#1 say Everyone uses somehow. Somehow is how we talk about things we don't want to examine."]
+    - ["#2 say I somehow got the Yankee job."]
+    - ["#1 emote nods slowly. This is the correct use of somehow."]
+-
+  Supported:
+    "jerry seinfeld": ["george costanza"]
+  Conversation:
+    - ["#2 say I've been thinking about the word 'no offense.'"]
+    - ["#1 say Yeah?"]
+    - ["#2 say No offense, but -- and then you say something offensive. The 'no offense' doesn't cancel anything out."]
+    - ["#1 say It's like a legal disclaimer. You file the no-offense and then you can say the thing."]
+    - ["#2 say And everybody accepts it. Nobody has ever said: actually, I take offense."]
+    - ["#1 emote considers this"]
+    - ["#1 say That would change everything. One person takes offense once. The whole system collapses."]
+    - ["#2 say We're too close to the edge here, Jerry. Too close."]
+-
+  Supported:
+    "jerry seinfeld": ["george costanza"]
+  Conversation:
+    - ["#1 say Here's something. The pre-apology. You apologize for something before it happens."]
+    - ["#2 say Like 'sorry in advance'?"]
+    - ["#1 say Right. 'Sorry in advance if this is weird.' And then you do the weird thing."]
+    - ["#2 say The advance apology is worse than no apology. Now I'm waiting for the weird thing."]
+    - ["#1 say Exactly. The suspense is worse."]
+    - ["#2 emote nods. He has used this technique. He is evaluating his choices."]
+    - ["#2 say I've said that to a woman. I said 'sorry in advance.'"]
+    - ["#1 say What happened."]
+    - ["#2 say Yada yada yada."]

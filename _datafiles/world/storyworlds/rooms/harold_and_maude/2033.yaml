@@ -1,0 +1,67 @@
+roomid: 2033
+zone: Harold and Maude
+title: Uncle Victors Office
+description: >-
+  A <ansi fg="8">military office</ansi> forcibly installed in a corner of
+  the mansion by someone who will not be deterred by mere domestic architecture.
+  <ansi fg="itemname">Maps</ansi> cover every wall, bristling with colored
+  <ansi fg="itemname">pins</ansi> marking theaters of operation that may
+  no longer exist in quite the form Uncle Victor believes they do. A
+  <ansi fg="itemname">desk</ansi> of military grey steel holds neat stacks
+  of <ansi fg="itemname">documents</ansi> and a <ansi fg="itemname">mechanical
+  arm</ansi> mounted to a special bracket -- the prosthetic rests there
+  when Victor is working, as if standing down. A framed <ansi fg="itemname">portrait</ansi>
+  of Eisenhower watches over everything with the expression of a man who
+  has seen far worse. Back to the <ansi fg="exit">mansion</ansi> is the
+  foyer.
+mapsymbol: U
+maplegend: Uncle Victors Office
+biome: house
+exits:
+  mansion:
+    roomid: 2023
+    mapdirection: west
+    exitmessage: You slip back through the paneled door into the mansion foyer.
+nouns:
+  maps: >-
+    Strategic maps of Southeast Asia, Korea, Germany, and several regions
+    Uncle Victor considers still operationally active. The pins are color-coded
+    by a system that is not explained anywhere and appears to have evolved over
+    years of private certainty. The maps are carefully maintained. The
+    geopolitical situations they depict have, in several cases, substantially
+    changed.
+  pins: >-
+    Red, blue, yellow, black, and green pins pushed into the maps at coordinates
+    that mean something specific to Uncle Victor. He can explain each one at
+    length. Harold has sat through the explanation many times, nodding at
+    appropriate intervals.
+  desk: >-
+    A military-issue grey steel desk, absolutely tidy. Everything on it is
+    squared. Uncle Victor's theory of desk order and his theory of military
+    order are the same theory.
+  documents: >-
+    Neat stacks of documents, some stamped CONFIDENTIAL in red, some stamped
+    URGENT, some bearing no markings at all. They are sorted by a system only
+    Victor understands. This is his preference.
+  arm: >-
+    The prosthetic arm rests in its bracket with the dignity of something that
+    has earned its rest. It is a right arm, mechanical, functional. Uncle Victor
+    lost the original in service. He does not discuss this beyond the facts.
+    Harold has never asked.
+  portrait: >-
+    Eisenhower looks down from the frame with the expression of a man who
+    has agreed to things he did not entirely agree with and made peace with
+    the results. Uncle Victor admires this quality.
+spawninfo:
+- mobid: 434
+  message: "<ansi fg=\"8\">Uncle Victor stands before the maps with his one hand clasped behind his back, studying the pins with the intensity of someone who expects them to change while he is watching.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- Uncle Victor adjusts a pin on the Southeast Asia map with the precision of someone who believes this matters.
+- The mechanical arm rests in its bracket, still and patient as military equipment.
+- Uncle Victor consults a document, makes a mark on it, squares it back into the pile.
+- The office smells of metal polish, paper, and the particular discipline of someone with a system.
+- 'Uncle Victor studies a section of map and says, to no one: ''There. That is the situation.'''
+- The portrait of Eisenhower catches the light from the desk lamp and seems, for a moment, to nod.
+- Uncle Victor straightens papers that were already straight, then straightens them again.
+- A quiet martial orderliness suffuses everything in this room, pushing back against the mansion around it.

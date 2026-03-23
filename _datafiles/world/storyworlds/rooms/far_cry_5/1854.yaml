@@ -1,0 +1,74 @@
+roomid: 1854
+zone: Far Cry 5
+title: The Church of Edens Gate
+description: >-
+  The church is <ansi fg="10">beautiful</ansi>. That is the first thing and the
+  most important thing and the thing that Joseph Seed understood from the
+  beginning: the vehicle matters. High ceilings, old timber, stained glass that
+  casts <ansi fg="yellow">gold</ansi> and <ansi fg="red">red</ansi> light over
+  the <ansi fg="itemname">pews</ansi> in equal measure. The <ansi fg="itemname">
+  altar</ansi> holds the Book of Joseph, open to a passage about the Collapse.
+  <ansi fg="itemname">Candles</ansi> line every available surface, hundreds of
+  them, their combined heat making the room warm even on a cold Montana morning.
+  And at the <ansi fg="itemname">pulpit</ansi>: <ansi fg="itemname">Joseph Seed</ansi>,
+  shirtless under a long coat, his rosary moving through his fingers, his aviator
+  glasses reflecting the candlelight, speaking softly to no one, or perhaps to
+  you, or perhaps to God. He does not stop when you enter. He has been expecting
+  you. The <ansi fg="exit">compound</ansi> is south.
+mapsymbol: J
+maplegend: The Church
+biome: house
+exits:
+  compound:
+    roomid: 1853
+    mapdirection: south
+spawninfo:
+- mobid: 335
+  message: Joseph Seed turns from the pulpit as you enter. He does not seem surprised. He does not seem anything except certain.
+  idlecommands:
+  - emote moves his rosary through his fingers bead by bead, his lips moving in something that is not quite speech.
+  - say The Collapse is not a prophecy. It is an observation. The world has been ending for a long time. Most people choose not to notice.
+  - ""
+  - emote adjusts his aviator glasses and watches you with the particular attention of someone who is always listening.
+  - say I did not choose this. I was chosen. The distinction matters. It always matters who chooses whom.
+  - ""
+  - emote walks to the stained glass window and places one hand against it, reading the light through his palm.
+  respawnrate: 5 real minutes
+nouns:
+  pews: >-
+    Wooden pews, handmade, fitted with small cushioned kneelers. Full
+    when the congregation is here. Empty now except for you and him.
+    The wood is well-oiled, well-maintained. Eden's Gate takes care of
+    its instruments of worship.
+  altar: >-
+    The altar of the Church of Eden's Gate. The Book of Joseph lies
+    open on a reading stand. The passage showing: 'And in the time of
+    the Collapse, the chosen will be gathered, and the gates of Eden
+    will open, and those who waited will enter.' The book is Joseph's
+    own scripture, written or curated, printed and bound. Thousands
+    of copies distributed across Hope County.
+  candles: >-
+    Hundreds of candles on every surface — the altar, the pew ends,
+    iron stands along the walls, the window sills. The combined warmth
+    is physical. The light they produce turns everything amber. In this
+    light, everything looks like a painting of itself.
+  pulpit: >-
+    The pulpit, carved from dark wood, a large cross at its face.
+    Joseph Seed's hands rest on its edges when he speaks. He speaks
+    from here every day. Multiple times a day. The congregation comes
+    because they want to. Then because they are supposed to. The
+    distinction fades over time. Joseph knows this. This is the point.
+  rosary: >-
+    Joseph Seed's rosary, moving through his fingers constantly —
+    a physical anchor, a counting mechanism, a prop, or a genuine
+    act of faith. With him, all four simultaneously. He has worn
+    smooth several beads from the repetition. He has been doing
+    this for years.
+idlemessages:
+- The candles breathe in unison as the door opens. The light shifts across the stained glass. Gold and red.
+- Joseph speaks softly at the pulpit. Not to you. Or to you. The words carry without effort.
+- The warmth of hundreds of candles settles on your skin. The church is always warm. Joseph ensures it.
+- A beam of mountain light enters through the stained glass and falls across the open Book of Joseph.
+- The rosary clicks softly in the silence. Bead by bead. Joseph counting something endless.
+- The church settles around you like a place that has had people in it for a long time and expects more.
+- 'From outside, distant: the PA, the compound''s ordinary life. In here: silence and Joseph and the candles.'

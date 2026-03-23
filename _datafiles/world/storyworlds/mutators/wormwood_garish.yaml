@@ -1,0 +1,12 @@
+mutatorid: wormwood-garish
+namemodifier:
+  behavior: append
+  text: (garish)
+  colorpattern: rainbow
+descriptionmodifier:
+  behavior: append
+  text: The television blares in the background, drowning out all thought.
+  colorpattern: "3"
+alertmodifier:
+  text: The smell of cheap perfume and microwave dinners assaults your senses.
+  colorpattern: "3"

@@ -1,0 +1,26 @@
+mobid: 243
+zone: waynes_world
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote runs through a chord progression on her guitar, head tilted slightly, listening."
+  - "emote adjusts the mic stand to her exact height, patient and precise."
+  - "say The song isn't ready yet. I can feel it. Give it another pass."
+  - "emote plays a low, sustained note and lets it ring until it disappears."
+  - "emote rolls her shoulders, loosening up before going on."
+  - ""
+  - "say You know what makes a great show? When the band doesn't have to think anymore. When you're just playing."
+  - "emote tunes the high E string by ear, no tuner, gets it perfect."
+activitylevel: 50
+character:
+  name: Cassandra Wong
+  description: >-
+    Tall, self-possessed, with the kind of cool that comes from knowing exactly
+    what you're doing when you pick up a guitar. Her stage presence is relaxed
+    and enormous simultaneously. She is the lead singer of Crucial Taunt and she
+    commands the stage without visible effort. She is warm with the people she
+    chooses and efficient with everyone else. She has heard Wayne Campbell play
+    air guitar approximately one thousand times. She finds it endearing. She has
+    not told him this.
+  raceid: 1
+  level: 6

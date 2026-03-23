@@ -1,0 +1,51 @@
+roomid: 1869
+zone: Super Mario Bros
+title: World 5-1 Gray Overworld
+description: >-
+  Something has shifted. The trees here are a different gray-green, the
+  sky a slightly cooler shade, the ground a lighter brown that reads almost
+  as beige. The <ansi fg="itemname">color palette</ansi> has changed --
+  the same layout, but the hues are different, the cheerfulness slightly
+  muted. This is World 5, and the game is telling you through color alone
+  that the easy part is behind you. A row of <ansi fg="itemname">pipes</ansi>
+  lines the path, taller than in earlier worlds, and the gaps between
+  platforms are wider. The enemies move fractionally faster. The question-mark
+  blocks still gleam with the same gold, but fewer of them, and further
+  apart. West leads <ansi fg="exit">back</ansi>; a green <ansi fg="exit">pipe</ansi>
+  descends south; south also continues onward.
+mapsymbol: G
+maplegend: World 5 Overworld
+biome: land
+exits:
+  west:
+    roomid: 1868
+  south:
+    roomid: 1870
+  pipe:
+    roomid: 1870
+    mapdirection: south
+nouns:
+  palette: >-
+    The colors here are subtly different -- same world, different hues.
+    The sky is cooler, the ground lighter, the trees a gray-tinged green.
+    It is not dramatic; someone who had never played the game might not
+    notice immediately. But you notice. The game communicates difficulty
+    through color, a visual shorthand for the subconscious. The cheerful
+    palette of World 1 is gone. The world is the same world. It is harder
+    now.
+  pipes: >-
+    The pipes here are taller -- the standard green cylinders, but stretched,
+    their openings higher overhead. Piranha Plants emerge from the taller
+    ones, requiring a jump to clear rather than a duck. The pipes are the
+    game's recurring environmental grammar: obstacles, portals, spawn
+    points for enemies, vertical punctuation in the horizontal scroll of
+    the world.
+spawninfo: []
+idlemessages:
+- The sky is the same blue but cooler now, a shade that reads as twilight even at noon.
+- 'The trees here are gray-green rather than bright: same shape, different feeling.'
+- The question-mark blocks glow with the same gold they always have. There are fewer of them.
+- 'A pipe bubbles quietly to the south. Something moves inside: faint, rhythmic, waiting.'
+- The gaps between platforms are wider here. You measure them with your eyes before you jump.
+- 'You are more than halfway through the eight worlds. The palette says what the game will not: harder now.'
+- The ground underfoot has the same solid chunky feel but a different color. Small thing. Important thing.

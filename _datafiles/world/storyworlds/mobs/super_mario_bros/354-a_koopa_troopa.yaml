@@ -1,0 +1,28 @@
+mobid: 354
+zone: super_mario_bros
+hostile: true
+maxwander: 2
+idlecommands:
+  - "emote shuffles forward with its slow, deliberate turtle pace."
+  - ""
+  - "emote withdraws entirely into its shell with a sharp clunk."
+  - ""
+  - "emote re-emerges from its shell a moment later, blinking."
+  - ""
+  - "emote turns around and shuffles back the other way with the same pace."
+  - ""
+activitylevel: 30
+character:
+  name: a Koopa Troopa
+  description: >-
+    A bipedal turtle in a green shell, walking upright with a slow
+    deliberate gait, wearing white gloves and shoes. Its shell is smooth
+    and rounded, the kind that can become a projectile if it gets kicked
+    at the right angle. The Koopa Troopa predates the Goomba in the
+    game's taxonomy of enemies -- it is the second encounter, the second
+    lesson. Stomp it and it retreats into its shell. Kick the shell and
+    it skids at high speed, bouncing off walls and other enemies in a
+    chain reaction that can clear a screen in seconds. The shell is the
+    lesson.
+  raceid: 1
+  level: 3

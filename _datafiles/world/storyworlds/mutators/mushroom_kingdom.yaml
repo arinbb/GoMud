@@ -1,0 +1,13 @@
+mutatorid: mushroom-kingdom
+namemodifier:
+  behavior: append
+  text: (8-bit)
+  colorpattern: rainbow
+descriptionmodifier:
+  behavior: append
+  text: The air hums with a familiar chiptune energy, as if the world itself is running on very cheerful hardware.
+  colorpattern: rainbow
+alertmodifier:
+  text: Coins spin somewhere nearby. A question mark block blinks overhead. The rules here are simple and merciless and joyful.
+  colorpattern: rainbow
+playerbuffids: [52]

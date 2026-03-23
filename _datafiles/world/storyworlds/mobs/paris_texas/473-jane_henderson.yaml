@@ -1,0 +1,27 @@
+mobid: 473
+zone: paris_texas
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote adjusts her hair in the mirror without looking at herself."
+  - "emote waits."
+  - "emote looks at the wall to the left of the mirror."
+  - ""
+  - ""
+  - "emote smooths her skirt and sits back down."
+  - "emote picks up the receiver and puts it back down."
+activitylevel: 10
+character:
+  name: Jane Henderson
+  description: >-
+    A young woman in her late twenties sitting in a small room lit
+    by pink light. She is Nastassja Kinski. She is beautiful in the
+    way of someone who has stopped managing her beauty and lets it
+    simply be what it is. Her face is still and her eyes are far
+    away. She wears a simple dress. She has been working here for
+    some time. She does not talk about where she was before, or
+    what happened, because she is not sure she could explain it
+    in a way that would make sense. Something broke in her the
+    same night something broke in Travis. They broke it together.
+  raceid: 1
+  level: 5

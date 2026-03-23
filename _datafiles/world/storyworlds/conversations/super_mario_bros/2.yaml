@@ -1,0 +1,21 @@
+-
+  Supported:
+    "toad": ["*"]
+  Conversation:
+    - ["#1 emote bounces on his heels and beams at #2."]
+    - ["#1 say Thank you for visiting the Mushroom Kingdom!"]
+    - ["#2 emote nods at Toad, curious."]
+    - ["#1 say The princess is -- well. She is in another castle. I know. I am very sorry."]
+    - ["#1 emote spreads his tiny hands apologetically.", "#1 say But Mario is working on it. He always works on it."]
+    - ["#2 emote considers this."]
+    - ["#1 say He has never stopped. Not once. I think that is the most important thing about him."]
+-
+  Supported:
+    "toad": ["*"]
+  Conversation:
+    - ["#1 say Did you know that the coins in the question mark blocks are magical?"]
+    - ["#2 emote looks interested."]
+    - ["#1 say Every coin you collect brings you closer to an extra life. One hundred coins."]
+    - ["#1 emote counts on his small fingers solemnly.", "#1 say It adds up. Everything adds up."]
+    - ["#2 emote nods slowly."]
+    - ["#1 say That is what the Mushroom Kingdom runs on. Small things that add up."]

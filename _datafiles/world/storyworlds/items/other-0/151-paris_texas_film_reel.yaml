@@ -1,0 +1,16 @@
+itemid: 151
+name: Paris Texas film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="red">Paris, Texas</ansi>
+description: >-
+  A film reel in a battered metal canister the color of red Texas clay.
+  "PARIS, TEXAS" is hand-lettered on a strip of tape across the lid in
+  faded marker. The canister is warm — warmer than the room — and very
+  slightly gritty, as if fine red dust has settled into the seams. If
+  you hold it close and are very quiet, you can hear something: a single
+  slide guitar note, bending slow and low, the loneliest sound you have
+  heard in a room full of stories.
+type: object
+subtype: usable
+uses: 0
+value: 0

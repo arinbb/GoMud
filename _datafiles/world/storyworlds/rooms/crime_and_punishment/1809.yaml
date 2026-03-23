@@ -1,0 +1,50 @@
+roomid: 1809
+zone: Crime and Punishment
+title: The Police Station
+description: >-
+  The local bureau of police, its <ansi fg="itemname">antechamber</ansi>
+  smelling of mold, of bureaucratic paper, of the particular stale breath
+  of official interiors that are never properly aired. A clerk sits behind
+  a high desk covered in <ansi fg="itemname">registers</ansi> and stamps and
+  letters waiting to be dealt with. Other people wait on a bench — a woman
+  in a headscarf, a merchant type with a complaint, a man holding his hat
+  who has been here before and knows the waiting is part of it. The heat
+  here is worse than the street because there is less air. Raskolnikov came
+  here once during the fever and nearly confessed everything, standing in
+  this room, and then fainted instead. The room remembers this. The lane
+  is to the <ansi fg="exit">east</ansi>. A passage leads <ansi
+  fg="exit">north</ansi> to the investigator's office.
+mapsymbol: Z
+maplegend: Police Station
+biome: house
+exits:
+  east:
+    roomid: 1802
+  north:
+    roomid: 1810
+nouns:
+  antechamber: >-
+    The antechamber of the police bureau is a room designed to make you
+    feel like a supplicant before you have been accused of anything. The
+    ceiling is low, the smell is institutional, the clerk at the high desk
+    makes you wait regardless of what you are waiting for.
+  registers: >-
+    Enormous ledger-books, their pages grey with pencil notation, recording
+    everything the bureau has thought worth recording. Complaints. Reports.
+    Summons. The small facts of lives that have come to the attention of
+    authority.
+  clerk: >-
+    The clerk at the high desk manages the registers with the dedication
+    of a man who believes the registers matter. He does not look up when
+    you enter. He will look up when he is ready. He is never ready quickly.
+  bench: >-
+    The waiting bench, worn smooth from the weight of everyone who has
+    sat here and waited for something official to happen to them. The
+    occupants stare at the floor or the clerk or nothing.
+idlemessages:
+- The clerk at the high desk turns a page in his register and makes a notation without looking up.
+- The heat in the antechamber is supplemented by the breathing of everyone waiting. It has nowhere to go.
+- A door somewhere in the back offices opens, releases the sound of voices, and closes again.
+- 'The woman in the headscarf on the bench shifts her weight, sighs, and returns to waiting. She is good at this now.'
+- A fly circles the lamp above the clerk's desk with patient persistence.
+- 'Paper: every surface covered in it, every action generating more of it. The bureau runs on paper and suspicion.'

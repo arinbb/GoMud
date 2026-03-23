@@ -1,0 +1,70 @@
+roomid: 1929
+zone: Ghostbusters
+title: "Dana's Apartment"
+description: >-
+  Dana Barrett's apartment on the upper floors of 55 Central Park West is a
+  cellist's apartment: <ansi fg="itemname">sheet music</ansi> on every flat
+  surface, a cello case propped against the wall, concert programs tacked to the
+  bulletin board. It is a normal New York apartment of a working musician. It is
+  also currently wrong in ways that accumulate quietly. The <ansi fg="itemname">eggs</ansi>
+  on the kitchen counter are cooking themselves in their shells -- small cracks,
+  the sizzle of yolk on formica. The <ansi fg="itemname">refrigerator</ansi>
+  glows around its seal, a red-gold light that has nothing to do with the bulb
+  inside. The <ansi fg="itemname">armchair</ansi> in the corner has deep scratches
+  in its arms, like something with claws sat there for a long time. The air tastes
+  of ozone and something older. From beyond the apartment window, the building
+  roof is accessible by a staircase that goes up.
+mapsymbol: D
+maplegend: "Dana's Apartment"
+biome: house
+exits:
+  down:
+    roomid: 1928
+    exitmessage: You take the elevator back down to street level.
+  up:
+    roomid: 1930
+    exitmessage: You take the staircase up to the rooftop.
+nouns:
+  eggs: >-
+    Six eggs on the kitchen counter are cooking themselves. The heat radiates
+    from the formica beneath them, not from any visible source. The shells crack
+    in sequence, slowly, with the deliberation of a special effect. The yolks
+    hiss. This has been happening for three days. Dana Barrett has been eating
+    takeout.
+  refrigerator: >-
+    The refrigerator is a normal household appliance that has recently become an
+    interdimensional gateway. The light around its seal is the color of a sunset
+    on a world that has two suns. If you open it, you will see, at the very back
+    behind the leftover pasta, a stone temple hallway leading to a throne room
+    that should not exist. The eggs in the door rack have also been cooking
+    themselves. This is fine.
+  armchair: >-
+    The armchair's arms are deeply scored with parallel claw marks, four per side,
+    consistent with a large animal with very long claws. The foam is exposed. The
+    scratches smell faintly of burnt dog hair. This is where Zuul sat.
+  music: >-
+    Concert programs, sheet music, practice notes. Dana Barrett plays with the
+    New York Philharmonic. She has a red pencil she uses to mark difficult passages.
+    On the most recent sheet music -- Mahler's Fifth -- the red pencil markings
+    have changed. The notes are the same but the tempo markings now read: "THERE
+    IS NO DANA. THERE IS ONLY ZUUL." In her handwriting. She does not remember
+    writing this.
+spawninfo:
+- mobid: 385
+  maxwander: 0
+  respawnrate: 5 real minutes
+  idlecommands:
+  - "emote 's eyes glow orange for a moment, then return to normal."
+  - "say There is no Dana. There is only Zuul."
+  - "emote speaks in a low, strange voice: 'The Gatekeeper awaits.'"
+  - "emote tilts her head at an angle that is not quite human."
+  - "emote offers you something from the kitchen that appears to be moving."
+  - ""
+idlemessages:
+- The refrigerator seal glows hot orange, pulses once, and fades back to a low simmer.
+- An egg on the counter cracks with a sound like a small gunshot.
+- The temperature in the apartment drops for exactly three seconds, then returns.
+- Dana -- or whatever is using Dana -- hums a melody that is not from any human musical tradition.
+- The cello in its case vibrates. One string, low note, sustained. No one touched it.
+- The apartment window rattles though there is no wind outside. The building is making the window rattle. From below. From deep inside the structure.
+- All the lights in the apartment dim slightly, then return to normal. The refrigerator glow intensifies.

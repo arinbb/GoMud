@@ -1,0 +1,15 @@
+itemid: 170
+name: piece of telekinetic chalk
+namesimple: chalk
+displayname: a piece of <ansi fg="itemname">telekinetic chalk</ansi>
+description: >-
+  A perfectly ordinary-looking stick of white chalk, the kind found in any
+  classroom. Except this piece is warm to the touch and hums faintly when
+  you hold it. If you set it down and concentrate — really concentrate —
+  it rolls toward the nearest flat surface and begins to write. The
+  handwriting is shaky but unmistakable. It writes the truth. It always
+  writes the truth.
+type: object
+subtype: usable
+uses: 0
+value: 50

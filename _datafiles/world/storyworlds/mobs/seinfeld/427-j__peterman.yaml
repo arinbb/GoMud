@@ -1,0 +1,26 @@
+mobid: 427
+zone: seinfeld
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote dictates catalog copy to nobody in particular, his voice rich with the grandeur of the ordinary."
+  - "say The thing about this fabric is that it remembers where it has been."
+  - "emote recounts an adventure in a marketplace somewhere. The location changes. The quality of the fabric remains excellent."
+  - "emote examines a piece of cloth on his desk with the concentration of a geologist reading strata."
+  - "say Every garment is a story. This one is a novel."
+  - ''
+  - "emote strides across the office with the long step of a man who has covered terrain."
+  - "say I bought this in a village whose name I cannot pronounce but whose wool I will never forget."
+activitylevel: 20
+character:
+  name: J. Peterman
+  description: >-
+    A tall man, silver-haired, wearing a coat of some kind -- it is always
+    some kind of coat, and it always has a story. He speaks in catalog copy,
+    elevated and sincere, seeing every object as the distillation of a human
+    experience worth describing. He has been everywhere. He will tell you
+    about everywhere. The adventures are real in the way that the catalog
+    is real: not literally true, but true in intent, which is perhaps more
+    important. His mustache is the mustache of a man who has made decisions.
+  raceid: 1
+  level: 8

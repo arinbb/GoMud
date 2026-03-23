@@ -1,0 +1,52 @@
+roomid: 2048
+zone: its_always_sunny
+title: Dennis and Macs Apartment
+description: >-
+  The apartment Dennis Reynolds and Mac share has a clear territorial division.
+  Dennis's side is immaculate — mirrors precisely angled, hair products lined
+  up by height, clothing hung with obsessive symmetry. Mac's side has a
+  <ansi fg="itemname">karate poster</ansi> on the wall, a weight set that has
+  been used recently enough that a layer of chalk dust sits on the bar, and
+  several shirts discarded near the hamper rather than in it. A <ansi fg="itemname">television</ansi>
+  occupies the shared space. The apartment is clean in a way that suggests
+  one resident's standards and the other's tolerance. A locked door leads to
+  <ansi fg="exit">north</ansi> — Dennis's room, technically, though the lock
+  is new and Mac does not have a key. To the <ansi fg="exit">east</ansi>
+  is the street.
+mapsymbol: DM
+maplegend: Dennis and Macs Apt
+biome: house
+exits:
+  east:
+    roomid: 2044
+  north:
+    roomid: 2049
+nouns:
+  poster: >-
+    A karate poster on Mac's side of the apartment shows a fighter mid-kick
+    in front of an American flag. The word EXCELLENCE is printed across the
+    bottom. Mac has added a note in marker: "THIS IS ME (SOON)." Below that,
+    in different ink, Dennis has written "No." Mac has crossed this out.
+    Dennis has written it again.
+  mirrors: >-
+    Dennis's side of the apartment has mirrors at precise angles calculated
+    to show him from every angle simultaneously. They have been arranged with
+    the care of a man who needs to confirm his appearance frequently and from
+    multiple angles. One of them has a sticky note on it that reads "Golden."
+    Dennis wrote it. It is for himself.
+  weights: >-
+    Mac's weight set near his side of the apartment shows evidence of recent
+    use. The chalk dust on the bar is fresh. The weights are heavier than you
+    expected, which tells you something — Mac does actually do the work, even
+    if the mass cultivation timeline has stretched considerably.
+  television: >-
+    The shared television in the middle of the apartment is the site of most
+    of the apartment's negotiations. There are two remotes. One works. Ownership
+    of the working remote is a constant background tension.
+idlemessages:
+- Dennis's side of the apartment is in perfect order. Mac's side has a slightly different relationship with order, but not a bad one.
+- 'The mirrors on Dennis''s side reflect a room from several angles. In the right light, you can see the back of your own head, which is unusual.'
+- 'The karate poster watches over Mac''s side of the room. The fighter in it has excellent form. Mac has studied this poster. He has notes.'
+- 'Something is written on the bathroom mirror in dry-erase marker: a number, circled, followed by a question mark. A rating system in action.'
+- 'From somewhere in the apartment, the faint smell of an extremely expensive hair product. Dennis is somewhere nearby or was here recently.'
+- The weight set has a folded piece of paper tucked under the bar. It appears to be a mass cultivation training log. The dates go back three years.

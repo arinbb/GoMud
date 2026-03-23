@@ -1,0 +1,16 @@
+itemid: 260
+name: Festivus pole
+namesimple: pole
+displayname: a small <ansi fg="itemname">Festivus pole</ansi>
+description: >-
+  A miniature aluminum pole, about a foot tall, perfectly proportioned and
+  utterly unadorned. No tinsel. No ornaments. No lights. The pole is aluminum
+  because Frank Costanza selected aluminum for its high strength-to-weight
+  ratio and finds tinsel distracting, and on this particular point Frank
+  Costanza is, arguably, correct. The pole stands straight and silver and
+  exactly as it should be. Festivus is a holiday for the rest of us.
+  A small engraved plate at the base reads: 'A Festivus for the Rest of Us.'
+type: object
+subtype: usable
+uses: 0
+value: 0

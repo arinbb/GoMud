@@ -1,0 +1,20 @@
+-
+  Supported:
+    "the wizard": ["*"]
+  Conversation:
+    - ["#1 emote turns from the cauldron and addresses the air at a slight angle, as if reading something invisible"]
+    - ["#1 say The valley has been in spiritual imbalance for some years now. You can measure it in the soil."]
+    - ["#1 say The Junimos know. They have been waiting in the Community Center, maintaining what they can."]
+    - ["#1 emote pauses to observe the cauldron shift from violet to deep green"]
+    - ["#1 say When someone new arrives with genuine intent -- not extraction, not efficiency, but actual care -- the valley responds."]
+    - ["#1 say I have seen it before. I will not say how long ago."]
+-
+  Supported:
+    "the wizard": ["*"]
+  Conversation:
+    - ["#1 say The forest to the west is older than any map of this valley."]
+    - ["#1 emote gazes at the cauldron as if the forest is visible in it"]
+    - ["#1 say There is a shrine there, under the roots of the oldest tree. Most people never find it."]
+    - ["#1 say Those who do find it tend to understand the valley differently afterward."]
+    - ["#1 emote turns to look at you with eyes that have been watching a long time"]
+    - ["#1 say It is worth finding. I will not tell you where it is exactly. Some knowledge requires the walk."]

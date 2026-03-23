@@ -1,0 +1,22 @@
+-
+  Supported:
+    "lavender": ["matilda wormwood"]
+  Conversation:
+    - ["#1 emote leans in and whispers", "#1 say Matilda! Did you hear what Trunchbull did to Wilfred?"]
+    - ["#2 emote looks up from her book", "#2 say What happened?"]
+    - ["#1 say She picked him up by his ears and THREW him over the fence into the playing field!"]
+    - ["#2 emote 's eyes widen", "#2 say That's horrible."]
+    - ["#1 say And you know what the worst part is? Nobody believes the children. The parents think we're making it up."]
+    - ["#2 say Because the punishments are so extreme that no adult would believe a teacher could do them."]
+    - ["#1 say Exactly! It's GENIUS. Evil genius, but genius.", "#2 emote goes quiet, thinking very hard."]
+-
+  Supported:
+    "lavender": ["matilda wormwood"]
+  Conversation:
+    - ["#1 say I've been thinking about getting back at Trunchbull."]
+    - ["#2 say Lavender, be careful. She's dangerous."]
+    - ["#1 say I know, but SOMEONE has to do something. I found a newt in the pond."]
+    - ["#2 emote raises an eyebrow", "#2 say A newt?"]
+    - ["#1 say For her water jug. Imagine her face when she pours a newt into her glass!"]
+    - ["#2 emote almost smiles", "#2 say It's brave. And slightly insane."]
+    - ["#1 say That's my specialty.", "#1 emote grins with reckless courage."]

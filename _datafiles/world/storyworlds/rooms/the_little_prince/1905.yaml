@@ -1,0 +1,49 @@
+roomid: 1905
+zone: The Little Prince
+title: The Drunkards Asteroid
+description: >-
+  <ansi fg="itemname">Bottles</ansi> everywhere. Empty ones, mostly, arranged
+  in the careful disorder of someone who has had a system and abandoned it.
+  The Drunkard sits among them with the specific stillness of a man who has
+  been sitting here long enough that sitting has become his occupation. He
+  drinks to forget that he is ashamed. He is ashamed because he drinks.
+  He drinks to forget the shame. This is perfectly clear to him. He will
+  explain it if you ask. He is not confused about the logic. He has simply
+  decided that understanding the trap is sufficient reason not to leave it.
+  The asteroid smells of old wine and the specific gravity of someone who
+  has made their <ansi fg="itemname">sadness</ansi> into a home. The path
+  leads back to the <ansi fg="exit">vain</ansi> man north, and further to
+  the <ansi fg="exit">businessman</ansi> south.
+mapsymbol: D
+maplegend: Drunkards Asteroid
+biome: land
+exits:
+  vain:
+    roomid: 1904
+    mapdirection: north
+  businessman:
+    roomid: 1906
+    mapdirection: south
+nouns:
+  bottles: >-
+    Empty wine bottles, arranged in clusters that suggest once-attempted
+    order. Some still have dregs. Some have been rinsed out and refilled
+    with something clear. All of them are witnesses. The Drunkard treats
+    them as furniture, stepping around them with the automatic care of
+    someone living in the wreckage of their own history.
+  sadness: >-
+    It is not dramatic sadness. It is the slow, exhausted kind -- the kind
+    that has been present so long it has lost its edges. The Drunkard is not
+    weeping. He is simply, comprehensively, not anywhere else. You understand
+    this more than you want to.
+  wine: >-
+    The wine has been drunk. The drinking did not help. He will drink more.
+    This will also not help. He knows. He will explain it to you in perfect
+    detail, if you ask. He is not unaware of the logic.
+idlemessages:
+- The Drunkard lifts a bottle, finds it empty, sets it down with the care of someone who has done this many times.
+- He stares at nothing with the focused attention of a man watching something only he can see.
+- 'A bottle rolls slightly. He steadies it. Everything must stay in its place, at least.'
+- The asteroid is very quiet. He does not seem to mind. Or he minds very much and the bottles are the evidence.
+- He sighs once, deeply, from somewhere central. Then is still again.
+- 'He pours a drink. Pauses. Drinks. The pause was the only hesitation he allowed himself today.'

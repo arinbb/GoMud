@@ -1,0 +1,60 @@
+roomid: 2106
+zone: Up in Smoke
+title: The Roxy Theatre
+description: >-
+  Inside the legendary <ansi fg="itemname">Roxy</ansi> on Sunset Strip, Battle of
+  the Bands night. The room is packed to its velvet seams. <ansi fg="itemname">Stage
+  lights</ansi> bank in rows above a low <ansi fg="itemname">stage</ansi> where the
+  next act is setting up. <ansi fg="itemname">Audience</ansi> members press toward the
+  front with the patient urgency of people who have been here an hour already and
+  intend to be here until closing. A <ansi fg="itemname">clipboard</ansi> near the
+  stage lists the competing bands in order. The air is close and warm and hums with
+  collective anticipation. Exit <ansi fg="exit">south</ansi> leads back to the parking
+  lot. A custom exit leads <ansi fg="exit">stage</ansi> for performers with the nerve.
+mapsymbol: R
+maplegend: The Roxy Theatre
+biome: house
+exits:
+  south:
+    roomid: 2105
+    exitmessage: You push back through the crowd and out to the parking lot.
+  stage:
+    roomid: 2114
+    secret: false
+    mapdirection: north
+    exitmessage: You squeeze past the amp stack and step into the lights.
+nouns:
+  roxy: >-
+    The Roxy Theatre, 9009 Sunset Strip. The walls are dark and the ceiling
+    is low and every inch of it vibrates with the residue of a thousand
+    shows. This room has heard things. Tonight it is going to hear more.
+  lights: >-
+    A bank of PAR cans in red, blue, and white, currently aimed at an
+    empty stage with the optimism of stage lighting. When the music starts
+    they will narrow and intensify. Right now they just make everyone
+    look slightly heroic.
+  stage: >-
+    The stage is low and close, barely raised above the floor, which means
+    the band and the audience are almost the same thing. Almost. The
+    difference is the microphone stand and whoever is brave enough to stand
+    at it.
+  clipboard: >-
+    A clipboard taped to the monitor wedge. On it: a list of band names in
+    different handwriting. Most are crossed off. Near the bottom: Cheech and
+    Chong. Not crossed off.
+  audience: >-
+    A hundred people pressed together in the dark, all facing the same direction,
+    all wanting the same thing. Community by temporary consensus. It is the
+    best kind.
+spawninfo:
+- mobid: 467
+  message: '<ansi fg="3">The Battle Judge takes his position beside the stage with a clipboard and a very serious expression, pen ready.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The audience applause dies and a new hush takes its place. The between-band silence.
+- Stage crew swaps out a microphone stand with practiced efficiency.
+- The Battle Judge makes a note on the clipboard. Nobody knows what it means.
+- A feedback squeal from the PA cuts the room. Everyone winces. The tech apologizes.
+- Someone near the front chants the name of a band. It does not catch on tonight.
+- The room smells like beer and sweat and the particular electricity of live music.
+- The next band is taking longer to set up than expected. The crowd begins to murmur.

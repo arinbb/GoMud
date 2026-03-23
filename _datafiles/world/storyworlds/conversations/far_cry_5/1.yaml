@@ -1,0 +1,24 @@
+-
+  Supported:
+    "mary may fairgrave": ["nick rye"]
+  Conversation:
+    - ["#1 say We need to hit the checkpoint on Route 9. It's cutting off supply runs from the north."]
+    - ["#2 emote wipes his hands on a shop rag and looks at the map", "#2 say I can run cover in the Cub if you need air support. Low pass, shake them up."]
+    - ["#1 say Kim is going to have that baby any day now, Nick."]
+    - ["#2 say Kim knows what I do. She married me knowing what I do."]
+    - ["#1 emote looks at him", "#1 say That's not an answer."]
+    - ["#2 emote is quiet for a moment", "#2 say I know. But it's the answer I have right now."]
+    - ["#1 say Be ready to fly at 0600. And call Kim."]
+    - ["#2 say I'll call Kim.", "#2 emote pauses", "#2 say She's going to tell me to be careful."]
+    - ["#1 say She's going to be right."]
+-
+  Supported:
+    "mary may fairgrave": ["nick rye"]
+  Conversation:
+    - ["#2 say My dad used to bring me to Falls End for the Fourth of July parade. The whole county came out."]
+    - ["#1 emote doesn't stop cleaning the bar", "#1 say I remember. Your dad always parked that terrible truck in the fire lane."]
+    - ["#2 say He said the fire department could tow it if they wanted to try.", "#2 emote almost laughs"]
+    - ["#1 say This is still that place. Under everything they've done to it, it's still that place."]
+    - ["#2 say Yeah.", "#2 emote looks out the window at the main street", "#2 say Yeah, it is."]
+    - ["#1 say So we take it back."]
+    - ["#2 say So we take it back."]

@@ -1,0 +1,50 @@
+roomid: 2114
+zone: Up in Smoke
+title: On Stage at the Roxy
+description: >-
+  The stage of the Roxy Theatre, Sunset Strip, 1978. The <ansi fg="itemname">spotlights
+  </ansi> are in your eyes, hot and white, converting the audience into a wall of
+  invisible sound. From up here the <ansi fg="itemname">crowd</ansi> is a single
+  thing: a hundred people transformed by the same music into one organism. A
+  <ansi fg="itemname">microphone</ansi> stands at center stage. The monitor wedge
+  in front of your feet sends back a wash of your own sound. The <ansi fg="itemname">
+  instruments</ansi> are set and ready. The <ansi fg="itemname">Battle Judge</ansi>
+  below has his clipboard raised. All of 1978 is waiting to hear what you do next.
+  Exit <ansi fg="exit">venue</ansi> leads back to the floor.
+mapsymbol: X
+maplegend: On Stage at the Roxy
+biome: house
+exits:
+  venue:
+    roomid: 2106
+    mapdirection: south
+    exitmessage: You step back from the mic and off the stage into the crowd.
+nouns:
+  spotlights: >-
+    PAR cans in three colors: white at the center, red and blue filling the
+    flanks. The white one is aimed directly at the microphone stand. If you
+    stand at the mic, you stand inside the light. There is no more exposed
+    position in Los Angeles.
+  crowd: >-
+    From the stage, the crowd is a wall of bodies and noise, their faces
+    lit from below by the stage light, a hundred expressions all carrying
+    the same question: what are you going to do? The correct answer is:
+    something worth hearing.
+  microphone: >-
+    A Shure SM58, the standard instrument of the rock stage, taped to a
+    chrome stand at singing height. The grill is slightly dented from a
+    previous performer. It has heard extraordinary things. It is ready to
+    hear more.
+  instruments: >-
+    A drum kit behind a plexiglass shield. A bass cabinet. Two guitar
+    amplifiers, their standby switches on, their pilot lights glowing orange.
+    Everything is plugged in and waiting. The stage belongs to whoever
+    is willing to step up to the microphone.
+idlemessages:
+- The crowd noise rises and falls like breath. They are waiting.
+- The Battle Judge clicks his pen. On the clipboard a score waits to be filled.
+- The spotlights hum at a frequency you feel more than hear.
+- Feedback threatens from the monitor and then resolves into something that sounds almost intentional.
+- A voice from the crowd shouts something encouraging. Then another. Then several.
+- The drum kit gleams under the lights. The snare drum is tuned exactly right.
+- This is the Roxy. Every band that played here became real by playing here.

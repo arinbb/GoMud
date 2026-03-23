@@ -1,0 +1,47 @@
+-
+  Supported:
+    "peter venkman": ["ray stantz"]
+  Conversation:
+    - ["#1 sayto #2 Ray, do you remember when we were respected scientists at Columbia University?"]
+    - ["#2 emote looks up from his equipment", "#2 say Fondly. Yes. Why?"]
+    - ["#1 say I'm standing in a converted firehouse next to a vehicle that has been slimed twice, and I'm thinking about career paths."]
+    - ["#2 say We caught a ghost, Peter. An actual ghost. That is more interesting than anything we were doing at Columbia."]
+    - ["#1 emote stares at the ceiling", "#1 say You're not wrong. That doesn't make it less weird."]
+    - ["#2 say The PKE readings today are extraordinary. Something is building."]
+    - ["#1 say It's always building. Can I finish my coffee before it builds?"]
+-
+  Supported:
+    "ray stantz": ["peter venkman"]
+  Conversation:
+    - ["#1 say Peter, I've been working on a television commercial."]
+    - ["#2 say A what?"]
+    - ["#1 say An advertisement. For the business. I wrote some copy. 'We're ready to believe you.'"]
+    - ["#2 emote considers this", "#2 say That's actually not bad."]
+    - ["#1 say 'If there's something strange in your neighborhood, who ya gonna call?'"]
+    - ["#2 say ...Ghostbusters."]
+    - ["#1 emote beams", "#1 say Exactly! I'm working on a jingle!"]
+    - ["#2 say Ray. Focus on the dimensional convergence."]
+-
+  Supported:
+    "peter venkman": ["ray stantz"]
+  Conversation:
+    - ["#1 say Ray, about the Stay Puft thing."]
+    - ["#2 say I know, I know."]
+    - ["#1 say Of all the things your mind could have landed on."]
+    - ["#2 say It felt safe! As a child, Stay Puft was very comforting."]
+    - ["#1 emote rubs his face", "#1 say And now he's a hundred and twelve feet tall."]
+    - ["#2 say But smiling! He was smiling the whole time."]
+    - ["#1 say That was somehow the worst part."]
+    - ["#2 emote looks thoughtful", "#2 say I don't regret it."]
+-
+  Supported:
+    "ray stantz": ["peter venkman"]
+  Conversation:
+    - ["#1 say The ghost in the library was a Class IV apparition. Non-violent until disturbed."]
+    - ["#2 say We disturbed her."]
+    - ["#1 say You disturbed her! You said 'where are you.'"]
+    - ["#2 say She shushed me! In a library! I felt judged!"]
+    - ["#1 emote tries not to laugh"]
+    - ["#2 say It was a valid emotional response."]
+    - ["#1 say She threw every card catalog in the building at us."]
+    - ["#2 say Also valid."]

@@ -1,0 +1,57 @@
+roomid: 1888
+zone: The Monkey Wrench Gang
+title: The Canyon Floor
+description: >-
+  A <ansi fg="red">slot canyon</ansi> narrows here to a passage twenty feet wide, its
+  walls of <ansi fg="red">Navajo sandstone</ansi> rising hundreds of feet on either side,
+  so smooth and so close that the sky is reduced to a <ansi fg="cyan">ribbon of blue</ansi>
+  overhead. The walls are sculpted by water — undulating curves, polished surfaces,
+  the cross-bedding of ancient dunes made visible in the stone. The colors shift from
+  cream to salmon to deep red to purple depending on the light and the hour. The floor
+  is fine sand, smooth and cold, carrying the faint moisture of the last flash flood.
+  The silence here is absolute and architectural, contained by the walls on all sides
+  like sound in a cathedral. A narrow <ansi fg="itemname">trail</ansi> runs south through
+  the sand, its passage marked by bootprints. To the <ansi fg="exit">trail</ansi>
+  heading <ansi fg="exit">north</ansi> is the way back up to the strip mine road.
+  To the <ansi fg="exit">south</ansi>, the canyon widens toward the hidden camp.
+mapsymbol: C
+maplegend: Canyon Floor
+biome: cave
+exits:
+  north:
+    roomid: 1886
+    exitmessage: You scramble up the rocky trail out of the canyon.
+    mapdirection: north
+  south:
+    roomid: 1889
+nouns:
+  walls: >-
+    The canyon walls are Navajo sandstone, laid down as windblown dunes two hundred
+    million years ago in what was then the largest desert on Earth. The cross-bedding
+    is visible -- diagonal lines in the rock that show the original direction of the
+    dune face. The colors range from cream to deep red. Running your hand along the
+    surface, you feel the smoothness of stone that has been polished by water and sand
+    for ten thousand years.
+  sand: >-
+    The canyon floor is covered in fine red sand, each grain a fragment of sandstone
+    carried here by the last flash flood. The sand is deep and soft underfoot, cooler
+    than the rock above. Bootprints track south through it. The gang came this way.
+  sky: >-
+    The sky is a narrow ribbon of blue overhead, framed by the canyon walls.
+    On cloudy days, it can disappear entirely. In rain, flash floods funnel down
+    this passage with terrifying speed. Right now it is blue and still and the
+    color of everything the desert is not.
+  prints: >-
+    Bootprints in the canyon sand, heading south. Multiple people, recently.
+    One set is heavy and wide -- Hayduke's boots. One is smaller, lighter.
+    One set is cowboy boots, probably Seldom Seen. One set wears something
+    with a distinctive tread that might be Bonnie's hiking boots.
+spawninfo: []
+idlemessages:
+- The canyon walls radiate the warmth stored from the day, the stone cooling slowly toward midnight.
+- 'A wind from somewhere upstream moves through the slot, carrying the smell of the desert above: sage, dust, distance.'
+- 'The light shifts as the sun moves, the color of the walls changing from salmon to blood-orange to rust.'
+- Your footsteps in the sand are unnaturally loud in the silence of the slot.
+- A lizard appears at the base of the wall, freezes, then vanishes into a crack before you can look directly at it.
+- 'The sky overhead is a perfect blue rectangle, framed by the perfect red walls. It looks like a painting.'
+- Water has polished the sandstone into curves and hollows, each one a record of some flood now decades gone.

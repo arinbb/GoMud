@@ -1,0 +1,25 @@
+mobid: 404
+zone: nineteen_eighty_four
+hostile: false
+maxwander: 0
+activitylevel: 30
+idlecommands:
+  - emote sweats. The sweat runs down his face in rivulets and he makes no move to wipe it.
+  - say Of course I'm guilty. The Party doesn't make mistakes.
+  - emote sits in the approved position, back straight, hands on knees, face wearing the expression of a man who is proud of his own guilt.
+  - say My daughter heard me. In my sleep, she said. Proper little girl. Did the right thing.
+  - ''
+  - emote wipes his face finally, laboriously, with his sleeve. Then sits straight again.
+character:
+  name: Parsons
+  description: >-
+    A man of about thirty-five, with a tubby, middle-sized body and a flat
+    face with thick blond hair. He sweats perpetually and enormously, his
+    blue overalls already damp at the armpits and across the back. He was
+    Winston's neighbor at Victory Mansions: cheerful, physical, uncomplicated,
+    the ideal Party member who believed everything he was told and had no
+    inconvenient interior. His daughter was a Spy. His daughter heard him say
+    something in his sleep. His daughter turned him in. He is proud of his
+    daughter.
+  raceid: 1
+  level: 3

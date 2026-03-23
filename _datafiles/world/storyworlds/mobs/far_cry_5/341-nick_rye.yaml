@@ -1,0 +1,26 @@
+mobid: 341
+zone: far_cry_5
+hostile: false
+maxwander: 1
+activitylevel: 30
+idlecommands:
+- emote crouches beside his truck and checks something under the hood with a pilot's systematic attention.
+- say Kim says I should stand down. She's probably right. She's usually right. I'm probably not going to stand down.
+- ""
+- emote scans the sky with the automatic habit of a pilot reading weather before a flight.
+- say My kid's going to be born into this county. I'm going to make sure the county is worth being born into.
+- ""
+- emote kicks a tire, checks the pressure by feel, apparently approves, and moves to the next.
+character:
+  name: Nick Rye
+  description: >-
+    A man in his early thirties with the weathered confidence of someone
+    who has been flying since before he had a license. He has a pregnant
+    wife and a crop duster and a bone-deep attachment to Hope County that
+    Eden's Gate has made physical rather than philosophical. He is not
+    complicated about any of this: this is his county, his home, his
+    family's future, and he will fight for it with his plane and his
+    fists and whatever else is available, preferably all at once. He
+    checks the sky constantly. Old habit. New urgency.
+  raceid: 1
+  level: 8

@@ -1,0 +1,27 @@
+mobid: 340
+zone: far_cry_5
+hostile: false
+maxwander: 0
+activitylevel: 25
+idlecommands:
+- emote adjusts the radio scanner dial and presses one headphone cup to his ear, listening hard.
+- say I told the county commission three years ago this was coming. I have the letters. They said I was paranoid.
+- ""
+- emote marks another patrol route on the Hope County map in red marker.
+- say The bunker's got six months of supplies. More if we're careful. We won't need to be careful. We're going to end this.
+- ""
+- emote checks the generator fuel gauge, grunts with satisfaction, and goes back to the radio.
+character:
+  name: Dutch
+  description: >-
+    A weathered man in his sixties who has the look of someone who built
+    his own home and buried his own dead and did not need anyone's permission
+    for either. He has a grey beard and the particular confident calm of a
+    person who has been correct about something catastrophic long enough to
+    have stopped being angry about it and started being useful. The bunker
+    is his. The radio equipment is his. The annotated map of Hope County
+    is his. He built all of it against a possibility that everyone told him
+    was impossible. He is not saying 'I told you so.' He does not have
+    time for that right now.
+  raceid: 1
+  level: 8

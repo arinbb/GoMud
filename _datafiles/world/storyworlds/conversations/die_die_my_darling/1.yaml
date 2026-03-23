@@ -1,0 +1,22 @@
+-
+  Supported:
+    "mrs. trefoile": ["*"]
+  Conversation:
+    - ["#1 say Stephen. Stephen, do you see her? Do you see what she carries with her?"]
+    - ["#1 emote opens the Bible and reads aloud in a low voice."]
+    - ["#1 say 'Whatsoever man there be of the children of Israel, or of the strangers that sojourn among you, which hunteth and catcheth any beast or fowl...'"]
+    - ["#1 emote pauses, finger on the page, head tilted as if listening."]
+    - ["#1 say Yes. Yes, Stephen. I understand. It will be done."]
+    - ["#1 emote closes the Bible gently and stands very still for a long moment."]
+    - ["#1 say She will be ready. I promise you that."]
+-
+  Supported:
+    "mrs. trefoile": ["*"]
+  Conversation:
+    - ["#1 emote addresses the portrait above the fireplace with complete seriousness."]
+    - ["#1 say Stephen, the prayer service is in one hour. You will be pleased with how she attends."]
+    - ["#1 emote tilts her head."]
+    - ["#1 say What do you mean, not yet? She has been here two days. The preparation takes time, yes, but..."]
+    - ["#1 emote listens to something no one else can hear."]
+    - ["#1 say Of course. Of course you are right. I will wait for your sign."]
+    - ["#1 emote straightens and smooths her grey skirt with both hands."]

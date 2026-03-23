@@ -1,0 +1,72 @@
+roomid: 1614
+zone: Die Die My Darling
+title: The Cellar
+description: >-
+  The cellar is not what the house above it would suggest. It is enormous —
+  vaulted ceilings, flagstone floors, stone walls that pre-date the rest of the
+  house by centuries. And it is full of <ansi fg="3">colour</ansi>. Theatrical
+  <ansi fg="3">costumes</ansi> hang in rows from ceiling-mounted racks — gowns in
+  <ansi fg="red">deep red</ansi> and <ansi fg="3">gold</ansi> and <ansi fg="4">midnight
+  blue</ansi>, feather boas and silk stoles and sequined things that catch the
+  light of the bare <ansi fg="3">yellow bulb</ansi> overhead. And the <ansi
+  fg="yellow">mirrors</ansi>. They are everywhere — full-length dressing mirrors,
+  ornate gilt-framed mirrors, a triptych mirror from a theatrical dressing room,
+  dozens of them, facing each other and multiplying the room endlessly. Everything
+  removed from the house above is here. Against the far wall, a large <ansi
+  fg="8">portrait</ansi> of Stephen Trefoile stands propped on an easel —
+  a formal photograph enlarged, his face blown up to nearly life-size. At its base,
+  dry flowers and a folded letter. The cellar stairs are back <ansi fg="exit">up</ansi>.
+mapsymbol: X
+maplegend: The Cellar
+biome: cave
+exits:
+  up:
+    roomid: 1613
+    exitmessage: You climb back up the stone stairs toward the light.
+nouns:
+  costumes: >-
+    Theatrical costumes from several decades — evening gowns, chorus-line pieces,
+    velvet cloaks, feathered things. Some are clearly old, their fabric delicate
+    with age. Some are more recent. All of them are vibrant with colour. All of
+    them belong to the woman upstairs — to the person she was before the grey closed
+    in. Someone had a life before this house. A vivid, coloured, embodied life.
+  gowns: >-
+    Evening gowns in deep red and gold and midnight blue. One has been worn recently —
+    the hanger is at an angle, the fabric slightly disturbed. Someone comes here and
+    wears these things. Alone, in the cellar, with only the mirrors.
+  mirrors: >-
+    They face each other and multiply you into infinity — you, and you, and you,
+    retreating in every direction. In a house without mirrors, the cellar holds
+    dozens of them. Everything that was removed from the rooms above is here.
+    You look into one and see yourself. You look real. You have colour. You have
+    a face. The mirrors were not destroyed. They were kept. She kept them all.
+  portrait: >-
+    A large formal photograph of Stephen Trefoile, enlarged to nearly life-size
+    and framed in the same dark wood as everything in the house above. His face is
+    handsome and cold. Dry flowers at the base — not fresh ones, not from upstairs.
+    Old, grey flowers. A folded letter leans against the frame, the ink of its
+    address faded. It was never sent.
+  stephen: >-
+    A large formal photograph of Stephen Trefoile, enlarged to nearly life-size
+    and framed in the same dark wood as everything in the house above. His face is
+    handsome and cold. Dry flowers at the base — not fresh ones, not from upstairs.
+    Old, grey flowers. A folded letter leans against the frame, the ink of its
+    address faded. It was never sent.
+  letter: >-
+    A folded letter at the base of the portrait, its envelope addressed in a hand
+    now very familiar to you. The address is Patricia's address. The date on the
+    letter is several years ago. It was never sent. You do not open it.
+  bulb: >-
+    A single bare bulb on a long cord, hanging from the vaulted ceiling. Its light
+    is warm and yellow — very different from the cold grey light of the house above.
+    In this light, the costumes glow with their true colours. The mirrors multiply
+    the warmth. This room is not like the house. It is the house's hidden truth.
+spawninfo: []
+idlemessages:
+- The theatrical costumes stir in the faint draught from the stairs, silk and velvet moving together.
+- Dozens of mirrors catch and multiply the yellow bulb overhead, filling the cellar with warm light.
+- The portrait of Stephen watches the room from the far wall. He does not look kind.
+- Your own reflection catches your eye from multiple angles. You look startled to see yourself.
+- The sequined gowns on their racks send small sparks of reflected light across the walls.
+- Something moved in the mirrors — just you, just your own movement, multiplied out of recognition.
+- The flowers at the base of the portrait are very dry. They have been here a long time. She has not replaced them.

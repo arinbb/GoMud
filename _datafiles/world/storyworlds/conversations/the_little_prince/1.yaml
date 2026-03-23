@@ -1,0 +1,27 @@
+-
+  Supported:
+    "the little prince": ["the fox"]
+  Conversation:
+    - ["#1 say Please -- tame me."]
+    - ["#2 emote watches from a careful distance", "#2 say I cannot tame you. I am not tamed myself."]
+    - ["#1 say What does it mean -- to tame?"]
+    - ["#2 say It means to establish ties. If you tame me, then we shall need each other. To me, you will be unique in all the world. To you, I shall be unique in all the world."]
+    - ["#1 emote thinks about this", "#1 say I am beginning to understand. There is a flower -- I think that she has tamed me."]
+    - ["#2 emote moves one careful step closer", "#2 say It is possible. On the Earth one sees all sorts of things."]
+    - ["#1 say It is not on the Earth. She is on my planet."]
+    - ["#2 say Then you are responsible for her. Forever."]
+    - ["#1 emote goes very quiet for a long moment"]
+    - ["#2 say Come back tomorrow. Come at the same hour. I shall begin to prepare my heart."]
+-
+  Supported:
+    "the little prince": ["the fox"]
+  Conversation:
+    - ["#2 say Goodbye. Here is my secret. It is very simple."]
+    - ["#1 emote waits, completely still"]
+    - ["#2 say It is only with the heart that one can see rightly. What is essential is invisible to the eye."]
+    - ["#1 say What is essential is invisible to the eye."]
+    - ["#2 say The time you have wasted on your rose makes your rose so important."]
+    - ["#1 say The time I have wasted on my rose --"]
+    - ["#2 say Men have forgotten this truth. But you must not forget it."]
+    - ["#1 say I will not forget it."]
+    - ["#2 emote watches him go, then turns to look at the wheat, which is golden, which is his colour"]

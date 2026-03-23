@@ -1,0 +1,66 @@
+roomid: 1969
+zone: Nineteen Eighty Four
+title: The Room Above the Shop
+description: >-
+  A small room above Charrington's shop, reached by a steep staircase.
+  An old <ansi fg="itemname">bed</ansi> with a brass headboard. A rag
+  rug on the floor. A <ansi fg="itemname">print</ansi> on the wall —
+  a steel engraving of an old church, St. Clement Danes, that once stood
+  here before it was bombed. The <ansi fg="itemname">window</ansi> looks
+  out over the prole street below, the washing on the lines, the
+  children playing. There is no <ansi fg="itemname">telescreen</ansi>.
+  None. The absence of it is a physical sensation. Winston and
+  <ansi fg="itemname">Julia</ansi> meet here. They think they are safe.
+  They are not safe. They will never be safe. But for now, in this room,
+  they are together. The <ansi fg="exit">shop</ansi> is below.
+mapsymbol: R
+maplegend: The Room Above the Shop
+biome: house
+exits:
+  shop:
+    roomid: 1968
+    mapdirection: down
+nouns:
+  telescreen: >-
+    There is no telescreen. You check. You check again. There is no
+    telescreen. The wall where a telescreen should be is just a wall,
+    with a faded floral wallpaper pattern. The absence is so remarkable
+    that it takes some time to accept. You are unwatched. You are
+    genuinely, actually unwatched. The feeling is close to grief.
+  bed: >-
+    An old iron bed with a brass headboard, the mattress soft, the
+    blanket surprisingly clean. It is a real bed, not a Party cot.
+    Julia found real coffee somewhere. There is a stub of chocolate
+    on the nightstand, actual chocolate, not the grey Victory variety.
+    This room is an island. Islands are dangerous. Islands are everything.
+  print: >-
+    A steel engraving of a church steeple against a grey sky. It says,
+    in small lettering at the bottom: St. Clement Danes. The church was
+    bombed during the war. It no longer exists. The engraving is from
+    before. Charrington says: oranges and lemons, say the bells of
+    St. Clement's. He is reciting what the engraving shows, what has
+    been destroyed, what the engraving preserves.
+  window: >-
+    From the window you can see the prole woman hanging washing, or her
+    equivalent. You can see children. You can see a narrow strip of
+    sky. It is not beautiful exactly but it is real, it is happening,
+    it is unsponsored by the Party. You watch it for a while.
+  julia: >-
+    Julia is here, or was here, or will be here. She brings chocolate
+    and real coffee and real sugar. She is practical about rebellion
+    in a way Winston cannot quite understand: she does not hate the Party
+    abstractly. She hates it specifically, concretely, for specific
+    reasons. She is alive in a way that Winston has almost forgotten how
+    to be.
+spawninfo:
+- mobid: 401
+  message: 'Julia sits on the bed, unwrapping something in a brown paper bag with the secret satisfaction of someone who has obtained something they should not have.'
+  respawnrate: 5 real minutes
+idlemessages:
+- 'The absence of a telescreen is so remarkable that you keep checking the wall, as if one might have appeared while you were not looking.'
+- 'Julia unwraps a small square of real chocolate — dark, actual chocolate — and breaks it into pieces with a careful, deliberate crack.'
+- 'Through the window, the prole woman is singing again. Her song rises through the floor. It does not belong to the Party. It belongs to her.'
+- 'The room is warm. There is a fireplace with a grate. No Victory Coal, but the ashes suggest that someone has burned something here recently, something that was not coal.'
+- 'Winston looks at the glass paperweight on the shelf — pink coral in clear glass, a trapped world, a preserved world. He looks at it for a long time.'
+- 'Julia says something and laughs. The sound is shocking in its ordinariness. In Oceania, laughter means danger. Here, for now, it means laughter.'
+- 'You know, in some fold of your mind that you are trying not to look at, that this cannot last. But it is lasting now. That is enough.'

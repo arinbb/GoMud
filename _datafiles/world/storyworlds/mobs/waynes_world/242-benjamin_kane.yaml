@@ -1,0 +1,27 @@
+mobid: 242
+zone: waynes_world
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote checks his watch with the crisp efficiency of a man who is never late but always counting."
+  - "say I see potential here. I see untapped market reach."
+  - "emote smooths his already-smooth tie."
+  - "emote makes a phone call in a low, authoritative voice."
+  - "say This is a business opportunity. Everything is a business opportunity."
+  - ""
+  - ""
+  - "emote reviews a document with the flat focus of someone who has already made the decision."
+  - "say The numbers work. The numbers always work if you set them up correctly."
+activitylevel: 30
+character:
+  name: Benjamin Kane
+  description: >-
+    Handsome in a way that is very specifically calculated. Dark hair, styled.
+    Suit that fits perfectly. Tie that is always straight. His face holds a
+    professional warmth — a smile calibrated for maximum effectiveness. His eyes,
+    however, are doing something different from his mouth, which is business.
+    He is not the villain here. He is something more ordinary: a man who has
+    learned to see everything as an opportunity and forgot how to see things
+    as themselves.
+  raceid: 1
+  level: 8

@@ -1,0 +1,16 @@
+itemid: 225
+name: Mushroom Kingdom gold coin
+namesimple: coin
+displayname: a <ansi fg="yellow">Mushroom Kingdom gold coin</ansi>
+description: >-
+  A perfectly round gold coin, slightly translucent, with a small circular
+  stamp on its face. It is warm to the touch in a way that metal should
+  not be. If you hold it near your ear, you can almost hear it -- a bright,
+  high ding, the sound of collection, the sound of progress, the sound
+  of one hundred things adding up to something that saves your life. You
+  got this from the Mushroom Kingdom. It counted toward something once.
+  It still counts, in its way.
+type: object
+subtype: usable
+uses: 0
+value: 1

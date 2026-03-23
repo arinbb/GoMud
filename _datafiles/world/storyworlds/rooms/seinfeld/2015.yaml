@@ -1,0 +1,57 @@
+roomid: 2015
+zone: Seinfeld
+title: The Festivus Room
+description: >-
+  Frank Costanzas basement, which he has converted into the home of Festivus --
+  a holiday for the rest of us. The room is spare, undecorated, which is appropriate
+  because the <ansi fg="yellow">philosophy</ansi> of Festivus rejects decoration.
+  At the center of the room stands the <ansi fg="itemname">Festivus pole</ansi> --
+  aluminum, unadorned, selected for its high strength-to-weight ratio. Against
+  the wall, a <ansi fg="itemname">folding table</ansi> holds a modest Festivus dinner,
+  prepared with conviction if not with joy. The <ansi fg="itemname">card table</ansi>
+  in the corner is where the Airing of Grievances is conducted. The basement walls
+  hold none of the decorative impulses of the living room above -- this is Frank
+  Costanzas space, designed by Frank Costanza for the holiday he invented, and it
+  reflects his values: aluminum, practicality, and the frank acknowledgment that
+  the holidays have gotten out of hand and something needed to be done. The stairs
+  lead <ansi fg="exit">up</ansi> to the living room.
+mapsymbol: F
+maplegend: Festivus Room
+biome: house
+exits:
+  up:
+    roomid: 2010
+nouns:
+  pole: >-
+    The Festivus pole. Unadorned aluminum. Frank Costanza selected aluminum
+    for its high strength-to-weight ratio. He finds tinsel distracting. The
+    pole stands straight and silver and without ornamentation and it is exactly
+    what Festivus requires. You feel, looking at it, the specific satisfaction
+    of a thing that is exactly what it needs to be and nothing else.
+  table: >-
+    The Festivus dinner table. A modest meal: a meatloaf, something with
+    rice, some bread. Prepared not as a celebration but as a sustenance
+    for the holiday activities ahead, specifically the Airing of Grievances
+    and the Feats of Strength, both of which require some calories.
+  card: >-
+    The card table. This is where the Airing of Grievances takes place.
+    Frank Costanza developed this tradition because he felt that the holidays
+    had become too focused on warmth and generosity and he wanted to create
+    space for the honest acknowledgment that everyone in the room has
+    disappointed everyone else in the room over the past year.
+  philosophy: >-
+    The philosophy of Festivus is this: the holidays have become too commercial.
+    Frank Costanza experienced this while shopping for a doll one Christmas,
+    when he struggled with a man for the last doll and the doll's head fell
+    off. At that moment, he decided there had to be a better way. The better
+    way is Festivus.
+spawninfo: []
+idlemessages:
+- The Festivus pole stands at the center of the room, silver and unadorned and perfectly correct.
+- The dinner on the table waits for the Airing of Grievances to conclude. The grievances are not concluding.
+- From upstairs comes the sound of Frank Costanza preparing an opinion about something.
+- 'The basement is quiet in the particular way that basements in Queens are quiet: not peacefully.'
+- The card table sits ready for the Airing of Grievances. The grievances are significant this year. They are always significant.
+- A Festivus tradition, the Feats of Strength, requires that Frank Costanza be pinned to the floor. This has not yet happened.
+- The aluminum pole catches the basement light and holds it. This is sufficient.
+- 'Frank Costanza''s voice drifts down the stairs: something about tinsel and how he does not understand why anyone ever wanted tinsel.'

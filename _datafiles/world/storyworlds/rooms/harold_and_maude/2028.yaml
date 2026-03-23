@@ -1,0 +1,71 @@
+roomid: 2028
+zone: Harold and Maude
+title: Maudes Railroad Car
+description: >-
+  An old <ansi fg="10">railroad car</ansi> repurposed as the home of someone
+  who takes life very seriously, which is to say she does not take it seriously
+  at all. Every surface is covered in something wonderful: <ansi fg="itemname">paintings</ansi>
+  in progress, <ansi fg="itemname">sculptures</ansi> of wire and found objects,
+  <ansi fg="10">plants</ansi> crowding every windowsill in coffee tins and clay pots.
+  A <ansi fg="itemname">banjo</ansi> leans against the wall. A <ansi fg="itemname">phonograph</ansi>
+  plays something that might be folk music or might be something Maude invented
+  this morning. The smell is extraordinary: <ansi fg="10">flowers</ansi> and paint
+  and something cooking, something with garlic. A ladder leads up through a hatch
+  to the <ansi fg="exit">roof</ansi> garden. To the <ansi fg="exit">south</ansi>
+  the iron gate leads back to the street.
+mapsymbol: R
+maplegend: Maudes Railroad Car
+biome: house
+exits:
+  south:
+    roomid: 2027
+    exitmessage: You pass back through the iron gate to the street.
+  roof:
+    roomid: 2029
+    mapdirection: up
+    exitmessage: You climb the ladder through the hatch and emerge onto the rooftop garden.
+nouns:
+  paintings: >-
+    Half-finished canvases lean against every wall. The style changes between
+    them in ways that suggest Maude tries everything once and everything twice
+    if it interests her. There are landscapes, there are faces, there are pure
+    fields of color, there is one painting of what appears to be a cat playing
+    chess with a cloud. All of them are very good.
+  sculptures: >-
+    Wire bent into shapes that suggest birds in flight, or hands reaching, or
+    perhaps waves. Found objects are incorporated: a gear, a key, a strip of
+    copper pipe, a small toy car. Maude has a theory about found objects. She
+    has told Harold: 'Everything is a ready-made, Harold. Everything that exists
+    has already agreed to be art if you look at it right.'
+  plants: >-
+    Thirty or forty plants in clay pots and coffee tins crowding every windowsill.
+    Herbs, flowers, one enormous tomato plant trained up the wall. Maude talks to
+    them. Harold has heard her. She talks to them the way she talks to everyone:
+    directly, with great interest, as if what they say back matters.
+  banjo: >-
+    An old five-string banjo, tuned and ready. Maude plays it with an energy
+    that suggests she learned in about forty-five minutes and decided that was
+    enough. She plays the same three songs very loudly and with enormous feeling.
+    Harold loves this about her.
+  phonograph: >-
+    An old wind-up phonograph with a large brass horn. A record turns on it now --
+    something folk, something with guitar and voice, something about being alive
+    and meaning it.
+  flowers: >-
+    Flowers everywhere: in vases, tucked behind picture frames, floating in a
+    bowl of water on the table. Maude picks flowers the way other people pick
+    up thoughts -- continually, without planning, because the world keeps offering
+    them. Every flower here is a specific one she chose.
+spawninfo:
+- mobid: 431
+  message: "<ansi fg=\"10\">Maude sweeps through the railroad car in a riot of color, adjusting a painting here, watering a plant there, humming something that may or may not be a real song.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- Maude holds a painting at arm length and tilts her head, assessing, then adds a single brushstroke.
+- The phonograph plays a folk song about mountains and rivers and the smell of the railroad car is wonderful.
+- Maude lifts a pot of herbs to the light from the window and smiles at it as if it has said something pleasing.
+- The whole car vibrates faintly with a quality that is not quite sound -- it is the vibration of being used well.
+- Maude picks up the banjo and plays three loud, joyful chords and then sets it down and walks away.
+- A dozen plants in the window turn their leaves toward the afternoon sun in a slow unanimous agreement.
+- The smell of garlic and paint and flowers and old wood is the smell of a life that uses everything.
+- 'Maude says, to no one in particular: ''Every day is a new thing, Harold. Every single one.'''

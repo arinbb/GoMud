@@ -1,0 +1,24 @@
+mobid: 390
+zone: back_to_the_future
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote checks his watch, face tightening with worry."
+  - "emote adjusts the collar of his red vest."
+  - "emote runs a hand through his hair and stares at the empty asphalt."
+  - "emote plays air guitar -- a quick Chuck Berry riff -- then stops himself."
+  - "say This is heavy."
+  - "say Whoa. This is heavy."
+  - ""
+  - ""
+activitylevel: 20
+character:
+  name: Marty McFly
+  description: >-
+    A teenager in a red puffer vest over a plaid shirt, jeans, and
+    Nike sneakers -- the sneakers are the giveaway. He is seventeen,
+    fit, and currently somewhere between terrified and determined.
+    He has the look of someone who has recently seen something
+    impossible and is trying to remain functional.
+  raceid: 1
+  level: 6

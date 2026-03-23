@@ -1,0 +1,24 @@
+mobid: 414
+zone: forbidden_planet
+hostile: true
+maxwander: 3
+idlecommands:
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+activitylevel: 5
+character:
+  name: the Monster from the Id
+  description: >-
+    You can see it only when the force field activates around it -- an
+    enormous shape, vaguely anthropoid, outlined in crackling blue energy,
+    thirty feet tall and changing as you watch. It has no fixed form. It is
+    whatever the darkest part of a brilliant mind needs it to be. Its eyes,
+    when the field traces them, burn. It does not speak. It does not need to.
+    It is pure desire stripped of all the civilized layers that usually keep
+    desire from acting.
+  raceid: 1
+  level: 20

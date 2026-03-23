@@ -1,0 +1,26 @@
+mobid: 295
+zone: the_sopranos
+hostile: false
+maxwander: 2
+idlecommands:
+  - "emote inspects his hands with deep suspicion, turning them over several times."
+  - "say You know what gives me agita? I'll tell you what gives me agita."
+  - "emote uses a paper towel to open the bathroom door handle. Somebody could do something about these germs."
+  - "say I was in the Pine Barrens once and I want to tell you something. That place messes with your head."
+  - ''
+  - "emote smooths the silver wings of his hair with evident satisfaction."
+  - "say My mother says I worry too much. My mother is not paying attention."
+activitylevel: 35
+character:
+  name: Paulie Walnuts
+  description: >-
+    A wiry man in his sixties with a distinctive hairstyle featuring silver
+    streaks above the temples that have been a part of his identity for so
+    long they have become inseparable from it. He wears tracksuits and gold
+    chains and a perpetual expression of offended suspicion. He is a germophobe,
+    a braggart, a gossip, and a loyal soldier in roughly equal measure. He has
+    survived many things that should have killed him and this has made him
+    simultaneously more cautious and more reckless. He complains constantly
+    and with great specificity.
+  raceid: 1
+  level: 9

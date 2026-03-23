@@ -1,0 +1,61 @@
+roomid: 1728
+zone: The Sopranos
+title: The Bada Bing
+description: >-
+  <ansi fg="red">Red light</ansi> and bass. The Bada Bing is all deep shadow and
+  neon, the air thick with cigarette smoke and something floral and synthetic.
+  A <ansi fg="red">stage</ansi> runs along one wall where <ansi fg="itemname">dancers</ansi>
+  move in the lazy, professional way of people doing a job in an unusual setting.
+  <ansi fg="itemname">Chrome poles</ansi> catch the colored lights in brief flashes.
+  A long <ansi fg="itemname">bar</ansi> runs the far wall, bottles backlit in amber
+  and blue. <ansi fg="itemname">Booths</ansi> in the dark perimeter hold various men
+  having various conversations that are not about the entertainment. The
+  <ansi fg="itemname">music</ansi> is loud enough to prevent anyone from overhearing
+  anything specifically. This is its primary function. The highway is
+  <ansi fg="exit">west</ansi> and Tony's <ansi fg="exit">back</ansi> office is to
+  the east.
+mapsymbol: B
+maplegend: Bada Bing
+biome: house
+exits:
+  west:
+    roomid: 1725
+  back:
+    roomid: 1729
+    mapdirection: east
+nouns:
+  stage: >-
+    A raised platform running the length of one wall, lit from below in pink
+    and red. The dancers on it are professionals in the sense that they are
+    doing a job, and the job is to make everyone in the room believe something
+    that is mostly not true.
+  poles: >-
+    Chrome poles, floor to ceiling, warm to the touch. They catch the light
+    and multiply it in the mirrors that line the back wall.
+  bar: >-
+    A long bar in dark wood, staffed by a bartender who has heard everything
+    and reacted to none of it. Top shelf behind him is extensive. He pours
+    without being asked when you sit down.
+  booths: >-
+    Dark booths along the wall. Men in them doing business under the cover of
+    the music and the lights and the general understanding that this is a place
+    where discretion is professional courtesy.
+  music: >-
+    Loud, bass-heavy, the kind of music that makes conversation technically
+    possible while making it functionally difficult. The playlist has not changed
+    in fifteen years. Nobody objects.
+  dancers: >-
+    Young women moving to the music with the practiced ease of people who stopped
+    feeling self-conscious about this job about six weeks in. They are working.
+    You are not the first to sit here and watch and you will not be the last.
+spawninfo:
+- mobid: 293
+  message: "<ansi fg=\"red\">Christopher Moltisanti slides into a booth, restless, checking his phone with the focus of someone expecting news that will change everything.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The bass from the sound system vibrates in your chest like a second heartbeat.
+- Red light sweeps across the booths and for a moment everyone's face is the same color.
+- A drink arrives at your table that you did not order. The bartender nods.
+- The music changes and nobody in the club changes with it except the dancers.
+- Someone laughs at something in a booth nearby. The laugh is not about being amused.
+- The neon sign behind the bar buzzes on a frequency you can feel in your back teeth.

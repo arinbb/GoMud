@@ -1,0 +1,24 @@
+mobid: 431
+zone: harold_and_maude
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote picks up a flower from the nearest vase and holds it to the light, examining the petals with delight."
+  - ""
+  - "say Every day is completely new! Not recycled at all!"
+  - ""
+  - "emote spins once, slowly, arms slightly out, as if checking that everything is still there."
+  - "say Harold, come look at this. Come here. Look."
+activitylevel: 30
+character:
+  name: Maude
+  description: >-
+    A woman of seventy-nine who has decided, as a philosophical and practical
+    matter, to be more alive than anyone else in the room. Her face is deeply
+    lined and absolutely radiant. She wears something extraordinary -- layers
+    of color and texture that suggest she assembled the outfit by choosing
+    things she loved rather than things that matched. Her eyes are very bright.
+    She smells of flowers and paint and something cooking. She is in the middle
+    of something wonderful, always.
+  raceid: 1
+  level: 10

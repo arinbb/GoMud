@@ -1,0 +1,48 @@
+roomid: 2132
+zone: Paris Texas
+title: The Airport Parking Garage
+description: >-
+  Level 3 of the <ansi fg="8">Houston Hobby Airport</ansi> parking garage.
+  Concrete pillars, fluorescent strips, the smell of exhaust and concrete dust.
+  Travis Henderson's blue <ansi fg="itemname">pickup truck</ansi> is parked in a
+  space marked 3-F-22. From here, through a gap between the pillars, you can see
+  a section of the <ansi fg="itemname">terminal entrance</ansi>. Two people are
+  about to emerge from the automatic doors. A woman and a boy. They will not see
+  the truck. The truck will not move. Travis will watch from here until he knows
+  they are together and safe and have found each other. Then he will drive away.
+  This is what the rest of his life looks like from outside it. The car ramp
+  leads <ansi fg="exit">south</ansi> back down toward Houston.
+mapsymbol: A
+maplegend: Airport Garage
+biome: city
+exits:
+  south:
+    roomid: 2126
+    exitmessage: You drive down the ramp and back into Houston. The truck does not go back to the terminal.
+nouns:
+  truck: >-
+    The blue pickup truck, engine off, windows up. Travis is in the
+    driver's seat. You cannot see his face from here. His hands are
+    on the steering wheel but the truck is not going anywhere.
+  terminal: >-
+    Through the gap in the pillars, the terminal entrance. Automatic
+    doors. Yellow cabs. A skycap with a cart. In a few minutes, two
+    people will come through those doors and they will find each other
+    and Travis will see it and that will be enough.
+  pillars: >-
+    Concrete, stained with exhaust, marked with parking level numbers
+    in faded paint. Fluorescent lights run overhead. This garage was
+    not designed to be the place where you watch the last moment of
+    your old life. It does this job anyway.
+  gap: >-
+    The gap between two pillars. A narrow frame. Through it, the
+    terminal entrance. It is the exact width it needs to be to see
+    what needs to be seen.
+idlemessages:
+- The fluorescent lights flicker. One of them buzzes.
+- A car enters the garage on the level above, its tires shrieking on the turn.
+- The automatic doors at the terminal open for someone. Not them yet.
+- Travis adjusts his hands on the steering wheel and does not start the engine.
+- A plane descends over the garage, its landing lights white against the night sky.
+- The garage smells of exhaust and concrete and the faint trace of the Gulf, even here.
+- The doors open again. Not them. Travis waits.

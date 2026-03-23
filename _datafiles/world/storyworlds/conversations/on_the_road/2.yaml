@@ -1,0 +1,22 @@
+-
+  Supported:
+    "dean moriarty": ["*"]
+  Conversation:
+    - ["#1 emote turns to whoever is nearby with the full force of his attention."]
+    - ["#1 say You! I see you. I see what you are. You are a real person in a real world and THAT is the most extraordinary thing!"]
+    - ["#2 emote blinks, surprised to have been addressed so directly."]
+    - ["#1 say Tell me something true. Right now. Whatever is most true about you. Say it fast before you can think about it!"]
+    - ["#2 emote opens their mouth and closes it again."]
+    - ["#1 say Yes! That! That hesitation is the true thing! The thing you almost said! That is you, right there!"]
+    - ["#1 emote slaps their arm with great warmth and moves on, already looking at something else."]
+-
+  Supported:
+    "dean moriarty": ["*"]
+  Conversation:
+    - ["#1 emote appears from an unexpected direction, full of news."]
+    - ["#1 say I have just had an idea. I have had approximately forty ideas today but this one is different. This one is the IT of ideas."]
+    - ["#2 say What is the idea?"]
+    - ["#1 say We take the car and we drive south until the road runs out and then we find another road and we take THAT until IT runs out. Do you see?"]
+    - ["#2 say I think I see."]
+    - ["#1 say You do not see yet but you will. Once we are moving you will see. Motion is the explanation for everything!"]
+    - ["#1 emote is already moving, already somewhere else mentally, body following behind."]

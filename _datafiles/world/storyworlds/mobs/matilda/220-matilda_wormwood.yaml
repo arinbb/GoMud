@@ -1,0 +1,22 @@
+mobid: 220
+zone: matilda
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote turns a page with quiet concentration, completely absorbed."
+  - ""
+  - ""
+  - "say The Dickens is wonderful, but I think I prefer the Hemingway."
+  - "emote adjusts the enormous book balanced on her small lap."
+activitylevel: 20
+character:
+  name: Matilda Wormwood
+  description: >-
+    A tiny girl of four and a half with enormous dark eyes that seem to see
+    right through you. Her brown hair is parted in the middle and held back
+    with a ribbon. She sits perfectly still, reading a book that would give
+    most adults difficulty. There is something extraordinary about her — a
+    quiet, focused intelligence that fills the room like an electrical charge.
+    She is very small and very thin, and the book in her lap is very large.
+  raceid: 1
+  level: 5

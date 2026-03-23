@@ -1,0 +1,55 @@
+roomid: 1903
+zone: The Little Prince
+title: The Well
+description: >-
+  In the middle of the desert, where no well should be, there is a well.
+  It is an old well, the kind that belongs to a village -- stone rim worn
+  smooth by many hands, wooden <ansi fg="itemname">bucket</ansi> on a rope,
+  a pulley that sings when it turns. The rope is old and the wood is
+  silvered with sun and salt, but the mechanism works. Below the stone rim
+  is darkness, and then far below that, a glint. Water. The <ansi fg="itemname">pulley</ansi>
+  creaks. The <ansi fg="itemname">rope</ansi> is rough with use. The desert
+  around the well is absolutely still, as though the well has been here long
+  enough that the sand has learned to leave it alone. There is something about
+  the water in a well like this -- found in the middle of nowhere, drawn by
+  hand -- that is different from water that comes out of a tap. The effort
+  is part of the taste. The <ansi fg="exit">desert</ansi> extends west.
+mapsymbol: W
+maplegend: The Well
+biome: desert
+exits:
+  west:
+    roomid: 1900
+nouns:
+  bucket: >-
+    A wooden bucket, old and blackened at the rim, swollen with moisture
+    and age. It holds water perfectly. The Little Prince once drank from
+    a bucket like this -- water drawn at dawn, carried across miles of
+    desert -- and said it was like a present. That it was good for the
+    heart. That the stars were laughing when he drank it. You believed him,
+    even though you could not explain why.
+  pulley: >-
+    An iron pulley, rust-orange, that creaks when it turns. The sound it
+    makes is the sound the desert makes when it is thinking about water.
+    When you pull the rope, the pulley sings a single sustained note --
+    not pretty, exactly, but necessary. Like most important things.
+  rope: >-
+    The rope is rough hemp, wound round and round the pulley's drum. It has
+    been pulled by many hands, worn smooth in the middle where hands grip.
+    The ends are frayed and re-knotted. Someone has been drawing water here
+    for a very long time.
+  water: >-
+    Far below the stone rim, invisible until the bucket returns, the water
+    waits. It is very cold, even in the desert. When you lift it to your
+    lips, the effort of drawing it -- the creak of the pulley, the weight
+    of the full bucket, the walk through dawn sand -- is part of the taste.
+    Water drawn by hand, in a desert, at the right moment, is the finest
+    thing there is.
+idlemessages:
+- The pulley turns with a soft creak in the still air. No one is pulling the rope. You are certain of this.
+- The stone rim of the well is cool on your palms, worn hollow by hands that came here long before yours.
+- From far below, the sound of water -- steady, patient, indifferent to the desert surrounding it.
+- The rope swings slightly in no wind. The desert is waiting for you to understand something.
+- The bucket rests on the rim. It is full. You do not remember drawing it up.
+- 'The well smells of stone and cold: the smell of something that has lasted.'
+- You sit on the rim and the desert holds still for you, as though this moment matters.

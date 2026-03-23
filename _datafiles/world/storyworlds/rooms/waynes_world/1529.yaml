@@ -1,0 +1,44 @@
+roomid: 1529
+zone: Waynes World
+title: The Arcade
+description: >-
+  A palace of <ansi fg="itemname">neon</ansi> and blinking lights. The Arcade hums
+  with the combined electronic voices of thirty <ansi fg="itemname">machines</ansi>:
+  Street Fighter II, Mortal Kombat, Pac-Man, pinball cabinets. The
+  <ansi fg="itemname">carpet</ansi> is patterned in a way that hides everything —
+  by design. <ansi fg="itemname">Tokens</ansi> clink in the change machine.
+  The whole room operates at a volume slightly higher than comfortable, which
+  is perfect. There is a kid over there absolutely destroying Galaga. There
+  is another kid watching him with transparent envy and secret admiration.
+  This is the natural order. To the <ansi fg="exit">west</ansi> is the music store.
+mapsymbol: A
+maplegend: The Arcade
+biome: house
+exits:
+  west:
+    roomid: 1527
+nouns:
+  neon: >-
+    Signs in electric pink, green, and blue: ARCADE, PLAY, TOKENS, HIGH SCORE.
+    Each one buzzes faintly at a different frequency. Together they make a chord
+    that you feel more than hear.
+  machines: >-
+    The full taxonomy of early nineties arcade culture. Street Fighter, Mortal
+    Kombat, Pac-Man, Ms. Pac-Man (superior), Galaga, Centipede, a Terminator 2
+    cabinet, and three pinball machines of different philosophical schools.
+  carpet: >-
+    A pattern that looks like someone digitized a fever dream. Geometric shapes
+    in colors that shouldn't coexist do coexist here. It hides everything.
+    This is intentional.
+  tokens: >-
+    Quarters converted to tokens. The currency of the arcade. You exchange real
+    money for the opportunity to have your name on a high score screen. This is
+    a fair trade.
+idlemessages:
+- The Street Fighter machine erupts in a sound effect as someone lands a perfect combo.
+- The Galaga machine trills its highest pitch as someone reaches a new personal best.
+- A pinball machine lights up every surface it has and plays a fanfare.
+- The change machine accepts a dollar and delivers four tokens with satisfying weight.
+- Two kids circle the Mortal Kombat cabinet, working up the courage to approach.
+- Someone tilts a pinball machine and "TILT" flashes in orange judgment.
+- The neon signs flicker and the whole room briefly becomes its own kind of excellent.

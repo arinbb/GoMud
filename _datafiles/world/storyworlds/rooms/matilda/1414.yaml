@@ -1,0 +1,53 @@
+roomid: 1414
+zone: Matilda
+title: Miss Honey's Cottage
+description: >-
+  A tiny, heartbreakingly bare <ansi fg="10">cottage</ansi> at the end of the lane.
+  The single room contains a <parameter name="content">wooden <ansi fg="itemname">crate</ansi> that serves
+  as both table and chair, a thin <ansi fg="itemname">mattress</ansi> on the floor,
+  and an upturned <ansi fg="itemname">box</ansi> holding a candle stub, a mug, and
+  a jam jar. There is no electricity, no running water, no proper furniture. And yet
+  the room is immaculate, the floor swept clean, and a small bunch of
+  <ansi fg="itemname">wildflowers</ansi> sits in the jam jar on the box, catching
+  the light from the single <ansi fg="itemname">window</ansi>. Everything in this
+  room speaks of dignity maintained against impossible odds. The lane leads back
+  <ansi fg="exit">north</ansi>. A path leads <ansi fg="exit">east</ansi> through
+  the trees.
+mapsymbol: c
+maplegend: Miss Honey's Cottage
+biome: house
+exits:
+  north:
+    roomid: 1413
+  east:
+    roomid: 1415
+nouns:
+  crate: >-
+    A wooden packing crate turned upside down. It serves as Miss Honey's dining
+    table and desk. The wood is rough but scrubbed clean. A candle sits on top
+    for light in the evenings. She marks exercise books by candlelight because
+    the Trunchbull takes nearly all her salary.
+  mattress: >-
+    A thin mattress on the bare floor, neatly made with a single blanket and
+    a flat pillow. It is the bed of someone who has learned to need very little.
+    The blanket is patched but clean.
+  box: >-
+    An upturned cardboard box serves as a nightstand. On it sits a candle stub
+    in a saucer, a chipped mug, and a jam jar of wildflowers. These are Miss
+    Honey's possessions. All of them.
+  wildflowers: >-
+    Fresh wildflowers in a jam jar — the same kind she keeps on her classroom
+    desk. Buttercups and daisies, picked this morning. They are the most colorful
+    things in the cottage, and they fill the room with a faint, sweet scent that
+    makes the poverty almost bearable.
+  window: >-
+    A single small window with no curtain. Through it you can see the lane, the
+    hedgerows, the green fields beyond. The glass is old and slightly warped,
+    bending the view like a gentle dream. Miss Honey looks through this window
+    every morning and sees beauty, not deprivation.
+idlemessages:
+- 'The candle stub on the box flickers in a draft, sending shadows dancing across the bare walls.'
+- 'The wildflowers lean toward the window, reaching for the light with quiet determination.'
+- 'The cottage is so still you can hear the bees outside and the tick of cooling wood.'
+- 'Everything here is poor and bare, but everything is clean and cared for. There is dignity in this room.'
+- 'A breeze through the window carries the smell of wildflowers and green fields.'

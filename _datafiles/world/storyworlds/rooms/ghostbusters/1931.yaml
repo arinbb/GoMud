@@ -1,0 +1,50 @@
+roomid: 1931
+zone: Ghostbusters
+title: The Stairway to Gozer
+description: >-
+  An exposed concrete stairway winds up the exterior of 55 Central Park West,
+  technically a fire escape but dressed by Ivo Shandor with carved stone balusters
+  that depict scenes from a mythology nobody in 1924 Manhattan could have identified.
+  The wind up here is ferocious and wrong, pulling in multiple directions at once as
+  dimensional stress fractures the local atmosphere. <ansi fg="itemname">Lightning</ansi>
+  strikes the spire above in a continuous slow-motion barrage, each bolt drawn down
+  the iron latticework of the building's skeleton. The stairway <ansi fg="itemname">railings</ansi>
+  vibrate under your hands with the frequency of the supernatural. Below, the lights
+  of Manhattan sprawl to every horizon. Above, the <ansi fg="itemname">temple</ansi>
+  glows orange through the opening. This is the last staircase. Whatever comes next
+  comes at the top.
+mapsymbol: W
+maplegend: Stairway to Gozer
+biome: cliffs
+exits:
+  temple:
+    roomid: 1930
+    mapdirection: west
+    exitmessage: You push through the wind and climb the final steps to the rooftop temple.
+nouns:
+  lightning: >-
+    The lightning here is close enough to smell: ozone, hot stone, the sharp ionic
+    bite of an atmosphere being torn between dimensions. Each bolt hits the same
+    point on the spire above with mechanical precision. The iron lattice channels
+    it downward. In seventy-two hours, if the Ghostbusters do nothing, the energy
+    buildup will be sufficient to open the gateway permanently. Somewhere below,
+    Egon knows this. The graph on his chalkboard is why.
+  railings: >-
+    The iron railings are original 1924 construction, and they are currently vibrating
+    at a frequency that makes your hands go slightly numb. Below that frequency is
+    another one: the deep subsonic resonance of the building's entire iron skeleton,
+    tuned by Shandor's careful architecture to channel energy upward. You are inside
+    an instrument. You are a note it is playing.
+  temple: >-
+    Through the opening at the top of the stairway, the rooftop temple glows with
+    dimensional light. The stone altar at its center pulses in a slow rhythm like
+    a heartbeat, if a heartbeat could be an interdimensional beacon. Gozer is up
+    there. Has been for forty-five minutes. Waiting. This is fine. It has waited
+    sixty years. Another forty-five minutes is nothing.
+idlemessages:
+- A lightning bolt hits the spire directly above, close enough to feel the concussion in your chest.
+- The wind shifts and for a moment carries a sound that might be music or might be screaming, from somewhere very far away and sideways.
+- The dimensional membrane overhead has thinned to translucence here. You can almost see what is on the other side. You are glad you can only almost see it.
+- The stairway railings hum with a frequency that seems to resonate with something in your bones.
+- Below, Manhattan continues. A siren. A horn. Life, proceeding.
+- The stone carvings on the balusters seem to shift their arrangement in your peripheral vision. Direct observation reveals them to be perfectly still.

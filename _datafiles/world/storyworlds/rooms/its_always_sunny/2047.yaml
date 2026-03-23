@@ -1,0 +1,54 @@
+roomid: 2047
+zone: its_always_sunny
+title: The Rat Tunnel
+description: >-
+  Below the apartment, Charlie Kelly has carved out a kingdom. The tunnel is
+  low and dark and smells intensely of rodent, but it is organized in a way
+  that suggests habitation — not residence, exactly, but visitation. Frequent,
+  enthusiastic visitation. <ansi fg="itemname">Rat traps</ansi> of various
+  designs hang from the ceiling on strings, a mobile of rodent management.
+  <ansi fg="itemname">Chalk drawings</ansi> cover the walls — not graffiti
+  but something more like documentation, as if Charlie is recording the
+  behavior of the rats as a naturalist might, if the naturalist ate cat food
+  and huffed paint thinner. The rats here move with comfort. This is their
+  territory too, and they know it, and they are not afraid of you. To the
+  <ansi fg="exit">up</ansi> is the apartment.
+mapsymbol: RT
+maplegend: Rat Tunnel
+biome: cave
+exits:
+  up:
+    roomid: 2046
+nouns:
+  traps: >-
+    Rat traps on strings hanging from the tunnel ceiling in a configuration
+    that suggests serious thought went into their placement. Some are set.
+    Some have been triggered and reset. One has a small piece of cat food
+    as bait. The rats have taken the bait from several of these without
+    triggering the trap. The rats are winning. Charlie will not admit this.
+  drawings: >-
+    The chalk drawings on the walls are intricate and strange. They show
+    rats with names: BIG RED, MR. WHISKERS, THE COLONEL, UNNAMED 7. Lines
+    connect them in a social diagram that may represent Charlie's understanding
+    of rat society. One rat is circled twice and labeled BOSS. The boss rat
+    has been given a crown in chalk. This is art. This is also deeply concerning.
+  rats: >-
+    The rats in the tunnel move with the ease of owners on their own property.
+    They know Charlie. They may respect Charlie, in the way rats respect things
+    — which is to say they do not fear him, which in rat terms is the highest
+    compliment. One of them sits near the wall, watching you with no particular
+    urgency. It has named you, in its rat way. You will never know the name.
+spawninfo:
+- mobid: 448
+  message: 'A large rat drops from the tunnel ceiling and lands two feet from you, utterly unimpressed.'
+  respawnrate: 2 real minutes
+- mobid: 448
+  message: 'Another rat emerges from a hole in the wall, surveys the situation, and decides to stay.'
+  respawnrate: 2 real minutes
+idlemessages:
+- 'The chalk king rat drawing watches you from the wall with a crown that Charlie has re-drawn several times to get it right.'
+- A rat squeezes through a gap in the tunnel wall that you would not have believed was large enough. It was large enough.
+- Something drips in the far end of the tunnel. The sound carries in the close air.
+- 'One of the hanging traps swings slightly in a draft from somewhere. The bait is gone. Again.'
+- 'In the silence of the tunnel, the rats communicate in ways you cannot hear. Something is being decided.'
+- 'A scratch on the wall that you initially took for decoration turns out to be a scale drawing of the tunnel with rooms labeled: CHARLIES AREA, RATS AREA, THE MIDDLE ZONE. The Middle Zone is the largest.'

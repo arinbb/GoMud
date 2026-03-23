@@ -1,0 +1,12 @@
+mutatorid: haze-cloud
+namemodifier:
+  behavior: append
+  text: (hazy)
+  colorpattern: none
+descriptionmodifier:
+  behavior: append
+  text: A soft haze drifts through the air, warm and golden.
+  colorpattern: none
+alertmodifier:
+  text: The air is thick and warm. Everything feels a little slower, a little softer, like the world turned the treble down.
+  colorpattern: none

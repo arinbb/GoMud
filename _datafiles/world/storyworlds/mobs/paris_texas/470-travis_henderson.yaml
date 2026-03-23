@@ -1,0 +1,26 @@
+mobid: 470
+zone: paris_texas
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote adjusts his red cap without looking up."
+  - "emote stands very still, looking at the horizon."
+  - "emote sits down slowly, as if his legs have just run out of reasons."
+  - ""
+  - ""
+  - "emote touches the brim of his cap with two fingers."
+  - "emote takes one step and stops. Then another."
+activitylevel: 15
+character:
+  name: Travis Henderson
+  description: >-
+    A gaunt man in dusty clothes and a red baseball cap. His face is
+    weathered to the color of old wood, every line deep. His eyes are
+    dark and patient in the way of someone who has learned to wait for
+    nothing in particular. He carries himself with a stillness that is
+    not calm — it is the stillness of a person who has used up most of
+    their forward motion. He is Harry Dean Stanton. He is the loneliest
+    man in the American West. He is also, somewhere under all that silence,
+    a father.
+  raceid: 1
+  level: 5

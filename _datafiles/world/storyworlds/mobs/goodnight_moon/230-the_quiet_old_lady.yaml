@@ -1,0 +1,29 @@
+mobid: 230
+zone: goodnight_moon
+hostile: false
+maxwander: 1
+activitylevel: 15
+idlecommands:
+- "say hush"
+- ""
+- "emote rocks slowly in the rocking chair, her needles clicking once, twice, then still."
+- ""
+- "emote hums a few notes of something very old and very low."
+- ""
+- "say hush"
+- ""
+- "emote 's shadow on the green wall sways with the rocking chair, slow as breathing."
+- ""
+character:
+  name: the quiet old lady
+  description: >-
+    She is barely visible in the firelit room -- or she is very visible, but
+    in the way that a room itself is visible, the way wallpaper is visible,
+    present and right and not exactly looked at. She sits in the rocking chair
+    by the dying fire, her hands moving with the slow rhythm of knitting, her
+    lips moving almost without sound. She wears something soft and dark. Her
+    hair is white, or the firelight is white, or she is made, in part, of the
+    room's own quiet. She does not look up when you enter. She is already
+    watching everything.
+  raceid: 1
+  level: 1

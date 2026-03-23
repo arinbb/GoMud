@@ -1,0 +1,18 @@
+itemid: 210
+name: tattered student cap
+namesimple: cap
+displayname: a tattered <ansi fg="itemname">student cap</ansi>
+description: >-
+  A student's cap, the kind worn by young men of the educated class in
+  1860s St. Petersburg to signal their condition and their aspirations. This
+  one has seen considerable use. The brim is frayed. The fabric has absorbed
+  the sweat of a St. Petersburg summer and the particular heat of a room
+  too small for a man too large in his thoughts. Someone has worn this cap
+  while pacing three steps, turning, pacing back. While constructing a
+  theory. While ascending a staircase. While lying on a sofa in a fever
+  that was and was not entirely a fever. You recognize it. You have been
+  where this cap has been.
+type: object
+subtype: usable
+uses: 0
+value: 5

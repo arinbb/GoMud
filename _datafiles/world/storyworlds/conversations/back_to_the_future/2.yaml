@@ -1,0 +1,24 @@
+-
+  Supported:
+    "george mcfly": ["lorraine baines"]
+  Conversation:
+    - ["#1 emote approaches, rehearsing something under his breath."]
+    - ["#2 say Oh! George, hello."]
+    - ["#1 say Lorraine. I -- that is -- there's a dance. This Saturday."]
+    - ["#2 emote waits.", "#2 say Yes?"]
+    - ["#1 emote goes red.", "#1 say Would you -- that is -- I was wondering if perhaps --"]
+    - ["#2 say George.", "#2 say Are you asking me to the dance?"]
+    - ["#1 say Yes. Yes I am. If you wanted to. You don't have to. It was just a thought."]
+    - ["#2 emote smiles.", "#2 say I'd love to go with you, George."]
+-
+  Supported:
+    "george mcfly": ["lorraine baines"]
+  Conversation:
+    - ["#1 say Lorraine, I've been working on this story. A science fiction story."]
+    - ["#2 say Oh? What's it about?"]
+    - ["#1 say It's about -- well, there's this man, and he travels through time. And he sees what the world becomes."]
+    - ["#2 say And is what it becomes good or bad?"]
+    - ["#1 emote thinks.", "#1 say Both. Depending on what he does."]
+    - ["#2 say That sounds wonderful, George.", "#2 say You should finish it."]
+    - ["#1 say Do you think so? Really?"]
+    - ["#2 say I think you're going to be a great writer someday. I really do."]

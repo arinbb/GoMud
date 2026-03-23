@@ -1,0 +1,65 @@
+roomid: 1743
+zone: On the Road
+title: The Open Highway (Iowa)
+description: >-
+  The <ansi fg="itemname">highway</ansi> cuts through the heart of America
+  like a sentence that refuses to end. On both sides, <ansi fg="itemname">cornfields</ansi>
+  stretch to the horizon, flat and enormous and full of the kind of silence
+  you can only hear when you have been moving fast for a long time and then
+  stopped. A <ansi fg="itemname">truck stop diner</ansi> sits at the roadside,
+  its windows yellow with fluorescent light, its parking lot full of big
+  rigs with their engines running. Inside, coffee is being poured and men
+  with road-tired eyes are eating eggs at 3am. The sky above Iowa is the
+  whole sky — no buildings, no mountains, just stars going all the way down
+  to the edge of the earth. To the <ansi fg="exit">east</ansi> the road runs
+  back to the bridge and New York. To the <ansi fg="exit">west</ansi> is Denver.
+  You can stick out your thumb and <ansi fg="exit">hitchhike</ansi> a ride.
+mapsymbol: H
+maplegend: Iowa Highway
+biome: road
+exits:
+  east:
+    roomid: 1742
+  west:
+    roomid: 1744
+  hitchhike:
+    roomid: 1744
+    mapdirection: west
+nouns:
+  highway: >-
+    US Route 6, the Main Street of America, running from Bishop California
+    to Provincetown Massachusetts. In 1947 it is two lanes of asphalt
+    through the center of everything, and it is the road Sal Paradise
+    takes west. Later he will take Route 66. Later still he will take
+    roads that do not appear on maps. But this is the first road, and it
+    is enough. It is more than enough. It is the whole country.
+  cornfields: >-
+    Iowa corn in late summer, taller than a man, stretching in every
+    direction to the absolute flat horizon. The stalks whisper in the
+    wind passing through them — a dry, papery sound like pages turning.
+    The corn does not care about the road or the people on it. The corn
+    has its own journey, which is vertical and ends in autumn.
+  diner: >-
+    The truck stop diner is a cathedral of the highway — its own liturgy
+    of coffee refills, its congregation of drivers with two thousand miles
+    behind them and two thousand ahead. The pie under the glass dome is
+    good. The coffee is strong. The waitress has heard every story and
+    will hear yours too and forget it gently before sunrise.
+  stars: >-
+    The Iowa sky at night is a fact about the universe. The Milky Way
+    arcs overhead from horizon to horizon, and it is not metaphorical,
+    it is actual gas and fire and distance, and you are a very small
+    thing on a very flat piece of land looking up at it, and that is
+    exactly right.
+spawninfo:
+- mobid: 305
+  message: A truck driver leans against his rig, thermos in hand, watching the road.
+  container: ''
+idlemessages:
+- A big rig blows past with a blast of air that rocks you on your feet, heading west at dangerous speed.
+- The cornfields on both sides shush and whisper in the highway wind.
+- 'From the diner, the smell of frying bacon and fresh coffee drifts out into the 3am dark.'
+- A pair of headlights appears on the horizon to the west, grows enormous, passes you, shrinks to nothing.
+- The highway stretches straight in both directions until it disappears into the curvature of the earth.
+- 'The truck driver finishes his coffee, unscrews the thermos cap, pours another. A man of routine.'
+- Crickets. Wind. The distant sound of a radio from the diner, something with horns.

@@ -1,0 +1,73 @@
+roomid: 1507
+zone: Goodnight Moon
+title: Among the Kittens
+description: >-
+  You are small now. Not dramatically, not alarmingly -- just small enough
+  that the <ansi fg="10">green room</ansi> is enormous around you, the
+  furniture vast and ship-like, the fireplace a glowing furnace visible
+  at the room's horizon. The <ansi fg="itemname">mittens</ansi> are here:
+  two pairs, slightly different, laid out flat and then immediately not
+  flat because the <ansi fg="mobname">kittens</ansi> have been at them.
+  The kittens are here too, warm and small and electric with play, tumbling
+  and batting and chasing each other around the mittens with the total
+  concentration that kittens bring to everything. The carpet at this scale
+  is a forest of fibers, warm as a hearthrug, each strand distinct. The
+  kittens are <ansi fg="itemname">gray</ansi> and one is <ansi
+  fg="11">orange</ansi>, and they do not mind that you are here. From
+  their perspective you are simply another interesting large thing in a
+  room full of interesting large things. They will bat at your feet.
+  They will chase your shadow. They will curl against you, if you are
+  still enough, with a warmth like a small fire, purring in a frequency
+  that you feel in your chest before you hear it.
+mapsymbol: K
+maplegend: Among the Kittens
+biome: house
+exits:
+  back:
+    roomid: 1500
+    exitmessage: You grow back to your ordinary size and step away from the kittens and their mittens.
+    mapdirection: southwest
+nouns:
+  mittens: >-
+    Two pairs of woolen mittens, slightly battered by play. One pair is
+    darker gray than the other, one pair has a faint stripe. Both pairs
+    have been batted across the carpet so many times that they have reached
+    a final resting position that is exactly the most interesting possible
+    position for a mitten to be in -- half under a chair, one draped over
+    the other, ready to be chased again. They are warm from being played with.
+  gray kitten: >-
+    The gray kitten is focused. When it plays with the mitten, it plays
+    with great deliberateness, patting it once, then twice, then leaping
+    back to assess the mitten's response. When it purrs, it purrs with
+    its whole body. When it looks at you, it looks at you with enormous
+    eyes, green at the edges and black at the center, full of the kitten's
+    total knowledge of you, which is: you are large, you are warm, you
+    have not yet attacked, you are therefore probably acceptable.
+  orange kitten: >-
+    The orange kitten is chaos. It is running. It is always running. Its
+    orange tail is a flag of pure kitten intention. It will arrive at the
+    mitten, bat it vigorously, depart at top speed, arrive again. It has
+    been doing this for the entire evening and it will do this until it
+    cannot, at which point it will collapse into a ball of orange warmth
+    and purr with the sound of a small engine choosing to rest.
+spawninfo:
+- mobid: 231
+  message: The kittens tumble in from the edges of the room, batting a mitten between them.
+  respawnrate: 3 real minutes
+  idlecommands:
+  - "emote bats the mitten across the carpet in a burst of energy."
+  - ""
+  - "emote tumbles over in the middle of playing and ends up on its back, batting at the air."
+  - ""
+  - "emote curls next to the warmth of the nearest warm thing and begins to purr."
+  - ""
+  - "emote pounces suddenly on the other kitten's tail, then looks innocent."
+  - ""
+idlemessages:
+- The kittens are playing. They will always be playing. This is their function and their joy.
+- A mitten slides across the carpet, pursued immediately by an orange blur.
+- The purring rises and falls. One kitten has begun to settle. The other has not noticed.
+- At this scale, the fire across the room is enormous, its warmth rolling in waves across the carpet.
+- One kitten bats at your foot as you pass. You do not mind. You are glad.
+- The mittens have been moved to three different locations. Their final position remains uncertain.
+- The gray kitten studies you with total attention. You are very interesting. You may have mittens.

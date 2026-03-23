@@ -1,0 +1,40 @@
+roomid: 1403
+zone: Matilda
+title: Front Walk
+description: >-
+  A short concrete path leads from the Wormwood front door to the pavement. The
+  <ansi fg="itemname">garden</ansi> on either side is a wasteland of dead grass
+  and a single concrete <ansi fg="itemname">gnome</ansi> with a chipped nose. A
+  gaudy <ansi fg="3">gold-colored car</ansi> sits in the driveway, polished to a
+  blinding shine — the only thing Mr. Wormwood truly loves. The street stretches
+  <ansi fg="exit">east</ansi> toward the village, and the Wormwood front door is
+  back to the <ansi fg="exit">north</ansi>.
+mapsymbol: F
+maplegend: Front Walk
+biome: road
+exits:
+  north:
+    roomid: 1400
+  east:
+    roomid: 1404
+nouns:
+  garden: >-
+    Calling it a garden is generous. A rectangle of dead grass bordered by cracked
+    concrete edging. No flowers have ever grown here. The soil looks exhausted,
+    as if even the earth has given up on the Wormwoods.
+  gnome: >-
+    A concrete garden gnome with a chipped nose and a leer that suggests it has
+    seen things no garden ornament should see. Its paint is peeling. It holds a
+    tiny fishing rod over a nonexistent pond.
+  car: >-
+    Mr. Wormwood's pride and joy — a large, gold-colored sedan polished to a
+    mirror finish. It gleams aggressively in any light. The odometer has been
+    tampered with, the engine is held together with sawdust in the gearbox, and
+    the whole thing is worth about a third of what he sells it for. To him, it
+    is a work of art.
+idlemessages:
+- 'The gold car gleams in the light, as if daring you to question its value.'
+- A curtain twitches in the Wormwood front window. Someone is watching the television, not you.
+- 'The garden gnome stares at you with its chipped concrete eyes. It has seen everything.'
+- 'The sound of the television leaks through the front door, muffled but insistent.'
+- 'A cat crosses the street, glances at the Wormwood house, and quickens its pace.'

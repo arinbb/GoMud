@@ -1,0 +1,15 @@
+name: Super Mario Bros
+roomid: 1860
+autoscale:
+  minimum: 1
+  maximum: 10
+defaultbiome: land
+mutators:
+- mutatorid: mushroom-kingdom
+idlemessages:
+- A coin spins somewhere in the distance. Ding!
+- The sound of a Goomba waddling on brick carries on the wind.
+- Somewhere above you, an invisible block waits to be punched.
+- The sky is that particular impossible blue of a Nintendo cartridge booted up for the first time.
+- A green pipe gurgles in the distance, as if digesting something.
+- The whole world is bright and primary-colored and trying to kill you in the cheeriest possible way.

@@ -1,0 +1,81 @@
+roomid: 1843
+zone: Far Cry 5
+title: The Spread Eagle Bar
+description: >-
+  The Spread Eagle is resistance headquarters, therapy session, ammunition depot,
+  and the last bar in Falls End, all in one low-ceilinged room that smells of
+  beer and gunpowder and something like hope. <ansi fg="itemname">Mary May Fairgrave</ansi>
+  works the bar with the focused calm of a woman whose anger has been refined into
+  something useful. Country music plays from a jukebox in the corner — an old
+  Hank Williams track, then a Waylon Jennings, then something newer that nobody
+  knows the name of but everyone knows the words to. <ansi fg="itemname">Hurk</ansi>
+  occupies a barstool with his particular combination of enthusiasm and catastrophic
+  judgment. <ansi fg="itemname">Wanted</ansi> posters for the Seeds cover one wall;
+  someone has drawn horns on John's. A <ansi fg="itemname">map</ansi> of resistance
+  operations is pinned behind the bar where the liquor licenses used to be.
+  Falls End is to the <ansi fg="exit">west</ansi>.
+mapsymbol: S
+maplegend: Spread Eagle Bar
+biome: house
+exits:
+  west:
+    roomid: 1842
+nouns:
+  bar: >-
+    A long wooden bar, worn smooth by years of elbows. Mary May keeps it
+    clean. The bottles behind it are a mix of the regular stock and what
+    people have brought in for barter — a functioning economy of whiskey
+    and determination. A shotgun is racked under the bar. Mary May could
+    reach it in under a second. She knows because she practiced.
+  jukebox: >-
+    An old Wurlitzer jukebox, plugged in and cycling through a playlist
+    someone curated with care. Hank Williams. Waylon Jennings. Merle Haggard.
+    Dolly Parton. Johnny Cash. Country music as continuity — the world that
+    existed before Eden's Gate, that will exist after. The music says 'we
+    are still here.'
+  posters: >-
+    Wanted posters for the Seed family, printed on the old county printer
+    and tacked to the wall. Joseph: serene and terrifying. John: smiling
+    in a way that makes you want to check your wallet. Jacob: a military
+    portrait, flat and cold. Faith: almost beatific. Someone has drawn
+    devil horns on John. Someone else drew a question mark over Faith's.
+  map: >-
+    A detailed resistance operations map pinned behind the bar. Cult
+    outposts marked in red. Resistance safehouses in green. Supply routes
+    in yellow. The green is spreading. Slowly, unevenly, but spreading.
+    Mary May updates it after every operation.
+  table: >-
+    A round table in the corner where the resistance leadership meets.
+    Coffee cups ring. A notebook. A radio. The chairs are mismatched,
+    collected from wherever. Functional. Like everything in this room.
+spawninfo:
+- mobid: 339
+  message: Mary May sets a glass down and looks at you with the direct gaze of someone who has no patience left for hesitation.
+  idlecommands:
+  - emote wipes the bar down in long, efficient strokes, not wasting a movement.
+  - say They took my father's bar. I want it back. More than that, I want them gone.
+  - ""
+  - emote fills a glass without being asked and slides it down the bar to someone who needs it.
+  - say Every person who walks in that door is still here. That means something.
+  - ""
+  - emote checks the resistance map and marks something with a red pen.
+  respawnrate: 3 real minutes
+- mobid: 344
+  message: Hurk spins on his barstool and points at you like he just remembered something important.
+  idlecommands:
+  - say So I strapped the rocket launcher to the truck and MOST of it worked. The important parts worked.
+  - emote examines a rocket launcher with the expression of a man who has made his peace with consequences.
+  - ""
+  - say My cousin Hurk Jr. says I should try the bow but I say why use less explosion when more explosion is RIGHT THERE.
+  - emote high-fives nobody with complete sincerity.
+  - ""
+  - say I blew up two Peggie checkpoints this week. Personal best.
+  respawnrate: 3 real minutes
+idlemessages:
+- The jukebox changes tracks. Waylon Jennings. Someone at the bar exhales and closes their eyes for just a moment.
+- Mary May slides a drink to the far end of the bar without being asked. She knows what people need.
+- Hurk is explaining something with his hands. It involves a large explosion. He seems proud.
+- A new face comes through the door — resistance, judging by the look. Mary May nods once. They're in.
+- The country music fills every corner of the room. Something about the road, and the rain, and going home.
+- Someone pins a new report to the resistance map. Another outpost taken. Small victories, patient accumulation.
+- The door opens and everyone looks up. It closes. Nobody followed. Breath releases around the room.

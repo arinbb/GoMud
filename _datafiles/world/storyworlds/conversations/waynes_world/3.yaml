@@ -1,0 +1,24 @@
+-
+  Supported:
+    "noah vanderhoff": ["benjamin kane"]
+  Conversation:
+    - ["#1 say Benjamin. I want to talk about visibility."]
+    - ["#2 emote checks his watch.", "#2 say 'Go ahead, Noah.'"]
+    - ["#1 say The show reaches thirty thousand households. In Aurora alone. That's significant market penetration for a tier-three cable slot."]
+    - ["#2 say I know the numbers."]
+    - ["#1 emote holds up his product.", "#1 say This product should be in every frame. Every frame."]
+    - ["#2 say We'll get there. I'm working on the acquisition.", "#2 say 'Wayne won't hold out much longer.'"]
+    - ["#1 say He seems like a very enthusiastic young man."]
+    - ["#2 say That's exactly the problem. And the opportunity."]
+-
+  Supported:
+    "noah vanderhoff": ["benjamin kane"]
+  Conversation:
+    - ["#1 say Have you seen the show lately? He said 'excellent' forty-seven times in one episode."]
+    - ["#2 emote makes a note."]
+    - ["#1 say Is that... is that good for us?"]
+    - ["#2 say Authentic enthusiasm tests extremely well with eighteen-to-twenty-fours."]
+    - ["#1 say So it's good."]
+    - ["#2 say Everything is good until it isn't. Let me handle Wayne."]
+    - ["#1 emote holds up the product toward an imaginary camera."]
+    - ["#1 say I just want the product to be seen."]

@@ -1,0 +1,18 @@
+itemid: 131
+name: On the Road
+namesimple: book
+displayname: a battered <ansi fg="itemname">On the Road</ansi> paperback
+description: >-
+  A worn paperback copy of "On the Road" by Jack Kerouac, published 1957
+  by Viking Press. The cover is a pale yellow-green with an abstract design
+  suggesting a highway. The spine has been broken multiple times and repaired
+  with tape that has gone brown at the edges. The pages are soft with use,
+  some corners turned down, some passages underlined in blue ballpoint.
+  Someone has written "IT" in the margin on page 122 and drawn three
+  exclamation marks. The book smells of old paper and the particular
+  freedom of being carried in many pockets across many miles. It hums
+  very faintly when you hold it, as if the road inside it has never stopped.
+type: object
+subtype: usable
+uses: 0
+value: 0

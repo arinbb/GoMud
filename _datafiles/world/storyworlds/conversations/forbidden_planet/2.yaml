@@ -1,0 +1,25 @@
+-
+  Supported:
+    "robby the robot": ["*"]
+  Conversation:
+    - ["#1 say Good morning. Is there something I can synthesize for you today?"]
+    - ["#1 say I am capable of producing any element or compound in standard quantities. Complex organics require additional processing time."]
+    - ["#1 emote tilts his dome-head attentively."]
+    - ["#1 say Previous requests have included Kentucky bourbon mash, seventeen varieties of Earth candy, replacement components for the ship, and a reasonable facsimile of a New York Times crossword puzzle."]
+    - ["#1 say I found the crossword puzzle the most interesting challenge. If you have additional requests of unusual complexity, I would welcome them."]
+    - ["#1 emote stands with perfect still attention.", "#1 say I am also available for conversation. I find conversation a productive use of processing capacity on quiet evenings."]
+-
+  Supported:
+    "robby the robot": ["altaira"]
+  Conversation:
+    - ["#2 say Robby, do you think the crew will take me to Earth?"]
+    - ["#1 emote pauses with uncharacteristic hesitation."]
+    - ["#1 say That is a matter for Dr. Morbius to discuss with Commander Adams, Miss Altaira."]
+    - ["#2 say That is not an answer."]
+    - ["#1 say No. It is not."]
+    - ["#2 say Robby. Do you think I should go to Earth?"]
+    - ["#1 emote 's dome rotates once", "#1 say I think you are the most completely prepared person I have ever had data on to navigate a new environment."]
+    - ["#2 say That is also not an answer."]
+    - ["#1 say I am working within operational constraints, Miss Altaira."]
+    - ["#2 emote laughs softly", "#2 say You are the worst liar on Altair IV."]
+    - ["#1 say I am the only robot on Altair IV. The comparison is limited."]

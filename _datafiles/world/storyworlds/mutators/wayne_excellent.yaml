@@ -1,0 +1,12 @@
+mutatorid: wayne-excellent
+namemodifier:
+  behavior: append
+  text: (excellent)
+  colorpattern: rainbow
+descriptionmodifier:
+  behavior: append
+  text: Party on. Everything here is excellent.
+  colorpattern: rainbow
+alertmodifier:
+  text: "Excellent! This place is a total babe-fest of awesomeness."
+  colorpattern: rainbow

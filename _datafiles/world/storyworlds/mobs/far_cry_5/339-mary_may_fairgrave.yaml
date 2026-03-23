@@ -1,0 +1,27 @@
+mobid: 339
+zone: far_cry_5
+hostile: false
+maxwander: 0
+activitylevel: 30
+idlecommands:
+- emote wipes the bar down in long, efficient strokes, not wasting a single movement.
+- say My dad built this bar. They took it. I'm taking it back. That's the whole plan.
+- ""
+- emote fills a glass with precise economy and sets it at the end of the bar for whoever needs it.
+- say Every person who still walks in that door is a win. Don't underestimate what that means.
+- ""
+- emote marks something on the resistance map with a red pen, then steps back and reads the change.
+character:
+  name: Mary May Fairgrave
+  description: >-
+    A woman in her thirties who looks like she was born behind a bar and
+    has been running toward a fight since she could walk. Her father built
+    the Spread Eagle. Eden's Gate took it. She took it back with the help
+    of people she organized from nothing, and she has been maintaining
+    both the bar and the resistance with the same focused competence ever
+    since. She is not large. She is not armed visibly. She has a shotgun
+    under the bar and she could reach it before you finished a sentence.
+    She pours good drinks. She listens while you talk. She has no patience
+    for anything she considers self-indulgent, which includes despair.
+  raceid: 1
+  level: 10

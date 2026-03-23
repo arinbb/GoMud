@@ -1,0 +1,108 @@
+roomid: 1500
+zone: Goodnight Moon
+title: The Great Green Room
+description: >-
+  The walls are <ansi fg="10">green</ansi> — a deep, warm, dreaming green, the
+  color of moss, of sleep, of the underside of leaves. A <ansi
+  fg="itemname">fireplace</ansi> glows on the south wall, its light amber and
+  low, casting everything in the soft amber of almost-asleep. A great
+  <ansi fg="itemname">window</ansi> faces west, and through it the moon hangs
+  enormous and white, rising. On the <ansi fg="itemname">mantel</ansi> sits a
+  telephone, a little toy house, a comb and brush and a bowl full of mush. A
+  red <ansi fg="itemname">balloon</ansi> floats on its string near the
+  ceiling, turning slowly. In the rocking chair by the fire, barely visible —
+  or perhaps only barely there — the <ansi fg="mobname">quiet old lady</ansi>
+  sits, her knitting needles moving, her lips forming a word too soft to hear.
+  Kittens slip behind the furniture. Somewhere in the room's periphery, a
+  small mouse watches from the baseboard. The room is very warm. The room
+  is very still. The room is saying goodnight to everything.
+mapsymbol: G
+maplegend: The Great Green Room
+biome: house
+exits:
+  north:
+    roomid: 1501
+  east:
+    roomid: 1502
+  south:
+    roomid: 1503
+  west:
+    roomid: 1504
+  up:
+    roomid: 1505
+  down:
+    roomid: 1506
+  kittens:
+    roomid: 1507
+    mapdirection: northeast
+  mush:
+    roomid: 1508
+    mapdirection: southeast
+  stars:
+    roomid: 1509
+    mapdirection: northwest
+  telephone:
+    roomid: 1510
+    mapdirection: southwest
+nouns:
+  fireplace: >-
+    A low, open fireplace set in the south wall, its fire burned down to a bed
+    of glowing coals and one shy flame. The light it throws is amber and
+    wavering, warming everything it touches. A wire grate guards the coals.
+    The mantelpiece above is painted white and holds the small household
+    objects of a very orderly bedtime world.
+  window: >-
+    A tall window on the west wall. Through it the moon is clearly visible --
+    impossibly large, impossibly white, rising with a slow dignity. Stars are
+    becoming visible at the window's corners. The curtains are green, like the
+    walls, and they move slightly even though no wind blows in here. The room
+    is very warm. Outside looks very cold and very beautiful.
+  mantel: >-
+    The white-painted mantelpiece holds a curious collection: a green telephone,
+    a little toy house no bigger than a shoebox, a red comb and a matching
+    brush side by side, and a small bowl of something pale and steaming -- mush,
+    warm and white, giving off a faint sweet smell. Each object sits in its
+    exact place as though it has always been there and always will be.
+  balloon: >-
+    A red balloon on a long white string, tied to the mantelpiece. It floats
+    near the ceiling, turning very slowly, as though it is thinking. The red
+    is exactly the red of valentines, of fire engines, of the inside of eyelids
+    pressed shut. It is a very red balloon. It seems content to be exactly
+    where it is.
+  clock: >-
+    A round face on the wall near the fireplace. The hands point somewhere
+    between seven and eight -- or perhaps between eight and nine. It is hard
+    to say. The clock ticks with a soft, reassuring sound, each tick exactly
+    like the last, each tock settling the room further into stillness.
+spawninfo:
+- mobid: 230
+  message: The quiet old lady rocks gently in her chair by the fireplace, her knitting needles clicking softly.
+  respawnrate: 5 real minutes
+  idlecommands:
+  - "say hush"
+  - ""
+  - "emote rocks slowly in the rocking chair, her knitting needles barely audible."
+  - ""
+  - "emote hums a few notes of something old and low and wordless."
+  - ""
+  - "say hush"
+  - ""
+- mobid: 233
+  message: A little mouse emerges from a hole in the baseboard, nose twitching.
+  respawnrate: 4 real minutes
+  idlecommands:
+  - "emote scurries along the baseboard, its claws making the tiniest sound."
+  - ""
+  - "emote sits up on its haunches, watching you with bright black eyes."
+  - ""
+  - "emote nibbles something invisible in the corner."
+  - ""
+idlemessages:
+- The red balloon turns once, very slowly, in a draft that comes from nowhere.
+- The clock ticks. The fire settles. A coal shifts with a soft, sleepy sound.
+- The quiet old lady's needles click once, twice, then pause. Then click again.
+- The moonlight through the window grows a fraction brighter. The moon is still rising.
+- Something moves at the edge of your vision -- the kittens, slipping behind a chair.
+- The air smells of warm wool, of woodsmoke, of milk left near the fire.
+- The great green walls seem to breathe very slowly, in and out with the room's deep quiet.
+- You feel your eyelids growing heavy, then light, then uncertain. The room hums with sleep.

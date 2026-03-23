@@ -1,0 +1,16 @@
+name: Die Die My Darling
+roomid: 1600
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: house
+mutators:
+- mutatorid: trefoile-piety
+idlemessages:
+- The house is very quiet. The kind of quiet that presses against your eardrums.
+- Somewhere inside the walls, wood settles with a sound like a held breath released.
+- The light coming through the windows is grey and flat, as though color itself has been forbidden here.
+- You notice there are no mirrors anywhere. Not one.
+- The faint smell of boiled vegetables and old paper drifts through the air.
+- A clock ticks somewhere — slow, measured, relentless.
+- The silence is not peaceful. It is enforced.

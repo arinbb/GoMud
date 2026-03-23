@@ -1,0 +1,23 @@
+questid: 190
+name: Stardew Valley
+description: >-
+  You have inherited your grandfather's farm in Pelican Town. The valley is
+  waiting. Learn its rhythms, meet its people, discover its secrets. This
+  place has more depth than it first appears, if you give it time.
+reward:
+  experience: 4500
+  item_id: 215
+  playermessage: >-
+    You have walked the valley from the farm to the mountain. You have met
+    the people who make it real and touched the ancient things that make it
+    alive. As a memento, the valley offers you a star fruit -- rare, sweet,
+    and grown only here, in this soil, under this particular sky. Grandpa
+    would have been proud.
+steps:
+- description: Arrive at Grandpas Farm and feel the pull of the land.
+- description: Walk into Pelican Town and let the community see you.
+- description: Visit Pierres General Store and support local commerce.
+- description: Have a drink at the Stardrop Saloon and let the warmth in.
+- description: Discover the Community Center and its waiting magic.
+- description: Find the Wizards Tower and learn about the Junimos.
+- description: Fish at the pier with Willy and learn the art of patience.

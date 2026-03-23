@@ -1,0 +1,18 @@
+itemid: 145
+name: Seinfeld film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Seinfeld</ansi>
+description: >-
+  A film reel in a standard NBC canister, unremarkable in every material respect.
+  The label reads SEINFELD in the clean sans-serif of network television. The
+  canister is slightly warm, as if it has been running recently, which it always
+  has been. When you hold it up to the light you can see through the celluloid:
+  an apartment on the Upper West Side of Manhattan. A couch. A kitchen. A man
+  in white sneakers doing a bit about something that is almost nothing. If you
+  listen very closely you can hear the bass line -- not quite a slap, not quite
+  a funk groove, but something between them, four notes that say: you are about
+  to watch something that is about everything by being about nothing.
+type: object
+subtype: usable
+uses: 0
+value: 0

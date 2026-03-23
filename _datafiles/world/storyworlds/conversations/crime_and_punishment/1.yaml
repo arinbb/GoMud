@@ -1,0 +1,23 @@
+-
+  Supported:
+    "raskolnikov": ["porfiry petrovich"]
+  Conversation:
+    - ["#1 say I read your notice in the newspaper. About the pawnbroker. A matter of routine, I suppose."]
+    - ["#2 emote smiles with great warmth", "#2 say Routine! Yes! Heh heh. Though I confess I find very little truly routine. You wrote an article, didn't you? On crime? I read it with great interest."]
+    - ["#1 say It was a philosophical exercise. The argument is standard. Schiller made similar points."]
+    - ["#2 say Yes, yes! The extraordinary men who stand above the law. Napoleon and so forth. Tell me -- purely as philosophy -- would such a man tremble afterward?", "#2 emote opens his eyes fully for one half-second."]
+    - ["#1 emote goes very still", "#1 say An ordinary man would tremble. An extraordinary man would not."]
+    - ["#2 say Heh heh heh. Yes. That is what I thought you would say.", "#2 emote settles back with the satisfaction of a man completing a puzzle."]
+    - ["#1 say What are you implying?", "#1 emote the words are too sharp. Too quick."]
+    - ["#2 say Nothing! Nothing at all. Heh heh. I find it a fascinating philosophical question. Tea?"]
+-
+  Supported:
+    "porfiry petrovich": ["raskolnikov"]
+  Conversation:
+    - ["#1 say You came back. I hoped you would come back.", "#1 emote does not look up from his papers."]
+    - ["#2 say I came to inquire about the case. As a citizen."]
+    - ["#1 say Of course! Of course. The case. Heh heh. It proceeds. These things take time.", "#1 emote finally looks up, smiling."]
+    - ["#2 say If you have evidence, charge me. If you do not, stop these games."]
+    - ["#1 emote sets down his pen very carefully", "#1 say I admire the force of that. Really. The force is always interesting."]
+    - ["#2 emote the response comes too quickly. He knows it.", "#2 say What force? I am not --"]
+    - ["#1 say Come back tomorrow. Or the day after. I will be here. I am always here.", "#1 emote smiles with the patience of a man who has all the time in the world."]

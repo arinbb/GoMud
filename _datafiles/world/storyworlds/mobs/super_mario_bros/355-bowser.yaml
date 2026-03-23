@@ -1,0 +1,32 @@
+mobid: 355
+zone: super_mario_bros
+hostile: true
+maxwander: 0
+idlecommands:
+  - "emote breathes a gout of fire that fills the corridor with orange light."
+  - ""
+  - "emote stomps forward one step, each footfall shaking the stone."
+  - ""
+  - "say MARIO!"
+  - ""
+  - "emote roars, the sound reverberating off every stone surface in the castle."
+  - ""
+  - "emote hurls a hammer that clangs off the dungeon ceiling."
+  - ""
+  - "emote swings his spiked tail with a wide sweep."
+  - ""
+activitylevel: 40
+character:
+  name: Bowser
+  description: >-
+    The King of the Koopas. He is enormous -- a bipedal turtle-dragon
+    hybrid filling the far end of the bridge corridor, his green shell
+    massive and spiked, his horned head level with the dungeon ceiling.
+    His fire breath is real fire, orange and hot. His eyes are small
+    and red and mean. He wears a spiked collar and his expression
+    is somewhere between fury and theatrical menace, the expression of
+    a villain who takes his villainy seriously. He has kidnapped the
+    princess eight times. He has been defeated eight times. He keeps
+    coming back. Persistence is the one quality he shares with Mario.
+  raceid: 1
+  level: 15

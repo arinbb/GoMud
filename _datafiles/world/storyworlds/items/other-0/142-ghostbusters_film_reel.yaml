@@ -1,0 +1,16 @@
+itemid: 142
+name: Ghostbusters film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Ghostbusters</ansi>
+description: >-
+  A 35mm film reel in a battered metal canister marked with a hand-painted NO GHOST
+  logo -- a cartoon ghost in a red circle with a line through it. The canister is
+  slightly warm to the touch and vibrates faintly at a frequency that is not quite
+  sound. It smells of ozone, motor oil, and the specific burnt-marshmallow residue
+  of a dimensional closing event. The label reads "GHOSTBUSTERS (1984)" in block
+  letters, with "IVAN REITMAN" below it and a small drawing of a proton pack
+  someone added in red marker.
+type: object
+subtype: usable
+uses: 0
+value: 0

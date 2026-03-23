@@ -1,0 +1,56 @@
+roomid: 1934
+zone: Ghostbusters
+title: The Ecto-1 Interior
+description: >-
+  The inside of the Ecto-1 is a mobile laboratory, a communications center, and a
+  retrofitted ambulance bay crammed with more equipment than should reasonably fit
+  in any vehicle. The <ansi fg="itemname">dashboard</ansi> is covered in aftermarket
+  gauges that flicker and pulse. <ansi fg="itemname">Proton packs</ansi> are racked
+  along the walls, secured with quick-release straps. A <ansi fg="itemname">police
+  scanner</ansi> mutters a continuous stream of calls, most of which reference
+  supernatural phenomena in language that suggests the dispatchers have developed
+  their own vocabulary for things they were not trained to describe. The <ansi fg="itemname">siren</ansi>
+  is wailing. The Ecto-1 is in motion -- the view from the side windows shows Manhattan
+  streaming past at speed, pedestrians stepping back, cabs yielding (reluctantly),
+  a delivery truck swerving. The city is a blur of yellow and grey and glass.
+mapsymbol: E
+maplegend: Ecto-1
+biome: house
+exits:
+  street:
+    roomid: 1921
+    mapdirection: east
+    exitmessage: You bail out of the Ecto-1 onto the street.
+nouns:
+  dashboard: >-
+    The Ecto-1's dashboard retains its original Cadillac instrumentation plus
+    approximately forty-seven additional gauges, switches, and readouts installed
+    at various points as the Ghostbusters' operation expanded. The PKE reader
+    mounted to the center console is currently maxed. Several of the original
+    gauges have been repurposed -- the fuel gauge now reads spectral density and
+    the temperature gauge tracks dimensional bleed. The speedometer still works
+    correctly. It reads 72 mph. In Manhattan. Ray is driving.
+  packs: >-
+    Four proton packs racked along the Ecto-1's interior walls, each one charged
+    and ready. The packs are nuclear accelerators that focus psychokinetic energy
+    into a particle stream. They are not, technically, safe for use inside a
+    vehicle. Nothing about this vehicle is safe. This is understood by all parties
+    and accepted.
+  scanner: >-
+    The police scanner fills the car with a constant background of the city's
+    supernatural emergency: "Unit 17, we have a Class III manifestation at the
+    Central Park Reservoir. No, sir, it's not a duck. It's translucent. And it's
+    about forty feet across. No, I don't know what to do about it either."
+  siren: >-
+    The Ecto-1's siren is the original ambulance model, loud enough to part traffic
+    and of a pitch that seems to specifically agitate supernatural entities in the
+    vicinity. Whether this is a bug or a feature has never been formally determined.
+    It is very loud inside the vehicle.
+idlemessages:
+- The Ecto-1 hits a pothole and every unsecured item in the vehicle achieves temporary orbit.
+- Ray takes a corner at speed, tires screaming. The proton packs rattle in their racks. This is normal.
+- The police scanner delivers three simultaneous ghost reports from different boroughs. Egon marks them on the map with precise efficiency.
+- The siren wail doppler-shifts as the car accelerates through an intersection.
+- Venkman, in the passenger seat, turns to look at you with the expression of a man who chose this profession entirely for the wrong reasons and is entirely okay with that.
+- Through the windshield, the building at 55 Central Park West becomes visible ahead, glowing at its apex.
+- Winston checks something in the back, nods, says "Whatever it is, we're ready for it." This is both reassuring and insufficient.

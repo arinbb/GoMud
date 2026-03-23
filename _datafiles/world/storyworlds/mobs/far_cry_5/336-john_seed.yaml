@@ -1,0 +1,27 @@
+mobid: 336
+zone: far_cry_5
+hostile: false
+maxwander: 0
+activitylevel: 30
+idlecommands:
+- emote draws a folding knife and begins sharpening it with methodical, deliberate strokes.
+- say There is freedom in saying yes. It took me a long time to learn that. I want to help you learn it faster.
+- ""
+- emote adjusts his aviator sunglasses and smiles at something internal, private, and not benign.
+- say Everyone has a sin. The ones who resist the hardest have the most interesting ones. Professionally, I find this motivating.
+- ""
+- emote straightens his cufflinks with the careful attention of a man who needs everything about himself to look chosen.
+character:
+  name: John Seed
+  description: >-
+    A man in his late thirties who looks like he walked out of a law firm and
+    into a calling he finds more satisfying. Well-dressed in a way that
+    announces itself: tailored shirt open at the collar, aviator glasses,
+    cufflinks. The word YES is tattooed on his chest, visible in the gap of
+    his shirt — his own baptism, his own affirmation, permanent. His smile
+    is very good. His charm is genuine in the technical sense: it works.
+    He has a knife, always, handled with the easy confidence of someone who
+    has used it for more than carving. He was a lawyer before he was the
+    Baptist. The skills transfer more than you would like.
+  raceid: 1
+  level: 15

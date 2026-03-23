@@ -1,0 +1,18 @@
+itemid: 137
+name: Super Mario Bros game cartridge
+namesimple: cartridge
+displayname: a gray game cartridge labeled <ansi fg="itemname">Super Mario Bros</ansi>
+description: >-
+  A gray plastic NES cartridge, the size of a thick paperback, with a
+  gold label showing Mario mid-jump against a blue sky, Bowser and Princess
+  Peach illustrated below. The cartridge is worn at the top edge, the
+  contacts slightly tarnished from a thousand insertions and extractions.
+  Someone has written in blue pen on the back, in careful small letters:
+  "Blow in the bottom before you insert it." The cartridge is warm to the
+  touch, as if it has been running somewhere for forty years and the warmth
+  never quite left it. The label reads 1985. Nintendo. The most important
+  number on the most important cartridge in the history of games.
+type: object
+subtype: usable
+uses: 0
+value: 0

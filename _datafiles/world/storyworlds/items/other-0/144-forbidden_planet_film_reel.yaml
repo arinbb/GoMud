@@ -1,0 +1,16 @@
+itemid: 144
+name: Forbidden Planet film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Forbidden Planet</ansi>
+description: >-
+  A heavy film reel in a canister of polished aluminum with a faint green
+  iridescence, as if the metal has absorbed something of the alien sky it
+  documents. "FORBIDDEN PLANET" is stenciled in clean sans-serif letters.
+  The canister is faintly warm to the touch and emits, if you hold it
+  close to your ear, a subsonic hum -- not from the film mechanism but from
+  something the footage itself seems to carry. The smell of ozone and dry
+  alien desert clings to the lid.
+type: object
+subtype: usable
+uses: 0
+value: 0

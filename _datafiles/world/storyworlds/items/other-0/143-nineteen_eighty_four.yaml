@@ -1,0 +1,17 @@
+itemid: 143
+name: Nineteen Eighty-Four
+namesimple: book
+displayname: a battered paperback titled <ansi fg="itemname">Nineteen Eighty-Four</ansi>
+description: >-
+  A slim paperback with a plain cover, its spine cracked from many readings.
+  The title is printed in stark block letters on a white background. No
+  illustration. No ornamentation. Nothing the Ministry of Truth would find
+  objectionable, except the entire contents. Published in 1949 by George
+  Orwell, who died seven months later. He knew what he was writing. He wrote
+  it anyway. The pages are thin, slightly yellowed at the edges, and there is
+  a faint smell of something chemical and grey about them, as if the world
+  inside the book has leaked into the paper.
+type: object
+subtype: usable
+uses: 0
+value: 0

@@ -1,0 +1,75 @@
+roomid: 1900
+zone: The Little Prince
+title: The Sahara Desert
+description: >-
+  The desert spreads in every direction without end or mercy. Your small
+  <ansi fg="itemname">plane</ansi> has crashed somewhere behind you, the engine
+  crumpled against the sand, one propeller bent at an angle that means it will
+  never fly again. The sky above is the colour of nothing — not blue, not
+  black, but the particular shade that exists only at this hour, between day
+  and the first <ansi fg="itemname">stars</ansi>. The sand is warm beneath
+  your feet and cool an inch below the surface. A thousand miles from any
+  human habitation, you are completely, profoundly alone. Then: a small
+  voice. "If you please — draw me a sheep."
+mapsymbol: S
+maplegend: Sahara Desert
+biome: desert
+exits:
+  north:
+    roomid: 1901
+  east:
+    roomid: 1903
+  roses:
+    roomid: 1909
+    secret: true
+    mapdirection: northeast
+  fox:
+    roomid: 1910
+    secret: true
+    mapdirection: northwest
+  snake:
+    roomid: 1911
+    secret: true
+    mapdirection: southeast
+nouns:
+  plane: >-
+    Your Sahara-wrecked plane, a battered single-engine craft with sand in the
+    cylinders and a bent propeller. You have supplies for perhaps eight days.
+    On the engine housing, half-covered with sand, your tools are laid out
+    as though order might still mean something out here. It will not fly again.
+    Not without a miracle.
+  stars: >-
+    The stars come out one by one as the light fails, and then all at once
+    there are a thousand of them, each one steady and small and impossibly
+    far. Somewhere among them, a small boy lives on a planet no bigger than
+    a house, tending his rose and watching the sun set forty-four times in
+    a single day. All the stars are laughing tonight. You just cannot hear
+    it yet.
+  sand: >-
+    The Sahara sand is not simply yellow. Up close, it is a thousand colours
+    -- cream and rose and ochre, each grain a tiny stone worn smooth by
+    centuries of wind. It is beautiful and terrible in equal measure.
+    Everything that has ever been lost ends up here eventually.
+spawninfo:
+- mobid: 370
+  message: A small figure with golden hair stands in the pre-dawn light, looking at you with absolute seriousness.
+  idlecommands:
+  - emote gazes up at the stars with an expression of quiet longing.
+  - ''
+  - say Do you know what happens when you tame something?
+  - ''
+  - emote crouches and draws something in the sand -- it might be a sheep.
+  - ''
+  - say On my planet I watch the sunset. On a very small planet you can see it forty-four times in one day.
+  - ''
+  - emote adjusts the tiny scarf around his neck and surveys the horizon.
+  - ''
+  respawnrate: 3 real minutes
+idlemessages:
+- The wind erases your footprints. In an hour it will be as if you were never here.
+- A beetle crosses the sand in front of you, purposeful and unconcerned, heading somewhere that matters only to it.
+- The silence is not empty. It is full of things that do not make noise.
+- The stars seem closer here than anywhere else on Earth. As if you could reach up and hold one.
+- Far to the north, something tiny catches the starlight -- a glint of glass, or perhaps gold.
+- The cooling sand ticks and shifts. The desert breathes.
+- 'You think of home. But you are not sure anymore what you mean by home.'

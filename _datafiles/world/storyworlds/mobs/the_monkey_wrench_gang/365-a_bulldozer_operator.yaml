@@ -1,0 +1,23 @@
+mobid: 365
+zone: the_monkey_wrench_gang
+hostile: false
+maxwander: 1
+activitylevel: 20
+angrycommands: []
+idlecommands:
+  - emote climbs into the cab of a bulldozer and starts the engine, which turns over with a sound like an earthquake starting.
+  - emote eats his lunch from a paper bag on the running board of the nearest machine, not looking up.
+  - emote wipes his hands on a shop rag and surveys the equipment yard with the satisfied look of a man who has done his job.
+  - say A job is a job. I got a family. The mine pays well.
+  - emote fills out a maintenance form on a clipboard, squinting at it in the sun.
+character:
+  name: a bulldozer operator
+  description: >-
+    A heavyset man in his forties wearing a yellow hard hat, orange safety vest, and
+    jeans dark with grease and red rock dust. He carries a lunch box and a clipboard
+    and moves with the practiced, economical efficiency of someone who has done the
+    same job in the same place for many years. He has no particular opinion about
+    the landscape he is reshaping. He has a mortgage and a daughter in high school
+    and a truck payment. The mine pays union wages.
+  raceid: 1
+  level: 5

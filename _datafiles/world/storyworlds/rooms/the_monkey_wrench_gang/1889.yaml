@@ -1,0 +1,70 @@
+roomid: 1889
+zone: The Monkey Wrench Gang
+title: The Hidden Camp
+description: >-
+  The canyon widens here into a small amphitheater sheltered by an <ansi fg="red">overhanging
+  cliff</ansi>, its walls cutting the wind from all directions and the road noise from
+  above. A <ansi fg="itemname">tarp shelter</ansi> is rigged between two junipers, its
+  blue plastic incongruous against the red rock. A <ansi fg="itemname">campfire</ansi>
+  burns low in a ring of stones, its smoke trailing up the canyon wall and dispersing
+  before it reaches the rim. A <ansi fg="itemname">beer cooler</ansi> sits against the
+  rock face, unlocked, its lid weighted with a flat stone. Topographic maps and road
+  atlases cover a flat rock serving as a table, their edges curled by humidity and
+  fire-heat, annotated in three different hands. <ansi fg="mobname">Hayduke</ansi> sits
+  on a boulder sharpening a knife, a Budweiser between his knees, not talking. The air
+  smells of campfire smoke and sage and beer and the particular quiet of people who
+  are planning something. To the <ansi fg="exit">north</ansi>, the canyon narrows back
+  toward the trail. To the <ansi fg="exit">south</ansi>, a rocky scramble leads to the
+  final standoff ground.
+mapsymbol: H
+maplegend: Hidden Camp
+biome: desert
+exits:
+  north:
+    roomid: 1888
+  south:
+    roomid: 1895
+nouns:
+  maps: >-
+    Topographic maps of four states, annotated in pencil and red marker:
+    circles around mine sites, pipeline routes, power line corridors, dam
+    operations. One map has a single large X drawn over Glen Canyon Dam
+    in Hayduke's heavy hand. Lines connect targets to meeting points to
+    escape routes. This is both a war map and a love letter to the land.
+  cooler: >-
+    The beer cooler holds Budweiser, mostly, with a few cans of Coors for Seldom
+    Seen and one leather-wrapped flask of wine that nobody acknowledges belongs to
+    Doc. The ice was fresh yesterday. By tomorrow it will be melt-water and the
+    beer will be warm, which Hayduke considers acceptable.
+  fire: >-
+    The campfire is small and low, burning juniper wood that smells sharp and clean.
+    It gives enough light to read a map by and enough warmth to take the chill off
+    the canyon night. No one feeds it while Hayduke is thinking. It is one of the
+    unspoken rules.
+  tarp: >-
+    The blue plastic tarp is rigged with parachute cord in a lean-to configuration,
+    offering shelter from wind and light rain. It is the only piece of equipment in
+    the camp that Bonnie insisted on. The others would have slept in their sleeping
+    bags under the open sky, which she considered insufficient planning.
+  hayduke: >-
+    George Washington Hayduke, sitting on his boulder, running a whetstone along
+    his knife blade in slow, deliberate strokes. He is not doing it because the
+    knife needs sharpening. He is doing it because his hands need something to do
+    while his head works. When the knife is sharp enough, he will start on something
+    else, or he will crack a beer and stare at the fire until he figures out what
+    comes next.
+spawninfo:
+- mobid: 360
+  message: Hayduke looks up from his knife, then goes back to sharpening it.
+  respawnrate: 5 real minutes
+- mobid: 361
+  message: Bonnie is already here, writing in her journal, not looking up.
+  respawnrate: 5 real minutes
+idlemessages:
+- The campfire pops and a small ember floats up the canyon wall, winking out before it reaches the rim.
+- Hayduke drinks his beer in long slow pulls and stares at the fire like it owes him an explanation.
+- 'The maps on the flat rock flutter in the slight night breeze: red circles, penciled notes, the geography of discontent.'
+- Bonnie writes in her journal without looking up, her pen moving fast across the page.
+- An owl calls from somewhere up the canyon, twice, then silence.
+- 'The beer cooler motor runs, then stops. The ice is almost gone. Everything out here has a limited time.'
+- 'The smoke from the juniper fire curls up the canyon wall and disappears. Juniper smoke is the smell of the canyon country at night. It is the smell of this, specifically.'

@@ -1,0 +1,36 @@
+roomid: 9
+zone: The Grand Library
+title: The Trophy Room
+description: >-
+  A small, circular chamber with walls of polished mahogany and brass-framed
+  glass shelves. This is YOUR collection — a personal display case for the
+  souvenirs you have gathered from the worlds you have visited. Each shelf
+  is labeled with a small brass placard, waiting for an object to give it
+  meaning. A warm amber light illuminates whatever you have placed here.
+  The <ansi fg="exit">atrium</ansi> is back to the east. Type
+  <ansi fg="command">collection</ansi> in the atrium to see your progress.
+mapsymbol: T
+maplegend: Trophy Room
+biome: house
+isstorage: true
+exits:
+  east:
+    roomid: 1
+    exitmessage: You step back into the Grand Atrium.
+nouns:
+  shelves: >-
+    Glass-fronted shelves with small brass placards. Some are empty, waiting.
+    Others hold the treasures of worlds you have walked through — a vial of
+    starlight, a hunting cap, a room key, a photo strip, a piece of chalk.
+    Each one is a memory made physical. Use 'stash' and 'get' to place and
+    retrieve your collection.
+  placards: >-
+    Small brass labels on each shelf, engraved in a careful hand. They read
+    things like "Wonderland," "The Overlook," "Pelican Town," "Hill Valley."
+    Not every placard has an object yet. That is what adventures are for.
+idlemessages:
+- The amber light shifts, catching the facets of your collected treasures.
+- A faint shimmer passes over one of the shelves, as if the objects remember the worlds they came from.
+- The room is quiet. Your collection waits, patient and permanent.
+- You notice a new brass placard on an empty shelf. Another world is waiting to be explored.
+- The glass catches your reflection alongside the souvenirs. You are part of the collection now.

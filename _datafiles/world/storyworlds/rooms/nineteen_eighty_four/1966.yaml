@@ -1,0 +1,48 @@
+roomid: 1966
+zone: Nineteen Eighty Four
+title: "Syme's Table"
+description: >-
+  A corner table in the canteen where <ansi fg="itemname">Syme</ansi>
+  holds court over an enormous <ansi fg="itemname">dictionary</ansi>.
+  He is working on the Eleventh Edition of the Newspeak dictionary, the
+  definitive edition, the one that will finally reduce the language to
+  its beautiful, functional minimum. His tray is pushed to one side,
+  his Victory Gin untouched. He speaks with the excitement of a man who
+  has found true purpose. He has not yet grasped that his purpose, once
+  complete, will make him unnecessary. He will become an
+  <ansi fg="red">unperson</ansi>. But not today. Today he is explaining
+  Newspeak to anyone who will listen. The canteen is to the
+  <ansi fg="exit">canteen</ansi> end.
+mapsymbol: Y
+maplegend: "Syme's Table"
+biome: house
+exits:
+  canteen:
+    roomid: 1965
+    mapdirection: south
+nouns:
+  dictionary: >-
+    The Eleventh Edition of the Newspeak dictionary, Syme's life work.
+    It is not yet complete. But the direction is clear: every edition
+    smaller than the last. Every edition with fewer words. The goal is
+    a dictionary so small that thoughtcrime will be literally impossible,
+    because there will be no words in which to think it. Syme calls this
+    beautiful. He is right, in a horrible way.
+  syme: >-
+    Syme is small and dark with large, protuberant eyes that have a
+    disconcerting habit of fixing you with a too-direct stare. He is
+    brilliant. He is genuinely, excitedly brilliant about Newspeak and
+    the elimination of language. Winston finds him simultaneously
+    admirable and deeply, profoundly dangerous to be seen with. Syme
+    will be vaporized. He is too clever. He sees too clearly.
+spawninfo:
+- mobid: 405
+  message: 'Syme looks up from his enormous dictionary with the bright eyes of a man who has found something worth explaining.'
+  respawnrate: 5 real minutes
+idlemessages:
+- 'Syme flips through the dictionary pages with the tenderness of a man handling something sacred. "We are making it beautiful," he says, to no one in particular.'
+- '"Do you realize," Syme says, not waiting for an answer, "that by 2050, at the latest, every concept of Oldthink will be impossible? Simply because the words for it will not exist?"'
+- 'Syme makes a small correction in the margin of the dictionary. His handwriting is very small and very precise.'
+- '"The word free still exists," Syme says, "but it can only be used in the sense of this dog is free from lice. It cannot be used in the other sense. It will not be able to be used. That is the point."'
+- 'Syme eats nothing. He talks. He has found something to believe in and it is eating him from the inside out and he does not know it.'
+- '"By 2050 the whole literature of the past will have been destroyed," Syme says with relish. "Chaucer, Shakespeare, Milton, Byron — they will have ceased to exist."'

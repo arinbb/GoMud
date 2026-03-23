@@ -1,0 +1,68 @@
+roomid: 2023
+zone: Harold and Maude
+title: Harolds Mansion
+description: >-
+  An enormous <ansi fg="8">mansion</ansi> of the kind that proves money cannot
+  buy warmth. The <ansi fg="itemname">foyer</ansi> is cathedral-ceilinged, floored
+  in cold <ansi fg="8">marble</ansi>, hung with <ansi fg="itemname">portraits</ansi>
+  of ancestors who look like they disapproved of everything. Fresh-cut
+  <ansi fg="itemname">flowers</ansi> stand in tall vases, arranged by someone
+  paid to arrange them. The furniture is the furniture of money, expensive and
+  unloved. A <ansi fg="itemname">telephone</ansi> sits on an ornate table -- it
+  rings constantly, because Harolds mother is always on the phone making arrangements
+  for arrangements. To the <ansi fg="exit">north</ansi> is the church. To the
+  <ansi fg="exit">east</ansi> lies Harolds bedroom. To the <ansi fg="exit">south</ansi>
+  the driveway curves toward the hearse.
+mapsymbol: M
+maplegend: Harolds Mansion
+biome: house
+exits:
+  north:
+    roomid: 2020
+    exitmessage: You leave the mansion and head toward the church.
+  east:
+    roomid: 2024
+    exitmessage: You climb the main staircase to Harolds bedroom.
+  south:
+    roomid: 2025
+    exitmessage: You pass through the front door onto the grand driveway.
+  office:
+    roomid: 2033
+    secret: true
+    exitmessage: You slip behind the curtain and through the paneled door into Uncle Victors office.
+nouns:
+  foyer: >-
+    A foyer designed to impress, which means it impresses nobody who lives here.
+    The ceiling soars twenty feet. A chandelier hangs with the weight of serious
+    money. The floor is white marble veined with grey, cold underfoot even in
+    summer. Harold crosses it every day and neither he nor it acknowledges the other.
+  marble: >-
+    Cold white marble, the kind that costs enough to mean something to someone.
+    Your footsteps echo. Harold has learned to move through this room silently,
+    like a ghost practicing.
+  portraits: >-
+    Dark oil portraits of women and men who achieved what was expected of them
+    and seem not to have enjoyed it. Their frames are heavy gilt. Their expressions
+    are the expressions of people who believe that displaying unhappiness would
+    be tasteless.
+  flowers: >-
+    Tall arrangements of white lilies in crystal vases. They were delivered this
+    morning and will be replaced next week. They are decorative flowers, not flowers
+    anyone loves. Harold sometimes takes one to a funeral.
+  telephone: >-
+    A phone that rings at all hours -- Harolds mother coordinating the endless
+    social calendar of a wealthy, purposeful life. Harold does not answer it.
+    Sometimes he watches it ring with the same attentiveness he brings to caskets.
+spawninfo:
+- mobid: 432
+  message: "<ansi fg=\"8\">A well-dressed woman in her fifties glides through the foyer with the efficient purposefulness of someone who has never questioned her right to be wherever she is.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- A telephone rings somewhere in the mansion. No one answers it. The ringing stops. No one remarks on this.
+- The chandelier makes a faint crystalline sound as the heating system pulses through the house.
+- Harolds mother arranges the cut flowers in their vases with small, precise adjustments.
+- The marble floor reflects the chandelier above, doubling the cold light.
+- A clock somewhere in the mansion chimes the quarter-hour in tones of absolute propriety.
+- Everything in this room is expensive and nothing in it has ever been touched with feeling.
+- The house smells of cut flowers, furniture polish, and the particular absence that comes with too much money.
+- Harolds mother places a call, her voice bright and organized, planning something for Harold he will not attend.

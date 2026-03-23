@@ -1,0 +1,54 @@
+roomid: 1612
+zone: Die Die My Darling
+title: The Attic Room
+description: >-
+  The attic room is the smallest room in the house, and the barest. The
+  floorboards are bare <ansi fg="8">boards</ansi>, unvarnished, unpainted. The
+  walls are bare <ansi fg="8">plaster</ansi>, with patches of damp in the corners.
+  There is a <ansi fg="8">cot</ansi> — not a bed, a cot, a narrow iron frame with
+  a thin mattress and a single blanket. There is a <ansi fg="8">chair</ansi>.
+  There is a <ansi fg="white">Bible</ansi> on the chair. Nothing else. One small
+  <ansi fg="8">window</ansi> high in the wall, too small to exit through, lets in
+  a parallelogram of grey light. The door to this room locks from the outside.
+  The lock is very sturdy. The key has been taken. The only way out is <ansi
+  fg="exit">north</ansi>, back to the landing — if the door were unlocked.
+mapsymbol: A
+maplegend: Attic Room
+biome: house
+exits:
+  north:
+    roomid: 1609
+    lock:
+      difficulty: 8
+nouns:
+  cot: >-
+    A narrow iron cot with a thin mattress and a grey blanket. The mattress is
+    old enough to have developed a permanent impression of whoever last slept on
+    it. The blanket is clean and cold.
+  window: >-
+    A single small window set high in the wall. The glass is filthy on the outside,
+    admitting light but no view. The window is too small for a person to climb
+    through. It does not open. This was not an oversight.
+  bible: >-
+    A Bible on the chair, open. The passage is from Leviticus, the same passage
+    underlined in the drawing room Bible. It has been underlined here too, in the
+    same red ink, by the same hand. The book was placed here for specific reading
+    in specific conditions.
+  door: >-
+    The door is solid wood, fitted with a heavy lock on the exterior. From in here,
+    the lock cannot be reached. The keyhole is on your side but the key is not. This
+    room has kept people in it before.
+  plaster: >-
+    The plaster walls are bare and patched, with stains spreading from the corners
+    where damp has worked through. Someone has scratched at the plaster near the cot —
+    not writing, just lines, made with a fingernail or a coin. Counting, perhaps.
+    Or just something to do with the hands.
+spawninfo: []
+idlemessages:
+- The grey light from the high window moves as the clouds outside shift.
+- The scratches in the plaster near the cot are very numerous. Someone was here for a long time.
+- The Bible on the chair falls open to its underlined passage as though used to being read there.
+- The door handle on the inside rattles slightly in a draught. The lock does not move.
+- The cot springs creak at the lightest touch.
+- The room smells of damp plaster and old wool and the particular staleness of a space that is rarely aired.
+- The blanket on the cot has been folded with the same military precision as the guest room bed.

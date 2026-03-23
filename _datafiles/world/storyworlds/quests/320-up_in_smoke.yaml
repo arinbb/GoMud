@@ -1,0 +1,26 @@
+questid: 320
+name: Up in Smoke
+description: >-
+  Cruise Los Angeles with Pedro and Man in 1978. Ride the lowrider. Visit Mans
+  pad with the lava lamp and the black light. Survive the border crossing. Find
+  the concert parking lot. Get on stage at the Roxy for the Battle of the Bands.
+  The whole city smells like engine oil and possibility and something else,
+  something botanical, something you cannot quite identify.
+reward:
+  experience: 4000
+  item_id: 280
+  playermessage: >-
+    You have cruised East LA, philosophized at the lava lamp, crossed the border
+    with perfect calm, found the parking lot and the crowd and the stage. You have
+    stood at the microphone at the Roxy on the Sunset Strip and played something
+    worth hearing, and the Battle Judge has written his highest score. As a
+    memento of your time in Los Angeles, 1978, you receive a pair of fuzzy dice
+    from Pedro's rearview mirror. He said they are lucky. He said his grandfather's.
+    He did not say more than that. You do not need more than that.
+steps:
+- description: Enter the world of Up in Smoke. Find yourself in Pedros lowrider in East LA, 1978.
+- description: Visit Mans Pad and meet the man himself, the guitar, and the lava lamp.
+- description: Navigate the border crossing. Act cool. Stay calm.
+- description: Find the rock concert parking lot and feel the energy of the night.
+- description: Get on stage at the Roxy Theatre for the Battle of the Bands.
+- description: Play something at the microphone and win the Battle of the Bands.

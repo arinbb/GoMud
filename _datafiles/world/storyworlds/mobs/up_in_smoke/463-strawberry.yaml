@@ -1,0 +1,25 @@
+mobid: 463
+zone: up_in_smoke
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote holds a thumb out toward the road with the cheerful confidence of someone who always gets picked up."
+  - ""
+  - "say Where are you headed? I go anywhere."
+  - ""
+  - "emote smiles at the parking lot like it is the best parking lot she has ever been in."
+  - "say It is a beautiful night for a show, right?"
+  - ""
+  - "emote tilts her face up to the sky for a moment, eyes closed, just feeling it."
+activitylevel: 15
+character:
+  name: Strawberry
+  description: >-
+    A young woman in her early twenties with long hair and a canvas bag over
+    one shoulder and a quality about her that is harder to name than to feel:
+    she seems to arrive from nowhere specific and be going somewhere equally
+    specific and have no anxiety about either. She smiles at everything.
+    Not a performative smile -- a genuine one, the smile of someone who finds
+    the world consistently more interesting than expected. She is a vibe.
+  raceid: 1
+  level: 4

@@ -1,0 +1,25 @@
+mobid: 282
+zone: blonde_on_blonde
+hostile: false
+maxwander: 0
+activitylevel: 5
+idlecommands:
+  - emote flickers at the edge of the candlelight.
+  - emote is everywhere the candles are and nowhere you look directly.
+  - emote passes through the room the way a thought passes through a mind -- present, then not.
+  - emote makes the heat pipes knock once.
+  - ''
+  - ''
+  - ''
+character:
+  name: Johanna
+  description: >-
+    She is not quite visible. When you look at her directly she is the room
+    -- the candles, the walls, the city lights through the windows. When you
+    look away she is more specific: a presence with edges, a woman who fills
+    the absence Dylan left for her. She has never spoken. She does not speak.
+    She exists in the spaces between everything else in the song, which is
+    a larger space than it sounds. There is a rumor she mentioned the Chelsea
+    Hotel once, in passing.
+  raceid: 1
+  level: 10

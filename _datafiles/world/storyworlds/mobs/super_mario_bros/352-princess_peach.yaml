@@ -1,0 +1,31 @@
+mobid: 352
+zone: super_mario_bros
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote waves with a graceful sweep of her arm."
+  - ""
+  - "emote adjusts her gold crown with one delicate hand."
+  - ""
+  - "say Oh! Thank you so much for coming."
+  - ""
+  - "emote gestures to the cake on the table with a warm, inviting smile."
+  - ""
+  - "say Please, have some cake."
+  - ""
+  - "emote clasps her hands together and smiles with the serenity of someone who knew you would make it."
+  - ""
+activitylevel: 20
+character:
+  name: Princess Peach
+  description: >-
+    Princess Peach Toadstool, ruler of the Mushroom Kingdom, stands in
+    her pink gown with the ruffled hem and puffed sleeves, her blonde
+    hair in its trademark style, her gold crown perfectly centered.
+    She is beautiful in the way that pixel art can make someone beautiful,
+    every detail reduced to essentials and every essential placed with
+    care. Her expression is warmth and gratitude and a deep, unshakeable
+    serenity. She has been kidnapped. She has been rescued. The cycle
+    continues. She faces it with grace each time.
+  raceid: 1
+  level: 5

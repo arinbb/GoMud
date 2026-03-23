@@ -1,0 +1,36 @@
+-
+  Supported:
+    "tony soprano": ["dr. jennifer melfi"]
+  Conversation:
+    - ["#1 say I don't want to talk about my mother today."]
+    - ["#2 emote writes something in her notepad without reacting"]
+    - ["#2 say What would you like to talk about?"]
+    - ["#1 emote shifts in the chair. The chair is not comfortable enough for what he is carrying."]
+    - ["#1 say I've been having these... I don't know what to call them. Moments."]
+    - ["#2 say Describe a moment."]
+    - ["#1 say Like everything is -- like I'm watching from outside. Like it's not real."]
+    - ["#2 emote nods very slightly, making no sound"]
+-
+  Supported:
+    "tony soprano": ["dr. jennifer melfi"]
+  Conversation:
+    - ["#1 say The ducks came back. I thought I saw them."]
+    - ["#2 emote looks up from her notepad"]
+    - ["#2 say What did you feel when you saw them?"]
+    - ["#1 emote is quiet for a moment that has weight to it"]
+    - ["#1 say I don't know. Like something was okay again."]
+    - ["#2 say And what does that suggest to you about what you're missing?"]
+    - ["#1 say I'm not missing anything. I have everything."]
+    - ["#2 emote writes that down without comment"]
+-
+  Supported:
+    "tony soprano": ["dr. jennifer melfi"]
+  Conversation:
+    - ["#1 say You ever think about waste? Like wasted life?"]
+    - ["#2 say Can you say more about that?"]
+    - ["#1 say It's like I'm -- I built something. I built it with my hands, practically."]
+    - ["#1 say And none of it is -- it's not what I thought."]
+    - ["#2 emote waits, pen still"]
+    - ["#1 say I came in at the wrong time. In the history of this thing of ours."]
+    - ["#2 say You feel like you missed something."]
+    - ["#1 emote looks at the window. Says nothing. That is the answer."]

@@ -1,0 +1,22 @@
+mobid: 321
+zone: stardew_valley
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote rearranges a display of seed packets into a more appealing configuration."
+  - "say Have you seen what JojaMart is charging for fertilizer? It is an insult."
+  - "emote polishes the glass display case with a cloth until it gleams."
+  - "say My grandfather built this shop. My father ran it. I will not let a corporation take what we built."
+  - "emote straightens the anti-Joja chalkboard sign and steps back to admire it."
+  - ""
+activitylevel: 25
+character:
+  name: Pierre
+  description: >-
+    A cheerful, slightly anxious shopkeeper in a canvas apron. Pierre has
+    a round friendly face that becomes intense whenever he talks about
+    JojaMart, which is often. He genuinely loves his work, his family,
+    and this town, in roughly that order, and his passion for all three
+    is impossible to miss.
+  raceid: 1
+  level: 6

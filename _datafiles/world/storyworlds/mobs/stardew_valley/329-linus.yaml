@@ -1,0 +1,22 @@
+mobid: 329
+zone: stardew_valley
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote tends a small careful fire with the attention of someone for whom warmth is not guaranteed."
+  - "say The valley is different up here. Quieter. More honest about what it is."
+  - "emote picks a handful of mountain berries and examines each one before eating it."
+  - "say I have everything I need. Perhaps not everything I want. But need -- yes."
+  - "emote watches the sky slowly shift, reading it the way others read a newspaper."
+  - ""
+activitylevel: 15
+character:
+  name: Linus
+  description: >-
+    A weathered man of indeterminate age who lives in a tent on the mountain
+    by choice. Linus is not lost. He is specifically here. He forages, he
+    watches the sky, he thinks long thoughts. The townspeople bring him
+    food sometimes and he accepts it graciously. He has refused every offer
+    of a house. He says a tent is closer to what is real.
+  raceid: 1
+  level: 8

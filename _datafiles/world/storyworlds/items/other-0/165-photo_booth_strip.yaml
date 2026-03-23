@@ -1,0 +1,17 @@
+itemid: 165
+name: photo booth strip
+namesimple: strip
+displayname: a <ansi fg="itemname">photo booth strip</ansi> from Buffalo
+description: >-
+  A strip of four small photographs from a coin-operated photo booth. The
+  photos are slightly overexposed, the colors washed-out in that particular
+  way that makes everything look like a memory even while it is happening.
+  In the first frame, a startled face. In the second, something lost and
+  searching. In the third, eyes that might be about to cry. In the fourth,
+  the faintest suggestion of a smile — not a full smile, not yet, but the
+  beginning of one. The paper is still slightly warm from the chemicals.
+  It smells of developer fluid and something like hope.
+type: object
+subtype: usable
+uses: 0
+value: 25

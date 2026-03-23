@@ -1,0 +1,25 @@
+mobid: 446
+zone: its_always_sunny
+hostile: false
+maxwander: 0
+activitylevel: 15
+angrycommands: []
+idlecommands:
+  - emote rubs his temples slowly, eyes closed, breathing through his nose.
+  - say 'I have a law degree. I passed the bar. I did everything right. And yet here I am.'
+  - emote shuffles papers on his desk and looks at them as if they might save him.
+  - say 'The Gang is here again. Of course the Gang is here again. This is my life now.'
+character:
+  name: The Lawyer
+  description: >-
+    A well-dressed man who looks like he should be somewhere considerably
+    better than this. He carries himself with the residual dignity of someone
+    who went to law school and passed the bar and imagined a career involving
+    justice or at least competent clients. That career did not materialize.
+    Instead he has the Gang. The Gang files motions that are not legal motions.
+    The Gang represents themselves in court. The Gang has done things in his
+    office he still cannot explain to the bar association. He rubs his
+    temples constantly now, an occupational habit. His hairline is receding
+    in a way that accelerated sharply when the Gang first retained him.
+  raceid: 1
+  level: 6

@@ -1,0 +1,68 @@
+roomid: 1747
+zone: On the Road
+title: The Road West (Nevada Desert)
+description: >-
+  This is the West that the East always dreamed about and the West
+  delivered. The <ansi fg="itemname">desert</ansi> runs from horizon to
+  horizon — red rock, sage, the enormous silence of a landscape that
+  existed before humans and will exist after. The highway is a straight
+  line scratched into the earth by people who could not wait to get
+  somewhere else. The car they are driving is a <ansi fg="itemname">Hudson</ansi>
+  and <ansi fg="mobname">Dean</ansi> is driving it at speeds that are
+  not legal in any state, his foot on the floor, one hand on the wheel,
+  one hand conducting the radio, leaning into the windshield as if he
+  could lean his way faster. The speedometer reads ninety. Ninety-five.
+  He is shouting something about <ansi fg="itemname">time</ansi> —
+  about how time is something you move through and if you move through
+  it fast enough something on the other side becomes visible. The desert
+  does not comment. To the <ansi fg="exit">east</ansi> is Denver.
+  To the <ansi fg="exit">west</ansi> is the coast.
+mapsymbol: W
+maplegend: Desert Highway
+biome: road
+exits:
+  east:
+    roomid: 1744
+  west:
+    roomid: 1748
+nouns:
+  desert: >-
+    The Nevada desert in the 1940s, before the highways multiplied and
+    the billboards arrived. Red rock and sage and dust devils and the
+    kind of silence that makes you feel the planet breathing. The
+    ancient lakes that dried here ten thousand years ago left the salt
+    flats white and flat as a tabletop. Everything is very old here.
+    The road through it is very new. This is the essential American
+    contradiction, visible from a car window at ninety miles per hour.
+  hudson: >-
+    The Hudson Hornet, the car of this trip. Long and low with a
+    wraparound windshield and an engine that Dean treats as a
+    philosophical instrument. He has driven it two thousand miles
+    in two days, stopping only for gas, coffee, and the bathroom.
+    The car smells of cigarettes and sweat and the particular joy of
+    going fast in a direction that matters.
+  time: >-
+    What Dean is shouting about. Time. How it is not what you think
+    it is. How if you go fast enough you can catch up to the moment
+    before the moment, the now that underlies the now. The desert
+    seems to agree — out here, time has been stretching since before
+    humans named it, and it has no opinion about whether you are
+    in a hurry.
+  mountains: >-
+    The Sierra Nevada visible ahead, blue in the distance, the wall
+    between the desert and the sea. On the other side is San Francisco,
+    the fog, the bay, the end of the continent. Dean presses the
+    accelerator harder as if speed might move the mountains closer.
+    It does not. It makes the desert feel larger.
+spawninfo:
+- mobid: 300
+  message: Dean Moriarty materializes behind the wheel of the Hudson, already at speed, already talking.
+  container: ''
+idlemessages:
+- 'The Hudson hits a hundred miles an hour and Dean yells YES into the windshield.'
+- The desert blurs on both sides — red and sage and the occasional abandoned gas station.
+- A tumbleweed crosses the road ahead. Dean does not brake. He swerves. Same thing.
+- The sun is going down over the mountains to the west and it is the most beautiful thing you have ever seen from a car.
+- Dean turns the radio up. A trumpet comes out of the static, clean and gold.
+- The road ahead is perfectly straight for twenty miles. Dean floors it. The engine sings.
+- 'Jackrabbits flee from the headlights. The stars come out. America at night, at speed, in the desert.'

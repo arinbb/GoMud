@@ -1,0 +1,65 @@
+roomid: 1895
+zone: The Monkey Wrench Gang
+title: The Final Standoff
+description: >-
+  A <ansi fg="red">box canyon</ansi> ends here in a wall of sheer sandstone, its
+  floor littered with fallen rock and the sparse desert scrub that grows where nothing
+  should be able to grow. The canyon behind you narrows to a slot. There is no other
+  way out. <ansi fg="mobname">Bishop Love</ansi> stands at the canyon entrance with his
+  posse, his <ansi fg="itemname">binoculars</ansi> raised, his expression that of a man
+  who has been certain of righteousness for so long that he has forgotten what doubt
+  felt like. He has a helicopter. He has a radio. He has the law. He has all the
+  advantages of the society that built the dam and the mine and the billboard, and he
+  intends to use them. <ansi fg="red">Rock walls</ansi> rise three hundred feet on three
+  sides, the red stone catching the last light. Somewhere in the canyon shadow, something
+  moves. The standoff has been building for two hundred pages. What happens next depends,
+  as everything in the canyon country depends, on the patience of the landscape and the
+  stubbornness of the people within it. To the <ansi fg="exit">north</ansi>, the canyon
+  leads back toward the hidden camp.
+mapsymbol: F
+maplegend: Final Standoff
+biome: desert
+exits:
+  north:
+    roomid: 1889
+nouns:
+  bishop: >-
+    Bishop J. Dudley Love, Bishop of the Church of Jesus Christ of Latter-day Saints
+    for the Blanding district, leader of the Garfield County Search and Rescue,
+    which has become more or less indistinguishable from Search and Destroy.
+    He has been chasing the gang for three hundred miles. He is tired and certain.
+    Certainty in the canyon country is a form of blindness, but he does not know that.
+  helicopter: >-
+    The helicopter circles overhead, its rotor noise filling the canyon with something
+    that does not belong here. It has a searchlight. It will be useless in another
+    twenty minutes when the sun drops behind the rim and the canyon goes dark.
+    The canyon has been dark at night for a very long time. The canyon knows how
+    to be dark.
+  binoculars: >-
+    Bishop Love's binoculars are military surplus, heavy, capable of resolving
+    detail at a thousand yards. He has been using them for three days. He has
+    seen a lot of desert. He has not yet seen what he is looking for.
+  posse: >-
+    The posse is a collection of county sheriffs, federal park rangers, a BLM
+    investigator, and several of Bishop Love's ward members who came along out of
+    solidarity and a sense of adventure that is already wearing thin. They are
+    hot. Their vehicles are not suited for the terrain. They are learning something
+    about the canyon country that the gang already knew.
+  shadow: >-
+    The canyon shadow is moving toward you as the sun drops. In twenty minutes,
+    this entire end of the canyon will be in full dark. The desert night comes
+    completely and all at once, no lingering twilight. The stars will be out in
+    fifteen minutes. The posse's eyes will not adjust for thirty. This is not
+    an accident.
+spawninfo:
+- mobid: 364
+  message: Bishop Love raises his binoculars and sweeps the canyon end slowly.
+  respawnrate: 5 real minutes
+idlemessages:
+- Bishop Love moves his binoculars methodically across the canyon walls, patient as a man who has God on his side.
+- 'The helicopter overhead banks and circles back: the searchlight sweeping across red rock, finding nothing useful.'
+- 'A canyon wren calls from somewhere in the cliff face above: a mockery of a sound, unhurried, beautiful.'
+- The shadow of the canyon wall is moving toward you. In ten minutes you will be in full dark.
+- One of the posse members calls something to Bishop Love. He does not lower his binoculars to respond.
+- The red walls glow the color of old blood in the last light. The canyon has seen everything. It remembers nothing.
+- Something moves in the slot behind you. A lizard. A shadow. The possibility of escape in a country that invented escape.

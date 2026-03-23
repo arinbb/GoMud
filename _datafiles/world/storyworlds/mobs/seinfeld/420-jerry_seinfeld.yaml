@@ -1,0 +1,27 @@
+mobid: 420
+zone: seinfeld
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote works on a bit, mouthing words quietly, testing syllables."
+  - "emote adjusts the couch cushions with the precision of someone who has strong opinions about cushion placement."
+  - "emote checks the answering machine, sees the blinking light, decides to deal with it later."
+  - "emote observes something in the kitchen with the focused attention of a man who has found his material for today."
+  - "say What is the deal with that?"
+  - ''
+  - "emote stands near the window, watching the street below with the expression of someone accumulating observations."
+  - "say You know what I just realized? Nobody knows why we do half the things we do."
+activitylevel: 20
+character:
+  name: Jerry Seinfeld
+  description: >-
+    A trim man in his late thirties, neat jeans, white sneakers, a plain shirt.
+    Clean-shaven, hair controlled, the overall presentation of a man who has
+    simplified everything nonessential so that all available attention can go
+    toward noticing things. His expression cycles through amusement, mild
+    bafflement, and the particular satisfaction of a man who has just identified
+    something absurd. He will not be serious if he can avoid it. He will turn
+    anything into an observation. He has a Superman magnet on his refrigerator
+    and no explanation of why is necessary.
+  raceid: 1
+  level: 8

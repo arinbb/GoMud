@@ -1,0 +1,62 @@
+roomid: 1746
+zone: On the Road
+title: A Jazz Club, Denver
+description: >-
+  A basement jazz club on a Denver side street, the air so thick with
+  cigarette smoke and sweat and music that you can barely see the stage
+  from the back of the room. And on the stage, the <ansi fg="mobname">tenor man</ansi>
+  — a big, Black man in a rumpled suit who has been playing for three
+  hours and shows no sign of stopping. He is not playing music anymore.
+  He is playing past music, past himself, past the room, going somewhere
+  no one in the audience can follow but everyone can feel. The <ansi fg="itemname">saxophone</ansi>
+  makes a sound like a human voice asking a question that has no answer
+  and not minding. The crowd stands still, which is the greatest tribute
+  anyone can pay. Dean Moriarty is at the back of the room, sweating,
+  shouting "Go! Go! Go!" The <ansi fg="exit">street</ansi> exit leads
+  back to Larimer Street.
+mapsymbol: J
+maplegend: Denver Jazz Club
+biome: house
+exits:
+  street:
+    roomid: 1744
+    mapdirection: north
+nouns:
+  saxophone: >-
+    The tenor saxophone, this particular one played by a man who has had
+    it for twenty years and knows every hesitation in its action, every
+    key that sticks slightly in cold weather. It is made of brass and it
+    makes a sound that is not brass at all — it is the sound of the human
+    lung amplified, the sound of breathing pushed past breathing into
+    something that does not have a name yet.
+  stage: >-
+    The stage is a low riser with a spotlight that makes the players
+    look like saints in old paintings. The drummer taps the brushes
+    across the snare with the patience of someone who knows exactly
+    where he is going and is in no hurry to arrive. The pianist's left
+    hand walks the bass line. The tenor man stands slightly apart, eyes
+    closed, going.
+  crowd: >-
+    The crowd at the back — men in work shirts and women in good dresses
+    and a few white people from the university who are the most earnest
+    people in the room and the least essential. They are all listening.
+    Some of them are crying. None of them could tell you why. The music
+    knows why. The music is always way ahead of the explaining.
+  smoke: >-
+    The cigarette smoke in this room has been accumulating since the
+    club opened in 1944 and has achieved an almost architectural quality,
+    layering the ceiling in blue strata. Breathing it is breathing history.
+    Every breath you take here has been breathed before by someone who
+    stood in this same spot listening to this same eternal music.
+spawninfo:
+- mobid: 303
+  message: The tenor man steps to the microphone, raises the saxophone, and begins.
+  container: ''
+idlemessages:
+- The saxophone climbs a run of notes that has no ceiling, going up and up past where notes are supposed to go.
+- Dean shouts "Yes! Go! That is IT!" from the back of the room and nobody minds.
+- The drummer brushes the snare and the room inhales.
+- A woman in a red dress closes her eyes and sways with her hands loose at her sides.
+- The tenor man steps back from the microphone, wipes his face with his sleeve, steps forward again, goes.
+- 'Something is happening in this room. Not music exactly. Something that uses music the way fire uses wood.'
+- The piano fills the silence between phrases like water filling a shape it was made for.

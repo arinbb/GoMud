@@ -1,0 +1,61 @@
+roomid: 1960
+zone: Nineteen Eighty Four
+title: Victory Mansions
+description: >-
+  A seventh-floor flat in a decaying concrete tower. The walls are grimy,
+  the paint peeling in long strips that reveal damp plaster beneath. A
+  <ansi fg="itemname">telescreen</ansi> is bolted to the wall, an oblong
+  metal plaque that cannot be switched off, only dimmed. It flickers between
+  propaganda broadcasts and grey static and always, always watches. The flat
+  smells of <ansi fg="itemname">Victory Gin</ansi> and boiled cabbage. A
+  small <ansi fg="itemname">diary</ansi> with a creamy cover lies on the
+  table, its marbled binding catching the dim light. To the
+  <ansi fg="exit">east</ansi> is the hallway. There is an
+  <ansi fg="exit">alcove</ansi> below the window where the telescreen
+  cannot see.
+mapsymbol: W
+maplegend: Victory Mansions
+biome: house
+exits:
+  east:
+    roomid: 1961
+  alcove:
+    roomid: 1962
+    mapdirection: down
+nouns:
+  telescreen: >-
+    An oblong metal plaque, perhaps thirty centimeters by forty, set into the
+    wall. It shows whatever the Ministry wishes to show. A man or woman
+    speaking at a podium, rows of marching soldiers, statistics about
+    production. It cannot be switched off. It watches you. It has always
+    been watching you.
+  diary: >-
+    A thick quarto-size book with a smooth creamy paper, slightly yellowed
+    with age. The cover has a marbled pattern. It was clearly made some time
+    ago. Writing in it is a thoughtcrime. Winston has been writing in it
+    anyway. The first line reads: April 4th, 1984.
+  gin: >-
+    Victory Gin. A greasy, oily spirit with a sharp faint smell like Chinese
+    rice-spirit. It tastes of nothing good and it numbs nothing it promises
+    to numb. But it is what there is. Winston drinks it in teacups.
+  window: >-
+    The window shows a grey London sky the color of old dishwater. Bomb
+    sites, rubble, posters. In the distance, one of the four enormous
+    pyramids of the Party Ministries glitters white in the cold afternoon
+    light.
+  alcove: >-
+    A shallow recess beside the window, just deep enough that the telescreen
+    cannot quite reach it with its scrutiny. This is where Winston writes.
+    It is possibly the only private space left in Oceania.
+spawninfo:
+- mobid: 400
+  message: 'Winston Smith sits hunched at the table, staring at the telescreen with an expression carefully blank of thought.'
+  respawnrate: 5 real minutes
+idlemessages:
+- 'The telescreen murmurs about Oceania''s production figures for the chocolate ration. It has been increased to twenty grams per week, down from thirty. The announcer sounds triumphant.'
+- 'A helicopter skims close to the window and peers in. For a moment it hovers, then moves on. The face of Big Brother watches from the poster on the landing.'
+- 'The flat smells of boiled cabbage and something else, something chemical and stale, a smell with no name.'
+- 'Winston presses his hand briefly to the varicose ulcer above his ankle. His face does not change.'
+- 'The telescreen suddenly blares: "ATTENTION. ATTENTION. Two Minutes Hate begins in thirty seconds." Then it stops. Then it starts again.'
+- 'Grey light comes through the window. It is always grey. The records at the Ministry say otherwise, but it is always grey.'
+- 'In the corner, a half-empty bottle of Victory Gin catches the light. Winston looks at it the way a man looks at something he does not respect and cannot do without.'

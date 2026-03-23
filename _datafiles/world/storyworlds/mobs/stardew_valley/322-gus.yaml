@@ -1,0 +1,21 @@
+mobid: 322
+zone: stardew_valley
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote polishes a glass to a high shine and holds it up to the light approvingly."
+  - "say Everyone who comes in here has a story. I am just the one who listens."
+  - "emote refills a glass without being asked, reading the room with practiced ease."
+  - "say The Pale Ale is very good this season. Pierre grows the hops for me. We take care of each other."
+  - "emote hums something warm and vaguely country while wiping down the bar."
+  - ""
+activitylevel: 25
+character:
+  name: Gus
+  description: >-
+    The bartender at the Stardrop Saloon: broad-shouldered, warm-faced,
+    always in an apron. Gus has the particular gift of making everyone
+    feel like the most interesting person in the room without trying.
+    He serves food with love. He keeps secrets well. He worries about Shane.
+  raceid: 1
+  level: 8

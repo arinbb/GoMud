@@ -1,0 +1,23 @@
+questid: 300
+name: The Gang Makes Everything Worse
+description: >-
+  You have stumbled into South Philly's worst bar, owned by five of the most
+  confidently wrong people who have ever lived. Survive the basement, visit
+  their apartments, witness the birth of a scheme, encounter Cricket in the
+  alley, and help the Gang do the thing they do best — make Dee cry.
+reward:
+  experience: 4500
+  item_id: 270
+  playermessage: >-
+    You have survived Paddys Pub, the basement rats, the implication, the
+    whiteboard schemes, Cricket's degradation stories, and the Gang's
+    relentless assault on Dee's self-worth. As a souvenir of your time in
+    South Philadelphia you receive a rat stick. It smells exactly as bad as
+    you expect. You are not sure if this is a reward or a warning.
+steps:
+- description: Enter Paddys Pub and survey the damage.
+- description: Survive the Paddys Pub basement and its rat population.
+- description: Visit Charlie and Franks apartment above the bar.
+- description: Find the back office and witness the scheme whiteboard.
+- description: Encounter Cricket in the alley behind the bar.
+- description: Help the Gang break Dee.

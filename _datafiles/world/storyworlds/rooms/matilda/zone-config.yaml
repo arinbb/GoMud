@@ -1,0 +1,13 @@
+name: Matilda
+roomid: 1400
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: house
+idlemessages:
+- 'Somewhere nearby, a small voice is reading aloud in a whisper — too quiet to make out the words.'
+- The smell of cheap perfume and fish fingers drifts through the air.
+- 'You hear the distant blare of a television — someone has the volume turned up far too loud.'
+- A small girl with dark eyes walks past carrying a stack of books taller than her head.
+- The sound of a car engine revving aggressively echoes from somewhere outside.
+- 'You feel watched. Not by anything malicious — by something curious, patient, and extraordinarily clever.'

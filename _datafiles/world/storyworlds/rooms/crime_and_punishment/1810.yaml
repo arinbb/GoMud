@@ -1,0 +1,54 @@
+roomid: 1810
+zone: Crime and Punishment
+title: Porfirys Office
+description: >-
+  The investigating magistrate's office, and immediately you understand why
+  it is dangerous. It is comfortable. A <ansi fg="itemname">divan</ansi>
+  against one wall, covered in soft cloth. <ansi fg="itemname">Books</ansi>
+  on a shelf — not law books, or not only law books. A good lamp. The
+  <ansi fg="itemname">desk</ansi> is covered in papers arranged by a mind
+  that is working something out. Porfiry Petrovich sits behind it, or walks
+  in front of it, or perches on the edge of the divan, and he is always
+  smiling, always asking questions that sound like conversation. You always
+  leave this room feeling that something has been extracted from you without
+  your noticing. He is not tall. He is not imposing. His eyes are
+  extraordinary. The police station is <ansi fg="exit">south</ansi>.
+mapsymbol: O
+maplegend: Porfirys Office
+biome: house
+exits:
+  south:
+    roomid: 1809
+nouns:
+  divan: >-
+    The divan covered in soft cloth, an invitation to relax, to be
+    comfortable, to stop being careful. It is a trap. Everything in this
+    office is a trap. Porfiry has arranged the room the way he arranges
+    conversations — to make you lower your guard.
+  books: >-
+    The books on the shelf include philosophy — Schiller, he quotes Schiller
+    — and psychology, and jurisprudence, and a novel that has no obvious
+    reason to be here. He has read all of them. He is one of those men who
+    reads everything and forgets nothing and sees the connections between
+    things that are supposed to be unconnected.
+  desk: >-
+    Papers on the desk, arranged with seeming disorder that on examination
+    has an order. He knows where everything is. He always knows where
+    everything is. He is building something on this desk, one paper at a
+    time, and it has your name on it.
+  eyes: >-
+    Porfiry's eyes are small, set in a round, pleasant face, and they are
+    the most intelligent thing in the room. He keeps them half-closed, lazy,
+    amused. When they open fully — for a half-second, then closed again —
+    you know what it feels like to be entirely seen.
+spawninfo:
+- mobid: 311
+  message: 'Porfiry Petrovich looks up from his desk with a warm smile, as if your arrival is a pleasant surprise he has been expecting.'
+  respawnrate: 10 real minutes
+idlemessages:
+- 'Porfiry chuckles to himself at something in his papers, a small satisfied sound, and goes back to reading.'
+- The lamp on the desk burns steadily, casting a warm circle of light. Outside the circle is shadow. He prefers it this way.
+- A door in the back of the office is closed. What is behind it is never mentioned but always suggested.
+- 'He gets up, paces to the window, looks down at the street below, turns around with a pleasant expression. ''Ah. Still here.'' he says to no one.'
+- The books on the shelf seem to rearrange themselves slightly between visits. Probably not.
+- 'He writes something in the margin of a paper, taps it once with his pen, and sets it aside with the satisfaction of a man completing a puzzle.'

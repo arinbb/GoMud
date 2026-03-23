@@ -1,0 +1,52 @@
+roomid: 2104
+zone: Up in Smoke
+title: 'Pedros Cousins House'
+description: >-
+  A small stucco house in East LA that has achieved a state of cheerful
+  <ansi fg="itemname">chaos</ansi>. <ansi fg="itemname">Kids</ansi> run through
+  at unpredictable intervals, pursued by other kids or a dog or nothing at all.
+  The kitchen produces a continuous stream of <ansi fg="itemname">food</ansi>:
+  tamales, rice, beans, something in a pot that has been simmering since
+  Tuesday. Aunts and cousins occupy every horizontal surface. The
+  <ansi fg="itemname">television</ansi> is on but nobody is watching it. The
+  noise level is generous and warm, the way houses sound when they are full of
+  people who like each other. The <ansi fg="exit">west</ansi> door leads back
+  to the street corner.
+mapsymbol: C
+maplegend: Pedros Cousins House
+biome: house
+exits:
+  west:
+    roomid: 2101
+    exitmessage: You squeeze past three kids and a dog and make it back to the street corner.
+nouns:
+  chaos: >-
+    It is not disorder -- it is a highly organized system of overlapping activity
+    that appears chaotic from the outside. Everyone in this house knows exactly
+    where everything is and where everyone belongs. Including you, apparently.
+    You belong here. Sit down. Eat something.
+  kids: >-
+    Four, maybe five kids, ranging from toddler to almost-teenager, moving
+    at the specific velocity of children who have somewhere to be and no idea
+    where that is. They ignore you. Then one of them hands you a tortilla
+    chip and runs away. You have been accepted.
+  food: >-
+    On the kitchen table and counter and the top of the refrigerator: tamales
+    in corn husks, a pot of rice, refried beans gone slightly crusty at the
+    edges of the serving dish, salsa in a molcajete. All of it is better than
+    anything you would order anywhere.
+  television: >-
+    A console TV playing a game show at high volume. The volume is not the point.
+    The sound is the point. This house needs noise the way other houses need light.
+spawninfo:
+- mobid: 464
+  message: '<ansi fg="3">Pedros cousin emerges from the kitchen carrying a plate of tamales, yelling something cheerful in Spanish over her shoulder.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- A kid races through the room, exits through the back door. Nobody remarks on this.
+- The pot on the stove gurgles. Someone in the kitchen lifts the lid, sniffs, adds salt.
+- Three cousins debate something at high volume in the kitchen. Laughter settles it.
+- A tamale appears in your hand. You do not remember accepting it. You eat it anyway.
+- The dog trots through with great purpose and no discernible destination.
+- The game show on TV announces a winner. Nobody watching it reacts.
+- The smell of cumin and chile and warm tortillas fills every corner of the room.

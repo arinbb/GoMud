@@ -1,0 +1,45 @@
+roomid: 1829
+zone: Stardew Valley
+title: The Mines Entrance
+description: >-
+  A dark opening in the mountain face, shored up with timber beams and marked
+  with a hand-painted sign: PELICAN TOWN MINES — ENTER AT OWN RISK. The <ansi
+  fg="itemname">Adventure Guild</ansi> is a low building just to the side, its
+  door propped open. <ansi fg="itemname">Torches</ansi> at the entrance light
+  a narrow view into the darkness beyond. A <ansi fg="itemname">ladder</ansi>
+  descends into the gloom. The air from below is cool and mineral, carrying
+  the smell of stone and something faintly metallic. The town is back to the
+  <ansi fg="exit">west</ansi>. The ladder leads <ansi fg="exit">down</ansi>.
+mapsymbol: m
+maplegend: Mines Entrance
+biome: cave
+exits:
+  town:
+    roomid: 1821
+    mapdirection: west
+  down:
+    roomid: 1830
+nouns:
+  guild: >-
+    The Adventure Guild is a low-ceilinged room decorated with trophies from
+    the mines — monster horns, slime samples in jars, a massive sword propped
+    in the corner. The honor board tracks who has slain what. Marlon and Gil
+    run it with a low-key pride. "The mines give," Gil likes to say, "if you
+    take carefully."
+  torches: >-
+    Iron torch holders bolted to the timber supports at the entrance. The
+    flames lean inward, suggesting air moving up from below. The light they
+    cast is enough to see the first ladder, and no further. After that,
+    you bring your own light.
+  ladder: >-
+    A sturdy wooden ladder descending into the mine's first shaft. The
+    rungs are worn smooth from countless miners' boots. The darkness below
+    is absolute and specific — the kind that makes sound different, that
+    makes distance uncertain. You can hear water dripping somewhere far down.
+idlemessages:
+- A distant rumble from deep in the mines shakes dust from the ceiling. Not alarming. Just the mountain settling.
+- 'The Adventure Guild board has a new entry: a slime of unusual size, vanquished by an unnamed newcomer.'
+- Wind moves through the mine entrance with a low moan, equal parts warning and invitation.
+- 'The cold air rising from below carries mineral traces: copper, iron, something rarer.'
+- A miner comes out carrying a pickaxe and a canvas bag clinking with ore, looking satisfied.
+- The torches at the mine entrance pop and flare as the subterranean air shifts.

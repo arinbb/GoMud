@@ -1,0 +1,15 @@
+name: its_always_sunny
+roomid: 2040
+autoscale:
+  minimum: 1
+  maximum: 8
+defaultbiome: city
+mutators:
+- mutatorid: paddy-schemes
+idlemessages:
+- 'Somewhere nearby, a scheme is being hatched that will make everything worse for everyone involved.'
+- The air smells of cheap beer, cigarette smoke, and bad decisions.
+- 'A distant jukebox plays something loud and wrong, then stops abruptly, then plays again.'
+- You get the sense that the people around you are deeply, catastrophically stupid — but confident.
+- 'Something crashes in another room. No one investigates. No one is surprised.'
+- The sticky floor of Paddys Pub is a testament to decades of spilled ambition and flat beer.

@@ -1,0 +1,60 @@
+roomid: 1831
+zone: Stardew Valley
+title: The Community Center
+description: >-
+  The old Community Center is abandoned and dusty, its wooden floors warped,
+  its windows fogged. JojaMart drove away the foot traffic that once kept it
+  alive. But something remains. <ansi fg="10">Golden sparkles</ansi> drift in
+  corners and cling to the <ansi fg="itemname">vaulted ceiling</ansi> like
+  trapped light. The <ansi fg="itemname">bulletin boards</ansi> on the walls
+  still hold the five great Bundle lists — Crafts Room, Pantry, Fish Tank,
+  Boiler Room, Vault — each one a promise of what the valley was and could be
+  again. In a shaft of dusty light, something very small and very
+  <ansi fg="10">green</ansi> watches you from behind a <ansi
+  fg="itemname">pillar</ansi>. The town is back to the <ansi
+  fg="exit">west</ansi>.
+mapsymbol: CC
+maplegend: Community Center
+biome: house
+exits:
+  town:
+    roomid: 1821
+    mapdirection: west
+nouns:
+  ceiling: >-
+    The vaulted ceiling of the Community Center reaches up into the shadows.
+    Golden light drifts across it in slow currents, moving without source.
+    The Wizard says this is the residue of ancient forest magic, that Junimos
+    blessed this building generations ago and their blessing has not entirely
+    left. The building remembers what it was built for.
+  boards: >-
+    Five bulletin boards, one for each room of the Community Center. Each
+    board lists Bundle requirements — offerings to prove the valley still
+    values its own land, its seasons, its crafts, its community. The boards
+    are covered in faded check marks from the old days, when the Community
+    Center was full. Some of the checks are quite recent. Someone has been
+    working on this.
+  pillar: >-
+    A rough-hewn wooden pillar near the north wall. The golden sparkling
+    is most concentrated here, as if something spends time near this pillar,
+    or as if something visits. You see, from the corner of your eye, a
+    small rounded shape the color of a green apple. When you look directly
+    at the pillar, there is nothing there.
+spawninfo:
+- mobid: 327
+  message: A tiny Junimo materializes briefly, glowing softly, then darts behind a pillar.
+  idlecommands:
+  - emote dances a small, precise dance in a shaft of dusty light.
+  - emote hides behind the pillar with only two large eyes visible.
+  - emote leaves a small arrangement of colored pebbles on the floor.
+  - emote pulses from green to blue to gold, cycling through colors slowly.
+  - emote seems to watch you, then turns away with something like shyness.
+  - ''
+  respawnrate: 5 real minutes
+idlemessages:
+- 'Golden light drifts across the floor in slow, purposeful currents, as if following a plan.'
+- The building creaks in the wind but does not feel abandoned. It feels like something is waiting.
+- 'The bundle boards flicker: a golden leaf floats from one and dissolves before touching the ground.'
+- A very small sound, like a chirp crossed with a bell, comes from behind the nearest pillar.
+- The dust in this room is disturbed in strange patterns — small circular footprints, barely visible.
+- Outside the window, a Junimo-shaped shadow passes. When you look, there is only the afternoon light.

@@ -1,0 +1,53 @@
+roomid: 1873
+zone: Super Mario Bros
+title: World 8-4 Final Castle Maze
+description: >-
+  The looping castle. World 8-4 is infamous because it looks like progress
+  and is not -- the stone corridors branch and twist, and the wrong choices
+  loop you back to the beginning, the same entrance, the same torchlight,
+  the same lava pits you thought you left behind. The <ansi fg="red">lava</ansi>
+  glows below every passage. Fire bars rotate on their posts. The castle
+  is larger than it looks. You have been here before, possibly. The
+  <ansi fg="itemname">east passage</ansi> looks right. It is wrong. The
+  <ansi fg="itemname">north passage</ansi> does not look obvious. It is
+  right. The game tests whether you explored or assumed. West leads
+  <ansi fg="exit">back</ansi>; north leads <ansi fg="exit">forward</ansi>;
+  the east passage appears to continue but -- loops.
+mapsymbol: M
+maplegend: Final Castle Maze
+biome: dungeon
+exits:
+  west:
+    roomid: 1872
+  north:
+    roomid: 1874
+nouns:
+  east_passage: >-
+    A corridor leading east, well-lit, seemingly the obvious path forward.
+    Stone walls, torch brackets, lava visible below through a grate. It
+    looks exactly like the passages you have been navigating successfully.
+    It is the wrong path. It loops back. The castle is watching whether you
+    have learned to question the obvious passage, to look for the less
+    obvious one, to trust the pattern rather than the appearance.
+  north_passage: >-
+    A narrower corridor leading north, less lit, less obvious, the kind of
+    passage that reads as a dead end or a side route. It is the way forward.
+    The game hides the correct path in the unassuming one. This is both
+    the lesson of the maze and a small lesson about everything: the obvious
+    way is often the wrong one, and the true path requires you to look
+    where looking is less comfortable.
+  lava: >-
+    The lava of the final castle is the same lava as all the other castles --
+    orange-red, slow-churning, fatal on contact. But here it feels different.
+    This is the last lava. Every lava pit in the game was practice for this
+    one. You know exactly what it does. You have known for seven worlds.
+    That does not make it less dangerous.
+spawninfo: []
+idlemessages:
+- The corridor branches. You have been here before. Or somewhere very like here.
+- 'Fire bars rotate in the shadows ahead: their arcs overlapping, the timing demanding.'
+- 'The lava below glows orange through every grating in the floor: constant, relentless, patient.'
+- 'The east passage looks right. You have thought that before. You were wrong before.'
+- 'Somewhere in the castle walls, a mechanism: the axe, waiting at the end of the real path.'
+- The torchlight is the same orange as the lava. Everything here is the color of fire.
+- 'This is the final castle. The maze says: prove you learned something. Then it shows you the way.'

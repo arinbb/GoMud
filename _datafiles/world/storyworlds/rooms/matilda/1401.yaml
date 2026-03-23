@@ -1,0 +1,52 @@
+roomid: 1401
+zone: Matilda
+title: Wormwood Kitchen
+description: >-
+  A small, grease-spattered kitchen with <ansi fg="3">yellow Formica countertops</ansi>
+  and a linoleum floor that was once white. A <ansi fg="itemname">microwave oven</ansi>
+  sits on the counter like a shrine — it is the only cooking device in active use.
+  Stacks of frozen dinner boxes overflow from the <ansi fg="itemname">freezer</ansi>.
+  A cluttered <ansi fg="itemname">table</ansi> is shoved against one wall, covered
+  in bingo cards, lottery tickets, and a sticky bottle of platinum hair dye.
+  The living room is back to the <ansi fg="exit">west</ansi>.
+mapsymbol: K
+maplegend: Kitchen
+biome: house
+mutators:
+- mutatorid: wormwood-garish
+exits:
+  west:
+    roomid: 1400
+nouns:
+  microwave: >-
+    The microwave is the most-used appliance in the Wormwood household. Its door
+    is spattered with exploded soup and hardened cheese. It hums with the quiet
+    dignity of a machine that knows it is the only thing standing between this
+    family and starvation.
+  freezer: >-
+    Packed to bursting with frozen dinners, fish fingers, and ice cream. There is
+    not a single fresh vegetable anywhere in this kitchen. A thin layer of frost
+    coats everything inside.
+  table: >-
+    The kitchen table is buried under bingo cards with numbers circled in pink
+    marker, crumpled lottery tickets, and a half-empty bottle of platinum hair dye.
+    A single chair is pulled up to it. This is Mrs. Wormwood's domain.
+  dye: >-
+    A bottle of platinum blonde hair dye, the cheap kind that smells like ammonia
+    and broken dreams. It has left permanent stains on the Formica.
+idlemessages:
+- The microwave dings, though nobody put anything in it. Perhaps it is lonely.
+- 'The freezer hums and shudders, struggling under the weight of a hundred frozen dinners.'
+- A bingo card flutters off the table and lands face-down on the sticky floor.
+- 'The smell of fish fingers permeates everything — the walls, the curtains, your clothes.'
+- 'Pink bingo marker has bled through the cards and stained the table underneath.'
+spawninfo:
+- mobid: 224
+  message: "Mrs. Wormwood sits at the kitchen table, circling bingo numbers."
+  idlecommands:
+    - "say I nearly won the big one last Tuesday. NEARLY."
+    - "emote circles a number on her bingo card with fierce concentration."
+    - ""
+    - ""
+    - "say A girl doesn't need to be clever. A girl needs to be attractive."
+    - "emote pats her platinum blonde hair with satisfaction."

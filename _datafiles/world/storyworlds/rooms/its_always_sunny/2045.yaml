@@ -1,0 +1,43 @@
+roomid: 2045
+zone: its_always_sunny
+title: The Basement
+description: >-
+  The basement of <ansi fg="itemname">Paddys Pub</ansi> is Charlie Kelly's
+  domain and it shows. The concrete walls sweat. A <ansi fg="itemname">furnace</ansi>
+  hulks in the corner, ancient and temperamental, groaning through its cycles
+  with the sound of something in chronic pain. The floor is concrete and
+  damp and things skitter along the baseboards in the peripheral dark.
+  <ansi fg="itemname">Rat traps</ansi> line the walls in various states of
+  deployment and the snap of one going off somewhere in the dark is not
+  unusual. Shelves hold cleaning supplies, broken equipment, and several
+  items that you cannot identify and should not try to. The smell is basement,
+  furnace, rat, and the particular chemical note of industrial cleaner being
+  used with great dedication and limited effect. To the <ansi fg="exit">north</ansi>
+  is the alley exit. Below, through a crawl gap, is the <ansi fg="secret-exit">sewer</ansi>.
+mapsymbol: BM
+maplegend: The Basement
+biome: cave
+exits:
+  north:
+    roomid: 2042
+  sewer:
+    roomid: 2052
+    secret: true
+    mapdirection: down
+spawninfo:
+- mobid: 448
+  message: 'A rat emerges from the shadows and regards you without any fear whatsoever.'
+  respawnrate: 3 real minutes
+- mobid: 448
+  message: 'Another rat skitters along the baseboard and stops. It is evaluating you.'
+  respawnrate: 3 real minutes
+- mobid: 442
+  message: 'Charlie Kelly emerges from behind the furnace with a mop, which is doing nothing for the floor situation.'
+  respawnrate: 5 real minutes
+idlemessages:
+- A rat trap snaps somewhere in the dark. Silence. Then skittering, as if the rat has assessed the situation and moved on.
+- The furnace groans through a cycle, a long settling sound like a building sighing at the end of a long day.
+- Something drips from the ceiling into a bucket that has been positioned to catch it. The bucket is nearly full. No one has emptied the bucket.
+- Charlie has written something on the wall in grease pencil. It says 'RATZ' with an arrow pointing down. This is either a warning or a label.
+- The overhead light flickers twice, recovers, and then dims slightly. It has been dimming slightly for six months.
+- 'From upstairs, muffled: the sound of the jukebox playing three notes and stopping.'

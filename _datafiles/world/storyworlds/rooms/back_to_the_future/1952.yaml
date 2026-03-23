@@ -1,0 +1,66 @@
+roomid: 1952
+zone: Back to the Future
+title: Biffs Garage
+description: >-
+  A grimy service garage on the edge of town, the bays wide enough
+  for three cars. Biff Tannen's pride and joy -- a black-and-chrome
+  <ansi fg="itemname">1946 Ford</ansi> -- sits in the center bay
+  on jack stands, gleaming despite the surroundings. The walls hold
+  hand-drawn <ansi fg="itemname">pin-up calendars</ansi> and a
+  <ansi fg="itemname">football pennant</ansi> from Hill Valley High.
+  Motor oil stains the floor in continent-shaped patches. A boom
+  box plays something by Bobby Darin. Scattered around the car:
+  <ansi fg="mobname">Biff Tannen</ansi> and his goons, Match, Skinhead,
+  and 3-D, who are here for unclear reasons and leave for no
+  particular ones.
+mapsymbol: B
+maplegend: Biffs Garage
+biome: house
+exits:
+  cafe:
+    roomid: 1942
+    mapdirection: north
+nouns:
+  ford: >-
+    A 1946 Ford Deluxe, black with chrome trim, currently on jack
+    stands in the center bay. Someone -- Biff, presumably -- has
+    lovingly detailed every inch of chrome and painted the tailfins.
+    The car is Biff's main source of pride, his social standing,
+    and his transport to wherever he decides to intimidate someone.
+    It also has very little trunk space.
+  calendars: >-
+    Three hand-drawn pin-up calendars from 1955, featuring
+    illustrations in the approved 1950s style. They have nothing
+    to do with any actual calendar information. They are here
+    to establish a mood that the other details of the garage
+    also establish.
+  pennant: >-
+    A Hill Valley Bulldogs pennant, gold and black. Biff played
+    football. Biff was, by the standards of Hill Valley football
+    in 1955, good. This is the peak of what Biff Tannen will
+    accomplish on his own merits, and he knows it.
+  "biff's goons": >-
+    Biff's three sidekicks. Match is the one with the matchstick.
+    Skinhead is self-explanatory. 3-D wears the 3-D glasses. They
+    are not individually interesting but collectively they constitute
+    a social hazard. They are here because Biff is here, and
+    where Biff is, they are.
+  oil: >-
+    Motor oil stains on the concrete floor, some fresh and dark,
+    some old and pale. The floor has been stained so many times
+    it would be easier to explain the unstained patches. The
+    garage smells of it: petroleum and 1955.
+idlemessages:
+- Biff socks a fist into his palm and stares at nothing in particular.
+- One of the goons laughs at something. Nobody else does.
+- Biff runs a chamois cloth over the Ford hood, checking his reflection.
+- 'Biff says to no one: "Make like a tree and get outta here."'
+- The boom box switches to something by Chuck Berry. Biff turns it off.
+- The Ford on jack stands creaks as Biff leans against the fender.
+- 'Match lights a matchstick off his thumbnail and watches it burn down.'
+- 'Biff cracks his knuckles: a slow, deliberate series of pops.'
+spawninfo:
+- mobid: 394
+  message: "Biff Tannen backs you into a corner before you even notice he moved."
+  respawnrate: 3 real minutes
+  forcehostile: true

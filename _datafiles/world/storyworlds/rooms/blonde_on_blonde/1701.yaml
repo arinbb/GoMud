@@ -1,0 +1,50 @@
+roomid: 1701
+zone: Blonde on Blonde
+title: Rainy Day Women No. 12 and 35
+description: >-
+  It is raining and everyone is laughing about it. A <ansi fg="yellow">carnival
+  parade</ansi> staggers through a street that shouldn't exist, trombone players
+  colliding with tuba players, a bass drum kicked by someone who has never played
+  bass drum before and doesn't care. <ansi fg="itemname">Confetti</itemname>
+  in wet clumps sticks to every surface. A <ansi fg="yellow">brass band</ansi>
+  plays a song that sounds almost like a real song, almost like something you
+  know, but slippery and bright and wrong in the best way. Twelve people are
+  definitely stoned. Thirty-five people are definitely stoned. Everybody is
+  stumbling and grinning and pointing at you. The rain doesn't bother them at all.
+  It is a celebration of something. Nobody knows what. The <ansi fg="exit">studio</ansi>
+  is back to the south.
+mapsymbol: 1
+maplegend: Rainy Day Women
+biome: land
+exits:
+  studio:
+    roomid: 1700
+    mapdirection: south
+    exitmessage: The brass band follows you halfway back, then gives up.
+nouns:
+  band: >-
+    The brass band plays a tune that keeps almost resolving and never quite does.
+    The trombone player is wearing a hat that belongs to the tuba player. The
+    drummer uses two bass drums and plays both simultaneously with cheerful
+    incompetence. They are having the time of their lives. You cannot help but
+    feel that everybody must, in fact, get stoned.
+  confetti: >-
+    Wet confetti in every color, plastered to the cobblestones and the parade
+    floats and the brass instruments and your coat. It tastes like paper. You
+    did not mean to find out what it tastes like but the celebration is vigorous.
+  rain: >-
+    The rain comes straight down, hard and warm, and nobody is going inside
+    because of it. People tilt their faces up. The confetti dissolves. The bass
+    drum booms. This is perfect weather for this.
+  crowd: >-
+    A crowd of grinning people in various states of dishevelment, all of them
+    stoned, all of them certain you ought to be too. They are not wrong.
+idlemessages:
+- The trombone slides through three notes and lands somewhere unexpected. The crowd cheers anyway.
+- 'A man in a white suit trips over the bass drum cable, catches himself, and keeps walking like nothing happened.'
+- 'More confetti falls from somewhere above -- you cannot find the source.'
+- The rain intensifies for a moment and everybody tips their heads back and laughs.
+- Someone hands you something. You are not sure what it is. You are not sure you want to know.
+- The brass band launches into what might be a funeral march but played at twice the tempo.
+- 'Everybody is stoned. The parade continues. This is the whole song. This is the whole point.'
+spawninfo: []

@@ -1,0 +1,25 @@
+mobid: 445
+zone: its_always_sunny
+hostile: false
+maxwander: 0
+activitylevel: 20
+angrycommands: []
+idlecommands:
+  - emote checks the locks on the door. Then checks them again. Then leans against the wall looking exhausted.
+  - say 'No. Whatever it is, no.'
+  - emote stares out the window with the thousand-yard look of someone who has heard every Charlie Kelly plan.
+  - say I changed my number. I know he has the new one. I do not know how he has the new one.
+character:
+  name: The Waitress
+  description: >-
+    A woman of Charlie Kelly's approximate age who has somehow never been given
+    a proper name by the universe, which feels representative of everything
+    that has happened to her. She is reasonably attractive in the way that
+    people are attractive when you look past the expression of bone-deep
+    exhaustion they wear at all times. She has been stalked by Charlie Kelly
+    for years with a dedication that she finds neither flattering nor
+    interesting. She does not work at Paddys Pub. She does not want to be
+    here. She is not entirely sure how she ended up here. This is also
+    representative of everything that has happened to her.
+  raceid: 1
+  level: 3

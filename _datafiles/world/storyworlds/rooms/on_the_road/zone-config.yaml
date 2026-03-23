@@ -1,0 +1,16 @@
+name: On the Road
+roomid: 1740
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: road
+mutators:
+- mutatorid: beat-restless
+idlemessages:
+- A car horn blares somewhere far off and the sound dies into the immense American silence.
+- The smell of gasoline and roadside coffee drifts through like a memory you cannot place.
+- 'Somewhere out there Dean Moriarty is driving too fast down a road that does not end.'
+- The highway stretches in both directions, flat and honest and without mercy.
+- 'The night sky over the continent is enormous. You feel very small. This is correct.'
+- A truck rumbles past on the highway, its headlights sweeping the dark like a lighthouse.
+- 'The radio is playing jazz. It always is, out here. It is always jazz and it is always now.'

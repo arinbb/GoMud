@@ -1,0 +1,12 @@
+mutatorid: blonde-on-blonde
+namemodifier:
+  behavior: append
+  text: (mercurial)
+  colorpattern: none
+descriptionmodifier:
+  behavior: append
+  text: The music shifts registers without warning.
+  colorpattern: none
+alertmodifier:
+  text: The air shimmers with something harmonic and unstable, a 1966 that keeps changing its mind.
+  colorpattern: none

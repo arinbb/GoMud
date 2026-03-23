@@ -1,0 +1,15 @@
+name: The Sopranos
+roomid: 1720
+autoscale:
+  minimum: 1
+  maximum: 10
+defaultbiome: city
+mutators:
+- mutatorid: jersey-anxiety
+idlemessages:
+- A distant car alarm goes off somewhere in the Garden State and nobody moves to stop it.
+- The smell of exhaust and cut grass mingles in the thick Jersey air.
+- A sprinkler system clicks on somewhere nearby, a mechanical sigh in the suburban heat.
+- The sound of a television drifts from an open window. A laugh track that nobody laughs at.
+- The highway hum never stops. It is the sound of New Jersey being New Jersey.
+- Something in the air feels like it is about to go wrong. It always does.

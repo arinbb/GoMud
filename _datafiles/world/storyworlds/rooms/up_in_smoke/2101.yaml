@@ -1,0 +1,48 @@
+roomid: 2101
+zone: Up in Smoke
+title: The Street Corner
+description: >-
+  A classic East LA street corner, 1978. A <ansi fg="itemname">taco stand</ansi>
+  occupies the far curb, its hand-lettered sign advertising carne asada and
+  <ansi fg="itemname">carnitas</ansi> in faded red paint. Lowriders are parked
+  three-deep along the block, their chrome reflecting each other in chain. A group
+  of <ansi fg="itemname">vatos</ansi> lean against a chain-link fence, watching
+  the traffic with the proprietary ease of men who have nowhere better to be and
+  know it. The air smells like grilling meat and motor oil and hot concrete. Exits
+  lead <ansi fg="exit">west</ansi> to the lowrider, <ansi fg="exit">north</ansi>
+  to Mans Pad, and <ansi fg="exit">east</ansi> to Pedros cousins place.
+mapsymbol: S
+maplegend: The Street Corner
+biome: road
+exits:
+  west:
+    roomid: 2100
+    exitmessage: You climb back into the lowrider.
+  north:
+    roomid: 2102
+    exitmessage: You head up the block toward Mans place.
+  east:
+    roomid: 2104
+    exitmessage: You cut through the alley toward Pedros cousins house.
+nouns:
+  stand: >-
+    The taco stand is a converted cart with a flat griddle on top, everything
+    slightly too hot, everything slightly too good. The man running it moves
+    with the efficiency of someone who has made ten thousand tacos and expects
+    to make ten thousand more.
+  carnitas: >-
+    Slow-cooked pork, pulled into rough shreds, piled onto corn tortillas with
+    onion and cilantro. They cost seventy-five cents. They are worth considerably
+    more than that.
+  vatos: >-
+    A cluster of guys in white T-shirts and Dickies, leaning against the fence
+    with the patient ease of people who have claimed this corner through sustained
+    presence. They nod at you. The nod means many things, all of them approximate.
+idlemessages:
+- The taco stand griddle pops and sizzles, sending up a plume of fragrant smoke.
+- A lowrider at the curb does a slow bounce -- up, down, up -- then settles.
+- Somebody across the street shouts a name. Nobody answers. The shouting stops.
+- The vatos by the fence switch to Spanish and laugh at something private.
+- 'An oldies song drifts from a car window: brass, heartache, California.'
+- A dog trots purposefully down the sidewalk, heading somewhere specific.
+- The afternoon light turns the street gold. Everything looks better in gold.

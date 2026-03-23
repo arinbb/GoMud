@@ -1,0 +1,24 @@
+questid: 270
+name: Monsters from the Id
+description: >-
+  Altair IV hides a secret buried beneath its ancient desert floor. A
+  brilliant man in voluntary exile, a robot of impossible sophistication,
+  a young woman who has never seen Earth, and a machine built by a dead
+  civilization capable of manufacturing the products of pure thought.
+  Something is killing people. The answers are underground, and in the
+  darkest part of a mind that does not know what it has made.
+reward:
+  experience: 5000
+  item_id: 255
+  playermessage: >-
+    You have witnessed the full truth of Altair IV. As a memento, a Krell
+    metal disc appears in your hand. On one face, Krell script reads: what
+    we have made must not be what we are. It is warm. It always will be.
+steps:
+- description: Land on Altair IV and step onto alien soil.
+- description: Meet Robby the Robot at the gate of Morbius's house.
+- description: Explore Altaira's impossible garden on the desert world.
+- description: Enter the Krell laboratory and face what the Krell left behind.
+- description: Descend into the Krell power shaft.
+- description: Witness the aftermath of the monster attack on the force field perimeter.
+- description: Discover the truth in the room that exists only as metaphor.

@@ -1,0 +1,60 @@
+roomid: 1741
+zone: On the Road
+title: Times Square at Night
+description: >-
+  <ansi fg="itemname">Times Square</ansi>, 1947, at something past midnight.
+  The <ansi fg="itemname">neon signs</ansi> are enormous and gaudy, spelling
+  out pleasures in red and yellow and the kind of blue that only neon makes.
+  <ansi fg="mobname">Hustlers</ansi>, <ansi fg="mobname">sailors</ansi>,
+  <ansi fg="mobname">girls</ansi> in high heels move through the crowds with
+  the specific purposefulness of people who know exactly what they want and
+  exactly what it costs. A newsstand sells papers full of a world recovering
+  from war. Horn-players blow their heads off in the clubs overhead. This is
+  New York in the moment before everything changes. To the <ansi fg="exit">east</ansi>
+  is Sal's apartment. To the <ansi fg="exit">south</ansi> the city opens up
+  toward the bridge and the highway and everything west.
+mapsymbol: T
+maplegend: Times Square
+biome: city
+exits:
+  east:
+    roomid: 1740
+  south:
+    roomid: 1742
+nouns:
+  neon: >-
+    The neon signs of Times Square in 1947 are hand-blown glass tubes full
+    of lit gas, each one a small miracle of electricity and color. They
+    advertise Camel cigarettes and Pepsi-Cola and hotels with names like
+    the Astor and the Knickerbocker. Their light falls on your face like
+    colored rain and makes everyone look like a character in a movie.
+  hustlers: >-
+    The midnight hustlers of Times Square — a particular species of American
+    who lives in the interval between legal and illegal, between possible
+    and impossible. They lean in doorways. They have things to sell. Their
+    eyes are fast and their smiles cost nothing. They are the city's secret
+    life, visible only after dark.
+  newsstand: >-
+    A newsstand with papers from every borough. The headlines are about
+    the Marshall Plan, about Truman, about the bomb. The world is enormous
+    and exhausted and trying to figure out what comes next. On the bottom
+    shelf, a paperback novel with an abstract cover. A new kind of writing
+    for a new kind of road.
+  crowd: >-
+    The midnight crowd of Times Square — sailors on leave, office workers
+    heading home late, women in good coats, men in cheap hats, everyone
+    carrying something they want or wanting something they carry. The city
+    is a machine for producing desire, and Times Square is where it runs
+    hottest.
+spawninfo:
+- mobid: 302
+  message: Carlo Marx materializes from the crowd, gesturing at the sky.
+  container: ''
+idlemessages:
+- A neon sign flickers and buzzes, cycling through its colors like a mood ring for the whole city.
+- A sailor in a white uniform passes, laughing at something no one else heard.
+- 'Carlo Marx is speaking to no one in particular about the nature of consciousness. Someone stops to listen. Then two people. Then five.'
+- 'The newsstand man calls out headlines: something about Europe, something about the atom, something about tomorrow.'
+- The smell of hot pretzels and exhaust and perfume from the taxi window.
+- 'A horn player in the club above lets loose a run of notes that come through the floorboards: pure, fast, American.'
+- 'Two girls walk past, their heels clicking a rhythm on the sidewalk: one two, one two, one two west.'

@@ -1,0 +1,73 @@
+roomid: 1703
+zone: Blonde on Blonde
+title: Visions of Johanna
+description: >-
+  A <ansi fg="cyan">loft apartment</ansi> in the small hours. Louise sleeps on
+  a mattress against one wall, or pretends to sleep, her breathing too careful,
+  too measured. <ansi fg="itemname">Candles</ansi> melt on every ledge and
+  sill, their wax pooling into shapes that almost mean something. Through the
+  tall factory <ansi fg="itemname">windows</ansi>, the city does not sleep, but
+  the city is not here -- it is only lights, stacked and layered into a
+  <ansi fg="cyan">distance that might be infinity</ansi>. The heat pipes
+  <ansi fg="itemname">cough</ansi> and clank. A <ansi fg="itemname">museum</ansi>
+  exists in the corner of your vision, the one with the painting you cannot quite
+  see, where the Countess who's never met a man that she didn't like is pinned
+  to the wall. Johanna is not here. She is everywhere. She is the shape of the
+  absence that everything else defines. When the candles gutter you feel her
+  nearness. When they steady you feel only Louise pretending to sleep and the
+  city doing nothing at all. A <ansi fg="exit">secret</ansi> passage leads to
+  somewhere else entirely. The <ansi fg="exit">studio</ansi> is back to the west.
+mapsymbol: J
+maplegend: Visions of Johanna
+biome: house
+exits:
+  studio:
+    roomid: 1700
+    mapdirection: west
+    exitmessage: You leave the loft. The candles keep burning without you.
+  chelsea:
+    roomid: 1715
+    secret: true
+    exitmessage: A door in the loft you hadn't noticed opens into a different kind of dark.
+nouns:
+  candles: >-
+    Candles on every flat surface -- the windowsill, the floor, a saucer on
+    top of the radiator that has somehow not cracked. Their flames all bend
+    the same direction, toward the window, toward the city, toward whatever
+    Johanna is. The wax drips onto everything. Nobody minds. The room is made
+    of candlelight and the shapes that candlelight makes.
+  windows: >-
+    Factory windows, tall and divided into panes, the glass old enough to
+    have a faint greenish tint that makes the city outside look like it is
+    underwater. The lights out there go on forever. Not a metaphor. Not quite
+    literal either. The panes are cold to the touch no matter what season it is.
+  museum: >-
+    The museum is in the corner of your vision. When you look directly at it,
+    it is not there -- only the apartment wall with its peeling paint. When
+    you look away, the painting returns to the edge of sight: the infinity of
+    the waiting room, the all-night girls who whisper of escapades, the
+    Countess with her cape. The museum is real. The painting is real. You
+    cannot look at it directly and keep it.
+  pipes: >-
+    The heat pipes run along the baseboard and up the walls, iron and old and
+    full of whatever century the building was built in. They knock. They cough.
+    They make the sound of the building living despite itself. In the quiet
+    between Dylan's lines, the pipes are the whole score.
+  louise: >-
+    Louise sleeps on the mattress, blanket pulled to her chin, face turned
+    toward the wall. She is not dreaming of Johanna. She is dreaming of
+    something practical and warm. She does not know that Johanna fills the
+    room like candlelight. She knows. She does not know. She pretends to sleep.
+spawninfo:
+- mobid: 282
+  message: A candle bends toward the window. Something almost visible stands in its light.
+- mobid: 286
+  message: Louise shifts on the mattress, pulling the blanket tighter.
+idlemessages:
+- 'A candle gutters and nearly goes out -- and in that moment something is very close, just outside perception.'
+- Louise turns on the mattress with a small sound, settling back into stillness.
+- The heat pipes knock once, deliberate as a knock at a door, then silence.
+- The city lights pulse through the tall windows like a signal in a language you almost know.
+- 'Johanna fills the space between things -- between the words, between the candles, between sleeping and waking.'
+- The museum painting shifts in the periphery of your vision. The Countess adjusts her cape.
+- 'In the spaces between the heat pipe sounds: nothing. Everything. Her name, unsaid.'

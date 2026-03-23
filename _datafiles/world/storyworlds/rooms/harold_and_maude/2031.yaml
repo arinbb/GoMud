@@ -1,0 +1,53 @@
+roomid: 2031
+zone: Harold and Maude
+title: The Amusement Park
+description: >-
+  An old <ansi fg="8">amusement park</ansi> in the last season of its
+  operation, everything slightly faded, everything still running. The
+  <ansi fg="itemname">carousel</ansi> turns with its painted horses rising
+  and falling in their eternal gallop, the music slightly out of tune in
+  a way that makes it sound more honest than carousels usually sound. A
+  <ansi fg="itemname">Ferris wheel</ansi> turns slowly against the blue
+  California sky. The <ansi fg="itemname">ticket booth</ansi> is unmanned
+  but the rides are running anyway, which is the best possible situation.
+  The <ansi fg="itemname">cotton candy</ansi> stand is closed. The
+  smell is popcorn and machinery and salt air from the coast nearby.
+  To the <ansi fg="exit">street</ansi> lies the road back.
+mapsymbol: A
+maplegend: The Amusement Park
+biome: land
+exits:
+  street:
+    roomid: 2027
+    mapdirection: south
+    exitmessage: You leave the amusement park and head back toward the street.
+nouns:
+  carousel: >-
+    Painted horses rising and falling on their brass poles, the music playing
+    from a mechanism inside that has not been serviced in years. The horses
+    are beautiful in the way of things that have been beautiful so long they
+    have stopped noticing. Harold once sat on this carousel for forty minutes.
+    Maude sat beside him and sang along with the music, making up words.
+  ferris: >-
+    The Ferris wheel turns at its own pace, carrying empty gondolas in a
+    slow circle against the sky. Near the top, you can probably see the ocean.
+    Harold has been to the top. He said it was clarifying. Maude said: 'Everything
+    that gets you closer to the sky is clarifying, Harold.'
+  booth: >-
+    The ticket booth has a hand-lettered sign that says ADMISSION -- RIDES FREE
+    TODAY in cheerful letters. Today has apparently been going on for some time.
+    Nobody has complained.
+  cotton: >-
+    The cotton candy stand is dark, its spun sugar machine idle. A few wisps
+    of dried cotton candy cling to the machinery, pink and insubstantial.
+    Harold examined these for a while once. He said they looked like something
+    that had tried very hard to persist.
+idlemessages:
+- The carousel music plays its slightly-off waltz into the empty afternoon air.
+- The Ferris wheel turns one full rotation and pauses, then continues.
+- An empty gondola on the Ferris wheel swings gently at the top, over the unseen ocean.
+- The carousel horses rise and fall, rise and fall, in their permanent unhurried gallop.
+- The smell of old popcorn and machine oil and salt air is the smell of every amusement park.
+- Harold rides the carousel alone, facing backward, watching the park recede and return.
+- The ticket booth stands open and unstaffed, its sign inviting nobody in particular.
+- A seagull lands on the cotton candy stand, assesses it, and departs without ceremony.

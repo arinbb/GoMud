@@ -1,0 +1,55 @@
+roomid: 1804
+zone: Crime and Punishment
+title: The Tavern
+description: >-
+  Low ceilings, <ansi fg="itemname">sawdust</ansi> on the floor absorbing
+  what the floor receives. Tables of bare wood, scarred with rings from a
+  thousand glasses. The smell of cheap <ansi fg="itemname">vodka</ansi>,
+  herring, tallow candles, and the particular sourness of men who have been
+  drinking since before it made sense to stop. The <ansi fg="itemname">
+  barman</ansi> moves glasses from one place to another with the efficiency
+  of a man who has given up expecting anything to improve. In the corner
+  a civil servant in a worn coat is speaking to whoever will listen — his
+  voice rising and falling with the cadences of a man performing his own
+  degradation, finding in it something magnificent. This is the Haymarket
+  tavern, where Marmeladov drinks and confesses and drinks again. The
+  <ansi fg="exit">west</ansi> door leads back to the square.
+mapsymbol: T
+maplegend: The Tavern
+biome: house
+exits:
+  west:
+    roomid: 1803
+nouns:
+  sawdust: >-
+    The sawdust on the floor is grey with age and use. It performs its
+    function — absorbing spilled vodka, vomit, blood on bad nights — without
+    complaint and without achieving cleanliness.
+  vodka: >-
+    The vodka here is the cheapest available. It is served in small glasses
+    that look clean until the light hits them. It does the job it is asked
+    to do. So does everything cheap and brutal in this city.
+  barman: >-
+    The barman has the face of a man who has heard every story there is to
+    hear and found none of them interesting enough to remember. He wipes the
+    bar with a cloth that makes things worse. He is a feature of the room,
+    like the low ceiling or the smell.
+  tables: >-
+    The wooden tables are carved with initials, with crosses, with words in
+    several languages. A small archive of everyone who has ever sat here and
+    had something they needed to put outside themselves.
+  herring: >-
+    A plate of herring sits on the bar, presumably available for purchase.
+    It has been sitting there for some time. The flies have found it and
+    established a position.
+spawninfo:
+- mobid: 313
+  message: 'Marmeladov raises his glass with a trembling hand, his eyes finding yours with desperate hope.'
+  respawnrate: 10 real minutes
+idlemessages:
+- 'A man at a corner table puts his head down on his arms, and does not lift it again for a long time.'
+- The barman refills a glass without being asked, without changing expression.
+- 'Someone laughs — a short, sharp sound with no humor in it — and goes back to their drink.'
+- The tallow candles on the tables leave rings of yellow light in which people sit like islands.
+- 'From the street outside, the noise of the Haymarket drifts in and is absorbed by the room, leaving silence in its place.'
+- The sawdust shifts under feet that shuffle rather than step. No one here is going anywhere in particular.

@@ -1,0 +1,21 @@
+mobid: 320
+zone: stardew_valley
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote swings a hoe into the earth with practiced efficiency."
+  - "emote pauses to wipe sweat from their brow and survey the fields."
+  - "emote crouches to examine a small green sprout pushing through the soil."
+  - "say There is so much to do. But the soil is good. I can feel it."
+  - "emote waters a row of parsnip seedlings with careful, unhurried attention."
+  - ""
+activitylevel: 30
+character:
+  name: The Farmer
+  description: >-
+    Another farmer working this land -- or perhaps a reflection of you,
+    the you that has been here longer, that has learned the rhythms of the
+    seasons and the soil. They wear simple work clothes, worn at the knees
+    and elbows. There is mud on their boots. They look entirely at home.
+  raceid: 1
+  level: 5

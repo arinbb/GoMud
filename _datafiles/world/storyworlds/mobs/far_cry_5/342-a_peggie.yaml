@@ -1,0 +1,26 @@
+mobid: 342
+zone: far_cry_5
+hostile: true
+maxwander: 1
+activitylevel: 40
+hates:
+- human
+idlecommands:
+- emote scans the perimeter with the flat vigilance of someone who has been told to expect threats everywhere.
+- emote adjusts the rifle sling on their shoulder and moves to a better vantage point.
+- ""
+- emote murmurs something that might be a scripture verse or a patrol report. The cadence is the same.
+- emote watches you with the particular expression of a person who has replaced uncertainty with certainty and found it comfortable.
+- ""
+character:
+  name: a Peggie
+  description: >-
+    An Eden's Gate member on patrol — Peggies, as the resistance calls them,
+    after the Peggie McGraw who supposedly started it all. They come in
+    every age, every background, every level of previous competence.
+    What they share: the Eden's Gate patch on the arm, the rifle on the
+    sling, and the particular flat certainty of someone who has found
+    an answer and stopped asking questions. This one is armed, alert,
+    and watching you with zero ambiguity about what happens next.
+  raceid: 1
+  level: 10

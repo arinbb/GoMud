@@ -1,0 +1,59 @@
+roomid: 1848
+zone: Far Cry 5
+title: Henbane River
+description: >-
+  The river country of the Henbane moves slow and foggy, the water dark and
+  heavy with silt, the banks thick with willows and cottonwood and something
+  else — something <ansi fg="purple">purple</ansi> and wrong that isn't quite
+  any plant you know. <ansi fg="itemname">Bliss flowers</ansi> grow at the
+  water's edge, their petals a deep violet-white, their pollen a fine mist
+  that drifts off them in the still air. The smell is extraordinary: sweet
+  and floral and chemical, like a perfume designed by someone who wanted
+  to make you forget something. <ansi fg="itemname">Faith's people</ansi>
+  wander the banks in a state that is not quite consciousness — robed,
+  peaceful, their faces turned up toward nothing. In the fog, shapes
+  move that might be <ansi fg="purple">her</ansi>. They might be anyone.
+  The county road is <ansi fg="exit">north</ansi>. The Bliss fields are
+  further <ansi fg="exit">east</ansi>.
+mapsymbol: H
+maplegend: Henbane River
+biome: swamp
+exits:
+  north:
+    roomid: 1841
+  east:
+    roomid: 1849
+nouns:
+  flowers: >-
+    Bliss flowers. Faith Seed's chemistry, cultivated from something that
+    was almost a plant, engineered into something entirely controlled.
+    The petals are violet-white, almost luminescent in the fog. The pollen
+    is airborne and you are already breathing it. Just enough, here. Enough
+    to feel the edges soften. Enough to understand why the robed figures
+    on the bank are smiling.
+  fog: >-
+    The river fog sits heavy and still, the kind that comes at dawn and
+    never fully leaves. It catches the Bliss pollen and holds it. It makes
+    the far bank invisible. It makes everything beyond ten feet a theory.
+    In the fog, sound behaves differently. Voices carry from nowhere.
+    Faith's voice, perhaps, or an echo of it, or an hallucination of it.
+    The distinction may not matter here.
+  water: >-
+    The Henbane River, dark and slow. Sediment, mineral tannins, and
+    a faint chemical purple tint where the Bliss runoff enters. The
+    water is not safe to drink. It is almost certainly not safe to touch.
+    It moves with the patience of something that has all the time it needs.
+  robed: >-
+    Faith's people. They wear pale robes and move in the slow, purposeful
+    way of the deeply medicated — not zombie-slow, not aggressive, just
+    present in a different way than you are present. Some hold flowers.
+    Some murmur to themselves. None of them seem unhappy. That is the most
+    unsettling part.
+idlemessages:
+- The Bliss pollen drifts off the flowers in a slow purple haze. You breathe it. Your edges soften just slightly.
+- A robed figure on the far bank turns and looks at you with perfect serenity. Then looks away. Then is gone in the fog.
+- The river moves slow and dark and purple-tinged. The sound of it is deeply, wrongly peaceful.
+- Something in the fog ahead. A shape. A woman, perhaps. Gone when the fog shifts.
+- The willows trail their fingers in the water. The Bliss flowers nod in a breeze you cannot feel.
+- 'A voice from nowhere, soft and female: ''Do not be afraid. You are already where you need to be.'''
+- The fog closes in from the east and the purple-white glow of the Bliss fields pulses through it.

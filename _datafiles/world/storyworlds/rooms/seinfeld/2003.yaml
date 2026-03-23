@@ -1,0 +1,57 @@
+roomid: 2003
+zone: Seinfeld
+title: Kramers Apartment
+description: >-
+  <ansi fg="yellow">Kramers apartment</ansi> defies systematic description. It is
+  simultaneously chaotic and purposeful, organized according to a logic that is entirely
+  Kramers own. The <ansi fg="itemname">Merv Griffin set</ansi> has been reconstructed
+  in the living room -- the desk, the backdrop, the arrangement of a talk show that
+  never happened and somehow is more convincing than the original. <ansi fg="itemname">Various
+  items</ansi> occupy surfaces with the confidence of things that belong here even
+  though it is unclear where they came from or what they are for. A <ansi fg="itemname">coffee
+  table</ansi> holds the remnants of a scheme that is either finished or just beginning.
+  The kitchen contains <ansi fg="itemname">food that is not Kramers</ansi> -- mostly
+  Jerrys, carried over in handfuls over the course of years. The door to <ansi fg="exit">Jerrys</ansi>
+  apartment is to the east, because that is where everything originates.
+mapsymbol: K
+maplegend: Kramers Apartment
+biome: house
+exits:
+  jerrys:
+    roomid: 2000
+    mapdirection: east
+nouns:
+  set: >-
+    The Merv Griffin set, painstakingly reconstructed in the living room.
+    The talk show desk. The backdrop with the logo. Two guest chairs. An
+    overhead light that is somehow correct. Kramer conducted interviews here.
+    The guests were neighbors. The format held. This is the most impressive
+    and least explicable achievement in the history of this building.
+  items: >-
+    A fur coat on a chair. A box of something. A device of unclear purpose.
+    A map. Something wrapped in newspaper. Each item has a story and the
+    story involves a deal or a scheme or a situation that seemed straightforward
+    at the time and became complicated in a way that nobody fully understands.
+  table: >-
+    The coffee table holds: a half-eaten bowl of something, a phone number
+    written on a napkin, the box from a board game that is being used for
+    something unrelated to the game, and a pen that might be Jerrys.
+  food: >-
+    A block of cheese. Some cold cuts. An open container of orange juice.
+    A box of cereal -- specifically Jerrys cereal. How it got here is not
+    a mystery. Kramer eats Jerrys food because Kramer is in Jerrys apartment
+    often enough that the distinction between Jerrys food and Kramers food
+    has become academic.
+spawninfo:
+- mobid: 423
+  message: '<ansi fg="yellow">Kramer slides through the door from the hallway and is already in the middle of something, moving through his apartment with the loose-limbed urgency of a man who has had an idea and the idea is already in motion.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Something shifts on a shelf and settles. Whatever it was, it has landed where it was going.
+- The Merv Griffin set sits in the living room with the serene confidence of the inexplicable.
+- A sound from the kitchen suggests that Kramer is locating something in Jerrys food.
+- The apartment smells of a project that is in a stage between inception and completion.
+- One of the items on the table is vibrating slightly. It stops.
+- The overhead lights in here are at a different angle than in Jerrys apartment, which is wrong, since they are in the same building.
+- From somewhere in the apartment comes the sound of a phone ringing and then Kramer saying something and then the phone going silent.
+- The set looks ready. The guests have not arrived. The interview has not been scheduled. This does not matter to the set.

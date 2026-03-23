@@ -1,0 +1,55 @@
+roomid: 2127
+zone: Paris Texas
+title: The Meridian Hotel
+description: >-
+  A <ansi fg="cyan">neon sign</fg> reads MERIDIAN in pink and blue letters,
+  one of the letters flickering. The sign reflects off the wet
+  <ansi fg="8">parking lot</ansi> below in smeared doubles. This is a hotel that
+  does not ask what you are there for. The lobby, visible through glass doors,
+  is empty except for a man behind bulletproof plexiglass. The street-level
+  <ansi fg="itemname">storefront</ansi> beside the hotel has darkened windows and
+  a separate entrance with no sign except a small handwritten card. A
+  <ansi fg="itemname">phone booth</ansi> on the corner. The whole block smells
+  of car exhaust and night air and something underneath — perfume, maybe, or
+  cleaning product. The exit <ansi fg="exit">south</ansi> leads back to the
+  skyline. A narrow door leads to the <ansi fg="exit">booth</ansi>.
+mapsymbol: M
+maplegend: Meridian Hotel
+biome: city
+exits:
+  south:
+    roomid: 2126
+  booth:
+    roomid: 2128
+    mapdirection: east
+nouns:
+  sign: >-
+    MERIDIAN. Pink and blue neon, one letter buzzing. Its reflection
+    stretches down the wet parking lot in a shivering column of color.
+    It is the kind of sign that has watched a lot of things happen
+    in this parking lot and has never once commented.
+  storefront: >-
+    Dark windows. No sign except a small handwritten card in the door.
+    People come here and sit in a booth and talk to a woman through
+    glass. They think they are invisible. Everyone in this building
+    knows exactly who they are.
+  parking: >-
+    Wet asphalt reflecting the neon. A few cars. One truck that has
+    been here for hours. The man in the truck is sitting and looking
+    at the storefront and not getting out.
+  lot: >-
+    Wet asphalt reflecting the neon. A few cars. One truck that has
+    been here for hours. The man in the truck is sitting and looking
+    at the storefront and not getting out.
+  phone: >-
+    A payphone on the corner. Travis used one like this to call Hunter.
+    He put the receiver against his chest for a moment before he dialed,
+    like he was steadying himself.
+idlemessages:
+- The neon sign buzzes. The bad letter flickers. The parking lot waits.
+- A car pulls in, parks, and a man in a jacket gets out and goes to the storefront door.
+- 'The truck has been there for a long time. The man inside it has not moved.'
+- 'Rain that is almost rain: more like a very heavy mist that makes everything shine.'
+- The phone booth light is on. No one is in it.
+- The city sounds come from everywhere and belong to nowhere in particular.
+- Someone comes out of the storefront, gets in a car, leaves. The parking lot does not notice.

@@ -1,0 +1,42 @@
+roomid: 1402
+zone: Matilda
+title: Matilda's Bedroom
+description: >-
+  A tiny, bare room at the top of the stairs that feels like an afterthought —
+  because it was. A narrow <ansi fg="itemname">bed</ansi> with a thin blanket is
+  pushed against one wall. There is no <ansi fg="itemname">bookshelf</ansi>, so
+  library books are stacked in careful towers on the floor, organized by some
+  private system. A small <ansi fg="itemname">lamp</ansi> sits on an upturned
+  crate beside the bed — the only concession to comfort. The room is spotlessly
+  clean, in stark contrast to the rest of the house. The wallpaper up here is
+  the same garish pattern, but someone has taped pages torn from books over the
+  worst of it. The stairs lead <ansi fg="exit">down</ansi>.
+mapsymbol: M
+maplegend: Matilda's Room
+biome: house
+exits:
+  down:
+    roomid: 1400
+nouns:
+  bed: >-
+    A narrow child's bed with a thin blanket and a single flat pillow. The sheets
+    are neatly tucked. A small flashlight is hidden under the pillow for reading
+    after lights-out.
+  books: >-
+    Towers of library books, each stack perfectly straight, organized by author.
+    Dickens next to Hemingway next to Steinbeck next to Kipling. She has read
+    them all. Some of them twice. She is four and a half years old.
+  lamp: >-
+    A small reading lamp balanced on an upturned wooden crate. The bulb is dim
+    but it is enough. When the rest of the house is drowning in television noise,
+    this small circle of lamplight is the only civilized thing in the building.
+  pages: >-
+    Pages torn carefully from damaged library discards, taped over the garish
+    wallpaper. Illustrations from fairy tales, maps of imaginary countries, a
+    botanical diagram of a flower. Each one placed with care and precision.
+idlemessages:
+- 'A tower of books catches the lamplight, their spines forming a column of gold and brown and green.'
+- 'The room is so quiet you can hear yourself think — a rare luxury in the Wormwood house.'
+- 'Somewhere downstairs, the television roars. Up here, the only sound is the turning of pages.'
+- A breeze from nowhere ruffles the taped-up pages on the wall, making the fairy tale illustrations dance.
+- 'The flashlight under the pillow clicks on by itself for a moment, then off again.'

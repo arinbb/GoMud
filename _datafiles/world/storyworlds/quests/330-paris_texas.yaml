@@ -1,0 +1,21 @@
+questid: 330
+name: Paris Texas
+description: >-
+  Walk out of the desert. Find your brother. Find your son. Drive east.
+  Find the woman in the pink light. Tell her the truth through the glass.
+  Then let her go. This is the whole story.
+reward:
+  experience: 5000
+  item_id: 285
+  playermessage: >-
+    You have walked through Paris, Texas. You walked out of the desert
+    and drove to Los Angeles and drove to Houston and stood in a small
+    dark booth and said the things that needed saying. As a memento,
+    a faded photograph finds its way into your pocket. On the back,
+    in someone's handwriting: Paris, Texas.
+steps:
+- description: Walk out of the Texas desert.
+- description: Find Walt at the gas station.
+- description: Reconnect with Hunter in the backyard.
+- description: Drive to Houston.
+- description: Find Jane. Speak through the mirror. Let go.

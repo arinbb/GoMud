@@ -1,0 +1,49 @@
+roomid: 1992
+zone: Forbidden Planet
+title: The Perimeter
+description: >-
+  The force field <ansi fg="cyan">perimeter</ansi> of the C-57D runs in a wide
+  circle around the ship, emitters staked into the alien soil at thirty-foot
+  intervals. The field itself is invisible except where it catches particles
+  -- then it shimmers, briefly, a blue-white curtain against the
+  <ansi fg="green">green</ansi> sky. The <ansi fg="itemname">emitters</ansi>
+  hum with steady power. The <ansi fg="itemname">ground</ansi> inside the
+  perimeter is trampled with boot-prints, cigarette ends, the ordinary
+  detritus of a crew on uncertain ground. Outside the perimeter,
+  the desert is still. Outside the perimeter, things come in the night.
+  <ansi fg="red">The field will not hold</ansi> against what is coming.
+  To the <ansi fg="exit">ship</ansi>, south.
+mapsymbol: P
+maplegend: The Perimeter
+biome: desert
+exits:
+  ship:
+    roomid: 1983
+    mapdirection: south
+nouns:
+  perimeter: >-
+    The force field perimeter is the best defensive technology the United
+    Planets Navy has. It has held against every known weapon and energy form
+    tested against it. The engineering team ran the tests again last night,
+    after the attack. Everything nominal. Impenetrable. The attack happened
+    anyway. The field held -- but just barely, and at the cost of two lives
+    outside the wire. Tonight the commander has ordered everyone inside.
+  emitters: >-
+    The emitter stakes are buried two feet into the Altair IV soil, anchored
+    against an attack force that turned out to be immeasurable. Three of
+    the thirty emitters show burn scoring on their housings. They were
+    replaced. The replacement units show fresh burn scoring this morning.
+    Something is testing the field. Learning it.
+  ground: >-
+    Inside the perimeter, the pressed-down desert floor holds the evidence
+    of the crew's anxiety: boot-print clusters at watch points, scuffed areas
+    where people paced, a discarded ration tin, a dropped stylus. Small signs
+    of human beings trying to maintain normalcy while something vast and
+    invisible circles their only safe place in four light years.
+idlemessages:
+- The force field shimmers briefly as a crystalline particle drifts through it, then goes invisible again.
+- A watch crewman scans the perimeter with a hand scanner. The scanner shows nothing. The crewman is not reassured.
+- 'The emitters hum steadily: familiar, engineered, human. The desert beyond is none of those things.'
+- 'Night is approaching. The green sky darkens toward something closer to black-green. The crew moves inside.'
+- One of the emitters flickers. An engineer runs to check it. It stabilizes. Everyone breathes again.
+- Far outside the perimeter, in the desert, a crystalline formation chimes. There is no wind.

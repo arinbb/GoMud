@@ -1,0 +1,25 @@
+mobid: 298
+zone: the_sopranos
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote scrolls through his phone with the focused blankness of someone trying not to be present."
+  - "say What's even the point? Like, in the end, what is the actual point of anything."
+  - "emote sighs. It is a comprehensive sigh, thorough and without resolution."
+  - "say I read about entropy. Did you know that everything just eventually breaks down? Everything."
+  - ''
+  - "emote looks out the window at nothing in particular for an extended period."
+  - "say School is just -- it's just a system to produce workers. That's all it is."
+activitylevel: 20
+character:
+  name: AJ Soprano
+  description: >-
+    A teenager, maybe sixteen, with his father's build beginning to show and
+    his mother's tendency toward feeling things he cannot articulate. He dresses
+    like any teenager in New Jersey in the early 2000s, and like any teenager
+    he believes his despair is the first despair, wholly original, not shared
+    by anyone who came before him. He has recently discovered existentialism,
+    which has not made things better. He has not yet decided what to do about
+    his father, which is the question his whole life is constructed around.
+  raceid: 1
+  level: 3

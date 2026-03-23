@@ -1,0 +1,66 @@
+roomid: 2032
+zone: Harold and Maude
+title: The Seaside Cliffs
+description: >-
+  <ansi fg="8">Sea cliffs</ansi> above the Pacific, California, 1971. The
+  <ansi fg="itemname">ocean</ansi> fills the entire west horizon, grey-green
+  and enormous, breaking white on the rocks three hundred feet below. The
+  <ansi fg="itemname">wind</ansi> up here is constant and cold and honest.
+  <ansi fg="10">Wildflowers</ansi> grow in the cliff grass -- Maude knows
+  every one of their names. This is where it ends, which means this is
+  where it becomes something else. A <ansi fg="itemname">banjo</ansi>
+  leans against the cliff rock, as if waiting. This is the place where
+  Harold learned what he came here to learn. Back to the <ansi fg="exit">north</ansi>
+  lies the street. The cliff edge is close. The sky is enormous. The
+  <ansi fg="itemname">wildflowers</ansi> blow in the Pacific wind.
+mapsymbol: C
+maplegend: The Seaside Cliffs
+biome: cliffs
+exits:
+  north:
+    roomid: 2027
+    exitmessage: You leave the cliffs and walk back up the road toward the street.
+nouns:
+  ocean: >-
+    The Pacific, in its perpetual westward going. Swells move across it from
+    some distance so great it cannot be imagined, arriving at these cliffs
+    and breaking into white with a sound that is final and also cyclical and
+    also entirely untroubled. Harold stood at this edge for a long time once,
+    after Maude. He played the banjo badly and then he drove the hearse to the
+    cliff and let it roll off and stood watching it go. Then he walked away.
+  wind: >-
+    The Pacific wind is cold and smells of salt and deep water and distance.
+    It does not pause. It has crossed a great deal of water to get here and
+    it will cross more after. The wildflowers lean in it, then right themselves,
+    then lean again. They have been doing this for decades.
+  wildflowers: >-
+    Yellow and purple and white wildflowers in the cliff grass. Maude knew
+    every one by name. She would have told you: this is yarrow, this is clover,
+    this is something without a common name that grows only in this county on
+    these cliffs. She said once that a single flower was as important as an
+    entire field of them, and also that an entire field of them was as important
+    as a single one.
+  banjo: >-
+    Maude's banjo, leaning against the cliff rock. It is tuned. The wind
+    moves the strings faintly, producing nothing that is music and yet
+    something that is not quite silence either. Harold can play it now.
+    He learned because she taught him, which is the best reason to learn
+    anything.
+  edge: >-
+    The cliff edge is right there, and the ocean is three hundred feet below,
+    and the wind is coming off the water, and the wildflowers are blowing.
+    Harold stood here for a long time. Then he went home. The edge is not
+    the point, which is the point.
+spawninfo:
+- mobid: 430
+  message: "<ansi fg=\"8\">Harold stands at the cliff's edge, looking out at the Pacific, his black suit wind-buffeted, his face entirely open.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The Pacific wind moves through the cliff grass, bending the wildflowers and straightening them again.
+- A wave breaks on the rocks below with a sound that echoes up the cliff face and dissipates.
+- Harold looks out at the ocean for a long time without speaking, which is its own kind of speaking.
+- The wildflowers -- yellow, purple, white -- blow all one direction in a long cold gust off the water.
+- The cliff grass is shorter up here, kept low by the constant wind, tougher than it looks.
+- Seabirds cross the horizon in a loose V formation, heading somewhere deliberate.
+- The banjo strings vibrate faintly in the Pacific wind, not music but not silence either.
+- The ocean is the same color as the sky at this hour, grey-green and enormous, making everything small.

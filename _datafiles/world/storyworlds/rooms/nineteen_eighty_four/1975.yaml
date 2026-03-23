@@ -1,0 +1,58 @@
+roomid: 1975
+zone: Nineteen Eighty Four
+title: The Chestnut Tree Cafe
+description: >-
+  <ansi fg="8">A cafe of sorts, or what passes for one in Oceania. Tiled
+  tables, a telescreen on the wall playing approved music in the approved
+  key. The telescreen shows the face of Big Brother between songs, and
+  the face is comforting now in a way it never was before — before Room
+  101, before everything that happened in that room, before the words
+  that came out of the room. Winston sits at his usual table with a
+  <ansi fg="itemname">glass of Victory Gin</ansi>, a chessboard in front
+  of him that he is not really playing on, and the
+  <ansi fg="itemname">telescreen</ansi> playing something that he finds
+  he likes. Under the spreading chestnut tree. He is free. The Party
+  has made him free in the only way available to the Party: free of
+  everything that was himself. The street is to the
+  <ansi fg="exit">north</ansi>.</ansi>
+mapsymbol: Z
+maplegend: The Chestnut Tree Cafe
+biome: city
+exits:
+  north:
+    roomid: 1963
+    mapdirection: north
+nouns:
+  gin: >-
+    Victory Gin. It tastes the same as before. Winston drinks it and finds
+    that the taste is no longer something to apologize for. He has been
+    drinking it every afternoon. It is his afternoon. He has no other
+    afternoons anymore. He has this one, with the gin and the chess problem
+    and the telescreen and the comforting face.
+  chessboard: >-
+    An unfinished chess problem on the board before Winston. He has been
+    thinking about it for some time. White to move and mate in two. He
+    cannot work it out. He will work it out later. He is not in a hurry.
+    He has no hurry left. He lost his hurry somewhere in the Ministry of
+    Love and he has not missed it.
+  telescreen: >-
+    It plays a song Winston finds he likes. Under the spreading chestnut
+    tree, I sold you and you sold me. He knows this song from before.
+    He is not sure when he began to like it. He thinks perhaps he has
+    always liked it. The face of Big Brother appears between songs. The
+    face is, Winston realizes, looking at it carefully over his gin,
+    a good face. A trustworthy face. He is glad the face exists.
+  winston: >-
+    He has a varicose ulcer above his right ankle. He rubs it sometimes
+    without noticing. His face has the blankness of a man who has decided,
+    finally and completely, that there is nothing behind it that needs
+    protecting. He is safe. The Party made him safe. He loves Big Brother.
+    He loves Big Brother. He loves Big Brother.
+idlemessages:
+- '<ansi fg="8">The telescreen plays the song. Under the spreading chestnut tree. Winston listens. He finds he likes it. He finds he has always liked it.</ansi>'
+- '<ansi fg="8">Winston looks at the face on the telescreen with the expression of a man who has reached the end of a long argument and finally sees that the other side was right.</ansi>'
+- '<ansi fg="8">The gin is the same as always. The chess problem is the same as always. The telescreen is the same as always. Winston is not the same as always. Winston is the same as the Party requires.</ansi>'
+- '<ansi fg="8">He thinks, briefly, of something. Then he does not think of it. This is not an effort anymore. The not-thinking has become the thinking.</ansi>'
+- '<ansi fg="8">The face of Big Brother fills the telescreen. The dark eyes, the heavy brows, the black moustache. Winston looks at it for a long time. He feels something that was once other things and is now simply warmth.</ansi>'
+- '<ansi fg="8">He won the victory over himself. He loves Big Brother. The last sentence of the novel. It does not get less terrible with time.</ansi>'
+- '<ansi fg="8">A waiter brings another teacup of Victory Gin without being asked. Winston drinks it. It is good. Everything is good now.</ansi>'

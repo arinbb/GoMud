@@ -1,0 +1,20 @@
+itemid: 175
+name: tiny red balloon
+namesimple: balloon
+displayname: a <ansi fg="itemname">tiny red balloon</ansi>
+description: >-
+  A balloon no larger than a fist, perfectly round, the red of valentines
+  and fire engines and something glimpsed through a warm window at night.
+  It floats at the end of a white string you hold in one hand, drifting
+  gently in whatever air surrounds you, as if the air is always slightly
+  in motion for this balloon. It came from the great green room -- from
+  the mantelpiece, where it floated near the ceiling on its long string
+  through the whole long bedtime of the book. When you hold it, you can
+  almost smell the room: wool and woodsmoke and warm milk and the
+  particular hush of a night that is saying goodnight to everything it
+  knows. The string is exactly the right length. The balloon is exactly
+  the right red. You may keep it as long as you like. It will not deflate.
+type: object
+subtype: usable
+uses: 0
+value: 0

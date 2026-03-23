@@ -1,0 +1,68 @@
+roomid: 1890
+zone: The Monkey Wrench Gang
+title: Glen Canyon Dam Overlook
+description: >-
+  You stand on a concrete observation platform above the <ansi fg="8">Glen Canyon Dam</ansi>,
+  a massive arc of pale concrete curving across the mouth of a gorge where the
+  <ansi fg="cyan">Colorado River</ansi> once ran free. The dam is seven hundred and ten
+  feet high. Behind it, stretching north for miles, is <ansi fg="cyan">Lake Powell</ansi>
+  — the reservoir created by flooding Glen Canyon, one of the most spectacular landscapes
+  on Earth, now drowned under two hundred feet of water. Abbey saw Glen Canyon before
+  the flood. He never got over it. From up here you can see the scale of what was done:
+  the immense concrete wall, the level blue water behind it, and if you know what to
+  look for, the <ansi fg="red">red rock canyon walls</ansi> rising above the waterline
+  where the canyon was not quite deep enough to drown. The <ansi fg="8">turbines</ansi>
+  hum. The <ansi fg="8">power lines</ansi> march away across the desert. To the
+  <ansi fg="exit">west</ansi>, the road leads back to the highway. Down at the <ansi fg="exit">dam</ansi>
+  base, the concrete is up close. To the <ansi fg="exit">shore</ansi>, a dock leads to
+  the houseboat on the lake.
+mapsymbol: O
+maplegend: Dam Overlook
+biome: desert
+exits:
+  west:
+    roomid: 1883
+    exitmessage: You turn away from the dam and drive west.
+    mapdirection: west
+  dam:
+    roomid: 1891
+    mapdirection: south
+  shore:
+    roomid: 1894
+    mapdirection: east
+nouns:
+  dam: >-
+    Glen Canyon Dam, completed in 1966, is seven hundred and ten feet of concrete
+    holding back the Colorado River. It creates Lake Powell, which flooded Glen
+    Canyon -- a landscape of side canyons, natural arches, waterfalls, and walls
+    of Navajo sandstone that Edward Abbey considered among the most beautiful places
+    on Earth. He had floated through it in 1959, the last good year. By 1966 it was
+    gone. He never stopped wanting it back. The gang shares this want, and has more
+    concrete plans.
+  lake: >-
+    Lake Powell is the reservoir created by Glen Canyon Dam, the second-largest
+    man-made reservoir in the United States. Its level fluctuates with the West's
+    drought cycles. When the water is low, the canyon walls reemerge from the
+    surface, red and dripping, a landscape returned from the dead. Hayduke watches
+    the level obsessively. He is rooting for drought.
+  turbines: >-
+    The turbines are in the powerhouse at the base of the dam, eight of them,
+    generating a total of 1.3 gigawatts. They hum at a frequency you can feel
+    in your teeth. They represent the entire purpose of the dam: not water storage
+    but power, the electricity that feeds Phoenix and Las Vegas and all the
+    expansion of the Southwest that Abbey found inexplicable and catastrophic.
+  lines: >-
+    The power transmission lines march away from the dam across the desert on steel
+    towers, carrying electricity to cities that were built in the wrong place
+    and would not exist without this river's impoundment. From the overlook they
+    look thin and delicate, like thread stretched across the landscape. They are
+    not as delicate as they look.
+spawninfo: []
+idlemessages:
+- The dam hums with the weight of all that water pressing against seven hundred feet of concrete.
+- 'Lake Powell glitters in the afternoon sun, beautiful and wrong: blue water in a drowned canyon.'
+- A tourist takes a photograph of the dam, then takes another one. It is the kind of thing that requires multiple photographs.
+- The power lines vibrate in the desert wind with a low electrical sound like a distant choir.
+- 'Somewhere below the waterline, buried under two hundred feet of lake, are canyon walls that took a hundred million years to make.'
+- 'Hayduke''s voice, imagined: we are going to need a lot more dynamite.'
+- The red canyon walls above the waterline rise clean and vertical, showing where the flood stopped.

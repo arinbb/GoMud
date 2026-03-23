@@ -1,0 +1,53 @@
+roomid: 1730
+zone: The Sopranos
+title: Vesuvio Restaurant
+description: >-
+  A warm <ansi fg="yellow">Italian restaurant</ansi> of the genuine kind — white
+  tablecloths, <ansi fg="itemname">candles</ansi> in wine bottles, the smell of
+  wood smoke and garlic and tomato that has been building since the lunch service.
+  <ansi fg="itemname">Artie Bucco</ansi> is somewhere in here, probably in the kitchen,
+  probably worrying about something that is both small and catastrophic in his mind.
+  The <ansi fg="itemname">tables</ansi> are set with care. The
+  <ansi fg="itemname">wine list</ansi> is longer than necessary and Artie knows every
+  bottle on it personally. The <ansi fg="itemname">framed photos</ansi> on the wall are
+  of Vesuvio's history, the old location, the fire, the reopening, the years since.
+  Artie has forgiven Tony for the fire. Mostly. The highway is back <ansi fg="exit">east</ansi>.
+mapsymbol: V
+maplegend: Vesuvio
+biome: house
+exits:
+  east:
+    roomid: 1725
+nouns:
+  candles: >-
+    Wax candles in wine bottle holders, the sides of the bottles thick with
+    layered wax from years of previous candles. The light they throw is warm
+    and unreliable, which is the right kind of light for this kind of place.
+  tables: >-
+    White tablecloths, fresh bread in a basket, olive oil in a small white
+    dish. The tables are set with the precision of someone who takes all of
+    this seriously, which Artie Bucco does, more than almost anything.
+  wine: >-
+    The wine list is handwritten and extensive. Artie knows the story of
+    every bottle -- where it came from, who made it, what year it had to
+    survive to become this. He will tell you if you ask.
+  photos: >-
+    Black and white photos of the original Vesuvio, before the fire. Photos
+    of the reopening ceremony. Artie and his wife cutting a ribbon. Regular
+    customers at their regular tables. The history of a place that almost
+    did not survive.
+  bread: >-
+    Fresh bread in a linen-lined basket, warm from the oven. There is good
+    olive oil and coarse salt. You eat a piece before anything else and it
+    is exactly right.
+spawninfo:
+- mobid: 297
+  message: "<ansi fg=\"yellow\">Artie Bucco emerges from the kitchen still in his apron, moving with the anxious energy of a man who loves what he does and is slightly terrified it will be taken from him again.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- Something magnificent is happening in the kitchen. The smell tells you before anything else does.
+- Artie's voice rises briefly from the kitchen -- not angry, just passionate. About food. Always about food.
+- The candles on the tables make the room breathe with light and shadow.
+- A wine glass rings softly when the door closes too hard. The sound hangs in the air.
+- The bread basket is empty and nobody has removed it yet. Someone will.
+- 'The framed photos watch the dining room: the old Vesuvio, the fire, the new beginning.'

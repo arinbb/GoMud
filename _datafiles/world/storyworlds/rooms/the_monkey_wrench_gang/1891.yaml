@@ -1,0 +1,58 @@
+roomid: 1891
+zone: The Monkey Wrench Gang
+title: The Dam Base
+description: >-
+  At the <ansi fg="8">foot of Glen Canyon Dam</ansi>, the scale becomes overwhelming.
+  The concrete wall rises seven hundred and ten feet above you, curving slightly as
+  it recedes into the gorge walls on either side, its surface pale grey and massive
+  and absolutely implacable. You are standing in the gorge that the Colorado River
+  carved over millions of years, and the dam occupies that gorge completely, its
+  footings anchored in the canyon floor, its arch transferring the immense pressure
+  of the reservoir against the canyon walls themselves. The <ansi fg="cyan">river</ansi>
+  emerges from the base in a cold, controlled rush — water released through the
+  penstocks at whatever rate the Bureau of Reclamation decides. It is no longer a
+  river at this point. It is a utility. The powerhouse <ansi fg="8">turbines</ansi>
+  vibrate the concrete underfoot. <ansi fg="8">Spray</ansi> from the tailrace keeps
+  the gorge floor cool and damp, ferns growing in the constant mist. To the
+  <ansi fg="exit">overlook</ansi> to the <ansi fg="exit">north</ansi>, the road leads back up.
+mapsymbol: W
+maplegend: Dam Base
+biome: cave
+exits:
+  north:
+    roomid: 1890
+    exitmessage: You climb back up to the overlook road.
+    mapdirection: north
+nouns:
+  concrete: >-
+    The dam is made of four million cubic yards of concrete poured continuously
+    over four years. It is seven hundred and ten feet tall and a thousand and
+    sixty feet long at the crest. It is anchored into the Navajo sandstone of the
+    canyon walls. The engineers who designed it believed, correctly, that it would
+    outlast everything their civilization built in the surrounding desert.
+    Hayduke has different plans.
+  ferns: >-
+    Maidenhair ferns grow from the damp rock at the base of the dam, rooted in
+    the constant mist of the tailrace. They have no opinion about the dam's
+    politics. They just needed moisture, and the dam provides it. This is the
+    kind of irony the desert produces without effort.
+  spray: >-
+    The tailrace spray keeps the gorge bottom perpetually damp and cool,
+    a microclimate ten degrees colder than the desert above. The ferns love it.
+    The engineers did not plan for the ferns. The desert improvises.
+  tailrace: >-
+    The water emerging from the penstocks runs controlled and metered through the
+    tailrace channel below the powerhouse. It is cold -- forty-six degrees year-round,
+    drawn from deep in the reservoir. It has killed the warm-water fish species that
+    evolved here over millions of years. The cold-water trout put in to replace them
+    are prized by fishermen and considered a kind of insult by anyone who understood
+    what was here before.
+spawninfo: []
+idlemessages:
+- The dam hums through the concrete beneath your feet, the turbines running at full capacity.
+- The tailrace spray settles on your face, cold and fine, the temperature of deep water.
+- A maidenhair fern at the base of the concrete sways in the tailrace wind, impossibly green.
+- 'The gorge walls rise straight up on both sides: the canyon the river carved, now occupied by something else.'
+- 'The controlled release roars through the penstocks: not a river sound, a machine sound.'
+- 'You put your hand on the concrete. It vibrates with a low frequency. Seven hundred feet of water pressing against this wall, right now.'
+- 'In Hayduke''s head, this entire wall becomes rubble and the river runs free: red and cold and singing its old song.'

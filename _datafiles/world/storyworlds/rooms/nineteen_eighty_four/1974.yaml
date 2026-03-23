@@ -1,0 +1,54 @@
+roomid: 1974
+zone: Nineteen Eighty Four
+title: Room 101
+description: >-
+  <ansi fg="white">A room with no distinguishing features. White walls.
+  White light. O'Brien is here, in his white coat, with the cage.
+  The cage is of wire mesh, divided into two compartments, with a door
+  at the front. In each compartment there is a large
+  <ansi fg="red">rat</ansi>, greyish-brown, sleek-furred, savage. This
+  is the worst thing in the world. O'Brien explained: Room 101 contains
+  the worst thing in the world. The worst thing varies by person. For
+  Winston it is <ansi fg="red">rats</ansi>. He has known this since
+  the dream, since long before this room. O'Brien knew it too. This is
+  what the Brotherhood was for. This is what the telescreen above
+  the bed was for. This is what everything was for. The cell is to
+  the <ansi fg="exit">cell</ansi> south.</ansi>
+mapsymbol: 1
+maplegend: Room 101
+biome: house
+exits:
+  cell:
+    roomid: 1973
+    mapdirection: south
+nouns:
+  cage: >-
+    Wire mesh, perhaps thirty centimeters by forty, with a door at the
+    face. Two compartments, two rats. The door opens onto a mask that
+    would fit over a human face, which would then be fastened against
+    it, so that the rats could reach the face and there would be no
+    escape. O'Brien holds this cage with the calm precision of a man
+    performing a medical procedure. He is, in some sense, performing
+    a medical procedure.
+  rats: >-
+    Large, grey-brown, with the specific intelligence of creatures that
+    have lived alongside humans long enough to know that they are worth
+    fearing. Their eyes are small and bright. Their teeth are the last
+    detail you want to dwell on. Winston has dreamed of them since
+    childhood. O'Brien knew. O'Brien always knew. This was always going
+    to be the room he ended up in.
+  obrien: >-
+    O'Brien stands here in his white coat, the cage in his hands, his
+    face wearing the expression of complete certainty. This is the
+    face of power: a face that is entirely sure that what it is doing
+    is correct, that has no doubt, that has processed and dismissed
+    doubt long ago. He is going to put the cage against Winston's face.
+    He has always been going to do this. Everything that happened before
+    was preparation for this.
+idlemessages:
+- '<ansi fg="white">The rats move in the cage with small, precise movements. They are not frightened. They have never been frightened. They are the frightening thing.</ansi>'
+- '<ansi fg="white">"The worst thing in the world," O''Brien says, "varies from individual to individual." He looks at the cage. He looks at you. He does not say: for you, it is rats. He does not need to say it.</ansi>'
+- '<ansi fg="white">The white light shows everything. There is nowhere to look except at the cage. The cage is the point.</ansi>'
+- '<ansi fg="white">Winston knows what he is going to say. He has known what he was going to say since before this room. He knew it in the dream, when the rats were at the corner and the wall, when the wall and the dream were the same thing.</ansi>'
+- '<ansi fg="white">O''Brien adjusts his spectacles. The cage sits on the table. The rats wait. O''Brien waits. Everything is very patient.</ansi>'
+- '<ansi fg="white">The question is not whether Winston will say it. The question is only when. The answer was always the same. That is what this room is for.</ansi>'

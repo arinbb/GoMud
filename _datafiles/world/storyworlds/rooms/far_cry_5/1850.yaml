@@ -1,0 +1,55 @@
+roomid: 1850
+zone: Far Cry 5
+title: Faiths Vision
+description: >-
+  You are somewhere that is not quite anywhere. The <ansi fg="purple">Bliss</ansi>
+  has taken you and what it gives you is this: a field of white flowers under a
+  sky that is simultaneously <ansi fg="purple">twilight</ansi> and noon, a light
+  without source that makes your hands look silver. The mountains are here but
+  they are <ansi fg="purple">inverted</ansi> — reflected in water that isn't
+  there, descending into a sky below. <ansi fg="itemname">Faith</ansi> walks
+  toward you across the impossible field, unhurried, her white dress trailing
+  in flowers that may or may not exist. Her voice is the only sound. Her voice
+  is everywhere. She says things that are beautiful and wrong and you cannot
+  quite hold them after she says them. The world beyond the vision is very far
+  away. The way back, if you choose it, is to <ansi fg="exit">wake</ansi>
+  (north).
+mapsymbol: V
+maplegend: Faiths Vision
+biome: land
+exits:
+  wake:
+    roomid: 1849
+    mapdirection: north
+nouns:
+  sky: >-
+    A sky that is purple-white, neither day nor night, lit from no visible
+    source. It should be wrong. It feels correct. This is the most dangerous
+    thing about the Bliss: it makes wrong things feel like the truest version
+    of themselves.
+  flowers: >-
+    White flowers, the white of the Bliss flowers with the color leached out,
+    pure and unreal. Each petal holds a tiny light. When you touch one —
+    and you find you have touched one — it is warm, like skin. You remove
+    your hand. The warmth lingers.
+  mountains: >-
+    The mountains of Hope County, but inverted. Their peaks descend into
+    the sky below the field. You understand, in the Bliss logic, that this
+    is because the mountains are not physical but spiritual — they root
+    not in the earth but in something deeper. This makes complete sense
+    here. It will not make sense when you wake.
+  faith: >-
+    Faith Seed, in the vision, is what the Bliss wants you to understand
+    about her: all the beauty without the machinery behind it. She is
+    genuinely lovely here. Genuinely kind. She wants something from you
+    that feels like love and is probably something else entirely.
+    In the vision you cannot tell the difference. In the vision that
+    might be the point.
+idlemessages:
+- The white flowers breathe. Slowly. In unison. Like a single organism.
+- Faith's voice carries words you understand while you hear them and cannot hold when they stop.
+- The inverted mountains ripple as if reflected in still water. Then still. Then ripple again.
+- You are warm here. You were cold outside and did not know it. This warmth is the problem.
+- Time moves differently. How long have you been here? The question floats away before you finish it.
+- The light brightens and dims on a rhythm that might be her heartbeat, or yours, or the same thing.
+- Somewhere far away, through the Bliss, the real world continues. Gunshots. Hymns. The smell of diesel. Faint.

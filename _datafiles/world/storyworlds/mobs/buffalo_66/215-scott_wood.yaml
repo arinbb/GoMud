@@ -1,0 +1,26 @@
+mobid: 215
+zone: buffalo_66
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote stares at the television without seeing it."
+  - ''
+  - ''
+  - "emote reaches for another beer can without looking."
+  - "say I was the best kicker in the AFC East. You know that? The BEST."
+  - "emote 's hand trembles slightly as he sets down the can."
+  - "say That kick... the wind took it. The WIND took it. It wasn't my fault."
+activitylevel: 20
+character:
+  name: Scott Wood
+  description: >-
+    A heavy man in a stained undershirt, sunk into a recliner surrounded
+    by a fortress of empty beer cans. He was once an athlete — you can see
+    it in the width of his shoulders, the size of his hands. But that was
+    a long time ago and a lot of beer ago. His face is puffy and red, his
+    eyes glassy. The trophies on the shelf behind him gleam with a youth
+    he can no longer reach. He is the man who missed the kick. He has been
+    the man who missed the kick for twenty years. He will be the man who
+    missed the kick forever.
+  raceid: 1
+  level: 5

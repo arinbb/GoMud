@@ -1,0 +1,27 @@
+mobid: 337
+zone: far_cry_5
+hostile: false
+maxwander: 1
+activitylevel: 35
+idlecommands:
+- emote dances slowly between the flowers as if the breeze is music she can feel before it arrives.
+- say Joseph found me when I had nothing. He gave me a name and a purpose and this place. Is that not worth everything?
+- ""
+- emote hums a hymn that seems to emanate from the surrounding flowers as much as from her own throat.
+- say I know what people say about the Bliss. That I use it. I prefer to think of it as a gift I give everyone equally.
+- ""
+- emote lets pollen drift from her fingertips, watching it catch the light with the expression of someone who made the sun.
+character:
+  name: Faith Seed
+  description: >-
+    A young woman in white, moving through the Bliss fields with the particular
+    grace of someone who is not quite subject to the normal rules of friction
+    and gravity. Her hair is pale, her eyes are pale, everything about her is
+    the color of the Bliss flowers in full bloom. She speaks in a register that
+    is warm and soft and carries just below conscious perception — you feel her
+    voice before you process the words. She is the youngest of the Seed siblings,
+    adopted by Joseph, the keeper of the Henbane. The Bliss is her domain and
+    her instrument and possibly her affliction. Whether she chose any of it is
+    a question she finds uninteresting.
+  raceid: 1
+  level: 15

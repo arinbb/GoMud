@@ -1,0 +1,22 @@
+-
+  Supported:
+    "hortensia": ["*"]
+  Conversation:
+    - ["#1 say Right, listen up. Let me tell you about the Chokey."]
+    - ["#2 emote leans in to listen"]
+    - ["#1 say It's a tall narrow cupboard in the corridor. Like a coffin standing up. But the walls are lined with broken glass and nails sticking out."]
+    - ["#2 emote looks horrified"]
+    - ["#1 say You can't sit down. You can't lean. You just have to STAND there for hours in the dark."]
+    - ["#1 emote rolls up a sleeve and shows a scar", "#1 say See this? That's from the Chokey. Three hours, that time. She put me in for breathing too loudly."]
+    - ["#2 say That's... that can't be legal.", "#1 say Legal? This is Crunchem Hall. The only law is Trunchbull."]
+-
+  Supported:
+    "hortensia": ["*"]
+  Conversation:
+    - ["#1 say Did I ever tell you about Amanda Thripp and her pigtails?"]
+    - ["#2 emote shakes their head"]
+    - ["#1 say Amanda came to school with her hair in pigtails. Trunchbull hates pigtails. Says they're like rats' tails."]
+    - ["#1 say So Trunchbull grabs both pigtails and starts SPINNING Amanda around her head like a hammer throw."]
+    - ["#2 emote gasps"]
+    - ["#1 say Then she lets go. Amanda flew over the fence and landed in Mr. Harper's cabbage patch."]
+    - ["#1 say The amazing thing is, Amanda was fine. Just a few bruises. That's the Trunchbull for you — the punishments are so over the top that no parent believes them."]

@@ -1,0 +1,28 @@
+mobid: 314
+zone: crime_and_punishment
+hostile: false
+maxwander: 1
+activitylevel: 40
+angrycommands: []
+idlecommands:
+  - emote laughs at something in the book he is reading, a big uncomplicated laugh.
+  - say Have you eaten? Sit down. I have bread somewhere. And tea -- there is always tea.
+  - emote sweeps a pile of books off a chair to make room for someone who may or may not be there.
+  - say Rodia! Rodya! Where has he gone now? That man worries me, I tell you honestly.
+  - ''
+  - emote reads standing up, book in one hand, tea in the other.
+  - say The German philologists are wrong about this, completely wrong, and I intend to say so at length.
+  - emote rubs his large hands together with cheerful energy and looks for something useful to do.
+character:
+  name: Razumikhin
+  description: >-
+    A large, broadly built young man with an open face and the kind of
+    cheerfulness that comes not from innocence but from having considered
+    the world's difficulties and decided to meet them head-on with energy
+    and goodwill. He is always doing something. He reads too much and talks
+    too much and helps too readily and means all of it. He is Raskolnikov's
+    best friend, which means he is the person Raskolnikov least deserves
+    and most needs. He is one of the few people in this novel who is
+    basically fine.
+  raceid: 1
+  level: 10

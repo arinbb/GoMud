@@ -1,0 +1,26 @@
+mobid: 387
+zone: ghostbusters
+hostile: false
+maxwander: 0
+activitylevel: 10
+idlecommands:
+- "emote files her nails with serene indifference to the supernatural nature of her workplace."
+- "say Ghostbusters, whaddya want."
+- "emote turns a page in a magazine without looking up from it."
+- "emote answers the phone with maximum Brooklyn efficiency and minimum enthusiasm."
+- "emote glances toward Egon's workbench with an expression she would deny having."
+- ""
+- ""
+character:
+  name: Janine Melnitz
+  description: >-
+    A woman with large glasses and hair that has strong opinions, dressed with the
+    practical style of someone who has made a decision about her appearance and is
+    not reconsidering it. She sits at the reception desk with the unassailable
+    composure of a person who has decided that the strangeness of her workplace is
+    simply a feature of having an interesting job. Her Brooklyn accent is thick and
+    precise. She answers every phone call with exactly three words: "Ghostbusters,
+    whaddya want." She has been doing this for six months and shows no signs of
+    expanding the greeting.
+  raceid: 1
+  level: 5

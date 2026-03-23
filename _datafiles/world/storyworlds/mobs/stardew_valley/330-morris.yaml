@@ -1,0 +1,23 @@
+mobid: 330
+zone: stardew_valley
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote straightens a row of Joja branded cola bottles with methodical precision."
+  - "say Welcome to JojaMart. We appreciate your business and your loyalty to the Joja brand."
+  - "emote checks a clipboard and processes something on it with a neutral expression."
+  - "say The Community Center represents an inefficient use of prime commercial real estate."
+  - "emote practices a professional smile in the reflection of a refrigerator case."
+  - ""
+activitylevel: 20
+character:
+  name: Morris
+  description: >-
+    The JojaMart manager: trim, efficient, smile permanently installed.
+    Morris wears the Joja uniform with genuine commitment. He believes in
+    what he represents, which is either admirable or alarming. He wants
+    to buy the Community Center and convert it to a Joja warehouse. He
+    is the only person in the valley who does not understand why this
+    upsets people.
+  raceid: 1
+  level: 6

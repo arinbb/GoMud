@@ -1,0 +1,27 @@
+mobid: 311
+zone: crime_and_punishment
+hostile: false
+maxwander: 0
+activitylevel: 30
+angrycommands: []
+idlecommands:
+  - emote chuckles softly to himself at something in his papers.
+  - emote paces to the window, looks down at the street, turns back with a pleasant expression.
+  - say Heh heh heh. Yes. Yes, that is very interesting.
+  - emote leans forward with sudden alertness, his small eyes open fully for one half-second, then settles back.
+  - ''
+  - emote taps his pen once on the desk with quiet satisfaction.
+  - say The psychological method, you understand. A man gives himself away not by what he says but by what he cannot help saying.
+  - emote examines a paper with the satisfaction of a man completing a puzzle.
+character:
+  name: Porfiry Petrovich
+  description: >-
+    A man of perhaps thirty-five, round-faced, with a soft body that suggests
+    sedentary pleasures. He dresses well enough for his station. His eyes are
+    small, set close, and when he opens them fully they are the most
+    intelligent eyes you have ever seen. He keeps them half-shut. He smiles
+    constantly. His manner is that of a man delighted by everything around him,
+    who finds the world an inexhaustible source of gentle amusement. He is the
+    most dangerous person in St. Petersburg.
+  raceid: 1
+  level: 18

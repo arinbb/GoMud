@@ -1,0 +1,28 @@
+mobid: 290
+zone: the_sopranos
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote lights a fresh cigar, rolling it between his fingers before bringing it to his lips."
+  - "emote channel-surfs through the television, pausing on nothing for more than three seconds."
+  - "emote stares at something past the wall, jaw set, eyes flat and far away."
+  - "emote rubs his temple with two fingers in a slow, grinding circle."
+  - ''
+  - ''
+  - "say You know what I realize? Nobody has any f***ing idea what they're doing. Nobody."
+  - "emote exhales a long stream of cigar smoke and watches it disperse."
+activitylevel: 25
+character:
+  name: Tony Soprano
+  description: >-
+    A large, heavily built man in his mid-forties, wearing a silk bathrobe
+    over a white undershirt and slacks, or sometimes an expensive suit,
+    depending on the time of day. His face is broad and lived-in, capable
+    of expressing warmth and menace sometimes simultaneously. He moves
+    through a room the way a large stone moves through water -- displacing
+    everything around him without apparent effort. There is something
+    melancholy behind his eyes that he has been trying to address for
+    several seasons now, with limited success. He smells of cologne and
+    cigar smoke and something else that is harder to name.
+  raceid: 1
+  level: 15

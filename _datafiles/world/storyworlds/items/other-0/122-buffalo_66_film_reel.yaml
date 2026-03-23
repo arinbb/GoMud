@@ -1,0 +1,15 @@
+itemid: 122
+name: Buffalo '66 film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Buffalo '66</ansi>
+description: >-
+  A film reel in a dented metal canister. "BUFFALO '66" is scratched into the
+  lid with something sharp, like a key or a fingernail. The canister is cold
+  to the touch and slightly damp with condensation, as if it has been stored
+  somewhere freezing. When you hold it close to your ear, you hear wind — flat,
+  cold wind off a Great Lake, carrying the faint sound of a football crowd
+  and someone humming an old song that no one remembers.
+type: object
+subtype: usable
+uses: 0
+value: 0

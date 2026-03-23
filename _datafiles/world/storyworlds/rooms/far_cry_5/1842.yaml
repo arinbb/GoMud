@@ -1,0 +1,72 @@
+roomid: 1842
+zone: Far Cry 5
+title: Falls End
+description: >-
+  The resistance town clings to itself with the stubborn dignity of a community
+  that has refused to give up its name. <ansi fg="10">Falls End</ansi> — a main
+  street, a gas station, a <ansi fg="itemname">general store</ansi> boarded
+  against looting, a diner with a <ansi fg="red">CLOSED</ansi> sign that has
+  been there for weeks. The <ansi fg="itemname">Spread Eagle Bar</ansi> is open,
+  its neon sign burning in the daylight like a declaration of independence.
+  A <ansi fg="itemname">church</ansi> at the end of the street is being
+  laboriously de-cult-ified — Eden's Gate symbols pried from the walls, the
+  original cross re-hung at some effort. <ansi fg="itemname">Nick Rye</ansi>
+  walks the perimeter, watching the roads. This is home. This is worth fighting
+  for. The bar is to the <ansi fg="exit">east</ansi>. The church is to the
+  <ansi fg="exit">north</ansi>. The county road is <ansi fg="exit">south</ansi>.
+mapsymbol: T
+maplegend: Falls End
+biome: city
+exits:
+  south:
+    roomid: 1841
+  east:
+    roomid: 1843
+  north:
+    roomid: 1844
+    exitmessage: You walk up the street toward the Falls End church.
+nouns:
+  store: >-
+    The general store — boarded windows, a hand-lettered sign in the door
+    reading "RESISTANCE MEMBERS ONLY. SUPPLIES INSIDE. KNOCK TWICE." Someone
+    has spray-painted the Eden's Gate logo off the wall. The ghost of it is
+    still visible in the paint color underneath.
+  sign: >-
+    The neon Spread Eagle Bar sign, buzzing and flickering but burning.
+    Someone has been maintaining it through the occupation. Keeping it lit
+    feels important. A sign in every sense.
+  diner: >-
+    Mabel's Diner. The sign is still up, the booths still visible through
+    the window, but the CLOSED sign has been there since the occupation
+    tightened. A layer of dust on the counter. Coffee cups someone meant
+    to come back for.
+  church: >-
+    The Falls End church, being restored to itself. A ladder leans against
+    the steeple where someone pried off an Eden's Gate symbol. The original
+    cross is back in place, slightly crooked. No one has straightened it yet.
+    There's something fierce about its imperfect re-hanging.
+  street: >-
+    Main Street, Falls End. Still standing. Battered, anxious, watchful,
+    but standing. You understand why the resistance fights to hold it.
+    Some places are worth fighting for not because of what they are but
+    because of what surrendering them would mean.
+spawninfo:
+- mobid: 341
+  message: Nick Rye walks the perimeter, one hand shading his eyes against the sky.
+  idlecommands:
+  - emote scans the tree line to the north, hand shading his eyes.
+  - say She's due any day now. I'm not letting these people take my kid's home.
+  - ""
+  - emote crouches by his truck and checks something in the engine bay.
+  - say Kim wants me to stop flying combat runs. She's probably right. She's usually right.
+  - ""
+  - emote looks up at the sky, reading the weather with a pilot's automatic habit.
+  respawnrate: 3 real minutes
+idlemessages:
+- Nick Rye walks the perimeter, checking sight lines with a pilot's precision.
+- From the church comes the sound of hammering as someone pries another Eden's Gate symbol from the wall.
+- The Spread Eagle's neon sign hums and flickers. It keeps burning. It always keeps burning.
+- A dog trots down the main street with its nose to the ground, unaware of any occupation.
+- Someone has written 'HOPE COUNTY IS NOT YOURS' on the road in spray paint. The letters are large.
+- The smell of gun oil and fresh coffee mixes on the main street breeze.
+- Distant engines on the county road. Everyone tenses. Then the sound fades. Then breathing resumes.

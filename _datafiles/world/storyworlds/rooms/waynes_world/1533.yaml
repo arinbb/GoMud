@@ -1,0 +1,54 @@
+roomid: 1533
+zone: Waynes World
+title: Cable Access Control Room
+description: >-
+  The technical heart of the operation. Banks of <ansi fg="itemname">monitors</ansi>
+  show feeds from the basement cameras, plus whatever else Aurora Cable Channel 10
+  is currently airing. A <ansi fg="itemname">broadcast console</ansi> with more
+  dials and switches than necessary runs the length of the room. The
+  <ansi fg="itemname">VCR stack</ansi> records everything. <ansi fg="itemname">Noah
+  Vanderhoff</ansi> has his favorite <ansi fg="itemname">chair</ansi> here from
+  which he watches the show and thinks about synergies and brand integration
+  and other things that are the opposite of excellent. A small
+  <ansi fg="itemname">window</ansi> looks down into the basement studio below.
+  To the <ansi fg="exit">east</ansi> is the studio basement.
+mapsymbol: C
+maplegend: Control Room
+biome: house
+exits:
+  east:
+    roomid: 1520
+nouns:
+  monitors: >-
+    Stacked CRT monitors showing the cable access feed. Wayne's face fills the
+    center screen, enormous and cheerful. He is talking to the camera with the
+    confidence of someone who has never considered that what he's doing might
+    not be important. It is important.
+  console: >-
+    Dials, faders, switches, and buttons whose functions have been partially
+    forgotten. The essential ones have labels in tape and marker. "ON AIR"
+    lights up in red when Wayne is broadcasting.
+  vcr: >-
+    A stack of VCRs in a metal rack, all recording. Everything gets recorded.
+    The tapes are labeled with dates and episode numbers in Garth's small precise
+    handwriting. There are a lot of them.
+  window: >-
+    A window into the basement studio below. From here you can see the set
+    exactly as the camera sees it, minus the warmth. The monitors are actually
+    better. But the window is more honest.
+  chair: >-
+    Noah's chair. Ergonomic, expensive, significantly out of place. He brings
+    it every time he comes to watch. It makes a statement. The statement is
+    about ownership.
+spawninfo:
+- mobid: 246
+  message: "<ansi fg=\"yellow\">Noah Vanderhoff settles into his chair, holding his product and smiling at the monitors.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The ON AIR light blinks red and the monitors fill with Wayne's face. Show time.
+- Noah holds his product up toward the monitor, practicing a sponsored segment in his head.
+- The VCR stack whirs, recording everything for posterity and litigation.
+- A monitor shows a static interstitial on Channel 10. Noah watches it with the same intensity.
+- The console hums. The dials hold their positions. Everything is ready.
+- The window to the studio catches the fluorescent glow from below.
+- Someone has left a box of Vanderhoff's product on the console. Nobody asked them to.

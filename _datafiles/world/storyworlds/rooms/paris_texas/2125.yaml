@@ -1,0 +1,54 @@
+roomid: 2125
+zone: Paris Texas
+title: The Road to Houston
+description: >-
+  A <ansi fg="8">pickup truck</ansi> on I-10 East, somewhere in the flat middle
+  of Texas. The state goes on forever in every direction. The sky is bigger here
+  than in California — more vertical somehow, less crowded. <ansi fg="yellow">Travis</ansi>
+  drives. <ansi fg="yellow">Hunter</ansi> rides. They have been talking for the
+  first time. Not about the important things yet — those are still ahead, still
+  being worked toward. But talking. The <ansi fg="itemname">radio</ansi> plays
+  something country and then cuts to static and then to something else. A
+  <ansi fg="itemname">paper bag</ansi> of gas station food sits between them.
+  Travis did not know what Hunter liked. He bought one of everything. The road
+  runs <ansi fg="exit">west</ansi> back to LA and <ansi fg="exit">east</ansi>
+  toward Houston.
+mapsymbol: R
+maplegend: Road to Houston
+biome: road
+exits:
+  west:
+    roomid: 2123
+  east:
+    roomid: 2126
+nouns:
+  truck: >-
+    An old blue pickup truck. It needs work that it will not get before
+    Houston. It runs fine. Some things that need work just keep running
+    anyway.
+  radio: >-
+    A cassette deck with a cracked housing. Hunter has found a station.
+    It plays something Travis does not know and Hunter sings along very
+    quietly, not knowing he is doing it.
+  food: >-
+    Gas station food in a paper bag. Chips and a candy bar and a sandwich
+    in plastic and two cans of soda. Travis bought one of everything
+    because he did not know what Hunter liked. This is the kind of
+    thing a father has to learn.
+  bag: >-
+    Gas station food in a paper bag. Chips and a candy bar and a sandwich
+    in plastic and two cans of soda. Travis bought one of everything
+    because he did not know what Hunter liked. This is the kind of
+    thing a father has to learn.
+  sky: >-
+    Big. Really big. The biggest sky you have ever seen. Texas sky is
+    not like other sky — it is full of itself, enormous with its own
+    emptiness, pleased with its scale.
+idlemessages:
+- 'The road hums under the tires. Mile markers count down to Houston.'
+- Hunter unwraps the candy bar slowly and offers half. Travis takes it without looking.
+- The radio fades to static. Neither of them reaches for the dial.
+- Texas keeps going. It will keep going for another several hours.
+- Travis adjusts his hands on the wheel. Hunter watches the fence posts going by.
+- 'Something on the radio: a steel guitar, briefly. Then gone.'
+- They are moving toward something and they both know it and neither says so.

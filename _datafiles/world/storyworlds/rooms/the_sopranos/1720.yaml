@@ -1,0 +1,56 @@
+roomid: 1720
+zone: The Sopranos
+title: The Soprano Driveway
+description: >-
+  A wide <ansi fg="itemname">driveway</ansi> curves up to a large suburban
+  <ansi fg="8">house</ansi> in North Caldwell, New Jersey. A brick McMansion of
+  colonial pretension, well-maintained in a way that suggests someone cares
+  deeply about appearances. A black <ansi fg="itemname">SUV</ansi> sits in the
+  driveway, polished to a mirror shine. The <ansi fg="itemname">morning paper</ansi>
+  lies at the end of the driveway, half-read and discarded. A row of sculpted
+  <ansi fg="itemname">hedges</ansi> lines the front. The neighborhood is quiet in
+  the particular way that expensive neighborhoods are quiet — not peaceful, just
+  insulated. The <ansi fg="exit">kitchen</ansi> is to the north, Tony's
+  <ansi fg="exit">den</ansi> is to the east, and the <ansi fg="exit">highway</ansi>
+  waits beyond the cul-de-sac.
+mapsymbol: D
+maplegend: Soprano Driveway
+biome: city
+exits:
+  north:
+    roomid: 1721
+  east:
+    roomid: 1722
+  highway:
+    roomid: 1725
+    mapdirection: south
+nouns:
+  driveway: >-
+    Blacktop, freshly sealed. Not a crack, not a weed. Someone paid for this.
+    The kind of driveway that says the man who owns this house does not have
+    problems. Or so the driveway insists.
+  suv: >-
+    A black Chevrolet Suburban, immaculate, tinted windows. The kind of vehicle
+    that projects authority and absorbs it simultaneously. There is a faint
+    chemical smell -- not gasoline, something else. Pine air freshener, maybe,
+    working very hard.
+  hedges: >-
+    Sculpted boxwood, trimmed with geometric precision. They border the property
+    like a polite assertion of boundaries. They have been shaped to look natural
+    while being entirely controlled.
+  paper: >-
+    The Star-Ledger. The front page has been scanned and discarded. Someone
+    read the headlines and did not like them, or simply stopped caring at a
+    certain point on the driveway.
+  house: >-
+    Big. Bigger than it needs to be. Red brick colonial revival, four bedrooms,
+    a finished basement, a pool in the back. The kind of house a man builds to
+    prove something to himself and then has to maintain forever.
+spawninfo: []
+idlemessages:
+- A bird lands on the Suburban's side mirror, regards itself, and flies away.
+- The sprinklers click on at the neighbor's house. A brief green hiss.
+- A school bus rumbles past on the street at the end of the cul-de-sac.
+- The morning paper sits at the end of the driveway, patient and unread.
+- A cloud passes over the sun and the whole neighborhood goes momentarily grey.
+- Somewhere, a lawn mower starts up. The sound of Saturday becoming obligation.

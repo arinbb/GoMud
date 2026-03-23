@@ -1,0 +1,51 @@
+roomid: 2122
+zone: Paris Texas
+title: The Highway to LA
+description: >-
+  A two-lane <ansi fg="8">highway</ansi> through the American Southwest, filmed
+  from inside a moving car. The desert gives way to scrubland gives way to dry
+  mountains gives way to scrubland again. <ansi fg="itemname">Motels</ansi> appear
+  at long intervals — their signs promising VACANCY and COLOR TV and little else.
+  A <ansi fg="itemname">pickup truck</ansi> moves at a steady pace that neither
+  hurries nor delays. The passenger does not speak. The driver does not ask him
+  to. This is a silence chosen and kept and offered like a gift. The road runs
+  <ansi fg="exit">south</ansi> back toward Texas and <ansi fg="exit">east</ansi>
+  toward Los Angeles. A <ansi fg="exit">motel</ansi> sign blinks on the right.
+mapsymbol: H
+maplegend: Highway
+biome: road
+exits:
+  south:
+    roomid: 2121
+  east:
+    roomid: 2123
+  motel:
+    roomid: 2131
+    mapdirection: north
+nouns:
+  highway: >-
+    The yellow center line pulses past at sixty miles an hour. It is
+    hypnotic. Time passes differently on a highway. A hundred miles
+    can feel like five minutes or five hours depending on who is
+    sitting next to you.
+  motels: >-
+    Low buildings set back from the road, their parking lots half-empty.
+    Names like Desert Rose and Sunset and Western Star. Each one a
+    parenthesis in someone's journey. Travis stayed in motels for four
+    years. He does not talk about what that was like.
+  truck: >-
+    Walt's blue pickup truck. It runs. That is what matters about it.
+    Through its windshield the highway unspools endlessly westward
+    into California light.
+  mountains: >-
+    The Chihuahuan desert gives way to the San Andres. The mountains
+    are brown and enormous and completely indifferent to the highway
+    that threads through their feet.
+idlemessages:
+- The yellow center line pulses past. Miles accumulate and mean nothing.
+- Walt turns on the radio. A country station comes in for a minute, then static, then gone.
+- A tumbleweed crosses the highway from left to right, unhurried.
+- The sun moves across the sky in the time it takes to cross New Mexico.
+- A roadside cross marks a spot where someone ran out of road. You pass it at sixty miles an hour.
+- The silence between two people in a truck can be the most honest conversation there is.
+- Arizona. Then California. The air changes but the distance does not.

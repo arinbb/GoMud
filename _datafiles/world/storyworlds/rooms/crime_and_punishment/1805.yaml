@@ -1,0 +1,48 @@
+roomid: 1805
+zone: Crime and Punishment
+title: The Pawnbrokers Staircase
+description: >-
+  A staircase in a building identical to his own, and nothing like it. The
+  stairs are wider here, the building slightly more respectable — four floors
+  of <ansi fg="itemname">apartments</ansi> for the petit bourgeois of the
+  quarter. The smell of paint, of cooked cabbage, of other people's lives
+  behind closed doors. The fourth-floor door is <ansi fg="itemname">painted</ansi>
+  — dark paint, newer than the rest of the building, as if the occupant
+  regards the door as a statement. The bell-pull beside it is brass. He has
+  rung it before, hat in hand, with something to pledge. He knows exactly
+  how many steps lead to that door, how long it takes, what sounds the
+  building makes at different hours. The street is <ansi fg="exit">west</ansi>.
+  The door to the apartment is <ansi fg="exit">up</ansi>.
+mapsymbol: P
+maplegend: The Pawnbrokers Staircase
+biome: house
+exits:
+  west:
+    roomid: 1802
+  up:
+    roomid: 1806
+nouns:
+  door: >-
+    The door at the fourth floor, painted dark. It has two locks. The bell
+    pull is brass, shaped like a woman's hand. Ring it and she will ask who
+    is there before she opens, because she is a careful woman. She has lived
+    alone among the poor long enough to be careful. It has not been enough.
+  paint: >-
+    The dark paint on the fourth-floor door is newer than the surrounding
+    wall. She had it painted recently. An assertion of ownership, of
+    respectability, in a building where both are precarious.
+  apartments: >-
+    The apartment doors on each landing are closed and will remain closed.
+    The people behind them are at work, or asleep, or watching through the
+    keyhole the way everyone in this building watches everything.
+  steps: >-
+    He has counted them. He counts them every time. It is the kind of thing
+    that a mind does when it is planning something it cannot admit to itself
+    it is planning.
+idlemessages:
+- The building is quiet at this hour. A clock somewhere on the second floor ticks with small, decisive sounds.
+- The smell of fresh paint from the fourth-floor door drifts down the stairs, sharp against the usual cabbage.
+- A door on the second floor opens and closes quickly, releasing a draft that ruffles the stairwell air.
+- 'From the street below, cart wheels on cobblestone. Here the sound is remote, belonging to another world.'
+- The staircase is narrow enough that two people passing would have to turn sideways. He has planned for this.
+- Light comes from a dirty window on the top landing, yellow as a bruise.

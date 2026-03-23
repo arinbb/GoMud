@@ -1,0 +1,52 @@
+roomid: 1866
+zone: Super Mario Bros
+title: World 2-3 Bridge Level
+description: >-
+  The athletic level -- narrow platforms over open <ansi fg="cyan">water</ansi>,
+  no ground beneath you, just the bridge and the sky and the distant gleam
+  of waves below. The platforms are wood and stone, each one a precise
+  jumping distance from the next, the gaps calibrated to test exactly how
+  far you can leap with a running start. The water below is a deep blue
+  that glitters. <ansi fg="itemname">Cheep-Cheeps</ansi> leap from the water
+  in steady arcs -- small red fish with fins and determined expressions,
+  cresting the gap between water and air, landing somewhere behind you, or
+  on top of you if you are standing in the wrong place. The music has changed:
+  faster, urgent, demanding quick decisions. North leads <ansi fg="exit">back</ansi>;
+  east continues to <ansi fg="exit">World 3</ansi>.
+mapsymbol: B
+maplegend: Bridge Level
+biome: shore
+exits:
+  north:
+    roomid: 1865
+  east:
+    roomid: 1867
+nouns:
+  water: >-
+    Deep blue water stretching in all directions beneath the platforms. It
+    is not the underwater level -- you cannot swim here. If you fall in,
+    the level resets. The water looks calm from above, but the Cheep-Cheeps
+    leaping from it suggest something very active beneath the surface. It
+    catches the light in moving patterns. It is beautiful and it will kill
+    you.
+  cheep_cheeps: >-
+    Red fish with two white fins and round eyes full of what reads as
+    determination. They leap from the water on precise arcs, clearing the
+    platforms in a fixed pattern. If you are standing where they land,
+    they hurt you. They are not malicious. They are just following the
+    programming. Every Cheep-Cheep has been doing its exact arc since 1985.
+  platforms: >-
+    Wooden and stone platforms spanning the water, each one the precise
+    width needed and no wider. The gaps between them are the exact distance
+    of a running jump. There are no handholds, no ledges, no second chances.
+    You jump or you do not jump. You land or you do not land. The bridge
+    level is honest in a way the castle levels are not.
+spawninfo: []
+idlemessages:
+- A Cheep-Cheep leaps from the water in a perfect arc, fins flat, expression earnest.
+- 'The music here is faster: a driving rhythm that means move, keep moving, do not stop.'
+- 'The water below glitters in the sun, beautiful and fatal in equal measure.'
+- Platforms stretch east and west, each one a small safe island in a very large nothing.
+- 'Another Cheep-Cheep clears the platform edge, its arc mathematically precise.'
+- 'The bridge level has a particular feel: exposed, fast, demanding everything from you.'
+- Wind moves over the water, carrying the smell of salt and something faintly fishy.

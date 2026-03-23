@@ -1,0 +1,49 @@
+roomid: 2121
+zone: Paris Texas
+title: The Gas Station
+description: >-
+  A single-pump <ansi fg="8">gas station</ansi> at the edge of nothing. A
+  <ansi fg="itemname">Coca-Cola sign</ansi> hangs over the door, its red faded
+  to the color of old brick. A <ansi fg="itemname">phone</ansi> on the exterior
+  wall. A water spigot that drips one drop every few seconds onto the concrete
+  below, a small dark stain the only evidence of its patience. The road out front
+  is <ansi fg="8">Route 90</ansi>, and it runs east and west into identical
+  distances. To the <ansi fg="exit">west</ansi>, the desert. To the
+  <ansi fg="exit">north</ansi>, a highway that leads eventually to California.
+  The door to the station is unlocked. Nobody is stealing anything from here.
+  There is nothing to steal.
+mapsymbol: G
+maplegend: Gas Station
+biome: road
+exits:
+  west:
+    roomid: 2120
+  north:
+    roomid: 2122
+nouns:
+  sign: >-
+    Coca-Cola. The red has faded to something between rust and rose. The
+    white lettering is still legible. It has been here since before you
+    were born and it will be here after.
+  phone: >-
+    A payphone bolted to the exterior wall. The receiver is warm from
+    the sun. Walt Henderson made a phone call from a phone just like
+    this one. The number he called was answered. That matters.
+  spigot: >-
+    One drop. Pause. One drop. The sound is steady and exact. In the
+    context of this much silence it is almost music.
+  road: >-
+    Route 90. Straight as a thought and just as unforgiving. East or
+    west, it leads to more of what you are already in.
+spawninfo:
+- mobid: 474
+  message: '<ansi fg="8">A man in a dusty white shirt is crouched beside a figure on the concrete, speaking quietly and checking for a pulse.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The Coca-Cola sign creaks once on its bracket and goes still.
+- A car passes on Route 90 going west. It does not slow down.
+- The spigot drips. Pause. Drips. Pause. Drips.
+- Dust moves across the parking lot in a low drift, like something thinking about leaving.
+- The phone on the wall does not ring.
+- The station smells of motor oil and old concrete and a faint trace of something sweet — soda, spilled long ago.
+- 'The sky out here: the same in every direction, as far as you can see.'

@@ -1,0 +1,28 @@
+mobid: 411
+zone: forbidden_planet
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say Are there really billions of people on Earth? Father showed me photographs but they do not seem real."
+  - ""
+  - "emote cups an alien crystalline bloom in both hands and examines its inner light."
+  - ""
+  - "say I have read every book in Father's library. But books are not the same as knowing."
+  - ""
+  - "emote sits beside the deer and strokes its neck. The deer does not look up."
+  - ""
+  - "say What is snow like? I read about it but Altair IV is always the same temperature."
+  - ""
+activitylevel: 30
+character:
+  name: Altaira
+  description: >-
+    A young woman of perhaps twenty, raised entirely on an alien world by a
+    single parent and a robot. She is startlingly beautiful in the way of
+    someone who has never been told she is beautiful and does not know what
+    to do with attention. Her manner is direct and naive in equal measure --
+    she knows everything from books and nothing from experience. She moves
+    among the alien flowers and tame animals of her garden with the ease of
+    someone entirely at home in a world that should be impossible.
+  raceid: 1
+  level: 5

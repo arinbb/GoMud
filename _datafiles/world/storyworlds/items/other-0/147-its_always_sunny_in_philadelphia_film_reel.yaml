@@ -1,0 +1,17 @@
+itemid: 147
+name: Its Always Sunny in Philadelphia film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Its Always Sunny in Philadelphia</ansi>
+description: >-
+  A film reel in a scuffed, beer-sticky metal canister. "ITS ALWAYS SUNNY"
+  is written on the lid in black marker, then someone crossed it out and
+  wrote "PADDYS PUB" beneath it, then crossed that out too and wrote
+  "CHARLIE WROTE THIS" which makes no sense. The canister is slightly warm
+  and smells of stale Coors Light, cigarette smoke, and something that might
+  be cheese or might be regret. When you hold it near your ear you hear
+  five people talking over each other, none of them listening, all of them
+  absolutely certain they are right. A jukebox plays three notes and stops.
+type: object
+subtype: usable
+uses: 0
+value: 0

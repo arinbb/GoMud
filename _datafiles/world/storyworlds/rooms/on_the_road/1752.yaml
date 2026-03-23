@@ -1,0 +1,61 @@
+roomid: 1752
+zone: On the Road
+title: New Orleans - Old Bull Lee's House
+description: >-
+  A shotgun house in a New Orleans neighborhood, the <ansi fg="itemname">garden</ansi>
+  overgrown with weeds that <ansi fg="mobname">Old Bull Lee</ansi> maintains
+  in preference to anything else. Inside, the house is sparse and strange
+  and full of the accumulated evidence of a man who has been conducting
+  experiments on himself and on the world for many years. <ansi fg="itemname">Books</ansi>
+  on unusual subjects crowd the shelves. In the <ansi fg="itemname">garden</ansi>,
+  Old Bull Lee has been known to set up tin cans and shoot them with a
+  pistol while delivering a lecture on something that only becomes clear
+  in retrospect. He is the most dangerous intelligent man Sal has ever
+  met, and also possibly the most interesting. Outside, <ansi fg="itemname">Bourbon Street</ansi>
+  two blocks away is alive with its eternal party. To the <ansi fg="exit">east</ansi>
+  along the <ansi fg="exit">road</ansi> is the highway back north.
+mapsymbol: N
+maplegend: New Orleans
+biome: house
+exits:
+  road:
+    roomid: 1743
+    mapdirection: northeast
+nouns:
+  garden: >-
+    The garden behind Old Bull Lee's house is a pharmaceutical experiment
+    conducted under the New Orleans sun. Things grow here that Old Bull
+    Lee has planted for reasons he will explain at length and that you
+    will understand only partially. The pistol range is at the back,
+    where a row of tin cans stands on a fence rail. Some are new. Some
+    have been shot many times and are not exactly cans anymore.
+  books: >-
+    Books on every subject that is not taught in school. Guns. Drugs.
+    Orgone energy. Mayan codices. The anthropology of Central America.
+    The pharmacopeia of the Border. Old Bull Lee has read all of them
+    carefully and believes approximately half of each, and the half he
+    believes changes depending on the day and what he has been taking.
+  bourbon: >-
+    Bourbon Street two blocks away sends waves of music and noise and
+    the smell of beer and magnolias over the rooftops into this garden.
+    Old Bull Lee ignores it. He has been ignoring Bourbon Street since
+    he arrived here, which is the correct position.
+  lee: >-
+    Old Bull Lee is the alias for William S. Burroughs in this novel,
+    and Burroughs in 1949 is forty years old and has shot his wife dead
+    in Mexico City (though that comes later) and has written nothing yet
+    (though that comes later too) and is sitting in this garden explaining
+    something about consciousness to anyone who will listen, which is
+    mostly Sal and Dean, who listen to everyone.
+spawninfo:
+- mobid: 304
+  message: Old Bull Lee sits in the garden with a book and a glass of something clear, observing.
+  container: ''
+idlemessages:
+- Old Bull Lee turns a page of his book without looking up, though he has been listening to everything.
+- A shot rings out from the back garden. A tin can shatters. A pause. Another shot.
+- 'The smell of magnolias and bourbon and something else, something chemical, drifts from the direction of the garden.'
+- 'Old Bull Lee begins a sentence: "The most dangerous thing about heroin..." and does not finish it for several minutes.'
+- The house is quiet in a way that is not restful but watchful.
+- 'From two blocks away, Bourbon Street sends its endless music over the rooftops. Old Bull Lee ignores it professionally.'
+- A dog in the yard next door barks once and stops, as if Old Bull Lee told it to.

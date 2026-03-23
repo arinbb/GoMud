@@ -1,0 +1,16 @@
+name: Up in Smoke
+roomid: 2100
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: road
+mutators:
+- mutatorid: haze-cloud
+idlemessages:
+- The LA sun hammers down, bleaching everything gold and white.
+- Somewhere down the block a radio plays an oldies station, windows wide open.
+- The smell of asphalt and exhaust mixes with something sweeter, harder to name.
+- A lowrider cruises past with hydraulics chirping, paint catching the light.
+- '1970s Los Angeles: the freeway, the dream, the haze.'
+- Somebody laughs too loud from inside a parked van, then goes quiet.
+- The palm trees stand still. The smog turns the horizon a beautiful dirty orange.

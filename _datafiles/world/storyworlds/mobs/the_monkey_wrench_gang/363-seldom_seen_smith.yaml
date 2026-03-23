@@ -1,0 +1,24 @@
+mobid: 363
+zone: the_monkey_wrench_gang
+hostile: false
+maxwander: 1
+activitylevel: 30
+angrycommands: []
+idlecommands:
+  - emote checks the river level against a mark on the canyon wall, nods to himself.
+  - emote prays silently, facing upstream, toward where Glen Canyon used to be.
+  - emote adjusts his hat and looks at the lake the way a man looks at something he loved that got sick.
+  - say Lord, I know you had a plan. I just think the dam was not it.
+  - emote coils a length of rope with the practiced efficiency of a river guide.
+  - say I have floated every river in the canyon country. The Colorado, the Green, the San Juan. They are all changed. All of them.
+character:
+  name: Seldom Seen Smith
+  description: >-
+    A tall, lean Mormon man in his thirties, a river guide by profession and by calling,
+    with the easy competence of someone who has spent years reading moving water and
+    reading the desert. He wears a battered cowboy hat and river sandals over wool socks.
+    He carries three rings on his right hand and wears them in rotation depending on which
+    state he is in. He is the most gentle member of the gang and the most spiritually
+    devoted, which is what makes his sabotage feel like prayer rather than crime.
+  raceid: 1
+  level: 11

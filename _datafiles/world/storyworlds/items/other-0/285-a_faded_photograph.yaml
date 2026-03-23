@@ -1,0 +1,15 @@
+itemid: 285
+name: a faded photograph
+namesimple: photograph
+displayname: a <ansi fg="8">faded photograph</ansi>
+description: >-
+  A small photograph, maybe 4x6, the colors shifted far toward red
+  and brown the way old photographs do. A woman, a man, a small boy,
+  standing in front of a car somewhere bright and flat. They are
+  squinting into the sun. Someone has written on the back in ballpoint
+  pen, pressed hard: Paris, Texas. The handwriting is careful but
+  the pressure was not.
+type: object
+subtype: usable
+uses: 0
+value: 0

@@ -1,0 +1,24 @@
+mobid: 402
+zone: nineteen_eighty_four
+hostile: false
+maxwander: 0
+activitylevel: 20
+idlecommands:
+  - emote resettles his spectacles on his nose with two fingers. His face is entirely calm.
+  - emote pours wine with the unhurried ease of a man who has decided how this evening will go.
+  - emote speaks with the measured certainty of someone who has never had cause to doubt himself.
+  - emote looks at you with an expression that is, if anything, kind. That is the most frightening thing about it.
+  - ''
+  - emote quotes something from Goldstein's book with the satisfaction of a man who wrote it himself.
+character:
+  name: OBrien
+  description: >-
+    A large, burly man of perhaps forty-five, with a thick neck and a coarse, humorous
+    face. He wears the black overalls of the Inner Party. He has a trick of resettling
+    his spectacles on his nose with a slow, somewhat mournful gesture that Winston once
+    found reassuring. He speaks with the quiet authority of a man who has never had a
+    thought that he did not control. He is the most intelligent person Winston has ever
+    met. He is also the person who is going to put the cage against Winston's face in
+    Room 101. These two facts coexist without contradiction.
+  raceid: 1
+  level: 20

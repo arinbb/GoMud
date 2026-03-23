@@ -1,0 +1,26 @@
+mobid: 425
+zone: seinfeld
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say Hello, Jerry."
+  - "emote lurks near the mailboxes with the patience of someone who has something going on."
+  - "emote eats a handful of something from his postal carrier bag."
+  - "emote eyes the hallway with the strategic focus of a man conducting reconnaissance."
+  - "say The post office has its own agenda. I am part of that agenda."
+  - ''
+  - "emote smiles with a smile that is not entirely comfortable to look at."
+  - "emote adjusts his postal worker cap and heads somewhere with purpose."
+activitylevel: 20
+character:
+  name: Newman
+  description: >-
+    A postal worker, rotund, with an expression of professional contempt
+    that is specifically calibrated to Jerry Seinfeld and broadly applicable
+    to the world. His postal uniform is correct but worn with a philosophy:
+    this uniform represents something, and Newman knows what it represents,
+    even if nobody else does. He is always up to something. The something
+    is never entirely clear. He regards Jerry with an enmity that has moved
+    beyond reason into something closer to tradition.
+  raceid: 1
+  level: 6

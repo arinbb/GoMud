@@ -1,0 +1,21 @@
+-
+  Supported:
+    "joseph seed": ["*"]
+  Conversation:
+    - ["#1 say The signs are everywhere. I do not understand why they are difficult to see."]
+    - ["#2 emote listens"]
+    - ["#1 say The systems fail. The institutions fail. The faith that people used to sustain themselves — they have let it hollow out.", "#1 emote moves the rosary through his fingers"]
+    - ["#2 emote nods slowly"]
+    - ["#1 say I built the Gate because someone had to. Because no one else was going to.", "#1 emote gestures at the county beyond the walls"]
+    - ["#1 say I did not ask to be chosen. I asked to be useful. They are not always the same thing.", "#1 emote regards you with calm certainty"]
+    - ["#1 say The Collapse is not a punishment. It is a correction. And we will be here after."]
+-
+  Supported:
+    "joseph seed": ["*"]
+  Conversation:
+    - ["#1 say You have questions. I can see them.", "#1 emote watches you with the patience of someone who has answered every question before"]
+    - ["#2 emote considers"]
+    - ["#1 say Good. Questions mean you are still thinking. The ones who stop thinking are not the ones I want here.", "#1 emote moves to the window"]
+    - ["#1 say I want people who chose this. Who looked at everything and chose this. Those are the ones who will survive what is coming."]
+    - ["#2 emote is quiet"]
+    - ["#1 say Ask me what you are afraid to ask. There is nothing I have not been asked.", "#1 emote turns back to you, composed, certain, waiting"]

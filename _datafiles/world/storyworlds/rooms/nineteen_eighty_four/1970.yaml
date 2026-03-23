@@ -1,0 +1,54 @@
+roomid: 1970
+zone: Nineteen Eighty Four
+title: The Golden Country
+description: >-
+  <ansi fg="10">A sunlit meadow, impossibly green, impossibly warm. An old
+  pasture crossed by a footpath, with molehills dotting the turf. An elm
+  tree at the edge, its leaves stirring in a gentle breeze. The sky is
+  actual blue. The sun is actual gold. This is the landscape Winston
+  dreams of, the one he calls the Golden Country, a memory or a fantasy
+  of England before the telescreens, before the Party, before everything.
+  A <ansi fg="10">thrush</ansi> perches on a bough of the elm and sings
+  — a long, cascading phrase, pure and piercing. There is no telescreen
+  here. There is no poster. There is no anything that the Party has made.
+  The street lies back to the <ansi fg="exit">north</ansi>, through
+  the dream.</ansi>
+mapsymbol: G
+maplegend: The Golden Country
+biome: land
+exits:
+  north:
+    roomid: 1963
+    exitmessage: You turn from the meadow and the grey world reassembles around you.
+    mapdirection: north
+nouns:
+  thrush: >-
+    It is a large thrush, plump and spotted, sitting on a bough in full
+    sunlight. It sings with such force and richness that the whole meadow
+    seems to be the sound of it. No approved music. No versificator. Just
+    a bird, singing because it is a bird. Winston stood here, in the
+    dream, and the thrush sang, and he felt, for a moment, that the
+    future might exist.
+  meadow: >-
+    Green in a way that nothing in Airstrip One is green. The grass is
+    soft and slightly damp underfoot. Molehills break the surface at
+    intervals, gentle small catastrophes of earth. It has not been
+    landscaped or approved. It is just a field, being a field.
+  elm: >-
+    An old elm with many branches, the leaves catching the light and
+    turning silver-green in the breeze. It has been here for decades,
+    for centuries, unconcerned with the Party and its edicts. The thrush
+    sits in it and sings. The elm stands in it and exists. Both are
+    somehow revolutionary.
+  sky: >-
+    Blue. Actual blue. Not the grey of London, not the grey of the
+    future, not the grey of Victory anything. Blue, with small white
+    clouds moving slowly from west to east, unhurried, uncaring, entirely
+    free of what the Ministry of Truth might prefer them to be.
+idlemessages:
+- '<ansi fg="10">The thrush sings a long phrase, impossibly clear, then pauses, then sings again. You do not move. You are afraid to break it.</ansi>'
+- '<ansi fg="10">The meadow is completely quiet except for the thrush. No telescreens. No boots. No speakwrites. Just grass and light and a bird that has never heard of the Party.</ansi>'
+- '<ansi fg="10">A breeze crosses the meadow. The grass bends and recovers. The elm leaves turn. The thrush shifts on its bough and continues singing.</ansi>'
+- '<ansi fg="10">You know this is a dream. You are not sure if that makes it less real or more real. You stand in it anyway.</ansi>'
+- '<ansi fg="10">The sunlight is warm on your face. It has been a long time since sunlight was warm on your face. You tilt your head toward it like a plant.</ansi>'
+- '<ansi fg="10">The Golden Country. This is what there was before. This might be what there could be after. The thrush does not know either way. It sings.</ansi>'

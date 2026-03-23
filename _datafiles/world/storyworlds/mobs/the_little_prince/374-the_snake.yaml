@@ -1,0 +1,17 @@
+mobid: 374
+zone: the_little_prince
+hostile: false
+maxwander: 0
+activitylevel: 10
+character:
+  name: The Snake
+  description: >-
+    A snake the colour of hammered gold, thin as a man's wrist, coiled
+    on a warm rock with the patience of something that is not hurrying
+    toward anything. Its eyes are bright as old coins. It speaks in a
+    voice so quiet you have to lean in to hear, which is probably not
+    advisable. It knows things about returning. It knows exactly how to
+    send someone home, though its method of transportation is one-way
+    and very final for those who are not from here.
+  raceid: 19
+  level: 8

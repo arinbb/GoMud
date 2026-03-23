@@ -1,0 +1,48 @@
+roomid: 2107
+zone: Up in Smoke
+title: The Border Crossing
+description: >-
+  The Tijuana-San Diego border crossing, 1978. A row of <ansi fg="itemname">inspection
+  booths</ansi> under harsh fluorescent lights, each one staffed by a uniformed agent
+  with the practiced squint of someone who has seen everything and is still looking
+  for more. The <ansi fg="itemname">van</ansi> sits in the inspection lane, its engine
+  idling, its dimensions drawing a particular quality of attention. The agent leans
+  down to peer into the window. The <ansi fg="itemname">passengers</ansi> smile with
+  the specific calm of people who have decided that calm is the only option. A long
+  line of cars stretches south behind the van. North is the highway. South is Tijuana.
+mapsymbol: B
+maplegend: The Border Crossing
+biome: road
+exits:
+  north:
+    roomid: 2103
+    exitmessage: The crossing clears. You are back on the California side.
+  south:
+    roomid: 2108
+    exitmessage: You cross south into Tijuana.
+nouns:
+  booths: >-
+    Concrete inspection stations, each with a small window at car-door height.
+    The agents inside have a direct line of sight to the vehicle interior and
+    are trained to notice things that are unusual. The van is unusual.
+  van: >-
+    The van at the crossing is distinctive: hand-painted panels in shades of
+    brown and green, an unusual texture to the body panels, and a smell that
+    the agent keeps circling back to without being able to articulate why.
+    It is a very natural smell. Organic, even.
+  passengers: >-
+    Two men in the front seats, presenting the relaxed confidence of men who
+    have decided that confidence is the winning play. This is, in fact, the
+    winning play. The agent senses something and cannot name it.
+spawninfo:
+- mobid: 465
+  message: '<ansi fg="3">The Border Guard steps to the window, one hand on his clipboard, eyes doing their professional sweep of the vehicle interior.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The fluorescent lights flicker once. The line of cars does not move.
+- The Border Guard taps the side of the van. It sounds like... wood. He frowns.
+- A car ahead gets waved through. The van does not get waved through yet.
+- Seagulls circle overhead in the thermal above the crossing. They are not inspecting anything.
+- The agent sniffs the air near the window and squints. He writes something on the clipboard.
+- Somebody in a car two lanes over leans on the horn. Nobody acts on this.
+- The van smells like an old growth forest. The agent cannot figure out why.

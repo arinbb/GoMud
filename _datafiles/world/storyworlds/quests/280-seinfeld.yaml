@@ -1,0 +1,23 @@
+questid: 280
+name: Seinfeld
+description: >-
+  A show about nothing. Walk through the world of Jerry, George, Elaine, and Kramer
+  on the Upper West Side of Manhattan. Have coffee at Monks. Encounter the Soup Nazi.
+  Get lost in the parking garage. Wait at the Chinese restaurant. Attend Festivus.
+  Nothing happens. Everything matters. This is the deal.
+reward:
+  experience: 4500
+  item_id: 260
+  playermessage: >-
+    You have experienced the world of Seinfeld -- the apartment, the diner, the soup,
+    the parking garage, the eternal wait, and the holiday for the rest of us. As a
+    memento of your time on the Upper West Side, you receive a Festivus pole. It is
+    aluminum. It is unadorned. Frank Costanza finds tinsel distracting, and so,
+    now, do you.
+steps:
+- description: Enter Jerrys apartment on the Upper West Side.
+- description: Have coffee at Monks Cafe.
+- description: Encounter the Soup Nazi at the Soup Stand.
+- description: Get lost in the parking garage.
+- description: Wait for a table at the Chinese restaurant.
+- description: Attend Festivus at the Costanza house.

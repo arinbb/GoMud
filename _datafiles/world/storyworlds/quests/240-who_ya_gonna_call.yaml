@@ -1,0 +1,22 @@
+questid: 240
+name: Who Ya Gonna Call
+description: >-
+  Experience the world of Ghostbusters (1984). Visit the Firehouse, encounter the
+  ghost in the New York Public Library, trap Slimer at the Sedgewick Hotel, confront
+  Dana Barrett in her possessed apartment, face Gozer on the rooftop temple, and
+  cross the streams to save New York City.
+reward:
+  experience: 5000
+  item_id: 240
+  playermessage: >-
+    You have saved New York from an inter-dimensional deity and a giant marshmallow
+    man. As a memento, a miniature proton pack materializes in your hands -- the
+    cyclotron pulsing with a pale blue glow. Venkman would be proud. He would also
+    make a joke about it.
+steps:
+- description: Enter the Ghostbusters universe through the firehouse.
+- description: Investigate the New York Public Library where the first ghost was encountered.
+- description: Enter the Sedgewick Ballroom and face Slimer.
+- description: Visit Dana Barrett's apartment at 55 Central Park West.
+- description: Climb to the rooftop temple and confront Gozer.
+- description: Cross the streams to close the dimensional gateway.

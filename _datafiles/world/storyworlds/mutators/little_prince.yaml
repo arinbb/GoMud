@@ -1,0 +1,10 @@
+mutatorid: little-prince
+namemodifier:
+  behavior: append
+  text: (essential)
+  colorpattern: blue-white
+alertmodifier:
+  text: 'Something in the air here is different: quieter, clearer, as if the things that matter are slightly more visible than usual.'
+  colorpattern: blue-white
+decayrate: 30 minutes
+playerbuffids: []

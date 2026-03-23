@@ -1,0 +1,52 @@
+roomid: 1603
+zone: Die Die My Darling
+title: The Dining Room
+description: >-
+  A long <ansi fg="8">dining table</ansi> of dark oak dominates the room, surrounded
+  by eight high-backed chairs. It is set for a meal — <ansi fg="8">plain white china</ansi>,
+  heavy silver cutlery laid with geometric precision, water glasses with no wine glasses
+  alongside them. There is no <ansi fg="8">condiment</ansi> on the table. No salt.
+  No pepper. No sauce. No cruet. The centerpiece is a small <ansi fg="white">vase</ansi>
+  containing a single spray of dried flowers — the color has leached out of them
+  completely, leaving only pale stems and papery petals. A <ansi fg="white">painting</ansi>
+  of a biblical scene hangs above the sideboard. The room smells of boiled meat and
+  nothing else. To the <ansi fg="exit">west</ansi>, the entrance hall.
+mapsymbol: D
+maplegend: Dining Room
+biome: house
+exits:
+  west:
+    roomid: 1602
+nouns:
+  table: >-
+    Solid dark oak, polished to a dull gleam. The surface is immaculate — no rings,
+    no marks, no evidence that anything enjoyable has ever taken place here. Meals
+    at this table are not pleasure. They are obligation.
+  china: >-
+    Plain white china with no pattern — no flowers, no gilt border, no monogram. Just
+    white. Each piece is perfectly clean. Meals here are eaten efficiently and without
+    comment.
+  condiment: >-
+    There is nothing. No salt. No pepper. No mustard. No Worcestershire sauce. No
+    vinegar. The food served here is unseasoned, as though flavour itself is a vanity
+    to be denied. The table waits with austere patience.
+  vase: >-
+    A small vase holding a spray of dried flowers so old and drained of colour that
+    they might be made of paper. Someone brought fresh flowers once and let them die
+    and kept the corpse because to throw them away would be wasteful.
+  painting: >-
+    An oil painting — Judith with the head of Holofernes. The composition is dramatic
+    but the brushwork is flat and amateur. Someone acquired this specifically for what
+    it depicts, not for its quality. A woman. A decapitation. A righteous act.
+  sideboard: >-
+    The sideboard holds a single decanter of water, a Bible, and nothing else. Its
+    drawers are locked.
+spawninfo: []
+idlemessages:
+- The chair at the head of the table is pulled out slightly, as though someone just rose from it.
+- The plainness of the table setting presses on you. You want, specifically, salt.
+- The dried flowers in the vase give off a faint dusty smell — the smell of things preserved past their time.
+- The room is cold. The radiator against the wall is on, but the room remains cold.
+- The high-backed chairs face each other across the table in rows of rigid attention.
+- A meal will be served here at precisely the appointed hour. You do not want to be present for it.
+- The biblical painting watches the table. The expression on Judith's face is serene.

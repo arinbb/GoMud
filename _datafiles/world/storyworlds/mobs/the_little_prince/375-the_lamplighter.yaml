@@ -1,0 +1,17 @@
+mobid: 375
+zone: the_little_prince
+hostile: false
+maxwander: 0
+activitylevel: 50
+character:
+  name: The Lamplighter
+  description: >-
+    A man in a gray uniform, moving constantly. He holds a lighter in
+    one hand and a cloth in the other. His face is the face of someone
+    who is very tired but does not have time to be tired. He is faithful
+    to his orders with the absolute faithfulness of someone who has never
+    questioned whether the orders are worth being faithful to. He is the
+    only person the Little Prince met on his travels who was occupied
+    with something other than himself. He does not know this.
+  raceid: 1
+  level: 3

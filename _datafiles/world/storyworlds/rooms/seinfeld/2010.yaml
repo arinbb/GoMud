@@ -1,0 +1,63 @@
+roomid: 2010
+zone: Seinfeld
+title: The Costanza House
+description: >-
+  The <ansi fg="8">Costanza house</ansi> in Queens -- a modest split-level on the
+  kind of block that is exactly what it is and has never pretended otherwise. The
+  <ansi fg="itemname">living room</ansi> is loud in the sense that the room itself
+  is loud, the wallpaper aggressive, the <ansi fg="itemname">television</ansi> large
+  and always on, the furniture arranged for maximum seating and minimum comfort. The
+  <ansi fg="itemname">dining table</ansi> has hosted approximately four thousand
+  arguments, all of which were about something other than what they were about. Frank
+  and Estelle Costanza live here. George visits here and then needs several days to
+  recover. There is a <ansi fg="itemname">Festivus pole</ansi> standing in the corner
+  that does not appear to be seasonal. The basement is accessible via the
+  <ansi fg="exit">basement</ansi> stairs. The <ansi fg="exit">street</ansi> is to
+  the east.
+mapsymbol: C
+maplegend: The Costanza House
+biome: house
+exits:
+  street:
+    roomid: 2004
+    mapdirection: east
+  basement:
+    roomid: 2015
+    mapdirection: down
+nouns:
+  television: >-
+    An enormous television in the living room, on. It is always on. The sound
+    is high enough that conversation must be conducted over it. This is not
+    considered a problem in this household. It is considered ambient.
+  table: >-
+    The dining table. Six chairs, white tablecloth, a ceramic fruit bowl that
+    has never held fruit that anyone ate. The table is where arguments are
+    conducted. The arguments are about everything. The arguments are always
+    about the same thing, which is power, and who has it, and why.
+  pole: >-
+    The Festivus pole. Aluminum, undecorated. Frank Costanza invented Festivus
+    as a holiday to protest the commercialization of Christmas and also because
+    he wanted his own holiday. It stands in the corner year-round because
+    removing it would be an implicit concession that it was a seasonal item,
+    which would imply a consensus about the nature of Festivus that has not
+    been reached.
+  wallpaper: >-
+    The wallpaper is a large floral pattern from a decade when large floral
+    patterns were making a statement. The statement has been forgotten but the
+    wallpaper remains, committed to its position.
+spawninfo:
+- mobid: 424
+  message: '<ansi fg="yellow">Frank Costanza appears from the direction of the kitchen, already in the middle of an opinion that he has been developing since this morning.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 428
+  message: '<ansi fg="8">Estelle Costanza enters from the bedroom, her expression conveying that something has happened and she is going to tell you what it is whether or not you are ready.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The television plays something nobody is watching. Nobody turns it off. Nobody will ever turn it off.
+- The argument from this morning has paused but is not over. It is never over. It is just between rounds.
+- The Festivus pole stands in the corner with the gravity of something invented to prove a point that has since been forgotten.
+- A chair scrapes. Someone has stood up to make a point more effectively from a standing position.
+- The fruit bowl has the same fruit in it that it always has. The fruit is ceramic. This is fine.
+- A sound from upstairs suggests that the house contains more opinions than people, which is mathematically impressive.
+- Frank Costanzas voice carries from the kitchen, saying something definitive about something.
+- The dining table holds the weight of forty years of meals that became arguments that became traditions.

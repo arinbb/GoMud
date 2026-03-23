@@ -1,0 +1,63 @@
+roomid: 1400
+zone: Matilda
+title: Wormwood Living Room
+description: >-
+  A cramped, overheated living room drowning in <ansi fg="3">gaudy wallpaper</ansi>
+  and the blue-white glow of an enormous <ansi fg="itemname">television set</ansi>
+  that dominates one wall. The carpet is a lurid shade of orange. A sagging
+  <ansi fg="itemname">sofa</ansi> faces the TV, surrounded by foil trays of half-eaten
+  microwave dinners and scattered TV guides. The air reeks of hair spray, cigarette
+  smoke, and something frying. Everything in this room screams bad taste at full volume.
+  A staircase leads <ansi fg="exit">up</ansi> to the bedrooms. The <ansi fg="exit">east</ansi>
+  doorway leads to the kitchen, and the front door opens <ansi fg="exit">south</ansi>
+  to the walk.
+mapsymbol: W
+maplegend: Wormwood Living Room
+biome: house
+mutators:
+- mutatorid: wormwood-garish
+exits:
+  east:
+    roomid: 1401
+  up:
+    roomid: 1402
+  south:
+    roomid: 1403
+nouns:
+  television: >-
+    An enormous television set, far too large for the room, tuned to some game show
+    with shrieking contestants. The volume is turned up so loud the speakers buzz and
+    distort. Mr. Wormwood considers this the pinnacle of entertainment. The screen
+    flickers with garish colors that paint the whole room in a sickly glow.
+  sofa: >-
+    A sagging brown sofa with cigarette burns on the armrests and mysterious stains
+    on the cushions. Foil trays from microwave dinners are wedged between the
+    cushions. This is where the Wormwood family spends every evening, staring
+    slack-jawed at the television.
+  wallpaper: >-
+    The wallpaper is a pattern of enormous gold and brown flowers that might have
+    been fashionable thirty years ago in a particularly tasteless household. It is
+    peeling at the seams near the ceiling.
+  carpet: >-
+    Deep orange shag carpet that has seen better decades. Crumbs, ash, and what
+    appears to be dried ketchup are ground into its fibers.
+  dinners: >-
+    Foil trays from microwave dinners litter the coffee table and floor. Congealed
+    gravy and hardened mashed potatoes. The Wormwoods do not believe in cooking.
+idlemessages:
+- The television blares a game show jingle so loudly the windows rattle in their frames.
+- 'The stench of cheap hair dye wafts down from upstairs — someone is touching up their roots.'
+- A fly buzzes lazily over the remains of a microwave dinner, thoroughly at home.
+- 'The television switches to an advert for a used car dealership. Mr. Wormwood nods approvingly.'
+- 'Something sticky on the carpet squelches underfoot. Best not to investigate.'
+- The wallpaper seems to close in around you, its enormous brown flowers wilting in the TV glow.
+spawninfo:
+- mobid: 223
+  message: "Mr. Wormwood is sprawled on the sofa, eyes fixed on the television."
+  idlecommands:
+    - "say Did I ever tell you about the sawdust trick? Genius! Pure genius!"
+    - "emote slaps his knee and guffaws at the television."
+    - ""
+    - ""
+    - "say Who needs books when you've got the telly?"
+    - "emote adjusts his loud checked jacket with great self-satisfaction."

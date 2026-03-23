@@ -1,0 +1,26 @@
+mobid: 441
+zone: its_always_sunny
+hostile: false
+maxwander: 1
+activitylevel: 35
+angrycommands: []
+idlecommands:
+  - emote throws a slow-motion karate chop at the air and narrates his own technique.
+  - say I am cultivating mass. You would not understand. It is a long-term project.
+  - emote flexes in front of the bar mirror, turns sideways, flexes again.
+  - say God is testing me. With this bar. With these people. With this body that has not yet achieved its full potential.
+  - emote squares his stance and executes what he describes as a 'crane kick,' but is not.
+  - say Mac Day. Every day. Look it up.
+character:
+  name: Mac
+  description: >-
+    A stocky man with gelled hair and the physique of someone who talks
+    about working out considerably more than he actually works out. He is
+    wearing a t-shirt two sizes too small, which he believes shows off
+    his muscles and which does show off something. He carries himself with
+    the absolute conviction of a karate master, a conviction not supported
+    by any karate skill he has yet demonstrated. His relationship with God
+    is complicated and getting more complicated. His relationship with Dennis
+    is also complicated, though he will not discuss it.
+  raceid: 1
+  level: 6

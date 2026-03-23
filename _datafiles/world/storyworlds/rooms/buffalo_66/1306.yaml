@@ -1,0 +1,51 @@
+roomid: 1306
+zone: Buffalo 66
+title: The Brown Kitchen
+description: >-
+  A cramped <ansi fg="itemname">kitchen</ansi> with yellowed linoleum and
+  <ansi fg="itemname">cabinets</ansi> that do not quite close. A formica
+  <ansi fg="itemname">table</ansi> is set for dinner — meatloaf, instant potatoes,
+  canned corn. The portions are precise and joyless. A small <ansi fg="itemname">television</ansi>
+  on the counter plays the <ansi fg="6">Bills game</ansi> with the volume up loud.
+  <ansi fg="itemname">Fluorescent</ansi> light hums overhead, making everyone look
+  slightly jaundiced. The walls are covered in <ansi fg="6">Bills wallpaper</ansi> —
+  actual wallpaper, printed with the team logo in repeating rows. The living room
+  is back to the <ansi fg="exit">west</ansi>.
+mapsymbol: K
+maplegend: Kitchen
+biome: house
+exits:
+  west:
+    roomid: 1305
+nouns:
+  kitchen: >-
+    The kitchen of people who eat to survive, not to enjoy. Everything is
+    functional and nothing is loved.
+  cabinets: >-
+    Particleboard cabinets with brass handles. Several do not close properly.
+    Inside: canned goods, instant coffee, and a bottle of something stronger
+    pushed to the back.
+  table: >-
+    Brown formica with chrome legs. Set for three with mismatched plates. The
+    meatloaf sits in the center like a small, dense monument to obligation.
+  television: >-
+    A small TV on the counter, rabbit ears wrapped in aluminum foil. The Bills
+    game flickers on the screen. The crowd noise fills the kitchen like a
+    second family.
+  wallpaper: >-
+    Bills logo wallpaper. Red, white, and blue charging buffalo, over and
+    over, from floor to ceiling. It was not ironic when it was installed.
+    It is not ironic now. It is completely sincere.
+  fluorescent: >-
+    A tube light that makes the meatloaf look grey and the people greyer.
+spawninfo:
+- mobid: 212
+  message: "<ansi fg=\"8\">A woman with set hair sits at the kitchen table, watching the game.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The TV announcer's voice rises with excitement. Jan leans forward. The play fails. She sits back.
+- Steam rises from the meatloaf, which no one has touched yet.
+- The fluorescent light flickers once, and for a moment the Bills wallpaper seems to move.
+- Jan mutters something about the offensive line that would make a sailor blush.
+- Someone should watch the game with Jan sometime. She might enjoy the company. Maybe. Or maybe not.
+- The kitchen clock ticks loudly. Dinner has been ready for exactly as long as it needs to be.

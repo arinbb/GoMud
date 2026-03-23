@@ -1,0 +1,53 @@
+roomid: 2050
+zone: its_always_sunny
+title: The Waitress Apartment
+description: >-
+  The Waitress's apartment is not fancy but it is hers, which is precisely
+  what makes its condition so alarming. She is not home. She has not been
+  home for a while, judging by the mail under the door. And yet things are
+  slightly off — a window that should be locked is not locked, a refrigerator
+  magnet in a slightly different position than the indent in the fridge door
+  suggests, a faint smell of cat food that the Waitress does not own a cat.
+  <ansi fg="itemname">Extra locks</ansi> have been installed on the door,
+  too many of them, in a hardware pattern that suggests escalation over time.
+  A <ansi fg="itemname">notepad</ansi> near the phone has the top sheet torn off.
+  The impressions of the last writing remain. Someone has been here. Someone
+  is always somehow here. To the <ansi fg="exit">south</ansi> is the street.
+mapsymbol: WA
+maplegend: Waitress Apartment
+biome: house
+exits:
+  south:
+    roomid: 2044
+spawninfo:
+- mobid: 445
+  message: 'The Waitress comes home, stops in the doorway, surveys the apartment, and sighs with the practiced exhalation of someone who has done this before.'
+  respawnrate: 8 real minutes
+nouns:
+  locks: >-
+    The door has six different locks on it: two deadbolts, a chain, a sliding
+    bar, a padlock hasp, and a new knob lock still in the packaging, half-installed.
+    The progression is documented. The first deadbolt is old. The chain came
+    after that. Each subsequent lock represents a specific incident that the
+    Waitress has chosen not to think about too carefully. There are more coming.
+    She knows there are more coming.
+  notepad: >-
+    A notepad near the phone. The top sheet has been torn off. The impression
+    of the writing from the previous page is visible if you hold it at an angle
+    to the light. It says, in the impression of writing: "Charlie — NO. Stop.
+    Please stop. I am asking you as a human person to stop. I have a lawyer."
+    Below it, the impression of a heart. Then the impression of the heart being
+    crossed out. Then, after a space, the impression of the heart again.
+  fridge: >-
+    The Waitress's refrigerator has normal contents — actual food, for an actual
+    person. A magnet on the side is slightly misaligned from the dent it usually
+    sits in, suggesting it was moved recently and replaced imprecisely. There
+    is a can of cat food behind the milk. She does not own a cat. She has never
+    owned a cat. She knows exactly how the cat food got there.
+idlemessages:
+- The extra locks on the door sit in a line. From inside, the apartment feels more secure than it is.
+- 'The notepad near the phone holds the impression of old writing. The heart, the crossed-out heart, the heart again: a palimpsest of Charlie Kelly''s feelings.'
+- Someone has left a small bouquet of wildflowers on the windowsill. They are wilted. They have been there a few days. No card.
+- The fridge hums in the quiet apartment. The cat food behind the milk does not move. It is just there. Like Charlie, in a way.
+- 'Something small has been scratched into the paint near the door: a shape that might be a bird, small and crooked. It is definitely a bird. Charlie Kelly was here.'
+- The apartment holds the organized stillness of someone who keeps control of their space because several other things in their life are outside their control.

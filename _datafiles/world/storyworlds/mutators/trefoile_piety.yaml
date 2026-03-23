@@ -1,0 +1,12 @@
+mutatorid: trefoile-piety
+namemodifier:
+  behavior: append
+  text: (oppressive)
+  colorpattern: none
+descriptionmodifier:
+  behavior: append
+  text: The silence here is not peaceful. It is enforced.
+  colorpattern: none
+alertmodifier:
+  text: The quiet presses in on you from all sides, heavy with the weight of things forbidden.
+  colorpattern: none

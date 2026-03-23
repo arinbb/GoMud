@@ -1,0 +1,54 @@
+roomid: 1973
+zone: Nineteen Eighty Four
+title: The Cell
+description: >-
+  <ansi fg="white">A white-walled cell with a bench around the wall and a
+  <ansi fg="white">telescreen</ansi> on one side. The light is as pitiless
+  here as in the corridor. There is no pillow, no blanket. You sit on
+  the bench in the approved manner — do not slouch, do not put your hands
+  over your face, do not show anything that could be interpreted as
+  resistance. <ansi fg="itemname">Parsons</ansi> is here, sweating
+  enormously despite the cold, his face wearing the expression of a man
+  who is proud and terrified simultaneously. He keeps saying he is guilty.
+  He keeps saying his daughter turned him in. He says this with something
+  that is uncomfortably close to pride. The corridor is to the
+  <ansi fg="exit">corridor</ansi> west. The door to
+  <ansi fg="exit">room101</ansi> is to the north.</ansi>
+mapsymbol: E
+maplegend: The Cell
+biome: house
+exits:
+  corridor:
+    roomid: 1972
+    mapdirection: west
+  room101:
+    roomid: 1974
+    mapdirection: north
+nouns:
+  parsons: >-
+    He is enormous, fleshy, with a thick neck and sweat-blond hair. He
+    smells, literally, of the terror that is sweating out of him. He keeps
+    saying: "Of course I'm guilty. You don't think the Party would arrest
+    an innocent man, do you?" He means it. He means it genuinely. This
+    is the most horrible thing about him. He is guilty of thoughtcrime.
+    His daughter heard him say something in his sleep. He is proud of her
+    for turning him in.
+  bench: >-
+    A plank bench around the cell wall, wide enough to sit on but not
+    long enough to lie down. This is, presumably, deliberate. You sit in
+    the approved position: hands on knees, back straight, face blank.
+    You have been practicing this for years. It was always going to come
+    to this.
+  telescreen: >-
+    Even here, even in the cell, even now. The telescreen watches. The
+    telescreen is always watching. There has never been a place in
+    Oceania — except that room, which was not what it seemed — where the
+    telescreen could not watch. O'Brien said: we shall meet in the place
+    where there is no darkness. You are there. You understand now.
+idlemessages:
+- '<ansi fg="white">Parsons sweats. The sweat runs down his face in rivulets. He makes no move to wipe it. He sits in the approved position and sweats and waits.</ansi>'
+- '<ansi fg="white">"I''m guilty," Parsons says. "Of course I''m guilty. Do you think the Party makes mistakes?" He waits for you to agree. You agree.</ansi>'
+- '<ansi fg="white">"She heard me say it in my sleep," Parsons says, and his face does something complicated. "Proper little girl, isn''t she? Did the right thing."</ansi>'
+- '<ansi fg="white">Someone in an adjacent cell makes a sound. Then stops. Silence is reinstated very quickly in the Ministry of Love.</ansi>'
+- '<ansi fg="white">The telescreen watches. The telescreen has always been watching. The phrase "always been" has recently acquired a new range of meanings.</ansi>'
+- '<ansi fg="white">"Room 101," someone says from the corridor. Parsons stops sweating for a moment. Then he starts again, harder.</ansi>'

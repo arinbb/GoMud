@@ -1,0 +1,39 @@
+roomid: 1300
+zone: Buffalo 66
+title: Prison Parking Lot
+description: >-
+  A vast, empty <ansi fg="itemname">parking lot</ansi> stretches out under a sky
+  the color of dirty dishwater. The <ansi fg="8">Buffalo County Correctional Facility</ansi>
+  looms behind you, its concrete walls stained with decades of winter grime. A few
+  dead <ansi fg="itemname">weeds</ansi> push through cracks in the asphalt. There are
+  no cars. No one is here to pick you up. The <ansi fg="12">wind</ansi> comes off
+  Lake Erie in sharp, flat gusts that smell of cold water and rust. To the
+  <ansi fg="exit">east</ansi>, a road leads toward the grey outline of downtown Buffalo.
+mapsymbol: P
+maplegend: Prison Lot
+biome: city
+exits:
+  east:
+    roomid: 1301
+nouns:
+  parking: >-
+    Cracked asphalt stretching in every direction. No cars. No buses. Not even
+    a taxi. Just you and the wind and the empty space where someone who cared
+    would have parked.
+  weeds: >-
+    Brown and brittle, frozen stiff. They grow in the cracks like they have
+    nowhere better to be either.
+  wind: >-
+    It comes from the northwest, off the lake. Cold and flat and relentless.
+    It does not care about you.
+spawninfo:
+- mobid: 210
+  message: "<ansi fg=\"8\">A gaunt figure in a dark coat stands alone in the parking lot, shifting from foot to foot.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The wind shoves a crumpled paper cup across the parking lot in fitful bursts.
+- A security light on the prison wall buzzes and flickers, casting sickly orange light on the concrete.
+- The cold is absolute. It fills every space the wind can reach, which is everywhere.
+- Far away, the downtown skyline sits grey and indifferent against the grey sky.
+- Your shoes scrape on the frozen asphalt and the sound carries much too far in the silence.
+- A bird — just one — crosses the sky overhead and disappears into the grey.

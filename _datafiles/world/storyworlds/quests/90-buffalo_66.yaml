@@ -1,0 +1,22 @@
+questid: 90
+name: Buffalo '66
+description: >-
+  Experience the frozen, washed-out world of Billy Brown's Buffalo. Visit
+  his childhood home, survive a family dinner, bowl a frame in the
+  dreamlike alley, capture a moment in the photo booth, and find the
+  man who ruined everything.
+reward:
+  experience: 5000
+  item_id: 165
+  playermessage: >-
+    You have seen Billy Brown's Buffalo — the cold, the emptiness, the
+    family that forgot how to love, the man who missed the kick. You carry
+    a photo booth strip as a souvenir, four frames of someone learning
+    to feel again.
+steps:
+- description: Arrive in Buffalo.
+- description: Visit the Brown house.
+- description: Survive dinner at the Brown kitchen.
+- description: Bowl a frame at the bowling alley.
+- description: Take a photo in the photo booth.
+- description: Find Scott Wood.

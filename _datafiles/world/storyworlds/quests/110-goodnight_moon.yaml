@@ -1,0 +1,23 @@
+questid: 110
+name: Goodnight Moon
+description: >-
+  Enter the great green room and say goodnight to everything in it -- the
+  kittens and mittens, the cow jumping over the moon, the little mouse
+  who watches from every corner. Find everything. Say goodnight. Let the
+  room teach you how to let go of the day.
+reward:
+  experience: 3000
+  item_id: 175
+  playermessage: >-
+    You have said goodnight to everything in the great green room. The
+    quiet old lady nods once -- she has been waiting for this. She presses
+    a tiny red balloon on a white string into your hand. 'Goodnight,' she
+    says. You carry it back to the Library, and the book closes behind you,
+    warm and complete.
+steps:
+- description: Enter the great green room.
+- description: Say goodnight to the kittens.
+- description: Visit the cow jumping over the moon.
+- description: Find the little mouse.
+- description: Listen at the window.
+- description: Return to the quiet old lady.

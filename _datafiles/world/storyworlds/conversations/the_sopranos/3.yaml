@@ -1,0 +1,34 @@
+-
+  Supported:
+    "tony soprano": ["carmela soprano"]
+  Conversation:
+    - ["#1 say Where's the mustard?"]
+    - ["#2 say Where it always is, Tony."]
+    - ["#1 emote opens and closes three cabinet doors"]
+    - ["#2 emote points without looking up from the counter"]
+    - ["#1 say I don't see it."]
+    - ["#2 say It is directly in front of you."]
+    - ["#1 emote finds the mustard. Says nothing."]
+-
+  Supported:
+    "tony soprano": ["carmela soprano"]
+  Conversation:
+    - ["#2 say AJ needs to talk to someone. A professional."]
+    - ["#1 say He's fine. He's a normal kid."]
+    - ["#2 say He told his history teacher that existence is a prison of the self."]
+    - ["#1 emote pauses with a forkful of something midway to his mouth"]
+    - ["#1 say Okay, what does that even mean."]
+    - ["#2 say That is exactly what I'm saying. Call someone."]
+    - ["#1 emote sets the fork down. Some things you cannot argue with."]
+-
+  Supported:
+    "tony soprano": ["carmela soprano"]
+  Conversation:
+    - ["#2 say I've been thinking about getting my real estate license."]
+    - ["#1 say Good idea."]
+    - ["#2 emote looks up. She expected more."]
+    - ["#2 say That's it? Good idea?"]
+    - ["#1 say What do you want me to say? You'd be good at it."]
+    - ["#2 say I would be good at it."]
+    - ["#1 emote looks at her. Something real passes between them."]
+    - ["#2 say Don't look at me like that when I'm making a point."]

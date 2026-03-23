@@ -1,0 +1,48 @@
+roomid: 2002
+zone: Seinfeld
+title: Jerrys Bedroom
+description: >-
+  <ansi fg="yellow">Jerrys bedroom</ansi> is neat in the particular way that a comedian's
+  bedroom is neat -- organized not from natural tidiness but from a specific relationship
+  with order. The <ansi fg="itemname">bed</ansi> is made with precision that seems
+  disproportionate to the rest of his priorities. A <ansi fg="itemname">nightstand</ansi>
+  holds a yellow legal pad covered in penciled <ansi fg="itemname">comedy notes</ansi> --
+  half-finished observations, words circled, arrows connecting ideas, the visible
+  infrastructure of jokes that have not yet become jokes. Everything in here is slightly
+  too organized for a man who spends his days doing nothing in particular with three other
+  people who also do nothing in particular. The <ansi fg="exit">apartment</ansi> is to
+  the north.
+mapsymbol: B
+maplegend: Bedroom
+biome: house
+exits:
+  north:
+    roomid: 2000
+nouns:
+  bed: >-
+    A queen bed, made with the kind of care that suggests this is one of very
+    few things Jerry Seinfeld controls completely. Pillow placement: intentional.
+    The comforter is smooth. This is a man who makes his bed every morning
+    because at some level the bed is a bit that he can finish.
+  nightstand: >-
+    A simple wooden nightstand. Legal pad, pencil, alarm clock. No phone --
+    the phone is in the kitchen. Jerry Seinfeld sleeps without a phone within
+    reach, which in the early 1990s was a reasonable choice and in retrospect
+    seems like remarkable foresight.
+  notes: >-
+    A yellow legal pad, about a third used, covered in Jerry's handwriting.
+    The observations are about things like: the unspoken rules of elevator
+    behavior. What it means that there are different sizes of plastic bags.
+    Why people say 'needless to say' and then say the thing anyway. The jokes
+    are all in here somewhere, waiting to be excavated.
+  television: >-
+    A small TV on the dresser. Jerry watches the news in here sometimes. And
+    Letterman. And any Yankee game that is on. The Mets, never.
+spawninfo: []
+idlemessages:
+- The legal pad sits on the nightstand, half a joke visible on the top sheet, waiting to be finished.
+- The bed is made so precisely that it looks like a display model. Nobody sleeps in a made bed this good.
+- The light through the window catches the dust in the air, turning it briefly golden and ordinary.
+- A siren rises outside, passes, fades. New York doing its thing.
+- The comedy notes on the legal pad contain an observation about something you did three days ago. How is this possible.
+- The room is so tidy it seems less like a place Jerry Seinfeld sleeps and more like a place Jerry Seinfeld stores himself between bits.

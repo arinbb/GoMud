@@ -1,0 +1,41 @@
+-
+  Supported:
+    "pedro": ["man"]
+  Conversation:
+    - ["#1 say Man. Man, listen. I have been thinking about the gig."]
+    - ["#2 emote sets down the guitar.", "#2 say The Roxy gig."]
+    - ["#1 say The Roxy gig! We are going to be great, man."]
+    - ["#2 say We are going to be something, yeah."]
+    - ["#1 say What does that mean?", "#1 emote looks at him."]
+    - ["#2 say It means: far out. That is what it means."]
+-
+  Supported:
+    "pedro": ["man"]
+  Conversation:
+    - ["#1 say You know what I think? I think this is our moment, man."]
+    - ["#2 emote watches the lava lamp for a moment.", "#2 say Every moment is the moment."]
+    - ["#1 say No, I mean specifically this one. The Roxy. The Battle of the Bands."]
+    - ["#2 say Ah."]
+    - ["#1 say Ah? That is all you have? Ah?"]
+    - ["#2 say Far out, then.", "#2 emote smiles."]
+    - ["#1 emote shakes his head but he is smiling too."]
+-
+  Supported:
+    "pedro": ["man"]
+  Conversation:
+    - ["#2 say Pedro. I have been thinking about the van."]
+    - ["#1 say Which van?"]
+    - ["#2 say The van."]
+    - ["#1 emote is quiet for a moment.", "#1 say What about it?"]
+    - ["#2 say It is a good van. It has good energy. I think it likes us."]
+    - ["#1 say All my vehicles like me. That is a fact of my life.", "#1 emote nods."]
+-
+  Supported:
+    "pedro": ["man"]
+  Conversation:
+    - ["#1 say What is the philosophy, Man? In your opinion."]
+    - ["#2 emote strums a chord that hangs in the air."]
+    - ["#2 say The philosophy is: it is fine. Everything is fine."]
+    - ["#1 say That is not a philosophy. That is a feeling."]
+    - ["#2 say The feeling is the philosophy."]
+    - ["#1 emote considers this.", "#1 say Okay. Far out."]

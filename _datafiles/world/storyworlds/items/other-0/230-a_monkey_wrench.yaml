@@ -1,0 +1,16 @@
+itemid: 230
+name: a monkey wrench
+namesimple: wrench
+displayname: a <ansi fg="itemname">monkey wrench</ansi>, heavy and well-used
+description: >-
+  A standard adjustable wrench, twelve inches long, forged steel, its jaw scarred
+  from years of actual use. The handle has been wrapped with electrical tape where
+  the original grip wore through. There are traces of red canyon dirt in the
+  adjustment mechanism that no amount of cleaning has fully removed. It has
+  tightened things and loosened things and been used to monkey wrench a bulldozer
+  or two in its time. A souvenir from the canyon country of Utah and Arizona,
+  from the gang that believed the wrench was mightier than the permit.
+type: object
+subtype: usable
+uses: 0
+value: 1

@@ -1,0 +1,23 @@
+questid: 200
+name: Far Cry 5
+description: >-
+  Hope County, Montana has been taken over by Eden's Gate, a doomsday cult led
+  by Joseph Seed. You arrived to make an arrest. That did not go as planned.
+  Now you are in Dutch's bunker and the county needs you. Find the resistance.
+  Face the Seeds. Survive the Bliss. Stand in the church at the end of it all
+  and understand what you were looking at.
+reward:
+  experience: 5500
+  item_id: 220
+  playermessage: >-
+    You have survived Hope County. As a memento of everything you witnessed here,
+    you keep a Project at Eden's Gate pin — small, enamel, red and white, the
+    Gate symbol stamped in the center. You will not forget what was behind the gate.
+steps:
+- description: Wake in Dutch's bunker.
+- description: Reach Falls End.
+- description: Find the Spread Eagle Bar and the resistance.
+- description: Enter Holland Valley — John Seed's country.
+- description: Survive the Bliss in the Henbane River region.
+- description: Face the Veterans Center and Jacob Seed.
+- description: Confront Joseph Seed at the Church of Eden's Gate.

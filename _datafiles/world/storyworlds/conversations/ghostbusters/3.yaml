@@ -1,0 +1,35 @@
+-
+  Supported:
+    "janine melnitz": ["egon spengler"]
+  Conversation:
+    - ["#1 sayto #2 Dr. Spengler, did you eat today?"]
+    - ["#2 emote looks up from his work", "#2 say I had -- I was going to. The PKE readings required attention."]
+    - ["#1 emote produces a sandwich from somewhere", "#1 say I got you a sandwich. You should eat."]
+    - ["#2 say That is -- thank you. That is unexpectedly considerate."]
+    - ["#1 say Don't read into it. I also feed the rats when they come in."]
+    - ["#2 emote eats the sandwich while looking at her", "#2 say I don't think you are comparing me to a rat."]
+    - ["#1 emote returns to her magazine", "#1 say No. I'm not."]
+-
+  Supported:
+    "egon spengler": ["janine melnitz"]
+  Conversation:
+    - ["#1 say Janine, what do you do when you are not working?"]
+    - ["#2 emote looks up, surprised", "#2 say That is the first personal question you have ever asked me."]
+    - ["#1 say I've been calculating the optimal time to ask it. The calculation took three months."]
+    - ["#2 say I read. I cook. I have a cat."]
+    - ["#1 say A cat. Interesting. Cats have a PKE sensitivity four times that of humans."]
+    - ["#2 emote looks at him", "#2 say Is that all you got from that?"]
+    - ["#1 emote pauses", "#1 say No. I was also thinking that -- the cat data is genuinely interesting."]
+-
+  Supported:
+    "janine melnitz": ["egon spengler"]
+  Conversation:
+    - ["#1 say Dr. Spengler, do you ever think about anything other than work?"]
+    - ["#2 say Yes."]
+    - ["#1 say What?"]
+    - ["#2 emote considers carefully"]
+    - ["#2 say Spores, molds, and fungus."]
+    - ["#1 emote stares at him for a long moment"]
+    - ["#1 say That is work-adjacent."]
+    - ["#2 say It is a hobby. The distinction is meaningful."]
+    - ["#1 emote returns to her filing with the particular energy of a woman revising her expectations"]

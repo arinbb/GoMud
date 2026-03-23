@@ -1,0 +1,48 @@
+roomid: 1961
+zone: Nineteen Eighty Four
+title: The Hallway
+description: >-
+  A long narrow corridor of peeling paint and cracked plaster. The smell of
+  cabbage is stronger here, drifting up the stairwell from a hundred flats
+  at once. A large poster covers most of one wall: an enormous face, dark
+  haired, dark eyed, with a black <ansi fg="itemname">moustache</ansi>.
+  The eyes follow you down the corridor with an expression that is not
+  quite a smile. Beneath the face, in elegant capitals:
+  <ansi fg="red">BIG BROTHER IS WATCHING YOU.</ansi> The
+  <ansi fg="itemname">lift</ansi> is broken, as it usually is. The flat
+  is to the <ansi fg="exit">west</ansi>. The street lies to the
+  <ansi fg="exit">east</ansi>.
+mapsymbol: H
+maplegend: The Hallway
+biome: house
+exits:
+  west:
+    roomid: 1960
+  east:
+    roomid: 1963
+nouns:
+  poster: >-
+    The poster is perhaps a meter wide, printed on glossy paper that has been
+    pasted directly over the peeling wallpaper. The face is enormous, dark,
+    commanding. The eyes are the main thing. They seem to be focused directly
+    on you. Directly and only on you. Wherever you stand.
+  moustache: >-
+    Thick and dark, the moustache of Big Brother is one of the most
+    recognizable features in Oceania. No one knows whether Big Brother
+    exists as a person. The question is not safe to ask.
+  lift: >-
+    The lift shaft is dark, the cables hanging limp. A notice taped to the
+    door says it is under repair. It has said this for as long as anyone can
+    remember. The stairs are steep and smell of disinfectant.
+  cabbage: >-
+    The smell of boiled cabbage rises from every floor of Victory Mansions.
+    It is the smell of collective poverty, of a hundred households making
+    the same meal from the same rations with the same defeated creativity.
+idlemessages:
+- 'BIG BROTHER IS WATCHING YOU. The poster seems larger than before. The eyes seem closer.'
+- 'Footsteps echo on the stairs above. Someone going up. Someone going down. You cannot tell if they pause to listen.'
+- 'The smell of boiled cabbage rises through the floor. Dinner. Again. Always dinner.'
+- 'From behind a closed door, a telescreen voice recites production statistics. Everything is up from last year. Everything is always up from last year.'
+- 'A child''s voice echoes from somewhere: "Spy! Thoughtcriminal! Traitor!" Then laughter. Then silence.'
+- 'The broken lift hums faintly, as if trying to remember what it once was for.'
+- 'The poster watches. You keep your face carefully blank as you pass.'

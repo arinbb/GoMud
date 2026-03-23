@@ -1,0 +1,69 @@
+roomid: 1852
+zone: Far Cry 5
+title: The Veterans Center
+description: >-
+  The Veterans Center sits in the mountain forest like a repurposed compound —
+  which is exactly what it is. The original building was a recreational facility.
+  Jacob Seed has turned it into a conditioning center, an instrument of his
+  particular theology: suffering as instructor, repetition as gospel, the broken
+  man rebuilt into something useful. <ansi fg="red">Red light</ansi> fills every
+  corridor — Jacob's aesthetic, a choice that makes everything look like
+  emergency, like combat, like the world at its most clarified. <ansi fg="itemname">
+  Jacob Seed</ansi> moves through the space with military economy, every
+  movement purposeful. The <ansi fg="itemname">conditioning apparatus</ansi>
+  — chairs, screens, the music — waits in the central room. From speakers in
+  every corner, barely audible: <ansi fg="red">''Only You''</ansi> by the
+  Platters, on loop, at a volume that seeps into your bones. The mountains
+  are <ansi fg="exit">south</ansi>.
+mapsymbol: V
+maplegend: Veterans Center
+biome: house
+exits:
+  south:
+    roomid: 1851
+nouns:
+  light: >-
+    Red emergency lighting in every corridor, wall-mounted strips that
+    bathe everything in the color of combat stress, of blood, of maximum
+    alert. Jacob chose it deliberately. In the red light, everything
+    looks like a threat. In the red light, the appropriate response
+    to everything looks like aggression. He trains his people to live
+    in the red light.
+  chairs: >-
+    The conditioning chairs — military surplus, modified. Wrist restraints.
+    A screen at eye level. Headphones built into the headrest. This is
+    where Jacob runs his program: visual triggers, sound cues, repetition
+    until the behavior becomes automatic. You know it works. You have
+    seen what it produces.
+  music: >-
+    'The speakers play ''Only You'' by the Platters on endless loop, barely
+    above subliminal volume — you hear it before you know you are hearing it.
+    It is the conditioning trigger. Somewhere in Jacob''s program, the song
+    and the kill order have become the same thing. Beautiful and monstrous
+    in equal measure. The Platters had nothing to do with this. The song
+    did not consent.'
+  dogs: >-
+    Jacob's dog tags, from before. He keeps them. He is the only Seed
+    who lived a previous life in the same body — the military is not
+    something he left, it is something that got larger. Eden's Gate
+    is the military made into cosmology.
+spawninfo:
+- mobid: 338
+  message: Jacob Seed stands at a window overlooking the forest, watching the treeline with the patience of a man who knows the wolves will come when he calls them.
+  idlecommands:
+  - emote cleans his rifle with methodical, practiced strokes, not looking at what his hands are doing.
+  - say The weak have their uses. They show you what happens when you stop training.
+  - ""
+  - emote whistles two notes. From outside, the wolves respond. He nods, satisfied.
+  - say Joseph saves souls. John takes confessions. I make soldiers. Someone has to.
+  - ""
+  - emote watches the forest through the window, reading it with a soldier's automatic threat assessment.
+  respawnrate: 3 real minutes
+idlemessages:
+- The red light in the corridor shifts as if something passes through the beam. Nothing is there.
+- '"Only You" drifts from the speakers, barely audible, like a tune you heard in a dream and cannot place.'
+- Jacob cleans his rifle. The sound of the cleaning rod is precise and rhythmic and very loud in the silence.
+- A wolf appears at the far window, looks in, and disappears back into the forest without sound.
+- The conditioning chairs face their screens. The screens show nothing. They are patient. They have time.
+- From outside, a wolf call. Jacob does not look up. The call was expected. The response was expected.
+- The red light makes everything here look like the inside of a decision that cannot be taken back.

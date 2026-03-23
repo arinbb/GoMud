@@ -1,0 +1,24 @@
+mobid: 247
+zone: waynes_world
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote crosses his arms and surveys the room with the authority of a man who has seen everything."
+  - "emote checks the ID of someone entering the Gasworks. They pass. He nods once."
+  - ""
+  - ""
+  - "emote shifts his weight with the deliberate slowness of someone who is never in a hurry."
+  - "emote glances at the stage, verifying Cassandra is there, then looks back at the door."
+  - "say You're on the list."
+activitylevel: 20
+character:
+  name: Tiny
+  description: >-
+    The name Tiny is, at minimum, optimistic. He is enormous in the way that
+    certain people are enormous — not just physically, but in the space they
+    occupy when they stand still. His arms are folded. His face is neutral.
+    He is the bouncer at the Gasworks and he is very good at his job, which
+    is mainly accomplished by existing. He has never had to remove anyone who
+    first took a real look at Tiny.
+  raceid: 1
+  level: 7

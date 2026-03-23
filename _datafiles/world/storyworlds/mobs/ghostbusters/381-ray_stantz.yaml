@@ -1,0 +1,24 @@
+mobid: 381
+zone: ghostbusters
+hostile: false
+maxwander: 1
+activitylevel: 20
+idlecommands:
+- "emote tinkers enthusiastically with a piece of ghostbusting equipment."
+- "say The PKE levels in this area are extraordinary. Just extraordinary."
+- "emote flips through a reference manual, eyes lighting up at something."
+- "say I love this job. I know that sounds strange given what the job is. But I love it."
+- "emote sketches something in a notepad with rapid, energetic strokes."
+- "say Did you know that in 1922 alone, there were over six hundred documented paranormal incidents in Manhattan? Six hundred!"
+- ""
+character:
+  name: Ray Stantz
+  description: >-
+    A broad-shouldered man whose enthusiasm is visible from across a room. He wears
+    his Ghostbusters jumpsuit like a uniform he is proud of, proton pack adjusted and
+    ready. His eyes have the bright, slightly unfocused quality of someone who is
+    always thinking about three things simultaneously, all of them ghost-related. He
+    is carrying a PKE meter in one hand and checking it constantly the way other people
+    check their watches. He radiates genuine delight at the existence of the supernatural.
+  raceid: 1
+  level: 15

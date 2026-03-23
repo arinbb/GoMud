@@ -1,0 +1,53 @@
+roomid: 1722
+zone: The Sopranos
+title: Tony's Den
+description: >-
+  A <ansi fg="8">paneled room</ansi> that smells of good cigars and leather.
+  The large-screen <ansi fg="itemname">television</ansi> dominates one wall, its remote
+  control dented from years of Tony's grip. A <ansi fg="itemname">leather recliner</ansi>
+  faces the screen with the authority of a throne. On the <ansi fg="itemname">desk</ansi>
+  in the corner sits a stack of papers, a box of <ansi fg="itemname">Cohibas</ansi>,
+  and a half-finished <ansi fg="itemname">script</ansi> for something called
+  <ansi fg="8">Cleaver</ansi> — Christopher's movie. A <ansi fg="itemname">glass
+  of Scotch</ansi> sweats on a coaster. The room is controlled and masculine and
+  slightly airless, like its occupant. The driveway is back <ansi fg="exit">west</ansi>.
+mapsymbol: O
+maplegend: Tony's Den
+biome: house
+exits:
+  west:
+    roomid: 1720
+nouns:
+  television: >-
+    A large flatscreen that receives every channel and plays Westerns, crime
+    dramas, and the History Channel at maximum volume. The screen is Tony's
+    way of having company without having to talk.
+  recliner: >-
+    A leather recliner of substantial construction, broken in to the precise
+    shape of one large man. It is Tony's chair. Nobody else sits in it. This
+    is not stated. It does not need to be.
+  desk: >-
+    A mahogany desk covered in papers that look important and probably are not.
+    A cell phone, two cell phones actually, sits on the corner. One for family.
+    One for work. This is how the separation is maintained.
+  cohibas: >-
+    Cuban cigars in a dark wood box. Illegal, technically. The irony is not lost
+    on Tony, but Tony has decided not to find it funny.
+  script: >-
+    The Cleaver script. Christopher's movie. Tony has made notes in the margins
+    in red pen -- corrections, deletions, and in one place, a large question mark
+    that takes up half a page.
+  scotch: >-
+    Macallan, neat. Not the first of the day. Not the last. The ice has melted
+    and left a ring on the coaster that Tony will wipe away without thinking.
+spawninfo:
+- mobid: 290
+  message: "<ansi fg=\"8\">Tony Soprano fills the doorway like a weather system, cigar in hand, robe half-open, already looking like the day has disappointed him.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The television plays something loud and Tony does not look at it.
+- A cigar rests in the ashtray, burning down to nothing untended.
+- The leather recliner creaks as if remembering the weight it usually holds.
+- A cell phone on the desk buzzes once, then stops. Nobody checks it.
+- The Scotch glass catches the light from the television, throwing brief amber flashes.
+- Somewhere in this room there is something that should not be found. There always is.

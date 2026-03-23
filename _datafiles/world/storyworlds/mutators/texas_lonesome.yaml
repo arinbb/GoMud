@@ -1,0 +1,6 @@
+mutatorid: texas-lonesome
+namemodifier:
+  behavior: append
+  text: (lonesome)
+alertmodifier:
+  text: The loneliness here is not an absence of people. It is a presence of its own, vast and red and American.

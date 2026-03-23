@@ -1,0 +1,59 @@
+roomid: 2030
+zone: Harold and Maude
+title: The Junkyard
+description: >-
+  Acres of <ansi fg="8">rusted iron</ansi> and salvaged metal, stacked
+  in improbable mountains, threaded with narrow paths. The afternoon sun
+  turns everything <ansi fg="yellow">amber and bronze</ansi>, making the
+  junkyard look like a landscape painting that has been left out in the
+  weather. <ansi fg="itemname">Car bodies</ansi> are stacked four high.
+  <ansi fg="itemname">Pipes and beams</ansi> lean against each other in
+  arrangements that seem precarious and have somehow stood for decades.
+  At the center, a <ansi fg="itemname">cleared patch of earth</ansi>
+  holds a single small <ansi fg="10">sapling</ansi> in a clay pot -- a
+  tiny tree, waiting to be planted somewhere better. The
+  <ansi fg="itemname">soil</ansi> here is dark and rich-looking despite
+  everything. To the <ansi fg="exit">west</ansi>, the street.
+mapsymbol: J
+maplegend: The Junkyard
+biome: land
+exits:
+  west:
+    roomid: 2027
+    exitmessage: You make your way back out through the junkyard gates to the street.
+nouns:
+  iron: >-
+    Rusted car panels, bed frames, refrigerators, machinery whose purpose
+    is no longer legible. Everything here was made to be used and was used
+    and is still here. Maude would say: 'Nothing really ends, Harold. It
+    just becomes something else.' The junkyard proves her right.
+  cars: >-
+    Car bodies stacked in rows -- a 1954 Buick on top of a 1962 Ford on
+    top of something that might have been a truck. The paint is long gone,
+    replaced by rust in layers of orange and red and brown. Beautiful, in
+    the way that honest things are beautiful.
+  pipes: >-
+    Pipes and steel beams and structural members of no known structure,
+    leaning against each other in a lattice that has somehow not fallen
+    for thirty years. There is a lesson here that nobody has articulated
+    yet.
+  earth: >-
+    The cleared patch of earth in the center of the junkyard is darker
+    than it should be, given the surroundings. Someone has been tending it.
+    There are small signs of care: the weeds have been pulled, the surface
+    has been turned. The soil is ready.
+  sapling: >-
+    A small tree in a clay pot, perhaps two feet tall. An oak, or something
+    like it, with pale green leaves that turn in the faint wind. Maude
+    brought it here. She says it wants to be planted somewhere it can grow
+    properly, which means somewhere it can grow enormous, which means somewhere
+    that has patience for enormous things. She has been looking for the right spot.
+idlemessages:
+- The junkyard is very quiet except for the wind moving through the stacked metal.
+- A crow lands on top of the highest car stack and surveys the territory with proprietary satisfaction.
+- The sapling in the clay pot turns its leaves toward the sun in the cleared patch.
+- The rust on the car bodies is the color of autumn, which is appropriate.
+- Somewhere in the stacks, something shifts and settles with a slow iron groan.
+- The afternoon sun makes the junkyard into a landscape of warm amber and shadow.
+- The soil in the cleared patch smells of earth and potential, neither of which requires explanation.
+- A butterfly crosses the cleared patch and settles briefly on the sapling, then lifts away.

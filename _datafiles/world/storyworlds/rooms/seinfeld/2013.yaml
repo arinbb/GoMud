@@ -1,0 +1,59 @@
+roomid: 2013
+zone: Seinfeld
+title: The Chinese Restaurant
+description: >-
+  A Chinese restaurant somewhere in the Upper West Side, entirely unremarkable except
+  for the fact that it has become infinite. The <ansi fg="itemname">waiting area</ansi>
+  near the front has a narrow bench and no good place to stand. The <ansi fg="itemname">host</ansi>
+  stand is manned by a man with a list. <ansi fg="itemname">Tables</ansi> are visible
+  through the archway, occupied, all of them occupied. The smell of <ansi fg="itemname">food</ansi>
+  from the kitchen is extraordinary and has been extraordinary for the entire duration
+  of the wait, which is ongoing. Someone at the host stand just called a name. The name
+  was not yours. The <ansi fg="itemname">phone</ansi> by the host stand rings and gets
+  answered while your party continues to wait. There are always people ahead of you.
+  There are always people behind you. The <ansi fg="exit">street</ansi> is to the east,
+  accessible whenever you accept that the table is not coming tonight.
+mapsymbol: R
+maplegend: Chinese Restaurant
+biome: city
+exits:
+  street:
+    roomid: 2004
+    mapdirection: east
+nouns:
+  area: >-
+    The waiting area near the entrance. A bench that is one person too short
+    to be useful. A rack of business cards for local services. A fish tank
+    with fish in it. The fish are not waiting for anything. This seems, under
+    the circumstances, unfair.
+  host: >-
+    The host has a list. Your name is on the list, probably -- you gave it
+    to him when you arrived, and he wrote something down, and you have reason
+    to believe that something was your name. He calls names from the list
+    periodically. The names he calls are not your name. You are still here.
+  tables: >-
+    Through the archway, tables with people at them eating food that you
+    ordered in your head twenty minutes ago. The food looks exactly right.
+    The tables are occupied. When the people at the tables finish eating,
+    they will get up and leave, and then you will be seated, unless someone
+    else is seated first, which is possible.
+  food: >-
+    Whatever is coming out of the kitchen smells exactly the way it should
+    smell. The kitchen is performing at its peak. The food is ready. You
+    are not seated. There is a quality of irony here that has not been
+    officially acknowledged.
+  phone: >-
+    The phone rings periodically at the host stand and is answered and the
+    conversation lasts longer than your entire wait has lasted so far and
+    then the person who called gets a reservation and you are still standing
+    here with your name on a list, waiting for a name that will not be called.
+spawninfo: []
+idlemessages:
+- 'The host calls a name. The name is: Cartwright. Nobody responds. He calls it again.'
+- The tables inside are full of people eating food that smells extraordinary. You are not sitting at any of them.
+- Another party arrives behind you. They give their name. The host writes it down. The list grows.
+- A name is called. It is not yours. Someone moves through the archway to a table that is not yours.
+- The fish in the tank do not have to wait for anything. This continues to seem unfair.
+- The phone rings. The host answers it. The conversation takes three minutes. You are still standing.
+- The wait will be about five to ten minutes. This has been true for forty-five minutes.
+- Someone at a table inside is eating something that appears to be exactly what you would order. You would like to order.

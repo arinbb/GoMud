@@ -1,0 +1,51 @@
+roomid: 1812
+zone: Crime and Punishment
+title: The Marmeladov Apartment
+description: >-
+  Through the door and into a room that is all suffering made visible. A
+  consumptive woman — Katerina Ivanovna, Marmeladov's wife — stands at
+  the <ansi fg="itemname">stove</ansi>, coughing. Three <ansi fg="itemname">
+  children</ansi> are arranged around the room in attitudes of tired
+  endurance. The youngest sleeps on a pile of rags. A table with a cloth
+  that was once white. On the table, almost nothing: a heel of bread, a
+  salt cellar, an empty bottle. The <ansi fg="itemname">smell</ansi> is
+  of unwashed bodies and weak soup and the particular smell of illness,
+  the one that comes before the worst. This is what Sonya works for,
+  this room. This is what the coins go toward. Katerina Ivanovna coughs
+  and straightens and sets her jaw and goes back to whatever she was
+  doing. The haymarket is to the <ansi fg="exit">south</ansi>.
+mapsymbol: M
+maplegend: Marmeladov Apartment
+biome: house
+exits:
+  south:
+    roomid: 1803
+    mapdirection: south
+nouns:
+  stove: >-
+    The stove is barely warm. There is not much to burn and what there
+    is must be used carefully. Katerina Ivanovna tends it with the
+    concentration of a woman managing something precious, which it is —
+    heat, here, now, for these children.
+  children: >-
+    The three children: Polenka, the oldest, perhaps ten, with eyes
+    too old for ten. The middle one, Kolya, who has a bruise on his
+    shin and is pretending it does not hurt. The youngest, asleep
+    on the rags, her thumb in her mouth. They are Sonya's half-siblings.
+    They are what the coins are for.
+  bread: >-
+    A heel of bread on the table. The family's meal, or what is left
+    of the family's meal, or what passes for a meal. The salt cellar
+    beside it is mostly empty.
+  illness: >-
+    The smell of it hangs in the room — the particular damp cold smell
+    of consumption, of a body being slowly destroyed from inside. Katerina
+    Ivanovna knows what it means. She has known for some time. She does
+    not speak of it. She works instead.
+idlemessages:
+- Katerina Ivanovna coughs into a cloth, examines the cloth, folds it closed quickly.
+- The youngest child makes a small sound in sleep, turns over on the rags, is still again.
+- 'Polenka carries a cup of something to her mother at the stove. Katerina Ivanovna takes it without looking. ''Good girl,'' she says.'
+- The walls of the apartment are so thin you can hear the neighbors on both sides, living their own versions of this room.
+- 'The empty bottle on the table is Marmeladovs. His absence fills the room the way his presence did: badly.'
+- 'A draft from under the door moves the cloth on the table. Katerina Ivanovna smooths it flat again, automatically, without stopping what she is doing.'

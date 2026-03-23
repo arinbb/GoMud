@@ -1,0 +1,54 @@
+roomid: 1844
+zone: Far Cry 5
+title: Falls End Church
+description: >-
+  It started here. You remember it: the warrant, the handcuffs, Joseph at the
+  pulpit, and then everything going wrong at once in a way that was catastrophic
+  and somehow, afterward, felt inevitable. The <ansi fg="itemname">church</ansi>
+  has been reclaimed, its Eden's Gate iconography stripped with considerable
+  effort — the <ansi fg="itemname">pew ends</ansi> still bear faint impressions
+  where cult symbols were screwed in. The original <ansi fg="itemname">cross</ansi>
+  hangs crooked above the altar; no one has straightened it and now no one will.
+  The <ansi fg="itemname">stained glass</ansi> survived, saints and light in deep
+  blues and greens, indifferent to the occupying theology below them. The air
+  smells of old wood and candle wax and something that might be shame or might be
+  grief. The <ansi fg="exit">town</ansi> is south.
+mapsymbol: C
+maplegend: Falls End Church
+biome: house
+exits:
+  town:
+    roomid: 1842
+    mapdirection: south
+nouns:
+  cross: >-
+    The original cross, re-hung after the Eden's Gate occupation, slightly
+    crooked. Whoever re-hung it got it close and then ran out of either
+    time or caring. It stays crooked. It means something, crooked. It
+    says: we took it back. It does not say: everything is fine.
+  pews: >-
+    Wooden pews, scarred and old. The ends still show faint rectangular
+    impressions where Eden's Gate symbols were bolted on. Someone has
+    sanded at them but the wood remembers. This church was used as a
+    pulpit for a different gospel for a while. That does not leave easily.
+  glass: >-
+    Stained glass panels, the original windows. Saints in blue and gold
+    and deep forest green, their expressions serene and unchanging. They
+    watched the original congregation. They watched the Eden's Gate
+    congregation. They watch you now. They do not appear to judge any of it.
+  altar: >-
+    The altar, a simple wooden table. A Bible sits on it, open. The
+    passage showing is from Revelation. You wonder if someone left it
+    there as a statement or if it was just where it fell.
+  candles: >-
+    Candles in iron holders at the altar and along the side walls, some
+    lit, most not. The ones that are lit were lit today, recently. Someone
+    tends them. Someone is keeping this church alive in the old way.
+idlemessages:
+- The crooked cross casts a slightly wrong shadow across the altar. Nobody moves to fix it.
+- Candlelight shifts in the still air, making the stained glass saints appear to breathe.
+- The pew wood creaks as the church settles. It has been creaking like this for over a hundred years.
+- Somewhere outside, a vehicle passes. The stained glass vibrates almost imperceptibly.
+- The silence in here is different from the silence outside. This one has depth. Weight.
+- Dust motes drift in shafts of colored light from the windows. The saints look down through them.
+- Someone left a wildflower on the altar steps. Mountain lupine. Purple. Fresh today.

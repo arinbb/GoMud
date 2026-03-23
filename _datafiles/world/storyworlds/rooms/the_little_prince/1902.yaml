@@ -1,0 +1,65 @@
+roomid: 1902
+zone: The Little Prince
+title: The Kings Asteroid
+description: >-
+  The entire planet is occupied by a <ansi fg="itemname">throne</ansi> of
+  royal purple and ermine. The throne is magnificent. The kingdom is empty
+  -- there are no subjects, no courtiers, no kingdom to speak of, only the
+  asteroid itself and the enormous solitude of someone who has arranged
+  everything perfectly so that nothing need be arranged. The <ansi fg="mobname">King</ansi>
+  sits upon his throne in ermine robes, his crown slightly too large, his
+  dignity absolute and unchallenged because there is no one to challenge it.
+  He rules the stars, the sun, the wind, the clouds. He rules them all by
+  issuing commands that he times to coincide with what they were going to do
+  anyway. His power is total and perfectly, magnificently useless. The
+  asteroid smells of purple velvet and self-importance. A path leads back
+  toward <ansi fg="exit">B-612</ansi> to the east, and further to the
+  <ansi fg="exit">vain</ansi> man's asteroid south.
+mapsymbol: K
+maplegend: Kings Asteroid
+biome: land
+exits:
+  b612:
+    roomid: 1901
+    mapdirection: east
+  vain:
+    roomid: 1904
+    mapdirection: south
+nouns:
+  throne: >-
+    A throne of rich purple velvet and white ermine, occupying most of the
+    asteroid. Its legs are carved in the shapes of lions and eagles, though
+    the King has never seen either. The cushion is worn in the exact shape
+    of someone who has sat here a very long time. The armrests are polished
+    smooth by hands that grip them to feel, momentarily, that they have
+    something to hold.
+  ermine: >-
+    The ermine robe trails magnificently, draping over the edge of the
+    asteroid and into the stars below. It is very fine ermine. It is the
+    ermine of someone who is absolutely, perfectly, entirely alone.
+  crown: >-
+    A golden crown, slightly too large, that slips down over one ear
+    when the King forgets to sit up straight. He is always forgetting.
+    It does not dent his dignity. Nothing dents his dignity. His dignity
+    is structural.
+spawninfo:
+- mobid: 373
+  message: The King surveys his empty kingdom from his throne, issuing orders to the silence.
+  idlecommands:
+  - say I order the sun to set! At... the appropriate moment. Which I shall determine.
+  - ''
+  - emote adjusts his ermine robe with magnificent dignity.
+  - ''
+  - say You there! I command you to sit! It is an order. It is also very comfortable here.
+  - ''
+  - emote issues a decree to no one in particular, gesturing grandly at the empty asteroid.
+  - ''
+  - say A king must rule. The art of ruling is to issue only reasonable commands.
+  - ''
+  respawnrate: 3 real minutes
+idlemessages:
+- The throne sits in perfect silence. A king without subjects is still a king. He is certain of this.
+- The ermine robe catches the starlight. Something in the universe rearranges itself, slightly, in deference.
+- 'The King''s crown slips to one side. He straightens it with a small, practiced motion.'
+- 'An order is issued to the wind: comply. The wind complies, as it was already doing.'
+- The asteroid holds its breath in the presence of absolute authority.

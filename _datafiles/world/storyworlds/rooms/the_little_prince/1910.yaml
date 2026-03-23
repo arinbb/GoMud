@@ -1,0 +1,68 @@
+roomid: 1910
+zone: The Little Prince
+title: The Foxs Den
+description: >-
+  A field of <ansi fg="itemname">wheat</ansi> stretches in every direction,
+  gold in the afternoon light, the stalks just tall enough to come to your
+  knee. There is a stillness here that is not emptiness -- it is the specific
+  stillness of something waiting. A red <ansi fg="itemname">fox</ansi>
+  watches from some distance, not close enough to touch, not far enough to
+  ignore. This is the space of someone not yet tamed. The fox's eyes are
+  the colour of wheat in certain light. When the wind moves through the
+  field, the wheat moves all at once in a wave that is almost, almost,
+  almost a word. There are small <ansi fg="itemname">tracks</ansi> in the
+  earth near the den entrance -- very small, very particular, the tracks of
+  something that has been coming to this exact spot for a long time without
+  coming quite close enough. The <ansi fg="exit">desert</ansi> is east.
+mapsymbol: F
+maplegend: Foxs Den
+biome: land
+exits:
+  desert:
+    roomid: 1900
+    mapdirection: east
+nouns:
+  wheat: >-
+    Golden wheat, head-high stalks just taller than your knee, moving
+    constantly in a wind you cannot feel on your face. The wheat is the
+    color of the fox's fur. This is not a coincidence -- or rather, it
+    is a coincidence that the fox has noticed and made into a reason to
+    love this field. It will always, now, remind him of the prince who
+    tamed him. The wheat will always remind him of golden hair. This is
+    what taming does: it fills the world with echoes of what you love.
+  fox: >-
+    The fox is watching from a careful distance. He is beautiful and careful
+    and wild -- not wild in the way of dangerous things, but wild in the
+    way of things that belong to themselves. If you approach too quickly,
+    he will retreat. If you sit very still and come back every day at the
+    same time, he will come a little closer. And a little closer. And then
+    one day he will be next to you, and you will be responsible for each
+    other, and the whole world will be different because of it.
+  tracks: >-
+    Small paw prints in the earth near the den, each one exactly the
+    width of a fox's foot, pressed into the dirt at the same depth, the
+    same careful spacing, evidence of an approach made many times and
+    an approach that always stopped at the same spot. The stopping spot
+    was yesterday's approach. Today it will be slightly closer.
+spawninfo:
+- mobid: 371
+  message: A golden fox watches from the edge of the wheat, ears tilted forward.
+  idlecommands:
+  - emote watches you from a distance, perfectly still.
+  - ''
+  - emote approaches three steps, then retreats two. The gap is slightly smaller.
+  - ''
+  - say The wheat reminds me of his hair. Even now. That is what taming costs.
+  - ''
+  - emote sits down in the wheat and becomes very still, watching.
+  - ''
+  - say 'You must be very patient. Sit a little closer each day. Say nothing at first.'
+  - ''
+  respawnrate: 3 real minutes
+idlemessages:
+- The wheat moves in a wave from east to west, and in the wave the fox's fur seems to ripple too.
+- The fox is closer than last time. You are almost certain of this. Maybe by one step.
+- A lark lifts from the wheat and the fox watches it go without chasing. He is thinking.
+- The whole field holds its breath. Something is about to be tamed or is about to not be tamed. The difference is patience.
+- The fox disappears into the wheat for a moment, then reappears in a slightly different place, slightly closer.
+- 'Wind through wheat makes a sound like: yes. Almost. Nearly. Come back tomorrow.'

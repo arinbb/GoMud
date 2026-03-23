@@ -1,0 +1,58 @@
+roomid: 1524
+zone: Waynes World
+title: Stan Mikita's Donuts
+description: >-
+  The beating heart of Aurora social life. <ansi fg="itemname">Stan Mikita's
+  Donuts</ansi> is everything a donut shop should be: fluorescent-lit, slightly
+  sticky, and full of people who have nowhere better to be and know it. The
+  <ansi fg="itemname">counter</ansi> runs the length of the far wall, behind it a
+  rotating display of <ansi fg="itemname">donuts</ansi> in all the classic configurations.
+  <ansi fg="itemname">Coffee</antml> arrives in a heavy ceramic <ansi fg="itemname">mug</ansi>
+  without being asked. A hand-painted <ansi fg="itemname">sign</ansi> on the wall
+  shows Stan Mikita in his hockey gear. The back <ansi fg="exit">booth</ansi> is
+  prime real estate. <ansi fg="exit">South</ansi> leads back to the street.
+  <ansi fg="exit">North</ansi> is the parking lot.
+mapsymbol: D
+maplegend: Stan Mikita's
+biome: house
+exits:
+  south:
+    roomid: 1523
+  booth:
+    roomid: 1525
+    mapdirection: east
+  north:
+    roomid: 1534
+nouns:
+  counter: >-
+    A long Formica counter with spinning stools. Every stool is occupied by
+    someone with a story. The counter has heard everything. The counter judges
+    no one.
+  donuts: >-
+    Classic ring donuts, glazed, chocolate, and the sprinkle variety. Plus crullers,
+    bear claws, and the occasional jelly-filled that sits alone with quiet dignity.
+    These are excellent donuts. Wayne knows this. Aurora knows this.
+  coffee: >-
+    Dark, strong, and served without ceremony. This coffee will not change your
+    life. It will, however, make your life feel manageable, which is better.
+  mug: >-
+    A heavy ceramic diner mug. It has been washed ten thousand times. It will
+    be washed ten thousand more. It is indestructible.
+  sign: >-
+    Stan Mikita, hockey legend, gazes from the wall in full gear. His name
+    above the door is both homage and business decision. Aurora is proud.
+spawninfo:
+- mobid: 244
+  message: "<ansi fg=\"yellow\">Stan Mikita wipes down the counter with the authority of a man who owns the place.</ansi>"
+  respawnrate: 5 real minutes
+- mobid: 248
+  message: "<ansi fg=\"yellow\">A regular customer settles onto a stool with the ease of a man who belongs here.</ansi>"
+  respawnrate: 8 real minutes
+idlemessages:
+- The coffee urn gurgles and everyone in the shop unconsciously relaxes.
+- A donut rolls slightly on its display stand. Another day, another glazed.
+- Stan wipes the counter even though the counter is already clean. It is a zen practice.
+- The door opens and someone comes in, nodding at everyone they know, which is everyone.
+- The overhead light hums a note that harmonizes, somehow, with the cash register.
+- Someone dunks a cruller into their coffee and achieves, briefly, perfection.
+- The conversation in the back booth is about everything and nothing and Aurora.

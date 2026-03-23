@@ -1,0 +1,26 @@
+mobid: 401
+zone: nineteen_eighty_four
+hostile: false
+maxwander: 0
+activitylevel: 35
+idlecommands:
+  - emote produces a small square of real chocolate from her pocket and breaks it carefully.
+  - emote laughs at something with the directness of a woman who has decided that the risk is worth it.
+  - emote whispers something to Winston with her face turned away from the telescreen.
+  - emote smooths the bedspread with her hand, a gesture of ownership, of being here on purpose.
+  - ''
+  - emote plans something in the efficient, practical way of someone for whom rebellion is not a philosophy but a technique.
+character:
+  name: Julia
+  description: >-
+    A bold, dark-haired young woman of about twenty-six, with quick movements
+    and a bright, healthy face. She wears the overalls of the Junior Anti-Sex
+    League and a scarlet sash around her waist that she ties tight in a way
+    that suggests she finds the sash amusing rather than constraining. She is
+    practical rather than philosophical about her rebellion: she does not hate
+    the Party in the abstract, she hates it specifically, for specific things
+    it has done to specific people, and her hatred has given her energy rather
+    than despair. She has real chocolate. She found real coffee somewhere.
+    She is alive.
+  raceid: 1
+  level: 6

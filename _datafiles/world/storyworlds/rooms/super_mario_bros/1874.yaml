@@ -1,0 +1,68 @@
+roomid: 1874
+zone: Super Mario Bros
+title: Bowsers Bridge
+description: >-
+  The bridge over the final lava pit. Wooden planks stretch across a chasm
+  filled with churning <ansi fg="red">lava</ansi>, and at the far end stands
+  the real Bowser -- the King of the Koopas, enormous, green-shelled, his
+  horns scraping the dungeon ceiling, his fire breath filling the corridor
+  with orange light. He is larger than the game has space to fully render.
+  His roar shakes the stone. An <ansi fg="yellow">axe</ansi> on a post at
+  the far end of the bridge gleams with purpose -- hit it and the bridge
+  planks fall away, the chains drop, and Bowser falls. It always ends with
+  the axe. It has always ended with the axe. South leads <ansi fg="exit">back</ansi>;
+  east leads to the <ansi fg="exit">throne room</ansi>.
+mapsymbol: B
+maplegend: Bowsers Bridge
+biome: dungeon
+exits:
+  south:
+    roomid: 1873
+  east:
+    roomid: 1875
+nouns:
+  bowser: >-
+    The real Bowser. The King of Koopas. He stands at the far end of the
+    bridge, filling the space with his presence -- enormous green shell,
+    horned head, spiked collar, that particular shade of angry orange that
+    his fire breath makes. His eyes are small and red and mean. He has
+    kidnapped the princess. He has done this eight times. He will do it
+    again. He is, despite everything, one of the most iconic villains in
+    the history of games, and the reason is simple: he is an obstacle, and
+    the obstacles we remember are the ones we eventually overcome.
+  axe: >-
+    A golden axe on a stone post at the far end of the bridge, placed there
+    with tremendous deliberateness -- the game's acknowledgment that there
+    is a solution and it is not complicated. Hit the axe. The bridge falls.
+    Bowser falls. The level ends. The whole castle ends. The game has been
+    leading here since the first pipe on 1-1. The axe is the period at the
+    end of the sentence. It gleams.
+  lava: >-
+    The final lava pit. Orange-red and churning below the bridge planks,
+    its heat rising through the gaps. Bowser's fire breath adds to the heat.
+    The stone walls are hot to the touch. This is the hottest room in the
+    Mushroom Kingdom, which is saying something given the rest of the
+    castles. The lava does not care who falls into it.
+spawninfo:
+- mobid: 355
+  message: Bowser rises from behind the bridge, his silhouette filling the far end of the corridor.
+  idlecommands:
+  - emote breathes a gout of fire that illuminates the whole bridge.
+  - ""
+  - emote stomps forward one step, shaking the stone floor.
+  - ""
+  - say MARIO!
+  - ""
+  - emote roars, the sound reverberating off every stone wall in the castle.
+  - ""
+  - emote hurls a hammer that bounces off the dungeon ceiling.
+  - ""
+  respawnrate: 5 real minutes
+idlemessages:
+- 'Bowser breathes fire: a gout of orange that fills the corridor with heat and light.'
+- The bridge planks creak under enormous weight as Bowser shifts his footing.
+- 'The axe gleams at the far end of the bridge: obvious, accessible, waiting.'
+- 'Lava churns in the pit below, its heat radiating upward through the gaps between planks.'
+- Bowser roars again. The sound is deeper and more terrible than in any previous castle.
+- 'This is the real one. Not a transformed Koopa pretending. Not a trick. The actual King of Koopas.'
+- 'The bridge sways slightly. Below: lava. Ahead: Bowser. The axe is right there.'

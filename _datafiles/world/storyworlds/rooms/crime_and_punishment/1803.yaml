@@ -1,0 +1,60 @@
+roomid: 1803
+zone: Crime and Punishment
+title: Haymarket Square
+description: >-
+  The Haymarket: the pulsing, stinking, magnificent heart of the poor quarter.
+  <ansi fg="itemname">Vendors</ansi> sell pickles, sunflower seeds, old boots,
+  half-rotten fish, and things that are harder to identify. The noise is
+  continuous and layered — <ansi fg="itemname">haggling voices</ansi>, a
+  child screaming, a fiddle sawing somewhere, the grinding of cart wheels on
+  stone. The smell is everything at once: fish, sweat, horse, tobacco, frying
+  fat, the canal. <ansi fg="itemname">Beggars</ansi> work the edges. A
+  woman at a stall is selling something from a bucket that she ladles into cups
+  for a kopek. Raskolnikov has walked through this square a hundred times and
+  every time it has felt like drowning in other people's lives. To the <ansi
+  fg="exit">south</ansi> the lane leads back toward his building. To the
+  <ansi fg="exit">east</ansi>, a passage leads to a tavern.
+mapsymbol: H
+maplegend: Haymarket Square
+biome: city
+exits:
+  south:
+    roomid: 1802
+  east:
+    roomid: 1804
+  north:
+    roomid: 1812
+nouns:
+  vendors: >-
+    The vendors of the Haymarket sell everything that the rest of the city
+    has discarded. Here boots with holes. There a pile of books with their
+    covers torn off. A woman with a basket of eggs that may or may not still
+    be eggs. A man with a cart of watermelons who is conducting a vigorous
+    personal argument no one else is part of.
+  beggars: >-
+    The beggars of the Haymarket are professionals in misery, their suffering
+    worn like a uniform. They have learned what expressions move coins from
+    pockets. Some have forgotten there was ever a time before this.
+  voices: >-
+    The voices of the square overlap and tangle. Arguments, bargaining,
+    greetings, curses. Each voice is a whole life, a whole history, a whole
+    set of reasons why today is like this and not like something better.
+  fiddle: >-
+    Somewhere in the square, a fiddle player is working through something
+    slow and minor. The melody rises and disappears into the noise and comes
+    back in pieces.
+  bucket: >-
+    The woman with the bucket is selling kvass — fermented bread water,
+    dark and sour. For a kopek she fills a tin cup. It is cold. It is the
+    closest thing to relief the square offers.
+spawninfo:
+- mobid: 313
+  message: 'A man in a worn civil service coat lurches through the crowd, bottle in hand, seeking an audience for his confession.'
+  respawnrate: 10 real minutes
+idlemessages:
+- The press of bodies in the Haymarket generates its own heat, separate from and worse than the summer.
+- A dispute between two vendors reaches some climax of volume and then subsides without resolution.
+- 'The fiddle player switches to something faster, and for a moment the square seems almost festive, almost alive.'
+- A child darts through the crowd with something grabbed from a stall. The vendor shouts. The child is already gone.
+- The smell of the Haymarket is like the smell of the city concentrated and offered to you directly.
+- 'Pigeons work the cobblestones methodically, indifferent to the feet around them, eating whatever the market leaves behind.'

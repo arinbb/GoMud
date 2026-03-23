@@ -1,0 +1,59 @@
+roomid: 1955
+zone: Back to the Future
+title: The Lightning Strike
+description: >-
+  The top of the clock tower, November 12, 1955, 10:03 PM.
+  The storm has broken in full. Rain comes sideways. Wind tears
+  at everything not bolted down. The <ansi fg="itemname">lightning
+  rod</ansi> Doc Brown installed juts from the parapet, copper,
+  pointed at a sky that is doing its part. The
+  <ansi fg="itemname">cable</ansi> runs from the rod down the
+  tower face and disappears toward the street. Somewhere below,
+  the DeLorean is in position, pointed west, engine at temperature.
+  The clock reads <ansi fg="room-description">10:03</ansi>.
+  The clock reads <ansi fg="room-description">10:04</ansi>.
+  A bolt of lightning strikes the rod. The cable carries it.
+  The DeLorean hits 88 miles per hour.
+mapsymbol: Z
+maplegend: Lightning Strike
+biome: land
+exits:
+  down:
+    roomid: 1943
+nouns:
+  "lightning rod": >-
+    The copper lightning rod Doc Brown bolted to the parapet.
+    It is not ornamental. It is not symbolic. It is the specific
+    device that needs to catch the specific lightning bolt that
+    Doc Brown calculated would strike this exact point at
+    10:04 PM on November 12, 1955. The rod is ready.
+    The lightning is ready. Everything is ready.
+  cable: >-
+    The heavy cable running from the lightning rod down the
+    tower face to the street. It has to connect cleanly when
+    the DeLorean is at speed. It has to carry 1.21 gigawatts
+    without failing. It is two bare wires and a hook. It works.
+  clock: >-
+    10:04 PM. The clock hands have arrived. Elsewhere in town,
+    George McFly has just kissed Lorraine Baines for the first
+    time. In this timeline, it sticks.
+  lightning: >-
+    The storm. The lightning. The specific bolt out of the
+    particular cloud at the exact moment in the particular
+    location that Doc Brown calculated from a flash of insight
+    triggered by hitting his head on a sink while hanging
+    a clock. The universe does not refuse.
+  rain: >-
+    Rain so heavy it is almost horizontal, driven by the
+    same storm system that carries the critical lightning bolt.
+    The rain will short the cable if it is not connected
+    in the next twenty-seven seconds. It is a detail. It
+    is everything.
+idlemessages:
+- Lightning walks across the sky from cloud to cloud, looking for the rod.
+- The clock face glows from inside. 10:03. The last minute feels longer than it is.
+- The cable whips against the stone in the wind.
+- Rain hammers the parapet stones and sheets off the edge into the dark below.
+- Thunder so close it is a physical sensation.
+- The lightning rod vibrates. The charge is building in the clouds above.
+- '10:04. The hands are there. The storm is here. Something is about to happen.'

@@ -1,0 +1,60 @@
+roomid: 1826
+zone: Stardew Valley
+title: Marnies Ranch
+description: >-
+  The ranch sits in a sun-warmed clearing south of the forest. The <ansi
+  fg="itemname">barn</ansi> is large and painted red, smelling powerfully of
+  <ansi fg="itemname">hay</ansi> and warm animals. A <ansi
+  fg="itemname">cow</ansi> stands near the fence, watching you with placid,
+  enormous eyes. <ansi fg="itemname">Chickens</ansi> pick at the yard. The
+  ranch is full of the sounds and smells of working animal life — not glamorous,
+  not mystical, just the honest labor of care. Marnie's counter is inside but
+  she is often elsewhere on the property. The forest path goes back <ansi
+  fg="exit">north</ansi>.
+mapsymbol: M
+maplegend: Marnies Ranch
+biome: farmland
+exits:
+  north:
+    roomid: 1823
+nouns:
+  barn: >-
+    The barn is dim and warm, smelling of fresh hay, animals, and the
+    particular peaceful life of livestock kept with care. Stalls line the
+    walls. The milking equipment is clean. Marnie believes that happy
+    animals make better products, which is both true and a statement of
+    her philosophy toward life generally.
+  hay: >-
+    Bales of hay stacked to the rafters, yellow and fragrant. The hay comes
+    from Pierre's fields mostly, though Marnie grows some herself. In winter
+    you need more than you think. She plans ahead every year. This, too, is
+    a kind of love.
+  cow: >-
+    A large, gentle dairy cow with brown patches and enormous dark eyes.
+    She watches you without alarm or particular interest. She has been
+    watched in turn by Marnie every morning for years, and she finds the
+    arrangement satisfactory. Her name is painted on the stall: Bessie.
+  chickens: >-
+    A small flock of chickens doing chicken things — pecking, scratching,
+    commenting on their findings in low clucks. One is notably fatter than
+    the others. All of them seem more relaxed than you might expect. This is
+    Shane's influence, it turns out. He raises the chickens with unusual
+    dedication.
+spawninfo:
+- mobid: 328
+  message: Marnie emerges from the barn, hay in her hair, face flushed with good cheer.
+  idlecommands:
+  - emote tosses a handful of grain to the chickens, who descend on it with enthusiasm.
+  - say Oh, you should see how much Bessie has grown since spring. Just beautiful.
+  - emote rearranges several bales of hay with practiced efficiency.
+  - say I keep telling people -- animals know when they are loved. It comes out in the product.
+  - emote leans on the fence and watches the cow with obvious affection.
+  - ''
+  respawnrate: 3 real minutes
+idlemessages:
+- The sound of animals going about their morning is steady and reassuring, a reliable rhythm.
+- A rooster crows at nothing in particular, asserting ownership of the moment.
+- The barn door swings open and closed in the breeze, creaking in a practiced way.
+- Bessie the cow moos at low volume and returns to grazing, satisfied with the communication.
+- The smell of the ranch is overwhelming and honest. Life happens here in large quantities.
+- 'Shane emerges briefly from somewhere, checks on the chickens, then disappears again without a word.'

@@ -1,0 +1,63 @@
+roomid: 2123
+zone: Paris Texas
+title: "Walts House, LA"
+description: >-
+  A <ansi fg="yellow">suburban house</ansi> in Los Angeles, clean and cared-for
+  in the way a house is when someone has made it deliberately into a home.
+  <ansi fg="itemname">Toys</ansi> are arranged on a shelf with a neatness that
+  suggests a child who likes order. A <ansi fg="itemname">kitchen</ansi> smells
+  of coffee. Photographs on the wall show a <ansi fg="itemname">boy</ansi> at
+  various ages, always grinning, always caught mid-motion. One photo near the
+  window shows four people — a woman, a man, a small boy, a younger man —
+  standing in front of a car. Someone has dusted the frame carefully. This is
+  a house that knows how to miss people. To the <ansi fg="exit">west</ansi>,
+  the highway. To the <ansi fg="exit">north</ansi>, the backyard. To the
+  <ansi fg="exit">east</ansi>, the road to Houston.
+mapsymbol: W
+maplegend: "Walts House"
+biome: house
+exits:
+  west:
+    roomid: 2122
+  north:
+    roomid: 2124
+  east:
+    roomid: 2125
+nouns:
+  toys: >-
+    A row of toys on a shelf. A model car, a plastic astronaut, a small
+    plastic dinosaur. They are arranged by size. Hunter arranged them.
+    He learned neatness in this house because order makes the uncertain
+    feel stable.
+  photographs: >-
+    The boy at five, gap-toothed. At six, bigger. A family portrait with
+    four people, taken before things fell apart. Anne kept that one. It
+    would have been easier to take it down.
+  photo: >-
+    The boy at five, gap-toothed. At six, bigger. A family portrait with
+    four people, taken before things fell apart. Anne kept that one. It
+    would have been easier to take it down.
+  kitchen: >-
+    Spotless. A coffee maker that is always on. Anne cooks real meals here.
+    Walt does the dishes. Hunter sets the table. They have made something
+    that works, the three of them, despite the empty space at the center.
+  coffee: >-
+    It is always available in this house. Walt always offers it.
+    He offered it to Travis and Travis took it with both hands, shaking.
+spawninfo:
+- mobid: 471
+  message: '<ansi fg="yellow">Walt Henderson moves through the kitchen with quiet efficiency, checking on things, making coffee, looking out the window at regular intervals.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 472
+  message: '<ansi fg="yellow">Hunter Henderson stands in the doorway, watching the newcomer carefully. He does not come closer yet.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 475
+  message: '<ansi fg="yellow">Anne Henderson wipes her hands on a dish towel and offers a careful, kind smile.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Walt refills his coffee cup and stands at the window for a moment, looking at nothing.
+- The refrigerator hums. The house settles. Los Angeles murmurs in the distance.
+- Hunter moves a toy from one end of the shelf to the other. Then back. Then back again.
+- Anne opens a cabinet and closes it. She is always busy in the way of someone who has learned that stillness hurts.
+- 'A car goes by outside: the sound of it fills the house for a second and then drains away.'
+- The photographs on the wall catch the afternoon light. The people in them do not change.

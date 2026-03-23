@@ -1,0 +1,16 @@
+itemid: 134
+name: Stardew Valley game disc
+namesimple: disc
+displayname: a game case containing <ansi fg="itemname">Stardew Valley</ansi>
+description: >-
+  A game case in the familiar style of indie games: a hand-drawn cover
+  showing a pixel-art farm at sunrise, a farmhouse with smoke rising, crops
+  in neat rows, a river catching the morning light. The spine reads
+  "STARDEW VALLEY -- ConcernedApe -- 2016." The back lists features in
+  small, hopeful text: farming, fishing, mining, foraging, building,
+  befriending. Someone has written in pencil on the inside: "A whole year
+  in three hours. Worth it every time."
+type: object
+subtype: usable
+uses: 0
+value: 0

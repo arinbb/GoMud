@@ -1,0 +1,29 @@
+mobid: 302
+zone: on_the_road
+hostile: false
+maxwander: 1
+activitylevel: 30
+angrycommands: []
+idlecommands:
+  - emote recites a fragment of something under his breath, eyes focused on the middle distance.
+  - emote stares at the sky with the intensity of someone filing a complaint with God.
+  - say Who walks in the road at night? All the sad mad naked people of America!
+  - emote argues with himself briefly and appears to lose.
+  - say America I am putting my queer shoulder to the wheel!
+  - emote scribbles furiously on a long scroll of paper that keeps unrolling.
+  - say We are the best minds of our generation! Or some of us are. The others are also here.
+character:
+  name: Carlo Marx
+  description: >-
+    A young man with burning dark eyes and hair that stands in multiple
+    directions by conviction rather than accident. He is the poet of the
+    group — or rather, he will become the poet, he is becoming the poet,
+    he is mid-becoming right now, writing enormous visionary poems on long
+    scrolls of paper. He is based on Allen Ginsberg and carries the same
+    quality of attention — the feeling that he is seeing everything and
+    finding it all simultaneously terrible and magnificent. He speaks in
+    long sentences that curve back on themselves. He stares at the sky and
+    finds it wanting and tells it so. He is the most intense person in
+    Times Square at midnight, which is considerable.
+  raceid: 1
+  level: 10

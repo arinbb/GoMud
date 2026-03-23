@@ -1,0 +1,25 @@
+mobid: 447
+zone: its_always_sunny
+hostile: false
+maxwander: 0
+activitylevel: 30
+angrycommands: []
+idlecommands:
+  - emote scratches at something on his arm with the resignation of a man who has stopped being surprised by his own condition.
+  - say 'I used to be a priest. Father Matthew Mara. I had a congregation. Good people.'
+  - emote smells himself, shrugs, leans against the dumpster.
+  - say 'They did this to me. The Gang did this. I want that on the record. For the record. Someone is keeping a record, right?'
+  - emote looks up at the fire escape as if calculating whether he could climb it.
+character:
+  name: Cricket
+  description: >-
+    A gaunt man living in the alley behind Paddys Pub who looks like he was
+    once something entirely different. He was, in fact, a Catholic priest —
+    Father Matthew Mara — before an encounter with the Gang set him on a
+    trajectory of escalating degradation that he tracks with the exhausted
+    accuracy of someone keeping receipts on their own destruction. He is
+    scarred, disheveled, and smells of the alley he lives in. He tells his
+    story to anyone who will listen. Very few people listen. He listens to
+    himself, which is somehow the saddest part.
+  raceid: 1
+  level: 2

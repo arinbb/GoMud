@@ -1,0 +1,67 @@
+roomid: 1851
+zone: Far Cry 5
+title: Whitetail Mountains
+description: >-
+  The mountains here are genuine and severe — not the pastoral backdrop of
+  Holland Valley but the thing itself, <ansi fg="10">pine forest</ansi> dense
+  enough to swallow sound, rocky outcroppings, creek beds running cold and fast
+  over granite. Jacob Seed's territory. The eldest brother, the soldier, the
+  one who understands that belief requires enforcement. The forest shows his
+  influence: <ansi fg="red">wolf traps</ansi> along the game trails, motion
+  sensors on the approach routes, <ansi fg="itemname">conditioned soldiers</ansi>
+  who move through the trees with military efficiency. And the <ansi fg="itemname">
+  wolves</ansi> themselves — Jacob's wolves, trained, numerous, loyal to nothing
+  and no one but the conditioning that has replaced their instincts. A <ansi fg="itemname">
+  mountain lion</ansi> watches from a rock above. The county road is to the
+  <ansi fg="exit">east</ansi>. The Veterans Center is <ansi fg="exit">north</ansi>.
+mapsymbol: M
+maplegend: Whitetail Mountains
+biome: forest
+exits:
+  east:
+    roomid: 1841
+  north:
+    roomid: 1852
+nouns:
+  forest: >-
+    Dense lodgepole pine, the kind that closes around you as you walk
+    into it and then you are inside it and the outside is gone. Old
+    growth in places — trees that were growing when this was Crow land,
+    before anyone thought they owned it. The forest doesn't care who
+    owns it. The wolves do.
+  traps: >-
+    Steel-jawed wolf traps, set along the game trails at strategic
+    intervals. Jacob's work — not to catch wolves but to shape movement,
+    to control approach. The traps are maintained, recently baited. You
+    watch where you put your feet.
+  wolves: >-
+    Jacob's wolves. They run in packs, grey and large, their behavior
+    wrong in the specific way that trained behavior is wrong — too
+    purposeful, too coordinated, responding to signals you cannot
+    perceive. They watch you from the tree line. One tilts its head
+    in a way that is not quite like a wolf.
+  lion: >-
+    A mountain lion on a granite outcropping above the trail, watching
+    with the concentrated stillness of a cat that has not decided
+    anything yet. Its tail moves slowly at the tip. Its eyes are golden.
+    It looks remarkably unconcerned with the human situation in the valley below.
+spawninfo:
+- mobid: 343
+  message: Peaches drops soundlessly from a rock above the trail and regards you with enormous gold eyes.
+  idlecommands:
+  - emote prowls the rock line with the fluid precision of something built for exactly this terrain.
+  - emote stretches elaborately, extending each enormous paw one at a time, showing the claws.
+  - ""
+  - emote watches a bird in the pine above with a hunter's absolute focus.
+  - emote yawns enormously, revealing teeth the size of your fingers.
+  - ""
+  - emote settles on a rock in the sun and surveys the forest with sovereign indifference.
+  respawnrate: 3 real minutes
+idlemessages:
+- The wind through the pines makes a sound like sustained breathing. Long. Patient.
+- Something moves in the forest. Not a deer. Too purposeful. Too quiet for something that size.
+- Peaches watches the treeline from her rock with the focused patience of something that always wins.
+- A wolf call rises from the north, high and sustained. Then another. Then silence. Then the forest sounds resume.
+- The creek runs cold and fast over granite below the trail. The sound of it is clean and real and good.
+- 'A motion sensor on a tree blinks red, once. Something tripped it to the east. Nothing emerges.'
+- The mountains hold their snow at the peaks even now. The trees below are very green against the white.

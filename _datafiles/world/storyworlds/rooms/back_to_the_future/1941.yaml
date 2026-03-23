@@ -1,0 +1,72 @@
+roomid: 1941
+zone: Back to the Future
+title: Hill Valley Town Square
+description: >-
+  The heart of Hill Valley, 1955. The <ansi fg="itemname">courthouse</ansi>
+  presides over the square, its tall <ansi fg="itemname">clock tower</ansi>
+  rising above everything, hands frozen at 10:04 PM -- a stopped clock
+  waiting for lightning. <ansi fg="itemname">Elm Street</ansi> runs west
+  toward Lyon Estates and the countryside beyond. The <ansi fg="itemname">town
+  gazebo</ansi> sits in the center of a manicured park. Shop awnings line
+  the square: a hardware store, a barbershop, Statler Studebaker. Everything
+  gleams with postwar optimism. It is November, 1955.
+mapsymbol: H
+maplegend: Town Square
+biome: city
+exits:
+  west:
+    roomid: 1940
+    exitmessage: You head west toward the edge of town.
+  north:
+    roomid: 1942
+  east:
+    roomid: 1944
+  south:
+    roomid: 1946
+  tower:
+    roomid: 1943
+    mapdirection: up
+  square:
+    roomid: 1950
+    mapdirection: east
+    secret: true
+nouns:
+  courthouse: >-
+    Hill Valley Courthouse, built 1886. Red brick, white trim, civic
+    pride. The clock tower jutting from its top has been stopped since
+    a lightning strike in 1955. Or rather -- it WILL be stopped after
+    a lightning strike in 1955. The tower clock is a focal point for
+    anyone who needs 1.21 gigawatts and has a specific appointment with
+    the weather.
+  "clock tower": >-
+    The clock tower reads 10:04 PM -- frozen at the exact moment when
+    lightning struck on November 12, 1955. The Hill Valley Preservation
+    Society has voted to keep it stopped as a historical monument. They
+    do not yet know how important that decision will turn out to be.
+  gazebo: >-
+    A white-painted gazebo in the center of the square. High school
+    students sit on its steps after school. On clear nights, couples
+    walk around it. It is the most wholesome structure in Hill Valley
+    and probably in all of California.
+  "elm street": >-
+    The main road west out of town, lined with elms that arch overhead
+    to form a green tunnel in summer. Now in November the branches are
+    bare. The road leads past Lyon Estates -- or rather, where Lyon
+    Estates will someday be built.
+  shops: >-
+    Statler Studebaker, the barbershop, the hardware store, and a
+    half-dozen other small businesses ring the square. All of them
+    sport cheerful neon signs and window displays full of postwar
+    abundance. No one here has ever heard of a shopping mall.
+idlemessages:
+- A 1955 Ford cruises slowly around the square, radio blaring something by Bill Haley.
+- High school students in letter jackets cross the square in clusters, laughing.
+- The clock tower casts a long shadow across the courthouse steps.
+- A paperboy cycles past, tossing rolled papers onto front porches.
+- The gazebo is freshly painted white. Someone left a bouquet of flowers on its railing.
+- 'A storefront window reflects the square back at you: everything impossibly clean and new.'
+- The smell of autumn leaves and car exhaust mingles in the cool air.
+- 'Someone in a passing car shouts something at a friend across the street: "See you at the dance!"'
+spawninfo:
+- itemid: 141
+  respawnrate: 10 real minutes

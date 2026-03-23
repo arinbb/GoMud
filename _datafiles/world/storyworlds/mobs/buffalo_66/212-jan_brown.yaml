@@ -1,0 +1,27 @@
+mobid: 212
+zone: buffalo_66
+hostile: false
+maxwander: 0
+idlecommands:
+  - "say Did you see that play? THAT was a play. Third and long and they WENT for it."
+  - "emote stares at the television with fierce concentration."
+  - "say The offensive line is KILLING us. They cannot protect the quarterback."
+  - "say We could have gone all the way in '91. ALL the way."
+  - ''
+  - ''
+  - "emote does not look away from the game."
+  - "say If Jim Kelly had been healthy, we would have FOUR rings. FOUR."
+activitylevel: 35
+character:
+  name: Jan Brown
+  description: >-
+    A woman in her late fifties with set hair and a Bills sweatshirt
+    that she wears like liturgical vestments. Her eyes are fixed on the
+    television with the intensity of a hawk tracking prey. She barely
+    acknowledges anyone who is not on the screen. The Bills are her true
+    family, her real children, her actual love. Everything else — the
+    house, the husband, the son who just got out of prison — is secondary
+    to the game. She knows every stat, every roster change, every heartbreak
+    of the Super Bowl years.
+  raceid: 1
+  level: 5

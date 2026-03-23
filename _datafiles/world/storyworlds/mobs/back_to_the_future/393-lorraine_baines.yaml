@@ -1,0 +1,23 @@
+mobid: 393
+zone: back_to_the_future
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote adjusts her hair in the reflection of the window."
+  - "emote looks toward the door with an expectant expression."
+  - "say Isn't he just dreamy?"
+  - "emote laughs at something nobody else heard."
+  - "emote flips a page of her magazine without reading it."
+  - "say A girl should be taken to a dance by someone who really cares about her."
+  - ""
+activitylevel: 20
+character:
+  name: Lorraine Baines
+  description: >-
+    A beautiful girl of seventeen, dark hair pinned up, wearing a
+    sweater and a circle skirt. She has a confidence that most of
+    the girls at Hill Valley High have not yet discovered. She is
+    currently convinced she is in love with a boy named Calvin Klein.
+    She is wrong about the name but not entirely wrong about the boy.
+  raceid: 1
+  level: 4

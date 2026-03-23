@@ -1,0 +1,25 @@
+questid: 160
+name: The Sopranos
+description: >-
+  Walk through the world of Tony Soprano -- the house in North Caldwell, the
+  therapy sessions, the espresso at Satriales, the red light of the Bada Bing,
+  the disorienting cold of the Pine Barrens, and the final booth at Holstens
+  Diner where Journey plays and the door opens and you look up. Experience the
+  whole thing.
+reward:
+  experience: 5500
+  item_id: 200
+  playermessage: >-
+    You have walked through the anxious, darkly funny, philosophically heavy
+    world of The Sopranos -- the therapy sessions and the strip club and the
+    pork store and the Pine Barrens and the diner. You have looked at the empty
+    pool where the ducks used to be. You have sat in the booth at Holstens and
+    watched the door. As a memento of your time in New Jersey, you receive a
+    Bada Bing matchbook. It still smells like the club.
+steps:
+- description: Enter the Soprano house in North Caldwell.
+- description: Visit Dr. Melfis therapy office.
+- description: Have an espresso at Satriales Pork Store.
+- description: Experience the Bada Bing.
+- description: Get lost in the Pine Barrens.
+- description: Visit Holstens Diner and watch the door.

@@ -1,0 +1,56 @@
+roomid: 2007
+zone: Seinfeld
+title: The Soup Stand
+description: >-
+  A small storefront, clean and purposeful. The <ansi fg="itemname">menu</ansi> is
+  posted on the wall behind the counter: dozens of soups, listed in immaculate handwriting,
+  each one a specific and non-negotiable proposition. The <ansi fg="itemname">line</ansi>
+  extends out the door and does not complain about itself because the people in it
+  have already accepted the terms. You must have <ansi fg="8">exact change</ansi>. You
+  must <ansi fg="8">move to the right</ansi> after ordering. You must <ansi fg="8">step
+  forward quickly</ansi> when the line advances. The man behind the counter is <ansi fg="itemname">Al
+  Yeganeh</ansi>, known in certain circles as the Soup Nazi, which is a characterization
+  he does not acknowledge because the characterization, while accurate in a narrow sense,
+  misses the point. The point is: the soup. The exit to the <ansi fg="exit">street</ansi>
+  is to the west.
+mapsymbol: S
+maplegend: The Soup Stand
+biome: city
+exits:
+  west:
+    roomid: 2004
+nouns:
+  menu: >-
+    The menu is a handwritten masterwork. Lobster bisque. Mulligatawny. Turkey
+    chili. French onion. Gazpacho, cold. Each soup is described in a single
+    line, no further qualification offered or needed. There is no prix fixe.
+    There is no special. There is the menu and then there is your choice and
+    then there is the transaction, which must proceed correctly.
+  line: >-
+    The line moves at the pace the Soup Nazi sets, which is his pace, and
+    his pace is correct. The people in line have their exact change ready.
+    They have reviewed the menu. They will not ask for bread. Bread is extra
+    and must be requested with appropriate deference or it will not be offered.
+  counter: >-
+    The counter is immaculate. Behind it, the pots, the ladles, the cups,
+    the operation proceeding with the efficiency of something that has been
+    perfected over years of absolute commitment to the production of superior
+    soup. There is no inefficiency here. Inefficiency costs soup.
+  soup: >-
+    The soup. It is extraordinary. Whatever is in the pot today -- and today
+    it is the mulligatawny, you can smell it -- is the result of years of
+    refinement and an absence of compromise. You cannot get soup this good
+    anywhere that allows casual behavior. The price of quality is procedure.
+spawninfo:
+- mobid: 426
+  message: '<ansi fg="8">Al Yeganeh takes his position behind the counter with the settled authority of a man who has defined the terms of the interaction and will not be renegotiating them.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The line moves forward one position. Everyone in it shifts in perfect synchrony.
+- The smell of mulligatawny is extraordinary. Whatever is in that pot has been simmering since this morning.
+- A man at the front of the line hesitates for half a second too long and something terrible is about to happen.
+- The pots behind the counter produce a low, satisfied burbling that suggests everything is proceeding correctly.
+- Someone at the back of the line is not going to have exact change. They do not know this yet.
+- The menu does not change. The menu has always been the menu. The menu is the menu.
+- Al Yeganeh ladles soup with the precision of a man who has never ladled incorrectly and will not start today.
+- A couple at the counter is sharing their soup. This is permitted. There are rules and this is within them.

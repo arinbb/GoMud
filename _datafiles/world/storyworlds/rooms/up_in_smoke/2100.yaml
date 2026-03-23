@@ -1,0 +1,48 @@
+roomid: 2100
+zone: Up in Smoke
+title: 'Pedros Lowrider'
+description: >-
+  East LA, 1978. You are cruising in a cherry-red <ansi fg="itemname">lowrider</ansi>,
+  hydraulics chirping at every stoplight, a <ansi fg="itemname">pair of fuzzy dice</ansi>
+  swinging from the mirror. The <ansi fg="itemname">radio</ansi> rattles out oldies --
+  something with horns and heartache -- while the neighborhood scrolls past the windows:
+  bodegas, chain-link, jacaranda trees dropping purple petals on the sidewalk. The
+  <ansi fg="exit">east</ansi> road leads toward the street corner. The <ansi fg="exit">south</ansi>
+  onramp feeds onto the highway. The sun is everywhere, white and generous, and
+  the whole city smells like engine oil and possibility.
+mapsymbol: L
+maplegend: Pedros Lowrider
+biome: road
+exits:
+  east:
+    roomid: 2101
+    exitmessage: You step out of the lowrider onto the street corner.
+  south:
+    roomid: 2103
+    exitmessage: The lowrider rolls down the onramp and merges with the 405.
+nouns:
+  dice: >-
+    A pair of fuzzy dice hang from the rearview mirror, red with white dots, worn
+    soft with years. They sway with every hydraulic bounce. Pedro says they are
+    lucky. They may be the luckiest things in Los Angeles.
+  radio: >-
+    A chrome AM radio mounted under the dash, volume knob turned to a position
+    that means business. Right now it is playing something with brass and longing.
+    The reception is perfect. It is always perfect in this car.
+  lowrider: >-
+    A 1964 Chevy Impala, cherry red, with a hydraulic suspension that lets
+    it dance at traffic lights. The paint is deep enough to swim in. The
+    chrome catches the sun and throws it back doubled. This car is a statement
+    about beauty and patience and what you build with your own hands.
+spawninfo:
+- mobid: 460
+  message: '<ansi fg="3">Pedro slides behind the wheel, mustache gleaming, and gives the hydraulics a test bounce. The car rises and falls like it is breathing.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Pedro taps the steering wheel in time with the radio, singing under his breath.
+- The hydraulics give a single chirp as the lowrider settles at the curb.
+- A kid on the sidewalk stares at the car with undisguised envy. Pedro notices and smiles.
+- The fuzzy dice swing in a slow arc as the car idles at a red light.
+- Sunlight fills the interior, warm and golden, touching everything.
+- The radio shifts to something slower, and Pedro hums along with it.
+- The smell of hot asphalt and car wax rises through the open window.

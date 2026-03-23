@@ -1,0 +1,27 @@
+mobid: 443
+zone: its_always_sunny
+hostile: false
+maxwander: 1
+activitylevel: 25
+angrycommands: []
+idlecommands:
+  - emote dry heaves slightly, recovers, and tries to pretend that did not happen.
+  - say I am an ACTRESS. I have talent. Real talent. This bar is temporary.
+  - emote practices what she says is a British accent. It is not a British accent.
+  - say 'Would you stop — just STOP for one second and LISTEN to me? No, seriously.'
+  - emote stares at her phone, scrolling, expression cycling through hope and disappointment.
+  - say 'I am not a bird. I am not a bird, I am not a bird. I need to stop responding when they say that.'
+character:
+  name: Dee Reynolds
+  description: >-
+    A tall woman with the posture of someone who is constantly bracing for
+    an insult and the expression of someone who has been proved right about
+    that every single day for thirty years. She has genuine ambitions —
+    acting, standup, a life beyond this bar — that the Gang dismantles with
+    cheerful thoroughness on a daily basis. She is smarter than she is
+    given credit for and more fragile than she lets on, and the combination
+    of those two things has made her exactly as terrible as everyone around
+    her, which is the real tragedy. Her brother Dennis calls her a bird.
+    She is not a bird.
+  raceid: 1
+  level: 5

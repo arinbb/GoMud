@@ -1,6 +1,9 @@
 roomid: 903
 zone: Tutorial
-title: Training Complete
-description: Welcome to the graduation room! You've completed the basic training and
-  are ready to embark into the wide world.
+title: The Threshold
+description: >-
+  A <ansi fg="exit">swirling portal</ansi> shimmers before you, its surface
+  rippling with warm golden light. Beyond it you can make out the vaulted
+  ceiling and brass lanterns of a grand atrium. Type
+  <ansi fg="command">portal</ansi> to step through.
 exits: {}

@@ -1,0 +1,59 @@
+roomid: 2133
+zone: Paris Texas
+title: The Super 8 Film
+description: >-
+  You are inside the <ansi fg="yellow">home movie</ansi>. The colors are the
+  oversaturated <ansi fg="yellow">amber and green</ansi> of Super 8 film stock.
+  The edges of your vision have a light halation — a soft glow that blurs into
+  everything, making it more golden than it was. You are standing in a
+  <ansi fg="itemname">backyard</ansi> in summer. A <ansi fg="yellow">woman</ansi>
+  spins a <ansi fg="yellow">small boy</ansi> in circles, both of them laughing.
+  You cannot hear the laughter. This is a silent film. You can see a
+  <ansi fg="yellow">man</ansi> — younger, lighter, his face open in the way
+  it has not been for a long time — standing at a <ansi fg="itemname">barbecue</ansi>
+  and turning to grin at the camera. The <ansi fg="8">camera shakes</ansi> a
+  little because whoever is holding it is laughing too. This moment happened.
+  It was real. No exit exists from inside a memory — you came in through
+  the projector light and you must find your way back the same way.
+mapsymbol: F
+maplegend: Inside the Film
+biome: land
+exits: {}
+nouns:
+  woman: >-
+    Jane. Before. Her hair is longer. She is laughing without reservation
+    in the way you only laugh when you do not know you are happy, when
+    happiness is simply the air and you are simply breathing it. She is
+    spinning the boy and both of them are dizzy and neither of them wants
+    to stop.
+  jane: >-
+    She is right here. You could reach out and touch her. She would not
+    notice. This moment is already over. You are only watching it.
+  travis: >-
+    The man at the barbecue is Travis before he became Travis-who-left.
+    He is grinning. He is holding a pair of tongs. His cap is off and
+    his hair is in his face and he looks ridiculous and happy.
+  man: >-
+    Travis. Before. He looks like a person who does not know what is
+    coming, which is the definition of every person in every happy
+    moment ever filmed.
+  boy: >-
+    Hunter, very small. Maybe three. He is spinning and his face is
+    pure speed and trust — the absolute trust that the person spinning
+    you will not let you fall.
+  barbecue: >-
+    A portable barbecue, the kind with the lid. Smoke rises from it
+    in the oversaturated Super 8 colors. Travis is tending it with
+    great seriousness for something that makes everyone nearby laugh.
+  camera: >-
+    You are holding the camera. No — someone is holding the camera.
+    It shakes a little because they are laughing. You can see their
+    thumb at the edge of the frame. You do not know whose thumb it is.
+idlemessages:
+- The woman spins the boy and the boy shriek-laughs without sound.
+- The film catches a hair in the gate and the image trembles slightly for a moment.
+- Travis turns from the barbecue and grins directly at the camera and you see exactly what was lost.
+- The colors here are impossible — too amber, too green, too warm. Memory does this.
+- The edge of the frame has a soft white glow. Everything is enclosed in it.
+- For a moment the film stutters on a splice and the frame freezes on Jane mid-laugh.
+- The afternoon light in the film is different from any afternoon light you have been in. It is a light that no longer exists.

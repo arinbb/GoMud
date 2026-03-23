@@ -1,0 +1,67 @@
+roomid: 1840
+zone: Far Cry 5
+title: Dutchs Bunker
+description: >-
+  Underground and concrete, smelling of diesel and old coffee and the particular
+  anxiety of a man who has been proven right. <ansi fg="itemname">Radio equipment</ansi>
+  banks one entire wall — scanners, shortwave sets, a CB unit crackling with
+  distant traffic. A large <ansi fg="itemname">map of Hope County</ansi> is
+  pinned to a corkboard, annotated in red marker with cult checkpoints, patrol
+  routes, and locations marked <ansi fg="red">LOST</ansi>. A <ansi fg="itemname">
+  generator</ansi> throbs in the corner, its exhaust vented through a pipe in the
+  ceiling. <ansi fg="itemname">Dutch</ansi> stands at the radio bank, headphones
+  around his neck, watching you with the grim satisfaction of a man who built a
+  bunker everyone told him he didn't need. The only way out is a ladder leading
+  <ansi fg="exit">up</ansi> to the surface.
+mapsymbol: B
+maplegend: Dutchs Bunker
+biome: cave
+exits:
+  up:
+    roomid: 1841
+nouns:
+  radio: >-
+    Banks of radio equipment — shortwave receivers, CB units, a military-surplus
+    scanner that cycles through frequencies. Most channels carry static. Some
+    carry voices: scripture readings, work orders, the same hymn on loop. Eden's
+    Gate has locked down the county's communications. Dutch is working around it.
+  map: >-
+    A detailed topographic map of Hope County, Montana. Dutch has marked it
+    extensively in red: cult roadblocks at the major intersections, compound
+    locations circled, resistance safehouses starred. Several locations are
+    simply marked LOST with a date. The county looks beautiful from up here.
+    Pastoral. Peaceful. The red marks tell a different story.
+  generator: >-
+    A diesel generator, old but well-maintained, its exhaust pipe threaded
+    through the ceiling. It powers the radio equipment, the lights, the
+    refrigerator in the corner. Dutch built this bunker for the apocalypse.
+    He didn't expect the apocalypse to be so organized about it.
+  notes: >-
+    Handwritten notes cover a corkboard beside the map: radio frequencies,
+    resistance contacts, cult patrol schedules, supply cache locations. Dutch's
+    handwriting is cramped and precise. He's been watching them for months.
+    He knows things the sheriff's department never believed.
+  ladder: >-
+    A steel ladder bolted to the concrete wall, leading up to the surface through
+    a reinforced hatch. The hatch is thick enough to stop most things. Dutch
+    built it that way on purpose.
+spawninfo:
+- mobid: 340
+  message: Dutch looks up from the radio bank as you enter, headphones dropping to his neck.
+  idlecommands:
+  - emote adjusts the radio dial and listens intently, headphones pressed to one ear.
+  - say They have roadblocks on Route 9 and Route 12. We go around.
+  - ""
+  - emote marks something on the Hope County map in red marker.
+  - say I built this bunker for the end of the world. Turns out the end of the world needs a floor plan.
+  - ""
+  - emote checks the generator fuel gauge and grunts with satisfaction.
+  respawnrate: 3 real minutes
+idlemessages:
+- The generator throbs steadily, a heartbeat under the concrete floor.
+- The radio scanner cycles through frequencies. Static. A hymn. Static. A work order. Static.
+- Dutch marks another location on the Hope County map. The red ink is running low.
+- The ventilation pipe ticks as outside air temperature shifts. Day becoming night, or night becoming day.
+- A distant boom shakes dust from the ceiling. Dutch does not look up.
+- 'The radio crackles: ''All praise to Joseph. The Collapse is coming. The chosen will be saved.'' Static.'
+- The smell of diesel and old coffee is oddly comforting down here. Real and grounded and sane.

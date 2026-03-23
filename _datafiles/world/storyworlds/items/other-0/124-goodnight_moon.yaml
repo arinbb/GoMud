@@ -1,0 +1,20 @@
+itemid: 124
+name: Goodnight Moon
+namesimple: book
+displayname: a small picture book called <ansi fg="itemname">Goodnight Moon</ansi>
+description: >-
+  A small, thin picture book, board-covered in pale green, the title stamped
+  in simple letters. It is lighter than it looks. The corners are worn soft
+  from handling -- this is a book that has been held many times, at many
+  bedsides, in many warm hands. If you hold it close, you can smell it:
+  paper and a little dust and something warmer underneath, something like
+  wool or milk or the particular smell of a room that has been warm for a
+  very long time. The illustrations inside alternate between full color
+  and black-and-white -- a great green room seen over and over, each time
+  a little darker, the fire a little lower, the moon through the window
+  a little higher. A small mouse appears on every page, if you know to
+  look. You know to look.
+type: object
+subtype: usable
+uses: 0
+value: 0

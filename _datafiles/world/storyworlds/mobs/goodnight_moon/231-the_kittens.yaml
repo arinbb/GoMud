@@ -1,0 +1,29 @@
+mobid: 231
+zone: goodnight_moon
+hostile: false
+maxwander: 1
+activitylevel: 80
+idlecommands:
+- "emote bats a mitten vigorously across the carpet."
+- ""
+- "emote tumbles over its own feet in pursuit of nothing visible."
+- ""
+- "emote curls into a warm ball and purrs with sudden sleepiness, only to spring up again."
+- ""
+- "emote pounces on the other kitten's tail, then sits back and looks innocent."
+- ""
+- "emote kneads the hearthrug with small rhythmic paws."
+- ""
+character:
+  name: the kittens
+  description: >-
+    Two of them -- one gray, one orange -- perpetually in motion, perpetually
+    warm, perpetually interested in the mittens and each other and the edge of
+    things and the undersides of furniture. The gray one has a white tip to
+    its tail. The orange one has ears that are almost too large for its head.
+    Both of them are kitten-sized, which is to say exactly the right size.
+    Both of them purr when still, which is not often. Their play has the total
+    seriousness of all kitten play: this mitten is the most important thing
+    in the world, this moment, and then this moment, and then this one.
+  raceid: 11
+  level: 1

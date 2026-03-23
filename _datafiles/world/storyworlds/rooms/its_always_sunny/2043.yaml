@@ -1,0 +1,48 @@
+roomid: 2043
+zone: its_always_sunny
+title: The Back Office
+description: >-
+  The back office of <ansi fg="itemname">Paddys Pub</ansi> is a small room
+  dominated by a large <ansi fg="itemname">whiteboard</ansi> covered in
+  diagrams, arrows, and text in multiple colors of marker. The words
+  <ansi fg="stat">THE DENNIS SYSTEM</ansi> occupy the top third in capital
+  letters, with a seven-step flowchart beneath it using boxes and arrows
+  that convey confidence without clarity. A <ansi fg="itemname">desk</ansi>
+  in the corner holds stacked papers that may be legal documents or may be
+  the prop papers of a scheme that never materialized. A <ansi fg="8">mini-fridge</ansi>
+  hums in the corner. There is a dart lodged in the ceiling. The room
+  smells of dry-erase marker and ambition, which in this bar are the same
+  thing. To the <ansi fg="exit">bar</ansi> is the way back to the pub floor.
+mapsymbol: O
+maplegend: Back Office
+biome: house
+exits:
+  bar:
+    roomid: 2040
+    mapdirection: east
+nouns:
+  whiteboard: >-
+    The whiteboard is a document of the Gang's mental life, which is to say
+    it is chaotic and alarming. THE DENNIS SYSTEM is written at the top in
+    capital letters with the box underline of something important. Beneath it,
+    a seven-step flowchart with arrows and annotations. Some arrows loop back
+    on themselves. One step says "the implication" with a star next to it and
+    no further explanation. In a different color, someone has written WILDCARD!
+    and drawn an explosion. Below that, in very small letters, someone has
+    written "charlie was here" in what may or may not be Charlie's handwriting.
+  desk: >-
+    The desk is covered in papers that were once organized. Some appear to be
+    financial documents for the bar. Some appear to be the planning stages
+    of various schemes that never launched or launched disastrously. There is
+    a note that says "step 1: get in the car." There is no step 2.
+  fridge: >-
+    A mini-fridge that hums with the sound of something trying very hard.
+    Inside: three cans of beer, something wrapped in foil that is better
+    left wrapped, and an egg. The egg is not labeled but you know whose it is.
+idlemessages:
+- The whiteboard catches the overhead light and for a moment you can read all of it at once. You wish you could not.
+- The mini-fridge cycles on with a grinding sound, then settles into its hum.
+- Someone has added a new item to the Dennis System flowchart recently. The ink is still fresh. It is an arrow pointing to a box labeled 'profit???'
+- 'A marker has been left uncapped on the desk. It is slowly drying out. This is fine. Everything here is slowly drying out.'
+- From the bar, a burst of arguing, then laughter, then arguing again. The office door muffles but does not silence it.
+- Someone has started a second scheme diagram in the lower left corner of the whiteboard, smaller, labeled 'Plan B (Charlies idea).' It involves a cat and several arrows that point nowhere.

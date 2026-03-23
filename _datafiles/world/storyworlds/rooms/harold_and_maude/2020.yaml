@@ -1,0 +1,60 @@
+roomid: 2020
+zone: Harold and Maude
+title: The Church
+description: >-
+  A modest <ansi fg="8">Protestant church</ansi> somewhere in Northern California,
+  circa 1971. The <ansi fg="itemname">pews</ansi> are dark wood, worn smooth by
+  decades of Sunday mornings. At the front, a <ansi fg="itemname">casket</ansi>
+  rests on a wheeled stand, flanked by arrangements of white <ansi fg="10">flowers</ansi>
+  that are beginning to brown at the edges. A <ansi fg="8">priest</ansi> intones
+  something about eternal life in a voice that suggests he has stopped believing it.
+  Near the back, a <ansi fg="itemname">pale young man</ansi> in a black suit sits
+  perfectly still, watching the proceedings with enormous eyes, as if witnessing
+  something sacred. Beside him, an <ansi fg="10">old woman</ansi> in an extraordinary
+  hat smiles at the casket like it is an old friend. The <ansi fg="exit">east</ansi>
+  door leads to the cemetery. The <ansi fg="exit">south</ansi> road winds toward
+  the mansion.
+mapsymbol: C
+maplegend: The Church
+biome: house
+exits:
+  east:
+    roomid: 2021
+    exitmessage: You slip out the side door into the cemetery.
+  south:
+    roomid: 2023
+    exitmessage: You step out the church's front door into the California sun.
+nouns:
+  pews: >-
+    Dark walnut pews, the varnish worn away on the armrests where ten thousand
+    grieving hands have gripped them. A few mourners sit in black, dabbing at
+    their eyes with handkerchiefs. Two of the attendees do not appear to be
+    grieving at all -- they appear to be enjoying themselves enormously.
+  casket: >-
+    A closed casket of polished mahogany with brass handles. Someone has draped
+    a white carnation arrangement across the lid. The flowers are fresh. The
+    person inside is not.
+  flowers: >-
+    White carnations and lilies, arranged in large formal sprays on either side
+    of the casket. The lilies smell overwhelming and sweet, the way things smell
+    when they are trying very hard to be beautiful about something sad.
+  hat: >-
+    An extraordinary hat on the old woman nearby -- wide-brimmed, trailing
+    something that might be netting or ribbon. She wears it with absolute
+    conviction, as if hats are the only sane response to funerals.
+spawninfo:
+- mobid: 430
+  message: "<ansi fg=\"8\">A pale young man in a perfectly pressed black suit slides into the back pew, his enormous eyes fixed on the casket with something like reverence.</ansi>"
+  respawnrate: 5 real minutes
+- mobid: 433
+  message: "<ansi fg=\"8\">A priest in vestments adjusts his collar and clears his throat into the hush of the church.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The priest says something about the resurrection and the life, his voice as flat as pressed flowers.
+- An organ chord hangs in the air, unresolved, trembling slightly in the wooden rafters.
+- Harold closes his eyes in the back pew, a faint smile on his pale lips. He is at peace here.
+- Someone near the front blows their nose with a honk that echoes. The priest does not pause.
+- Light falls through the stained glass in narrow colored bars, striping the casket in blue and gold.
+- Maude leans toward Harold and whispers something. Harold tries very hard not to laugh.
+- The smell of old wood, lilies, and furniture polish is the smell of every funeral, everywhere.
+- A mourner in the third pew weeps quietly. Harold watches them with the focused attention of a naturalist.

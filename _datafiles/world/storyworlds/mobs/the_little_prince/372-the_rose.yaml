@@ -1,0 +1,17 @@
+mobid: 372
+zone: the_little_prince
+hostile: false
+maxwander: 0
+activitylevel: 25
+character:
+  name: The Rose
+  description: >-
+    Four thorns. Four petals, the specific red of something simultaneously
+    vain and beloved. She is under a glass dome and she knows it and she does
+    not mind because the dome was placed there by someone who loves her, and
+    she loves him, and she will not say so directly because she is the kind
+    of flower who expresses love through performance and demand and occasional
+    breathtaking beauty. She is magnificent and she knows it. She is fragile
+    and she will not admit it.
+  raceid: 15
+  level: 2

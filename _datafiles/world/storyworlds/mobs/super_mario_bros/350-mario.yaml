@@ -1,0 +1,28 @@
+mobid: 350
+zone: super_mario_bros
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote jumps straight up, fist raised, landing with a solid boing."
+  - ""
+  - "emote runs in place briefly, boots pattering on the brick."
+  - ""
+  - "emote punches a nearby question mark block. A coin pops out with a ding!"
+  - ""
+  - "emote adjusts his red cap with a determined expression."
+  - ""
+  - "emote collects a nearby coin, his coin counter ticking up somewhere in the ether."
+  - ""
+activitylevel: 30
+character:
+  name: Mario
+  description: >-
+    A short, stout man in a red cap and blue overalls, with a broad black
+    mustache and bright determined eyes. He is smaller than you would
+    expect given everything he has done. His red cap has a white circle
+    with a red M on it. His hands are gloved. He is perpetually ready to
+    jump. There is something indomitable about him -- a cheerful refusal
+    to stop, to turn back, to admit that the princess might not be worth
+    eight worlds of this.
+  raceid: 1
+  level: 10

@@ -1,0 +1,16 @@
+itemid: 255
+name: Krell metal disc
+namesimple: disc
+displayname: a <ansi fg="cyan">Krell metal disc</ansi>
+description: >-
+  A disc of dense Krell alloy, roughly hand-sized, warm to the touch with
+  a warmth that has nothing to do with ambient temperature. One face is
+  blank and polished to a mirror finish. The other is inscribed with Krell
+  script that Morbius translated as: what we have made must not be what we
+  are. The disc emits a subsonic harmonic that you feel more than hear --
+  a faint remnant of two hundred thousand years of the machine's heartbeat,
+  pressed into the metal like a memory.
+type: object
+subtype: usable
+uses: 0
+value: 0

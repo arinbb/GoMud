@@ -1,0 +1,67 @@
+roomid: 1907
+zone: The Little Prince
+title: The Lamplighters Asteroid
+description: >-
+  A small asteroid with one <ansi fg="itemname">lamppost</ansi> and one man.
+  The Lamplighter is perpetually in motion, a <ansi fg="itemname">cloth</ansi>
+  in one hand and a lighter in the other. When you arrive, he is lighting
+  the lamp. When you blink, he is extinguishing it. The planet has accelerated
+  until the day is one minute long -- one minute of light, one minute of dark,
+  over and over and over -- and the Lamplighter has no choice but to follow
+  his orders, which are to light the lamp at night and extinguish it at dawn.
+  He has been doing this for so long that the motions are worn into him, as
+  smooth as a river stone. His face is exhausted in the way of someone who
+  does not have time to be exhausted. He does not complain. His orders are
+  his orders. He is the only person in all the asteroid worlds who is
+  <ansi fg="itemname">useful</ansi>. The path leads back to the
+  <ansi fg="exit">businessman</ansi> north, and further to the
+  <ansi fg="exit">geographer</ansi> south.
+mapsymbol: L
+maplegend: Lamplighters Asteroid
+biome: land
+exits:
+  businessman:
+    roomid: 1906
+    mapdirection: north
+  geographer:
+    roomid: 1908
+    mapdirection: south
+nouns:
+  lamppost: >-
+    A single iron lamppost, the paint worn down to bare metal at the base
+    where many hands have steadied themselves. The lamp at the top burns
+    gold when it burns. When it is out, the asteroid is the darkest place
+    you have ever been. The cycle is: lamp on. Lamp off. Lamp on. Lamp off.
+    On and on, one minute per cycle, for as long as orders require.
+  cloth: >-
+    A cloth worn to translucence from being used and washed and used
+    and washed, an infinite number of times. He cleans the lamp glass
+    with it every time he lights it and every time he extinguishes it.
+    The lamp is very clean. It is the cleanest lamp in the universe.
+    Cleanliness is the only control he has left.
+  useful: >-
+    The Lamplighter is the only person the Little Prince did not want
+    to leave. Because he is the only one occupied with something other
+    than himself. Because his work -- absurd, exhausting, endless --
+    is for someone else: for the lamp, for whoever might need light,
+    for the order that comes from having things lit when they should
+    be lit. He does not know he is the only good one. He is too tired
+    to know anything but the next pull of the cord.
+spawninfo:
+- mobid: 375
+  message: The Lamplighter lights the lamp with a practiced motion, then immediately begins preparing to extinguish it.
+  idlecommands:
+  - emote lights the lamp. The asteroid fills with brief gold light.
+  - emote extinguishes the lamp. Darkness.
+  - emote wipes his brow with the worn cloth. There is no time for rest.
+  - emote lights the lamp again. Gold light. His face in the glow looks very tired.
+  - say Orders are orders. Light it at night. Extinguish at dawn. That is all.
+  - emote extinguishes the lamp. Dark.
+  respawnrate: 2 real minutes
+idlemessages:
+- The lamp blazes for exactly sixty seconds, then goes dark. Then blazes again. The rhythm is merciless.
+- The Lamplighter moves without hesitation, the motions worn so deep they require no thought.
+- 'In the dark interval, a single star is visible through where the lamp was: patient, indifferent, burning on its own schedule.'
+- He does not look at you. He cannot look at you. The lamp requires him entirely.
+- 'Sixty seconds of light. Sixty seconds of dark. You feel the rhythm in your chest like a second heartbeat.'
+- He wipes the lamp glass. It is already clean. He wipes it anyway. Then the dawn comes and he extinguishes it.

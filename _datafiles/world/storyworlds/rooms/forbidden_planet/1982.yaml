@@ -1,0 +1,67 @@
+roomid: 1982
+zone: Forbidden Planet
+title: Morbius House Exterior
+description: >-
+  A <ansi fg="itemname">dome</ansi> of seamless white material rises from the
+  desert floor -- neither stone nor metal, neither Krell nor quite human. The
+  house of Dr. Morbius has an austere elegance, its curves precise, its
+  <ansi fg="itemname">windows</ansi> recessed and thoughtful. A gravel
+  <ansi fg="itemname">path</ansi> leads from the desert track to a wide entry
+  arch. To one side of the arch stands a tall, barrel-chested shape of gleaming
+  polished steel: <ansi fg="cyan">Robby the Robot</ansi>, motionless and
+  somehow attentive. The <ansi fg="itemname">garden</ansi> to the north is
+  glimpsed through a low archway, alive with color that seems impossible in
+  this desert. To the <ansi fg="exit">west</ansi> the desert track leads back.
+  To the <ansi fg="exit">north</ansi> lies the garden. To the
+  <ansi fg="exit">east</ansi> is the house interior.
+mapsymbol: H
+maplegend: House Exterior
+biome: land
+exits:
+  west:
+    roomid: 1981
+  north:
+    roomid: 1984
+  east:
+    roomid: 1985
+nouns:
+  dome: >-
+    The house is built from a material Morbius synthesized himself using Krell
+    technology -- harder than steel, lighter than aluminum, impervious to the
+    Altair IV climate extremes. It has stood for twenty years. It will stand
+    for twenty thousand if nothing stops it. The surface, up close, has a faint
+    iridescence, like the inside of a shell.
+  windows: >-
+    The windows are set flush with the dome surface, slightly angled to deflect
+    the alien sun. Through them you can see the warm amber glow of the interior
+    -- books, instruments, the shapes of careful scholarship. A life built
+    among ruins.
+  path: >-
+    A path of pale gravel, raked to precise evenness, leads from the desert to
+    the arched entry. Every stone has been placed intentionally. The path is
+    the kind of detail that speaks to someone who has had twenty years of
+    solitude and a robot to help fill it.
+  garden: >-
+    Through the low arch to the north, you glimpse a garden of extraordinary
+    color -- Earth flowers and alien ones growing together in some hybrid
+    ecosystem. Altaira tends it with evident love. You hear her voice inside.
+spawninfo:
+- mobid: 412
+  message: Robby the Robot turns toward you with a faint hydraulic hiss, his dome-head rotating.
+  idlecommands:
+  - say Good afternoon. I am prepared to synthesize any element or compound you require.
+  - ""
+  - emote stands with perfect stillness, his internal mechanisms humming faintly.
+  - ""
+  - say My sensors indicate no immediate threat in the vicinity. This may change.
+  - ""
+  - emote tilts his dome-head as if listening to something far below.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- Robby stands at the gate with the patient immobility of something that does not experience boredom.
+- From inside the dome comes the faint sound of pages turning and the scratch of a pen.
+- The garden beyond the arch releases a wave of fragrance -- Earth roses, alien something, morning-clean.
+- The dome catches the light of Altair and glows faintly, as if lit from within by something other than lamps.
+- 'A small panel in the dome wall reads, in human script: VISITORS ANNOUNCE THEMSELVES. In Krell script below: something untranslatable.'
+- The gravel of the path shows no footprints except your approach. Robby leaves no marks.

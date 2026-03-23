@@ -1,0 +1,25 @@
+mobid: 405
+zone: nineteen_eighty_four
+hostile: false
+maxwander: 0
+activitylevel: 40
+idlecommands:
+  - emote flips through the dictionary pages with the tenderness of a man handling something sacred.
+  - say The Eleventh Edition. It will be the last edition. The perfect edition.
+  - emote makes a small precise correction in the margin. His handwriting is tiny.
+  - say Do you realize how beautiful a reduced language actually is? The precision of it?
+  - ''
+  - emote underlines something in the dictionary with quiet enthusiasm.
+character:
+  name: Syme
+  description: >-
+    A small, dark man with large protuberant eyes that have a disconcerting habit
+    of fixing you with a too-direct, too-penetrating stare. He works in the Research
+    Department and is one of the team producing the Eleventh Edition of the Newspeak
+    dictionary, which will be the definitive edition. He is genuinely brilliant and
+    genuinely excited about the elimination of language, which he considers a beautiful
+    project. He sees too clearly. He is too honest about what the Party is actually
+    doing. He will be vaporized. He knows, in some corner of his mind, that he will be
+    vaporized. He has not let this slow him down.
+  raceid: 1
+  level: 8

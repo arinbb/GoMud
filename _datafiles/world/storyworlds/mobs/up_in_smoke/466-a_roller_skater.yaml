@@ -1,0 +1,24 @@
+mobid: 466
+zone: up_in_smoke
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote glides past in a long smooth arc, making it look effortless."
+  - ""
+  - "emote does a slow backward spin and comes out of it facing you."
+  - "say Beautiful night, right?"
+  - ""
+  - "emote skates a figure eight, arms out for balance, headband glowing in the sunset."
+  - ""
+  - "emote waves at you and keeps rolling south down the boardwalk."
+activitylevel: 15
+character:
+  name: A Roller Skater
+  description: >-
+    A young woman in shorts and a crop top, orange kneepads, a yellow
+    headband, and white roller skates with orange wheels. She skates the
+    Venice Beach boardwalk with the practiced ease of someone who was
+    born on this strip and will probably die on it, happy, decades from
+    now. She smiles at everyone. She means it every time.
+  raceid: 1
+  level: 3

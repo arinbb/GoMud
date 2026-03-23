@@ -1,0 +1,68 @@
+roomid: 1875
+zone: Super Mario Bros
+title: Princess Peach
+description: >-
+  The throne room at the end of everything. After eight worlds, four castles,
+  every Goomba and Koopa and Hammer Bro and Lakitu and Bullet Bill and
+  Piranha Plant and fire bar, the room is simple and quiet. <ansi fg="itemname">Princess
+  Peach</ansi> stands in the center, in her pink dress and gold crown, her
+  blonde hair perfectly arranged, her expression one of profound and gracious
+  relief. The room has tall windows and colored curtains and the
+  <ansi fg="itemname">sunlight</ansi> through them is warm and gold. There
+  is no danger here. There is no level. This is the end. The <ansi fg="itemname">cake</ansi>
+  on the table was put there by someone who knew you were coming. West leads
+  <ansi fg="exit">back</ansi> to the bridge, but there is nowhere else to
+  go. You have done it. Your quest is over.
+mapsymbol: P
+maplegend: Princess Peach
+biome: house
+exits:
+  west:
+    roomid: 1874
+nouns:
+  peach: >-
+    Princess Peach. Princess Toadstool. The object of the quest. She stands
+    in the throne room in her pink gown and gold crown with the particular
+    serenity of someone who has been rescued multiple times and has developed
+    a deep equanimity about it. She is beautiful in the way that pixel art
+    can make a character beautiful -- simplified to essentials, every pixel
+    placed with care. Her expression is gratitude and grace and something
+    that reads, if you look closely enough, as someone who is going to be
+    just fine regardless.
+  sunlight: >-
+    Gold sunlight through tall windows, casting long warm rectangles on
+    the stone floor. After the lava-lit corridors of the castles, after
+    the dark of the underground and the night levels, this light is
+    extraordinary. Clean, warm, directional, the light of a world where
+    the story has ended well. The sunlight is the reward. The sunlight
+    is the credit sequence.
+  cake: >-
+    There is a cake on the table. Of course there is a cake. It is a
+    proper cake -- layered, frosted, with candles on top. A small card
+    beside it reads simply: THANK YOU. It tastes like victory, probably,
+    which is to say it tastes like something you cannot describe to someone
+    who has not earned it. In some future game, someone will tell you the
+    cake is a lie. This cake is real. This cake was made with love.
+spawninfo:
+- mobid: 352
+  message: Princess Peach turns toward you with a smile of complete and genuine relief.
+  idlecommands:
+  - emote waves with a graceful sweep of her arm.
+  - ""
+  - emote adjusts her crown with one delicate hand.
+  - ""
+  - say Oh! I have been waiting for you.
+  - ""
+  - emote gestures to the cake on the table with a warm smile.
+  - ""
+  - say Thank you so much. Please, have some cake.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- The room is quiet. The music has stopped. The quest is over.
+- 'Sunlight falls through the tall windows in long gold rectangles: warm, real, earned.'
+- 'Peach smiles across the room. She is safe. She is always eventually safe. The cycle completes.'
+- The cake sits on the table, its candles unlit but present, waiting to be lit by someone.
+- 'A window is open. Outside: the Mushroom Kingdom, stretching in pixel-art splendor, peaceful.'
+- 'No enemies. No fire bars. No falling platforms. Just this room and this light and this moment.'
+- The gold coin you carry seems heavier here, at the end, a small weight of remembered worlds.

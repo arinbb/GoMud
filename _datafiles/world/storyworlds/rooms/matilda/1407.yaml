@@ -1,0 +1,61 @@
+roomid: 1407
+zone: Matilda
+title: School Corridor
+description: >-
+  A long, echoing <ansi fg="8">corridor</ansi> of scuffed linoleum and institutional
+  green paint. <ansi fg="itemname">Fluorescent lights</ansi> buzz overhead, one of
+  them flickering arrhythmically. Rows of small <ansi fg="itemname">coat hooks</ansi>
+  line one wall at child height, each with a name label. The corridor smells of
+  disinfectant, chalk dust, and fear. <ansi fg="itemname">Doors</ansi> lead off in
+  every direction: Miss Honey's classroom to the <ansi fg="exit">north</ansi>,
+  the dreaded Chokey to the <ansi fg="exit">east</ansi>, and the Trunchbull's
+  office to the <ansi fg="exit">south</ansi>. The <ansi fg="exit">assembly</ansi>
+  hall is through double doors to the west. The main gates are back to the
+  <ansi fg="exit">west</ansi>.
+mapsymbol: C
+maplegend: Corridor
+biome: fort
+exits:
+  west:
+    roomid: 1406
+  north:
+    roomid: 1408
+  east:
+    roomid: 1409
+  south:
+    roomid: 1411
+  assembly:
+    roomid: 1410
+    mapdirection: southwest
+nouns:
+  lights: >-
+    Fluorescent tubes in wire cages, humming and flickering like trapped insects.
+    The light they cast is flat and merciless, the color of headaches. One tube
+    in the middle of the corridor blinks on and off with the rhythm of a dying
+    heartbeat.
+  hooks: >-
+    Small wooden coat hooks screwed into the wall at child height. Each has a
+    hand-written name label. Some hooks hold coats and bags. Others are bare —
+    their owners in the Chokey, or simply too frightened to come to school.
+  doors: >-
+    Heavy wooden doors with frosted glass panels line the corridor. Each door has
+    a small brass nameplate. The door to Miss Honey's classroom is slightly ajar
+    and warm light spills from it. The door to the Chokey is shut tight and seems
+    to absorb all light around it.
+idlemessages:
+- 'The fluorescent light flickers and buzzes, casting stuttering shadows down the corridor.'
+- 'Footsteps echo from somewhere — heavy, deliberate, getting closer. Then they stop.'
+- A child's drawing is pinned to a noticeboard, showing a stick figure labeled THE TRUNCHBULL. It is enormous.
+- 'The smell of chalk dust mingles with disinfectant and something else — pure, distilled anxiety.'
+- 'A locker door bangs shut somewhere. The echo travels the length of the corridor like a gunshot.'
+- 'Hushed whispers come from behind a classroom door, then sudden terrified silence.'
+spawninfo:
+- mobid: 228
+  message: "Hortensia leans against the wall with the studied casualness of a battlefield veteran."
+  idlecommands:
+    - "say You want to know about the Chokey? Pull up a wall, I'll tell you."
+    - "emote traces a scar on her arm with a sort of pride."
+    - ""
+    - ""
+    - "say Trunchbull threw a boy out the window once. Second floor. He bounced."
+    - "emote glances down the corridor and drops her voice to a whisper."

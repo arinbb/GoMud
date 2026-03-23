@@ -1,0 +1,39 @@
+roomid: 1405
+zone: Matilda
+title: Road to Crunchem Hall
+description: >-
+  A long, straight road lined with <ansi fg="itemname">hedgerows</ansi> that
+  stretches between the village and the school. The pavement is cracked and patched.
+  Children walk this road every morning with the particular dread of those heading
+  somewhere they do not wish to go. The road narrows as it approaches the school,
+  as if the landscape itself is reluctant. To the <ansi fg="exit">north</ansi> lies
+  the village and the library. To the <ansi fg="exit">south</ansi>, the dark iron
+  gates of Crunchem Hall loom ahead. A narrow <ansi fg="exit">lane</ansi> branches
+  off through the countryside to the west.
+mapsymbol: R
+maplegend: Road
+biome: road
+exits:
+  north:
+    roomid: 1404
+  south:
+    roomid: 1406
+  lane:
+    roomid: 1413
+    mapdirection: west
+nouns:
+  hedgerows: >-
+    Thick, unruly hedgerows border both sides of the road. Birds nest in them
+    and occasionally peer out at passing children with what might be sympathy.
+    Wild blackberries grow in the tangles, but they taste of something bitter
+    this close to the school.
+  road: >-
+    Cracked and poorly maintained, this road has carried generations of reluctant
+    children to Crunchem Hall. The cracks seem to form patterns, and if you look
+    closely, someone has chalked tiny encouraging words in some of them.
+idlemessages:
+- A crow watches from the hedgerow with knowing black eyes, then flies toward the school.
+- 'The road ahead seems to grow longer the more you walk. Crunchem Hall draws nearer anyway.'
+- 'Chalked words on the pavement read: "Almost there. Be brave."'
+- A child's lunchbox lies abandoned in the hedge, as if its owner fled in a hurry.
+- 'The wind carries a sound from the direction of the school — it might be a whistle, or a scream.'

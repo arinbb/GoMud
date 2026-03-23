@@ -1,0 +1,16 @@
+itemid: 149
+name: Up in Smoke film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="yellow">Up in Smoke</ansi>
+description: >-
+  A film reel in a warm metal canister, the exterior faintly tacky to the touch
+  in a way that is hard to explain. The label reads 'UP IN SMOKE -- Cheech and
+  Chong, 1978, dir. Lou Adler' in block letters, and beneath that, in pencil:
+  'The van is not what it appears to be. Neither is anything else.' Hold it close
+  and you catch something botanical and sweet drifting from the seams of the
+  canister, like cedar and cut grass and California sunshine. The reel is warm.
+  It has been sitting in the sun. The sun in it never quite sets.
+type: object
+subtype: usable
+uses: 0
+value: 0

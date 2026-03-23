@@ -1,0 +1,58 @@
+roomid: 1865
+zone: Super Mario Bros
+title: World 2-1 Overworld
+description: >-
+  The second world opens into a different sky. The same <ansi fg="cyan">Nintendo
+  blue</ansi> overhead, but the trees here have a different shape -- round,
+  dark-green pixel-art trees with thick trunks, more stylized than the first
+  world's greenery. The ground has a slightly different hue, warmer brown,
+  as if you have traveled somewhere south. <ansi fg="itemname">Koopa Paratroopas</ansi>
+  drift overhead -- Koopa Troopas with wings, bouncing in lazy arcs between
+  two fixed points, red-shelled, patient, waiting for someone to fly into
+  their path. The terrain here undulates more, platforms rising and falling,
+  requiring more leaping than the straightforward corridor of World 1. West
+  leads <ansi fg="exit">back</ansi> to Toad; south leads to the bridge level of
+  <ansi fg="exit">World 2-3</ansi>.
+mapsymbol: W
+maplegend: World 2-1 Overworld
+biome: land
+exits:
+  west:
+    roomid: 1864
+  south:
+    roomid: 1866
+nouns:
+  trees: >-
+    Pixel-art trees with round, dark-green canopies on straight trunks --
+    simpler than real trees, reduced to their essential tree-ness. They
+    line the background like decorations, not quite reachable, part of the
+    world's visual grammar. The trees change from world to world. In World
+    1, they are bright green. Here in World 2, they are darker, fuller,
+    suggesting a different geography. The trees are always in the back.
+    You can never get to the trees. That is fine.
+  paratroopas: >-
+    Koopa Paratroopas are Koopa Troopas with wings -- red-shelled turtles
+    bouncing in fixed arcs through the air, always returning to the same
+    path. Jump on one and you knock the wings off and it becomes a regular
+    Koopa Troopa, slightly dazed, wandering on the ground. The wings make
+    a feathery sound as they beat. The Koopa inside does not question why
+    it has wings. It just bounces.
+spawninfo:
+- mobid: 354
+  message: A Koopa Troopa shuffles in from the west, its green shell catching the sun.
+  idlecommands:
+  - emote shuffles forward with its slow inevitable turtle pace.
+  - ""
+  - emote withdraws into its shell briefly, then re-emerges.
+  - ""
+  - emote turns around and shuffles the other way with the same deliberate pace.
+  - ""
+  respawnrate: 2 real minutes
+idlemessages:
+- A Koopa Paratroopa drifts overhead in its fixed arc, wings beating lazily.
+- 'The trees in the background sway, or seem to: the parallax effect of a world with distinct layers.'
+- The terrain here is more varied, the platforms rising and falling in challenging arrangements.
+- 'A Koopa retreats into its shell with a sharp clunk. A second later, it pops back out, blinking.'
+- The sky is the same impossible blue but the world feels different now, further from home.
+- 'Wind moves through the pixel-art treetops with a soft rustle. The sound is rendered in three notes.'
+- You are two worlds in. The princess is still not here. The resolve to keep going is pure and bright.

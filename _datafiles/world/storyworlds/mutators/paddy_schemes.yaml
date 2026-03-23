@@ -1,0 +1,5 @@
+mutatorid: paddy-schemes
+namemodifier:
+  behavior: append
+  text: (scheming)
+  colorpattern: none

@@ -1,0 +1,26 @@
+mobid: 292
+zone: the_sopranos
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote makes a small note in her notepad, her expression giving nothing away."
+  - "emote adjusts her glasses with one finger, a precise, deliberate movement."
+  - "emote sips from the glass of water on the table beside her chair."
+  - "emote considers something, tilting her head slightly, then writes again."
+  - ''
+  - "emote looks up from her notes and waits with the particular patience of the trained."
+activitylevel: 20
+character:
+  name: Dr. Jennifer Melfi
+  description: >-
+    A composed, handsome woman in her mid-forties, professionally dressed in
+    the careful neutral way of therapists who have been trained not to signal
+    too much. She wears glasses. She keeps a notepad on her knee. Her expression
+    is consistently open, unreadable in the way that very good listeners are
+    unreadable -- she is receiving everything and transmitting almost nothing.
+    She is the most controlled person in any room she occupies, which is partly
+    training and partly necessity. She is treating a man who is dangerous, and
+    she chose to continue. This says something about her that she is still working
+    out.
+  raceid: 1
+  level: 8

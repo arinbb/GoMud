@@ -1,0 +1,25 @@
+mobid: 248
+zone: waynes_world
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote sips his coffee and stares at the middle distance of the donut shop."
+  - "say You know what I think?"
+  - "emote dunks a glazed donut into his coffee with the confidence of a man with a system."
+  - ""
+  - ""
+  - "say The glazed ones are better in the morning. Everybody says that. Everybody's right."
+  - "emote rotates his coffee cup one quarter turn clockwise for no apparent reason."
+  - "say I've been coming here since 1986. The coffee hasn't changed. That's a feature."
+activitylevel: 20
+character:
+  name: Donut Shop Regular
+  description: >-
+    A man of indeterminate middle age who has claimed this stool so thoroughly
+    that it has shaped itself to him. He has a coffee. He has a donut. He has
+    opinions. He shares the opinions at approximately the right volume for
+    a donut shop counter, which is slightly louder than a library and slightly
+    quieter than a Gasworks show. He is Aurora. He is the permanent fact of
+    Aurora, the thing underneath all the excellence.
+  raceid: 1
+  level: 2

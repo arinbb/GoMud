@@ -1,0 +1,63 @@
+roomid: 8
+zone: The Grand Library
+title: The Arcade
+description: >-
+  A side chamber glows with the warm light of CRT monitors and the soft hum
+  of cooling fans. Unlike the rest of the Library's stately wood and brass,
+  this room has a playful energy — arcade cabinets line one wall, their
+  marquees dark but ready, and a central <ansi fg="itemname">gaming station</ansi>
+  holds a sleek console connected to a large screen. A shelf of
+  <ansi fg="itemname">game cases</ansi> is organized by genre — RPGs, open
+  worlds, farming sims, shooters, adventures. The carpet is that specific
+  dark purple-blue of every arcade you have ever been in. A
+  <ansi fg="itemname">beanbag chair</ansi> sits in front of the screen. The
+  air smells of warm electronics and something like popcorn. The <ansi
+  fg="exit">atrium</ansi> is back to the east.
+mapsymbol: G
+maplegend: The Arcade
+biome: house
+exits:
+  east:
+    roomid: 1
+    exitmessage: You step back out into the Grand Atrium.
+nouns:
+  station: >-
+    A modern gaming console on a low table, connected to a large flat-panel
+    screen. Two controllers rest on charging docks. The power light glows
+    steady green. A small placard reads "FOR GAME DISCS — Insert your disc,
+    press play, and enter the world." The console accepts any format — it is
+    a Library machine, and it reads everything.
+  cases: >-
+    Game cases arranged on a shelf by genre. Each plastic case holds a disc
+    that contains a world — sometimes built by hundreds of people, sometimes
+    by one person with something to say. The Library curates these alongside
+    its books and records because a game, made with care, is as much a world
+    as any novel.
+  cabinets: >-
+    Classic arcade cabinets stand along the wall, their screens dark but their
+    marquees faintly visible. You can make out names and pixel art — racers,
+    fighters, platformers, puzzle games. None of them are plugged in. They are
+    here as monuments, like the busts of authors in the stacks.
+  beanbag: >-
+    A well-worn beanbag chair in front of the main screen. It has that
+    particular collapsed-in shape of a seat that has been sat in for many
+    hours by many people, all of them leaning forward.
+containers:
+  console: {}
+spawninfo:
+- itemid: 134
+  container: console
+  respawnrate: 1 real minutes
+- itemid: 136
+  container: console
+  respawnrate: 1 real minutes
+- itemid: 137
+  container: console
+  respawnrate: 1 real minutes
+idlemessages:
+- The console hums quietly, its power light a steady green eye in the dim room.
+- 'A faint chiptune melody plays from one of the dormant arcade cabinets — just a few notes, then silence.'
+- The CRT monitor in the corner displays a screensaver of slowly drifting stars.
+- The beanbag chair exhales slightly as the room settles, as if remembering the last person who sat in it.
+- 'You hear a distant sound effect: a coin dropping into a slot. But none of the cabinets are on.'
+- The smell of warm electronics and old carpet fills the room with a specific nostalgia.

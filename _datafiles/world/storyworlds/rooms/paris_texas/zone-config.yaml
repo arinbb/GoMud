@@ -1,0 +1,16 @@
+name: Paris Texas
+roomid: 2120
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: desert
+mutators:
+- mutatorid: texas-lonesome
+idlemessages:
+- The wind moves across the desert and carries nothing with it.
+- Silence. The kind that has weight.
+- A hawk turns slow circles high above, black against white sky.
+- The heat shimmers off the red earth in slow waves.
+- Somewhere far away, a slide guitar note hangs in the air and then dissolves.
+- The road stretches in both directions and becomes the horizon.
+- The sky is enormous here. It does not care about you. It is beautiful anyway.

@@ -1,0 +1,63 @@
+roomid: 1928
+zone: Ghostbusters
+title: 55 Central Park West
+description: >-
+  The art deco apartment building at 55 Central Park West looms over its neighbors
+  with the specific arrogance of 1920s New York architecture. <ansi fg="itemname">Gargoyles</ansi>
+  that are not quite gargoyles line the upper cornices -- stone figures that might
+  be dogs, or might be something else entirely, carved with more anatomical detail
+  than decorative gargoyles usually receive. The building's <ansi fg="itemname">facade</ansi>
+  is black granite with gold accents. The <ansi fg="itemname">lobby door</ansi> leads
+  to an elevator bank. On the pavement outside, <ansi fg="itemname">Louis Tully</ansi>
+  is attempting various keys in the door and failing all of them while narrating
+  his experience to nobody in particular. A broad staircase winds upward through
+  the building to Dana Barrett's apartment on the upper floors.
+mapsymbol: A
+maplegend: 55 Central Park West
+biome: city
+exits:
+  north:
+    roomid: 1921
+    exitmessage: You head back north toward the firehouse district.
+  up:
+    roomid: 1929
+    exitmessage: You take the elevator up to Dana Barrett's floor.
+nouns:
+  gargoyles: >-
+    The carved stone figures along the upper cornices were added during construction
+    in 1924 and have never been properly cataloged. They are not in the original
+    architectural plans. Nobody who worked on the building remembers who carved
+    them or when. They are not gargoyles in the traditional sense -- they have too
+    many teeth, their positioning is too deliberate, and they face inward toward
+    the building's peak rather than outward as gargoyles should. At night, two of
+    them glow.
+  facade: >-
+    The building was designed by Ivo Shandor, architect and secret leader of the
+    Gozer Worshippers of 1920s Manhattan. He designed 55 Central Park West as a
+    "Shandor Building" -- 22 floors, 2.7 tons of galvanized iron in the structure,
+    configured to act as a giant antenna for summoning inter-dimensional entities.
+    This is all public record. Nobody reads public records.
+  door: >-
+    The lobby door is glass and brass and is currently being assaulted by Louis Tully
+    and his extensive key ring. None of his keys work on this door. They never have.
+    Louis lives here. He has been locked out fifteen times this year alone. He always
+    finds a way back in. This is not that way.
+spawninfo:
+- mobid: 386
+  maxwander: 0
+  respawnrate: 5 real minutes
+  idlecommands:
+  - "emote tries another key in the lock, fails, mutters about his tax situation."
+  - "say I am locked out. Again. This is like my accountant says, a recurring liability."
+  - "emote looks around nervously, as though something is following him. Something is following him."
+  - "emote shuffles from foot to foot with the anxious energy of a man who has recently been chased by a supernatural dog."
+  - ""
+  - ""
+idlemessages:
+- Louis drops his keys, gathers them, tries the smallest one with unwarranted optimism.
+- One of the upper-floor gargoyles catches the streetlight at a particular angle. Its shadow is wrong.
+- A woman walking a small dog passes the building. The dog stops, looks up at the gargoyles, refuses to move forward, and has to be carried past.
+- From far above -- from the very top of the building -- a light flickers that is not any ordinary light.
+- Louis mutters something about personal liability waivers and trying the super's number again.
+- The building hums. It is very faint. It is below the range of conscious hearing. Your teeth know it, though.
+- A cab pulls up. The driver looks at the building, looks at his map, looks at the building again, and drives away.

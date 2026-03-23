@@ -1,0 +1,53 @@
+roomid: 1733
+zone: The Sopranos
+title: The Pine Barrens
+description: >-
+  You are lost. The <ansi fg="8">pine forest</ansi> stretches in every direction,
+  identical and indifferent. The <ansi fg="itemname">pines</ansi> are scrubby and
+  close, their branches blocking the winter sky into broken grey patches. The
+  <ansi fg="itemname">snow</ansi> on the ground is deep and untracked except by
+  something that might have been footprints that you can no longer follow.
+  The <ansi fg="itemname">cold</ansi> is profound and specific, the particular cold
+  of the Pine Barrens in winter, which has its own character distinct from regular
+  cold. A <ansi fg="itemname">cell phone</ansi> in your pocket has one bar of service.
+  The directions out of here are unclear. You are sure the <ansi fg="exit">road</ansi>
+  is to the south, but south has been south for a while now and you are still here.
+  Was he a Czechoslovakian or a Russian? The question seems suddenly important.
+mapsymbol: F
+maplegend: Pine Barrens
+biome: forest
+exits:
+  road:
+    roomid: 1725
+    mapdirection: south
+nouns:
+  pines: >-
+    Pitch pine and scrub oak, dense and low, the kind of growth that has been
+    here since before anyone. The Pine Barrens is the largest tract of open
+    space on the northeast corridor, which is a way of saying it is large enough
+    to get seriously lost in, which you are now doing.
+  snow: >-
+    Deep, uneven snow, in places knee-high, in places just a crust over dead
+    leaves. You have been walking in it long enough that your feet stopped
+    feeling cold and started feeling nothing, which is worse.
+  cold: >-
+    The cold here is different from regular cold. It is thorough. It enters
+    through the collar and the cuffs and the gap between your jacket and your
+    pants and works its way inward with patience and no particular malice.
+  phone: >-
+    One bar. The phone shows one bar and has shown one bar for twenty minutes.
+    You have tried calling twice. Both times the call dropped. You keep the
+    phone in your hand because having it in your hand feels like doing something.
+  footprints: >-
+    There were footprints, ahead of you, that you were following. They have
+    diverged and converged and diverged again and now you are not certain whose
+    they are or whether they are even going anywhere intentional. Someone was
+    out here. Maybe more than one someone.
+spawninfo: []
+idlemessages:
+- The pines lean over the path and the sky becomes a narrow grey channel.
+- Something moves in the woods just beyond the tree line. You turn. Nothing.
+- The cold is getting serious now, moving from discomfort to opinion.
+- Your footprints in the snow behind you curve in a direction you do not remember walking.
+- A crow lands on a branch above you, regards you, and flies away without comment.
+- 'Somewhere in these woods, two men once sat in an abandoned van all night, waiting for morning that kept not coming.'

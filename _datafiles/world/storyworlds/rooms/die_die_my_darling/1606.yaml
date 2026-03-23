@@ -1,0 +1,58 @@
+roomid: 1606
+zone: Die Die My Darling
+title: The Chapel
+description: >-
+  A room of the house has been converted entirely into a private chapel. Three rows
+  of <ansi fg="8">pews</ansi> — plain dark wood, no cushions — face a simple
+  <ansi fg="white">altar</ansi>. Above it, an enormous <ansi fg="white">crucifix</ansi>
+  dominates the wall, the Christ figure gaunt and detailed. On the altar: two thick
+  <ansi fg="white">candles</ansi> burning steadily, a silver cross, a closed Bible.
+  The room smells powerfully of candle wax and something older — incense, perhaps,
+  burned at some point in the past. The <ansi fg="8">windows</ansi> have been fitted
+  with plain dark glass so that no outside light enters; the candles provide
+  everything. The air is heavy with enforced sanctity. Services are held here twice
+  daily. Attendance is not optional. To the <ansi fg="exit">west</ansi>, the drawing room.
+mapsymbol: C
+maplegend: The Chapel
+biome: house
+exits:
+  west:
+    roomid: 1604
+nouns:
+  pews: >-
+    Three rows of plain wooden pews, no cushions, no kneeling rail padding. Sitting
+    here for a long service would be uncomfortable in a way that feels intentional.
+    Discomfort as devotion. Suffering as proof. The wood is polished smooth by years
+    of bodies pressing against it.
+  altar: >-
+    A plain wooden table serving as an altar, covered in white cloth. On it: two
+    burning candles, a silver cross (tarnished), a closed Bible, and a small folded
+    piece of paper with handwriting on it — a prayer, written out to be read aloud.
+  crucifix: >-
+    The crucifix is enormous — nearly filling the wall above the altar. The carpenter
+    who made it had strong opinions about suffering. The figure is anatomically
+    specific in ways that feel less like reverence and more like obsession.
+  candles: >-
+    Two thick pillar candles burn on the altar, their flames very still in the
+    windless room. They have been burning long enough to have formed a significant
+    pool of wax. They are replaced regularly. Someone maintains this room with
+    attentive care.
+  windows: >-
+    The windows are fitted with plain dark glass — not stained glass in any decorative
+    sense, just glass that excludes the outside world entirely. No sunlight, no grey
+    English sky, no evidence of an exterior world. Inside the chapel, only the
+    candle-light exists.
+  prayer: >-
+    A folded piece of paper on the altar, handwritten in a compressed, spidery hand.
+    A private prayer, composed by the house's owner. You read a few lines: "Lord, let
+    me bring this sinner to You as Stephen commanded. Let me not falter in Your work.
+    Let her vanity be burned away." You fold it back.
+spawninfo: []
+idlemessages:
+- The two candles burn without flickering in the perfectly still air.
+- The silence in the chapel is different from the silence in the rest of the house. It has weight.
+- The enormous crucifix above the altar seems to lean slightly forward, though that may be the candlelight.
+- A pew creaks as though someone just rose from it, though you are alone.
+- The smell of old incense is strongest near the altar — someone burned it here recently.
+- The Bible on the altar is closed, but a ribbon marks a place deep in the Old Testament.
+- The handwritten prayer on the altar is still here, waiting to be read aloud to someone who cannot refuse.

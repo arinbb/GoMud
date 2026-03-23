@@ -1,0 +1,53 @@
+roomid: 2051
+zone: its_always_sunny
+title: The Courthouse
+description: >-
+  Philadelphia County Courthouse, a room where the law is applied. The
+  <ansi fg="itemname">gallery benches</ansi> are hard wood and full of a
+  cross-section of people who do not want to be here. The <ansi fg="itemname">judge's bench</ansi>
+  is elevated and imposing and the judge behind it has the expression of a
+  person who went to law school and served decades on the bench and somehow
+  still did not anticipate the Gang. <ansi fg="itemname">The Lawyer</ansi>
+  sits at the counsel table with a stack of papers and the compressed patience
+  of a man who knew, before he got out of bed this morning, that today was
+  going to be like this. The Gang is represented by themselves, which the
+  court has tried to prevent and failed. The bailiff has the distant look
+  of someone who has seen enough. To the <ansi fg="exit">street</ansi> is
+  the exit.
+mapsymbol: CT
+maplegend: The Courthouse
+biome: city
+exits:
+  street:
+    roomid: 2044
+    mapdirection: east
+spawninfo:
+- mobid: 446
+  message: 'The Lawyer enters carrying a briefcase and the weight of his choices, looks around, and takes his seat.'
+  respawnrate: 6 real minutes
+nouns:
+  judge: >-
+    The judge has been on the bench for twenty-two years and has seen most
+    of what Philadelphia has to offer. What the Gang has added to his
+    professional experience is something he does not discuss at bar association
+    dinners. He has developed a twitch. The twitch appeared after the Gang's
+    third appearance in his courtroom. He is aware of the origin. He cannot
+    stop the twitch.
+  benches: >-
+    The gallery benches hold the audience of justice — people waiting their
+    turn, people with nothing better to do, people who have wandered in from
+    the street because courtrooms are free entertainment. The bench in the
+    second row has something scratched into it: 'GANG WONT WIN.' Below it,
+    in different scratching: 'GANG ALWAYS WINS (TECHNICALLY).'
+  papers: >-
+    The Lawyer's stack of papers at the counsel table is several inches thick.
+    The top document appears to be a motion. The motion's title contains the
+    phrase "which is not how any of this works." He has filed this before. He
+    will file it again. The court has become familiar with it.
+idlemessages:
+- The Lawyer opens his briefcase, looks inside, closes it again without taking anything out. He is gathering himself.
+- 'The bailiff announces the next case. There is a pause. From somewhere behind the gallery doors: the sound of an argument about whether this counts as self-representation.'
+- 'The judge rubs his eyes briefly. The twitch fires once. He continues. This is his life now.'
+- A legal brief falls off The Lawyer's stack and spreads across the floor. He picks it up page by page. His face shows nothing. He has learned not to show anything.
+- 'From the hallway outside: the unmistakable sound of someone explaining their own legal theory loudly and incorrectly. The bailiff does not move. He knows.'
+- The court stenographer types with the blank professionalism of someone who has signed several forms about confidentiality and intends to honor them all.

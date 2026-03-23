@@ -1,0 +1,27 @@
+mobid: 413
+zone: forbidden_planet
+hostile: false
+maxwander: 2
+idlecommands:
+  - "emote checks the perimeter readings on his hand scanner with a deepening frown."
+  - ""
+  - "say I want every man inside the perimeter by nightfall. No exceptions, no volunteers."
+  - ""
+  - "emote studies the desert horizon with the expression of someone looking for something they hope not to find."
+  - ""
+  - "say Morbius is a brilliant man. That does not mean he is telling us everything."
+  - ""
+  - "emote makes a notation in his mission log, jaw tight."
+  - ""
+activitylevel: 25
+character:
+  name: Commander Adams
+  description: >-
+    A military man in his forties, square-jawed and direct. He wears the
+    uniform of United Planets Command with unconscious authority. He is not
+    a man of imagination -- he is a man of protocol, training, and the honest
+    recognition that protocol and training were not designed for this. He is
+    increasingly alarmed by everything on Altair IV and is handling it by
+    doing everything correctly and hoping that is enough.
+  raceid: 1
+  level: 12

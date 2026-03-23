@@ -1,0 +1,64 @@
+roomid: 1509
+zone: Goodnight Moon
+title: The Night Sky
+description: >-
+  You have gone out the window or through the painting or simply
+  dreamed yourself here: you are among the <ansi fg="15">stars</ansi>.
+  The <ansi fg="itemname">moon</ansi> is the largest object in your
+  visible world -- it hangs to the east, enormous and white, its face
+  composed in the expression the moon always has, which is no expression
+  at all, or all expressions held at once, or simply the look of something
+  that has seen everything and found it acceptable. The <ansi
+  fg="blue">sky</ansi> around it is not black but a deep and vibrating
+  <ansi fg="blue">blue</ansi>, the exact blue of the picture book's
+  pages, the exact blue of closed eyes, the blue behind the blue of
+  closed eyes. The stars here are not distant points -- they are near,
+  spherical, each one a small warm light you could hold in a cupped hand.
+  You are floating. You are very still. Beneath you, enormously far away
+  but perfectly legible, you can see a small warm window -- <ansi
+  fg="10">green</ansi> walls, amber firelight, a red balloon. The
+  great green room, seen from outside, seen from above, from among the
+  stars it has spent the whole evening saying goodnight to.
+mapsymbol: N
+maplegend: The Night Sky
+biome: cliffs
+exits:
+  down:
+    roomid: 1500
+    exitmessage: You drift back down through the cold dark air and through the window, back into the warm green room.
+    mapdirection: southeast
+nouns:
+  moon: >-
+    From out here, the moon is even more itself than it was through the
+    window. No glass between you and it. No warm room behind you to dilute
+    its light. The moon from out here is cold and total and magnificent.
+    Its face does not move. It has never moved. It looks at the room below
+    with the same patience it has looked at everything: the waiting face
+    of the sky, always there, always watching, always simply the moon.
+  sky: >-
+    The deepest blue you have ever stood inside. Not a color you see --
+    a color you are surrounded by. It goes on in every direction except
+    down, where the room's warm window is, and east, where the moon is.
+    Everywhere else: this blue. This exact blue. The blue of the book
+    you came from. You are standing inside the book's sky. It holds you.
+  stars: >-
+    Close enough to touch. Each one warm at its center, like a coal
+    held up to the eye. From down here -- from the great green room --
+    they looked like points of light. From up here they are round and
+    full and particular. Each one has a temperature and a color and a
+    feeling. You could count them. You cannot count them. You start
+    and lose track and start again.
+  window: >-
+    Far below -- so far below it looks like a painting, which it is --
+    the window of the great green room glows warm amber-green against
+    the dark earth. The red balloon is visible through it, and the slow
+    movement of the rocking chair, and the steady amber pulse of the fire.
+    The room, seen from out here, is a small, perfect, completely sufficient world.
+idlemessages:
+- The stars drift very slowly. Or you drift. From out here it is impossible to tell.
+- The moon illuminates your hands. They look silver. You look like something made of moonlight.
+- The room below -- green-lit, amber-flickered -- is so small from here. So complete.
+- The blue of this sky is in your lungs. You breathe it in. It tastes like the absence of worry.
+- A star brushes your shoulder as you float. It is warm. It is smaller than you expected. It is enough.
+- You have been floating for a while. This is fine. You can go back whenever you are ready.
+- The moon watches the room below. The room watches the moon. You watch both. Everyone is watching.

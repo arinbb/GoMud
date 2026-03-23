@@ -1,0 +1,17 @@
+itemid: 195
+name: a harmonica
+namesimple: harmonica
+displayname: <ansi fg="itemname">a harmonica</ansi>
+description: >-
+  A Hohner Marine Band harmonica in the key of A, chrome and wood, the kind
+  that fits in a shirt pocket and costs less than a cup of coffee and can
+  carry a feeling across fifty years without losing anything. The wood comb
+  is slightly swollen from use -- someone has been breathing into this. The
+  reeds respond to the lightest touch. When you hold it to your lips and
+  breathe out you get a chord that sounds like the beginning of something.
+  When you breathe in you get a chord that sounds like the end of something.
+  Between those two breaths: the whole album.
+type: object
+subtype: usable
+uses: 0
+value: 50

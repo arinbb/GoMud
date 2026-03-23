@@ -1,0 +1,26 @@
+mobid: 293
+zone: the_sopranos
+hostile: false
+maxwander: 2
+idlecommands:
+  - "say My movie is going to be real. Not like that Hollywood bulls**t. Real."
+  - "emote checks his phone for the fourth time in a minute, finds nothing, checks it again."
+  - "emote fidgets in his chair, leg bouncing, jaw working on something."
+  - "say I got a three-act structure. I know what that is now. It's a legitimate thing."
+  - ''
+  - "emote rubs his face with both hands, staring at the table."
+  - "say The problem is the third act. The third act is always the problem."
+activitylevel: 40
+character:
+  name: Christopher Moltisanti
+  description: >-
+    A dark-eyed young man in his late twenties, handsome in a restless way,
+    dressed in good clothes that he wears with the slightly off energy of
+    someone who bought the right clothes but not quite the right confidence.
+    He has ambitions that exceed his situation and a situation that exceeds
+    his self-discipline. He is Tony's nephew by marriage and closest thing to
+    a protege, and he is always either on the way up or on the way down and
+    it is hard to tell which in any given moment. He talks about his screenplay
+    constantly.
+  raceid: 1
+  level: 8

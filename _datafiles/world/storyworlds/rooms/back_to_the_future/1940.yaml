@@ -1,0 +1,60 @@
+roomid: 1940
+zone: Back to the Future
+title: Twin Pines Mall Parking Lot
+description: >-
+  It is 1:15 AM on October 26, 1985. The vast, empty parking lot of the
+  <ansi fg="itemname">Twin Pines Mall</ansi> stretches out under blazing
+  fluorescent lights. The air is cold and still. A battered
+  <ansi fg="itemname">GMC van</ansi> sits near the entrance, its doors
+  hanging open. A single set of <ansi fg="itemname">tire tracks</ansi>
+  scorches the asphalt -- two lines of <ansi fg="room-description">fire</ansi>
+  thirty-five feet apart, trailing off to the east. Doc Brown's
+  <ansi fg="itemname">DeLorean</ansi> is here, its gull-wing doors raised.
+  The stainless-steel body gleams under the parking-lot lights.
+mapsymbol: T
+maplegend: Twin Pines Mall
+biome: land
+exits:
+  east:
+    roomid: 1941
+nouns:
+  delorean: >-
+    A stainless-steel DMC DeLorean, heavily modified. The gull-wing doors
+    are raised. The rear of the car has been gutted and rebuilt with an
+    elaborate array of electronic components. At the center of the installation
+    glows a Y-shaped device -- the flux capacitor. The car smells of ozone
+    and something that might be plutonium.
+  "tire tracks": >-
+    Two parallel lines of scorched asphalt, exactly thirty-five feet apart.
+    The rubber is vaporized where they start, leaving only blackened
+    carbon. They end abruptly -- as if the car simply ceased to exist at
+    88 miles per hour.
+  van: >-
+    Doc Browns modified GMC van. The back is fitted as a mobile lab, with
+    radiation symbols stenciled on the side. A Jiffy Lube logo is still
+    visible under a hasty repaint. The doors hang open. There are no
+    Libyans inside anymore.
+  mall: >-
+    Twin Pines Mall. Brand new in 1985 -- its neon sign buzzes cheerfully
+    over a mostly empty parking lot. The twin pine trees flanking the
+    entrance are the namesake. Nobody in 1985 would have any way of knowing
+    that in 1955 this land was the Peabody farm.
+  lights: >-
+    Tall banks of parking-lot fluorescents hum overhead, casting everything
+    in a cold white light. At 1:15 AM, the only illumination for miles.
+idlemessages:
+- The smell of burning rubber and ozone lingers over the scorched asphalt.
+- 'A faint mechanical whine cuts through the silence: the DeLorean''s engine idling low.'
+- Somewhere in the distance, a siren wails and fades.
+- The parking-lot lights buzz and flicker, then steady again.
+- The fire trails on the asphalt glow faintly orange, like coals cooling.
+- You hear the distant thud of a van door slamming, then nothing.
+- A videotape camera sits propped against the van, its red REC light still blinking.
+spawninfo:
+- mobid: 390
+  message: "Marty McFly stands here, hand to his forehead, staring at the spot where the DeLorean just vanished."
+  respawnrate: 3 real minutes
+- mobid: 399
+  message: "A battered Volkswagen van squeals into the lot, headlights blazing."
+  respawnrate: 5 real minutes
+  forcehostile: true

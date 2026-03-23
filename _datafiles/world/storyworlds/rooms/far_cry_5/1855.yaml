@@ -1,0 +1,62 @@
+roomid: 1855
+zone: Far Cry 5
+title: The Fishing Spot
+description: >-
+  A gravel bar on a wide bend of a clear Montana river, the water shallow enough
+  to wade and cold enough to make your ankles ache after three steps. The
+  <ansi fg="10">mountains</ansi> reflect in the still water of the pool below
+  the riffle — inverted peaks, inverted sky, a perfectly composed mirror of
+  the world above it that quivers every time a <ansi fg="itemname">trout</ansi>
+  rises to the surface. There is a <ansi fg="itemname">fishing rod</ansi> leaned
+  against a driftwood log, and a <ansi fg="itemname">tackle box</ansi> beside
+  it, and a tin camping cup of coffee going cold in the gravel. Someone was
+  here very recently. The <ansi fg="itemname">mountains</ansi> stand all the
+  way around. The sky is enormous. The river is cold and clear and does not
+  care about Eden's Gate. This is Montana, really. This is what it is when
+  no one is trying to own it. The county road is to the <ansi fg="exit">road</ansi>
+  exit (east).
+mapsymbol: F
+maplegend: The Fishing Spot
+biome: shore
+exits:
+  road:
+    roomid: 1841
+    mapdirection: east
+nouns:
+  river: >-
+    A clear Montana river over gravel and granite, running cold and fast
+    through the pool and then spreading out into riffles. The kind of
+    river that people write about, that people drive hours to stand in.
+    It doesn't know about any of this. It was here long before. It will
+    be here long after.
+  trout: >-
+    Wild brown trout, rising occasionally to take insects from the
+    surface — a subtle ring expanding from a barely-there disturbance.
+    The trout have lived here for generations, descendants of generations.
+    The river is their country. They own it the way the mountains own
+    themselves: completely, wordlessly, without dispute.
+  rod: >-
+    A fly rod, good quality, leaned against a driftwood log. A dry
+    fly is tied to the tippet — a pale morning dun, well-made. Someone
+    set this down and didn't come back for it. The fly is the work of
+    someone who knew what they were doing. The setting it down was probably
+    not voluntary.
+  coffee: >-
+    A tin camping cup of coffee, set in the gravel beside the tackle
+    box, going cold. Someone was here very recently and left quickly.
+    The coffee is still warm enough to steam faintly in the mountain air.
+    You consider drinking it. You consider not drinking it.
+  mountains: >-
+    The full circle of the mountains reflected in the pool — all of Hope
+    County's ranges, north, south, east, west, every peak contained in
+    the still water below the riffle. The reflection is perfect until a
+    fish rises and it spreads into rings and then reforms, more perfect
+    than before.
+idlemessages:
+- A trout rises in the pool, the ring expanding outward across the reflection of the mountains.
+- The river talks to the rocks. It has been saying the same things for ten thousand years. The rocks listen.
+- The tin cup of coffee steams faintly in the cold air. Someone left in a hurry. The coffee is patient.
+- A kingfisher drops from a willow branch and enters the water with no splash and exits with a fish.
+- The gravel bar is warm from the afternoon sun. The mountains hold snow at the peaks.
+- Wind through the willows upstream. Then stillness. Then the river's ordinary voice resumes.
+- You could fish here. You have everything you need. The county is burning and you could stand in this river and fish.

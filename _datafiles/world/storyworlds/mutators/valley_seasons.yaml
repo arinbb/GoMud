@@ -1,0 +1,12 @@
+mutatorid: valley-seasons
+namemodifier:
+  behavior: append
+  text: (pastoral)
+  colorpattern: green
+descriptionmodifier:
+  behavior: append
+  text: The valley breathes with the season, alive in every corner.
+  colorpattern: green
+alertmodifier:
+  text: You feel the seasons shifting through the valley like a slow tide.
+  colorpattern: green

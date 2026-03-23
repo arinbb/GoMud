@@ -1,0 +1,13 @@
+itemid: 280
+name: a pair of fuzzy dice
+namesimple: dice
+displayname: a pair of <ansi fg="9">fuzzy dice</ansi>
+description: >-
+  Red fuzzy dice with white dots, the fuzz worn soft with years of hanging
+  from a rearview mirror. They smell faintly of car wax and AM radio. Pedro
+  said they were his grandfather's. He did not explain further. They are,
+  in some way that is hard to articulate, lucky.
+type: object
+subtype: usable
+uses: 0
+value: 0

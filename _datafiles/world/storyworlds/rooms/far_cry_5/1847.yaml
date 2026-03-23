@@ -1,0 +1,71 @@
+roomid: 1847
+zone: Far Cry 5
+title: The Seed Ranch
+description: >-
+  John Seed's compound sprawls across the valley floor with the confident excess
+  of a man who believes he has already won. The <ansi fg="itemname">main house</ansi>
+  is a renovated ranch house expanded into something between a law office and a
+  manor — polished wood, leather furniture, law books on shelves alongside the
+  Book of Joseph. A <ansi fg="itemname">confession chair</ansi> occupies the
+  center of the main room, its arms fitted with restraints, a <ansi fg="itemname">
+  camera</ansi> on a tripod aimed at it. This is where John conducts his
+  baptisms. This is where he takes your sin by force if you won't give it
+  willingly. <ansi fg="itemname">John Seed</ansi> stands near the chair, suited,
+  smiling, adjusting his cufflinks with the careful attention of a man who
+  believes presentation is a form of grace. The valley is back through the
+  <ansi fg="exit">valley</ansi> exit (west).
+mapsymbol: R
+maplegend: Seed Ranch
+biome: house
+exits:
+  valley:
+    roomid: 1845
+    mapdirection: west
+nouns:
+  house: >-
+    A ranch house that has been renovated into something aspirational and
+    wrong. The original bones — wide porch, big windows, Montana views —
+    are still there. What has been added: Eden's Gate iconography, the
+    confession apparatus, the cameras, the locked rooms. Comfort used as
+    camouflage for something much worse.
+  chair: >-
+    The confession chair. Solid wood, well-made, arms with leather
+    restraints attached. A camera on a tripod in front. This is where
+    John forces confession — he calls it baptism. Takes your sin from
+    you whether you want to give it or not. The restraints are not new.
+    They have been used.
+  camera: >-
+    A professional video camera on a tripod, aimed at the confession
+    chair. John records everything. The recordings are evidence,
+    leverage, art — he calls them sacraments. He has hours of footage.
+    The light on the camera is red: currently recording.
+  books: >-
+    Law books alongside the Book of Joseph. John Seed was a lawyer before
+    he was a Baptist. He uses both skill sets. The law books are annotated
+    in his handwriting — relevant sections on property seizure, involuntary
+    commitment, coerced confession. The Book of Joseph is also annotated.
+    He treats both texts with equal seriousness.
+  tattoo: >-
+    The word YES tattooed on John Seed's chest, visible when his shirt
+    opens. His own baptism. His affirmation, permanent. He chose it. Or
+    he chose to choose it. The distinction matters to him more than to you.
+spawninfo:
+- mobid: 336
+  message: John Seed turns from the window and smiles at you. The smile is very good. You do not trust it.
+  idlecommands:
+  - emote draws a folding knife and begins sharpening it with methodical strokes, watching you.
+  - say Confession is a gift. I offer it to everyone. Some people need help accepting gifts.
+  - ""
+  - emote adjusts his aviator sunglasses and smiles at something only he finds funny.
+  - say What is your sin? Everyone has one. The ones who say they do not have the most interesting ones.
+  - ""
+  - emote straightens his cufflinks with the precise attention of a man who needs everything perfect.
+  respawnrate: 3 real minutes
+idlemessages:
+- John Seed's knife catches the light as he sharpens it. The sound is very deliberate.
+- The confession chair camera light blinks red. Recording. Always recording.
+- The polished floors reflect the window light. Everything here is clean. Order enforced through control.
+- A vehicle rolls up outside. Cultists unload supplies. Eden's Gate logistics, efficient and continuous.
+- John adjusts something on his desk and smiles to himself. The smile does not reach any emotion you can name.
+- The Book of Joseph lies open on the desk. Annotations in the margins in John's precise hand.
+- Outside, the wheat fields of Holland Valley stretch to the mountains. Beautiful and John's. He knows it.

@@ -1,0 +1,59 @@
+roomid: 1949
+zone: Back to the Future
+title: Doc Browns Mansion
+description: >-
+  The Brown family estate, a grand but crumbling Victorian mansion set
+  back from the street behind a wrought-iron fence. The main house is
+  still intact in 1955: three stories, a widow's walk, stained glass
+  over the front door. The <ansi fg="itemname">foyer</ansi> is cluttered
+  with invention prototypes in various stages. A grandfather clock
+  stands against the far wall, stopped. The library shelves are full --
+  science texts, engineering manuals, volumes of philosophy. A
+  <ansi fg="itemname">scale model</ansi> of Hill Valley occupies the
+  center of the main room, detailed enough to show individual trees
+  and parked cars. Notes are pinned to it everywhere with small flags.
+mapsymbol: V
+maplegend: Docs Mansion
+biome: house
+exits:
+  south:
+    roomid: 1948
+nouns:
+  foyer: >-
+    The entry hall is a graveyard of invention: a failed automated
+    dog feeder, a prototype hoverboard sketch that was abandoned,
+    something that looks like it might have been meant to be a
+    jetpack but settled for being a fire hazard. Every project is
+    labeled in Doc Browns meticulous block print.
+  "scale model": >-
+    A one-to-twenty scale model of Hill Valley, circa 1955. Every
+    building present, every tree, every parked car. Small paper
+    flags are pinned to key locations: the clock tower, Docs garage,
+    the high school. Red string connects them in a web of causation
+    that only Doc Brown fully understands. The DeLorean is
+    represented by a small diecast toy painted silver.
+  library: >-
+    Floor-to-ceiling shelves of books: Einstein, Tesla, Heisenberg,
+    Jules Verne, H.G. Wells. The Wells section is heavily annotated.
+    "The Time Machine" has been read so many times the spine has
+    cracked and been repaired with electrical tape. Three pages
+    have been folded over.
+  clock: >-
+    A grandfather clock, stopped. The hands read 10:04 PM. Seeing
+    it in this house -- the house of the man who will harness the
+    lightning at exactly that moment -- feels less like coincidence
+    and more like a message. The clock does not tick.
+  "widow's walk": >-
+    The roof deck at the top of the mansion, accessed by a hatch.
+    From it, on a clear day, you can see the entire valley. On a
+    clear night you can see the courthouse clock tower. On a stormy
+    night on November 12, you can see exactly where the lightning
+    is going to strike.
+idlemessages:
+- The grandfather clock stands silent, hands frozen at 10:04 PM.
+- A draft moves through the mansion, rattling the scale model flags.
+- The library smells of old paper, machine oil, and a faint chemical tang.
+- Something in the foyer shifts with a soft mechanical click -- still active.
+- Rain against the tall windows makes the scale model lights flicker.
+- The stained glass over the front door throws colored light across the floor when the sun is right.
+- One of the prototype devices in the foyer emits a small spark and goes dark.

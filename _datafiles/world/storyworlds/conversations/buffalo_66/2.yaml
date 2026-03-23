@@ -1,0 +1,24 @@
+-
+  Supported:
+    "billy brown": ["layla"]
+  Conversation:
+    - ["#1 say So this is... this is where I grew up. It's a great city. A GREAT city."]
+    - ["#2 emote nods, watching him carefully"]
+    - ["#1 say I mean, the weather's not great. The weather is TERRIBLE. But the people, the people are—"]
+    - ["#2 say The people are cold too?"]
+    - ["#1 emote stops, thrown off", "#1 say No. The people are WARM. The people are incredibly warm."]
+    - ["#2 emote smiles, just slightly"]
+    - ["#1 say Why are you SMILING? What's funny? Nothing is FUNNY."]
+    - ["#2 say Nothing's funny. I just like listening to you talk."]
+-
+  Supported:
+    "billy brown": ["layla"]
+  Conversation:
+    - ["#1 say I need you to pretend you're my wife. Just for dinner. Just for ONE dinner."]
+    - ["#2 emote looks at him for a long moment"]
+    - ["#2 say Okay."]
+    - ["#1 say Okay? Just OKAY? You're not going to ask WHY?"]
+    - ["#2 say I don't need to know why. You need help. That's enough."]
+    - ["#1 emote opens his mouth to argue, then closes it"]
+    - ["#1 say You're... you're a strange person. You know that?"]
+    - ["#2 emote shrugs gently", "#2 say Maybe. But I'm here."]

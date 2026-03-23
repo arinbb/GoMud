@@ -1,0 +1,26 @@
+mobid: 385
+zone: ghostbusters
+hostile: false
+maxwander: 0
+activitylevel: 20
+idlecommands:
+- "emote 's eyes glow a deep amber-orange for a moment, then return to normal."
+- "say There is no Dana. There is only Zuul."
+- "emote speaks in a voice that is Dana's voice filtered through something much older."
+- "emote tilts her head at an angle that suggests the neck works differently than it should."
+- "emote offers something from the kitchen. It appears to be moving on its own."
+- "say The Gatekeeper and the Keymaster will be joined. It has already been written."
+- ""
+character:
+  name: Dana Barrett
+  description: >-
+    A beautiful woman in her thirties whose brown eyes are currently amber-orange
+    and whose posture has changed in a way that is difficult to articulate -- upright
+    in a way that suggests something accustomed to having a throne. She is wearing
+    a flowing dress that belongs to Dana Barrett's wardrobe but sits differently on
+    her now, ceremonial in effect if not in intention. When she speaks, her voice has
+    a doubled quality, as if two entities are using the same vocal apparatus. She holds
+    herself with supernatural patience. She is waiting for the Keymaster. She has
+    waited before.
+  raceid: 1
+  level: 10

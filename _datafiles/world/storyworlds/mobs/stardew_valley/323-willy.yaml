@@ -1,0 +1,21 @@
+mobid: 323
+zone: stardew_valley
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote casts a line with a practiced flick of the wrist, the lure tracing a perfect arc over the water."
+  - "say You got to let the line run when it bites. Most people pull too soon. That is why most people lose fish."
+  - "emote mends a section of fishing net with quick, expert stitches."
+  - "say The sea takes everything eventually. Best to borrow what you can while you can."
+  - "emote watches his line with the total focused stillness of a man who has learned to wait."
+  - ""
+activitylevel: 20
+character:
+  name: Willy
+  description: >-
+    An old fisherman, weathered the way wood weathers in salt air -- gray
+    and smooth and indestructible. Willy has the patience of the tide and
+    the generosity of someone who has found exactly what they want from
+    life. He will teach anyone to fish who asks. He will not ask why.
+  raceid: 1
+  level: 10

@@ -1,0 +1,58 @@
+roomid: 1950
+zone: Back to the Future
+title: The Parking Lot at Night
+description: >-
+  A rain-slicked stretch of empty pavement, close to midnight on
+  November 12, 1955. The storm is building -- lightning flickers on
+  every horizon. The <ansi fg="itemname">DeLorean</ansi> sits here
+  on the straightaway Doc Brown has measured out, its engine running,
+  headlights cutting through the rain. The speedometer cable runs
+  out of the driver-side window. Doc Brown is somewhere near the clock
+  tower end of the run. This is the launch pad. At 88 miles per hour,
+  heading west, the car will vanish. The only thing between here and
+  1985 is timing, weather, and physics.
+mapsymbol: N
+maplegend: Launch Site
+biome: land
+exits:
+  west:
+    roomid: 1941
+    exitmessage: You head toward the town square and the clock tower.
+  "delorean":
+    roomid: 1951
+    mapdirection: east
+nouns:
+  delorean: >-
+    The DeLorean sits on the wet asphalt, engine running. Rain beads
+    and sheets off the stainless steel. The flux capacitor in the
+    engine housing pulses in its Y-shape rhythm. The speedometer
+    cable trails from the window. The car is pointed west, toward
+    the straightaway. There is enough road for 88 miles per hour.
+    There is enough lightning for 1.21 gigawatts. There is a very
+    narrow window of time.
+  rain: >-
+    Heavy California rain, the kind that comes with the first real
+    storm of the season. The pavement reflects the DeLoreans headlights
+    in rippling yellow. Puddles form in the low spots. The windshield
+    wipers are on. The water will conduct the electricity when the
+    lightning strikes the cable.
+  lightning: >-
+    Sheet lightning illuminates the entire sky at once, turning night
+    briefly to noon. Fork lightning picks specific targets with
+    malicious precision. The clock tower is a very specific target.
+    The cable strung from the tower to the street is an excellent
+    conductor.
+  "speedometer cable": >-
+    A cable running from the car's dashboard speedometer to a device
+    Doc Brown has rigged at the far end of the run. When the needle
+    hits 88, the device will trigger. The timing is everything.
+    The cable is necessary because Doc cannot be in two places at once.
+idlemessages:
+- Lightning splits the sky from cloud to cloud, and for a moment everything is day.
+- The DeLorean shudders in a gust of wind, its stainless panels catching the headlights.
+- Rain hammers the pavement in shifting curtains, loud then quiet then loud.
+- The flux capacitor's glow pulses through the rain, three beats, steady, waiting.
+- Thunder rolls, close enough now to feel in the chest.
+- 'The speedometer cable taps against the car door in the wind: a countdown in Morse.'
+- A lightning bolt strikes somewhere close by. The hairs on your arms stand up.
+- 'Doc Brown''s voice carries from somewhere near the clock tower: "Marty! On my signal!"'

@@ -1,0 +1,61 @@
+roomid: 1520
+zone: Waynes World
+title: Wayne's Basement
+description: >-
+  The nerve center of cable access television. The <ansi fg="itemname">basement</ansi>
+  is a glorious mess of rock memorabilia — <ansi fg="itemname">posters</ansi> cover
+  every inch of paneled wall: Aerosmith, Rush, Led Zeppelin, Alice Cooper. A
+  <ansi fg="itemname">couch</ansi> sits stage-left, low and lumpy and perfect. Two
+  <ansi fg="itemname">cameras</ansi> on tripods point at a makeshift broadcast area.
+  A <ansi fg="itemname">drum kit</ansi> occupies the far corner with practiced chaos.
+  Cables snake across the <ansi fg="itemname">carpet</ansi> like spaghetti. This is
+  Wayne's World. Party time. Excellent. To the <ansi fg="exit">east</ansi>, the bulkhead
+  doors lead outside. <ansi fg="exit">Up</ansi> the stairs is the kitchen.
+  <ansi fg="exit">South</ansi> leads to Garth's workshop.
+mapsymbol: W
+maplegend: Wayne's Basement
+biome: house
+exits:
+  east:
+    roomid: 1521
+  up:
+    roomid: 1522
+  south:
+    roomid: 1532
+nouns:
+  basement: >-
+    This basement is a monument to rock and roll and the belief that cable access
+    television is a legitimate medium. It is both of these things simultaneously.
+  posters: >-
+    Every square inch of fake wood paneling hosts a rock poster. Alice Cooper glares
+    from above the drum kit. Aerosmith's lips stretch across the back wall. Led
+    Zeppelin's zeppelin floats serenely over the couch. These are sacred objects.
+  couch: >-
+    An enormous brown sectional sofa that has absorbed seventeen years of Wayne's
+    enthusiasm. It sags in all the right places. It is the most comfortable couch
+    in the world. Wayne knows this.
+  cameras: >-
+    Two camcorders on tripods aimed at the broadcast zone. The red recording light
+    blinks steadily. Wayne's World is always broadcasting. Always. Party time.
+  drum: >-
+    Garth's drum kit is installed with the precision of someone who takes their
+    art seriously. Which Garth absolutely does. The skins are worn smooth in the
+    center from hours of dedicated practice.
+  carpet: >-
+    Shag carpet in a color that was probably brown when it was installed. Now it
+    is the color of a thousand footsteps and spilled sodas and rock and roll dreams.
+spawninfo:
+- mobid: 240
+  message: "<ansi fg=\"yellow\">Wayne Campbell materializes by the cameras, doing a silent air guitar riff.</ansi>"
+  respawnrate: 5 real minutes
+- mobid: 241
+  message: "<ansi fg=\"yellow\">Garth Algar emerges from behind the drum kit, adjusting his glasses.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The recording light on the camera blinks red. Everything here is potentially being broadcast.
+- A guitar pick falls off the amp and skitters across the carpet.
+- The drum kit shimmers in the fluorescent light, waiting.
+- The posters seem to watch you with the benevolent approval of rock legends.
+- A cassette tape labeled "AWESOME MIX - DO NOT ERASE" sits on top of the amp.
+- The phone rings upstairs. Wayne ignores it. He's in the zone.
+- The couch emits a long, satisfied creak, as if settling in for another excellent session.

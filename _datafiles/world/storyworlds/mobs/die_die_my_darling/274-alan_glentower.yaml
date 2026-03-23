@@ -1,0 +1,25 @@
+mobid: 274
+zone: die_die_my_darling
+hostile: false
+maxwander: 0
+activitylevel: 15
+idlecommands:
+  - "emote turns to the barman and asks, quietly, if a young woman has been seen on this road in the last few days."
+  - "emote turns the brooch over in his hands, studying it. It belongs to someone. Someone he knows."
+  - "emote paces to the pub window and looks out toward the lane, then returns to his seat."
+  - "say I know she came this way. Someone must have seen something."
+  - "emote checks his watch, then looks at the door again."
+  - ''
+  - ''
+character:
+  name: Alan Glentower
+  description: >-
+    A handsome man in his early thirties, well-dressed in the country manner,
+    wearing a tweed jacket and carrying a flat cap he has not put on. He has
+    the look of someone who has been worrying about something for several
+    days without sleeping adequately — there are lines around his eyes that
+    concern has put there recently. He sits at a corner table but barely uses
+    his chair, rising every few minutes to look out the window. He is polite
+    to everyone in the pub, which is how you can tell he is frightened.
+  raceid: 1
+  level: 6

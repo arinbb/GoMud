@@ -1,0 +1,55 @@
+
+function onAsk(mob, room, eventDetails) {
+    var question = eventDetails.askText.toLowerCase();
+
+    if (question.indexOf("prison") >= 0 || question.indexOf("jail") >= 0) {
+        mob.Command("say I did my time. FIVE YEARS. Five years for something that wasn't even my fault.");
+        mob.Command("emote 's jaw tightens.", 1.5);
+        mob.Command("say I took the fall for someone else. That's all you need to know.", 3.0);
+        return true;
+    }
+
+    if (question.indexOf("layla") >= 0 || question.indexOf("girl") >= 0) {
+        mob.Command("say Layla? She's my wife. My WIFE. We've been together for years.");
+        mob.Command("emote looks away quickly.");
+        mob.Command("say She's great. She's PERFECT. Don't ask me any more about it.", 2.0);
+        return true;
+    }
+
+    if (question.indexOf("parents") >= 0 || question.indexOf("mother") >= 0 || question.indexOf("father") >= 0 || question.indexOf("family") >= 0) {
+        mob.Command("emote 's expression hardens.");
+        mob.Command("say My parents? My parents are GREAT. They're WONDERFUL people.", 1.0);
+        mob.Command("say My mother loves me. She tells me all the time. ALL the time.", 2.0);
+        mob.Command("emote 's voice cracks almost imperceptibly.", 3.5);
+        return true;
+    }
+
+    if (question.indexOf("bills") >= 0 || question.indexOf("football") >= 0 || question.indexOf("buffalo") >= 0) {
+        mob.Command("say The Bills? Don't talk to me about the Bills.");
+        mob.Command("say You know what the Bills did to this city? To this FAMILY?", 1.5);
+        mob.Command("emote shakes his head bitterly.", 3.0);
+        return true;
+    }
+
+    if (question.indexOf("scott") >= 0 || question.indexOf("wood") >= 0 || question.indexOf("kicker") >= 0) {
+        mob.Command("emote 's eyes go cold and flat.");
+        mob.Command("say Scott Wood. That man RUINED my life.", 1.5);
+        mob.Command("say He missed that kick and everything fell apart. EVERYTHING.", 3.0);
+        return true;
+    }
+
+    var defaults = [
+        "say What do you WANT? I'm busy. I have things to DO.",
+        "say Stop LOOKING at me like that. I don't need your pity.",
+        "say I'm FINE. Everything is FINE. Why does everyone keep ASKING?"
+    ];
+    var pick = Math.floor(Math.random() * defaults.length);
+    mob.Command(defaults[pick]);
+    return true;
+}
+
+function onShow(mob, room, eventDetails) {
+    mob.Command("emote glances at it dismissively.");
+    mob.Command("say I don't care about that. I don't care about ANYTHING you have to show me.");
+    return true;
+}

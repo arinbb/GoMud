@@ -1,0 +1,72 @@
+roomid: 1502
+zone: Goodnight Moon
+title: The Three Little Bears
+description: >-
+  You have stepped into the other painting -- the one on the east wall of
+  the great green room -- and found yourself in a storybook cottage rendered
+  in warm, flat colors. Three <ansi fg="itemname">chairs</ansi> sit before
+  a cold <ansi fg="itemname">fireplace</ansi>: a great chair, a middling
+  chair, and a very small chair tipped on its side. Three <ansi
+  fg="itemname">bowls</ansi> of porridge sit on the table, in three sizes,
+  each empty. Upstairs there must be <ansi fg="itemname">beds</ansi> --
+  you can feel them above you, the great one, the middling one, the small
+  one still dented where someone sleeping was. The cottage smells of
+  woodsmoke and honey and something faintly wild. The bears are away.
+  Or perhaps they have just come back. A door stands open to a dark
+  <ansi fg="itemname">forest</ansi> that is all silhouettes and deep color,
+  the kind of forest that exists only in illustrations, infinitely dense,
+  the trees spaced to suggest a path that is always just around the corner.
+  This is the world behind the world, the story behind the story, the
+  picture you step into when the first picture is not quite enough.
+mapsymbol: B
+maplegend: The Three Little Bears
+biome: house
+exits:
+  west:
+    roomid: 1500
+    exitmessage: You step back through the painting's frame and into the great green room, warmer and less illustrated.
+nouns:
+  chairs: >-
+    Three wooden chairs by the cold fireplace. Papa Bear's chair is large
+    and solid and draped with something plaid. Mama Bear's chair is medium
+    and has a cushion. Baby Bear's chair is on its side, one leg missing,
+    broken by a visitor who should have knocked. Each chair casts a bear-shaped
+    shadow toward the far wall.
+  fireplace: >-
+    Smaller and colder than the one in the great green room. The ashes in the
+    grate are old. No one has tended this fire recently. Someone has been here,
+    but they were not the sort to lay a fire.
+  bowls: >-
+    Three bowls on a wooden table, in graduated sizes. All of them empty.
+    The smallest one has a spoon in it, bent slightly at the bowl, as if
+    scooped clean with great enthusiasm. There are crumbs of something
+    on the table near the small bowl. Whoever ate here ate with appetite
+    and without asking.
+  beds: >-
+    You cannot see them from here -- they are upstairs, through a low door.
+    But you know they are there. Three of them. You remember the story.
+    You remember which one was just right.
+  forest: >-
+    The dark forest through the cottage door is every storybook forest at
+    once -- absolute, deep, the trees packed close at the illustration's edge.
+    No path goes in but there are paths everywhere. This is where the bears
+    live. This is where the wild things are. This is what the room is outside of.
+spawninfo:
+- mobid: 233
+  message: A little mouse peeks out from behind the overturned chair, nose twitching at the smell of old porridge.
+  respawnrate: 5 real minutes
+  idlecommands:
+  - "emote sniffs cautiously at the empty porridge bowls."
+  - ""
+  - "emote hides behind Baby Bear's overturned chair, watching."
+  - ""
+  - "emote emerges briefly, then darts back into the shadows."
+  - ""
+idlemessages:
+- The door to the dark forest stands open. No bears have come through it yet.
+- The three empty bowls on the table catch the dim light. Someone ate here very recently.
+- Baby Bear's broken chair lies on its side. The broken leg is near the cold fireplace.
+- The cottage feels observed. The paintings always do.
+- Upstairs, something creaks. You are the only one here. Probably.
+- The forest through the door is perfectly still. No leaves move. They never do in pictures.
+- The three bear-shadows on the wall are perfectly still, perfectly bear-shaped, waiting.

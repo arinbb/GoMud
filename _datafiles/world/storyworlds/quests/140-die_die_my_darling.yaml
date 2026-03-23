@@ -1,0 +1,25 @@
+questid: 140
+name: Die Die My Darling
+description: >-
+  Patricia Carroll made a courtesy call on Mrs. Trefoile — her dead fiancé's
+  mother. A polite visit to a grieving old woman. It was not that. Experience
+  the full horror of the Trefoile house: endure dinner, discover there are no
+  mirrors, attend the prayer service, find your car locked in the barn, and
+  finally descend to the cellar where everything hidden is revealed.
+reward:
+  experience: 5000
+  item_id: 190
+  playermessage: >-
+    You have walked through the Trefoile house from the grey country road to
+    the theatrical cellar, and you have seen both what Mrs. Trefoile is and
+    what she was. The grey house and the hidden colours. The Bible and the
+    evening gowns. The voice that tells her what to do and the woman who
+    listens. You take a small mirror from the cellar — the kind of object
+    forbidden upstairs — and carry it back into the light.
+steps:
+- description: Arrive at the Trefoile house.
+- description: Endure dinner in the dining room.
+- description: Discover there are no mirrors anywhere in the house.
+- description: Attend the prayer service in the chapel.
+- description: Find your car locked inside the barn.
+- description: Descend to the cellar and discover what has been hidden there.

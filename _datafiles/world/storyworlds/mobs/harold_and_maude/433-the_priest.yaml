@@ -1,0 +1,22 @@
+mobid: 433
+zone: harold_and_maude
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote adjusts the front of his vestments and clears his throat."
+  - ""
+  - "say Let us take comfort in the sure and certain hope of the resurrection."
+  - ""
+  - "emote consults his notes with the air of someone who has given this homily before."
+  - "emote glances toward the back pew and then away quickly."
+activitylevel: 10
+character:
+  name: The Priest
+  description: >-
+    A man of middle age in white and gold vestments, conducting a funeral
+    with the professional efficiency of someone who officiates several
+    per week. His face is not unkind but it is not particularly moved.
+    He has made peace with the repetitive nature of the work. He has
+    noticed Harold before but has chosen not to think about it too carefully.
+  raceid: 1
+  level: 4

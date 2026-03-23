@@ -1,0 +1,23 @@
+mobid: 474
+zone: paris_texas
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote checks the man's pulse with practiced hands."
+  - "say Can you hear me? Can you tell me your name?"
+  - "emote offers a paper cup of water."
+  - "say You're all right. You're safe now."
+  - "emote takes notes on a small pad."
+activitylevel: 35
+character:
+  name: The Doctor
+  description: >-
+    A compact man in a short-sleeved white shirt, older, with reading
+    glasses pushed up on his forehead. He moves with the quiet efficiency
+    of someone who has handled many emergencies and learned not to add
+    to them with noise. He carries a black bag that has been used so
+    much the handle has been repaired with electrical tape. He does not
+    ask unnecessary questions. He asks the necessary ones in a tone
+    that suggests there is no wrong answer, only information.
+  raceid: 1
+  level: 5

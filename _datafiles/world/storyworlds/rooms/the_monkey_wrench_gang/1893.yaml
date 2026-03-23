@@ -1,0 +1,61 @@
+roomid: 1893
+zone: The Monkey Wrench Gang
+title: The Train Bridge
+description: >-
+  A <ansi fg="8">railroad bridge</ansi> spans a deep gorge here, its steel truss
+  construction rising forty feet above the canyon floor, the tracks running straight
+  across on a tie-and-rail deck. The gorge below is <ansi fg="red">red sandstone</ansi>,
+  narrow and sheer, dropping sixty feet to a dry wash choked with salt cedar. The
+  bridge carries coal trains from the strip mines of the Navajo Nation to the power
+  plants of southern Arizona — a hundred-car trains of loaded coal cars, sixty tons
+  per car, crossing this bridge twice a day. The steel girders are hot from the desert
+  sun. The smell is metal and creosote from the railroad ties. A <ansi fg="itemname">maintenance
+  walkway</ansi> runs the length of the bridge on the downstream side, its safety
+  railing spotted with rust. The most ambitious operation the gang has considered
+  involves this bridge, a specific point in the truss where the stress concentration
+  factor is highest, and a quantity of cutting charges. They have not done it yet.
+  They are still planning. To the <ansi fg="exit">road</ansi> to the <ansi fg="exit">south</ansi>,
+  the highway leads back toward the junction.
+mapsymbol: T
+maplegend: Train Bridge
+biome: desert
+exits:
+  south:
+    roomid: 1883
+    exitmessage: You walk back along the rail bed to the highway crossing.
+    mapdirection: south
+nouns:
+  bridge: >-
+    A through-truss railroad bridge, steel, painted black, its members connected
+    by rivets the size of your fist. It was built in the early 1950s to serve the
+    coal mining operations in the Navajo Nation. It carries a hundred million tons
+    of coal per decade across this gorge. Without it, the mines cannot ship their
+    product. Without the product, the power plants in the south cannot generate.
+    Without the generation, the air conditioners in Phoenix cannot run. There is
+    a logic to the target.
+  gorge: >-
+    The gorge below the bridge is sixty feet deep, its walls of red sandstone cut
+    by the same dry wash drainage system that carved the canyon country. At the
+    bottom, salt cedar -- invasive, water-stealing, problematic -- chokes the wash.
+    The invasion of the salt cedar is another thing the dam caused, the downstream
+    changes cascading through the ecosystem.
+  walkway: >-
+    The maintenance walkway runs the length of the bridge on the downstream side,
+    a three-foot-wide steel grate suspended over the gorge. The railing is rusted.
+    The walkway is for railroad maintenance workers who need access to the truss
+    connections. Or for people who need a closer look at where the stress concentrations
+    are highest.
+  ties: >-
+    The railroad ties are creosote-soaked Douglas fir, dark and reeking of
+    preservative in the desert heat. They are laid on steel cross-beams and
+    spiked with cut nails. When a heavy coal train crosses, the whole bridge
+    trembles, the ties flexing slightly, the steel singing with the load.
+spawninfo: []
+idlemessages:
+- The bridge creaks in the desert heat, the steel expanding, the rivets ticking.
+- 'Far down the tracks, a distant vibration: a coal train is coming. You have ten minutes.'
+- The smell of creosote railroad ties rises sharp and petrochemical in the afternoon heat.
+- A canyon wren sings from the gorge below, its descending trill echoing off the sandstone walls.
+- The maintenance walkway sways very slightly in the wind, its corroded railing giving a slight harmonic.
+- 'Coal dust has settled on everything near the track: grey film on red rock, the mine''s signature.'
+- The gorge below is full of shadow even in the afternoon. The walls are close enough that the sun only reaches the bottom for an hour at noon.

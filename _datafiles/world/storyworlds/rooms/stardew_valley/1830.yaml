@@ -1,0 +1,48 @@
+roomid: 1830
+zone: Stardew Valley
+title: The Mines Level 10
+description: >-
+  Roughly ten levels down, the mine opens into a wider chamber. <ansi
+  fg="itemname">Copper ore</ansi> veins run through the gray stone walls,
+  catching your torchlight in flashes of dull orange. <ansi
+  fg="itemname">Gems</ansi> of various kinds are embedded in the rock face —
+  amethyst, topaz, the faint blue glow of aquamarine. <ansi
+  fg="itemname">Slimes</ansi> of green and blue move through the far
+  shadows, bouncing with a horrible cheerfulness. The <ansi
+  fg="itemname">ladder</ansi> back up is ten minutes of climbing. Down here
+  the sounds of the surface world are completely gone. There is only the mine,
+  and the dark, and the ore waiting in the walls. The exit is <ansi
+  fg="exit">up</ansi>.
+mapsymbol: '|'
+maplegend: Mines Level 10
+biome: cave
+exits:
+  up:
+    roomid: 1829
+nouns:
+  copper: >-
+    Veins of copper ore running through the gray host rock like orange rivers
+    frozen mid-flow. The metal is still embedded in stone here, waiting for
+    a pickaxe and effort to extract it. It is not glamorous. It is the start
+    of everything useful.
+  gems: >-
+    Various gemstones embedded in the rock face, glinting in torchlight.
+    Amethyst in purple clusters. Topaz in warm orange. Aquamarine in cool
+    blue. They have been here for millions of years before anyone thought
+    to want them. They will be here long after.
+  slimes: >-
+    Green and blue slimes the size of large dogs, bouncing with an
+    unsettling enthusiasm. They are not intelligent. They are persistent.
+    Their tendency to split when struck in ways you do not fully anticipate
+    has surprised many overconfident miners. A careful approach is recommended.
+  ladder: >-
+    The wooden ladder leading back up toward the surface. From here, looking
+    up, you can see the faintest suggestion of warmer light ten levels above.
+    It is a reassuring sight. Worth remembering it is there.
+idlemessages:
+- 'A slime bounces against the far wall with a wet thud and splits into two smaller slimes, undeterred.'
+- The pickaxe rings against copper ore echo around the chamber, the sound doubled by the stone.
+- Water drips somewhere in the dark, patient and mathematical.
+- The mine breathes cold air up from the lower levels, carrying the smell of iron and deep earth.
+- Your torchlight catches the facets of an amethyst vein and throws violet shadows across the ceiling.
+- 'Somewhere below, level twenty or thirty, something moves. Too large to be a slime.'

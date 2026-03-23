@@ -1,0 +1,24 @@
+mobid: 396
+zone: back_to_the_future
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote tunes his guitar with careful attention, head tilted."
+  - "emote flexes his bandaged right hand and grimaces."
+  - "say Fellas, we're gonna need to take five."
+  - "emote talks quietly to the other musicians, working out a change."
+  - "emote holds the phone receiver toward the stage, grinning."
+  - "say My cousin Chuck is gonna love this."
+  - ""
+activitylevel: 20
+character:
+  name: Marvin Berry
+  description: >-
+    The bandleader of the Starlighters, a young Black man in a matching
+    blazer and skinny tie. He has a natural authority on stage that
+    the gym teacher standing in the wings does not. His right hand is
+    bandaged -- a recent injury -- which is causing some difficulty with
+    his guitar parts tonight. He has a phone call to make at exactly
+    the right moment.
+  raceid: 1
+  level: 5

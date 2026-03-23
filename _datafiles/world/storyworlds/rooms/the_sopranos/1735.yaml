@@ -1,0 +1,51 @@
+roomid: 1735
+zone: The Sopranos
+title: The Stugots
+description: >-
+  Tony's <ansi fg="12">boat</ansi>, the Stugots, moored at a marina slip in the
+  late afternoon light. A substantial <ansi fg="itemname">cruiser</ansi>, white
+  and clean, rocking slightly on the <ansi fg="itemname">water</ansi>. On the deck,
+  a pair of <ansi fg="itemname">fishing chairs</ansi> face out toward the open bay,
+  and you can see, beyond the marina mouth, the <ansi fg="itemname">open water</ansi>
+  of the Raritan Bay and beyond that the Atlantic. Tony comes out here to be someone
+  without a title. The boat smells of salt and marine diesel and something like
+  <ansi fg="8">freedom</ansi>, which on a boat in New Jersey means the temporary
+  suspension of everything waiting for you on shore. The water rocks the boat gently
+  and constantly. The <ansi fg="exit">dock</ansi> leads back to the highway.
+mapsymbol: B
+maplegend: The Stugots
+biome: shore
+exits:
+  dock:
+    roomid: 1725
+    mapdirection: south
+nouns:
+  boat: >-
+    The Stugots. Named in Italian for something that means approximately
+    'this shit' — or more precisely, something vulgar that expresses contempt
+    for everything unpleasant in life. Tony thought this was funny when he
+    named it. He still does.
+  cruiser: >-
+    A cabin cruiser, maybe thirty-five feet, well-maintained. The kind of boat
+    that required a serious amount of money to purchase and requires a moderate
+    amount of money to keep. Tony spends both without complaint.
+  water: >-
+    The Raritan Bay, grey-green in the afternoon light, moving in small regular
+    swells that rock the boat in a rhythm you could sleep to. Salt smell,
+    diesel smell, something living and cold underneath it all.
+  chairs: >-
+    Two fishing chairs bolted to the deck, facing out toward open water.
+    One of them is more worn than the other. Tony sits in the same chair
+    every time. This is the chair.
+  open: >-
+    Out past the marina mouth, the bay opens and then the Atlantic, and on
+    a clear day you can feel that openness even from the dock. Out there,
+    nobody knows Tony's name. Or if they do, it means something different.
+spawninfo: []
+idlemessages:
+- The boat rocks on the water in a slow, patient rhythm.
+- Gulls wheel overhead, crying at nothing, being gulls.
+- The marina is quiet at this hour. The other boats are empty and buttoned up.
+- Salt air comes off the bay in a clean flat gust and the boat turns slightly toward it.
+- 'The open water is out there, past the marina mouth: all the way to the horizon.'
+- Everything waiting on shore is still waiting, but out here it is very far away.

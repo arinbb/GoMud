@@ -1,0 +1,60 @@
+roomid: 1731
+zone: The Sopranos
+title: Dr. Melfis Office
+description: >-
+  A quiet <ansi fg="12">therapy room</ansi> that feels like the only room in this
+  whole world designed for honesty. Two <ansi fg="itemname">chairs</ansi> face each
+  other at a slight angle -- not confrontational, not avoidant, carefully calibrated.
+  A <ansi fg="itemname">bookshelf</ansi> lines one wall with serious spines. A
+  <ansi fg="itemname">painting</ansi> above the fireplace, abstract, something
+  you could look at for a long time and not be done looking. A small
+  <ansi fg="itemname">table</ansi> between the chairs holds a box of <ansi fg="itemname">tissues</ansi>
+  and a glass of water, always fresh, never mentioned. The room holds the particular
+  silence of a space that has absorbed a great many difficult truths. Outside the
+  window, <ansi fg="itemname">New Jersey</ansi> continues. In here, the light is
+  warm and nothing has to be explained. The waiting room is <ansi fg="exit">south</ansi>,
+  or go <ansi fg="exit">outside</ansi> to the highway.
+mapsymbol: T
+maplegend: Dr. Melfis Office
+biome: house
+exits:
+  south:
+    roomid: 1732
+  outside:
+    roomid: 1725
+    mapdirection: south
+nouns:
+  chairs: >-
+    Two chairs, facing each other at a slight angle. Not quite facing, not
+    quite away. The therapist's chair is slightly lower, slightly softer,
+    creating an almost imperceptible dynamic. The patient's chair is firmer,
+    more upright. You have to choose which one to sit in.
+  bookshelf: >-
+    DSM volumes. Object relations theory. Winnicott, Klein, Kohut. A few
+    novels. A framed certificate. The books of a mind that has been formally
+    trained in the architecture of other minds.
+  painting: >-
+    An abstract painting in warm ochres and blues, nothing specific in it,
+    something in it. You could stare at it for an hour and walk away with a
+    different feeling than when you started. This was an intentional choice.
+  tissues: >-
+    A box of tissues on the small table between the chairs. It is always
+    there. It is never mentioned. Its presence is a kind of permission.
+  water: >-
+    A glass of water, fresh, always there. A small courtesy that makes
+    a room feel like someone considered your needs before you arrived.
+  window: >-
+    Through the window, the ordinary New Jersey street. Cars, trees, a
+    dry cleaner. The world of appointments and errands and obligations.
+    In here, none of that.
+spawninfo:
+- mobid: 292
+  message: "<ansi fg=\"12\">Dr. Jennifer Melfi sits in her chair, notepad in her lap, waiting with the particular patience of someone who has been trained to wait without judgment.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The room is quiet in a way that invites you to fill the silence. This is intentional.
+- Dr. Melfi makes a small note in her notepad and looks up with an expression that reveals nothing.
+- The box of tissues sits on the table between the chairs, patient as furniture.
+- Light comes through the window and crosses the floor in a slow arc as the afternoon passes.
+- The water glass catches a gleam of light. Nobody has drunk from it yet today.
+- 'The painting holds whatever you bring to it: right now, something like longing.'

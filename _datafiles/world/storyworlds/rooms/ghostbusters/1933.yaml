@@ -1,0 +1,70 @@
+roomid: 1933
+zone: Ghostbusters
+title: Times Square
+description: >-
+  Times Square, 1984. The neon and the noise and the density of humanity packed
+  into two dozen city blocks, and now something new: a <ansi fg="itemname">enormous
+  white figure</ansi> moving down Broadway from the north, smiling with the beatific
+  joy of a balloon in a parade. The <ansi fg="itemname">Stay Puft Marshmallow Man</ansi>
+  is approximately 112 feet tall, dressed as a sailor, and visibly delighted by
+  the world. He is not malevolent. He was not chosen to be malevolent. He was chosen
+  because Ray Stantz, when asked to clear his mind, found that the image that rose to
+  fill it was the mascot from his favorite marshmallow brand. The city is fleeing.
+  The neon signs above are going dark as power is disrupted. Marshmallow rains down
+  from the figure's footfalls in gentle white chunks. The <ansi fg="itemname">theater
+  marquees</ansi> on 44th Street flash their last advertisements as the grid goes
+  unstable. The <ansi fg="itemname">sidewalk</ansi> shakes with each step. He is
+  two blocks away and approaching.
+mapsymbol: T
+maplegend: Times Square
+biome: city
+exits:
+  street:
+    roomid: 1921
+    mapdirection: south
+    exitmessage: You flee south toward the firehouse district.
+nouns:
+  figure: >-
+    The Stay Puft Marshmallow Man has a sailor hat, a blue collar, and the expression
+    of a cartoon mascot who has been given life and found it agreeable. He steps
+    between buildings with the care of someone trying not to spill a drink. He is
+    not trying to destroy Times Square. He is simply too large to move through it
+    without doing so. The smile never wavers. This is somehow worse.
+  marshmallow: >-
+    The marshmallow rains down from the figure's footfalls and the wake of his passage
+    -- fragments of a being that is simultaneously a physical entity and a manufactured
+    thought-form given mass by dimensional energy. The chunks are warm. They smell
+    exactly like marshmallow. Several food cart operators are filling bags. This is
+    New York. You find the opportunity.
+  marquees: >-
+    The theater marquees on 44th Street are advertising shows that are no longer
+    running because the audiences have fled. In their last moments of power before
+    the grid goes down: "A CHORUS LINE," "CATS," and, somehow, "GHOSTBUSTERS -- SEE
+    IT NOW." The last one was not there this morning. Nobody put it there. Nobody
+    will be able to explain it.
+  sidewalk: >-
+    The sidewalk shakes with each of the Stay Puft Marshmallow Man's footfalls, a
+    rhythm like a very friendly earthquake. The cracks in the pavement radiate from
+    each impact point in a pattern that, viewed from directly above, would resemble
+    the Ghostbusters logo. This is either a coincidence or isn't.
+spawninfo:
+- mobid: 389
+  maxwander: 0
+  forcehostile: true
+  level: 20
+  respawnrate: 5 real minutes
+  idlecommands:
+  - "emote takes one enormous step forward, shaking the ground."
+  - "emote smiles down at the city with serene goodwill."
+  - "emote crushes a parked car beneath one enormous foot."
+  - "emote sprays marshmallow from its wake as it moves."
+  - ""
+  - ""
+idlemessages:
+- The ground shakes. Stay Puft takes another step. Neon signs sway on their mounts.
+- A chunk of marshmallow the size of a sofa lands on the sidewalk nearby, perfectly fluffy.
+- The smile on the Stay Puft Marshmallow Man's face does not waver. If anything, it widens.
+- Car alarms go off in a cascade from north to south as each footfall passes through their range.
+- Someone in a second-floor window is filming this. Someone at ground level is filming this. Everyone is filming this. It will not come out well on film. It never does.
+- The power grid in this district flickers, browns out, and returns. Two blocks north, it does not return.
+- Stay Puft pauses at the intersection of Broadway and 45th and appears to be considering which way to go. He chooses south. Toward you.

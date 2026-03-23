@@ -904,6 +904,15 @@ func StripANSI(str string) string {
 	return ansi.ReplaceAllString(str, "")
 }
 
+// StrippedTagsLength returns the visible character length of a string
+// after removing XML-style <ansi ...> and </ansi> tags that haven't been
+// rendered to terminal escape codes yet.
+func StrippedTagsLength(str string) int {
+	xmlAnsi := regexp.MustCompile(`</?ansi[^>]*>`)
+	stripped := xmlAnsi.ReplaceAllString(str, "")
+	return len(stripped)
+}
+
 func FormatNumber(n int) string {
 	in := strconv.Itoa(n)
 	numOfDigits := len(in)

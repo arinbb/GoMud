@@ -1,0 +1,55 @@
+roomid: 1972
+zone: Nineteen Eighty Four
+title: Ministry of Love
+description: >-
+  <ansi fg="white">The Ministry of Love has no windows. The corridors are
+  white and blazingly bright, lit by fluorescent tubes that never dim.
+  The light is the same at midnight as at noon. There is no way to tell
+  what hour it is, what day it is, how long you have been here. The
+  walls are white. The floor is white. The
+  <ansi fg="white">guards</ansi> wear black uniforms and carry rubber
+  truncheons and have faces that express nothing. The air smells of
+  disinfectant and something underneath the disinfectant that is better
+  not to identify. This is the place where there is no darkness, the
+  place O'Brien promised. You did not understand, when he said it, that
+  it was a warning. A <ansi fg="exit">cell</ansi> is visible to the
+  east. The street is to the <ansi fg="exit">south</ansi>.</ansi>
+mapsymbol: L
+maplegend: Ministry of Love
+biome: house
+exits:
+  south:
+    roomid: 1963
+    mapdirection: south
+  cell:
+    roomid: 1973
+    mapdirection: east
+nouns:
+  guards: >-
+    They wear black uniforms and their faces, seen from the corner of your
+    eye, are the faces of people who have learned that their job requires
+    no expression. They carry rubber truncheons. They do not threaten.
+    They simply exist in the corridor with you, and you know what they are
+    for, and that is enough.
+  light: >-
+    Fluorescent. Never dims. There is no window to show outside. No clock.
+    No way to know what time it is or how long you have been here. The
+    light is so constant and so total that it becomes, eventually, a form
+    of darkness. You cannot see into the light. You can only see by it.
+  corridors: >-
+    White walls, white floor, white ceiling, all under the same blazing
+    light. You have been in this corridor long enough to stop measuring.
+    The doors are blank. The numbers on the doors mean nothing that
+    you can make out. One of them says 101. You have noticed this. You
+    try not to notice what you have noticed about it.
+spawninfo:
+- mobid: 408
+  message: 'A Thought Police officer stands in the white corridor, motionless, watching.'
+  respawnrate: 3 real minutes
+idlemessages:
+- '<ansi fg="white">The light never changes. You have been here long enough that your sense of time has dissolved entirely. Is it morning? Is it night? There is only the white light and the white walls.</ansi>'
+- '<ansi fg="white">A door opens somewhere down the corridor. Someone is brought out. Their face has the expression of someone who has already given up the face question.</ansi>'
+- '<ansi fg="white">The disinfectant smell is very clean and very precise. Underneath it, something else. You do not pursue the identification.</ansi>'
+- '<ansi fg="white">A guard passes without looking at you. This is worse, somehow, than being looked at.</ansi>'
+- '<ansi fg="white">Somewhere behind one of the blank white doors, someone is speaking in a low, careful voice. You cannot make out the words. You do not need to.</ansi>'
+- '<ansi fg="white">The light is the same as always. The light is always the same. There is no darkness here. O''Brien told the truth about exactly one thing.</ansi>'

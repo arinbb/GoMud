@@ -1,0 +1,21 @@
+-
+  Supported:
+    "pierre": ["*"]
+  Conversation:
+    - ["#1 say Do you know what JojaMart charges for a basic seed packet? It is cheaper than mine, I know. But the seeds are not the same."]
+    - ["#1 emote leans in with the intensity of a man who has been thinking about this for some time"]
+    - ["#1 say My seeds come from stock I have cultivated for years. Each variety is suited to this valley specifically. JojaSeeds are generic."]
+    - ["#1 say You plant JojaSeeds, you get a JojaHarvest. Passable. Consistent. And completely without soul."]
+    - ["#1 emote straightens up and smooths his apron with dignity"]
+    - ["#1 say Shop local. Grow local. That is all I am saying."]
+-
+  Supported:
+    "pierre": ["*"]
+  Conversation:
+    - ["#1 say I heard Morris is trying to buy the Community Center land again."]
+    - ["#1 emote shakes his head with restrained outrage"]
+    - ["#1 say That building has been part of this town since before JojaMart existed. Before Joja Corp existed."]
+    - ["#1 say We used to have festivals there. Harvest celebrations. The whole town together."]
+    - ["#1 emote pauses, something private crossing his face"]
+    - ["#1 say I took Caroline there for our first dance, actually. Before everything got complicated."]
+    - ["#1 say It should still be there. For us. Not for their warehouse."]

@@ -1,0 +1,60 @@
+roomid: 2004
+zone: Seinfeld
+title: The Lobby and Street
+description: >-
+  The <ansi fg="8">lobby</ansi> of 129 West 81st Street opens onto the Upper West
+  Side of Manhattan with the unhurried confidence of a block that has always been this
+  block. The <ansi fg="itemname">mailboxes</ansi> line the inner wall. The <ansi fg="itemname">door</ansi>
+  is heavy glass, slightly warped. Outside: the particular grey-brown light of a New
+  York morning, <ansi fg="itemname">Broadway</ansi> a block to the west, Central Park
+  a block to the east, the whole city arranging itself around the premise that this
+  block matters. A <ansi fg="itemname">newsstand</ansi> stands at the corner, doing
+  reasonable business. Everything feels exactly as consequential as it is, which is
+  to say: not very, and also entirely. The hallway is <ansi fg="exit">up</ansi>. Monks
+  Cafe is to the <ansi fg="exit">north</ansi>. The Soup Stand is to the <ansi fg="exit">east</ansi>.
+  Yankee Stadium is to the <ansi fg="exit">south</ansi>. The J. Peterman Office is
+  to the <ansi fg="exit">west</ansi>. Other destinations lurk in the geometry of the city.
+mapsymbol: L
+maplegend: Lobby and Street
+biome: city
+exits:
+  up:
+    roomid: 2001
+  north:
+    roomid: 2005
+  east:
+    roomid: 2007
+  south:
+    roomid: 2009
+  west:
+    roomid: 2011
+nouns:
+  mailboxes: >-
+    Standard New York apartment mailboxes. Several of them have names that
+    you recognize: Seinfeld, Kramer, various other tenants who are never
+    named but are always implied. The mail is mostly catalogs. There is one
+    pink slip indicating a package that was not delivered.
+  door: >-
+    The lobby door is heavy glass with a brass handle that has been polished
+    by ten thousand hands. It opens onto West 81st Street. Beyond it: the
+    city, indifferent and enormous, ready to provide material.
+  newsstand: >-
+    A newsstand on the corner run by a man who has been there longer than
+    some buildings. He sells the Post, the Daily News, the Times, and
+    various magazines. He knows which regulars buy which paper and has
+    zero interest in discussing it.
+  broadway: >-
+    Broadway, the avenue, running diagonally through the Upper West Side's
+    grid like a street that has been here since before the grid and is not
+    going to adjust. Traffic on Broadway is always moderate and always feels
+    like more than it is.
+spawninfo: []
+idlemessages:
+- A cab goes by without stopping for the person who flagged it. This is New York.
+- Two people walk past having a conversation that is clearly about nothing and is clearly very important.
+- The newsstand guy changes out the front-page display. Another day in the city.
+- Somewhere nearby, a truck is backing up and beeping with the persistence of something that will not stop.
+- A woman walks past with a very small dog. The dog is wearing a coat. The coat is more expensive than most human coats.
+- The crosswalk signal counts down. A man jaywalk regardless. This is correct.
+- Three pigeons hold a meeting in the gutter and then disperse without resolving anything.
+- The smell of a hot dog cart drifts over from Broadway. It is ten in the morning. Nobody cares.

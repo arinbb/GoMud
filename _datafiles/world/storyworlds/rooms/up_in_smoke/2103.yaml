@@ -1,0 +1,68 @@
+roomid: 2103
+zone: Up in Smoke
+title: The Highway
+description: >-
+  The <ansi fg="itemname">405 freeway</ansi>, eight lanes of pure Los Angeles sprawl,
+  moving at that particular pace that is not quite traffic and not quite speed.
+  <ansi fg="itemname">Palm trees</ansi> line the median, ridiculous and beautiful,
+  their fronds waving at nobody. In the distance the <ansi fg="itemname">LA skyline
+  </ansi> shimmers behind its own exhalations. The <ansi fg="itemname">van</ansi>
+  is out there somewhere, rolling with the flow. Exits connect in every direction:
+  <ansi fg="exit">north</ansi> to Pedros lowrider, <ansi fg="exit">east</ansi> to the
+  concert parking lot, <ansi fg="exit">south</ansi> toward the border crossing. The
+  <ansi fg="exit">police car</ansi> is off to the side. The <ansi fg="exit">drive-in</ansi>
+  is off to the west. The <ansi fg="exit">beach</ansi> is north.
+mapsymbol: H
+maplegend: The Highway
+biome: road
+exits:
+  north:
+    roomid: 2100
+    exitmessage: You exit the freeway and cruise back into East LA.
+  east:
+    roomid: 2105
+    exitmessage: You take the exit toward the rock concert parking lot.
+  south:
+    roomid: 2107
+    exitmessage: The 5 South opens up. The border is a long flat drive away.
+  police car:
+    roomid: 2110
+    secret: false
+    mapdirection: west
+    exitmessage: You approach the unmarked car parked on the shoulder.
+  drive-in:
+    roomid: 2111
+    secret: false
+    mapdirection: east
+    exitmessage: You pull off at the drive-in sign.
+  beach:
+    roomid: 2113
+    secret: false
+    mapdirection: north
+    exitmessage: You head west toward Venice Beach.
+  van:
+    roomid: 2112
+    secret: false
+    mapdirection: south
+    exitmessage: You pull up alongside the van.
+nouns:
+  freeway: >-
+    Eight lanes of American ambition, slightly congested, slightly glorious.
+    The concrete has been here since the 1950s. The cars get newer; the traffic
+    stays the same. Everybody is going somewhere. Very few people know exactly where.
+  palms: >-
+    The palm trees along the median are tall and improbable, their shaggy tops
+    swaying in smog-warm air. They are not native to California. Neither is most
+    of California.
+  skyline: >-
+    The LA skyline: a handful of glass towers above a flat expanse of smaller
+    things. It looks like somebody started building a city and then got distracted
+    by all the sunshine and never quite finished.
+idlemessages:
+- Traffic thickens briefly, then relaxes. The freeway breathes.
+- A bumper sticker on the car ahead reads something you cannot quite make out.
+- 'A radio from another car overlaps with yours for a moment: two songs, one road.'
+- The palm trees do not move. Then the wind hits and they all move at once.
+- A state highway patrol cruiser passes in the fast lane. Nobody speeds up.
+- The smog horizon turns from white to orange as the afternoon deepens.
+- The van is out there somewhere, rolling along at exactly the speed limit.

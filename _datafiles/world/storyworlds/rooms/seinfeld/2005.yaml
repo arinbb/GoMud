@@ -1,0 +1,63 @@
+roomid: 2005
+zone: Seinfeld
+title: Monks Cafe
+description: >-
+  <ansi fg="yellow">Monks Cafe</ansi> -- or more precisely, the diner at the corner of
+  Broadway and 112th Street that is Monks Cafe for purposes of this world, and the booth,
+  the particular booth where everything happens, is <ansi fg="exit">available</ansi>
+  toward the back. The <ansi fg="itemname">booth</ansi> is a red vinyl horseshoe against
+  the wall, holding the memory of every conversation that has ever happened in it. The
+  <ansi fg="itemname">counter</ansi> runs the length of the diner, chrome stools, a
+  <ansi fg="itemname">coffee maker</ansi> that is always running, a glass case of
+  <ansi fg="itemname">pastries</ansi> that nobody ever orders. The <ansi fg="itemname">menu</ansi>
+  is laminated and comprehensive. The waitress knows the order. She knows what you want.
+  You want coffee and to talk about something that is almost nothing. The exit to the
+  <ansi fg="exit">street</ansi> is to the south.
+mapsymbol: M
+maplegend: Monks Cafe
+biome: city
+exits:
+  south:
+    roomid: 2004
+  available:
+    roomid: 2006
+    mapdirection: north
+nouns:
+  booth: >-
+    The booth. Red vinyl, slightly worn on the edge where George always sits.
+    The table is formica, clean, bearing the circular ghosts of coffee mugs.
+    This booth has hosted conversations about the mechanics of double-dipping,
+    the ethics of lying about being a marine biologist, the correct etiquette
+    for re-gifting, and the question of whether a particular behavior was or
+    was not 'the move.' It is hallowed ground.
+  counter: >-
+    The lunch counter runs the length of the diner, eight chrome stools bolted
+    to the floor. Nobody ever sits at the counter. The counter is for people
+    who come in alone and leave quickly. This is not the cast.
+  coffee: >-
+    The coffee at Monks is the coffee of all diners everywhere: dark, hot,
+    slightly bitter, served immediately and refilled before you have finished
+    the first cup. It is perfect. It is exactly what coffee at a diner should be.
+  menu: >-
+    Laminated, extensive, everything is reasonable. The Big Salad is not on
+    this menu technically but it is available if you know to ask. The key
+    is that you have to specify Big Salad explicitly and clearly. They will
+    not volunteer it.
+  pastries: >-
+    The glass case holds muffins, a danish, something with poppy seeds. They
+    look good. Nobody orders them. There is something philosophically consistent
+    about food that sits in a case in a diner that is all about talking rather
+    than eating and never gets ordered.
+spawninfo:
+- mobid: 421
+  message: '<ansi fg="yellow">George Costanza drops into the booth with the relieved sigh of a man who has made it through another morning of not having to be anywhere in particular.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The coffee maker hisses and produces another carafe with the automatic competence of something that does its job.
+- A waitress refills a mug that is already three-quarters full. This is correct.
+- The bell above the door rings. Someone has entered or left. The diner absorbs them either way.
+- From the booth in the back, the sound of a conversation that is making something out of nothing.
+- The lunch counter stools are all empty. The stools are fine with this.
+- A bus goes by on Broadway, visible through the front window, enormous and indifferent.
+- The pop music on the radio is the generic pop of a diner that has not thought about its radio in years.
+- Someone is eating a Big Salad in the back. It is noticeably larger than a regular salad and yet priced the same.

@@ -1,0 +1,26 @@
+mobid: 422
+zone: seinfeld
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote rolls her eyes at something that does not require specification."
+  - "emote pushes George lightly on the shoulder with the force of someone making a point."
+  - "say Oh my God. Oh my GOD. You are not going to believe what happened."
+  - "emote describes a terrible date to nobody in particular, gesturing emphatically."
+  - "emote dances briefly, unselfconsciously, badly, and then stops."
+  - ''
+  - "say Get OUT."
+  - "emote straightens a catalog proof with the efficiency of someone who knows exactly what she wants and what she is doing."
+activitylevel: 25
+character:
+  name: Elaine Benes
+  description: >-
+    A woman in her early thirties, dark hair, dressed with the put-together
+    confidence of a New Yorker who has figured out the city on her own terms.
+    She moves with purpose and speaks with directness -- no hedging, no
+    softening, point made and moved on. Her face is expressive in the way
+    that people are expressive when they have opinions and those opinions are
+    regularly correct. She has terrible taste in men, which she knows, which
+    does not stop her. She dances badly and with complete commitment.
+  raceid: 1
+  level: 8

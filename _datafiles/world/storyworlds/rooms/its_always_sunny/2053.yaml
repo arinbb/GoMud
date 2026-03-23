@@ -1,0 +1,55 @@
+roomid: 2053
+zone: its_always_sunny
+title: The Water Park
+description: >-
+  The water park is closed. This is immediately apparent from the <ansi fg="8">silent
+  slides</ansi> — dry, their surfaces faded by sun and years of no use —
+  and the <ansi fg="itemname">drained wave pool</ansi> at the center, its
+  concrete basin bone-white in the sun. <ansi fg="itemname">Signs</ansi>
+  on poles advertise attractions that are not currently available and have
+  not been available for some time. The concession stands are shuttered.
+  The lifeguard towers are empty. On a raft in the middle of the drained pool,
+  inexplicably, sits a <ansi fg="itemname">ham</ansi> in sunglasses. This
+  is Frank's AIDS raft. This is the float from the Gang's AIDS benefit run,
+  which did not go as planned, in ways that it would take some time to explain.
+  The ham has been here for days. The ham is doing fine. To the
+  <ansi fg="exit">street</ansi> is the way back.
+mapsymbol: WP
+maplegend: The Water Park
+biome: land
+exits:
+  street:
+    roomid: 2044
+    mapdirection: south
+nouns:
+  slides: >-
+    The water slides arc above the park in shapes designed to imply speed and
+    fun, both of which require water, which is not present. The slide surfaces
+    have faded from whatever bright colors they once were to a uniform sun-
+    bleached pale. Someone has climbed to the top of the tallest one and
+    sat there. The scuff marks suggest this was recent and involved someone
+    wearing dress shoes. The Gang has been here.
+  wave_pool: >-
+    The wave pool without water is an entirely different architectural experience.
+    The concrete basin is large and curved and full of nothing. At the deep end,
+    dried waterlines mark where the water used to be. At the very bottom, a
+    single pool noodle lies in the stillness. On a raft in the center of all
+    this, a ham in sunglasses considers the situation.
+  ham: >-
+    The ham is wearing sunglasses. The sunglasses are secured with rubber bands
+    around the back. The ham is on a raft. The raft is in a drained wave pool.
+    The ham has FRANK written on it. This is the AIDS float. This is Frank
+    Reynolds's contribution to a charity event. The ham is not helping anyone.
+    The ham is being Frank.
+  signs: >-
+    Attraction signs on poles around the park advertise rides with names like
+    TUNNEL OF FRIENDSHIP and THE SPLASH ZONE and WAVE WORLD. None of these
+    things exist in their advertised form. The signs remain, cheerful and
+    false, the marketing of a defunct dream.
+idlemessages:
+- The ham in sunglasses sits on its raft in the drained wave pool. The sunglasses catch the sun. The ham does not acknowledge this.
+- 'A slide creaks in the wind, the sound of a large plastic object remembering its purpose and finding it inaccessible.'
+- 'The lifeguard tower is empty but the chair at the top has a can of something in the cupholder. The can is old. Someone was here and decided not to take it.'
+- 'One of the attraction signs has come loose and spins slowly on its pole: TUNNEL OF FRIENDSHIP rotating, rotating, the friendship going in circles.'
+- 'The drained pool echoes. Your footstep, if you take one, bounces back from the concrete walls in a way that makes the pool feel very large and very empty.'
+- From the direction of the parking lot, a seagull has found the concession stand area and is investigating with the thorough optimism of seagulls. It will find nothing. It will keep looking.

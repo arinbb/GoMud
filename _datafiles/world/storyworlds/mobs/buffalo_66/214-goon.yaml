@@ -1,0 +1,25 @@
+mobid: 214
+zone: buffalo_66
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote watches the room with hooded eyes, missing nothing."
+  - "say Everybody pays what they owe. Everybody."
+  - "emote rolls a coin across his knuckles, back and forth."
+  - ''
+  - ''
+  - "emote smiles, but it does not reach his eyes."
+  - "say You know what I like about this city? Nobody asks questions."
+activitylevel: 25
+character:
+  name: Goon
+  description: >-
+    A large man with the build of someone who used to be athletic and
+    is now just big. He wears a leather jacket over a dark shirt, open
+    at the collar. His face has the battered geography of someone who
+    has been in many fights and won most of them. He sits in a corner
+    booth with the ease of a man who owns the room, or at least rents
+    the violence in it. There is something almost charming about him,
+    which makes him more dangerous, not less.
+  raceid: 1
+  level: 15

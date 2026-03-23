@@ -1,0 +1,49 @@
+roomid: 1307
+zone: Buffalo 66
+title: The Diner
+description: >-
+  A <ansi fg="itemname">diner</ansi> with red vinyl <ansi fg="itemname">booths</ansi>
+  and a long formica <ansi fg="itemname">counter</ansi>. The place is nearly empty.
+  A <ansi fg="itemname">jukebox</ansi> in the corner glows with amber light but plays
+  nothing. The <ansi fg="itemname">windows</ansi> are fogged from the temperature
+  difference between inside and out. A <ansi fg="itemname">waitress</ansi> stands
+  behind the counter, staring at nothing. Coffee is fifty cents and it tastes like
+  it. The <ansi fg="15">fluorescent</ansi> lights give everything a flat, timeless
+  quality — it could be any decade in here. The Brown house is back to the
+  <ansi fg="exit">north</ansi>. A road leads <ansi fg="exit">east</ansi> toward a
+  bowling alley.
+mapsymbol: R
+maplegend: Diner
+biome: house
+exits:
+  north:
+    roomid: 1305
+  east:
+    roomid: 1308
+nouns:
+  diner: >-
+    The kind of diner that exists in every rust belt city. It opened in 1962
+    and has not been renovated since. The menu has not changed either.
+  booths: >-
+    Red vinyl booths, cracked and repaired with tape. Each one holds the ghost
+    impressions of a thousand lonely meals.
+  counter: >-
+    Formica counter with chrome trim. A row of stools with red vinyl seats,
+    most of them empty. A glass case holds pies of uncertain vintage.
+  jukebox: >-
+    A Wurlitzer, its curved glass glowing amber. The selections are all from
+    another era. Nobody has put a quarter in it tonight.
+  windows: >-
+    Fogged from the inside, the world beyond them reduced to smears of
+    headlight and streetlight. You could draw in the condensation but you
+    would not know what to write.
+  waitress: >-
+    She has been here since the beginning. She will be here at the end. She
+    does not smile but she is not unfriendly. She just is.
+idlemessages:
+- The coffee pot burbles on the warmer, making the only sound in the diner.
+- A car passes outside, its headlights sweeping across the fogged windows.
+- The waitress refills a cup that no one asked to be refilled. Force of habit.
+- The jukebox hums to itself, waiting for someone to choose a song that will not come.
+- A napkin dispenser catches the light, chrome gleaming dully in the fluorescence.
+- The pie in the case has been there for a while. It will be there for a while longer.

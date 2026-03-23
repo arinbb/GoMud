@@ -1,0 +1,73 @@
+roomid: 1849
+zone: Far Cry 5
+title: The Bliss Fields
+description: >-
+  The fields extend in every direction, dense with <ansi fg="purple">Bliss flowers</ansi>
+  — violet-white blooms shoulder-high, their pollen a constant soft mist that
+  hangs in the air and makes the light look filtered through something beautiful
+  and toxic. The world here is <ansi fg="purple">softer</ansi>. The edges blur.
+  Colors are more saturated. <ansi fg="itemname">Drugged cultists</ansi> move
+  through the flowers like sleepwalkers, their faces beatific, their movements
+  slow and choreographed as a dream. <ansi fg="itemname">Faith</ansi> moves
+  through them — or something that might be Faith, or might be the Bliss making
+  you see her — touching flowers, humming a hymn that seems to come from
+  everywhere at once. The mountains are still visible above the fields,
+  real and hard and far away. The river is back <ansi fg="exit">west</ansi>.
+  A secret <ansi fg="exit">vision</ansi> path leads deeper south, if you are
+  willing to breathe more deeply.
+mapsymbol: F
+maplegend: Bliss Fields
+biome: farmland
+exits:
+  west:
+    roomid: 1848
+  vision:
+    roomid: 1850
+    mapdirection: south
+    secret: true
+nouns:
+  flowers: >-
+    The Bliss flowers, up close. The petals are almost translucent, lit
+    from within by something biological or chemical or perhaps just your
+    perception of them shifting under their influence. Each flower exhales
+    a small breath of pollen when the wind moves. Standing in the field
+    is like standing inside the drug. You are standing in the field.
+  cultists: >-
+    The robed figures of Faith's followers, moving through the flowers
+    with the slow grace of the heavily medicated. Their eyes are open.
+    They see you but do not focus on you. They are elsewhere. The Bliss
+    has taken them to a place they seem to prefer. This is the worst
+    thing about Faith's work: the people she takes seem, genuinely, happy.
+  faith: >-
+    Faith Seed — or her image, or the Bliss projecting your expectation
+    of her. She is tall, pale, dressed in white that matches the flower
+    petals. She moves through the field without disturbing a single bloom.
+    When she looks at you, the air between you feels like it vibrates.
+    She is smiling. She is always smiling. Something in the smile is a door
+    that opens onto nothing.
+  pollen: >-
+    The Bliss pollen hangs visible in the air here — tiny purple-white
+    particles catching the light, drifting. It enters through your lungs.
+    It enters through your skin, perhaps. It makes the world into the
+    version of itself the drug wants you to see: beautiful. Peaceful.
+    Chosen.
+spawninfo:
+- mobid: 337
+  message: Faith Seed drifts between the flowers like she was grown here, her white dress brushing the petals.
+  idlecommands:
+  - emote dances slowly through the flowers, her bare feet leaving no marks in the soil.
+  - say Everything you fear — it was never real. This is real. This peace is real.
+  - ""
+  - emote hums a hymn that seems to come from the flowers themselves as much as from her.
+  - say Joseph chose this place for me. He knew. He always knows what his family needs.
+  - ""
+  - emote lets pollen drift from her fingertips like she gathered it from the air itself.
+  respawnrate: 3 real minutes
+idlemessages:
+- The Bliss pollen shifts in a slow spiral around you. Your thoughts come slower. This is not unpleasant.
+- Faith moves between the flowers, humming. The hum resonates in your chest like a tuning fork finding its note.
+- A robed figure kneels in the flowers, arms out, face up, breathing deeply. Their expression is complete.
+- The flowers nod in a wind you cannot feel. The mountains above are very clear. Everything else is soft.
+- 'From the flowers, from everywhere, her voice: ''You are already forgiven. You were always forgiven.'''
+- The purple light deepens as the day moves. Or the Bliss changes your perception of the light. The same thing.
+- Someone sits in the flowers a few yards away. They were not there before. They are smiling at nothing.

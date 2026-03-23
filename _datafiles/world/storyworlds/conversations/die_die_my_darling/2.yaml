@@ -1,0 +1,24 @@
+-
+  Supported:
+    "harry": ["anna"]
+  Conversation:
+    - ["#1 say She needs to stay in the room today. The old woman's orders. Don't give her anything to eat unless it's what I bring."]
+    - ["#2 emote doesn't look up from the table she is scrubbing."]
+    - ["#1 say Are you listening to me?"]
+    - ["#2 say I'm listening."]
+    - ["#1 say She asks you for anything — anything at all — you come to me first. Understood?"]
+    - ["#2 emote scrubs harder."]
+    - ["#2 say I understand."]
+    - ["#1 emote watches her for a moment and seems satisfied."]
+-
+  Supported:
+    "harry": ["anna"]
+  Conversation:
+    - ["#1 say The car's not going anywhere. I want you to know that."]
+    - ["#2 say I didn't ask about the car."]
+    - ["#1 say I'm telling you. So you don't get any ideas about helping her."]
+    - ["#2 emote sets down her cloth and finally looks at him."]
+    - ["#2 say I'm not helping anyone. I'm cleaning the kitchen."]
+    - ["#1 emote holds her gaze for a moment."]
+    - ["#1 say Good. Keep it that way."]
+    - ["#2 emote waits until he leaves, then picks up the cloth again, her expression complicated."]

@@ -1,0 +1,27 @@
+mobid: 233
+zone: goodnight_moon
+hostile: false
+maxwander: 2
+activitylevel: 40
+idlecommands:
+- "emote scurries along the baseboard, claws making the softest possible sound."
+- ""
+- "emote sits up on its haunches and watches with bright, seed-dark eyes."
+- ""
+- "emote nibbles something microscopic in the corner."
+- ""
+- "emote vanishes behind a piece of furniture and reappears elsewhere."
+- ""
+character:
+  name: a little mouse
+  description: >-
+    The mouse. There is always a mouse in this room -- on every page, in
+    every scene, the same small mouse doing small mouse things in the
+    corners and edges of each illustration. It is gray-brown, about the
+    size of a large thumb. Its nose twitches constantly. Its whiskers catch
+    the firelight. Its eyes are bright and small and see everything. It
+    does not want to be petted. It does not need to be. It is simply here,
+    on every page, a small constant presence, the room's quiet familiar,
+    the thing that watches while everything else says goodnight.
+  raceid: 10
+  level: 1

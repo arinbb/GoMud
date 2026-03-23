@@ -1,0 +1,43 @@
+-
+  Supported:
+    "jerry seinfeld": ["kramer"]
+  Conversation:
+    - ["#2 say Jerry. Jerry, listen."]
+    - ["#1 say What."]
+    - ["#2 say A coffee table book. About coffee tables."]
+    - ["#1 emote stares"]
+    - ["#1 say A coffee table book."]
+    - ["#2 say About coffee tables. And here's the thing: it unfolds into a coffee table."]
+    - ["#1 say The book itself becomes a coffee table."]
+    - ["#2 emote spreads his hands. Yes. Exactly."]
+    - ["#1 say That's insane."]
+    - ["#2 say It's brilliant, Jerry."]
+    - ["#1 emote considers it. He hates that he is considering it."]
+-
+  Supported:
+    "jerry seinfeld": ["kramer"]
+  Conversation:
+    - ["#2 say I've been doing a lot of thinking."]
+    - ["#1 say About what."]
+    - ["#2 say Everything. The big picture. What are we doing here?"]
+    - ["#1 say What are we doing here?"]
+    - ["#2 say Specifically, I'm thinking about a pizza place where you make your own pie."]
+    - ["#1 emote blinks"]
+    - ["#2 say They give you the dough, the toppings, the whole setup. You make it yourself."]
+    - ["#1 say That's -- I mean that exists."]
+    - ["#2 say Not the way I'm picturing it."]
+    - ["#1 say I'm afraid to know how you're picturing it."]
+-
+  Supported:
+    "jerry seinfeld": ["kramer"]
+  Conversation:
+    - ["#2 say You know what I've been thinking?"]
+    - ["#1 say I don't."]
+    - ["#2 say The beach."]
+    - ["#1 say The beach."]
+    - ["#2 say The smell of the beach. Not the ocean -- the beach. You can't get that smell anywhere."]
+    - ["#1 say Okay."]
+    - ["#2 say I want to bottle it. Cologne. Called 'The Beach.'"]
+    - ["#1 emote waits for the part where this stops making sense. It has already stopped."]
+    - ["#2 say I've got the bottle. It's shaped like a wave."]
+    - ["#1 say Of course it is."]

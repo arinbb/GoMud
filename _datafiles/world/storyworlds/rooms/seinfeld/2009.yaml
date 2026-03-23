@@ -1,0 +1,52 @@
+roomid: 2009
+zone: Seinfeld
+title: Yankee Stadium
+description: >-
+  The offices of the <ansi fg="yellow">New York Yankees</ansi>, specifically the
+  desk of the assistant to the traveling secretary. George Costanza works here,
+  which is a fact that still doesn't fully parse even after all these episodes.
+  The <ansi fg="itemname">desk</ansi> is George's desk, and it has been used for things
+  that are not the job and the job has been done poorly as a result. A <ansi fg="itemname">Yankees
+  pennant</ansi> hangs on the wall. The <ansi fg="itemname">stadium</ansi> is visible
+  through the window, the great bowl of it, grass cut in diamond patterns, the most
+  beautiful thing George has access to without deserving. A <ansi fg="itemname">nameplate</ansi>
+  reads G. Costanza, which is a sentence that should not be possible but is. The exit
+  to the <ansi fg="exit">street</ansi> is to the north.
+mapsymbol: Y
+maplegend: Yankee Stadium
+biome: city
+exits:
+  north:
+    roomid: 2004
+nouns:
+  desk: >-
+    Georges desk. The nameplate is real and reads G. Costanza. On the desk:
+    a phone, a stack of papers he has not read, a baseball he was supposed
+    to return to someone, and a drawer that is mostly snacks. George Costanza
+    has a desk at Yankee Stadium. This is simply a fact about the world.
+  pennant: >-
+    A Yankees pennant, navy blue and white, the interlocking NY. It hangs
+    with the particular gravity of something that has earned its place. George
+    did not earn his place. The pennant did. These are separate things.
+  stadium: >-
+    Through the window, the field. The grass is cut in a diamond pattern that
+    is impossible to look at without feeling something. The Yankees have played
+    here for decades. George Costanza has worked here for a run of episodes
+    that represented the peak of his professional life, which is saying something
+    about both the Yankees and George Costanza.
+  nameplate: >-
+    G. Costanza. George Costanza. Assistant to the Traveling Secretary. This
+    is the greatest achievement of Georges professional life, obtained largely
+    by accident and maintained through a series of baffling misunderstandings
+    in his favor. The nameplate is real. The achievement is real. The man
+    behind it is still George.
+spawninfo: []
+idlemessages:
+- The view of the field through the window is extraordinary. George Costanza looks at it every day.
+- A phone rings at the desk and nobody answers it because George is somewhere else being George.
+- The baseball on the desk should have been returned. It has not been returned. It is not going to be returned.
+- An interoffice envelope sits on the desk, unopened, probably containing something George should have dealt with weeks ago.
+- Someone walks past the office door, glances in, looks slightly confused, and continues walking.
+- The Yankees pennant hangs with the equanimity of an organization that will outlast its strangest employees.
+- A memo about travel arrangements for the road trip sits in the inbox, requiring action that is not forthcoming.
+- The field is perfectly maintained. The desk is chaos. These two things coexist at Yankee Stadium.

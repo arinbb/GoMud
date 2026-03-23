@@ -1,0 +1,52 @@
+roomid: 1727
+zone: The Sopranos
+title: Satriales Back Room
+description: >-
+  A <ansi fg="8">back room</ansi> behind a curtained doorway, cooler than the store
+  and considerably more private. A <ansi fg="itemname">card table</ansi> with four
+  mismatched chairs occupies the center. Playing <ansi fg="itemname">cards</ansi> are
+  laid out from an interrupted game, the hands face-down. A bare <ansi fg="itemname">bulb</ansi>
+  hangs overhead on a twisted cord, throwing a circle of yellow light and leaving the
+  corners in shadow. A <ansi fg="itemname">phone</ansi> on the wall. A metal
+  <ansi fg="itemname">locker</ansi> in the corner with a combination lock. The room
+  smells of old coffee and cigarette smoke that has been accumulating since before
+  you were born. This is where decisions are made. You feel the weight of that without
+  being told. The store is back <ansi fg="exit">south</ansi>.
+mapsymbol: B
+maplegend: Back Room
+biome: house
+exits:
+  store:
+    roomid: 1726
+    mapdirection: south
+nouns:
+  table: >-
+    A folding card table of the kind that has been in this back room since
+    1974 and will be here long after everyone who uses it is gone. The felt
+    surface is worn to bare green in the spots where elbows rest.
+  cards: >-
+    The hand is face-down. Seven-card stud, from the look of it. The pot
+    in the middle is not small. Someone stepped away from this game and has
+    not come back. Maybe they will.
+  bulb: >-
+    A single bare bulb on a twisted cord, a hundred watts of unambiguous
+    light. Nothing decorative about it. The shadows it makes in the corners
+    are intentional. You can only see what the light lets you see.
+  phone: >-
+    A rotary phone on the wall, the kind that nobody uses anymore. The kind
+    that is used exclusively in this room, for specific purposes, when specific
+    things need to be communicated.
+  locker: >-
+    A gray metal locker, padlocked. You don't touch it. You know without
+    being told that you don't touch it.
+spawninfo:
+- mobid: 296
+  message: "<ansi fg=\"8\">Bobby Bacala is wedged into one of the mismatched chairs, large and somehow gentle, looking at the face-down card hand with quiet attention.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The bare bulb swings slightly on its cord, sending shadows moving across the walls.
+- A truck passes on the street outside and the building shudders very slightly.
+- The cards on the table have not moved. The game is waiting.
+- The combination lock on the locker glints in the light and you look away.
+- Someone coughs in the store room, behind the curtain. Nobody mentions it.
+- The phone on the wall is silent. When it rings it will not be for casual reasons.

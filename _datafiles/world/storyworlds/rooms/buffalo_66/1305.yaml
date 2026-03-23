@@ -1,0 +1,51 @@
+roomid: 1305
+zone: Buffalo 66
+title: The Brown House
+description: >-
+  A small, suffocating <ansi fg="itemname">ranch house</ansi> on a dead-end street.
+  The <ansi fg="itemname">carpet</ansi> is brown shag, worn flat in the traffic
+  paths. Wood-paneled <ansi fg="itemname">walls</ansi> close in from every side. A
+  <ansi fg="itemname">recliner</ansi> faces a television that is always on. Family
+  <ansi fg="itemname">photos</ansi> line the hallway — but not a single one includes
+  Billy. <ansi fg="6">Buffalo Bills</ansi> memorabilia covers every surface: pennants,
+  bobbleheads, signed footballs, commemorative plates. The house smells of
+  cigarettes, meatloaf, and something harder to name. The kitchen is to the
+  <ansi fg="exit">east</ansi>, the street back to the <ansi fg="exit">north</ansi>,
+  and a road leads <ansi fg="exit">south</ansi> toward the diner.
+mapsymbol: H
+maplegend: Brown House
+biome: house
+exits:
+  north:
+    roomid: 1301
+  east:
+    roomid: 1306
+  south:
+    roomid: 1307
+nouns:
+  carpet: >-
+    Brown shag carpet, matted and stained. It absorbs sound, light, and hope
+    in equal measure.
+  walls: >-
+    Fake wood paneling from the 1970s. Dark, close, oppressive. The kind of
+    walls that make a room feel smaller than it is.
+  recliner: >-
+    A brown vinyl recliner, cracked and sagging. It has the permanent
+    impression of Jimmy Brown's body pressed into it, like a fossil.
+  photos: >-
+    Framed family photos line the hall. Jan and Jimmy. Jan at a Bills game.
+    Jan and Jimmy at a Bills game. Not one photo of Billy. Not a single one.
+  memorabilia: >-
+    Bills pennants. Bills plates. Bills foam fingers. A signed Jim Kelly
+    jersey in a frame. This is not a house. It is a shrine.
+spawninfo:
+- mobid: 213
+  message: "<ansi fg=\"8\">A distant man sits in the recliner, humming to himself.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The television murmurs from the living room, a constant low-grade drone.
+- A Bills pennant on the wall has come unstuck at one corner and hangs crooked.
+- The refrigerator in the kitchen kicks on with a shudder you can feel through the floor.
+- Cigarette smoke hangs in layers near the ceiling, undisturbed for years.
+- The house settles with a creak. It has been settling for decades and is not done yet.
+- A photo frame on the hall table has fallen face-down. No one has picked it up.

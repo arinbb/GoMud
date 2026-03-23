@@ -1,0 +1,25 @@
+questid: 120
+name: Wayne's World
+description: >-
+  Experience the world of Wayne Campbell and Garth Algar — Aurora, Illinois's
+  greatest cable access television hosts. Visit the basement studio, hang at
+  Stan Mikita's Donuts, see Crucial Taunt at the Gasworks, meet Alice Cooper
+  backstage, attempt the Stairway to Heaven at the music store, and survive
+  Benjamin Kane's corporate ambitions.
+reward:
+  experience: 5000
+  item_id: 180
+  playermessage: >-
+    You have done Aurora proud. You've stood in the greatest basement in
+    cable access history, had donuts with the locals, witnessed Crucial Taunt
+    play the Gasworks, bowed before Alice Cooper, gotten denied Stairway,
+    and read the fine print of corporate ambition. As a souvenir, you carry
+    Garth's glasses — slightly smudged, bent on one side, and capable of
+    showing you exactly the frequencies that matter.
+steps:
+- description: Enter Wayne's basement. Party time.
+- description: Visit Stan Mikita's Donuts.
+- description: See Crucial Taunt at the Gasworks.
+- description: Meet Alice Cooper backstage.
+- description: Try to play guitar at the music store.
+- description: Survive Benjamin Kane's corporate takeover attempt.

@@ -1,0 +1,25 @@
+mobid: 472
+zone: paris_texas
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote watches from the doorway without coming closer."
+  - "emote takes a step toward Travis and stops."
+  - "say Do you remember me?"
+  - "emote moves a toy from one end of the shelf to the other."
+  - "emote stands beside Travis without saying anything."
+  - ""
+  - "emote follows Travis at a distance of about three feet."
+activitylevel: 30
+character:
+  name: Hunter Henderson
+  description: >-
+    A seven-year-old boy with dark eyes and a serious face that breaks
+    into sudden brightness when something surprises him. He is wearing
+    a striped shirt. He has lived with Walt and Anne for as long as he
+    can clearly remember. He has learned caution, which is not the same
+    as fear. He approaches Travis the way you approach something that
+    might be real or might be a mistake — carefully, from a distance,
+    watching before committing.
+  raceid: 1
+  level: 1

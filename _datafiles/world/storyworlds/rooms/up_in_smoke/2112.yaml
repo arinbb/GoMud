@@ -1,0 +1,45 @@
+roomid: 2112
+zone: Up in Smoke
+title: The Van
+description: >-
+  The Van. A 1964 Chevy Econoline with custom bodywork that defies easy description:
+  the exterior panels have a <ansi fg="itemname">texture</ansi> that is almost woody,
+  almost fibrous, deeply organic, as if the vehicle itself grew here. The
+  <ansi fg="itemname">interior</ansi> is cave-warm and smells like an old-growth
+  forest and something else, something botanical and sweet that fills the lungs
+  with a slow warm haze. The <ansi fg="itemname">engine</ansi> runs -- somehow --
+  though nobody is driving. The van just rolls, content in its own direction.
+  The windows are slightly fogged from the inside. The whole thing radiates an
+  improbable peace. Exit <ansi fg="exit">highway</ansi> leads back to the 405.
+mapsymbol: V
+maplegend: The Van
+biome: house
+exits:
+  highway:
+    roomid: 2103
+    mapdirection: east
+    exitmessage: You step out of the van and back onto the highway. The air outside seems thin by comparison.
+nouns:
+  texture: >-
+    The body panels of the van are green-brown and slightly spongy under the
+    fingers, with a grain running horizontal. They are warm to the touch. They
+    smell like the forest floor after rain. Whatever this van is made of, it is
+    not steel.
+  interior: >-
+    The inside of the van is a warm dim space: a mattress, a rug, some kind
+    of hanging fabric on the walls that may or may not be structural. Everything
+    is the same color: the color of something natural, something grown, something
+    that started as a seed and became a vehicle through an unlikely process that
+    Pedro and Man decline to fully explain.
+  engine: >-
+    The engine is running. You cannot see it. You cannot reach it. You do not
+    know what it runs on, exactly, though you have a strong suspicion that the
+    answer is somehow related to the smell.
+idlemessages:
+- The van rolls at a steady thirty-five miles per hour in the slow lane, content.
+- A warm haze drifts from the interior and out the cracked window into the freeway air.
+- The engine makes a deep, contented sound, like a purr, like something organic.
+- The body panels of the van flex very slightly on a curve, like ribs expanding.
+- Someone in a passing car stares at the van. The van does not notice. The van is fine.
+- The warm smell in here deepens. Your thoughts soften at the edges pleasantly.
+- The van changes lanes by itself, smoothly, signaling, checking the mirror. Perfect driver.

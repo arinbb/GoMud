@@ -1,0 +1,51 @@
+roomid: 1981
+zone: Forbidden Planet
+title: The Desert Approach
+description: >-
+  The track winds through a landscape of alien <ansi fg="yellow">rock formations</ansi>
+  and crystalline <ansi fg="itemname">flora</ansi> that hum in registers too low
+  for the ear alone. The <ansi fg="yellow">ground</ansi> is packed and ancient,
+  layered with millennia of mineral deposits in stripes of ochre, rust, and
+  pale gold. Strange <ansi fg="itemname">fossils</ansi> emerge from the rock
+  faces -- nothing that resembles any Earth creature. The air carries a faint
+  ozone smell, as if lightning passed here recently. Behind you to the
+  <ansi fg="exit">west</ansi>, the C-57D gleams on its landing struts. Ahead to
+  the <ansi fg="exit">east</ansi>, the dome of Morbius's house becomes visible
+  between two columns of twisted stone.
+mapsymbol: D
+maplegend: Desert Approach
+biome: desert
+exits:
+  west:
+    roomid: 1980
+  east:
+    roomid: 1982
+nouns:
+  formations: >-
+    The rock columns of Altair IV rise twenty, thirty feet in smooth
+    extrusions. They appear almost cast, as if some ancient force shaped them
+    deliberately. Krell machinery, perhaps, or geological forces no geologist
+    has ever studied. Each column vibrates at a slightly different frequency.
+    Standing between them, you feel the harmonics in your teeth.
+  flora: >-
+    Clusters of crystalline tubes rise from the rocky soil, ranging from
+    finger-width to the diameter of a drainpipe. They are not glass and not
+    quartz -- something else entirely, something that grows. Each one is
+    hollow and slightly warm to the touch.
+  fossils: >-
+    The rock strata hold impressions of creatures: radially symmetrical things
+    with too many limbs, articulated shells unlike any arthropod, forms that
+    suggest intelligence even in death. These died twenty centuries ago. The
+    Krell survived them. Then something killed the Krell too.
+  ground: >-
+    The ancient surface of Altair IV, compressed and mineralised over millions
+    of years. It bears no footprints except your own -- and one other set.
+    Deep, widely spaced, with no clear shape. As if something enormous walked
+    here without touching the ground quite right.
+idlemessages:
+- The crystal formations chime softly with no wind to explain it.
+- A distant sound -- not quite a roar, not quite a scream -- echoes from somewhere far away and below.
+- The shadows between the rock columns are very dark for this time of day. They seem to pool there.
+- 'You notice the fossils in the rock face: creatures that lived here and died here. So did their successors.'
+- The ozone smell intensifies, then fades. Something charged passed through here. Something that left no tracks.
+- Through a gap in the rock columns, you see Morbius's house -- modernist, clean, utterly alien in this desert.

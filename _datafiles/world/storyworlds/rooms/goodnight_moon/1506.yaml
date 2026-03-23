@@ -1,0 +1,79 @@
+roomid: 1506
+zone: Goodnight Moon
+title: Under the Bed
+description: >-
+  You have crawled under the bed and discovered the world that exists
+  beneath all warm rooms at bedtime: enormous and dim and full of the
+  things that have been lost and forgotten. The <ansi fg="itemname">dust</ansi>
+  here is soft as a dream and moves when you breathe. A <ansi
+  fg="itemname">lost sock</ansi> lies in the far corner, one of a pair
+  that stopped being a pair a very long time ago. Three <ansi
+  fg="itemname">dust bunnies</ansi> -- real ones, or real enough --
+  sit among the dust, watching you with eyes like small dark seeds.
+  They do not seem alarmed. They have been here longer than the room.
+  The floor above -- the ceiling of your world down here -- is <ansi
+  fg="10">green</ansi> like everything else in this place, and through
+  the gap at the bed's edge you can see the hearthrug, the rocking
+  chair's runners moving, the fire's amber glow from across the room.
+  A single <ansi fg="itemname">coin</ansi> lies near the center, tarnished
+  and old. A folded piece of <ansi fg="itemname">paper</ansi> sits
+  against the baseboard. Down here the room sounds different: muffled,
+  low, the creak of the springs above you when the dream shifts, the
+  ticking of the clock amplified by the floorboards. This is where the
+  night lives when it is not at the window.
+mapsymbol: U
+maplegend: Under the Bed
+biome: house
+exits:
+  up:
+    roomid: 1500
+nouns:
+  dust: >-
+    Soft gray-white, accumulated over years, disturbed now by your arrival
+    into slow drifting clouds. It smells of time, of stored warmth, of old
+    things resting. The dust bunnies sit within it like islands. You leave
+    footprints coming in. Each footprint fills slowly as the dust resettles.
+  lost sock: >-
+    A small striped sock, once white, now the color of what-used-to-be-white.
+    Where its partner is, nobody can say now. The pair stopped being a pair
+    in an afternoon, the way pairs sometimes do -- not dramatically, not by
+    choice, simply by the ordinary separations of life. The sock does not
+    seem to mind. It has been alone down here long enough to make peace with it.
+  dust bunnies: >-
+    Three of them, not metaphorical but actual -- or actual enough for down
+    here. They are the color of dust, which is to say the color of everything
+    that has ever been shed from a warm body in a warm room: skin and wool and
+    breath and sleep. Their eyes are seeds. They regard you without judgment.
+    They have seen everything that happens in rooms at bedtime.
+  coin: >-
+    A small coin, denomination uncertain, tarnished to the color of pewter.
+    It rolled under here at some point -- off the mantel, from a pocket,
+    out of a small hand -- and settled at last in the middle of the floor,
+    where it has been resting, very still, for a long time. It is not worth
+    anything in particular. It is worth exactly as much as a lost coin found
+    under a bed, which is considerable.
+  paper: >-
+    A small square of paper, folded twice, against the baseboard. You unfold
+    it. It is blank. Or it was blank and now has something on it -- a word
+    you can almost read, in handwriting that is very small and very deliberate.
+    It might say 'hush.' It might say something else. The light down here is
+    too dim to be certain.
+spawninfo:
+- mobid: 233
+  message: A little mouse appears from the darkest corner under the bed, nosing at the old coin.
+  respawnrate: 4 real minutes
+  idlecommands:
+  - "emote noses the old coin, rolling it slightly with a tiny clink."
+  - ""
+  - "emote sits up among the dust bunnies, cleaning its whiskers."
+  - ""
+  - "emote watches you from the far corner, perfectly still."
+  - ""
+idlemessages:
+- The dust settles around you. The world above continues, muffled and amber.
+- One of the dust bunnies moves. Slightly. Imperceptibly. Toward the dark.
+- The springs above you creak once, then are still. Something in the dream shifted.
+- The ticking of the clock is different from down here. More immediate. More insistent.
+- A draft from somewhere moves the dust in a slow spiral and then stops.
+- The lost sock has not moved. It is very good at staying in one place.
+- The mouse finds the old coin again and seems pleased by it, for the hundredth time.

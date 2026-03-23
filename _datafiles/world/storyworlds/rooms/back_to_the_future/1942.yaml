@@ -1,0 +1,66 @@
+roomid: 1942
+zone: Back to the Future
+title: Lous Cafe
+description: >-
+  A gleaming 1950s lunch counter along the south wall, chrome stools
+  bolted to the floor, a rotating pie display, and a Coca-Cola machine
+  humming in the corner. The <ansi fg="itemname">soda fountain</ansi>
+  runs the full length of the counter; behind it, Lou Caruthers moves
+  fast, filling glasses and cracking wise. Booths line the north wall,
+  upholstered in cracked red vinyl. A jukebox in the corner cycles
+  through <ansi fg="itemname">rock and roll</ansi> 45s. The whole place
+  smells of bacon grease, coffee, and vanilla milkshake. On a stool near
+  the end of the counter, George McFly stares dreamily at the window,
+  pen tapping his notebook.
+mapsymbol: L
+maplegend: Lous Cafe
+biome: house
+exits:
+  south:
+    roomid: 1941
+  cafe:
+    roomid: 1952
+    mapdirection: north
+    secret: true
+nouns:
+  counter: >-
+    Fourteen chrome-and-red stools lined up at a white Formica counter.
+    Every surface gleams. Lou keeps it spotless, because spotless is
+    the only way Lou keeps things. The counter is where you sit if you
+    want fast service and do not mind overhearing other people's business.
+  jukebox: >-
+    A Wurlitzer 1015, lit up like a cathedral window. It cycles through
+    45s: Chuck Berry, Little Richard, Eddie Cochran. The volume is set
+    just loud enough to fill the diner without making conversation
+    impossible. Someone has punched in "Earth Angel" three times running.
+  "soda fountain": >-
+    The soda fountain occupies the entire back wall: chrome taps, syrup
+    pumps, a malted-milk machine, an ice cream chest. Lou operates it
+    like a pianist, without looking at his hands. The milkshakes here
+    are magnificent. The Pepsi Free, however, does not exist yet.
+  booth: >-
+    Red vinyl booths, cracked at the seams, patched with electrical tape
+    in two places. The tables have little individual jukeboxes -- a
+    nickel a song. Someone has carved "Biff + Lorraine" into the
+    tabletop by the window, which is inaccurate and would horrify Lorraine.
+  "coca-cola": >-
+    A red-and-white Coca-Cola vending machine, ten cents a bottle. It
+    hums with refrigerator contentment. This is the beverage of the
+    1950s. Everything else -- Pepsi Free, Tab, anything diet or
+    caffeine-free -- is a concept that has not arrived yet.
+idlemessages:
+- Lou wipes down the counter with a damp cloth, not breaking his rhythm.
+- The jukebox clicks to a new 45 and the opening bars of "Earth Angel" fill the diner.
+- George McFly scribbles something in his notebook, crosses it out, stares into space.
+- A couple in a booth shares a milkshake with two straws, oblivious to everyone else.
+- 'Lou hollers toward the kitchen: "Order up!"'
+- A group of letterman-jacketed boys crowds into the front booth, loud and full of themselves.
+- The Coca-Cola machine hums a half-step flat, a minor chord of refrigeration.
+- Biff Tannen's laugh carries from somewhere nearby, thick and humorless.
+spawninfo:
+- mobid: 392
+  message: "George McFly is hunched over a notebook at the counter, lost in his own world."
+  respawnrate: 3 real minutes
+- mobid: 398
+  message: "Goldie Wilson sweeps near the booths, his broom moving with conviction."
+  respawnrate: 4 real minutes

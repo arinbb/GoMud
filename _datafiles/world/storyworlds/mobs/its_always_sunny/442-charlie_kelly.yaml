@@ -1,0 +1,27 @@
+mobid: 442
+zone: its_always_sunny
+hostile: false
+maxwander: 0
+activitylevel: 40
+angrycommands: []
+idlecommands:
+  - emote eats something directly from a can. It may be cat food. It is definitely cat food.
+  - "say Wait, wait, I got a great idea. Okay, hear me out. The Waitress."
+  - emote writes something on a scrap of paper in large crayon letters. The spelling is heroically wrong.
+  - emote grabs a broom and sweeps the floor with tremendous dedication. The floor does not get cleaner.
+  - say Guys. GUYS. I got this. I handle the rats. This is my thing. I am the rat king.
+  - emote sniffs something from a paper bag with an expression of pure contentment.
+character:
+  name: Charlie Kelly
+  description: >-
+    A wiry, frenetic man in a green jacket who moves with the anxious energy
+    of someone who has huffed paint and eaten cat food and is not sure which
+    one is affecting his cognition more. He carries a mop or a broom or
+    some other implement of janitorial labor that he uses with enormous
+    dedication and zero effect. His handwriting, visible on various scrawled
+    notes around the bar, suggests either childhood trauma or a deeply personal
+    relationship with letters as decorative rather than functional objects.
+    He is the only one of the Gang who does actual work. The bar would collapse
+    without him. He gets no credit.
+  raceid: 1
+  level: 4

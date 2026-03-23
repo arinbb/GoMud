@@ -1,0 +1,23 @@
+mobid: 397
+zone: back_to_the_future
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote wags his tail at something only he can see."
+  - "emote sniffs the DeLorean with great interest."
+  - "emote barks once at the flux capacitor, then sits back down."
+  - "emote noses at his empty food bowl."
+  - "emote circles the workbench three times before settling."
+  - "emote looks at Doc Brown with calm confidence, then looks away."
+  - ""
+activitylevel: 10
+character:
+  name: Einstein
+  description: >-
+    A large, shaggy white sheepdog with an expression of serene canine
+    contentment. Einstein was the first living creature to travel
+    through time, an accomplishment he neither sought nor understood.
+    He appears no worse for it. He smells faintly of time travel,
+    which is to say he smells of ozone and dog.
+  raceid: 4
+  level: 2

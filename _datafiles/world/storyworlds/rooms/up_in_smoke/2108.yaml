@@ -1,0 +1,43 @@
+roomid: 2108
+zone: Up in Smoke
+title: Tijuana
+description: >-
+  A dusty commercial street just south of the border, 1978. A row of <ansi fg="itemname">
+  cantinas</ansi> runs along one side, their doorways dark and welcoming against the
+  afternoon heat. <ansi fg="itemname">Donkeys</ansi> stand in the shade of a wall,
+  patient and photogenic, rented out for tourist photographs for a price negotiated
+  entirely through eye contact. <ansi fg="itemname">Souvenir stalls</ansi> overflow
+  with painted pottery, velvet paintings, leather goods of ambiguous provenance.
+  The street smells like dust and frying things and diesel exhaust. Everything costs
+  less than it does on the other side. Everything is the same thing on both sides.
+  The <ansi fg="exit">north</ansi> road leads back to the border crossing.
+mapsymbol: J
+maplegend: Tijuana
+biome: road
+exits:
+  north:
+    roomid: 2107
+    exitmessage: You head back toward the crossing, joining the northbound queue.
+nouns:
+  cantinas: >-
+    Low-ceilinged rooms with cold beer and music from the radio and a bartender
+    who has seen everything and regards it all with equal warmth. The cerveza
+    is cold and cheap and comes in the same bottle it always came in.
+  donkeys: >-
+    Two donkeys painted with stripes to resemble zebras, wearing sombreros,
+    standing in the shade with the philosophical patience of animals that
+    have been doing this longer than their owners and will be doing it long
+    after. They are, in their way, professionals.
+  stalls: >-
+    Wooden stalls draped in merchandise: velvet paintings of bullfighters and
+    saints, ceramic skulls painted in primary colors, leather wallets and
+    belts tooled with eagles. All of it is available. All of it is the price
+    you negotiate, not the price on the sign.
+idlemessages:
+- A vendor calls out to you from a stall, gesturing at a rack of painted ceramics.
+- One of the donkeys turns its head to look at you. You look back. A moment passes.
+- 'Music from one of the cantinas: something with a trumpet, something for dancing.'
+- The dust rises briefly in a small whirl and then settles back to its original positions.
+- A kid runs past with a paper bag and great urgency and no explanation.
+- The afternoon light turns the whitewashed walls gold. Everything looks richer than it is.
+- Somebody is grilling something somewhere nearby. The smoke drifts across the road.

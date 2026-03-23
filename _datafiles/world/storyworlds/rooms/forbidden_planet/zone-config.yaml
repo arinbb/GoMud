@@ -1,0 +1,15 @@
+name: Forbidden Planet
+roomid: 1980
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: desert
+mutators:
+- mutatorid: krell-resonance
+idlemessages:
+- The alien sun Altair hangs low and merciless in a sky the color of bottle glass.
+- A subsonic hum rises from somewhere beneath the rock, felt more than heard.
+- The desert floor shimmers with heat. In the distance, something crystalline catches the light.
+- 'The silence here is total and alien: no wind, no insects, no birdsong. Just the hum.'
+- 'You feel watched. Not by anything alive -- by something older, vast, and indifferent.'
+- The green-tinted atmosphere gives every shadow a strange, underwater quality.

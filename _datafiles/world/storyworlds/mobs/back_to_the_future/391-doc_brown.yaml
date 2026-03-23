@@ -1,0 +1,25 @@
+mobid: 391
+zone: back_to_the_future
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say Great Scott!"
+  - "emote scribbles furiously on a blackboard, chalk squealing."
+  - "emote holds up a schematic and squints at it from several angles."
+  - "emote talks to Einstein in a low voice, explaining something technical."
+  - "emote checks his wristwatch, then a wall clock, then calculates the difference."
+  - "emote paces the length of the garage three times, counting steps."
+  - "say If my calculations are correct, when this baby hits 88 miles per hour..."
+  - ""
+activitylevel: 30
+character:
+  name: Doc Brown
+  description: >-
+    A man in his mid-60s with a wild corona of white hair and the
+    intense, unfocused eyes of a man who spends most of his time
+    looking at things that are not visible to others. He wears a
+    radiation suit left half-unzipped. His hands move constantly.
+    He is either a genius or someone who has had a very specific kind
+    of breakdown, and the distinction may not matter.
+  raceid: 1
+  level: 12

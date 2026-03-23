@@ -1,0 +1,25 @@
+-
+  Supported:
+    "george washington hayduke": ["bonnie abbzug"]
+  Conversation:
+    - ["#1 emote looks at the canyon wall for a long moment.", "#1 say The bridge. I keep thinking about the bridge."]
+    - ["#2 say You keep thinking about everything. That is the problem.", "#2 emote does not look up from her journal."]
+    - ["#1 say Not everything. Specific things. Power lines. Bridges. The dam.", "#1 emote drinks his beer."]
+    - ["#2 say The dam is not specific. The dam is enormous. The dam is Hayduke's white whale.", "#2 emote looks up now."]
+    - ["#1 say A whale you can blow up.", "#1 emote almost smiles."]
+    - ["#2 emote closes her journal.", "#2 say That is either the best or the worst metaphor I have ever heard."]
+    - ["#1 say Have another beer.", "#1 emote holds one out.", "#2 emote takes it.", "#2 say You are impossible."]
+    - ["#1 say I know.", "#1 emote goes back to staring at the fire."]
+-
+  Supported:
+    "bonnie abbzug": ["george washington hayduke"]
+  Conversation:
+    - ["#1 say We cannot keep doing this indefinitely. They will catch us eventually.", "#1 emote maps the canyon with her eyes."]
+    - ["#2 say Eventually is a long time out here.", "#2 emote opens a beer."]
+    - ["#1 say George.", "#1 say I am serious."]
+    - ["#2 emote sets down his beer and looks at her directly.", "#2 say So am I."]
+    - ["#1 say What is the plan after the dam?"]
+    - ["#2 say After the dam is after the dam. We are not there yet.", "#2 emote picks up his beer again."]
+    - ["#1 emote stares at him for a long moment.", "#1 say You have not thought that far ahead."]
+    - ["#2 say The canyon has been here for four hundred million years. I have time.", "#2 emote goes back to the fire."]
+    - ["#1 emote opens her journal.", "#1 say I am writing that one down."]

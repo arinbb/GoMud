@@ -1,0 +1,24 @@
+-
+  Supported:
+    "winston smith": ["julia"]
+  Conversation:
+    - ["#1 emote writes in the diary with the pen turned away from the telescreen."]
+    - ["#2 emote leans in close to whisper, her face angled away from the walls.", "#2 say I found coffee. Real coffee. Not the Victory kind."]
+    - ["#1 emote stops writing. His face does something it normally does not allow.", "#1 say Where did you get it?"]
+    - ["#2 say Don't ask. Just drink it.", "#2 emote produces a small paper packet from somewhere inside her overalls."]
+    - ["#1 say You know what this is. This room. What it means.", "#1 emote says this quietly."]
+    - ["#2 say It means we're here. Right now. In a room with no telescreen.", "#2 say That is more than most people get."]
+    - ["#1 emote looks at the window. Outside the prole woman is singing.", "#1 say If there is hope it lies in the proles."]
+    - ["#2 say Then we should hope. While the coffee lasts.", "#2 emote pours the coffee. The smell is extraordinary."]
+-
+  Supported:
+    "julia": ["winston smith"]
+  Conversation:
+    - ["#1 say I hid a chocolate bar behind the loose brick in corridor seven. On the left, third from the stairs."]
+    - ["#2 emote makes a note of this without moving. His eyes say: I have heard you.", "#2 say How long have you been doing this?"]
+    - ["#1 say Years. Before I met you.", "#1 emote says this matter-of-factly, without drama."]
+    - ["#2 say The Party says—", "#2 emote stops."]
+    - ["#1 say I know what the Party says. That is not the same as what the Party does.", "#1 say They are corrupt. All the way down. I'm just less hypocritical about it."]
+    - ["#2 emote considers this for a long time.", "#2 say You are going to get us both killed."]
+    - ["#1 say Probably.", "#1 emote laughs. The laugh is quiet and genuine.", "#1 say But not today."]
+    - ["#2 emote breaks a square of chocolate and hands half to Julia.", "#2 say Not today."]

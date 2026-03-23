@@ -1,0 +1,22 @@
+questid: 220
+name: The Monkey Wrench Gang
+description: >-
+  Four eco-saboteurs in the American Southwest. The canyon country is being
+  destroyed. The dam is built. The mine is running. The billboard is standing.
+  Join the gang, do the work, survive the standoff.
+reward:
+  experience: 5000
+  item_id: 230
+  playermessage: >-
+    You have run with the monkey wrench gang across the canyon country of
+    Utah and Arizona. As a souvenir, you receive a monkey wrench -- heavy,
+    oiled, scarred from use, the kind of tool that can fix engines or stop
+    them depending on who holds it and why.
+steps:
+- description: Arrive at the Lonely Dell -- Lees Ferry, where it begins.
+- description: Float the Colorado River through the red rock canyons.
+- description: Watch Doc Sarvis burn a billboard on the mesa.
+- description: Monkey wrench the bulldozers in the equipment yard.
+- description: Stand at Glen Canyon Dam and understand what was lost.
+- description: Make camp in the hidden canyon with the gang.
+- description: Survive the final standoff in the box canyon.

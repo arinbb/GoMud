@@ -1,0 +1,54 @@
+roomid: 2022
+zone: Harold and Maude
+title: The Open Grave
+description: >-
+  A <ansi fg="8">freshly dug grave</ansi> at the far end of the cemetery, the
+  earth piled neatly beside it. The <ansi fg="itemname">hole</ansi> is perhaps
+  six feet deep and six feet long -- the precise dimensions of a human life,
+  it turns out. Two <ansi fg="itemname">shovels</ansi> lean against a nearby
+  oak tree. The <ansi fg="10">grass</ansi> at the edge is dark with turned soil.
+  Harold stands at the <ansi fg="itemname">edge</ansi> and looks down with an
+  expression that is not morbid at all -- it is the look of someone doing very
+  careful thinking about something very important. Below, the <ansi fg="8">earth</ansi>
+  is cool and dark, waiting without impatience. Back to the <ansi fg="exit">south</ansi>
+  lies the cemetery.
+mapsymbol: O
+maplegend: Open Grave
+biome: land
+exits:
+  south:
+    roomid: 2021
+    exitmessage: You step back from the edge, back into the sunlit cemetery.
+nouns:
+  hole: >-
+    The hole is exact. Precise. Whoever dug it was not being careless -- every
+    wall is vertical, the corners neat. It is like a room with no ceiling and
+    only a dirt floor. Harold finds something reassuring in its plainness.
+    No hedging. No euphemism. Just a hole in the ground, the size of a person.
+  shovels: >-
+    Two long-handled shovels, the blades dark with soil. The handles are worn
+    smooth from use. These are working tools. Honest tools. They have dug
+    many holes and they will dig many more and they do not pretend otherwise.
+  edge: >-
+    Standing at the edge, you can see your shadow falling down into the dark.
+    It is a strange feeling -- your shadow is already there, already in the ground.
+    Harold visits this kind of edge often. He does not find it threatening.
+    He finds it clarifying.
+  earth: >-
+    Dark California earth, smelling of minerals and deep time. The pile beside
+    the grave will go back in, of course. That is how it works. In. Out. In.
+    The cycle does not need an opinion about itself.
+  grass: >-
+    The grass at the grave's edge is thick and green, roots reaching into
+    the same earth that holds everyone who ever lived. It does not know it
+    is growing at the edge of something. Or perhaps it does. Plants have been
+    here longer than grief.
+idlemessages:
+- Harold stands at the edge of the grave and breathes, slowly, watching his breath.
+- A bird sings somewhere in the oak above, indifferent to the grave, or perhaps because of it.
+- The pile of displaced earth smells of minerals and roots and deep old time.
+- A cloud moves across the sun and the grave goes briefly dim, then gold again.
+- Harold sits at the edge, feet dangling over nothing, looking perfectly serene.
+- The two shovels lean together against the oak like old friends resting after work.
+- Wind moves the long grass at the grave's edge, leaning everything one direction.
+- 'Harold says quietly, to no one: ''Every passing minute is another chance to turn it all around.'''

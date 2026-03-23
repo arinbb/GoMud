@@ -1,0 +1,27 @@
+mobid: 241
+zone: waynes_world
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote drums a quick Neil Peart fill on his knees. He's good. He's really good."
+  - "say Excellent."
+  - "emote adjusts his glasses with one finger, a characteristic gesture of recalibration."
+  - "emote looks up suddenly, noticing something nobody else has noticed."
+  - "say Sometimes I think I can hear frequencies other people can't. Is that weird?"
+  - "emote plays a soft drum roll on the arm of the couch, eyes closed."
+  - ""
+  - ""
+  - "say I once dislocated my shoulder playing a drum fill. I finished the fill first."
+  - "emote hums a few bars of Foxy Lady very quietly, as if to himself."
+activitylevel: 45
+character:
+  name: Garth Algar
+  description: >-
+    Blonde, bespectacled, and possessed of a nervous energy that masks extraordinary
+    competence. He drums on every available surface — his knees, the armrest, the
+    counter at Stan Mikita's — with the hands of someone who has been practicing
+    since he could reach a snare. His glasses are large and round and slightly
+    smudged. He is shy with people he doesn't know and completely himself with
+    people he does. He is secretly very brave. He is secretly many things.
+  raceid: 1
+  level: 5

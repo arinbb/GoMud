@@ -1,0 +1,61 @@
+roomid: 1886
+zone: The Monkey Wrench Gang
+title: The Strip Mine
+description: >-
+  The earth has been <ansi fg="8">terraced and opened</ansi> in a series of enormous
+  concentric steps, each one fifty feet below the last, descending into the ground like
+  a wound. <ansi fg="8">Dragline cranes</ansi> stand at the upper rim, their booms
+  pointing at the sky like accusations. The smell is of blasted rock and diesel and
+  coal dust, a smell that belongs to another world entirely from the canyon country
+  outside the fence. <ansi fg="red">The red rock has been ripped away</ansi> to expose
+  the grey coal seam beneath, and the grey has spread outward from the mine like a
+  bruise. <ansi fg="8">Haul roads</ansi> zigzag down to the pit floor where trucks
+  the size of houses crawl back and forth. A chain-link fence marks the perimeter.
+  A <ansi fg="8">hard-hatted operator</ansi> watches the equipment from a platform,
+  eating a sandwich, not looking up. To the <ansi fg="exit">north</ansi>, the desert
+  road leads back toward the highway. To the <ansi fg="exit">east</ansi>, or through
+  the fence to the <ansi fg="exit">bulldozer yard</ansi>, the heavy equipment is parked
+  in rows.
+mapsymbol: S
+maplegend: Strip Mine
+biome: desert
+exits:
+  north:
+    roomid: 1883
+  east:
+    roomid: 1887
+  bulldozer:
+    roomid: 1887
+    mapdirection: east
+nouns:
+  draglines: >-
+    The dragline cranes are among the largest machines ever built, their booms
+    extending three hundred feet, their buckets capable of moving a hundred tons
+    of earth in a single swing. They exist to make possible the systematic removal
+    of the landscape. They are very good at what they do.
+  coal: >-
+    The coal seam is visible in the pit walls, a dark band running through the
+    grey rock. It was once a swamp forest, three hundred million years ago.
+    The trees fell and rotted and compressed and became this. It took three
+    hundred million years to make. It will take approximately forty years to burn.
+  fence: >-
+    A chain-link fence topped with barbed wire marks the mine perimeter. There are
+    signs every hundred feet: DANGER. NO TRESPASSING. AUTHORIZED PERSONNEL ONLY.
+    In Hayduke's opinion, authorization is a concept that requires interrogation.
+  trucks: >-
+    The haul trucks moving along the pit floor are so large that their tires are
+    twelve feet tall. From up here, they look like toys. From down there, they
+    are terrifying. Everything at this scale is terrifying and nothing about it
+    was decided by the people who live downstream.
+spawninfo:
+- mobid: 365
+  message: A hard-hatted operator climbs out of a cab and lights a cigarette, squinting at the pit.
+  respawnrate: 5 real minutes
+idlemessages:
+- A dragline swings its massive boom and deposits a load of rock into a waiting truck far below.
+- The diesel smell is thick and constant, a smell that announces the industrial era wherever it goes.
+- 'Red rock and grey coal side by side in the pit wall: the landscape before and after.'
+- The hard-hatted operator finishes his sandwich and crumples the paper bag without looking up.
+- A conveyor belt runs from the pit to a processing facility, carrying coal dust and the future.
+- 'A haul truck negotiates the switchbacks below, its engine a deep bass note felt more than heard.'
+- The fence casts a grid of shadow on the packed earth, organizing the landscape into ownership.

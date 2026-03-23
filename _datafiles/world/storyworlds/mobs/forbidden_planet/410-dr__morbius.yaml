@@ -1,0 +1,27 @@
+mobid: 410
+zone: forbidden_planet
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote traces a line of Krell script with one finger, murmuring a translation under his breath."
+  - ""
+  - "say The Krell were a million years ahead of us. We are children playing at their table."
+  - ""
+  - "emote adjusts the position of a Krell artifact with precise, habitual care."
+  - ""
+  - "say There is no danger here. I have lived on Altair IV for twenty years. I know every variable."
+  - ""
+  - "emote quotes quietly: We are such stuff as dreams are made on."
+  - ""
+activitylevel: 20
+character:
+  name: Dr. Morbius
+  description: >-
+    A man of perhaps sixty, though vital and imposing. His face is handsome in
+    a severe way -- high forehead, deep-set eyes that carry twenty years of
+    alien scholarship, the look of a man who has become the world's greatest
+    expert on something that no longer exists. He wears practical clothing
+    that has been mended many times. He is courteous, precise, and hiding
+    something enormous.
+  raceid: 1
+  level: 18

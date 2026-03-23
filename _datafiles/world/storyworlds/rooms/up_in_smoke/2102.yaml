@@ -1,0 +1,55 @@
+roomid: 2102
+zone: Up in Smoke
+title: 'Mans Pad'
+description: >-
+  A studio apartment somewhere in the hills above East LA, perpetually dim, lit
+  primarily by a <ansi fg="itemname">black light</ansi> that makes the <ansi fg="itemname">
+  poster</ansi> of a melting face glow violet and green. A <ansi fg="itemname">lava lamp
+  </ansi> on the floor shifts its orange blobs upward in slow philosophical arcs. The
+  <ansi fg="itemname">beanbag chairs</ansi> are the furniture. <ansi fg="itemname">Album
+  covers</ansi> paper the walls where drywall should be: Hendrix, Santana, Cream, ZZ Top.
+  A battered <ansi fg="itemname">guitar</ansi> leans against the far wall. The whole place
+  smells like incense and whatever Man was just doing, which is hazy. Exit <ansi fg="exit">
+  south</ansi> leads back to the street corner.
+mapsymbol: P
+maplegend: Mans Pad
+biome: house
+exits:
+  south:
+    roomid: 2101
+    exitmessage: You descend the stairs back to the street corner.
+nouns:
+  lamp: >-
+    The lava lamp is a tall cylinder of amber liquid, its orange wax blobs
+    rising and falling in dreamy slow motion. Man has been watching it for
+    hours. He finds it deeply instructive. If you stare long enough, it starts
+    to seem like it is trying to tell you something.
+  poster: >-
+    Under the black light the poster transforms: a face melts downward off
+    its skull in shades of violet and electric green, grinning as it goes.
+    Profound. Or funny. Man has not decided which.
+  guitar: >-
+    A dreadnought acoustic with a cracked finish and a broken tuning peg
+    repaired with a rubber band. It stays in tune approximately. Man plays it
+    with genuine feeling and approximate accuracy.
+  covers: >-
+    The album covers cover every wall from floor to ceiling in overlapping
+    layers: Hendrix at Woodstock, Santana with a tiger, Cream at their most
+    serious, ZZ Top before the beards got truly out of hand. A complete
+    education in what music did to the 1970s.
+  beanbag: >-
+    Two enormous beanbags fill the floor. They have swallowed multiple people
+    over the years. Once you are in a beanbag you are committed to staying
+    until you have a reason worth the effort of leaving.
+spawninfo:
+- mobid: 461
+  message: '<ansi fg="3">Man materializes out of the dim, a guitar in his hands, moving with the unhurried ease of someone who operates on a different clock than the rest of Los Angeles.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Man strums a chord on the guitar, lets it ring, watches it fade.
+- The lava lamp blobs rise and fall, rise and fall, patient as monks.
+- 'The black light makes everything glow: the poster, the dust, someones teeth.'
+- Man stares at the lava lamp with the focus of a man solving a large problem.
+- An album plays somewhere deep in the apartment, barely audible, mostly bass.
+- The incense has been burning so long it is structural to the atmosphere.
+- Time moves differently up here. The street corner could be very far away.

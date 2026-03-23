@@ -1,0 +1,63 @@
+roomid: 1968
+zone: Nineteen Eighty Four
+title: "Charrington's Shop"
+description: >-
+  A small antique shop in the prole quarter, its window crowded with old
+  objects: pewter candlesticks, penknives with pearl handles, a broken
+  compass, a steel engraving from a long-demolished church. The shop smells
+  of dust and old wood and something sweeter underneath. Mr.
+  <ansi fg="itemname">Charrington</ansi> potters behind the counter,
+  arranging and rearranging items with the gentle attention of an old
+  man who has nowhere better to be. He wears round spectacles and a
+  crushed velvet jacket. On a shelf near the back sits a
+  <ansi fg="itemname">glass paperweight</ansi> — a dome of clear glass
+  with a piece of pink coral at its center, soft and luminous. It is
+  quite useless and quite beautiful. There is a
+  <ansi fg="exit">stairs</ansi> at the back of the shop leading up.
+  The prole street is to the <ansi fg="exit">south</ansi>.
+mapsymbol: K
+maplegend: "Charrington's Shop"
+biome: house
+exits:
+  south:
+    roomid: 1967
+  stairs:
+    roomid: 1969
+    mapdirection: up
+nouns:
+  paperweight: >-
+    A heavy lump of glass, perhaps ten centimeters across, curved on top
+    like a dome. Inside, the piece of coral seems to glow with its own
+    faint light — pink and soft against the white glass. It seems to
+    belong to a different age, an age that had room for beautiful and
+    useless things. Winston buys it. He does not know why. He knows why.
+  coral: >-
+    The coral inside the paperweight is the color of a rose, a shell, a
+    sunset. It is from a world before the telescreens. You can see all
+    the way to the center of it, as if it is a tiny, complete, self-contained
+    world. Winston looks at it and thinks: the paperweight is the room,
+    and the room is the paperweight, and he is inside it.
+  charrington: >-
+    Mr. Charrington is a widower of about sixty, frail and bowed, with
+    long delicate hands, a long nose, and mild, slightly watery blue eyes
+    behind the spectacles. He has an air of disarming harmlessness. He
+    knows nursery rhymes from the old days, before the Party. He recites
+    them with the gentle pleasure of someone keeping something alive.
+    He is, of course, a Thought Police agent. He has always been a
+    Thought Police agent. But not today. Today he is just the shopkeeper.
+  nursery: >-
+    Charrington recites fragments of old nursery rhymes when he is in a
+    reminiscing mood: "Oranges and lemons, say the bells of St. Clement's."
+    He cannot remember the whole thing. Or says he cannot. Either way,
+    the fragment is more than most people know.
+spawninfo:
+- mobid: 403
+  message: 'An elderly shopkeeper in round spectacles looks up from arranging a shelf of old objects and nods pleasantly.'
+  respawnrate: 5 real minutes
+idlemessages:
+- 'Charrington hums something to himself as he polishes a pewter candlestick. The tune is old, from before the Revolution, from the time the records say never existed.'
+- '"Oranges and lemons," Charrington says softly, to no one in particular. "Say the bells of St. Clement''s." He pauses. "I cannot remember the next line."'
+- 'The glass paperweight catches the light from the window and something moves inside it — just the coral, just the glass, just the light. But beautiful.'
+- 'Charrington adjusts his spectacles and peers at a small ivory box. "Pre-Revolutionary," he says. "Though of course one must be careful about the date."'
+- 'The shop smells of dust and old lacquer and the faint sweetness of something floral, perhaps in the wood itself, perhaps in the memory of the wood.'
+- 'A child calls something from the street outside. Charrington does not look up. He goes on arranging his objects with the unhurried calm of a man who has all the time in the world.'

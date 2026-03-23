@@ -1,0 +1,62 @@
+roomid: 1921
+zone: Ghostbusters
+title: The Street Outside
+description: >-
+  North Moore Street in Tribeca, Manhattan. The sidewalk outside the firehouse
+  is cracked and littered with the detritus of the city: a crushed coffee cup, a
+  discarded newspaper whose headline reads "GHOSTS WALK AMONG US -- SCIENTISTS OR
+  CHARLATANS?" A <ansi fg="itemname">Ghostbusters sign</ansi> hangs over the bay doors,
+  the NO GHOST logo already scratched and weathered as if it has been there for decades.
+  Yellow cabs barrel past. A pretzel vendor on the corner seems deeply unbothered by
+  everything. To the north you can see the wide steps of the <ansi fg="itemname">New York
+  Public Library</ansi>. The Sedgewick Hotel towers to the east. The art deco spire of
+  <ansi fg="itemname">55 Central Park West</ansi> is visible to the south.
+mapsymbol: S
+maplegend: Street Outside
+biome: city
+exits:
+  west:
+    roomid: 1920
+    exitmessage: You duck back through the big bay doors into the firehouse.
+  north:
+    roomid: 1924
+    exitmessage: You walk north up Fifth Avenue toward the New York Public Library.
+  east:
+    roomid: 1926
+    exitmessage: You push through the revolving doors of the Sedgewick Hotel.
+  south:
+    roomid: 1928
+    exitmessage: You head south toward 55 Central Park West.
+  street:
+    roomid: 1932
+    mapdirection: west
+    exitmessage: You hail a cab and head downtown to City Hall.
+  times:
+    roomid: 1933
+    mapdirection: northeast
+    exitmessage: You flag a cab north toward Times Square.
+nouns:
+  sign: >-
+    The Ghostbusters sign features the NO GHOST logo: a cartoon ghost in a red
+    circle with a diagonal slash. Below it, a phone number. The sign already has a
+    long scratch through one corner, as if a ghost clawed at it and missed. The paint
+    is barely dry. This business is brand new and the city has no idea what to make
+    of it yet.
+  newspaper: >-
+    The New York Post. The cover shows a blurry photograph of something green and
+    translucent hovering in a hotel ballroom. "GHOST BUSTED AT SEDGEWICK -- HOTEL
+    DENIES INCIDENT." Below the fold: "3 PROFESSORS CLAIM TO HAVE WORLD'S FIRST
+    GHOST TRAP. EXPERTS SKEPTICAL. GHOSTS UNAVAILABLE FOR COMMENT."
+  vendor: >-
+    The pretzel vendor on the corner has been here for twenty years. He has seen
+    everything New York can offer. Ghosts, Ghostbusters, slimed hotel corridors --
+    it all registers as mildly interesting at most. He watches the firehouse with
+    the philosophical serenity of a man who has sold pretzels through stranger times.
+idlemessages:
+- A yellow cab nearly clips a bicycle messenger, who yells something spectacular in response.
+- The Ghostbusters phone on the firehouse wall rings four times. The bored Brooklyn voice answers it. A pause. "We'll be there in forty minutes. Maybe thirty. Depends on the FDR." Click.
+- A pigeon lands on the Ghostbusters sign, looks directly at you, and leaves.
+- The pretzel vendor makes eye contact with you. He nods once. He has seen things.
+- Somewhere north, toward the Library, a woman screams once and then stops. Probably nothing.
+- A businesswoman in a power suit strides past, briefcase in one hand, coffee in the other, completely unaware of the green slime trail she is leaving behind her.
+- The NO GHOST logo on the firehouse seems to flicker for just a moment in the afternoon light.

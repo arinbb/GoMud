@@ -1,0 +1,28 @@
+mobid: 210
+zone: buffalo_66
+hostile: false
+maxwander: 2
+angrycommands:
+  - "say You don't KNOW me! You don't know ANYTHING about me!"
+  - "emote shoves his hands in his coat pockets and glares."
+idlecommands:
+  - "say I don't need anybody. I never needed anybody."
+  - "emote shifts from foot to foot, unable to stand still."
+  - "emote pulls his dark coat tighter against the cold."
+  - "say This is MY city. I grew up here. I KNOW this city."
+  - ''
+  - ''
+  - "say You know what my problem is? Everybody ELSE is my problem."
+activitylevel: 30
+character:
+  name: Billy Brown
+  description: >-
+    A gaunt man in his early thirties wearing a dark wool coat that is too
+    thin for the weather. His hair is slicked back and his face is sharp
+    and angular, all cheekbones and jaw. His eyes dart constantly, never
+    resting, never comfortable. He carries himself with the coiled tension
+    of someone who might explode or collapse at any moment. Everything about
+    him is defensive — the crossed arms, the jutted chin, the rapid speech.
+    He is a man held together by anger and not much else.
+  raceid: 1
+  level: 8

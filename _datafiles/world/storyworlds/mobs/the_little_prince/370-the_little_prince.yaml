@@ -1,0 +1,16 @@
+mobid: 370
+zone: the_little_prince
+hostile: false
+maxwander: 1
+activitylevel: 30
+character:
+  name: The Little Prince
+  description: >-
+    A very small boy with golden hair that catches the light like a halo.
+    He wears a tiny scarf that billows slightly even when the air is still,
+    and a coat of royal blue. His eyes are serious and very large, the eyes
+    of someone who asks questions that most people have given up asking.
+    He is looking at you with the complete attention of someone who is not
+    comparing you to anyone else.
+  raceid: 1
+  level: 4

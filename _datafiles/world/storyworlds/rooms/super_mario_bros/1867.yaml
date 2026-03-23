@@ -1,0 +1,54 @@
+roomid: 1867
+zone: Super Mario Bros
+title: World 3-1 Night Level
+description: >-
+  The same overworld layout, but the sky has gone <ansi fg="4">dark blue</ansi>
+  -- the first night level, a palette swap that changes the feeling entirely.
+  The stars are square pixel-art stars, white dots on deep blue. The ground
+  is the same brown but the shadows are longer, the colors cooler. Two
+  <ansi fg="itemname">Hammer Bros</ansi> stand on elevated brick platforms,
+  hurling pixelated hammers in arcs that fill the corridor with danger.
+  They hop on the spot between throws, bouncing on their platforms with
+  an energy that reads as menace. The night level is famous for difficulty --
+  the Hammer Bros are the point where many first-time players put the
+  controller down. The darkness makes everything feel more serious. West
+  leads <ansi fg="exit">back</ansi>; south descends to <ansi fg="exit">World 4</ansi>.
+mapsymbol: N
+maplegend: Night Level
+biome: land
+exits:
+  west:
+    roomid: 1866
+  south:
+    roomid: 1868
+nouns:
+  sky: >-
+    A dark blue sky studded with square white pixel-art stars. This is the
+    same sky as the day levels, but inverted -- dark where it was bright,
+    quiet where it was cheerful. The night palette feels like a warning.
+    The Mushroom Kingdom at night is harder, more dangerous, less forgiving.
+    The square stars are the only light, and they do not move. Even the
+    moon is absent. It is a pure video-game night, systematic and absolute.
+  hammer_bros: >-
+    Two Hammer Bros on brick platforms -- turtle-like enemies standing
+    upright, wearing helmets, hurling hammers in practiced arcs. The hammers
+    travel in a curve, covering a wide area, impossible to simply walk past.
+    The Hammer Bros hop between throws, never stopping, never tiring. They
+    have been throwing hammers since 1985 and their arms have not given out
+    yet. They are the night level's signature challenge.
+  platforms: >-
+    Elevated brick platforms arranged at staggered heights, forcing upward
+    movement. The Hammer Bros stand on the highest platforms, hurling down.
+    Below them, the corridor narrows and the hammers fill the available
+    space with rotating wedges of danger. There is a path through. There
+    is always a path. The question is whether you are fast enough to find
+    it before the next hammer arrives.
+spawninfo: []
+idlemessages:
+- 'A hammer arcs overhead, rotating slowly: a pixelated wedge of danger catching the starlight.'
+- The night sky is a deep still blue, its square stars unmoving and cold.
+- A Hammer Bro hops on its platform between throws, a blur of mechanical menace.
+- 'The night level feels different: the same geometry, darker stakes, no margin for error.'
+- 'Another hammer hits the ground with a dense clunk. Then immediately another one launches.'
+- 'The music here is unchanged from the day levels, but it sounds different at night: more urgent.'
+- You can see the corridor ahead clearly enough. The hammers will arrive shortly.

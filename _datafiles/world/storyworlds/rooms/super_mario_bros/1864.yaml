@@ -1,0 +1,59 @@
+roomid: 1864
+zone: Super Mario Bros
+title: Toad Says Thank You
+description: >-
+  A small antechamber on the other side of the castle bridge. The lava-light
+  from the corridor behind you fades here, replaced by softer torchlight.
+  A small figure stands in the center of the room -- <ansi fg="itemname">Toad</ansi>,
+  a mushroom retainer of the Mushroom Kingdom, wearing a white spotted cap
+  the size of a satellite dish and a vest over a blue shirt. He is cheerful.
+  He is very cheerful, given that he is about to tell you something devastating.
+  His round eyes are bright and his tiny hands are clasped before him. There
+  is a throne room somewhere behind him, but the princess is not in it. The
+  room itself is pleasant enough -- stone walls, a bit of tapestry, a
+  <ansi fg="itemname">sign</ansi> above the door. West leads <ansi fg="exit">back</ansi>
+  to the castle bridge; east leads to <ansi fg="exit">World 2</ansi>.
+mapsymbol: T
+maplegend: Toad Antechamber
+biome: house
+exits:
+  west:
+    roomid: 1863
+  east:
+    roomid: 1865
+nouns:
+  toad: >-
+    Toad is about two feet tall, round-headed, wearing a white mushroom cap
+    with red spots and a vest over a blue shirt. He has the particular
+    energy of someone who has been delivering bad news all day and has
+    developed a coping mechanism of extreme cheerfulness. His hands are
+    always slightly raised, as if about to conduct an orchestra. He is
+    sorry about the princess. He really is. It is just that she is in
+    another castle.
+  sign: >-
+    A sign above the door reads, in careful letters: THANK YOU MARIO BUT
+    OUR PRINCESS IS IN ANOTHER CASTLE. It was hung there by someone who
+    had to deliver this information repeatedly and decided a sign would
+    save time. The letters are slightly uneven. Someone painted it in a
+    hurry.
+spawninfo:
+- mobid: 351
+  message: Toad bounces on his heels, his mushroom cap wobbling, already composing his apology.
+  idlecommands:
+  - emote bounces on his heels, mushroom cap bobbing.
+  - ""
+  - say Thank you Mario!
+  - ""
+  - emote adjusts his spotted mushroom cap with both hands.
+  - ""
+  - emote spreads his small hands apologetically.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- 'Toad''s voice carries its particular cheerful regret: Thank you Mario! But our princess...'
+- The torchlight is warm and the room is almost cozy. Almost.
+- 'The sign above the door is perfectly legible: THANK YOU MARIO BUT OUR PRINCESS IS IN ANOTHER CASTLE.'
+- Toad clasps his hands together and beams at you with the energy of someone doing their best.
+- 'From the throne room behind him, a silence: not the silence of presence, but of absence.'
+- The mushroom cap on Toad's head wobbles slightly as he speaks. It is an enormous hat.
+- You have been told this before. You will be told this again. Seven times total, if you are counting.

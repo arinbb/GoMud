@@ -1,0 +1,24 @@
+-
+  Supported:
+    "travis henderson": ["*"]
+  Conversation:
+    - ["#1 emote looks at the horizon."]
+    - ["#1 emote adjusts his cap."]
+    - ["#1 say I bought some land once.", "#1 emote is quiet."]
+    - ["#1 say In Paris, Texas.", "#1 emote says nothing else."]
+-
+  Supported:
+    "walt henderson": ["travis henderson"]
+  Conversation:
+    - ["#1 say Travis. You okay?", "#2 emote is quiet."]
+    - ["#1 say You don't have to tell me. I'm just asking.", "#2 emote nods very slightly."]
+    - ["#1 say There's coffee.", "#2 say Yeah."]
+    - ["#1 emote goes to make coffee. This is what he does.", "#2 emote watches him go."]
+-
+  Supported:
+    "walt henderson": ["travis henderson"]
+  Conversation:
+    - ["#1 say I looked for you. After.", "#2 emote says nothing."]
+    - ["#1 say A long time.", "#2 emote adjusts his cap."]
+    - ["#2 say I know.", "#1 say Okay."]
+    - ["#1 emote puts his hand on his brother's shoulder briefly and removes it.", "#2 emote stands still."]

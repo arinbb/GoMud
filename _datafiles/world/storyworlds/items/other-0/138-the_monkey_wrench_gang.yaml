@@ -1,0 +1,14 @@
+itemid: 138
+name: The Monkey Wrench Gang
+namesimple: book
+displayname: a sun-bleached paperback titled <ansi fg="itemname">The Monkey Wrench Gang</ansi>
+description: >-
+  A battered paperback, its cover showing a stylized desert landscape and four figures
+  against a red canyon sky. The spine has been cracked and taped and cracked again.
+  The edges of the pages are brown from desert sun. Edward Abbey, 1975. Someone has
+  penciled a note in the margin of the first page: "This is not a metaphor." The book
+  smells faintly of campfire smoke, sagebrush, and cheap beer.
+type: object
+subtype: usable
+uses: 0
+value: 0

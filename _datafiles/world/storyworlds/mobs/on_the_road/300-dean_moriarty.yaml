@@ -1,0 +1,28 @@
+mobid: 300
+zone: on_the_road
+hostile: false
+maxwander: 3
+activitylevel: 50
+angrycommands: []
+idlecommands:
+  - emote laughs maniacally at something only he can see, slapping his knee.
+  - emote grabs your arm and says something very fast about time and the void and being alive.
+  - emote steals a glance at any cars nearby with an expression of intense professional evaluation.
+  - say Yes! Yes! Yes! This is IT -- this is the IT of its, the thing itself, right here right now!
+  - emote drives an invisible car, both hands on an invisible wheel, foot on an invisible floor.
+  - say You know what I mean, man? You know what I mean? Of course you do. You always do.
+  - emote disappears around a corner and reappears from a completely different direction.
+character:
+  name: Dean Moriarty
+  description: >-
+    A young man of twenty-something with the energy of a man who has never
+    learned to stop. Lean, brown from the road, wearing a T-shirt and khakis
+    and the expression of someone who has found something extremely important
+    and is about to tell you about it at great speed. His hands are always
+    moving. His eyes are always going somewhere slightly ahead of his body.
+    He has an enormous laugh that comes out of him like a car horn and a
+    smile that makes you feel chosen. He is the most alive person you have
+    ever met and the most exhausting and possibly both of those are the same
+    thing. He is based on a real person named Neal Cassady who was also like this.
+  raceid: 1
+  level: 10

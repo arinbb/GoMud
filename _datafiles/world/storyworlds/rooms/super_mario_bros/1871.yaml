@@ -1,0 +1,54 @@
+roomid: 1871
+zone: Super Mario Bros
+title: World 7-1 Bullet Bill Level
+description: >-
+  <ansi fg="red">Cannons</ansi> line the platforms, black cylinders aimed
+  at the sky, at the ground, at whatever angle would be most inconvenient.
+  They fire <ansi fg="itemname">Bullet Bills</ansi> -- large black bullets
+  with eyes and a grim expression, launched at regular intervals, crossing
+  the screen at speed. The level is a narrow corridor of platforms with
+  cannons above and below, and the Bullet Bills cross the available space
+  in a constant overlapping lattice of danger. The platforms here are
+  narrow -- just enough to land on, no wider. The gaps require jumping and
+  the cannons fire while you are in the air. West leads
+  <ansi fg="exit">back</ansi>; east continues toward <ansi fg="exit">World 8</ansi>.
+mapsymbol: X
+maplegend: Bullet Bill Level
+biome: land
+exits:
+  west:
+    roomid: 1870
+  east:
+    roomid: 1872
+nouns:
+  cannons: >-
+    Black cylindrical cannons mounted on stone platforms and embedded in
+    structures at varying heights. They fire at fixed intervals, their
+    timing unchanging. A cannon fires a Bullet Bill. You memorize when.
+    You build the timing into your movement. All of World 7 is a
+    timing puzzle made of cannons and their intervals. The cannons never
+    stop firing. They fire after you leave the level. They will be firing
+    long after the game is off.
+  bullet_bills: >-
+    Large black bullets with stubby wings and eyes and a mouth fixed in
+    a determined scowl. They travel in a straight line at a consistent
+    speed. They can be stomped like any enemy. The trick is that there
+    are always more of them, and they emerge from different heights. A
+    Bullet Bill at foot level while you jump. Another at head level while
+    you land. Another from the left while you dodge right. The level is
+    a Bullet Bill fugue.
+  platforms: >-
+    Narrow stone and brick platforms arranged at staggered heights with
+    precise gaps between them. The platforms are exactly wide enough to
+    stand on and not one pixel wider. They are an obstacle course designed
+    by someone who understood that scarcity of safe ground is more frightening
+    than abundance of enemies.
+spawninfo: []
+idlemessages:
+- 'A Bullet Bill launches from a cannon with a sharp pow and crosses the corridor at speed.'
+- 'Another cannon fires, then another: the level fills with crossing trajectories.'
+- The narrow platforms offer exactly enough room to stand and not one inch more.
+- 'Three Bullet Bills cross in sequence, their paths overlapping in the middle: impossible, then possible, then impossible again.'
+- The cannons fire at precise intervals. If you stand still long enough you can learn the rhythm.
+- 'Somewhere to the west, another cannon: pow. Then east: pow. Then above: pow.'
+- This is what World 7 is. This is what it has always been. The cannons do not apologize.

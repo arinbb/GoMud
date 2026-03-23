@@ -1,0 +1,25 @@
+mobid: 286
+zone: blonde_on_blonde
+hostile: false
+maxwander: 0
+activitylevel: 5
+idlecommands:
+  - emote turns on the mattress, pulling the blanket tighter.
+  - emote breathes too regularly for someone who is fully asleep.
+  - emote mutters something -- not words, just tone. Warm and practical.
+  - ''
+  - ''
+  - ''
+character:
+  name: Louise
+  description: >-
+    She sleeps on the mattress against the wall, or pretends to sleep --
+    the breathing is too careful for real sleep, too measured. She holds
+    a handful of rain, or held it once; the hand is closed. She is not
+    Johanna, which is both her limitation in this song and everything
+    the song is made of: the real person in the room while the imagined
+    person fills it. She is warm and present and practical and she knows
+    about Johanna the way all real people know about the imagined people
+    in the rooms with them.
+  raceid: 1
+  level: 5

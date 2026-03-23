@@ -1,0 +1,26 @@
+mobid: 343
+zone: far_cry_5
+hostile: false
+maxwander: 2
+activitylevel: 30
+idlecommands:
+- emote prowls the rock line with the fluid precision of an animal that has never made an unnecessary movement.
+- emote stretches elaborately on a flat granite rock, extending each enormous forepaw one at a time.
+- ""
+- emote watches a bird in the pine canopy above with the locked, absolute focus of a hunter who has already decided.
+- emote yawns enormously, displaying teeth the size of your longest fingers with complete indifference.
+- ""
+- emote settles on a sun-warmed rock and surveys the surrounding forest with sovereign, unhurried indifference.
+character:
+  name: Peaches
+  description: >-
+    A mountain lion, female, large even for her species, her coat the warm
+    tawny gold of dried grass with darker markings along the spine. Her eyes
+    are amber and contain the specific quality of attention that means she
+    has already run every scenario and found them all in her favor. She moves
+    with the fluid confidence of something that has no predators. She has
+    been in these mountains long enough to have opinions about them. She is
+    tameable by someone patient and persuasive. She is not tameable by force.
+    These are not the same thing.
+  raceid: 12
+  level: 12

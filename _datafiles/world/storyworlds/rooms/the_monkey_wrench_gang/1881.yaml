@@ -1,0 +1,57 @@
+roomid: 1881
+zone: The Monkey Wrench Gang
+title: The River
+description: >-
+  The <ansi fg="cyan">Colorado River</ansi> runs broad and powerful here, hemmed in
+  by <ansi fg="red">canyon walls</ansi> that soar hundreds of feet on either side. The
+  water is an improbable green-brown, heavy with canyon silt, cold from the depths
+  of the reservoir above. A battered <ansi fg="itemname">rubber raft</ansi> is tied
+  to a willow branch at the bank, its hull patched with duct tape, beer cans
+  floating in the bilge. <ansi fg="mobname">Doc Sarvis</ansi> stands in the stern
+  looking upstream with the expression of a man contemplating something both beautiful
+  and wounded. <ansi fg="mobname">Bonnie Abbzug</ansi> sits amidships, her New York
+  face tilted into the desert sun, reading something waterlogged. The canyon walls on
+  either side are geological scripture — limestone, sandstone, shale, the pages of
+  four hundred million years stacked in plain sight. To the <ansi fg="exit">west</ansi>,
+  the river trail leads back to the ferry crossing. To the <ansi fg="exit">east</ansi>,
+  the canyon bends and the current quickens.
+mapsymbol: R
+maplegend: The River
+biome: shore
+exits:
+  west:
+    roomid: 1880
+  east:
+    roomid: 1882
+nouns:
+  raft: >-
+    A fourteen-foot rubber raft, veteran of many river miles, patched in a dozen
+    places and still seaworthy in the way that things held together by determination
+    and duct tape often are. The name stenciled on the bow is barely legible.
+    Empty beer cans rattle in the bilge. A set of wooden oars lies across the thwarts.
+  walls: >-
+    The canyon walls are a textbook of geology written in stone. The Kaibab limestone
+    at the top gives way to Toroweap Formation, Coconino sandstone, Hermit shale,
+    the Supai Group -- four hundred million years of sediment laid down in shallow
+    seas that are now a mile above sea level. Abbey said the canyon was proof that
+    God, if there is one, is not in a hurry.
+  water: >-
+    The Colorado runs cold and heavy with silt, its color somewhere between red and
+    green depending on the light. Before the dam, it ran red as blood in spring flood.
+    Now it runs cold and clear and controlled and dead in the way that controlled
+    things are dead. The fish that evolved here over millions of years are mostly gone.
+    The river still runs, but it runs on a schedule now.
+  canyon: >-
+    The canyon is so deep and so old that human time becomes meaningless inside it.
+    The walls were here before the first human eye ever looked at them. They will be
+    here long after the last human eye has closed. Abbey found this comforting rather
+    than depressing. It suggests that our catastrophes are local.
+spawninfo: []
+idlemessages:
+- The river moves with a deep, muscular current, brown-green and cold, carrying silt from a thousand miles of canyon.
+- Doc Sarvis stands in the stern of the raft, watching the water with a surgeon's careful attention to what should not be there.
+- Bonnie reads her paperback with one hand, trails the other in the current, and does not look up.
+- 'A great blue heron lifts from a gravel bar upstream and crosses the canyon on slow, deliberate wingbeats.'
+- The canyon walls hold the late sun like a furnace, radiating warmth long after the sun itself has dropped below the rim.
+- An empty beer can bobs against the raft, spinning slowly in the eddy.
+- 'The river makes a sound here: not loud, but constant. It is the sound of something that has been doing this for a very long time.'

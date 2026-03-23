@@ -1,0 +1,74 @@
+roomid: 1930
+zone: Ghostbusters
+title: The Rooftop Temple
+description: >-
+  The roof of 55 Central Park West has become something that was always intended
+  to be a temple. Architect Ivo Shandor built it specifically: the <ansi fg="itemname">stone
+  altar</ansi> in the center of the roof, the twin <ansi fg="itemname">throne structures</ansi>
+  at the north end where the Gatekeeper and the Keymaster have been drawn to take
+  their positions, the channels carved into the stone for supernatural energy to
+  flow through. Lightning strikes the building's apex in continuous sheets, drawn
+  by the iron lattice below. The whole of Manhattan spreads around you in the night,
+  a carpet of lights under a sky gone wrong -- too orange, too close, dimensional
+  membranes stretched thin. <ansi fg="itemname">Gozer</ansi> stands at the center of
+  it all: androgynous, white, ancient beyond comprehension, regarding everything with
+  absolute disinterest. A stairway descends east toward the stairs leading back down.
+  This is the end of the line.
+mapsymbol: T
+maplegend: Rooftop Temple
+biome: cliffs
+exits:
+  down:
+    roomid: 1929
+    exitmessage: You flee back down the stairway to Dana's floor.
+  stairs:
+    roomid: 1931
+    mapdirection: east
+    exitmessage: You move toward the stairway head, bracing against the wind.
+nouns:
+  altar: >-
+    The stone altar at the center of the roof has channels carved into it that are
+    currently channeling dimensional energy in visible ribbons of light. The stone
+    is warm. It has been building toward this for sixty years, since Ivo Shandor
+    poured the foundation. This is what the building was for. This is the whole
+    point.
+  thrones: >-
+    Two carved stone throne structures flank the north end of the roof. Zuul --
+    the Gatekeeper -- and Vinz Clortho -- the Keymaster -- have taken their
+    positions. Two terror dogs whose borrowed human forms crouched in place and
+    waited. The thrones are carved with figures that are not human and are not
+    any known mythological tradition because Gozer's mythology predates recorded
+    human civilization by a length of time that is not comfortable to contemplate.
+  lightning: >-
+    The lightning does not strike randomly. Each bolt hits the apex of the building
+    with a precise geometry, drawn by the iron lattice inside the structure. The
+    pattern forms a specific shape when mapped -- a sigil for something old enough
+    to not need a name, though it has one. Gozer. Gozer the Gozerian. Gozer the
+    Traveller. Gozer the Destructor.
+  manhattan: >-
+    From the roof of 55 Central Park West, all of Manhattan extends in every
+    direction. On a normal night it would be beautiful. Tonight, the dimensional
+    membrane above the city has thinned to the point of near-translucence and the
+    light coming through it from whatever is on the other side is the color of
+    something that does not have a human name. The city below is completely unaware.
+    It will continue to be unaware right up until it cannot be.
+spawninfo:
+- mobid: 388
+  maxwander: 0
+  forcehostile: true
+  respawnrate: 5 real minutes
+  idlecommands:
+  - "emote stands perfectly still in the dimensional lightning, observing everything."
+  - "say ARE YOU A GOD?"
+  - "emote 's form flickers between human and something that is not human."
+  - "emote raises one hand. Lightning strikes precisely where indicated."
+  - ""
+  - ""
+idlemessages:
+- Lightning splits the sky and the building absorbs it without flinching, channeling it down into the iron lattice.
+- The wind up here is wrong -- it blows in multiple directions simultaneously, as if the air can't decide which dimension it belongs to.
+- The dimensional membrane overhead ripples like water touched by a stone dropped from very high up.
+- Gozer regards the city below with the expression of someone looking at a menu.
+- The stone of the altar hums with accumulated energy. It is hot enough now to be uncomfortable near.
+- From somewhere in the building far below, the Ghostbusters' proton packs are charging. You can feel it in your back teeth.
+- The orange light in the sky intensifies. Something very large is forming on the other side of the membrane.

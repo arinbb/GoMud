@@ -1,0 +1,26 @@
+-
+  Supported:
+    "charlie kelly": ["frank reynolds"]
+  Conversation:
+    - ["#1 say Frank, I found a new one in the tunnel. Big one. I am calling him The General."]
+    - ["#2 emote produces the egg and sets it on the bar thoughtfully", "#2 say You already got a General. You got a General last year."]
+    - ["#1 say That was General Whiskers. This is a different general. Different rank structure."]
+    - ["#2 say Charlie, buddy, they are rats. They do not have a rank structure."]
+    - ["#1 emote is quiet for a moment", "#1 say Frank. They have a rank structure."]
+    - ["#2 say Okay. Okay, they have a rank structure.", "#2 emote picks the egg back up and puts it away."]
+    - ["#1 say Thank you. I am going to introduce The General to the existing command staff tomorrow."]
+    - ["#2 say How is the rum ham?"]
+    - ["#1 say It is good, Frank. The rum ham is really good.", "#1 emote nods with genuine satisfaction."]
+-
+  Supported:
+    "frank reynolds": ["charlie kelly"]
+  Conversation:
+    - ["#1 say Charlie, you want to do some whip-its? I got some."]
+    - ["#2 say Frank, it is two in the afternoon."]
+    - ["#1 say That is a time of day, Charlie. That is not an answer to the question."]
+    - ["#2 emote considers this", "#2 say I got some cat food I was going to have first."]
+    - ["#1 say Eat the cat food, then whip-its. I will wait."]
+    - ["#2 emote eats from the can with focused attention", "#2 say This is a good one. Chicken and tuna."]
+    - ["#1 emote watches with what passes for fondness on Frank Reynolds's face.", "#1 say You want me to heat that for you?"]
+    - ["#2 say You would heat it?"]
+    - ["#1 say What kind of roommate would I be if I did not heat the cat food?", "#1 emote gets up to find the hot plate."]

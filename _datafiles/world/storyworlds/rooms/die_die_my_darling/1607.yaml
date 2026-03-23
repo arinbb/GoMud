@@ -1,0 +1,59 @@
+roomid: 1607
+zone: Die Die My Darling
+title: The Village Pub
+description: >-
+  The <ansi fg="3">pub</ansi> hits you like sunlight after the house. Everything here
+  has <ansi fg="3">color</ansi> — the <ansi fg="red">red</ansi> of the upholstered
+  bar stools, the <ansi fg="3">amber</ansi> of the drinks in their glasses, the
+  <ansi fg="3">warm yellow</ansi> light of lamps against dark wood panelling. People
+  are talking, and their voices are not hushed. A <ansi fg="3">dartboard</ansi> on
+  the far wall. Framed <ansi fg="3">prints</ansi> on the walls — hunting scenes,
+  horses, the standard furniture of English pub life. Behind the <ansi fg="3">bar</ansi>,
+  a broad-shouldered man pulls pints with the comfortable authority of someone who
+  has done it ten thousand times. A <ansi fg="3">fire</ansi> burns in the grate.
+  An actual fire. The world here is warm and loud and entirely normal, and the
+  contrast with the house down the road is almost violent. To the <ansi fg="exit">west</ansi>,
+  the road back toward the Trefoile property.
+mapsymbol: P
+maplegend: Village Pub
+biome: city
+exits:
+  west:
+    roomid: 1601
+nouns:
+  fire: >-
+    A real fire, coal and wood, burning in the pub grate with proper enthusiasm.
+    The heat from it reaches several feet into the room. You find yourself standing
+    closer to it than is strictly necessary and not wanting to leave.
+  bar: >-
+    A long bar of dark wood, its surface marked by years of pint glasses and elbows.
+    Behind it, rows of bottles with their coloured labels — gold, green, amber, red.
+    So many colours. The barman moves between them with ease, a man at home in this
+    world of harmless pleasure.
+  dartboard: >-
+    A regulation dartboard, well-used, its scoring sections faded from years of play.
+    Three darts are in it. Someone was just here.
+  prints: >-
+    Hunting prints and horse paintings, framed in plain wood, hung with the unselfconscious
+    confidence of things that have been in their places for so long that removing them
+    would feel like violence. This is what a room looks like when it has not been
+    stripped of its pleasures.
+  brooch: >-
+    You notice the waitress is wearing a small silver brooch at her collar — a simple
+    design, delicate work. It looks expensive. It looks like something a guest might
+    have left behind. Or something taken from one.
+spawninfo:
+- mobid: 274
+  message: '<ansi fg="3">A handsome, worried-looking man sits at a corner table, turning something over in his hands.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 276
+  message: '<ansi fg="3">A young waitress moves between the tables, carrying drinks with easy confidence.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The pub fire crackles and shifts, sending a brief shower of sparks up the flue.
+- Someone at the bar laughs at something the barman says — a full, uncomplicated laugh.
+- The smell of woodsmoke and beer and warm bodies is almost disorienting after the Trefoile house.
+- The waitress moves between tables, touching the brooch at her collar absently as she passes.
+- Alan Glentower sits at his corner table, watching the door with the focused attention of a man expecting someone.
+- The darts thud into the board on the far wall. Someone shouts something encouraging.
+- Everything here has colour. Red barstools. Amber beer. Warm yellow light. It feels extraordinary.

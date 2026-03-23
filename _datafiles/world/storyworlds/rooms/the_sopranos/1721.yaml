@@ -1,0 +1,54 @@
+roomid: 1721
+zone: The Sopranos
+title: The Soprano Kitchen
+description: >-
+  A large, well-appointed <ansi fg="yellow">kitchen</ansi> that smells of garlic
+  and fresh bread and the faint ghost of last night's gravy. The <ansi fg="itemname">granite
+  counters</ansi> are immaculate except for a scatter of <ansi fg="itemname">cookbooks</ansi>
+  and a glass of <ansi fg="itemname">white wine</ansi> already poured at ten in the
+  morning. A <ansi fg="itemname">television</ansi> on the counter plays the news at
+  low volume. <ansi fg="itemname">AJ's backpack</ansi> has been dumped by the table,
+  homework half-completed and abandoned. The kitchen is the center of this house,
+  where everything that matters and everything that doesn't gets processed and served.
+  The driveway is <ansi fg="exit">south</ansi>, the living room is <ansi fg="exit">east</ansi>,
+  and the <ansi fg="exit">pool</ansi> is through the back door.
+mapsymbol: K
+maplegend: Kitchen
+biome: house
+exits:
+  south:
+    roomid: 1720
+  east:
+    roomid: 1723
+  pool:
+    roomid: 1724
+    mapdirection: west
+nouns:
+  counters: >-
+    Granite, the expensive kind. Flecked with black and gold. Carmela chose
+    them from a catalogue and Tony agreed without looking. The counters are
+    always clean. Carmela keeps them clean the way other people keep score.
+  cookbooks: >-
+    Marcella Hazan. Lidia Bastianich. Biba Caggiano. The spines are cracked
+    and stained with use. These are not decorative cookbooks. These are a
+    second language.
+  wine: >-
+    A glass of pinot grigio, already half-gone, resting on the counter near
+    the sink. It is not yet eleven in the morning. Nobody mentions it.
+  television: >-
+    A small TV mounted under the cabinet, playing a morning news show. A
+    politician is denying something. Nobody is listening.
+  backpack: >-
+    AJ's backpack, unzipped and listing to one side. A math textbook, loose
+    papers, a crumpled permission slip. The homework is mostly done. Mostly.
+spawninfo:
+- mobid: 291
+  message: "<ansi fg=\"yellow\">Carmela Soprano moves through the kitchen with practiced efficiency, filling it with purpose and the smell of something baking.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The oven timer goes off. Nobody moves to check what is inside.
+- Carmela pours another half-inch of wine and surveys the kitchen as if conducting an inspection.
+- The news anchor on the small TV mentions crime statistics. The irony is lost on the room.
+- 'A sound from upstairs: footsteps, a door, then silence. Teenage silence.'
+- The refrigerator hums its constant note, the domestic baseline of the house.
+- Morning light comes through the curtains and catches the steam rising from the stove.

@@ -1,0 +1,52 @@
+roomid: 1609
+zone: Die Die My Darling
+title: The Upper Landing
+description: >-
+  The upper landing is narrow, its carpet the same faded grey-brown as below.
+  The <ansi fg="8">walls</ansi> continue their inventory of religious imagery — a
+  carved wooden plaque reading <ansi fg="white">WATCH AND PRAY</ansi>, a framed
+  engraving of the Annunciation, a row of small devotional cards pinned to the
+  plasterwork. The low light from a single bulb in a plain shade catches the dark
+  wood of the doors that line the corridor. <ansi fg="exit">North</ansi> leads to
+  the guest bedroom. <ansi fg="exit">East</ansi> to the sewing room. <ansi
+  fg="exit">South</ansi> to the attic room. A narrow door at the end of the
+  landing gives access back <ansi fg="exit">down</ansi> to the entrance hall.
+  The landing smells of lavender sachets and old wood, and it is very quiet.
+mapsymbol: L
+maplegend: Upper Landing
+biome: house
+exits:
+  down:
+    roomid: 1602
+    exitmessage: You descend the dark staircase to the entrance hall.
+  north:
+    roomid: 1610
+  east:
+    roomid: 1611
+  south:
+    roomid: 1612
+    lock:
+      difficulty: 8
+nouns:
+  plaque: >-
+    A carved wooden plaque, the lettering deep and emphatic: WATCH AND PRAY.
+    The wood is old and dark with handling. This has been in this house a very
+    long time. Watching and praying is what happens here. Whatever the opposite
+    is, it does not happen here.
+  cards: >-
+    A row of small devotional cards pinned to the plasterwork — reproductions of
+    religious paintings, each one featuring a scene of suffering or supplication.
+    They form a kind of gallery. No one has dusted them recently.
+  doors: >-
+    Three doors open off the landing. The one to the south is closed, its handle
+    fitted with a key lock. The others stand slightly ajar — just enough to see
+    that the rooms beyond are dim.
+spawninfo: []
+idlemessages:
+- The floorboards creak under your weight with a sound that carries in all directions.
+- The WATCH AND PRAY plaque catches the dim light with wooden authority.
+- A draught from under one of the doors moves the devotional cards on the plasterwork.
+- The sound from the chapel below rises, muffled but insistent, through the floorboards.
+- The landing is very narrow. Two people could not pass here without one pressing against the wall.
+- One of the doors to the south is fitted with a key lock. The key is not on the outside.
+- The smell of old wood and lavender is very strong up here. Someone has placed sachets in every room.

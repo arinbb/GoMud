@@ -1,0 +1,54 @@
+roomid: 1991
+zone: Forbidden Planet
+title: The Monster Attack Site
+description: >-
+  The desert here is <ansi fg="red">scorched</ansi> in a wide arc,
+  the crystalline vegetation melted to blackened stubs. Where the
+  <ansi fg="itemname">force field</ansi> barriers were erected, glassy
+  trenches in the rock show where the field was anchored -- and where
+  something pressed against it with force beyond measurement. The
+  <ansi fg="itemname">ground</ansi> itself shows the evidence of a
+  struggle: burns, impacts, the strange melted-glass footprints of
+  something enormous that moved without touching the ground in any
+  conventional sense. Two <ansi fg="itemname">crewmen</ansi> died here.
+  Nothing visible killed them. Something invisible and vast, wearing the
+  shape of a man's darkest impulses, came out of the dark and was turned
+  back by a force field it should have been able to ignore. To the
+  <ansi fg="exit">landing</ansi> site, east.
+mapsymbol: X
+maplegend: Attack Site
+biome: desert
+exits:
+  landing:
+    roomid: 1980
+    mapdirection: east
+nouns:
+  force: >-
+    The force field anchor points are burned into the rock. The field itself,
+    at maximum power, put out more energy than most planetary defense systems.
+    Something pressed against it from outside for six hours. The field held.
+    Just barely. The burns on the anchor points suggest the field was operating
+    at a hundred and forty percent of rated capacity by the time the attack
+    ended. It ended not because the field succeeded. It ended because Morbius
+    woke up.
+  ground: >-
+    The desert floor around the attack site is disturbed in ways that suggest
+    enormous weight and enormous speed. The crystalline vegetation is not
+    merely broken but transmuted -- the crystal structure has changed, as if
+    exposed to an energy source that rewrote its molecular structure. In the
+    center of the destruction, two depressions in the rock. Footprints,
+    perhaps. Or the impression of something that has no feet.
+  crewmen: >-
+    Two men died here. Their names are posted on the ship's memorial log:
+    Lieutenant Farman and Technician Grey. They died at 0300 hours, ship time,
+    during a watch they volunteered for. Nothing killed them that the force
+    field cameras could record. The cameras captured only the light of the
+    field, the darkness of the desert, and then screams. The field held after
+    that. The screaming did not.
+idlemessages:
+- The scorched arc of ground still radiates faint warmth. The attack was not long ago.
+- 'The glassy footprints catch the alien light: depressions in rock, melted and re-solidified, shaped by something vast.'
+- No crystalline vegetation grows in this area. The soil itself seems altered, as if something poisoned it.
+- A wind moves through the site and carries a smell of ozone and something else -- something animal and frightened.
+- The force field anchor points are still faintly luminous. The engineers have not yet come to recover them.
+- 'You notice the silence: even the distant hum of the Krell machine seems muted here, as if the ground is listening.'

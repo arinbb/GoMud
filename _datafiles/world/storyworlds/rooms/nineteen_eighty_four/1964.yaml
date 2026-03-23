@@ -1,0 +1,60 @@
+roomid: 1964
+zone: Nineteen Eighty Four
+title: Ministry of Truth
+description: >-
+  The Ministry of Truth — Minitrue, in Newspeak — is an enormous pyramidal
+  structure of glittering white concrete, three hundred meters high. Inside,
+  in the <ansi fg="itemname">Records Department</ansi>, Winston Smith works
+  at a speakwrite, correcting the historical record. Old newspapers, old
+  books, old documents are fed into the
+  <ansi fg="itemname">memory holes</ansi> that dot the walls at intervals.
+  They fall down to the enormous furnaces below, and what was written is
+  unwritten. The corridors hum with <ansi fg="itemname">telescreens</ansi>
+  and the soft sound of speakwrites and the occasional clatter of the
+  pneumatic tubes that carry documents between departments. The truth is
+  what the Ministry says it is. It was always this way. The records confirm
+  it. To the <ansi fg="exit">south</ansi>, the street. To the
+  <ansi fg="exit">east</ansi>, the canteen.
+mapsymbol: T
+maplegend: Ministry of Truth
+biome: city
+exits:
+  south:
+    roomid: 1963
+  east:
+    roomid: 1965
+nouns:
+  speakwrite: >-
+    A machine into which you speak and which transcribes. Beside it, the
+    original document: a newspaper from three years ago with a production
+    figure that was wrong. You correct the figure. The corrected figure is
+    what the figure always was. The original document will go into the
+    memory hole. The truth adjusts to accommodate itself.
+  holes: >-
+    Slits in the wall about the size of a letter slot, opening onto a shaft
+    that leads to the furnaces. Everything that must be destroyed goes here.
+    The process is so constant and so practised that it takes less than a
+    second. Every record of every inconvenient fact, dropped into the fire.
+    It never happened. It was always this way.
+  records: >-
+    The Records Department processes thousands of documents a day. Every
+    newspaper, every book, every broadcast that contradicts current policy
+    must be corrected, or eliminated. The Department works constantly.
+    The past is whatever the Department makes it today.
+  telescreens: >-
+    Even in the Ministry of Truth, the telescreens are always on. Especially
+    in the Ministry of Truth. Perhaps especially here, where the people most
+    dangerous to the Party spend their working hours: the ones who know, in
+    some hidden fold of the mind, what the truth actually was.
+spawninfo:
+- mobid: 400
+  message: 'Winston Smith feeds a corrected document into the speakwrite without looking at it.'
+  respawnrate: 10 real minutes
+idlemessages:
+- 'A document arrives through the pneumatic tube. You read it. You correct it. You feed the original into the memory hole. This is your work.'
+- 'The telescreen above your speakwrite shows a graph of production figures. They are all higher than last year. They are always higher than last year. You have made them so.'
+- 'From a memory hole nearby comes the faint smell of something burning. A newspaper. A record. A fact. Gone.'
+- 'The speakwrites clatter steadily in the long room. Everyone is correcting. Everyone is making the truth.'
+- 'A memo arrives, unsigned, in block capitals: RECTIFY. Below it, a date and a production figure. You know what to do. You have always known.'
+- 'You think: if the record says 2+2=5, does it? You do not write this thought. You do not allow it to have a face.'
+- 'The pneumatic tubes hiss as another batch of documents arrives from some other department. The truth is being made, right now, in every room of this building, simultaneously.'

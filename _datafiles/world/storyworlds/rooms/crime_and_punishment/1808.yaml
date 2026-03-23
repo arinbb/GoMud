@@ -1,0 +1,57 @@
+roomid: 1808
+zone: Crime and Punishment
+title: The Bridge
+description: >-
+  The bridge over the <ansi fg="itemname">Neva</ansi>, and here — suddenly —
+  the city opens. The river is wide and the sky above it is enormous, and
+  for one moment the weight lifts. The late-afternoon <ansi
+  fg="itemname">sun</ansi> strikes the water gold and the <ansi
+  fg="itemname">cathedral dome</ansi> of St. Isaac's glows across the water
+  and the city becomes, briefly, itself: something built by human hands to
+  last, something aspiring. Raskolnikov stops here sometimes when the theory
+  and the guilt and the fever become too much, and for a moment he feels
+  it — the beauty — before the weight returns. The <ansi fg="itemname">
+  embankment railing</ansi> is cold under the hand despite the heat. A
+  woman once stood here on this railing. A crowd gathered. She jumped. He
+  watched. He gave her coins afterward, on the embankment, after they had
+  fished her out. She did not want them. The embankment is back to the
+  <ansi fg="exit">west</ansi>.
+mapsymbol: B
+maplegend: The Bridge
+biome: road
+exits:
+  west:
+    roomid: 1807
+nouns:
+  neva: >-
+    The Neva River, wide and cold even in summer, its water grey-green under
+    the golden light. The river is the original St. Petersburg, the thing
+    Peter built his city on, the thing the city has always known might
+    take it back. Floods come. The river rises. The city holds, barely.
+  sun: >-
+    The sun at this hour is going down behind the city to the west, throwing
+    long gold light across the river. It makes everything briefly beautiful.
+    The beautiful moment will end. Everything that is beautiful here is
+    temporary. This does not make it less beautiful.
+  dome: >-
+    The gilded dome of St. Isaac's Cathedral across the river, catching the
+    last sun. It was built to be seen from this exact angle, in this exact
+    light. The effect is achieved. The awe is real. The awe does not
+    translate into anything that helps.
+  railing: >-
+    The stone and iron railing at the bridge's edge, worn cold and smooth.
+    Below, the Neva moves with the indifference of something much older than
+    the city built around it. He grips the railing. He has stood here long
+    enough to know exactly how it feels.
+  woman: >-
+    There is no woman here now. But the railing holds the memory of one:
+    she climbed it, she stood on it, she jumped, the crowd watched, and he
+    gave her coins on the embankment afterward. She did not want the coins.
+    The memory lives in the railing, in the exact spot his hand finds.
+idlemessages:
+- The wind off the Neva is the only clean thing in this city, cold off the water, smelling of openness and distance.
+- 'The cathedral dome catches the afternoon sun and holds it, a single point of gold above the grey and yellow city.'
+- A boat passes under the bridge, slow and heavy, its wake spreading in long V-shapes toward the embankment walls.
+- 'The light on the river changes every minute, the gold going to orange, the orange going to red. It is happening now.'
+- 'Someone crosses the bridge quickly, head down, not stopping. They do not look at the river. Most people do not.'
+- The city sounds dim here, replaced by water and wind. For a moment it is almost quiet. Then the moment ends.

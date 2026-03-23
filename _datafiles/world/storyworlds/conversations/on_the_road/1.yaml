@@ -1,0 +1,26 @@
+-
+  Supported:
+    "dean moriarty": ["sal paradise"]
+  Conversation:
+    - ["#1 say Sal! Sal! I have been thinking. I have been thinking all night. I have a plan."]
+    - ["#2 emote looks up from his notebook", "#2 say Dean. It is 4am."]
+    - ["#1 say Exactly! The best time! The time of maximum possibility! Sal, we need to go. We need to go NOW."]
+    - ["#2 say We just got here."]
+    - ["#1 emote spreads his arms wide", "#1 say That is EXACTLY the point! We are HERE and the road is THERE and every minute we are here is a minute we are not on the road which is a minute WASTED!"]
+    - ["#2 emote closes his notebook slowly", "#2 say You are going to keep talking until I say yes."]
+    - ["#1 say I am going to keep talking until we are in the car heading west at a hundred miles an hour with the windows down and the radio on and the night opening up ahead of us like a YES!"]
+    - ["#2 emote stands, puts his notebook in his pocket", "#2 say Alright. Let us go. God help us."]
+    - ["#1 emote grabs Sal by the shoulders", "#1 say YES! Yes! This is IT! This is the IT of the whole thing!"]
+-
+  Supported:
+    "dean moriarty": ["sal paradise"]
+  Conversation:
+    - ["#1 emote stops suddenly, turns to Sal with an expression of tremendous urgency."]
+    - ["#1 say Sal. What do you think time IS? I mean really IS?"]
+    - ["#2 say Dean, we are in the middle of driving."]
+    - ["#1 say EXACTLY the right time to think about time! When you are moving through it you can FEEL it!"]
+    - ["#2 say I think time is the thing between where we started and where we are going."]
+    - ["#1 emote shakes his head vigorously", "#1 say No no no. Time is the NOW. The pure now. Right here right this second. There is no before. There is no after. There is only this!"]
+    - ["#2 say Then why are we always going somewhere?"]
+    - ["#1 emote is silent for three full seconds, which is the longest he has been silent", "#1 say ...That is a very good question, Sal."]
+    - ["#2 emote makes a small note in his notebook", "#2 say Yes. It is."]

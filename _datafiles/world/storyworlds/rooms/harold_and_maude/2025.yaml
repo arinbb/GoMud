@@ -1,0 +1,58 @@
+roomid: 2025
+zone: Harold and Maude
+title: The Driveway
+description: >-
+  A wide curving driveway of pale gravel before the mansion, and parked
+  at its center is the <ansi fg="8">hearse</ansi>. It is a 1959 Cadillac
+  Superior, impossibly long, impossibly black, its chrome gleaming in the
+  California sun with a kind of cheerful pride. Harold has maintained it
+  with devotion. The <ansi fg="itemname">hood ornament</ansi> is a small
+  silver angel in flight, which Harold added himself. The rear
+  <ansi fg="itemname">windows</ansi> are curtained in black velvet, and
+  through the <ansi fg="exit">east</ansi> door you can climb inside. The
+  mansion rises behind you to the <ansi fg="exit">north</ansi>. The
+  <ansi fg="itemname">gravel</ansi> of the driveway catches the afternoon
+  light, each stone precise in its ordinariness.
+mapsymbol: D
+maplegend: The Driveway
+biome: road
+exits:
+  north:
+    roomid: 2023
+    exitmessage: You leave the driveway and return to the mansion.
+  east:
+    roomid: 2026
+    exitmessage: You open the long door of the hearse and slide inside.
+nouns:
+  hearse: >-
+    The hearse is magnificent. 1959 Cadillac Superior, extended wheelbase,
+    bodywork like a long black sigh. Harold keeps it polished to a mirror
+    shine. His mother wants him to drive something else. Harold does not
+    want to drive something else. The hearse is the most honest car he
+    knows -- it goes where it is going and everyone knows what for.
+  ornament: >-
+    A small silver angel in full flight, wings spread, fixed to the front
+    of the hood. Harold mounted it himself with a precision that suggests
+    he spent some time on the placement. An angel on a hearse. Harold sees
+    no contradiction.
+  windows: >-
+    Black velvet curtains behind the rear windows, the kind used in every
+    hearse since hearses were invented. They do not prevent you from
+    climbing in. Nothing prevents Harold from going where he goes.
+  gravel: >-
+    Pale limestone gravel, each stone about the size of a large grape. It
+    crunches under foot with a sound like honest disapproval. Harold's mother
+    had it imported. Harold has never noticed it.
+spawninfo:
+- mobid: 430
+  message: "<ansi fg=\"8\">Harold leans against the hearse with his arms folded, looking at the middle distance with his characteristic air of someone who has already made peace with something the rest of us haven't considered yet.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- Harold runs one hand along the hearse's long black flank with quiet affection.
+- The chrome grille of the hearse catches the sun and throws a bright bar of light across the gravel.
+- Harold opens the driver door, peers inside, and closes it again with a soft, satisfied click.
+- The hearse sits on the gravel with the patience of something that has no reason to hurry.
+- A gardener crosses the far end of the driveway without looking at the hearse, as if avoiding it by practice.
+- California light turns the hearse a very dark, beautiful blue at this hour of the afternoon.
+- Harold polishes a smudge from the passenger door with the cuff of his black jacket.
+- The silver angel on the hood catches the light and seems for a moment to be moving.

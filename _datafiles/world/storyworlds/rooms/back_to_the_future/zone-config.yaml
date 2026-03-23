@@ -1,0 +1,15 @@
+name: Back to the Future
+roomid: 1940
+autoscale:
+  minimum: 1
+  maximum: 8
+defaultbiome: land
+mutators:
+- mutatorid: hill-valley
+idlemessages:
+- Somewhere nearby, a car radio plays a Chuck Berry guitar lick before cutting out.
+- The smell of the 1950s is everywhere -- gasoline, pomade, and fresh-cut grass.
+- A dog barks in the distance, then goes quiet.
+- You could swear you hear the faint hum of a flux capacitor charging up.
+- The clock on the courthouse tower ticks with improbable importance.
+- A high-school kid rolls past on a makeshift skateboard, hitching a ride off the back of a passing car.

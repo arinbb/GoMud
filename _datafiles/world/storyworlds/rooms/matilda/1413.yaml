@@ -1,0 +1,48 @@
+roomid: 1413
+zone: Matilda
+title: Country Lane
+description: >-
+  A narrow <ansi fg="10">lane</ansi> that winds through the countryside, bordered
+  by <ansi fg="itemname">hedgerows</ansi> full of wildflowers and birdsong. The
+  air is sweet and clean here, utterly different from the stale corridors of
+  Crunchem Hall. <ansi fg="itemname">Buttercups</ansi> and <ansi fg="itemname">daisies</ansi>
+  dot the grassy verges. The lane curves gently between green <ansi fg="itemname">fields</ansi>,
+  leading away from the main road toward something quieter, simpler, more honest.
+  A hand-painted <ansi fg="itemname">sign</ansi> nailed to a fencepost points
+  <ansi fg="exit">south</ansi> toward a cottage. The main road is back to the
+  <ansi fg="exit">north</ansi>.
+mapsymbol: ~
+maplegend: Country Lane
+biome: road
+exits:
+  north:
+    roomid: 1405
+  south:
+    roomid: 1414
+nouns:
+  hedgerows: >-
+    Wild hedgerows thick with hawthorn, blackberry, and honeysuckle. Birds flit
+    between the branches, singing without fear. These hedgerows have been here
+    for centuries, patient and green and full of small lives.
+  buttercups: >-
+    Bright yellow buttercups growing in cheerful clusters along the verge. Miss
+    Honey picks some of these every morning for the jam jar on her desk. They
+    glow like tiny suns in the grass.
+  daisies: >-
+    White daisies with golden centers, scattered through the grass like stars
+    fallen to earth. A child has made a daisy chain and left it draped over a
+    fencepost.
+  fields: >-
+    Green fields stretch away on either side of the lane, dotted with grazing
+    sheep and old oak trees. The landscape is gentle and rolling, utterly
+    peaceful. It is hard to believe Crunchem Hall exists in the same world.
+  sign: >-
+    A small hand-painted sign nailed to a fencepost. In neat, careful lettering
+    it reads simply: COTTAGE. An arrow points down the lane. The lettering is
+    Miss Honey's — the same precise hand that writes on the classroom blackboard.
+idlemessages:
+- A blackbird sings from the hedgerow, its melody rich and unhurried.
+- 'Buttercups nod in a gentle breeze, their yellow faces turned toward the sun.'
+- 'The lane curves ahead between green fields, leading somewhere quiet and kind.'
+- A bee drifts between wildflowers, heavy with pollen and summer contentment.
+- 'The air smells of cut grass and honeysuckle — clean, sweet, and free of chalk dust.'

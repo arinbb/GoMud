@@ -1,0 +1,15 @@
+itemid: 215
+name: star fruit
+namesimple: fruit
+displayname: <ansi fg="itemname">a Stardew star fruit</ansi>
+description: >-
+  A five-pointed golden fruit, each lobe smooth and waxy, the skin a warm
+  yellow with faint green ridges at the edges. In cross-section it makes
+  a perfect star. It smells sweet and faintly tropical -- a fruit that
+  should not grow this far north, grown anyway because this valley has its
+  own rules about what is possible. It is heavier than it looks. It is
+  warm. It glows, very faintly, in the dark.
+type: object
+subtype: usable
+uses: 0
+value: 1

@@ -1,0 +1,66 @@
+roomid: 1404
+zone: Matilda
+title: The Public Library
+description: >-
+  A warm, quiet sanctuary of <ansi fg="10">polished wood</ansi> and soft light.
+  Floor-to-ceiling <ansi fg="itemname">bookshelves</ansi> line every wall, packed
+  with volumes in every color and size. A large <ansi fg="itemname">reading table</ansi>
+  occupies the center of the room, its surface worn smooth by generations of elbows
+  and open books. Comfortable <ansi fg="itemname">armchairs</ansi> are tucked into
+  alcoves between the shelves. The air smells of old paper, furniture polish, and
+  quiet contentment. Dust motes drift through shafts of sunlight from tall windows.
+  A <ansi fg="itemname">children's section</ansi> occupies one corner, with a small
+  chair clearly worn down by one very particular occupant. The village street leads
+  back <ansi fg="exit">west</ansi>, and a road continues <ansi fg="exit">south</ansi>
+  toward Crunchem Hall.
+mapsymbol: L
+maplegend: Public Library
+biome: house
+exits:
+  west:
+    roomid: 1403
+  south:
+    roomid: 1405
+nouns:
+  bookshelves: >-
+    Shelf after shelf of books, each one a doorway to another world. Fiction,
+    history, science, poetry — all of it organized with loving precision. Some
+    shelves show gaps where books have been borrowed. Others are packed so tightly
+    that removing a single volume requires careful negotiation.
+  table: >-
+    A large oak reading table, its surface scarred by decades of use. Someone has
+    carved a tiny heart in one corner. The wood is warm to the touch, as if the
+    table itself radiates a quiet welcome.
+  armchairs: >-
+    Deep, comfortable armchairs upholstered in faded green fabric. Each one is
+    positioned near a window for optimal reading light. The cushions bear the
+    permanent impressions of countless readers.
+  children's: >-
+    A small corner with lower shelves and a tiny wooden chair. The chair is worn
+    down on one side where a very small girl sits for hours every day, working her
+    way through the entire children's section and then the adult fiction. The
+    librarian has started setting aside new arrivals for her.
+idlemessages:
+- 'The library hums with the particular silence of a room full of stories waiting to be read.'
+- Sunlight moves across the reading table, illuminating dust motes that drift like tiny golden worlds.
+- 'A page turns somewhere in the stacks. The sound is as soft as a sigh.'
+- 'The children''s chair sits empty for now, but its cushion still bears the impression of its most devoted occupant.'
+- 'The smell of old books washes over you — vanilla, almonds, and the faintest hint of adventure.'
+- A shaft of light catches the gilt lettering on a row of spines, making them glow.
+spawninfo:
+- mobid: 220
+  message: "Matilda sits in the children's corner, absorbed in a book that seems far too advanced for someone her age."
+  idlecommands:
+    - "emote turns a page with quiet concentration, completely absorbed."
+    - ""
+    - ""
+    - "say Have you read this one? It's wonderful."
+    - "emote adjusts the enormous book on her small lap."
+- mobid: 227
+  message: "Mrs. Phelps is at the front desk, sorting returned books with quiet efficiency."
+  idlecommands:
+    - "emote stamps a returned book and places it on the re-shelving cart."
+    - ""
+    - ""
+    - "say Let me know if you need help finding anything."
+    - "emote glances at the children's corner with a warm, wondering smile."

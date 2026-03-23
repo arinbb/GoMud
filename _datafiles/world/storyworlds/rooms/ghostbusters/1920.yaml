@@ -1,0 +1,102 @@
+roomid: 1920
+zone: Ghostbusters
+title: The Ghostbusters Firehouse
+description: >-
+  The ground floor of a converted hook-and-ladder firehouse in the heart of Manhattan.
+  <ansi fg="itemname">Ecto-1</ansi>, a battered 1959 Cadillac ambulance loaded with
+  equipment and roof lights, sits in the bay looking ready to roll at a moment's notice.
+  The <ansi fg="itemname">fire poles</ansi> gleam in the center of the room, one
+  descending from the upper lab floor. Proton pack storage racks line the wall,
+  along with charging stations and a whiteboard covered in equations nobody else
+  could read. A <ansi fg="itemname">ghost trap</ansi> sits on a worktable, its pedal
+  mechanism worn smooth from use. The whole place smells of motor oil, burnt ozone,
+  and something indefinably strange.
+mapsymbol: F
+maplegend: Firehouse HQ
+biome: house
+exits:
+  east:
+    roomid: 1921
+    exitmessage: You push through the big bay doors onto the street.
+  up:
+    roomid: 1922
+    exitmessage: You grab the fire pole and shin upward to the lab.
+  down:
+    roomid: 1923
+    exitmessage: You descend the pole into the basement below.
+nouns:
+  ecto-1: >-
+    The Ecto-1 is a heavily modified 1959 Cadillac Miller-Meteor Futura Duplex that
+    started life as an ambulance and has since become something considerably stranger.
+    The roof is festooned with sensors, sirens, and equipment racks. The doors are
+    marked with the NO GHOST logo. It smells of high-voltage electricity and, faintly,
+    of hospital antiseptic from a previous life. The odometer reads numbers that
+    should not be possible.
+  poles: >-
+    The classic fire poles of polished steel run through holes in the ceiling and
+    floor, the original firefighting infrastructure now repurposed for Ghostbuster
+    speed. Someone has written "DO NOT SLIDE WHILE HOLDING PROTON PACK - VENKMAN"
+    on a laminated card taped to one of them. Below that, someone else has written
+    "I KNOW FROM EXPERIENCE - STANTZ."
+  trap: >-
+    A standard-issue ghost trap: a flat rectangular device with a foot pedal trigger.
+    When deployed and the pedal is stomped, the trap springs open and emits a beam
+    that captures whatever supernatural entity is nearby. This one has seen heavy use.
+    The latch shows scorch marks and the pedal is worn down on one side.
+  whiteboard: >-
+    The whiteboard is covered in Egon Spengler's meticulous handwriting: equations
+    relating to psychokinetic energy, diagrams of the containment grid, and a series
+    of increasingly alarmed notes about "mass PKE accumulation." Someone -- presumably
+    Venkman -- has drawn a smiley face next to the most alarming calculation.
+  sign: >-
+    A hand-painted sign above the bay door reads "GHOSTBUSTERS" with the iconic NO
+    GHOST logo. Below it, in smaller letters: "We're ready to believe you."
+spawninfo:
+- mobid: 380
+  maxwander: 1
+  respawnrate: 5 real minutes
+  idlecommands:
+  - "emote leans back in his chair and props his feet on the table."
+  - "say You know what? I think this might actually work."
+  - "emote idly tosses a pencil at the ceiling tiles, where it sticks."
+  - "emote adjusts his proton pack with the weary air of a man who does this professionally."
+  - ""
+  - ""
+- mobid: 381
+  maxwander: 1
+  respawnrate: 5 real minutes
+  idlecommands:
+  - "emote tinkers enthusiastically with a piece of equipment."
+  - "say The PKE readings in this building are off the charts. Beautiful."
+  - "emote flips through a ghost reference manual, eyes wide with excitement."
+  - "say Ray Stantz -- you always believed."
+  - ""
+  - ""
+- mobid: 383
+  maxwander: 1
+  respawnrate: 5 real minutes
+  idlecommands:
+  - "emote checks the Ecto-1's oil level with practiced efficiency."
+  - "say If there is a steady paycheck in it, I will believe anything you say."
+  - "emote polishes the Ghostbusters logo on the side of the car."
+  - "say Back in seminary school, I studied the book of Revelation. Let me tell you something -- this checks out."
+  - ""
+  - ""
+- mobid: 387
+  maxwander: 0
+  respawnrate: 5 real minutes
+  idlecommands:
+  - "emote files her nails with magnificent boredom."
+  - "say Ghostbusters, whaddya want."
+  - "emote flips the page of a gossip magazine without looking up."
+  - "emote answers the phone. 'Ghostbusters. We're very busy. Please hold. Don't actually hold, we need the money.'"
+  - ""
+  - ""
+idlemessages:
+- The Ecto-1 lets out a single tick of metal cooling, like it just got back from a run.
+- The ghost trap on the worktable emits a faint rattle. Something inside shifts.
+- Janine answers the phone, listens for two seconds, says "Yeah, is that slime? That is absolutely slime," and hangs up.
+- The proton pack charging station hums at a frequency that makes your back teeth vibrate.
+- A coffee mug on the desk reads "World's Okayest Parapsychologist." It belongs to Venkman. He put it there himself.
+- The Ecto-1's dashboard lights flicker once, go green, and steady.
+- Outside, a cab honks. Someone shouts. A pigeon explodes off the windowsill. New York.

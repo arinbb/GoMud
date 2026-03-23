@@ -1,0 +1,51 @@
+roomid: 1815
+zone: Crime and Punishment
+title: The Crossroads
+description: >-
+  An intersection where several streets meet, the cobblestones worn to
+  smoothness at the center where the traffic of the city has passed for
+  generations. The <ansi fg="itemname">crossroads</ansi> of the Haymarket
+  district: a woman with a bundle crossing diagonally, a man at the corner
+  selling newspapers he holds up without calling, pigeons working the
+  gutters. Here, in the novel, Raskolnikov comes on a morning when something
+  has broken open in him. He walks to the center of the crossroads and
+  kneels. The people around him notice and step back and watch. He touches
+  his forehead to the cobblestones and kisses the earth of the city that he
+  has sinned against. Then he stands, looks around at the staring faces,
+  and walks to the police station. The Haymarket is to the <ansi
+  fg="exit">north</ansi>. Here, now, the cobblestones are warm from the sun.
+mapsymbol: X
+maplegend: The Crossroads
+biome: city
+exits:
+  north:
+    roomid: 1803
+nouns:
+  cobblestones: >-
+    The cobblestones at the center of the crossroads, worn to smoothness
+    by the passage of carts and feet and years. Warm now from the sun.
+    The surface of the city itself, the earth it is built on, and beneath
+    that earth: the city that was here before this one, and before that,
+    and before that. When he kissed these stones he was kissing all of it.
+  crossroads: >-
+    The intersection of several streets. In older beliefs, the crossroads
+    was a place of decision, of meeting, of the spirits that live at
+    thresholds. Here it is just an intersection in St. Petersburg. And
+    also exactly those things.
+  pigeons: >-
+    The pigeons work the gutters with professional thoroughness, not
+    startled by the people around them, not paying attention to anything
+    that cannot be eaten. They were here before whatever happened here
+    happened. They will be here after.
+  newspapers: >-
+    The man at the corner holds up newspapers without calling out. He has
+    been doing this long enough to know that the people who want one will
+    come and the people who do not will pass. He does not require more
+    from the transaction.
+idlemessages:
+- The crossroads is busy and loud at midmorning, all the commerce of the Haymarket district passing through.
+- 'A cart turns the corner without slowing: the driver knows this intersection, knows the second it will open, is already through.'
+- The center of the crossroads is the warmest spot in the street, the cobblestones holding a whole summer in their stone.
+- 'Someone crosses the intersection at a run, late for something, their footsteps ringing off the surrounding buildings.'
+- The pigeons scatter for a cart horse and reassemble immediately behind it, undisturbed by their own scattering.
+- 'In the middle of all the motion: a moment of stillness, as if the city pauses, as if something is about to happen.'

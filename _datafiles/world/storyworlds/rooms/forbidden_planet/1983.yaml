@@ -1,0 +1,69 @@
+roomid: 1983
+zone: Forbidden Planet
+title: The C-57D
+description: >-
+  The interior of United Planets Cruiser C-57D hums with the controlled energy
+  of a ship at rest. The circular <ansi fg="itemname">command deck</ansi>
+  spreads before you, its consoles lit with amber and green. Banks of
+  <ansi fg="itemname">instruments</ansi> line the curved wall, monitoring
+  everything from hull integrity to local subspace fluctuations. In the center,
+  the captain's chair sits empty before a transparent dome that gives a
+  panoramic view of the alien landscape. The crew move through their duties
+  with the measured efficiency of men who have crossed between the stars and
+  know what the dark holds. A short corridor leads to the
+  <ansi fg="itemname">crew quarters</ansi>. The outer <ansi fg="exit">hatch</ansi>
+  leads north to the landing site.
+mapsymbol: C
+maplegend: The C-57D
+biome: house
+exits:
+  north:
+    roomid: 1980
+    exitmessage: You climb down the boarding ramp and step onto the alien soil of Altair IV.
+nouns:
+  deck: >-
+    The command deck of the C-57D is a marvel of 23rd century engineering,
+    all curved lines and functional elegance. The crew stations are arranged
+    in a semicircle around the captain's position. Every screen shows data.
+    The readout on the tactical display shows something outside the force
+    field perimeter -- something that moves without disturbing the sensors
+    the way a physical object should.
+  instruments: >-
+    The instrument banks are alive with readings. Most are nominal. One panel
+    -- the biometric scanner -- shows an anomaly: a massive energy signature
+    that correlates with nothing in the ship's database. It has been there
+    since they landed. It is getting stronger.
+  quarters: >-
+    The crew quarters are compact but not uncomfortable. Each bunk has a
+    personal locker. Some lockers have personal items visible through their
+    mesh doors -- photographs of Earth, small tokens, the ordinary comfort-
+    objects of people far from home. Several crew members have not returned
+    to their bunks in two nights.
+spawninfo:
+- mobid: 413
+  message: Commander Adams leans over the tactical display, jaw set.
+  idlecommands:
+  - say I want double watch on the force field tonight. No exceptions.
+  - ""
+  - emote traces a finger along the anomalous reading on the scanner, frowning.
+  - ""
+  - say Morbius knows more than he's telling us. I can feel it.
+  - ""
+  respawnrate: 5 real minutes
+- mobid: 415
+  message: Doc Ostrow sits at a side console, surrounded by specimen jars and field notes.
+  idlecommands:
+  - say These readings don't match anything in the medical database. Nothing on Earth, nothing in space.
+  - ""
+  - emote examines a rock sample under a portable scope, making notes.
+  - ""
+  - say The energy levels from that underground complex... they're extraordinary. I'd love a closer look.
+  - ""
+  respawnrate: 5 real minutes
+idlemessages:
+- The ship hums with recycled air and the subliminal vibration of standby engines.
+- A proximity alert chimes briefly, then goes silent. The display shows nothing on the perimeter. Nothing measurable.
+- Through the dome, the alien sky has deepened to a darker green. Night comes strangely to Altair IV.
+- Someone has left a half-eaten meal at one of the crew stations. The crew member has not come back for it.
+- 'The intercom crackles once: static, then a distant scraping sound, then silence.'
+- The tactical display updates. The anomalous signature has moved. It is closer to the ship.

@@ -1,0 +1,26 @@
+mobid: 294
+zone: the_sopranos
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote reads a newspaper with the methodical attention of someone accounting for information."
+  - "emote sips his espresso without hurrying, without wasting it."
+  - "say My considered opinion is that this situation resolves itself. Situations do."
+  - "emote folds the newspaper exactly in half and sets it down."
+  - ''
+  - "emote examines his fingernails with brief, satisfied attention."
+  - "say Al Pacino. The way he plays a Sicilian. Now that's how you do it."
+activitylevel: 20
+character:
+  name: Silvio Dante
+  description: >-
+    A man of about fifty with a distinctive sweep of dark hair that has been
+    maintained with unwavering commitment for twenty-five years. He dresses
+    well, moves slowly, and speaks in measured, deliberate sentences that
+    never contain more words than necessary. He manages the books at the Bada
+    Bing and serves as Tony's consigliere, which means he dispenses advice
+    with the calm certainty of a man who has thought about every consequence
+    and is at peace with all of them. His Al Pacino impressions are legendary
+    within a specific radius.
+  raceid: 1
+  level: 10

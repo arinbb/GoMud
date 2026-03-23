@@ -1,0 +1,46 @@
+roomid: 1309
+zone: Buffalo 66
+title: Photo Booth Alcove
+description: >-
+  A small alcove off the bowling alley, lit by a single bare <ansi fg="itemname">bulb</ansi>.
+  A vintage <ansi fg="itemname">photo booth</ansi> stands against the wall, its curtain
+  a faded <ansi fg="12">blue</ansi> velvet, half-drawn. The booth's exterior is
+  scratched chrome and chipped white paint. A small <ansi fg="itemname">screen</ansi>
+  shows a sample photo — two people, blurred, almost touching. A slot accepts
+  <ansi fg="itemname">quarters</ansi>. Inside the booth, a narrow bench, barely wide
+  enough for two. The light in here is warm — warmer than anywhere else in
+  Buffalo. The bowling alley is back to the <ansi fg="exit">north</ansi>. A hallway
+  leads <ansi fg="exit">east</ansi>.
+mapsymbol: O
+maplegend: Photo Booth
+biome: house
+exits:
+  north:
+    roomid: 1308
+  east:
+    roomid: 1310
+nouns:
+  booth: >-
+    A classic photo booth, the kind that takes four frames in quick succession
+    with a flash. The curtain is soft velvet, the bench inside is cracked vinyl.
+    It is the most intimate space in all of Buffalo.
+  bulb: >-
+    A single bare bulb, casting warm yellow light. It turns the alcove into
+    something almost gentle, almost safe.
+  screen: >-
+    A small display showing sample photos. Couples, mostly. Their faces blurred
+    by movement or laughter or something else. Everyone looks happy in a photo
+    booth. Even here.
+  quarters: >-
+    The slot takes quarters. You probably have some. Everyone has quarters they
+    are not using for anything important.
+  curtain: >-
+    Faded blue velvet, soft from years of hands pulling it open and closed. It
+    offers the illusion of privacy, which is sometimes enough.
+idlemessages:
+- The photo booth hums quietly, its internal light glowing behind the curtain.
+- You could sit in the photo booth. You could pose. You could smile. Maybe it would mean something.
+- The curtain sways slightly, as if someone just stepped out.
+- A strip of photos lies on the floor near the booth, faces you do not recognize, smiling.
+- The warm light from the booth spills across the floor like a small invitation.
+- For a moment, the bowling alley sounds fade, and this alcove is the quietest place in the world.

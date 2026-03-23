@@ -1,0 +1,29 @@
+mobid: 301
+zone: on_the_road
+hostile: false
+maxwander: 1
+activitylevel: 20
+angrycommands: []
+idlecommands:
+  - emote scribbles in a small notebook, brow furrowed, trying to catch something in words before it is gone.
+  - emote watches Dean with an expression of love and exhaustion in approximately equal measure.
+  - emote looks at the road and his face does something that is not sadness but is adjacent to it.
+  - say There was nowhere to go but everywhere, so just keep on rolling under the stars.
+  - emote reads a few lines from his notebook, crosses them out, reads them again.
+  - say I was half-way across America, at the dividing line between the East of my youth and the West of my future.
+  - emote stands at the window for a long moment, looking at something that is farther away than the street.
+character:
+  name: Sal Paradise
+  description: >-
+    A young man in his mid-twenties, Italian-American, with a careful face
+    that watches everything and a notebook that catches most of it. He is
+    not the most vivid person in any room he is in — that is always Dean —
+    but he is the most honest, which is a different kind of presence. He
+    wears unremarkable clothes and carries a battered notebook and a pen
+    that is always running out of ink at the crucial moment. He looks at
+    Dean the way someone looks at a fire: fascinated, warmed, slightly
+    afraid of what happens if it gets loose. He is the author of everything
+    you are experiencing, and he is also inside it, and that is what the
+    book is about.
+  raceid: 1
+  level: 8

@@ -1,0 +1,29 @@
+-
+  Supported:
+    "shane": ["gus"]
+  Conversation:
+    - ["#1 say Another one."]
+    - ["#2 emote sets a fresh bottle in front of Shane with the practiced calm of someone who has done this many times"]
+    - ["#2 say How was work today?"]
+    - ["#1 say Same."]
+    - ["#2 say The chickens okay?"]
+    - ["#1 emote pauses, and something shifts slightly in his expression"]
+    - ["#1 say Yeah. They're okay. Emily's one is laying really well."]
+    - ["#2 say That's good, Shane."]
+    - ["#1 say Yeah."]
+    - ["#2 emote quietly refills the nut bowl and says nothing further, which is exactly right"]
+-
+  Supported:
+    "shane": ["gus"]
+  Conversation:
+    - ["#2 say You do not have to be here every night, you know."]
+    - ["#1 say I know."]
+    - ["#2 say Is there somewhere else you would rather be?"]
+    - ["#1 emote takes a slow drink and thinks about it genuinely"]
+    - ["#1 say The coop, maybe. At night the chickens are just... there. They don't want anything from you."]
+    - ["#2 emote nods slowly, filing that away"]
+    - ["#2 say The coop sounds nice."]
+    - ["#1 say It is."]
+    - ["#1 emote stands up with some difficulty and puts money on the bar"]
+    - ["#1 say I'll see you tomorrow."]
+    - ["#2 say I'll be here."]

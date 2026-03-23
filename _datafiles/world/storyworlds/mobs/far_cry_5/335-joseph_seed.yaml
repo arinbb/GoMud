@@ -1,0 +1,28 @@
+mobid: 335
+zone: far_cry_5
+hostile: false
+maxwander: 0
+activitylevel: 20
+idlecommands:
+- emote moves the rosary through his fingers bead by bead, his lips forming words too quiet to hear.
+- say The Collapse is not a threat I make. It is a thing I have seen. There is a difference.
+- ""
+- emote adjusts his aviator glasses and regards you with the patient certainty of someone who has already won.
+- say I do not ask you to believe me. I ask you to look around. The evidence is there. It has always been there.
+- ""
+- emote places one hand on the open Book of Joseph, gently, the way you might touch something true.
+character:
+  name: Joseph Seed
+  description: >-
+    A man in his forties, shirtless under a long dark coat, a rosary moving
+    constantly through his fingers. His body is marked with the same scripture
+    tattoos as his followers. Aviator glasses reflect the candlelight, making
+    his eyes unreadable. He is not large. He is not threatening. He is
+    absolutely still in a way that rooms reorganize themselves around. When he
+    speaks, his voice is quiet and warm and completely certain, and the
+    certainty is the thing — it fills every space available to it. He has
+    never doubted anything, not once, not for a moment. You understand,
+    looking at him, how people follow. You are not sure that understanding
+    helps.
+  raceid: 1
+  level: 20

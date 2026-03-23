@@ -1,0 +1,53 @@
+roomid: 1526
+zone: Waynes World
+title: The Gasworks
+description: >-
+  Aurora's premier live music venue. The <ansi fg="itemname">Gasworks</ansi> is
+  dark, loud, and smells of spilled beer, dry ice, and human ambition. A proper
+  <ansi fg="itemname">stage</ansi> occupies the far end, elevated above the crowd,
+  bristling with <ansi fg="itemname">equipment</ansi> — amps, monitors, mic stands.
+  The <ansi fg="itemname">bar</ansi> runs the length of the right wall, its bottles
+  lit from below in amber and green. The <ansi fg="itemname">crowd</ansi> tonight
+  is the crowd every night — the faithful, the curious, and Tiny the bouncer
+  at the door. <ansi fg="exit">North</ansi> leads back to the street. Access to
+  <ansi fg="exit">backstage</ansi> requires knowing someone.
+mapsymbol: G
+maplegend: The Gasworks
+biome: city
+exits:
+  north:
+    roomid: 1523
+  backstage:
+    roomid: 1528
+    mapdirection: west
+nouns:
+  stage: >-
+    A wooden stage, slightly elevated, stained with decades of sweat and feedback.
+    The monitor wedges are angled perfectly. The mic stand center-stage has a
+    slight lean that Cassandra has made her own. This stage has held real music.
+  equipment: >-
+    Marshall stack, Fender Twin Reverb, a drum riser, a monitor board, and more
+    cable than seems possible. Everything is connected to everything else. It works.
+    Nobody is entirely sure why.
+  bar: >-
+    Long, dark wood, lit from below. The bartender has the economy of motion
+    of someone who has poured ten thousand drinks and will pour ten thousand more.
+  crowd: >-
+    The Gasworks crowd. They know their music, they know each other, and they know
+    when something is excellent. They are not easily fooled. They are also not
+    easily unhappy. This is their place.
+spawninfo:
+- mobid: 243
+  message: "<ansi fg=\"yellow\">Cassandra Wong takes the stage, adjusting the mic stand with practiced precision.</ansi>"
+  respawnrate: 5 real minutes
+- mobid: 247
+  message: "<ansi fg=\"yellow\">Tiny materializes by the door, arms crossed, impassive and enormous.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The stage lights pulse with blue and amber as the band runs a sound check.
+- Cassandra hits a low E on her guitar and the whole room hums in sympathy.
+- The crowd shifts and murmurs. Someone near the back says "Excellent" in a tone of genuine assessment.
+- The bass from the stage is a physical thing, pressing against your chest.
+- Tiny checks IDs at the door with a face that reveals nothing.
+- A roadie adjusts a monitor wedge and nods at invisible knowledge.
+- The smell of the Gasworks is the smell of every great thing that has ever happened in Aurora.

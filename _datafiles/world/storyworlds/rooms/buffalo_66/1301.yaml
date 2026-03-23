@@ -1,0 +1,48 @@
+roomid: 1301
+zone: Buffalo 66
+title: Buffalo Streets
+description: >-
+  A wide, desolate <ansi fg="8">street</ansi> lined with brick buildings whose
+  windows are dark or boarded. The <ansi fg="itemname">sidewalk</ansi> is cracked
+  and salt-stained, and patches of grey <ansi fg="15">snow</ansi> cling to the curbs
+  like something that refuses to die. A <ansi fg="12">phone booth</ansi> stands on
+  the corner, its glass cracked. Power lines sag overhead, swaying in the wind.
+  The street runs <ansi fg="exit">east</ansi> toward a dance studio and <ansi fg="exit">west</ansi>
+  back to the prison lot. A side street leads <ansi fg="exit">north</ansi> to a gas
+  station. To the <ansi fg="exit">south</ansi>, a residential block. A rusted
+  <ansi fg="exit">car</ansi> idles at the curb.
+mapsymbol: +
+maplegend: Streets
+biome: city
+exits:
+  west:
+    roomid: 1300
+  east:
+    roomid: 1302
+  south:
+    roomid: 1305
+  north:
+    roomid: 1303
+  car:
+    roomid: 1304
+    mapdirection: south-x2
+nouns:
+  sidewalk: >-
+    Grey concrete, cracked and heaved by decades of freeze-thaw cycles. Salt
+    residue forms white ghost-lines along its edges.
+  snow: >-
+    Not fresh snow. Old snow. Grey, compacted, crystallized into ice at the
+    edges. It has been here since November and it will be here until April.
+  phone: >-
+    The phone booth glass is spider-webbed with cracks. The receiver hangs
+    from its cord. You pick it up and hear nothing. Not even a dial tone.
+  booth: >-
+    The phone booth glass is spider-webbed with cracks. The receiver hangs
+    from its cord. You pick it up and hear nothing. Not even a dial tone.
+idlemessages:
+- A traffic light changes from red to green to red again. No one is driving.
+- The wind funnels between the buildings, picking up speed and losing warmth.
+- Somewhere a shop sign creaks on its hinges, a slow metronome of rust.
+- A newspaper page skitters across the sidewalk and plasters itself against a fire hydrant.
+- The phone booth receiver swings gently, clicking against the glass.
+- Everything here looks like it was built to last and then abandoned anyway.

@@ -1,0 +1,58 @@
+roomid: 1990
+zone: Forbidden Planet
+title: The Deep Krell
+description: >-
+  Miles below Altair IV, at the heart of the machine that killed its makers.
+  The <ansi fg="cyan">apparatus</ansi> that fills this chamber has no human
+  name. It is the brain boost device -- the instrument through which the
+  Krell expanded their intellectual capacity directly, interfacing mind with
+  machine at the deepest level. The <ansi fg="itemname">headrest</ansi> of
+  alien alloy waits in the center of the room like a throne or a dentist's
+  chair, surrounded by panels of <ansi fg="cyan">readouts</ansi> that
+  bloom with light as you enter. The <ansi fg="itemname">walls</ansi> here
+  are closer, the scale more intimate than the vast upper chambers. This is
+  a personal space. The Krell came here alone. They came here to become
+  more than they were. It cost them everything. Above you, the
+  <ansi fg="exit">shaft</ansi> back to the world.
+mapsymbol: B
+maplegend: Deep Krell
+biome: cave
+exits:
+  shaft:
+    roomid: 1989
+    mapdirection: up
+nouns:
+  apparatus: >-
+    The brain boost apparatus of the Krell. It works by creating a direct
+    neural link between the user's mind and the machine's processing capacity.
+    The Krell used it to expand their intelligence beyond biological limits.
+    Morbius used it. It tripled his IQ. It also opened a direct channel from
+    his subconscious mind to the machine's matter-transformation function.
+    He did not know this. The monster that killed the colony was not created
+    by the Krell. It was created by Morbius, while he slept.
+  headrest: >-
+    The headrest is sized for a Krell skull -- much larger than a human's,
+    but adaptable. Morbius has spent years calibrating it. The metal is warm,
+    as if it has recently been used. As if it is always recently been used.
+    There are stress marks in the alloy at the temples. Things are pressed
+    very hard against it. Not all of them are Krell.
+  readouts: >-
+    The panels bloom with light when a living mind enters this room. They are
+    reading you. Your intelligence, your subconscious, your fears, your desires,
+    your Id -- the dark primitive part of the mind that wants and hates and
+    hungers and knows nothing of civilization. The machine does not distinguish
+    between what you consciously intend and what you secretly want. It never
+    did. This was the Krell's fatal error.
+  walls: >-
+    The walls here are covered in Krell script at a density unlike anywhere
+    else in the complex. The inscription is not instructions or records but
+    something more like prayer -- repetitive, almost desperate. Morbius
+    translated one panel. It reads: What we have made must not be what we are.
+    He has not translated the others.
+idlemessages:
+- The apparatus panels bloom with soft light as you stand before them. They are reading something.
+- A pulse travels through the walls, brighter here than anywhere -- the machine is most alive at its heart.
+- The subsonic hum at this depth is a physical force. Your thinking feels slightly altered. Slightly larger.
+- The headrest catches the ambient light and gleams. It has been used recently. The metal holds warmth.
+- 'The readout panels shift in a pattern that looks almost like thought: complex, recursive, layered.'
+- You have a sudden, vivid, frightening idea. It is not your idea. It came from somewhere in the walls.

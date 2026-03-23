@@ -1,0 +1,52 @@
+roomid: 1912
+zone: The Little Prince
+title: The Stars
+description: >-
+  You are not anywhere, exactly. You are in the dark between stars, which
+  is not empty -- it is full of the <ansi fg="itemname">laughter</ansi>
+  of a small boy whose laugh, when you first heard it, sounded exactly
+  like five hundred million little bells. The stars are not far here.
+  They are immediate, surrounding, warm as breath. Each one might be
+  the star you are looking for, the tiny one with the three volcanoes
+  and the glass dome and the rose that is almost certainly, now, all right.
+  The <ansi fg="itemname">silence</ansi> here is not silent. It rings.
+  Every star rings slightly, the way a glass rings when you run a wet
+  finger around its rim, and all of them together make a sound that is
+  not quite sound and not quite nothing. When you look at <ansi fg="itemname">any star</ansi>
+  at all, you will think of it now. You will laugh a little. That is what
+  the Little Prince said would happen. He was right. He is usually right
+  about the essential things.
+mapsymbol: '*'
+maplegend: The Stars
+biome: land
+nouns:
+  laughter: >-
+    The laugh of the Little Prince, heard here among all his stars at once:
+    five hundred million bells, each one perfectly pitched, each one the
+    sound of a small boy who asked impossible questions and got answers no
+    one else would have gotten. It is not grief, this sound. It is the
+    opposite of grief. It is the kind of sound that fills every star you
+    will ever look at for the rest of your life with the memory of something
+    you did not know you had until it was, not lost exactly, but changed
+    into starlight.
+  silence: >-
+    The silence here rings with something that is not silence. Every star
+    hums at a frequency just below hearing, and together they make a chord
+    that you feel in your chest, slightly to the left of center, which is
+    where the important things happen. The silence says: he is all right.
+    The rose is all right. The glass dome was put back on before he went.
+    You know this. You cannot explain how you know this.
+  any star: >-
+    You look at a star. Any star. You do not know which one is B-612. You
+    do not need to. Every star is now, to some extent, the one with the
+    three volcanoes. When a star laughs, you will hear it. When you are
+    sad at night, you will look up and something in you will lift slightly.
+    This is irreversible. This is what the Little Prince meant.
+idlemessages:
+- The stars hum together at a frequency just below hearing. You feel it anyway.
+- One star seems brighter than the others for a moment, then the same as all of them again.
+- Laughter -- very small, very clear, very far -- drifts past like a warm draft from an unseen fire.
+- 'You think: somewhere in this, a rose is sleeping under a glass dome. The thought is comforting in a way that does not require explanation.'
+- Every direction is up here. Every direction is also home. Neither of these things is a problem.
+- The stars are so numerous and so near that the darkness between them is negligible. The darkness is mostly light.
+- A small voice, just audible, says something about sheep. Then is gone. Then the laughter again.

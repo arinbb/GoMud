@@ -1,0 +1,60 @@
+roomid: 1410
+zone: Matilda
+title: Assembly Hall
+description: >-
+  A cavernous <ansi fg="8">hall</ansi> with a high ceiling and tall, grimy windows
+  that let in reluctant grey light. Rows of wooden <ansi fg="itemname">benches</ansi>
+  face a raised <ansi fg="itemname">stage</ansi> at the far end. A <ansi fg="itemname">podium</ansi>
+  stands center stage — this is where the Trunchbull delivers her pronouncements
+  and punishments. The <ansi fg="itemname">floor</ansi> is scarred hardwood, scuffed
+  by decades of shuffling, terrified feet. A faint smell of chocolate lingers in the
+  air, mixed with floor polish and dread. A <ansi fg="itemname">table</ansi> near the
+  stage holds a mysterious covered <ansi fg="itemname">platter</ansi>. The school
+  corridor is back to the <ansi fg="exit">east</ansi>.
+mapsymbol: A
+maplegend: Assembly Hall
+biome: fort
+exits:
+  east:
+    roomid: 1407
+nouns:
+  benches: >-
+    Long wooden benches arranged in rows, worn smooth by generations of
+    anxious children. They creak ominously when sat upon. No one sits
+    comfortably in the Assembly Hall.
+  stage: >-
+    A raised wooden platform at the far end of the hall, elevated just enough
+    that whoever stands upon it looms over the seated children below. It is
+    designed for intimidation, not performance.
+  podium: >-
+    A heavy oak podium with claw-foot legs. This is where the Trunchbull stands
+    to address the school, her voice booming off the walls like cannon fire.
+    There are dents in its surface where she has slammed her fist to make a point.
+  floor: >-
+    Scarred hardwood, scuffed and stained by decades of use. Certain stains are
+    darker than others. One large stain near the stage has the unmistakable
+    brown tint of chocolate cake.
+  table: >-
+    A long table near the stage, usually bare. Today it holds a large covered
+    platter that emanates the rich, heavy smell of chocolate.
+  platter: >-
+    An enormous platter covered with a silver dome. The smell of chocolate
+    seeps from beneath it — dense, rich, overwhelming. This is not an
+    ordinary piece of cake. This is a weapon of punishment disguised as
+    confection. An entire eighteen-inch chocolate cake made by the school
+    cook. Someone is going to be forced to eat every last crumb.
+idlemessages:
+- 'The smell of chocolate fills the hall — dense, rich, and somehow threatening.'
+- 'The benches creak as if remembering the weight of frightened children.'
+- 'A window high in the wall lets in a shaft of grey light that illuminates dust motes drifting like ash.'
+- 'The podium stands empty on the stage, but its presence alone is enough to silence a room.'
+- 'The chocolate smell grows stronger. Somewhere, a boy is about to face the greatest challenge of his young life.'
+spawninfo:
+- mobid: 226
+  message: "Bruce Bogtrotter sits on a bench near the stage, looking pale but determined."
+  idlecommands:
+    - "emote stares at the covered platter with a mixture of terror and resolve."
+    - ""
+    - ""
+    - "say She can't make me afraid of cake. I LIKE cake."
+    - "emote wipes his brow with the back of his hand."

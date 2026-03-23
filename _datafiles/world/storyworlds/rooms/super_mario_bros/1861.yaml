@@ -1,0 +1,63 @@
+roomid: 1861
+zone: Super Mario Bros
+title: World 1-1 Underground
+description: >-
+  Down the pipe and into the belly of the Mushroom Kingdom. The ceiling is
+  made of solid brown <ansi fg="itemname">bricks</ansi>, low and claustrophobic,
+  pressing the world into a narrow corridor. The whole chamber glows with a
+  dim greenish light filtering through the stone. <ansi fg="yellow">Coins</ansi>
+  line the floor and float in rows overhead, more coins than you would ever
+  find above ground, as if the underground world is overcompensating. A
+  <ansi fg="itemname">pipe</ansi> in the corner has a Piranha Plant in it --
+  a fat green head on a white stalk, bobbing rhythmically up and down, teeth
+  bared. The brick walls echo every step back at you, making you sound like
+  an army. The smell is cool and mineral, like a cave made of math. West
+  leads <ansi fg="exit">back</ansi> to the surface; east leads
+  <ansi fg="exit">deeper</ansi> through the underground.
+mapsymbol: U
+maplegend: Underground
+biome: cave
+exits:
+  west:
+    roomid: 1860
+  east:
+    roomid: 1862
+nouns:
+  bricks: >-
+    The underground is made entirely of bricks -- same brown chunky blocks
+    as the surface, but here they press in from every side. The ceiling is
+    especially close, a flat brown lid over the world. Somewhere behind
+    these bricks are pipes, coin caches, secret passages. The underground
+    always has more going on than it shows. You can punch the bricks from
+    below. Most shatter. A few are hiding something.
+  coins: >-
+    Coins everywhere -- spinning slowly in mid-air, scattered along the
+    floor, arranged in row patterns that suggest someone placed them here
+    deliberately, like breadcrumbs or a test. Each one is a perfect yellow
+    circle, slightly translucent, catching the dim light. If you collect
+    one hundred of them, you earn an extra life. The coin sound is a high
+    bright ding that never gets old, not even after the ten thousandth.
+  pipe: >-
+    The pipe in the corner is inhabited. A Piranha Plant -- a fat green
+    circular head on a pale stalk, with a white collar and enormous teeth
+    -- emerges from the pipe on a rhythm, rises to full height, pauses,
+    descends. Rises, pauses, descends. It has been doing this for forty
+    years. It will do it for forty more. There is a gap between its cycles
+    if you are quick enough. There is always a gap if you are quick enough.
+spawninfo:
+- mobid: 357
+  message: A Piranha Plant slides up from the pipe, teeth snapping rhythmically.
+  idlecommands:
+  - emote rises from the pipe to full height, teeth bared.
+  - emote pauses at the apex, head swaying.
+  - emote descends back into the pipe with a soft shlupp.
+  - ""
+  respawnrate: 2 real minutes
+idlemessages:
+- 'The underground has its own music: a minor-key version of the surface theme, just a little more urgent.'
+- Coins spin in rows overhead, each one rotating slowly with a faint gold gleam.
+- The Piranha Plant rises, pauses, descends. Rises, pauses, descends. Endlessly.
+- Your footsteps echo off the brick ceiling, louder than they should be.
+- 'A drip of water falls somewhere in the darkness: pip. Then silence. Then pip again.'
+- The underground smells of cool stone and old coins and something faintly plantlike.
+- 'The brick ceiling is oppressively close: the underground world does not believe in headroom.'

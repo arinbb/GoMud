@@ -1,0 +1,54 @@
+roomid: 1846
+zone: Far Cry 5
+title: Johns Gate
+description: >-
+  The gate stands at the northern end of Holland Valley: a massive arch of
+  welded steel over the road, John Seed's declaration carved into it in letters
+  a foot deep. <ansi fg="yellow">YES.</ansi> Just that. His word. His demand.
+  His theology condensed to three letters that invite no further conversation.
+  <ansi fg="itemname">Confession booths</ansi> flank the road on either side —
+  plywood and corrugated steel, each one with a kneeling pad and a small
+  <ansi fg="itemname">chalkboard</ansi> where penitents write their sins. The
+  chalkboards are full. Some sins are written in many hands over each other,
+  palimpsests of coerced confession. <ansi fg="itemname">Eden's Gate guards</ansi>
+  watch from a raised platform. A <ansi fg="itemname">loudspeaker</ansi> plays
+  a recording of John Seed speaking about sin and absolution with the
+  smooth confidence of a man who has never doubted himself for a second.
+  The valley is <ansi fg="exit">south</ansi>.
+mapsymbol: G
+maplegend: Johns Gate
+biome: road
+exits:
+  south:
+    roomid: 1845
+nouns:
+  gate: >-
+    Welded steel, painted white, the word YES in black letters a foot deep
+    cut through the arch. You have to pass under it to go north. John
+    designed this deliberately. You say yes to enter his territory. The
+    word follows you through.
+  booths: >-
+    Confession booths, hastily constructed from plywood and sheet metal.
+    Each one has a kneeling pad, worn smooth. A chalkboard. The instructions
+    are simple: write your sin. Say YES. Be forgiven. Be clean. Be John's.
+    The coercion is structural. You confess or you do not pass. Many have confessed.
+  chalkboards: >-
+    The chalkboards are covered in writing, layer over layer — sins written,
+    erased, written over, accumulated into illegibility. What people have
+    confessed here. What they were willing to name in order to continue.
+    The chalk dust in the cracks between boards holds a record no one could
+    fully read.
+  speaker: >-
+    A loudspeaker mounted on the gate arch, playing a recording on loop.
+    John Seed's voice, warm and persuasive: 'There is freedom in confession.
+    There is freedom in YES. Say yes to what you are. Say yes to what you
+    have done. Say yes to me and you will be free.' The voice is genuinely
+    compelling, which is the worst thing about it.
+idlemessages:
+- The YES arch casts its shadow across the road at a precise angle as the sun moves through the day.
+- The confession booth recording loops. John Seed's voice filling the gate approach with practiced warmth.
+- A group of cultists moves through the gate in formation, each touching the YES arch as they pass.
+- The chalkboards in the booths shift and settle in the wind. Written sins making a soft sound.
+- A guard on the platform scans the valley road with binoculars, slow and methodical.
+- Someone has left flowers at the base of the YES arch. Mountain wildflowers. An offering or a protest.
+- 'The loudspeaker crackles. For a moment the recording skips: ''YES YES YES YES.'' Then resumes.'

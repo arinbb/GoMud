@@ -1,0 +1,42 @@
+roomid: 2111
+zone: Up in Smoke
+title: The Drive-In
+description: >-
+  A classic 1970s drive-in movie theatre off the freeway, a hundred
+  <ansi fg="itemname">cars</ansi> arranged in rows facing a <ansi fg="itemname">
+  screen</ansi> the size of a small building. The film playing is too far away
+  to hear properly -- car speakers on posts crackle with the audio. In the
+  middle distance the <ansi fg="itemname">snack bar</ansi> glows like a small
+  civilization, serving hot dogs and popcorn and soda to a steady stream of
+  people in flip-flops. Kids run between the cars. Adults pretend not to notice.
+  The sky is that deep blue-black specific to LA nights when the smog is low.
+  Exit <ansi fg="exit">highway</ansi> leads back to the 405.
+mapsymbol: D
+maplegend: The Drive-In
+biome: road
+exits:
+  highway:
+    roomid: 2103
+    mapdirection: west
+    exitmessage: You pull back out of the drive-in and onto the highway.
+nouns:
+  cars: >-
+    Station wagons, muscle cars, vans, the occasional pickup with a blanket
+    in the bed. Every car a private theater. Every couple conducting their
+    own simultaneous screening in parallel with the official film.
+  screen: >-
+    The screen is the size that screens should be: enormous, white, impractical,
+    beautiful. Whatever is playing, it is bigger than life. That is the point.
+    Everything at a drive-in is bigger than life and nobody complains.
+  bar: >-
+    The snack bar sells hot dogs that have been turning on a heated roller
+    for exactly long enough to be perfect. The popcorn comes in a bag bigger
+    than your head. The soda is a medium that is actually a large.
+idlemessages:
+- Car speakers crackle with a dramatic musical sting from the current feature.
+- A kid chases another kid between the parked cars in the dark. Parents watch from within.
+- The snack bar line shuffles forward. Someone emerges with a tower of popcorn.
+- 'The screen shifts: a chase scene, the cars larger than any cars have ever been.'
+- 'A horn honks twice from somewhere -- the universal drive-in signal for something.'
+- The smell of popcorn and exhaust mingles in the night air.
+- Somebody has a radio on in a car nearby, competing softly with the film.

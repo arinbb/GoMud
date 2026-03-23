@@ -1,0 +1,25 @@
+questid: 180
+name: Crime and Punishment
+description: >-
+  Walk the streets of 1860s St. Petersburg with Raskolnikov: the garret,
+  the square, the staircase, the detective's office, the room with the Bible
+  and the candle, and finally the crossroads where the earth must be kissed.
+reward:
+  experience: 5500
+  item_id: 210
+  playermessage: >-
+    You have walked the whole of it. The garret, the square, the staircase
+    where the dark paint is still fresh on the door. Porfiry's office with
+    its comfortable trap. Sonya's room and the Lazarus passage. The
+    crossroads. You receive a tattered student cap -- frayed at the brim,
+    stained with the particular sweat of someone who thought too much in
+    a room too small. Somewhere in Siberia, a young man is beginning to
+    learn something. You already know it.
+steps:
+- description: Wake in Raskolnikovs garret on Stolyarny Lane.
+- description: Visit the teeming Haymarket Square.
+- description: Hear Marmeladovs confession in the tavern.
+- description: Ascend the pawnbrokers staircase to the fourth floor.
+- description: Meet Porfiry Petrovich in his office.
+- description: Find Sonya Marmeladova and the Bible.
+- description: Kiss the earth at the crossroads.

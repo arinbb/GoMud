@@ -1,0 +1,14 @@
+itemid: 146
+name: Harold and Maude film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Harold and Maude</ansi>
+description: >-
+  A film reel in a warm-worn canister, the metal handle polished smooth
+  from handling. 'HAROLD AND MAUDE' is printed on the label in neat block
+  letters, below which someone has added in pencil: 'Hal Ashby, 1971. Cat
+  Stevens. The theme is life.' If you hold it close you hear, very faintly,
+  the opening notes of something on a guitar -- simple, clear, warm.
+type: object
+subtype: usable
+uses: 0
+value: 0

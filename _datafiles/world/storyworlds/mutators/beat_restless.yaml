@@ -1,0 +1,12 @@
+mutatorid: beat-restless
+namemodifier:
+  behavior: append
+  text: (restless)
+  colorpattern: none
+descriptionmodifier:
+  behavior: append
+  text: The road is out there and you can feel it calling, the way the road always calls, the way it called everyone who ever stood in one place too long.
+  colorpattern: none
+alertmodifier:
+  text: Somewhere the highway runs on without you. Dean Moriarty is already driving it.
+  colorpattern: none

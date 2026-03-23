@@ -1,10 +1,14 @@
 roomid: 900
 zone: Tutorial
-title: Learning to Look
-description: You are at the Newbie School. Here you will learn the very basics of
-  how to navigate and interact with the world. Pay attention, because once you complete
-  this area, you will be all on your own. Currently you are learning about looking
-  around.
+title: Welcome
+description: >-
+  You stand in a small, warmly lit chamber. Floating text shimmers in the air
+  around you, offering a few essential tips. An exit to the <ansi fg="exit">east</ansi>
+  leads onward.
 exits:
   east:
-    roomid: 901
+    roomid: 903
+nouns:
+  text: >-
+    The shimmering text reads: look, inventory, status, equip, attack, help.
+    These are the basics. Everything else you can learn as you go.

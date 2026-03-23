@@ -1,0 +1,50 @@
+roomid: 1814
+zone: Crime and Punishment
+title: The Vacant Lot
+description: >-
+  A gap between buildings where something was demolished and nothing has been
+  built yet. A scrubby <ansi fg="itemname">tree</ansi> grows crookedly from
+  cracked ground. <ansi fg="itemname">Rubble</ansi> and broken bricks and old
+  mortar make the ground uneven. In one corner, against the base of the
+  standing wall, a <ansi fg="itemname">large flat stone</ansi> lies as it has
+  always lain, unremarkable. Raskolnikov knows exactly which stone. He moved
+  it once, on a night when the fever was at its worst, when the theory was
+  still a theory, and placed beneath it what he had taken from the flat.
+  The <ansi fg="itemname">building wall</ansi> on the east side has a faded
+  painted advertisement for something no longer available. The canal is
+  to the <ansi fg="exit">south</ansi>.
+mapsymbol: V
+maplegend: The Vacant Lot
+biome: road
+exits:
+  south:
+    roomid: 1807
+    mapdirection: south
+nouns:
+  stone: >-
+    A large flat stone, grey, unremarkable, lying against the base of
+    the wall. The earth around it looks like earth. There is nothing to
+    see here. There is nothing under the stone. There is nothing under
+    the stone. You find yourself looking at it anyway, then looking
+    away, then looking back.
+  rubble: >-
+    Broken bricks, old mortar, a rusted iron fixture from a door that
+    no longer exists, a shard of tile with a blue pattern on it, the
+    neck of a bottle. The anonymous rubbish of a demolished place,
+    accumulating.
+  tree: >-
+    A tree, probably some kind of lime, growing at an angle from cracked
+    ground with the determination of things that survive without encouragement.
+    Its leaves are grey with dust. In the heat of the summer it provides
+    a shadow the size of nothing useful.
+  wall: >-
+    The standing wall of the building next door, its old plaster showing
+    through a faded advertisement for some merchant's goods. The merchant
+    is gone, the goods are gone, the paint is almost gone. The wall remains.
+idlemessages:
+- A cat picks its way through the rubble on some investigation, tail vertical, indifferent to observers.
+- The vacant lot collects heat as well as debris, the broken ground radiating warmth long after the sun has moved.
+- 'Wind moves through the crookedy tree: a dry sound, a handful of dusty leaves.'
+- 'The large flat stone lies exactly where it has always lain. It has not moved. Of course it has not moved.'
+- A pigeon lands on the rubble, tilts its head at something, finds nothing, flies away.
+- The shadow of the building wall moves across the lot in the afternoon, slow as a clock hand.

@@ -1,0 +1,26 @@
+mobid: 366
+zone: the_monkey_wrench_gang
+hostile: false
+maxwander: 3
+activitylevel: 40
+angrycommands: []
+idlecommands:
+  - emote circles overhead on a thermal, its wings spread to their full extent, watching everything below.
+  - emote lands on a boulder at the mesa edge and regards you with one glossy black eye.
+  - emote calls once, a hoarse bark that echoes off the canyon walls and says nothing useful.
+  - emote tilts its head and watches your hands.
+  - emote launches from its boulder without apparent effort, banking into the canyon below.
+  - emote preens a wing feather with its massive bill, then resumes watching.
+character:
+  name: a raven
+  description: >-
+    A raven of the desert Southwest -- larger than you might expect, its plumage
+    an absolute black that absorbs the desert light without giving anything back.
+    Its bill is heavy and curved, built for everything. Its eyes are the color of
+    oil and hold an intelligence that is not metaphorical. Ravens in the canyon
+    country live for decades, remember faces, solve problems, and have opinions
+    about carrion that are as considered as anything in the desert. This one has
+    been watching the gang for days. It has not been impressed or unimpressed.
+    It is simply watching, the way the canyon country watches everything.
+  raceid: 1
+  level: 3

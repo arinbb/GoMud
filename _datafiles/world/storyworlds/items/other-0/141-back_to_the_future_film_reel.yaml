@@ -1,0 +1,15 @@
+itemid: 141
+name: Back to the Future film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Back to the Future</ansi>
+description: >-
+  A chrome-edged film canister, lighter than it looks and faintly warm
+  to the touch. "BACK TO THE FUTURE" is stenciled on the lid in red
+  block letters. If you hold it to your ear you hear the high whine
+  of something accelerating, the rumble of a big engine, and then --
+  for just a fraction of a second -- a sound like time itself tearing
+  open. The canister smells faintly of ozone.
+type: object
+subtype: usable
+uses: 0
+value: 0

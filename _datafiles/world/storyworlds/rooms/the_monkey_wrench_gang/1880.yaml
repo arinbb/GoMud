@@ -1,0 +1,58 @@
+roomid: 1880
+zone: The Monkey Wrench Gang
+title: The Lonely Dell
+description: >-
+  You stand at <ansi fg="itemname">Lees Ferry</ansi>, the ancient crossing point of the
+  <ansi fg="cyan">Colorado River</ansi> in the far north of Arizona, just below the Utah
+  line. The river here is still green and cold, running swift and clear from the depths
+  of Glen Canyon before the dam stole its heart. Red sandstone walls rise on both sides,
+  vertical and absolute, their faces streaked with <ansi fg="red">desert varnish</ansi>
+  — millennia of manganese and iron oxide painted by wind and water. A <ansi fg="itemname">cottonwood
+  grove</ansi> offers dappled shade near the bank. The ferryman is long gone. An old stone
+  house moulders at the edge of the clearing. The air smells of sage and cold water and
+  the particular ancient silence of the canyon country. To the <ansi fg="exit">east</ansi>,
+  a rough trail leads down to the river itself. To the <ansi fg="exit">south</ansi>,
+  a two-lane blacktop disappears into the heat haze of the open desert.
+mapsymbol: L
+maplegend: Lees Ferry
+biome: shore
+exits:
+  east:
+    roomid: 1881
+  south:
+    roomid: 1883
+nouns:
+  river: >-
+    The Colorado River runs cold and green past the ferry crossing, deceptively calm
+    at this stretch before it enters the Grand Canyon. Abbey loved this river the way
+    a man loves something he knows is being destroyed. The dam upriver has already
+    tamed it, already murdered the canyon that once lay above. What runs here is
+    a ghost of what was.
+  cottonwood: >-
+    A grove of cottonwood trees lines the bank, their leaves fluttering silver and
+    green in the canyon breeze. In the desert, cottonwoods follow water the way
+    hope follows desperation. They are the first green thing you see after a long
+    dry road, and they mean the same thing: keep going.
+  ferry: >-
+    The ferry itself is long gone. For a century, John D. Lee operated a crossing
+    here after the Mormon church condemned him for the Mountain Meadows Massacre.
+    He was eventually executed at the site of his crime, but the crossing kept his
+    name. History works like that in the canyon country.
+  house: >-
+    An old stone ranch house at the edge of the clearing, abandoned, its walls
+    slowly returning to the rock from which they were built. The desert reclaims
+    everything given enough time. This is not a threat. It is a promise.
+  varnish: >-
+    The dark streaks on the canyon walls are desert varnish — manganese oxide
+    deposited by microorganisms and water over thousands of years. Ancient peoples
+    carved petroglyphs through the varnish to reveal the lighter rock beneath.
+    It is one of the slowest forms of writing in the world.
+spawninfo: []
+idlemessages:
+- The Colorado runs swift and cold past the ferry crossing, carrying red silt from a thousand miles of canyon.
+- A cottonwood leaf spins down from the grove and lands on the surface of the river, then vanishes around the bend.
+- 'The canyon walls glow amber in the slanting light, deep as blood, warm as an old fire.'
+- A raven passes overhead without a sound, its shadow sliding across the red rock like a dark thought.
+- 'The old stone house stands empty, its windows gone, the desert working its slow way back inside.'
+- The river smells of cold stone and distance. It smells of everything upstream that is now gone.
+- 'Here the canyon country begins. Or ends. In the desert, directions are less certain than you think.'

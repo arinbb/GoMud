@@ -1,0 +1,28 @@
+questid: 210
+name: Super Mario Bros
+description: >-
+  The Mushroom Kingdom is under siege. Bowser, King of the Koopas, has
+  kidnapped Princess Peach. Travel through eight worlds of pipes, platforms,
+  castles, and creatures to rescue her. The path is long. The enemies are
+  many. The princess is always in another castle, until she is not.
+reward:
+  experience: 4000
+  item_id: 225
+  playermessage: >-
+    You have walked the Mushroom Kingdom from World 1-1 to the final
+    castle. You have gone underground and underwater, through night levels
+    and bridge levels and bullet bills and Lakitu and the looping maze
+    of World 8-4. You hit the axe. The bridge fell. The princess was
+    there, in the last castle, exactly where the quest said she would be.
+    As a memento, you carry a gold coin from the Mushroom Kingdom --
+    one of the countless coins that made up the fabric of those eight
+    worlds, kept as proof that you were there and you finished it.
+steps:
+- description: Arrive at World 1-1 and begin the journey through the Mushroom Kingdom.
+- description: Go underground through the first pipe and explore what the surface hides.
+- description: Clear the first castle and face what awaits on the other side of the bridge.
+- description: Hear Toads news about the princess and keep going anyway.
+- description: Reach the underwater level and swim through World 6-3.
+- description: Survive World 8 and reach the final castle.
+- description: Solve the maze of World 8-4 and find the true path.
+- description: Defeat Bowser and rescue Princess Peach.

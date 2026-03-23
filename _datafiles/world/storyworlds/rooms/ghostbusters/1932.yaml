@@ -1,0 +1,58 @@
+roomid: 1932
+zone: Ghostbusters
+title: City Hall
+description: >-
+  The Mayor's office at New York City Hall, a room of oak paneling and old paint
+  and the specific institutional carpet that exists in government buildings across
+  America. The <ansi fg="itemname">mayor</ansi> sits behind his desk in a state
+  of managed crisis. On one side of the room stand three tired, proton-burned
+  <ansi fg="itemname">Ghostbusters</ansi> -- Peter, Ray, and Egon -- with the
+  particular posture of men who know they are right and are accustomed to being
+  treated like they are not. On the other side stands <ansi fg="itemname">Walter
+  Peck</ansi> from the Environmental Protection Agency, a man whose entire function
+  in this scene is to be wrong with tremendous conviction. The <ansi fg="itemname">window</ansi>
+  behind the mayor's desk looks out over City Hall Park, which is currently host to
+  a Category 7 supernatural convergence if Egon's projections are correct. Arguments
+  fill the room. The fate of New York is on the table.
+mapsymbol: C
+maplegend: City Hall
+biome: house
+exits:
+  street:
+    roomid: 1921
+    mapdirection: north
+    exitmessage: You slip out of City Hall and back onto the street.
+nouns:
+  mayor: >-
+    The mayor is a practical man in an impossible situation. He has three people
+    claiming the city is about to be destroyed by an ancient god, one EPA official
+    claiming those three people are the problem, and a report on his desk from the
+    Commissioner that says the PKE readings across all five boroughs have exceeded
+    any previously recorded level by three orders of magnitude. He will make a
+    decision in approximately ninety seconds. It will be the right one.
+  peck: >-
+    Walter Peck is from the EPA's Violation Division and he shut off the containment
+    unit because he believed it was an environmental hazard, and he was technically
+    correct about the hazard part and catastrophically wrong about the solution part.
+    He is currently arguing that the Ghostbusters should be arrested. He will continue
+    arguing this position until very large things start happening outside the window.
+  window: >-
+    Through the window behind the mayor's desk, City Hall Park is visible. People
+    are walking dogs, eating lunch, living their lives. Above the park, the sky is
+    the wrong color. In the distance, a building is glowing orange at its peak.
+    None of the dog walkers have noticed yet. This is not unusual. New Yorkers
+    have perfected the art of contextual obliviousness.
+  ghostbusters: >-
+    The three Ghostbusters standing by the mayor's desk look exactly as tired as
+    men who have captured and contained hundreds of supernatural entities in six
+    months should look. Their jumpsuits show burn marks, slime stains, and the
+    particular texture of gear that has been through too much. Egon holds a PKE
+    meter. It is screaming. Peter Venkman is the one doing the talking. This is
+    how it always goes.
+idlemessages:
+- Peck says something about unlicensed nuclear accelerators. Venkman says something about saving the city. Neither of them is entirely wrong.
+- The PKE meter in Egon's hand lets out a chirp. He glances at it. His expression does not change but his grip on the device tightens.
+- The mayor steeples his fingers, looks from the Ghostbusters to Peck and back, and says nothing. The silence is doing the work.
+- Through the window, the sky over the East River looks like a bruise.
+- Someone on the mayor's staff enters, whispers something, and leaves quickly. The mayor's expression shifts incrementally toward urgency.
+- Ray Stantz is sketching a diagram of the building at 55 Central Park West on a legal pad, trying to illustrate Shandor's design to a room full of people who do not want to understand it.

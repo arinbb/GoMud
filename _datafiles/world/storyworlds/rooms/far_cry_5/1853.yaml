@@ -1,0 +1,71 @@
+roomid: 1853
+zone: Far Cry 5
+title: The Compound
+description: >-
+  Eden's Gate main compound: a collection of buildings behind chain-link and
+  razor wire, expanded over months from a church property into something that
+  has outgrown every ordinary category. <ansi fg="itemname">Armed cultists</ansi>
+  move in pairs along the fence line, AR-pattern rifles on slings, Eden's Gate
+  patches on their arms. The architecture is a mix of original buildings and
+  hastily erected structures — dormitories, a food hall, storage, an armory.
+  <ansi fg="itemname">Bunting</ansi> in the Eden's Gate colors — white and red
+  — hangs between buildings. A <ansi fg="itemname">PA system</ansi> mounted
+  on poles broadcasts scripture readings at intervals. The <ansi fg="itemname">
+  church</ansi> at the compound's heart is visible above the buildings, its
+  steeple topped with a new cross. People here believe. That is not in question.
+  What they believe, and what it has been made to require of them — that is
+  the question. The road leads <ansi fg="exit">road</ansi> (south). The church
+  is <ansi fg="exit">north</ansi>.
+mapsymbol: K
+maplegend: The Compound
+biome: city
+exits:
+  road:
+    roomid: 1841
+    mapdirection: south
+  north:
+    roomid: 1854
+spawninfo:
+- mobid: 342
+  message: A Peggie rounds the corner of the dormitory building, rifle up, and fixes you with flat, certain eyes.
+  forcehostile: true
+  respawnrate: 2 real minutes
+- mobid: 342
+  message: A second Peggie emerges from between buildings, moving to cover the approach.
+  forcehostile: true
+  respawnrate: 2 real minutes
+nouns:
+  fence: >-
+    Chain-link topped with razor wire, the compound perimeter. Posted
+    at regular intervals: signs reading 'EDEN'S GATE — MEMBERS ONLY'
+    and 'THE COLLAPSE IS COMING. ARE YOU PREPARED?' Some of the signs
+    have hand-painted additions: 'Joseph Seed Protects Us' and 'Only the
+    Chosen Will Survive.'
+  bunting: >-
+    White and red bunting between the buildings, Eden's Gate colors,
+    making the compound look like a fairground from a distance. Up close
+    the rifle-carrying guards make the visual incongruity difficult to ignore.
+  pa: >-
+    The PA system poles throughout the compound, speakers angled downward.
+    Currently playing: a recording of Joseph Seed reading from the Book of
+    Joseph. His voice is calm and enormous and fills the compound without
+    seeming to fill it. It comes from everywhere. You cannot tell where
+    to look to find its source.
+  church: >-
+    The church steeple visible above the compound buildings, the new
+    Eden's Gate cross replacing whatever was there before. The cross is
+    larger than a church cross should be. Joseph's cross. His church.
+    The cross does not look like humility. It looks like a flag.
+  armory: >-
+    A converted building toward the compound's east end, its windows
+    blacked out, a reinforced door with a numeric keypad. The armory.
+    What Eden's Gate has accumulated, legally and otherwise, in
+    the months of their occupation. Enough to make this a long war.
+idlemessages:
+- The PA crackles and Joseph Seed's voice fills the compound with scripture, calm as weather.
+- A Peggie patrol rounds the far building in formation. They move with Jacob's training visible in every step.
+- The Eden's Gate bunting snaps in the mountain wind. White and red. Festive and wrong.
+- Someone inside a dormitory building is singing. The hymn is one you have heard everywhere in Hope County.
+- A supply vehicle rolls through the compound gate. Cultists unload it with practiced efficiency.
+- The church steeple cross catches the afternoon light. It is very large. Joseph wanted it to be seen.
+- Somewhere in the compound, a radio repeats the same message every few minutes. The Collapse. The chosen. Praise Joseph.

@@ -1,0 +1,55 @@
+roomid: 1813
+zone: Crime and Punishment
+title: Razumikhins Room
+description: >-
+  A different kind of poverty — cheerful poverty, the poverty of a young
+  man who does not mind it yet. Books are everywhere: stacked on the floor,
+  piled on the table, two of them open at once on the desk. A <ansi
+  fg="itemname">samovar</ansi> on the sideboard still warm from the morning.
+  A <ansi fg="itemname">coat</ansi> too large for its hook, hanging off one
+  side. The room smells of tea and tobacco and beeswax and the particular
+  warmth of a person who is basically fine. Razumikhin is large and loud
+  and laughs easily and is one of those people for whom the world has not
+  yet turned hostile. He worries about Raskolnikov. He feeds Raskolnikov
+  when Raskolnikov lets him. He talks too much and means all of it. The
+  street is to the <ansi fg="exit">east</ansi>.
+mapsymbol: R
+maplegend: Razumikhins Room
+biome: house
+exits:
+  east:
+    roomid: 1802
+    mapdirection: east
+spawninfo:
+- mobid: 314
+  message: Razumikhin stands up with a broad grin when you enter, sweeping books off a chair to make room.
+  respawnrate: 10 real minutes
+nouns:
+  samovar: >-
+    The samovar on the sideboard, brass and capacious, still holding heat
+    from the morning fire. Razumikhin makes tea when he has nothing else
+    to offer, which is often, and it is always the best tea in the city
+    because it comes with his company, which is freely given and genuinely
+    warm.
+  coat: >-
+    The coat on the hook is enormous, the collar turned up on one side.
+    It belongs to Razumikhin in the way that things belong to people who
+    do not think much about property — loosely, generously, available if
+    you need it.
+  books: >-
+    Everywhere. German, French, Latin, Russian. Philology, history,
+    philosophy, a dog-eared volume of Pushkin. Two open at once on the
+    desk with a pen between them as if an argument is in progress between
+    the two books and Razumikhin is mediating. He probably is.
+  tea: >-
+    The smell of strong tea, the real smell of this room. Everything here
+    comes with tea. Conversation comes with tea. Worry comes with tea.
+    When Razumikhin does not know what to do for you, he makes tea. This
+    is not nothing.
+idlemessages:
+- Razumikhin picks up a book, reads a page standing up, laughs at something, and puts it back on a different pile.
+- The samovar ticks quietly as it cools, a domestic sound, the sound of a room that is lived in with genuine energy.
+- He sits on the edge of his desk and talks to the room at large about something, not requiring an audience.
+- 'A pile of books on the floor shifts and falls sideways. He glances at it: ''I''ll deal with that later.'' He will not deal with it later.'
+- The coat on the hook sways in a draft from the window he left open. The room smells of outside for a moment, then of itself again.
+- He makes a note in the margin of whatever he is reading, and the satisfaction on his face is total and uncomplicated.

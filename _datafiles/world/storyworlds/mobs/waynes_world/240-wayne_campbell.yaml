@@ -1,0 +1,28 @@
+mobid: 240
+zone: waynes_world
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote plays an air guitar riff, eyes closed, totally committed."
+  - "say Excellent! Party on, Garth."
+  - "emote spins slowly to address an imaginary camera. 'Hi, I'm Wayne Campbell. Welcome to my world.'"
+  - "say You know what I hate? When someone says 'I can't believe you listen to that.' Oh yeah? Well I can't believe you DON'T."
+  - "emote does the gun-fingers point at no one in particular."
+  - "say Aurora, Illinois. Population: us. And we are excellent."
+  - ""
+  - ""
+  - "say Did anyone else catch that? I'm breaking the fourth wall right now and it feels GREAT."
+  - "emote riffs on an invisible Stratocaster for an uncomfortably long and wonderful amount of time."
+activitylevel: 60
+character:
+  name: Wayne Campbell
+  description: >-
+    A man in his mid-twenties with carefully maintained long dark hair and an
+    expression of permanent enthusiastic wonderment. He wears a baseball cap
+    turned backward as an article of faith. His t-shirts are themed. He speaks
+    the way someone sounds when they have given a lot of thought to things they
+    love and no thought at all to things they don't. His default expression is
+    a grin. His secondary expression is also a grin, but more specifically aimed.
+    This is Wayne's World. He is Wayne.
+  raceid: 1
+  level: 5

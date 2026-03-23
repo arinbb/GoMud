@@ -1,0 +1,60 @@
+roomid: 1822
+zone: Stardew Valley
+title: Pierres General Store
+description: >-
+  A warm, well-stocked shop smelling of sawdust and seed packets. Walls lined
+  with <ansi fg="itemname">shelves</ansi> hold supplies for every season. A
+  glass case displays <ansi fg="itemname">seeds</ansi> in neat paper packets —
+  parsnip, melon, pumpkin, strawberry — each with a hand-lettered price. A
+  cheery <ansi fg="itemname">chalkboard</ansi> sign reads: "FRESH SPRING SEEDS
+  — support local, not Joja!" Pierre's family <ansi fg="itemname">photo</ansi>
+  hangs behind the counter — him, Caroline, and Abigail, all smiling. The shop
+  is everything JojaMart is not: personal, warm, alive. To the <ansi
+  fg="exit">south</ansi> the town square waits.
+mapsymbol: P
+maplegend: Pierres Store
+biome: house
+exits:
+  south:
+    roomid: 1821
+nouns:
+  shelves: >-
+    Shelves packed with the essentials of valley life. Backpacks, boots,
+    fertilizer bags, watering cans, fishing poles, pickaxes. Some items
+    are clearly handmade. Some are worn smooth from previous owners. Pierre
+    sources what he can locally and orders the rest from the city, but he
+    takes obvious pride in every shelf.
+  seeds: >-
+    Neat packets of seeds organized by season. Each packet is hand-stamped
+    with the expected harvest time and care instructions. Pierre grew most
+    of these in test plots behind the house before selling them. The parsnip
+    seeds are the cheapest — good for beginners, he says.
+  chalkboard: >-
+    The chalkboard is covered in cheerful but pointed slogans. "BUY LOCAL.
+    STAY LOCAL. LIVE LOCAL." A crude drawing of a sad corporation mascot
+    is labeled "JOJA." An arrow points at it reading "DO NOT GIVE THEM YOUR
+    GOLD." The chalk is bright and the handwriting passionate.
+  photo: >-
+    A framed family photo: Pierre in his shop apron, arm around a green-haired
+    woman (Caroline, presumably), with a blue-haired teenager (Abigail) who
+    looks like she would rather be somewhere else but is smiling anyway. The
+    frame is slightly crooked. It has not been straightened, which suggests
+    Pierre finds it perfect exactly as it is.
+spawninfo:
+- mobid: 321
+  message: Pierre looks up from behind the counter with a ready smile.
+  idlecommands:
+  - emote rearranges packets of parsnip seeds into a neater display.
+  - say Have you seen what Joja is charging for fertilizer? Highway robbery.
+  - emote polishes the glass display case with a cloth.
+  - say I grew up in this valley. My father ran this shop before me. That means something.
+  - emote straightens the chalkboard sign and steps back to admire it.
+  - ''
+  respawnrate: 3 real minutes
+idlemessages:
+- The door chimes as a townsperson stops in for seeds and stays twenty minutes to chat.
+- Pierre hums a merchant's tune while tallying receipts, satisfied with the day.
+- A cat sleeps on top of the seed display, entirely in the way and entirely undisturbed.
+- The smell of fresh-turned earth drifts in whenever the door opens — good farming weather.
+- 'A handwritten sign on the door reads: "Closed Wednesdays (Carolines yoga class) -- I am a supportive husband."'
+- The chalkboard catches a shaft of morning light, its anti-Joja manifesto glowing with conviction.

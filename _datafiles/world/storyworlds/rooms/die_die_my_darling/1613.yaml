@@ -1,0 +1,50 @@
+roomid: 1613
+zone: Die Die My Darling
+title: The Cellar Stairs
+description: >-
+  A low door behind the staircase, half-hidden by a heavy <ansi fg="8">curtain</ansi>,
+  opens onto a narrow staircase descending into darkness. The steps are bare stone,
+  worn smooth in the centre by decades of use. A single bare bulb on a cord hangs
+  above the first landing, its light barely reaching the bottom. The <ansi fg="8">smell</ansi>
+  from below is complex — cold stone and damp and something unexpected: not rot or
+  must, but fabric. Old fabric. Wool and silk and something powdery that might be
+  theatrical face powder. The smell of things kept rather than used. The entrance
+  hall is back through the <ansi fg="exit">hall</ansi> above. The cellar waits
+  <ansi fg="exit">down</ansi>.
+mapsymbol: >
+maplegend: Cellar Stairs
+biome: cave
+exits:
+  hall:
+    roomid: 1602
+    mapdirection: up
+    exitmessage: You climb back up the cellar stairs and duck through the curtain into the entrance hall.
+  down:
+    roomid: 1614
+    exitmessage: You descend the stone stairs into the cellar.
+nouns:
+  curtain: >-
+    A heavy curtain — black velvet, oddly theatrical for a doorway to a cellar —
+    hangs in front of the low door. It is very effective at concealing the door.
+    Someone hung it specifically to conceal this entrance.
+  door: >-
+    Low and iron-hinged, set flush with the wall, not in a frame but recessed.
+    Easy to miss, especially with the curtain in front of it. Someone did not want
+    this door found.
+  smell: >-
+    Old fabric and cold stone and something powdery and theatrical — face powder,
+    the kind that comes in a compact. There is no face powder anywhere in this house.
+    The smell comes from below.
+  stairs: >-
+    Stone steps worn smooth in the centre, their edges still sharp. The light from
+    the single bulb catches the grain of the stone. The steps go down further than
+    seems reasonable for a domestic cellar.
+spawninfo: []
+idlemessages:
+- The cold from the cellar below moves up the stairs in steady, measured waves.
+- The single bulb flickers once and steadies. The darkness below does not change.
+- The smell of old fabric rises more strongly — silk and wool and theatrical powder.
+- The curtain over the door above stirs in a draught from somewhere below.
+- The stone steps are very cold underfoot. The cold comes up through your shoes.
+- Something moves in the cellar below — a sound like fabric shifting. Then silence.
+- The light at the bottom of the stairs is a different colour from the one above.

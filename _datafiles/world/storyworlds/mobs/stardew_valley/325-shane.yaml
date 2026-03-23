@@ -1,0 +1,22 @@
+mobid: 325
+zone: stardew_valley
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote stares into his beer with the focused attention of someone not really looking at it."
+  - "say Leave me alone."
+  - "emote rotates the bottle slowly on the bar top, watching it turn."
+  - "say My chickens are doing fine at least. They don't judge you."
+  - "emote takes a slow drink and sets the bottle down with careful precision."
+  - ""
+activitylevel: 15
+character:
+  name: Shane
+  description: >-
+    A young man in a green hoodie, shoulders set against the world. Shane
+    works at JojaMart and hates it. He has a beer and doesn't really want
+    it. He has a room and barely sleeps. Underneath the closed-off posture
+    is someone who raises chickens with unusual tenderness and needs, badly,
+    for someone to notice that the two things are connected.
+  raceid: 1
+  level: 5

@@ -1,0 +1,63 @@
+roomid: 1883
+zone: The Monkey Wrench Gang
+title: The Desert Road
+description: >-
+  A <ansi fg="itemname">two-lane blacktop</ansi> cuts across the desert floor, straight
+  as a surveyor's ambition, running between the red buttes of <ansi fg="red">Monument
+  Valley</ansi> toward horizons that seem to recede as you approach them. The <ansi fg="yellow">sandflats</ansi>
+  on either side are studded with sage and saltbush, the occasional juniper, everything
+  low and spare and adapted to the absence of water. The sky overhead is a blue so pure
+  and so absolute that it functions as a kind of argument. A battered <ansi fg="itemname">jeep</ansi>
+  sits on the shoulder, engine ticking in the heat, its bed full of rope, tools, canned
+  food, and beer. Hayduke's beer. The <ansi fg="itemname">Mittens</ansi> of Monument
+  Valley rise in the distance, red and implausible, like God's fists left on the table
+  after the argument ended. To the <ansi fg="exit">north</ansi>, the road runs to Lees
+  Ferry. To the <ansi fg="exit">east</ansi>, a dirt track leads off toward a billboard
+  on the mesa. To the <ansi fg="exit">south</ansi>, the road descends toward the strip mine.
+mapsymbol: D
+maplegend: Desert Road
+biome: desert
+exits:
+  north:
+    roomid: 1880
+  east:
+    roomid: 1884
+  south:
+    roomid: 1886
+nouns:
+  jeep: >-
+    Hayduke's jeep, a battered surplus vehicle that has been repainted, modified,
+    and generally abused in ways that make it more capable and less legal than when
+    it left the factory. The back is full of supplies: rope, tools, food, water
+    jugs, and a truly unreasonable quantity of beer. A bumper sticker, partially
+    peeled, reads something about the dam.
+  mittens: >-
+    The West Mitten and East Mitten Buttes of Monument Valley, monumental sandstone
+    formations rising eight hundred feet from the desert floor, their shapes suggestive
+    of enormous mittens left behind by a god who did not need to keep their hands warm.
+    John Ford used them as backdrop for a dozen Westerns. Abbey preferred the real
+    thing to the movies made of it.
+  blacktop: >-
+    The two-lane road stretches to the horizon in both directions, heat shimmer
+    making the far end waver like a mirage. This is American highway at its most
+    elemental: asphalt, white lines, the suggestion of elsewhere. For the gang, the
+    road is both escape route and theater of operations.
+  sage: >-
+    Sagebrush covers the flats, grey-green and pungent, filling the air with its
+    sharp medicinal smell after rain or in the heat of the day. Abbey claimed you
+    could not be unhappy in a place that smelled of sage. This was his version of
+    optimism.
+  valley: >-
+    Monument Valley straddles the Utah-Arizona border, a landscape of massive
+    sandstone buttes eroded from a high plateau over millions of years. The Navajo
+    Nation administers it now. It is one of the most photographed landscapes in the
+    world, and the photographs never capture it. Things this large resist representation.
+spawninfo: []
+idlemessages:
+- The jeep on the shoulder ticks and pops as its engine cools in the afternoon heat.
+- A dust devil spins up from the flats fifty yards off the road, wanders aimlessly for a moment, then dies.
+- 'The Mittens of Monument Valley glow deep red in the slanting light, their shadows stretching east across the sand.'
+- A pickup truck passes on the highway going the other way, its driver not looking at you.
+- The sage smells sharp and clean after the recent rain, the way the desert always smells when it gets what it rarely has.
+- 'Heat rises from the blacktop in visible waves, bending the distant red rocks into something almost liquid.'
+- A roadrunner crosses the highway at a dead sprint, heading somewhere with great urgency and no explanation.

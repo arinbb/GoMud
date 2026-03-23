@@ -1,0 +1,27 @@
+mobid: 316
+zone: crime_and_punishment
+hostile: false
+maxwander: 0
+activitylevel: 20
+angrycommands: []
+idlecommands:
+  - emote examines a pledged item, turning it over in dry hands, assessing.
+  - say Hmm. What do you want? State your business quickly.
+  - emote counts a small pile of coins, moving each one with a dry finger.
+  - emote peers at you over the cabinet with small, suspicious eyes.
+  - ''
+  - emote opens the glass cabinet and rearranges something inside with proprietary care.
+  - say I give what is fair. Come back in a month with the interest and you may redeem it.
+character:
+  name: Alyona Ivanovna
+  description: >-
+    A small old woman with sharp eyes and dry hands, dressed in black that
+    has seen better decades. She moves in her flat with the efficiency of
+    someone who knows exactly where everything is and will notice immediately
+    if it is moved. She lends money at interest to the desperate and poor
+    of the quarter and lives alone behind two locks and a door painted dark.
+    She is suspicious, cautious, and has survived sixty years in St.
+    Petersburg by trusting nothing. The novel does not make her a saint.
+    The novel does not make her villain enough to justify what happens here.
+  raceid: 1
+  level: 4

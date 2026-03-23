@@ -1,0 +1,62 @@
+roomid: 1945
+zone: Back to the Future
+title: The Gymnasium
+description: >-
+  The Hill Valley High gymnasium, transformed for the
+  <ansi fg="itemname">Enchantment Under the Sea</ansi> dance. Crepe
+  paper in blue and silver drapes from the rafters. A painted
+  ocean-floor mural covers the back wall -- fish, coral, sea horses.
+  A revolving <ansi fg="itemname">mirror ball</ansi> scatters light
+  across the crowd. <ansi fg="mobname">Marvin Berry and the Starlighters</ansi>
+  are set up on the low stage to the north, and the dance floor is
+  packed. Young couples sway under the colored lights. It smells of
+  punch, perfume, and the particular electricity of a high school
+  formal. The dance floor opens to the <ansi fg="exit">south</ansi>.
+mapsymbol: G
+maplegend: Gymnasium
+biome: house
+exits:
+  south:
+    roomid: 1944
+  "dance floor":
+    roomid: 1954
+    mapdirection: north
+nouns:
+  "mirror ball": >-
+    A slowly rotating mirror ball hung from the center of the ceiling,
+    scattering hundreds of small bright reflections across the dancers,
+    the streamers, the nervous faces. Someone had to climb up there
+    to hang it. They are proud of their work.
+  mural: >-
+    The back wall has been transformed with a hand-painted ocean-floor
+    scene: stylized fish, swaying kelp, a diving helmet with a porthole.
+    "Enchantment Under the Sea" is painted in cursive at the top.
+    Some of the fish are anatomically improbable. Nobody minds.
+  streamers: >-
+    Blue and silver crepe-paper streamers looped from the ceiling,
+    the basketball hoops, the bleacher railings. The gym smells
+    faintly of the paste used to hang them. A few have come down
+    and trail from the bleachers.
+  "punch bowl": >-
+    A large glass punch bowl on a table near the entrance, surrounded
+    by paper cups. The punch is red. Whether anyone has spiked it
+    is, as always at these events, a matter of speculation.
+  band: >-
+    Marvin Berry and the Starlighters on the low stage. Four guys
+    in matching blazers and skinny ties. They play tight and
+    professional, exactly the kind of band you want for a school
+    formal. Marvin has bandaged his right hand, which seems to be
+    causing him some difficulty with his guitar parts.
+idlemessages:
+- The mirror ball spins, and light breaks into a thousand small pieces across the crowd.
+- Couples sway across the dance floor, some of them with their foreheads together.
+- Marvin Berry counts off a new number with his head and the Starlighters fall in.
+- 'Someone spills punch on their formal dress and disappears toward the restrooms, mortified.'
+- The streamers stir in the breeze from the gymnasium doors.
+- 'A slow song ends. The crowd applauds. Someone shouts: "Play Earth Angel again!"'
+- Marvin Berry flexes his bandaged hand, winces, and adjusts his grip.
+- The gymnasium lights are dimmed to exactly the right atmospheric level.
+spawninfo:
+- mobid: 396
+  message: "Marvin Berry tunes up on stage, cradling his bandaged hand."
+  respawnrate: 4 real minutes

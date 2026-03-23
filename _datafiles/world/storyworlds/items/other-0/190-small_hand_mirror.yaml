@@ -1,0 +1,14 @@
+itemid: 190
+name: small hand mirror
+namesimple: mirror
+displayname: a <ansi fg="itemname">small hand mirror</ansi>
+description: >-
+  A small oval mirror with a plain pewter frame, its handle worn smooth
+  from use. It came from a cellar where dozens of mirrors were hidden away
+  from a house that had forbidden them. There is something in the glass —
+  it shows you clearly. Not flatteringly, not unkindly. Just clearly. You
+  look like yourself. That is, it turns out, enough.
+type: object
+subtype: usable
+uses: 0
+value: 50

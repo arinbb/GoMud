@@ -1,0 +1,56 @@
+roomid: 2046
+zone: its_always_sunny
+title: Charlie and Franks Apartment
+description: >-
+  The apartment Charlie Kelly and Frank Reynolds share by choice is a single
+  room of almost artistic squalor. A <ansi fg="itemname">pullout couch</ansi>
+  dominates the center, deployed permanently — it has not been folded back
+  into couch configuration in years. The <ansi fg="itemname">kitchen counter</ansi>
+  holds stacked cans of cat food, a hot plate, a jar of something indeterminate,
+  and a stack of papers with large crayon writing on them. On the floor, a
+  paper bag with a familiar chemical smell sits near the wall. The television
+  is old and the antenna is bent and taped with aluminum foil in a configuration
+  that gets two channels. <ansi fg="itemname">Post-it notes</ansi> cover the
+  refrigerator, written in what can only charitably be called letters. To the
+  <ansi fg="exit">west</ansi> is the street. A hole in the baseboard leads
+  to the <ansi fg="exit">tunnel</ansi> below.
+mapsymbol: CF
+maplegend: Charlie and Franks
+biome: house
+exits:
+  west:
+    roomid: 2044
+  tunnel:
+    roomid: 2047
+    mapdirection: down
+nouns:
+  couch: >-
+    The pullout couch in its permanent deployed state is the center of the
+    apartment's domestic life. Both men sleep on it — there is no other
+    sleeping surface. The sheets are a subject best left unexamined. A dent
+    in the center suggests long-term occupation. This is their home. They
+    have chosen this. Frank Reynolds is worth millions of dollars. He sleeps
+    on this couch by preference.
+  cat_food: >-
+    A stack of cat food cans on the counter, several already opened, several
+    lined up in order of opening. The brand varies. The consumption does not
+    vary. Charlie eats cat food. He has been eating cat food for years. He
+    finds it acceptable. This is one of the facts of the universe that the
+    rest of the universe has simply had to absorb.
+  notes: >-
+    Post-it notes in crayon cover the refrigerator in a layer several deep.
+    Reading them requires interpretation. One says 'MIAK' with an arrow.
+    One says 'DO NOT EET THIS' next to a crossed-out drawing of something.
+    One says 'WAITRES PLAN' with nothing beneath it. One is just a drawing
+    of a bird, which Charlie has crossed out angrily.
+  bag: >-
+    A paper bag near the wall with a familiar chemical smell. There is paint
+    thinner somewhere in its history. This is Charlie's method of managing
+    the stresses of his life. It is not recommended. It is very much his thing.
+idlemessages:
+- 'The cat food can on the counter is open. Something is different about the apartment today. Something is always different in a way you cannot place.'
+- The television picks up a channel through the foil antenna, loses it, picks it up again. The show does not matter. The persistence matters.
+- 'One of the post-it notes falls from the refrigerator and drifts to the floor. It reads: DONT FORGET THE THING. The thing is not identified.'
+- 'From below, through the floor, the faint sound of skittering. Charlie''s rats. Always Charlie''s rats.'
+- 'The hot plate is warm. Someone was cooking something recently — or heating something. The something was probably cat food.'
+- 'A half-finished crayon drawing on the counter shows a stick figure labeled WAITRES with a heart. Under it, someone has drawn a large X. Under that, another heart. The emotional record of a complicated man.'

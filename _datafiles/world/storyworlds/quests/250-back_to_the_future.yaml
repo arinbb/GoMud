@@ -1,0 +1,24 @@
+questid: 250
+name: Back to the Future
+description: >-
+  You've been sent back to 1955 inside a DeLorean time machine.
+  Help Marty McFly get his parents together before the Enchantment
+  Under the Sea dance -- or else he'll cease to exist. And get home
+  before the lightning strikes.
+reward:
+  experience: 5500
+  item_id: 245
+  playermessage: >-
+    You made it. Marty is on his way back to 1985. George and Lorraine
+    are dancing. The clock tower is frozen at 10:04 PM. As a memento,
+    you find a small flux capacitor keychain in your pocket. It pulses
+    with a faint Y-shaped glow: one, two, three. Where you're going,
+    you don't need roads.
+steps:
+- description: Arrive at Twin Pines Mall and be sent back to 1955.
+- description: Find Hill Valley town square in 1955.
+- description: Meet young George McFly.
+- description: Visit Doc Browns garage and see the flux capacitor.
+- description: Get George and Lorraine to the Enchantment Under the Sea dance.
+- description: Play Johnny B. Goode on stage.
+- description: Connect the cable and send the DeLorean home with a lightning strike.

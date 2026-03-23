@@ -1,0 +1,51 @@
+roomid: 2109
+zone: Up in Smoke
+title: The Police Station
+description: >-
+  A fluorescent-lit <ansi fg="itemname">squad room</ansi> somewhere in the San Fernando
+  Valley, the kind of place that runs on <ansi fg="itemname">coffee</ansi> and
+  <ansi fg="itemname">donuts</ansi> and institutional frustration. <ansi fg="itemname">
+  Case files</ansi> are stacked on every desk. A large <ansi fg="itemname">evidence
+  board</ansi> on the wall is covered in photographs, strings, and handwritten
+  annotations, all centered on a blurry image of a van. Sgt. Stedenko has been
+  standing in front of that board for a long time. The <ansi fg="exit">highway</ansi>
+  exit leads back to the 405.
+mapsymbol: P
+maplegend: The Police Station
+biome: house
+exits:
+  highway:
+    roomid: 2103
+    mapdirection: east
+    exitmessage: You push through the station door and back out to the highway.
+nouns:
+  board: >-
+    The evidence board is a masterwork of obsession: photographs of the van
+    from three angles (all blurry), a hand-drawn map of its suspected route,
+    clipped newspaper articles, and a note in red marker that says VAN = KEY
+    underlined twice. Stedenko has added several sub-notes below this. They
+    do not clarify it.
+  files: >-
+    Stacks of case files, each one related in some way to the van, or to the
+    investigation of the van, or to prior investigations that somehow led back
+    to the van. Stedenko is thorough. He is also always slightly behind.
+  coffee: >-
+    A percolator on a hot plate in the corner, the coffee the color of old
+    asphalt and about as inviting. Stedenko drinks it anyway. He drinks a lot
+    of things he does not enjoy because he believes the discomfort keeps him sharp.
+  donuts: >-
+    A pink bakery box on the desk near the door. Three glazed remain. Nobody
+    has touched them since this morning because everyone is afraid of Stedenko
+    when he is on a case, and when is he not on a case.
+spawninfo:
+- mobid: 462
+  message: '<ansi fg="3">Sgt. Stedenko marches in from the hallway, case file in one hand, a donut he has forgotten about in the other, jaw set with the determination of a man who will not be beaten by a van.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Stedenko jabs a finger at the evidence board. The photograph of the van does not react.
+- A phone rings. Stedenko answers it, listens, hangs up with deliberate control.
+- Stedenko writes something on the board in red marker, steps back, crosses it out.
+- A uniformed officer slides a report onto Stedenkos desk. He does not look at it.
+- The fluorescent lights hum. One of them flickers. Stedenko does not notice.
+- Stedenko holds up his binoculars and peers through them at the evidence board. He lowers them. He is thinking.
+- The donuts remain untouched. The coffee percolates. The van is still out there.

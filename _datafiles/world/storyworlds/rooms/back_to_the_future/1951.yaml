@@ -1,0 +1,62 @@
+roomid: 1951
+zone: Back to the Future
+title: Inside the DeLorean
+description: >-
+  The cockpit of a time machine. The <ansi fg="itemname">time circuits</ansi>
+  dominate the dashboard -- three rows of red LED digits displaying
+  destination time, present time, and last-departed time. The
+  <ansi fg="itemname">flux capacitor</ansi> glows through a window in
+  the firewall, Y-shaped, pulsing. The <ansi fg="itemname">speedometer</ansi>
+  reads zero. The gearshift is labeled with ominous additions in
+  Doc Browns handwriting. The seat is bolted to the floor. Outside
+  the gull-wing windows, rain hammers the parking lot. The engine
+  idles at a low, confident rumble that resonates in the seat back.
+  The smell is plutonium, ozone, and leather.
+mapsymbol: R
+maplegend: Inside DeLorean
+biome: house
+exits:
+  lot:
+    roomid: 1950
+    mapdirection: west
+nouns:
+  "time circuits": >-
+    Three rows of red LED digits:
+    DESTINATION TIME:    NOV 05 1955  06:00
+    PRESENT TIME:        NOV 12 1955  21:58
+    LAST TIME DEPARTED:  OCT 26 1985  01:24
+    The destination readout has a keypad below it. The numbers can
+    be changed. The implications of this are enormous and should
+    be considered carefully.
+  "flux capacitor": >-
+    Visible through the firewall window: the Y-shaped device, three
+    transparent tubes meeting at a central node. When it reaches
+    operating temperature, the tubes glow in sequence. Right now
+    it pulses slowly, warming up, working toward the moment when
+    it will do what it was invented to do.
+  speedometer: >-
+    The speedometer in the dashboard. The needle sits at zero. The
+    red zone begins at 85. The critical mark -- a small piece of
+    tape added by Doc Brown -- is at 88. The numbers beyond 88
+    were added with a marker. They go to 95.
+  gearshift: >-
+    The gearshift has been relabeled in Doc Browns block print.
+    The additions read: "DO NOT ENGAGE UNTIL FLUX READY" and
+    "88 MPH MINIMUM OR NOTHING HAPPENS" and, written smaller,
+    "ALSO DO NOT HIT ANYTHING."
+  dashboard: >-
+    The dashboard has been significantly modified from the factory
+    spec. In addition to the time circuits, there are gauges for
+    flux capacitor charge level, plutonium levels, and something
+    labeled "TEMPORAL DISPLACEMENT INTEGRITY" that currently reads
+    in the green.
+idlemessages:
+- The time circuit displays tick forward one minute. The present time is now 21:59.
+- 'The flux capacitor pulses through the firewall window: one, two, three. One, two, three.'
+- Rain hammers the roof of the DeLorean in a continuous white roar.
+- The engine note rises slightly, as if the car itself is anticipating something.
+- Lightning illuminates the interior through the gull-wing windows.
+- The speedometer needle trembles at zero but wants to move.
+- 'The dashboard clock advances: 22:00. Four minutes to 10:04.'
+- The whole car smells of ozone and something faintly radioactive.
+spawninfo: []

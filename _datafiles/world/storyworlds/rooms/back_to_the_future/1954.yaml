@@ -1,0 +1,64 @@
+roomid: 1954
+zone: Back to the Future
+title: The Dance Floor
+description: >-
+  The stage at the front of the Hill Valley High gymnasium. The
+  <ansi fg="itemname">Starlighters</ansi> are on break. A battered
+  <ansi fg="itemname">Stratocaster</ansi> leans against the amplifier,
+  red, plugged in. The <ansi fg="itemname">telephone</ansi> on the
+  stage wall has a long cord and is ringing -- or will ring soon.
+  The dance floor stretches behind you, couples swaying under
+  the mirror ball. From up here the entire Enchantment Under the
+  Sea is visible: the crepe paper, the ocean mural, five hundred
+  teenagers in their finest. The guitar is right there. The amplifier
+  is on. The question is whether you have the nerve to pick it up.
+mapsymbol: F
+maplegend: Dance Floor Stage
+biome: house
+exits:
+  gym:
+    roomid: 1945
+    mapdirection: south
+nouns:
+  stratocaster: >-
+    A red Fender Stratocaster, early production run, plugged into
+    the amplifier. Someone has played it hard enough to wear the
+    finish on the neck. The strings are fresh -- replaced tonight.
+    Marvin Berry played it until his hand gave out. Now it is
+    just leaning there, waiting. The amp is warm. The connection
+    is live.
+  telephone: >-
+    A wall-mounted telephone with an extra-long cord. It has one
+    use tonight, and that use involves a cousin named Chuck Berry
+    and a guitar riff that will change the course of rock and roll.
+    The call has not happened yet. Or maybe it has just happened.
+    The timeline is complicated.
+  amplifier: >-
+    The Starlighters amplifier, tube-driven, turned up to what
+    1955 considers loud. By the standards of what is about to
+    happen, it is merely a warm-up. The volume knob does not go
+    to eleven. It does not need to.
+  "mirror ball": >-
+    From up here, the mirror ball is close enough to touch. It
+    rotates with hydraulic patience, scattering light in every
+    direction. The dancers below are covered in small moving stars.
+    This is the most beautiful lighting system ever devised for
+    a gymnasium and nobody here knows it.
+  crowd: >-
+    Five hundred teenagers in formal wear, filling the gymnasium
+    floor. They are waiting. The Starlighters just announced an
+    "unscheduled special performance." Nobody knows what that
+    means yet. They are about to find out.
+idlemessages:
+- The Stratocaster leans against the amp, its pickup humming with 60-cycle noise.
+- The telephone on the wall rings once, a single bright note.
+- Couples on the dance floor below look up at the stage, waiting.
+- The mirror ball scatters light across the stage in slow arcs.
+- 'Marvin Berry is still on the phone: "Cousin Chuck -- you gotta hear this."'
+- The amplifier tubes glow orange through the back panel grille.
+- 'A murmur runs through the crowd below: something is happening.'
+- 'From somewhere: the opening notes of something nobody in this room has ever heard before.'
+spawninfo:
+- mobid: 396
+  message: "Marvin Berry holds the telephone receiver toward the stage, grinning."
+  respawnrate: 5 real minutes

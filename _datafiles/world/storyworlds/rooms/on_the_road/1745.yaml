@@ -1,0 +1,57 @@
+roomid: 1745
+zone: On the Road
+title: Dean's Denver Apartment
+description: >-
+  Dean Moriarty's Denver apartment, and "apartment" is generous. It is a
+  room with a <ansi fg="itemname">mattress</ansi> on the floor, a <ansi fg="itemname">crate</ansi>
+  serving as a table, two empty wine bottles, and the residue of more
+  human activity than the space can reasonably contain. The <ansi fg="itemname">walls</ansi>
+  are so thin you can hear the next-door neighbor's radio and his
+  arguments and his silences. Outside the window, several <ansi fg="itemname">cars</ansi>
+  are parked whose ownership is ambiguous at best. Dean has been here for
+  six weeks and has already lived a novel's worth of life in this room.
+  He conducts his relationships with the focused attention of someone who
+  believes that human experience, all of it, is holy, and he does not
+  have time to be careful because there is too much of it and it is all
+  happening right now. To the <ansi fg="exit">north</ansi> is Larimer Street.
+mapsymbol: d
+maplegend: Dean's Apartment
+biome: house
+exits:
+  north:
+    roomid: 1744
+nouns:
+  cars: >-
+    Several cars are parked outside at angles that suggest speed rather
+    than parking. A '47 Buick. A Ford coupe. A Hudson with a cracked
+    windshield. Their ownership histories, if written down, would constitute
+    a legal document of considerable complexity. Dean calls them "borrowed."
+    This is technically inaccurate.
+  mattress: >-
+    The mattress on the floor is a map of Dean's recent history, which
+    is to say it is complicated. It is also where he sleeps, where he
+    makes plans, where he conducts long philosophical conversations at
+    3am about time and God and the void. The mattress is patient with this.
+  walls: >-
+    The walls of the apartment are so thin they are practically theoretical.
+    Through them you can hear radio programs, arguments, lovemaking, snoring,
+    the sound of someone frying eggs in the apartment above. All of this is
+    Dean's neighborhood, his community, his evidence that life is everywhere
+    and all of it is worth paying attention to.
+  crate: >-
+    A wooden crate serving as a table, a surface, a catch-all. On it there
+    is a Bible that Dean reads with genuine intensity — not for its religion
+    but for its language, its speed, its absolute confidence in what it
+    is saying. Dean underlines things. He underlines everything.
+spawninfo:
+- mobid: 300
+  message: Dean Moriarty paces the small room, too much energy for the space, already talking.
+  container: ''
+idlemessages:
+- 'Dean is talking and moving simultaneously, his hands describing shapes in the air that have no names.'
+- The cars outside sit at strange angles, each one a small story about how it got here.
+- Someone in the next apartment turns up their radio. Dean turns up his voice.
+- 'The mattress on the floor is the center of the universe, and Dean knows it, and cannot stop moving anyway.'
+- A wine bottle rolls across the floor in the draft from under the door.
+- 'Through the thin walls, a baby cries, a woman sings something to it, it stops. The city holds its breath.'
+- Dean pauses in his pacing, stares at nothing, says "Yes!" and starts moving again.

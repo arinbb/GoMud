@@ -1,0 +1,16 @@
+name: Far Cry 5
+roomid: 1840
+autoscale:
+  minimum: 1
+  maximum: 15
+defaultbiome: land
+mutators:
+- mutatorid: hope-county
+idlemessages:
+- Somewhere in the distance, a congregation is singing. The hymn carries across the Montana valley like smoke.
+- The mountains rise in every direction, vast and indifferent to everything happening at their feet.
+- A pickup truck rumbles past on a dirt road somewhere out of sight. You cannot tell whose side it is on.
+- The sky is enormous here. You keep forgetting that. Big enough to lose yourself in, if you let it.
+- Gunshots echo from somewhere to the north. Then silence. Then a bird sings as if nothing happened.
+- The smell of pine and clean mountain air is undercut by something chemical. Sweet. Wrong.
+- A distant radio crackles through static. A voice says 'Praise the Father.' The static swallows it.

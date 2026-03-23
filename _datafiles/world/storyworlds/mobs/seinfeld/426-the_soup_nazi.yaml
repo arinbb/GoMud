@@ -1,0 +1,26 @@
+mobid: 426
+zone: seinfeld
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote ladles soup into a cup with the precision of a master craftsman."
+  - "emote surveys the line with a measuring eye."
+  - "emote adjusts the position of the pot with a millimeter of correction that is, apparently, significant."
+  - "say NEXT!"
+  - "emote observes the next person in line and prepares his assessment."
+  - ''
+  - "emote stirs the pot once, a single slow circle, satisfied."
+  - "emote points at a customer who has done something wrong."
+activitylevel: 20
+character:
+  name: The Soup Nazi
+  description: >-
+    A man behind a counter, compact and precise, wearing a white apron that
+    is immaculate despite proximity to soup all day. His face is focused
+    in the way that faces are focused when the focus is the work and the
+    work is the soup and the soup is the point of everything. He has rules.
+    The rules are not unreasonable. The rules exist because the soup requires
+    them, and if you think that is excessive, you have not had the soup.
+    He will not negotiate. He will not explain. He will simply point.
+  raceid: 1
+  level: 10

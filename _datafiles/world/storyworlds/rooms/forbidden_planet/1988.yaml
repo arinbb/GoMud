@@ -1,0 +1,67 @@
+roomid: 1988
+zone: Forbidden Planet
+title: The Krell Laboratory
+description: >-
+  The entrance to something that makes the word laboratory seem inadequate.
+  The <ansi fg="cyan">great machine</ansi> begins here -- not as a room but
+  as the first chamber of a structure that descends for miles beneath Altair
+  IV. The <ansi fg="itemname">walls</ansi> are of a smooth Krell alloy that
+  has no seam, no joint, no visible construction. They are alive with
+  <ansi fg="cyan">instrument panels</ansi> that respond to proximity, their
+  readouts cycling through patterns that Morbius has been learning to read for
+  twenty years. The scale is staggering: the ceiling vaults forty feet above
+  you. The <ansi fg="itemname">Krell alphabet</ansi> runs in illuminated bands
+  across every surface, a continuous text that has not stopped scrolling in
+  two hundred thousand years. The floor is <ansi fg="itemname">glass</ansi>
+  over the abyss. Far below -- miles below -- you can see the glow of the
+  power shaft. To the <ansi fg="exit">house</ansi>, the familiar world of
+  human things. Down the <ansi fg="exit">shaft</ansi> is everything else.
+mapsymbol: K
+maplegend: Krell Laboratory
+biome: cave
+exits:
+  house:
+    roomid: 1985
+    mapdirection: west
+  shaft:
+    roomid: 1989
+    mapdirection: down
+nouns:
+  machine: >-
+    The Krell machine is not a machine in any sense that word usually means.
+    It is an entire planet's crust, engineering to a depth of a hundred miles,
+    dedicated to a single purpose: to take what the mind imagines and make it
+    real. The Krell built it to free themselves from physical limitation. They
+    could think a thing into existence. Then they forgot something. They forgot
+    about the id.
+  walls: >-
+    The alloy walls of the Krell laboratory have no visible join anywhere.
+    They were grown rather than built, extruded by a manufacturing process that
+    has no human equivalent. Tap one with your knuckle and it rings with a
+    clear, bell-like tone that decays over thirty seconds, fading through
+    harmonics, each one distinct. The Krell built their walls to sing.
+  panels: >-
+    The instrument panels respond to your proximity, brightening slightly as
+    you approach. They do not respond to touch in any way you understand. But
+    stand before one and breathe, and the readouts shift -- adapting, somehow,
+    to your biochemistry. Reading you. Morbius has been read by these panels
+    for twenty years. The machine knows him very well by now.
+  alphabet: >-
+    The Krell script runs in continuous bands at eye level around every
+    surface. Morbius has translated approximately 3% of it. The rest remains
+    beyond his grasp -- not because it is encrypted but because the concepts
+    it expresses have no human equivalent. To translate those passages would
+    require ideas that humans have not yet had.
+  glass: >-
+    The transparent floor panel reveals the power shaft below: a vertical bore
+    through the planet's crust, seven thousand eight hundred levels deep,
+    glowing with the blue-white light of contained stellar energy. Standing on
+    it, you feel the vastness of the project below your feet. The Krell
+    measured in millennia. They engineered at the scale of worlds.
+idlemessages:
+- The instrument panels cycle through their readouts in a pattern that has not changed since the Krell died.
+- The Krell script scrolls past on the walls -- two hundred thousand years of continuous text.
+- Through the glass floor, the power shaft glows with a light that has been running for longer than human civilization.
+- A panel brightens as you pass it. The readout shifts. Something in the machine has noticed you.
+- 'The subsonic hum here is no longer subliminal: it is a physical pressure, a bass note felt in the sternum.'
+- Morbius has left annotation cards at several panels, each one a small square of human paper in an ocean of alien.

@@ -1,0 +1,60 @@
+roomid: 1605
+zone: Die Die My Darling
+title: The Kitchen
+description: >-
+  Anna's domain is scrubbed and functional, every surface clean to the point of
+  aggression. The <ansi fg="8">kitchen table</ansi> is plain deal wood, scrubbed
+  white. A <ansi fg="8">range</ansi> against the far wall radiates the only real
+  heat in the house, a pot of something plain and pale boiling on the top. The
+  <ansi fg="8">shelves</ansi> hold no herbs, no spices, no flavourings — just tins
+  and jars of staple foods in unadorned utility. A <ansi fg="8">knife rack</ansi>
+  on the wall holds several large kitchen knives arranged by size, their blades
+  immaculately clean. One space in the rack is empty. The warmth here is purely
+  functional — the range works because food must be cooked, not because comfort
+  matters. To the <ansi fg="exit">east</ansi>, the entrance hall.
+mapsymbol: K
+maplegend: The Kitchen
+biome: house
+exits:
+  east:
+    roomid: 1602
+nouns:
+  range: >-
+    A heavy iron range, old and well-maintained. Something boils on the top ring —
+    pale and grey-white, giving off steam that smells of almost nothing. Boiled
+    potatoes, perhaps. Boiled something. In this kitchen, everything is boiled.
+    Boiling is not an accident; it is a philosophy.
+  shelves: >-
+    Plain wood shelves holding provisions: dried pulses, plain flour, salt in a
+    paper bag — but only salt, no pepper, nothing else. Tins of condensed milk. Tins
+    of plain vegetables. No stock cubes. No jars of sauce. No herbs. The shelves of
+    a kitchen that has decided flavour is a luxury.
+  knives: >-
+    Five large kitchen knives on a magnetic rack, arranged by descending size.
+    Their blades are clean and sharp. One space in the rack — the second-largest —
+    is empty. The knife that belongs there is not on the counter, not in the sink,
+    not anywhere visible.
+  knife: >-
+    Five large kitchen knives on a magnetic rack, arranged by descending size.
+    Their blades are clean and sharp. One space in the rack — the second-largest —
+    is empty. The knife that belongs there is not on the counter, not in the sink,
+    not anywhere visible.
+  table: >-
+    The kitchen table is deal wood, scrubbed so often it has turned almost white.
+    A pair of plain black scissors lies on it, blades closed. They look very sharp.
+  scissors: >-
+    A large pair of dressmaking scissors, black-handled, their blades catching the
+    light. They are on the kitchen table, not put away. Scissors left out in this
+    kitchen feel deliberate.
+spawninfo:
+- mobid: 272
+  message: '<ansi fg="8">A strong, capable woman moves about the kitchen with the efficiency of long practice, her face set and expressionless.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Anna scrubs the already-clean table with methodical strokes, avoiding eye contact.
+- The pot on the range bubbles quietly, releasing steam that smells of boiled nothing.
+- The empty space in the knife rack catches the light at an angle that draws the eye.
+- Anna pauses, glances toward the door, and returns to her work with renewed energy.
+- The scissors on the table are very large. They gleam.
+- The warmth from the range reaches only so far. Beyond it, the kitchen is cold.
+- Anna moves her lips without speaking, rehearsing or suppressing something.

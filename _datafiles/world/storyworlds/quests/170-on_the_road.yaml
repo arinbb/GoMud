@@ -1,0 +1,23 @@
+questid: 170
+name: On the Road
+description: >-
+  Cross America with Sal Paradise and Dean Moriarty. Leave New York,
+  hitchhike the highways, find Denver, hear the jazz, reach San Francisco,
+  cross the Mexican border. Feel the road. Feel the sadness underneath
+  the freedom. Come back and write it down.
+reward:
+  experience: 4500
+  item_id: 205
+  playermessage: >-
+    You have crossed America with Sal and Dean. As a memento you receive
+    a battered road map of the United States, its penciled route tracing
+    the journeys -- east to west, west to east, south to the border and
+    back. The route crosses itself. It makes the shape of a life that
+    could not stop moving. On the Road: 1957. Still in print. Still
+    calling.
+steps:
+- description: Leave New York and find the open highway.
+- description: Reach Denver and find Dean Moriarty.
+- description: Hear the jazz -- really hear it.
+- description: Make it to San Francisco, the end of the continent.
+- description: Cross the Mexican border.

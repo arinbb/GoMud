@@ -1,0 +1,23 @@
+questid: 100
+name: Matilda
+description: >-
+  Experience the story of a remarkable child in an unremarkable family.
+  Walk through the garish Wormwood household, discover the sanctuary of
+  the public library, survive the terrors of Crunchem Hall, and witness
+  something extraordinary happen with a piece of chalk.
+reward:
+  experience: 5000
+  item_id: 170
+  playermessage: >-
+    You have witnessed something miraculous — a small girl with enormous
+    eyes and an extraordinary mind, standing up to the biggest bully in
+    England with nothing but concentration and courage. As a memento, you
+    receive a piece of telekinetic chalk. It hums with quiet power.
+steps:
+- description: Enter the Wormwood household and witness how they live.
+- description: Visit the public library and discover Matilda's sanctuary.
+- description: Meet Miss Honey in her classroom at Crunchem Hall.
+- description: Survive an encounter with Miss Trunchbull.
+- description: Witness the chocolate cake or endure the Chokey.
+- description: Visit Miss Honey's cottage and understand her poverty.
+- description: Witness the chalk write by itself in Miss Honey's classroom.

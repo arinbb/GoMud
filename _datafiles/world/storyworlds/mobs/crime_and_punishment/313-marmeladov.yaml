@@ -1,0 +1,29 @@
+mobid: 313
+zone: crime_and_punishment
+hostile: false
+maxwander: 1
+activitylevel: 35
+angrycommands: []
+idlecommands:
+  - emote raises his glass with a trembling hand and drinks deeply, then sets it down and weeps.
+  - say Who are you, sir, to pity me? I have no right to be pitied. I have forfeited that right.
+  - emote stands unsteadily and delivers his next sentence to the room at large, like a man on a stage.
+  - say My daughter -- my Sonya -- she works, you understand. She works so that I might drink. Is that not magnificent? Is that not biblical?
+  - ''
+  - emote collapses back into his chair and stares into his glass.
+  - say I am a pig, sir. A pig who knows he is a pig, which makes him worse than a pig who does not know.
+  - emote weeps briefly and with great theatricality, then recovers and calls for another drink.
+character:
+  name: Marmeladov
+  description: >-
+    A man of fifty in a worn civil service coat, what remains of its
+    buttons holding on by habit. He has the face of a man who was
+    respectable once and remembers it with great clarity and is no
+    longer capable of returning there. His eyes are red. His hands
+    shake. He speaks in the cadences of an orator delivering a
+    magnificent speech to an empty theater, finding in his own
+    degradation something almost noble. He drinks. He knows he drinks.
+    The knowing changes nothing. He is one of the most honest characters
+    in the novel.
+  raceid: 1
+  level: 5

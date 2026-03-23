@@ -1,0 +1,27 @@
+mobid: 312
+zone: crime_and_punishment
+hostile: false
+maxwander: 0
+activitylevel: 20
+angrycommands: []
+idlecommands:
+  - emote reads by candlelight, her lips moving slightly over the words.
+  - emote folds her hands in her lap and is still, somewhere inside herself.
+  - emote mends a piece of clothing with small careful stitches.
+  - emote looks up at the window with an expression that is not quite hope and not quite despair.
+  - ''
+  - emote turns a page of the Bible with great care.
+  - say He will come back. I believe he will come back.
+  - emote prays quietly, her eyes closed, her hands together.
+character:
+  name: Sonya Marmeladova
+  description: >-
+    A girl of eighteen, thin and pale, with enormous blue eyes that have seen
+    too much too soon and have refused, somehow, to be diminished by it. She
+    is small and simply dressed. Her hands are rough from work and her face
+    is young and old at the same time, the face of someone who has found a
+    way to live with unbearable things by holding onto something the
+    unbearable things cannot touch. She carries a worn New Testament. She
+    is the purest person in this novel. The city does not deserve her.
+  raceid: 1
+  level: 8

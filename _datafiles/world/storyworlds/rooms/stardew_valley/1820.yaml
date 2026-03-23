@@ -1,0 +1,62 @@
+roomid: 1820
+zone: Stardew Valley
+title: Grandpas Farm
+description: >-
+  The old farm is overgrown, but full of potential. Weeds tangle through cracked
+  soil and stones litter the <ansi fg="itemname">fields</ansi>. The <ansi
+  fg="itemname">farmhouse</ansi> behind you is small and weathered, a wood-stove
+  chimney poking through the mossy roof. On the rotting porch railing sits a
+  <ansi fg="itemname">letter</ansi> weighted down by a rock — your
+  grandfather's final words to you. A rusted <ansi fg="itemname">mailbox</ansi>
+  leans at the field's edge. The soil, though tangled, is rich and dark. You
+  can feel it. Something wants to grow here. To the <ansi fg="exit">east</ansi>
+  a dirt path leads toward Pelican Town. To the <ansi fg="exit">south</ansi>
+  the trees of Cindersap Forest begin.
+mapsymbol: F
+maplegend: Grandpas Farm
+biome: farmland
+exits:
+  east:
+    roomid: 1821
+  south:
+    roomid: 1823
+nouns:
+  fields: >-
+    Overgrown fields that once grew abundant crops under your grandfather's care.
+    Now weeds and rocks cover the soil, but beneath them the earth is dark and
+    fertile. You can almost hear it asking to be planted. There is space here
+    for dozens of rows if you clear the land.
+  farmhouse: >-
+    A modest farmhouse, old but solid. The walls need painting. One window
+    shutter hangs by a single hinge. But the foundation is sound and the
+    wood-stove inside still holds warmth. Your grandfather lived here for
+    decades. His presence lingers in every scuff and groove.
+  letter: >-
+    A handwritten letter in careful, slightly shaky script. It reads:
+    "There will come a time when you feel crushed by the burden of modern life.
+    When that happens, come to the place I have left for you. You will find
+    everything you need if you give it time and care. With love, Grandpa."
+    The paper is worn soft from being folded and unfolded many times.
+  mailbox: >-
+    A dented tin mailbox mounted on a wooden post. The door squeaks when
+    you open it. Inside, someone has left a note from Mayor Lewis welcoming
+    you to Pelican Town. "The townspeople are a little reserved at first,"
+    he writes, "but I am sure you will fit right in."
+spawninfo:
+- mobid: 320
+  message: Another farmer is already at work on the land, turning soil with a worn hoe.
+  idlecommands:
+  - emote swings a hoe into the earth, turning a clod of dark soil.
+  - emote pauses to wipe sweat from their brow and survey the overgrown fields.
+  - emote crouches to examine a small green sprout pushing through the weeds.
+  - say There is so much to do. But the soil is good. I can feel it.
+  - emote waters a patch of parsnip seedlings with careful attention.
+  - ''
+  respawnrate: 3 real minutes
+idlemessages:
+- The morning light falls golden across the overgrown fields, catching the dew on every weed.
+- 'A crow lands on the old mailbox and regards you with one bright eye, then departs.'
+- The wood-stove in the farmhouse ticks as the metal contracts in the cool morning air.
+- Parsnip seeds scatter in the breeze from the letter on the porch railing.
+- 'The soil here is rich: you can smell it after rain, dark and full of promise.'
+- From inside the farmhouse comes the distant sound of the valley settling into morning.

@@ -1,0 +1,23 @@
+mobid: 276
+zone: die_die_my_darling
+hostile: false
+maxwander: 0
+activitylevel: 10
+idlecommands:
+  - "emote moves between the tables with easy familiarity, collecting empties."
+  - "emote touches the small silver brooch at her collar with one finger, absently, as she passes."
+  - "emote wipes a table with a clean cloth and straightens the salt and pepper shakers."
+  - ''
+  - ''
+character:
+  name: the waitress
+  description: >-
+    A young woman in a white blouse and dark skirt, moving between the pub
+    tables with the practised ease of someone who has worked here long enough
+    to know everyone's order. At her collar she wears a small silver brooch —
+    a pretty piece, a spray of flowers in delicate worked silver. It looks
+    expensive and personal, like something kept from a special occasion rather
+    than worn to work. She touches it sometimes without seeming to notice
+    she is doing it.
+  raceid: 1
+  level: 3

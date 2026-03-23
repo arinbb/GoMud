@@ -1,0 +1,63 @@
+roomid: 1885
+zone: The Monkey Wrench Gang
+title: The Mesa Top
+description: >-
+  The <ansi fg="red">red rock mesa</ansi> stretches flat and enormous in every direction,
+  its surface broken by <ansi fg="itemname">prickly pear</ansi>, small junipers, and the
+  occasional pothole filled with old rainwater. At night, or in the long twilight, this
+  place becomes something else entirely — the <ansi fg="cyan">stars</ansi> come out in
+  their millions, the Milky Way a river overhead, and the desert reveals itself as the
+  cathedral it has always been. A <ansi fg="itemname">campfire ring</ansi> made of local
+  sandstone marks where the gang has camped before: charred rock, old ash, a scatter of
+  <ansi fg="itemname">beer cans</ansi>, the bones of something small that came too close
+  to the fire. The view in every direction is the same: canyon, mesa, sky, the geometry
+  of a landscape that has never needed human improvement. Far to the <ansi fg="exit">south</ansi>,
+  the desert road leads back toward the highway and the world. A <ansi fg="mobname">raven</ansi>
+  sits on a boulder at the mesa edge, watching everything with one glossy black eye.
+mapsymbol: M
+maplegend: Mesa Top
+biome: desert
+exits:
+  south:
+    roomid: 1883
+    exitmessage: You pick your way back down the rocky trail toward the highway.
+    mapdirection: south
+nouns:
+  stars: >-
+    The stars from the mesa top are not the stars you see in cities. There is no
+    light pollution out here, nothing between you and the rest of the universe.
+    The Milky Way arches overhead like a question that does not require an answer.
+    Abbey wrote about the desert stars with something approaching religious awe.
+    He was an atheist who believed the desert was holy. These are not contradictions.
+  fire: >-
+    The campfire ring is old, used many times. The ash is cold now, but the
+    sandstone ring is blackened with accumulated fire. Bent and rusted beer cans
+    lie among the ash -- the gang's trademark litter, evidence of their presence
+    the way a wolf pack leaves scat.
+  cans: >-
+    Empty beer cans, crushed and rusted, scattered around the campfire ring.
+    Hayduke drank Budweiser. Seldom Seen preferred Coors when he could get it.
+    Doc brought wine in a leather flask when the others were not looking.
+    Bonnie drank whatever was available and generally found it adequate.
+  prickly: >-
+    Prickly pear cactus covers the mesa top in low spiny mats, its pads
+    grey-green and laden with spines. In spring it blooms improbable yellow.
+    The fruit is edible if you can get past the spines, which is true of
+    many things in the desert.
+  raven: >-
+    The raven sits at the mesa edge and watches. Ravens are the desert's most
+    intelligent observers, corvid witnesses to everything that happens in the
+    canyon country. This one has seen more than it will tell. It watches you
+    with a sideways intelligence that suggests it has already reached conclusions.
+spawninfo:
+- mobid: 366
+  message: A raven lands on a boulder at the mesa edge and regards you with terrible intelligence.
+  respawnrate: 5 real minutes
+idlemessages:
+- The campfire ring is cold but the ash is recent -- they were here last night.
+- 'The raven at the mesa edge shifts its weight from foot to foot, watching you, judging.'
+- 'Far below and miles away, a vehicle moves along the desert road: a small dust plume that takes minutes to cross the flat.'
+- The silence here is not empty. It has weight and texture, the accumulated silence of millions of years.
+- An empty beer can rattles in the wind, rolling a few inches before catching on a juniper root.
+- 'The last light catches the canyon walls to the south, turning them from red to blood-orange to something darker.'
+- A shooting star crosses the sky without ceremony. In the city you would have felt compelled to make a wish.

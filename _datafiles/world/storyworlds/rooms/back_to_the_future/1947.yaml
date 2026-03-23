@@ -1,0 +1,59 @@
+roomid: 1947
+zone: Back to the Future
+title: The McFly House
+description: >-
+  The Baines family home on the edge of Lyon Estates -- a tidy two-story
+  craftsman with a covered porch and a swing. The <ansi fg="itemname">living
+  room</ansi> is immaculate: a Philco television console, a Motorola radio,
+  a brocade sofa nobody is allowed to sit on. Family photos on the wall.
+  In the kitchen, someone is frying something fragrant. Upstairs, a bedroom
+  door is painted yellow -- that is Lorraine's. The front porch swing
+  sways slowly in the November breeze. <ansi fg="mobname">Lorraine Baines</ansi>
+  is here, sitting at the kitchen table, sneaking a cigarette and reading
+  a movie magazine.
+mapsymbol: M
+maplegend: McFly House
+biome: house
+exits:
+  west:
+    roomid: 1946
+nouns:
+  television: >-
+    A Philco Predicta television in a mahogany console, the pride of
+    the household. The picture tube is the size of a dinner plate.
+    The remote control does not exist. Lorraine's father controls what
+    gets watched, and what gets watched is mostly the news and Westerns.
+  radio: >-
+    A Motorola floor-standing radio in blond wood. Four stations in
+    this area. On Saturday nights the family sits around it and
+    listens to the hit parade. Music comes out of a box and it
+    is considered a miracle.
+  photos: >-
+    Family photos in matching oval frames. The Baines clan. Parents
+    who met in circumstances they describe as "very romantic." Cousins.
+    A grandmother who looks startlingly like someone. The family
+    resemblance runs deep and has certain implications for Lorraine's
+    current situation.
+  bedroom: >-
+    Lorraine's bedroom door, painted yellow, is closed. Behind it:
+    a twin bed with a pink chenille spread, a vanity mirror ringed
+    with photos of movie stars, a diary kept under the mattress.
+    The diary contains entries that would alarm her parents.
+  porch: >-
+    The covered front porch has a swing on a chain, two rocking chairs,
+    and a view of the quiet suburban road. In summer this porch is
+    the center of the household's social life. In November it is
+    where you go to be alone without quite being outside.
+idlemessages:
+- Lorraine flips a page of her movie magazine and sighs deeply.
+- 'From the kitchen: the pop and hiss of something frying in a cast-iron pan.'
+- The porch swing creaks in the breeze outside.
+- Lorraine glances toward the door, then back at her magazine, then at the door again.
+- 'A car radio plays something from the street: "Earth Angel." Lorraine''s expression softens.'
+- Someone calls from upstairs. Lorraine does not answer.
+- 'The television in the living room says: "And that concludes our broadcast day."'
+- Lorraine stubs out her cigarette and fans the smoke toward the window.
+spawninfo:
+- mobid: 393
+  message: "Lorraine Baines looks up from her magazine, pencil twirling in her fingers."
+  respawnrate: 3 real minutes

@@ -1,0 +1,59 @@
+roomid: 1834
+zone: Stardew Valley
+title: JojaMart
+description: >-
+  Fluorescent light hums over linoleum floors. The <ansi
+  fg="itemname">shelves</ansi> are perfectly stocked, the <ansi
+  fg="itemname">prices</ansi> are clearly posted, the
+  <ansi fg="itemname">products</ansi> are uniform and without personality.
+  Joja brand music plays from speakers in the ceiling — a clean, optimized
+  melody that was focus-grouped to cause minimum annoyance while promoting
+  maximum willingness to spend. A <ansi fg="itemname">promotional banner</ansi>
+  reads: "JOJA CORP: JOINING US IN PROGRESS." Everything here is fine. That
+  is what is wrong with it. Back outside to the <ansi fg="exit">south</ansi>
+  is the town and the actual community.
+mapsymbol: J
+maplegend: JojaMart
+biome: city
+exits:
+  town:
+    roomid: 1821
+    mapdirection: south
+nouns:
+  shelves: >-
+    Shelves that are exactly as full as corporate policy requires, stocked
+    by planogram. The same items at every JojaMart in the country. The
+    seeds are here, but they are not Pierre's seeds. They are JojaMart seeds,
+    which look the same and cost less and feel, somehow, less like seeds.
+  prices: >-
+    The prices are genuinely lower than Pierre's in many cases. This is
+    the honest truth and it does not make the store feel better. The
+    savings are real and the cost is something harder to calculate.
+  products: >-
+    Generic. Competent. Indistinguishable from the same products in every
+    other JojaMart. Joja Cola in the refrigerated section. Joja brand
+    batteries. Joja branded farm supply. Each one the corporate version of
+    a thing that used to mean something more specific.
+  banner: >-
+    A large vinyl banner in Joja's blue and yellow color scheme. "JOJA CORP:
+    JOINING US IN PROGRESS." The slogan is meaningless, optimized for
+    inoffensiveness. Someone has written in ballpoint pen on the lower corner:
+    "Go to Pierre's." The handwriting looks like it might be Leah's.
+spawninfo:
+- mobid: 330
+  message: Morris adjusts his name tag and turns toward you with a prepared smile.
+  idlecommands:
+  - emote straightens a row of Joja branded cola bottles with methodical precision.
+  - say Welcome to JojaMart. Everything you need at prices you will appreciate.
+  - emote checks a clipboard and frowns at something, then reassigns the frown to neutral.
+  - say The Community Center is a liability. The land could serve a real purpose.
+  - emote practices a smile in the reflection of a refrigerator door.
+  - ''
+  respawnrate: 3 real minutes
+idlemessages:
+- The fluorescent light flickers once and stabilizes. No one looks up.
+- The Joja jingle cycles again from the overhead speakers, slightly different tempo, exactly the same feeling.
+- The automatic door opens for someone and lets in a moment of actual air, then seals it out again.
+- A Joja Cola display is perfectly pyramided. It will remain perfect until someone buys one. No one buys one.
+- The muzak shifts to a version of a song you like. It is entirely wrong and you cannot say precisely why.
+- Morris checks his reflection in the dairy case door and adjusts something microscopic.

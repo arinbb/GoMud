@@ -1,0 +1,25 @@
+mobid: 461
+zone: up_in_smoke
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote strums a single chord on the guitar and watches it fade with complete attention."
+  - ""
+  - "emote stares into the lava lamp. A blob rises. He nods slowly."
+  - ""
+  - "say Far out."
+  - ""
+  - "emote picks the guitar back up and plays something that is almost a song."
+  - "say Pedro says we got the Roxy gig. I said: far out."
+activitylevel: 10
+character:
+  name: Man
+  description: >-
+    A tall, loose-limbed Canadian in his late twenties, with a beard that is
+    doing its own thing and long hair that has made its peace with gravity.
+    He wears whatever is available and layered and moves with the unhurried
+    ease of someone who stopped racing the clock some years ago and found
+    he did not miss it. His eyes are warm and slightly distant, focused on
+    something just past the visible. He is, in his way, a philosopher.
+  raceid: 1
+  level: 6

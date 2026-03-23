@@ -1,0 +1,52 @@
+roomid: 1415
+zone: Matilda
+title: The Red House
+description: >-
+  A grand <ansi fg="red">Victorian house</ansi> of dark red brick, far too large
+  for one person, surrounded by overgrown <ansi fg="itemname">gardens</ansi> gone
+  to seed. The <ansi fg="itemname">iron gates</ansi> are padlocked but the hedge
+  has a gap. Inside, the house is imposing but wrong — the <ansi fg="itemname">furniture</ansi>
+  is heavy and masculine, the <ansi fg="itemname">walls</ansi> hung with athletic
+  trophies and photographs of a woman throwing heavy objects. This house belongs
+  to someone who took it by force and lives in it without grace. A pair of
+  <ansi fg="itemname">muddy boots</ansi> sits by the door, enormous and military.
+  The air smells of sweat, boot polish, and stolen property. The path leads back
+  <ansi fg="exit">west</ansi> to the cottage.
+mapsymbol: !
+maplegend: The Red House
+biome: house
+exits:
+  west:
+    roomid: 1414
+nouns:
+  gardens: >-
+    Once-beautiful gardens now choked with weeds and neglect. Rose bushes have
+    gone wild, their thorns tangling into impenetrable thickets. A stone birdbath
+    is cracked and dry. This garden was loved once, by someone gentle. That person
+    is gone, and the garden mourns.
+  gates: >-
+    Tall iron gates with a heavy padlock. But the hedge beside them has a gap
+    just large enough for a child — or a very determined small person — to
+    squeeze through.
+  furniture: >-
+    Heavy, dark furniture that does not match the house. The Trunchbull has
+    furnished this place like a barracks — functional, graceless, intimidating.
+    A leather armchair. A military trunk. A rack for riding boots. None of it
+    belongs here.
+  walls: >-
+    The walls are hung with framed photographs and trophies from an athletic
+    career. Shot put. Hammer throw. In every photograph, the same massive
+    woman with the same grim expression. Between the frames, you can see
+    lighter patches on the wallpaper where other pictures once hung — family
+    portraits, perhaps, removed and hidden or destroyed.
+  boots: >-
+    Enormous muddy boots by the door, at least size twelve. They are caked
+    with playing-field mud and smell of sweat and leather. They sit there
+    like sentinels guarding stolen property.
+idlemessages:
+- 'The house creaks around you, its timbers settling with the weight of secrets.'
+- 'Lighter patches on the wallpaper mark where family portraits once hung. Someone removed them all.'
+- 'The garden outside the window is wild and overgrown, its beauty tangled in neglect.'
+- 'A trophy on the mantel catches the light — a silver hammer-throw cup, polished to a cold shine.'
+- 'The muddy boots by the door seem too large to belong to any normal person.'
+- 'This house was built for warmth and family. It has neither now.'

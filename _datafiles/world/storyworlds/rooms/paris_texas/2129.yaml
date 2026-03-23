@@ -1,0 +1,53 @@
+roomid: 2129
+zone: Paris Texas
+title: A Houston Street
+description: >-
+  A street in Houston at night, somewhere between downtown and the Gulf.
+  <ansi fg="cyan">Neon signs</ansi> for diners and motels and pawn shops and
+  a laundromat that is lit up at midnight because someone always needs to do
+  laundry at midnight. The <ansi fg="itemname">diner</ansi> on the corner has
+  a window full of steam and the suggestion of people inside, eating alone.
+  A <ansi fg="itemname">motel</ansi> sign across the street reads GULF BREEZE
+  and promises cable TV. The <ansi fg="8">sidewalk</ansi> is warm even now
+  and the air has the heavy, wet warmth of the Gulf Coast. This is a street
+  where loneliness has become architectural — built into the spaces between
+  the neon signs, into the distance between the windows, into the empty
+  stool at the counter visible through the diner glass. The road runs
+  <ansi fg="exit">west</ansi> back to the skyline.
+mapsymbol: S
+maplegend: Houston Street
+biome: city
+exits:
+  west:
+    roomid: 2126
+nouns:
+  diner: >-
+    Through the window, three people eating alone at the counter. Not
+    together. Each in their own private silence with their coffee and
+    their plate. The cook moves behind the counter in a white apron.
+    The window is steamed. It smells of fry oil and coffee and something
+    sweet — pie, probably.
+  neon: >-
+    Every business on this street has a neon sign. EAT. OPEN. VACANCY.
+    CASH. Each sign is its own small sentence. Together they make a
+    kind of poem about the available options at 2am in Houston, Texas.
+  motel: >-
+    GULF BREEZE. Its sign has a pelican on it. The pelican is missing
+    part of a wing from where a tube burned out. The pool is lit up
+    green and empty. Someone is awake behind one of the windows.
+  sidewalk: >-
+    The concrete is warm under your feet even now, hours after dark.
+    The Gulf warmth does not leave. It gets into things and stays.
+  laundromat: >-
+    Lit up at midnight, fluorescent, the tumble of machines audible
+    from outside. A woman sits in a plastic chair reading a magazine.
+    She looks up at the window for a moment, not seeing you, and
+    looks back down.
+idlemessages:
+- A cab rolls by slowly, its light on, searching.
+- The diner window steams and clears and steams again. Inside, someone refills their own coffee.
+- The GULF BREEZE sign buzzes softly. The pelican is missing a wing in the dark.
+- The air is warm and wet and smells of the Gulf, forty miles south.
+- Someone walks the block from the motel to the diner and back. Then does it again.
+- 'The laundromat at midnight: the sound of something turning, turning, trying to come clean.'
+- In Houston at night everything is open and nothing is done. The city hums in a holding pattern.

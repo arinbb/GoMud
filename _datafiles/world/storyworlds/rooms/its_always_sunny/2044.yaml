@@ -1,0 +1,53 @@
+roomid: 2044
+zone: its_always_sunny
+title: The Street
+description: >-
+  The South Philly street outside <ansi fg="itemname">Paddys Pub</ansi> bakes
+  in the afternoon heat. <ansi fg="itemname">Row houses</ansi> line both sides
+  in the tight, brick-faced style of this neighborhood — every block the same,
+  every block different. The <ansi fg="itemname">Paddys Pub sign</ansi> above
+  the door is missing several letters, currently reading something like
+  <ansi fg="stat">P DY S P B</ansi>. No one has fixed it. No one will fix it.
+  A fire hydrant has been opened down the block and children are running
+  through the water with complete disregard for adulthood. The bar's front
+  door is to the <ansi fg="exit">south</ansi>. The street runs <ansi fg="exit">east</ansi>
+  toward the apartment block, <ansi fg="exit">west</ansi> to Dennis and Macs
+  apartment, and <ansi fg="exit">north</ansi> toward the Waitress's place.
+  The courthouse is accessible from here too — they end up there a lot.
+mapsymbol: ST
+maplegend: The Street
+biome: city
+exits:
+  south:
+    roomid: 2040
+  east:
+    roomid: 2046
+  west:
+    roomid: 2048
+  north:
+    roomid: 2050
+nouns:
+  sign: >-
+    The Paddys Pub sign is a masterwork of gradual entropy. Letters have fallen
+    off one by one over the years, never replaced, each loss accepted as
+    simply how things are now. The current configuration spells something
+    no one would intentionally name a bar. The Gang has noticed but taken no
+    action. This is characteristic.
+  row_houses: >-
+    South Philly row houses packed together on both sides of the street,
+    brick fronts, marble steps that the residents of such blocks scrub weekly
+    as a point of neighborhood pride. The steps in front of Paddys Pub are
+    not scrubbed. They have not been scrubbed since the bar opened. There is
+    gum on the third step that has been there for seven years.
+  hydrant: >-
+    A fire hydrant running down the block is providing the afternoon's main
+    entertainment. Water arcs across the street in a curtain that children
+    run through screaming. This is summer in South Philadelphia. This is
+    what summer is.
+idlemessages:
+- 'A car with the windows down passes playing something at maximum volume, then fades into the distance.'
+- Across the street, a neighbor waters her plants from a second-floor window, surveying the street with the authority of someone who has lived here forty years.
+- The Paddys Pub sign sways slightly in the warm city air. Another letter looks loose.
+- A delivery truck blocks the street for several minutes, driver and blocked cars engaged in a negotiation of horns.
+- 'Someone has chalked something on the sidewalk. Reading it closely, it appears to be a diagram of a scheme. The handwriting is Charlie''s.'
+- 'The smell of the bar drifts out: beer, smoke, the particular warmth of a room where the same arguments are made every day.'

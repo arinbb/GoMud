@@ -1,0 +1,21 @@
+-
+  Supported:
+    "harolds mother": ["harold"]
+  Conversation:
+    - ["#1 say Harold, I have arranged a date for you Thursday. A very suitable girl."]
+    - ["#2 emote nods once without expression.", "#2 say Yes, Mother."]
+    - ["#1 say Her father is in commodities. She plays tennis. Very well-rounded."]
+    - ["#2 say Yes, Mother."]
+    - ["#1 emote places a call on the telephone.", "#1 say You will wear the grey suit."]
+    - ["#2 emote watches her without particular feeling.", "#2 say Yes, Mother."]
+-
+  Supported:
+    "harolds mother": ["harold"]
+  Conversation:
+    - ["#1 say I have been thinking, Harold, about your future."]
+    - ["#2 say Yes?"]
+    - ["#1 say Your Uncle Victor has contacts at several officer training programs."]
+    - ["#2 emote is very still.", "#2 say I see."]
+    - ["#1 say It would give you direction. Purpose. Something to organize your days around."]
+    - ["#2 say My days are organized, Mother.", "#2 emote looks at nothing in particular."]
+    - ["#1 emote does not hear this.", "#1 say Thursday, then. And the grey suit."]

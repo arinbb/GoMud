@@ -1,0 +1,67 @@
+roomid: 1408
+zone: Matilda
+title: Miss Honey's Classroom
+description: >-
+  A bright, warm classroom that feels like a different world from the rest of
+  <ansi fg="8">Crunchem Hall</ansi>. <ansi fg="10">Sunlight</ansi> pours through
+  clean windows onto rows of small wooden <ansi fg="itemname">desks</ansi>. A
+  <ansi fg="itemname">blackboard</ansi> at the front is covered in neat, careful
+  handwriting. <ansi fg="itemname">Wildflowers</ansi> in a jam jar sit on the
+  teacher's desk beside a pile of exercise books. Children's <ansi fg="itemname">artwork</ansi>
+  is pinned to every available surface — bright, hopeful paintings that push back
+  against the grey institutional walls. A stick of white <ansi fg="itemname">chalk</ansi>
+  rests in the blackboard tray, perfectly still. The corridor is back to the
+  <ansi fg="exit">south</ansi>.
+mapsymbol: H
+maplegend: Miss Honey's Class
+biome: house
+exits:
+  south:
+    roomid: 1407
+nouns:
+  desks: >-
+    Small wooden desks arranged in neat rows, each one just the right size for a
+    child. The wood is scratched and ink-stained from years of use. One desk near
+    the front has been polished cleaner than the rest — Matilda's desk.
+  blackboard: >-
+    A large blackboard covered in Miss Honey's neat, elegant handwriting. Today's
+    lessons are written in white and yellow chalk. The handwriting has a gentleness
+    to it, each letter formed with care and patience. A single stick of chalk
+    rests in the tray below, perfectly ordinary. Or perhaps not.
+  chalk: >-
+    A stick of white chalk sitting in the blackboard tray. It looks perfectly
+    ordinary. Chalk is chalk. But sometimes, in this classroom, chalk does things
+    that chalk should not be able to do.
+  wildflowers: >-
+    A small bunch of wildflowers — buttercups, daisies, clover — in a jam jar
+    on the teacher's desk. Miss Honey picks them fresh each morning from the lane.
+    They are the most beautiful things in Crunchem Hall.
+  artwork: >-
+    Children's paintings cover the walls — bright suns, green fields, houses with
+    smoke curling from chimneys. Happy pictures. Miss Honey's classroom is the one
+    place in this school where children are allowed to imagine good things.
+idlemessages:
+- 'Sunlight moves across the desks, warming the scratched wood and faded ink stains.'
+- The wildflowers in their jam jar seem to lean toward the window, drinking in the light.
+- 'The chalk in the blackboard tray rolls slightly, as if nudged by an invisible finger.'
+- 'A child''s painting of a house with a garden catches your eye — it is full of color and longing.'
+- 'The classroom smells of chalk dust and wildflowers and something almost like hope.'
+- 'For a moment, the chalk on the blackboard tray seems to tremble. Then it is still.'
+spawninfo:
+- mobid: 221
+  message: "Miss Honey stands at the front of the classroom, reading aloud in a gentle voice."
+  idlecommands:
+    - "emote reads aloud from a book in her soft, clear voice."
+    - ""
+    - ""
+    - "say Now, who would like to try the next one?"
+    - "emote smiles encouragingly at the class."
+    - "emote straightens the wildflowers on her desk."
+- mobid: 225
+  message: "Lavender sits at her desk near Matilda's, fidgeting with mischievous energy."
+  idlecommands:
+    - "emote passes a note under the desk to Matilda."
+    - ""
+    - ""
+    - "say Did you hear what Trunchbull did to Julius Rottwinkle?"
+    - "emote giggles behind her hand."

@@ -1,0 +1,15 @@
+name: The Little Prince
+roomid: 1900
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: desert
+mutators:
+- mutatorid: little-prince
+idlemessages:
+- The wind shifts, carrying a faint scent of roses from somewhere impossibly far away.
+- 'You feel it without knowing why: something essential is invisible to the eye.'
+- A laugh drifts across the sand like a distant star, warm and impossible to locate.
+- The sky overhead is so enormous and so full of stars that smallness feels like grace.
+- Somewhere, a lamp is being lit. Somewhere else, it is being extinguished.
+- The desert holds its breath. You are not alone, though you are very far from home.

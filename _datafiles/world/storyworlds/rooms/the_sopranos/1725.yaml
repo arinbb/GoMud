@@ -1,0 +1,72 @@
+roomid: 1725
+zone: The Sopranos
+title: Route 21 / New Jersey Highway
+description: >-
+  A wide <ansi fg="8">New Jersey highway</ansi>, four lanes of aggressive motion
+  flanked by the particular suburban landscape that New Jersey has perfected:
+  <ansi fg="itemname">strip malls</ansi> in beige and tan, a <ansi fg="itemname">cell
+  phone store</ansi> next to a nail salon next to a closed video rental. Power lines
+  run overhead in sagging catenary curves. The <ansi fg="itemname">sky</ansi> is a
+  flat Jersey white, not quite overcast, not quite sunny. A <ansi fg="itemname">diner</ansi>
+  sign blinks in the distance. This is the connective tissue of North Jersey, the
+  landscape between destinations, the nowhere you drive through to get somewhere.
+  <ansi fg="exit">South</ansi> leads back toward the Soprano house, <ansi fg="exit">north</ansi>
+  toward Satriales, <ansi fg="exit">east</ansi> toward the Bada Bing, and <ansi fg="exit">west</ansi>
+  toward Vesuvio.
+mapsymbol: H
+maplegend: NJ Highway
+biome: city
+exits:
+  south:
+    roomid: 1720
+    secret: false
+  north:
+    roomid: 1726
+  east:
+    roomid: 1728
+  west:
+    roomid: 1730
+  melfi:
+    roomid: 1732
+    mapdirection: north-x2
+    secret: true
+  pines:
+    roomid: 1733
+    mapdirection: northeast
+    secret: true
+  diner:
+    roomid: 1734
+    mapdirection: east-x2
+    secret: true
+  marina:
+    roomid: 1735
+    mapdirection: northwest
+    secret: true
+nouns:
+  strip: >-
+    A strip mall in that particular New Jersey tan, half of the storefronts
+    occupied and half dark. The occupied ones sell things people need but
+    do not think about: cellular accessories, lottery tickets, sub sandwiches.
+    The dark ones have white paper in the windows.
+  malls: >-
+    See strip.
+  sky: >-
+    That particular overcast white that settles over New Jersey in certain
+    seasons, neither threatening nor reassuring. It simply is, the way New
+    Jersey simply is.
+  sign: >-
+    A lot of signs. Route numbers. Gas prices. Discount furniture.
+    Attorneys-at-law. A billboard for a personal injury lawyer whose face
+    is twenty feet tall and deeply reassuring.
+  traffic: >-
+    The traffic moves in that stop-and-go way that New Jersey traffic has
+    been moving since the highways were built. It is not going anywhere.
+    It is just going.
+spawninfo: []
+idlemessages:
+- A black SUV passes at speed, dark windows, not stopping.
+- The strip mall parking lot holds six cars and an argument between two of their owners.
+- 'A diner sign blinks in the distance: OPEN ALL NIGHT.'
+- The smell of exhaust and someone's fast food and a brief chemical sweetness from somewhere industrial.
+- A truck downshifts on the on-ramp with a sound like complaint.
+- The highway hum is constant and without character. It is the sound of New Jersey in motion.

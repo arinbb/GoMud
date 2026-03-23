@@ -1,0 +1,61 @@
+roomid: 1946
+zone: Back to the Future
+title: Lyon Estates (Under Construction)
+description: >-
+  Dirt roads and surveyor stakes stretch across bare California
+  earth in a large grid. A weathered sign reads
+  <ansi fg="itemname">"LYON ESTATES -- COMING SOON -- A Community for Modern Living."</ansi>
+  The <ansi fg="itemname">lots</ansi> are empty, separated by low orange
+  flags on wire stakes. A few earthmovers sit parked at the far end,
+  waiting for Monday. The oak trees at the edge of the development
+  are still standing -- they will be cleared in the spring. The
+  <ansi fg="itemname">Peabody farm</ansi> is visible to the east across
+  an open field. To the north, the clock tower marks the town square.
+mapsymbol: Y
+maplegend: Lyon Estates
+biome: land
+exits:
+  north:
+    roomid: 1941
+  east:
+    roomid: 1947
+  road:
+    roomid: 1953
+    mapdirection: west
+    secret: true
+nouns:
+  sign: >-
+    "Lyon Estates -- Coming Soon -- A Community for Modern Living.
+    3 and 4 bedroom homes from $35,000. Financing Available."
+    The sign is hand-painted and professional. The artist has
+    drawn a cheerful family in front of a ranch house. In thirty
+    years this will all be vinyl siding and cul-de-sacs.
+  lots: >-
+    Numbered lots separated by wire stakes and orange flags. Each
+    stake has a number hammered into it. This one is Lot 12. The
+    dirt is soft and dark and smells like California in November.
+    Somewhere under this dirt, in thirty years, there will be
+    driveways and sprinkler systems and family sedans.
+  "oak trees": >-
+    A row of old oaks at the edge of the development, their branches
+    bare in November. The survey lines end at their root lines.
+    The trees will not make it to 1985.
+  earthmovers: >-
+    Three muddy earthmovers sit at the far end of the development,
+    keys in the ignition, waiting for a weekday. They have already
+    scraped the first twenty lots down to bare earth. The California
+    landscape is patient. The developers are not.
+  farm: >-
+    Across the open field to the east, the Peabody farmhouse and
+    barn are still intact. Old man Peabody runs a tight property.
+    He is also extremely hostile to visitors, particularly visitors
+    who appear out of nowhere in a glowing stainless-steel car
+    and flatten one of his twin pine trees.
+idlemessages:
+- The wind off the bare lots raises little dust devils that spin and die.
+- A surveyor's stake has fallen over. It lies in the dirt, orange flag flapping.
+- The earthmovers crouch silent at the end of the road, hulking and patient.
+- From the farm to the east, a rooster crows, though it is far too late in the day for roosters.
+- Someone has chalked "BULLDOGS 55" on the road surface in fading letters.
+- The oak trees at the edge creak in the wind, unaware of their appointment with a bulldozer.
+- From the north, the courthouse clock tower ticks toward something important.

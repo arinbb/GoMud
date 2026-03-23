@@ -1,0 +1,20 @@
+itemid: 205
+name: battered road map
+namesimple: map
+displayname: a <ansi fg="itemname">battered road map</ansi> of the United States
+description: >-
+  A road map of the United States, folded wrong and then refolded wrong
+  and then given up on as a folding project. It shows the highways of
+  America as they were in 1947 -- Route 6, Route 66, Route 40, the thin
+  red lines running coast to coast through the names of towns you have
+  never heard of. Someone has traced a route in pencil: east to west,
+  west to east, south to the border, back again. The pencil line crosses
+  itself several times. It makes a shape that has no name in geography
+  but has a name in literature. Certain cities are circled: New York,
+  Denver, San Francisco, New Orleans. The Mexican border is marked with
+  a small X. The map smells faintly of Dean Moriarty, which is to say
+  it smells of speed and possibility and something slightly borrowed.
+type: object
+subtype: usable
+uses: 0
+value: 50

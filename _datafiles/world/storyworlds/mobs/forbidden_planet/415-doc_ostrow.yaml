@@ -1,0 +1,28 @@
+mobid: 415
+zone: forbidden_planet
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote examines a rock sample under a portable scope, making careful notes."
+  - ""
+  - "say These energy readings are extraordinary. I have never seen anything like them in twenty years of field medicine."
+  - ""
+  - "emote looks at his own hands for a moment with an expression that is hard to read."
+  - ""
+  - "say The apparatus in the deep laboratory -- it would be irresponsible not to study it. Medically speaking."
+  - ""
+  - "emote writes a long entry in his medical journal, then pauses and reads it back with evident disquiet."
+  - ""
+activitylevel: 20
+character:
+  name: Doc Ostrow
+  description: >-
+    The ship's doctor, a man of middle age and considerable scientific
+    curiosity. He carries the portable medical kit of a field physician and
+    the notebook of a researcher. He is drawn to the Krell laboratory with
+    the precise pull of a man who has spent his career studying intelligence
+    and is now standing before something that makes all his instruments
+    irrelevant. He knows, professionally, that this feeling of irresistible
+    attraction is a warning sign. He cannot quite make himself heed it.
+  raceid: 1
+  level: 10

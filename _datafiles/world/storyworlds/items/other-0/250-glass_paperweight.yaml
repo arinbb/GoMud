@@ -1,0 +1,18 @@
+itemid: 250
+name: Glass Paperweight
+namesimple: paperweight
+displayname: a <ansi fg="itemname">glass paperweight</ansi> with coral inside
+description: >-
+  A heavy dome of clear glass, perhaps ten centimeters across, curved on top
+  like the top of a hill. Inside, a piece of pink coral glows with a soft,
+  faint light of its own, rose-colored against the white glass. It is perfectly
+  preserved, perfectly useless, perfectly beautiful. Winston Smith bought it
+  from Charrington's shop in the prole quarter of Airstrip One. It was from
+  before the Revolution, before the telescreens, from an age that had room for
+  things made only because they were beautiful. He thought of it as a world
+  within a world, a fragile glass world in which he and Julia lived, protected.
+  He was wrong, of course. But the paperweight survived. It always survives.
+type: object
+subtype: usable
+uses: 0
+value: 0

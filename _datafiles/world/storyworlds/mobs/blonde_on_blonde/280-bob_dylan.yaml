@@ -1,0 +1,25 @@
+mobid: 280
+zone: blonde_on_blonde
+hostile: false
+maxwander: 0
+activitylevel: 15
+idlecommands:
+  - emote scribbles something on a napkin, crosses it out, writes it again.
+  - emote plays a brief harmonica phrase -- not a song, just a thought.
+  - emote adjusts his sunglasses without looking up from the lyric sheet.
+  - say Something about the key. Something about the key.
+  - emote sets the pencil down, picks it up, sets it down again.
+  - ''
+  - ''
+character:
+  name: Bob Dylan
+  description: >-
+    A young man who looks simultaneously famous and invisible, the sunglasses
+    doing work that sunglasses do not usually do. Wild dark hair in the style
+    of someone who is too busy thinking to manage it. A harmonica in a wire
+    holder around his neck, the kind that lets you play hands-free while
+    strumming a guitar. He is always writing or thinking about writing or
+    thinking about something that will become writing. His answers to questions
+    tend to come from a direction you did not expect.
+  raceid: 1
+  level: 10

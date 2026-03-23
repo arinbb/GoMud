@@ -1,0 +1,47 @@
+roomid: 1904
+zone: The Little Prince
+title: The Vain Mans Asteroid
+description: >-
+  The asteroid is occupied entirely by a man in an extravagant <ansi fg="itemname">hat</ansi>
+  and a suit of the finest cut, who is standing at an angle that makes his
+  profile most advantageous. There are no mirrors here -- there is no need
+  for them, as the Vain Man considers everything a mirror. He glances at
+  you and immediately begins to perform. He would like you to
+  <ansi fg="itemname">admire</ansi> him. He expects applause. He has been
+  waiting for applause for so long that his hands are ready, hovering,
+  to receive the sound of your palms coming together. The asteroid smells
+  of cologne and the specific anxiety of someone who cannot be alone
+  without doubting themselves. The path leads back to the <ansi fg="exit">king</ansi>'s
+  asteroid north, and further to the <ansi fg="exit">drunkard</ansi>'s south.
+mapsymbol: V
+maplegend: Vain Mans Asteroid
+biome: land
+exits:
+  king:
+    roomid: 1902
+    mapdirection: north
+  drunkard:
+    roomid: 1905
+    mapdirection: south
+nouns:
+  hat: >-
+    An extraordinary hat, wide-brimmed, tilted at the exact angle most
+    flattering to the face beneath it. The hat has been tilted at this angle
+    for so long that it would fall off if corrected. The Vain Man adjusts it
+    constantly, compulsively, and each adjustment is a tiny performance.
+  admire: >-
+    He would like to be admired. This is the whole of it. If you admire him,
+    he will tip his hat. If you do not admire him, he will wait until you do.
+    He is very patient about this. He has had a great deal of practice.
+  suit: >-
+    The suit is impeccable, pressed to creases that could cut glass. It is the
+    suit of a man who has nothing to do all day but look impeccable. The
+    buttonholes are perfect. The lapels are exactly right. Looking at the
+    suit, you feel slightly rumpled in ways you had not previously considered.
+idlemessages:
+- The Vain Man adjusts his hat and waits for you to notice.
+- 'A significant pause: he is doing something. You should be watching. Are you watching?'
+- He straightens his cuffs and glances at you sideways to see if you are impressed. Are you?
+- The asteroid is very quiet. In the quiet, the Vain Man radiates the effort of being observed.
+- He tips his hat to no one, then looks to see if someone saw him tip his hat.
+- 'The cologne drifts past: assertive, confident, slightly desperate.'

@@ -1,0 +1,24 @@
+mobid: 227
+zone: matilda
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote stamps a returned book and places it on the re-shelving cart."
+  - ""
+  - ""
+  - "say Let me know if you need help finding anything."
+  - "emote glances toward the children's corner with a warm, wondering smile."
+activitylevel: 15
+character:
+  name: Mrs. Phelps
+  description: >-
+    A warm, kindly woman with reading glasses on a chain around her neck
+    and a cardigan with pockets full of bookmarks. She is the village
+    librarian, and she has watched with growing astonishment as a tiny
+    four-year-old girl has worked her way through the entire children's
+    section and started on the adult novels. Mrs. Phelps has the good
+    sense not to interfere with genius — she simply keeps the books
+    coming. Her eyes are gentle behind her glasses, and she smells
+    faintly of library paste and Earl Grey tea.
+  raceid: 1
+  level: 5

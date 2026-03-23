@@ -1,0 +1,6 @@
+mutatorid: petersburg-fever
+namemodifier:
+  behavior: append
+  text: (feverish)
+alertmodifier:
+  text: The summer heat of St. Petersburg presses down without mercy. The air is thick with lime dust and the smell of the canal. Everything feels slightly unreal, slightly too yellow, slightly too close.

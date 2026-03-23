@@ -1,0 +1,25 @@
+mobid: 223
+zone: matilda
+hostile: false
+maxwander: 0
+idlecommands:
+  - "say Did I ever tell you about the sawdust trick? Genius!"
+  - "emote slaps his knee and guffaws at the television."
+  - ""
+  - ""
+  - "say Who needs books when you have the telly?"
+  - "emote adjusts his loud checked jacket with great self-satisfaction."
+activitylevel: 20
+character:
+  name: Mr. Wormwood
+  description: >-
+    A small, ratty man with a thin moustache and beady eyes full of cunning.
+    He wears a spectacularly ugly checked jacket in clashing colors and a
+    wide, garish tie. His hair is slicked back with too much oil. He is a
+    second-hand car dealer who puts sawdust in gearboxes and spins back
+    odometers, and he considers himself a genius for it. He has no interest
+    in books, no interest in his daughter's extraordinary abilities, and
+    total confidence in his own brilliance. He smells of hair oil and
+    dishonesty.
+  raceid: 1
+  level: 5

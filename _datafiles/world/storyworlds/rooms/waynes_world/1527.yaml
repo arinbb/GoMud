@@ -1,0 +1,45 @@
+roomid: 1527
+zone: Waynes World
+title: Music Store
+description: >-
+  <ansi fg="itemname">Guitars</ansi> line every wall — Stratocasters, Les Pauls,
+  SGs, and a few oddities up near the ceiling that nobody can identify. The air
+  smells of guitar polish, new string metal, and the concentrated hope of a
+  thousand people who believe they could be Clapton if they just got the right
+  axe. A <ansi fg="itemname">sign</ansi> near the Stratocaster display reads
+  <ansi fg="room-title">NO STAIRWAY TO HEAVEN</ansi> in hand-lettered capital
+  letters. There is also no Smoke on the Water, no Iron Man, and no Sweet
+  Home Alabama. The <ansi fg="itemname">clerk</ansi> watches with the resigned
+  expression of a man who has enforced this policy ten thousand times. To the
+  <ansi fg="exit">west</ansi> is the street. The <ansi fg="exit">east</ansi>
+  exit leads to the arcade.
+mapsymbol: m
+maplegend: Music Store
+biome: house
+exits:
+  west:
+    roomid: 1523
+  east:
+    roomid: 1529
+nouns:
+  guitars: >-
+    Every guitar in here is a portal to a different life. The Stratocaster near
+    the door is the one. You can feel it even before you touch it. It wants
+    to be played. It does not care about the sign.
+  sign: >-
+    "NO STAIRWAY TO HEAVEN" in hand-lettered black marker, laminated, mounted
+    at eye level near the Stratocaster display. Below it in smaller text: "Also
+    no Smoke on the Water, no Iron Man, no Sweet Child O' Mine, no Enter Sandman,
+    no Sweet Home Alabama. You know why."
+  clerk: >-
+    He has seen everything. He has heard everything — or rather, he has heard
+    the opening notes of everything, because he stops it before it gets any further.
+    He is a man shaped by the repetition of denied dreams. He is still nice about it.
+idlemessages:
+- Someone picks up a Les Paul near the back and plays three notes of something before the clerk looks up.
+- The sign catches the light. NO STAIRWAY. The sign is eternal.
+- A new string is being installed somewhere in the back. The tuning peg squeaks.
+- The clerk polishes a display guitar with the focus of a monk at prayer.
+- A kid comes in, looks at the sign, looks at the Stratocaster, and sighs.
+- The smell of guitar polish is the smell of ambition meeting reality.
+- Somewhere in the back, someone is correctly playing a pentatonic scale. The clerk nods approvingly.

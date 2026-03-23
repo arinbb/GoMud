@@ -1,0 +1,52 @@
+roomid: 1707
+zone: Blonde on Blonde
+title: Leopard-Skin Pill-Box Hat
+description: >-
+  A <ansi fg="yellow">fashion show gone cosmically wrong</ansi>. Every surface
+  is <ansi fg="itemname">leopard print</ansi> -- the floors, the furniture,
+  the curtains, the doctor's coat, the attendant's gloves. At the center of
+  the room, on a velvet pedestal, sits the <ansi fg="itemname">hat</ansi>
+  itself: a leopard-skin pill-box in the style of a First Lady, elevated to
+  the level of a religious artifact and satirized at that same level simultaneously.
+  A <ansi fg="itemname">doctor</ansi> examines it with a stethoscope. The
+  jealousy here is comic but sincere. The fashion is earnest but ridiculous.
+  Somewhere a mattress leans against the wall. Somewhere a neighbor saw a
+  leopard. The whole room asks the same three-chord question: what was she
+  thinking, and don't you love it? The <ansi fg="exit">studio</ansi> is back
+  to the east.
+mapsymbol: 7
+maplegend: Leopard-Skin Pill-Box Hat
+biome: house
+exits:
+  studio:
+    roomid: 1700
+    mapdirection: east
+    exitmessage: You retreat from the leopard print, blinking.
+nouns:
+  hat: >-
+    The leopard-skin pill-box hat, the occasion of the entire song. It sits
+    on its velvet pedestal like a crown and like a joke about crowns. The
+    pattern is flawless. The construction is expert. The doctor is examining
+    it for flaws with a seriousness that cannot be satirized further. It is
+    exactly as ridiculous as it is wonderful. These are not opposites.
+  doctor: >-
+    The doctor examines the hat with his stethoscope, frowning at what he
+    hears. He has been doing this for some time. He does not explain his
+    findings. The medical opinion of a leopard-skin pill-box hat is between
+    him and the hat.
+  floor: >-
+    Leopard print linoleum, which should be a contradiction in terms and
+    yet here it is, perfectly laid, the spots in exact geometrical repetition.
+    Standing on it gives you the vertiginous sense that everything you thought
+    was arbitrary about fashion is actually very deliberate.
+  mattress: >-
+    Against the wall, a mattress. Someone was on the phone when the leopard
+    walked by. That is the whole story. The mattress knows the rest.
+idlemessages:
+- The doctor listens to the hat through his stethoscope. His expression does not change.
+- 'A bolt of leopard-print fabric unrolls across the floor on its own, expanding the territory.'
+- 'The hat sits in its perfection, being exactly what it is -- which is everything.'
+- 'Someone in the corridor shouts something about a neighbor and a leopard. You cannot make out the rest.'
+- The jealousy in the room has a physical quality, like humidity, like weather.
+- The three-chord riff plays itself again. It sounds exactly right for what it is.
+spawninfo: []

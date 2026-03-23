@@ -1,0 +1,54 @@
+roomid: 1729
+zone: The Sopranos
+title: The Bada Bing Back Office
+description: >-
+  The music is muffled here, reduced to a felt vibration in the walls and floor.
+  A substantial <ansi fg="itemname">desk</ansi> fills the center of the room, its
+  surface holding a <ansi fg="itemname">phone</ansi>, an ashtray with a dead
+  <ansi fg="itemname">cigar</ansi>, and some papers. A large <ansi fg="itemname">safe</ansi>
+  is built into the wall behind the desk. A <ansi fg="itemname">television</ansi>
+  mounted high in the corner shows a security camera feed: the club floor, the
+  parking lot, the back entrance. The room smells of smoke and men and money,
+  which is its own specific smell. A framed <ansi fg="itemname">photo</ansi> of
+  the Meadowlands behind the desk. This is where Tony Soprano actually works.
+  The club is back <ansi fg="exit">west</ansi>.
+mapsymbol: O
+maplegend: Back Office
+biome: house
+exits:
+  club:
+    roomid: 1728
+    mapdirection: west
+nouns:
+  desk: >-
+    Big, heavy, wood veneer. Papers on it that say nothing about what happens
+    in this room. An appointment book with names that are not real names. A
+    pen that has signed things you would not want to know about.
+  safe: >-
+    Built into the wall behind the desk, behind a painting of the New Jersey
+    shore. The combination is not written anywhere. Tony keeps it in his head.
+    The safe contains things that would answer certain questions that certain
+    people have been asking for years.
+  phone: >-
+    A landline. Black. It does not have a long cord. You don't need a long
+    cord when this is the room where you are.
+  cigar: >-
+    Half-smoked, cold. Tony stepped out for something and left it here and
+    has not come back. The ash fell in a clean cylinder and has not been
+    disturbed.
+  television: >-
+    The security monitor shows the club floor from above, the dancers reduced
+    to motion, the customers reduced to shapes in booths. The parking lot is
+    empty except for three cars that belong to specific people.
+  photo: >-
+    A large framed photo of the Meadowlands at night, the stadium lit up against
+    the dark New Jersey sky. It is hung with intention, the way you hang something
+    that means something to you that you would not explain to a stranger.
+spawninfo: []
+idlemessages:
+- The bass from the club vibrates through the walls at a frequency you feel more than hear.
+- The security monitor flickers slightly, then stabilizes. Everything is fine.
+- The cigar in the ashtray slowly loses its heat. Nobody has come back for it.
+- The safe in the wall does nothing. Safes do nothing. That is their purpose.
+- A sound from the parking lot on the monitor -- a car arriving, sitting for a moment, leaving.
+- The desk phone rings twice and stops. It does not ring again.

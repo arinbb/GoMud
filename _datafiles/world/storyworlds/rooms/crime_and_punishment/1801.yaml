@@ -1,0 +1,50 @@
+roomid: 1801
+zone: Crime and Punishment
+title: The Dark Staircase
+description: >-
+  A narrow winding staircase that serves the whole building, its steps worn
+  smooth in the middle by decades of feet going up and down in need. The
+  walls are close enough to touch on both sides and the smell is intimate:
+  <ansi fg="itemname">cabbage water</ansi>, boiled wool, unwashed bodies, lime
+  from the plaster. Four floors of doors, each one hiding its particular
+  misery. On the <ansi fg="itemname">third-floor landing</ansi> a door stands
+  slightly ajar, leaking the sound of a woman humming. The staircase continues
+  down to the street. The garret is <ansi fg="exit">up</ansi>, the street is
+  <ansi fg="exit">down</ansi>.
+mapsymbol: S
+maplegend: The Dark Staircase
+biome: house
+exits:
+  up:
+    roomid: 1800
+  down:
+    roomid: 1802
+nouns:
+  landing: >-
+    The third-floor landing. A door stands slightly ajar. Through the gap
+    you can see a corner of a kitchen, a woman's back at the stove, steam
+    rising. The smell from inside is better than the stairwell. Not much
+    better, but enough to notice.
+  door: >-
+    The doors here are painted dark, the paint chipped at handle height
+    where thousands of hands have pushed. Each one the same as the others,
+    each hiding a different story behind it.
+  walls: >-
+    The plaster has been repaired so many times in so many places that the
+    walls look like a map of failed attempts. Here a patch in a lighter grey.
+    There a crack filled with something that has dried a different color.
+  steps: >-
+    Worn smooth in the middle, the edges still showing the original surface.
+    Going down in the dark your feet find the hollow automatically, the way
+    the feet of everyone who has ever lived here found it before.
+spawninfo:
+- mobid: 317
+  message: A servant girl appears at the top of the stairs, carrying a tray with a bowl of soup.
+  respawnrate: 8 real minutes
+idlemessages:
+- A door above opens and closes quickly, releasing a burst of cooking smell before the stairwell swallows it.
+- 'The stairs creak under weight: someone above, someone below, going somewhere that matters or nowhere at all.'
+- The smell of lime is strongest here, halfway between street and sky, the whole building pressing in from all sides.
+- A child's voice from behind one of the doors asks a question. No answer comes.
+- The light in the stairwell is yellow and meager, coming from a dirty window on the landing above.
+- 'Somewhere up the stairs, a door clicks shut. Then quiet. The kind of quiet that is made of small sounds.'

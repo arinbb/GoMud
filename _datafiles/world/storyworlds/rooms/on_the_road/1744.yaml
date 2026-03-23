@@ -1,0 +1,66 @@
+roomid: 1744
+zone: On the Road
+title: Denver - Larimer Street
+description: >-
+  <ansi fg="itemname">Larimer Street</ansi>, Denver, Colorado — the skid row
+  of the West, all pool halls and bars and pawn shops and the particular
+  freedom of a street that does not judge you because it has seen everything.
+  The <ansi fg="itemname">Rockies</ansi> loom at the edge of the sky to the
+  west, enormous and improbable, still carrying snow in August. This is
+  Dean Moriarty's city — he was born here, in a boxcar on this very street,
+  his father a wino, his childhood a kind of wild education in survival and
+  joy. <ansi fg="mobname">Dean</ansi> is here somewhere, in three places at
+  once, laughing and scheming and burning with a life force that exhausts
+  everyone around him. To the <ansi fg="exit">east</ansi> the highway runs
+  back to the heart of the country. To the <ansi fg="exit">south</ansi> is
+  Dean's apartment. To the <ansi fg="exit">west</ansi> the road continues.
+  A jazz club is accessible via the <ansi fg="exit">jazz</ansi> exit.
+mapsymbol: D
+maplegend: Denver Larimer St
+biome: city
+exits:
+  east:
+    roomid: 1743
+  south:
+    roomid: 1745
+  west:
+    roomid: 1747
+  jazz:
+    roomid: 1746
+    mapdirection: south
+nouns:
+  rockies: >-
+    The Rocky Mountains visible at the western edge of Denver, snow-capped
+    even in summer, the color of storm clouds and old bones. They are the
+    wall at the end of the plains, the thing that stopped the wagon trains
+    long enough for the camps to become cities. West of them is another
+    world entirely, drier and stranger and full of its own roads.
+  pool: >-
+    A pool hall on Larimer Street, its green felt tables under hanging
+    lamps, its air made of chalk dust and cigarette smoke. Dean Moriarty
+    learned everything worth knowing in a room like this one. How to
+    hustle. How to talk. How to make people feel like the most important
+    person in the world for exactly as long as he needed them to be.
+  street: >-
+    Larimer Street is where the West keeps its honest poor — the men who
+    came for the gold rush and stayed for the whiskey, the drifters and
+    the workers and the ones who fell off the back of America and landed
+    here softly. It is not a sad street. It is an honest one, which is
+    sometimes sadder.
+  mountains: >-
+    The same as rockies — the great wall of stone and snow that Dean
+    Moriarty grew up staring at, dreaming past. A man raised with mountains
+    on the horizon understands instinctively that the horizon is not a wall
+    but a door.
+spawninfo:
+- mobid: 300
+  message: Dean Moriarty bursts around a corner laughing about something, his energy filling the entire street.
+  container: ''
+idlemessages:
+- Dean appears at the far end of the block, then disappears around a corner before you can catch him.
+- The pool hall door swings open and releases a cloud of chalk dust and someone winning.
+- 'A pawn shop window displays electric guitars, wristwatches, a saddle. The life savings of the unlucky.'
+- The Rockies catch the last light of day and hold it in their snowfields like a battery for tomorrow.
+- 'Two men argue about a car outside a bar. The argument is about the car but it is really about everything else.'
+- Larimer Street smells of beer and frying meat and the river a few blocks east and the mountains a few miles west.
+- 'Someone is laughing in the pool hall. It could be Dean. It is probably Dean.'

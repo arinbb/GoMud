@@ -1,0 +1,27 @@
+mobid: 399
+zone: back_to_the_future
+hostile: true
+maxwander: 0
+hates:
+  - human
+angrycommands:
+  - "emote levels a weapon from the van window."
+  - "say Get him!"
+idlecommands:
+  - "emote screeches into the parking lot, VW van fishtailing."
+  - "emote shouts something in Arabic from the van window."
+  - "emote slams the van into reverse and guns the engine."
+  - ""
+  - ""
+activitylevel: 30
+character:
+  name: the Libyans
+  description: >-
+    A battered Volkswagen van with what appears to be a rocket
+    launcher mounted in the side door. The occupants are very
+    upset about a stolen stainless steel case that was supposed
+    to contain plutonium. They are not pleased with Doc Brown's
+    delivery on that arrangement. They are 1985's problem.
+  raceid: 1
+  level: 12
+  alignment: -75

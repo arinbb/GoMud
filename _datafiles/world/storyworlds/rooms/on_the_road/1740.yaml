@@ -1,0 +1,59 @@
+roomid: 1740
+zone: On the Road
+title: Sal's Apartment, New York
+description: >-
+  A cold-water flat somewhere in <ansi fg="itemname">Manhattan</ansi>, 1947.
+  The radiator hisses and clanks but gives no heat. The walls are thin enough
+  that you can hear the couple upstairs arguing about money. A <ansi fg="itemname">typewriter</ansi>
+  sits on the kitchen table next to an empty coffee cup and a stack of papers
+  covered in dense, breathless prose. The window looks out on a street of
+  fire escapes and pigeons and the permanent grey New York sky. A <ansi fg="itemname">letter</ansi>
+  lies on the table — it is from <ansi fg="mobname">Dean Moriarty</ansi> in Denver,
+  written in the urgent looping handwriting of a man who has something enormous
+  to tell you and not enough paper to tell it on. To the <ansi fg="exit">west</ansi>
+  the city waits, loud and electric and full of people going somewhere fast.
+mapsymbol: A
+maplegend: Sal's Apartment
+biome: house
+exits:
+  west:
+    roomid: 1741
+nouns:
+  typewriter: >-
+    A battered Underwood typewriter, its ribbon worn thin, its keys sticking
+    on the letters that get used most. On it sits a page half-full of
+    sentences that run on and refuse to stop — sentences that move the way
+    the road moves, the way America moves, the way Dean Moriarty moves.
+    This is where the book begins. This is where it always begins, in a
+    cold room with a typewriter and a letter from somewhere else.
+  letter: >-
+    A letter from Dean Moriarty, postmarked Denver, Colorado. The handwriting
+    is enormous and slants forward as if it cannot wait to arrive. It talks
+    about Marylou. It talks about a '49 Hudson. It talks about the road, the
+    road, the road, and what is at the end of it, which is more road. Reading
+    it, you feel the pull. The pull west. The pull out.
+  window: >-
+    The apartment window looks out over a street so unremarkable it is almost
+    beautiful. A fire escape, a grey sky, the distant sound of a taxi horn.
+    You have been looking out this window all winter. What is out there is
+    not what you want. What you want is out there.
+  papers: >-
+    Pages of manuscript, written in rolling jazz-rhythm sentences that pour
+    forward without punctuation marks getting in the way. This is the novel.
+    This is the whole of it, trying to get out of a man who cannot stay still
+    long enough to finish anything except the road.
+  coffee: >-
+    A coffee cup, empty, cold. The last cup before leaving. There is always
+    a last cup, a last ordinary moment before the extraordinary begins.
+spawninfo:
+- mobid: 301
+  message: Sal Paradise sits at the typewriter, reading the letter again.
+  container: ''
+idlemessages:
+- The radiator bangs and hisses in the wall, working very hard at nothing.
+- 'Sal reads the letter again. His lips move slightly. Denver. The word sounds like a destination.'
+- The pigeons on the fire escape shuffle and resettle, indifferent to everyone's plans.
+- 'Outside, a taxi horn sounds three times, sharp and impatient: the city reminding you it does not wait.'
+- The typewriter sits there. The blank page sits in it. They have been staring at each other all winter.
+- A cold draft comes under the door carrying the smell of the stairwell, boiled cabbage, and possibility.
+- Sal looks up from the letter, stares at the window, and for a moment his face is pure longing.

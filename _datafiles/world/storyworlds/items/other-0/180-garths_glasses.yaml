@@ -1,0 +1,17 @@
+itemid: 180
+name: Garth's glasses
+namesimple: glasses
+displayname: <ansi fg="itemname">Garth's glasses</ansi>
+description: >-
+  Large, round, slightly smudged wire-rim glasses. One of the lenses has a
+  very small scratch on the lower-left corner from the time Garth leaned too
+  close to an oscilloscope during a particularly exciting experiment. The frames
+  are slightly bent on the left earpiece from being adjusted approximately
+  ten thousand times. When you hold them up to the light, the world through
+  them looks the same as through your own eyes, but somehow — somehow — you
+  feel like you might be able to hear frequencies you couldn't hear before.
+  They smell faintly of electronic solder and enthusiasm.
+type: object
+subtype: usable
+uses: 0
+value: 50

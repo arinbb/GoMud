@@ -1,0 +1,80 @@
+roomid: 1985
+zone: Forbidden Planet
+title: Morbius House Interior
+description: >-
+  The interior of the dome is a scholar's paradise and a man's fortress of
+  solitude. <ansi fg="itemname">Bookshelves</ansi> line every curved wall,
+  packed with volumes in a dozen languages including several that are not
+  human. A pair of <ansi fg="itemname">armchairs</ansi> flank a low table
+  bearing a half-finished glass of something amber. <ansi fg="cyan">Krell
+  artifacts</ansi> are displayed on dedicated pedestals -- geometric shapes
+  of a material that is neither stone nor metal, cool to the touch and subtly
+  luminous. On the wall, a reproduction of a painting of
+  <ansi fg="itemname">Shakespeare</ansi> watches over the room. The air is
+  climate-controlled, precisely Earth-temperature, filtered and recycled for
+  twenty years. To the <ansi fg="exit">west</ansi> the exterior. To the
+  <ansi fg="exit">north</ansi> is the study. The <ansi fg="exit">lab</ansi>
+  entrance is to the east. <ansi fg="exit">Robbys workshop</ansi> is to the
+  west past the service corridor.
+mapsymbol: I
+maplegend: House Interior
+biome: house
+exits:
+  west:
+    roomid: 1982
+  north:
+    roomid: 1986
+  lab:
+    roomid: 1988
+    mapdirection: east
+  workshop:
+    roomid: 1987
+    mapdirection: west
+nouns:
+  bookshelves: >-
+    The shelves hold thousands of volumes: Earth literature, mathematics,
+    physics, history, philosophy. They are arranged with scholarly precision.
+    Among them, bound in a material unlike anything from Earth, sit Krell
+    texts that Morbius has been translating for twenty years. He will never
+    finish. There is more Krell knowledge in those pages than the human
+    species has produced in all its history.
+  armchairs: >-
+    Deep leather armchairs worn to the contours of one person sitting in them
+    for twenty years. One chair is clearly Morbius's -- the arms are polished
+    smooth, the cushion shaped. The other is newer, lighter, tended with
+    equal care: Altaira's chair. Father and daughter sitting together in the
+    evenings, reading. The whole library in the light.
+  artifacts: >-
+    Krell artifacts on their pedestals: a dodecahedron of warm grey substance,
+    a spiral that suggests motion even at rest, a flat disc covered in
+    inscription that Morbius has partially translated. They are not decorative.
+    They were tools, instruments, components of a civilization so advanced it
+    makes the C-57D look like a stone axe.
+  Shakespeare: >-
+    A reproduction of the Chandos portrait of William Shakespeare, framed and
+    hung with care. Of all the things Morbius might have chosen to decorate
+    this room, he chose this. The Bard watches the room with enigmatic eyes.
+    Beneath the portrait, in Morbius's own handwriting on a small card: The
+    Tempest, Act IV. We are such stuff as dreams are made on.
+spawninfo:
+- mobid: 410
+  message: Dr. Morbius looks up from a Krell text, his expression professionally welcoming.
+  idlecommands:
+  - emote adjusts the position of a Krell artifact on its pedestal with exact care.
+  - ""
+  - say The Krell language has no word for fear. Consider what that implies.
+  - ""
+  - emote reads several lines from a Krell volume, his lips moving silently.
+  - ""
+  - say You are welcome in my home. Stay out of the laboratory.
+  - ""
+  - emote glances at the portrait of Shakespeare with something that might be regret.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- The Krell artifacts on their pedestals emit a faint subsonic hum, felt rather than heard.
+- Morbius makes a note in his translation journal, then crosses it out and writes something different.
+- 'The room smells of books, of the particular dust of long scholarship, of something faintly electric and alien.'
+- Through the dome wall, the alien sky shifts from green toward a deeper blue-green as afternoon progresses.
+- A lamp flickers once. The Krell artifacts pulse slightly brighter in the same instant, then return to normal.
+- 'The portrait of Shakespeare seems to watch the room. The room watches back.'

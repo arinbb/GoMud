@@ -1,0 +1,46 @@
+roomid: 1962
+zone: Nineteen Eighty Four
+title: The Alcove
+description: >-
+  A shallow recess beside the window, perhaps sixty centimeters deep, not
+  quite wide enough to sit in comfortably. The telescreen in the flat above
+  cannot see into this corner. You know this because Winston measured it,
+  carefully, over several days, watching where the telescreen's angle of
+  view ended. This is the only unwatched square meter in Victory Mansions,
+  possibly in all of London. A small wooden <ansi fg="itemname">writing
+  table</ansi> has been wedged in here, and on it the
+  <ansi fg="itemname">diary</ansi> lies open. The
+  <ansi fg="exit">flat</ansi> is accessible above.
+mapsymbol: A
+maplegend: The Alcove
+biome: house
+exits:
+  flat:
+    roomid: 1960
+    mapdirection: up
+nouns:
+  diary: >-
+    The diary is open to a fresh page, the cream paper slightly yellowed
+    at the edges. The previous entries are in Winston's small but clear
+    handwriting. Some passages are crossed out. Some are underlined once,
+    then twice, as if he could not decide how important they were. The
+    ink is purple. He stole the pen. Stealing is a thoughtcrime. Writing
+    in a diary is a thoughtcrime. Here he is anyway.
+  table: >-
+    A small table, old enough to have survived several purges of furniture
+    styles. It wobbles slightly on an uneven leg. On it: the diary, a
+    bottle of ink, the stolen pen, and a small smear of something that
+    might have been food or might have been something else entirely.
+  window: >-
+    From here, slightly angled, you can see a sliver of grey London sky
+    and the top of the Ministry of Truth building, its white concrete
+    pyramid rising above the surrounding rooftops. The word INGSOC is
+    carved into the stone, visible even from here. Even from this hidden
+    alcove, the Party is watching.
+idlemessages:
+- 'The alcove is barely large enough to breathe in. This is the point. Smaller spaces are harder to watch.'
+- 'The diary lies open. Someone has written: "DOWN WITH BIG BROTHER" in large capital letters. Then, below that, in smaller writing: "I knew this before I wrote it."'
+- 'Outside the window, a helicopter passes. It does not stop. You are safe. You tell yourself you are safe.'
+- 'The silence here is different from the silence elsewhere. Elsewhere the silence is the silence of surveillance. Here it is just quiet.'
+- 'The pen is an old-fashioned nib pen, almost certainly bought on the black market. Writing with it feels dangerously, irrationally good.'
+- 'You are unwatched. For a moment you let your face mean something. Then you remember the habit and make it blank again.'

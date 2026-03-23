@@ -1,0 +1,53 @@
+roomid: 2120
+zone: Paris Texas
+title: The Texas Desert
+description: >-
+  <ansi fg="red">Red earth</ansi> in every direction. Not sand — something harder,
+  older, the color of dried blood. The <ansi fg="8">scrub brush</ansi> is grey-green
+  and low to the ground, barely holding on. The sky is a bleached white-blue that
+  burns your eyes if you look directly at it. There are no roads here. No telephone
+  poles. No sound but the <ansi fg="8">wind</ansi> moving through the dry grass, and
+  even that is barely a sound — more an absence of silence. A man has been walking
+  here for four years. You do not know why. Neither does he. To the
+  <ansi fg="exit">east</ansi>, a glint of something — a road, maybe, a gas station
+  sign far off in the heat shimmer.
+mapsymbol: D
+maplegend: Desert
+biome: desert
+exits:
+  east:
+    roomid: 2121
+nouns:
+  earth: >-
+    Red clay, cracked in a mosaic pattern. Each crack is dry down to some
+    depth you cannot see. Nothing grows here that does not absolutely
+    need to. Whatever grows here absolutely needs to.
+  sky: >-
+    You look up and it goes on forever. That is not a figure of speech.
+    It actually goes on forever. The sun is directly overhead and the
+    light is merciless.
+  scrub: >-
+    Brittle grey-green brush. It has no water and does not complain.
+    It has been here longer than anything you know.
+  brush: >-
+    Brittle grey-green brush. It has no water and does not complain.
+    It has been here longer than anything you know.
+  wind: >-
+    It comes from nowhere in particular and goes nowhere in particular.
+    It moves the dry grass in a slow, repeating gesture that means
+    nothing except itself.
+  horizon: >-
+    The line where the red earth meets the white sky. It is very far away.
+    It stays very far away no matter how long you walk toward it.
+spawninfo:
+- mobid: 470
+  message: '<ansi fg="red">A gaunt figure in a red cap moves across the desert floor, one step at a time. He has been walking for a long time.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The wind passes over the desert floor and bends the dry grass in a slow wave.
+- A lizard appears on a rock, regards you without interest, and is gone.
+- The heat presses down from above and radiates up from below. You are in the middle.
+- Far away — very far away — something that might be a road, might be a mirage.
+- The silence here is so complete you can hear your own blood.
+- A single cloud shadow moves across the red earth, brief and cool and already gone.
+- The desert does not ask why you are here.

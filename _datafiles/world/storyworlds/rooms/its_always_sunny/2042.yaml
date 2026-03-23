@@ -1,0 +1,53 @@
+roomid: 2042
+zone: its_always_sunny
+title: The Alley
+description: >-
+  The alley behind <ansi fg="itemname">Paddys Pub</ansi> is a narrow corridor
+  of cracked pavement and South Philly ambience. A <ansi fg="itemname">dumpster</ansi>
+  takes up most of the north wall, lid ajar, contributing aggressively to the
+  atmosphere. A <ansi fg="itemname">fire escape</ansi> clings to the brick above,
+  several rungs questionable. Cardboard boxes have been arranged into a rough
+  sleeping area near the dumpster — not a home exactly, but a place where a
+  man with nowhere else to be can be somewhere. The alley smells of garbage
+  and resignation and something else, something harder to name, the smell
+  of a life that went wrong by degrees. To the <ansi fg="exit">north</ansi>
+  is the back door of the bar. To the <ansi fg="exit">south</ansi>, the alley
+  continues toward the basement entrance.
+mapsymbol: A
+maplegend: The Alley
+biome: city
+exits:
+  north:
+    roomid: 2040
+  south:
+    roomid: 2045
+nouns:
+  dumpster: >-
+    The Paddys Pub dumpster is a landmark in its own right. It contains the
+    waste products of a bar that should not still be in business — empty
+    bottles, failed food experiments, the occasional evidence of a scheme
+    gone wrong. The lid never closes all the way. This is a metaphor for
+    something but no one has worked out what.
+  fire_escape: >-
+    The fire escape is technically attached to the building in the way that
+    a man clinging to a ledge is technically attached to the building. Several
+    of the rungs look like suggestions. One of them has a shoe hanging from it.
+    It is not clear whose shoe or how it got there. These are questions for
+    someone with more time.
+  boxes: >-
+    A collection of cardboard boxes arranged with the care of someone who has
+    accepted this as a living space without quite accepting that this is a
+    living space. One box has been reinforced with duct tape. One has a blanket
+    inside. One has writing on it in marker: CRICKITS HOME. The spelling is
+    either Cricket's own or Charlie Kelly's. The result is the same.
+spawninfo:
+- mobid: 447
+  message: 'Cricket looks up from his spot near the dumpster and squints at the light.'
+  respawnrate: 5 real minutes
+idlemessages:
+- A rat crosses the alley at high speed, not looking to the right or left. It has somewhere to be. It has always somewhere to be.
+- 'The dumpster lid shifts slightly in the wind, as if something inside is testing it. You decide not to investigate.'
+- 'Cricket mutters something from his spot near the dumpster: partial words, a name, something about a rectory.'
+- The alley catches the South Philly afternoon light at an angle that makes it look almost cinematic. Almost.
+- From inside the bar, muffled, someone shouts something. From the sound of it, it is either an argument or a scheme. Possibly both.
+- 'A pigeon lands, looks around at the general situation in the alley, and leaves. It has made a judgment.'

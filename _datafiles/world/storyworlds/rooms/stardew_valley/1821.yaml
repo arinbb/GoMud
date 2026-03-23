@@ -1,0 +1,49 @@
+roomid: 1821
+zone: Stardew Valley
+title: Pelican Town Square
+description: >-
+  The heart of Pelican Town. A <ansi fg="itemname">bulletin board</ansi> stands
+  at the center, pinned with requests and announcements. Seasonal
+  <ansi fg="itemname">decorations</ansi> — flowers in spring, bunting in summer,
+  carved pumpkins in fall, pine boughs in winter — hang from lampposts. The
+  <ansi fg="itemname">fountain</ansi> at the square's center trickles quietly.
+  Paths branch in every direction. To the <ansi fg="exit">north</ansi> is
+  Pierres store. To the <ansi fg="exit">east</ansi> the Stardrop Saloon glows
+  with warmth. To the <ansi fg="exit">south</ansi> the beach path descends.
+  To the <ansi fg="exit">west</ansi> the road leads back to the farm.
+mapsymbol: T
+maplegend: Town Square
+biome: city
+exits:
+  west:
+    roomid: 1820
+  north:
+    roomid: 1822
+  east:
+    roomid: 1824
+  south:
+    roomid: 1825
+nouns:
+  board: >-
+    A weathered wooden bulletin board covered in layers of notices. A Help
+    Wanted section lists requests from townspeople — someone needs fried egg,
+    another wants hardwood, a third requests a bundle of parsnips. A community
+    calendar shows festivals: the Egg Festival in spring, the Dance of the
+    Moonlight Jellies in summer, the Stardew Valley Fair in fall. Someone has
+    pinned a hand-drawn map of the valley with optimistic paths marked in crayon.
+  decorations: >-
+    The decorations change with the seasons, as if the town itself breathes
+    with the year. Right now they fill you with a sense of a community that
+    cares about its own small traditions, that marks time together, that
+    chooses to celebrate rather than endure.
+  fountain: >-
+    A modest stone fountain in the town center, the basin green with moss.
+    A few coins glint on the bottom — wishes made by people who had hopes
+    small enough to fit inside a coin toss. The water is clear and cold.
+idlemessages:
+- A group of townsfolk passes through, nodding at each other with the ease of long familiarity.
+- The bulletin board flutters as someone pins a new request. Someone needs fried egg. They always need fried egg.
+- Children chase each other around the fountain, their laughter ringing off the storefronts.
+- The town clock above the general store marks the passing hour with a soft, pleasant chime.
+- Two elderly residents share a bench and a quiet conversation, watching the square with contentment.
+- 'The smell of the valley drifts through: fresh soil from the farms, salt from the beach, pine from the forest.'

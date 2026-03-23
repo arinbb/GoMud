@@ -1,0 +1,12 @@
+mutatorid: goodnight-hush
+namemodifier:
+  behavior: append
+  text: (hushed)
+  colorpattern: blue-white
+descriptionmodifier:
+  behavior: append
+  text: The room is growing dimmer. The fire is lower. The night has fully arrived.
+  colorpattern: blue-white
+alertmodifier:
+  text: The room settles around you, quieter now, the shadows in the corners soft and deep.
+  colorpattern: blue-white

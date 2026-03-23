@@ -1,0 +1,67 @@
+roomid: 1911
+zone: The Little Prince
+title: The Snakes Rock
+description: >-
+  A flat <ansi fg="itemname">rock</ansi> in the desert, still warm from
+  the day's sun even as the stars come out. Coiled on the rock is the
+  most extraordinary <ansi fg="itemname">snake</ansi> -- gold, thinner
+  than a man's finger, coiled with precision. It watches everything with
+  the patience of something that has nowhere to be and all the time
+  there is. The snake speaks in riddles that are not riddles. It says
+  it can return you to wherever you came from -- it can return anything
+  to wherever it came from. The ground is cold and the sky is very full
+  of <ansi fg="itemname">stars</ansi>. Somewhere among the stars is a
+  small planet with three volcanoes and a rose and a glass dome. The
+  snake knows where. The snake knows many things it does not say directly.
+  The desert around the rock is very still, as though the night itself
+  is paying attention. The <ansi fg="exit">desert</ansi> is west.
+mapsymbol: N
+maplegend: Snakes Rock
+biome: desert
+exits:
+  desert:
+    roomid: 1900
+    mapdirection: west
+nouns:
+  rock: >-
+    A flat sandstone rock, perhaps three feet across, polished smooth by
+    wind. In the day it collects heat and stores it. At night it releases
+    the heat slowly, so that anything on it stays warm long after
+    everything else has gone cold. The snake chose this rock for that
+    reason, and for the view of the stars it provides.
+  snake: >-
+    Gold as a ring, thin as a bracelet, coiled with the self-possession
+    of something that cannot be hurried. The snake's eyes are bright
+    as metal. It knows things about where things come from and where
+    they go back to. It offers transportation in a voice so quiet you
+    have to lean in to hear it. You probably should not lean in.
+  stars: >-
+    The stars from the rock at night are very clear. No clouds, no
+    moon, no city lights -- only the stars, thousands of them, arranged
+    in patterns that meant nothing until someone mapped them and then
+    meant everything forever. One of them is a very small star with a
+    very small planet and on that planet, a rose is sleeping under her
+    dome, which the Little Prince placed there before he left, so she
+    would not be cold.
+spawninfo:
+- mobid: 374
+  message: A golden snake uncoils slightly on the warm rock, its eyes catching the starlight.
+  idlecommands:
+  - emote tightens its coils, watching the sky with absolute stillness.
+  - ''
+  - say I can send anyone back to where they came from. It is a simple matter.
+  - ''
+  - emote turns its head slowly to follow a star moving overhead.
+  - ''
+  - say You look like a child from very far away.
+  - ''
+  - emote uncoils one loop, then coils it back. Patient. Inevitable.
+  - ''
+  respawnrate: 3 real minutes
+idlemessages:
+- The snake watches the stars with the focused attention of something that has all night and does not mind.
+- The rock breathes out the day's warmth into the cooling dark. The snake stays perfectly still.
+- 'A star shoots across the sky overhead, gone before it registers: somewhere, a lamp was lit and extinguished.'
+- The desert is completely silent. The silence has a quality, like a held breath.
+- The snake shifts one coil, barely. That is all. That is enough to make you very careful.
+- 'The stars are numerous and patient, as the snake is patient, as the desert is patient: everything here moves in long time.'

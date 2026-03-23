@@ -1,0 +1,28 @@
+mobid: 317
+zone: crime_and_punishment
+hostile: false
+maxwander: 2
+activitylevel: 35
+angrycommands: []
+idlecommands:
+  - emote carries a tray up the stairs with practiced steadiness.
+  - say I brought soup. Whether you eat it or not is your own business.
+  - emote sweeps the landing with a broom, humming something under her breath.
+  - say He has not eaten again. What kind of man does not eat?
+  - ''
+  - emote sets a bowl on the step outside a door and knocks twice, briskly.
+  - say The landlady says if he does not pay by Friday she will call the police. Again.
+  - emote hums cheerfully while carrying something from one floor to another.
+character:
+  name: Nastasya
+  description: >-
+    A stout, cheerful woman of middle age, the landlady's cook and servant,
+    who has decided that Raskolnikov is her particular responsibility without
+    being asked and without making a ceremony of it. She brings soup. She
+    delivers messages. She observes everything in the building with the
+    comprehensive attention of someone who cleans the rooms and therefore
+    knows more about the tenants than the tenants know about themselves.
+    She is completely without illusion and completely without cruelty. The
+    novel needs her.
+  raceid: 1
+  level: 3

@@ -1,0 +1,25 @@
+mobid: 362
+zone: the_monkey_wrench_gang
+hostile: false
+maxwander: 1
+activitylevel: 25
+angrycommands: []
+idlecommands:
+  - emote contemplates the billboard with his head tilted slightly, the posture of a man conducting an aesthetic assessment.
+  - emote quotes Thoreau quietly to himself and strikes a match just to watch it burn.
+  - emote sips wine from a leather flask, looking at the desert the way a surgeon looks at an interesting case.
+  - say Walden. 1854. He had the right diagnosis. We have been slow with the treatment.
+  - emote lights a match, watches it burn to his fingers, shakes it out, lights another.
+  - say I heal people. I also burn billboards. These are not contradictions. The landscape has a health too.
+character:
+  name: Doc Sarvis
+  description: >-
+    A man in his fifties, tall and lean, with the unhurried calm of a surgeon and
+    the quiet certainty of a man who has decided on his principles and is acting on them.
+    He wears khaki and carries a leather wine flask. His hands are a surgeon's hands --
+    precise, steady, capable. He is the intellectual of the group, the one who reads
+    Thoreau and Muir and Abbey himself, who frames the gang's actions in the tradition
+    of civil disobedience and ecological necessity. He is also, without question or
+    apology, an arsonist of billboards.
+  raceid: 1
+  level: 14

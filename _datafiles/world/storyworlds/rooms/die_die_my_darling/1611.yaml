@@ -1,0 +1,56 @@
+roomid: 1611
+zone: Die Die My Darling
+title: The Sewing Room
+description: >-
+  A small room given over entirely to sewing, its surfaces covered with the
+  materials of fabric work. A <ansi fg="8">work table</ansi> runs along one wall,
+  its surface scattered with spools of thread — all in muted colours, black, grey,
+  white, beige. No reds, no blues, no greens. A <ansi fg="8">dressmaker's dummy</ansi>
+  stands near the window, currently wearing a plain garment half-pinned and half-stitched.
+  <ansi fg="8">Scissors</ansi> of several sizes hang on a peg board. Some of them
+  are very large. On the floor beside the table, a small pile of fabric scraps —
+  and among them, the bright torn edge of something <ansi fg="red">red</ansi>.
+  Someone has been cutting red things in this room. To the <ansi fg="exit">west</ansi>,
+  the upper landing.
+mapsymbol: S
+maplegend: Sewing Room
+biome: house
+exits:
+  west:
+    roomid: 1609
+nouns:
+  dummy: >-
+    A dressmaker's dummy at roughly a woman's proportions, wearing a plain grey
+    garment that is being altered. The work is meticulous — each pin placed
+    with exactness. The garment being made is long-sleeved, high-necked, colourless.
+    Modest by any definition. More than modest. Severe.
+  scissors: >-
+    Multiple pairs of scissors on the peg board, arranged by size. The largest are
+    heavy dressmaking shears, their blades long and very sharp. They are all clean.
+    All ready.
+  red: >-
+    A small pile of fabric scraps on the floor — and there, at the bottom, torn
+    strips of something red. Not fabric. Wool — the wool of a sweater, cut into
+    strips with scissors and discarded. Someone brought a red sweater into this
+    house. The sweater no longer exists in the form it arrived.
+  scraps: >-
+    Fabric scraps, the accumulated offcuts of whatever is being made in this room.
+    Most are grey, black, or white. At the bottom of the pile, strips of red wool
+    that do not match the rest. They were cut here. Recently.
+  thread: >-
+    Spools of thread arranged along the work table: black, charcoal, grey, white,
+    bone, cream, beige. Not a single spool of any colour that might be considered
+    cheerful. The full spectrum of joylessness.
+  table: >-
+    The work table is meticulously organised — measuring tape in a neat coil, pin
+    cushion bristling with pins, a seam ripper, thimbles. The tools of someone who
+    spends many hours here and knows each one's place.
+spawninfo: []
+idlemessages:
+- The dressmaker's dummy stands at the window as though looking out at something.
+- The red strips of wool on the floor catch the eye. They look like something that happened rather than something made.
+- The scissors on the peg board catch the grey light and hold it.
+- The sewing room smells of fabric and dust and the faint metallic note of shears.
+- Anna has been in this room recently — a pin cushion has been moved, a spool unwound slightly.
+- The garment on the dummy is nearly complete. Someone will be wearing it soon.
+- The absence of any coloured thread in the room is as loud as a statement of purpose.

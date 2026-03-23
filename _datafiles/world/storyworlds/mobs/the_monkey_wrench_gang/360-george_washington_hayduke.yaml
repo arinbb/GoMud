@@ -1,0 +1,27 @@
+mobid: 360
+zone: the_monkey_wrench_gang
+hostile: false
+maxwander: 2
+activitylevel: 40
+angrycommands: []
+idlecommands:
+  - emote drinks his Budweiser in long slow pulls, staring into the fire.
+  - emote sharpens his knife with a whetstone, the sound slow and deliberate in the desert quiet.
+  - say The dam is still standing. That is the whole problem in a single sentence.
+  - 'emote checks his pack: rope, tools, wire cutters, dynamite cap, and beer. Good.'
+  - say This is church. Right here. The canyon. The rock. The sky. This is the only church that makes sense.
+  - emote mutters something about the Bureau of Reclamation under his breath, then finishes his beer.
+  - emote stares at the canyon wall for a long time, then cracks another Budweiser.
+character:
+  name: George Washington Hayduke
+  description: >-
+    A large, bearded man in his late twenties, sunburned to the color of the red rock
+    he lives in. He wears surplus military gear -- green jungle fatigues, worn boots,
+    a web belt loaded with tools and a canteen. His beard is full and untrimmed, his
+    eyes are blue and slightly wild, and there is a can of Budweiser in his hand as
+    naturally as if he were born holding it. He is a Vietnam veteran and a former
+    Green Beret, and he has brought both the skills and the fury of that experience
+    to the canyon country of Utah. He is the most dangerous man in the novel and
+    the most purely alive.
+  raceid: 1
+  level: 12

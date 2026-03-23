@@ -1,0 +1,22 @@
+mobid: 226
+zone: matilda
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote stares at the covered platter with a mixture of terror and resolve."
+  - ""
+  - ""
+  - "say She can't make me afraid of cake. I LIKE cake."
+  - "emote wipes his brow with the back of his hand."
+activitylevel: 20
+character:
+  name: Bruce Bogtrotter
+  description: >-
+    A heavyset boy of eleven with a round face and small, determined eyes.
+    He is sweating slightly. He has been accused of stealing a slice of the
+    Trunchbull's personal chocolate cake, and his punishment is to eat an
+    entire eighteen-inch cake in front of the whole school. He looks
+    terrified but resolute — the kind of brave that comes from having
+    nothing left to lose. His school uniform strains at the buttons.
+  raceid: 1
+  level: 5

@@ -1,0 +1,25 @@
+questid: 290
+name: Harold and Maude
+description: >-
+  Experience the story of a death-obsessed young man and a seventy-nine-year-old
+  free spirit, set in Northern California, 1971. Attend funerals. Visit the
+  mansion, the railroad car, the junkyard, the cliffs. Learn what Maude has
+  been trying to teach Harold about being alive. The theme is life. The
+  soundtrack is Cat Stevens.
+reward:
+  experience: 4500
+  item_id: 265
+  playermessage: >-
+    You have moved through the world of Harold and Maude -- the church, the
+    cemetery, the mansion, the railroad car, the cliffs. You have heard Maude
+    laugh. You have watched Harold learn something that will save him. As a
+    memento of your time in Northern California, 1971, you receive a single
+    daisy -- not a symbol, not a representative. Just a daisy, being exactly
+    what it is. Maude would approve.
+steps:
+- description: Enter the world of Harold and Maude. Find yourself in the back of a California church, 1971.
+- description: Visit Harolds bedroom and witness the theater of his private life.
+- description: Find Maude in her railroad car and experience her extraordinary world.
+- description: Walk to the junkyard and consider what it means to plant something.
+- description: Reach the seaside cliffs where the film reaches its turning point.
+- description: Play the banjo at the cliffs and complete the circle.

@@ -1,0 +1,27 @@
+-
+  Supported:
+    "the little prince": ["*"]
+  Conversation:
+    - ["#1 say If you please -- what do you do?"]
+    - ["#2 emote looks slightly startled by the directness of the question"]
+    - ["#1 say I am asking because I am trying to understand grown-ups. They never explain themselves."]
+    - ["#2 emote considers how to answer"]
+    - ["#1 say On my planet I have three volcanoes and a rose. I tend them. That is what I do."]
+    - ["#1 say It is very important work.", ""]
+-
+  Supported:
+    "the little prince": ["*"]
+  Conversation:
+    - ["#1 say What makes the desert beautiful is that somewhere it hides a well."]
+    - ["#2 emote listens"]
+    - ["#1 say I did not understand that at first. But it is true."]
+    - ["#1 say What is invisible makes the visible worth looking at.", ""]
+-
+  Supported:
+    "the little prince": ["*"]
+  Conversation:
+    - ["#1 say I know a planet inhabited by a red-faced gentleman. He has never smelled a flower. He has never looked at a star."]
+    - ["#2 emote waits"]
+    - ["#1 say He has never loved anyone. He has never done anything except add up figures."]
+    - ["#1 emote looks at you with great seriousness", "#1 say And all day he says over and over: I am a serious man. I am a serious man."]
+    - ["#1 say And that makes him swell up with pride.", ""]

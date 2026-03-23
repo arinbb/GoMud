@@ -1,0 +1,25 @@
+mobid: 383
+zone: ghostbusters
+hostile: false
+maxwander: 1
+activitylevel: 15
+idlecommands:
+- "emote checks the Ecto-1 engine with methodical care."
+- "say I am a normal person in an extremely abnormal situation. I am handling it."
+- "emote polishes the Ghostbusters logo on the car door."
+- "say Back in seminary they told me about the end times. I did not think I would see them. I am seeing them."
+- "emote checks his proton pack charge level and nods with satisfaction."
+- "say If there's a steady paycheck in it, I will believe anything. And I believe everything now."
+- ""
+character:
+  name: Winston Zeddemore
+  description: >-
+    A steady, solid man with the posture of someone who has decided that whatever
+    situation arises, he will handle it with dignity. He wears his Ghostbusters
+    jumpsuit with the practicality of a professional rather than the enthusiasm
+    of a true believer, and it suits him. His expression is consistently that of
+    a man who accepted a job, discovered the job involved ancient Sumerian deities,
+    and decided that a deal is a deal. He is checking the Ecto-1. He is always
+    checking the Ecto-1.
+  raceid: 1
+  level: 15

@@ -1,0 +1,43 @@
+roomid: 1406
+zone: Matilda
+title: Crunchem Hall Gates
+description: >-
+  Massive <ansi fg="itemname">iron gates</ansi> set between pillars of blackened
+  stone mark the entrance to <ansi fg="8">Crunchem Hall Primary School</ansi>. The
+  gates are spiked along the top and streaked with rust. Beyond them, the school
+  building hunches against the sky like something ashamed of itself — a grim
+  Victorian pile of dark brick and narrow <ansi fg="itemname">windows</ansi>. A
+  weathered <ansi fg="itemname">sign</ansi> bolted to one pillar reads the school
+  name. The atmosphere changes the moment you pass through — the air grows colder,
+  the light greyer. The road leads back <ansi fg="exit">north</ansi>. The school
+  corridor is to the <ansi fg="exit">east</ansi>. The <ansi fg="exit">playground</ansi>
+  is visible to the south.
+mapsymbol: G
+maplegend: Gates
+biome: fort
+exits:
+  north:
+    roomid: 1405
+  east:
+    roomid: 1407
+  south:
+    roomid: 1412
+nouns:
+  gates: >-
+    Heavy wrought-iron gates with spikes along the top, as if designed less to
+    keep intruders out than to keep children in. The iron is cold to the touch
+    even on warm days. Rust weeps from the hinges like dried tears.
+  windows: >-
+    The school windows are narrow and set high in the walls, as if natural light
+    were a privilege rather than a right. Several panes are cracked. One has been
+    replaced with cardboard.
+  sign: >-
+    A brass sign, tarnished green with age, bolted to the stone pillar. It reads:
+    CRUNCHEM HALL PRIMARY SCHOOL — HEADMISTRESS: MISS A. TRUNCHBULL. Someone has
+    scratched tiny letters beneath it that read: abandon hope.
+idlemessages:
+- 'The iron gates creak in the wind, a sound like a slow, rusty groan of warning.'
+- A child hurries through the gates with their head down, not making eye contact with anyone.
+- 'The school building looms ahead, its dark windows watching your approach.'
+- 'A distant whistle blast echoes across the grounds — sharp, military, furious.'
+- 'The temperature drops noticeably as you pass through the gates. The school generates its own weather.'

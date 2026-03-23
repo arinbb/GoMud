@@ -1,0 +1,52 @@
+roomid: 1311
+zone: Buffalo 66
+title: Ice Skating Rink
+description: >-
+  An outdoor <ansi fg="itemname">rink</ansi> behind a chain-link fence, lit by
+  tall <ansi fg="itemname">sodium lamps</ansi> that cast orange pools on the
+  <ansi fg="15">ice</ansi>. The ice is scarred with blade marks, a palimpsest of
+  every circle anyone has ever skated here. <ansi fg="itemname">Benches</ansi> line
+  one side, crusted with ice. A small <ansi fg="itemname">speaker</ansi> mounted
+  on a pole plays faint music — something old, something slow. The
+  <ansi fg="12">sky</ansi> above is the deep blue-black of a Buffalo winter night.
+  <ansi fg="15">Snow</ansi> falls in the lamplight, each flake catching the orange
+  glow for a moment before disappearing onto the dark ice. The strip club is
+  back to the <ansi fg="exit">north</ansi>. A residential street leads
+  <ansi fg="exit">west</ansi>.
+mapsymbol: I
+maplegend: Ice Rink
+biome: snow
+exits:
+  north:
+    roomid: 1310
+  west:
+    roomid: 1312
+nouns:
+  rink: >-
+    The ice is public property, open to anyone who wants to trace circles in
+    the cold. Tonight it is empty. The blade marks crisscross like a map of
+    every path not taken.
+  lamps: >-
+    Tall sodium vapor lamps, their light the warm orange of a dying fire.
+    They turn the falling snow into brief sparks of gold.
+  ice: >-
+    Grey-white ice, scarred and resurfaced a hundred times. It reflects the
+    sodium lamps in long, wavering streaks. It is beautiful in the way that
+    lonely things are beautiful.
+  benches: >-
+    Wooden benches along the boards, their surfaces glazed with ice. A
+    forgotten scarf is frozen to one of them.
+  speaker: >-
+    A small speaker on a pole, playing music so faint you have to hold still
+    to hear it. Something from the fifties. A love song, probably.
+  snow: >-
+    Fat flakes drifting down through the lamplight. Each one catches the
+    orange glow for a brief, perfect moment before it lands on the ice and
+    becomes part of everything else.
+idlemessages:
+- Snow falls through the orange lamplight, each flake a brief spark before it lands.
+- The ice creaks softly, expanding in the cold. It sounds like the rink is breathing.
+- The speaker plays a slow song, barely audible over the wind. Someone loved this song once.
+- A gust sweeps across the ice, pushing a thin layer of snow in curling patterns.
+- The chain-link fence rattles once, then goes quiet. The sodium lamps hum.
+- For a moment, you can almost see two figures skating together on the empty ice. Then they are gone.

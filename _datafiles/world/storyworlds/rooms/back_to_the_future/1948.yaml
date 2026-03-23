@@ -1,0 +1,70 @@
+roomid: 1948
+zone: Back to the Future
+title: Doc Browns Garage
+description: >-
+  Doc Browns garage-laboratory, a controlled explosion of science.
+  <ansi fg="itemname">Blackboards</ansi> cover every wall, dense with
+  equations, diagrams, and a hand-sketched timeline. The
+  <ansi fg="itemname">DeLorean</ansi> sits in the center on a raised
+  platform, its rear assembly open to expose the flux capacitor housing
+  and the time circuit board. <ansi fg="itemname">Einstein</ansi> the
+  dog sleeps under the workbench. An enormous <ansi fg="itemname">amplifier</ansi>
+  -- a speaker cabinet tall as a man -- dominates the south wall. Cables
+  run everywhere. There is the faint smell of ozone and dog. It is
+  absolutely the workspace of a genius, or possibly someone who needs help.
+mapsymbol: D
+maplegend: Docs Garage
+biome: house
+exits:
+  south:
+    roomid: 1941
+    exitmessage: You head south toward the town square.
+  north:
+    roomid: 1949
+nouns:
+  blackboards: >-
+    Floor-to-ceiling blackboards covered in chalk. Equations occupy every
+    surface: relativity calculations, flux equations, energy conversion
+    formulas. In the center of the main board, circled three times in
+    red chalk, reads: "1.21 GIGAWATTS." Below it: a drawing of the flux
+    capacitor labeled in precise block letters. This is where the
+    future was invented.
+  "flux capacitor": >-
+    A Y-shaped electrical device in the DeLoreans engine housing. Three
+    transparent tubes converging on a central point. When it reaches
+    operating capacity, the three tubes glow in sequence with a pulsing
+    white light. Doc Brown hit his head on a toilet on October 26, 1955
+    and saw this device in his mind. He has been building it ever since.
+  amplifier: >-
+    An amplifier the size of a refrigerator, a custom-built speaker
+    cabinet with a single enormous driver. Powered by a cable that
+    runs out of the garage and disappears somewhere ominous. The
+    volume knob goes to ten and has been turned past ten by means
+    that involved a marker and some creative arithmetic.
+  einstein: >-
+    Doc Browns dog, a shaggy white sheepdog sleeping under the workbench.
+    Einstein was the first time traveler in history -- sent one minute
+    into the future in the DeLorean as a test. He returned in excellent
+    health and immediately ate his dinner. He does not seem to understand
+    what he has accomplished.
+  "time circuits": >-
+    The time circuit board in the DeLoreans dash. Three digital readouts
+    in red LED: destination time, present time, last time departed.
+    Currently reading: November 12, 1955 / October 26, 1985 / January 1,
+    1885. The dates are wrong in ways that take a moment to process.
+idlemessages:
+- Einstein raises his head, looks at nothing in particular, then settles back down.
+- A chalk diagram on the blackboard has been erased and redrawn four times in the same spot.
+- The DeLorean ticks as its engine cools, a random Morse code of steel and aluminum.
+- The amplifier hums at a frequency just below hearing, felt more than heard.
+- Doc Brown has left three cups of coffee at different stages of cooling on the workbench.
+- An equation on the blackboard has been circled so many times the chalk has worn a groove.
+- The flux capacitor housing glows faintly, cycling, as if testing its own readiness.
+- Einstein snores with impressive volume for a dog of his size.
+spawninfo:
+- mobid: 391
+  message: "Doc Brown strides into the garage, wild-eyed and holding a stack of calculations."
+  respawnrate: 3 real minutes
+- mobid: 397
+  message: "Einstein pads in from the backyard, tail wagging, and settles under the workbench."
+  respawnrate: 5 real minutes

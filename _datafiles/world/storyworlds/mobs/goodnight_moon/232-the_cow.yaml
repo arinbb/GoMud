@@ -1,0 +1,26 @@
+mobid: 232
+zone: goodnight_moon
+hostile: false
+maxwander: 0
+activitylevel: 20
+idlecommands:
+- "emote arcs through the deep blue air in a slow and perfect curve."
+- ""
+- "say moo"
+- ""
+- "emote hangs against the face of the moon for a long, suspended moment."
+- ""
+- "emote descends in a gentle arc and rises again with quiet, inevitable grace."
+- ""
+character:
+  name: the cow
+  description: >-
+    The cow from the picture -- the one jumping over the moon. She is caught
+    in the moment of the leap, which is her permanent condition and her natural
+    state. She does not find this strange. She is a calm and purposeful animal
+    who has simply chosen this arc, this moon, this eternal midnight-blue moment
+    of going over. Her eyes are dark and liquid. Her hooves are pointed at
+    the sky. She moos softly, once, as if to confirm that the moon is still there.
+    It is. It always is.
+  raceid: 1
+  level: 2

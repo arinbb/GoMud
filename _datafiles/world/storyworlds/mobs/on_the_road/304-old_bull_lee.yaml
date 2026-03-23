@@ -1,0 +1,30 @@
+mobid: 304
+zone: on_the_road
+hostile: false
+maxwander: 1
+activitylevel: 15
+angrycommands: []
+idlecommands:
+  - emote turns a page of his book without looking up. He has been listening to everything.
+  - emote disassembles a revolver, examines each part with scientific attention, reassembles it.
+  - say The most dangerous thing in the world is a man who has decided what the truth is.
+  - emote shoots a tin can off the fence rail without changing his expression.
+  - say I have been researching consciousness for seventeen years. The results are inconclusive but interesting.
+  - emote reads a passage aloud to himself in a flat Midwestern voice, makes a note in the margin.
+  - emote regards everything with the flat attentive gaze of a naturalist in the field.
+character:
+  name: Old Bull Lee
+  description: >-
+    A lean, cadaverous man of around forty with the stillness of someone
+    who has taken very many things over many years and arrived at a state
+    beyond agitation. He wears plain clothes — a shirt, slacks, possibly
+    a hat — and moves with the deliberate economy of someone who wastes
+    nothing, not motion, not words, not attention. His face is like a map
+    of somewhere difficult. He carries a book and a pistol and a great
+    deal of knowledge about pharmacology, anthropology, and the structure
+    of consciousness, which he will share with you whether you ask for it
+    or not. He is based on William S. Burroughs, who was also like this,
+    and who went on to write Junky and Naked Lunch and many other things
+    that Old Bull Lee has not written yet but will.
+  raceid: 1
+  level: 15

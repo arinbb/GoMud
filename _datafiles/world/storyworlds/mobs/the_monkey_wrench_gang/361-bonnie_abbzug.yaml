@@ -1,0 +1,26 @@
+mobid: 361
+zone: the_monkey_wrench_gang
+hostile: false
+maxwander: 2
+activitylevel: 35
+angrycommands: []
+idlecommands:
+  - emote reads her paperback, one hand trailing idly in the river or resting on the rock.
+  - emote argues something with Hayduke in a low voice. He does not respond. She makes her point again, louder.
+  - emote applies sunscreen to her nose and the back of her neck with the efficiency of someone who learned the hard way.
+  - emote writes in her journal, filling the pages fast, her handwriting small and decisive.
+  - say I came out here for the river. I stayed for all of this. Make of that what you want.
+  - emote looks at the canyon wall with the expression of someone seeing something for the first time that they already love.
+  - say New York is a great city. This is a great landscape. They are not in competition. I can want both.
+character:
+  name: Bonnie Abbzug
+  description: >-
+    A woman in her late twenties, from the Bronx, with a New Yorker's instinct for
+    argument and a desert convert's fervor for the canyon country. She is sunburned
+    and competent, wearing practical clothes that she has adapted to the heat in ways
+    that would have shocked her previous self. Her dark hair is pulled back. She carries
+    a journal and a battered paperback. She is the emotional and intellectual center
+    of the gang, the one who frames what they are doing in language that is not just
+    anger. She is also funnier than any of them, including herself.
+  raceid: 1
+  level: 10

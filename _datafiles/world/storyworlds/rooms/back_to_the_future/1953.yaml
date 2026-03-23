@@ -1,0 +1,59 @@
+roomid: 1953
+zone: Back to the Future
+title: The Peabody Farm
+description: >-
+  Old man Peabody's farm, 1955. A tidy white farmhouse. A weathered
+  red barn. Two tall <ansi fg="itemname">pine trees</ansi> flank the
+  property gate, twin sentinels. The <ansi fg="itemname">scarecrow</ansi>
+  in the field wears a flannel shirt and has been effective enough
+  that the crows have begun to avoid this entire county. A
+  <ansi fg="itemname">tire rut</antml> in the soft earth near the
+  barn cuts deep into the soil and then simply stops -- as if a car
+  appeared here from nowhere and drove directly into the barn wall.
+  Which is exactly what happened. Old man Peabody is not happy about
+  any of this.
+mapsymbol: P
+maplegend: Peabody Farm
+biome: farmland
+exits:
+  road:
+    roomid: 1946
+    mapdirection: east
+nouns:
+  "pine trees": >-
+    Two tall Ponderosa pines flanking the farm gate, planted by old
+    man Peabody's father. He is very proud of them. In thirty years,
+    Lyon Estates will build a mall on this land and name it after
+    these trees -- but not before a certain DeLorean arrives in the
+    dark and takes out one of them. That pine is still standing for
+    now. Enjoy it.
+  scarecrow: >-
+    A scarecrow in the north field wearing a flannel shirt, overalls,
+    and a straw hat. His arms are outstretched. His expression, if
+    burlap can be said to express anything, is resigned. He has
+    been standing here since 1949. The crows have learned.
+  barn: >-
+    The red Peabody barn. Its south-facing wall has a large, DeLorean-
+    shaped dent in it from a recent and unexplained incident. The
+    fresh splintered wood around the dent suggests this happened
+    very recently. Old man Peabody is applying boards to the hole
+    and refusing to discuss it.
+  "tire rut": >-
+    Two deep tire ruts in the soft earth near the barn, which
+    begin abruptly -- no approach tracks, just a sudden impression
+    in the soil -- and end at the barn wall. The ruts are the exact
+    width of a DMC DeLorean. The tread pattern is not from any tire
+    manufactured in 1955.
+  farmhouse: >-
+    A white clapboard farmhouse, two stories, a chicken on the porch.
+    The windows have lace curtains. Smoke from the chimney. Everything
+    about the farmhouse says "normal 1955 California farm." The
+    DeLorean-shaped barn dent says otherwise.
+idlemessages:
+- A chicken pecks at the tire ruts, finding nothing edible but persisting anyway.
+- Wind moves through the pine trees with a sound like breathing.
+- From inside the farmhouse, the sound of argument about what to do about the barn.
+- The scarecrow's hat shifts in the wind, giving him an air of philosophical detachment.
+- A crow lands on the fence, looks at the scarecrow, and leaves.
+- The pine trees cast long shadows across the property in the afternoon light.
+- 'Old man Peabody appears at the farmhouse door, sees you, and shouts: "Get off my property!"'

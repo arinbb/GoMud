@@ -1,0 +1,26 @@
+mobid: 440
+zone: its_always_sunny
+hostile: false
+maxwander: 1
+activitylevel: 30
+angrycommands: []
+idlecommands:
+  - emote checks his reflection in his phone screen and nods slowly, as if confirming something important about the universe.
+  - say I am a golden god. This is simply a fact.
+  - emote rates someone nearby on a scale of one to ten. The number is not communicated but the look is.
+  - say The D.E.N.N.I.S. System. Look it up. It works. I am living proof.
+  - emote straightens his collar with practiced precision and glances toward the door.
+  - say 'Do you understand what I am implying? No, but you will think about it later. That is the implication.'
+character:
+  name: Dennis Reynolds
+  description: >-
+    A handsome man in his thirties with carefully styled hair and an expression
+    of such utter self-satisfaction that it borders on disturbing. He is dressed
+    well for a bar that does not deserve it. He carries himself with the unshakeable
+    confidence of someone who has decided he is exceptional and has never once
+    entertained an alternative theory. His eyes are slightly too still when he
+    looks at you, like a predator who has learned to mimic social behavior. He
+    is the most dangerous person in Paddys Pub, which is saying something
+    considering Frank is also here.
+  raceid: 1
+  level: 8

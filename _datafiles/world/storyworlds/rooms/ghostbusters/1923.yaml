@@ -1,0 +1,52 @@
+roomid: 1923
+zone: Ghostbusters
+title: The Containment Unit
+description: >-
+  The basement of the firehouse, dominated by the <ansi fg="itemname">containment
+  grid</ansi>: a massive steel apparatus of pipes, conduits, and glowing panels that
+  hums with barely contained supernatural energy. Red warning lights bathe everything
+  in a hellish glow. The temperature is precisely twelve degrees cooler than the rest
+  of the building for reasons that are not entirely scientific. Metal grates in the
+  floor vibrate with the resonant frequency of a thousand trapped entities. A large
+  <ansi fg="itemname">warning placard</ansi> is bolted to the main panel. The
+  <ansi fg="itemname">control switches</ansi> for the grid are protected behind a
+  plexiglass cover with a padlock. Through the grating you can sense rather than see
+  an enormous churning mass of spectral energy. The containment unit holds every ghost
+  the Ghostbusters have ever caught. Do not turn it off.
+mapsymbol: C
+maplegend: Containment Unit
+biome: cave
+exits:
+  up:
+    roomid: 1920
+    exitmessage: You climb back up the pole to the firehouse floor.
+  grid:
+    roomid: 1935
+    secret: true
+    exitmessage: The containment field fails and you are pulled inside with everything else.
+nouns:
+  grid: >-
+    The containment grid is Egon Spengler's magnum opus: a laser confinement system
+    that holds spectral entities in a self-sustaining magnetic field. It is, according
+    to Egon, theoretically fail-safe. According to the EPA inspector who visited last
+    week and found it fascinating in all the wrong ways, it is an unlicensed nuclear
+    accelerator in a commercial property. Both are probably correct.
+  placard: >-
+    The warning placard reads: "LASER CONFINEMENT SYSTEM -- CLASS V SPECTRAL
+    CONTAINMENT -- DO NOT DISABLE UNDER ANY CIRCUMSTANCES -- TURNING OFF THE
+    CONTAINMENT UNIT WOULD BE EXTREMELY HAZARDOUS -- NO REALLY -- DO NOT -- WE
+    MEAN IT -- IF YOU ARE FROM THE EPA, PLEASE DO NOT DO THIS -- SIGNED: DR. E.
+    SPENGLER, DR. R. STANTZ, DR. P. VENKMAN (reluctantly)."
+  switches: >-
+    Behind the plexiglass cover, three heavy switches control the power to the
+    containment grid. They are labeled "GRID POWER," "LASER FIELD," and "DO NOT
+    TOUCH THIS ONE." The padlock is substantial. However, the plexiglass is not
+    locked. It is just... plexiglass. Someone really should have thought that through.
+idlemessages:
+- The containment grid pulses with a sound like distant screaming, very far away, very faint.
+- A red warning light blinks three times, steadies, and resumes its steady crimson glow.
+- The floor grating vibrates beneath your feet, the frequency just wrong enough to be unpleasant.
+- Something inside the grid makes a sound like laughter, if laughter were green.
+- The temperature in this room is precisely twelve degrees cooler than it should be, and it has nothing to do with the ventilation.
+- A thin tendril of green ectoplasm seeps from between two grates and retreats immediately. It does this periodically.
+- The needle on the PKE meter on the wall is pinned hard at maximum. It has been like this since the unit was installed.

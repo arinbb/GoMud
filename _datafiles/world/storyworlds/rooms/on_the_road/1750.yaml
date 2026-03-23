@@ -1,0 +1,60 @@
+roomid: 1750
+zone: On the Road
+title: The Road South (Toward Mexico)
+description: >-
+  South of San Francisco, the highway runs through California farm country
+  and then through the dry hills and then into the open desert heading for
+  the <ansi fg="itemname">border</ansi>. The air gets hotter. The landscape
+  gets stranger. The <ansi fg="itemname">road</ansi> goes past olive groves
+  and oil derricks and the occasional roadside shrine with plastic flowers
+  fading in the sun. Dean is driving and he has discovered speed again —
+  he lost it for a while in San Francisco, weighed down by the complications
+  of his women and his debts, but now he has it back and the car is going
+  south at that speed that is slightly faster than prudent and slightly
+  slower than fatal. Through the open window, the air smells of sage and
+  hot asphalt and something else, something that might be Mexico coming up
+  ahead, the country below the country, the world Dean and Sal have never
+  been to yet. To the <ansi fg="exit">north</ansi> is San Francisco. To
+  the <ansi fg="exit">south</ansi> is the border.
+mapsymbol: R
+maplegend: Road to Mexico
+biome: road
+exits:
+  north:
+    roomid: 1748
+  south:
+    roomid: 1751
+nouns:
+  border: >-
+    The Mexican border, the line the road crosses from the United States
+    into Mexico. On one side: rules, speed limits, the law. On the other
+    side: something looser, something older, something that Sal and Dean
+    experience as freedom and that is partly freedom and partly dissolution,
+    which are not always different things.
+  road: >-
+    Route 99, the Valley Road, heading south through California farm
+    country toward the border. The farms on both sides grow things
+    that feed the country — cotton, tomatoes, grapes, almonds — and
+    the people who pick them live in conditions that are not in the
+    book because Sal and Dean are driving through too fast to see them
+    clearly, which is not Kerouac's finest moment.
+  shrines: >-
+    Roadside shrines appear occasionally along the shoulder — small
+    wooden crosses with plastic flowers, photographs in plastic frames,
+    names. Each one marks the place where someone was going somewhere
+    and did not arrive. The road is full of these small monuments to
+    the not-arriving, and they are easy to miss at speed.
+  derricks: >-
+    Oil derricks punctuating the landscape, their pump jacks moving
+    in slow arcs, patient and mechanical, pulling something ancient
+    out of the ground so it can be burned at speed by people going
+    somewhere. There is a poem in this. Several poems. They have been
+    written. You are living inside one now.
+idlemessages:
+- The car passes a roadside stand selling oranges. Dean does not stop. The oranges recede.
+- The heat shimmer on the road ahead makes it look like water, always retreating.
+- A border patrol checkpoint appears in the distance. Dean tenses, then relaxes. They wave him through.
+- The landscape south of Fresno is the dream of the end of things, flat and hot and getting hotter.
+- A sign in Spanish appears and then another. The country is changing underneath the road.
+- Dean rolls his window down and leans his head out into the hot wind like a dog going somewhere important.
+- 'The odometer turns over another thousand miles. Dean laughs. Sal writes it down.'

@@ -1,0 +1,53 @@
+roomid: 1310
+zone: Buffalo 66
+title: Strip Club
+description: >-
+  A dark, low-ceilinged room thick with <ansi fg="itemname">smoke</ansi>. Red
+  <ansi fg="itemname">lights</ansi> wash the space in a color that hides stains.
+  A <ansi fg="itemname">stage</ansi> with a brass pole occupies one end, currently
+  empty. <ansi fg="itemname">Booths</ansi> line the walls, their occupants reduced
+  to silhouettes and cigarette embers. A <ansi fg="itemname">bar</ansi> runs along
+  one side, bottles catching the red light like dark jewels. The <ansi fg="itemname">music</ansi>
+  is loud enough to vibrate in your chest but not loud enough to drown out the
+  feeling that something bad could happen here very easily. An alcove is to the
+  <ansi fg="exit">west</ansi>. A back door leads <ansi fg="exit">south</ansi>.
+mapsymbol: X
+maplegend: Strip Club
+biome: house
+exits:
+  west:
+    roomid: 1309
+  south:
+    roomid: 1311
+nouns:
+  smoke: >-
+    Cigarette smoke, thick and layered. It diffuses the red light into a haze
+    that makes the room feel both larger and more claustrophobic.
+  lights: >-
+    Red lights. Always red. The color of warning, of urgency, of things that
+    happen after dark. They turn everyone into a stranger.
+  stage: >-
+    A small stage with a brass pole, currently empty. The spotlight is off.
+    The stage looks smaller when no one is on it.
+  booths: >-
+    Deep booths along the walls, their vinyl seats dark and sticky. The
+    occupants are shapes in the red dark, faces lit only when they drag on
+    their cigarettes.
+  bar: >-
+    A long bar with a scratched surface. The bartender moves slowly, like
+    someone who has learned that nothing here requires haste.
+  music: >-
+    Pounding bass and something that might be a melody. It comes from speakers
+    mounted in the corners. It is not music for listening. It is music for
+    drowning other sounds.
+spawninfo:
+- mobid: 214
+  message: "<ansi fg=\"8\">A large man sits in a corner booth, watching the room with dangerous ease.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The bass throbs through the floor, a heartbeat that belongs to the building.
+- Someone at the bar orders a drink. The bartender pours without looking.
+- A cigarette ember flares in a dark booth, a tiny orange star, then fades.
+- The stage spotlight clicks on for a moment, illuminating empty space, then clicks off.
+- Red light shifts across the smoke like something alive and slow-moving.
+- The back door opens. Cold air rushes in. The door closes. The cold stays.

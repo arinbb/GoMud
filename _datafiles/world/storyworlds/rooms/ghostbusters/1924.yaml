@@ -1,0 +1,52 @@
+roomid: 1924
+zone: Ghostbusters
+title: The New York Public Library
+description: >-
+  The grand reading room of the New York Public Library on Fifth Avenue, hushed
+  and marble and enormous. Long wooden <ansi fg="itemname">reading tables</ansi>
+  stretch the length of the hall under ornate brass chandeliers. The <ansi fg="itemname">stacks</ansi>
+  extend into shadowed galleries above. Card catalogs line the walls in their thousands
+  of tiny drawers. The <ansi fg="itemname">librarian</ansi> -- a grey-haired woman of
+  severe composure -- sits at her desk at the far end, perfectly still, her focus
+  directed at something on the table in front of her that she will not look away from.
+  The silence in this room is a specific silence: not peaceful, but held-breath.
+  Something happened here. Something is about to happen again. A staircase descends
+  to the <ansi fg="itemname">basement stacks</ansi> below.
+mapsymbol: P
+maplegend: Public Library
+biome: house
+exits:
+  south:
+    roomid: 1921
+    exitmessage: You descend the library steps back to Fifth Avenue.
+  down:
+    roomid: 1925
+    exitmessage: You follow the stairs down into the basement stacks.
+nouns:
+  tables: >-
+    The long reading tables are laid out with the mathematical precision of an
+    institution that believes in order. Research materials are arranged at stations.
+    At one station, a card catalog drawer has been pulled out and its contents --
+    hundreds of index cards -- are arranged in a spiral pattern on the tabletop.
+    Nobody is sitting there. The cards rearranged themselves. The staff have been
+    pretending not to notice this for three days.
+  stacks: >-
+    The stacks stretch up into the shadowed upper gallery, row upon row of bookshelves
+    dense with volumes. Between the upper stacks and the lower, where the light goes
+    wrong, something moves. It is not a person. It has been moving among the books for
+    seventy-nine years, rearranging things, reading things, haunting with the specific
+    melancholy of someone who cannot leave a library.
+  librarian: >-
+    The librarian is a grey-haired woman in a sensible blouse who has worked in this
+    building for forty-one years and has outlasted every strange thing that has happened
+    in it. She is looking at a card on her desk. The card was not there when she sat
+    down. The handwriting on it is in a script that has not been common since 1903.
+    She will not show it to you.
+idlemessages:
+- A card catalog drawer slides open by itself, slowly, then stops. Nobody touches it.
+- The chandeliers above flicker once in a pattern that seems deliberate. Morse code for something.
+- From the basement stacks below, you hear the unmistakable sound of a heavy book falling. Then another. Then many.
+- The librarian at her desk straightens a stack of papers that are already straight.
+- The temperature drops two degrees. You do not imagine this.
+- In the far corner of the reading room, the light seems slightly wrong -- too still, the shadows not moving quite right.
+- Somewhere in the stacks, a page turns.

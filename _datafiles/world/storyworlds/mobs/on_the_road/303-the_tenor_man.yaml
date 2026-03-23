@@ -1,0 +1,29 @@
+mobid: 303
+zone: on_the_road
+hostile: false
+maxwander: 0
+activitylevel: 40
+angrycommands: []
+idlecommands:
+  - emote plays a run of notes that has no ceiling, eyes closed, going somewhere.
+  - emote steps back from the microphone, wipes his face with his sleeve, steps forward, goes.
+  - emote lowers the saxophone for a moment and breathes. Just breathes. The room holds still.
+  - emote plays a single note and holds it. The room opens up around the note like a space being made.
+  - emote shakes the bell of the saxophone and a cascade of sweat and sound comes out.
+  - emote locks eyes with the drummer for eight bars and something passes between them that cannot be said.
+  - emote finishes a phrase, nods, and starts again from somewhere completely different.
+character:
+  name: the tenor man
+  description: >-
+    A large man in a rumpled dark suit, his saxophone hanging from a neck
+    strap, its bell pointing slightly downward the way a hose hangs. He has
+    been playing for three hours. He looks like a man who has been working
+    in a mine, face gleaming with sweat, shirt dark through. But his eyes
+    are gone somewhere — somewhere past the room, past the music, past
+    himself. He is not playing notes anymore. He is playing the space between
+    notes, the silence that gives the notes their meaning, the breathing of
+    the music itself. Kerouac described a man like this in Denver and another
+    in San Francisco and they might be the same man or they might be the same
+    music wearing different bodies.
+  raceid: 1
+  level: 12

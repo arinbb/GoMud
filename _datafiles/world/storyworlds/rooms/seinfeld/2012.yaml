@@ -1,0 +1,53 @@
+roomid: 2012
+zone: Seinfeld
+title: The Parking Garage
+description: >-
+  A <ansi fg="8">parking garage</ansi> in a New Jersey mall, which is exactly as
+  large and featureless as it needs to be to be completely disorienting. Concrete
+  <ansi fg="itemname">pillars</ansi> stretch in all directions at regular intervals,
+  each one identical to the last. <ansi fg="itemname">Level signs</ansi> indicate
+  levels that do not help because you do not know which level you started on. Cars
+  sit in rows in the grey fluorescent dark, each one possibly yours, none of them
+  obviously yours. The <ansi fg="itemname">floor</ansi> is marked with parking space
+  numbers that are not arranged in any sequence that suggests direction. Somewhere
+  there is an <ansi fg="exit">exit</ansi> to the street. The question is where.
+  Somewhere, four people are wandering separately through this same garage, each
+  convinced they remember where the car is, each wrong.
+mapsymbol: G
+maplegend: Parking Garage
+biome: city
+exits:
+  street:
+    roomid: 2004
+    mapdirection: south
+nouns:
+  pillars: >-
+    Concrete pillars, numbered. The numbering does not help. The numbers are
+    in the 200s and 300s, which suggests you are on a level that has something
+    to do with those numbers, but the floor you entered on is also numbered
+    and the relationship between floor numbers and pillar numbers is not
+    clarified anywhere in this garage.
+  signs: >-
+    Level indicators, painted in yellow on the walls. Level 2. Level 2A.
+    Level 3. The existence of Level 2A suggests that someone, at some point,
+    needed to insert a level between Level 2 and Level 3 for reasons that
+    seemed logical at the time and have not been explained since.
+  floor: >-
+    Concrete, grey, marked with painted lines and numbers. Oil stains here
+    and there indicate where cars have been. Your car was here, approximately,
+    in this region of the garage, parked near a pillar, which is this pillar
+    or possibly that one.
+  cars: >-
+    Rows of cars. Most of them are not yours. One of them is yours. The
+    problem is that they all look similar in this light and from this angle
+    and at this level of accumulated certainty about where you parked.
+spawninfo: []
+idlemessages:
+- You are still in the parking garage. The car is still somewhere in the parking garage. This has not changed.
+- Another concrete pillar. You have passed this one before. Or one exactly like it. Which is the same thing.
+- The fluorescent light overhead flickers once in a way that seems like communication but is not.
+- A cart rattles somewhere in the distance. That is not a person. Or it is a person. It is moving away.
+- Level 2A is on the sign above you. You do not know how you got to Level 2A. You do not know how to leave Level 2A.
+- The sound of your footsteps echoes in a way that creates a faint second version of yourself, slightly behind.
+- Someone else is in this garage, also looking for their car. You can hear them. You cannot find each other.
+- A column of numbers on the floor suggests you are in section 4C. This information does not help.

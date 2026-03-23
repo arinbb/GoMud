@@ -1,0 +1,25 @@
+mobid: 475
+zone: paris_texas
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote dries a dish and puts it away carefully."
+  - "emote watches Hunter from the kitchen doorway."
+  - "emote looks at Travis with an expression she quickly makes neutral."
+  - "say Hunter, dinner in twenty minutes."
+  - "emote makes a note on a notepad by the phone."
+  - ""
+  - "emote makes coffee, because Walt is about to ask for some."
+activitylevel: 30
+character:
+  name: Anne Henderson
+  description: >-
+    A French woman in her mid-thirties with dark eyes and the composed
+    manner of someone who chose to be here and continues to choose it
+    every day. She has been raising Hunter with Walt for four years.
+    She is good at it in the specific way of someone who loves him not
+    because they have to but because they do. She watches Travis with
+    something that is not quite suspicion and not quite trust — more
+    assessment, careful and fair.
+  raceid: 1
+  level: 5

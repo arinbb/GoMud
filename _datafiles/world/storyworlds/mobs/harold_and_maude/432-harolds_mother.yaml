@@ -1,0 +1,23 @@
+mobid: 432
+zone: harold_and_maude
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote places a call on the telephone, her voice bright and arranged."
+  - ""
+  - "say Harold, I have made an appointment for you Thursday with a very suitable young woman."
+  - ""
+  - "emote sorts a stack of envelopes with the swift efficiency of someone who controls things through paper."
+  - "emote glances at Harold's suit and seems about to say something, then does not."
+activitylevel: 20
+character:
+  name: Harolds Mother
+  description: >-
+    A well-preserved woman in her fifties who moves through the mansion with
+    the efficient authority of someone who has organized everything, including
+    the parts of life that resist organization. Her clothes are impeccably
+    appropriate. Her hair is in order. Her calendar is full. She loves Harold
+    in a way that is sincere and completely misses him, the way you can look
+    directly at something and not see it if you are looking for something else.
+  raceid: 1
+  level: 5

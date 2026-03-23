@@ -1,0 +1,52 @@
+roomid: 1724
+zone: The Sopranos
+title: The Backyard Pool
+description: >-
+  A generous <ansi fg="12">in-ground pool</ansi> glitters in the New Jersey sun,
+  surrounded by <ansi fg="itemname">flagstone</ansi> and a neat row of
+  <ansi fg="itemname">deck chairs</ansi>. The <ansi fg="itemname">water</ansi> is
+  immaculate, chemically perfect, a maintained blue that does not occur in nature.
+  The yard is beautiful in a way that feels <ansi fg="8">melancholy</ansi> — too
+  quiet, too still, too carefully maintained. There are no ducks here now. But
+  something in the quality of the light over the water, the particular stillness
+  of the yard, suggests they were here once. That this was once a different kind
+  of morning. The <ansi fg="exit">kitchen</ansi> is through the back door.
+mapsymbol: P
+maplegend: Backyard Pool
+biome: house
+exits:
+  kitchen:
+    roomid: 1721
+    mapdirection: east
+nouns:
+  pool: >-
+    The water is still and blue and absolutely clear. At the bottom you can
+    see every tile, every grout line. Nothing lives in this water now. Something
+    did once -- or rather, something visited. Something chose this pool as a
+    place to be, and the choosing mattered to a man who does not admit when
+    things matter.
+  water: >-
+    Still. Blue. Perfect. The surface barely moves. If you stare at it long
+    enough you see the sky reflected back at you, and then the sky reflected
+    in the sky, down and down.
+  ducks: >-
+    They are not here. That is the point. There was a family of ducks -- a
+    mother and her ducklings -- who made the pool their home one spring. They
+    left, as ducks do, when the season changed. Tony watched them go. He has
+    never fully explained to anyone, not even Dr. Melfi, why watching them go
+    felt like the end of something.
+  flagstone: >-
+    Bluestone pavers, laid precisely. No moss, no weeds in the joints. The
+    pool deck is maintained with the same energy as everything else about this
+    house: aggressively, constantly, as if disorder has been prohibited by edict.
+  chairs: >-
+    Teak deck chairs with cushions in cream fabric. They are comfortable and
+    nobody sits in them much. The pool was mostly built to be looked at.
+spawninfo: []
+idlemessages:
+- The pool filter hums its gentle mechanical breathing beneath the water.
+- A leaf drifts across the yard and lands on the surface of the pool. It sits there.
+- The sun moves and the light on the water shifts, gold becoming silver.
+- Something is missing from this yard. The feeling is specific and refuses to be named.
+- A bird crosses the sky overhead. Just one. It does not stop.
+- The water is perfectly still. You look at it and think about something you cannot quite identify.

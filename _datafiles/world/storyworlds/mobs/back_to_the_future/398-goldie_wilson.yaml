@@ -1,0 +1,23 @@
+mobid: 398
+zone: back_to_the_future
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote sweeps the floor with vigorous, deliberate strokes."
+  - "say I am gonna be somebody. Mark my words."
+  - "emote refills the napkin dispenser without being asked."
+  - "say Mayor. I could be mayor of this town. Why not?"
+  - "emote straightens a stool that was already straight."
+  - "say Hard work. That's what it takes. Hard work and a plan."
+  - ""
+activitylevel: 25
+character:
+  name: Goldie Wilson
+  description: >-
+    A young Black man of about nineteen bussing tables at the diner,
+    wearing an apron over his clothes. He moves with the contained
+    energy of someone who knows this is not where they will spend
+    their life. He has excellent posture and a habit of making eye
+    contact when he talks to you. He is going to be somebody.
+  raceid: 1
+  level: 3

@@ -1,0 +1,57 @@
+roomid: 2021
+zone: Harold and Maude
+title: The Cemetery
+description: >-
+  A <ansi fg="8">cemetery</ansi> of quiet dignity, scattered oak trees casting
+  dappled shade across rows of <ansi fg="itemname">headstones</ansi>. The grass
+  is green and carefully tended, but not too carefully -- this is not a place
+  that pretends death is orderly. <ansi fg="itemname">Flowers</ansi> have been
+  left on several graves, some fresh, some long dried. The California <ansi fg="yellow">sun</ansi>
+  falls warm and real on the marble and granite. A pale young man moves among
+  the stones with the ease of someone who has come here many times, reading
+  inscriptions, touching dates, doing quiet math. To the <ansi fg="exit">north</ansi>
+  lies an open grave. To the <ansi fg="exit">west</ansi>, the church. This is
+  Harold's cathedral.
+mapsymbol: G
+maplegend: The Cemetery
+biome: land
+exits:
+  west:
+    roomid: 2020
+    exitmessage: You return to the church through the side door.
+  north:
+    roomid: 2022
+    exitmessage: You walk deeper into the cemetery, toward the freshly turned earth.
+nouns:
+  headstones: >-
+    Row after row of headstones, each one a small door permanently closed.
+    The names span a century. The dates cluster near the ends of long lives
+    and short ones alike. Harold reads them all. He knows something most
+    people work hard to forget: that everyone who was ever alive is here
+    or somewhere like here, and that this is not a problem to be solved.
+  flowers: >-
+    Carnations on the nearest grave, a week old and starting to brown.
+    Further on, a child's grave with a plastic pinwheel spinning in the
+    breeze. Someone has left a bottle of beer on a headstone -- the grave
+    of someone who would have appreciated it.
+  sun: >-
+    The California sun falls on the graves the same way it falls on
+    everything else, making no distinctions. It is warm and golden and
+    it does not know that this is supposed to be a sad place.
+  grass: >-
+    The grass between the stones is green and slightly long. Clover grows
+    in patches. A bee moves from stone to stone, visiting the flowers left
+    by the living for the dead.
+spawninfo:
+- mobid: 430
+  message: "<ansi fg=\"8\">Harold moves slowly between the headstones, hands clasped behind his back, reading inscriptions with quiet intensity.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- Harold crouches beside a headstone and traces the carved letters with one finger.
+- A crow lands on a nearby grave marker, considers something, and flies away.
+- The breeze moves through the oak leaves, a soft sound like distant applause.
+- Harold reads a date and does the math quietly, his lips barely moving.
+- Golden California light makes the marble headstones glow like they mean something.
+- Somewhere a Cat Stevens song drifts on the wind -- Morning Has Broken, perhaps, or something like it.
+- Harold sits cross-legged on the grass between two graves, perfectly at home.
+- A butterfly lands on the largest headstone and opens and closes its wings once, twice, then lifts away.

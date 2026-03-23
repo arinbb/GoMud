@@ -1,0 +1,49 @@
+roomid: 2041
+zone: its_always_sunny
+title: The Bar Floor
+description: >-
+  The main floor of <ansi fg="itemname">Paddys Pub</ansi> stretches before you
+  in all its squalid glory. A <ansi fg="itemname">dartboard</ansi> on the wall
+  is ringed with holes in the plaster where the darts have not gone. A
+  <ansi fg="itemname">pool table</ansi> occupies the center of the room, its
+  felt ripped in three places and stained in two more, a history of bad shots
+  and worse decisions. Mismatched <ansi fg="8">barstools</ansi> line the bar.
+  The televisions mounted in the corners are always on, always showing sports
+  that nobody is watching. To the <ansi fg="exit">west</ansi>, back to the
+  bar proper.
+mapsymbol: B
+maplegend: Bar Floor
+biome: city
+exits:
+  west:
+    roomid: 2040
+nouns:
+  dartboard: >-
+    The dartboard is technically functional if you define functional as
+    "a circular object that darts can theoretically hit." The surrounding wall
+    has absorbed more darts than the board. Someone has written "WILDCARD" on
+    the wall below it in marker, then crossed it out, then written it again.
+  pool: >-
+    The pool table has seen better days, which were probably a very long time
+    ago. The felt is ripped in three places, stained in colors that resist
+    identification, and the four ball has been missing for at least six months.
+    Two pool cues lean against the wall. One of them is cracked. The other
+    one is also cracked.
+  stools: >-
+    A row of barstools in varying states of structural integrity. Each one
+    wobbles slightly at a different frequency, creating a kind of terrible
+    music when multiple people sit down simultaneously. Three of them have
+    duct tape on the seat. One of them has writing on the back: DENNIS ONLY.
+    It has been crossed out and written again several times.
+  televisions: >-
+    Multiple televisions bolted to the walls, all showing sports, all muted.
+    The sports appear to be real but the channels have not been changed in
+    months. One of them is showing an infomercial at three in the afternoon.
+    Nobody has noticed.
+idlemessages:
+- Someone has written "WILDCARD" on the wall near the dartboard in permanent marker. Under it someone has written "NO" in red. Under that someone has written "WILDCARD" again.
+- A dart is stuck in the wall approximately two feet from the dartboard. Another dart is stuck in the ceiling. A third dart is nowhere to be found.
+- 'The pool table sits in judgment of everyone who passes by it: you, too, have failed to make the shot you thought you could make.'
+- The televisions show a football game that ended three months ago. The score is irrelevant. The televisions do not care.
+- 'A sticky ring on the bar marks where a glass has been sitting so long it has become part of the furniture, a geological feature of Paddys Pub.'
+- One of the barstools rotates slowly on its own, victim of some structural imbalance that nobody has investigated or will investigate.

@@ -1,0 +1,63 @@
+roomid: 1944
+zone: Back to the Future
+title: Hill Valley High School
+description: >-
+  The main corridor of Hill Valley High School, 1955. Mustard-yellow
+  <ansi fg="itemname">lockers</ansi> line both walls, combination locks
+  and paper decorations. A trophy case near the entrance celebrates
+  the football team. Class photos going back to the 1920s hang in a
+  long row above the lockers. The linoleum floor is waxed to a
+  mirror shine. From the gymnasium to the <ansi fg="exit">north</ansi>,
+  muffled music drifts. Near the principal's office, a frowning
+  <ansi fg="mobname">Mr. Strickland</ansi> stands watch with the air
+  of a man who has seen it all and not been impressed.
+mapsymbol: S
+maplegend: High School
+biome: house
+exits:
+  west:
+    roomid: 1941
+  north:
+    roomid: 1945
+nouns:
+  lockers: >-
+    Standard-issue mustard-yellow metal lockers, twelve inches wide,
+    combination locks. Someone has taped a small mirror inside one of
+    the open ones. Another has a bobby pin stuck in the vent. On
+    the door of a third, someone has taped a small paper sign that
+    reads "KICK ME" -- the eternal prank, 1955 edition.
+  "trophy case": >-
+    A glass case near the front entrance holding football trophies
+    going back to 1931. The Bulldogs. The school is proud of its
+    football team in a way it is not proud of, say, its science
+    club or its creative writing students. George McFly is not in
+    this trophy case.
+  "class photos": >-
+    Rows of class photos going back decades. You scan the faces.
+    Class of 1955 includes several young people who look remarkably
+    familiar. George McFly: second row, slightly hunched. Lorraine
+    Baines: front row, radiant. Biff Tannen: back row, scowling.
+  sign: >-
+    A principal-office bulletin board listing school events:
+    the Enchantment Under the Sea dance this Saturday, basketball
+    tryouts next week, a reminder that "loitering in the halls
+    is grounds for detention." That last one is Mr. Strickland's
+    personal contribution.
+  office: >-
+    The principal's office. Dark wood, a frosted glass door, the
+    persistent smell of pipe tobacco. Inside, someone is getting
+    a talking-to about something. The muffled tones of adult
+    authority carry through the glass.
+idlemessages:
+- Mr. Strickland marks a notation in his clipboard, then looks up and down the corridor.
+- A bell rings somewhere in the building, and students pour out of classrooms into the hall.
+- Someone runs in the hallway. Mr. Strickland says nothing but marks it down.
+- A locker slams. The echo bounces down the corridor.
+- From the gym, a distant drum fill rolls through the walls.
+- 'A student passes, sees Mr. Strickland, and immediately changes direction.'
+- The trophy case glass reflects your image back at you, slightly distorted.
+- 'From somewhere down the hall, a voice: "This is heavy, man."'
+spawninfo:
+- mobid: 395
+  message: "Mr. Strickland materializes from his office doorway, clipboard in hand."
+  respawnrate: 3 real minutes

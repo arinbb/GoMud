@@ -1,0 +1,26 @@
+mobid: 271
+zone: die_die_my_darling
+hostile: false
+maxwander: 2
+activitylevel: 20
+idlecommands:
+  - "emote checks the lock on the nearest door with a practiced hand, tugs it once, and nods."
+  - "emote stands in the doorway for a moment, blocking the view of the corridor, then moves on."
+  - "emote tests the handle of the barn padlock with two fingers, apparently satisfied."
+  - "emote watches from across the room with a flat, patient attention."
+  - "emote wipes his hands on a rag and tucks it into his back pocket."
+  - ''
+  - ''
+character:
+  name: Harry
+  description: >-
+    A large man, broad across the shoulders, with a face that has absorbed
+    some hard use over the years and emerged from the experience without
+    much softening. His nose has been broken and not set particularly well.
+    His hands are enormous. He wears work clothes in dark colours — a heavy
+    jacket, canvas trousers tucked into boots. He does not speak unnecessarily.
+    He watches a great deal. There is a quality to his attention that is
+    difficult to distinguish from threat. He works for Mrs. Trefoile, which
+    covers a considerable range of tasks.
+  raceid: 1
+  level: 8

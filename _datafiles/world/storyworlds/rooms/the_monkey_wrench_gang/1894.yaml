@@ -1,0 +1,65 @@
+roomid: 1894
+zone: The Monkey Wrench Gang
+title: Seldom Seens Houseboat
+description: >-
+  A <ansi fg="itemname">houseboat</ansi> is moored in a side canyon of <ansi fg="cyan">Lake
+  Powell</ansi>, its hull riding the flat blue water between canyon walls of red and
+  orange sandstone. The boat is comfortable rather than luxurious — a canvas awning
+  over the rear deck, folding chairs, a battered outboard, fishing rods stowed along
+  the rail. In the cabin, the table is set for three with three different styles of
+  plate, three different coffee mugs, a vase of artificial flowers. Three place settings
+  because <ansi fg="mobname">Seldom Seen Smith</ansi> has three wives — <ansi fg="itemname">Kathy</ansi>
+  in Salt Lake City, <ansi fg="itemname">Lola</ansi> in Green River, <ansi fg="itemname">Sheila</ansi>
+  in Page — and he loves all of them, and the houseboat belongs to all of them, and
+  the table is set for all of them even when none of them is present. The <ansi fg="cyan">lake</ansi>
+  around the boat is perfectly still, mirroring the canyon walls. If you look carefully,
+  you can see the high-water line on the walls — the old tidemark of the full reservoir,
+  above which the rock is clean and red. Below it, the rock is stained. The canyon walls
+  remember everything. To the <ansi fg="exit">shore</ansi> to the <ansi fg="exit">west</ansi>,
+  the dock leads back to the dam overlook road.
+mapsymbol: B
+maplegend: Seldom Seens Houseboat
+biome: shore
+exits:
+  west:
+    roomid: 1890
+    exitmessage: You motor back across the cove to the dock at the dam overlook.
+    mapdirection: west
+nouns:
+  table: >-
+    Three place settings: Kathy's blue Pfaltzgraff, Lola's mismatched Fiestaware,
+    Sheila's grandmother's china with the rosebuds. Three coffee mugs. Three chairs.
+    Seldom Seen sets the table out of habit or hope or love that is bigger than
+    geography allows. The other members of the gang do not comment on this.
+    It is one of the things about him that they find both strange and entirely right.
+  wives: >-
+    Kathy, Lola, and Sheila. Seldom Seen loves all three of them and they all know
+    about each other and the arrangement has settled into something that works,
+    more or less, because Seldom Seen is gone so much of the time that each wife
+    has him when she needs him and not when she does not. He keeps three rings
+    on his right hand and wears them alternately depending on which state he is
+    traveling through.
+  lake: >-
+    Lake Powell fills the side canyon to within a few feet of the canyon rim,
+    the blue water perfectly still in the morning hours, riffled by afternoon
+    wind. Below the surface, two hundred feet down, is the canyon that was.
+    Seldom Seen prays for the dam to fail. He does not say this to his wives,
+    who use the lake for water skiing in summer and find it beautiful.
+  tidemark: >-
+    The high-water mark on the canyon walls shows where the reservoir was at
+    its fullest, a horizontal stain that runs at the same level around every
+    arm and cove of the lake. Below it, the rock is stained white with calcium
+    carbonate. Above it, the rock is clean, red, unchanged. The line is moving.
+    The reservoir has been dropping for decades. The canyon walls are returning.
+spawninfo:
+- mobid: 363
+  message: Seldom Seen Smith is checking the anchor line, humming to himself.
+  respawnrate: 5 real minutes
+idlemessages:
+- The houseboat rocks gently as a motorboat passes in the main channel, its wake reaching the cove a minute later.
+- Seldom Seen has set the table for three. He sets it every morning, out of habit, out of hope, out of love.
+- 'The lake is impossibly blue and still, the canyon walls reflected perfectly on its surface.'
+- A canyon swallow dips low over the water, pulling up at the last instant, its wing tip leaving a ring.
+- 'Three coffee mugs on the table. Three place settings. Three chairs. The math of love that refuses to simplify.'
+- The outboard motor smells of gasoline and the lake. Seldom Seen keeps it tuned and ready.
+- The canyon walls rise straight from the water on all sides, enclosing the cove in red silence.

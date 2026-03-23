@@ -1,0 +1,53 @@
+roomid: 2105
+zone: Up in Smoke
+title: The Rock Concert Parking Lot
+description: >-
+  A vast asphalt flat outside some <ansi fg="itemname">arena</ansi>, 1978, before
+  the show. <ansi fg="itemname">Vans</ansi> are parked in clusters, their rear doors
+  open to reveal sleeping bags and eight-tracks and dedicated preparations for the
+  evening. Someone is throwing a <ansi fg="itemname">frisbee</ansi> with the focused
+  intensity of a man who has been out here since noon. The air smells like the 1970s:
+  patchouli, beer, asphalt radiating heat, and something else, something sweet and
+  hanging low. Everywhere you look: <ansi fg="itemname">denim</ansi>, <ansi fg="itemname">
+  feathered hair</ansi>, and the general attitude that tonight is going to be something
+  extraordinary. The <ansi fg="exit">west</ansi> exit leads back to the highway. The
+  <ansi fg="exit">north</ansi> entrance goes into The Roxy Theatre.
+mapsymbol: T
+maplegend: Rock Concert Parking Lot
+biome: road
+exits:
+  west:
+    roomid: 2103
+    exitmessage: You head back out to the highway.
+  north:
+    roomid: 2106
+    exitmessage: You join the crowd funneling toward the Roxy entrance.
+nouns:
+  arena: >-
+    The venue is a mid-sized arena, the kind that exists to host exactly this:
+    medium-famous bands in front of medium-sized crowds who are all absolutely
+    certain that tonight will be a transcendent experience. It usually is.
+  vans: >-
+    Econolines and VW microbuses in every state of modification, painted or
+    rusted or both. The van community is self-sufficient: they have brought
+    everything they need for the entire weekend and are comfortable parked here
+    indefinitely.
+  frisbee: >-
+    A yellow disc, battered from extended use, moving in a long slow arc across
+    the parking lot. The man throwing it watches it with genuine pride, as if
+    he invented frisbee just now, as if it is still an idea and not yet a product.
+  denim: >-
+    Everyone in this parking lot is wearing denim in at least one form. Jeans,
+    jackets, vests with patches. Denim is the democracy of 1978.
+spawninfo:
+- mobid: 463
+  message: '<ansi fg="3">Strawberry materializes at the edge of the parking lot, thumb out, smiling at everything, going nowhere in particular and making it look like a destination.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The frisbee makes its arc. Someone misjudges. It lands on a van roof. Nobody retrieves it.
+- 'Music bleeds through the arena walls: soundcheck, bass heavy, the drums impatient.'
+- A group near the van finishes something and sits down slowly, grinning.
+- 'The smell that is not patchouli and not beer drifts past and keeps going.'
+- Somebody has a guitar out. They are playing the wrong song very well.
+- The crowd energy rises a degree as showtime approaches. The parking lot feels it first.
+- Strawberry smiles at you. It is the friendliest smile in Los Angeles. You smile back.

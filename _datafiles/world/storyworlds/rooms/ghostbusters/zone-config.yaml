@@ -1,0 +1,14 @@
+name: Ghostbusters
+roomid: 1920
+autoscale:
+  minimum: 1
+  maximum: 10
+defaultbiome: city
+idlemessages:
+- Somewhere in the distance, a siren wails and then cuts off abruptly.
+- The air smells faintly of slime and ozone, like lightning hit a hot dog cart.
+- A PKE meter on a nearby surface lets out a soft chirp, then goes quiet.
+- Something green and translucent flickers in the corner of your vision. Nothing is there when you look directly.
+- The ambient hum of the containment grid pulses once beneath your feet.
+- New York traffic sounds drift in from outside, horns and shouts and the screech of brakes.
+- A phone rings somewhere, is answered, and a bored Brooklyn voice says "Ghostbusters."

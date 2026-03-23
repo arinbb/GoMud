@@ -1,0 +1,55 @@
+roomid: 1828
+zone: Stardew Valley
+title: The Fishing Pier
+description: >-
+  A weathered wooden pier extending into the bay. The boards are gray with salt
+  and age, but sound underfoot. <ansi fg="cyan">The water</ansi> below is deep
+  green and cold, the bottom invisible. <ansi fg="itemname">Fishing lines</ansi>
+  drift off the railing in a dozen places — some active, some abandoned. An
+  <ansi fg="itemname">old bait box</ansi> sits at the pier's end, a worn tackle
+  setup beside it. Willy told you once that the legendary fish — the Legend, the
+  Mutant Carp — have been seen in these waters. It takes patience, he says.
+  Patience and the right bait and knowing when to let the line run. The beach
+  is back to the <ansi fg="exit">north</ansi>.
+mapsymbol: '~'
+maplegend: Fishing Pier
+biome: shore
+exits:
+  north:
+    roomid: 1825
+nouns:
+  water: >-
+    Deep water, almost black in the shadows under the pier, green-blue in
+    the open bay. The tide moves through in slow pulses. Below the surface,
+    shapes move — fish, mostly, you think. The depth is not something you
+    want to think too hard about. Willy has fished here for forty years
+    and says the bottom has never been properly mapped.
+  lines: >-
+    Lines in various states of attention. Willy's main line has a complex
+    lure of his own making. The others belong to regulars — Sam, who fishes
+    badly but enthusiastically, and a tourist who comes every summer with
+    better equipment than skill.
+  box: >-
+    An old wooden bait box, salt-stained, held together with wire and
+    optimism. Inside are worms, various lures, and a folded paper with
+    Willy's handwritten notes on local fish patterns. His handwriting is
+    crabbed and sea-stained. "Bait matters less than patience," he has
+    written at the top. Below that: "But good bait never hurt."
+spawninfo:
+- mobid: 323
+  message: Willy stands at the pier's end, line in the water, unhurried as the tide.
+  idlecommands:
+  - emote casts a line with a practiced flick of the wrist, the lure tracing a perfect arc.
+  - say You got to let it run when it bites. Most people pull too soon. That is why most people lose fish.
+  - emote mends a section of net with quick, expert stitches.
+  - say The sea keeps everything eventually. Best to borrow what you can before then.
+  - emote watches his line with the total attention of a man who has learned to be still.
+  - ''
+  respawnrate: 3 real minutes
+idlemessages:
+- 'A line goes taut and bends dramatically -- then the tension releases. Something got away.'
+- The pier creaks under your feet, the wood breathing with the tide below.
+- Pelicans circle overhead, dropping suddenly and hitting the water with remarkable accuracy.
+- The salt spray carries the cold of deep water. Willy seems not to notice.
+- A small silver fish breaks the surface for a moment and is gone, leaving rings.
+- The sound of the ocean is larger here at the end of the pier, surrounding rather than distant.

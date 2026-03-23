@@ -1,0 +1,57 @@
+roomid: 1706
+zone: Blonde on Blonde
+title: Stuck Inside of Mobile
+description: >-
+  A <ansi fg="cyan">surreal collage</ansi> of places that do not belong together,
+  all of them somehow here. An <ansi fg="itemname">alley</ansi> where Shakespeare
+  leans against the bricks in his Elizabethan collar, looking bored, muttering
+  something about Alabama. A <ansi fg="itemname">compass</ansi> on the ground
+  spins without settling, pointing at everything and nothing, stuck. The
+  <ansi fg="itemname">ragman</ansi> moves through the space arranging and
+  rearranging debris -- hubcaps, playing cards, a railroad spike, a postcard
+  from Memphis with no return address. Highway 61 passes through here, theoretically,
+  but the highway has been looped back on itself until it only leads to more
+  of this. The Memphis blues are everywhere, nowhere, the feeling of being
+  somewhere wrong while the right place keeps naming itself from a distance.
+  The neon sign overhead says <ansi fg="itemname">MOBILE</ansi> and flickers
+  and says nothing useful. The <ansi fg="exit">studio</ansi> is back to the
+  northeast.
+mapsymbol: 6
+maplegend: Stuck Inside of Mobile
+biome: land
+exits:
+  studio:
+    roomid: 1700
+    mapdirection: northeast
+    exitmessage: You find a direction that leads out of the collage, more or less.
+nouns:
+  compass: >-
+    A standard pocket compass, its needle spinning freely, finding no north
+    because north has wandered off. You can hold it level and it still just
+    goes around. The glass face is scratched. The cardinal points are worn
+    to illegibility. This is not a helpful object but it is an honest one.
+  alley: >-
+    The kind of alley where impossible encounters happen by dramatic necessity.
+    Shakespeare leans here because there is nowhere better for Shakespeare to
+    be. The bricks are standard American brick, nineteenth century, mortar
+    soft with age. The light comes from the wrong angle for the time of day.
+  sign: >-
+    The neon sign spells MOBILE in pink and green tubing, the B flickering
+    in and out. Below it someone has taped a handwritten sign that says
+    MEMPHIS with an arrow pointing left. The arrow is wrong. All arrows here
+    are wrong. This is the point.
+  postcard: >-
+    A postcard from Memphis, black and white, showing a street that could be
+    any Southern street. On the back, a single line in pencil: "The Memphis
+    blues again." No signature. No stamp. No return address. Just the diagnosis.
+spawninfo:
+- mobid: 281
+  message: The ragman shuffles in from somewhere, dragging a burlap sack of definitions.
+idlemessages:
+- 'The ragman rearranges his collection -- hubcap here, railroad spike there -- with the seriousness of an archivist.'
+- Shakespeare mutters something about the quality of mercy. Nobody responds.
+- 'The compass needle swings past north, hesitates, swings past again.'
+- A Memphis blues guitar phrase appears from nowhere, hangs in the air, and dissolves into the neon flicker.
+- 'The sign blinks: MOBILE. MOBILE. MOBI E. MOBILE. Still not Memphis.'
+- Highway 61 passes through here. You cannot reach it. You can see where it goes but not get there from here.
+- 'The ragman looks at you with ancient, knowing eyes. ''Well,'' he says. He does not finish the sentence.'

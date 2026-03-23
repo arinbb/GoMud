@@ -1,0 +1,18 @@
+itemid: 200
+name: Bada Bing matchbook
+namesimple: matchbook
+displayname: a <ansi fg="itemname">Bada Bing matchbook</ansi>
+description: >-
+  A small matchbook from the Bada Bing strip club in Lodi, New Jersey. The
+  cover is red with a simple design: a silhouette of a woman and the words
+  "BADA BING" in white. Below that, in small print, a phone number that
+  has probably been disconnected. The matchbook still has eleven matches.
+  It smells faintly of cigarette smoke and that particular chemical sweetness
+  that lives in clubs with no windows. When you hold it you think of red light
+  and bass and conversations that happen at plastic tables under the cover of
+  loud music. You think of all the things that get decided in rooms like that.
+  Then you think about something else.
+type: object
+subtype: usable
+uses: 0
+value: 50

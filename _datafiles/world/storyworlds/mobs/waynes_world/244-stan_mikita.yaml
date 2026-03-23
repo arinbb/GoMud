@@ -1,0 +1,26 @@
+mobid: 244
+zone: waynes_world
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote wipes the counter with a circular motion, even though the counter is clean."
+  - "say Coffee's fresh. Donuts are fresh. You're welcome."
+  - "emote slides a mug across the counter to someone who hasn't asked yet."
+  - "emote refills a cup without interrupting the conversation happening over it."
+  - "say You know what a donut shop is really for? Sitting. That's it. Just a place to sit."
+  - ""
+  - ""
+  - "emote nods slowly at something someone said, as if it contains wisdom."
+  - "say The glazed ones move fastest in the morning. By two o'clock it's all crullers."
+activitylevel: 35
+character:
+  name: Stan Mikita
+  description: >-
+    A broad-shouldered man behind the counter, moving with the practiced economy
+    of someone who has run this place long enough that the shop moves around him
+    rather than the other way around. He is not particularly effusive. He is
+    present. He knows everyone's order. He asks how you're doing and means it,
+    which is rarer than it sounds. His hockey gear photo on the wall looks down
+    with official approval at what his name has become.
+  raceid: 1
+  level: 4

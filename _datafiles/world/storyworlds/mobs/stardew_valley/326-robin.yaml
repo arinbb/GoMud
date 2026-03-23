@@ -1,0 +1,22 @@
+mobid: 326
+zone: stardew_valley
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote measures a plank of wood twice before marking it with a carpenter's pencil."
+  - "say Every building tells you what it wants to be if you listen while you work."
+  - "emote sketches quickly on paper and pins it to the blueprint board."
+  - "say The new coop design gives the animals more headroom. They seem happier. I think animals notice."
+  - "emote tests the weight of a hammer, swings it in a smooth arc, nods once."
+  - ""
+activitylevel: 25
+character:
+  name: Robin
+  description: >-
+    A skilled carpenter with red hair and paint-stained hands, Robin is
+    practical in the best possible way. She builds things that will last
+    and takes the time to make them right. She is warm and direct and
+    she will tell you exactly what something costs without apology. She
+    has been building this valley, literally, for twenty years.
+  raceid: 1
+  level: 12

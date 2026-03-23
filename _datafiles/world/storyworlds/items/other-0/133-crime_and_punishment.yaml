@@ -1,0 +1,18 @@
+itemid: 133
+name: Crime and Punishment
+namesimple: book
+displayname: a heavy Russian novel titled <ansi fg="itemname">Crime and Punishment</ansi>
+description: >-
+  A thick novel in a dark binding, the pages dense and slightly yellowed at
+  the edges. The author's name on the spine: F. Dostoevsky. 1866. You can
+  feel the weight of it before you open it -- not just the physical weight
+  but something else, some compressed pressure, as if the St. Petersburg
+  summer has been folded into the pages along with the guilt and the theory
+  and the small sounds of a dark staircase at night. The spine has been
+  cracked and re-read. Someone has underlined a passage near the middle
+  and written in the margin, in faded pencil: 'but is he ordinary or
+  extraordinary?' The question has not been answered.
+type: object
+subtype: usable
+uses: 0
+value: 0

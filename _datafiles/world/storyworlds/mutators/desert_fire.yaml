@@ -1,0 +1,10 @@
+mutatorid: desert-fire
+namemodifier:
+  behavior: append
+  text: (scorched)
+  colorpattern: red
+alertmodifier:
+  text: The heat is immense here. The air above the rock shimmers and burns. You are very small in a very large oven.
+  colorpattern: red
+decayrate: 15 minutes
+playerbuffids: []

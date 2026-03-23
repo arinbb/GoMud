@@ -1,0 +1,25 @@
+mobid: 384
+zone: ghostbusters
+hostile: true
+maxwander: 0
+activitylevel: 35
+idlecommands:
+- "emote dives through the nearest wall and resurfaces on the other side, trailing slime."
+- "emote consumes an entire tray of food in a single enthusiastic swallow."
+- "emote hovers near the food with wide, delighted eyes."
+- "emote releases a spray of ectoplasm in the general direction of everything."
+- "emote vibrates with the specific frequency of a ghost who has found a buffet."
+- ""
+character:
+  name: Slimer
+  description: >-
+    A roughly spherical entity of vivid translucent green, approximately the size
+    of a large man, with wide eyes and a mouth that takes up most of its face and
+    is almost always open. Slimer is the ghost of a man who loved food more than
+    anything in life and has continued this passion into death with the specific
+    dedication of an entity that has nothing else to occupy its time. It trails
+    slime constantly. Everything it touches becomes green and sticky. It is
+    simultaneously repulsive and oddly endearing in the way of things that are
+    very obviously enjoying themselves.
+  raceid: 5
+  level: 5

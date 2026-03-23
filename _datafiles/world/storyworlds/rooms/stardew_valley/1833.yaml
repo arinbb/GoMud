@@ -1,0 +1,45 @@
+roomid: 1833
+zone: Stardew Valley
+title: The Secret Woods
+description: >-
+  Beyond the fallen log, the forest deepens into something older and quieter.
+  Ancient <ansi fg="itemname">trees</ansi> here have never been cut. Their roots
+  push up through the earth in great arching ridges. <ansi
+  fg="itemname">Rare plants</ansi> grow that exist nowhere else in the valley —
+  fiddlehead ferns in summer, sweet pea in spring, the coveted red mushroom in
+  fall. In the deepest corner stands a <ansi fg="itemname">shrine</ansi> half
+  buried by roots, carved with a face that predates anyone's memory. The forest
+  back to the <ansi fg="exit">east</ansi> is the way home.
+mapsymbol: SW
+maplegend: Secret Woods
+biome: forest
+exits:
+  forest:
+    roomid: 1823
+    mapdirection: east
+nouns:
+  trees: >-
+    These trees are ancient in a way that ordinary forest trees are not.
+    The oldest ones have trunks too wide for three people to circle with
+    outstretched arms. Their bark is covered in thick moss and the marks
+    of past fires and storms. They have been here since before the valley
+    had a name. They will be here after.
+  plants: >-
+    The Secret Woods offer rare forageables in each season. Sweet peas
+    and fiddlehead ferns in spring. Red mushrooms and common mushrooms in
+    fall. Items of specific, particular value that require both knowledge
+    and effort to find. You cannot buy these. You can only come here and
+    look carefully.
+  shrine: >-
+    Half-buried by roots and time, a carved stone face looks up at the
+    canopy from the forest floor. The carving is simple but intentional:
+    heavy-browed, round-cheeked, with large oval eyes — not exactly human.
+    The Wizard knows what it is. He has not told anyone directly, but he
+    has been seen here, standing quietly, at certain hours of the year.
+idlemessages:
+- 'The old trees are quiet in a specific way: not the absence of sound but its opposite, a fullness.'
+- Something moves in the roots along the ground. Too deliberate to be an animal, too quiet to be a person.
+- The light that reaches the forest floor here is filtered through so many layers of leaf it is almost green.
+- A fiddlehead fern slowly unfurls from between two roots, unhurried, completing its season in its own time.
+- The shrine in the corner seems to watch without moving. You do not feel unwelcome. Exactly.
+- 'The smell here is ancient: deep soil, old wood, the mineral trace of stone that has never seen rain.'

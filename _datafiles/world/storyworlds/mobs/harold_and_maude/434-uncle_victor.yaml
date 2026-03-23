@@ -1,0 +1,23 @@
+mobid: 434
+zone: harold_and_maude
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote pivots smartly to face the largest map and studies it with military focus."
+  - ""
+  - "emote taps a pin on the Korea map twice with one finger."
+  - "say The situation in this sector requires continued monitoring."
+  - ""
+  - "emote adjusts the prosthetic arm in its bracket to a precise angle."
+activitylevel: 15
+character:
+  name: Uncle Victor
+  description: >-
+    A man in his early sixties who carries himself with the ramrod posture
+    of a career military officer, which he is. He wears his uniform even at
+    home, even at dinner, even when there is no occasion. His right arm is
+    prosthetic -- he lost the original somewhere he does not discuss. He has
+    one of those faces that suggest they have never been uncertain about anything
+    for long. He has plans for Harold. The plans involve the military.
+  raceid: 1
+  level: 6

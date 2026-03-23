@@ -1,0 +1,26 @@
+mobid: 389
+zone: ghostbusters
+hostile: true
+maxwander: 0
+activitylevel: 20
+idlecommands:
+- "emote takes one enormous step that shakes the ground for three blocks."
+- "emote smiles down at everything with the serene goodwill of a mascot who has been given life."
+- "emote crushes a parked car beneath one enormous foot, gently, almost apologetically."
+- "emote sprays marshmallow in a wide arc with each step."
+- "emote tilts its enormous head to look at something far below and finds it interesting."
+- ""
+character:
+  name: Stay Puft Marshmallow Man
+  description: >-
+    One hundred and twelve feet of cheerful white marshmallow in a sailor suit.
+    The Stay Puft Marshmallow Man is the physical manifestation of Ray Stantz's
+    childhood comfort object, given form by dimensional energy and the specific
+    metaphysics of Gozer's arrival protocol. It has a round, smiling face with
+    rosy cheeks, a blue sailor collar, and a hat. It is not malevolent. It is not
+    trying to destroy things. It is simply walking, and walking at this scale
+    involves consequences. Each footfall shakes buildings for blocks. Marshmallow
+    rains from its passage. The smile does not waver. This is somehow the worst
+    part.
+  raceid: 15
+  level: 20

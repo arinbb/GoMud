@@ -1,0 +1,26 @@
+mobid: 423
+zone: seinfeld
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote enters dramatically from the direction of the hallway, already in the middle of something."
+  - "say Jerry. JERRY. Listen. I have an idea."
+  - "emote opens the refrigerator and takes something out. It belongs to Jerry."
+  - "emote falls over something and catches himself on the counter without apparent concern."
+  - "emote proposes a scheme by drawing in the air with one finger."
+  - ''
+  - "say Here's the thing. Here's the THING."
+  - "emote fidgets with something on the counter, examining it with intense focus."
+activitylevel: 35
+character:
+  name: Kramer
+  description: >-
+    A tall man with wild, upswept hair that appears to have been styled by
+    a strong wind from below. He moves in a loose, physical way -- sliding,
+    leaning, pivoting -- as if the room is slightly tilted in his direction.
+    His face is expressive with the uninhibited expressiveness of a man who
+    has never learned to moderate his reactions. He is wearing something that
+    almost makes sense as an outfit. His eyes are bright with the current
+    scheme, which is always the current scheme.
+  raceid: 1
+  level: 7

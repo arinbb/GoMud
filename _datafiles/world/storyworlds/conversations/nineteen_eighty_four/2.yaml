@@ -1,0 +1,24 @@
+-
+  Supported:
+    "syme": ["winston smith"]
+  Conversation:
+    - ["#1 say The Eleventh Edition will be the last. Do you realize that?", "#1 emote taps the dictionary with reverent fingers."]
+    - ["#2 emote eats the grey stew without tasting it.", "#2 say The last?"]
+    - ["#1 say The last necessary one. When it is complete, Oldspeak will be dead within a generation.", "#1 say Everything that can be thought in Oldspeak can still be thought. But only crudely. Without precision."]
+    - ["#2 say And you find that... satisfying?", "#2 emote looks at Syme carefully."]
+    - ["#1 say Beautiful! Not satisfying. Beautiful.", "#1 emote spreads his hands as if displaying something magnificent.", "#1 say The whole architecture of thought, simplified to its essential structure."]
+    - ["#2 say What happens to Shakespeare?", "#2 emote says this quietly."]
+    - ["#1 say Shakespeare will be translated. Then the original will be destroyed. Then the translation will be destroyed. Because by then the translation will be untranslatable into Newspeak.", "#1 say Don't you see? The whole project completes itself."]
+    - ["#2 emote looks at the memory hole in the corner of the canteen.", "#2 say Yes. I see."]
+-
+  Supported:
+    "winston smith": ["syme"]
+  Conversation:
+    - ["#1 say I noticed you weren't at the Two Minutes Hate last week."]
+    - ["#2 emote stiffens slightly. Then relaxes.", "#2 say I was working. The dictionary doesn't pause for Hate."]
+    - ["#1 emote says nothing. He eats his stew.", "#1 say The word for that used to be different, didn't it? In Oldspeak."]
+    - ["#2 say The word for what?", "#2 emote looks at you with his too-direct eyes."]
+    - ["#1 say Absence. Without explanation.", "#1 say In Oldspeak there are several words for gradations of that."]
+    - ["#2 say That is precisely why we are eliminating them.", "#2 say One word is enough. Absence is absence."]
+    - ["#1 emote nods slowly.", "#1 say And when there is only one word..."]
+    - ["#2 emote finishes the sentence for him:", "#2 say There is only one thought. Yes. That is the point."]

@@ -1,0 +1,46 @@
+roomid: 1909
+zone: The Little Prince
+title: The Rose Garden
+description: >-
+  Five thousand roses. They bloom in every direction, row upon row, each
+  one the same shade of red as the rose on B-612. Each with four petals.
+  Each with four thorns. Each demanding, beautiful, slightly vain, fragrant.
+  Each exactly like the others. From here, the <ansi fg="itemname">roses</ansi>
+  stretch to the garden walls and beyond -- there are so many that the air
+  is thick with their scent, almost solid with it, a presence rather than
+  a smell. When the Little Prince first saw this garden, he felt very
+  unhappy. He had thought he owned the only rose in the universe. He had
+  thought his rose was unique. He lay in the grass among five thousand roses
+  and wept. It was only later, when the Fox explained, that he understood:
+  his rose was not unique because she was rare. She was unique because he
+  had <ansi fg="itemname">tended</ansi> her. Time given is what makes
+  something yours. The <ansi fg="exit">desert</ansi> is south.
+mapsymbol: R
+maplegend: The Rose Garden
+biome: land
+exits:
+  desert:
+    roomid: 1900
+    mapdirection: south
+nouns:
+  roses: >-
+    Five thousand roses, each one identical to the next, each one identical
+    to the rose in the glass dome on B-612. They are beautiful and they are
+    everywhere and that is the problem and also, eventually, the solution.
+    Because his rose is not one of these. His rose knows him. These roses
+    know no one. Beauty without a relationship is just beauty. His rose,
+    difficult and demanding and fragile and beloved, is something else.
+  tended: >-
+    Tended: watered, sheltered under a glass dome each night, listened to
+    when she complained, protected from the wind, admired when she opened.
+    That is what tending is. It is time. It is attention. It is the specific
+    weight of caring about one thing among all the similar things that exist.
+    It does not make the thing more beautiful. It makes it more yours.
+idlemessages:
+- The roses sway all at once, a single motion, in a wind that passes through without stopping.
+- 'The scent is enormous: rose and rose and rose, each petal releasing the same fragrance, together becoming something almost unbearable.'
+- A bee moves through the rows, indifferent to the question of uniqueness. The bee has its own concerns.
+- 'Five thousand roses, each one saying nothing. Each one saying: I am here. I am beautiful. I am like all the others.'
+- You count the rows. You stop counting. You sit down. You think about something you have tended.
+- The light falls on the petals and each one catches it the same way. The sameness is peaceful and devastating at once.
+- 'A single petal falls: indistinguishable from a thousand other fallen petals. It was, nonetheless, from one specific rose.'

@@ -1,0 +1,59 @@
+roomid: 1884
+zone: The Monkey Wrench Gang
+title: The Billboard
+description: >-
+  A <ansi fg="8">massive billboard</ansi> stands at the edge of the mesa, thirty feet
+  high, its face turned toward the highway below. It advertises a <ansi fg="8">condominium
+  development</ansi> — <ansi fg="itemname">Sun-Del Estates</ansi> — with painted scenes
+  of swimming pools and golf courses and happy people who have never looked too hard at
+  anything. The billboard's metal frame is sunk in concrete footings. Its surface is
+  <ansi fg="yellow">sun-bleached</ansi> and beginning to peel, but the essential insult
+  of it remains intact: the promise of suburban civilization imposed on a landscape that
+  never asked for it. <ansi fg="mobname">Doc Sarvis</ansi> stands before the billboard
+  with the calm professional assessment of a man who has done this before, a <ansi fg="itemname">red
+  plastic gasoline can</ansi> at his feet, a book of matches in his hand. He is quoting
+  Thoreau to himself. The view from here, if you could ignore the billboard, would be
+  extraordinary — <ansi fg="red">red canyon</ansi> dropping away to the south, the
+  <ansi fg="cyan">river</ansi> a silver thread in the distance, the sky enormous and
+  indifferent. To the <ansi fg="exit">west</ansi>, the dirt track leads back to the
+  desert road.
+mapsymbol: X
+maplegend: The Billboard
+biome: desert
+exits:
+  west:
+    roomid: 1883
+nouns:
+  billboard: >-
+    Sun-Del Estates: Your Dream Home in the Desert Southwest! The painted happy couple
+    in the pool have the expressions of people who have never been uncomfortable,
+    never been cold or hot or thirsty or afraid. The billboard has been here three
+    years. In another few minutes, it will have been here for the last time.
+  gasoline: >-
+    A red plastic one-gallon gasoline can, about half full, smelling of petroleum
+    and possibility. Doc Sarvis has used this particular can on four previous
+    billboards in three states. He keeps it in the back of the Land Rover under
+    a blanket, next to his copy of Walden.
+  doc: >-
+    The doctor stands before the billboard with a surgeon's detachment, calculating
+    angles, assessing the structure, planning the operation. He has excellent
+    credentials: medical school, boards, a practice in Albuquerque. He also has
+    a deep conviction that aesthetic crimes require aesthetic punishment. Billboards
+    are, in his professional opinion, a disease of the landscape.
+  view: >-
+    If you look past the billboard, the view is cathedral. Red canyon walls drop
+    away for a thousand feet. The river, far below, catches the afternoon sun.
+    Mesa and butte and distant peaks crowd the horizon. It is the kind of view
+    that makes the billboard even more offensive than it would otherwise be.
+spawninfo:
+- mobid: 362
+  message: 'Dr. Sarvis surveys the billboard with calm surgical attention.'
+  respawnrate: 5 real minutes
+idlemessages:
+- Doc Sarvis walks slowly around the base of the billboard, examining the metal framework with professional interest.
+- The gasoline can catches a glint of afternoon sun, the smell of petroleum sharp in the desert air.
+- Doc strikes a match, watches it burn to his fingers, then shakes it out. He is still deciding. He is always deciding.
+- 'The billboard grins down at the desert: a swimming pool, a fairway, smiling strangers. None of it belongs here.'
+- A hawk circles over the canyon below, riding a thermal, looking down at everything with equal indifference.
+- Doc opens his copy of Walden, reads a passage to himself, closes it again, and picks up the gasoline can.
+- The peeling paint on the billboard lifts slightly in the canyon breeze, revealing the sun-bleached board beneath.

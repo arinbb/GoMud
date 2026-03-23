@@ -1,0 +1,8 @@
+mutatorid: seinfeld-nothing
+namemodifier:
+  behavior: append
+  text: (mundane)
+  colorpattern: none
+alertmodifier:
+  text: Nothing in particular is happening, which is to say everything is happening. This is the Upper West Side.
+  colorpattern: none

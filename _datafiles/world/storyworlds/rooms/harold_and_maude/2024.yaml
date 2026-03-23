@@ -1,0 +1,67 @@
+roomid: 2024
+zone: Harold and Maude
+title: Harolds Bedroom
+description: >-
+  A bedroom that has been arranged for <ansi fg="8">death</ansi> many times.
+  The walls are a tasteful grey that Harold has never bothered to repaint.
+  A <ansi fg="itemname">noose</ansi> hangs from the ceiling beam like a
+  piece of modernist art, its knot careful and practiced. Beneath the window,
+  a <ansi fg="itemname">chaise longue</ansi> bears a spectacular arrangement
+  of <ansi fg="10">fake blood</ansi> -- crimson artistry, very convincing,
+  positioned for maximum effect from the doorway. The <ansi fg="itemname">desk</ansi>
+  holds notes written in Harold's elegant hand, beside a collection of
+  small <ansi fg="itemname">props</ansi>: theatrical daggers, wrist scarves,
+  a bottle of stage blood. A <ansi fg="itemname">window</ansi> looks out
+  over the driveway below, where the hearse gleams in the California sun.
+  Back to the <ansi fg="exit">west</ansi> is the mansion.
+mapsymbol: B
+maplegend: Harolds Bedroom
+biome: house
+exits:
+  west:
+    roomid: 2023
+    exitmessage: You descend the main staircase back to the mansion foyer.
+nouns:
+  noose: >-
+    A carefully tied noose of braided rope, hung at exactly the right
+    height. The knot is textbook perfect -- Harold has clearly researched
+    this. Up close you can see it is theatrical rope, softer than it looks,
+    chosen for effect rather than function. He has hung it so it catches
+    the afternoon light beautifully.
+  blood: >-
+    Stage blood of professional quality, spread across the chaise longue
+    with considerable artistry. Harold has an eye for this sort of thing.
+    The splatter pattern is dramatic and convincing. His mother walked past
+    it last Tuesday without looking up from her appointment book.
+  desk: >-
+    Harold's desk is orderly in the way of someone who thinks carefully.
+    Notes on the desk concern angles, lighting, timing. He is staging
+    something -- or many things, one after another, waiting for someone
+    to notice. So far, very few people have.
+  props: >-
+    A collection of theatrical supplies, each one chosen with care: a
+    rubber dagger with a spring-loaded blade, theatrical wrist scarves
+    in arterial red, a bulb of stage blood for good measure. These are
+    Harold's tools. He is very good with them.
+  window: >-
+    The window looks down over the curving driveway where the hearse is
+    parked -- Harold's car, which his mother disapproves of enormously.
+    From here you can see how beautiful it is: long, black, impeccably
+    maintained. A car for someone who takes death seriously. Which Harold does.
+  chaise: >-
+    An elegant chaise longue now dramatically draped in fake blood. The
+    furniture itself cost more than most people make in a month. Harold
+    chose this piece specifically -- the contrast pleased him.
+spawninfo:
+- mobid: 430
+  message: "<ansi fg=\"8\">Harold is arranging something near the chaise longue with the focused attention of a craftsman, adjusting the angle of the fake blood spatter with two fingers.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- Harold makes a small adjustment to the noose, tilting his head critically as if evaluating a painting.
+- The afternoon light falls through the window at exactly the angle Harold prefers for this sort of thing.
+- Harold refers to a small notebook and makes a note, his handwriting precise and unhurried.
+- The fake blood on the chaise longue catches the light and glistens convincingly.
+- Harold holds up the rubber dagger, squints at it, and sets it back down two inches to the left.
+- The room smells of theatrical blood -- slightly sweet, slightly chemical, entirely Harold.
+- Harold pauses by the window, looking down at the hearse, and seems to be calculating something.
+- Everything here has been arranged with enormous care by someone nobody arranges anything for.

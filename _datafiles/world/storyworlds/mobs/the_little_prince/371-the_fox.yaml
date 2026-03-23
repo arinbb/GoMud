@@ -1,0 +1,16 @@
+mobid: 371
+zone: the_little_prince
+hostile: false
+maxwander: 0
+activitylevel: 20
+character:
+  name: The Fox
+  description: >-
+    A fox the colour of wheat in September light, with a tail that moves
+    in a way that is both cautious and considering. His eyes are the specific
+    amber of something that has been watching you for longer than you realized.
+    He is beautiful and careful. He is not yet tame. He is the closest he has
+    ever been to tame, which is still some distance away, but less than it was
+    yesterday.
+  raceid: 17
+  level: 5

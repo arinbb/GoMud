@@ -1,0 +1,59 @@
+roomid: 1501
+zone: Goodnight Moon
+title: The Cow Jumping Over the Moon
+description: >-
+  You have stepped inside the painting on the north wall and the room is
+  entirely <ansi fg="15">white</ansi> and <ansi fg="blue">blue</ansi> --
+  the blue of deep night, the white of the full moon enormous and close
+  overhead. The ground here is not ground but suggestion: dark and grassy
+  and very far below. You are suspended in the moment of the leap, the
+  instant between earth and moon, the arc of pure momentum. The
+  <ansi fg="mobname">cow</ansi> is here, caught in the eternal moment of
+  her flight, her eyes calm and dark, her hooves pointed at nothing. She
+  does not seem surprised to see you. The <ansi fg="itemname">moon</ansi>
+  above is so close you could reach up and press your palm against its cool
+  white surface. A few <ansi fg="itemname">stars</ansi> have come out to
+  watch. The whole scene is perfectly, permanently still, held in the moment
+  before landing, the moment that will never have to end because there is
+  no next page here, only this one, only the leap, only the moon.
+mapsymbol: C
+maplegend: The Cow Over the Moon
+biome: cliffs
+exits:
+  south:
+    roomid: 1500
+    exitmessage: You step back out of the painting, through the frame, and into the great green room.
+nouns:
+  moon: >-
+    So close here. A white disk of absolute size, filling the sky, filling
+    your vision. It is not cold. It is not warm. It is simply light --
+    pure, sourceless, the color of milk and silence. You could touch it
+    from here. You could press your hand against its face. Something in you
+    wants to, very much.
+  stars: >-
+    A few of them, scattered in the deep blue at the moon's edges. They are
+    very bright and very still. Not twinkling -- that is the air, the
+    atmosphere, the distance. Here, inside the painting, they simply glow
+    with a steady, reliable light. They have been there a very long time.
+    They plan to remain.
+spawninfo:
+- mobid: 232
+  message: The cow arcs gracefully across the face of the moon, as cows in pictures always do.
+  respawnrate: 4 real minutes
+  idlecommands:
+  - "emote arcs through the blue air, hooves tucked, entirely serene."
+  - ""
+  - "say moo"
+  - ""
+  - "emote hangs against the face of the moon for a long, perfect moment."
+  - ""
+  - "emote drifts downward in a slow, dreaming descent, only to rise again."
+  - ""
+idlemessages:
+- The moon fills the sky. You are inside a picture. The picture is fine with this.
+- A star blinks. Or maybe you did. The cow sails past the moon in her eternal arc.
+- The deep blue of this sky is the color of the page it was painted on. It goes on forever.
+- You feel weightless here, suspended in the pause between one thing and the next.
+- The cow moos softly. You could swear the stars lean in to listen.
+- There is no wind here, inside the painting. There is only the fact of the leap, held forever.
+- The moon above radiates something -- not warmth exactly, but a quality like warmth. Like being seen.

@@ -1,0 +1,18 @@
+-
+  Supported:
+    "wayne campbell": ["*"]
+  Conversation:
+    - ["#1 emote turns to face you directly. His eyes are knowing."]
+    - ["#1 say Hi. I know you're there. I've always known."]
+    - ["#1 emote does the gun-fingers."]
+    - ["#1 say Welcome to Wayne's World. Party time. Excellent."]
+    - ["#1 say We'll be right back after these messages. Except there are no messages. It's cable access. EXCELLENT."]
+-
+  Supported:
+    "wayne campbell": ["*"]
+  Conversation:
+    - ["#1 emote leans toward you conspiratorially."]
+    - ["#1 say You know what the secret of Wayne's World is? We mean it. Every word. We mean ALL of it."]
+    - ["#1 say People think enthusiasm is uncool. I think people who think enthusiasm is uncool are missing the entire point of being alive."]
+    - ["#1 emote straightens up. The fourth wall resumes."]
+    - ["#1 say SCHWING."]

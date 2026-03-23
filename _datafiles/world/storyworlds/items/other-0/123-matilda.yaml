@@ -1,0 +1,15 @@
+itemid: 123
+name: Matilda
+namesimple: matilda
+displayname: a copy of <ansi fg="itemname">Matilda</ansi>
+description: >-
+  A colorful paperback with a cover illustration of a tiny girl with enormous
+  dark eyes sitting in an oversized armchair, surrounded by towers of books.
+  The title "MATILDA" is printed in bold, playful letters above the author's
+  name. The book is surprisingly light — meant for children — but something
+  about it crackles with hidden energy. When you hold it close, you smell
+  cheap hair dye, chalk dust, and wildflowers, all at once.
+type: object
+subtype: usable
+uses: 0
+value: 0

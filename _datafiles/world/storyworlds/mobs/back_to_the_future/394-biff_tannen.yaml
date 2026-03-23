@@ -1,0 +1,30 @@
+mobid: 394
+zone: back_to_the_future
+hostile: true
+maxwander: 0
+hates:
+  - human
+angrycommands:
+  - "say Why don't you make like a tree and get outta here?"
+  - "emote cracks his knuckles with deliberate menace."
+  - "say Make it zero."
+idlecommands:
+  - "emote socks a fist into his palm and grins."
+  - "say Make like a tree and leave."
+  - "emote polishes the hood of the Ford with a chamois cloth."
+  - "say You got a real problem with your future, pal."
+  - "emote twists someone's collar without looking at them."
+  - ""
+activitylevel: 25
+character:
+  name: Biff Tannen
+  description: >-
+    A big, thick-necked boy of eighteen who has learned that physical
+    size is a form of argument and has been winning arguments since
+    the fifth grade. His letterman jacket is from a school that probably
+    regrets giving it to him. He mangles idioms with total confidence.
+    He is going to be exactly this way for the rest of his life unless
+    someone intervenes.
+  raceid: 1
+  level: 10
+  alignment: -50

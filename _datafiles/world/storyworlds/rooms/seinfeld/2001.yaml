@@ -1,0 +1,49 @@
+roomid: 2001
+zone: Seinfeld
+title: The Hallway
+description: >-
+  The fourth-floor hallway of 129 West 81st Street -- <ansi fg="8">apartment 5A</ansi>
+  is to the west, the stairs descend to the <ansi fg="exit">lobby</ansi> below.
+  A row of <ansi fg="itemname">mailboxes</ansi> lines one wall near the stairwell.
+  The hallway carpet is the particular shade of beige that New York apartment hallways
+  have been since approximately 1974 and will remain until the heat death of the
+  universe. The <ansi fg="itemname">door to 5B</ansi> is directly across the hall --
+  Kramers apartment, distinguished by the faint sounds of elaborate projects and
+  occasional falling objects from within. There is a faint smell of other people's
+  cooking. This hallway has witnessed more drama than most courtrooms.
+mapsymbol: H
+maplegend: The Hallway
+biome: house
+exits:
+  west:
+    roomid: 2000
+  down:
+    roomid: 2004
+nouns:
+  mailboxes: >-
+    A bank of metal mailboxes, each with a small nameplate slot. Seinfeld, J.
+    is one of them. The slot is crammed with what appears to be mostly
+    catalogs and something from the IRS that has been there for three weeks.
+  door: >-
+    The door to apartment 5B. Kramers door. It is, right now, closed. This
+    is unusual. Normally it opens abruptly from the inside at speed, delivering
+    Kramer into the hallway mid-slide, already speaking. The silence from
+    within is therefore somehow louder than any door opening would be.
+  carpet: >-
+    Beige. The platonic ideal of hallway beige. It has seen things. It does
+    not speak of them. Every apartment building hallway in New York has this
+    carpet. It is a kind of urban constant, like pigeons and the smell of
+    the subway and the certainty that something is always slightly wrong.
+spawninfo:
+- mobid: 425
+  message: '<ansi fg="8">Newman materializes in the hallway with the slow inevitability of something you hoped would not happen. He regards you with an expression of deep, considered contempt.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- From behind the door of 5B comes a sound like furniture being rearranged for purposes that have not been explained.
+- The elevator at the end of the hall dings. Whoever is on it is not coming to this floor.
+- A neighbor passes through without making eye contact. This is correct New York behavior.
+- The mailboxes rattle faintly. The building makes this noise every afternoon. Nobody knows why.
+- Somewhere above, someone is doing something involving a mop. The sound carries.
+- The hallway light flickers for a half-second, considers going out, decides against it.
+- A faint smell of garlic drifts from under one of the apartment doors. Not Jerrys. The other direction.
+- The door to 5B is very quiet. This is somehow more unsettling than noise would be.

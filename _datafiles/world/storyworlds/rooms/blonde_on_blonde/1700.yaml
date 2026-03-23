@@ -1,0 +1,107 @@
+roomid: 1700
+zone: Blonde on Blonde
+title: Columbia Studio A, Nashville
+description: >-
+  February 1966. Nashville, Tennessee. The studio is a controlled chaos of
+  <ansi fg="itemname">microphone stands</ansi> and tangled <ansi fg="itemname">cables</ansi>,
+  cigarette-scarred music stands stacked with <ansi fg="itemname">lyric sheets</ansi>
+  in Dylan's cramped hand. A <ansi fg="itemname">grand piano</ansi> sits open,
+  its bench scattered with chord charts. Through the control room glass, a
+  <ansi fg="itemname">mixing board</ansi> of chrome and bakelite catches the
+  fluorescent light. This is where fourteen songs were recorded, sometimes three
+  or four in a single night, musicians following chord changes they had never
+  heard, finding the groove by instinct and coffee and whiskey. The Nashville
+  session players -- the best in the world -- are somewhere nearby, tuning
+  instruments, waiting for the next take. The air carries the weight of
+  something great being made without anyone entirely knowing it.
+mapsymbol: S
+maplegend: Columbia Studio A
+biome: house
+exits:
+  track1:
+    roomid: 1701
+    mapdirection: north
+    exitmessage: The brass band starts up before you even reach the door.
+  track2:
+    roomid: 1702
+    mapdirection: northeast
+    exitmessage: The slow blues pulls you down like gravity.
+  track3:
+    roomid: 1703
+    mapdirection: east
+    exitmessage: A candle flame bends as you pass through.
+  track4:
+    roomid: 1704
+    mapdirection: southeast
+    exitmessage: The cold hits you before the door opens.
+  track5:
+    roomid: 1705
+    mapdirection: south
+    exitmessage: The doorbell rings, and it sounds like desire.
+  track6:
+    roomid: 1706
+    mapdirection: southwest
+    exitmessage: Something surreal begins immediately.
+  track7:
+    roomid: 1707
+    mapdirection: west
+    exitmessage: Leopard print assaults your eyes.
+  track8:
+    roomid: 1708
+    mapdirection: northwest
+    exitmessage: The ribbons are already broken.
+  north:
+    roomid: 1709
+    exitmessage: The road forks. The judge watches.
+  east:
+    roomid: 1710
+    exitmessage: You approach the door. It does not open.
+  south:
+    roomid: 1711
+    exitmessage: The cell door swings on its hinge.
+  west:
+    roomid: 1712
+    exitmessage: The staircase begins to spiral.
+  up:
+    roomid: 1713
+    exitmessage: Guitar feedback rises from below.
+  down:
+    roomid: 1714
+    exitmessage: The warehouse opens beneath you, vast and pale.
+nouns:
+  piano: >-
+    A Steinway grand, lid raised, the felt hammers worn from use. Someone has
+    left a coffee cup on the lid and nobody has moved it. The bench holds three
+    pages of chord charts in different handwriting. Middle C has a tiny piece of
+    tape on it with the number 3 written in red marker.
+  board: >-
+    The control room mixing board, visible through double-pane glass. Chrome
+    faders, bakelite knobs, an array of inputs wired to more microphones than
+    you can count. The engineer moves behind it like a man adjusting a ship.
+    Everything going in comes out as music. It is alchemy, every take.
+  sheets: >-
+    Dylan's lyric sheets, dozens of them, scattered across the music stands and
+    the piano bench and the floor. The handwriting is fast and private, words
+    crossed out and written above and crossed out again. One sheet just says
+    JOHANNA in capital letters, six times, followed by a question mark.
+  microphones: >-
+    Shure SM57s, Neumann U47s, a ribbon mic on a tall stand facing the grand
+    piano. Each one wired with purpose. The placement took an hour. The takes
+    take three minutes. That is how it works.
+  cables: >-
+    A spaghetti of XLR cables, instrument cables, speaker cables in a dozen
+    colors, taped to the floor in paths that only the session players understand.
+    Follow the wrong one and you unplug something important.
+spawninfo:
+- mobid: 280
+  message: Dylan glances up from a lyric sheet, pencil behind one ear.
+- mobid: 285
+  message: Al Kooper sits at the organ, adjusting the Leslie speaker speed with one careful finger.
+idlemessages:
+- 'A take ends. Silence. Then Dylan says: ''Again.'' They play it again.'
+- The session players tune between takes -- pedal steel, bass, piano, drums finding their center.
+- Someone in the control room laughs at something. The laughter is muffled by the glass.
+- A lyric sheet slides off a music stand and drifts to the floor. Nobody picks it up.
+- 'The organ holds a chord while Dylan scribbles a word on his sleeve, crosses it out, writes something else.'
+- The tape rolls. The red light goes on. Everything in the room changes slightly.
+- Al Kooper adjusts the Leslie speed on the organ and the sound blooms outward like weather.

@@ -1,0 +1,16 @@
+name: Blonde on Blonde
+roomid: 1700
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: house
+mutators:
+- mutatorid: blonde-on-blonde
+musicfile: blues_shuffle
+idlemessages:
+- 'A harmonica wails somewhere in the middle distance -- not a song, just a cry, just breath through metal.'
+- The smell of cigarette smoke and rye whiskey and mimeograph ink seeps through the walls, a 1966 that refuses to end.
+- 'Time moves differently here -- measured in chord changes and cigarettes, not minutes.'
+- Something Dylan said last night still hangs in the air, and no one can quite parse it.
+- The organ holds a note past the point of comfort, then holds it a little longer.
+- 'Outside these rooms, the decade is tipping -- the war, the marches, the whole crumbling thing. In here: music.'

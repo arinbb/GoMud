@@ -1,0 +1,38 @@
+-
+  Supported:
+    "frank costanza": ["estelle costanza"]
+  Conversation:
+    - ["#1 say I'm telling you, the thermostat is set wrong."]
+    - ["#2 say The thermostat is fine, Frank."]
+    - ["#1 say It is not fine. I am cold. If I am cold, the thermostat is wrong."]
+    - ["#2 say Put on a sweater."]
+    - ["#1 emote stares at her"]
+    - ["#1 say A sweater. You want me to wear a sweater in my own house."]
+    - ["#2 emote continues what she is doing, unimpressed"]
+    - ["#1 say SERENITY NOW!"]
+-
+  Supported:
+    "frank costanza": ["estelle costanza"]
+  Conversation:
+    - ["#2 say George called."]
+    - ["#1 say What does he want."]
+    - ["#2 say He said he might come for dinner."]
+    - ["#1 say He might come. He might. Not he will come. He might."]
+    - ["#2 say Frank."]
+    - ["#1 say I'm just saying. He might. At forty years old, my son might come to dinner."]
+    - ["#2 say He's very busy."]
+    - ["#1 emote makes a sound that is not agreement"]
+    - ["#1 say He has a lot of problems with me. And now I'm going to tell him about them."]
+-
+  Supported:
+    "frank costanza": ["estelle costanza"]
+  Conversation:
+    - ["#1 say The pole needs to be in the center of the room."]
+    - ["#2 say It's in the corner, Frank."]
+    - ["#1 say The center of the room gives it authority. The corner is a storage position."]
+    - ["#2 say It's a pole. It doesn't have authority."]
+    - ["#1 emote 's eyes narrow"]
+    - ["#1 say It has the authority I give it. I invented it. I determine its authority."]
+    - ["#2 emote sighs with the patience of a woman who has been sighing for forty years"]
+    - ["#2 say Fine. Move the pole."]
+    - ["#1 say I will move the pole tomorrow. I want to finish this first."]

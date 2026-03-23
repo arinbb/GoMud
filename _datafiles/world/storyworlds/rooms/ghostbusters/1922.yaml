@@ -1,0 +1,65 @@
+roomid: 1922
+zone: Ghostbusters
+title: The Firehouse Upper Floor
+description: >-
+  The upper floor of the firehouse has been converted into the most chaotic
+  functional laboratory in New York City. <ansi fg="itemname">PKE meters</ansi>
+  of various sizes crowd every horizontal surface, their antennae folded or
+  extended. A long workbench holds <ansi fg="itemname">Egon's experiments</ansi>:
+  petri dishes of ectoplasm samples, oscilloscope readouts, and a sealed container
+  labeled "SPORES, MOLDS AND FUNGUS -- DO NOT OPEN -- E.S." Proton packs hang on
+  charging racks along one wall. A large <ansi fg="itemname">chalkboard</ansi>
+  covers an entire wall, covered in diagrams of psychokinetic energy fields and
+  a graph showing PKE accumulation over the past eighteen months -- the line goes
+  up very steeply toward the right side. The <ansi fg="itemname">fire pole</ansi>
+  in the center provides rapid descent to the firehouse floor below.
+mapsymbol: L
+maplegend: Lab
+biome: house
+exits:
+  down:
+    roomid: 1920
+    exitmessage: You grab the fire pole and slide down to the ground floor.
+nouns:
+  pke: >-
+    A PKE meter -- Psychokinetic Energy meter -- is a handheld device that measures
+    spectral disturbance in the local environment. This one has a green LED display
+    and two articulated antennae that rise when activity is detected. It is currently
+    reading 7.3 and climbing. The instructions say readings above 5.0 should be
+    reported immediately. There is a sticky note on the back that reads "7.3 is fine.
+    Probably. -- E.S."
+  experiments: >-
+    Egon's experiments are meticulous. Row upon row of ectoplasm samples in sealed
+    containers, each one dated and labeled. A spectral frequency analyzer. Something
+    that appears to be a ghost communication device -- two tin cans connected not by
+    string but by a wire running through a PKE emitter. There is no indication it
+    has ever received a message. There is every indication Egon would like it to.
+  chalkboard: >-
+    The chalkboard is covered in dense equations in Egon's handwriting. At the top,
+    underlined three times: "PSYCHOKINETIC ENERGY ACCUMULATION -- CRISIS THRESHOLD."
+    The graph shows normal background levels from 1970 to 1983, then a spike beginning
+    in 1984 that goes near-vertical. Someone has added a small drawing of a marshmallow
+    man at the top of the spike. The drawing is not Egon's.
+  spores: >-
+    The sealed container labeled "SPORES, MOLDS AND FUNGUS" has a handwritten note
+    taped to the lid: "DO NOT OPEN. DO NOT SMELL. DO NOT LOOK AT DIRECTLY. DO NOT
+    ASK WHY. -- SPENGLER." It vibrates faintly at a frequency that feels deeply
+    personal.
+spawninfo:
+- mobid: 382
+  maxwander: 0
+  respawnrate: 5 real minutes
+  idlecommands:
+  - "emote takes a careful reading with a PKE meter, notes the result without expression."
+  - "say Interesting."
+  - "emote adjusts something on the containment unit diagram."
+  - "emote peers at a petri dish with the focus of a man who has found religion in ectoplasm."
+  - ""
+  - ""
+idlemessages:
+- One of the PKE meters on the bench begins to chirp, reaches a peak, then subsides. Egon does not look up.
+- The oscilloscope displays a waveform that pulses in a pattern disturbingly close to a heartbeat.
+- A proton pack on the charging rack emits a low hum and a blue spark. This is normal.
+- The spores, molds and fungus container shifts three inches to the left on its own. Nobody acknowledges this.
+- 'Scrawled on a Post-It stuck to the chalkboard: "VENKMAN -- The crossing-streams equation is not hypothetical. Stop treating it as hypothetical. -- E.S."'
+- The city noise from outside is muffled up here. In the quiet, the PKE meters sound very loud.

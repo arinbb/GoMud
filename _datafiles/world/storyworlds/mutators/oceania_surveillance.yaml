@@ -1,0 +1,6 @@
+mutatorid: oceania-surveillance
+namemodifier:
+  behavior: append
+  text: '(watched)'
+alertmodifier:
+  text: The telescreen hums softly. It is always on. You are never unobserved.

@@ -1,0 +1,24 @@
+mobid: 467
+zone: up_in_smoke
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote makes a careful note on the clipboard, reviewing it with a slight frown."
+  - ""
+  - "emote nods twice at nothing in particular."
+  - "say The judging criteria are: musicality, stage presence, and impact. In that order."
+  - ""
+  - "emote clicks his pen and holds it poised over the scoresheet."
+  - ""
+  - "emote watches the stage with the focused attention of a professional and writes something."
+activitylevel: 10
+character:
+  name: The Battle Judge
+  description: >-
+    A thin man in his forties wearing a corduroy jacket and an expression
+    of rigorous neutrality. He holds a clipboard at all times. He has judged
+    seventeen Battle of the Bands competitions and he takes it seriously in a
+    way that is both admirable and slightly out of proportion to the stakes.
+    He has opinions about rock music. They are considered opinions.
+  raceid: 1
+  level: 5

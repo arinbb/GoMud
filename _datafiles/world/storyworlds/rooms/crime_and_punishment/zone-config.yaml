@@ -1,0 +1,15 @@
+name: Crime and Punishment
+roomid: 1800
+autoscale:
+  minimum: 1
+  maximum: 10
+defaultbiome: city
+mutators:
+- mutatorid: petersburg-fever
+idlemessages:
+- The summer heat of St. Petersburg presses down without mercy, thick with the smell of lime, cabbage water, and the canal.
+- 'A drunk staggers past, muttering to himself: the city is full of them, swallowed whole by its indifference.'
+- Somewhere a window slams shut against the heat. The sound echoes off the stone and dies.
+- The yellow tinge of the St. Petersburg light gives everything the look of a fever dream, flat and too bright.
+- Flies circle lazily in the dead air. Nothing moves without great effort in this heat.
+- 'A woman leans from an upper window and stares down at the street below. Her expression says: I have seen everything and am surprised by nothing.'

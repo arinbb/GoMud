@@ -1,0 +1,16 @@
+name: Waynes World
+roomid: 1520
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: city
+mutators:
+- mutatorid: wayne-excellent
+idlemessages:
+- The distant thump of a Fender Stratocaster drifts through the Aurora air.
+- Somewhere in the neighborhood, a car stereo blasts "Bohemian Rhapsody" at full volume.
+- The unmistakable smell of fresh donuts floats past on the suburban breeze.
+- A kid rides past on a ten-speed, giving you a thumbs up for no apparent reason.
+- The sky over Aurora, Illinois is wide and flat and full of possibility.
+- Someone nearby says "Excellent!" and means it with every fiber of their being.
+- The cable access antenna on the roof hums softly in the wind.

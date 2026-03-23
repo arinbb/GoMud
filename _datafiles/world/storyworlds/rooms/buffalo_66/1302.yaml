@@ -1,0 +1,45 @@
+roomid: 1302
+zone: Buffalo 66
+title: Layla's Dance Studio
+description: >-
+  A small storefront <ansi fg="itemname">studio</ansi> with a plate glass window
+  fogged with condensation. Inside, the <ansi fg="itemname">floor</ansi> is scuffed
+  hardwood, worn smooth by years of tap shoes. A <ansi fg="itemname">barre</ansi>
+  runs along one mirrored wall. The <ansi fg="itemname">mirrors</ansi> multiply the
+  space but also multiply the emptiness. A portable <ansi fg="itemname">stereo</ansi>
+  sits on a folding chair. The heat barely works — you can see your breath in here,
+  mixing with the faint fog on the mirrors. It smells of wood polish and cold. The
+  street is back to the <ansi fg="exit">west</ansi>.
+mapsymbol: D
+maplegend: Dance Studio
+biome: house
+exits:
+  west:
+    roomid: 1301
+nouns:
+  studio: >-
+    A storefront dance studio, the kind that survives on hope and a handful of
+    students. The sign outside is hand-painted and peeling.
+  floor: >-
+    Scuffed hardwood, patterned with the arcs and circles of countless
+    rehearsals. Some of the boards are warped from the cold.
+  barre: >-
+    A simple wooden barre, bolted to the wall at hip height. It has been
+    gripped so many times the finish is worn to bare wood.
+  mirrors: >-
+    Floor-to-ceiling mirrors along one wall. They show the room stretching
+    away in endless repetition, each reflection a little dimmer than the last.
+  stereo: >-
+    A cheap portable stereo, silver and black. A cassette tape is loaded,
+    its label handwritten. Something by King Crimson.
+spawninfo:
+- mobid: 211
+  message: "<ansi fg=\"15\">A young woman in a cream sweater stands by the barre, not dancing, just thinking.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The mirrors reflect the empty studio back at itself, doubling the solitude.
+- A tap shoe sits alone on the floor near the barre, its ribbon untied.
+- The heater clicks on with a rattle, pushes lukewarm air for thirty seconds, then dies.
+- Condensation traces slow paths down the plate glass window, tiny rivers going nowhere.
+- The hardwood floor creaks under the cold, contracting, remembering warmer days.
+- If you listen carefully, you can almost hear music from the stereo, but it is off.

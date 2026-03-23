@@ -1,0 +1,26 @@
+mobid: 297
+zone: the_sopranos
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote adjusts a table setting that was already perfect and then adjusts it again."
+  - "say You cannot rush a braise. People want to rush. You cannot rush."
+  - "emote wipes down the bar with a cloth, moving things aside and replacing them with ceremony."
+  - "say The restaurant business. I could have sold real estate. I could have done anything. I chose this."
+  - ''
+  - "emote emerges from the kitchen still carrying a wooden spoon, tasting something as he walks."
+  - "say Artie Bucco does not serve anything he would not eat himself. This is a principle."
+activitylevel: 35
+character:
+  name: Artie Bucco
+  description: >-
+    A round-faced, expressive man in his forties wearing a chef's apron over
+    a good shirt, his sleeves rolled. He moves through his restaurant with
+    proprietary pride and barely-contained anxiety, which is the normal
+    emotional state of anyone who owns a restaurant they care about. He is
+    Tony's oldest friend from childhood, which means he has been in proximity
+    to violence all his life and has somehow remained fundamentally decent.
+    He cooks because it is the one thing he can do that is entirely his and
+    entirely good.
+  raceid: 1
+  level: 7

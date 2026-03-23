@@ -1,0 +1,24 @@
+mobid: 281
+zone: blonde_on_blonde
+hostile: false
+maxwander: 0
+activitylevel: 10
+idlecommands:
+  - emote draws a slow circle in the dust with one finger.
+  - emote mutters something that sounds like Shakespeare but is not quite right.
+  - emote lifts an object from his sack, considers it, places it somewhere new.
+  - say The compass knows. The compass just cannot say.
+  - emote watches the neon sign flicker without expression.
+  - ''
+character:
+  name: the Ragman
+  description: >-
+    An old man with a burlap sack over one shoulder that clinks and shifts
+    with the weight of uncategorizable objects. His face is the face of someone
+    who has been in this particular song for a long time and found it adequate.
+    He speaks in half-finished sentences and Shakespearean fragments that are
+    slightly wrong in ways that might be intentional. He is the organizing
+    principle of the Mobile room, which means he is responsible for the fact
+    that none of it organizes.
+  raceid: 1
+  level: 8

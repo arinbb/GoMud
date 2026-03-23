@@ -1,0 +1,47 @@
+roomid: 2110
+zone: Up in Smoke
+title: 'Stedenkos Unmarked Car'
+description: >-
+  A beige 1976 Plymouth Fury with government plates, parked on the shoulder
+  of the 405 with a clear line of sight to the flow of traffic. The
+  <ansi fg="itemname">binoculars</ansi> are on the dash. The <ansi fg="itemname">
+  radio</ansi> squawks intermittently with chatter from dispatch. A
+  <ansi fg="itemname">thermos</ansi> of cold coffee sits in the cupholder. The
+  <ansi fg="itemname">notepad</ansi> is open to a page of license plates, most
+  of them crossed out. The air in the car is tight with the specific frustration
+  of a man who is always this close. Exit <ansi fg="exit">highway</ansi> leads
+  back to the 405 southbound.
+mapsymbol: U
+maplegend: Stedenkos Unmarked Car
+biome: road
+exits:
+  highway:
+    roomid: 2103
+    mapdirection: south
+    exitmessage: You step out of the unmarked car and onto the shoulder.
+nouns:
+  binoculars: >-
+    Military-surplus binoculars, the lenses slightly fogged from humidity.
+    Stedenko peers through them at the passing traffic with the focused
+    attention of a man who believes he will recognize the van when he sees
+    it. He will. He will just be too late.
+  radio: >-
+    The police radio crackles with: unit twelve copy, dispatch ten-four,
+    all units be advised. None of it concerns the van directly. Stedenko
+    listens anyway, certain that everything is related to the van if you
+    interpret it correctly.
+  thermos: >-
+    Cold coffee in a scratched thermos, the inside stained the color of
+    permanent duty. Stedenko has not tasted it since noon. He will drink
+    it cold at six and not notice.
+  notepad: >-
+    A yellow notepad covered in license plate numbers. Most are crossed out.
+    A few are circled. The circled ones are the wrong van.
+idlemessages:
+- Stedenko raises the binoculars and scans the freeway. The van is not in view.
+- The radio squawks. Stedenko silences it and goes back to looking.
+- A camper van passes. Stedenko sits forward. It is not the right van.
+- Stedenko writes a license plate on the notepad. Then crosses it out.
+- The thermos tips slightly in the cupholder. Stedenko rights it without looking.
+- Traffic on the 405 flows past at the indifferent pace of the universe.
+- Stedenko mutters something about the van. Nobody hears it. He was not talking to anyone.

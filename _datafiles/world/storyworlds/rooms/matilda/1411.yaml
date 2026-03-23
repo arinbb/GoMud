@@ -1,0 +1,60 @@
+roomid: 1411
+zone: Matilda
+title: Trunchbull's Office
+description: >-
+  A large, oppressive room that smells of <ansi fg="red">leather, sweat, and authority</ansi>.
+  The walls are covered with <ansi fg="itemname">trophies</ansi> and <ansi fg="itemname">photographs</ansi>
+  from the Trunchbull's athletic career — shot put medals, hammer throw cups, javelin
+  certificates. An enormous <ansi fg="itemname">desk</ansi> dominates the center of
+  the room, behind which sits a chair the size of a throne. A collection of
+  <ansi fg="itemname">canes</ansi> and riding crops hangs on a rack by the door
+  with the neatness of surgical instruments. The <ansi fg="itemname">window</ansi>
+  behind the desk overlooks the playground — a strategic position. The corridor
+  is back to the <ansi fg="exit">north</ansi>.
+mapsymbol: T
+maplegend: Trunchbull's Office
+biome: fort
+exits:
+  north:
+    roomid: 1407
+nouns:
+  trophies: >-
+    Silver cups, gold medals, and bronze plaques crowd every surface. Shot put.
+    Hammer throw. Javelin. The Trunchbull was an Olympic athlete before she
+    became a headmistress. She applies the same philosophy to both: dominate,
+    overpower, crush the competition. The trophies gleam with aggressive polish.
+  photographs: >-
+    Black-and-white photographs of a younger Trunchbull in athletic gear,
+    muscles bulging, face set in grim determination. In one photograph she is
+    hurling a hammer. In another she is mid-throw with a javelin. She looks
+    exactly the same as she does now, only younger and even more terrifying.
+  desk: >-
+    An enormous mahogany desk, meticulously organized. A glass of water, a pen,
+    a blotter. Nothing out of place. The desk drawers are locked. On the blotter
+    sits a single sheet of paper — a list of student names with red marks
+    beside several of them. The marks do not signify good behavior.
+  canes: >-
+    A rack of disciplinary implements arranged by size: thin willow switches,
+    bamboo canes, a riding crop, and something that might be a shortened
+    bullwhip. Each one is well-maintained and clearly in regular use. They
+    hang with the precision of a collector's display.
+  window: >-
+    A large window overlooking the playground. From here, the Trunchbull can
+    observe every child at play, every whisper, every suspicious gathering.
+    The glass is perfectly clean — nothing must obstruct her surveillance.
+idlemessages:
+- 'The canes on the wall rack seem to quiver slightly, as if eager to be used.'
+- 'A trophy on the shelf catches the light and gleams with cold, competitive pride.'
+- 'The desk chair looms behind the desk like a leather throne, still bearing the impression of its occupant.'
+- 'Through the window, the sound of children playing drifts in — cautious, muted play.'
+- 'The room smells of furniture polish, leather, and something else — the metallic tang of fear.'
+spawninfo:
+- mobid: 222
+  message: "Miss Trunchbull stands behind her desk like a general surveying a battlefield."
+  idlecommands:
+    - "say I have never been able to understand why small children are so disgusting."
+    - "emote cracks her knuckles with a sound like snapping twigs."
+    - ""
+    - ""
+    - "say The school is a battleground. And I am the commanding officer."
+    - "emote selects a cane from the rack and swishes it through the air experimentally."

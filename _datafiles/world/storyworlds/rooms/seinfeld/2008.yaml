@@ -1,0 +1,55 @@
+roomid: 2008
+zone: Seinfeld
+title: NBC Studios
+description: >-
+  The <ansi fg="yellow">offices of NBC</ansi>, 30 Rockefeller Plaza, somewhere in the
+  warren of development floors. The <ansi fg="itemname">conference table</ansi> is long,
+  chrome and glass, the kind of table that communicates power to people who communicate
+  power through tables. <ansi fg="itemname">Russell Dalrymple</ansi> and <ansi fg="itemname">NBC
+  executives</ansi> have sat on one side of this table and Jerry Seinfeld and George
+  Costanza have sat on the other side and someone said the words <ansi fg="8">"a show
+  about nothing"</ansi> and somehow this turned into nine seasons of television. The
+  <ansi fg="itemname">pitch documents</ansi> are on the table. The <ansi fg="itemname">view</ansi>
+  through the window shows Rockefeller Plaza below and the skating rink that is only
+  a skating rink in the winter and something else entirely in the summer. The exit to
+  the <ansi fg="exit">street</ansi> is to the south.
+mapsymbol: N
+maplegend: NBC Studios
+biome: city
+exits:
+  street:
+    roomid: 2004
+    mapdirection: south
+nouns:
+  table: >-
+    A conference table that has hosted a thousand pitches, most of them never
+    made and none of them, probably, as improbable as the one that happened
+    here. The table is clean, expensive, and slightly cold to the touch.
+    Everything in this room is slightly cold to the touch except the pitch,
+    which was warm in the specific way that terrible ideas are warm when they
+    are actually correct.
+  documents: >-
+    The pitch documents: a few typed pages, a title, a brief summary. The
+    summary says something like: 'a show about nothing.' Below that, some
+    notes. The notes are not fully formed. This is fine. The concept is not
+    fully formed. This is the point.
+  view: >-
+    Rockefeller Plaza, nine stories down. The skating rink in winter, an
+    open plaza in summer. People the size of punctuation moving across the
+    grey concrete. From up here, everything looks like a show about nothing,
+    and everything is.
+  executives: >-
+    The NBC development executives. They are wearing suits. They have opinions
+    about what works and what does not work. They will be proven wrong about
+    several things. They will greenlight the one that makes the network
+    a billion dollars and retire before understanding what it was.
+spawninfo: []
+idlemessages:
+- The conference room is empty but maintains the residual hum of a deal that changed television.
+- The pitch documents sit on the table, looking like nothing, being everything.
+- Somewhere in this building, someone is developing a show that will not be as good as the one pitched in this room.
+- The phone on the credenza has a blinking light. It is always blinking. Development is always in progress.
+- The view through the window shows the city going about its business of providing material.
+- An assistant passes the glass wall of the conference room, carrying coffee, not for you.
+- The table has no memory of what was decided at it. The table does not care about television. The table is a table.
+- A note on the whiteboard reads 'a show about nothing.' Someone has drawn a small star next to it.

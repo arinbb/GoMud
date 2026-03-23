@@ -1,0 +1,49 @@
+roomid: 1530
+zone: Waynes World
+title: Benjamin's Office
+description: >-
+  Everything Wayne is not. Benjamin Kane's office is a study in calculated
+  <ansi fg="itemname">minimalism</ansi> — clean lines, corporate art, a
+  <ansi fg="itemname">desk</ansi> that probably cost more than the Mirthmobile.
+  The <ansi fg="itemname">view</ansi> through floor-to-ceiling windows shows
+  Aurora laid out below like a grid of modest dreams. <ansi fg="itemname">Contracts</ansi>
+  in crisp folders occupy a credenza. A <ansi fg="itemname">television</ansi>
+  in the corner plays cable access footage of Wayne's World with the sound off.
+  Benjamin watches it with the professional appreciation of a man who sees something
+  he wants to own. The <ansi fg="itemname">elevator</ansi> down is the only way out.
+mapsymbol: B
+maplegend: Benjamin's Office
+biome: house
+exits:
+  elevator:
+    roomid: 1523
+    mapdirection: south
+nouns:
+  desk: >-
+    Glass and brushed steel. Nothing on it that doesn't need to be there.
+    No coffee rings. No wayward paper clips. No personality. This is the
+    desk of a man who bought himself out of chaos and has not forgiven chaos
+    for existing.
+  contracts: >-
+    Contracts in manila folders labeled with production company names. One
+    of them, near the front, is labeled "WAYNE'S WORLD - ACQUISITION." It
+    is thick. Benjamin has thought about this.
+  view: >-
+    From up here, Aurora looks almost manageable. Small houses, small streets,
+    small lives. Benjamin sees a market. The actual residents of Aurora see home.
+  television: >-
+    The TV plays Wayne's World footage on loop. Wayne and Garth at the cameras,
+    Wayne doing the gun-fingers, Garth playing air drums. Benjamin watches with
+    the flat focus of a predator watching prey that doesn't know it's prey yet.
+spawninfo:
+- mobid: 242
+  message: "<ansi fg=\"8\">Benjamin Kane looks up from his desk, not surprised to see you, not particularly pleased either.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- Benjamin's phone rings once, twice. He lets it go to voicemail. He will deal with it.
+- The contracts on the credenza are perfectly aligned. They have always been perfectly aligned.
+- The television plays Wayne's World with the sound off. Benjamin finds this more useful.
+- The view from the window shifts as clouds move over Aurora below.
+- Benjamin adjusts his tie. It does not need adjusting. He adjusts it anyway.
+- The minimalist art on the wall costs more than most people in Aurora make in a year.
+- The silence in this office is a managed silence. It is not comfortable. It is deliberate.

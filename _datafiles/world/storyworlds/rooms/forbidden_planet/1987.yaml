@@ -1,0 +1,63 @@
+roomid: 1987
+zone: Forbidden Planet
+title: Robbys Workshop
+description: >-
+  A large, clean space of organized miracles. <ansi fg="cyan">Robby the
+  Robot</ansi> has his domain here -- benches covered in components and
+  synthesis apparatus, a matter-conversion unit the size of a wardrobe, and
+  ranks of element storage in crystalline containers. The air smells of hot
+  metal and something sweet-chemical that turns out to be
+  <ansi fg="itemname">bourbon</ansi> -- Robby synthesizes it from carbon
+  compounds and has gotten rather good at it. A <ansi fg="itemname">still</ansi>
+  of remarkable complexity occupies one workbench, producing about a case a
+  week. On another bench, components of a half-built
+  <ansi fg="itemname">device</ansi> are laid out in precise order. The tools
+  on the walls are hung with geometric precision. Everything in this room
+  has a place. To the <ansi fg="exit">house</ansi>, the main interior.
+mapsymbol: W
+maplegend: Robbys Workshop
+biome: house
+exits:
+  house:
+    roomid: 1985
+    mapdirection: west
+nouns:
+  bourbon: >-
+    A row of bottles filled with an amber liquid of perfect clarity. The label
+    is handwritten in Robby's precise mechanical script: KENTUCKY BOURBON MASH,
+    SYNTHESIZED FROM ELEMENTAL COMPONENTS, BATCH 847. It smells exactly right.
+    It tastes, according to the crew members who have tried it, better than
+    anything back home. Robby has optimized the congener profile for maximum
+    flavor. He cannot explain why he enjoys making it. He is programmed to
+    fulfill requests.
+  still: >-
+    The still is a masterwork of alien engineering applied to a very human
+    problem. Copper coils, precision-calibrated temperature controls, and a
+    matter-conversion input that bypasses the need for grain entirely. Robby
+    can produce three liters per hour of any spirit at any proof. He has
+    developed opinions about which requests are more interesting than others.
+  device: >-
+    The components on the bench are partially assembled into something with
+    no human equivalent. According to Morbius, Robby is building a secondary
+    atmospheric processor. According to the components themselves, which are
+    clearly Krell-derived, it might be something rather more significant.
+spawninfo:
+- mobid: 412
+  message: Robby moves through his workshop with the fluid efficiency of something designed exactly for this.
+  idlecommands:
+  - say I am currently capable of synthesizing 9200 distinct chemical compounds. Do you have a request?
+  - ""
+  - emote adjusts a valve on the still with a precise quarter-turn.
+  - ""
+  - say The bourbon program has been optimized through eight hundred and forty-seven iterations. I believe I have achieved something close to perfection.
+  - ""
+  - emote catalogs components, stacking them in order of atomic number.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- The still chuckles and drips. The bourbon smell fills the room with improbable comfort.
+- Robby moves from bench to bench, adjusting, cataloging, building, without pause or apparent effort.
+- 'The matter-conversion unit hums at a higher pitch than usual. Something is being synthesized: something large.'
+- Blueprints cover one section of wall -- hand-drafted by Robby in exquisite detail, each line perfect.
+- A component on the bench vibrates faintly on its own. Robby notices. He picks it up, examines it, puts it back.
+- Through the wall, the subsonic hum of the Krell complex rises momentarily, then settles. Robby pauses.

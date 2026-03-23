@@ -1,0 +1,25 @@
+mobid: 460
+zone: up_in_smoke
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote gives the hydraulics a test bounce and grins as the car rises and falls."
+  - ""
+  - "say Hey, man, you want to hear something? My cousin has this thing, right, this situation --"
+  - ""
+  - "emote adjusts the rearview mirror, then adjusts it again for no reason."
+  - "say We got the gig at the Roxy, man. The Battle of the Bands. We are going to be famous."
+  - ""
+  - "emote drums the steering wheel in time with the radio, perfectly on beat."
+activitylevel: 20
+character:
+  name: Pedro
+  description: >-
+    A compact, enthusiastic East LA guy in his mid-twenties, mustache magnificent
+    and carefully maintained, wearing a white guayabera open at the collar. He
+    radiates the particular energy of someone who is always one good idea away
+    from a breakthrough and has been that close for years. His smile is enormous
+    and immediate. He talks with his hands when he is not driving and sometimes
+    when he is.
+  raceid: 1
+  level: 6

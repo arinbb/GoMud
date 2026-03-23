@@ -1,0 +1,54 @@
+roomid: 1742
+zone: On the Road
+title: The George Washington Bridge
+description: >-
+  You stand at the edge of the <ansi fg="itemname">George Washington Bridge</ansi>,
+  the great steel span arching over the <ansi fg="itemname">Hudson River</ansi>
+  into New Jersey and the continent beyond. Behind you is New York, the city
+  that made you, the city you are leaving. Ahead is America — not the map
+  version but the real one, the enormous dark breathing version, three thousand
+  miles of it, full of strangers and highways and jazz and the particular
+  American darkness that Dean Moriarty drives into every night with his foot
+  on the floor. The <ansi fg="itemname">river</ansi> below moves south to sea.
+  The bridge cables hum in the wind. This is the moment. Everything that comes
+  next begins here. To the <ansi fg="exit">north</ansi> is the city. To the
+  <ansi fg="exit">west</ansi> is the road.
+mapsymbol: G
+maplegend: GW Bridge
+biome: road
+exits:
+  north:
+    roomid: 1741
+  west:
+    roomid: 1743
+nouns:
+  bridge: >-
+    The George Washington Bridge opened in 1931. It has two levels and
+    fourteen lanes. On any given night it carries thousands of cars from
+    the island of Manhattan to the continent beyond, each one carrying
+    someone going somewhere for reasons that would fill a book. Some of
+    those books have been written. This is one of them.
+  river: >-
+    The Hudson River moves south below you with the patient authority of
+    something that has been doing this for ten thousand years and finds
+    human urgency somewhat beside the point. It carries everything south
+    — snowmelt from mountains, fallen leaves, the traces of a thousand
+    journeys — and delivers it all to the sea without comment.
+  cables: >-
+    The bridge cables are steel twisted into rope, each one bearing a
+    fraction of the bridge's enormous weight. In the wind off the river
+    they hum a low chord, the same chord the whole bridge sings. It is
+    not quite music. It is the sound of something very large holding on.
+  city: >-
+    Manhattan at night, seen from the bridge, is a cliff of light rising
+    from the dark river. All those windows, all those lives, all that
+    electricity. You have been part of it and now you are leaving it.
+    It does not seem to notice. Cities never do.
+idlemessages:
+- The bridge cables sing a low note in the river wind, steady and without sentiment.
+- A car passes you at speed, heading west, its taillights shrinking into the dark continent.
+- The Hudson below moves south with enormous calm, carrying everything to sea.
+- 'You look back at New York. It blazes across the water. It does not look back.'
+- The wind off the river smells of distance, which is the smell of freedom, which is also the smell of loss.
+- Another car. Another set of headlights going west. Everyone is going somewhere tonight.
+- 'The New Jersey shore is very close now. America is very close now. Just step forward.'

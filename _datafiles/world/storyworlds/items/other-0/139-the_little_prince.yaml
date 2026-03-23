@@ -1,0 +1,17 @@
+itemid: 139
+name: The Little Prince
+namesimple: book
+displayname: a slender book titled <ansi fg="itemname">The Little Prince</ansi>
+description: >-
+  A slender volume with a pale cover, the kind of book that does not look
+  like much until you open it. On the cover, drawn in simple lines, a small
+  boy with golden hair stands on a tiny planet, a scarf billowing behind him.
+  The drawing is childlike and exact. The text inside alternates between
+  prose and drawings -- a boa constrictor digesting an elephant, a sheep
+  in a box, a rose under a glass dome. It smells of desert sand and something
+  slightly floral, very faint. The spine is worn but the book is intact.
+  Something about holding it makes the stars seem closer.
+type: object
+subtype: usable
+uses: 0
+value: 0

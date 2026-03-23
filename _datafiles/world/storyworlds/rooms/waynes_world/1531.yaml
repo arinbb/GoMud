@@ -1,0 +1,42 @@
+roomid: 1531
+zone: Waynes World
+title: The Airport Runway
+description: >-
+  A long flat stretch of <ansi fg="itemname">tarmac</ansi> under a wide Aurora
+  sky. The <ansi fg="exit">runway</ansi> recedes to the horizon in both directions,
+  bordered by <ansi fg="itemname">runway lights</ansi> that blink amber and white
+  in the dusk. The air smells of jet fuel and the kind of urgency that only
+  exists when someone is about to get on a plane to leave everything behind.
+  <ansi fg="itemname">Terminal lights</ansi> glow in the distance. A departing
+  aircraft banks overhead, its navigation lights blinking in sequence. This
+  is a place you come to stop something from ending, which is itself a kind
+  of beginning. To the <ansi fg="exit">drive</ansi> back through Aurora leads
+  to the streets.
+mapsymbol: R
+maplegend: Airport Runway
+biome: land
+exits:
+  drive:
+    roomid: 1523
+    mapdirection: southwest
+nouns:
+  tarmac: >-
+    The flat black surface of the runway, cracked in places, painted with
+    fading yellow lines. It goes on longer than seems strictly necessary.
+    It always does, in these moments.
+  lights: >-
+    The runway lights blink amber, white, amber, white. An eternal patient
+    rhythm. They will blink all night. They will blink after everyone has
+    gone home.
+  aircraft: >-
+    The plane banks southwest, navigation lights winking. Its noise fades
+    into the flat Aurora sky. Someone might be on that plane. Someone might
+    not be. The runway doesn't know yet.
+idlemessages:
+- A plane screams overhead on its approach path, close enough to feel in your sternum.
+- The runway lights blink their amber rhythm, indifferent to whatever is happening at the terminal.
+- The smell of jet fuel is the smell of distance, of things beginning and ending.
+- The wind across the runway is flat and purposeful, the way airport winds always are.
+- In the distance, another aircraft taxiing. The drama of departure, repeated endlessly.
+- The Mirthmobile would look incongruous here. It would also look magnificent.
+- The tarmac stretches. Sometimes you have to run across a runway to stop someone from leaving.

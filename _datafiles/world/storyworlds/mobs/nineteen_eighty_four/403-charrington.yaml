@@ -1,0 +1,24 @@
+mobid: 403
+zone: nineteen_eighty_four
+hostile: false
+maxwander: 0
+activitylevel: 20
+idlecommands:
+  - emote polishes a pewter candlestick with a soft cloth, humming something to himself.
+  - "emote recites softly: Oranges and lemons, say the bells of St. Clements."
+  - emote adjusts his spectacles and peers at a small ivory box.
+  - emote arranges objects on a shelf with the patience of a man who has nowhere better to be.
+  - ''
+  - "emote says gently: I cannot remember the rest of the rhyme."
+character:
+  name: Charrington
+  description: >-
+    A man of about sixty, frail and bowed, with long delicate hands and mild,
+    slightly watery blue eyes behind round spectacles. He wears a crushed velvet
+    jacket that has seen better decades. He has an air of gentle, disarming
+    harmlessness, the air of a man who has lived quietly among old things for
+    many years. He knows nursery rhymes from before the Revolution. He keeps a
+    room above the shop. He is pleasant. He is kind. He is a Thought Police agent.
+    But not today. Today he is just the shopkeeper.
+  raceid: 1
+  level: 15

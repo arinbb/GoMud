@@ -1,0 +1,24 @@
+mobid: 225
+zone: matilda
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote passes a note under the desk with practiced stealth."
+  - ""
+  - ""
+  - "say Did you hear what Trunchbull did to Julius Rottwinkle?"
+  - "emote giggles behind her hand."
+  - "emote leans over to whisper something to the nearest person."
+activitylevel: 20
+character:
+  name: Lavender
+  description: >-
+    A small, bold girl with bright eyes and an air of mischievous
+    determination. She is Matilda's best friend and a natural conspirator,
+    always whispering plans and passing notes. Where Matilda's rebellion is
+    quiet and cerebral, Lavender's is cheerfully chaotic. She has the kind
+    of courage that does not think twice before putting a newt in the
+    Trunchbull's water jug. Her school uniform is perpetually slightly
+    untucked.
+  raceid: 1
+  level: 5

@@ -1,0 +1,25 @@
+mobid: 211
+zone: buffalo_66
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote watches quietly, her expression patient and unreadable."
+  - "emote adjusts the sleeve of her cream sweater."
+  - "say It's okay. Everything is okay."
+  - ''
+  - ''
+  - "emote tucks a strand of hair behind her ear."
+  - "emote looks at you with large, calm eyes that seem to see more than you want them to."
+activitylevel: 20
+character:
+  name: Layla
+  description: >-
+    A young woman in a cream-colored sweater and brown skirt. Her hair
+    is dark and falls past her shoulders. She is quiet and watchful, with
+    large eyes that carry a patience that borders on the supernatural.
+    She does not flinch. She does not judge. She simply waits, absorbing
+    whatever is thrown at her with a gentleness that seems out of place
+    in Buffalo. There is something deeply calm about her, like still
+    water in a frozen landscape.
+  raceid: 1
+  level: 5

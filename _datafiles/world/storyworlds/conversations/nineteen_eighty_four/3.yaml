@@ -1,0 +1,25 @@
+-
+  Supported:
+    "obrien": ["winston smith"]
+  Conversation:
+    - ["#1 emote pours two glasses of wine with the unhurried ease of a man entirely in control of the evening.", "#1 say We shall speak freely here. I have switched off the telescreen."]
+    - ["#2 emote stares at the blank telescreen. The blank square on the wall.", "#2 say You can do that?"]
+    - ["#1 say Inner Party members have certain privileges.", "#1 emote resettles his spectacles.", "#1 say Now. You have questions about the Brotherhood."]
+    - ["#2 say Does it exist?"]
+    - ["#1 say It exists.", "#1 say That is all I will confirm tonight.", "#1 say If you wish to join it, there are commitments you must make. Unconditional ones."]
+    - ["#2 say I am prepared.", "#2 emote says this and means it in the full weight of what it will cost him."]
+    - ["#1 say You are prepared to give your lives?", "#1 say To commit acts of sabotage, murder, blackmail, forgery?", "#1 say To be an instrument of the Brotherhood and ask nothing of it in return?"]
+    - ["#2 say Yes.", "#2 emote says it simply.", "#2 say Yes to all of it."]
+    - ["#1 emote looks at him steadily for a long moment.", "#1 say Then we shall meet again in the place where there is no darkness.", "#1 say It is not a metaphor. You will understand that later."]
+-
+  Supported:
+    "winston smith": ["obrien"]
+  Conversation:
+    - ["#1 say I keep dreaming about you. In the Ministry. In the place where there is no darkness."]
+    - ["#2 emote says, with the quiet certainty of a man confirming a reservation:", "#2 say Yes. You will be there."]
+    - ["#1 say Is there a way out? Of Oceania. Of all of it.", "#1 emote says this and watches O'Brien's face for something."]
+    - ["#2 say There is no way out.", "#2 emote says this without cruelty, as a simple fact.", "#2 say There will never be a way out. The Brotherhood does not offer escape. It offers only action."]
+    - ["#1 say Then why—", "#2 emote interrupts gently:"]
+    - ["#2 say Because it is better to resist and fail than not to resist.", "#2 say Is that what you believe?"]
+    - ["#1 emote considers.", "#1 say I think so."]
+    - ["#2 say You will be certain by the end.", "#2 emote resettles his spectacles and pours more wine.", "#2 say I promise you that."]

@@ -1,0 +1,24 @@
+mobid: 400
+zone: nineteen_eighty_four
+hostile: false
+maxwander: 1
+activitylevel: 25
+idlecommands:
+  - emote stares at the telescreen with an expression carefully empty of thought.
+  - emote rubs his hand briefly against the varicose ulcer above his ankle. His face does not change.
+  - emote takes a sip of Victory Gin from a teacup. His face remains blank.
+  - emote's hand tightens slightly on the pen, then relaxes.
+  - ''
+  - emote reaches for the diary, then stops. He looks at the telescreen. He reaches for the diary again.
+character:
+  name: Winston Smith
+  description: >-
+    A smallish, slight man of thirty-nine, with fair hair and a ruddy complexion.
+    He wears the blue overalls of the Outer Party. His face might once have been
+    handsome but is now deeply lined, and there is a varicose ulcer above his right
+    ankle that he rubs habitually. His eyes are thoughtful in a way that, in Oceania,
+    constitutes a kind of danger. He knows things he is not supposed to know, thinks
+    things he is not supposed to think, and is trying not to let any of this appear
+    on his face. He is not entirely succeeding.
+  raceid: 1
+  level: 5

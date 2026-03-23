@@ -1,0 +1,24 @@
+-
+  Supported:
+    "jan brown": ["jimmy brown"]
+  Conversation:
+    - ["#1 say Did you see that? FOURTH down conversion. They actually DID it."]
+    - ["#2 emote hums a few bars of something, staring at the wall"]
+    - ["#1 say Jimmy. JIMMY. Are you watching the game?"]
+    - ["#2 say Hmm? Oh. The game. Yes."]
+    - ["#1 say You're NOT watching. You're never watching. This is a BIG game, Jimmy."]
+    - ["#2 emote hums again, softly", "#2 say That's nice, Jan."]
+    - ["#1 say If you had watched the '91 Super Bowl with me instead of falling asleep, maybe the energy would have been different. Maybe they would have WON."]
+    - ["#2 emote blinks slowly, as if surfacing from deep water"]
+-
+  Supported:
+    "jan brown": ["jimmy brown"]
+  Conversation:
+    - ["#1 say You know who should be starting? The backup. He's got an ARM, Jimmy."]
+    - ["#2 say Mmhmm."]
+    - ["#1 say Are you even LISTENING to me?"]
+    - ["#2 say I'm listening, Jan. The backup."]
+    - ["#1 say The BACKUP. He threw for three hundred yards in the preseason. THREE HUNDRED."]
+    - ["#2 emote hums something that might be Sinatra"]
+    - ["#1 say I swear to God, Jimmy, talking to you is like talking to the RECLINER."]
+    - ["#2 emote shifts in the recliner and continues humming"]

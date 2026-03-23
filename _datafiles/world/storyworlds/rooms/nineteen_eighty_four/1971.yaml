@@ -1,0 +1,62 @@
+roomid: 1971
+zone: Nineteen Eighty Four
+title: "O'Brien's Flat"
+description: >-
+  A flat luxurious by Party standards: real carpets, real furniture, a
+  <ansi fg="itemname">decanter</ansi> of wine on a silver tray. The
+  telescreen is here but <ansi fg="itemname">O'Brien</ansi> has — and
+  this is extraordinary — switched it off. He can switch it off. Inner
+  Party members can do that. The room has a quality of stillness that
+  is different from the stillness of fear. O'Brien sits at ease, elegant,
+  heavy-boned, his thick dark <ansi fg="itemname">spectacles</ansi>
+  catching the lamplight. He speaks quietly, precisely, with the unhurried
+  manner of a man who is entirely certain that no one is going to contradict
+  him. He has given Winston a copy of <ansi fg="itemname">the book</ansi>
+  — Goldstein's manifesto, the Theory and Practice of Oligarchical Collectivism.
+  Whether it is real or a trap is, Winston will soon understand, the
+  same question. The street is to the <ansi fg="exit">south</ansi>.
+mapsymbol: O
+maplegend: "O'Brien's Flat"
+biome: house
+exits:
+  south:
+    roomid: 1963
+    mapdirection: south
+nouns:
+  wine: >-
+    Real wine, red, poured from a decanter into proper glasses. Not Victory
+    Gin. Not Victory anything. Wine, with a taste that belongs to a world
+    where grapes were grown and vineyards existed and people were allowed
+    to have preferences about what they drank. O'Brien pours it with the
+    ease of a man for whom this is normal. For Winston it is extraordinary.
+  spectacles: >-
+    O'Brien's spectacles are thick and dark-rimmed. He has a habit of
+    resettling them on his nose with a gesture that Winston found, once,
+    reassuring. It is a gesture that implies: I am a person who is thinking,
+    carefully, about a real thing, in good faith. This is the trap. The
+    gesture is the trap.
+  book: >-
+    The Theory and Practice of Oligarchical Collectivism, by Emmanuel
+    Goldstein. The book within the book. It explains the structure of
+    Oceania, the perpetual war, the meaning of the proles, the nature
+    of power. It reads like a revelation. O'Brien wrote it. He wrote
+    the book he knew Winston needed to read in order to be caught reading
+    it. This is perhaps the most terrifying sentence in the novel.
+  telescreen: >-
+    It is off. O'Brien has switched it off. He has this power. In the
+    Ministry of Love, later, he will explain that this too was a lie:
+    he is always watched, and always reports everything, and the moment
+    Winston stepped into this room, everything was already over. But the
+    wine is real. The off telescreen was real, for the duration of the
+    conversation. Some lies are built of true materials.
+spawninfo:
+- mobid: 402
+  message: 'O''Brien stands near the window, a glass of wine in hand, watching you with the calm attention of a man who has already made all his decisions.'
+  respawnrate: 5 real minutes
+idlemessages:
+- 'O''Brien refills the wine glasses without asking, with the ease of a host who is never uncertain about what his guests want.'
+- '"We shall meet in the place where there is no darkness," O''Brien says, as if continuing a conversation that is always in progress.'
+- 'O''Brien resettles his spectacles on his nose with two fingers. "The Brotherhood exists," he says. "That is all I will tell you."'
+- 'The telescreen is off. The room is quiet. The quality of the silence is different from the silence of surveillance. This too is part of the trap. All of it is part of the trap.'
+- '"Power is not a means," O''Brien says, to no one in particular, "it is an end." He pauses. "Do you understand?"'
+- 'O''Brien looks at you with the expression of a man solving an equation. The expression is, in some sense, the most frightening thing in the room.'

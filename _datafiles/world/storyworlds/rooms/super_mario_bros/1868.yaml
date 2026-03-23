@@ -1,0 +1,65 @@
+roomid: 1868
+zone: Super Mario Bros
+title: World 4-1 Lakitu Level
+description: >-
+  Open sky again, and the clouds have changed. Among the harmless pixel-art
+  clouds floats a <ansi fg="itemname">Lakitu</ansi> -- a small turtle in a
+  cloud, like a sinister parade float, drifting with unhurried menace across
+  the sky. Lakitu holds a fishing rod with a spiny enemy dangling on the
+  end, swinging it down toward you with practiced ease. The <ansi fg="itemname">spinies</ansi>
+  it drops land on the ground and walk toward you, their spines making them
+  unkickable. The level beneath is otherwise standard overworld -- brown brick,
+  question-mark blocks, pipes -- but Lakitu makes vertical space the primary
+  danger. North leads <ansi fg="exit">back</ansi>; east continues to
+  <ansi fg="exit">World 5</ansi>.
+mapsymbol: L
+maplegend: Lakitu Level
+biome: land
+exits:
+  north:
+    roomid: 1867
+  east:
+    roomid: 1869
+nouns:
+  lakitu: >-
+    Lakitu is a small spectacled turtle riding a white pixel cloud, a
+    fishing rod in one hand, a spiny enemy dangling from the line. He
+    drifts back and forth across the sky at a fixed height, lowering
+    his line when he passes over you, raising it when you dodge. His
+    expression, in 1985 pixel art, is simultaneously cheerful and
+    merciless. He is immune to most attacks. He is annoying in the
+    specific way that something is annoying when you know exactly what
+    it is doing and cannot stop it.
+  spinies: >-
+    Red spiked enemies dropped from Lakitu's fishing line, landing on
+    the ground with a clunk and walking relentlessly forward. The spines
+    on their shells make them impossible to stomp. You must hit them with
+    a fireball or avoid them entirely. They are not smart. They do not
+    need to be. Their purpose is to narrow the safe ground while Lakitu
+    narrows the safe sky.
+  clouds: >-
+    The background clouds are the harmless decorative pixel-art ones --
+    simple white masses drifting slowly east. Lakitu's cloud is different:
+    smaller, faster, responsive, an extension of the enemy's will. The
+    contrast is telling. Even the clouds here have a hierarchy of danger.
+spawninfo:
+- mobid: 356
+  message: Lakitu drifts in from the east on his cloud, already smirking and reaching for his fishing rod.
+  idlecommands:
+  - emote drifts overhead on his cloud, fishing rod swinging lazily.
+  - ""
+  - emote lowers his line toward the ground, grinning behind his spectacles.
+  - ""
+  - emote drifts sideways, adjusting his position, preparing the next drop.
+  - ""
+  - emote peeks out from behind his cloud briefly, then retreats.
+  - ""
+  respawnrate: 2 real minutes
+idlemessages:
+- Lakitu drifts overhead, a tiny silhouette against the blue, swinging his terrible fishing line.
+- A Spiny lands with a crunching thud and begins walking, implacable, toward you.
+- The cloud Lakitu rides makes no physical sense. It is a cloud. He is riding it. This is fine.
+- 'You hear the spiny land before you see it: a sharp clack, then the sound of tiny spiked feet.'
+- The sky is deceptively pretty here. Do not look at the sky. Watch the rod.
+- Lakitu adjusts his spectacles and surveys his domain from above with an air of satisfied menace.
+- 'A Spiny bumps into a pipe and reverses direction, heading back toward you.'

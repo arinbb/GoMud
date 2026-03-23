@@ -1,0 +1,55 @@
+roomid: 1963
+zone: Nineteen Eighty Four
+title: The Street
+description: >-
+  A grey London street in Airstrip One, capital of the superstate Oceania.
+  The buildings are old and bomb-damaged, their facades patched with plaster
+  the wrong color. <ansi fg="red">Posters</ansi> cover every available
+  surface: the enormous face, the black moustache, the eyes that follow.
+  <ansi fg="itemname">Telescreens</ansi> are mounted on buildings at
+  intervals, blaring broadcasts and watching. The people passing keep their
+  faces carefully blank. The sky overhead is the color of old concrete.
+  Somewhere to the <ansi fg="exit">north</ansi>, the pyramid of the
+  Ministry of Truth rises white and immense. To the <ansi fg="exit">east</ansi>,
+  the streets open into the <ansi fg="exit">prole</ansi> quarter. To the
+  <ansi fg="exit">west</ansi>, Victory Mansions. To the
+  <ansi fg="exit">south</ansi>, a street leads past the Chestnut Tree Cafe.
+mapsymbol: S
+maplegend: The Street
+biome: city
+exits:
+  west:
+    roomid: 1961
+  north:
+    roomid: 1964
+  east:
+    roomid: 1967
+  south:
+    roomid: 1975
+nouns:
+  posters: >-
+    They are everywhere. You stop seeing them after a while, the way you
+    stop seeing the walls of your own flat. But the face is always there,
+    at the edge of vision: dark hair, heavy brows, the black moustache,
+    the eyes. BIG BROTHER IS WATCHING YOU. You do not doubt it.
+  telescreens: >-
+    Mounted on buildings, on poles, at intersections. They broadcast and
+    they receive. In theory they can hear a heartbeat at fifteen meters.
+    In practice, you do not know what they can hear, and that is the point.
+  rubble: >-
+    Bomb craters from the last rocket attack, or the one before, or the
+    one before that. The rubble has been shoved to the side but not
+    cleared. The Party does not explain why. The records say the sites
+    will be cleared. The records always say this.
+  sky: >-
+    Grey. The colour of concrete, of Victory Gin, of the future as it
+    actually exists. Somewhere above it, they say, the sun is shining.
+    The records confirm this. It must be so.
+idlemessages:
+- 'A woman passes with a child, both in the grey overalls of Party members. The child stares at you with the bright eyes of someone who has been taught to notice things.'
+- 'A telescreen on the opposite building swivels slightly. It does not seem to be pointing at you. But then, it would not seem to.'
+- '<ansi fg="red">BIG BROTHER IS WATCHING YOU.</ansi> The poster is peeling at one corner. Beneath it, another identical poster. All the way down.'
+- 'A prole woman in the distance scurries past carrying something wrapped in newspaper. She does not look up.'
+- 'The sound of boots on pavement echoes from around the corner. The rhythm could be Thought Police. It could be anyone. You do not look.'
+- 'An announcement crackles from the nearest telescreen: "Production of Victory chocolate has been increased to twenty grams per week!" You remember it was thirty grams last week.'
+- 'The cold cuts through your overalls. There is no Victory Heating to speak of. The records say otherwise.'

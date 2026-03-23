@@ -1,0 +1,34 @@
+-
+  Supported:
+    "silvio dante": ["paulie walnuts"]
+  Conversation:
+    - ["#1 say You hear about Patsy's car?"]
+    - ["#2 say What about it?"]
+    - ["#1 say He left it running for forty minutes outside the diner. Keys in the ignition."]
+    - ["#2 emote shakes his head slowly"]
+    - ["#2 say That's how it starts. Next thing you know."]
+    - ["#1 say That's what I said."]
+    - ["#2 emote adjusts his tracksuit collar with dignity"]
+-
+  Supported:
+    "silvio dante": ["paulie walnuts"]
+  Conversation:
+    - ["#2 say I'm telling you, Sil, the Chinese food at that place is giving me agita."]
+    - ["#1 emote folds the newspaper and looks at Paulie with measured patience"]
+    - ["#2 say The MSG. They put it in everything. I can tell."]
+    - ["#1 say Paulie."]
+    - ["#2 say I can taste it, Sil. It has a distinct taste."]
+    - ["#1 say Paulie, please eat the sandwich."]
+    - ["#2 emote looks at the sandwich with deep suspicion but picks it up"]
+-
+  Supported:
+    "silvio dante": ["paulie walnuts"]
+  Conversation:
+    - ["#2 say You know what Christopher said to me yesterday? He said his screenplay is commercial."]
+    - ["#1 emote sips his espresso"]
+    - ["#2 say Commercial. The kid has never seen commercial in his life."]
+    - ["#1 say Chris has ambitions."]
+    - ["#2 say Ambitions is not the word I would use."]
+    - ["#1 say What word would you use?"]
+    - ["#2 emote considers this genuinely for a moment"]
+    - ["#2 say Optimism. And not the good kind."]

@@ -1,0 +1,27 @@
+-
+  Supported:
+    "doc sarvis": ["seldom seen smith"]
+  Conversation:
+    - ["#1 say I have been thinking about the word abomination.", "#1 emote strikes a match."]
+    - ["#2 say The dam.", "#2 emote does not phrase it as a question."]
+    - ["#1 say The dam. But also the category. Abomination implies the existence of a natural order that has been violated.", "#1 emote watches the match burn."]
+    - ["#2 say Yes.", "#2 say That is the Word of Wisdom on the subject, I think."]
+    - ["#1 emote shakes out the match.", "#1 say Your theology is more useful than mine. I trained in medicine. We do not discuss abomination much."]
+    - ["#2 say You do. You call it iatrogenic.", "#2 say Harm caused by the treatment itself."]
+    - ["#1 emote looks at him with real attention.", "#1 say That is exactly right. The dam is iatrogenic. The cure that kills the patient."]
+    - ["#2 say I have been saying that for years without that word.", "#2 emote adjusts his hat."]
+    - ["#1 say Now you have it.", "#1 emote lights another match.", "#1 say Keep it."]
+-
+  Supported:
+    "seldom seen smith": ["doc sarvis"]
+  Conversation:
+    - ["#1 say Do you think it is possible? Really?", "#1 emote faces upstream."]
+    - ["#2 say The dam?", "#2 say No. Not now. Not with dynamite.", "#2 emote sips his flask."]
+    - ["#1 say Then what are we doing?"]
+    - ["#2 say We are bearing witness. We are making it expensive.", "#2 say We are saying: not without a fight."]
+    - ["#1 say That is not enough."]
+    - ["#2 say It rarely is.", "#2 emote looks at the canyon wall.", "#2 say But it is what we have. So we do it."]
+    - ["#1 say Hayduke thinks it is enough. He thinks the dam will fall."]
+    - ["#2 say Let him think it.", "#2 emote pauses.", "#2 say Maybe he is right. The West is drying. The river is rising. Time is on the side of the canyon.", "#2 say We just have to give it time."]
+    - ["#1 emote nods slowly.", "#1 say I can pray for that."]
+    - ["#2 say Pray and cut power lines.", "#2 emote almost smiles.", "#2 say Thoreau would have approved of both."]

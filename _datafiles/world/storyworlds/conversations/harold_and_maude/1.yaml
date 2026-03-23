@@ -1,0 +1,30 @@
+-
+  Supported:
+    "harold": ["maude"]
+  Conversation:
+    - ["#1 emote looks at the flowers on the windowsill.", "#2 emote follows his gaze and smiles broadly."]
+    - ["#1 say What kind are those?", "#2 say Daisies! Each one entirely itself."]
+    - ["#2 say Not a representative. Not a symbol. Just a daisy, being a daisy."]
+    - ["#1 emote considers this.", "#1 say I think I understand what you mean."]
+    - ["#2 say You do, Harold. That is exactly what I mean about you. You actually listen."]
+    - ["#2 emote spins once, slowly, as if testing whether the world is still there.", "#1 emote watches her."]
+-
+  Supported:
+    "harold": ["maude"]
+  Conversation:
+    - ["#1 say Do you think about death much?"]
+    - ["#2 emote laughs warmly.", "#2 say Every day! And it makes every other day better."]
+    - ["#1 say I think about it constantly. It used to frighten me."]
+    - ["#2 say And now?"]
+    - ["#1 emote is quiet for a moment.", "#1 say Now it feels like -- information. About how to use the rest."]
+    - ["#2 emote takes his hand.", "#2 say Harold. That is exactly it. Exactly it."]
+-
+  Supported:
+    "harold": ["maude"]
+  Conversation:
+    - ["#2 say What do you want to be, Harold? Not do. Be."]
+    - ["#1 emote appears to be thinking about this very carefully."]
+    - ["#1 say I want to be like you. Present. Interested. Unconcerned about the right things."]
+    - ["#2 emote shakes her head gently.", "#2 say Be a sunflower, Harold. Be whatever kind you are."]
+    - ["#1 say What if I am more of a -- I don't know. A yew tree."]
+    - ["#2 say Then be the most extraordinary yew tree that has ever existed.", "#2 emote smiles."]

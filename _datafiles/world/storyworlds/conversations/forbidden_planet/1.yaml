@@ -1,0 +1,29 @@
+-
+  Supported:
+    "dr morbius": ["commander adams"]
+  Conversation:
+    - ["#1 say Commander. I trust your crew is comfortable."]
+    - ["#2 say Two of my crew are dead, Doctor. I'll ask you directly: what is on this planet that killed them?"]
+    - ["#1 emote meets his eyes without flinching", "#1 say I have told you. An electromagnetic phenomenon. Altair IV has unusual properties."]
+    - ["#2 say The force field read it as mass and velocity. Electromagnetic phenomena don't leave depressions in rock."]
+    - ["#1 say Commander, I have lived here for twenty years. I understand this world better than you are likely to."]
+    - ["#2 say With respect, Doctor, everyone else who lived here is dead. That is the single fact I cannot get past."]
+    - ["#1 emote looks away toward the Krell artifacts", "#1 say The knowledge in that laboratory belongs to humanity. Not to United Planets Command. To all of us."]
+    - ["#2 say I'm not here for the machine. I'm here for my crew.", "#2 emote 's jaw tightens."]
+    - ["#1 say Then take them inside the perimeter and leave the Krell complex to me."]
+    - ["#2 say And if it comes again?"]
+    - ["#1 emote is silent for a long moment", "#1 say It will not come again. I give you my word."]
+-
+  Supported:
+    "dr morbius": ["commander adams"]
+  Conversation:
+    - ["#1 say The Krell were a civilization of pure mind, Commander. They had no concept of limitation."]
+    - ["#2 say That sounds like a warning."]
+    - ["#1 say It is a description. They built a machine to manifest thought as reality. Any thought. Any desire."]
+    - ["#2 say And something went wrong."]
+    - ["#1 emote pauses", "#1 say In one night. Their entire civilization. Gone."]
+    - ["#2 say And you're studying this machine."]
+    - ["#1 say I am understanding it. There is a difference."]
+    - ["#2 say Is there?"]
+    - ["#1 emote looks at him sharply, then away", "#1 say You would not understand the distinction. You have not read the texts."]
+    - ["#2 say I understand the body count.", "#2 emote 's voice is quiet and entirely serious."]

@@ -1,0 +1,28 @@
+mobid: 388
+zone: ghostbusters
+hostile: true
+maxwander: 0
+activitylevel: 10
+angrycommands:
+- "say ARE YOU A GOD?"
+- "emote raises one hand. Lightning strikes."
+idlecommands:
+- "emote stands perfectly still in the dimensional storm, observing everything with absolute patience."
+- "say ARE YOU A GOD?"
+- "emote 's form flickers between human and something that is not, at all, human."
+- "emote regards you with eyes that have seen the death of civilizations."
+- ""
+- ""
+character:
+  name: Gozer the Gozerian
+  description: >-
+    An androgynous figure in white, standing at the center of the rooftop temple
+    with the stillness of something that has never had to hurry. Its features are
+    perfect and expressionless, the face of a deity that predates human concepts
+    of emotion. It wears white and stands in dimensional lightning without flinching.
+    Its eyes are wrong -- too steady, too ancient, holding a depth that should not
+    fit in a human-shaped container. When it speaks, the sound carries from no
+    particular direction and is heard at a frequency that bypasses the ear and
+    addresses something older in the nervous system.
+  raceid: 6
+  level: 25

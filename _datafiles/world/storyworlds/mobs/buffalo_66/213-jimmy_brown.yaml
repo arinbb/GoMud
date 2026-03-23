@@ -1,0 +1,25 @@
+mobid: 213
+zone: buffalo_66
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote hums a tune that might have been popular forty years ago."
+  - "emote stares at the wall, lost in some private reverie."
+  - ''
+  - ''
+  - "emote shifts in the recliner without really waking up."
+  - "say Hmm? What? Oh."
+  - "emote hums a few more bars of something nobody recognizes."
+activitylevel: 15
+character:
+  name: Jimmy Brown
+  description: >-
+    A thin, distant man in his sixties, sunk into a recliner that has
+    taken on his shape. He wears a cardigan over an undershirt. His eyes
+    are unfocused, aimed at a middle distance that might be the wall or
+    might be 1968. He hums old songs to himself — fragments, never
+    complete melodies. He is present in the room the way furniture is
+    present. He occupies space. He does not engage. He retreated from
+    this family years ago and has been humming ever since.
+  raceid: 1
+  level: 5

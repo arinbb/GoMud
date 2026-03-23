@@ -1,0 +1,57 @@
+roomid: 1827
+zone: Stardew Valley
+title: The Wizards Tower
+description: >-
+  The tower is older than Pelican Town. Stone walls draped in climbing ivy,
+  and inside, a single <ansi fg="itemname">cauldron</ansi> dominates the
+  ground floor, bubbling with something <ansi fg="purple">purple and luminous
+  </ansi>. <ansi fg="itemname">Bookshelves</ansi> line the curved walls from
+  floor to ceiling — not organized books, but working ones, open, annotated,
+  stacked in towers of their own. A <ansi fg="itemname">crystal orb</ansi>
+  on a brass stand catches and refracts the purple light. The Wizard stands
+  here, always, as if he never leaves. The forest is back to the <ansi
+  fg="exit">northeast</ansi>.
+mapsymbol: W
+maplegend: Wizards Tower
+biome: house
+exits:
+  forest:
+    roomid: 1823
+    mapdirection: northeast
+nouns:
+  cauldron: >-
+    A massive iron cauldron, older than the tower itself, suspended over
+    a smokeless violet flame. The contents bubble with slow purpose — not
+    randomly, but following some pattern you cannot quite discern. The
+    liquid changes color as you watch: purple to deep blue to green and
+    back. It smells of pine resin and something electrical, like the air
+    before lightning.
+  bookshelves: >-
+    Shelves packed with volumes in scripts from a dozen languages, some of
+    which you do not recognize as human. Margins are covered in annotations
+    in several colors of ink. Bookmarks stick out at angles. Some books are
+    open face-down, others are sealed with wax and ribbon. This is not a
+    collection. This is a laboratory.
+  orb: >-
+    The crystal orb catches the purple light and fractures it into a hundred
+    moving points on the stone walls. Looking into it directly produces a
+    dizzy sensation, as if the center of it is further away than it should
+    be. You see something moving in there — not your reflection.
+spawninfo:
+- mobid: 324
+  message: The Wizard turns from his cauldron, regarding you with eyes that have seen too much.
+  idlecommands:
+  - emote stirs the cauldron with a long black rod, studying the shifting colors.
+  - say The valley has a spirit. Most people sense it but cannot name it.
+  - emote holds a crystal to the light, tilting it slowly.
+  - say The Junimos are older than memory. Older than the town. Older than most things.
+  - emote traces a symbol in the air. It glows briefly and fades.
+  - ''
+  respawnrate: 3 real minutes
+idlemessages:
+- 'The cauldron shifts color: violet to deep blue, following a logic not visible to ordinary eyes.'
+- The tower hums faintly — not mechanical, not wind, something more fundamental.
+- Books on the shelves occasionally rustle their pages, as if turning themselves to the right passage.
+- The crystal orb pulses once with light and goes still, having decided something privately.
+- A faint scent of pine resin and ozone — the smell of the kind of magic that runs deep in old earth.
+- The ivy on the tower walls breathes slowly, in rhythm with the cauldron.

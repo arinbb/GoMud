@@ -1,0 +1,79 @@
+roomid: 1984
+zone: Forbidden Planet
+title: Altairas Garden
+description: >-
+  A garden of impossible beauty enclosed by low white walls. Earth
+  <ansi fg="10">roses</ansi> and <ansi fg="10">lilies</ansi> grow alongside
+  alien <ansi fg="cyan">crystalline blooms</ansi> that open slowly as you
+  watch, their petals translucent and faintly luminous. A stone
+  <ansi fg="itemname">fountain</ansi> at the center runs with water that
+  Robby synthesized from atmospheric vapor. Near the fountain, a spotted
+  <ansi fg="itemname">deer</ansi> grazes without fear, having known nothing
+  in its short life that would teach it to be afraid. Beside it, improbably,
+  a <ansi fg="itemname">tiger</ansi> lounges in the shade of an alien tree,
+  watching you with amber eyes. It has never harmed anyone. It never has.
+  <ansi fg="itemname">Altaira</ansi> moves among the flowers with the unhurried
+  grace of someone who has never needed to hurry. To the
+  <ansi fg="exit">south</ansi>, the house exterior.
+mapsymbol: G
+maplegend: Altairas Garden
+biome: land
+exits:
+  south:
+    roomid: 1982
+nouns:
+  roses: >-
+    Earth roses, grown from seeds that Morbius brought from Earth twenty years
+    ago. They are slightly larger than any rose you have seen, their colors
+    more saturated -- as if the alien soil has given them something extra. They
+    smell like roses but also like something else, something that has no name.
+  lilies: >-
+    White and cream lilies in clusters around the garden wall. They were not
+    planted by Morbius -- Altaira planted them herself, having read about them
+    in the botanical encyclopedia. She has never seen them except in photographs.
+    She tends them with enormous care.
+  blooms: >-
+    The alien crystalline blooms are not plants in any botanical sense. They
+    grow, they respond to light, they close at night. But they have no root
+    system, no vascular structure, no biology of any kind Ostrow can identify.
+    They are, Morbius says, a Krell aesthetic project. They have been growing
+    here for two hundred thousand years.
+  fountain: >-
+    A small stone fountain, human-made and Earth-styled, utterly incongruous
+    in this alien garden. The water chimes pleasantly into its basin. Fish
+    swim in it -- actual Earth goldfish, kept alive by Robby's meticulous
+    maintenance of the water chemistry. Altaira has given each one a name.
+  deer: >-
+    A white-spotted deer, young and perfectly healthy, grazes near the
+    fountain with complete equanimity. It was born here, the daughter of
+    a deer that was born here, the granddaughter of a deer Morbius brought
+    as a fawn from Earth. It has never known a predator. It does not know
+    what fear is. This is either paradise or tragedy.
+  tiger: >-
+    A Bengal tiger, massive and magnificently striped, sprawled in the shade.
+    It raises its head to look at you with large amber eyes. It does not rise.
+    It has never attacked anyone. It has never needed to. Nothing here has
+    ever threatened it. Altaira scratches it behind the ears. It purrs like
+    a very large engine. Something in its eyes, though, is waiting.
+spawninfo:
+- mobid: 411
+  message: Altaira looks up from the flowers with an expression of uncomplicated delight.
+  idlecommands:
+  - say Do you have flowers like these on your world? The books show so many kinds.
+  - ""
+  - emote kneels to cup a crystalline bloom in both hands, studying its inner light.
+  - ""
+  - say My father says I must not go to your ship. But I want to see everything.
+  - ""
+  - emote strokes the deer between its ears. It leans into her hand.
+  - ""
+  - say I have read about Earth in all of Father's books. I know it from the inside out. But I have never seen it.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- The deer raises its head, sniffs once at the alien air, and returns to grazing.
+- The tiger's tail sweeps slowly back and forth across the pale gravel. Its eyes track you without alarm.
+- The crystalline blooms open a fraction wider as the light shifts, chiming almost inaudibly.
+- Altaira sings softly to herself -- an Earth song she learned from a book, in a language she does not speak.
+- 'The fountain plays its small music: water on stone, gold fish circling, the heartbeat of a private world.'
+- Beyond the garden walls, the desert waits. In here, for a moment, it is possible to believe it is not there.

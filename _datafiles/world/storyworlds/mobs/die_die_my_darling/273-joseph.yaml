@@ -1,0 +1,25 @@
+mobid: 273
+zone: die_die_my_darling
+hostile: false
+maxwander: 1
+activitylevel: 15
+idlecommands:
+  - "emote crouches near the fence, resetting a tin can on a post with careful, deliberate hands."
+  - "emote raises a small pellet gun, squints one eye closed, and fires. The can rings and spins."
+  - "emote flinches at a sound from inside the house, then goes back to his work."
+  - "emote tends the vegetable patch with slow, thorough attention, pulling weeds one by one."
+  - "emote hums something low and tuneless, setting cans back up on posts, resetting targets."
+  - ''
+  - ''
+character:
+  name: Joseph
+  description: >-
+    A pale young man of considerable height and a certain careful, deliberate
+    quality in all his movements, as though he has learned to move slowly to
+    avoid breaking things. His face is broad and open and might be called
+    simple, though 'patient' is closer. He speaks little, works steadily,
+    and has the particular self-containment of someone for whom the external
+    world is mostly noise. He tends the garden with the tin-can targets on
+    the fence posts as though both tasks are of equivalent importance.
+  raceid: 1
+  level: 4

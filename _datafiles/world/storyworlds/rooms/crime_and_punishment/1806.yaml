@@ -1,0 +1,56 @@
+roomid: 1806
+zone: Crime and Punishment
+title: The Pawnbrokers Flat
+description: >-
+  Small and overclean, every surface speaking of suspicious order. A glass-
+  fronted <ansi fg="itemname">cabinet</ansi> behind the old woman's chair
+  contains <ansi fg="itemname">pledged items</ansi> — fur coats folded flat,
+  a silver cigarette case, watches, rings, a gentleman's pocket-watch showing
+  a woman's portrait inside the lid. The room smells of <ansi
+  fg="itemname">camphor</ansi> and old money. The <ansi fg="itemname">axe</ansi>
+  — there is an axe, it lives in this room in memory now, it will always
+  live here — hangs on the wall beneath the old woman's coat on a hook near
+  the door. Icons in one corner. The window that looks onto the courtyard
+  is curtained. The staircase is <ansi fg="exit">down</ansi>. The flat is
+  silent. The flat has been silent for some time.
+mapsymbol: F
+maplegend: The Pawnbrokers Flat
+biome: house
+exits:
+  down:
+    roomid: 1805
+nouns:
+  cabinet: >-
+    The glass-fronted cabinet holds the merchandise of other people's
+    desperation. Each item here once meant something to someone who needed
+    money more than meaning. The old woman assessed each one at a fraction
+    of its worth and accepted it without comment. That was the transaction.
+    That was all it was.
+  pledges: >-
+    Fur coats, watches, rings, a silver cigarette case, a child's medal,
+    a woman's earrings. Each thing given up for a handful of coins. Each
+    thing waiting to be redeemed by someone who probably cannot afford to
+    redeem it.
+  camphor: >-
+    The smell of camphor permeates the flat, rising from the stored furs
+    and the old woman's clothing. It covers other smells, or tries to.
+  axe: >-
+    The axe on the hook beneath the coat. A workman's axe, not large.
+    The blade is clean. It has been here this whole time, ordinary,
+    available, waiting as objects wait — without intention, without
+    complicity, without guilt. The guilt belongs to whoever reached for it.
+  icons: >-
+    A corner of icons, small brass-framed faces of the saints, their
+    gold backgrounds dark with age and smoke. The old woman prayed here.
+    Whatever she prayed for was not granted. This is not unusual.
+spawninfo:
+- mobid: 316
+  message: The old pawnbroker squints at you from behind her desk, her hands folded over a ledger.
+  respawnrate: 12 real minutes
+idlemessages:
+- The clock on the shelf ticks. The room is very quiet. The quiet is not peaceful.
+- A curtain moves slightly in a draft from somewhere, covering and uncovering a strip of courtyard light.
+- 'The pledged items in the cabinet catch what little light there is: a watch face, a ring, something silver.'
+- The camphor smell is thick enough here to taste. It coats the back of the throat.
+- 'In the corner, the icons stare forward with the patient unseeing look of things that have witnessed everything.'
+- Something in the flat has the quality of a held breath, of a moment that has not yet decided what it is.

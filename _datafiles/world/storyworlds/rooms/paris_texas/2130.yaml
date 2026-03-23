@@ -1,0 +1,58 @@
+roomid: 2130
+zone: Paris Texas
+title: The Vacant Lot
+description: >-
+  An empty <ansi fg="red">lot</ansi> in Paris, Texas. Not much to say about it.
+  <ansi fg="8">Scrub grass</ansi> coming up through cracked caliche. A rusted
+  <ansi fg="itemname">fence post</ansi> still wearing a single strand of barbed
+  wire. The adjacent <ansi fg="8">lot</ansi> has a trailer on it. This one does
+  not. The sky above it is the same sky that is above everything in this part
+  of Texas — enormous, dry-blue, completely indifferent. Travis Henderson bought
+  this piece of land. He bought it because he saw a <ansi fg="itemname">photograph</ansi>
+  of it in a real estate circular. He bought it because his mother was from Paris
+  and his father was from Texas and this empty lot was the only place where
+  those two things had ever been true at the same time. That is what he was
+  looking for. That is what anyone is ever looking for. The desert lies to the
+  <ansi fg="exit">south</ansi>.
+mapsymbol: V
+maplegend: The Vacant Lot
+biome: desert
+exits:
+  south:
+    roomid: 2120
+    exitmessage: You walk back into the desert. The lot stays behind you, exactly as it was.
+nouns:
+  lot: >-
+    Just land. Caliche and scrub and the thin clay soil that bleaches
+    white in the sun. It is worth almost nothing in money. It is worth
+    something else entirely. Travis has the deed in a drawer somewhere.
+    He has never seen this lot in person. He owns it anyway.
+  photograph: >-
+    In your memory, a photograph from a real estate circular. A
+    black-and-white image of an empty lot in Paris, Texas. Nothing
+    remarkable. A fence post. Some grass. The edge of a road. The
+    price was low. The reason Travis bought it was not about price.
+  land: >-
+    Just land. But Travis bought this specific land because his mother
+    was from Paris — Paris, France — and his father was from Texas,
+    and this empty lot in Paris, Texas was the only point in the world
+    where those two facts about himself could both be true at once.
+    He never found what he was looking for. He kept looking.
+  fence: >-
+    One rusted fence post with a single strand of barbed wire. It
+    is not enclosing anything. It is just there, a record of some
+    earlier intention that did not pan out.
+  grass: >-
+    Dry and pale. It grows because it has to.
+  sky: >-
+    The sky over Paris, Texas is the same sky as everywhere else in
+    Texas but standing here it seems more specifically itself. Bigger
+    than necessary. More blue than blue.
+idlemessages:
+- The wind moves over the vacant lot without finding anything to catch on.
+- A bird lands on the fence post, regards the lot, and flies away.
+- The caliche crunches under your feet. The sound carries.
+- Paris, Texas. The sign is visible from here — city limits population 24,699. Welcome.
+- Somewhere very far away, a dog barks once and stops.
+- The afternoon light falls on the lot at an angle that makes everything look like a photograph.
+- Travis Henderson owns this land. He has never stood on it. You are standing on it for him.

@@ -1,0 +1,22 @@
+-
+  Supported:
+    "mr. wormwood": ["mrs. wormwood"]
+  Conversation:
+    - ["#1 say I sold three cars today! THREE! All with the sawdust special."]
+    - ["#2 say That's nice, dear. Did you record the bingo for me?"]
+    - ["#1 say Bingo! Always bingo! I'm talking about BUSINESS here! Real money!"]
+    - ["#2 say You know what's real money? The jackpot at the Lido Bingo Hall. Two thousand pounds."]
+    - ["#1 emote waves his hands in exasperation", "#1 say Woman, I make two thousand in a WEEK!"]
+    - ["#2 say You make two thousand in LIES, Harry. I make two thousand in LUCK. That's the difference."]
+    - ["#1 emote splutters indignantly", "#1 say It's not lying, it's BUSINESS!"]
+-
+  Supported:
+    "mr. wormwood": ["mrs. wormwood"]
+  Conversation:
+    - ["#1 say That girl was reading at the dinner table again. READING!"]
+    - ["#2 say She's a strange one, that one. I don't know where she gets it from."]
+    - ["#1 say Not from ME, that's for certain. I never read a book in my life and look at me!"]
+    - ["#2 emote looks at him", "#2 say Yes, dear. Look at you."]
+    - ["#1 say A girl should be watching the telly, not reading BOOKS. Books rot the brain."]
+    - ["#2 say She should be learning about makeup and hair. THAT'S what a girl needs."]
+    - ["#1 say Exactly! You don't need books to sell cars. Or win at bingo, for that matter."]

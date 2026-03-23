@@ -1,0 +1,66 @@
+roomid: 1980
+zone: Forbidden Planet
+title: The Landing Site
+description: >-
+  You stand on the rust-colored desert floor of Altair IV beneath a sky the
+  color of sea glass -- a luminous, impossible <ansi fg="cyan">green</ansi>.
+  The <ansi fg="itemname">C-57D</ansi> rises behind you, a gleaming saucer of
+  chrome and titanium, its landing struts sunk deep in alien soil. Its running
+  <ansi fg="itemname">lights</ansi> pulse with a steady blue rhythm. Before
+  you, the desert stretches to jagged <ansi fg="itemname">rock formations</ansi>
+  and strange crystalline <ansi fg="itemname">vegetation</ansi> that catches the
+  light of the twin suns. The air is dry and faintly electric. To the
+  <ansi fg="exit">east</ansi> a worn track leads into the desert.
+  To the <ansi fg="exit">south</ansi>, the ship hatch stands open.
+  To the <ansi fg="exit">west</ansi>, a perimeter of scorched earth marks where
+  something came in the night.
+mapsymbol: L
+maplegend: Landing Site
+biome: desert
+exits:
+  east:
+    roomid: 1981
+  south:
+    roomid: 1983
+  west:
+    roomid: 1991
+nouns:
+  C-57D: >-
+    United Planets Cruiser C-57D. A perfect flying saucer, one hundred yards
+    across, its hull a seamless alloy that seems to drink light. The ship has
+    made the crossing from Earth in about a year at near-light speed. It looks
+    entirely out of place against the alien sky -- and yet it is the only
+    familiar thing for light years in any direction.
+  lights: >-
+    Running lights set into the hull's rim pulse with a patient blue glow.
+    The navigator says they are navigation beacons, but something about their
+    rhythm feels almost like breathing.
+  formations: >-
+    The rock formations of Altair IV are nothing like anything on Earth.
+    They rise in smooth, almost organic columns, as if extruded rather than
+    eroded. Their surfaces glitter faintly with embedded crystals. In
+    certain lights, the columns cast shadows that look like figures.
+  vegetation: >-
+    The alien plants of Altair IV grow in clusters of translucent crystalline
+    tubes, some knee-high, some towering over your head. They hum faintly
+    in subsonic registers. When the wind blows -- and on Altair IV, the wind
+    barely blows -- they chime against one another with a sound like distant
+    glass bells.
+idlemessages:
+- The C-57D ticks and groans as its hull adjusts to the alien temperature differential.
+- A crystalline plant cluster nearby chimes softly, as if disturbed by a breeze you cannot feel.
+- The green sky deepens at the horizon to something almost indigo. There are no clouds. There never are.
+- 'Your shadow falls strange in the light of Altair: too sharp, too dark, pointing in a direction that seems wrong.'
+- The desert floor is covered in a fine reddish dust that rises with each step and takes forever to settle.
+- Far to the east, something glints from a hillside -- a dome, perhaps, or a window catching the sun.
+spawninfo:
+- mobid: 413
+  message: Commander Adams emerges from the C-57D and surveys the alien landscape.
+  idlecommands:
+  - say Keep the perimeter tight. We don't know what came through here last night.
+  - ""
+  - emote checks his sidearm and scans the horizon.
+  - ""
+  - say Morbius warned us. I should have listened sooner.
+  - ""
+  respawnrate: 5 real minutes

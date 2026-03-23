@@ -1,0 +1,17 @@
+name: Seinfeld
+roomid: 2000
+autoscale:
+  minimum: 1
+  maximum: 10
+defaultbiome: city
+mutators:
+- mutatorid: seinfeld-nothing
+idlemessages:
+- Someone has an opinion about something completely inconsequential and it is extremely important to them.
+- A minor social infraction has occurred. Nobody is sure exactly what the correct response is.
+- The wait is longer than expected. It is always longer than expected.
+- Something that should be simple has become complicated in a way that defies easy explanation.
+- A nearby conversation is about nothing and yet somehow everything depends on it.
+- The city hums around you, indifferent, enormous, absolutely full of people doing very little.
+- An etiquette question has arisen that has no satisfying answer.
+- Someone nearby is eating something and the way they are eating it is a problem.

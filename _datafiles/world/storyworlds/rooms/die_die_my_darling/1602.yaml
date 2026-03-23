@@ -1,0 +1,78 @@
+roomid: 1602
+zone: Die Die My Darling
+title: The Entrance Hall
+description: >-
+  The entrance hall of the Trefoile house is all <ansi fg="8">dark wood</ansi> —
+  panelled walls, a heavy balustrade on the <ansi fg="exit">stairs</ansi> going up,
+  a flagstone floor covered by a runner of <ansi fg="8">faded carpet</ansi> in a
+  pattern too dim to identify. <ansi fg="white">Religious icons</ansi> cover every
+  vertical surface — a crucifix above the door, a framed scripture passage on the
+  wall, a small <ansi fg="white">Madonna</ansi> in a niche beside the umbrella stand.
+  The smell of the house arrives all at once: old wood, boiled food, and something
+  that might be candle wax. There are no flowers. No photographs of living people.
+  No <ansi fg="8">mirror</ansi> above the hall table — only a pale rectangle on the
+  wallpaper where one used to hang. Exits lead <ansi fg="exit">south</ansi> to the
+  garden, <ansi fg="exit">east</ansi> to the dining room, <ansi fg="exit">north</ansi>
+  to the drawing room, <ansi fg="exit">west</ansi> to the kitchen, and <ansi
+  fg="exit">stairs</ansi> rise to the upper landing. A heavy <ansi fg="8">curtain</ansi>
+  hangs beneath the staircase, concealing the wall behind it.
+mapsymbol: H
+maplegend: Entrance Hall
+biome: house
+exits:
+  south:
+    roomid: 1601
+  east:
+    roomid: 1603
+  north:
+    roomid: 1604
+  west:
+    roomid: 1605
+  stairs:
+    roomid: 1609
+    mapdirection: up
+    exitmessage: You climb the dark staircase to the upper landing.
+  cellar:
+    roomid: 1613
+    mapdirection: down
+    secret: true
+    exitmessage: You push aside the heavy curtain behind the staircase and duck through the low door.
+nouns:
+  icons: >-
+    They are everywhere — crucifixes of varying sizes, framed passages from scripture
+    in ornate script, a painted wooden triptych, a brass plaque engraved with a verse
+    from Revelation. They are not decorative. They are a statement. Perhaps a warning.
+  crucifix: >-
+    A large wooden crucifix above the front door. The Christ figure is carved with
+    unusual specificity — the expression not peaceful but anguished. Someone chose
+    this one deliberately.
+  mirror: >-
+    There is no mirror here. Only a pale rectangle on the wallpaper — lighter than
+    the surrounding paper — in exactly the shape a mirror would leave. The hook is
+    still in the wall. The mirror has been removed recently, and deliberately.
+  carpet: >-
+    The carpet runner is thick with age, its pattern — once a floral design, perhaps
+    — worn to a uniform grey-brown. It has absorbed decades of footsteps and said
+    nothing about any of them.
+  madonna: >-
+    A small plaster Madonna in a niche beside the umbrella stand. She has been touched
+    so often that the paint has worn from her hands and face, leaving white plaster
+    showing through. She is very old and very handled.
+  curtain: >-
+    A heavy curtain of black velvet hanging beneath the staircase, pulled tight
+    against the wall. It covers something. The edge of a low door is just visible
+    at the side of the curtain if you look directly at it. Someone hung this to
+    conceal the cellar entrance.
+  cellar: >-
+    At the far end of the entrance hall, almost hidden behind the staircase, a low
+    door with iron hinges leads down into darkness. The stairs beyond it creak even
+    when no one is on them.
+spawninfo: []
+idlemessages:
+- The flagstone floor is cold even through your shoes.
+- The house ticks and settles around you, wood contracting in the chill air.
+- You notice the umbrella stand contains one black umbrella. One. Always the same one.
+- A draught moves under the front door and stirs the faded carpet runner.
+- The scripture passage on the wall catches your eye. You read one line and look away.
+- The absence of a mirror above the hall table feels louder than a shout.
+- From somewhere upstairs, the faint sound of someone moving very deliberately.

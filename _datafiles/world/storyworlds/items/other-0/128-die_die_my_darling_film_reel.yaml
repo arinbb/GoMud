@@ -1,0 +1,15 @@
+itemid: 128
+name: Die Die My Darling film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Die! Die! My Darling!</ansi>
+description: >-
+  A heavy film reel in a plain black canister. The title is stamped on the lid
+  in plain block capitals: DIE! DIE! MY DARLING! Below the title, a small yellow
+  sticker from a film society reads: "Hammer, 1965. Bankhead's final film.
+  Transferred from the estate library." The canister is cold to the touch. If
+  you hold it near your ear, you can just make out something: not the rattle of
+  the projector, but a voice, very low, reciting scripture.
+type: object
+subtype: usable
+uses: 0
+value: 0

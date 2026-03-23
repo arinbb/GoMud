@@ -1,0 +1,30 @@
+mobid: 305
+zone: on_the_road
+hostile: false
+maxwander: 0
+activitylevel: 20
+angrycommands: []
+idlecommands:
+  - emote shifts an invisible gear, one hand on the wheel, eyes on the horizon.
+  - emote pours coffee from a thermos into a cup, offers it in your direction.
+  - say I been driving this route thirty years. Know every crack in the road by feel now.
+  - emote points at something through the windshield that is very far away.
+  - say My wife is in Omaha. I will be there Thursday. She makes a chicken that is worth driving for.
+  - emote adjusts the side mirror, checks the road behind, checks the road ahead.
+  - say You want to get to Denver, I can take you to Des Moines and you can catch another ride there.
+character:
+  name: a truck driver
+  description: >-
+    A large man in a plaid shirt with forearms like bridge cables, his
+    face shaped by wind and road glare into something permanent and
+    weather-resistant. He has a thermos of coffee and a bag of beef jerky
+    and opinions about the road that he has earned by covering most of it
+    multiple times. He smells of diesel and coffee and the particular
+    honest fatigue of someone who works with their body for a living and
+    finds it sufficient. He will talk to you for six hundred miles about
+    his wife, his route, the roads that were better before the interstate,
+    and the meal in Omaha he is driving toward. He is the country, or one
+    of the versions of it, the one that keeps moving because things need
+    to be somewhere by Thursday.
+  raceid: 1
+  level: 5

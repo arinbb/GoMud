@@ -1,0 +1,15 @@
+itemid: 240
+name: miniature proton pack
+namesimple: proton pack
+displayname: a <ansi fg="itemname">miniature proton pack</ansi>
+description: >-
+  A palm-sized replica of the Ghostbusters proton pack, accurate down to the
+  cyclotron housing and the wand attachment. The cyclotron glows with a soft
+  pulsing blue light, and if you hold it very still you can hear the faintest
+  hum of contained particle energy. The NO GHOST logo is etched into the side
+  in miniature. It smells faintly of ozone and, inexplicably, burnt marshmallow.
+  A souvenir of the night someone saved New York.
+type: object
+subtype: usable
+uses: 0
+value: 0

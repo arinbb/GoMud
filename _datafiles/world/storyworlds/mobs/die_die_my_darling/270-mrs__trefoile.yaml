@@ -1,0 +1,30 @@
+mobid: 270
+zone: die_die_my_darling
+hostile: false
+maxwander: 2
+activitylevel: 30
+idlecommands:
+  - 'emote opens the Bible and reads aloud in a low, steady voice: "And ye shall be holy unto me: for I the LORD am holy."'
+  - "emote lifts her head and addresses the empty air beside her. 'Not long now, Stephen. She will be ready soon.'"
+  - "emote clutches a small, worn teddy bear to her chest with both arms, rocking slightly."
+  - "say It is time for evening prayer. You will attend, of course."
+  - "emote 's eyes move to the door of the chapel and back, slow and measuring."
+  - "emote whispers something too low to hear, her lips barely moving."
+  - "say Stephen always said that vanity was the root of all corruption. He was very wise."
+  - ''
+  - ''
+character:
+  name: Mrs. Trefoile
+  description: >-
+    An elderly woman of erect and formidable bearing. Her grey hair is drawn
+    back from her face with such severity that it pulls the skin of her
+    temples smooth. No makeup of any kind. No jewellery except a plain gold
+    ring worn on her right hand. She is dressed in grey from collar to hem —
+    a high-necked blouse, a long skirt, low shoes of unpolished black leather.
+    Her face is not unkind, which is the most disturbing thing about it. She
+    looks at you with an expression of focused, patient attention, as though
+    she is waiting for something that she is entirely certain will come. A
+    large Bible is always in her hands, held open or closed with the same
+    proprietorial ease.
+  raceid: 1
+  level: 10

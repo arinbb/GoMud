@@ -1,0 +1,27 @@
+mobid: 310
+zone: crime_and_punishment
+hostile: false
+maxwander: 1
+activitylevel: 25
+angrycommands: []
+idlecommands:
+  - emote paces three steps, turns, paces back. His lips move without sound.
+  - say Extraordinary men have the right -- the right -- to step over the obstacle.
+  - emote clutches his coat around himself despite the heat, staring at the floor.
+  - say Napoleon would not have hesitated. Why do I hesitate?
+  - ''
+  - emote runs a hand through his lank hair, his eyes bright with fever.
+  - say It was a theory. Only a theory. A thought experiment. A louse -- that is all she was.
+  - emote sits on the edge of the sofa and stares at his hands for a long time.
+character:
+  name: Raskolnikov
+  description: >-
+    A young man, perhaps twenty-three, tall and strikingly handsome beneath
+    the grime and the fever. His clothes were once a student's respectable
+    uniform and are now rags he barely notices. His eyes are dark and
+    brilliant with an interior fire that is part intelligence, part illness,
+    part guilt he will not name. He speaks in fragments, as if his thoughts
+    are moving faster than language. He holds himself apart from the world
+    with the rigidity of a man convinced he has stepped outside it.
+  raceid: 1
+  level: 12

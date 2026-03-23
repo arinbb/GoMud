@@ -1,0 +1,54 @@
+roomid: 2014
+zone: Seinfeld
+title: The Laundromat
+description: >-
+  A <ansi fg="8">laundromat</ansi> on the Upper West Side, fluorescent-lit, smelling
+  of detergent and warm air and the faint human residue of a hundred loads of laundry.
+  The <ansi fg="itemname">machines</ansi> line both walls -- washers on one side,
+  dryers on the other. A row of <ansi fg="itemname">plastic chairs</ansi> faces the
+  dryers, occupied by people reading things or staring at their clothes as they tumble.
+  A <ansi fg="itemname">folding table</ansi> runs down the center. The <ansi fg="itemname">change
+  machine</ansi> takes dollars and produces quarters with the reliability of an
+  institution that has never once surprised anyone. This is where the social
+  negotiations happen -- the conversation that happens when two people sit next to
+  each other for forty-five minutes with nowhere to go is the raw material of
+  everything. The <ansi fg="exit">street</ansi> is to the north.
+mapsymbol: W
+maplegend: Laundromat
+biome: city
+exits:
+  street:
+    roomid: 2004
+    mapdirection: north
+nouns:
+  machines: >-
+    The machines are industrial, white, coin-operated. They do what machines
+    should do: accept quarters, fill with water, agitate, spin. They do not
+    have opinions about the clothes. They perform their function without
+    philosophical complexity, which is more than can be said for the people
+    using them.
+  chairs: >-
+    Plastic chairs, orange or yellow, the color of things that were designed
+    by someone who had an idea about cheerfulness in institutional spaces.
+    The idea has worn off. The chairs remain. People sit in them for forty-five
+    minutes and have conversations that they would not have anywhere else.
+  table: >-
+    The folding table. The surface where agreements are reached about whose
+    laundry is whose, about whether it is acceptable to move someone's
+    clothes from the washer to the dryer without asking, about the complex
+    social contract of shared laundry space in a city of millions.
+  change: >-
+    The change machine. You put in a dollar and it gives you four quarters
+    and that is the entire transaction and it is satisfying in a way that
+    very few things in this city are satisfying: completely, and without
+    ambiguity.
+spawninfo: []
+idlemessages:
+- A dryer finishes and buzzes. The person whose clothes are in it does not immediately notice.
+- The change machine accepts a dollar and produces four quarters. A small negotiation with the city, completed.
+- Two people sit next to each other in the plastic chairs, both pretending to read, both aware of the other person.
+- A washer enters its spin cycle and the whole row of machines vibrates sympathetically.
+- Someone is folding a fitted sheet. They have given up on the corners. The sheet will be folded approximately.
+- The fluorescent lights hum at a frequency that is not quite music and not quite silence.
+- A shirt tumbles in the dryer, visible through the porthole, going around and around with the commitment of something with no choice.
+- The detergent smell is warm and clean and slightly chemical, the smell of all laundromats everywhere since the beginning of laundromats.

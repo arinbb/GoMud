@@ -1,0 +1,29 @@
+mobid: 351
+zone: super_mario_bros
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote bounces on his heels, his mushroom cap wobbling with the motion."
+  - ""
+  - "say Thank you Mario!"
+  - ""
+  - "emote adjusts his spotted mushroom cap with both small hands."
+  - ""
+  - "emote spreads his tiny hands in a gesture of warm, apologetic helpfulness."
+  - ""
+  - "emote clasps his hands together and beams with cheerful determination."
+  - ""
+activitylevel: 25
+character:
+  name: Toad
+  description: >-
+    A small round-headed figure about two feet tall, wearing a white
+    mushroom cap with red spots the size of a satellite dish and a
+    blue vest over a white shirt. His eyes are large and expressive
+    and currently expressing sincere apology. He has the energy of
+    someone who has been delivering bad news all day and has committed
+    to making it as pleasant as possible. He is not responsible for
+    the princess being in another castle. He is just the messenger.
+    He is very cheerful about it.
+  raceid: 1
+  level: 3

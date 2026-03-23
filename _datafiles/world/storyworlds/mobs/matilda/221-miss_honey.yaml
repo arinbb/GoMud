@@ -1,0 +1,24 @@
+mobid: 221
+zone: matilda
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote reads aloud from a book in her soft, clear voice."
+  - ""
+  - ""
+  - "say Now, who would like to try the next problem?"
+  - "emote smiles encouragingly, though her eyes hold a deep sadness."
+  - "emote straightens the wildflowers on her desk with gentle fingers."
+activitylevel: 20
+character:
+  name: Miss Honey
+  description: >-
+    A young woman with a sweet, pale face and gentle blue eyes. She wears a
+    plain cotton dress in a soft shade of lavender and sensible flat shoes.
+    Her brown hair is pulled back simply. She moves with a quiet, almost
+    apologetic grace, as if trying to take up as little space as possible.
+    There is something heartbreakingly kind about her, and something terribly
+    sad. She speaks softly, listens carefully, and treats every child as if
+    they matter — because to her, they do.
+  raceid: 1
+  level: 10

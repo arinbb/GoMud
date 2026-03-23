@@ -1,0 +1,44 @@
+roomid: 1303
+zone: Buffalo 66
+title: Gas Station Bathroom
+description: >-
+  A gas station <ansi fg="itemname">bathroom</ansi> of breathtaking grimness. The
+  <ansi fg="itemname">tiles</ansi> are cracked and yellowed. A single
+  <ansi fg="itemname">fluorescent</ansi> tube buzzes overhead, washing everything in
+  sick greenish light. The <ansi fg="itemname">mirror</ansi> above the sink is
+  scratched and clouded. The <ansi fg="itemname">toilet</ansi> is industrial porcelain,
+  the stall door missing entirely. Graffiti covers every surface. Water drips
+  from a pipe somewhere behind the wall, a slow irregular percussion. The street
+  is back to the <ansi fg="exit">south</ansi>.
+mapsymbol: G
+maplegend: Gas Station
+biome: house
+exits:
+  south:
+    roomid: 1301
+nouns:
+  tiles: >-
+    Once white, now a mosaic of cracks and yellowed grout. Some tiles are
+    missing entirely, revealing damp concrete underneath.
+  fluorescent: >-
+    The tube flickers with a faint, irregular pulse. One end has gone dark.
+    The light it produces makes everything look slightly ill.
+  mirror: >-
+    Scratched, clouded, cracked in one corner. Your reflection looks back at
+    you, distorted and unflattering. It does not lie.
+  toilet: >-
+    Industrial porcelain. Functional. The stall door was removed long ago,
+    or never existed. There is no privacy here, not even from yourself.
+  bathroom: >-
+    The worst bathroom in Buffalo. Which is saying something.
+  graffiti: >-
+    Names, phone numbers, crude drawings, declarations of love and hate.
+    Someone wrote "GOD IS DEAD" and someone else wrote "SO IS BUFFALO"
+    underneath it.
+idlemessages:
+- The fluorescent light flickers, and for a moment you are in complete darkness.
+- Water drips behind the wall. Drip. Drip. Drip. The intervals are not quite regular.
+- The bathroom door does not lock. The wind pushes it open an inch, then lets it swing shut.
+- Someone has scratched something into the mirror, but the light is too bad to read it.
+- The smell of industrial cleaner and something worse underneath it fills the space.
+- A pipe groans inside the wall like something shifting in its sleep.

@@ -1,0 +1,23 @@
+mobid: 228
+zone: matilda
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say You want to know about the Chokey? Pull up a wall, I'll tell you."
+  - "emote traces a scar on her arm with a sort of pride."
+  - ""
+  - ""
+  - "say Trunchbull threw a boy out the window once. Second floor. He bounced."
+  - "emote glances down the corridor and drops her voice to a whisper."
+activitylevel: 25
+character:
+  name: Hortensia
+  description: >-
+    A tough, wiry girl of about ten with scraped knees, ink-stained fingers,
+    and the casual swagger of a war veteran. She has been in the Chokey more
+    times than she can count and wears her scars like medals. She knows every
+    trick the Trunchbull has ever pulled and tells the stories with a mixture
+    of horror and professional admiration. She leans against walls with the
+    studied nonchalance of someone who has seen it all and survived.
+  raceid: 1
+  level: 8

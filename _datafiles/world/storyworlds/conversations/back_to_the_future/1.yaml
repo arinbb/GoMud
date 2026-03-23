@@ -1,0 +1,22 @@
+-
+  Supported:
+    "doc brown": ["marty mcfly"]
+  Conversation:
+    - ["#1 say Marty! I've finally done it! The flux capacitor is complete!"]
+    - ["#2 say Doc, this is heavy."]
+    - ["#1 say Heavy? Why are things so heavy in the future? Is there a problem with the Earth's gravitational pull?"]
+    - ["#2 emote stares at him.", "#2 say No, Doc, it's just -- it's a lot to take in."]
+    - ["#1 say 1.21 gigawatts, Marty! That's what we need! One bolt of lightning!", "#1 emote gestures wildly at the clock tower."]
+    - ["#2 say Great Scott?", "#2 emote mimics the gesture."]
+    - ["#1 say GREAT SCOTT is right! Now -- on my signal -- 88 miles per hour!"]
+-
+  Supported:
+    "doc brown": ["marty mcfly"]
+  Conversation:
+    - ["#1 say The time circuits are calibrated. The plutonium chamber is primed."]
+    - ["#2 say Doc, what if something goes wrong?"]
+    - ["#1 emote pauses.", "#1 say Then I've made a terrible miscalculation."]
+    - ["#2 say That's not reassuring."]
+    - ["#1 say It isn't meant to be reassuring! It's meant to be accurate!", "#1 emote goes back to the blackboard."]
+    - ["#2 emote looks at his fading photograph.", "#2 say I just need this to work."]
+    - ["#1 say It WILL work. Trust the math, Marty. Trust the MATH."]

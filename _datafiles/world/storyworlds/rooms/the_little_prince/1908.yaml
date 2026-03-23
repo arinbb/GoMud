@@ -1,0 +1,59 @@
+roomid: 1908
+zone: The Little Prince
+title: The Geographers Asteroid
+description: >-
+  Enormous <ansi fg="itemname">books</ansi> line every surface of the asteroid,
+  each one a geography of somewhere the Geographer has never been. He sits
+  at a grand <ansi fg="itemname">desk</ansi> of polished mahogany, consulting
+  his records, his quill ready to note the features of lands described by
+  travelers he has sent out and may or may not trust. He is a very important
+  person. He cannot go himself -- he is far too busy recording what others
+  find. He knows every river, every mountain, every city on every planet in
+  the region -- by report. He has never seen any of them. He finds explorers
+  to verify what he already suspects. When the Little Prince told him about
+  his rose, the Geographer was not interested. Roses are <ansi fg="itemname">ephemeral</ansi>,
+  he said. We do not record ephemeral things. This is when the Little Prince
+  understood something about his rose that he had not understood before. The
+  path leads back to the <ansi fg="exit">lamplighter</ansi> north, and an
+  exit leads to <ansi fg="exit">earth</ansi> from here, east.
+mapsymbol: G
+maplegend: Geographers Asteroid
+biome: land
+exits:
+  lamplighter:
+    roomid: 1907
+    mapdirection: north
+  earth:
+    roomid: 1900
+    mapdirection: east
+nouns:
+  books: >-
+    Floor to ceiling, the most comprehensive geographic library in the
+    region. Every mountain range, every river delta, every harbor and cape
+    and plateau, recorded in the Geographer's precise hand. He has read
+    all of the reports. He has verified all the measurements. He has
+    never left this asteroid. He has never needed to. The books contain
+    the world. The world contains things the books have not caught yet,
+    but he is working on it.
+  desk: >-
+    A desk the size of a small room, covered in maps and charts and
+    expedition reports and cross-references. The quill is always wet.
+    The inkwell is always full. Something is always being recorded or
+    corrected or noted for future recording. The desk is the center of
+    the universe and also, entirely, of no use to anyone who wants to
+    actually go somewhere.
+  ephemeral: >-
+    'We do not record ephemeral things.' The Geographer's voice is patient
+    and certain. Flowers are ephemeral. They might be gone tomorrow. What
+    good is a map with a flower on it if the flower is gone? Geographies
+    record the eternal. Mountains. Oceans. Deserts. Not roses. When the
+    Little Prince heard this, he thought of his rose for the first time
+    not as a nuisance but as something that could be lost. Ephemeral.
+    That was the word. He left quickly after that.
+idlemessages:
+- The Geographer adds a footnote to a map of a place he will never see.
+- He opens a report, reads it carefully, adds a notation, closes it. The world is slightly better recorded.
+- 'He mutters to himself: coordinates, elevations, distances. Everything that can be measured is being measured.'
+- The books sigh slightly as the asteroid passes through a particularly dense region of space.
+- He looks up, sees you, reaches for his quill. 'You are an explorer? What have you found?'
+- A map slides from the desk. He retrieves it without looking, returns it to its place. He knows his desk by heart.

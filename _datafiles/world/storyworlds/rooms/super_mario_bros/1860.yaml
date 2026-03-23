@@ -1,0 +1,81 @@
+roomid: 1860
+zone: Super Mario Bros
+title: World 1-1 Start
+description: >-
+  The most famous place in video game history. Blue sky stretches overhead --
+  that specific <ansi fg="cyan">Nintendo blue</ansi>, clear and impossible and
+  joyful. Green <ansi fg="itemname">pipes</ansi> jut from the ground to your
+  left, wide enough to climb into. The ground is made of chunky brown
+  <ansi fg="itemname">blocks</ansi>, solid and pixelated, stretching east into
+  the distance. Overhead, a row of <ansi fg="yellow">question mark blocks</ansi>
+  floats impossibly in mid-air, blinking with a faint golden light. Coins
+  sparkle between them. The whole world is bright, cheerful, and organized
+  with a clarity no real landscape could manage. A small man in a red hat
+  and blue overalls stands nearby, fists clenched, mustache bristling with
+  determination. The kingdom awaits. <ansi fg="exit">East</ansi> leads deeper
+  into the level.
+mapsymbol: S
+maplegend: World 1-1 Start
+biome: land
+exits:
+  east:
+    roomid: 1861
+nouns:
+  pipes: >-
+    Wide green pipes, perfectly cylindrical, standing about as tall as your
+    waist. The tops are rimmed with a darker green lip. A faint gurgling
+    sound rises from the nearest one. Something lives down there. Something
+    with coins. The pipes have always been there, mysterious portals to
+    underground worlds that the game never fully explains.
+  blocks: >-
+    Chunky brown bricks forming the ground and scattered platforms, each
+    one about a foot square. They have that particular 8-bit solid look,
+    the corners perfectly right-angled, the color a warm earth tone. If you
+    knock one from below with your fist, it shatters. If it has a question
+    mark, something pops out.
+  question: >-
+    Floating blocks stamped with yellow question marks, blinking slowly.
+    They bob in mid-air above the path with the casual certainty of things
+    that have always been there. Hit one from below and you will find a
+    coin, a mushroom, a fire flower, or a star. The question mark goes
+    blank afterward. The mystery is spent. But there is always another one
+    further along.
+spawninfo:
+- mobid: 350
+  message: Mario lands with a cheerful boing, his red hat settling on his head.
+  idlecommands:
+  - emote jumps straight up, punching a question mark block overhead. A coin pops out with a bright ding!
+  - ""
+  - emote runs in place briefly, boots pattering on the brick ground.
+  - ""
+  - emote adjusts his red cap and peers determinedly eastward.
+  - ""
+  - emote punches the air and grins at no one in particular.
+  - ""
+  respawnrate: 3 real minutes
+- mobid: 353
+  message: A Goomba waddles in from the east, frowning with the deep concentration of something that has only one job.
+  idlecommands:
+  - emote waddles left with slow, implacable purpose.
+  - emote waddles right with slow, implacable purpose.
+  - emote frowns. The frown is doing a lot of work.
+  - ""
+  respawnrate: 2 real minutes
+- mobid: 358
+  message: Luigi arrives in a slightly higher jump than strictly necessary, landing beside Mario.
+  idlecommands:
+  - emote jumps noticeably higher than seems reasonable.
+  - ""
+  - emote glances around nervously, adjusting his green cap.
+  - ""
+  - emote follows Mario closely, staying just behind his left shoulder.
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- 'A coin spins in the distance, catching the sun: ding!'
+- The question mark blocks bob overhead, their gold light pulsing with patient invitation.
+- A Goomba wanders past, frowning at nothing in particular. This is its entire existence.
+- The pipes gurgle softly. Something is definitely down there.
+- 'The sky is perfect: no clouds except the round white pixel-art ones drifting slowly east.'
+- 'The brick ground is warm underfoot: sun-heated clay, solid and blocky and reliable.'
+- You get the distinct feeling the universe wants you to go east.

@@ -1,0 +1,21 @@
+-
+  Supported:
+    "the quiet old lady": ["*"]
+  Conversation:
+    - ["#1 say goodnight room."]
+    - ["#1 say goodnight moon."]
+    - ["#1 say goodnight cow jumping over the moon."]
+    - ["#1 say goodnight light and the red balloon."]
+    - ["#1 say goodnight bears. goodnight chairs."]
+    - ["#1 emote 's needles pause, then resume, slower.", "#1 say goodnight kittens. goodnight mittens."]
+    - ["#1 say goodnight clocks and goodnight socks."]
+    - ["#1 say goodnight little house. goodnight mouse."]
+    - ["#1 emote rocks once, very slowly, and is quiet for a long moment."]
+    - ["#1 say goodnight comb. goodnight brush."]
+    - ["#1 say goodnight nobody.", "#1 emote looks toward a corner of the room, at something that is not there."]
+    - ["#1 say goodnight mush."]
+    - ["#1 emote 's needles stop. The room is very still."]
+    - ["#1 say goodnight to the old lady whispering hush.", "#1 emote seems briefly surprised by this, then accepting."]
+    - ["#1 emote closes her eyes for a moment.", "#1 say goodnight stars. goodnight air."]
+    - ["#1 say goodnight noises everywhere."]
+    - ["#1 emote opens her eyes. The room is darker than it was. This is fine."]

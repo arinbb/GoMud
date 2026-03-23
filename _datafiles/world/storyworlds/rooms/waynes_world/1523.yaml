@@ -1,0 +1,49 @@
+roomid: 1523
+zone: Waynes World
+title: Suburban Aurora Street
+description: >-
+  The <ansi fg="itemname">streets</ansi> of Aurora, Illinois spread out in every
+  direction — a grid of <ansi fg="itemname">split-level houses</ansi>, basketball
+  hoops in driveways, and the occasional spectacular mullet visible through a
+  living room window. The <ansi fg="itemname">sky</ansi> is big and midwestern
+  and holding its own. This is where dreams are born and where cable access
+  television thrives. <ansi fg="exit">North</ansi> leads to Stan Mikita's Donuts.
+  <ansi fg="exit">South</ansi> takes you toward the Gasworks. <ansi fg="exit">East</ansi>
+  is the music store. Benjamin Kane's building is accessible via <ansi fg="exit">elevator</ansi>
+  to the north. To the <ansi fg="exit">west</ansi> is Wayne's kitchen.
+mapsymbol: +
+maplegend: Aurora Street
+biome: city
+exits:
+  west:
+    roomid: 1522
+  north:
+    roomid: 1524
+  south:
+    roomid: 1526
+  east:
+    roomid: 1527
+  elevator:
+    roomid: 1530
+    mapdirection: northwest
+nouns:
+  streets: >-
+    Aurora, Illinois. Population: enough. The streets are orderly, the lawns
+    maintained, the American dream in modest but genuine practice. Wayne grew
+    up here and it made him exactly who he is, which is excellent.
+  houses: >-
+    Split-level houses in earth tones. Each one contains a family, a television,
+    and at least one person who has opinions about the local sports teams. Normal
+    life. The background against which greatness is performed.
+  sky: >-
+    The enormous, flat, midwestern sky. Blue in the daytime. Stars at night.
+    Every shade of grey and gold at sunrise. It is the best sky in the world
+    if you grew up under it.
+idlemessages:
+- A car drives past with its windows down, trailing the tail end of a classic rock song.
+- Someone mows their lawn two houses down. The smell of cut grass mingles with donut exhaust.
+- A kid on a bicycle executes a flawless no-hands turn and disappears around the corner.
+- The cable access antenna on Wayne's house is visible above the rooflines, pointing at heaven.
+- Two neighbors conduct a conversation across their driveways about nothing in particular.
+- A dog barks once, considers the effort, and decides against a second bark.
+- The distant sound of a drum fill drifts from somewhere — basement practice.

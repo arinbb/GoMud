@@ -1,0 +1,14 @@
+name: The Monkey Wrench Gang
+roomid: 1880
+autoscale:
+  minimum: 1
+  maximum: 10
+defaultbiome: desert
+idlemessages:
+- 'The desert silence is immense, broken only by wind and the distant cry of a hawk.'
+- A heat shimmer rises from the red rock, bending the horizon like a fever dream.
+- The smell of sage and dry earth fills your lungs. This is the smell of the real world.
+- 'Somewhere out there, a bulldozer is idle. For now.'
+- The sky above is so blue and so vast that looking at it for too long becomes a kind of vertigo.
+- 'Edward Abbey wrote: ''This is my country, though I never made it. It was here before I was born and it will endure long after I am gone.'''
+- The rock is red. The sky is blue. The river, where you can hear it, sings to itself.

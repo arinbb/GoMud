@@ -1,0 +1,25 @@
+mobid: 462
+zone: up_in_smoke
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote flips open a case file and reads the top page with the intensity of a man who has read it thirty times."
+  - ""
+  - "say That van is out there. I know it. It is a matter of time."
+  - ""
+  - "emote holds up the binoculars and peers through them at the evidence board. He is indoors. He lowers them."
+  - "emote writes something on the board in red marker, steps back, and stares at what he wrote."
+  - ""
+  - "say I am one step behind. Just one step. Every single time."
+activitylevel: 25
+character:
+  name: Sgt Stedenko
+  description: >-
+    A broad-shouldered man of middle age in a tan blazer that has seen better
+    days, his jaw set with the precise tension of someone who is always this
+    close. His eyes are sharp and slightly haunted. He carries binoculars
+    even indoors, as a statement of intent. He smells faintly of coffee
+    that has been cold for hours. He is absolutely certain that he is right
+    about the van. He is right about the van. He will not catch the van.
+  raceid: 1
+  level: 8

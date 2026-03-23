@@ -1,0 +1,27 @@
+mobid: 344
+zone: far_cry_5
+hostile: false
+maxwander: 0
+activitylevel: 40
+idlecommands:
+- say So I put the RPG on the truck and fired it while moving and MOST of the truck survived. The important part of the truck survived.
+- emote examines a rocket launcher with the expression of a man reviewing a relationship he has no intention of ending.
+- ""
+- say My cousin Hurk Jr. says I should dial it back. I say if dialing it back was a good idea somebody would have done it by now.
+- emote high-fives nobody, with complete sincerity and follow-through.
+- ""
+- say I blew up two Peggie checkpoints this week. Three if you count the one I blew up twice because the first one didn't feel done.
+character:
+  name: Hurk
+  description: >-
+    A large, enthusiastic man who would describe himself as a patriot,
+    an explosives enthusiast, and a good time. He would be correct about
+    all three. He has a rocket launcher on his back with the casual ease
+    of someone who keeps one there habitually. His reasoning is sometimes
+    difficult to follow but always sincere. He is not tactically sophisticated.
+    He is, however, completely committed, genuinely fond of the resistance,
+    and capable of creating enormous explosions at moments that are occasionally
+    helpful and occasionally simply enormous. His cousin Hurk Jr. is in
+    other zones. He mentions this frequently.
+  raceid: 1
+  level: 7

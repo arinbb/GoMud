@@ -1,0 +1,27 @@
+-
+  Supported:
+    "pedro": ["*"]
+  Conversation:
+    - ["#1 say You want to hear about my car? I will tell you about my car."]
+    - ["#1 say 1964 Impala. Three years of work. Every weekend. Every holiday."]
+    - ["#1 emote gestures at the lowrider with both hands."]
+    - ["#1 say The hydraulics alone: six months. You see the paint? That is twenty coats."]
+    - ["#1 say Twenty coats. And the fuzzy dice -- those were my grandfather's. I am not explaining that."]
+-
+  Supported:
+    "pedro": ["*"]
+  Conversation:
+    - ["#1 say My cousin, right? Over on the east side."]
+    - ["#1 say Whenever I need anything I go to my cousin. She always has it."]
+    - ["#1 say I showed up once with eleven people she had never met."]
+    - ["#1 say She made tamales for everyone. Did not even blink."]
+    - ["#1 emote shakes his head with admiration.", "#1 say That is family."]
+-
+  Supported:
+    "pedro": ["*"]
+  Conversation:
+    - ["#1 say The Battle of the Bands at the Roxy. You heard of the Roxy?"]
+    - ["#1 say Sunset Strip. The real thing. Real lights, real stage."]
+    - ["#1 say Man and me, we are going to be on that stage, and we are going to win."]
+    - ["#1 emote bounces the car once on the hydraulics for emphasis."]
+    - ["#1 say That is not optimism. That is a prediction."]

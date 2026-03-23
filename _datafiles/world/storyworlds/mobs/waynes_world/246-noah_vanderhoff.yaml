@@ -1,0 +1,27 @@
+mobid: 246
+zone: waynes_world
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote holds his product up and smiles at the monitor with practiced ease."
+  - "say This is a fantastic product. I use it myself. Every single day."
+  - "emote watches the Wayne's World feed with an expression of professional appreciation."
+  - "say The demographics on this show are very compelling. Very compelling indeed."
+  - ""
+  - ""
+  - "emote practices his product-holding smile, tilting the angle slightly."
+  - "say Brand integration done right is invisible. The audience doesn't even know it's happening."
+  - "emote nods at a thought he's been having since before you arrived."
+activitylevel: 25
+character:
+  name: Noah Vanderhoff
+  description: >-
+    A man who has found his calling in sponsorship and has never looked back.
+    He holds his product — a branded household item of no particular charisma —
+    the way other men hold their children: with constant pride and a tendency
+    to present it to strangers. He is not malevolent. He is simply a man whose
+    relationship with sincerity has been entirely replaced by a relationship
+    with brand identity. He is smiling. He is always smiling. He means the smile
+    in a business sense.
+  raceid: 1
+  level: 3

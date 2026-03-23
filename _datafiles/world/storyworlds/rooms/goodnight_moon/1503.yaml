@@ -1,0 +1,68 @@
+roomid: 1503
+zone: Goodnight Moon
+title: The Fireplace Nook
+description: >-
+  The south corner of the great green room, tucked close to the
+  <ansi fg="itemname">fire</ansi>. From here you can feel the heat
+  directly -- it is not hot, only warm, the warmth of something that
+  has been burning for a long time and is burning lower but not yet
+  out. The <ansi fg="itemname">hearthrug</ansi> is thick and soft
+  beneath your feet, the colors of autumn leaves, slightly faded.
+  The rocking <ansi fg="itemname">chair</ansi> is here, very close,
+  and in it the <ansi fg="mobname">quiet old lady</ansi> is most
+  present -- most herself. Her <ansi fg="itemname">knitting</ansi>
+  moves in the firelight with a rhythm as old as rocking, as old as
+  hush. The fire behind its grate is <ansi fg="yellow">amber</ansi>
+  and <ansi fg="11">gold</ansi> and settling. The shadows it throws
+  on the green walls are enormous and warm and entirely unthreatening.
+  Everything in this corner is slowing down, turning in, saying
+  goodnight to wakefulness and motion and the day.
+mapsymbol: F
+maplegend: The Fireplace Nook
+biome: house
+exits:
+  north:
+    roomid: 1500
+nouns:
+  fire: >-
+    A low fire, well past its peak, burning down to a wide bed of red-orange
+    coals with one tall flame that leans and shivers. The heat is even and
+    gentle. Each creak of settling wood is a small goodnight. The coals
+    glow like something dreaming.
+  hearthrug: >-
+    A thick rug in dark red and amber, soft underfoot, slightly warm from
+    the proximity of the fire. It has absorbed decades of firelight. Lying
+    on it, looking up at the ceiling, you could fall asleep in approximately
+    four minutes. The kittens know this. The kittens are correct.
+  chair: >-
+    The rocking chair. Old wood, slightly worn at the armrests, the runners
+    curved and dark. It moves without the old lady having to push it --
+    or perhaps she pushes so softly you cannot detect the effort. This
+    chair has rocked many sleepers to sleep. It is patient. It can wait.
+  knitting: >-
+    Long needles of bone-colored material, clicking with a sound like
+    a slow clock, like a small heart. The work they are producing is
+    formless and large -- a blanket, perhaps, or a sleeve of something
+    the size of a room. The color of it is the color of sleep, of the
+    inside of a closed eye, of the space between one breath and the next.
+spawninfo:
+- mobid: 230
+  message: The quiet old lady is very close to the fire here, her chair almost touching the hearthrug.
+  respawnrate: 5 real minutes
+  idlecommands:
+  - "say hush"
+  - ""
+  - "emote rocks her chair in a slow, measured rhythm."
+  - ""
+  - "emote 's knitting needles catch the firelight, clicking softly."
+  - ""
+  - "emote seems to lean slightly closer to the warmth of the dying fire."
+  - ""
+idlemessages:
+- The fire settles. A coal shifts. The flame tilts gently and rights itself.
+- The rocking chair moves, slow as breathing, slow as falling asleep.
+- The warmth here is total. It has soaked into the walls and the floor and the air itself.
+- Your body wants to sit on the hearthrug. Your body is not wrong about this.
+- The shadow of the rocking chair swings back and forth across the green wall.
+- The knitting needles pause. The fire breathes. The needles resume.
+- This is the warmest part of the room. This is the center of the goodnight.

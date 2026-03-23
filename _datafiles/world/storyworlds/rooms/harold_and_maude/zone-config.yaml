@@ -1,0 +1,15 @@
+name: Harold and Maude
+roomid: 2020
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: house
+mutators:
+- mutatorid: harold-maude
+idlemessages:
+- Golden California light falls through the windows, warm and unhurried.
+- Somewhere a Cat Stevens song is playing, just at the edge of hearing.
+- The smell of cut flowers mingles with engine exhaust and old wood.
+- Life and death exist side by side here, and neither seems quite real.
+- You feel the weight of mortality and the lightness of being alive at the same moment.
+- The air carries something unnameable -- joy and grief folded together like a letter.

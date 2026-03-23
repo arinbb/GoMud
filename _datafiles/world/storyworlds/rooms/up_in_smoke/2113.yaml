@@ -1,0 +1,52 @@
+roomid: 2113
+zone: Up in Smoke
+title: The Beach
+description: >-
+  Venice Beach at golden hour, 1978. The <ansi fg="itemname">boardwalk</ansi>
+  runs along the sand, crowded with <ansi fg="itemname">roller skaters</ansi>
+  in tight shorts and headbands, navigating each other with the fluid grace of
+  people who have been skating this stretch since they were children. In the
+  distance, <ansi fg="itemname">Muscle Beach</ansi> hosts its daily exhibition:
+  enormous men lifting things in the open air for the education of onlookers.
+  The <ansi fg="itemname">Pacific</ansi> stretches west without end, its surface
+  lit from above in orange and gold. The air tastes like salt and sunscreen and
+  something else that is just California at dusk. Exit <ansi fg="exit">highway</ansi>
+  leads back to the 405.
+mapsymbol: E
+maplegend: Venice Beach
+biome: shore
+exits:
+  highway:
+    roomid: 2103
+    mapdirection: north
+    exitmessage: You leave the beach and get back on the highway.
+nouns:
+  boardwalk: >-
+    A poured concrete path running parallel to the water, the surface scuffed
+    smooth by decades of wheels and soles. Vendors sell things from blankets:
+    sunglasses, incense, paintings, arguments. The boardwalk is where Los
+    Angeles comes to be seen.
+  skaters: >-
+    Roller skaters in motion: figure eights, crossovers, backward skating with
+    casual confidence. Headbands. Crop tops. The specific joy of people who
+    have found the perfect speed and are going to stay at it as long as possible.
+  beach: >-
+    Muscle Beach: a concrete pad in the open air, weighted with barbells and
+    ambition. The men lifting there are extraordinary. They know it. The people
+    watching them know it. The men know the people watching them know it.
+  pacific: >-
+    The Pacific Ocean at sunset, orange light lying flat on the water from
+    here to Hawaii. The waves arrive in steady sets. The horizon glows. It
+    is the most famous view in California and it earns it every time.
+spawninfo:
+- mobid: 466
+  message: '<ansi fg="3">A roller skater glides in from the south end of the boardwalk, headband glowing orange in the sunset, smile like the sun coming out from behind a cloud.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- A roller skater carves a wide arc and doubles back, arms out, perfectly balanced.
+- The waves arrive in steady sets. The sand exhales. The light lowers.
+- Someone with a boom box passes, trailing a song into the salt air.
+- The Muscle Beach crowd applauds something. From here you cannot see what.
+- A pelican glides low over the water without moving its wings.
+- The sun touches the horizon. The sky goes full orange. Everyone on the beach notices.
+- The roller skater glides past and waves at you. You wave back. That is Venice Beach.

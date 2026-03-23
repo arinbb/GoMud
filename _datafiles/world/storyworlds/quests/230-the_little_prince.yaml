@@ -1,0 +1,24 @@
+questid: 230
+name: The Little Prince
+description: >-
+  Follow the Little Prince's journey. Visit his tiny planet B-612, tour
+  the asteroids of the absurd adults, find the rose garden and understand
+  what makes one rose unique, be tamed by the fox, drink water from the
+  desert well, and listen to the stars until you hear laughter.
+reward:
+  experience: 4000
+  item_id: 235
+  playermessage: >-
+    You have traveled with the Little Prince -- from the desert to the stars,
+    from absurdity to essential truth. What is essential is invisible to the
+    eye. You know this now. You will not forget it. As a memento, you receive
+    a tiny rose in a glass dome. She is a little vain. She is a little fragile.
+    She is yours now. That is the difference.
+steps:
+- description: Meet the Little Prince in the Sahara Desert.
+- description: Visit Asteroid B-612 and draw a sheep.
+- description: Tour the asteroids and witness the absurdity of grown-ups.
+- description: Count the roses in the rose garden and understand.
+- description: Sit with the fox and be tamed.
+- description: Draw water from the desert well and drink.
+- description: Listen to the stars until you hear laughter.

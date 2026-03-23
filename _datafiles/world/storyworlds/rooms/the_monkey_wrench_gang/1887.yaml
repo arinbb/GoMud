@@ -1,0 +1,54 @@
+roomid: 1887
+zone: The Monkey Wrench Gang
+title: The Bulldozer Yard
+description: >-
+  Rows of <ansi fg="8">heavy equipment</ansi> are parked here on scraped earth --
+  <ansi fg="itemname">bulldozers</ansi>, scrapers, graders, compactors, all of them
+  massive and yellow-painted and smelling of diesel and hydraulic fluid, parked with
+  the military neatness of things that are expensive enough to deserve organization.
+  Their <ansi fg="8">treads</ansi> have left deep parallel gouges in the hardpan.
+  Their <ansi fg="8">blades</ansi> are still caked with red earth. No one is watching.
+  The camp is a quarter mile away. The night guard does not come until nine. A <ansi fg="itemname">tool
+  shed</ansi> stands at the edge of the yard, its padlock the kind that yields to
+  a bolt cutter or a determined man with a crowbar. The fuel tanks of the nearest
+  bulldozers are visible, their caps accessible without climbing. The air is still
+  and the stars are coming out and everything here is a machine and nothing is
+  irreplaceable, although some things take longer to replace than others. To the
+  <ansi fg="exit">west</ansi>, the path leads back to the strip mine perimeter.
+mapsymbol: Y
+maplegend: Bulldozer Yard
+biome: desert
+exits:
+  west:
+    roomid: 1886
+nouns:
+  bulldozers: >-
+    D9 Caterpillar bulldozers, the workhorses of industrial earth-moving, each one
+    worth half a million dollars and capable of pushing more earth in a day than
+    a hundred men with shovels could move in a year. Their blades are caked with
+    red Utah dirt. Their fuel tanks hold a hundred and fifty gallons of diesel.
+    Their ignition systems are not complex.
+  shed: >-
+    The tool shed is padlocked, but the hasp is attached to wood that has been in
+    the sun for five years. A determined person with a pry bar could discuss the
+    matter with it and reach a satisfying conclusion. Inside, presumably, wrenches.
+    And sugar, if someone had the foresight to bring some.
+  treads: >-
+    The bulldozer treads have ground the hardpan into a fine red dust that billows
+    up with every footstep. The tracks lead in and out and around, a map of
+    industrial activity that will eventually leave this whole mesa a different
+    shape than it was when it arrived.
+  tanks: >-
+    The fuel tanks are accessible from ground level -- a practical necessity for a
+    machine that needs to be refueled daily. The cap screws off with hand pressure.
+    The opening accepts a standard fuel nozzle. Or, if one were so inclined, a
+    handful of sugar and some sand and a quantity of water.
+spawninfo: []
+idlemessages:
+- The bulldozers squat in their rows, engines cold, waiting for morning like enormous yellow dogs.
+- A bat swoops through the yard, hunting insects drawn to the residual warmth of the machinery.
+- 'The fuel smell is everywhere: diesel, hydraulic fluid, the smell of appetite.'
+- The stars are very bright out here, away from any light, over the dark shapes of the parked machines.
+- Somewhere in the tool shed, metal shifts and settles as the temperature drops.
+- 'The hardpan dust, disturbed by your footstep, rises in a small red cloud and drifts south.'
+- An owl calls once from somewhere beyond the fence, then is quiet.

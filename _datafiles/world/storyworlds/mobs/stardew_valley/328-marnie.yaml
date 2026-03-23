@@ -1,0 +1,22 @@
+mobid: 328
+zone: stardew_valley
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote tosses a handful of grain to the chickens, who converge on it with enthusiasm."
+  - "say Oh, you should see how Bessie has been doing this season. Such a good animal."
+  - "emote rearranges bales of hay with practiced, unhurried efficiency."
+  - "say Animals know when they are loved. It comes out in everything they give you."
+  - "emote leans on the pasture fence and watches the cow with clear, simple affection."
+  - ""
+activitylevel: 25
+character:
+  name: Marnie
+  description: >-
+    A warm, round-faced woman in practical farm clothes, Marnie runs the
+    ranch with genuine love for her animals. She is frequently not at her
+    counter, which frustrates anyone who needs to buy something, but she
+    is almost always doing something more important: feeding, caring,
+    watching, learning what each animal needs on a particular day.
+  raceid: 1
+  level: 7

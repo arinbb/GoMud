@@ -1,0 +1,15 @@
+itemid: 245
+name: flux capacitor keychain
+namesimple: keychain
+displayname: a <ansi fg="itemname">flux capacitor keychain</ansi>
+description: >-
+  A small metal keychain in the shape of the flux capacitor: three
+  transparent tubes meeting at a Y-shaped hub, about three inches
+  across. Every few seconds the tubes pulse in sequence -- one, two,
+  three -- with a faint white glow. The hub is warm to the touch and
+  hums at a frequency you can feel in your back teeth. It should not
+  be able to do this. It does it anyway.
+type: object
+subtype: usable
+uses: 0
+value: 100

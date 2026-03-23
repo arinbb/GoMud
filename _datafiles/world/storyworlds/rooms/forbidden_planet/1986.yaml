@@ -1,0 +1,60 @@
+roomid: 1986
+zone: Forbidden Planet
+title: The Study
+description: >-
+  The inner sanctum of Dr. Morbius's intellectual life. A broad
+  <ansi fg="itemname">desk</ansi> is covered in translations, star charts,
+  and cross-referenced volumes in three scripts. A rotating
+  <ansi fg="itemname">star map</ansi> of the Altair system turns slowly on
+  a mechanical arm, its tiny suns and planets represented in precise scale.
+  On a separate lectern, open and carefully annotated, sits
+  <ansi fg="itemname">The Tempest</ansi> -- Shakespeare's final play,
+  bristling with Morbius's marginal notes. A sealed
+  <ansi fg="itemname">cabinet</ansi> of Krell metal holds what appear to be
+  the most sensitive of his research documents. The room feels lived-in
+  and urgent, as if the work never stops. To the <ansi fg="exit">south</ansi>,
+  the main room. A <ansi fg="secret-exit">hidden passage</ansi> waits in the
+  shadows of the back wall -- but only for those who know to look.
+mapsymbol: S
+maplegend: The Study
+biome: house
+exits:
+  south:
+    roomid: 1985
+  tempest:
+    roomid: 1993
+    secret: true
+    mapdirection: north
+nouns:
+  desk: >-
+    The desk of a man who has been working in isolation for twenty years.
+    Translation grids cover one half: Krell symbols with phonetic equivalents
+    and conjectured meanings. Star charts cover the other half: the Altair
+    system mapped with instruments twenty years out of date by Earth standards.
+    In the center, a journal. The recent entries grow shorter and more agitated.
+    The last entry reads only: They must not use the machine.
+  starmap: >-
+    An orrery of the Altair system, hand-crafted over years of patient work.
+    Six planets orbit the twin stars in their proper ratios. Altair IV glows
+    faintly amber. Around it, in an orbit no telescope should be able to detect
+    at this scale, a tiny additional marker orbits: something Morbius has
+    labeled THE KRELL COMPLEX. It encompasses the entire planet.
+  Tempest: >-
+    The Tempest, William Shakespeare, open to Act IV. Morbius's marginal notes
+    cover every page in tiny, obsessive script. He has translated the play into
+    Krell. He has translated several Krell texts into the language of the play.
+    Where Prospero dismisses the masque -- Our revels now are ended -- Morbius
+    has written in the margin: This is not metaphor. This is science.
+  cabinet: >-
+    A cabinet of dense Krell alloy, locked with a mechanism that uses no key.
+    The surface is warm and slightly responsive to touch -- the lock reads
+    biometrics. Only Morbius can open it. Through the translucent panel, you
+    can see stacked documents, each one labeled in Morbius's hand: IQ RESULTS.
+    BRAIN BOOST DATA. SUBJECTS: SELF. The dates span twenty years.
+idlemessages:
+- The star map orrery turns with a soft clockwork tick, the tiny planet Altair IV circling on its track.
+- Morbius has left a translation half-finished on the desk. The Krell word he is working on has no English equivalent.
+- 'The Tempest lies open on its lectern. A fresh annotation, still wet with ink, reads: the monster is real.'
+- 'A faint sound rises from below the floor: the deep, patient hum of the Krell machine, a mile down and rising.'
+- The cabinet glows slightly in the low light, its biometric lock cycling through its idle pattern.
+- 'Something in the marginal notes of The Tempest catches your eye -- a phrase circled and circled again: monstrous self.'

@@ -1,0 +1,31 @@
+mobid: 358
+zone: super_mario_bros
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote jumps -- noticeably higher than the situation requires."
+  - ""
+  - "emote glances around with an expression of cautious alertness."
+  - ""
+  - "emote adjusts his green cap and sighs quietly."
+  - ""
+  - "emote follows a step behind Mario, staying close to his left shoulder."
+  - ""
+  - "emote peers ahead nervously, then squares his shoulders and nods to himself."
+  - ""
+activitylevel: 25
+character:
+  name: Luigi
+  description: >-
+    Mario's brother, slightly taller, wearing a green cap and green
+    overalls instead of red. He has the same mustache, the same
+    round eyes, the same ready-to-jump posture, but his expression
+    carries an extra layer of awareness -- he knows what is coming
+    and has assessed the risk more thoroughly than his brother. Luigi
+    jumps higher than Mario. Luigi is faster but has worse traction
+    on ice. Luigi is player two. Luigi is the person who does the
+    same things as the protagonist but in slightly different circumstances
+    and for slightly different reasons, and this is its own kind of
+    heroism.
+  raceid: 1
+  level: 10

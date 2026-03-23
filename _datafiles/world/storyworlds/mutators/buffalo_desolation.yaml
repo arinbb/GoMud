@@ -1,0 +1,12 @@
+mutatorid: buffalo-desolation
+namemodifier:
+  behavior: append
+  text: (frozen)
+  colorpattern: ice
+descriptionmodifier:
+  behavior: append
+  text: The cold is everywhere, seeping through every surface and into your bones.
+  colorpattern: ice
+alertmodifier:
+  text: A gust of Lake Erie wind cuts through you. Buffalo does not care if you are cold.
+  colorpattern: ice

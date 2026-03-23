@@ -1,0 +1,46 @@
+roomid: 2006
+zone: Seinfeld
+title: The Back Booth
+description: >-
+  This is the inner sanctum. The back <ansi fg="yellow">booth</ansi> at Monks Cafe,
+  tucked against the wall, the one where the real conversations happen. The vinyl is
+  worn here in exactly the right places -- the edge where George always sits, the spot
+  where Jerry rests his elbow. The <ansi fg="itemname">table</ansi> is slightly sticky
+  near George's usual position, from the syrup of a thousand pancakes eaten while
+  complaining. The <ansi fg="itemname">window</ansi> looks out onto Broadway. The
+  <ansi fg="itemname">napkin dispenser</ansi> is always one-third full. This is where
+  the plans were made. This is where the plans fell apart. This is where the post-mortem
+  of the falling-apart was conducted. Four people, one booth, the world reduced to
+  something manageable enough to have opinions about. Back to the <ansi fg="exit">counter</ansi>
+  is to the north.
+mapsymbol: b
+maplegend: Back Booth
+biome: house
+exits:
+  counter:
+    roomid: 2005
+    mapdirection: north
+nouns:
+  table: >-
+    Formica table, exactly the right size for four people to sit around and
+    discuss whether a particular behavior is socially acceptable. The table
+    is clean except for a faint syrup ring near one edge. The syrup ring
+    belongs to George. It always has.
+  window: >-
+    The window faces Broadway. You can see the newsstand, the crosswalk,
+    the general traffic of the Upper West Side proceeding with its business.
+    The window is where Jerry looks when he has an observation brewing.
+    The window is raw material.
+  napkin: >-
+    The napkin dispenser. Chrome, cylindrical, holding maybe twenty napkins
+    at a time. George has pulled napkins from this dispenser while making a
+    point. Elaine has made a napkin airplane at this table. The napkins
+    have been here the whole time, neutral and available.
+spawninfo: []
+idlemessages:
+- The booth holds the memory of a thousand conversations, none of them resolved, all of them important.
+- The view through the window shows Broadway doing exactly what Broadway always does.
+- The table is sticky near George's usual spot. Some things are permanent.
+- Someone left a napkin on the table that has a phone number written on it. Whose number. What for. Unknown.
+- The back booth is quieter than the front of the diner. This is by design. Important nonsense requires some distance from the door.
+- A refill arrives without being requested. This is good diner service. This is always how it works here.

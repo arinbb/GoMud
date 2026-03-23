@@ -1,0 +1,25 @@
+mobid: 471
+zone: paris_texas
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote makes another pot of coffee."
+  - "say Travis? You okay in there?"
+  - "emote looks out the window at the street."
+  - "emote takes off his glasses and cleans them with his shirt."
+  - "say You hungry? Anne made soup."
+  - ""
+  - "emote checks on something in the next room."
+activitylevel: 35
+character:
+  name: Walt Henderson
+  description: >-
+    A steady, reliable-looking man in his mid-thirties with dark hair
+    and the patient face of someone who has made a practice of absorbing
+    difficulty without showing it. He wears clean clothes. He owns a
+    small billboard company in Los Angeles. He has raised his nephew for
+    four years without complaint and without asking for credit. He is the
+    kind of man who makes coffee when he does not know what else to do,
+    which is often, which means he makes a lot of coffee.
+  raceid: 1
+  level: 5

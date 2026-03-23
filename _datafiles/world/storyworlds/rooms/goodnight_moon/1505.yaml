@@ -1,0 +1,70 @@
+roomid: 1505
+zone: Goodnight Moon
+title: The Bookshelf
+description: >-
+  You have climbed the bookshelf -- it stretches along the upper wall of
+  the great green room, and up here the room looks different: smaller and
+  more knowable from above, the fireplace a distant amber square, the
+  window a white rectangle of moon. The <ansi fg="itemname">books</ansi>
+  are enormous beside you, their spines as tall as walls, their titles
+  in colors that do not exist in ordinary light: a deep <ansi
+  fg="10">green</ansi> spine, a red one, a spine the color of old honey.
+  The air up here smells of paper and cloth and the slow time of unread
+  afternoons. Between two volumes of something very large there is a gap,
+  and in the gap a <ansi fg="itemname">nest</ansi> of cotton and dust
+  where something small has lived. A <ansi fg="itemname">dried flower</ansi>
+  marks a page in a blue volume. A <ansi fg="itemname">bookmark</ansi> of
+  red ribbon hangs from the edge of something enormous and brown. The
+  shelf itself is warm wood, worn smooth where hands have reached and
+  taken and replaced. The room below is quiet and amber. Up here it smells
+  like every story ever told before sleep.
+mapsymbol: S
+maplegend: The Bookshelf
+biome: house
+exits:
+  down:
+    roomid: 1500
+nouns:
+  books: >-
+    Row after row of them, their spines as tall as you from up here on the shelf.
+    The titles are blurred or in languages you almost recognize. One is called
+    something like 'A Great Long Sleep.' One is called 'The Moon as Seen From
+    Inside a House.' One is just a smear of gold letters that rearranges itself
+    whenever you look away. They are good books. You have not read them.
+    You have read all of them.
+  nest: >-
+    A small hollow between a green book and a red one, packed with cotton
+    batting and three or four rabbit hairs, soft and brown and curved. Something
+    lived here once, or lives here still. The space is just the right size for
+    a mouse, curled tight, its small nose tucked under its own tail, its dreams
+    very small and very warm.
+  dried flower: >-
+    Pressed flat between the pages of the blue volume: a flower that might once
+    have been yellow, now the color of old lace. It was put here by someone
+    a long time ago, to mark a place that was important. The page it marks is
+    blank. Or the page it marks has been read so many times the words have worn
+    away. You cannot decide which.
+  bookmark: >-
+    A ribbon of red silk, darker than the balloon downstairs, dangling from the
+    edge of a large brown book. It holds the place of the last chapter, the one
+    that ends with everyone in bed, safe, warm, the windows lit and the fires
+    dying and the world arranged as it should be at the close of things.
+spawninfo:
+- mobid: 233
+  message: A little mouse explores the shelf between the tall spines of the books, disappearing into the nest-gap.
+  respawnrate: 5 real minutes
+  idlecommands:
+  - "emote slips between two enormous book spines, nearly invisible."
+  - ""
+  - "emote reappears at the shelf's edge, looking down at the room below."
+  - ""
+  - "emote curls briefly in the nest-space between the books, then emerges."
+  - ""
+idlemessages:
+- The book spines tower above you and beside you and seem to lean in, very slightly.
+- 'The room below is small from here: a square of green with a fire and a window and a chair.'
+- Something shifts between the books. The mouse, probably. Probably the mouse.
+- The smell of paper is very strong. It smells like every night you have ever read past your bedtime.
+- The bookmark ribbon stirs in a draft from nowhere. Somewhere, a story is being told.
+- The dried flower in the blue book does not move. It has not moved in a very long time. This is fine.
+- From up here the moon through the window is perfectly framed. You could fall asleep looking at it.

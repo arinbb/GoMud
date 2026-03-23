@@ -1,0 +1,54 @@
+roomid: 2131
+zone: Paris Texas
+title: A Motel Room
+description: >-
+  A motel room somewhere on Route 90. The <ansi fg="8">bedspread</ansi> is a
+  pattern of orange and brown that was chosen to hide stains and has been
+  entirely successful. A <ansi fg="itemname">television</ansi> on a bolted
+  bracket shows a game show with the sound low. The <ansi fg="8">window</ansi>
+  has a view of the parking lot and, beyond the parking lot, the highway, and,
+  beyond the highway, the desert. At night the headlights of passing cars sweep
+  across the ceiling in long arcs. Travis Henderson slept in rooms like this for
+  four years. He does not talk about what he thought about in the dark. The room
+  smells of industrial cleaning product and something older — cigarette smoke,
+  loneliness, the particular smell of temporary. The <ansi fg="exit">highway</ansi>
+  is back through the door.
+mapsymbol: L
+maplegend: Motel Room
+biome: house
+exits:
+  highway:
+    roomid: 2122
+    mapdirection: east
+nouns:
+  bedspread: >-
+    Orange and brown geometric pattern, synthetic fabric. Rough to the
+    touch. It has been laundered many times and it has not become soft.
+    Some things do not become soft.
+  television: >-
+    A game show. The sound is low enough to be just voices, no words.
+    The color is slightly off, everything slightly too orange. Travis
+    watched a lot of television in four years. It did not fill the
+    space he was trying to fill.
+  window: >-
+    Through the window: the parking lot, two other cars, the highway,
+    the desert. The glass has a slight warp that makes the highway
+    lights bend. At 3am the passing headlights sweep across the ceiling
+    in slow, predictable arcs.
+  door: >-
+    The door has a chain and a deadbolt. Travis always used both.
+    Not because he was afraid of anything outside. Because the habit
+    of securing something, anything, was the only thing that felt
+    like order in that period of his life.
+  ceiling: >-
+    Water-stained. A crack in the plaster shaped like Texas, almost.
+    Travis may have noticed this. He was awake for a lot of ceiling-
+    watching.
+idlemessages:
+- The television murmurs. A game show contestant wins something. The audience applauds without sound.
+- Headlights sweep across the ceiling in long arcs. A car going somewhere at 2am.
+- The ice machine down the hall rattles and drops ice. Then silence.
+- The highway hums through the window glass, low and constant.
+- The bedspread is exactly the same in every motel on Route 90. Someone designed it. That person went home.
+- A door closes somewhere in the motel. Footsteps. Then quiet.
+- Travis lay here and thought about Jane. He thought about her every night for four years. He did not act on it until he had a reason — his son.

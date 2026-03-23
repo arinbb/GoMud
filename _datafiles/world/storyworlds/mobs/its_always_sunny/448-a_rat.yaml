@@ -1,0 +1,20 @@
+mobid: 448
+zone: its_always_sunny
+hostile: true
+maxwander: 1
+activitylevel: 50
+angrycommands:
+  - attack
+idlecommands:
+  - emote skitters along the wall, moving with terrible purpose.
+  - emote gnaws on something in the corner.
+  - emote sits up on its haunches and stares at you with absolute confidence.
+character:
+  name: A Rat
+  description: >-
+    A large, healthy rat that has clearly been thriving in the Paddys Pub
+    basement for some time. It regards you without fear, which tells you
+    something about the ecosystem down here. Charlie Kelly is supposed to
+    be handling the rat situation. The rat situation is not being handled.
+  raceid: 12
+  level: 3

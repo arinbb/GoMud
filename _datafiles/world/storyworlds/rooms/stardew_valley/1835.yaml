@@ -1,0 +1,62 @@
+roomid: 1835
+zone: Stardew Valley
+title: The Railroad and Spa
+description: >-
+  A narrow-gauge <ansi fg="itemname">railroad</ansi> runs through a mountain
+  pass here, the tracks slightly overgrown but maintained. To one side, a
+  natural <ansi fg="itemname">hot spring</ansi> has been enclosed into a
+  small spa building, the water inside an improbable turquoise. Steam rises
+  from the <ansi fg="itemname">vents</ansi> at the building's base. The
+  summit <ansi fg="itemname">trail</ansi> winds up behind it toward a high
+  point that looks out over the whole valley. Linus lives in a modest tent
+  up along the path, present in every season, part of the mountain in the
+  way that very few people achieve. The mines are <ansi fg="exit">south</ansi>.
+mapsymbol: RR
+maplegend: Railroad Spa
+biome: mountains
+exits:
+  mines:
+    roomid: 1829
+    mapdirection: south
+nouns:
+  railroad: >-
+    A narrow-gauge railway, the tracks barely wider than a person. The
+    ties are old but treated, the rails maintained in their particular
+    weather-dependent way. Twice a year, at specific seasons, a train
+    comes through. What the train delivers and where it comes from is
+    something people discuss with interest and not quite enough information
+    to settle.
+  spring: >-
+    Natural hot spring water enclosed in a low stone building, the pool
+    turquoise from minerals in the rock. The temperature is exactly right:
+    warm enough to draw away every tension in the muscle and the mind,
+    cool enough at the edges to breathe. The locals use it year-round.
+    In winter, the steam is enormous and beautiful.
+  vents: >-
+    Stone vents at the spa building's base let steam escape in soft columns
+    that dissipate into the mountain air. The steam smells of minerals —
+    sulfur very faint, iron more pronounced. A therapeutic smell, the smell
+    of the mountain giving something back.
+  trail: >-
+    A rough footpath leading up the mountain toward the summit. The Wizard
+    walks it sometimes, and Linus most mornings before dawn. From the
+    top you can see the entire valley laid out like a map of somewhere
+    worth protecting.
+spawninfo:
+- mobid: 329
+  message: Linus looks up from his fire with the unhurried acknowledgment of a man who chose his life.
+  idlecommands:
+  - emote turns something on a stick over a small careful fire, patient and attentive.
+  - say The valley is different up here. You can hear the seasons changing if you listen.
+  - emote picks a handful of berries from a bush and examines each one before eating it.
+  - say I have everything I need. Not everything I want, maybe. But need, yes.
+  - emote watches the sky with the attention of someone for whom the sky is a daily text.
+  - ''
+  respawnrate: 3 real minutes
+idlemessages:
+- Steam rises from the spa vents in slow columns that dissolve into the mountain morning.
+- The railroad tracks catch the light, two thin lines running from somewhere to somewhere.
+- From up here the whole valley is audible as a distant hum of lives being lived.
+- Linus has arranged stones near his tent in a pattern that takes a moment to understand is beautiful.
+- The hot spring sends a shimmer of heat out through the building's open window, warmth in the cold.
+- 'The mountain is quiet in the specific way of high places: a silence with substance to it.'

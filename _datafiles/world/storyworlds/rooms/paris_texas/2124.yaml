@@ -1,0 +1,54 @@
+roomid: 2124
+zone: Paris Texas
+title: The Backyard
+description: >-
+  A small <ansi fg="yellow">backyard</ansi> in the Los Angeles afternoon, enclosed
+  by a wooden <ansi fg="itemname">fence</ansi>. A <ansi fg="itemname">sheet</ansi>
+  has been hung between two poles — a makeshift screen, its white surface catching
+  the evening light. A <ansi fg="itemname">Super 8 projector</ansi> sits on a
+  folding table aimed at it. When it runs, the images are small and bright and
+  slightly overexposed — a <ansi fg="yellow">family</ansi> at some picnic, some
+  holiday, years ago. The people in the film are laughing but you cannot hear them.
+  <ansi fg="8">Travis</ansi> watches from a lawn chair that is too small for him,
+  his knees up, his red cap in his hands. <ansi fg="yellow">Hunter</ansi> sits
+  beside him. They are not touching. They are very close. The exit
+  <ansi fg="exit">south</ansi> leads back inside. There is a
+  <ansi fg="secret-exit">secret</ansi> way into the film itself.
+mapsymbol: B
+maplegend: Backyard
+biome: land
+exits:
+  south:
+    roomid: 2123
+nouns:
+  sheet: >-
+    White cotton hung between two poles. On its surface, the Super 8 images
+    are small and trembling and slightly out of focus. The people in them
+    are vivid anyway.
+  projector: >-
+    A Super 8 projector, orange and battered. It clicks as it runs.
+    The film it projects shows a woman, a man, a small boy, some warm
+    afternoon. The woman's face catches the sun and turns toward the
+    camera and for a moment she is impossibly young.
+  film: >-
+    The film in the projector. 8mm, slightly faded. A record of something
+    that used to be possible.
+  fence: >-
+    Wooden boards gone grey with California sun. A neighborhood exists
+    on the other side of it. Normal life continues there, as it does,
+    regardless.
+spawninfo:
+- mobid: 470
+  message: '<ansi fg="8">Travis Henderson sits in a lawn chair watching the film on the sheet, his red cap in both hands. He does not look away from the screen.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 472
+  message: '<ansi fg="yellow">Hunter sits beside Travis, close enough to touch but not touching. He is also watching the film.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The projector clicks. The image trembles. The woman on the screen turns toward the camera and smiles.
+- Hunter says something very quietly. Travis does not respond. Hunter says it again.
+- The evening light comes over the fence in orange bars and crosses the sheet.
+- Travis turns his red cap around and around in his hands without looking at it.
+- For a moment the film catches a bad splice and the image judders. Then it steadies.
+- A dog barks somewhere in the neighborhood. Neither of them reacts.
+- Hunter shifts in his chair and moves about three inches closer. Travis does not move away.

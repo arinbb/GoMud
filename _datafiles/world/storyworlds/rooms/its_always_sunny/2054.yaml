@@ -1,0 +1,53 @@
+roomid: 2054
+zone: its_always_sunny
+title: The Welfare Office
+description: >-
+  The Philadelphia Department of Public Assistance is a room designed to
+  suggest that bureaucracy is a form of architecture. Rows of <ansi fg="itemname">plastic chairs</ansi>
+  face a long counter behind which government employees have perfected the
+  expression of someone who is helping but has specific limits. A <ansi fg="itemname">number
+  dispenser</ansi> by the door has been at number 47 for some time because
+  the display is broken. <ansi fg="itemname">Forms</ansi> are available on
+  a rack — many forms, for many purposes, none of which quite cover the
+  Gang's situations. A flickering <ansi fg="8">fluorescent light</ansi> in
+  the corner provides ambiance. The clock on the wall is wrong. There is a
+  sign that says <ansi fg="stat">PLEASE HAVE DOCUMENTATION READY</ansi>. The
+  Gang does not have documentation ready. The Gang is never ready. To the
+  <ansi fg="exit">street</ansi> is the exit.
+mapsymbol: WO
+maplegend: Welfare Office
+biome: city
+exits:
+  street:
+    roomid: 2044
+    mapdirection: west
+nouns:
+  chairs: >-
+    Plastic chairs in rows of four, attached to each other by metal rods,
+    in the orange-and-gray palette of official waiting spaces everywhere.
+    They are engineered against comfort in a way that may be intentional.
+    The person in the end chair of the second row has been here for a long
+    time, has accepted this, and has brought a sandwich.
+  forms: >-
+    The form rack holds a comprehensive selection of bureaucratic documentation.
+    There is a form for everything. There is a form that comes before the form
+    you need. There is a supplementary form for the preliminary form. The Gang
+    has tried to file forms that do not exist. The staff has developed specific
+    procedures for this.
+  number_dispenser: >-
+    The number dispenser shows 47 because the display is broken. Everyone
+    who takes a number gets 47. The staff calls out numbers anyway. No one
+    moves. This has been the situation for some time. The situation is
+    managed by ignoring it.
+  sign: >-
+    PLEASE HAVE DOCUMENTATION READY. The sign is laminated. The lamination
+    has a crack in the lower right corner from where someone threw something
+    at it. The throwing did not change the sign or the documentation requirements.
+    Documentation is still required. The Gang has still not brought documentation.
+idlemessages:
+- 'The fluorescent light in the corner flickers in a rhythm that is not quite regular, cycling between adequate and insufficient in a way that mirrors the service itself.'
+- A number is called. No one moves. A number is called again. The staff waits with the patience of people who have called numbers before.
+- 'The clock on the wall shows a time that is incorrect. It has been incorrect for so long that it is now a landmark, a reference point: before the clock was wrong and after.'
+- Someone fills out a form at the standing counter. The pen is attached by a chain that is too short. This is by design.
+- 'The form rack rustles slightly in the air conditioning. Dozens of forms, all necessary, all waiting, all requiring documentation that nobody has.'
+- A supervisor emerges from the back, surveys the room, exchanges a look with another staff member — a look that contains the entire history of this office — and returns to the back.

@@ -1,0 +1,24 @@
+mobid: 465
+zone: up_in_smoke
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote leans down to the van window and does a slow professional scan of the interior."
+  - ""
+  - "say Purpose of your visit?"
+  - ""
+  - "emote taps the side panel of the van. It makes a sound he writes down."
+  - "say Please pop the back."
+  - ""
+  - "emote sniffs the air near the window, frowns, makes a note, cannot place it."
+activitylevel: 15
+character:
+  name: The Border Guard
+  description: >-
+    A uniformed US Customs agent in his forties, regulation haircut, regulation
+    expression of focused skepticism. He has been working this crossing for
+    eleven years and he has seen everything. He has not seen this van before
+    but he knows there is something. He cannot put his finger on what, exactly,
+    which is the most frustrating thing that has happened to him in eleven years.
+  raceid: 1
+  level: 5

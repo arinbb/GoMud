@@ -1,0 +1,63 @@
+roomid: 1751
+zone: On the Road
+title: The Mexican Border Town
+description: >-
+  A Mexican border town in 1950 — <ansi fg="itemname">tequila</ansi> for
+  fifteen cents a shot, <ansi fg="itemname">girls</ansi> in doorways,
+  the smell of dust and cooking meat and something sweet and fermented
+  that might be pulque. The streets are unpaved and the buildings are
+  low and the <ansi fg="itemname">sky</ansi> above is a blue so deep
+  and absolute it looks painted. Dean Moriarty is dissolving here the
+  way he always eventually dissolves — the speed turning to fever, the
+  joy shading into something less stable, the vast appetite of the man
+  turning to consume him from the inside. He has been awake for three
+  days. He stands in the street with his shirt open, laughing at nothing,
+  and Sal watches him with love and terror in equal measure. This is the
+  furthest point. This is where the road bottoms out and the return begins.
+  The heat is absolute. To the <ansi fg="exit">north</ansi> the road runs
+  back through everything.
+mapsymbol: M
+maplegend: Mexican Border Town
+biome: road
+exits:
+  north:
+    roomid: 1750
+nouns:
+  tequila: >-
+    Cheap tequila in a shot glass, fifteen cents American, served without
+    fanfare in a bar with no name, by a bartender with a face like a
+    geography lesson. It tastes of agave and heat and the particular
+    quality of the south, which is slower and older and less interested
+    in where you are going than in whether you have arrived.
+  girls: >-
+    The women in the doorways of the border town are people Sal sees
+    briefly and Kerouac writes about in ways that are of their time
+    and place, and they are women first, and the time was not always
+    kind to women, and the book is not always kind about them, and this
+    is one of the places where the novel's beauty and its blindness live
+    together, which they often do in American literature and in American life.
+  sky: >-
+    The Mexican sky is the same sky as the American sky but it feels
+    different. Lower, possibly. More present. The blue of it in midday
+    is a blue that has authority. The stars at night are closer. The
+    temperature drops thirty degrees after dark and the coldness is
+    startling and welcome and brief.
+  fever: >-
+    This is what happens after the road — after the speed and the music
+    and the joy, the body presents its bill. Sal gets sick here, a genuine
+    fever, and lies in a room while Dean disappears into the town and
+    comes back changed. Something ends here. Not the friendship. But
+    something adjacent to it, something that was mistaken for the friendship
+    and was actually just the motion.
+spawninfo:
+- mobid: 300
+  message: Dean Moriarty stands in the middle of the dusty street, arms wide, face turned up to the brutal sun.
+  container: ''
+idlemessages:
+- The heat comes down from directly overhead and the shade is the only politics anyone cares about.
+- Dean has been awake for three days and his eyes are enormous and his laugh comes from somewhere deep and frightening.
+- The tequila is cold. The air is hot. The combination is something approaching philosophy.
+- 'A radio somewhere plays a trumpet. The trumpet knows where it is. The trumpet has always been here.'
+- Dust rises from the unpaved street when the wind comes through. Everything tastes like dust.
+- 'The girls in the doorways watch everything with the patience of people who understand that this too will pass.'
+- 'Sal feels the fever starting. A heat that is not the weather. A distance opening between him and the world.'

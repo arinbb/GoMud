@@ -1,0 +1,52 @@
+roomid: 1882
+zone: The Monkey Wrench Gang
+title: Under the Bridge
+description: >-
+  Beneath a <ansi fg="8">highway bridge</ansi> that spans the canyon like an act of
+  faith in concrete, the river runs through a narrow slot, its walls close and damp,
+  smelling of cold stone and engine exhaust from the road above. The underside of the
+  bridge is a geometry of steel and grey concrete, massive and utilitarian, an industrial
+  object in a landscape that predates industry by a billion years. <ansi fg="red">Rust
+  streaks</ansi> run down the concrete piers. Swallow nests cling to the girders.
+  Somewhere above, a truck rumbles past and the whole structure trembles slightly.
+  The water churns around the bridge piers in small whirlpools. It is the kind of place
+  that rewards close attention — a good place to study, say, how a bridge support meets
+  the canyon floor, what holds it in place, what might not. To the <ansi fg="exit">west</ansi>,
+  the raft trail leads back upriver.
+mapsymbol: B
+maplegend: Under the Bridge
+biome: shore
+exits:
+  west:
+    roomid: 1881
+nouns:
+  bridge: >-
+    A highway bridge, probably built in the 1950s or 60s when the West was being
+    stitched together with asphalt and federal money. It is solid, well-engineered,
+    and represents exactly the kind of industrial colonization of wild country that
+    Abbey spent his career arguing against. He did not argue against it with essays
+    alone.
+  piers: >-
+    The concrete bridge piers descend into the canyon floor and the river bed below.
+    They are massive, utilitarian, engineered to last a century. Everything has a
+    weak point if you know where to look. This is knowledge available to anyone
+    willing to pay attention.
+  swallows: >-
+    Cliff swallows have plastered their mud nests to the underside of the bridge girders,
+    turning the industrial structure into a nesting colony. They dart in and out all day,
+    making a sound like applause. They have no opinion about the bridge's politics.
+    They just needed something to stick their nests to.
+  nests: >-
+    Cliff swallow nests, hundreds of them, gourd-shaped mud structures cemented to
+    the steel and concrete overhead. The birds dart in and out, making a constant
+    soft chittering. Life adapts. Life always adapts. Sometimes this is beautiful.
+    Sometimes it is a tragedy.
+spawninfo: []
+idlemessages:
+- A truck rumbles across the bridge overhead, the whole structure resonating with a low, massive vibration.
+- 'The river churns around the bridge piers in small whirlpools, brown and cold and indifferent.'
+- Swallows dart in and out of their mud nests under the bridge girders, their wings a blur.
+- 'The smell here is concrete and cold water and rust: the smell of the industrial era making itself at home.'
+- 'Rust streaks run down the bridge piers like dried blood, orange-red against the grey.'
+- The shadow of the bridge cuts the canyon floor in half. Half light, half dark. Nothing in between.
+- 'Someone has scratched something into the concrete: initials, a date, the kind of claim humans make when they want to prove they were here.'

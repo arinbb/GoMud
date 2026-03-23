@@ -1,0 +1,78 @@
+roomid: 2040
+zone: its_always_sunny
+title: Paddys Pub
+description: >-
+  You are inside <ansi fg="itemname">Paddys Pub</ansi>, South Philadelphias
+  worst bar. The <ansi fg="8">sticky floors</ansi> have absorbed enough spilled
+  beer to float a small vessel. A <ansi fg="itemname">broken jukebox</ansi> in
+  the corner occasionally lurches into a few bars of something and then gives
+  up. The bar itself is sticky, the barstools are wobbly, and there are
+  <ansi fg="8">zero customers</ansi> — there are never any customers, and yet
+  the bar somehow survives, probably as a tax shelter. Behind the bar, bottles
+  of questionable liquor line shelves that look structurally unsound.
+  To the <ansi fg="exit">east</ansi> is the bar floor proper. To the
+  <ansi fg="exit">south</ansi>, a back door leads to the alley.
+  To the <ansi fg="exit">north</ansi>, the front door opens onto the street.
+  A door marked <ansi fg="exit">office</ansi> leads to the back room where
+  the real damage gets done.
+mapsymbol: P
+maplegend: Paddys Pub
+biome: city
+exits:
+  east:
+    roomid: 2041
+  south:
+    roomid: 2042
+  north:
+    roomid: 2044
+  office:
+    roomid: 2043
+    mapdirection: west
+nouns:
+  jukebox: >-
+    The jukebox is a relic of something better. It is broken in a way that
+    suggests multiple people have tried to fix it and made it worse each time.
+    Every now and then it plays three seconds of a song — always the wrong song —
+    and then stops. This is the most reliable thing about Paddys Pub.
+  floor: >-
+    The floor is a geological record of Paddys Pub: layers of spilled beer,
+    dropped food, tracked-in dirt, and things you do not want to identify.
+    It has a tackiness that grabs at the soles of your shoes, as if the bar
+    itself is trying to keep you here. Which, in a way, it is.
+  bar: >-
+    The bar itself is a long stretch of sticky wood with a handful of wobbly
+    stools in front of it. Behind it, shelves of liquor bottles stand in
+    varying states of fullness. The brands are unfamiliar. Some may be
+    homemade. All of them will hurt you.
+  sign: >-
+    The Paddys Pub sign visible through the window is missing several letters,
+    leaving something that reads P DY S P B. No one has fixed it in years.
+    No one will fix it. This is, in its way, a perfect representation of
+    the establishment as a whole.
+  customers: >-
+    There are no customers. There have never been any customers. The Gang
+    has been unable to explain this despite years of increasingly elaborate
+    and self-defeating attempts to drive business. The bar is probably
+    a tax shelter. Frank is almost certainly writing it off as a loss.
+spawninfo:
+- mobid: 440
+  message: 'Dennis Reynolds leans against the bar, examining his reflection in his phone screen with deep satisfaction.'
+  respawnrate: 5 real minutes
+- mobid: 441
+  message: 'Mac squares his stance in the middle of the bar and throws a slow-motion karate chop at the air.'
+  respawnrate: 5 real minutes
+- mobid: 443
+  message: 'Dee Reynolds sits at the bar trying to practice an English accent, failing completely.'
+  respawnrate: 5 real minutes
+- mobid: 444
+  message: 'Frank Reynolds emerges from behind the bar holding something unidentifiable.'
+  respawnrate: 5 real minutes
+idlemessages:
+- Dennis studies his reflection in the bar mirror and nods slowly, as if confirming something important about the universe.
+- 'Mac throws a series of karate moves in the corner, narrating his own technique: "and THAT is how you drop a man twice your size."'
+- Dee attempts a British accent, abandons it, tries a Southern accent, abandons that, stares into the middle distance.
+- Frank produces an egg from his jacket pocket. No one asks where it came from. No one wants to know.
+- The jukebox shudders to life, plays four seconds of Nightman, then dies again.
+- 'A fly buzzes in from somewhere and settles on the bar. The gang watches it. It is the most interesting customer the bar has ever had.'
+- Dennis straightens his collar and says to no one in particular that he is a golden god.
+- 'Mac flexes in the bar mirror, then turns sideways, then turns back, cultivating mass.'

@@ -1,0 +1,29 @@
+mobid: 356
+zone: super_mario_bros
+hostile: true
+maxwander: 0
+idlecommands:
+  - "emote drifts overhead on his cloud, fishing rod swinging lazily back and forth."
+  - ""
+  - "emote lowers his fishing line toward the ground with a satisfied grin."
+  - ""
+  - "emote adjusts his spectacles and peers down at the path below."
+  - ""
+  - "emote drifts sideways on his cloud, repositioning for the next drop."
+  - ""
+  - "emote peeks out from behind his cloud, smirking."
+  - ""
+activitylevel: 25
+character:
+  name: Lakitu
+  description: >-
+    A small bespectacled turtle riding a white pixel cloud, holding a
+    fishing rod with a Spiny enemy dangling from the line. Lakitu is
+    one of the game's most irritating enemies because he is immune to
+    most attacks, stays in the sky beyond stomp range, and fishes
+    Spinies down onto your path with an unhurried patience that borders
+    on contemptuous. His expression is impossible to read behind the
+    round spectacles and the cloud. He may be enjoying this. He looks
+    like he is enjoying this.
+  raceid: 1
+  level: 6

@@ -1,0 +1,25 @@
+mobid: 380
+zone: ghostbusters
+hostile: false
+maxwander: 1
+activitylevel: 20
+idlecommands:
+- "emote leans back in his chair and stares at the ceiling with the expression of a man professionally disappointed."
+- "say You know, I was a respected academic. Tenure-track. All of that."
+- "emote tosses a pencil at the ceiling. It sticks. He does not remove it."
+- "emote adjusts his proton pack with the weary competence of long experience."
+- "say If someone asks if you are a god, you say yes. I can't stress this enough."
+- "emote picks up the phone, listens, says 'We'll be there in twenty minutes,' hangs up, and does not move."
+- ""
+character:
+  name: Peter Venkman
+  description: >-
+    A man with the face of someone who has calculated exactly how much he can get
+    away with and has been getting away with it for years. He wears a Ghostbusters
+    jumpsuit with the ease of a man who was born in a jumpsuit. His expression
+    cycles between sardonic and charming with the unconscious rhythm of breathing.
+    He is carrying a proton pack that he holds with the specific nonchalance of
+    someone who would never admit they find it genuinely exciting. He is simultaneously
+    the least qualified and most effective person in any room he occupies.
+  raceid: 1
+  level: 15

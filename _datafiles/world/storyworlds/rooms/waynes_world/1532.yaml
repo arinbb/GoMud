@@ -1,0 +1,46 @@
+roomid: 1532
+zone: Waynes World
+title: Garth's Workshop
+description: >-
+  Adjacent to the basement, Garth's workshop is a different kind of genius.
+  <ansi fg="itemname">Electronics</ansi> cover every surface — circuit boards,
+  oscilloscopes, a <ansi fg="itemname">soldering iron</ansi> that is always
+  slightly too hot. <ansi fg="itemname">Schematics</ansi> are pinned to a
+  corkboard beside a poster of <ansi fg="itemname">Foxy Lady</ansi>. Cassette
+  tapes in labeled cases occupy an entire shelf: "DO NOT TOUCH - GARTH,"
+  "EXPERIMENTS - GARTH," "DRUM SOLOS - GARTH." A half-built
+  <ansi fg="itemname">invention</ansi> sits on the work table, its purpose
+  unclear and probably excellent. <ansi fg="exit">North</ansi> leads back
+  to Wayne's basement.
+mapsymbol: g
+maplegend: Garth's Workshop
+biome: house
+exits:
+  north:
+    roomid: 1520
+nouns:
+  electronics: >-
+    Circuit boards, capacitors, resistors, wire in twelve colors, a multimeter,
+    two oscilloscopes, and something that might be a communications device or
+    might be a synthesizer. Garth built it. It works. He is the only one who
+    knows how.
+  schematics: >-
+    Blueprints for things that don't exist yet. Modifications to amplifiers that
+    shouldn't work but do. An entire shelf of designs labeled with dates and
+    cryptic notes. Garth's handwriting is very small and very precise.
+  invention: >-
+    The current project. It has wires coming out of it in five directions. It
+    has a dial with no labels. It hums faintly when you stand near it. You
+    have a feeling it's either going to be useless or change everything.
+  tapes: >-
+    Garth's personal cassette archive, meticulously labeled. "RUSH - LIVE 1983."
+    "FOXY LADY - ORIGINAL." "EXPERIMENTS - GARTH - DO NOT TOUCH." The DO NOT
+    TOUCH label is underlined three times and circled.
+idlemessages:
+- The soldering iron hisses faintly, maintaining its temperature with patient heat.
+- An oscilloscope traces a sine wave across its green screen, steady as a heartbeat.
+- One of the unlabeled circuit boards blinks a single LED in a pattern that might be Morse code.
+- The Foxy Lady poster seems to be watching over the work table with approval.
+- A cassette tape labeled "DRUM PRACTICE - 11/14/91 - REALLY GOOD" sits near the tape player.
+- The invention on the workbench hums a note that wasn't there a moment ago.
+- Garth's workshop smells of solder, electronics, and focused creative energy.

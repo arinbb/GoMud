@@ -1,0 +1,64 @@
+roomid: 1748
+zone: On the Road
+title: San Francisco
+description: >-
+  <ansi fg="itemname">San Francisco</ansi>, the end of the continent —
+  the city that fell off the edge of America into the <ansi fg="itemname">bay</ansi>
+  and stayed there. The fog comes in from the Pacific in the evening,
+  slow and deliberate, filling the valleys between the hills the way
+  a thought fills a silence. <ansi fg="itemname">Chinatown</ansi> is
+  two blocks east, its restaurants full of steam and the smell of
+  something frying in oil. The <ansi fg="itemname">bay</ansi> glitters
+  at the end of the street, and beyond it the green hills of Marin,
+  and beyond those more hills, and eventually the sea. There is no more
+  west. The road ends here, and in the ending discovers that it was
+  never about getting to the place — it was about going. Sal stands
+  at the end of the continent and feels it all the way down. To the
+  <ansi fg="exit">east</ansi> the road runs back the way you came.
+  To the <ansi fg="exit">south</ansi> is a jazz club where something
+  is happening.
+mapsymbol: S
+maplegend: San Francisco
+biome: city
+exits:
+  east:
+    roomid: 1747
+  south:
+    roomid: 1749
+nouns:
+  bay: >-
+    San Francisco Bay in 1949, before the bridges multiplied and the
+    waterfront became a museum of itself. The water is cold and grey-green
+    and choppy and beautiful in the way of things that do not try to be
+    beautiful. Alcatraz sits in the middle distance like a rumor. The
+    bay smells of brine and fish and the particular emptiness of the
+    Pacific, which is not emptiness at all but the largest thing on Earth.
+  fog: >-
+    The San Francisco fog is a local spirit, arriving each evening to
+    reclaim the city from the daytime. It rolls in through the Golden
+    Gate and over the hills and down into the valleys, changing the
+    character of every street it touches — making familiar things
+    strange, muffling the hard sounds, softening the hard edges. In
+    the fog, the city seems possible in a different way.
+  chinatown: >-
+    San Francisco's Chinatown is the oldest in North America, established
+    in the 1850s, and it has seen everything the city has been through
+    and is still here, still cooking, still arguing, still feeding people
+    at all hours. The restaurants here serve food that Sal has never
+    eaten before, and he is very hungry, and for a dollar you can get
+    a plate of something wonderful and eat it standing up.
+  hills: >-
+    San Francisco hills — up and up and the cable car groaning on its
+    chain and at the top, the whole city spread below, and beyond it
+    the bay, and beyond that the Pacific, the actual ocean, the actual
+    end of the land. Standing here Sal understands something about
+    America that he could not have understood in New York. There is
+    an edge. The edge is real.
+idlemessages:
+- The fog moves in from the bay with the unhurried certainty of something that has been doing this for ten thousand years.
+- A cable car groans up the hill behind you, its passengers holding the rails with both hands.
+- The bay glitters in the afternoon light, cold and enormous and final.
+- 'Chinatown smells of frying pork and star anise and the evening meal being prepared in a hundred kitchens.'
+- A foghorn sounds from the bay, once, long and low, the sound of navigation and warning and distance.
+- The hills of Marin across the water are green in the late light, improbably pastoral.
+- 'You are standing at the end of the continent. Behind you: everything. Ahead: water.'

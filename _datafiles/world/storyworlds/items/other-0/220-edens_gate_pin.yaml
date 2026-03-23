@@ -1,0 +1,15 @@
+itemid: 220
+name: Edens Gate pin
+namesimple: pin
+displayname: a <ansi fg="itemname">Project at Edens Gate pin</ansi>
+description: >-
+  A small enamel pin, white and red, stamped with the Eden's Gate symbol — the
+  stylized gate arch with the cross above it. The back reads 'PROJECT AT EDEN'S
+  GATE.' It was made in bulk, distributed at compound entrances, pressed into
+  palms by smiling Peggies. Hundreds of Hope County residents have one.
+  It is a small, cold, precise thing. It is a souvenir of a county that was
+  occupied and of people who chose to resist. You will not throw it away.
+type: object
+subtype: usable
+uses: 0
+value: 1

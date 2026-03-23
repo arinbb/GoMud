@@ -1,0 +1,51 @@
+roomid: 1732
+zone: The Sopranos
+title: Dr. Melfis Waiting Room
+description: >-
+  A small <ansi fg="8">waiting room</ansi> with four chairs along the walls and a low
+  table covered in <ansi fg="itemname">magazines</ansi>. The magazines are current-ish,
+  or were when they arrived. Now they are just present. The <ansi fg="itemname">lamp</ansi>
+  in the corner provides warm, careful light. The <ansi fg="itemname">walls</ansi> are a
+  color that was chosen to be calming and has succeeded in being neutral. A
+  <ansi fg="itemname">white noise machine</ansi> runs by the inner door, making a sound
+  like distant surf, ensuring that whatever happens inside stays inside. Other
+  <ansi fg="itemname">patients</ansi> sit in the other chairs, not looking at you,
+  each carrying something that brought them here. Everyone in this room is here for
+  a reason and none of them will tell you what it is. Dr. Melfis office is
+  <ansi fg="exit">north</ansi>.
+mapsymbol: W
+maplegend: Waiting Room
+biome: house
+exits:
+  north:
+    roomid: 1731
+nouns:
+  magazines: >-
+    Time. New Yorker. People. A golf magazine that no one brought and no one
+    will claim. The covers show faces of people who seem to have solved
+    something. The articles inside describe the problem in more detail.
+  lamp: >-
+    A floor lamp in the corner, warm-spectrum bulb, creating a circle of
+    light that is just insufficient enough to make you feel slightly sleepy
+    and slightly underprepared.
+  walls: >-
+    A color that exists in the space between grey and beige. It has a name
+    somewhere in a paint catalogue. The name would be something like
+    'Quiet Stone' or 'Calm Tide.' It does not demand anything of you.
+  machine: >-
+    The white noise machine by the inner door produces a steady gentle rush,
+    like the ocean from a distance, or like something very important being
+    said that you cannot quite make out. This is its purpose.
+  patients: >-
+    Two other people in the chairs across from you. One reads a magazine
+    without turning the pages. The other looks at the window with the focused
+    attention of someone thinking very hard about something they are not ready
+    to say. You do not ask.
+spawninfo: []
+idlemessages:
+- The white noise machine hushes the room in waves that sound like breathing.
+- Someone else in the waiting room turns a magazine page. Then another. Then stops.
+- The lamp in the corner keeps its warm, neutral vigil.
+- From beyond the inner door, nothing. The white noise machine is doing its job.
+- A clock somewhere advances one minute. The waiting room receives this information and changes nothing.
+- You have been sitting here long enough that you have stopped trying to remember why.

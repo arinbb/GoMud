@@ -1,0 +1,23 @@
+mobid: 327
+zone: stardew_valley
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote dances a small, precise dance in a shaft of dusty light."
+  - "emote hides behind the nearest pillar, watching with enormous dark eyes."
+  - "emote leaves a tiny arrangement of colored pebbles on the floor."
+  - "emote pulses slowly from green to blue to gold and back to green."
+  - "emote approaches cautiously, then retreats with what looks like shyness."
+  - ""
+activitylevel: 30
+character:
+  name: A Junimo
+  description: >-
+    A tiny forest spirit, roughly the shape and size of a head of cabbage.
+    Round. Smooth. Glowing from within with a warm light that cycles through
+    the colors of the growing season. Enormous dark eyes that express more
+    than seems possible. No mouth visible, but they communicate with chirps
+    and bell-sounds and the deliberate arrangement of small objects. They
+    are old. They are kind. They want very much for the valley to be whole.
+  raceid: 1
+  level: 3

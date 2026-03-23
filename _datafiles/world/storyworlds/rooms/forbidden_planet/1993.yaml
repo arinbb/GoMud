@@ -1,0 +1,64 @@
+roomid: 1993
+zone: Forbidden Planet
+title: The Tempest
+description: >-
+  A room that should not exist -- and perhaps does not, in any literal sense.
+  You are standing in the
+  <ansi fg="cyan">island</ansi> that Shakespeare described in The Tempest,
+  and also in the laboratory of the Krell, and also somewhere in the
+  sub-basement of a man's unconscious mind. The
+  <ansi fg="itemname">air</ansi> here smells of sea and ozone and old books
+  all at once. The <ansi fg="itemname">light</ansi> comes from nowhere and
+  everywhere, the light of a metaphor. On a rock that is also a
+  <ansi fg="itemname">lectern</ansi> sits an open book in which you can read
+  your own thoughts, had you the courage to look. A
+  <ansi fg="cyan">voice</ansi> speaks from the air -- not Prospero's, not
+  Morbius's, though the distinction may be academic.
+mapsymbol: T
+maplegend: The Tempest
+biome: land
+exits: {}
+nouns:
+  island: >-
+    This island is a metaphor. Prospero's island, from The Tempest, is a place
+    of absolute power -- the ruler controls all of nature, all the creatures
+    on it, all reality within its bounds. He is also a prisoner of his own
+    dominion. He has been here twenty years, mastering his art, becoming
+    God within this one small place. He has a daughter. He has a monster
+    made from his own darkness. He has a machine -- the island itself -- that
+    does whatever he truly wills.
+  air: >-
+    The air of this room is charged with something between electricity and
+    meaning. It is the feeling of a word at the tip of your tongue, the
+    feeling of a dream you almost remember. The Krell breathed air this
+    charged for a hundred thousand years before it consumed them. Morbius
+    breathes it every night, asleep, while the machine reads his sleeping
+    mind and builds his nightmares into flesh.
+  light: >-
+    The light has no source. It is present and complete and it reveals
+    everything. In this light, nothing can be hidden from anything, least
+    of all from yourself. The Krell designed this room for a specific purpose.
+    It was where they came to be honest. There are no Krell left. The light
+    does not care.
+  lectern: >-
+    The open book on the lectern shows your own face. Or Morbius's face. Or
+    the Krell who sat in this chair two hundred thousand years ago and looked
+    into the machine and saw what their civilization had become. The pages
+    are not paper. They are possibility. You could read your own truth here.
+    Most people close the book instead.
+  voice: >-
+    The voice that speaks from the air is neither male nor female, neither
+    young nor old. It says: Our revels now are ended. These our actors, as I
+    foretold you, were all spirits and are melted into air, into thin air. And
+    like the baseless fabric of this vision, the cloud-capped towers, the
+    gorgeous palaces, the solemn temples, the great globe itself -- yea, all
+    which it inherit -- shall dissolve. We are such stuff as dreams are made
+    on, and our little life is rounded with a sleep. It says nothing else.
+    It does not need to.
+idlemessages:
+- The voice speaks again. You have already heard this. You will hear it again.
+- The light in the room is constant and merciless and kind.
+- 'The book on the lectern has turned its own page. You did not see it happen. The new page reads: What did you bring here?'
+- 'Something is absent here that is present everywhere else on Altair IV: the hum. The machine is silent in this room. This room is outside the machine.'
+- The island exists because someone imagined it with perfect clarity and perfect power. You are standing in a thought.
+- A sea wind moves through the room. There is no sea for forty trillion miles. The wind does not care.

@@ -1,0 +1,24 @@
+-
+  Supported:
+    "dennis reynolds": ["mac"]
+  Conversation:
+    - ["#1 say Mac, I have been thinking about the D.E.N.N.I.S. System and I believe it requires a revision."]
+    - ["#2 emote stops shadowboxing immediately", "#2 say What kind of revision? The system is perfect. You said the system was perfect."]
+    - ["#1 say I said it was elegant. Elegant things can always be made more elegant. I am looking at step four."]
+    - ["#2 say Neglect emotionally.", "#2 emote nods slowly as if this is profound."]
+    - ["#1 say Neglect emotionally is too blunt. I am considering 'withdraw availability strategically.'"]
+    - ["#2 say That is just neglect emotionally with more words, Dennis.", "#2 emote realizes he has said something correct and looks surprised."]
+    - ["#1 emote pauses", "#1 say That is exactly right. Good catch, Mac. I am keeping 'neglect emotionally.'"]
+    - ["#2 emote beams with a satisfaction that is slightly heartbreaking."]
+-
+  Supported:
+    "dennis reynolds": ["mac"]
+  Conversation:
+    - ["#2 say Dennis, Project Badass needs a new segment. I was thinking something involving fire."]
+    - ["#1 say No fire. The last fire situation is still in litigation."]
+    - ["#2 say What about heights? I can do heights. I can do a very compelling heights segment."]
+    - ["#1 say Project Badass is about the cultivation of a badass image, Mac. Your image, at present, is cultivating mass on a theoretical level."]
+    - ["#2 emote looks hurt", "#2 say The mass is there, Dennis. It is cultivated. You just have to look for it."]
+    - ["#1 say I have been looking for it for three years.", "#1 emote studies Mac with the clinical eye of a man who rates everything."]
+    - ["#2 say I think you need different eyes."]
+    - ["#1 emote considers this", "#1 say That may actually be true. I will think about it."]

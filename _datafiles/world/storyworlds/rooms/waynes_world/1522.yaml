@@ -1,0 +1,49 @@
+roomid: 1522
+zone: Waynes World
+title: Wayne's Kitchen
+description: >-
+  Upstairs from the basement, the <ansi fg="itemname">kitchen</ansi> is a testament
+  to suburban Aurora living. A <ansi fg="itemname">linoleum floor</ansi> in a pattern
+  that was fashionable in 1974. A <ansi fg="itemname">refrigerator</ansi> covered in
+  alphabet magnets spelling nothing in particular. The <ansi fg="itemname">counter</ansi>
+  hosts a coffee maker, a toaster, and an unusual number of <ansi fg="itemname">Little
+  Debbie snacks</ansi>. This is Wayne's parents' territory — everything slightly
+  too cheerful, slightly too beige. A <ansi fg="itemname">window</ansi> looks out
+  over the backyard and the antenna tower. <ansi fg="exit">Down</ansi> the stairs
+  leads back to the basement. To the <ansi fg="exit">east</ansi> is the suburban street.
+mapsymbol: K
+maplegend: Kitchen
+biome: house
+exits:
+  down:
+    roomid: 1520
+  east:
+    roomid: 1523
+nouns:
+  kitchen: >-
+    It is a perfectly normal suburban kitchen. Nothing about it would suggest that
+    below it, two young men are changing cable access television forever.
+  linoleum: >-
+    Rust and gold geometric pattern. It looks like something you might find on a
+    spaceship in a 1974 sci-fi movie, which is probably why someone bought it.
+  refrigerator: >-
+    The alphabet magnets spell "WANYE IS GRATE" — the handwriting of someone
+    who loves Wayne but cannot spell. Probably his mother. Definitely his mother.
+  counter: >-
+    Little Debbies as far as the eye can see. Star Crunch, Swiss Rolls, Oatmeal
+    Cream Pies. Wayne's parents believe in the restorative power of Little Debbie.
+  window: >-
+    The backyard is a precise rectangle of Aurora lawn. In the center, the cable
+    access antenna rises like a monument to ambition.
+  snacks: >-
+    Little Debbie snack cakes in industrial quantity. Wayne's mother buys them
+    in bulk. There is no situation in suburban Aurora that cannot be improved
+    by a Swiss Roll.
+idlemessages:
+- The refrigerator hums with quiet suburban contentment.
+- A Little Debbie Star Crunch sits on the counter, unopened, patient.
+- The coffee maker gurgles. It is always making coffee. Someone is always almost done making coffee.
+- Footsteps overhead remind you that Wayne's parents live their lives above the zone of excellence.
+- The clock on the microwave blinks 12:00. It has blinked 12:00 since 1987.
+- The window rattles slightly in the Aurora wind.
+- A magnet falls off the refrigerator and rearranges the message into something even less coherent.

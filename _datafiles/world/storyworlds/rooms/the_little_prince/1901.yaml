@@ -1,0 +1,71 @@
+roomid: 1901
+zone: The Little Prince
+title: Asteroid B-612
+description: >-
+  You are standing on a planet not much bigger than a house. The ground curves
+  away in every direction under your feet, giving the unsettling impression that
+  you could see the back of your own head if you turned quickly enough. Three
+  small <ansi fg="itemname">volcanoes</ansi> rise in a neat row -- two active,
+  one extinct -- each barely taller than your knee. The ground is pale and
+  smooth, like chalky stone. Several <ansi fg="itemname">baobab seedlings</ansi>
+  have been carefully pulled, their roots trailing. A glass <ansi fg="itemname">dome</ansi>
+  sits in the most prominent spot on the planet, covering the most extraordinary
+  <ansi fg="itemname">rose</ansi> you have ever seen: four thorns, four petals,
+  the colour of a very specific kind of love. The sky around you holds every
+  direction at once. The desert is visible far below, like a painting on the floor
+  of the world. A narrow path leads toward a neighbouring asteroid to the
+  <ansi fg="exit">west</ansi> where a king holds court.
+mapsymbol: B
+maplegend: Asteroid B-612
+biome: land
+exits:
+  south:
+    roomid: 1900
+  king:
+    roomid: 1902
+    mapdirection: west
+nouns:
+  volcanoes: >-
+    Three tiny volcanoes, each one about knee-height and perfectly formed.
+    Two still smoke gently -- the Little Prince cleans them every morning,
+    which keeps them well-behaved. The third is extinct but he cleans it
+    anyway, because you never know. The smoke from the active ones smells
+    faintly of something warm and domestic, like toast.
+  dome: >-
+    A glass dome, the size of a cloche you would use to cover a cake.
+    Beneath it, a rose. The dome is placed and removed each evening, to
+    protect the rose from the cold. The Little Prince has done this so
+    many times that the motion is perfectly smooth, like a ceremony.
+  baobab: >-
+    Uprooted baobab seedlings, still fresh, roots still trailing pale threads.
+    They must be pulled when small or they will split the planet apart.
+    It is a small and essential discipline. If you neglect your planet,
+    even one morning, the consequences may be irreversible.
+  rose: >-
+    Four thorns. Four petals, the specific red of something both vain and
+    beloved. Even under the dome you can see that she is extraordinary --
+    not because roses cannot be found elsewhere, but because this one was
+    tended. This one was listened to. This one, difficult and demanding
+    and magnificent, was loved. That is the difference.
+spawninfo:
+- mobid: 372
+  message: The Rose rustles under her dome, petals trembling with great self-importance.
+  idlecommands:
+  - emote coughs delicately, three times, for effect.
+  - ''
+  - say I was here first, you know. This planet was nothing before I arrived.
+  - ''
+  - emote stretches her petals slowly, as if posing for someone who may be watching.
+  - ''
+  - say I am not afraid of tigers. I have thorns. Four of them.
+  - ''
+  - emote turns away with studied indifference, then peeks back immediately.
+  - ''
+  respawnrate: 3 real minutes
+idlemessages:
+- The planet is so small that if you sit perfectly still, you can feel it turning.
+- The volcano exhales a small thread of smoke that rises straight up before bending in the interstellar wind.
+- 'The glass dome catches the light: inside, the rose glows like something that knows it is being watched.'
+- Standing here, you feel the specific vertigo of caring deeply about something very small.
+- Below, the Sahara is a yellow brushstroke. Everything looks manageable from the right distance.
+- The baobab roots are already drying. Someone needs to tend this planet. It will not tend itself.

@@ -1,0 +1,69 @@
+roomid: 2000
+zone: Seinfeld
+title: Jerrys Apartment
+description: >-
+  The <ansi fg="yellow">apartment</ansi> at 129 West 81st Street, 5A. You have seen this
+  room ten thousand times and it still looks exactly right. The <ansi fg="itemname">couch</ansi>
+  faces the kitchen, blue-grey upholstery, slightly overstuffed, the kind of couch that
+  became famous just by being there. The <ansi fg="itemname">kitchen counter</ansi> is a
+  perpetual staging ground for cereal boxes, a coffee maker, and the particular stillness
+  of a man who lives alone and is fine with it. A <ansi fg="itemname">Superman magnet</ansi>
+  clings to the refrigerator door. The <ansi fg="itemname">intercom</ansi> buzzes periodically
+  with the presence of the downstairs world. Everything in this apartment is slightly too
+  clean for someone who eats as much cereal as Jerry Seinfeld eats cereal. The <ansi fg="exit">hallway</ansi>
+  is to the east. The <ansi fg="exit">bedroom</ansi> is to the south. And there is always
+  the possibility that the door to <ansi fg="exit">Kramers</ansi> apartment is about to slam
+  open.
+mapsymbol: J
+maplegend: Jerrys Apartment
+biome: house
+exits:
+  east:
+    roomid: 2001
+  south:
+    roomid: 2002
+  kramers:
+    roomid: 2003
+    mapdirection: west
+nouns:
+  couch: >-
+    The couch. Blue-grey, wide, permanent. It is where Jerry sits when he
+    talks to George, where Kramer lands when he enters, where the show
+    happened. The cushions are in perfect order. This is a couch maintained
+    by a man who has strong opinions about cushion arrangement.
+  counter: >-
+    The kitchen counter runs along the back of the kitchen, lined with cereal
+    boxes in a state of aggressive variety. Cheerios, Raisin Bran, something
+    with a cartoon on the box. Jerry Seinfeld owns more cereal than a man
+    needs. It is the one area of his life where he does not exercise restraint.
+  magnet: >-
+    A Superman refrigerator magnet, the classic Christopher Reeve pose, one
+    fist raised toward a sky that is apparently just the refrigerator door.
+    It has been here forever. It will always be here. Some things are
+    non-negotiable.
+  intercom: >-
+    A standard New York apartment intercom panel, mounted by the door. It
+    buzzes with the implied weight of everyone who has ever buzzed up to this
+    apartment. George. Elaine. Kramer, who mostly just knocks anyway.
+  superman: >-
+    A Superman refrigerator magnet, the classic Christopher Reeve pose, one
+    fist raised toward a sky that is apparently just the refrigerator door.
+    It has been here forever. It will always be here. Some things are
+    non-negotiable.
+  cereal: >-
+    An impressive array of cereal boxes occupies the counter space like a
+    small civic institution. Jerry Seinfeld loves cereal the way other men
+    love things that are harder to explain.
+spawninfo:
+- mobid: 420
+  message: '<ansi fg="yellow">Jerry Seinfeld stands near the kitchen counter, studying something in the middle distance with the expression of a man who has just noticed something that he will need to think about for three more days.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The intercom buzzes once and stops. Whatever that was, it has been resolved without your involvement.
+- A cereal box falls over on the kitchen counter. Jerry immediately rights it.
+- The refrigerator hums. The Superman magnet holds its position. Everything is fine in this apartment.
+- From somewhere through the wall, a television is playing. A commercial, maybe. A laugh track. Hard to say.
+- The light from the window falls across the couch at exactly the angle it always falls, which is the correct angle.
+- Someone in this building is cooking something. It drifts up through the building in a way that is impossible to identify.
+- The answering machine blinks. There is always a message. The message is always complicated.
+- A bus hisses to a stop on 81st Street below. The Upper West Side continues its business.

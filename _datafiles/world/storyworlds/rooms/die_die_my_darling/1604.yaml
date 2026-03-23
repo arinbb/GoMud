@@ -1,0 +1,72 @@
+roomid: 1604
+zone: Die Die My Darling
+title: The Drawing Room
+description: >-
+  The drawing room might have been elegant once — the fireplace is marble-mantled,
+  the ceiling corniced, the windows tall. Now it is stripped of warmth. A <ansi
+  fg="white">lectern</ansi> stands near the window bearing a large open <ansi
+  fg="white">Bible</ansi>, its pages held open with a ribbon. Two hard chairs face
+  it, positioned for an audience of one. Above the fireplace hangs a <ansi fg="8">portrait</ansi>
+  of a young man in a dark suit — handsome, pale, with his mother's severity already
+  forming in the jaw. Fresh <ansi fg="white">flowers</ansi> have been placed beneath
+  it, real ones, the only living colour in the room. On the low <ansi fg="8">table</ansi>
+  beside the armchair, a <ansi fg="8">scrapbook</ansi> lies face-down, pushed slightly
+  behind a cushion as though someone put it there hastily. To the <ansi fg="exit">south</ansi>
+  is the entrance hall; to the <ansi fg="exit">east</ansi>, the chapel.
+mapsymbol: W
+maplegend: Drawing Room
+biome: house
+exits:
+  south:
+    roomid: 1602
+  east:
+    roomid: 1606
+nouns:
+  portrait: >-
+    A formal portrait of a young man — perhaps twenty-five, perhaps thirty. He is
+    dressed in a dark suit and positioned stiffly, chin slightly raised. His face is
+    pleasant in a cold way. His eyes look at something outside the frame. Fresh flowers
+    have been placed beneath the portrait, changed regularly, their stems in a crystal
+    vase. This is the only living thing in the room that is tended to.
+  stephen: >-
+    A formal portrait of a young man — perhaps twenty-five, perhaps thirty. He is
+    dressed in a dark suit and positioned stiffly, chin slightly raised. His face is
+    pleasant in a cold way. His eyes look at something outside the frame. Fresh flowers
+    have been placed beneath the portrait, changed regularly, their stems in a crystal
+    vase. This is the only living thing in the room that is tended to.
+  flowers: >-
+    White chrysanthemums, fresh, recently placed. The only real living color in the
+    entire house. They are here for him. Everything in this house is for him.
+  lectern: >-
+    A dark wood lectern, well-used. The Bible on it is open to Leviticus. Passages
+    have been underlined in red ink — neat, deliberate underlines through verses about
+    sin and punishment and the wrath of the Lord. A page has been torn out entirely
+    and replaced with a handwritten transcription in a spidery, compressed hand.
+  bible: >-
+    A large Bible, well-thumbed, its spine nearly broken with use. Open to Leviticus.
+    The passages underlined in red ink are specific ones — about the sins of the flesh,
+    about women, about vanity. Someone has been living in this book for years.
+  scrapbook: >-
+    Pushed behind a cushion, this scrapbook is out of place in the austerity of the
+    room. Its cover is worn at the corners from handling. Something is inside it that
+    does not belong here — you can tell from the way it has been hidden rather than
+    displayed. You might open it, if you dared.
+  table: >-
+    A low side table in dark wood, matching the room's other furniture. A scrapbook
+    lies on it, partially concealed by a cushion. The person who placed it there did
+    not want it found.
+  fireplace: >-
+    A marble mantelpiece, cold. The grate holds no fire. A small clock on the mantel
+    ticks with great emphasis. It is the loudest sound in the room.
+spawninfo:
+- mobid: 270
+  message: '<ansi fg="8">A severe grey figure stands at the lectern, head bowed, lips moving in silent reading.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Mrs. Trefoile's lips move without sound, reading from the open Bible.
+- The clock on the mantelpiece ticks into the silence with the regularity of a small condemnation.
+- The portrait above the fireplace seems to dominate the room no matter where you stand.
+- The scrapbook on the side table sits face-down, its contents hidden, its presence unavoidable.
+- Fresh flowers beneath the portrait fill the room with a faint, sweet smell that does not belong here.
+- One of the two chairs before the lectern has been moved slightly — sat in, recently.
+- The fire has not been lit. The cold is precise, deliberate, doctrinal.

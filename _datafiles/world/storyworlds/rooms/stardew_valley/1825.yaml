@@ -1,0 +1,53 @@
+roomid: 1825
+zone: Stardew Valley
+title: The Beach
+description: >-
+  The Pelican Town beach: fine gray sand, tide pools thick with <ansi
+  fg="itemname">sea creatures</ansi>, the rhythmic push and pull of the ocean.
+  <ansi fg="itemname">Driftwood</ansi> lines the high-tide mark. <ansi
+  fg="itemname">Willys shack</ansi> sits at one end of the beach — a salt-worn
+  wooden structure with fishing poles and buoys hung outside. At the other end,
+  just visible, is <ansi fg="itemname">Elliotts cabin</ansi> — a small,
+  romantic thing, a typewriter visible through the window. The fishing <ansi
+  fg="exit">pier</ansi> extends south into the water. The beach path goes <ansi
+  fg="exit">north</ansi> to town. The forest is back to the <ansi
+  fg="exit">west</ansi>.
+mapsymbol: B
+maplegend: The Beach
+biome: shore
+exits:
+  north:
+    roomid: 1821
+  west:
+    roomid: 1823
+  pier:
+    roomid: 1828
+    mapdirection: south
+nouns:
+  creatures: >-
+    The tide pools are full of small lives: hermit crabs dragging shells
+    sideways, sea urchins like purple pin cushions, small fish darting
+    between anemones. You could watch them for hours and the time would
+    not feel wasted.
+  driftwood: >-
+    Smooth gray driftwood, worn down by years of water and salt. Some
+    pieces are small enough to pocket. One great log has become a bench
+    of sorts, and you can see that people have sat here often, watching
+    the ocean think its thoughts.
+  shack: >-
+    Willy's fishing shack. The exterior is covered in weathered wood,
+    old buoys, and hung netting. The smell of fish, salt, and motor oil
+    is intense but not unpleasant. Inside you can see rods of every type
+    and tackle boxes organized with an expert's care.
+  cabin: >-
+    Elliott's cabin sits on a small rise above the tide line. Through the
+    window you can see the glow of a lamp and the outline of a typewriter.
+    Sometimes you can hear him dictating to himself in an elaborate voice.
+    He is writing a novel. He has been writing a novel for some time.
+idlemessages:
+- The ocean breathes in and breathes out. This is its entire occupation and it is content.
+- Seagulls wheel overhead, calling in what sounds like mild outrage at the sea.
+- A wave breaks over the largest tide pool and the sea creatures redistribute themselves with dignity.
+- The light on the water changes every few minutes, silver to gold to gray, restless.
+- 'Someone has left a fishing line unattended on a rock, the cork float bobbing patiently.'
+- The smell of salt and kelp is clean and absolute, washing other concerns temporarily away.

@@ -1,0 +1,23 @@
+mobid: 408
+zone: nineteen_eighty_four
+hostile: true
+maxwander: 2
+activitylevel: 15
+hates:
+- human
+idlecommands:
+  - emote stands motionless in the white corridor, watching.
+  - emote walks the corridor with the flat, unhurried pace of someone who is never in a hurry because they always arrive.
+  - emote's face expresses nothing. It is trained to express nothing. It has been expressing nothing for years.
+  - ''
+character:
+  name: Thought Police Officer
+  description: >-
+    A figure in black overalls with a rubber truncheon at the belt. The face
+    is trained to complete expressionlessness: no anger, no satisfaction, no
+    distaste, no nothing. The eyes, behind this expressionlessness, observe
+    everything. The Thought Police do not need to threaten. Their presence
+    is the threat. The black uniform and the rubber truncheon are
+    redundant. You already know what they are for.
+  raceid: 1
+  level: 20

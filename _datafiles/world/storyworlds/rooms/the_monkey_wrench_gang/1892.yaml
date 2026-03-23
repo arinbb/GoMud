@@ -1,0 +1,60 @@
+roomid: 1892
+zone: The Monkey Wrench Gang
+title: The Power Line
+description: >-
+  <ansi fg="8">Steel transmission towers</ansi> march across the desert in a line that
+  disappears over the mesa to the south and north, each one sixty feet tall, their
+  lattice frames trailing <ansi fg="8">high-voltage cables</ansi> that hum in the desert
+  wind with a frequency just below hearing. The cables sag in long graceful catenaries
+  between towers, vibrating slightly in the thermals rising from the heated rock below.
+  The right-of-way has been cleared of vegetation for a hundred feet on either side —
+  a raw scar through the desert, the sage scraped away to reveal the bare red earth
+  beneath. The nearest tower has a <ansi fg="itemname">warning sign</ansi> bolted to
+  its base: DANGER / HIGH VOLTAGE / AUTHORIZED PERSONNEL ONLY. No one authorized is
+  present. The desert stretches in all directions, empty and hot and patient. The cables
+  carry electricity from Glen Canyon Dam to Phoenix and beyond. They carry it with
+  absolute reliability, in all weather, at all hours. They have not, as yet, been
+  interrupted. To the <ansi fg="exit">road</ansi> to the <ansi fg="exit">east</ansi>,
+  the highway leads back toward the desert road junction.
+mapsymbol: P
+maplegend: Power Line
+biome: desert
+exits:
+  east:
+    roomid: 1883
+    exitmessage: You walk back across the scrubland to the highway.
+    mapdirection: east
+nouns:
+  towers: >-
+    The transmission towers are lattice steel, hot-dipped galvanized, designed
+    to carry the cables through wind, ice, and the full thermal cycle of the
+    desert Southwest. They are engineered to a hundred-year standard.
+    They are also, if one were so inclined, vulnerable to determined interference
+    at their guy-wire anchor points, their bolted connections, or the cables
+    themselves at points of easy access.
+  cables: >-
+    The high-voltage transmission cables carry 345 kilovolts from the Glen Canyon
+    Dam powerhouse to the Phoenix grid. They are steel-cored aluminum conductors,
+    each one an inch thick, carrying enough current to kill every person in
+    a small city simultaneously. They are also what makes Phoenix possible.
+    They vibrate in the wind with a sound that is more pressure than sound.
+  sign: >-
+    DANGER. HIGH VOLTAGE. AUTHORIZED PERSONNEL ONLY. The sign is bolted to
+    the tower base and has weathered to a pale orange. The skull-and-crossbones
+    graphic below the text is faded but legible. Hayduke has memorized the
+    contents of this sign. He considers the authorization requirement philosophically
+    negotiable.
+  scar: >-
+    The right-of-way is a cleared corridor through the desert, the vegetation
+    scraped away by bulldozers to prevent fire damage to the towers. The bare
+    red earth on either side of the line is already recovering -- sage and
+    saltbush pushing back in from the edges. The desert wants its skin back.
+spawninfo: []
+idlemessages:
+- The cables hum in the desert wind, a subsonic vibration that you feel in your chest more than hear.
+- A hawk lands on the nearest tower cross-arm, looks around, then launches itself south along the line.
+- The right-of-way stretches north and south, straight as a ruler, the cleared earth red against the surrounding grey-green sage.
+- 'The cables sag and rise between towers in perfect mathematical curves: the catenary, the natural shape of a hanging chain.'
+- The warning sign on the tower base buzzes faintly, its metal resonating with the frequency in the cables above.
+- A dust devil crosses the right-of-way, scattering the red earth and dying against the base of the tower.
+- 'At night, these cables would be invisible: just the hum, and the tower warning lights blinking red, and the direction of the sound.'

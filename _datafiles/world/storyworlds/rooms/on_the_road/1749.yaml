@@ -1,0 +1,63 @@
+roomid: 1749
+zone: On the Road
+title: A San Francisco Jazz Club
+description: >-
+  A Fillmore District jazz club in 1949, its walls dark with years of
+  smoke and music. The <ansi fg="mobname">tenor man</ansi> onstage is
+  playing something that sounds like <ansi fg="itemname">Charlie Parker</ansi>
+  would sound if Charlie Parker had grown up on the ocean — the same
+  speed, the same intelligence, but with something underneath it that
+  is Pacific, coastal, the end of the world note. The <ansi fg="itemname">crowd</ansi>
+  is loose and warm and the couple in the corner has been dancing
+  slowly for the last hour, not dancing so much as holding each other
+  upright while the music moves through them. Sal Paradise stands near
+  the bar with a beer going warm in his hand, watching and remembering
+  and trying to write it all in his head before it disappears, because
+  everything like this disappears. The <ansi fg="exit">street</ansi>
+  exit leads back to the city.
+mapsymbol: j
+maplegend: SF Jazz Club
+biome: house
+exits:
+  street:
+    roomid: 1748
+    mapdirection: north
+nouns:
+  parker: >-
+    Charlie Parker, Bird, the alto saxophonist from Kansas City who
+    changed jazz in 1945 by playing faster and stranger and truer than
+    anyone had played before. He is not here tonight — he is in New York,
+    probably — but his influence is here, in every phrase the tenor man
+    plays, in the harmonic language the whole band speaks. Parker is the
+    reason all the saxophonists sound like saxophonists now.
+  crowd: >-
+    The Fillmore District crowd in 1949 — a mixed crowd, Black and white,
+    workers and students and people who have no other category. They are
+    here for the music and they know how to listen. The ones who are
+    talking are talking about music. The ones who are quiet are in it.
+    The couple in the corner has achieved a state of listening that is
+    indistinguishable from prayer.
+  bar: >-
+    A wooden bar with a mirror behind it reflecting the room back at
+    itself — the musicians, the crowd, the smoke, the couples, the man
+    standing alone with a warm beer trying to memorize everything. The
+    bartender is efficient and uncurious. He has seen everything and
+    found most of it worth a nod and a refill.
+  music: >-
+    The music in this room is playing through the air like air, like
+    it was always here and the instruments just found it. The tenor
+    man is playing at the edge of what he knows, past the place where
+    the notes have names, into the place where they just have feeling.
+    The drummer is a clock that knows the time is always now.
+spawninfo:
+- mobid: 303
+  message: The tenor man leans into his saxophone and blows a phrase that hangs in the smoky air.
+  container: ''
+idlemessages:
+- The tenor man plays a run of notes that sound like someone falling and being caught at the same time.
+- The couple in the corner sways slowly, eyes closed, anchored to each other and the music.
+- The bartender wipes the bar with a cloth. The cloth is clean. He wipes it anyway.
+- 'A man near the wall closes his eyes, tilts his head back, and breathes out. Just breathes out. The music does that.'
+- The saxophone plays something in the space between two beats that should not fit there but does.
+- Sal watches from near the bar, his warm beer forgotten, his notebook in his jacket but not out.
+- The piano player runs a chord that should be wrong but the tenor man hears it and plays into it and suddenly it is right.

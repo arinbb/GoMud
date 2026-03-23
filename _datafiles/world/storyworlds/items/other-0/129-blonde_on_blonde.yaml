@@ -1,0 +1,21 @@
+itemid: 129
+name: Blonde on Blonde
+namesimple: record
+displayname: a vinyl LP labeled <ansi fg="itemname">Blonde on Blonde</ansi>
+description: >-
+  A double LP in a gatefold sleeve, Columbia Records, 1966. The cover photograph
+  shows Dylan blurred and wrapped in a plaid scarf, looking at nothing in
+  particular, in a way that manages to be both candid and constructed. The
+  sleeve is soft at the corners from years of handling. Inside: four sides of
+  vinyl, the grooves catching the light in thin parallel lines. Side four has
+  one long track that takes up most of the side -- you can see the single
+  wide groove of it from the label outward. The whole thing smells like
+  cardboard and 1966 and something you cannot name that is specifically the
+  smell of music recorded by people who did not know they were making something
+  that would last. When you hold it near your ear and tilt it toward the
+  light, the groove of side four catches and for a moment you can hear,
+  impossibly faintly, a harmonica.
+type: object
+subtype: usable
+uses: 0
+value: 0

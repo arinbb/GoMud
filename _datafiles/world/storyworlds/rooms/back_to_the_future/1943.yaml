@@ -1,0 +1,56 @@
+roomid: 1943
+zone: Back to the Future
+title: The Clock Tower
+description: >-
+  Inside the <ansi fg="itemname">clock tower</ansi>, accessed by a narrow
+  staircase from the square below. The mechanism fills the center of the
+  space: enormous <ansi fg="itemname">gears</ansi>, a pendulum the height
+  of a man, counterweights on fraying rope. The clock face itself is visible
+  through the tower window -- an enormous Roman-numeral dial, its hands
+  currently at 10:03 PM. On the stone ledge outside the east window, Doc
+  Brown has rigged a crude but heroic array of <ansi fg="itemname">wiring</ansi>:
+  a hook, a cable running down to the street below, a lightning rod jutting
+  toward the stormy sky. The wind up here is ferocious. Through the west
+  window you can see the entire town square spread below you.
+mapsymbol: C
+maplegend: Clock Tower
+biome: house
+exits:
+  down:
+    roomid: 1941
+nouns:
+  gears: >-
+    Cast iron gears the size of wagon wheels, fitted together with
+    mechanical precision. They turn slowly, driven by counterweights,
+    powering the clock hands on the face outside. The whole mechanism
+    smells of machine oil and old metal. It has been running since 1886
+    with minimal maintenance and much faith.
+  wiring: >-
+    Doc Browns improvised lightning-capture array. A copper hook attached
+    to a long cable that runs down to the street below, where it will
+    connect to the DeLorean at the critical moment. The engineering is
+    brilliant in conception, terrifying in execution. Two bare wires.
+    One stormy night. One car doing 88 miles per hour.
+  "lightning rod": >-
+    A steel rod bolted to the outside ledge, pointed at the sky. Doc Brown
+    has placed it at the precise spot where his calculations say the
+    lightning will strike. His calculations are, in fact, correct.
+  cable: >-
+    A long copper cable snaking from the lightning hook down the outside
+    of the tower, running along the gutter and dropping to street level.
+    Someone will need to connect this cable to the DeLorean at exactly
+    the right moment. The timing leaves no margin for error.
+  "clock face": >-
+    The enormous clock face with its Roman numerals. Through the tower
+    window you can see the hands approaching 10:04 PM. The minute hand
+    is moving. The lightning is coming. This is the most important
+    clock in the world right now.
+idlemessages:
+- The tower shudders in a gust of wind. The gears grind on, indifferent.
+- Lightning flickers on the horizon, still far off but getting closer.
+- The cable strung along the ledge swings and creaks in the wind.
+- Through the window, the town square looks impossibly small below.
+- Thunder rolls, closer than the last time.
+- The clock mechanism ticks with metronomic certainty. 10:03. The lightning is almost here.
+- Rain begins to spatter through the open tower windows, pattering on the stone floor.
+- Doc Browns wiring hums faintly -- or maybe that is just the wind.

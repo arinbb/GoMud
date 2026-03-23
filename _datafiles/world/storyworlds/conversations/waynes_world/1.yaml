@@ -1,0 +1,35 @@
+-
+  Supported:
+    "wayne campbell": ["garth algar"]
+  Conversation:
+    - ["#1 say Garth. GARTH. Are you listening?"]
+    - ["#2 emote looks up from whatever he was doing. 'Hmm?'"]
+    - ["#1 say I've been thinking about the show. I think we need a new segment. Something bold. Something EXCELLENT."]
+    - ["#2 say Like what?", "#2 emote drums a short fill on his knee."]
+    - ["#1 say I don't know yet. That's the best part. The idea doesn't exist yet."]
+    - ["#2 say The best ideas start as not-ideas.", "#2 emote nods."]
+    - ["#1 emote points at Garth. 'EXACTLY. You get it. You always get it.'"]
+    - ["#2 say Party on, Wayne."]
+    - ["#1 say Party on, Garth."]
+-
+  Supported:
+    "wayne campbell": ["garth algar"]
+  Conversation:
+    - ["#1 say Garth. If you could jam with any guitarist in history, who would it be?"]
+    - ["#2 emote doesn't hesitate. 'Neil Peart.'"]
+    - ["#1 say Garth, Neil Peart is a drummer."]
+    - ["#2 say I know what he is, Wayne."]
+    - ["#1 emote pauses. Thinks about it. 'That's actually excellent.'"]
+    - ["#2 say I've thought about it a lot.", "#2 emote adjusts his glasses."]
+-
+  Supported:
+    "wayne campbell": ["garth algar"]
+  Conversation:
+    - ["#1 say You know what's excellent? THIS."]
+    - ["#1 emote gestures broadly at everything."]
+    - ["#2 say The basement?"]
+    - ["#1 say The whole thing. The show. The donuts. The Mirthmobile. Aurora. ALL OF IT."]
+    - ["#2 emote drums a fill on the couch armrest."]
+    - ["#2 say Yeah. Yeah, it is excellent."]
+    - ["#1 say EXCELLENT."]
+    - ["#2 say Excellent."]

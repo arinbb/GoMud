@@ -1,0 +1,28 @@
+-
+  Supported:
+    "dennis reynolds": ["dee reynolds"]
+  Conversation:
+    - ["#1 say Dee, what is that accent you are practicing?"]
+    - ["#2 say It is British. It is a British accent. I am developing it for an audition."]
+    - ["#1 emote tilts his head", "#1 say Is it, though? I am hearing something, but I am not sure what I am hearing."]
+    - ["#2 say It is British, Dennis. It is clearly British."]
+    - ["#1 say It sounds like someone described a British accent to a person who had never heard one, and then that person described it to you."]
+    - ["#2 emote dry heaves once, quietly, and recovers", "#2 say It is a work in progress."]
+    - ["#1 say Keep working. The work needs more work.", "#1 emote returns to checking his phone."]
+    - ["#2 emote stares at the wall for a moment", "#2 say I am a good actress."]
+    - ["#1 say Mm.", "#1 emote does not look up."]
+    - ["#2 say I am.", "#2 emote says it again, quieter, to herself, as if saying it enough times will make it a fact."]
+-
+  Supported:
+    "dee reynolds": ["dennis reynolds"]
+  Conversation:
+    - ["#1 say Dennis, I got a callback."]
+    - ["#2 emote looks up", "#2 say From who?"]
+    - ["#1 say A commercial. A regional commercial. It is a start, Dennis."]
+    - ["#2 say What is the commercial for?"]
+    - ["#1 say It is for a pharmaceutical. But I would be playing a doctor."]
+    - ["#2 say You would be playing a person who needs the pharmaceutical."]
+    - ["#1 say ...They said doctor."]
+    - ["#2 say Dee, in pharmaceutical commercials, there are two characters: the doctor and the person who needs the medicine.", "#2 emote looks at her with something that might be pity.", "#2 say They said doctor."]
+    - ["#1 emote stares at him", "#1 say I am calling them back."]
+    - ["#2 say You should call them back.", "#2 emote returns to his phone with the composure of someone who has won without trying."]

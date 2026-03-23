@@ -1,0 +1,16 @@
+itemid: 270
+name: rat stick
+namesimple: stick
+displayname: a <ansi fg="itemname">rat stick</ansi>
+description: >-
+  A wooden dowel with a dead rat duct-taped to one end. The provenance of
+  this object is unclear and probably best not examined too closely.
+  It smells powerfully of the Paddys Pub basement. On the handle someone
+  has written "CHARLIE'S" in red crayon, though the spelling is debatable.
+  It has a strange weight to it, the weight of a man who has made rat
+  extermination his entire identity. You are not sure if it is a weapon,
+  a tool, a trophy, or a statement. It is probably all four.
+type: object
+subtype: usable
+uses: 0
+value: 0

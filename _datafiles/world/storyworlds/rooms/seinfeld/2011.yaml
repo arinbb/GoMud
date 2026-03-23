@@ -1,0 +1,57 @@
+roomid: 2011
+zone: Seinfeld
+title: J. Peterman Office
+description: >-
+  The offices of <ansi fg="yellow">J. Peterman Reality Tours and Catalog</ansi>, somewhere
+  in Manhattan, furnished with the aggressive authenticity of a man who has been everywhere
+  and wants you to know it. The <ansi fg="itemname">desk</ansi> is dark mahogany, wide,
+  covered in the artifacts of adventures that are either real or comprehensively imagined.
+  A <ansi fg="itemname">saddlebag</ansi> hangs from a hook. A framed <ansi fg="itemname">photograph</ansi>
+  shows Peterman somewhere in Central Asia -- at least that is what the caption says.
+  <ansi fg="itemname">Catalog pages</ansi> are spread across a secondary table: the
+  urban sombrero, the Himalayan walking stick, a bathrobe described as suitable for
+  either a Russian czar or a man who simply wants to be comfortable. Elaine Benes
+  works here as an editor. She sometimes writes the copy. The copy is extraordinary.
+  The exit to the <ansi fg="exit">street</ansi> is to the east.
+mapsymbol: P
+maplegend: J. Peterman Office
+biome: house
+exits:
+  east:
+    roomid: 2004
+nouns:
+  desk: >-
+    Petermans desk is a statement. Dark mahogany, broad enough to land a small
+    plane on. Papers, artifacts, a compass that may be decorative or may be
+    functional -- with Peterman it is impossible to say. The desk projects the
+    confidence of a man who has never once doubted that his catalog is literature.
+  saddlebag: >-
+    A genuine saddlebag from somewhere specific and important, hung on a hook
+    with the casualness of something used regularly. It has been on a horse.
+    It has crossed something significant. Peterman will tell you about it if
+    you give him any opening at all.
+  photograph: >-
+    Peterman in what appears to be Central Asia -- the light, the mountains,
+    the clothing. He is wearing something from the catalog. He is smiling with
+    the smile of a man for whom this is simply Tuesday.
+  catalog: >-
+    The catalog pages contain descriptions of objects that are technically
+    clothing but read as autobiography. The urban sombrero: a hat that says
+    you have been to places where hats are necessary. The riding boots: for
+    a journey you have not taken yet but feel is coming.
+spawninfo:
+- mobid: 422
+  message: '<ansi fg="yellow">Elaine Benes drops her bag on the desk with the energy of someone who has already had three things happen to them this morning and it is not yet ten.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 427
+  message: '<ansi fg="8">J. Peterman sweeps in from somewhere -- it is never clear where he comes from or where he is going, only that the journey is meaningful and the garment he is wearing has a story.</ansi>'
+  respawnrate: 7 real minutes
+idlemessages:
+- The catalog pages on the table describe items with a grandeur that the items may or may not deserve.
+- Elaines desk contains the evidence of someone who does excellent work while having a terrible time.
+- A new catalog description is being drafted. The object being described is a vest. The description will run four paragraphs.
+- Something in Central Asia happened and it is going to come up in the copy whether or not it is relevant.
+- Petermans chair is empty, which means he is either in a meeting or in a bazaar in another country.
+- The saddlebag hangs on its hook with the patience of something that has been places and will go places again.
+- Elaine is somewhere in the building rolling her eyes at something, and the rolling is completely justified.
+- A proof of the new catalog cover shows a man in a field wearing a coat that costs as much as a small car.

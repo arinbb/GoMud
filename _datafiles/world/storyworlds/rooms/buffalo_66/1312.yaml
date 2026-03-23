@@ -1,0 +1,49 @@
+roomid: 1312
+zone: Buffalo 66
+title: Scott Wood's House
+description: >-
+  A <ansi fg="itemname">house</ansi> that was once nice. The <ansi fg="itemname">lawn</ansi>
+  is dead under a crust of grey snow. The <ansi fg="itemname">siding</ansi> is
+  aluminum, once white, now the color of old teeth. Inside, the <ansi fg="itemname">living
+  room</ansi> is dim and stale. <ansi fg="itemname">Trophies</ansi> line a shelf —
+  football trophies, kicking trophies, MVP trophies — all from decades ago, all
+  gathering dust. A <ansi fg="itemname">recliner</ansi> faces a television showing
+  the game. The man in the recliner has not moved in a long time. Beer cans form
+  a small skyline on the end table. The ice rink is back to the <ansi fg="exit">east</ansi>.
+mapsymbol: W
+maplegend: Wood's House
+biome: house
+exits:
+  east:
+    roomid: 1311
+nouns:
+  house: >-
+    A split-level ranch, the kind they built by the thousand in the sixties.
+    It was the American dream once. Now it is just a house where a man sits.
+  lawn: >-
+    Dead grass under grey snow. A garden gnome lies on its side near the front
+    step, half-buried. No one has righted it.
+  siding: >-
+    Aluminum siding, dented in places by hail or baseballs or the passage of
+    time. One section has come loose and flaps in the wind.
+  trophies: >-
+    A shelf of trophies. Golden kickers frozen mid-swing. Plaques engraved
+    with dates from the 1970s. Scott Wood, MVP. Scott Wood, All-Conference.
+    Scott Wood, a man who peaked before he was old enough to know it.
+  recliner: >-
+    A recliner that has become a permanent fixture. The man and the chair
+    have merged into a single entity of disappointment and beer.
+  living: >-
+    A living room that stopped being lived in and started being endured.
+    Everything is beige. The curtains are drawn.
+spawninfo:
+- mobid: 215
+  message: "<ansi fg=\"8\">A heavy man in a stained undershirt sits in the recliner, not watching the game.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- A beer can on the end table catches light from the television and gleams dully.
+- The television plays the game. Nobody in this room cares about the game anymore.
+- A trophy on the shelf catches your eye — the golden figure is frozen in a perfect kick.
+- The aluminum siding outside flaps once in the wind, a dull metallic clap.
+- The house smells of stale beer and regret, which may be the same thing.
+- Scott Wood was the greatest kicker Buffalo ever produced. That was a long time ago.

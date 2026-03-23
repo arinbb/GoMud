@@ -1,0 +1,54 @@
+roomid: 1965
+zone: Nineteen Eighty Four
+title: The Canteen
+description: >-
+  A long low-ceilinged room that smells of <ansi fg="itemname">sour
+  stew</ansi> and the sharp chemical sweetness of
+  <ansi fg="itemname">saccharin</ansi>. Grey trays move along a metal
+  counter. The food is brown, mostly. The Victory Gin comes in
+  teacups. The noise of <ansi fg="itemname">telescreens</ansi> on both
+  walls fills the space between conversations that are not quite
+  conversations — words spoken at the right volume and temperature to
+  communicate nothing incriminating. At one end of the canteen,
+  <ansi fg="itemname">Syme</ansi> is sitting at his usual
+  <ansi fg="exit">table</ansi> with a dictionary and an expression of
+  genuine intellectual excitement. Ministry workers move through in
+  overalls, grey trays, grey faces, grey food. The Records Department
+  is back to the <ansi fg="exit">west</ansi>.
+mapsymbol: C
+maplegend: The Canteen
+biome: house
+exits:
+  west:
+    roomid: 1964
+  table:
+    roomid: 1966
+    mapdirection: north
+nouns:
+  stew: >-
+    A pinkish-grey substance in a greasy bowl. It might be meat. It might
+    not be. The savoury smell is produced chemically. The actual taste is
+    somewhere between nothing and mild disappointment. You eat it because
+    it is lunch.
+  saccharin: >-
+    Sweet tablets dropped into Victory Coffee to replace the sugar that no
+    longer exists. They dissolve completely and taste of nothing that was
+    ever near a sugarcane plant. But the brain, by now, accepts it.
+  gin: >-
+    Victory Gin served in teacups because there are no glasses. A sharp,
+    oily spirit that tastes like cleaning fluid that someone has decided,
+    against all evidence, is drinkable. You finish the cup anyway. The
+    proles have real gin. You are not proles.
+  telescreens: >-
+    The canteen telescreens play a continuous loop of approved music
+    between announcements. The music is produced by a machine called a
+    versificator. It has no composer. The announcements come irregularly
+    and always begin with a fanfare.
+idlemessages:
+- 'The telescreen above the counter announces another increase in the chocolate ration. Polite applause from several tables. You applaud too.'
+- 'The saccharin falls from the dispenser one tablet at a time. You lose count. You take another cup of Victory Gin instead.'
+- 'At a table nearby, two workers eat in silence, neither looking at the other, both looking at a point equidistant between their trays.'
+- 'Someone laughs too loudly, then stops. Everyone near them pretends not to have heard.'
+- 'The stew is the same as yesterday. The stew is always the same as yesterday. The records say the menu varies weekly.'
+- 'Syme can be heard in the distance, explaining something with the enthusiasm of a man who has not yet learned that enthusiasm is dangerous.'
+- 'A telescreen blares: "ATTENTION. There will be a spontaneous demonstration in Victory Square at 1400 hours." You will attend. It is spontaneous.'

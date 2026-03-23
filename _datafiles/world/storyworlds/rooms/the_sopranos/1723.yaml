@@ -1,0 +1,52 @@
+roomid: 1723
+zone: The Sopranos
+title: The Living Room
+description: >-
+  A large, comfortable <ansi fg="yellow">living room</ansi> with heavy furniture and
+  a <ansi fg="itemname">big-screen television</ansi> that dominates the far wall like
+  an altar. The <ansi fg="itemname">couch</ansi> is upholstered in something expensive
+  and slightly too formal for regular sitting, but the family sits on it anyway.
+  <ansi fg="itemname">Family photos</ansi> line the mantle above the fireplace —
+  wedding portraits, first communions, children at various ages in various states of
+  happiness. A <ansi fg="itemname">dining table</ansi> is visible through the archway,
+  set and waiting. The living room is where the family performs being a family for
+  each other, which is most of what families do. The kitchen is <ansi fg="exit">west</ansi>.
+mapsymbol: L
+maplegend: Living Room
+biome: house
+exits:
+  west:
+    roomid: 1721
+nouns:
+  television: >-
+    The biggest television money could buy in the late nineties, in a cabinet
+    of polished wood that makes it look respectable. It is always on. The sound
+    is always either too loud or muted, nothing in between.
+  couch: >-
+    Substantial, high-backed, upholstered in deep green. It is the kind of couch
+    that has sat through a thousand arguments and absorbed them all without comment.
+    There is a permanent impression on the right cushion.
+  photos: >-
+    Tony and Carmela's wedding. Meadow at a recital. AJ in a little league uniform.
+    A birthday. A first communion. Another birthday. The faces in the photos are
+    always smiling because someone told them to smile, and they are always slightly
+    different from the people you meet in this house.
+  table: >-
+    The dining table is set with cloth napkins and good china. Carmela sets it
+    this way every day regardless of whether anyone will sit at it properly.
+    This is either optimism or stubbornness. Probably both.
+  fireplace: >-
+    Gas, with decorative logs that never burn. It is on in winter as a kind of
+    theater. The mantle holds the family photos and a clock that chimes on the hour,
+    which everyone stopped noticing years ago.
+spawninfo:
+- mobid: 298
+  message: "<ansi fg=\"8\">AJ Soprano is folded into the couch like someone poured him there, phone in hand, looking at nothing with great intensity.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The big television plays something nobody is watching with the volume too high.
+- A door slams upstairs. Someone is in a mood. This is always the case.
+- The house settles on its foundation with a faint structural groan.
+- The family photos watch the room with frozen smiles that have been watching for years.
+- The dining table is set perfectly. Nobody sits at it perfectly.
+- Through the archway, the smell of dinner from the kitchen, closer now, more insistent.

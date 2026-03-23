@@ -1,0 +1,24 @@
+questid: 150
+name: Blonde on Blonde
+description: >-
+  Walk through all fourteen songs on Bob Dylan's 1966 double album. Start in
+  the Nashville recording studio where it was made, visit every track from
+  the carnival chaos of the first song to the eleven-minute closing epic, and
+  find the woman at the warehouse window. Bring back something to play.
+reward:
+  experience: 4500
+  item_id: 195
+  playermessage: >-
+    You have walked through all fourteen tracks -- the rain and the brass band,
+    the blues bar at closing time, the loft at three in the morning, the
+    snowstorm argument, the doorstep, the Mobile collage, the fashion show,
+    the dressing room, the forked road, the closed door, the open jail cell,
+    the spiral staircase, the garage, and finally the vast warehouse at dawn
+    with the organ holding a chord that has been holding since 1966. As a
+    memento, you receive a harmonica in the key of A.
+steps:
+- description: Enter Columbia Studio A, Nashville.
+- description: Visit Visions of Johanna.
+- description: Walk through the surreal collage of Stuck Inside of Mobile.
+- description: Find the Sad Eyed Lady at the warehouse window.
+- description: Visit all fourteen tracks and return to the studio.

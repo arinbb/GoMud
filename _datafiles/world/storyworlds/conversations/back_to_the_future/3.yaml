@@ -1,0 +1,24 @@
+-
+  Supported:
+    "biff tannen": ["george mcfly"]
+  Conversation:
+    - ["#1 say Hey McFly! Where's my homework?"]
+    - ["#2 emote hunches his shoulders.", "#2 say I haven't finished it yet, Biff."]
+    - ["#1 say You HAVEN'T FINISHED IT?"]
+    - ["#2 say I'm going to! I just need until tonight."]
+    - ["#1 say You know what your problem is, McFly? You've got no SPINE."]
+    - ["#2 emote stares at the counter.", "#2 say You'll have it by tonight."]
+    - ["#1 say Make like a tree and get out of here.", "#1 emote shoves past him."]
+    - ["#2 emote watches him go.", "#2 say Someday."]
+-
+  Supported:
+    "biff tannen": ["george mcfly"]
+  Conversation:
+    - ["#1 say McFly! I told you about thinking."]
+    - ["#2 say I wasn't -- I was just sitting here."]
+    - ["#1 say This is my spot. Got it? My spot. You're in my spot."]
+    - ["#2 emote moves without being asked."]
+    - ["#1 say And that homework better be done by lunch."]
+    - ["#2 emote watches him settle into the stool.", "#2 say One day."]
+    - ["#1 emote doesn't hear him.", "#1 say What?"]
+    - ["#2 say Nothing. I said nothing."]

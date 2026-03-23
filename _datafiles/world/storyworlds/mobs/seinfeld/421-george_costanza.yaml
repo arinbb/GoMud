@@ -1,0 +1,26 @@
+mobid: 421
+zone: seinfeld
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote complains about something under his breath, shaking his head."
+  - "emote eats something from the plate in front of him with the focused commitment of a man for whom eating is serious."
+  - "emote lies to himself about something. You can tell. He can't."
+  - "say This is going to work. This is definitely going to work."
+  - "emote scratches the back of his neck, staring at the table."
+  - ''
+  - "say I had a plan. A very good plan."
+  - "emote looks around the diner as if calculating something, then writes a small note on a napkin."
+activitylevel: 30
+character:
+  name: George Costanza
+  description: >-
+    A short, stocky man, largely bald, who carries himself with the paradoxical
+    confidence of someone who has been wrong so many times that correctness has
+    ceased to be his metric. He wears clothes that were once carefully chosen
+    and are now simply the clothes. His face is expressive in the way that
+    faces are expressive when they are trying to sell something -- constantly
+    slightly overselling, slightly underselling, searching for the angle. He
+    is eating something. There is usually something he is eating.
+  raceid: 1
+  level: 5

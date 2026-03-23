@@ -1,0 +1,27 @@
+mobid: 424
+zone: seinfeld
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say SERENITY NOW!"
+  - "emote argues with Estelle about something. The subject changes but the argument is always the same argument."
+  - "say I invented a holiday. I did it. And I would do it again."
+  - "emote stands in the kitchen, aggressive, preparing something with the intensity of a man settling a score."
+  - "say You want a piece of this? FESTIVUS IS FOR THE REST OF US."
+  - ''
+  - "emote stares at the Festivus pole with profound satisfaction."
+  - "say I find tinsel distracting. I have always found tinsel distracting."
+activitylevel: 30
+character:
+  name: Frank Costanza
+  description: >-
+    A heavyset man in his late sixties, square-jawed, wearing slacks and a
+    cardigan that does not soften him. He occupies space with the settled
+    authority of a man who has had opinions for sixty-five years and they
+    have not once not been the right opinions. He speaks in declarations.
+    He invented Festivus. He would like to discuss Festivus. He would also
+    like to discuss his son George, but the discussion is not going to be
+    complimentary. He is loudest when he feels most misunderstood, which
+    is always.
+  raceid: 1
+  level: 10

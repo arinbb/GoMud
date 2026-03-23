@@ -1,0 +1,15 @@
+itemid: 136
+name: Far Cry 5 disc
+namesimple: disc
+displayname: a <ansi fg="itemname">Far Cry 5 game disc</ansi>
+description: >-
+  A game disc in a slim case. The cover shows a Montana landscape: golden valley,
+  pine mountains, a wide blue sky. In the foreground, a family seated at a table
+  for what might be a meal or a prayer. The words FAR CRY 5 in clean white type.
+  The scene is beautiful. There is something wrong with the smiles of the people
+  at the table. The back of the case lists features: open world, Hope County
+  Montana, Eden's Gate. The word 'cult' does not appear anywhere on the packaging.
+type: object
+subtype: usable
+uses: 0
+value: 0

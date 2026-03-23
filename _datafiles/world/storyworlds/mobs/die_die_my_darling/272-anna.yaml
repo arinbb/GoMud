@@ -1,0 +1,25 @@
+mobid: 272
+zone: die_die_my_darling
+hostile: false
+maxwander: 1
+activitylevel: 20
+idlecommands:
+  - "emote scrubs the kitchen table with both hands, her eyes on the surface, nowhere else."
+  - "emote mutters something under her breath that sounds like an argument she is losing."
+  - "emote arranges and rearranges the plain white dishes, touching each one with the efficiency of long practice."
+  - "emote glances toward the door and back, quickly, as though checking that someone is not there."
+  - "emote puts a pot on to boil and stands watching it with the expression of someone who has made peace with plain food."
+  - ''
+  - ''
+character:
+  name: Anna
+  description: >-
+    A strong woman of middle years with capable hands and a face that has
+    learned not to show what it knows. She is neither friendly nor hostile
+    in her manner — she is efficient, which is its own form of neutrality.
+    She wears plain dark clothes covered by a white apron that is always
+    clean. She does what she is told and she does it well and there are
+    moments when her expression suggests that she is aware these facts
+    about herself are not entirely to her credit.
+  raceid: 1
+  level: 5

@@ -1,0 +1,59 @@
+roomid: 1967
+zone: Nineteen Eighty Four
+title: The Prole Quarter
+description: >-
+  The air changes as you enter the prole quarter — louder, dirtier, less
+  supervised. The telescreens are fewer here. The proles are eighty-five
+  percent of the population and the Party does not trouble them much,
+  because they do not matter. They buy their lottery tickets and drink
+  their beer and sing their songs. They are not educated enough to be
+  dangerous. A <ansi fg="itemname">prole woman</ansi> of enormous size
+  is hanging washing on a line between two window ledges, singing. The
+  streets are chaotic and alive in a way that the Party districts are
+  not. Children shout. Dogs run. Someone is cooking something that smells
+  of real food. To the <ansi fg="exit">west</ansi>, the Party streets.
+  To the <ansi fg="exit">north</ansi>, the antique shop.
+mapsymbol: P
+maplegend: The Prole Quarter
+biome: city
+exits:
+  west:
+    roomid: 1963
+  north:
+    roomid: 1968
+nouns:
+  woman: >-
+    She is enormous — the word is not too strong. She must be sixty and
+    solidly built as a pillar, with a great bosom and great hips and great
+    forearms reddened with work. She sings as she hangs the washing, an
+    old song, one of the sentimental ones that the telescreens play
+    sometimes. She has not been told what to feel. She feels it anyway.
+  washing: >-
+    Sheets and shirts and overalls on the line between the buildings.
+    Ordinary, domestic, alive. The washing is the most normal thing you
+    have seen all day. The proles hang their washing. They do not know
+    they are free, but they are freer than anyone in the Party, and
+    somehow the washing proves it.
+  lottery: >-
+    Scraps of paper and pencil stubs are scattered outside a shop window
+    that shows the week's lottery results. The proles live for the lottery.
+    The prizes are real. The jackpots are mostly imaginary, but occasionally
+    real enough to sustain the dream. The Ministry administers it. The
+    proles do not think about this.
+  beer: >-
+    Real beer. Not Victory Beer. Darker, heavier, actually tasting of hops
+    and grain and time. The proles drink it in the pubs here, from proper
+    pint glasses. Winston has drunk it on his rare visits to the prole
+    quarter and found it left him feeling briefly human.
+spawninfo:
+- mobid: 407
+  message: 'A woman of enormous size leans from an upper window, hanging washing and singing an old sentimental song.'
+  respawnrate: 5 real minutes
+idlemessages:
+- 'The prole woman hangs another sheet on the line, her arms red with work, her voice carrying the melody of a song the versificator could never have produced.'
+- 'Children run past, shouting something incomprehensible. One of them is carrying a stick and threatening another with it. They are both laughing.'
+- 'The smell of real cooking comes from somewhere — fat in a pan, onions, something with spices. The smell makes you dizzy with something like memory.'
+- 'A pub on the corner is doing steady business. Through the smeared window you can see people at tables, talking, laughing. The telescreens here play music, not news. No one is watching very carefully.'
+- 'The prole woman finishes her verse and starts another. Her voice is not beautiful but it carries something the approved songs do not: belief in what it is singing.'
+- 'A bookstall in a doorway sells penny dreadfuls, pornographic picture books, and items stamped with the face of Big Brother. The pornography is actually illegal, except for the proles.'
+- 'An old man shuffles past in an ancient brown overcoat, muttering to himself. He is thinking about something. The Thought Police do not bother with the proles and their thoughts.'

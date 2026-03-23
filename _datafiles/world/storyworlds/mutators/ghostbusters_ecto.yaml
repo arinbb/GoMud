@@ -1,0 +1,5 @@
+mutatorid: ghostbusters-ecto
+namemodifier:
+  behavior: append
+  text: "(haunted)"
+  colorpattern: none

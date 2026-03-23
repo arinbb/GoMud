@@ -1,0 +1,26 @@
+mobid: 444
+zone: its_always_sunny
+hostile: false
+maxwander: 2
+activitylevel: 35
+angrycommands: []
+idlecommands:
+  - emote produces an egg from somewhere inside his jacket. No one asks. No one wants to know.
+  - say 'I am in the market. That is all I will say. I am in the market and I have money.'
+  - emote waves a handful of cash at no one in particular.
+  - say I used to be normal. I had a wife, a house, a reputation. Then I got WEIRD. Best decision I ever made.
+  - emote crawls under the bar for reasons that remain unclear and emerge on the other side.
+  - say 'You wanna do some whip-its? I got a guy. I always got a guy.'
+character:
+  name: Frank Reynolds
+  description: >-
+    A short, round man of late middle age with the face of someone who has
+    chosen chaos as a lifestyle and never looked back. He is dressed in a
+    way that suggests he owns excellent suits but rarely bothers with them.
+    His eyes have the bright, calculating gleam of a man who has made and
+    lost several fortunes and regards both experiences as equally entertaining.
+    He is worth many millions of dollars. He lives in a one-room apartment
+    with Charlie Kelly and sleeps on a pullout couch by choice. He has an egg
+    somewhere on his person at all times. The egg is not to be questioned.
+  raceid: 1
+  level: 10

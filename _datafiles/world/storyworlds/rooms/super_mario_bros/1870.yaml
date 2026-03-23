@@ -1,0 +1,58 @@
+roomid: 1870
+zone: Super Mario Bros
+title: World 6-3 Underwater Level
+description: >-
+  The underwater level. The whole world has shifted into slow, blue
+  <ansi fg="cyan">water</ansi> -- you move differently here, rising and
+  falling with the physics of swimming, your jumps replaced by a
+  bobbing float that requires constant correction. The background is a
+  deep <ansi fg="cyan">blue-green</ansi>, lit with that diffuse underwater
+  light. <ansi fg="itemname">Coral</ansi> formations rise from the sandy
+  floor in bright reds and oranges. Schools of small fish drift past
+  decoratively. Two <ansi fg="itemname">Bloopers</ansi> -- squid enemies,
+  white with simple dot eyes -- pursue you in erratic spiraling paths,
+  descending when you go down, rising when you go up. The whole level
+  has the dreamy, slowed-down quality of being underwater in a dream.
+  North leads <ansi fg="exit">up and out</ansi>; east continues to
+  <ansi fg="exit">World 7</ansi>.
+mapsymbol: W
+maplegend: Underwater Level
+biome: water
+exits:
+  north:
+    roomid: 1869
+  east:
+    roomid: 1871
+nouns:
+  coral: >-
+    Coral formations rising from the sandy underwater floor -- reds and
+    oranges and pinks rendered in the chunky pixel aesthetic, simple
+    branching shapes that suggest coral without being photorealistic.
+    They are purely decorative, background elements that give the
+    underwater level its distinct visual identity. You can swim around
+    them. You cannot interact with them beyond that. They are the
+    underwater world's trees: always in the background, never quite
+    reachable.
+  bloopers: >-
+    White squid with simple dot eyes and wriggling tentacles below.
+    Bloopers pursue you through the water in a predictable unpredictable
+    way -- they spiral down when you descend, spiral up when you rise,
+    always tracking you, never quite catching up if you keep moving.
+    The trick is to swim low along the floor. They descend past you.
+    The trick is always to move before they adjust.
+  fish: >-
+    Small decorative fish drifting in synchronized schools through the
+    blue-green water. They do not hurt you. They do not interact with
+    you. They are here as atmosphere, evidence that this is a living
+    ocean, not an empty blue box. They move with the gentle drift of
+    things that belong completely to their element. You are the intruder
+    here.
+spawninfo: []
+idlemessages:
+- The water slows everything down, imposing a dreamy physicality on every movement.
+- A Blooper spirals toward you from above, its dot eyes expressing nothing, its tentacles trailing.
+- 'Coral formations glow in the diffuse underwater light: reds and oranges against deep blue.'
+- A school of small fish drifts past in formation, perfectly synchronized, unconcerned.
+- 'The underwater music is the same theme but lower, slower: muffled by fathoms of blue.'
+- Bubbles drift upward from the sandy floor in slow, fat clusters.
+- 'The water level has its own completeness: a biome fully realized in eight colors and silence.'

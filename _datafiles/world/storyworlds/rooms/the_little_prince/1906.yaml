@@ -1,0 +1,51 @@
+roomid: 1906
+zone: The Little Prince
+title: The Businessmans Asteroid
+description: >-
+  Every surface is covered in <ansi fg="itemname">numbers</ansi>. The
+  Businessman sits at a <ansi fg="itemname">desk</ansi> built from ledger
+  books, his head bent over columns of figures, his fingers moving
+  constantly in arithmetic. He is counting the <ansi fg="itemname">stars</ansi>.
+  Not looking at them -- counting them. He owns them, he says. He says this
+  with complete confidence. No one owned them before he discovered them.
+  Therefore they are his. He writes the number down on a little paper and
+  puts the paper in a drawer and this is how he owns them. He is very busy.
+  He has not looked up from his numbers in years. The stars go on being
+  themselves entirely unaware of their new owner. The asteroid smells of
+  ink and the specific importance of someone who has never been questioned.
+  The path leads back to the <ansi fg="exit">drunkard</ansi> north, and
+  further toward the <ansi fg="exit">lamplighter</ansi> south.
+mapsymbol: M
+maplegend: Businessmans Asteroid
+biome: land
+exits:
+  drunkard:
+    roomid: 1905
+    mapdirection: north
+  lamplighter:
+    roomid: 1907
+    mapdirection: south
+nouns:
+  numbers: >-
+    Columns and columns of numbers, annotated in a cramped hand, checked
+    and rechecked. The total is always slightly different, which is why
+    he must keep counting. He is not alarmed by this. He simply recounts.
+    The numbers have no meaning beyond their sum. The sum has no meaning
+    beyond being large. Being large has no meaning beyond being his.
+  desk: >-
+    Built from stacked ledger books, their spines cracked, their pages
+    dense with figures. The desk is enormous relative to the asteroid.
+    Essentially he lives inside his desk, surrounded by the evidence of
+    all the things he has counted and therefore, he believes, possesses.
+  stars: >-
+    The stars he is counting are the actual stars -- the ones overhead,
+    the ones that have been burning for billions of years without
+    consulting anyone about ownership. He writes them down. He puts
+    the paper in the drawer. He is satisfied. The stars are unaffected.
+idlemessages:
+- The Businessman mutters numbers under his breath, his pen moving without pause.
+- He adds a column. Checks it. Adds it again. The total is the same. He writes it down.
+- A star appears overhead. He writes it down without looking up. He owns it now.
+- 'He opens a drawer and files a paper. Closes the drawer. Opens it again to verify. Closes it: satisfied.'
+- The pen scratches and scratches. The numbers accumulate. The stars do not notice.
+- He does not look up. If he looked up, he would have to stop counting. He cannot stop counting.

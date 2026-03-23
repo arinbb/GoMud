@@ -1,0 +1,69 @@
+roomid: 1927
+zone: Ghostbusters
+title: The Sedgewick Ballroom
+description: >-
+  The grand ballroom of the Sedgewick Hotel is a ruin of its former self. The
+  <ansi fg="itemname">banquet tables</ansi> that were set for a corporate dinner
+  are now in spectacular disarray: food scattered, dishes upended, a chocolate
+  fountain still running despite the chaos, and a magnificent slick of green
+  <ansi fg="itemname">ectoplasm</ansi> covering approximately half the room.
+  Crystal <ansi fg="itemname">wall sconces</ansi> cast warm light on a scene
+  of supernatural destruction. The grand <ansi fg="itemname">chandelier</ansi>
+  above rocks in slow circles. In the center of the food wreckage, hovering at
+  roughly head height and trailing slime in a long green comet tail, is
+  <ansi fg="itemname">Slimer</ansi> -- a Class V free-repeating phantasm, roughly
+  the shape of a very large, very translucent green balloon that has been given
+  eyes, a wide grin, and an insatiable appetite for absolutely everything edible.
+  The Ghostbusters have been here recently. The proton burn marks on the ballroom
+  walls are fresh.
+mapsymbol: B
+maplegend: Sedgewick Ballroom
+biome: house
+exits:
+  lobby:
+    roomid: 1926
+    mapdirection: west
+    exitmessage: You back out of the ballroom through the arched entrance to the lobby.
+nouns:
+  tables: >-
+    The banquet tables were set for 200 people. All 200 place settings have been
+    disturbed. The centerpiece flowers have been eaten. The butter sculptures are
+    gone. The bread baskets are gone. The decorative fruit is gone and so, somehow,
+    are the decorative vegetables from the centerpieces, which were plastic. Slimer
+    has eaten the plastic vegetables.
+  ectoplasm: >-
+    The ectoplasm here is fresh and abundant and warm. It coats half the dance floor
+    in a thick green layer that catches the chandelier light and shimmers. There are
+    shapes in it -- the outlines of hands, of a face, of something delighted. Slimer
+    expresses himself through slime the way other entities express themselves through
+    language.
+  chandelier: >-
+    The ballroom chandelier is larger than the lobby chandelier and older -- 1890s
+    gaslight fittings converted to electric, original crystals intact. It is currently
+    performing a slow circular revolution on its mounting that should not be physically
+    possible. The mounting is inspected annually and was perfectly sound three months ago.
+  sconces: >-
+    The crystal wall sconces throw warm amber light that makes the ectoplasm look
+    almost artistic. One of them has been eaten. Not the flame -- the fixture. The
+    brass bracket and the crystal bowl. Slimer ate a chandelier fitting. This is
+    remarkable even by Class V standards.
+spawninfo:
+- mobid: 384
+  maxwander: 0
+  forcehostile: true
+  respawnrate: 3 real minutes
+  idlecommands:
+  - "emote dives into the banquet table and emerges on the other side, trailing slime."
+  - "emote consumes an entire roasted chicken in one go and vibrates with satisfaction."
+  - "emote hovers near the chocolate fountain, mesmerized."
+  - "emote slimes the nearest surface with evident joy."
+  - ""
+  - ""
+idlemessages:
+- Slimer dive-bombs the buffet table and emerges wearing a wedding cake like a hat, delighted.
+- The proton burn marks on the wall glow faint orange, still cooling from the last altercation.
+- A dinner roll rises from the floor, floats across the room, and vanishes with a wet sound.
+- The chandelier completes one full revolution and immediately begins another.
+- From somewhere under the buffet table, something is eating something else with great enthusiasm.
+- Green slime drips from the ceiling in a slow, rhythmic patter, like extremely wrong rain.
+- Slimer pauses, turns, makes eye contact with you, and then immediately divebombs the shrimp cocktail.

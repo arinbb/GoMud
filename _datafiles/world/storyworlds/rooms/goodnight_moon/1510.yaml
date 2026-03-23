@@ -1,0 +1,66 @@
+roomid: 1510
+zone: Goodnight Moon
+title: The Telephone
+description: >-
+  You are at the <ansi fg="itemname">telephone</ansi>. It is green,
+  heavy, the dial-style of a time when telephones were made to last and
+  stood on mantels and rang with a sound that filled whole rooms. The
+  receiver sits in its cradle. The wire curls down and disappears into
+  the mantel's edge and then somewhere beyond the room, beyond the book,
+  beyond the particular warmth of this particular evening. The
+  <ansi fg="itemname">dial</ansi> has ten holes and the letters you would
+  dial to spell the names of things you love. The mantelpiece here holds
+  everything close: the telephone, the little <ansi fg="itemname">toy
+  house</ansi>, the <ansi fg="itemname">comb and brush</ansi> side by
+  side, the bowl of mush steaming faintly. The fire is to your right,
+  very low now, one coal glowing in the grate. The room is darker than
+  it was when you arrived. The clock says something later. The moon
+  through the window is higher. Someone should be asleep by now.
+  The telephone waits. It does not ring. Telephones in warm rooms
+  at bedtime do not ring. But you could pick it up. You could listen.
+  You could dial.
+mapsymbol: T
+maplegend: The Telephone
+biome: house
+exits:
+  back:
+    roomid: 1500
+    exitmessage: You replace the receiver and step back from the telephone.
+    mapdirection: northeast
+nouns:
+  telephone: >-
+    Green, heavy, the soft green of the room's walls, as if it grew
+    here. The dial turns with a smooth resistance and returns with a
+    satisfying mechanical click. The receiver is substantial, shaped
+    to hold between ear and shoulder while your hands do something else
+    -- while you knit, perhaps, while you rock. It smells faintly of
+    bakelite and old conversations, of voices late at night, of the
+    particular intimacy of talking in the dark when the house is quiet.
+  dial: >-
+    Ten holes, numbered one through zero. Around the dial, faintly printed,
+    the letters that correspond to numbers -- ABC, DEF, GHI, and so on,
+    the old encoding by which you would dial someone you loved. The dial
+    turns smoothly and returns. It is satisfying to turn. It sounds like
+    the room's own breathing, slowed to a count.
+  toy house: >-
+    A small wooden house, no bigger than a shoebox, sitting on the mantel.
+    Its windows are squares of yellow-painted wood -- not actual windows,
+    not transparent, just the idea of windows, lit from inside by suggestion.
+    It has a red roof and a chimney from which a curl of painted smoke
+    perpetually rises. Inside, if you could see inside, there would be
+    small rooms. Inside the small rooms there would be small furniture.
+    Inside the small furniture there would be the history of small lives.
+  comb and brush: >-
+    A red comb and a red brush, side by side on the mantel, each in its
+    place. The comb is fine-toothed and narrow. The brush is wide-backed
+    and soft. Together they are a pair, the way the kittens are a pair,
+    the way the mittens are a pair -- each object finds its companion
+    and stands beside it in the ordered world of bedtime.
+idlemessages:
+- The telephone sits in its cradle. It does not ring. This is correct.
+- The toy house on the mantel holds its painted windows up to the firelight.
+- The comb and brush sit side by side, waiting to be of use.
+- The fire to your right has one coal left, a deep orange-red, breathing slowly.
+- The clock beside the telephone says it is later than before. You are not surprised.
+- A very small sound comes from the receiver, or seems to. You listen. It stops.
+- The room is very quiet here, near all the mantel's objects. They are all very settled.

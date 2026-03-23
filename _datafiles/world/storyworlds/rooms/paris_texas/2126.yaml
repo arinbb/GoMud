@@ -1,0 +1,50 @@
+roomid: 2126
+zone: Paris Texas
+title: Houston Skyline
+description: >-
+  The truck comes over a rise and <ansi fg="cyan">Houston</ansi> appears all
+  at once — a cluster of lit towers in the night sky, their reflections smearing
+  down the bayou in long vertical lines of <ansi fg="cyan">cyan</ansi> and
+  <ansi fg="yellow">amber</ansi>. The city is enormous and indifferent and
+  beautiful in the way of something that does not know it is being looked at.
+  <ansi fg="8">Freeways</ansi> braid and unbraid above street level. The air
+  smells of petroleum and the Gulf and something sweet that you cannot name.
+  Travis is looking for one specific <ansi fg="itemname">woman</ansi> in all of
+  this. The city does not care. The city has seen this before. To the
+  <ansi fg="exit">west</ansi>, the long road back. To the <ansi fg="exit">north</ansi>,
+  the Meridian Hotel. To the <ansi fg="exit">east</ansi>, the Houston streets.
+mapsymbol: K
+maplegend: Houston Skyline
+biome: city
+exits:
+  west:
+    roomid: 2125
+  north:
+    roomid: 2127
+  east:
+    roomid: 2129
+nouns:
+  towers: >-
+    Glass towers full of people working late. Each window is a life.
+    None of them is the life you are looking for. But one of them is.
+    Somewhere in this city, one specific window.
+  skyline: >-
+    Houston at night. It does not have the elegance of New York or the
+    sprawl of Los Angeles — it has its own ungainly, unself-conscious
+    grandeur. It is what it is and it is not ashamed.
+  bayou: >-
+    Buffalo Bayou threads through downtown, black and still, catching
+    the tower lights. It smells of the Gulf, forty miles south. The
+    Gulf does not care about your problems either.
+  freeways: >-
+    Elevated highways braiding above you, the red taillights moving
+    like slow lava. Houston is built for cars. Everything connects
+    to everything else, eventually, if you know which exits to take.
+idlemessages:
+- The city hums. The hum is constant and sourceless — it comes from all the lit windows at once.
+- A helicopter crosses between two towers, its light blinking red and white and red.
+- The freeway above emits a low continuous roar that you stop noticing after a while.
+- Somewhere in this city there is a woman who does not know she is being searched for.
+- The night air in Houston is warm and thick, even now. Even this late.
+- 'A sign: VACANCY. Another sign: OPEN 24 HRS. Another sign: EAT.'
+- 'Travis has the address on a piece of paper. He looks at it. He does not start the truck.'

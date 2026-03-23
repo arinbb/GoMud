@@ -1,0 +1,17 @@
+name: Goodnight Moon
+roomid: 1500
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: house
+mutators:
+- mutatorid: goodnight-hush
+musicfile: lullaby.mp3
+idlemessages:
+- The clock on the wall ticks softly. It is a little later than you thought.
+- The moon rises higher through the window, casting longer silver shadows across the floor.
+- The fire settles lower, its glow dimming from orange to a deep, sleepy red.
+- A warm drowsiness drifts through the room like woodsmoke, like warm milk, like a lullaby.
+- Somewhere a door is quietly closing. Somewhere something is saying goodnight.
+- The shadows in the corners have grown heavier, softer, more welcoming.
+- The clock ticks. A minute has passed. Another. The night deepens like a held breath.

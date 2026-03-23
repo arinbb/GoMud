@@ -1,0 +1,26 @@
+mobid: 245
+zone: waynes_world
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote sorts through a bowl of M&Ms, removing the brown ones with surgical focus."
+  - "say Milwaukee was actually named after the Algonquin word, meaning 'the gathering place by the water.'"
+  - "emote applies stage makeup in the mirror with practiced, unhurried precision."
+  - "say Did you know that the name Illinois comes from the French rendering of an Algonquin word meaning 'tribe of superior men'?"
+  - ""
+  - ""
+  - "emote hums a descending minor chord progression that somehow sounds ominous and cheerful at once."
+  - "emote stretches his neck, preparing for the demands of the show."
+  - "say The show is the show. You serve the show. The show does not serve you."
+activitylevel: 40
+character:
+  name: Alice Cooper
+  description: >-
+    Backstage and unhurried, Alice Cooper is a study in the distance between
+    performance and person. The stage persona — the makeup, the guillotine,
+    the theatrics — is on hold. In its place is a man of considerable warmth
+    and unexpected expertise. He speaks about the history of Aurora, Illinois
+    with the enthusiasm of a man who has done his reading. His makeup is
+    partially applied. It suits him either way.
+  raceid: 1
+  level: 10

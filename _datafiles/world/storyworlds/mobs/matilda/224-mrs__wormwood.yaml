@@ -1,0 +1,25 @@
+mobid: 224
+zone: matilda
+hostile: false
+maxwander: 0
+idlecommands:
+  - "say I nearly won the big one last Tuesday. NEARLY."
+  - "emote circles a number on her bingo card with fierce concentration."
+  - ""
+  - ""
+  - "say A girl doesn't need to be clever. A girl needs to be attractive."
+  - "emote pats her platinum blonde hair with satisfaction."
+activitylevel: 20
+character:
+  name: Mrs. Wormwood
+  description: >-
+    A large woman with platinum blonde hair piled high on her head in a
+    style that was fashionable approximately never. Her face is caked with
+    makeup — foundation, rouge, lipstick in an alarming shade of coral.
+    She wears tight-fitting clothes in colors that argue with each other
+    and high-heeled shoes that she wobbles on. She spends her days at the
+    bingo hall and her evenings watching television, and she considers her
+    daughter's love of reading to be a personal affront. She smells of
+    cheap perfume and hairspray.
+  raceid: 1
+  level: 5

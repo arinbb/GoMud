@@ -1,0 +1,23 @@
+mobid: 283
+zone: blonde_on_blonde
+hostile: false
+maxwander: 0
+activitylevel: 3
+idlecommands:
+  - emote stands at the far window, still, backlit by the not-yet-dawn.
+  - emote lets the warehouse light move across her silhouette as the morning progresses its eleven minutes.
+  - emote breathes. The organ holds its chord.
+  - ''
+  - ''
+  - ''
+character:
+  name: the Sad Eyed Lady
+  description: >-
+    A silhouette against the warehouse windows, backlit and precise, luminous
+    in the way that outlines are luminous when everything behind them is light.
+    She is Sara, who Dylan loved enough to write eleven minutes of music for,
+    and the music is the proof of the love and also the distance the love
+    required to exist. Sad eyes, mercury mouth, savage gift. Remote. Complete.
+    She does not come closer. She does not need to. The organ holds.
+  raceid: 1
+  level: 10

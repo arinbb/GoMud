@@ -1,0 +1,71 @@
+roomid: 1508
+zone: Goodnight Moon
+title: The Bowl of Mush
+description: >-
+  You are very small now -- mouse-small, kitten-small, small enough that
+  the <ansi fg="itemname">bowl</ansi> is a white porcelain horizon curving
+  up and around you. You stand at the rim, looking down into the
+  <ansi fg="11">mush</ansi>: warm, pale, faintly golden, perfectly still
+  on its surface, with a shallow steam rising from it that smells of
+  <ansi fg="itemname">oatmeal</ansi> and something sweeter -- cream,
+  or butter, or simply warmth. The bowl is on the mantelpiece, and from
+  here you can see the whole <ansi fg="10">room</ansi> laid out below
+  you like a map of everything comfortable: the fire, the chair, the
+  window with its moon, the red balloon floating at ceiling-height, now
+  at your level. The mush below is an inland sea of pure comfort food.
+  Its surface reflects the firelight in small wavering points of amber.
+  A <ansi fg="itemname">spoon</ansi> rests in the bowl, its handle
+  propped against the rim -- a perfectly ordinary silver spoon, sized
+  for a hand much larger than yours at present. The steam from the
+  mush drifts upward and curls and dissipates, over and over, patient
+  and warm and without urgency. The room smells entirely of this.
+mapsymbol: M
+maplegend: The Bowl of Mush
+biome: house
+exits:
+  back:
+    roomid: 1500
+    exitmessage: You step down from the rim of the bowl and grow back to your ordinary size.
+    mapdirection: northwest
+nouns:
+  bowl: >-
+    A wide white porcelain bowl, ordinary-sized to ordinary eyes, but standing
+    at its rim you can see how enormous it truly is -- a great curved plain
+    of white, worn smooth by years and spoons and washing. There is a small
+    chip on the outside rim. The chip has been there for as long as the bowl
+    has been the bowl. It is part of the bowl now.
+  mush: >-
+    Warm, pale, smooth as memory. What kind of mush? The good kind. The kind
+    made for bedtime, made with milk and a little honey and time. It does not
+    cool. It has been warm since the beginning of the book and it will be warm
+    at the end of it. This is not physics. This is love.
+  oatmeal: >-
+    The smell of it is extraordinary from this close: oats and cream and a
+    sweetness that is not sugar exactly but warmth, the chemical signature
+    of something prepared by someone who knew you would need it. It is the
+    smell of being taken care of. You breathe it in.
+  spoon: >-
+    A silver spoon, tarnished at the bowl, polished bright on the handle.
+    Ordinary silver, ordinary size -- but from your current vantage it is
+    enormous, a ladle of a spoon, a spoon you could lie down in. The bowl
+    of the spoon holds a shallow reflection of the room: tiny, curved,
+    amber and green and a small white circle that is the moon.
+spawninfo:
+- mobid: 233
+  message: A little mouse perches on the rim of the great bowl, whiskers moving at the steam.
+  respawnrate: 4 real minutes
+  idlecommands:
+  - "emote twitches its whiskers at the warm steam rising from the mush."
+  - ""
+  - "emote balances carefully on the bowl's rim, looking down into the pale depths."
+  - ""
+  - "emote grooms its face with tiny quick paws, undisturbed by the height."
+  - ""
+idlemessages:
+- The steam rises from the mush in slow curls and disappears and is replaced by more steam.
+- The firelight reflects in the mush's surface in small wavering points. They look like stars.
+- The spoon shifts slightly in the bowl. A tiny wave crosses the mush and reaches the far side.
+- The room below is very small and very perfect from here. You can see all of it at once.
+- 'The mush smells of oats and cream and something else: the specific warmth of bedtime.'
+- You have been standing at the rim for a while now. This has not been time wasted.
+- The mouse's whiskers twitch. The steam curls. The fire hums. The mush steams on.

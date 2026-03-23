@@ -1,0 +1,60 @@
+roomid: 2027
+zone: Harold and Maude
+title: The Street
+description: >-
+  A <ansi fg="8">California street</ansi> of the early 1970s, lined with
+  palm trees and sun-bleached storefronts. The hearse is parked at the
+  curb behind you. The <ansi fg="itemname">street</ansi> runs in all
+  directions, connecting Harold's carefully maintained world to Maude's
+  wonderfully chaotic one. To the <ansi fg="exit">west</ansi>, the hearse
+  waits. To the <ansi fg="exit">north</ansi>, a path leads through a gate
+  to Maude's <ansi fg="10">railroad car</ansi>. To the <ansi fg="exit">east</ansi>
+  lies the <ansi fg="8">junkyard</ansi>, with its rusted iron and quiet
+  purpose. To the <ansi fg="exit">south</ansi> the road winds down to the
+  <ansi fg="8">sea cliffs</ansi>. The air here smells of eucalyptus and
+  hot pavement and something indefinable that is simply California in 1971,
+  the last moment before everything changed.
+mapsymbol: S
+maplegend: The Street
+biome: road
+exits:
+  west:
+    roomid: 2026
+    exitmessage: You climb back into the hearse.
+  north:
+    roomid: 2028
+    exitmessage: You pass through the iron gate toward the old railroad car.
+  east:
+    roomid: 2030
+    exitmessage: You follow the path to the junkyard.
+  south:
+    roomid: 2032
+    exitmessage: You head down the road toward the sound of the sea.
+nouns:
+  street: >-
+    A residential street of Northern California, wide and sun-warmed and
+    lined with eucalyptus trees. The occasional car passes. Nobody looks
+    twice at the hearse. In 1971, very little seemed unusual if you moved
+    through it with confidence. Harold has learned this. Maude has always
+    known it.
+  eucalyptus: >-
+    The eucalyptus trees are enormous and fragrant, their bark peeling in
+    long strips to reveal pale green underneath. They were planted by someone
+    long ago who wanted shade and got more than they bargained for. Maude
+    once told Harold that eucalyptus were imported from Australia and had
+    entirely taken over parts of California, and then she said: 'Like an
+    idea whose time has come. You can't stop a eucalyptus once it decides
+    to grow.'
+  pavement: >-
+    Hot asphalt, slightly soft in the afternoon sun. The kind of street
+    where nothing in particular happens, which means everything that matters
+    to Harold and Maude happens here.
+idlemessages:
+- A cat sits in a patch of sun on the opposite sidewalk and regards the hearse without alarm.
+- The eucalyptus trees move in a warm gust, filling the street with their sharp medicinal smell.
+- A child on a bicycle passes without looking up. The street absorbs everything without comment.
+- The pavement shimmers slightly in the afternoon heat, making the far end of the street look liquid.
+- Somewhere not far away, a radio is playing Cat Stevens through an open window.
+- 'The street connects everything Harold has to everything Maude is, which is to say: it is essential.'
+- A red Volkswagen passes, then a pickup truck, then a long silence in which the street belongs to itself.
+- The sun is at that angle in the afternoon where it makes even ordinary things look like they matter.

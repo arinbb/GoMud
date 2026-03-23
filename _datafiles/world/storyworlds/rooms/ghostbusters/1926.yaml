@@ -1,0 +1,57 @@
+roomid: 1926
+zone: Ghostbusters
+title: The Sedgewick Hotel Lobby
+description: >-
+  The lobby of the Sedgewick Hotel is a monument to 1920s New York opulence.
+  <ansi fg="itemname">Chandeliers</ansi> of Austrian crystal hang from a ceiling
+  painted with allegorical scenes. The <ansi fg="itemname">marble floor</ansi> is
+  polished to a mirror shine and is currently covered in several large patches of
+  green <ansi fg="itemname">slime</ansi>. The <ansi fg="itemname">hotel manager</ansi>
+  stands near the front desk in a state of barely-suppressed panic, alternating
+  between assuring arriving guests that everything is fine and frantically dialing
+  a phone number on a slip of paper. The number is for the Ghostbusters.
+  Gilt-framed mirrors on every wall reflect a lobby that looks, in the reflections,
+  subtly different from the lobby that actually exists. An arched entrance to the
+  east leads to the grand ballroom.
+mapsymbol: H
+maplegend: Sedgewick Hotel
+biome: house
+exits:
+  west:
+    roomid: 1921
+    exitmessage: You push through the revolving door back onto the street.
+  ballroom:
+    roomid: 1927
+    mapdirection: east
+    exitmessage: You follow the slime trail through the arched entrance into the ballroom.
+nouns:
+  chandeliers: >-
+    The chandeliers are genuine Austrian crystal from 1924, insured for more money
+    than the Ghostbusters have made in their entire careers. One of them is currently
+    swaying in a figure-eight pattern despite a complete absence of air movement.
+    The manager has been watching it for forty-five minutes and has not yet told anyone.
+  floor: >-
+    The marble floor is a masterwork of Italian craftsmanship, and currently about
+    forty percent covered in a thick, luminescent green slime that trails from the
+    elevator banks through the lobby and under the door to the ballroom. The slime
+    is warm to the touch, which is worse.
+  slime: >-
+    Ghostbusters call it "ectoplasm" in their documentation and "slime" in
+    conversation. It is the physical manifestation of Class II spectral entities.
+    It smells like a hot dog that has been left in the sun, crossed with something
+    electrical, and it glows faintly in the dark. It is very difficult to get out
+    of marble. The cleaning staff have tried everything.
+  manager: >-
+    The hotel manager is a man of approximately fifty whose life experience has
+    not prepared him for this particular situation. He is on the phone. He is
+    always on the phone. "No, sir, there is no ectoplasm in the restaurant.
+    No, the entity is confined to the ballroom. Mostly the ballroom. Yes, I
+    understand your concerns about the continental breakfast."
+idlemessages:
+- The hotel manager hangs up, is handed another phone, and immediately dials again.
+- A green slime bubble rises from the largest slime patch on the marble floor, hangs suspended, and pops.
+- The chandelier above performs a slow, stately figure-eight, crystal prisms throwing fractured light.
+- A bellboy with a cart full of luggage stops at the edge of the slime, looks at it for a long moment, then turns the cart around.
+- The mirrors along the wall show a lobby in which all the guests are translucent.
+- From the ballroom, the sound of something eating. Something very large. Something very enthusiastic about food.
+- 'The desk phone rings. The front desk clerk answers it with admirable professionalism: "Sedgewick Hotel, this is Carol. How may I direct your call? No, we are not haunted. That is not our policy."'

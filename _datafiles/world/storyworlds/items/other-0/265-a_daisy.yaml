@@ -1,0 +1,13 @@
+itemid: 265
+name: a daisy
+namesimple: daisy
+displayname: a single <ansi fg="10">daisy</ansi>
+description: >-
+  A single white daisy with a yellow center, perfectly ordinary and completely
+  itself. The stem is still green and fresh. Maude would say: 'Not a symbol.
+  Not a representative. A daisy. This specific daisy, being exactly what it is.'
+  The petals are slightly uneven, which is correct.
+type: object
+subtype: usable
+uses: 0
+value: 0

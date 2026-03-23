@@ -1,0 +1,45 @@
+roomid: 1409
+zone: Matilda
+title: The Chokey
+description: >-
+  A <ansi fg="red">narrow, suffocating cupboard</ansi> barely three feet wide and
+  five feet tall. The <ansi fg="itemname">walls</ansi> are embedded with broken
+  <ansi fg="itemname">glass</ansi> shards and rusty <ansi fg="itemname">nails</ansi>
+  that stick out at every angle. There is no room to sit, no room to lean. You can
+  only stand, rigid and trembling, in the dark. The <ansi fg="itemname">door</ansi>
+  is thick oak with a heavy iron bolt on the outside. No light enters. The air is
+  stale and smells of rust and terror. Scratches on the inside of the door mark
+  where small fingers have clawed at the wood. The corridor is back to the
+  <ansi fg="exit">west</ansi>.
+mapsymbol: X
+maplegend: The Chokey
+biome: dungeon
+exits:
+  west:
+    roomid: 1407
+nouns:
+  walls: >-
+    The interior walls are studded with jagged shards of broken glass and bent,
+    rusty nails. They protrude at every height — at shoulder level, at hip level,
+    at the height of a child's face. It is impossible to rest against any surface
+    without being cut or punctured. This was designed by someone who understands
+    cruelty with an engineer's precision.
+  glass: >-
+    Broken glass embedded point-first into the plaster. Some pieces are from
+    bottles, some from jars, some from what might have been mirrors. They catch
+    what little light seeps under the door and glitter like malicious stars.
+  nails: >-
+    Bent, rusty nails driven into the walls at random angles. Some are two inches
+    long, some four. Their rust suggests they have been here a long time. The
+    tetanus alone would be worth a hospital visit.
+  door: >-
+    Thick oak, bolted from the outside. The inside surface is covered in
+    scratch marks — dozens of them, layered over years. Small fingernail
+    scratches at various heights. Some have drawn blood; the wood is stained
+    dark in places. There is no handle on the inside.
+idlemessages:
+- 'The darkness presses in from every side. The walls seem closer than they were a moment ago.'
+- 'A nail scrapes your shoulder as you shift position. The Chokey does not allow comfort.'
+- 'The air is thick and stale. Each breath tastes of rust and old fear.'
+- 'Scratch marks on the door catch what little light seeps underneath. Dozens of children have stood here.'
+- 'Something scuttles in the corner — a spider, probably. At least spiders can leave.'
