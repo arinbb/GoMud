@@ -1,0 +1,8 @@
+mutatorid: kennel-club
+namemodifier:
+  behavior: append
+  text: (dog show)
+  colorpattern: none
+alertmodifier:
+  text: The sound of dogs and the smell of conditioning spray fills the air. Something important is being decided here, by people who care enormously about it.
+  colorpattern: none

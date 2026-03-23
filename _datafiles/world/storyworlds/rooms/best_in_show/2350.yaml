@@ -1,0 +1,58 @@
+roomid: 2350
+zone: Best in Show
+title: Vendor Hall
+description: >-
+  The vendor hall is a long room lined with tables selling every conceivable dog-related
+  product. <ansi fg="itemname">Conditioning sprays</ansi> in fifteen formulations.
+  <ansi fg="itemname">Show leads</ansi> in every color and material. A table selling
+  <ansi fg="itemname">dog portraits</ansi> done in oil, watercolor, and one format the
+  artist describes as "impressionistic realism" and which looks, honestly, like something
+  painted by a ghost. There is a <ansi fg="itemname">toy table</ansi> near the back wall
+  where a vendor sells rubber and plush dog toys. Among them, prominently featured, is
+  the Busy Bee: a squeaky rubber bumblebee in yellow and black that seems to resonate
+  at a frequency that Weimaraners find unbearable. There are signs. The <ansi fg="exit">entrance hall</ansi>
+  is east.
+mapsymbol: V
+maplegend: Vendor Hall
+biome: house
+exits:
+  east:
+    roomid: 2345
+nouns:
+  sprays: >-
+    The conditioning spray table is operated by a woman who can describe the
+    difference between protein-based and silicone-based coat conditioning in more
+    detail than you have words for. She has samples. She will give you samples.
+    She will explain each sample. The explanation will be thorough.
+  leads: >-
+    The show lead table has leads in leather, nylon, cotton, and one material
+    the vendor calls "technical fabric" with the same reverence you'd use for
+    aerospace composites. The thin show leads used in the ring are works of
+    engineering: maximum control, minimum visibility.
+  portraits: >-
+    The dog portrait table. The oil portraits are good. The watercolors are
+    better. The "impressionistic realism" ones look like the dogs are visible
+    through fog or grief, which the artist says is intentional, which you
+    believe, which does not make them less unsettling.
+  bee: >-
+    The Busy Bee. A rubber bumblebee in yellow and black with a squeaker built
+    into the thorax. According to the package, "the squeak that dogs love!" The
+    Busy Bee occupies a special place in the folklore of this show. There is at
+    least one dog in this building -- a Weimaraner -- for whom the sight of a
+    Busy Bee is deeply activating. The vendor has several. They are two dollars
+    each. This feels significant.
+  toys: >-
+    The toy table has rubber balls, plush animals, rope toys, squeaky things of
+    various shapes. Most of them would distract a show dog. The Busy Bee, in
+    particular, would distract a specific show dog in a way that has a documented
+    history.
+spawninfo:
+idlemessages:
+- A handler picks up a conditioning spray, reads the label with the focus of someone for whom this matters, and buys two.
+- The portrait artist is working on a miniature of a Dachshund. The Dachshund is not present. This is from memory. The likeness is excellent.
+- Someone picks up a Busy Bee, squeezes it, and puts it down. A dog three booths away lifts its head.
+- The show lead vendor is explaining the physics of a slip lead to someone who asked a simple question five minutes ago.
+- A child picks up a plush rabbit from the toy table. A handler nearby gives them a look. The child puts it back.
+- The conditioning spray vendor is describing the difference between two products that appear identical. The difference is real. The vendor knows it.
+- A Busy Bee falls off the table and squeaks when it hits the floor. Every dog within earshot has an opinion.
+- The vendor hall has the specific energy of commerce adjacent to competition: everyone is buying things that might help, hoping.

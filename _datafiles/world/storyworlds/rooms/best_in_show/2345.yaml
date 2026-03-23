@@ -1,0 +1,59 @@
+roomid: 2345
+zone: Best in Show
+title: Mayflower Kennel Club Entrance
+description: >-
+  The entrance to the <ansi fg="yellow">Mayflower Kennel Club Dog Show</ansi> is
+  everything a dog show entrance should be: banners in the Mayflower colors hanging from
+  the rafters, a <ansi fg="itemname">registration table</ansi> staffed by two volunteers
+  in matching blazers who have been here since six this morning and will be here until
+  midnight, a <ansi fg="itemname">board</ansi> listing the day's schedule in clean serif
+  type, and the overwhelming composite smell of forty different dog shampoos combining
+  into something that is not unpleasant but is extremely specific. Handlers move through
+  with dogs on leads, all of the dogs visibly aware that something important is about to
+  happen, all of the humans either very calm or not calm at all. The <ansi fg="exit">hotel</ansi>
+  is north. The <ansi fg="exit">grooming area</ansi> is east. <ansi fg="exit">The Show Ring</ansi>
+  is south. The <ansi fg="exit">vendor hall</ansi> is west.
+mapsymbol: M
+maplegend: Mayflower Entrance
+biome: city
+exits:
+  north:
+    roomid: 2340
+  east:
+    roomid: 2346
+  south:
+    roomid: 2348
+  west:
+    roomid: 2350
+  outside:
+    roomid: 2353
+    mapdirection: northwest
+nouns:
+  registration: >-
+    The registration table has two clipboards, a laminator, a roll of name tags,
+    and the energy of people who have memorized the rule book. One volunteer is
+    handling a dispute about a dog's AKC number with the calm certainty of someone
+    who has had this exact dispute seventeen times before and was right every time.
+  board: >-
+    The schedule board lists the day's events in clean type: Sporting Group (9 AM),
+    Hound Group (11 AM), Working Group (1 PM), Terrier Group (2 PM), Non-Sporting
+    Group (3 PM), Toy Group (4 PM), Herding Group (5 PM), Best in Show (7 PM).
+    Each entry has a ring number. The 7 PM slot has a small gold star beside it.
+  banners: >-
+    Mayflower Kennel Club banners in hunter green and gold hang from the rafters.
+    They bear the club's seal, which features a dog in show stance, and the words
+    "EXCELLENCE IN BREEDING SINCE 1903." The banners are pressed. Everything here
+    is pressed. This is an institution that irons its banners.
+spawninfo:
+- mobid: 549
+  message: "<ansi fg=\"8\">Dr. Theodore Millbank III passes through the entrance with the unhurried authority of a man who has judged this show eleven times and finds it, each time, completely satisfactory. He nods at the volunteers. They stand a little straighter.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- A Terrier on a show lead nearly pulls its handler off their feet with enthusiasm. The handler recovers. The Terrier is unrepentant.
+- A handler checks in at the registration table, gets a number pinned to their lapel, and walks toward the ring with a new bearing.
+- Two dogs pass each other at the entrance and perform the full protocol of sniffing and assessment in approximately four seconds.
+- An announcement crackles over the PA system: "Hound Group to Ring Two. Hound Group to Ring Two." Several people move faster.
+- A woman with a catalog walks in, reads the schedule board, and adjusts her watch by one minute. Her dog waits.
+- The doors open and close and each opening brings a brief rush of cold November Philadelphia air and another person with a dog.
+- One of the registration volunteers says something to the other one. They both laugh briefly. Then they go back to checking names.
+- A Shih Tzu passes through at ankle height, magnificent, impeccably groomed, completely unaware of its own improbability.

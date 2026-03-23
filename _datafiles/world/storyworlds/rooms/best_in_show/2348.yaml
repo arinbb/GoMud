@@ -1,0 +1,55 @@
+roomid: 2348
+zone: Best in Show
+title: The Show Ring
+description: >-
+  The main ring of the Mayflower Kennel Club Dog Show is a green rectangle of
+  competition-grade <ansi fg="itemname">carpet</ansi> under a cathedral of lights.
+  <ansi fg="itemname">Bleachers</ansi> rise on three sides, occupied by the kind of
+  audience that knows exactly what they are watching and reacts accordingly. At the
+  center, a <ansi fg="itemname">judging table</ansi> with a silver cup on it and a blue
+  <ansi fg="itemname">ribbon</ansi> that has not yet been given to anyone. The
+  <ansi fg="exit">entrance</ansi> is north. The <ansi fg="exit">commentary booth</ansi>
+  is east. The <ansi fg="exit">winners circle</ansi> is south.
+mapsymbol: R
+maplegend: The Show Ring
+biome: city
+exits:
+  north:
+    roomid: 2345
+  east:
+    roomid: 2349
+  south:
+    roomid: 2352
+nouns:
+  carpet: >-
+    The show carpet is hunter green, regulation weight, freshly laid. It provides
+    the grip that allows dogs to move at their best gaiting speed without slipping.
+    Handlers know this carpet. They have trained on carpet like this. A dog's gait
+    looks different on hard floor than on carpet, and the judge knows what to look for.
+  bleachers: >-
+    The audience in the bleachers has the focused quiet of people who understand
+    what they're watching. This is not a casual crowd. The applause, when it comes,
+    is the applause of connoisseurs. They clap for a dog's movement the way other
+    audiences clap for a perfect note.
+  table: >-
+    The judging table is a simple rectangle draped in white. Dr. Theodore Millbank III
+    will stand here. He will watch. He will make the decision. The silver cup on the
+    table is this year's Best in Show trophy. It is polished to a degree that suggests
+    it was polished twice, and both times by someone who cared.
+  ribbon: >-
+    The Best in Show ribbon is blue and gold. It is large. It is beautiful. It is,
+    depending on who you are, the culmination of years of work or just a piece of cloth.
+    For everyone in this building, it is the former.
+spawninfo:
+- mobid: 549
+  message: "<ansi fg=\"8\">Dr. Theodore Millbank III takes his position at the judging table. He surveys the ring with the practiced eye of a man who has judged this show eleven times and found it, each time, completely satisfactory. The room adjusts to his presence.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- A dog and handler team enter the ring and begin their pattern -- the handler's footsteps precise, the dog's gait absolutely textbook.
+- The audience responds to a particularly good down-and-back with a murmur of appreciation.
+- Dr. Millbank circles a dog slowly, examining structure, then steps back and makes a note.
+- A handler in the ring keeps their eyes on their dog with the focused calm of someone who has done this hundreds of times.
+- The ring announcer says a dog's breed and registered name. The audience in the bleachers who know that breed sit up slightly.
+- A dog executes the free-stack -- standing still for examination -- with absolute composure. Dr. Millbank nods once.
+- The lights overhead are theatrical: bright white on the carpet, picking up the sheen of every coat.
+- Between groups, the ring is briefly empty. The carpet gleams. The trophy waits. The whole room holds its breath.

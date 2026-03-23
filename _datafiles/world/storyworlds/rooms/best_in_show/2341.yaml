@@ -1,0 +1,55 @@
+roomid: 2341
+zone: Best in Show
+title: Taft Hotel Bar
+description: >-
+  The hotel bar is doing brisk business tonight, and most of it is handlers. The
+  <ansi fg="itemname">bar itself</ansi> is a long mahogany counter with brass fixtures
+  and the permanent faint smell of decades of spilled beer. A <ansi fg="itemname">television</ansi>
+  in the corner shows a local news segment about tomorrow's show. The <ansi fg="itemname">barstools</ansi>
+  are occupied by people who are either celebrating a previous win, mourning a previous
+  loss, or planning something for tomorrow that involves a great deal of hairspray. A
+  <ansi fg="itemname">bowl of pretzels</ansi> sits on the bar. At least one dog has been
+  in the pretzels. The bartender has decided not to mention it. The <ansi fg="exit">lobby</ansi>
+  is south. Stairs to the <ansi fg="exit">upper floor</ansi> are north.
+mapsymbol: B
+maplegend: Hotel Bar
+biome: house
+exits:
+  south:
+    roomid: 2340
+  north:
+    roomid: 2344
+nouns:
+  bar: >-
+    The mahogany bar has the comfortable weight of a place that has served a lot
+    of people with a lot of problems. Tonight those problems are almost exclusively
+    dog-show-related, which the bar has never had to address before. It is
+    addressing them with whisky and patience.
+  television: >-
+    The local news is doing a segment: "Mayflower Kennel Club Comes to Philadelphia."
+    The anchor is trying to sound interested. The field reporter is standing outside
+    the venue, explaining what a Weimaraner is, to a camera, at 6 PM, in November.
+    Everyone in the bar is watching it with the intensity of people being covered by
+    a journalist who does not quite understand what they do.
+  barstools: >-
+    The barstools are occupied by a cross-section of competitive dog handling:
+    the veteran who has been here twelve times, the nervous newcomer on their first
+    show, the couple who are not speaking, and the man alone at the end who seems
+    to have made peace with something.
+  pretzels: >-
+    A bowl of pretzels. Several are missing. A handler nearby looks away with
+    the carefully neutral expression of someone who knows exactly where the
+    pretzels went and is not going to volunteer that information.
+spawninfo:
+- mobid: 544
+  message: "<ansi fg=\"8\">Harlan Pepper settles onto a barstool with the ease of a man who is comfortable everywhere he goes. Hubert the Bloodhound sits beside him on the floor, enormous and patient and smelling of the deep South.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- A handler at the bar pulls out a spiral notebook and makes notes about tomorrow's showing order.
+- Two women compare training philosophies at the end of the bar. Their philosophies are incompatible. They are both correct.
+- The television cuts to a commercial. Everyone looks away and then back when it returns.
+- A dog sleeping under a barstool shifts and sighs. The sound is somehow the most honest thing in the room.
+- The bartender refills a glass without being asked. He has learned to read the room tonight.
+- Someone orders a second drink and says "just one more" in the voice of someone who has been saying that for an hour.
+- A man at the bar is telling someone about a show in Cleveland in 1997. He has been telling this story for forty minutes.
+- The ice machine kicks on in the back. The dogs do not react. The handlers all look up.

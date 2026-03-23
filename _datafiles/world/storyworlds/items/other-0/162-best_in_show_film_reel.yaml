@@ -1,0 +1,19 @@
+itemid: 162
+name: Best in Show film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Best in Show</ansi>
+description: >-
+  A film reel in a round metal canister, the label hand-lettered in careful block
+  print: BEST IN SHOW -- CASTLE ROCK ENTERTAINMENT, 2000. The canister has a few
+  small dents that suggest it has been in a bag with other things. When you hold
+  it up to the light and look through the celluloid, you can see: a hotel lobby
+  in Philadelphia, every chair occupied by a dog. A Weimaraner staring at the
+  front desk clerk. A Standard Poodle in a travel crate, composed, waiting. In
+  the background, just barely visible, a man in a cardigan is smiling at a Norwich
+  Terrier with the uncomplicated warmth of someone who has found exactly what he
+  loves and is doing it. The film is very still. Nothing in the frame is restless.
+  The dogs are calmer than the people. They always are.
+type: object
+subtype: usable
+uses: 0
+value: 0

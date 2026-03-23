@@ -1,0 +1,35 @@
+mobid: 547
+zone: best_in_show
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote holds the phone slightly away from her ear. She is listening. She agrees with none of it. She says nothing."
+  - "say Leslie is very supportive. He just can't be here this year. He has a thing."
+  - "emote strokes Rhapsody's ear with easy, practiced affection."
+  - "say Last year was a very close thing. This year we're ready."
+  - "emote sets the phone down and looks at it for a moment before picking it up again."
+  - ""
+  - "say Christy has been incredible. She really has."
+  - "emote looks at Rhapsody with the uncomplicated warmth of the part of her life that is not complicated."
+activitylevel: 20
+character:
+  name: Sherri Ann Cabot
+  description: >-
+    Sherri Ann Cabot married well, which is to say she married a man named Leslie Cabot
+    who is much older and very wealthy and, by her description, very supportive. She is
+    polished in the way of people for whom polish is a professional skill, warm in a way
+    that is entirely genuine about certain things -- Rhapsody, primarily -- and entirely
+    practiced about others. She does not explain herself. She does not need to. She has
+    come to this show to win it, which she came close to last year, and the only part of
+    her that shows is the certainty that this time is different. Rhapsody, her Standard
+    Poodle, is magnificent. Christy, her handler, is professional. Sherri Ann, above all
+    of it, is composed.
+  raceid: 1
+  level: 7
+  equipment:
+    body:
+      itemid: 20111
+    feet:
+      itemid: 20175
+    neck:
+      itemid: 20184

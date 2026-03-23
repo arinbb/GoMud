@@ -1,0 +1,48 @@
+roomid: 2353
+zone: Best in Show
+title: The Parking Lot
+description: >-
+  The Mayflower Kennel Club parking lot at 10 PM. The show is over. The
+  <ansi fg="itemname">cars</ansi> are being loaded: crates into trunks, gear bags
+  into back seats, dogs walking on leads to their respective vehicles with the relaxed
+  bearing of animals that did their jobs and are ready to sleep. The <ansi fg="itemname">lights</ansi>
+  of the parking lot are sodium yellow, casting everyone in the amber of aftermath.
+  A few handlers stand by their cars talking, not ready to stop talking yet, the evening
+  still too big to put away. Somewhere nearby, a dog wins Best in Show and then it is
+  over, and the Best in Show dog is going home the same way all the other dogs are going
+  home, in a crate in a car, dreaming whatever dogs dream after they've been excellent in
+  public. The <ansi fg="exit">venue entrance</ansi> is to the east.
+mapsymbol: P
+maplegend: The Parking Lot
+biome: city
+exits:
+  east:
+    roomid: 2345
+nouns:
+  cars: >-
+    The cars in the parking lot are a cross-section of people who spend significant
+    money on dogs: some are new, some are old, all have dog hair in them and crates
+    in the back and the specific configuration of the interior of a car owned by a
+    person who travels with a large dog competitively. They all smell the same way
+    inside. It is a good smell.
+  lights: >-
+    The sodium lights of the parking lot cast everything amber. In this light,
+    the handlers loading their cars look like figures in an old photograph, doing
+    something that has always been done and will continue to be done long after this
+    specific night.
+  handler: >-
+    Gerry Fleck is loading Winky's crate into the back of his car. He looks up,
+    sees you, smiles the uncomplicated smile of a man who came here and had a good
+    time regardless of the outcome and is going home and will sleep well. Cookie
+    is by the passenger door. She waves. Her left shoe has developed a small problem.
+    Gerry notices. He takes her arm. They laugh.
+spawninfo:
+idlemessages:
+- A trunk opens and a crate slides in. A car door closes. Another car leaves.
+- Two handlers stand by a minivan still talking about a moment in the ring. They are not ready to let the night go.
+- A dog that has been in show stance all day is finally lying down in the back of a car, absolutely done with being upright.
+- Gerry Fleck catches Cookie as she trips slightly on the parking lot curbing. They're both laughing before she's fully steady.
+- Harlan walks Hubert to an old pickup truck. Hubert gets in. The truck dips noticeably. Harlan pats the roof twice and gets in.
+- A car starts, its headlights sweeping across the parking lot, and then it's gone, and the parking lot is slightly emptier.
+- Someone finds a Busy Bee in their gear bag. They were not expecting it. They squeeze it reflexively. A dog in a nearby car responds.
+- The last light in the venue building clicks off. The show is over. The parking lot remains.

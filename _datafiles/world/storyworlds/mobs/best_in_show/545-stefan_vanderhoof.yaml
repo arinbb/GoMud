@@ -1,0 +1,34 @@
+mobid: 545
+zone: best_in_show
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote steps back from Miss Agnes and tilts his head with the evaluating eye of a man who will not stop until it is right."
+  - "say Not white. Luminous. There's a difference. You can see it from the ring."
+  - "emote gestures for the spray bottle. Scott hands it without being asked."
+  - "say The catalog this year is incredible. Wait until you see the fall spread."
+  - "emote circles Miss Agnes slowly, checking every angle with total professional focus."
+  - ""
+  - "say She's ready. She knows she's ready. Look at her."
+  - "emote smiles at Scott with the ease of two people who have been doing this long enough to not need words for most of it."
+activitylevel: 20
+character:
+  name: Stefan Vanderhoof
+  description: >-
+    Stefan Vanderhoof co-owns a home decor and lifestyle catalog with his partner Scott
+    Donlan, which has nothing to do with dogs and everything to do with the aesthetic
+    sensibility that makes him exceptional at presenting a Shih Tzu. He has been handling
+    Miss Agnes for four years. He knows her, she knows him, and between them there is
+    the particular understanding that develops between an animal and the person most
+    dedicated to making them look their absolute best. He is warm, direct, and has
+    opinions about light that he will share at the first opportunity. His spray bottle
+    contains a conditioning product imported from France that he considers non-negotiable.
+  raceid: 1
+  level: 6
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172

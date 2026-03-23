@@ -1,0 +1,50 @@
+-
+  Supported:
+    "gerry fleck": ["cookie fleck"]
+  Conversation:
+    - ["#1 say You okay?"]
+    - ["#2 say I'm good. You okay?"]
+    - ["#1 say I'm good."]
+    - ["#2 emote checks Winky's lead"]
+    - ["#1 say He looks great."]
+    - ["#2 say He does look great."]
+    - ["#1 say I think this is his year."]
+    - ["#2 say I think so too."]
+    - ["#1 emote smiles at her"]
+    - ["#2 emote smiles back"]
+    - ["#1 say We're going to have a good time regardless."]
+    - ["#2 say The best time."]
+-
+  Supported:
+    "gerry fleck": ["cookie fleck"]
+  Conversation:
+    - ["#2 say Oh, I ran into Tommy Kaufman in the lobby."]
+    - ["#1 say Tommy! How's Tommy?"]
+    - ["#2 say He's good. His Dalmatian took third in Cleveland."]
+    - ["#1 say Third is good. Good for Tommy."]
+    - ["#2 say He said to say hi."]
+    - ["#1 emote nods with the warm, uncomplicated interest of a man who has no enemies"]
+    - ["#1 say He's a good guy, Tommy."]
+    - ["#2 say He is."]
+    - ["#1 say I should look for him later."]
+    - ["#2 say He'll probably find you. He usually does."]
+    - ["#1 emote laughs"]
+    - ["#2 emote laughs"]
+-
+  Supported:
+    "gerry fleck": ["cookie fleck"]
+  Conversation:
+    - ["#1 say I was thinking about the Elk Hair Caddis."]
+    - ["#2 emote looks at him"]
+    - ["#2 say The fly."]
+    - ["#1 say The fly. I was thinking -- for Beaver Creek next spring. Different hatch."]
+    - ["#2 say Okay."]
+    - ["#1 say So I might want to try a parachute pattern instead."]
+    - ["#2 say Mm."]
+    - ["#1 emote turns to her"]
+    - ["#1 say You don't know what I'm talking about."]
+    - ["#2 say Not even a little bit."]
+    - ["#1 emote laughs"]
+    - ["#2 say But you seem very sure about it."]
+    - ["#1 say I'm very sure about it."]
+    - ["#2 say That's good enough for me."]

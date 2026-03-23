@@ -1,0 +1,36 @@
+-
+  Supported:
+    "buck laughlin": ["*"]
+  Conversation:
+    - ["#1 say Here's what I want to know."]
+    - ["#1 say If you're the owner and not the handler -- does the dog know you're there? Like, does it matter?"]
+    - ["#1 emote waits for an answer with the genuine curiosity of a man who wants to know"]
+    - ["#1 say Because you've put in all this work, and then in the ring it's not even you with the dog. That's a thing."]
+-
+  Supported:
+    "buck laughlin": ["*"]
+  Conversation:
+    - ["#1 say My neighbor had a -- it was a Shepherd. Big dog. Smart dog."]
+    - ["#1 emote gets into the story"]
+    - ["#1 say That dog got out once and went six blocks. Not lost -- he knew exactly where he was going. There was a butcher."]
+    - ["#1 say He'd figured out the butcher situation. On his own. Six blocks."]
+    - ["#1 emote pauses"]
+    - ["#1 say My point is, dogs are smart. That's my point."]
+-
+  Supported:
+    "buck laughlin": ["stefan vanderhoof"]
+  Conversation:
+    - ["#1 say So the haircut."]
+    - ["#2 emote looks at him"]
+    - ["#1 say The poodle haircut. The whole -- the poms on the legs. Where does that come from?"]
+    - ["#2 say It's historical. Working water dogs -- the clips protected the joints."]
+    - ["#1 say So it's functional."]
+    - ["#2 say Originally, yes."]
+    - ["#1 emote nods, satisfied"]
+    - ["#1 say Okay. That makes sense. I thought it was just a style thing."]
+    - ["#2 say It became a style thing. The function became the aesthetic."]
+    - ["#1 say Huh."]
+    - ["#1 emote thinks about this for a moment"]
+    - ["#1 say That happens a lot, doesn't it."]
+    - ["#2 emote looks at him with slight surprise. This was, unexpectedly, a reasonable observation."]
+    - ["#2 say Yes. It does."]

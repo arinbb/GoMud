@@ -1,0 +1,58 @@
+roomid: 2352
+zone: Best in Show
+title: Winners Circle
+description: >-
+  The <ansi fg="yellow">Winners Circle</ansi> is a small elevated platform at the far
+  end of the main ring, set apart by <ansi fg="itemname">gold rope</ansi> on brass
+  standards. The carpet here is the same hunter green as the ring, but this section has
+  never been walked on by anything that did not win. A single <ansi fg="itemname">spotlight</ansi>
+  illuminates the platform. The <ansi fg="itemname">trophy table</ansi> holds the Best in
+  Show cup -- silver, heavy, engraved with the winner's name going back to 1903 -- and
+  the blue-and-gold <ansi fg="itemname">ribbon</ansi>. The Mayflower Kennel Club
+  <ansi fg="itemname">photographer</ansi> is positioned to one side, camera ready.
+  The bleachers are visible here, the audience's faces expectant. Whatever happens in
+  this circle has happened a hundred and twenty years in a row, and it will happen again
+  tonight. The <ansi fg="exit">ring</ansi> is north.
+mapsymbol: W
+maplegend: Winners Circle
+biome: city
+exits:
+  north:
+    roomid: 2348
+nouns:
+  rope: >-
+    The gold rope on brass standards is purely ceremonial. It says: this place is
+    different. This place is set apart. Nothing that crosses this rope tonight is
+    the same afterward. The rope is thin enough that a dog could step over it.
+    The idea is that no dog should have to.
+  spotlight: >-
+    The spotlight comes from a single source above. When you stand in it, the rest
+    of the room recedes. You understand, under this light, what it feels like to be
+    the only thing that matters for a moment. Even if that moment belongs to a dog.
+    Especially if that moment belongs to a dog.
+  trophy: >-
+    The Best in Show cup. Silver, genuine, engraved. The names go back to 1903.
+    They are names of dogs -- "Ch. Something Something of Somewhere" -- in the
+    formal naming convention that says: this animal was officially excellent. The
+    most recent name at the bottom is last year's winner. Below it, space for
+    tonight's.
+  ribbon: >-
+    The blue-and-gold Best in Show ribbon is larger than the group ribbons. It is
+    almost absurdly large. This is appropriate. This is the largest possible dog
+    show ribbon because this is the largest possible result of a dog show. Someone
+    spent the night before this show dreaming about holding this. They were right to.
+  photographer: >-
+    The official photographer has a professional camera, two lenses, and the calm
+    patience of someone who has taken this photograph many times and knows exactly
+    how to make a dog and its handler look their best in the ten seconds after a
+    win when everything is true and nothing has been processed yet.
+spawninfo:
+idlemessages:
+- The spotlight holds steady on the platform. Whatever it is waiting for, it will wait.
+- A handler walks past the winners circle on their way to the ring, not looking at it, definitely looking at it.
+- The photographer checks his camera, changes a setting, checks it again.
+- The trophy cup catches the light and throws a small white reflection onto the ceiling.
+- The audience in the bleachers is very quiet now. The early groups are done. Best in Show is close.
+- Someone in the audience says something to someone beside them in a low voice. The word "Weimaraner" is audible.
+- The gold rope gleams. The platform waits. The names on the trophy wait for one more name.
+- The ring is empty right now. The judging is happening backstage. Soon.

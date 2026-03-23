@@ -105,6 +105,15 @@ spawninfo:
 - itemid: 156
   container: shelves
   respawnrate: 1 real minutes
+- itemid: 162
+  container: shelves
+  respawnrate: 1 real minutes
+- itemid: 161
+  container: shelves
+  respawnrate: 1 real minutes
+- itemid: 158
+  container: shelves
+  respawnrate: 1 real minutes
 idlemessages:
 - The projector lens catches the light and throws a tiny rainbow across the ceiling.
 - A film canister rattles faintly on the shelf, as if something inside is stirring.

@@ -1,0 +1,17 @@
+name: Best in Show
+roomid: 2340
+autoscale:
+  minimum: 1
+  maximum: 10
+defaultbiome: city
+mutators:
+- mutatorid: kennel-club
+idlemessages:
+- A dog trots past with more dignity than most of the humans present.
+- Someone nearby is absolutely certain their dog is the best one here.
+- The sound of clippers, blow-dryers, and anxious handlers fills the air.
+- A leash gets tangled. Nobody is sure whose fault it is. Everyone has an opinion.
+- A dog has the absolute bearing of an athlete. Its owner has the bearing of a person who has not slept.
+- The whole enterprise of competitive dog showing proceeds with tremendous seriousness.
+- Somewhere, a poodle is being evaluated on dimensions that would require a philosophy degree to fully articulate.
+- The dogs are calmer than the people. They always are.

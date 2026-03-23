@@ -1,0 +1,53 @@
+roomid: 2349
+zone: Best in Show
+title: Commentary Booth
+description: >-
+  The commentary booth is a narrow elevated room overlooking the ring through a wide
+  window, just large enough for two chairs, a <ansi fg="itemname">broadcast desk</ansi>,
+  two <ansi fg="itemname">microphones</ansi>, and whatever is happening between Buck
+  Laughlin and Trevor Beckwith at any given moment. <ansi fg="itemname">Monitors</ansi>
+  show multiple camera angles of the ring below. An <ansi fg="itemname">earpiece</ansi>
+  cable runs from the desk to an untouched cup of coffee. A stack of
+  <ansi fg="itemname">index cards</ansi> beside Buck's microphone contains research that
+  Buck has not consulted and will not consult. Trevor's notes are immaculate. Trevor's
+  face is the face of a man doing his very best. The <ansi fg="exit">show ring</ansi>
+  is west.
+mapsymbol: C
+maplegend: Commentary Booth
+biome: house
+exits:
+  west:
+    roomid: 2348
+nouns:
+  desk: >-
+    The broadcast desk has the professional geometry of a place that takes itself
+    seriously. Two positions, two name cards -- TREVOR BECKWITH and BUCK LAUGHLIN --
+    both in the same clean font, as if they are equivalent, which they are in
+    title and not in preparation.
+  microphones: >-
+    Two microphones. Trevor's is positioned correctly and precisely. Buck's is
+    positioned correctly and will not remain there. Buck gestures when he talks.
+    This is a documented issue that the technical director has adapted to.
+  monitors: >-
+    The monitors show the ring from the overhead camera, the floor camera, and
+    the close-up lens that catches dogs' faces. The close-up camera is Buck's
+    favorite. He has already said something about it that Trevor had to redirect.
+  cards: >-
+    The index cards contain: breed histories, notable champion lineages, judging
+    criteria for each group, show records, and a note from the producer that reads
+    "PLEASE DO NOT SPECULATE ABOUT THE PRIVATE LIVES OF THE HANDLERS." The note
+    is recent. It has a post-it on it that says "THIS MEANS YOU BUCK." Buck has
+    not read it.
+spawninfo:
+- mobid: 548
+  message: "<ansi fg=\"8\">Buck Laughlin settles into his commentary chair with the ease of a man who has never been nervous a day in his life. He says something into the microphone. Trevor Beckwith, beside him, does not visibly react. Trevor has extensive experience not visibly reacting.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- Buck leans into the microphone and says something. Trevor redirects him, smoothly, to the dog currently being shown.
+- Trevor consults his notes and provides precise information about breed history. Buck says "huh" and then says something else.
+- Buck is laughing at something he said. Trevor is watching the ring with professional focus.
+- A floor producer's voice comes through the earpiece. Trevor adjusts accordingly. Buck has removed his earpiece.
+- Buck points at something on the monitor and says something that is technically a question but is actually a statement about something inappropriate.
+- Trevor says: "And there you have it -- a truly exceptional Norwich Terrier." Buck says: "You know what else is exceptional?"
+- The camera cuts to a close-up of a dog's face. Buck has feelings about this.
+- Trevor summarizes the judging criteria clearly and correctly. Buck adds a story about a dog his neighbor had in 1987 that went another direction.

@@ -1,0 +1,37 @@
+mobid: 542
+zone: best_in_show
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote adjusts his tie with the precise gesture of a man who manages anxiety through perfect presentation."
+  - "say I hear what you're saying. I'm not invalidating your experience. I just think there's another way to look at it."
+  - "emote checks his watch."
+  - "say The thing about Beatrice is that she senses when we're not aligned. She's incredibly perceptive. The vet said so."
+  - "emote takes a careful breath in the way his therapist showed him, then lets it out."
+  - ""
+  - "say I'm not upset. I want to be clear that I am not upset. I'm processing."
+  - "emote looks toward Beatrice with the expression of a man who finds the dog more emotionally reliable than most things in his life."
+activitylevel: 20
+character:
+  name: Hamilton Swan
+  description: >-
+    Hamilton Swan is a successful man who is also anxious about being successful, which
+    he has addressed in therapy but has not resolved. He is trim, well-dressed, the kind
+    of handsome that suggests he takes care of himself and is slightly concerned about not
+    taking enough care of himself. He and Meg met at a Starbucks, which he has mentioned
+    approximately fifteen hundred times because he finds it romantic and also because he
+    finds the coincidence of it -- both reaching for the same non-fat latte at exactly the
+    same moment -- too apt to stop mentioning. He loves Beatrice the Weimaraner with a
+    straightforwardness that is, in contrast with most of his emotional life, completely
+    uncomplicated.
+  raceid: 1
+  level: 6
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172
+    neck:
+      itemid: 20180
