@@ -45,7 +45,7 @@ spawninfo:
 - mobid: 1
   message: The Librarian quietly appears from behind a shelf.
   idlecommands:
-  - say Welcome to the Grand Library. Browse the stacks, the screening room, the listening room, or the arcade.
+  - say Welcome to the Grand Library. Books to the north, films to the east, art to the west, music to the south.
   - ""
   - say Every story here is a doorway. All you have to do is open it.
   - ""
