@@ -7,13 +7,13 @@ description: >-
   souvenirs you have gathered from the worlds you have visited. Each shelf
   is labeled with a small brass placard, waiting for an object to give it
   meaning. A warm amber light illuminates whatever you have placed here.
-  The <ansi fg="exit">atrium</ansi> is back to the east. Use <ansi fg="command">storage add</ansi> and <ansi fg="command">storage remove</ansi> to manage your collection.
+  The atrium is back to the <ansi fg="exit">northwest</ansi>. Use <ansi fg="command">storage add</ansi> and <ansi fg="command">storage remove</ansi> to manage your collection.
 mapsymbol: T
 maplegend: Trophy Room
 biome: house
 isstorage: true
 exits:
-  east:
+  nw:
     roomid: 1
     exitmessage: You step back into the Grand Atrium.
 nouns:

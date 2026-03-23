@@ -65,7 +65,42 @@ function onCommand(cmd, rest, user, room) {
         }
 
         SendUserMessage(user.UserId(), "");
-        SendUserMessage(user.UserId(), "<ansi fg=\"3\">Visit the Trophy Room (type 'trophies') to display your souvenirs on your personal shelf.</ansi>");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">Visit the Trophy Room (southeast) to display your souvenirs on your personal shelf.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        return true;
+    }
+
+    if (cmd == "sign" || (cmd == "write" && rest.indexOf("guestbook") >= 0)) {
+        var signKey = "library_guestbook_signed";
+        if (user.GetMiscCharacterData(signKey) != "signed") {
+            user.SetMiscCharacterData(signKey, "signed");
+            SendUserMessage(user.UserId(), "");
+            SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">You pick up the brass pen and sign your name in the guestbook. The ink shimmers briefly, then settles into the page alongside hundreds of other signatures. Yours glows faintly — a new arrival.</ansi>");
+            SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " signs the guestbook with a flourish.", user.UserId());
+            user.GrantXP(50, "signing the guestbook");
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(+50 XP — Welcome to the Library.)</ansi>");
+        } else {
+            SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">Your name is already in the guestbook. The ink still shimmers faintly, as if pleased to see you return.</ansi>");
+        }
+        return true;
+    }
+
+    if (cmd == "read" && rest.indexOf("guestbook") >= 0) {
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">You flip through the pages of the guestbook. Names and notes from countless travelers fill the pages in every color of ink:</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "  <ansi fg=\"8\">\"I found the heart of gold. Still searching.\" — N.Y.</ansi>");
+        SendUserMessage(user.UserId(), "  <ansi fg=\"8\">\"The Overlook remembers.\" — J.T.</ansi>");
+        SendUserMessage(user.UserId(), "  <ansi fg=\"8\">\"Ignatius was right about everything.\" — I.J.R.</ansi>");
+        SendUserMessage(user.UserId(), "  <ansi fg=\"8\">\"Omar comin.\" — O.L.</ansi>");
+        SendUserMessage(user.UserId(), "  <ansi fg=\"8\">\"Party on.\" — W. & G.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        var signKey = "library_guestbook_signed";
+        if (user.GetMiscCharacterData(signKey) != "signed") {
+            SendUserMessage(user.UserId(), "<ansi fg=\"3\">Type 'sign' to add your name.</ansi>");
+        } else {
+            SendUserMessage(user.UserId(), "<ansi fg=\"10\">Your name is here, glowing faintly among the others.</ansi>");
+        }
         SendUserMessage(user.UserId(), "");
         return true;
     }

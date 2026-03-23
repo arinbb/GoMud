@@ -9,13 +9,12 @@ description: >-
   holds a sleek console connected to a large screen. A shelf of <ansi fg="itemname">game cases</ansi> is organized by genre — RPGs, open
   worlds, farming sims, shooters, adventures. The carpet is that specific
   dark purple-blue of every arcade you have ever been in. A <ansi fg="itemname">beanbag chair</ansi> sits in front of the screen. The
-  air smells of warm electronics and something like popcorn. The <ansi
-  fg="exit">atrium</ansi> is back to the east.
+  air smells of warm electronics and something like popcorn. The atrium is back to the <ansi fg="exit">northeast</ansi>.
 mapsymbol: G
 maplegend: The Arcade
 biome: house
 exits:
-  east:
+  ne:
     roomid: 1
     exitmessage: You step back out into the Grand Atrium.
 nouns:

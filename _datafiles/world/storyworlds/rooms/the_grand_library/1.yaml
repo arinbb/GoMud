@@ -23,15 +23,12 @@ exits:
   south:
     roomid: 7
     exitmessage: You follow the sound of distant music down a corridor to the south.
-  arcade:
+  sw:
     roomid: 8
-    mapdirection: southwest
-    exitmessage: You follow the glow of CRT monitors through a side passage.
-  trophies:
+    exitmessage: You follow the glow of CRT monitors through a side passage to the Arcade.
+  se:
     roomid: 9
-    mapdirection: southeast
     exitmessage: You step into a warm, amber-lit alcove lined with glass shelves.
-    exitmessage: You follow the glow of CRT monitors through a side passage.
 nouns:
   desk: >-
     A grand oak reception desk, its surface worn smooth by countless hands. A
