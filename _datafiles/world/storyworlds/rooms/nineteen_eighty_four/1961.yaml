@@ -7,11 +7,8 @@ description: >-
   at once. A large poster covers most of one wall: an enormous face, dark
   haired, dark eyed, with a black <ansi fg="itemname">moustache</ansi>.
   The eyes follow you down the corridor with an expression that is not
-  quite a smile. Beneath the face, in elegant capitals:
-  <ansi fg="red">BIG BROTHER IS WATCHING YOU.</ansi> The
-  <ansi fg="itemname">lift</ansi> is broken, as it usually is. The flat
-  is to the <ansi fg="exit">west</ansi>. The street lies to the
-  <ansi fg="exit">east</ansi>.
+  quite a smile. Beneath the face, in elegant capitals: <ansi fg="red">BIG BROTHER IS WATCHING YOU.</ansi> The <ansi fg="itemname">lift</ansi> is broken, as it usually is. The flat
+  is to the <ansi fg="exit">west</ansi>. The street lies to the <ansi fg="exit">east</ansi>.
 mapsymbol: H
 maplegend: The Hallway
 biome: house

@@ -4,16 +4,14 @@ title: Ignatius's House
 description: >-
   A decrepit shotgun house in Uptown New Orleans, Constantinople Street. The
   living room is dominated by an enormous sagging <ansi fg="itemname">bed</ansi>
-  that Ignatius rarely leaves, surrounded by teetering stacks of
-  <ansi fg="itemname">Big Chief tablets</ansi> covered in dense handwriting. The
+  that Ignatius rarely leaves, surrounded by teetering stacks of <ansi fg="itemname">Big Chief tablets</ansi> covered in dense handwriting. The
   blue glow of a small <ansi fg="itemname">television</ansi> illuminates a
   landscape of empty <ansi fg="itemname">Dr. Nut bottles</ansi> and cake
   wrappers that cover every flat surface. A medical <ansi fg="itemname">chart</ansi>
   showing the human digestive system is pinned to the wall, the pyloric valve
   circled in red ink. The house smells of mothballs, stale cake, and the faint
   chemical sweetness of Dr. Nut soda. Everything sags -- the bed, the floor, the
-  ceiling, the prospects of everyone who lives here. The only exit leads
-  <ansi fg="exit">north</ansi> back to Canal Street.
+  ceiling, the prospects of everyone who lives here. The only exit leads <ansi fg="exit">north</ansi> back to Canal Street.
 mapsymbol: I
 maplegend: Ignatius's House
 biome: house

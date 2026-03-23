@@ -5,15 +5,12 @@ description: >-
   A grey London street in Airstrip One, capital of the superstate Oceania.
   The buildings are old and bomb-damaged, their facades patched with plaster
   the wrong color. <ansi fg="red">Posters</ansi> cover every available
-  surface: the enormous face, the black moustache, the eyes that follow.
-  <ansi fg="itemname">Telescreens</ansi> are mounted on buildings at
+  surface: the enormous face, the black moustache, the eyes that follow. <ansi fg="itemname">Telescreens</ansi> are mounted on buildings at
   intervals, blaring broadcasts and watching. The people passing keep their
   faces carefully blank. The sky overhead is the color of old concrete.
   Somewhere to the <ansi fg="exit">north</ansi>, the pyramid of the
   Ministry of Truth rises white and immense. To the <ansi fg="exit">east</ansi>,
-  the streets open into the <ansi fg="exit">prole</ansi> quarter. To the
-  <ansi fg="exit">west</ansi>, Victory Mansions. To the
-  <ansi fg="exit">south</ansi>, a street leads past the Chestnut Tree Cafe.
+  the streets open into the <ansi fg="exit">prole</ansi> quarter. To the <ansi fg="exit">west</ansi>, Victory Mansions. To the <ansi fg="exit">south</ansi>, a street leads past the Chestnut Tree Cafe.
 mapsymbol: S
 maplegend: The Street
 biome: city

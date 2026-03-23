@@ -2,8 +2,7 @@ roomid: 1202
 zone: A Confederacy of Dunces
 title: The French Quarter
 description: >-
-  The streets narrow and the buildings crowd in close, iron-lace
-  <ansi fg="itemname">balconies</ansi> dripping with ferns and flower boxes
+  The streets narrow and the buildings crowd in close, iron-lace <ansi fg="itemname">balconies</ansi> dripping with ferns and flower boxes
   overhead. The smell of beignets and powdered sugar drifts from the direction
   of Cafe Du Monde on thick, humid air that seems to have weight and texture.
   Street <ansi fg="itemname">musicians</ansi> play jazz on the corner -- trumpet,

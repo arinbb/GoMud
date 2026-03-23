@@ -9,9 +9,7 @@ description: >-
   and from the fishing hole. <ansi fg="itemname">Fishing poles</ansi> lean against
   a pine here -- someone left them, or they belong here, or in Mayberry the
   distinction does not always matter. A <ansi fg="itemname">bait can</ansi> sits in
-  the shade. The road narrows ahead and the sound of water begins, very faint.
-  <ansi fg="cyan">Myers Lake</ansi> is this way. The road back to town is to the
-  <ansi fg="exit">south</ansi>. The fishing hole is to the <ansi fg="exit">lake</ansi>.
+  the shade. The road narrows ahead and the sound of water begins, very faint. <ansi fg="cyan">Myers Lake</ansi> is this way. The road back to town is to the <ansi fg="exit">south</ansi>. The fishing hole is to the <ansi fg="exit">lake</ansi>.
 mapsymbol: R
 maplegend: Road to Myers Lake
 biome: land

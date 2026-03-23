@@ -3,16 +3,13 @@ zone: Blonde on Blonde
 title: Pledging My Time
 description: >-
   A <ansi fg="8">blues bar at three in the morning</ansi>, the last holdouts
-  at scattered tables, glasses half-empty and nobody refilling them. A single
-  <ansi fg="itemname">bare bulb</ansi> swings on a cord above the bar. A
-  <ansi fg="itemname">guitarist</ansi> plays in the corner -- not performing,
+  at scattered tables, glasses half-empty and nobody refilling them. A single <ansi fg="itemname">bare bulb</ansi> swings on a cord above the bar. A <ansi fg="itemname">guitarist</ansi> plays in the corner -- not performing,
   just working something out, the same slow twelve-bar figure over and over,
   looking for the part that hurts most. The <ansi fg="itemname">bartender</ansi>
   wipes glasses with a rag he's been using for three years and shows no sign
   of stopping. A <ansi fg="itemname">radiator</ansi> in the corner knocks and
   hisses. Something was pledged here earlier tonight. Something costly. The
-  air still carries the weight of the promise made, whatever it was. The
-  <ansi fg="exit">studio</ansi> is back to the southwest.
+  air still carries the weight of the promise made, whatever it was. The <ansi fg="exit">studio</ansi> is back to the southwest.
 mapsymbol: 2
 maplegend: Pledging My Time
 biome: house

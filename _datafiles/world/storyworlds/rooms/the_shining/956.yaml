@@ -10,8 +10,7 @@ description: >-
   bare linoleum, scuffed and yellowed. This is the working skeleton of the
   Overlook, stripped of all pretense. The staff quarters feel abandoned
   mid-shift — a mop stands in a bucket of gray water, a uniform hangs from a
-  hook, a clipboard with a half-completed checklist lies on a shelf. Exits lead
-  <ansi fg="exit">north</ansi> to the lobby, <ansi fg="exit">south</ansi> to the
+  hook, a clipboard with a half-completed checklist lies on a shelf. Exits lead <ansi fg="exit">north</ansi> to the lobby, <ansi fg="exit">south</ansi> to the
   Colorado Lounge, and <ansi fg="exit">east</ansi> to the kitchen.
 mapsymbol: S
 maplegend: Staff Wing

@@ -9,10 +9,8 @@ description: >-
   the city, still lime and dust, but underneath it the damp cold smell of
   the canal itself, of deep water and old stone. This is where Raskolnikov
   walks when the garret becomes unbearable. He does not find peace here.
-  He finds more space for his thoughts, which is different. People cross the
-  <ansi fg="itemname">iron bridge</ansi> to the <ansi fg="exit">east</ansi>.
-  The lane goes <ansi fg="exit">north</ansi>. A vacant lot lies to the
-  <ansi fg="exit">northwest</ansi>.
+  He finds more space for his thoughts, which is different. People cross the <ansi fg="itemname">iron bridge</ansi> to the <ansi fg="exit">east</ansi>.
+  The lane goes <ansi fg="exit">north</ansi>. A vacant lot lies to the <ansi fg="exit">northwest</ansi>.
 mapsymbol: E
 maplegend: Canal Embankment
 biome: road

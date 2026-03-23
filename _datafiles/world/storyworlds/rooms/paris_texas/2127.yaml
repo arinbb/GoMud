@@ -3,13 +3,10 @@ zone: Paris Texas
 title: The Meridian Hotel
 description: >-
   A <ansi fg="cyan">neon sign</fg> reads MERIDIAN in pink and blue letters,
-  one of the letters flickering. The sign reflects off the wet
-  <ansi fg="8">parking lot</ansi> below in smeared doubles. This is a hotel that
+  one of the letters flickering. The sign reflects off the wet <ansi fg="8">parking lot</ansi> below in smeared doubles. This is a hotel that
   does not ask what you are there for. The lobby, visible through glass doors,
-  is empty except for a man behind bulletproof plexiglass. The street-level
-  <ansi fg="itemname">storefront</ansi> beside the hotel has darkened windows and
-  a separate entrance with no sign except a small handwritten card. A
-  <ansi fg="itemname">phone booth</ansi> on the corner. The whole block smells
+  is empty except for a man behind bulletproof plexiglass. The street-level <ansi fg="itemname">storefront</ansi> beside the hotel has darkened windows and
+  a separate entrance with no sign except a small handwritten card. A <ansi fg="itemname">phone booth</ansi> on the corner. The whole block smells
   of car exhaust and night air and something underneath — perfume, maybe, or
   cleaning product. The exit <ansi fg="exit">south</ansi> leads back to the
   skyline. A narrow door leads to the <ansi fg="exit">booth</ansi>.

@@ -3,14 +3,11 @@ zone: Back to the Future
 title: Biffs Garage
 description: >-
   A grimy service garage on the edge of town, the bays wide enough
-  for three cars. Biff Tannen's pride and joy -- a black-and-chrome
-  <ansi fg="itemname">1946 Ford</ansi> -- sits in the center bay
+  for three cars. Biff Tannen's pride and joy -- a black-and-chrome <ansi fg="itemname">1946 Ford</ansi> -- sits in the center bay
   on jack stands, gleaming despite the surroundings. The walls hold
-  hand-drawn <ansi fg="itemname">pin-up calendars</ansi> and a
-  <ansi fg="itemname">football pennant</ansi> from Hill Valley High.
+  hand-drawn <ansi fg="itemname">pin-up calendars</ansi> and a <ansi fg="itemname">football pennant</ansi> from Hill Valley High.
   Motor oil stains the floor in continent-shaped patches. A boom
-  box plays something by Bobby Darin. Scattered around the car:
-  <ansi fg="mobname">Biff Tannen</ansi> and his goons, Match, Skinhead,
+  box plays something by Bobby Darin. Scattered around the car: <ansi fg="mobname">Biff Tannen</ansi> and his goons, Match, Skinhead,
   and 3-D, who are here for unclear reasons and leave for no
   particular ones.
 mapsymbol: B

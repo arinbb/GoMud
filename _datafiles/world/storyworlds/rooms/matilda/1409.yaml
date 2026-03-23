@@ -3,14 +3,12 @@ zone: Matilda
 title: The Chokey
 description: >-
   A <ansi fg="red">narrow, suffocating cupboard</ansi> barely three feet wide and
-  five feet tall. The <ansi fg="itemname">walls</ansi> are embedded with broken
-  <ansi fg="itemname">glass</ansi> shards and rusty <ansi fg="itemname">nails</ansi>
+  five feet tall. The <ansi fg="itemname">walls</ansi> are embedded with broken <ansi fg="itemname">glass</ansi> shards and rusty <ansi fg="itemname">nails</ansi>
   that stick out at every angle. There is no room to sit, no room to lean. You can
   only stand, rigid and trembling, in the dark. The <ansi fg="itemname">door</ansi>
   is thick oak with a heavy iron bolt on the outside. No light enters. The air is
   stale and smells of rust and terror. Scratches on the inside of the door mark
-  where small fingers have clawed at the wood. The corridor is back to the
-  <ansi fg="exit">west</ansi>.
+  where small fingers have clawed at the wood. The corridor is back to the <ansi fg="exit">west</ansi>.
 mapsymbol: X
 maplegend: The Chokey
 biome: dungeon

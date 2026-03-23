@@ -4,14 +4,11 @@ title: Wayne's Basement
 description: >-
   The nerve center of cable access television. The <ansi fg="itemname">basement</ansi>
   is a glorious mess of rock memorabilia — <ansi fg="itemname">posters</ansi> cover
-  every inch of paneled wall: Aerosmith, Rush, Led Zeppelin, Alice Cooper. A
-  <ansi fg="itemname">couch</ansi> sits stage-left, low and lumpy and perfect. Two
-  <ansi fg="itemname">cameras</ansi> on tripods point at a makeshift broadcast area.
+  every inch of paneled wall: Aerosmith, Rush, Led Zeppelin, Alice Cooper. A <ansi fg="itemname">couch</ansi> sits stage-left, low and lumpy and perfect. Two <ansi fg="itemname">cameras</ansi> on tripods point at a makeshift broadcast area.
   A <ansi fg="itemname">drum kit</ansi> occupies the far corner with practiced chaos.
   Cables snake across the <ansi fg="itemname">carpet</ansi> like spaghetti. This is
   Wayne's World. Party time. Excellent. To the <ansi fg="exit">east</ansi>, the bulkhead
-  doors lead outside. <ansi fg="exit">Up</ansi> the stairs is the kitchen.
-  <ansi fg="exit">South</ansi> leads to Garth's workshop.
+  doors lead outside. <ansi fg="exit">Up</ansi> the stairs is the kitchen. <ansi fg="exit">South</ansi> leads to Garth's workshop.
 mapsymbol: W
 maplegend: Wayne's Basement
 biome: house

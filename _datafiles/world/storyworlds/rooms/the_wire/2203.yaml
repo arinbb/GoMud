@@ -12,8 +12,7 @@ description: >-
   and old rain, this sky that is always about to do something. <ansi fg="8">Corner
   boys</ansi> work the block with the relaxed efficiency of people doing their job.
   The <ansi fg="exit">Pit</ansi> is to the south, <ansi fg="exit">Orlandos</ansi>
-  is to the east, the <ansi fg="exit">Detail</ansi> is to the north,
-  <ansi fg="exit">Hamsterdam</ansi> is to the west, and <ansi fg="secret-exit">something</ansi>
+  is to the east, the <ansi fg="exit">Detail</ansi> is to the north, <ansi fg="exit">Hamsterdam</ansi> is to the west, and <ansi fg="secret-exit">something</ansi>
   might be found by those who listen.
 mapsymbol: W
 maplegend: West Baltimore Street

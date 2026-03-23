@@ -4,14 +4,11 @@ title: Houston Skyline
 description: >-
   The truck comes over a rise and <ansi fg="cyan">Houston</ansi> appears all
   at once — a cluster of lit towers in the night sky, their reflections smearing
-  down the bayou in long vertical lines of <ansi fg="cyan">cyan</ansi> and
-  <ansi fg="yellow">amber</ansi>. The city is enormous and indifferent and
-  beautiful in the way of something that does not know it is being looked at.
-  <ansi fg="8">Freeways</ansi> braid and unbraid above street level. The air
+  down the bayou in long vertical lines of <ansi fg="cyan">cyan</ansi> and <ansi fg="yellow">amber</ansi>. The city is enormous and indifferent and
+  beautiful in the way of something that does not know it is being looked at. <ansi fg="8">Freeways</ansi> braid and unbraid above street level. The air
   smells of petroleum and the Gulf and something sweet that you cannot name.
   Travis is looking for one specific <ansi fg="itemname">woman</ansi> in all of
-  this. The city does not care. The city has seen this before. To the
-  <ansi fg="exit">west</ansi>, the long road back. To the <ansi fg="exit">north</ansi>,
+  this. The city does not care. The city has seen this before. To the <ansi fg="exit">west</ansi>, the long road back. To the <ansi fg="exit">north</ansi>,
   the Meridian Hotel. To the <ansi fg="exit">east</ansi>, the Houston streets.
 mapsymbol: K
 maplegend: Houston Skyline

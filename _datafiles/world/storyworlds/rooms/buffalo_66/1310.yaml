@@ -2,15 +2,13 @@ roomid: 1310
 zone: Buffalo 66
 title: Strip Club
 description: >-
-  A dark, low-ceilinged room thick with <ansi fg="itemname">smoke</ansi>. Red
-  <ansi fg="itemname">lights</ansi> wash the space in a color that hides stains.
+  A dark, low-ceilinged room thick with <ansi fg="itemname">smoke</ansi>. Red <ansi fg="itemname">lights</ansi> wash the space in a color that hides stains.
   A <ansi fg="itemname">stage</ansi> with a brass pole occupies one end, currently
   empty. <ansi fg="itemname">Booths</ansi> line the walls, their occupants reduced
   to silhouettes and cigarette embers. A <ansi fg="itemname">bar</ansi> runs along
   one side, bottles catching the red light like dark jewels. The <ansi fg="itemname">music</ansi>
   is loud enough to vibrate in your chest but not loud enough to drown out the
-  feeling that something bad could happen here very easily. An alcove is to the
-  <ansi fg="exit">west</ansi>. A back door leads <ansi fg="exit">south</ansi>.
+  feeling that something bad could happen here very easily. An alcove is to the <ansi fg="exit">west</ansi>. A back door leads <ansi fg="exit">south</ansi>.
 mapsymbol: X
 maplegend: Strip Club
 biome: house

@@ -10,8 +10,7 @@ description: >-
   Shelves hold <ansi fg="itemname">masks</ansi>, fake mustaches, rubber chickens,
   joy buzzers, whoopee cushions, and squirting flowers. A <ansi fg="itemname">top hat</ansi>
   sits on the counter with a pair of white gloves beside it. The back wall is
-  covered with autographed <ansi fg="itemname">photos</ansi> of magicians. The
-  <ansi fg="exit">west</ansi> door leads back to the outdoor mall. A beaded
+  covered with autographed <ansi fg="itemname">photos</ansi> of magicians. The <ansi fg="exit">west</ansi> door leads back to the outdoor mall. A beaded
   <parameter name="content">roomid: 814
 zone: Peewees Big Adventure
 title: Mario's Magic Shop
@@ -24,8 +23,7 @@ description: >-
   Shelves hold <ansi fg="itemname">masks</ansi>, fake mustaches, rubber chickens,
   joy buzzers, whoopee cushions, and squirting flowers. A <ansi fg="itemname">top hat</ansi>
   sits on the counter with a pair of white gloves beside it. The back wall is
-  covered with autographed <ansi fg="itemname">photos</ansi> of magicians. The
-  <ansi fg="exit">west</ansi> door leads back to the outdoor mall. A beaded
+  covered with autographed <ansi fg="itemname">photos</ansi> of magicians. The <ansi fg="exit">west</ansi> door leads back to the outdoor mall. A beaded
   curtain in the back leads to the <ansi fg="exit">props room</ansi>.
 mapsymbol: '!'
 maplegend: Magic Shop

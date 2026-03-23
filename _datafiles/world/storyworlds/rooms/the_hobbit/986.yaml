@@ -4,15 +4,12 @@ title: Smaug's Hoard
 description: >-
   The vast treasure chamber beneath the Lonely Mountain. Mountains of gold
   coins, gems, silver goblets, mithril mail, jeweled swords, and crowns are
-  heaped in glittering piles that fill the cavern from wall to wall. The
-  <ansi fg="itemname">treasure</ansi> catches the faint light and throws it
+  heaped in glittering piles that fill the cavern from wall to wall. The <ansi fg="itemname">treasure</ansi> catches the faint light and throws it
   back in a thousand colors. And there, at the center, curled atop the
-  greatest pile like a cat on a cushion of gold, lies the
-  <ansi fg="itemname">dragon</ansi> -- Smaug the Golden, the Chiefest and
+  greatest pile like a cat on a cushion of gold, lies the <ansi fg="itemname">dragon</ansi> -- Smaug the Golden, the Chiefest and
   Greatest of Calamities. He is enormous. His scales are red-gold and hard
   as diamond. His breath is fire. His cunning is legend. One eye is open.
-  Somewhere in the hoard, blazing with its own inner light, lies the
-  <ansi fg="itemname">arkenstone</ansi>, the Heart of the Mountain. The
+  Somewhere in the hoard, blazing with its own inner light, lies the <ansi fg="itemname">arkenstone</ansi>, the Heart of the Mountain. The
   tunnel leads <ansi fg="exit">west</ansi> back to the secret door.
 mapsymbol: '$'
 maplegend: Dragon's Hoard

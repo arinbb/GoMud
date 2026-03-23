@@ -3,8 +3,7 @@ zone: The Grand Library
 title: The Listening Room
 description: >-
   A warm, wood-paneled room suffused with the hum of music waiting to be played.
-  Three listening stations occupy the space, each from a different era. A vintage
-  <ansi fg="itemname">turntable</ansi> sits on a mahogany cabinet, its tonearm
+  Three listening stations occupy the space, each from a different era. A vintage <ansi fg="itemname">turntable</ansi> sits on a mahogany cabinet, its tonearm
   resting beside a stack of <ansi fg="itemname">vinyl records</ansi> in paper
   sleeves. A brushed-aluminum <ansi fg="itemname">tape deck</ansi> with glowing
   VU meters sits on a shelf beside rows of <ansi fg="itemname">cassette tapes</ansi>

@@ -3,15 +3,13 @@ zone: The Hobbit
 title: Spider's Glade
 description: >-
   A clearing in the forest festooned with enormous <ansi fg="itemname">webs</ansi>
-  stretched between every tree like a canopy of grey silk. Silk-wrapped
-  <ansi fg="itemname">bundles</ansi> hang from the branches, some twitching
+  stretched between every tree like a canopy of grey silk. Silk-wrapped <ansi fg="itemname">bundles</ansi> hang from the branches, some twitching
   feebly. Giant <ansi fg="itemname">spiders</ansi> the size of large dogs
   scuttle in the canopy, their bulbous black bodies glistening, mandibles
   clicking. The air is thick with the smell of venom and old silk. This is
   where Bilbo Baggins found his courage -- alone, invisible, armed with
   nothing but a small elven blade and a great deal of unexpected backbone.
-  He named the sword Sting in this very place. Paths lead
-  <ansi fg="exit">west</ansi> back into deep Mirkwood and <ansi fg="exit">east</ansi>
+  He named the sword Sting in this very place. Paths lead <ansi fg="exit">west</ansi> back into deep Mirkwood and <ansi fg="exit">east</ansi>
   toward the Elvenking's realm.
 mapsymbol: S
 maplegend: Spider's Glade

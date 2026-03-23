@@ -7,13 +7,11 @@ description: >-
   pressing the world into a narrow corridor. The whole chamber glows with a
   dim greenish light filtering through the stone. <ansi fg="yellow">Coins</ansi>
   line the floor and float in rows overhead, more coins than you would ever
-  find above ground, as if the underground world is overcompensating. A
-  <ansi fg="itemname">pipe</ansi> in the corner has a Piranha Plant in it --
+  find above ground, as if the underground world is overcompensating. A <ansi fg="itemname">pipe</ansi> in the corner has a Piranha Plant in it --
   a fat green head on a white stalk, bobbing rhythmically up and down, teeth
   bared. The brick walls echo every step back at you, making you sound like
   an army. The smell is cool and mineral, like a cave made of math. West
-  leads <ansi fg="exit">back</ansi> to the surface; east leads
-  <ansi fg="exit">deeper</ansi> through the underground.
+  leads <ansi fg="exit">back</ansi> to the surface; east leads <ansi fg="exit">deeper</ansi> through the underground.
 mapsymbol: U
 maplegend: Underground
 biome: cave

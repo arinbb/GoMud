@@ -6,12 +6,10 @@ description: >-
   stage equipment. A <ansi fg="itemname">ventriloquist dummy</ansi> sits in a
   chair, staring at you with glassy eyes. Racks of <ansi fg="itemname">costumes</ansi>
   hang along one wall -- a gorilla suit, a nun's habit, a matador's outfit,
-  a space suit, and what appears to be a full Godzilla costume. A shelf holds
-  <ansi fg="itemname">trick props</ansi>: a bouquet of flowers that squirts water,
+  a space suit, and what appears to be a full Godzilla costume. A shelf holds <ansi fg="itemname">trick props</ansi>: a bouquet of flowers that squirts water,
   a cane that collapses, a box of flash powder, and a fake hand on a spring.
   In the corner, a <ansi fg="itemname">mirror</ansi> leans against the wall, but
-  your reflection seems to be wearing a different outfit than you are. A dusty
-  <ansi fg="itemname">trunk</ansi> sits beneath a bare lightbulb. The beaded
+  your reflection seems to be wearing a different outfit than you are. A dusty <ansi fg="itemname">trunk</ansi> sits beneath a bare lightbulb. The beaded
   <parameter name="content">roomid: 815
 zone: Peewees Big Adventure
 title: The Props Room
@@ -20,12 +18,10 @@ description: >-
   stage equipment. A <ansi fg="itemname">ventriloquist dummy</ansi> sits in a
   chair, staring at you with glassy eyes. Racks of <ansi fg="itemname">costumes</ansi>
   hang along one wall -- a gorilla suit, a nun's habit, a matador's outfit,
-  a space suit, and what appears to be a full Godzilla costume. A shelf holds
-  <ansi fg="itemname">trick props</ansi>: a bouquet of flowers that squirts water,
+  a space suit, and what appears to be a full Godzilla costume. A shelf holds <ansi fg="itemname">trick props</ansi>: a bouquet of flowers that squirts water,
   a cane that collapses, a box of flash powder, and a fake hand on a spring.
   In the corner, a <ansi fg="itemname">mirror</ansi> leans against the wall, but
-  your reflection seems to be wearing a different outfit than you are. A dusty
-  <ansi fg="itemname">trunk</ansi> sits beneath a bare lightbulb. The beaded
+  your reflection seems to be wearing a different outfit than you are. A dusty <ansi fg="itemname">trunk</ansi> sits beneath a bare lightbulb. The beaded
   curtain to the <ansi fg="exit">shop</ansi> sways gently behind you.
 mapsymbol: P
 maplegend: Props Room

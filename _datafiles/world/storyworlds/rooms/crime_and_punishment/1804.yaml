@@ -12,8 +12,7 @@ description: >-
   a civil servant in a worn coat is speaking to whoever will listen — his
   voice rising and falling with the cadences of a man performing his own
   degradation, finding in it something magnificent. This is the Haymarket
-  tavern, where Marmeladov drinks and confesses and drinks again. The
-  <ansi fg="exit">west</ansi> door leads back to the square.
+  tavern, where Marmeladov drinks and confesses and drinks again. The <ansi fg="exit">west</ansi> door leads back to the square.
 mapsymbol: T
 maplegend: The Tavern
 biome: house

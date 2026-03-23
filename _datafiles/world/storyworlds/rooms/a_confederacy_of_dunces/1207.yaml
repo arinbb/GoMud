@@ -2,8 +2,7 @@ roomid: 1207
 zone: A Confederacy of Dunces
 title: Lucky Dog Cart
 description: >-
-  A street corner in the French Quarter where a Paradise Vendors hot dog
-  <ansi fg="itemname">cart</ansi> sits in the merciless sun. The cart is shaped
+  A street corner in the French Quarter where a Paradise Vendors hot dog <ansi fg="itemname">cart</ansi> sits in the merciless sun. The cart is shaped
   like a giant hot dog on wheels, its faded <ansi fg="itemname">umbrella</ansi>
   reading PARADISE HOT DOGS. <ansi fg="itemname">Hot dogs</ansi> of questionable
   provenance turn slowly on the roller grill, glistening with grease. A small

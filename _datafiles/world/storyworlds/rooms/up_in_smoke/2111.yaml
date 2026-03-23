@@ -2,8 +2,7 @@ roomid: 2111
 zone: Up in Smoke
 title: The Drive-In
 description: >-
-  A classic 1970s drive-in movie theatre off the freeway, a hundred
-  <ansi fg="itemname">cars</ansi> arranged in rows facing a <ansi fg="itemname">
+  A classic 1970s drive-in movie theatre off the freeway, a hundred <ansi fg="itemname">cars</ansi> arranged in rows facing a <ansi fg="itemname">
   screen</ansi> the size of a small building. The film playing is too far away
   to hear properly -- car speakers on posts crackle with the audio. In the
   middle distance the <ansi fg="itemname">snack bar</ansi> glows like a small

@@ -5,12 +5,10 @@ description: >-
   You stand on the rust-colored desert floor of Altair IV beneath a sky the
   color of sea glass -- a luminous, impossible <ansi fg="cyan">green</ansi>.
   The <ansi fg="itemname">C-57D</ansi> rises behind you, a gleaming saucer of
-  chrome and titanium, its landing struts sunk deep in alien soil. Its running
-  <ansi fg="itemname">lights</ansi> pulse with a steady blue rhythm. Before
+  chrome and titanium, its landing struts sunk deep in alien soil. Its running <ansi fg="itemname">lights</ansi> pulse with a steady blue rhythm. Before
   you, the desert stretches to jagged <ansi fg="itemname">rock formations</ansi>
   and strange crystalline <ansi fg="itemname">vegetation</ansi> that catches the
-  light of the twin suns. The air is dry and faintly electric. To the
-  <ansi fg="exit">east</ansi> a worn track leads into the desert.
+  light of the twin suns. The air is dry and faintly electric. To the <ansi fg="exit">east</ansi> a worn track leads into the desert.
   To the <ansi fg="exit">south</ansi>, the ship hatch stands open.
   To the <ansi fg="exit">west</ansi>, a perimeter of scorched earth marks where
   something came in the night.

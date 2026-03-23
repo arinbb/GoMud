@@ -4,13 +4,11 @@ title: The Dark Staircase
 description: >-
   A narrow winding staircase that serves the whole building, its steps worn
   smooth in the middle by decades of feet going up and down in need. The
-  walls are close enough to touch on both sides and the smell is intimate:
-  <ansi fg="itemname">cabbage water</ansi>, boiled wool, unwashed bodies, lime
+  walls are close enough to touch on both sides and the smell is intimate: <ansi fg="itemname">cabbage water</ansi>, boiled wool, unwashed bodies, lime
   from the plaster. Four floors of doors, each one hiding its particular
   misery. On the <ansi fg="itemname">third-floor landing</ansi> a door stands
   slightly ajar, leaking the sound of a woman humming. The staircase continues
-  down to the street. The garret is <ansi fg="exit">up</ansi>, the street is
-  <ansi fg="exit">down</ansi>.
+  down to the street. The garret is <ansi fg="exit">up</ansi>, the street is <ansi fg="exit">down</ansi>.
 mapsymbol: S
 maplegend: The Dark Staircase
 biome: house

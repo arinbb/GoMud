@@ -6,8 +6,7 @@ description: >-
   A vintage <ansi fg="itemname">photo booth</ansi> stands against the wall, its curtain
   a faded <ansi fg="12">blue</ansi> velvet, half-drawn. The booth's exterior is
   scratched chrome and chipped white paint. A small <ansi fg="itemname">screen</ansi>
-  shows a sample photo — two people, blurred, almost touching. A slot accepts
-  <ansi fg="itemname">quarters</ansi>. Inside the booth, a narrow bench, barely wide
+  shows a sample photo — two people, blurred, almost touching. A slot accepts <ansi fg="itemname">quarters</ansi>. Inside the booth, a narrow bench, barely wide
   enough for two. The light in here is warm — warmer than anywhere else in
   Buffalo. The bowling alley is back to the <ansi fg="exit">north</ansi>. A hallway
   leads <ansi fg="exit">east</ansi>.

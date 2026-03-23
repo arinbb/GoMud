@@ -11,8 +11,7 @@ description: >-
   are stacked near a passage leading down to the river gate, and the
   king's <ansi fg="itemname">cellars</ansi> are famous for their Dorwinion
   vintages. The air smells of old stone, candle wax, and very good wine.
-  Passages lead <ansi fg="exit">west</ansi> back into Mirkwood and
-  <ansi fg="exit">east</ansi> along the Forest River toward Lake-town.
+  Passages lead <ansi fg="exit">west</ansi> back into Mirkwood and <ansi fg="exit">east</ansi> along the Forest River toward Lake-town.
 mapsymbol: K
 maplegend: Elvenking's Halls
 biome: cave

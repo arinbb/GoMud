@@ -12,8 +12,7 @@ description: >-
   bloom with light as you enter. The <ansi fg="itemname">walls</ansi> here
   are closer, the scale more intimate than the vast upper chambers. This is
   a personal space. The Krell came here alone. They came here to become
-  more than they were. It cost them everything. Above you, the
-  <ansi fg="exit">shaft</ansi> back to the world.
+  more than they were. It cost them everything. Above you, the <ansi fg="exit">shaft</ansi> back to the world.
 mapsymbol: B
 maplegend: Deep Krell
 biome: cave

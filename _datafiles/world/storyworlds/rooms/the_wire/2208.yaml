@@ -2,9 +2,7 @@ roomid: 2208
 zone: The Wire
 title: The Courthouse
 description: >-
-  The Baltimore City <ansi fg="8">courthouse</ansi>, its marble lobby high and
-  <ansi fg="8">cold</ansi> and ringing with the sound of heel strikes on stone.
-  <ansi fg="itemname">Lawyers</ansi> move through with the practiced speed of people
+  The Baltimore City <ansi fg="8">courthouse</ansi>, its marble lobby high and <ansi fg="8">cold</ansi> and ringing with the sound of heel strikes on stone. <ansi fg="itemname">Lawyers</ansi> move through with the practiced speed of people
   billing by the hour. <ansi fg="itemname">Defendants</ansi> sit on benches in
   their church clothes, waiting for a system that knows their name only from a
   file number. The <ansi fg="itemname">judges</ansi> here are part of the game too,

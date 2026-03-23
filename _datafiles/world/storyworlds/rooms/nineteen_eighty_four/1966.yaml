@@ -9,10 +9,8 @@ description: >-
   its beautiful, functional minimum. His tray is pushed to one side,
   his Victory Gin untouched. He speaks with the excitement of a man who
   has found true purpose. He has not yet grasped that his purpose, once
-  complete, will make him unnecessary. He will become an
-  <ansi fg="red">unperson</ansi>. But not today. Today he is explaining
-  Newspeak to anyone who will listen. The canteen is to the
-  <ansi fg="exit">canteen</ansi> end.
+  complete, will make him unnecessary. He will become an <ansi fg="red">unperson</ansi>. But not today. Today he is explaining
+  Newspeak to anyone who will listen. The canteen is to the <ansi fg="exit">canteen</ansi> end.
 mapsymbol: Y
 maplegend: "Syme's Table"
 biome: house

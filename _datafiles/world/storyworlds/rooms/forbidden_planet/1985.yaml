@@ -9,11 +9,9 @@ description: >-
   bearing a half-finished glass of something amber. <ansi fg="cyan">Krell
   artifacts</ansi> are displayed on dedicated pedestals -- geometric shapes
   of a material that is neither stone nor metal, cool to the touch and subtly
-  luminous. On the wall, a reproduction of a painting of
-  <ansi fg="itemname">Shakespeare</ansi> watches over the room. The air is
+  luminous. On the wall, a reproduction of a painting of <ansi fg="itemname">Shakespeare</ansi> watches over the room. The air is
   climate-controlled, precisely Earth-temperature, filtered and recycled for
-  twenty years. To the <ansi fg="exit">west</ansi> the exterior. To the
-  <ansi fg="exit">north</ansi> is the study. The <ansi fg="exit">lab</ansi>
+  twenty years. To the <ansi fg="exit">west</ansi> the exterior. To the <ansi fg="exit">north</ansi> is the study. The <ansi fg="exit">lab</ansi>
   entrance is to the east. <ansi fg="exit">Robbys workshop</ansi> is to the
   west past the service corridor.
 mapsymbol: I

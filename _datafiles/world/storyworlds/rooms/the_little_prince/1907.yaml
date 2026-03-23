@@ -12,10 +12,7 @@ description: >-
   He has been doing this for so long that the motions are worn into him, as
   smooth as a river stone. His face is exhausted in the way of someone who
   does not have time to be exhausted. He does not complain. His orders are
-  his orders. He is the only person in all the asteroid worlds who is
-  <ansi fg="itemname">useful</ansi>. The path leads back to the
-  <ansi fg="exit">businessman</ansi> north, and further to the
-  <ansi fg="exit">geographer</ansi> south.
+  his orders. He is the only person in all the asteroid worlds who is <ansi fg="itemname">useful</ansi>. The path leads back to the <ansi fg="exit">businessman</ansi> north, and further to the <ansi fg="exit">geographer</ansi> south.
 mapsymbol: L
 maplegend: Lamplighters Asteroid
 biome: land

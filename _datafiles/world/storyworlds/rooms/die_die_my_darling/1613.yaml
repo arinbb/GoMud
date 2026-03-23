@@ -9,8 +9,7 @@ description: >-
   from below is complex — cold stone and damp and something unexpected: not rot or
   must, but fabric. Old fabric. Wool and silk and something powdery that might be
   theatrical face powder. The smell of things kept rather than used. The entrance
-  hall is back through the <ansi fg="exit">hall</ansi> above. The cellar waits
-  <ansi fg="exit">down</ansi>.
+  hall is back through the <ansi fg="exit">hall</ansi> above. The cellar waits <ansi fg="exit">down</ansi>.
 mapsymbol: >
 maplegend: Cellar Stairs
 biome: cave

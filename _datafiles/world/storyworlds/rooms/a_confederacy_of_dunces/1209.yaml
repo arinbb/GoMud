@@ -2,17 +2,14 @@ roomid: 1209
 zone: A Confederacy of Dunces
 title: Levy Pants Factory Floor
 description: >-
-  A cavernous, sweltering garment factory. Rows of ancient industrial sewing
-  <ansi fg="itemname">machines</ansi> clatter away, operated by
-  <ansi fg="itemname">workers</ansi> who have long since given up hope of fair
+  A cavernous, sweltering garment factory. Rows of ancient industrial sewing <ansi fg="itemname">machines</ansi> clatter away, operated by <ansi fg="itemname">workers</ansi> who have long since given up hope of fair
   treatment or fashionable output. Bolts of cheap <ansi fg="itemname">fabric</ansi>
   in colors that fashion forgot decades ago lean against every wall. The air is
   thick with lint that drifts like snow in a world where snow would melt before
   it landed. A hand-painted <ansi fg="itemname">banner</ansi> reading CRUSADE
   FOR MOORISH DIGNITY hangs from the ceiling, slightly singed from an incident
   that no one will discuss in detail. This is where Ignatius attempted his
-  revolution. The revolution did not go as planned. The only exit leads
-  <ansi fg="exit">west</ansi> back to the office.
+  revolution. The revolution did not go as planned. The only exit leads <ansi fg="exit">west</ansi> back to the office.
 mapsymbol: F
 maplegend: Factory Floor
 biome: city

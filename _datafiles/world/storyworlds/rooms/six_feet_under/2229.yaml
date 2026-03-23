@@ -10,8 +10,7 @@ description: >-
   of tools along one wall -- not for the car, for the other work: stretchers,
   gurneys, transfer equipment. The garage smells of floral and car wax and
   underneath that something practical and cold. This is where the machinery
-  of death-as-a-business operates, unglamorously and necessarily. The
-  <ansi fg="exit">entrance</ansi> is to the east.
+  of death-as-a-business operates, unglamorously and necessarily. The <ansi fg="exit">entrance</ansi> is to the east.
 mapsymbol: G
 maplegend: The Garage
 biome: house

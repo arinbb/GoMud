@@ -5,12 +5,9 @@ description: >-
   A sun-drenched open-air shopping plaza with pastel-colored storefronts and
   striped awnings. A row of <ansi fg="itemname">bike racks</ansi> runs down the
   center median, most of them occupied by colorful bikes locked with chains and
-  combination locks. Potted palm trees and wooden benches line the walkway.
-  <ansi fg="itemname">Skateboard kids</ansi> weave between pedestrians. A
-  <ansi fg="itemname">fountain</ansi> shaped like a bicycle wheel sprays water in
+  combination locks. Potted palm trees and wooden benches line the walkway. <ansi fg="itemname">Skateboard kids</ansi> weave between pedestrians. A <ansi fg="itemname">fountain</ansi> shaped like a bicycle wheel sprays water in
   the center of the plaza. To the <ansi fg="exit">south</ansi>, Chuck's Bike-O-Rama
-  beckons with spinning wheels in its window. A purple storefront to the
-  <ansi fg="exit">east</ansi> advertises MARIO THE MAGICIAN in gold letters.
+  beckons with spinning wheels in its window. A purple storefront to the <ansi fg="exit">east</ansi> advertises MARIO THE MAGICIAN in gold letters.
   An <ansi fg="itemname">ice cream cart</ansi> is parked near the fountain.
 mapsymbol: M
 maplegend: Outdoor Mall

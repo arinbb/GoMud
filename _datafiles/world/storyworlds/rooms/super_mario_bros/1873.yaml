@@ -7,11 +7,8 @@ description: >-
   loop you back to the beginning, the same entrance, the same torchlight,
   the same lava pits you thought you left behind. The <ansi fg="red">lava</ansi>
   glows below every passage. Fire bars rotate on their posts. The castle
-  is larger than it looks. You have been here before, possibly. The
-  <ansi fg="itemname">east passage</ansi> looks right. It is wrong. The
-  <ansi fg="itemname">north passage</ansi> does not look obvious. It is
-  right. The game tests whether you explored or assumed. West leads
-  <ansi fg="exit">back</ansi>; north leads <ansi fg="exit">forward</ansi>;
+  is larger than it looks. You have been here before, possibly. The <ansi fg="itemname">east passage</ansi> looks right. It is wrong. The <ansi fg="itemname">north passage</ansi> does not look obvious. It is
+  right. The game tests whether you explored or assumed. West leads <ansi fg="exit">back</ansi>; north leads <ansi fg="exit">forward</ansi>;
   the east passage appears to continue but -- loops.
 mapsymbol: M
 maplegend: Final Castle Maze

@@ -6,15 +6,13 @@ description: >-
   structure of glittering white concrete, three hundred meters high. Inside,
   in the <ansi fg="itemname">Records Department</ansi>, Winston Smith works
   at a speakwrite, correcting the historical record. Old newspapers, old
-  books, old documents are fed into the
-  <ansi fg="itemname">memory holes</ansi> that dot the walls at intervals.
+  books, old documents are fed into the <ansi fg="itemname">memory holes</ansi> that dot the walls at intervals.
   They fall down to the enormous furnaces below, and what was written is
   unwritten. The corridors hum with <ansi fg="itemname">telescreens</ansi>
   and the soft sound of speakwrites and the occasional clatter of the
   pneumatic tubes that carry documents between departments. The truth is
   what the Ministry says it is. It was always this way. The records confirm
-  it. To the <ansi fg="exit">south</ansi>, the street. To the
-  <ansi fg="exit">east</ansi>, the canteen.
+  it. To the <ansi fg="exit">south</ansi>, the street. To the <ansi fg="exit">east</ansi>, the canteen.
 mapsymbol: T
 maplegend: Ministry of Truth
 biome: city

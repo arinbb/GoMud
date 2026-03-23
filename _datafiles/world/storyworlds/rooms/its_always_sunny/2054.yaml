@@ -12,8 +12,7 @@ description: >-
   Gang's situations. A flickering <ansi fg="8">fluorescent light</ansi> in
   the corner provides ambiance. The clock on the wall is wrong. There is a
   sign that says <ansi fg="stat">PLEASE HAVE DOCUMENTATION READY</ansi>. The
-  Gang does not have documentation ready. The Gang is never ready. To the
-  <ansi fg="exit">street</ansi> is the exit.
+  Gang does not have documentation ready. The Gang is never ready. To the <ansi fg="exit">street</ansi> is the exit.
 mapsymbol: WO
 maplegend: Welfare Office
 biome: city

@@ -2,8 +2,7 @@ roomid: 1887
 zone: The Monkey Wrench Gang
 title: The Bulldozer Yard
 description: >-
-  Rows of <ansi fg="8">heavy equipment</ansi> are parked here on scraped earth --
-  <ansi fg="itemname">bulldozers</ansi>, scrapers, graders, compactors, all of them
+  Rows of <ansi fg="8">heavy equipment</ansi> are parked here on scraped earth -- <ansi fg="itemname">bulldozers</ansi>, scrapers, graders, compactors, all of them
   massive and yellow-painted and smelling of diesel and hydraulic fluid, parked with
   the military neatness of things that are expensive enough to deserve organization.
   Their <ansi fg="8">treads</ansi> have left deep parallel gouges in the hardpan.
@@ -13,8 +12,7 @@ description: >-
   a bolt cutter or a determined man with a crowbar. The fuel tanks of the nearest
   bulldozers are visible, their caps accessible without climbing. The air is still
   and the stars are coming out and everything here is a machine and nothing is
-  irreplaceable, although some things take longer to replace than others. To the
-  <ansi fg="exit">west</ansi>, the path leads back to the strip mine perimeter.
+  irreplaceable, although some things take longer to replace than others. To the <ansi fg="exit">west</ansi>, the path leads back to the strip mine perimeter.
 mapsymbol: Y
 maplegend: Bulldozer Yard
 biome: desert

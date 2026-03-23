@@ -9,13 +9,11 @@ description: >-
   a vision that most people would not have. The <ansi fg="itemname">frame</ansi>
   is seasoned spruce, jointed with the precision of someone who taught himself
   joinery for this specific purpose. The <ansi fg="itemname">throwing arm</ansi>
-  is a full twenty feet, counterweighted with a drum of concrete. The
-  <ansi fg="itemname">sling</ansi> hangs ready. Nearby, a <ansi fg="itemname">piano</ansi>
+  is a full twenty feet, counterweighted with a drum of concrete. The <ansi fg="itemname">sling</ansi> hangs ready. Nearby, a <ansi fg="itemname">piano</ansi>
   -- an upright, slightly weather-damaged -- waits with the patience of a
   piano that knows what is going to happen to it and has made its peace with
   that. This is <ansi fg="cyan">art</ansi>. Chris has written this in red
-  paint on the frame: <ansi fg="cyan">ART</ansi>. He is not wrong. To the
-  <ansi fg="exit">east</ansi>, back to the station.
+  paint on the frame: <ansi fg="cyan">ART</ansi>. He is not wrong. To the <ansi fg="exit">east</ansi>, back to the station.
 mapsymbol: X
 maplegend: The Catapult
 biome: land

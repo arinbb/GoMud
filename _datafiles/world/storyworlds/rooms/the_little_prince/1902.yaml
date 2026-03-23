@@ -13,8 +13,7 @@ description: >-
   issuing commands that he times to coincide with what they were going to do
   anyway. His power is total and perfectly, magnificently useless. The
   asteroid smells of purple velvet and self-importance. A path leads back
-  toward <ansi fg="exit">B-612</ansi> to the east, and further to the
-  <ansi fg="exit">vain</ansi> man's asteroid south.
+  toward <ansi fg="exit">B-612</ansi> to the east, and further to the <ansi fg="exit">vain</ansi> man's asteroid south.
 mapsymbol: K
 maplegend: Kings Asteroid
 biome: land

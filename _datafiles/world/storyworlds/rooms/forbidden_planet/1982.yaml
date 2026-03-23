@@ -4,16 +4,13 @@ title: Morbius House Exterior
 description: >-
   A <ansi fg="itemname">dome</ansi> of seamless white material rises from the
   desert floor -- neither stone nor metal, neither Krell nor quite human. The
-  house of Dr. Morbius has an austere elegance, its curves precise, its
-  <ansi fg="itemname">windows</ansi> recessed and thoughtful. A gravel
-  <ansi fg="itemname">path</ansi> leads from the desert track to a wide entry
+  house of Dr. Morbius has an austere elegance, its curves precise, its <ansi fg="itemname">windows</ansi> recessed and thoughtful. A gravel <ansi fg="itemname">path</ansi> leads from the desert track to a wide entry
   arch. To one side of the arch stands a tall, barrel-chested shape of gleaming
   polished steel: <ansi fg="cyan">Robby the Robot</ansi>, motionless and
   somehow attentive. The <ansi fg="itemname">garden</ansi> to the north is
   glimpsed through a low archway, alive with color that seems impossible in
   this desert. To the <ansi fg="exit">west</ansi> the desert track leads back.
-  To the <ansi fg="exit">north</ansi> lies the garden. To the
-  <ansi fg="exit">east</ansi> is the house interior.
+  To the <ansi fg="exit">north</ansi> lies the garden. To the <ansi fg="exit">east</ansi> is the house interior.
 mapsymbol: H
 maplegend: House Exterior
 biome: land

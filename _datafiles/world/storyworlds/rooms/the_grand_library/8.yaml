@@ -6,11 +6,9 @@ description: >-
   of cooling fans. Unlike the rest of the Library's stately wood and brass,
   this room has a playful energy — arcade cabinets line one wall, their
   marquees dark but ready, and a central <ansi fg="itemname">gaming station</ansi>
-  holds a sleek console connected to a large screen. A shelf of
-  <ansi fg="itemname">game cases</ansi> is organized by genre — RPGs, open
+  holds a sleek console connected to a large screen. A shelf of <ansi fg="itemname">game cases</ansi> is organized by genre — RPGs, open
   worlds, farming sims, shooters, adventures. The carpet is that specific
-  dark purple-blue of every arcade you have ever been in. A
-  <ansi fg="itemname">beanbag chair</ansi> sits in front of the screen. The
+  dark purple-blue of every arcade you have ever been in. A <ansi fg="itemname">beanbag chair</ansi> sits in front of the screen. The
   air smells of warm electronics and something like popcorn. The <ansi
   fg="exit">atrium</ansi> is back to the east.
 mapsymbol: G

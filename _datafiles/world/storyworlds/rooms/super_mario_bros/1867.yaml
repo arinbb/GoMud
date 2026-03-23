@@ -5,8 +5,7 @@ description: >-
   The same overworld layout, but the sky has gone <ansi fg="4">dark blue</ansi>
   -- the first night level, a palette swap that changes the feeling entirely.
   The stars are square pixel-art stars, white dots on deep blue. The ground
-  is the same brown but the shadows are longer, the colors cooler. Two
-  <ansi fg="itemname">Hammer Bros</ansi> stand on elevated brick platforms,
+  is the same brown but the shadows are longer, the colors cooler. Two <ansi fg="itemname">Hammer Bros</ansi> stand on elevated brick platforms,
   hurling pixelated hammers in arcs that fill the corridor with danger.
   They hop on the spot between throws, bouncing on their platforms with
   an energy that reads as menace. The night level is famous for difficulty --

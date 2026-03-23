@@ -6,12 +6,10 @@ description: >-
   SGs, and a few oddities up near the ceiling that nobody can identify. The air
   smells of guitar polish, new string metal, and the concentrated hope of a
   thousand people who believe they could be Clapton if they just got the right
-  axe. A <ansi fg="itemname">sign</ansi> near the Stratocaster display reads
-  <ansi fg="room-title">NO STAIRWAY TO HEAVEN</ansi> in hand-lettered capital
+  axe. A <ansi fg="itemname">sign</ansi> near the Stratocaster display reads <ansi fg="room-title">NO STAIRWAY TO HEAVEN</ansi> in hand-lettered capital
   letters. There is also no Smoke on the Water, no Iron Man, and no Sweet
   Home Alabama. The <ansi fg="itemname">clerk</ansi> watches with the resigned
-  expression of a man who has enforced this policy ten thousand times. To the
-  <ansi fg="exit">west</ansi> is the street. The <ansi fg="exit">east</ansi>
+  expression of a man who has enforced this policy ten thousand times. To the <ansi fg="exit">west</ansi> is the street. The <ansi fg="exit">east</ansi>
   exit leads to the arcade.
 mapsymbol: m
 maplegend: Music Store

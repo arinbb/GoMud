@@ -6,13 +6,11 @@ description: >-
   legendary parties. Heavy brocade <ansi fg="itemname">curtains</ansi> in
   burgundy and gold frame the windows. Gilt-framed <ansi fg="itemname">mirrors</ansi>
   on every wall make the apartment seem infinite, reflecting the flickering
-  light of dozens of <ansi fg="itemname">candles</ansi> in ornate holders. The
-  <ansi fg="itemname">guests</ansi> are fabulous and numerous, dressed in
+  light of dozens of <ansi fg="itemname">candles</ansi> in ornate holders. The <ansi fg="itemname">guests</ansi> are fabulous and numerous, dressed in
   flamboyant attire, drinking champagne and discussing art with the passionate
   insincerity of people who know the discussion is the point, not the
   conclusion. Ignatius once attempted to organize these guests into a political
-  movement. The results were spectacular and catastrophic. The only exit leads
-  <ansi fg="exit">west</ansi> back to Bourbon Street.
+  movement. The results were spectacular and catastrophic. The only exit leads <ansi fg="exit">west</ansi> back to Bourbon Street.
 mapsymbol: D
 maplegend: Dorian's Party
 biome: house

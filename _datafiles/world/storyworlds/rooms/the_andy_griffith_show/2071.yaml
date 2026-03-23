@@ -3,10 +3,8 @@ zone: The Andy Griffith Show
 title: The Fishing Hole
 description: >-
   <ansi fg="cyan">Myers Lake.</ansi> The fishing hole. The single most peaceful
-  room in all of Mayberry and therefore in all the world. The water is
-  <ansi fg="cyan">dark green and still</ansi>, reflecting the sky and the trees
-  in a surface that is only disturbed, slowly, by the ring of a fish rising.
-  <ansi fg="10">Willow trees</ansi> overhang the bank, their trailing branches
+  room in all of Mayberry and therefore in all the world. The water is <ansi fg="cyan">dark green and still</ansi>, reflecting the sky and the trees
+  in a surface that is only disturbed, slowly, by the ring of a fish rising. <ansi fg="10">Willow trees</ansi> overhang the bank, their trailing branches
   touching the water. The bank itself is <ansi fg="10">grass worn to soft mud</ansi>
   at the water's edge, the particular mud of a fishing spot visited weekly for
   years. Two <ansi fg="itemname">cane poles</ansi> are propped in forked sticks

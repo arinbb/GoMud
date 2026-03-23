@@ -3,12 +3,9 @@ zone: Northern Exposure
 title: Joels Office
 description: >-
   Dr. Joel Fleischman practices medicine in a converted cabin that is either
-  charming or inadequate depending entirely on whether you grew up in
-  <ansi fg="cyan">Manhattan</ansi> or <ansi fg="10">Alaska</ansi>. The
-  <ansi fg="itemname">diplomas</ansi> on the wall -- Columbia, Johns Hopkins --
+  charming or inadequate depending entirely on whether you grew up in <ansi fg="cyan">Manhattan</ansi> or <ansi fg="10">Alaska</ansi>. The <ansi fg="itemname">diplomas</ansi> on the wall -- Columbia, Johns Hopkins --
   are in stark contrast to the <ansi fg="8">log walls</ansi> behind them.
-  A <ansi fg="itemname">medical bag</ansi> sits packed and ready on the
-  <ansi fg="itemname">desk</ansi>, next to a stack of <ansi fg="itemname">journals</ansi>
+  A <ansi fg="itemname">medical bag</ansi> sits packed and ready on the <ansi fg="itemname">desk</ansi>, next to a stack of <ansi fg="itemname">journals</ansi>
   that look recently read. The <ansi fg="itemname">examination table</ansi>
   is standard issue; the <ansi fg="itemname">window</ansi> above it frames a
   view of spruce trees and mountains that no Manhattan clinic has ever

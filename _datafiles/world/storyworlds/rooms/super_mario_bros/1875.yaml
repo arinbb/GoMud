@@ -7,11 +7,9 @@ description: >-
   Piranha Plant and fire bar, the room is simple and quiet. <ansi fg="itemname">Princess
   Peach</ansi> stands in the center, in her pink dress and gold crown, her
   blonde hair perfectly arranged, her expression one of profound and gracious
-  relief. The room has tall windows and colored curtains and the
-  <ansi fg="itemname">sunlight</ansi> through them is warm and gold. There
+  relief. The room has tall windows and colored curtains and the <ansi fg="itemname">sunlight</ansi> through them is warm and gold. There
   is no danger here. There is no level. This is the end. The <ansi fg="itemname">cake</ansi>
-  on the table was put there by someone who knew you were coming. West leads
-  <ansi fg="exit">back</ansi> to the bridge, but there is nowhere else to
+  on the table was put there by someone who knew you were coming. West leads <ansi fg="exit">back</ansi> to the bridge, but there is nowhere else to
   go. You have done it. Your quest is over.
 mapsymbol: P
 maplegend: Princess Peach

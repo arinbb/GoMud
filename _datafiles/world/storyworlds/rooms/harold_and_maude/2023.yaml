@@ -5,13 +5,11 @@ description: >-
   An enormous <ansi fg="8">mansion</ansi> of the kind that proves money cannot
   buy warmth. The <ansi fg="itemname">foyer</ansi> is cathedral-ceilinged, floored
   in cold <ansi fg="8">marble</ansi>, hung with <ansi fg="itemname">portraits</ansi>
-  of ancestors who look like they disapproved of everything. Fresh-cut
-  <ansi fg="itemname">flowers</ansi> stand in tall vases, arranged by someone
+  of ancestors who look like they disapproved of everything. Fresh-cut <ansi fg="itemname">flowers</ansi> stand in tall vases, arranged by someone
   paid to arrange them. The furniture is the furniture of money, expensive and
   unloved. A <ansi fg="itemname">telephone</ansi> sits on an ornate table -- it
   rings constantly, because Harolds mother is always on the phone making arrangements
-  for arrangements. To the <ansi fg="exit">north</ansi> is the church. To the
-  <ansi fg="exit">east</ansi> lies Harolds bedroom. To the <ansi fg="exit">south</ansi>
+  for arrangements. To the <ansi fg="exit">north</ansi> is the church. To the <ansi fg="exit">east</ansi> lies Harolds bedroom. To the <ansi fg="exit">south</ansi>
   the driveway curves toward the hearse.
 mapsymbol: M
 maplegend: Harolds Mansion

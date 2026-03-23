@@ -3,8 +3,7 @@ zone: Blonde on Blonde
 title: 4th Time Around
 description: >-
   A <ansi fg="cyan">spiral staircase</ansi> that goes up and goes up and does
-  not arrive anywhere. At each <ansi fg="itemname">landing</ansi> there is a
-  <ansi fg="itemname">tambourine</ansi> -- hanging, or propped against the
+  not arrive anywhere. At each <ansi fg="itemname">landing</ansi> there is a <ansi fg="itemname">tambourine</ansi> -- hanging, or propped against the
   wall, or sitting on a step. Four landings, four tambourines, all slightly
   different. The staircase is made of iron, the flights tight and steep, the
   railing cold. The song is a mirror of a Beatles song, turned sideways,
@@ -14,8 +13,7 @@ description: >-
   is on the third landing, left there by someone who did not want it pointed
   out that they were using it. Dylan never asked for your crutch. Now you
   must carry your own. The staircase continues upward past the fourth landing.
-  Where it goes is not your business this time around. The
-  <ansi fg="exit">studio</ansi> is back to the east.
+  Where it goes is not your business this time around. The <ansi fg="exit">studio</ansi> is back to the east.
 mapsymbol: C
 maplegend: 4th Time Around
 biome: house

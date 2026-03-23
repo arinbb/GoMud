@@ -2,9 +2,7 @@ roomid: 2130
 zone: Paris Texas
 title: The Vacant Lot
 description: >-
-  An empty <ansi fg="red">lot</ansi> in Paris, Texas. Not much to say about it.
-  <ansi fg="8">Scrub grass</ansi> coming up through cracked caliche. A rusted
-  <ansi fg="itemname">fence post</ansi> still wearing a single strand of barbed
+  An empty <ansi fg="red">lot</ansi> in Paris, Texas. Not much to say about it. <ansi fg="8">Scrub grass</ansi> coming up through cracked caliche. A rusted <ansi fg="itemname">fence post</ansi> still wearing a single strand of barbed
   wire. The adjacent <ansi fg="8">lot</ansi> has a trailer on it. This one does
   not. The sky above it is the same sky that is above everything in this part
   of Texas — enormous, dry-blue, completely indifferent. Travis Henderson bought
@@ -12,8 +10,7 @@ description: >-
   of it in a real estate circular. He bought it because his mother was from Paris
   and his father was from Texas and this empty lot was the only place where
   those two things had ever been true at the same time. That is what he was
-  looking for. That is what anyone is ever looking for. The desert lies to the
-  <ansi fg="exit">south</ansi>.
+  looking for. That is what anyone is ever looking for. The desert lies to the <ansi fg="exit">south</ansi>.
 mapsymbol: V
 maplegend: The Vacant Lot
 biome: desert

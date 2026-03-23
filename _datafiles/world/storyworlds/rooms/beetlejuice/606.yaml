@@ -4,12 +4,10 @@ title: Maitland House - Dining Room
 description: >-
   A formal dining room dominated by a long mahogany <ansi fg="itemname">table</ansi>
   set for dinner. The good china is out -- delicate plates with blue patterns,
-  crystal wine glasses, cloth napkins folded into elaborate shapes. A
-  <ansi fg="itemname">chandelier</ansi> hangs overhead, its candles flickering
+  crystal wine glasses, cloth napkins folded into elaborate shapes. A <ansi fg="itemname">chandelier</ansi> hangs overhead, its candles flickering
   with an unnatural steadiness. The wallpaper is half-stripped, showing Delia's
   renovation progress. This room has a strange energy, as if it's waiting for
-  something to happen. A serving cart near the wall holds a covered
-  <ansi fg="itemname">dish</ansi> and a bowl of <ansi fg="itemname">fruit</ansi>.
+  something to happen. A serving cart near the wall holds a covered <ansi fg="itemname">dish</ansi> and a bowl of <ansi fg="itemname">fruit</ansi>.
 mapsymbol: D
 maplegend: Dining Room
 biome: house

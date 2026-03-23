@@ -12,8 +12,7 @@ description: >-
   baptisms. This is where he takes your sin by force if you won't give it
   willingly. <ansi fg="itemname">John Seed</ansi> stands near the chair, suited,
   smiling, adjusting his cufflinks with the careful attention of a man who
-  believes presentation is a form of grace. The valley is back through the
-  <ansi fg="exit">valley</ansi> exit (west).
+  believes presentation is a form of grace. The valley is back through the <ansi fg="exit">valley</ansi> exit (west).
 mapsymbol: R
 maplegend: Seed Ranch
 biome: house

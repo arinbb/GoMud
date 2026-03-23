@@ -6,13 +6,10 @@ description: >-
   The <ansi fg="12">lanes</ansi> stretch away in parallel lines of polished wood,
   impossibly long, converging toward the <ansi fg="itemname">pins</ansi> at the far
   end like a lesson in perspective. The lighting shifts between deep <ansi fg="12">blue</ansi>
-  and warm <ansi fg="6">amber</ansi>, giving the space an underwater quality.
-  <ansi fg="itemname">Bowling shoes</ansi> sit in cubbies along one wall. A
-  <ansi fg="itemname">scoring console</ansi> glows softly. The <ansi fg="itemname">balls</ansi>
+  and warm <ansi fg="6">amber</ansi>, giving the space an underwater quality. <ansi fg="itemname">Bowling shoes</ansi> sit in cubbies along one wall. A <ansi fg="itemname">scoring console</ansi> glows softly. The <ansi fg="itemname">balls</ansi>
   sit in their return rack, heavy and patient. Something about this place feels
   more real than real — the colors too saturated, the geometry too perfect. The
-  diner is back to the <ansi fg="exit">west</ansi>. A dim alcove leads
-  <ansi fg="exit">south</ansi>.
+  diner is back to the <ansi fg="exit">west</ansi>. A dim alcove leads <ansi fg="exit">south</ansi>.
 mapsymbol: B
 maplegend: Bowling Alley
 biome: house

@@ -12,8 +12,7 @@ description: >-
   raptor</ansi> the size of a large chicken moves along the floor near the
   incubators, blinking and investigating everything with the intense attention
   of the newly born. It is <ansi fg="cyan">absurdly charming</ansi>. You keep
-  having to remind yourself what it will become. Dr. Wu keeps detailed
-  <ansi fg="itemname">hatch records</ansi> on a clipboard nearby. The DNA
+  having to remind yourself what it will become. Dr. Wu keeps detailed <ansi fg="itemname">hatch records</ansi> on a clipboard nearby. The DNA
   lab is back to the <ansi fg="exit">west</ansi>.
 mapsymbol: H
 maplegend: Hatchery

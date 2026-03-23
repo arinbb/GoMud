@@ -7,14 +7,11 @@ description: >-
   key. The telescreen shows the face of Big Brother between songs, and
   the face is comforting now in a way it never was before — before Room
   101, before everything that happened in that room, before the words
-  that came out of the room. Winston sits at his usual table with a
-  <ansi fg="itemname">glass of Victory Gin</ansi>, a chessboard in front
-  of him that he is not really playing on, and the
-  <ansi fg="itemname">telescreen</ansi> playing something that he finds
+  that came out of the room. Winston sits at his usual table with a <ansi fg="itemname">glass of Victory Gin</ansi>, a chessboard in front
+  of him that he is not really playing on, and the <ansi fg="itemname">telescreen</ansi> playing something that he finds
   he likes. Under the spreading chestnut tree. He is free. The Party
   has made him free in the only way available to the Party: free of
-  everything that was himself. The street is to the
-  <ansi fg="exit">north</ansi>.</ansi>
+  everything that was himself. The street is to the <ansi fg="exit">north</ansi>.</ansi>
 mapsymbol: Z
 maplegend: The Chestnut Tree Cafe
 biome: city

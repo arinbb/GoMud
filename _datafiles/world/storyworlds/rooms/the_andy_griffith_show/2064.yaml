@@ -6,15 +6,12 @@ description: >-
   of authority invested in it. Two <ansi fg="itemname">desks</ansi> face the front
   window: Andys, which is large and organized and holds a <ansi fg="itemname">telephone</ansi>
   and a framed photo of Opie; and Barneys, which is smaller and covered with
-  procedural notes, hand-drawn maps of potential criminal activity, and a
-  <ansi fg="itemname">notebook</ansi> full of contingency plans. A <ansi fg="itemname">gun
+  procedural notes, hand-drawn maps of potential criminal activity, and a <ansi fg="itemname">notebook</ansi> full of contingency plans. A <ansi fg="itemname">gun
   rack</ansi> on the wall holds two rifles and notably empty spaces below -- Barney
   keeps his single bullet in his shirt pocket, not in a gun, for reasons of safety.
   The <ansi fg="itemname">jail cells</ansi> are visible through the open doorway to
   the east -- two cells with iron-bar doors, both currently unlocked. The office
-  smells faintly of <ansi fg="8">gun oil and coffee</ansi>. To the
-  <ansi fg="exit">west</ansi> is Main Street. Through the doorway to the
-  <ansi fg="exit">cell</ansi> is the jail.
+  smells faintly of <ansi fg="8">gun oil and coffee</ansi>. To the <ansi fg="exit">west</ansi> is Main Street. Through the doorway to the <ansi fg="exit">cell</ansi> is the jail.
 mapsymbol: C
 maplegend: The Courthouse
 biome: house

@@ -2,14 +2,12 @@ roomid: 1944
 zone: Back to the Future
 title: Hill Valley High School
 description: >-
-  The main corridor of Hill Valley High School, 1955. Mustard-yellow
-  <ansi fg="itemname">lockers</ansi> line both walls, combination locks
+  The main corridor of Hill Valley High School, 1955. Mustard-yellow <ansi fg="itemname">lockers</ansi> line both walls, combination locks
   and paper decorations. A trophy case near the entrance celebrates
   the football team. Class photos going back to the 1920s hang in a
   long row above the lockers. The linoleum floor is waxed to a
   mirror shine. From the gymnasium to the <ansi fg="exit">north</ansi>,
-  muffled music drifts. Near the principal's office, a frowning
-  <ansi fg="mobname">Mr. Strickland</ansi> stands watch with the air
+  muffled music drifts. Near the principal's office, a frowning <ansi fg="mobname">Mr. Strickland</ansi> stands watch with the air
   of a man who has seen it all and not been impressed.
 mapsymbol: S
 maplegend: High School

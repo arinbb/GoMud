@@ -2,15 +2,11 @@ roomid: 1986
 zone: Forbidden Planet
 title: The Study
 description: >-
-  The inner sanctum of Dr. Morbius's intellectual life. A broad
-  <ansi fg="itemname">desk</ansi> is covered in translations, star charts,
-  and cross-referenced volumes in three scripts. A rotating
-  <ansi fg="itemname">star map</ansi> of the Altair system turns slowly on
+  The inner sanctum of Dr. Morbius's intellectual life. A broad <ansi fg="itemname">desk</ansi> is covered in translations, star charts,
+  and cross-referenced volumes in three scripts. A rotating <ansi fg="itemname">star map</ansi> of the Altair system turns slowly on
   a mechanical arm, its tiny suns and planets represented in precise scale.
-  On a separate lectern, open and carefully annotated, sits
-  <ansi fg="itemname">The Tempest</ansi> -- Shakespeare's final play,
-  bristling with Morbius's marginal notes. A sealed
-  <ansi fg="itemname">cabinet</ansi> of Krell metal holds what appear to be
+  On a separate lectern, open and carefully annotated, sits <ansi fg="itemname">The Tempest</ansi> -- Shakespeare's final play,
+  bristling with Morbius's marginal notes. A sealed <ansi fg="itemname">cabinet</ansi> of Krell metal holds what appear to be
   the most sensitive of his research documents. The room feels lived-in
   and urgent, as if the work never stops. To the <ansi fg="exit">south</ansi>,
   the main room. A <ansi fg="secret-exit">hidden passage</ansi> waits in the

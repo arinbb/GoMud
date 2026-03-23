@@ -3,16 +3,14 @@ zone: The Sopranos
 title: Satriales Pork Store
 description: >-
   The smell hits you first: pork fat, sawdust, and espresso in a dense combination
-  that is specific to this <ansi fg="red">pork store</ansi> and nowhere else on earth.
-  <ansi fg="itemname">Meat</ansi> hangs in the window — sausage links, a whole ham,
+  that is specific to this <ansi fg="red">pork store</ansi> and nowhere else on earth. <ansi fg="itemname">Meat</ansi> hangs in the window — sausage links, a whole ham,
   various cuts labeled in hand-lettered cards. A glass <ansi fg="itemname">counter</ansi>
   holds cold cuts and prepared foods. Behind it, a <ansi fg="itemname">deli slicer</ansi>
   gleams under fluorescent light. The <ansi fg="itemname">espresso machine</ansi> on the
   counter produces a constant small drama of steam and pressure. This is where the crew
   gathers, where business gets discussed under the cover of cold cuts and small talk,
   where alliances are maintained over coffee and someone's cousin's problem gets solved
-  at a table in the back. The highway is <ansi fg="exit">south</ansi>, and the
-  <ansi fg="exit">back</ansi> room is through a curtained doorway.
+  at a table in the back. The highway is <ansi fg="exit">south</ansi>, and the <ansi fg="exit">back</ansi> room is through a curtained doorway.
 mapsymbol: S
 maplegend: Satriales
 biome: house

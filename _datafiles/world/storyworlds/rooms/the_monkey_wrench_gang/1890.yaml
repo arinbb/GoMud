@@ -3,8 +3,7 @@ zone: The Monkey Wrench Gang
 title: Glen Canyon Dam Overlook
 description: >-
   You stand on a concrete observation platform above the <ansi fg="8">Glen Canyon Dam</ansi>,
-  a massive arc of pale concrete curving across the mouth of a gorge where the
-  <ansi fg="cyan">Colorado River</ansi> once ran free. The dam is seven hundred and ten
+  a massive arc of pale concrete curving across the mouth of a gorge where the <ansi fg="cyan">Colorado River</ansi> once ran free. The dam is seven hundred and ten
   feet high. Behind it, stretching north for miles, is <ansi fg="cyan">Lake Powell</ansi>
   — the reservoir created by flooding Glen Canyon, one of the most spectacular landscapes
   on Earth, now drowned under two hundred feet of water. Abbey saw Glen Canyon before
@@ -12,8 +11,7 @@ description: >-
   the immense concrete wall, the level blue water behind it, and if you know what to
   look for, the <ansi fg="red">red rock canyon walls</ansi> rising above the waterline
   where the canyon was not quite deep enough to drown. The <ansi fg="8">turbines</ansi>
-  hum. The <ansi fg="8">power lines</ansi> march away across the desert. To the
-  <ansi fg="exit">west</ansi>, the road leads back to the highway. Down at the <ansi fg="exit">dam</ansi>
+  hum. The <ansi fg="8">power lines</ansi> march away across the desert. To the <ansi fg="exit">west</ansi>, the road leads back to the highway. Down at the <ansi fg="exit">dam</ansi>
   base, the concrete is up close. To the <ansi fg="exit">shore</ansi>, a dock leads to
   the houseboat on the lake.
 mapsymbol: O

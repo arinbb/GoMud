@@ -7,11 +7,9 @@ description: >-
   Superior, impossibly long, impossibly black, its chrome gleaming in the
   California sun with a kind of cheerful pride. Harold has maintained it
   with devotion. The <ansi fg="itemname">hood ornament</ansi> is a small
-  silver angel in flight, which Harold added himself. The rear
-  <ansi fg="itemname">windows</ansi> are curtained in black velvet, and
+  silver angel in flight, which Harold added himself. The rear <ansi fg="itemname">windows</ansi> are curtained in black velvet, and
   through the <ansi fg="exit">east</ansi> door you can climb inside. The
-  mansion rises behind you to the <ansi fg="exit">north</ansi>. The
-  <ansi fg="itemname">gravel</ansi> of the driveway catches the afternoon
+  mansion rises behind you to the <ansi fg="exit">north</ansi>. The <ansi fg="itemname">gravel</ansi> of the driveway catches the afternoon
   light, each stone precise in its ordinariness.
 mapsymbol: D
 maplegend: The Driveway

@@ -11,9 +11,7 @@ description: >-
   seconds, a pulse of visible light travels upward through the shaft from
   below -- a heartbeat of the machine, regular as clockwork, older than
   civilization. The air here smells of ozone and something else, something
-  with no name, the smell of compressed time. Above you, the
-  <ansi fg="exit">lab</ansi>. Below, deeper than any human has gone, the
-  <ansi fg="exit">deep</ansi> Krell.
+  with no name, the smell of compressed time. Above you, the <ansi fg="exit">lab</ansi>. Below, deeper than any human has gone, the <ansi fg="exit">deep</ansi> Krell.
 mapsymbol: P
 maplegend: Power Shaft
 biome: cave

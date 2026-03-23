@@ -4,13 +4,11 @@ title: Dennis and Macs Apartment
 description: >-
   The apartment Dennis Reynolds and Mac share has a clear territorial division.
   Dennis's side is immaculate — mirrors precisely angled, hair products lined
-  up by height, clothing hung with obsessive symmetry. Mac's side has a
-  <ansi fg="itemname">karate poster</ansi> on the wall, a weight set that has
+  up by height, clothing hung with obsessive symmetry. Mac's side has a <ansi fg="itemname">karate poster</ansi> on the wall, a weight set that has
   been used recently enough that a layer of chalk dust sits on the bar, and
   several shirts discarded near the hamper rather than in it. A <ansi fg="itemname">television</ansi>
   occupies the shared space. The apartment is clean in a way that suggests
-  one resident's standards and the other's tolerance. A locked door leads to
-  <ansi fg="exit">north</ansi> — Dennis's room, technically, though the lock
+  one resident's standards and the other's tolerance. A locked door leads to <ansi fg="exit">north</ansi> — Dennis's room, technically, though the lock
   is new and Mac does not have a key. To the <ansi fg="exit">east</ansi>
   is the street.
 mapsymbol: DM

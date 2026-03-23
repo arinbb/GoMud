@@ -7,8 +7,7 @@ description: >-
   looms behind you, its concrete walls stained with decades of winter grime. A few
   dead <ansi fg="itemname">weeds</ansi> push through cracks in the asphalt. There are
   no cars. No one is here to pick you up. The <ansi fg="12">wind</ansi> comes off
-  Lake Erie in sharp, flat gusts that smell of cold water and rust. To the
-  <ansi fg="exit">east</ansi>, a road leads toward the grey outline of downtown Buffalo.
+  Lake Erie in sharp, flat gusts that smell of cold water and rust. To the <ansi fg="exit">east</ansi>, a road leads toward the grey outline of downtown Buffalo.
 mapsymbol: P
 maplegend: Prison Lot
 biome: city

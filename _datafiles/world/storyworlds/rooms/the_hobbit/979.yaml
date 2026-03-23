@@ -2,8 +2,7 @@ roomid: 979
 zone: The Hobbit
 title: Edge of Mirkwood
 description: >-
-  The western edge of the great forest of Mirkwood. An ancient
-  <ansi fg="itemname">path</ansi> leads eastward into <ansi fg="itemname">darkness</ansi>
+  The western edge of the great forest of Mirkwood. An ancient <ansi fg="itemname">path</ansi> leads eastward into <ansi fg="itemname">darkness</ansi>
   between enormous <ansi fg="itemname">trees</ansi> whose canopy blocks all
   sunlight. A weathered wooden <ansi fg="itemname">sign</ansi> stands at the
   forest's edge, its message clear. The air changes at the tree line -- outside,

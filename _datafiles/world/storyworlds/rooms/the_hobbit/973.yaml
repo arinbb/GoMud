@@ -4,15 +4,11 @@ title: Rivendell
 description: >-
   The Last Homely House east of the Sea. You stand in the valley of Imladris,
   where <ansi fg="itemname">waterfalls</ansi> cascade down mossy cliffs into
-  pools of crystal-clear water. Elegant elven buildings rise among ancient
-  <ansi fg="itemname">trees</ansi>, their tall windows glowing with warm golden
-  light. The air smells of pine needles and honeysuckle. Elven
-  <ansi fg="itemname">singing</ansi> drifts on the evening breeze -- old songs
-  about stars and starlight and the making of the world. The great
-  <ansi fg="itemname">house</ansi> of Elrond stands at the valley's heart, its
+  pools of crystal-clear water. Elegant elven buildings rise among ancient <ansi fg="itemname">trees</ansi>, their tall windows glowing with warm golden
+  light. The air smells of pine needles and honeysuckle. Elven <ansi fg="itemname">singing</ansi> drifts on the evening breeze -- old songs
+  about stars and starlight and the making of the world. The great <ansi fg="itemname">house</ansi> of Elrond stands at the valley's heart, its
   doors open in welcome. Here you may rest. Here you may find counsel and
-  wisdom. The road continues <ansi fg="exit">west</ansi> toward the Shire and
-  <ansi fg="exit">east</ansi> into the high passes of the Misty Mountains.
+  wisdom. The road continues <ansi fg="exit">west</ansi> toward the Shire and <ansi fg="exit">east</ansi> into the high passes of the Misty Mountains.
   Rivendell feels like the last safe place in all the world.
 mapsymbol: R
 maplegend: Rivendell

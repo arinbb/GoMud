@@ -8,8 +8,7 @@ description: >-
   grin visible even when the rest of it is not. The cat fades in and out of
   view: first the stripes disappear, then the body, then the tail, until
   nothing remains but the grin, hovering in midair like a luminous crescent.
-  Paths lead in several directions from the clearing, each marked with a
-  <ansi fg="itemname">signpost</ansi> whose arrows point in contradictory
+  Paths lead in several directions from the clearing, each marked with a <ansi fg="itemname">signpost</ansi> whose arrows point in contradictory
   directions.
 mapsymbol: C
 maplegend: Cat's Tree

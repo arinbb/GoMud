@@ -2,8 +2,7 @@ roomid: 2066
 zone: The Andy Griffith Show
 title: Floyds Barber Shop
 description: >-
-  The social center of Mayberry disguised as a place of commerce. Two
-  <ansi fg="itemname">barber chairs</ansi> face a long mirror framed with
+  The social center of Mayberry disguised as a place of commerce. Two <ansi fg="itemname">barber chairs</ansi> face a long mirror framed with
   photos of hairstyles that were current once, on a timeline that Floyd does
   not closely track. A <ansi fg="itemname">candy-stripe pole</ansi> turns
   slowly outside the window. The <ansi fg="itemname">waiting bench</ansi>
@@ -13,8 +12,7 @@ description: >-
   deliberate slowness of a man who is paid by the haircut and is in no hurry
   to finish. <ansi fg="yellow">Mirrors</ansi> on both walls reflect the shop
   back and forth into a progression of barbershops extending to some comfortable
-  infinity. To the <ansi fg="exit">north</ansi> is Main Street. To the
-  <ansi fg="exit">east</ansi> is the drugstore.
+  infinity. To the <ansi fg="exit">north</ansi> is Main Street. To the <ansi fg="exit">east</ansi> is the drugstore.
 mapsymbol: B
 maplegend: Floyds Barber Shop
 biome: house

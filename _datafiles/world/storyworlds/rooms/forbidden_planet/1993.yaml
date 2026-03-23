@@ -3,16 +3,12 @@ zone: Forbidden Planet
 title: The Tempest
 description: >-
   A room that should not exist -- and perhaps does not, in any literal sense.
-  You are standing in the
-  <ansi fg="cyan">island</ansi> that Shakespeare described in The Tempest,
+  You are standing in the <ansi fg="cyan">island</ansi> that Shakespeare described in The Tempest,
   and also in the laboratory of the Krell, and also somewhere in the
-  sub-basement of a man's unconscious mind. The
-  <ansi fg="itemname">air</ansi> here smells of sea and ozone and old books
+  sub-basement of a man's unconscious mind. The <ansi fg="itemname">air</ansi> here smells of sea and ozone and old books
   all at once. The <ansi fg="itemname">light</ansi> comes from nowhere and
-  everywhere, the light of a metaphor. On a rock that is also a
-  <ansi fg="itemname">lectern</ansi> sits an open book in which you can read
-  your own thoughts, had you the courage to look. A
-  <ansi fg="cyan">voice</ansi> speaks from the air -- not Prospero's, not
+  everywhere, the light of a metaphor. On a rock that is also a <ansi fg="itemname">lectern</ansi> sits an open book in which you can read
+  your own thoughts, had you the courage to look. A <ansi fg="cyan">voice</ansi> speaks from the air -- not Prospero's, not
   Morbius's, though the distinction may be academic.
 mapsymbol: T
 maplegend: The Tempest

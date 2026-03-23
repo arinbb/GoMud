@@ -5,15 +5,13 @@ description: >-
   A <ansi fg="8">dressing room</ansi>, intimate and dim. <ansi fg="itemname">Pearls</ansi>
   on the floor, scattered from a broken strand. <ansi fg="itemname">Ribbons</ansi>
   in a tangle on the vanity, broken or cut or simply done. The mirror holds a
-  reflection that seems to have more presence than you, more history. Rain
-  <ansi fg="itemname">on the window</ansi>, steady and gray, making everything
+  reflection that seems to have more presence than you, more history. Rain <ansi fg="itemname">on the window</ansi>, steady and gray, making everything
   softer and smaller. She takes just like a woman, she makes love just like a
   woman, and she aches just like a woman, and she breaks -- and that is the
   whole architecture of the room, that sentence, the way it turns. The dressing
   table holds a <ansi fg="itemname">fog</ansi>, perfume and powder, the kind
   of feminine camouflage that Dylan understood to be both armor and wound. She
-  is not here. The room holds her shape. Fog. Ribbons. Pearls. Rain. The
-  <ansi fg="exit">studio</ansi> is back to the southeast.
+  is not here. The room holds her shape. Fog. Ribbons. Pearls. Rain. The <ansi fg="exit">studio</ansi> is back to the southeast.
 mapsymbol: 8
 maplegend: Just Like a Woman
 biome: house

@@ -6,12 +6,10 @@ description: >-
   worst bar. The <ansi fg="8">sticky floors</ansi> have absorbed enough spilled
   beer to float a small vessel. A <ansi fg="itemname">broken jukebox</ansi> in
   the corner occasionally lurches into a few bars of something and then gives
-  up. The bar itself is sticky, the barstools are wobbly, and there are
-  <ansi fg="8">zero customers</ansi> — there are never any customers, and yet
+  up. The bar itself is sticky, the barstools are wobbly, and there are <ansi fg="8">zero customers</ansi> — there are never any customers, and yet
   the bar somehow survives, probably as a tax shelter. Behind the bar, bottles
   of questionable liquor line shelves that look structurally unsound.
-  To the <ansi fg="exit">east</ansi> is the bar floor proper. To the
-  <ansi fg="exit">south</ansi>, a back door leads to the alley.
+  To the <ansi fg="exit">east</ansi> is the bar floor proper. To the <ansi fg="exit">south</ansi>, a back door leads to the alley.
   To the <ansi fg="exit">north</ansi>, the front door opens onto the street.
   A door marked <ansi fg="exit">office</ansi> leads to the back room where
   the real damage gets done.

@@ -5,14 +5,11 @@ description: >-
   <ansi fg="red">Red light</ansi> and bass. The Bada Bing is all deep shadow and
   neon, the air thick with cigarette smoke and something floral and synthetic.
   A <ansi fg="red">stage</ansi> runs along one wall where <ansi fg="itemname">dancers</ansi>
-  move in the lazy, professional way of people doing a job in an unusual setting.
-  <ansi fg="itemname">Chrome poles</ansi> catch the colored lights in brief flashes.
+  move in the lazy, professional way of people doing a job in an unusual setting. <ansi fg="itemname">Chrome poles</ansi> catch the colored lights in brief flashes.
   A long <ansi fg="itemname">bar</ansi> runs the far wall, bottles backlit in amber
   and blue. <ansi fg="itemname">Booths</ansi> in the dark perimeter hold various men
-  having various conversations that are not about the entertainment. The
-  <ansi fg="itemname">music</ansi> is loud enough to prevent anyone from overhearing
-  anything specifically. This is its primary function. The highway is
-  <ansi fg="exit">west</ansi> and Tony's <ansi fg="exit">back</ansi> office is to
+  having various conversations that are not about the entertainment. The <ansi fg="itemname">music</ansi> is loud enough to prevent anyone from overhearing
+  anything specifically. This is its primary function. The highway is <ansi fg="exit">west</ansi> and Tony's <ansi fg="exit">back</ansi> office is to
   the east.
 mapsymbol: B
 maplegend: Bada Bing

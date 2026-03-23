@@ -5,15 +5,12 @@ description: >-
   A small antique shop in the prole quarter, its window crowded with old
   objects: pewter candlesticks, penknives with pearl handles, a broken
   compass, a steel engraving from a long-demolished church. The shop smells
-  of dust and old wood and something sweeter underneath. Mr.
-  <ansi fg="itemname">Charrington</ansi> potters behind the counter,
+  of dust and old wood and something sweeter underneath. Mr. <ansi fg="itemname">Charrington</ansi> potters behind the counter,
   arranging and rearranging items with the gentle attention of an old
   man who has nowhere better to be. He wears round spectacles and a
-  crushed velvet jacket. On a shelf near the back sits a
-  <ansi fg="itemname">glass paperweight</ansi> — a dome of clear glass
+  crushed velvet jacket. On a shelf near the back sits a <ansi fg="itemname">glass paperweight</ansi> — a dome of clear glass
   with a piece of pink coral at its center, soft and luminous. It is
-  quite useless and quite beautiful. There is a
-  <ansi fg="exit">stairs</ansi> at the back of the shop leading up.
+  quite useless and quite beautiful. There is a <ansi fg="exit">stairs</ansi> at the back of the shop leading up.
   The prole street is to the <ansi fg="exit">south</ansi>.
 mapsymbol: K
 maplegend: "Charrington's Shop"

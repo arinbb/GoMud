@@ -2,15 +2,12 @@ roomid: 508
 zone: Starry Night
 title: The Starry Sky
 description: >-
-  You stand among the stars. The ground beneath your feet is a thick swirl of
-  <ansi fg="itemname">dark blue paint</ansi>, and above — all around — the great
-  <ansi fg="itemname">spirals</ansi> of the night sky turn slowly, majestically.
+  You stand among the stars. The ground beneath your feet is a thick swirl of <ansi fg="itemname">dark blue paint</ansi>, and above — all around — the great <ansi fg="itemname">spirals</ansi> of the night sky turn slowly, majestically.
   Each <ansi fg="itemname">star</ansi> is a blazing orb wrapped in concentric halos
   of light — white at the center, then yellow, then gold, fading to blue at the
   edges. You can almost reach out and touch them. The crescent <ansi fg="itemname">moon</ansi>
   hangs nearby, a massive curved blade of brilliant yellow. Far below, the dark
-  shape of the cypress tree and the sleeping village are barely visible. The way
-  <ansi fg="exit">down</ansi> leads back to Cypress Hill.
+  shape of the cypress tree and the sleeping village are barely visible. The way <ansi fg="exit">down</ansi> leads back to Cypress Hill.
 mapsymbol: '*'
 maplegend: Starry Sky
 biome: cliffs

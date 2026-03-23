@@ -4,15 +4,13 @@ title: The Fisher Kitchen
 description: >-
   The emotional center of the house. A <ansi fg="yellow">kitchen</ansi> that
   has seen every version of this family -- every argument, every breakfast,
-  every late night, every silence that needed filling with cooking. The
-  <ansi fg="itemname">stove</ansi> has something on it, always. Ruth cooks the
+  every late night, every silence that needed filling with cooking. The <ansi fg="itemname">stove</ansi> has something on it, always. Ruth cooks the
   way other people breathe. A long <ansi fg="itemname">table</ansi> with six
   chairs takes up most of the room, worn smooth from years of elbows and meals
   and difficult conversations. A <ansi fg="itemname">window</ansi> above the
   sink looks out on the back yard. Photographs cover the <ansi fg="itemname">refrigerator</ansi>
   -- family accumulation, held by magnets from places visited and forgotten.
-  The <ansi fg="exit">entrance</ansi> is to the south. The
-  <ansi fg="exit">living room</ansi> is to the east.
+  The <ansi fg="exit">entrance</ansi> is to the south. The <ansi fg="exit">living room</ansi> is to the east.
 mapsymbol: K
 maplegend: The Fisher Kitchen
 biome: house

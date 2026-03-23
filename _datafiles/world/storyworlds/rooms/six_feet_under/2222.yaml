@@ -3,8 +3,7 @@ zone: six_feet_under
 title: The Slumber Room
 description: >-
   The room where the dead receive their visitors. A <ansi fg="itemname">casket</ansi>
-  rests on a bier at the far end, its lid open, filled with white silk and silence.
-  <ansi fg="10">Flower arrangements</ansi> line the walls and fill the air with
+  rests on a bier at the far end, its lid open, filled with white silk and silence. <ansi fg="10">Flower arrangements</ansi> line the walls and fill the air with
   a sweetness that is carefully calibrated -- present but not overwhelming, beautiful
   but not festive. <ansi fg="itemname">Folding chairs</ansi> are arranged in
   semicircles facing the casket, most of them empty now. A <ansi fg="itemname">sign</ansi>

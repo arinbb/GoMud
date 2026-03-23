@@ -2,14 +2,12 @@ roomid: 1532
 zone: Waynes World
 title: Garth's Workshop
 description: >-
-  Adjacent to the basement, Garth's workshop is a different kind of genius.
-  <ansi fg="itemname">Electronics</ansi> cover every surface — circuit boards,
+  Adjacent to the basement, Garth's workshop is a different kind of genius. <ansi fg="itemname">Electronics</ansi> cover every surface — circuit boards,
   oscilloscopes, a <ansi fg="itemname">soldering iron</ansi> that is always
   slightly too hot. <ansi fg="itemname">Schematics</ansi> are pinned to a
   corkboard beside a poster of <ansi fg="itemname">Foxy Lady</ansi>. Cassette
   tapes in labeled cases occupy an entire shelf: "DO NOT TOUCH - GARTH,"
-  "EXPERIMENTS - GARTH," "DRUM SOLOS - GARTH." A half-built
-  <ansi fg="itemname">invention</ansi> sits on the work table, its purpose
+  "EXPERIMENTS - GARTH," "DRUM SOLOS - GARTH." A half-built <ansi fg="itemname">invention</ansi> sits on the work table, its purpose
   unclear and probably excellent. <ansi fg="exit">North</ansi> leads back
   to Wayne's basement.
 mapsymbol: g

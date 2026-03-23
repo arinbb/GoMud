@@ -10,8 +10,7 @@ description: >-
   every direction: Miss Honey's classroom to the <ansi fg="exit">north</ansi>,
   the dreaded Chokey to the <ansi fg="exit">east</ansi>, and the Trunchbull's
   office to the <ansi fg="exit">south</ansi>. The <ansi fg="exit">assembly</ansi>
-  hall is through double doors to the west. The main gates are back to the
-  <ansi fg="exit">west</ansi>.
+  hall is through double doors to the west. The main gates are back to the <ansi fg="exit">west</ansi>.
 mapsymbol: C
 maplegend: Corridor
 biome: fort

@@ -11,8 +11,7 @@ description: >-
   cream</ansi> melts in a bowl at the table's head, forming a small white lake.
   Everything about the room speaks to Hammond's conviction that a resort-quality
   experience was possible — the flowers in the vase, the wine rack along one
-  wall, the printed menus still in their leather holders. The menus include
-  <ansi fg="itemname">dinosaur-shaped chicken nuggets</ansi> as a children's
+  wall, the printed menus still in their leather holders. The menus include <ansi fg="itemname">dinosaur-shaped chicken nuggets</ansi> as a children's
   option. <ansi fg="exit">West</ansi> returns to the main hall.
 mapsymbol: D
 maplegend: Dining Room

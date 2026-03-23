@@ -2,19 +2,14 @@ roomid: 1984
 zone: Forbidden Planet
 title: Altairas Garden
 description: >-
-  A garden of impossible beauty enclosed by low white walls. Earth
-  <ansi fg="10">roses</ansi> and <ansi fg="10">lilies</ansi> grow alongside
+  A garden of impossible beauty enclosed by low white walls. Earth <ansi fg="10">roses</ansi> and <ansi fg="10">lilies</ansi> grow alongside
   alien <ansi fg="cyan">crystalline blooms</ansi> that open slowly as you
-  watch, their petals translucent and faintly luminous. A stone
-  <ansi fg="itemname">fountain</ansi> at the center runs with water that
-  Robby synthesized from atmospheric vapor. Near the fountain, a spotted
-  <ansi fg="itemname">deer</ansi> grazes without fear, having known nothing
+  watch, their petals translucent and faintly luminous. A stone <ansi fg="itemname">fountain</ansi> at the center runs with water that
+  Robby synthesized from atmospheric vapor. Near the fountain, a spotted <ansi fg="itemname">deer</ansi> grazes without fear, having known nothing
   in its short life that would teach it to be afraid. Beside it, improbably,
   a <ansi fg="itemname">tiger</ansi> lounges in the shade of an alien tree,
-  watching you with amber eyes. It has never harmed anyone. It never has.
-  <ansi fg="itemname">Altaira</ansi> moves among the flowers with the unhurried
-  grace of someone who has never needed to hurry. To the
-  <ansi fg="exit">south</ansi>, the house exterior.
+  watching you with amber eyes. It has never harmed anyone. It never has. <ansi fg="itemname">Altaira</ansi> moves among the flowers with the unhurried
+  grace of someone who has never needed to hurry. To the <ansi fg="exit">south</ansi>, the house exterior.
 mapsymbol: G
 maplegend: Altairas Garden
 biome: land

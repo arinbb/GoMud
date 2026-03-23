@@ -7,14 +7,12 @@ description: >-
   Nedry was here. He was in a very great hurry and the island was not cooperative.
   His <ansi fg="itemname">Barbasol can</ansi> — the fake shaving cream can
   modified to carry stolen dinosaur embryos in a central refrigerated cylinder
-  — sits on the passenger seat. It's open. It's empty. The embryos are gone.
-  <ansi fg="red">On the ground</ansi> near the door, a neat pile of wet clothing
+  — sits on the passenger seat. It's open. It's empty. The embryos are gone. <ansi fg="red">On the ground</ansi> near the door, a neat pile of wet clothing
   and the remains of a meal. Dilophosaurus. They eat quickly. They're thorough.
   The <ansi fg="itemname">docking equipment</ansi> Nedry was carrying — cargo
   manifests, the ship's berth number, his payment arrangements — is scattered
   in the mud, still legible. A <ansi fg="itemname">rope</ansi> is tied to the
-  Jeep's winch. It still stretches into the trees. It goes nowhere good. The
-  <ansi fg="exit">south</ansi> path leads back to the Dilophosaurus paddock.
+  Jeep's winch. It still stretches into the trees. It goes nowhere good. The <ansi fg="exit">south</ansi> path leads back to the Dilophosaurus paddock.
 mapsymbol: J
 maplegend: Nedry's Jeep
 biome: land

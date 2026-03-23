@@ -4,16 +4,12 @@ title: Andys Living Room
 description: >-
   A living room that smells of <ansi fg="yellow">lemon polish</ansi> and something
   baking. The furniture is simple and honest -- a <ansi fg="itemname">sofa</ansi>
-  covered in a floral pattern that Aunt Bee chose and nobody questions, a
-  <ansi fg="itemname">braided rug</ansi> in the center of the floor, a
-  <ansi fg="itemname">side table</ansi> with a reading lamp that casts a warm circle
-  of <ansi fg="yellow">amber light</ansi>. On the table sits a fresh-baked
-  <ansi fg="itemname">pie</ansi>, cooling on a wire rack, filling the room with
+  covered in a floral pattern that Aunt Bee chose and nobody questions, a <ansi fg="itemname">braided rug</ansi> in the center of the floor, a <ansi fg="itemname">side table</ansi> with a reading lamp that casts a warm circle
+  of <ansi fg="yellow">amber light</ansi>. On the table sits a fresh-baked <ansi fg="itemname">pie</ansi>, cooling on a wire rack, filling the room with
   the smell of apples and cinnamon. This is Aunt Bees domain. Everything here
   has been dusted, straightened, and arranged with the quiet authority of a woman
   who runs a household the way a craftsman runs a workshop -- with pride and
-  without fuss. The <ansi fg="exit">porch</ansi> is to the west. The
-  <ansi fg="exit">kitchen</ansi> is to the north.
+  without fuss. The <ansi fg="exit">porch</ansi> is to the west. The <ansi fg="exit">kitchen</ansi> is to the north.
 mapsymbol: L
 maplegend: Andys Living Room
 biome: house

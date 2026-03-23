@@ -4,13 +4,10 @@ title: The Brown House
 description: >-
   A small, suffocating <ansi fg="itemname">ranch house</ansi> on a dead-end street.
   The <ansi fg="itemname">carpet</ansi> is brown shag, worn flat in the traffic
-  paths. Wood-paneled <ansi fg="itemname">walls</ansi> close in from every side. A
-  <ansi fg="itemname">recliner</ansi> faces a television that is always on. Family
-  <ansi fg="itemname">photos</ansi> line the hallway — but not a single one includes
+  paths. Wood-paneled <ansi fg="itemname">walls</ansi> close in from every side. A <ansi fg="itemname">recliner</ansi> faces a television that is always on. Family <ansi fg="itemname">photos</ansi> line the hallway — but not a single one includes
   Billy. <ansi fg="6">Buffalo Bills</ansi> memorabilia covers every surface: pennants,
   bobbleheads, signed footballs, commemorative plates. The house smells of
-  cigarettes, meatloaf, and something harder to name. The kitchen is to the
-  <ansi fg="exit">east</ansi>, the street back to the <ansi fg="exit">north</ansi>,
+  cigarettes, meatloaf, and something harder to name. The kitchen is to the <ansi fg="exit">east</ansi>, the street back to the <ansi fg="exit">north</ansi>,
   and a road leads <ansi fg="exit">south</ansi> toward the diner.
 mapsymbol: H
 maplegend: Brown House

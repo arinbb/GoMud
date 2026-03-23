@@ -9,12 +9,10 @@ description: >-
   one extinct -- each barely taller than your knee. The ground is pale and
   smooth, like chalky stone. Several <ansi fg="itemname">baobab seedlings</ansi>
   have been carefully pulled, their roots trailing. A glass <ansi fg="itemname">dome</ansi>
-  sits in the most prominent spot on the planet, covering the most extraordinary
-  <ansi fg="itemname">rose</ansi> you have ever seen: four thorns, four petals,
+  sits in the most prominent spot on the planet, covering the most extraordinary <ansi fg="itemname">rose</ansi> you have ever seen: four thorns, four petals,
   the colour of a very specific kind of love. The sky around you holds every
   direction at once. The desert is visible far below, like a painting on the floor
-  of the world. A narrow path leads toward a neighbouring asteroid to the
-  <ansi fg="exit">west</ansi> where a king holds court.
+  of the world. A narrow path leads toward a neighbouring asteroid to the <ansi fg="exit">west</ansi> where a king holds court.
 mapsymbol: B
 maplegend: Asteroid B-612
 biome: land

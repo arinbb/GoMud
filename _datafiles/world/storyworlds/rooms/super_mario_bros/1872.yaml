@@ -7,12 +7,10 @@ description: >-
   that say clearly: this is the end. World 8-1 is the longest overworld
   level in the game, everything thrown together -- pipes, platforms, Goombas,
   Koopas, Piranha Plants, Bullet Bills, all overlapping, the game
-  synthesizing everything it has taught you into a single relentless
-  <ansi fg="itemname">gauntlet</ansi>. The <ansi fg="itemname">horizon</ansi>
+  synthesizing everything it has taught you into a single relentless <ansi fg="itemname">gauntlet</ansi>. The <ansi fg="itemname">horizon</ansi>
   to the east seems further away than it should be. The castle spires
   are visible in the distance, spiked and black against the darkening sky.
-  West leads <ansi fg="exit">back</ansi>; east continues to the
-  <ansi fg="exit">final castle</ansi>.
+  West leads <ansi fg="exit">back</ansi>; east continues to the <ansi fg="exit">final castle</ansi>.
 mapsymbol: 8
 maplegend: World 8-1
 biome: land

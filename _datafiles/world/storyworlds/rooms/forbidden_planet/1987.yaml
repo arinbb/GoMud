@@ -6,12 +6,10 @@ description: >-
   Robot</ansi> has his domain here -- benches covered in components and
   synthesis apparatus, a matter-conversion unit the size of a wardrobe, and
   ranks of element storage in crystalline containers. The air smells of hot
-  metal and something sweet-chemical that turns out to be
-  <ansi fg="itemname">bourbon</ansi> -- Robby synthesizes it from carbon
+  metal and something sweet-chemical that turns out to be <ansi fg="itemname">bourbon</ansi> -- Robby synthesizes it from carbon
   compounds and has gotten rather good at it. A <ansi fg="itemname">still</ansi>
   of remarkable complexity occupies one workbench, producing about a case a
-  week. On another bench, components of a half-built
-  <ansi fg="itemname">device</ansi> are laid out in precise order. The tools
+  week. On another bench, components of a half-built <ansi fg="itemname">device</ansi> are laid out in precise order. The tools
   on the walls are hung with geometric precision. Everything in this room
   has a place. To the <ansi fg="exit">house</ansi>, the main interior.
 mapsymbol: W

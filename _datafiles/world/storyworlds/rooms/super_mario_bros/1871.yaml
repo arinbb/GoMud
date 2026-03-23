@@ -10,8 +10,7 @@ description: >-
   cannons above and below, and the Bullet Bills cross the available space
   in a constant overlapping lattice of danger. The platforms here are
   narrow -- just enough to land on, no wider. The gaps require jumping and
-  the cannons fire while you are in the air. West leads
-  <ansi fg="exit">back</ansi>; east continues toward <ansi fg="exit">World 8</ansi>.
+  the cannons fire while you are in the air. West leads <ansi fg="exit">back</ansi>; east continues toward <ansi fg="exit">World 8</ansi>.
 mapsymbol: X
 maplegend: Bullet Bill Level
 biome: land

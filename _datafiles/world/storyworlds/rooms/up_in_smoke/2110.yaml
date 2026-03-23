@@ -3,11 +3,8 @@ zone: Up in Smoke
 title: 'Stedenkos Unmarked Car'
 description: >-
   A beige 1976 Plymouth Fury with government plates, parked on the shoulder
-  of the 405 with a clear line of sight to the flow of traffic. The
-  <ansi fg="itemname">binoculars</ansi> are on the dash. The <ansi fg="itemname">
-  radio</ansi> squawks intermittently with chatter from dispatch. A
-  <ansi fg="itemname">thermos</ansi> of cold coffee sits in the cupholder. The
-  <ansi fg="itemname">notepad</ansi> is open to a page of license plates, most
+  of the 405 with a clear line of sight to the flow of traffic. The <ansi fg="itemname">binoculars</ansi> are on the dash. The <ansi fg="itemname">
+  radio</ansi> squawks intermittently with chatter from dispatch. A <ansi fg="itemname">thermos</ansi> of cold coffee sits in the cupholder. The <ansi fg="itemname">notepad</ansi> is open to a page of license plates, most
   of them crossed out. The air in the car is tight with the specific frustration
   of a man who is always this close. Exit <ansi fg="exit">highway</ansi> leads
   back to the 405 southbound.

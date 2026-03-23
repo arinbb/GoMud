@@ -3,10 +3,8 @@ zone: Stardew Valley
 title: Pelican Town Square
 description: >-
   The heart of Pelican Town. A <ansi fg="itemname">bulletin board</ansi> stands
-  at the center, pinned with requests and announcements. Seasonal
-  <ansi fg="itemname">decorations</ansi> — flowers in spring, bunting in summer,
-  carved pumpkins in fall, pine boughs in winter — hang from lampposts. The
-  <ansi fg="itemname">fountain</ansi> at the square's center trickles quietly.
+  at the center, pinned with requests and announcements. Seasonal <ansi fg="itemname">decorations</ansi> — flowers in spring, bunting in summer,
+  carved pumpkins in fall, pine boughs in winter — hang from lampposts. The <ansi fg="itemname">fountain</ansi> at the square's center trickles quietly.
   Paths branch in every direction. To the <ansi fg="exit">north</ansi> is
   Pierres store. To the <ansi fg="exit">east</ansi> the Stardrop Saloon glows
   with warmth. To the <ansi fg="exit">south</ansi> the beach path descends.

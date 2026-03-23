@@ -12,8 +12,7 @@ description: >-
   is parked at the corner, handing out sandwiches and clean needles, which two
   weeks ago would have been impossible and is now Tuesday. It should not work.
   It works, in the way that things that should not work sometimes work, until
-  someone with more authority finds out. West Baltimore Street is to the
-  <ansi fg="exit">east</ansi>.
+  someone with more authority finds out. West Baltimore Street is to the <ansi fg="exit">east</ansi>.
 mapsymbol: H
 maplegend: Hamsterdam
 biome: city

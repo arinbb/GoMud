@@ -6,11 +6,9 @@ description: >-
   of every conceivable type -- ten-speeds, BMX racers, unicycles, tandems, penny
   farthings, and one bike with an impossibly tall seat. Wheels hang from the
   ceiling like a chrome mobile. A glass <ansi fg="itemname">counter</ansi> near the
-  register displays cycling accessories, and a workbench in back is littered with
-  <ansi fg="itemname">tools</ansi>, inner tubes, and grease rags. The air smells
+  register displays cycling accessories, and a workbench in back is littered with <ansi fg="itemname">tools</ansi>, inner tubes, and grease rags. The air smells
   of rubber and chain oil. Exits lead <ansi fg="exit">west</ansi> to Pee-wee's
-  neighborhood, <ansi fg="exit">east</ansi> toward the rich part of town, and
-  <ansi fg="exit">south</ansi> to a narrow alley. Through the front windows
+  neighborhood, <ansi fg="exit">east</ansi> toward the rich part of town, and <ansi fg="exit">south</ansi> to a narrow alley. Through the front windows
   you can see an <ansi fg="exit">outdoor mall</ansi> with bike racks and storefronts.
 mapsymbol: B
 maplegend: Bike-O-Rama

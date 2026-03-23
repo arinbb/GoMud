@@ -11,8 +11,7 @@ description: >-
   American darkness that Dean Moriarty drives into every night with his foot
   on the floor. The <ansi fg="itemname">river</ansi> below moves south to sea.
   The bridge cables hum in the wind. This is the moment. Everything that comes
-  next begins here. To the <ansi fg="exit">north</ansi> is the city. To the
-  <ansi fg="exit">west</ansi> is the road.
+  next begins here. To the <ansi fg="exit">north</ansi> is the city. To the <ansi fg="exit">west</ansi> is the road.
 mapsymbol: G
 maplegend: GW Bridge
 biome: road

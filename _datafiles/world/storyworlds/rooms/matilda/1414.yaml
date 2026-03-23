@@ -7,11 +7,9 @@ description: >-
   as both table and chair, a thin <ansi fg="itemname">mattress</ansi> on the floor,
   and an upturned <ansi fg="itemname">box</ansi> holding a candle stub, a mug, and
   a jam jar. There is no electricity, no running water, no proper furniture. And yet
-  the room is immaculate, the floor swept clean, and a small bunch of
-  <ansi fg="itemname">wildflowers</ansi> sits in the jam jar on the box, catching
+  the room is immaculate, the floor swept clean, and a small bunch of <ansi fg="itemname">wildflowers</ansi> sits in the jam jar on the box, catching
   the light from the single <ansi fg="itemname">window</ansi>. Everything in this
-  room speaks of dignity maintained against impossible odds. The lane leads back
-  <ansi fg="exit">north</ansi>. A path leads <ansi fg="exit">east</ansi> through
+  room speaks of dignity maintained against impossible odds. The lane leads back <ansi fg="exit">north</ansi>. A path leads <ansi fg="exit">east</ansi> through
   the trees.
 mapsymbol: c
 maplegend: Miss Honey's Cottage

@@ -6,8 +6,7 @@ description: >-
   white and blazingly bright, lit by fluorescent tubes that never dim.
   The light is the same at midnight as at noon. There is no way to tell
   what hour it is, what day it is, how long you have been here. The
-  walls are white. The floor is white. The
-  <ansi fg="white">guards</ansi> wear black uniforms and carry rubber
+  walls are white. The floor is white. The <ansi fg="white">guards</ansi> wear black uniforms and carry rubber
   truncheons and have faces that express nothing. The air smells of
   disinfectant and something underneath the disinfectant that is better
   not to identify. This is the place where there is no darkness, the

@@ -2,10 +2,8 @@ roomid: 1948
 zone: Back to the Future
 title: Doc Browns Garage
 description: >-
-  Doc Browns garage-laboratory, a controlled explosion of science.
-  <ansi fg="itemname">Blackboards</ansi> cover every wall, dense with
-  equations, diagrams, and a hand-sketched timeline. The
-  <ansi fg="itemname">DeLorean</ansi> sits in the center on a raised
+  Doc Browns garage-laboratory, a controlled explosion of science. <ansi fg="itemname">Blackboards</ansi> cover every wall, dense with
+  equations, diagrams, and a hand-sketched timeline. The <ansi fg="itemname">DeLorean</ansi> sits in the center on a raised
   platform, its rear assembly open to expose the flux capacitor housing
   and the time circuit board. <ansi fg="itemname">Einstein</ansi> the
   dog sleeps under the workbench. An enormous <ansi fg="itemname">amplifier</ansi>

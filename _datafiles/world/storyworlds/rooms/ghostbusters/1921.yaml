@@ -9,8 +9,7 @@ description: >-
   the NO GHOST logo already scratched and weathered as if it has been there for decades.
   Yellow cabs barrel past. A pretzel vendor on the corner seems deeply unbothered by
   everything. To the north you can see the wide steps of the <ansi fg="itemname">New York
-  Public Library</ansi>. The Sedgewick Hotel towers to the east. The art deco spire of
-  <ansi fg="itemname">55 Central Park West</ansi> is visible to the south.
+  Public Library</ansi>. The Sedgewick Hotel towers to the east. The art deco spire of <ansi fg="itemname">55 Central Park West</ansi> is visible to the south.
 mapsymbol: S
 maplegend: Street Outside
 biome: city

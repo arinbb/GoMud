@@ -3,15 +3,13 @@ zone: Super Mario Bros
 title: World 1-4 Castle
 description: >-
   The first castle. Stone corridors lit by <ansi fg="red">lava</ansi> that
-  glows up through gaps in the floor, casting everything in hellish orange.
-  <ansi fg="itemname">Fire bars</ansi> rotate slowly from iron posts set into
+  glows up through gaps in the floor, casting everything in hellish orange. <ansi fg="itemname">Fire bars</ansi> rotate slowly from iron posts set into
   the walls -- spinning chains of fire, impassable unless you time your
   crossing with exact precision. The stone is hot to the touch. The ceiling
   drips with reflected lava-light. This is not a friendly place. At the far
   end of the chamber, a wide <ansi fg="itemname">bridge</ansi> of wooden
   planks spans a lava pit, and on the other side, an enormous silhouette
-  waits in front of an axe. South leads <ansi fg="exit">back</ansi>; the
-  <ansi fg="exit">bridge</ansi> leads east to the boss.
+  waits in front of an axe. South leads <ansi fg="exit">back</ansi>; the <ansi fg="exit">bridge</ansi> leads east to the boss.
 mapsymbol: C
 maplegend: Castle
 biome: dungeon

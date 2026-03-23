@@ -2,14 +2,11 @@ roomid: 1940
 zone: Back to the Future
 title: Twin Pines Mall Parking Lot
 description: >-
-  It is 1:15 AM on October 26, 1985. The vast, empty parking lot of the
-  <ansi fg="itemname">Twin Pines Mall</ansi> stretches out under blazing
-  fluorescent lights. The air is cold and still. A battered
-  <ansi fg="itemname">GMC van</ansi> sits near the entrance, its doors
+  It is 1:15 AM on October 26, 1985. The vast, empty parking lot of the <ansi fg="itemname">Twin Pines Mall</ansi> stretches out under blazing
+  fluorescent lights. The air is cold and still. A battered <ansi fg="itemname">GMC van</ansi> sits near the entrance, its doors
   hanging open. A single set of <ansi fg="itemname">tire tracks</ansi>
   scorches the asphalt -- two lines of <ansi fg="room-description">fire</ansi>
-  thirty-five feet apart, trailing off to the east. Doc Brown's
-  <ansi fg="itemname">DeLorean</ansi> is here, its gull-wing doors raised.
+  thirty-five feet apart, trailing off to the east. Doc Brown's <ansi fg="itemname">DeLorean</ansi> is here, its gull-wing doors raised.
   The stainless-steel body gleams under the parking-lot lights.
 mapsymbol: T
 maplegend: Twin Pines Mall

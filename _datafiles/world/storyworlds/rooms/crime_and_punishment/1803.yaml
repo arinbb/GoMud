@@ -2,8 +2,7 @@ roomid: 1803
 zone: Crime and Punishment
 title: Haymarket Square
 description: >-
-  The Haymarket: the pulsing, stinking, magnificent heart of the poor quarter.
-  <ansi fg="itemname">Vendors</ansi> sell pickles, sunflower seeds, old boots,
+  The Haymarket: the pulsing, stinking, magnificent heart of the poor quarter. <ansi fg="itemname">Vendors</ansi> sell pickles, sunflower seeds, old boots,
   half-rotten fish, and things that are harder to identify. The noise is
   continuous and layered — <ansi fg="itemname">haggling voices</ansi>, a
   child screaming, a fiddle sawing somewhere, the grinding of cart wheels on
@@ -12,8 +11,7 @@ description: >-
   woman at a stall is selling something from a bucket that she ladles into cups
   for a kopek. Raskolnikov has walked through this square a hundred times and
   every time it has felt like drowning in other people's lives. To the <ansi
-  fg="exit">south</ansi> the lane leads back toward his building. To the
-  <ansi fg="exit">east</ansi>, a passage leads to a tavern.
+  fg="exit">south</ansi> the lane leads back toward his building. To the <ansi fg="exit">east</ansi>, a passage leads to a tavern.
 mapsymbol: H
 maplegend: Haymarket Square
 biome: city

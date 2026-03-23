@@ -8,8 +8,7 @@ description: >-
   door propped open. <ansi fg="itemname">Torches</ansi> at the entrance light
   a narrow view into the darkness beyond. A <ansi fg="itemname">ladder</ansi>
   descends into the gloom. The air from below is cool and mineral, carrying
-  the smell of stone and something faintly metallic. The town is back to the
-  <ansi fg="exit">west</ansi>. The ladder leads <ansi fg="exit">down</ansi>.
+  the smell of stone and something faintly metallic. The town is back to the <ansi fg="exit">west</ansi>. The ladder leads <ansi fg="exit">down</ansi>.
 mapsymbol: m
 maplegend: Mines Entrance
 biome: cave

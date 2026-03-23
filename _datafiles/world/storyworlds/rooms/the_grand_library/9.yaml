@@ -7,8 +7,7 @@ description: >-
   souvenirs you have gathered from the worlds you have visited. Each shelf
   is labeled with a small brass placard, waiting for an object to give it
   meaning. A warm amber light illuminates whatever you have placed here.
-  The <ansi fg="exit">atrium</ansi> is back to the east. Type
-  <ansi fg="command">collection</ansi> in the atrium to see your progress.
+  The <ansi fg="exit">atrium</ansi> is back to the east. Type <ansi fg="command">collection</ansi> in the atrium to see your progress.
 mapsymbol: T
 maplegend: Trophy Room
 biome: house

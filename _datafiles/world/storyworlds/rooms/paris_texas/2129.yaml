@@ -2,8 +2,7 @@ roomid: 2129
 zone: Paris Texas
 title: A Houston Street
 description: >-
-  A street in Houston at night, somewhere between downtown and the Gulf.
-  <ansi fg="cyan">Neon signs</ansi> for diners and motels and pawn shops and
+  A street in Houston at night, somewhere between downtown and the Gulf. <ansi fg="cyan">Neon signs</ansi> for diners and motels and pawn shops and
   a laundromat that is lit up at midnight because someone always needs to do
   laundry at midnight. The <ansi fg="itemname">diner</ansi> on the corner has
   a window full of steam and the suggestion of people inside, eating alone.
@@ -12,8 +11,7 @@ description: >-
   and the air has the heavy, wet warmth of the Gulf Coast. This is a street
   where loneliness has become architectural — built into the spaces between
   the neon signs, into the distance between the windows, into the empty
-  stool at the counter visible through the diner glass. The road runs
-  <ansi fg="exit">west</ansi> back to the skyline.
+  stool at the counter visible through the diner glass. The road runs <ansi fg="exit">west</ansi> back to the skyline.
 mapsymbol: S
 maplegend: Houston Street
 biome: city

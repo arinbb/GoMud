@@ -4,8 +4,7 @@ title: Wormwood Living Room
 description: >-
   A cramped, overheated living room drowning in <ansi fg="3">gaudy wallpaper</ansi>
   and the blue-white glow of an enormous <ansi fg="itemname">television set</ansi>
-  that dominates one wall. The carpet is a lurid shade of orange. A sagging
-  <ansi fg="itemname">sofa</ansi> faces the TV, surrounded by foil trays of half-eaten
+  that dominates one wall. The carpet is a lurid shade of orange. A sagging <ansi fg="itemname">sofa</ansi> faces the TV, surrounded by foil trays of half-eaten
   microwave dinners and scattered TV guides. The air reeks of hair spray, cigarette
   smoke, and something frying. Everything in this room screams bad taste at full volume.
   A staircase leads <ansi fg="exit">up</ansi> to the bedrooms. The <ansi fg="exit">east</ansi>

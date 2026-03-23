@@ -2,8 +2,7 @@ roomid: 1553
 zone: Jurassic Park
 title: The Brachiosaurus Meadow
 description: >-
-  You come around a curve in the road and the jungle opens up into a vast
-  <ansi fg="cyan">meadow</ansi>, and there — there — rising above the tree line
+  You come around a curve in the road and the jungle opens up into a vast <ansi fg="cyan">meadow</ansi>, and there — there — rising above the tree line
   like living architecture, a <ansi fg="cyan">Brachiosaurus</ansi> stands in
   the afternoon light. Then another. Then three more. They move with the
   unhurried certainty of things that have no natural predators in this meadow,

@@ -3,8 +3,7 @@ zone: six_feet_under
 title: The Prep Room
 description: >-
   The basement <ansi fg="8">preparation room</ansi> -- cool, clinical, lit by
-  overhead fluorescents that turn everything the color of fact. A stainless steel
-  <ansi fg="itemname">embalming table</ansi> occupies the center of the room,
+  overhead fluorescents that turn everything the color of fact. A stainless steel <ansi fg="itemname">embalming table</ansi> occupies the center of the room,
   tilted slightly for drainage. Along one wall, a row of <ansi fg="itemname">cabinets</ansi>
   holds chemicals, instruments, cosmetics, wigs, thread. Against another wall,
   an <ansi fg="itemname">airbrush kit</ansi> and <ansi fg="itemname">reference photos</ansi>

@@ -4,14 +4,11 @@ title: Stan Mikita's Donuts
 description: >-
   The beating heart of Aurora social life. <ansi fg="itemname">Stan Mikita's
   Donuts</ansi> is everything a donut shop should be: fluorescent-lit, slightly
-  sticky, and full of people who have nowhere better to be and know it. The
-  <ansi fg="itemname">counter</ansi> runs the length of the far wall, behind it a
-  rotating display of <ansi fg="itemname">donuts</ansi> in all the classic configurations.
-  <ansi fg="itemname">Coffee</antml> arrives in a heavy ceramic <ansi fg="itemname">mug</ansi>
+  sticky, and full of people who have nowhere better to be and know it. The <ansi fg="itemname">counter</ansi> runs the length of the far wall, behind it a
+  rotating display of <ansi fg="itemname">donuts</ansi> in all the classic configurations. <ansi fg="itemname">Coffee</antml> arrives in a heavy ceramic <ansi fg="itemname">mug</ansi>
   without being asked. A hand-painted <ansi fg="itemname">sign</ansi> on the wall
   shows Stan Mikita in his hockey gear. The back <ansi fg="exit">booth</ansi> is
-  prime real estate. <ansi fg="exit">South</ansi> leads back to the street.
-  <ansi fg="exit">North</ansi> is the parking lot.
+  prime real estate. <ansi fg="exit">South</ansi> leads back to the street. <ansi fg="exit">North</ansi> is the parking lot.
 mapsymbol: D
 maplegend: Stan Mikita's
 biome: house

@@ -2,16 +2,13 @@ roomid: 1720
 zone: The Sopranos
 title: The Soprano Driveway
 description: >-
-  A wide <ansi fg="itemname">driveway</ansi> curves up to a large suburban
-  <ansi fg="8">house</ansi> in North Caldwell, New Jersey. A brick McMansion of
+  A wide <ansi fg="itemname">driveway</ansi> curves up to a large suburban <ansi fg="8">house</ansi> in North Caldwell, New Jersey. A brick McMansion of
   colonial pretension, well-maintained in a way that suggests someone cares
   deeply about appearances. A black <ansi fg="itemname">SUV</ansi> sits in the
   driveway, polished to a mirror shine. The <ansi fg="itemname">morning paper</ansi>
-  lies at the end of the driveway, half-read and discarded. A row of sculpted
-  <ansi fg="itemname">hedges</ansi> lines the front. The neighborhood is quiet in
+  lies at the end of the driveway, half-read and discarded. A row of sculpted <ansi fg="itemname">hedges</ansi> lines the front. The neighborhood is quiet in
   the particular way that expensive neighborhoods are quiet — not peaceful, just
-  insulated. The <ansi fg="exit">kitchen</ansi> is to the north, Tony's
-  <ansi fg="exit">den</ansi> is to the east, and the <ansi fg="exit">highway</ansi>
+  insulated. The <ansi fg="exit">kitchen</ansi> is to the north, Tony's <ansi fg="exit">den</ansi> is to the east, and the <ansi fg="exit">highway</ansi>
   waits beyond the cul-de-sac.
 mapsymbol: D
 maplegend: Soprano Driveway

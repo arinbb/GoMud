@@ -6,11 +6,9 @@ description: >-
   night. Red vinyl booths line the windows, and a long Formica <ansi fg="itemname">counter</ansi>
   runs the length of the place with spinning stools bolted to the floor. A glass
   case displays an impressive collection of <ansi fg="itemname">pie</ansi> -- cherry,
-  apple, coconut cream, and something that might be boysenberry. In the corner, a
-  <ansi fg="itemname">jukebox</ansi> glows with warm amber light. On the wall near
+  apple, coconut cream, and something that might be boysenberry. In the corner, a <ansi fg="itemname">jukebox</ansi> glows with warm amber light. On the wall near
   the restrooms, someone has erected a small <ansi fg="itemname">shrine</ansi> --
-  a framed photograph surrounded by plastic flowers. The highway leads
-  <ansi fg="exit">west</ansi> and a desert road continues <ansi fg="exit">south</ansi>.
+  a framed photograph surrounded by plastic flowers. The highway leads <ansi fg="exit">west</ansi> and a desert road continues <ansi fg="exit">south</ansi>.
 mapsymbol: D
 maplegend: Truck Stop Diner
 biome: house

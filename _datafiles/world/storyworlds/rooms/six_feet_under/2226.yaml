@@ -5,13 +5,11 @@ description: >-
   A living room that is actually lived in. A long <ansi fg="itemname">couch</ansi>
   faces a television that is usually on, usually ignored. An armchair in the
   corner -- <ansi fg="8">Nathaniel Sr's chair</ansi> -- has not been sat in by
-  anyone since he died, a fact nobody has articulated and everyone knows. Family
-  <ansi fg="itemname">photographs</ansi> cover one wall, an accumulation of
+  anyone since he died, a fact nobody has articulated and everyone knows. Family <ansi fg="itemname">photographs</ansi> cover one wall, an accumulation of
   decades -- school portraits, holidays, a few that include Nathaniel Sr. in the
   years before everything. A <ansi fg="itemname">bookshelf</ansi> holds an
   unorganized collection of paperbacks and oddities. The <ansi fg="exit">kitchen</ansi>
-  is to the west. <ansi fg="exit">Upstairs</ansi> leads to the bedrooms.
-  <ansi fg="exit">Nates room</ansi> is to the north.
+  is to the west. <ansi fg="exit">Upstairs</ansi> leads to the bedrooms. <ansi fg="exit">Nates room</ansi> is to the north.
 mapsymbol: L
 maplegend: Fisher Living Room
 biome: house

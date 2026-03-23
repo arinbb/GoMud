@@ -3,13 +3,10 @@ zone: Buffalo 66
 title: Billy's Car
 description: >-
   A brown <ansi fg="itemname">sedan</ansi> idling at the curb, exhaust curling up
-  into the frozen air. The interior smells of cigarette smoke and vinyl. The
-  <ansi fg="itemname">seats</ansi> are cracked leather, cold to the touch. A
-  <ansi fg="itemname">pine tree</ansi> air freshener hangs from the rearview mirror,
+  into the frozen air. The interior smells of cigarette smoke and vinyl. The <ansi fg="itemname">seats</ansi> are cracked leather, cold to the touch. A <ansi fg="itemname">pine tree</ansi> air freshener hangs from the rearview mirror,
   long dead. The <ansi fg="itemname">radio</ansi> plays something tinny and far away,
   barely audible over the engine rattle. Through the <ansi fg="itemname">windshield</ansi>,
-  Buffalo stretches out grey and flat in every direction. You can
-  <ansi fg="exit">drive</ansi> to the Brown house from here.
+  Buffalo stretches out grey and flat in every direction. You can <ansi fg="exit">drive</ansi> to the Brown house from here.
 mapsymbol: C
 maplegend: Car
 biome: road

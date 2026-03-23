@@ -3,13 +3,11 @@ zone: Back to the Future
 title: Lyon Estates (Under Construction)
 description: >-
   Dirt roads and surveyor stakes stretch across bare California
-  earth in a large grid. A weathered sign reads
-  <ansi fg="itemname">"LYON ESTATES -- COMING SOON -- A Community for Modern Living."</ansi>
+  earth in a large grid. A weathered sign reads <ansi fg="itemname">"LYON ESTATES -- COMING SOON -- A Community for Modern Living."</ansi>
   The <ansi fg="itemname">lots</ansi> are empty, separated by low orange
   flags on wire stakes. A few earthmovers sit parked at the far end,
   waiting for Monday. The oak trees at the edge of the development
-  are still standing -- they will be cleared in the spring. The
-  <ansi fg="itemname">Peabody farm</ansi> is visible to the east across
+  are still standing -- they will be cleared in the spring. The <ansi fg="itemname">Peabody farm</ansi> is visible to the east across
   an open field. To the north, the clock tower marks the town square.
 mapsymbol: Y
 maplegend: Lyon Estates

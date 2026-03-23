@@ -12,8 +12,7 @@ description: >-
   Mounted <ansi fg="itemname">trophies</ansi> — elk, deer, mountain goat — stare
   down from the walls with glass eyes. The lobby is vast, grand, and utterly
   silent. Exits lead <ansi fg="exit">west</ansi> to the entrance, <ansi fg="exit">north</ansi>
-  to the Colorado Lounge, <ansi fg="exit">east</ansi> to the elevator hall, and
-  <ansi fg="exit">south</ansi> to the staff wing.
+  to the Colorado Lounge, <ansi fg="exit">east</ansi> to the elevator hall, and <ansi fg="exit">south</ansi> to the staff wing.
 mapsymbol: L
 maplegend: Lobby
 biome: house

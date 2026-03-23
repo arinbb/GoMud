@@ -2,14 +2,12 @@ roomid: 2121
 zone: Paris Texas
 title: The Gas Station
 description: >-
-  A single-pump <ansi fg="8">gas station</ansi> at the edge of nothing. A
-  <ansi fg="itemname">Coca-Cola sign</ansi> hangs over the door, its red faded
+  A single-pump <ansi fg="8">gas station</ansi> at the edge of nothing. A <ansi fg="itemname">Coca-Cola sign</ansi> hangs over the door, its red faded
   to the color of old brick. A <ansi fg="itemname">phone</ansi> on the exterior
   wall. A water spigot that drips one drop every few seconds onto the concrete
   below, a small dark stain the only evidence of its patience. The road out front
   is <ansi fg="8">Route 90</ansi>, and it runs east and west into identical
-  distances. To the <ansi fg="exit">west</ansi>, the desert. To the
-  <ansi fg="exit">north</ansi>, a highway that leads eventually to California.
+  distances. To the <ansi fg="exit">west</ansi>, the desert. To the <ansi fg="exit">north</ansi>, a highway that leads eventually to California.
   The door to the station is unlocked. Nobody is stealing anything from here.
   There is nothing to steal.
 mapsymbol: G

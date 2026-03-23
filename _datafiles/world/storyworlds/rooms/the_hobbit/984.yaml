@@ -10,9 +10,7 @@ description: >-
   filling the sky. A small brown <ansi fg="itemname">thrush</ansi> perches
   on a flat stone nearby, knocking a snail against the rock with cheerful
   persistence. The air smells of ash and old fire. No birds sing. No
-  insects hum. The dragon's ruin is complete. The path leads
-  <ansi fg="exit">west</ansi> back to Lake-town and a rocky trail climbs
-  <ansi fg="exit">north</ansi> up the mountain's western face.
+  insects hum. The dragon's ruin is complete. The path leads <ansi fg="exit">west</ansi> back to Lake-town and a rocky trail climbs <ansi fg="exit">north</ansi> up the mountain's western face.
 mapsymbol: '!'
 maplegend: Desolation
 biome: desert

@@ -4,16 +4,12 @@ title: The Church
 description: >-
   Mayberrys white clapboard church, modest and perfect. The <ansi fg="itemname">steeple</ansi>
   rises above the elm trees in a clean white line that has been oriented toward
-  the sky with the quiet confidence of a building that knows what it is for.
-  <ansi fg="itemname">Wooden pews</ansi> line both sides of the central aisle, the
-  wood worn smooth from decades of Sunday mornings. Morning light comes through
-  <ansi fg="yellow">plain glass windows</ansi> -- no stained glass, this is Mayberry,
-  not a cathedral -- and falls across the pews in warm rectangles. A
-  <ansi fg="itemname">hymn board</ansi> at the front shows this weeks selections in
+  the sky with the quiet confidence of a building that knows what it is for. <ansi fg="itemname">Wooden pews</ansi> line both sides of the central aisle, the
+  wood worn smooth from decades of Sunday mornings. Morning light comes through <ansi fg="yellow">plain glass windows</ansi> -- no stained glass, this is Mayberry,
+  not a cathedral -- and falls across the pews in warm rectangles. A <ansi fg="itemname">hymn board</ansi> at the front shows this weeks selections in
   individual white letters. The <ansi fg="itemname">organ</ansi> waits at the side,
   polished and patient. This church does not demand anything of you. It just is here,
-  the way Mayberry is here -- solid, undemonstrative, ready when you need it. To the
-  <ansi fg="exit">north</ansi> is Wallys Filling Station.
+  the way Mayberry is here -- solid, undemonstrative, ready when you need it. To the <ansi fg="exit">north</ansi> is Wallys Filling Station.
 mapsymbol: X
 maplegend: The Church
 biome: house

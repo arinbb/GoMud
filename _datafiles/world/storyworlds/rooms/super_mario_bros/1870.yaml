@@ -2,8 +2,7 @@ roomid: 1870
 zone: Super Mario Bros
 title: World 6-3 Underwater Level
 description: >-
-  The underwater level. The whole world has shifted into slow, blue
-  <ansi fg="cyan">water</ansi> -- you move differently here, rising and
+  The underwater level. The whole world has shifted into slow, blue <ansi fg="cyan">water</ansi> -- you move differently here, rising and
   falling with the physics of swimming, your jumps replaced by a
   bobbing float that requires constant correction. The background is a
   deep <ansi fg="cyan">blue-green</ansi>, lit with that diffuse underwater
@@ -13,8 +12,7 @@ description: >-
   white with simple dot eyes -- pursue you in erratic spiraling paths,
   descending when you go down, rising when you go up. The whole level
   has the dreamy, slowed-down quality of being underwater in a dream.
-  North leads <ansi fg="exit">up and out</ansi>; east continues to
-  <ansi fg="exit">World 7</ansi>.
+  North leads <ansi fg="exit">up and out</ansi>; east continues to <ansi fg="exit">World 7</ansi>.
 mapsymbol: W
 maplegend: Underwater Level
 biome: water

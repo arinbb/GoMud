@@ -3,18 +3,15 @@ zone: Forbidden Planet
 title: The Monster Attack Site
 description: >-
   The desert here is <ansi fg="red">scorched</ansi> in a wide arc,
-  the crystalline vegetation melted to blackened stubs. Where the
-  <ansi fg="itemname">force field</ansi> barriers were erected, glassy
+  the crystalline vegetation melted to blackened stubs. Where the <ansi fg="itemname">force field</ansi> barriers were erected, glassy
   trenches in the rock show where the field was anchored -- and where
-  something pressed against it with force beyond measurement. The
-  <ansi fg="itemname">ground</ansi> itself shows the evidence of a
+  something pressed against it with force beyond measurement. The <ansi fg="itemname">ground</ansi> itself shows the evidence of a
   struggle: burns, impacts, the strange melted-glass footprints of
   something enormous that moved without touching the ground in any
   conventional sense. Two <ansi fg="itemname">crewmen</ansi> died here.
   Nothing visible killed them. Something invisible and vast, wearing the
   shape of a man's darkest impulses, came out of the dark and was turned
-  back by a force field it should have been able to ignore. To the
-  <ansi fg="exit">landing</ansi> site, east.
+  back by a force field it should have been able to ignore. To the <ansi fg="exit">landing</ansi> site, east.
 mapsymbol: X
 maplegend: Attack Site
 biome: desert

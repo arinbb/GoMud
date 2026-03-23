@@ -5,8 +5,7 @@ description: >-
   A <ansi fg="8">closed door</ansi>. That is all. A heavy door in a bare
   hallway, the door with no knob on your side, the door that does not open
   from here. The hallway is narrow and goes nowhere else. There is nothing
-  to look at except the <ansi fg="itemname">door</ansi>, the thin strip of
-  <ansi fg="itemname">light</ansi> under it, the <ansi fg="itemname">grain
+  to look at except the <ansi fg="itemname">door</ansi>, the thin strip of <ansi fg="itemname">light</ansi> under it, the <ansi fg="itemname">grain
   of the wood</ansi> that you have had time to memorize. You have been
   waiting. She knows you are out here. Everybody knows you are out here.
   Achilles sat before the gates of Troy for years and it meant something.
@@ -14,8 +13,7 @@ description: >-
   is its own statement. The door has not opened. The door will not open
   during this particular visit. The honey-dripping way she waits inside
   -- waiting for nothing, attended by everything -- is the hum behind the
-  closed door. You are honey-blind. The door is honey-shut. The
-  <ansi fg="exit">studio</ansi> is back to the west.
+  closed door. You are honey-blind. The door is honey-shut. The <ansi fg="exit">studio</ansi> is back to the west.
 mapsymbol: A
 maplegend: Temporary Like Achilles
 biome: house

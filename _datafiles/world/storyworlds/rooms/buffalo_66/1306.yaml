@@ -2,12 +2,9 @@ roomid: 1306
 zone: Buffalo 66
 title: The Brown Kitchen
 description: >-
-  A cramped <ansi fg="itemname">kitchen</ansi> with yellowed linoleum and
-  <ansi fg="itemname">cabinets</ansi> that do not quite close. A formica
-  <ansi fg="itemname">table</ansi> is set for dinner — meatloaf, instant potatoes,
+  A cramped <ansi fg="itemname">kitchen</ansi> with yellowed linoleum and <ansi fg="itemname">cabinets</ansi> that do not quite close. A formica <ansi fg="itemname">table</ansi> is set for dinner — meatloaf, instant potatoes,
   canned corn. The portions are precise and joyless. A small <ansi fg="itemname">television</ansi>
-  on the counter plays the <ansi fg="6">Bills game</ansi> with the volume up loud.
-  <ansi fg="itemname">Fluorescent</ansi> light hums overhead, making everyone look
+  on the counter plays the <ansi fg="6">Bills game</ansi> with the volume up loud. <ansi fg="itemname">Fluorescent</ansi> light hums overhead, making everyone look
   slightly jaundiced. The walls are covered in <ansi fg="6">Bills wallpaper</ansi> —
   actual wallpaper, printed with the team logo in repeating rows. The living room
   is back to the <ansi fg="exit">west</ansi>.

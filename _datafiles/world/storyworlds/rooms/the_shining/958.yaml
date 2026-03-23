@@ -3,10 +3,8 @@ zone: The Shining
 title: Guest Corridor
 description: >-
   A long hotel corridor stretches in both directions, impossibly long, lined
-  with numbered <ansi fg="itemname">doors</ansi> in the 200s. The hexagonal
-  <ansi fg="itemname">carpet</ansi> — orange and red and brown — rolls out
-  beneath your feet like an endless geometric river. Fluorescent
-  <ansi fg="itemname">lights</ansi> buzz overhead, some dead, creating pools
+  with numbered <ansi fg="itemname">doors</ansi> in the 200s. The hexagonal <ansi fg="itemname">carpet</ansi> — orange and red and brown — rolls out
+  beneath your feet like an endless geometric river. Fluorescent <ansi fg="itemname">lights</ansi> buzz overhead, some dead, creating pools
   of shadow between islands of harsh light. At the far end of the corridor,
   something small moves — a flash of color, the whir of wheels on carpet. The
   doors are all closed. All locked. All except one. Exits lead <ansi fg="exit">south</ansi>

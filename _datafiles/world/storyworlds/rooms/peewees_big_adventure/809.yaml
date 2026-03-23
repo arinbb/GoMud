@@ -4,8 +4,7 @@ title: Hospital Room
 description: >-
   A small, sterile hospital room painted in that particular shade of green that
   only hospitals use. A narrow <ansi fg="itemname">bed</ansi> with thin white sheets
-  sits against the wall, and a rolling tray holds a cup of Jello and a bendy straw.
-  <ansi fg="itemname">Bandages</ansi> and medical supplies are stacked on a side table.
+  sits against the wall, and a rolling tray holds a cup of Jello and a bendy straw. <ansi fg="itemname">Bandages</ansi> and medical supplies are stacked on a side table.
   The most important thing in the room is the wall-mounted <ansi fg="itemname">TV</ansi>,
   which is tuned to the evening news. A reporter is interviewing someone about a
   bicycle spotted on a movie studio lot. The room has exits <ansi fg="exit">west</ansi>

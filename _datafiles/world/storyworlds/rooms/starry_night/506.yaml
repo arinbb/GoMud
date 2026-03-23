@@ -7,8 +7,7 @@ description: >-
   silver-green. The orchard floor is dappled with <ansi fg="itemname">fallen
   blossoms</ansi> — small dabs of white and pink paint scattered across the dark earth.
   Fireflies drift between the trees, tiny points of yellow light that echo the
-  stars above. The <ansi fg="exit">north</ansi> leads back up to Cypress Hill. A
-  <ansi fg="exit">south</ansi> path winds down toward the sound of running water.
+  stars above. The <ansi fg="exit">north</ansi> leads back up to Cypress Hill. A <ansi fg="exit">south</ansi> path winds down toward the sound of running water.
 mapsymbol: O
 maplegend: Orchard
 biome: forest

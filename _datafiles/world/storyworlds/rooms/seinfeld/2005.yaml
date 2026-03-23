@@ -6,13 +6,9 @@ description: >-
   Broadway and 112th Street that is Monks Cafe for purposes of this world, and the booth,
   the particular booth where everything happens, is <ansi fg="exit">available</ansi>
   toward the back. The <ansi fg="itemname">booth</ansi> is a red vinyl horseshoe against
-  the wall, holding the memory of every conversation that has ever happened in it. The
-  <ansi fg="itemname">counter</ansi> runs the length of the diner, chrome stools, a
-  <ansi fg="itemname">coffee maker</ansi> that is always running, a glass case of
-  <ansi fg="itemname">pastries</ansi> that nobody ever orders. The <ansi fg="itemname">menu</ansi>
+  the wall, holding the memory of every conversation that has ever happened in it. The <ansi fg="itemname">counter</ansi> runs the length of the diner, chrome stools, a <ansi fg="itemname">coffee maker</ansi> that is always running, a glass case of <ansi fg="itemname">pastries</ansi> that nobody ever orders. The <ansi fg="itemname">menu</ansi>
   is laminated and comprehensive. The waitress knows the order. She knows what you want.
-  You want coffee and to talk about something that is almost nothing. The exit to the
-  <ansi fg="exit">street</ansi> is to the south.
+  You want coffee and to talk about something that is almost nothing. The exit to the <ansi fg="exit">street</ansi> is to the south.
 mapsymbol: M
 maplegend: Monks Cafe
 biome: city

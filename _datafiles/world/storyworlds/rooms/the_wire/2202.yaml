@@ -2,13 +2,11 @@ roomid: 2202
 zone: The Wire
 title: The Rooftop
 description: >-
-  Twenty stories above West Baltimore, and you can see all of it -- the grid of
-  <ansi fg="8">row houses</ansi> stretching east and west, their brick facades
+  Twenty stories above West Baltimore, and you can see all of it -- the grid of <ansi fg="8">row houses</ansi> stretching east and west, their brick facades
   weathered to the color of rust and grey clay, punctuated by the occasional
   fresh-painted corner store. The <ansi fg="itemname">water tower</ansi> marks
   the skyline to the north. <ansi fg="8">Downtown</ansi> gleams in the distance,
-  towers of glass and steel that might as well be another country. Below, the
-  <ansi fg="itemname">Pit</ansi> is a small grey rectangle, the orange couch
+  towers of glass and steel that might as well be another country. Below, the <ansi fg="itemname">Pit</ansi> is a small grey rectangle, the orange couch
   invisible from here. A <ansi fg="itemname">boy</ansi> sits near the edge,
   watching the streets below with complete professional attention. He does not
   look up. He already knows you are here. The <ansi fg="exit">towers</ansi>

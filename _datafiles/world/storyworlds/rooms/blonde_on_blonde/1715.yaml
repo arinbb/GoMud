@@ -16,8 +16,7 @@ description: >-
   the person who could write <ansi fg="itemname">Visions of Johanna</ansi>.
   You found this room. You were not supposed to. The hotel does not advertise
   it. You found it through a door in a loft that should not have led here.
-  That is the correct way to find it. The loft is back through the
-  <ansi fg="exit">secret passage</ansi>.
+  That is the correct way to find it. The loft is back through the <ansi fg="exit">secret passage</ansi>.
 mapsymbol: X
 maplegend: The Chelsea Hotel Room
 biome: house

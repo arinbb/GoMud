@@ -3,15 +3,12 @@ zone: Nineteen Eighty Four
 title: Victory Mansions
 description: >-
   A seventh-floor flat in a decaying concrete tower. The walls are grimy,
-  the paint peeling in long strips that reveal damp plaster beneath. A
-  <ansi fg="itemname">telescreen</ansi> is bolted to the wall, an oblong
+  the paint peeling in long strips that reveal damp plaster beneath. A <ansi fg="itemname">telescreen</ansi> is bolted to the wall, an oblong
   metal plaque that cannot be switched off, only dimmed. It flickers between
   propaganda broadcasts and grey static and always, always watches. The flat
   smells of <ansi fg="itemname">Victory Gin</ansi> and boiled cabbage. A
   small <ansi fg="itemname">diary</ansi> with a creamy cover lies on the
-  table, its marbled binding catching the dim light. To the
-  <ansi fg="exit">east</ansi> is the hallway. There is an
-  <ansi fg="exit">alcove</ansi> below the window where the telescreen
+  table, its marbled binding catching the dim light. To the <ansi fg="exit">east</ansi> is the hallway. There is an <ansi fg="exit">alcove</ansi> below the window where the telescreen
   cannot see.
 mapsymbol: W
 maplegend: Victory Mansions

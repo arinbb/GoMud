@@ -3,14 +3,11 @@ zone: Up in Smoke
 title: The Highway
 description: >-
   The <ansi fg="itemname">405 freeway</ansi>, eight lanes of pure Los Angeles sprawl,
-  moving at that particular pace that is not quite traffic and not quite speed.
-  <ansi fg="itemname">Palm trees</ansi> line the median, ridiculous and beautiful,
+  moving at that particular pace that is not quite traffic and not quite speed. <ansi fg="itemname">Palm trees</ansi> line the median, ridiculous and beautiful,
   their fronds waving at nobody. In the distance the <ansi fg="itemname">LA skyline
   </ansi> shimmers behind its own exhalations. The <ansi fg="itemname">van</ansi>
-  is out there somewhere, rolling with the flow. Exits connect in every direction:
-  <ansi fg="exit">north</ansi> to Pedros lowrider, <ansi fg="exit">east</ansi> to the
-  concert parking lot, <ansi fg="exit">south</ansi> toward the border crossing. The
-  <ansi fg="exit">police car</ansi> is off to the side. The <ansi fg="exit">drive-in</ansi>
+  is out there somewhere, rolling with the flow. Exits connect in every direction: <ansi fg="exit">north</ansi> to Pedros lowrider, <ansi fg="exit">east</ansi> to the
+  concert parking lot, <ansi fg="exit">south</ansi> toward the border crossing. The <ansi fg="exit">police car</ansi> is off to the side. The <ansi fg="exit">drive-in</ansi>
   is off to the west. The <ansi fg="exit">beach</ansi> is north.
 mapsymbol: H
 maplegend: The Highway

@@ -4,16 +4,12 @@ title: Levy Pants Office
 description: >-
   A dismal office in a dismal factory. <ansi fg="itemname">Filing cabinets</ansi>
   stuffed to bursting line the walls, their drawers refusing to close completely.
-  An ancient manual <ansi fg="itemname">typewriter</ansi> sits on a battered
-  <ansi fg="itemname">desk</ansi>, surrounded by aspirin bottles and unfinished
+  An ancient manual <ansi fg="itemname">typewriter</ansi> sits on a battered <ansi fg="itemname">desk</ansi>, surrounded by aspirin bottles and unfinished
   paperwork. Flickering fluorescent lights cast everything in a greenish pallor
-  that makes healthy people look sick and sick people look deceased. A
-  <ansi fg="itemname">memo</ansi> pinned to the wall announces the CRUSADE FOR
+  that makes healthy people look sick and sick people look deceased. A <ansi fg="itemname">memo</ansi> pinned to the wall announces the CRUSADE FOR
   MOORISH DIGNITY in handwriting that could only belong to someone who considers
   himself a medieval genius trapped in a modern wasteland. Mr. Gonzalez the
-  office manager is doing his best. His best is not enough.
-  <ansi fg="exit">West</ansi> leads back to the Lucky Dog cart.
-  <ansi fg="exit">East</ansi> leads to the factory floor.
+  office manager is doing his best. His best is not enough. <ansi fg="exit">West</ansi> leads back to the Lucky Dog cart. <ansi fg="exit">East</ansi> leads to the factory floor.
 mapsymbol: O
 maplegend: Levy Pants Office
 biome: house

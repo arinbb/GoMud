@@ -4,15 +4,13 @@ title: Prytania Theater
 description: >-
   A grand old movie palace from a grander era, with velvet <ansi fg="itemname">seats</ansi>
   worn thin by decades of moviegoers and a gilded proscenium arch that frames
-  the massive <ansi fg="itemname">screen</ansi> like a religious icon. The
-  <ansi fg="itemname">marquee</ansi> outside advertises films that Ignatius
+  the massive <ansi fg="itemname">screen</ansi> like a religious icon. The <ansi fg="itemname">marquee</ansi> outside advertises films that Ignatius
   considers personal insults to theology, geometry, and good taste. The theater
   is dark and cool, a blessed relief from the heat outside. A half-eaten box
   of <ansi fg="itemname">jujubes</ansi> sits wedged into an armrest, left by
   someone who was here recently and may return to shout abuse at the screen.
   The air smells of popcorn and the particular mustiness of velvet that has
-  absorbed decades of cigarette smoke and human drama. The exit leads
-  <ansi fg="exit">south</ansi> back to Canal Street.
+  absorbed decades of cigarette smoke and human drama. The exit leads <ansi fg="exit">south</ansi> back to Canal Street.
 mapsymbol: T
 maplegend: Prytania Theater
 biome: house

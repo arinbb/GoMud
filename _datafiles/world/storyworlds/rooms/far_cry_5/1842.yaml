@@ -12,8 +12,7 @@ description: >-
   laboriously de-cult-ified — Eden's Gate symbols pried from the walls, the
   original cross re-hung at some effort. <ansi fg="itemname">Nick Rye</ansi>
   walks the perimeter, watching the roads. This is home. This is worth fighting
-  for. The bar is to the <ansi fg="exit">east</ansi>. The church is to the
-  <ansi fg="exit">north</ansi>. The county road is <ansi fg="exit">south</ansi>.
+  for. The bar is to the <ansi fg="exit">east</ansi>. The church is to the <ansi fg="exit">north</ansi>. The county road is <ansi fg="exit">south</ansi>.
 mapsymbol: T
 maplegend: Falls End
 biome: city

@@ -7,8 +7,7 @@ description: >-
   walls are bare <ansi fg="8">plaster</ansi>, with patches of damp in the corners.
   There is a <ansi fg="8">cot</ansi> — not a bed, a cot, a narrow iron frame with
   a thin mattress and a single blanket. There is a <ansi fg="8">chair</ansi>.
-  There is a <ansi fg="white">Bible</ansi> on the chair. Nothing else. One small
-  <ansi fg="8">window</ansi> high in the wall, too small to exit through, lets in
+  There is a <ansi fg="white">Bible</ansi> on the chair. Nothing else. One small <ansi fg="8">window</ansi> high in the wall, too small to exit through, lets in
   a parallelogram of grey light. The door to this room locks from the outside.
   The lock is very sturdy. The key has been taken. The only way out is <ansi
   fg="exit">north</ansi>, back to the landing — if the door were unlocked.

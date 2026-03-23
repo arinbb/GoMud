@@ -2,17 +2,13 @@ roomid: 2032
 zone: Harold and Maude
 title: The Seaside Cliffs
 description: >-
-  <ansi fg="8">Sea cliffs</ansi> above the Pacific, California, 1971. The
-  <ansi fg="itemname">ocean</ansi> fills the entire west horizon, grey-green
-  and enormous, breaking white on the rocks three hundred feet below. The
-  <ansi fg="itemname">wind</ansi> up here is constant and cold and honest.
-  <ansi fg="10">Wildflowers</ansi> grow in the cliff grass -- Maude knows
+  <ansi fg="8">Sea cliffs</ansi> above the Pacific, California, 1971. The <ansi fg="itemname">ocean</ansi> fills the entire west horizon, grey-green
+  and enormous, breaking white on the rocks three hundred feet below. The <ansi fg="itemname">wind</ansi> up here is constant and cold and honest. <ansi fg="10">Wildflowers</ansi> grow in the cliff grass -- Maude knows
   every one of their names. This is where it ends, which means this is
   where it becomes something else. A <ansi fg="itemname">banjo</ansi>
   leans against the cliff rock, as if waiting. This is the place where
   Harold learned what he came here to learn. Back to the <ansi fg="exit">north</ansi>
-  lies the street. The cliff edge is close. The sky is enormous. The
-  <ansi fg="itemname">wildflowers</ansi> blow in the Pacific wind.
+  lies the street. The cliff edge is close. The sky is enormous. The <ansi fg="itemname">wildflowers</ansi> blow in the Pacific wind.
 mapsymbol: C
 maplegend: The Seaside Cliffs
 biome: cliffs

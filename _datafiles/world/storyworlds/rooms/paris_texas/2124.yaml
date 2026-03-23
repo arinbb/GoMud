@@ -8,12 +8,9 @@ description: >-
   the evening light. A <ansi fg="itemname">Super 8 projector</ansi> sits on a
   folding table aimed at it. When it runs, the images are small and bright and
   slightly overexposed — a <ansi fg="yellow">family</ansi> at some picnic, some
-  holiday, years ago. The people in the film are laughing but you cannot hear them.
-  <ansi fg="8">Travis</ansi> watches from a lawn chair that is too small for him,
+  holiday, years ago. The people in the film are laughing but you cannot hear them. <ansi fg="8">Travis</ansi> watches from a lawn chair that is too small for him,
   his knees up, his red cap in his hands. <ansi fg="yellow">Hunter</ansi> sits
-  beside him. They are not touching. They are very close. The exit
-  <ansi fg="exit">south</ansi> leads back inside. There is a
-  <ansi fg="secret-exit">secret</ansi> way into the film itself.
+  beside him. They are not touching. They are very close. The exit <ansi fg="exit">south</ansi> leads back inside. There is a <ansi fg="secret-exit">secret</ansi> way into the film itself.
 mapsymbol: B
 maplegend: Backyard
 biome: land

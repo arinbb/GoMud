@@ -5,11 +5,9 @@ description: >-
   You are inside the <ansi fg="yellow">home movie</ansi>. The colors are the
   oversaturated <ansi fg="yellow">amber and green</ansi> of Super 8 film stock.
   The edges of your vision have a light halation — a soft glow that blurs into
-  everything, making it more golden than it was. You are standing in a
-  <ansi fg="itemname">backyard</ansi> in summer. A <ansi fg="yellow">woman</ansi>
+  everything, making it more golden than it was. You are standing in a <ansi fg="itemname">backyard</ansi> in summer. A <ansi fg="yellow">woman</ansi>
   spins a <ansi fg="yellow">small boy</ansi> in circles, both of them laughing.
-  You cannot hear the laughter. This is a silent film. You can see a
-  <ansi fg="yellow">man</ansi> — younger, lighter, his face open in the way
+  You cannot hear the laughter. This is a silent film. You can see a <ansi fg="yellow">man</ansi> — younger, lighter, his face open in the way
   it has not been for a long time — standing at a <ansi fg="itemname">barbecue</ansi>
   and turning to grin at the camera. The <ansi fg="8">camera shakes</ansi> a
   little because whoever is holding it is laughing too. This moment happened.

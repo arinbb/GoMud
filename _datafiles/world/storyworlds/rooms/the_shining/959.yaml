@@ -3,8 +3,7 @@ zone: The Shining
 title: Torrance Apartment
 description: >-
   The Torrance family's quarters are a modest living room that feels out of
-  place in the hotel's grandeur. Worn furniture, a threadbare rug, scattered
-  <ansi fg="itemname">toys</ansi> on the floor. A <ansi fg="itemname">television</ansi>
+  place in the hotel's grandeur. Worn furniture, a threadbare rug, scattered <ansi fg="itemname">toys</ansi> on the floor. A <ansi fg="itemname">television</ansi>
   plays nothing but static, its gray light washing over everything. Wendy's
   baseball <ansi fg="itemname">bat</ansi> leans against the wall near the couch,
   within easy reach. The bathroom <ansi fg="itemname">door</ansi> is closed. Something

@@ -3,16 +3,13 @@ zone: Seinfeld
 title: The Costanza House
 description: >-
   The <ansi fg="8">Costanza house</ansi> in Queens -- a modest split-level on the
-  kind of block that is exactly what it is and has never pretended otherwise. The
-  <ansi fg="itemname">living room</ansi> is loud in the sense that the room itself
+  kind of block that is exactly what it is and has never pretended otherwise. The <ansi fg="itemname">living room</ansi> is loud in the sense that the room itself
   is loud, the wallpaper aggressive, the <ansi fg="itemname">television</ansi> large
-  and always on, the furniture arranged for maximum seating and minimum comfort. The
-  <ansi fg="itemname">dining table</ansi> has hosted approximately four thousand
+  and always on, the furniture arranged for maximum seating and minimum comfort. The <ansi fg="itemname">dining table</ansi> has hosted approximately four thousand
   arguments, all of which were about something other than what they were about. Frank
   and Estelle Costanza live here. George visits here and then needs several days to
   recover. There is a <ansi fg="itemname">Festivus pole</ansi> standing in the corner
-  that does not appear to be seasonal. The basement is accessible via the
-  <ansi fg="exit">basement</ansi> stairs. The <ansi fg="exit">street</ansi> is to
+  that does not appear to be seasonal. The basement is accessible via the <ansi fg="exit">basement</ansi> stairs. The <ansi fg="exit">street</ansi> is to
   the east.
 mapsymbol: C
 maplegend: The Costanza House

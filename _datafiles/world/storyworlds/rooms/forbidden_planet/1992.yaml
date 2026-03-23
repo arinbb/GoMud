@@ -5,13 +5,11 @@ description: >-
   The force field <ansi fg="cyan">perimeter</ansi> of the C-57D runs in a wide
   circle around the ship, emitters staked into the alien soil at thirty-foot
   intervals. The field itself is invisible except where it catches particles
-  -- then it shimmers, briefly, a blue-white curtain against the
-  <ansi fg="green">green</ansi> sky. The <ansi fg="itemname">emitters</ansi>
+  -- then it shimmers, briefly, a blue-white curtain against the <ansi fg="green">green</ansi> sky. The <ansi fg="itemname">emitters</ansi>
   hum with steady power. The <ansi fg="itemname">ground</ansi> inside the
   perimeter is trampled with boot-prints, cigarette ends, the ordinary
   detritus of a crew on uncertain ground. Outside the perimeter,
-  the desert is still. Outside the perimeter, things come in the night.
-  <ansi fg="red">The field will not hold</ansi> against what is coming.
+  the desert is still. Outside the perimeter, things come in the night. <ansi fg="red">The field will not hold</ansi> against what is coming.
   To the <ansi fg="exit">ship</ansi>, south.
 mapsymbol: P
 maplegend: The Perimeter

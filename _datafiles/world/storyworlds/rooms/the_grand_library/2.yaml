@@ -6,10 +6,7 @@ description: >-
   that seem to go on forever. The spines of thousands of books line every surface --
   leather-bound volumes, cloth-covered paperbacks, gilded folios, and crumbling
   manuscripts. Small brass ladders on rails allow access to the highest shelves. Each
-  section is marked with ornate wooden placards: <ansi fg="itemname">Fiction</ansi>,
-  <ansi fg="itemname">Fantasy</ansi>, <ansi fg="itemname">Science Fiction</ansi>,
-  <ansi fg="itemname">Classics</ansi>, <ansi fg="itemname">Mystery</ansi>,
-  <ansi fg="itemname">Poetry</ansi>.
+  section is marked with ornate wooden placards: <ansi fg="itemname">Fiction</ansi>, <ansi fg="itemname">Fantasy</ansi>, <ansi fg="itemname">Science Fiction</ansi>, <ansi fg="itemname">Classics</ansi>, <ansi fg="itemname">Mystery</ansi>, <ansi fg="itemname">Poetry</ansi>.
   Certain books seem to glow faintly along their spines, as if calling to be read.
 mapsymbol: B
 maplegend: Book Stacks

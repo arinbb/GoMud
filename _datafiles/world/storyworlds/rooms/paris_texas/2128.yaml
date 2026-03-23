@@ -2,12 +2,9 @@ roomid: 2128
 zone: Paris Texas
 title: The Peep Show Booth
 description: >-
-  A small <ansi fg="8">booth</ansi> barely large enough to stand in. A
-  <ansi fg="itemname">telephone receiver</ansi> on the wall. A
-  <ansi fg="8">one-way mirror</ansi> that occupies most of the wall in front of
+  A small <ansi fg="8">booth</ansi> barely large enough to stand in. A <ansi fg="itemname">telephone receiver</ansi> on the wall. A <ansi fg="8">one-way mirror</ansi> that occupies most of the wall in front of
   you. On the other side of the mirror, visible to you but not to her, a woman
-  sits in a soft <ansi fg="cyan">pink light</ansi>. She is
-  <ansi fg="itemname">Jane</ansi>. She is <ansi fg="cyan">beautiful</ansi> in
+  sits in a soft <ansi fg="cyan">pink light</ansi>. She is <ansi fg="itemname">Jane</ansi>. She is <ansi fg="cyan">beautiful</ansi> in
   the particular way of someone who has stopped trying to be. She arranges
   her hair without hurry. She waits. She has been waiting for a long time and
   she does not know for what. You can see her. She cannot see you. The receiver

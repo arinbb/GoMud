@@ -8,8 +8,7 @@ description: >-
   smells of ammonia and older things. <ansi fg="8">Stash houses</ansi> occupy
   strategic apartments on multiple floors -- the higher up, the more warning you get.
   The walls of the stairwell are layered with <ansi fg="itemname">tags</ansi>, some
-  going back years, an unintended archive of everyone who passed through. A
-  <ansi fg="itemname">lookout</ansi> on the roof has eyes on three streets below.
+  going back years, an unintended archive of everyone who passed through. A <ansi fg="itemname">lookout</ansi> on the roof has eyes on three streets below.
   The <ansi fg="exit">Pit</ansi> is to the west, and the <ansi fg="exit">rooftop</ansi>
   is above.
 mapsymbol: T

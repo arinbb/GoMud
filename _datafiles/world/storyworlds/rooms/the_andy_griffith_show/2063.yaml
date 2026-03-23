@@ -3,8 +3,7 @@ zone: The Andy Griffith Show
 title: Main Street Mayberry
 description: >-
   The main street of Mayberry, North Carolina -- one of the most peaceable
-  thoroughfares in all of television, and therefore in all of the world.
-  <ansi fg="10">Elm trees</ansi> line both sides of the street, their canopies
+  thoroughfares in all of television, and therefore in all of the world. <ansi fg="10">Elm trees</ansi> line both sides of the street, their canopies
   meeting overhead to form a tunnel of shade. The storefronts are clean and
   modest -- painted wood, hand-lettered signs, <ansi fg="itemname">window boxes</ansi>
   with geraniums. A <ansi fg="itemname">bench</ansi> outside the hardware store
@@ -12,8 +11,7 @@ description: >-
   pace of a town that has nowhere pressing to be. Everyone who passes waves.
   Not the distracted half-wave of a city, but the full easy wave of a neighbor
   who is genuinely glad to see you. To the <ansi fg="exit">north</ansi> is the
-  Taylor house. To the <ansi fg="exit">east</ansi> the courthouse. To the
-  <ansi fg="exit">south</ansi> is Floyds. To the <ansi fg="exit">west</ansi>
+  Taylor house. To the <ansi fg="exit">east</ansi> the courthouse. To the <ansi fg="exit">south</ansi> is Floyds. To the <ansi fg="exit">west</ansi>
   is Wallys Filling Station. To the <ansi fg="exit">northwest</ansi> the road leads
   out of town past the schoolyard.
 mapsymbol: M

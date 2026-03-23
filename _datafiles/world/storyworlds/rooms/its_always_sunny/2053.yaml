@@ -12,8 +12,7 @@ description: >-
   inexplicably, sits a <ansi fg="itemname">ham</ansi> in sunglasses. This
   is Frank's AIDS raft. This is the float from the Gang's AIDS benefit run,
   which did not go as planned, in ways that it would take some time to explain.
-  The ham has been here for days. The ham is doing fine. To the
-  <ansi fg="exit">street</ansi> is the way back.
+  The ham has been here for days. The ham is doing fine. To the <ansi fg="exit">street</ansi> is the way back.
 mapsymbol: WP
 maplegend: The Water Park
 biome: land

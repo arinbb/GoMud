@@ -8,9 +8,7 @@ description: >-
   Crunchem Hall. <ansi fg="itemname">Buttercups</ansi> and <ansi fg="itemname">daisies</ansi>
   dot the grassy verges. The lane curves gently between green <ansi fg="itemname">fields</ansi>,
   leading away from the main road toward something quieter, simpler, more honest.
-  A hand-painted <ansi fg="itemname">sign</ansi> nailed to a fencepost points
-  <ansi fg="exit">south</ansi> toward a cottage. The main road is back to the
-  <ansi fg="exit">north</ansi>.
+  A hand-painted <ansi fg="itemname">sign</ansi> nailed to a fencepost points <ansi fg="exit">south</ansi> toward a cottage. The main road is back to the <ansi fg="exit">north</ansi>.
 mapsymbol: ~
 maplegend: Country Lane
 biome: road

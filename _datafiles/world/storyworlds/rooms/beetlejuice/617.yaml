@@ -2,11 +2,9 @@ roomid: 617
 zone: Beetlejuice
 title: Lydia's Bedroom
 description: >-
-  A gothic sanctuary in the heart of a suburban house. Black
-  <ansi fg="itemname">curtains</ansi> block the windows, turning afternoon into
+  A gothic sanctuary in the heart of a suburban house. Black <ansi fg="itemname">curtains</ansi> block the windows, turning afternoon into
   permanent midnight. <ansi fg="itemname">Candles</ansi> in wrought-iron holders
-  provide the only light, casting dancing shadows across walls covered with
-  <ansi fg="itemname">photographs</ansi> -- dozens of black-and-white prints
+  provide the only light, casting dancing shadows across walls covered with <ansi fg="itemname">photographs</ansi> -- dozens of black-and-white prints
   pinned edge to edge. A <ansi fg="itemname">camera</ansi> on a tripod stands
   near the window, pointed at the mirror. A <ansi fg="itemname">journal</ansi>
   lies open on the nightstand, its pages filled with cramped handwriting and

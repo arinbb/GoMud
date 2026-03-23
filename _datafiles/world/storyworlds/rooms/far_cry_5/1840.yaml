@@ -11,8 +11,7 @@ description: >-
   generator</ansi> throbs in the corner, its exhaust vented through a pipe in the
   ceiling. <ansi fg="itemname">Dutch</ansi> stands at the radio bank, headphones
   around his neck, watching you with the grim satisfaction of a man who built a
-  bunker everyone told him he didn't need. The only way out is a ladder leading
-  <ansi fg="exit">up</ansi> to the surface.
+  bunker everyone told him he didn't need. The only way out is a ladder leading <ansi fg="exit">up</ansi> to the surface.
 mapsymbol: B
 maplegend: Dutchs Bunker
 biome: cave

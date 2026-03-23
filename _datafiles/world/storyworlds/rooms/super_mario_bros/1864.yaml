@@ -10,8 +10,7 @@ description: >-
   He is very cheerful, given that he is about to tell you something devastating.
   His round eyes are bright and his tiny hands are clasped before him. There
   is a throne room somewhere behind him, but the princess is not in it. The
-  room itself is pleasant enough -- stone walls, a bit of tapestry, a
-  <ansi fg="itemname">sign</ansi> above the door. West leads <ansi fg="exit">back</ansi>
+  room itself is pleasant enough -- stone walls, a bit of tapestry, a <ansi fg="itemname">sign</ansi> above the door. West leads <ansi fg="exit">back</ansi>
   to the castle bridge; east leads to <ansi fg="exit">World 2</ansi>.
 mapsymbol: T
 maplegend: Toad Antechamber

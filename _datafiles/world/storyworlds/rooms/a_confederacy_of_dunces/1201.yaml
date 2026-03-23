@@ -7,14 +7,11 @@ description: >-
   rattle down the center on iron rails, their bells clanging at pedestrians who
   cross with the serene fatalism of people who have accepted that fate, not
   traffic lights, determines survival. <ansi fg="itemname">Neon signs</ansi>
-  advertise Jax Beer, Werlein's Music, and Maison Blanche. The wide
-  <ansi fg="itemname">neutral ground</ansi> -- what the rest of the world calls
+  advertise Jax Beer, Werlein's Music, and Maison Blanche. The wide <ansi fg="itemname">neutral ground</ansi> -- what the rest of the world calls
   a median -- divides the street with live oaks and iron benches where old men
   sit and watch the world fail to improve. Businessmen, tourists, musicians,
   nuns, and at least one patrolman in a ridiculous costume hurry past in every
-  direction. <ansi fg="exit">West</ansi> leads back to D.H. Holmes.
-  <ansi fg="exit">East</ansi> leads toward the French Quarter.
-  <ansi fg="exit">North</ansi> leads to the Prytania Theater.
+  direction. <ansi fg="exit">West</ansi> leads back to D.H. Holmes. <ansi fg="exit">East</ansi> leads toward the French Quarter. <ansi fg="exit">North</ansi> leads to the Prytania Theater.
 mapsymbol: C
 maplegend: Canal Street
 biome: city

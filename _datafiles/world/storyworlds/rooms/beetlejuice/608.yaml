@@ -8,8 +8,7 @@ description: >-
   bed despite Delia's protests. A <ansi fg="itemname">vanity mirror</ansi> stands
   in the corner, its surface slightly foggy. The <ansi fg="itemname">closet</ansi>
   door is slightly ajar, revealing a mix of Adam's flannel shirts and the
-  Deetzes' designer clothes crammed together. A door to the south leads to
-  <ansi fg="itemname">Lydia's room</ansi>.
+  Deetzes' designer clothes crammed together. A door to the south leads to <ansi fg="itemname">Lydia's room</ansi>.
 mapsymbol: B
 maplegend: Bedroom
 biome: house

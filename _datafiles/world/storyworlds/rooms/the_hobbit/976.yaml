@@ -8,10 +8,8 @@ description: >-
   in the center, barely visible in the gloom, something pale and thin crouches,
   muttering to itself. The air is damp and reeks of raw fish and old stone.
   Water drips from the ceiling in a slow, maddening rhythm. And there -- on the
-  tunnel floor near your feet -- something glints. A small gold
-  <ansi fg="itemname">ring</ansi>, plain and unremarkable, lying where it fell.
-  It is warm to the touch. It seems to whisper. The only exit leads
-  <ansi fg="exit">north</ansi> back up toward the goblin tunnels.
+  tunnel floor near your feet -- something glints. A small gold <ansi fg="itemname">ring</ansi>, plain and unremarkable, lying where it fell.
+  It is warm to the touch. It seems to whisper. The only exit leads <ansi fg="exit">north</ansi> back up toward the goblin tunnels.
 mapsymbol: g
 maplegend: Gollum's Cave
 biome: cave

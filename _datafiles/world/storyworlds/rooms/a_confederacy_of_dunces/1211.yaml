@@ -11,8 +11,7 @@ description: >-
   the sinks reflects the face of anyone unfortunate enough to be here, which at
   the moment is you. It smells of industrial cleaner and despair, two scents
   that have achieved a permanent symbiosis in this room. This is where ambition
-  comes to die, one ridiculous costume at a time. The exit leads
-  <ansi fg="exit">west</ansi> back to Canal Street.
+  comes to die, one ridiculous costume at a time. The exit leads <ansi fg="exit">west</ansi> back to Canal Street.
 mapsymbol: R
 maplegend: Bus Station
 biome: house

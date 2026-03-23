@@ -6,13 +6,11 @@ description: >-
   in improbable mountains, threaded with narrow paths. The afternoon sun
   turns everything <ansi fg="yellow">amber and bronze</ansi>, making the
   junkyard look like a landscape painting that has been left out in the
-  weather. <ansi fg="itemname">Car bodies</ansi> are stacked four high.
-  <ansi fg="itemname">Pipes and beams</ansi> lean against each other in
+  weather. <ansi fg="itemname">Car bodies</ansi> are stacked four high. <ansi fg="itemname">Pipes and beams</ansi> lean against each other in
   arrangements that seem precarious and have somehow stood for decades.
   At the center, a <ansi fg="itemname">cleared patch of earth</ansi>
   holds a single small <ansi fg="10">sapling</ansi> in a clay pot -- a
-  tiny tree, waiting to be planted somewhere better. The
-  <ansi fg="itemname">soil</ansi> here is dark and rich-looking despite
+  tiny tree, waiting to be planted somewhere better. The <ansi fg="itemname">soil</ansi> here is dark and rich-looking despite
   everything. To the <ansi fg="exit">west</ansi>, the street.
 mapsymbol: J
 maplegend: The Junkyard

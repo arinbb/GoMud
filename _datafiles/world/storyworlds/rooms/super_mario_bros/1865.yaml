@@ -11,8 +11,7 @@ description: >-
   two fixed points, red-shelled, patient, waiting for someone to fly into
   their path. The terrain here undulates more, platforms rising and falling,
   requiring more leaping than the straightforward corridor of World 1. West
-  leads <ansi fg="exit">back</ansi> to Toad; south leads to the bridge level of
-  <ansi fg="exit">World 2-3</ansi>.
+  leads <ansi fg="exit">back</ansi> to Toad; south leads to the bridge level of <ansi fg="exit">World 2-3</ansi>.
 mapsymbol: W
 maplegend: World 2-1 Overworld
 biome: land

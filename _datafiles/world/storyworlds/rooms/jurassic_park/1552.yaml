@@ -11,8 +11,7 @@ description: >-
   guide systems chirping softly to themselves. The road curves <ansi fg="exit">south</ansi>
   toward the main gates and <ansi fg="exit">east</ansi> to the Brachiosaurus
   meadow. Another branch curves <ansi fg="exit">north</ansi> into the deeper
-  park. A muddy track disappears into the trees to the northwest — the
-  <ansi fg="exit">dilophosaurus paddock</ansi> road.
+  park. A muddy track disappears into the trees to the northwest — the <ansi fg="exit">dilophosaurus paddock</ansi> road.
 mapsymbol: R
 maplegend: Tour Road
 biome: land

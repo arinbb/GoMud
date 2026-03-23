@@ -5,15 +5,13 @@ description: >-
   <ansi fg="10">Highway</ansi> stretching forward in the early morning light.
   Los Angeles giving way to California giving way to the open country north.
   The <ansi fg="itemname">road</ansi> ahead is long and empty and gold in the
-  morning. The <ansi fg="itemname">mountains</ansi> in the distance. The
-  <ansi fg="itemname">sky</ansi> going from pink to blue as you drive. Music
+  morning. The <ansi fg="itemname">mountains</ansi> in the distance. The <ansi fg="itemname">sky</ansi> going from pink to blue as you drive. Music
   on the radio -- something by Sia, barely audible, everything else quiet.
   In the rearview <ansi fg="itemname">mirror</ansi> the funeral home recedes,
   LA recedes, everyone you love growing smaller. You know what happens next.
   You have seen the flash-forwards. You know how everyone ends. But right now
   you are in the car and the road is forward and the music is playing and you
-  are alive. Right now, right now, you are alive. No exits except
-  <ansi fg="exit">back</ansi> -- but why would you go back.
+  are alive. Right now, right now, you are alive. No exits except <ansi fg="exit">back</ansi> -- but why would you go back.
 mapsymbol: R
 maplegend: The Open Road
 biome: road

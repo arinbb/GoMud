@@ -3,8 +3,7 @@ zone: Seinfeld
 title: The Parking Garage
 description: >-
   A <ansi fg="8">parking garage</ansi> in a New Jersey mall, which is exactly as
-  large and featureless as it needs to be to be completely disorienting. Concrete
-  <ansi fg="itemname">pillars</ansi> stretch in all directions at regular intervals,
+  large and featureless as it needs to be to be completely disorienting. Concrete <ansi fg="itemname">pillars</ansi> stretch in all directions at regular intervals,
   each one identical to the last. <ansi fg="itemname">Level signs</ansi> indicate
   levels that do not help because you do not know which level you started on. Cars
   sit in rows in the grey fluorescent dark, each one possibly yours, none of them

@@ -9,8 +9,7 @@ description: >-
   the corner, its glass cracked. Power lines sag overhead, swaying in the wind.
   The street runs <ansi fg="exit">east</ansi> toward a dance studio and <ansi fg="exit">west</ansi>
   back to the prison lot. A side street leads <ansi fg="exit">north</ansi> to a gas
-  station. To the <ansi fg="exit">south</ansi>, a residential block. A rusted
-  <ansi fg="exit">car</ansi> idles at the curb.
+  station. To the <ansi fg="exit">south</ansi>, a residential block. A rusted <ansi fg="exit">car</ansi> idles at the curb.
 mapsymbol: +
 maplegend: Streets
 biome: city

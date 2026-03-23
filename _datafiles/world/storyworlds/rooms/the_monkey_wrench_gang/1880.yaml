@@ -2,8 +2,7 @@ roomid: 1880
 zone: The Monkey Wrench Gang
 title: The Lonely Dell
 description: >-
-  You stand at <ansi fg="itemname">Lees Ferry</ansi>, the ancient crossing point of the
-  <ansi fg="cyan">Colorado River</ansi> in the far north of Arizona, just below the Utah
+  You stand at <ansi fg="itemname">Lees Ferry</ansi>, the ancient crossing point of the <ansi fg="cyan">Colorado River</ansi> in the far north of Arizona, just below the Utah
   line. The river here is still green and cold, running swift and clear from the depths
   of Glen Canyon before the dam stole its heart. Red sandstone walls rise on both sides,
   vertical and absolute, their faces streaked with <ansi fg="red">desert varnish</ansi>

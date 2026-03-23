@@ -2,8 +2,7 @@ roomid: 607
 zone: Beetlejuice
 title: Maitland House - Attic
 description: >-
-  Adam's sanctuary. The attic is a sprawling workspace dominated by an enormous
-  <ansi fg="itemname">model</ansi> of Winter River spread across a massive table.
+  Adam's sanctuary. The attic is a sprawling workspace dominated by an enormous <ansi fg="itemname">model</ansi> of Winter River spread across a massive table.
   Every building, tree, and road is recreated in miniature with obsessive detail.
   A <parameter name="content">  A <ansi fg="itemname">workbench</ansi> along one wall is covered with tiny tools,
   paint pots, and magnifying lenses. The sloped ceiling is hung with bare bulbs.

@@ -2,8 +2,7 @@ roomid: 1973
 zone: Nineteen Eighty Four
 title: The Cell
 description: >-
-  <ansi fg="white">A white-walled cell with a bench around the wall and a
-  <ansi fg="white">telescreen</ansi> on one side. The light is as pitiless
+  <ansi fg="white">A white-walled cell with a bench around the wall and a <ansi fg="white">telescreen</ansi> on one side. The light is as pitiless
   here as in the corridor. There is no pillow, no blanket. You sit on
   the bench in the approved manner — do not slouch, do not put your hands
   over your face, do not show anything that could be interpreted as
@@ -11,9 +10,7 @@ description: >-
   enormously despite the cold, his face wearing the expression of a man
   who is proud and terrified simultaneously. He keeps saying he is guilty.
   He keeps saying his daughter turned him in. He says this with something
-  that is uncomfortably close to pride. The corridor is to the
-  <ansi fg="exit">corridor</ansi> west. The door to
-  <ansi fg="exit">room101</ansi> is to the north.</ansi>
+  that is uncomfortably close to pride. The corridor is to the <ansi fg="exit">corridor</ansi> west. The door to <ansi fg="exit">room101</ansi> is to the north.</ansi>
 mapsymbol: E
 maplegend: The Cell
 biome: house

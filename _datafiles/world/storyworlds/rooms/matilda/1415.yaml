@@ -8,10 +8,8 @@ description: >-
   has a gap. Inside, the house is imposing but wrong — the <ansi fg="itemname">furniture</ansi>
   is heavy and masculine, the <ansi fg="itemname">walls</ansi> hung with athletic
   trophies and photographs of a woman throwing heavy objects. This house belongs
-  to someone who took it by force and lives in it without grace. A pair of
-  <ansi fg="itemname">muddy boots</ansi> sits by the door, enormous and military.
-  The air smells of sweat, boot polish, and stolen property. The path leads back
-  <ansi fg="exit">west</ansi> to the cottage.
+  to someone who took it by force and lives in it without grace. A pair of <ansi fg="itemname">muddy boots</ansi> sits by the door, enormous and military.
+  The air smells of sweat, boot polish, and stolen property. The path leads back <ansi fg="exit">west</ansi> to the cottage.
 mapsymbol: !
 maplegend: The Red House
 biome: house

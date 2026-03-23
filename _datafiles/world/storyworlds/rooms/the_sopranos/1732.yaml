@@ -6,13 +6,10 @@ description: >-
   table covered in <ansi fg="itemname">magazines</ansi>. The magazines are current-ish,
   or were when they arrived. Now they are just present. The <ansi fg="itemname">lamp</ansi>
   in the corner provides warm, careful light. The <ansi fg="itemname">walls</ansi> are a
-  color that was chosen to be calming and has succeeded in being neutral. A
-  <ansi fg="itemname">white noise machine</ansi> runs by the inner door, making a sound
-  like distant surf, ensuring that whatever happens inside stays inside. Other
-  <ansi fg="itemname">patients</ansi> sit in the other chairs, not looking at you,
+  color that was chosen to be calming and has succeeded in being neutral. A <ansi fg="itemname">white noise machine</ansi> runs by the inner door, making a sound
+  like distant surf, ensuring that whatever happens inside stays inside. Other <ansi fg="itemname">patients</ansi> sit in the other chairs, not looking at you,
   each carrying something that brought them here. Everyone in this room is here for
-  a reason and none of them will tell you what it is. Dr. Melfis office is
-  <ansi fg="exit">north</ansi>.
+  a reason and none of them will tell you what it is. Dr. Melfis office is <ansi fg="exit">north</ansi>.
 mapsymbol: W
 maplegend: Waiting Room
 biome: house

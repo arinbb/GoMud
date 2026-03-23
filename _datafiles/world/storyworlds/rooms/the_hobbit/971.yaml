@@ -2,12 +2,9 @@ roomid: 971
 zone: The Hobbit
 title: The Shire Road
 description: >-
-  A winding dirt <ansi fg="itemname">road</ansi> meanders through rolling green
-  <ansi fg="itemname">hills</ansi>, past neatly trimmed <ansi fg="itemname">hedgerows</ansi>
+  A winding dirt <ansi fg="itemname">road</ansi> meanders through rolling green <ansi fg="itemname">hills</ansi>, past neatly trimmed <ansi fg="itemname">hedgerows</ansi>
   and round hobbit-doors set into grassy banks. Smoke rises from chimney-pots.
-  Gardens bloom with snapdragons and sunflowers. Behind you to the
-  <ansi fg="exit">west</ansi>, Bag End sits snug under The Hill. Ahead to the
-  <ansi fg="exit">east</ansi>, the road climbs toward the wild lands where trolls
+  Gardens bloom with snapdragons and sunflowers. Behind you to the <ansi fg="exit">west</ansi>, Bag End sits snug under The Hill. Ahead to the <ansi fg="exit">east</ansi>, the road climbs toward the wild lands where trolls
   and worse things lurk. The sky is impossibly blue. The grass is impossibly
   green. Everything in the Shire is impossibly, stubbornly pleasant -- and the
   road goes ever on and on, down from the door where it began.

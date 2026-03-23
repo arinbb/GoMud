@@ -5,13 +5,10 @@ description: >-
   Absolute pandemonium. You've fallen through the crack in the living room floor
   into a subterranean carnival nightmare. <parameter name="content">  into a subterranean carnival nightmare. <ansi fg="itemname">Neon signs</ansi> in
   garish green and purple buzz and crackle, advertising "BIO-EXORCISMS" and
-  "BETELGEUSE - GHOST WITH THE MOST" and "SAY IT THREE TIMES." A rotting
-  <ansi fg="itemname">carousel</ansi> spins slowly in the corner, its painted
+  "BETELGEUSE - GHOST WITH THE MOST" and "SAY IT THREE TIMES." A rotting <ansi fg="itemname">carousel</ansi> spins slowly in the corner, its painted
   horses grinning with too many teeth. A <ansi fg="itemname">coffin</ansi> stands
-  upright against one wall like a wardrobe, its lid hanging open. Mountains of
-  <ansi fg="itemname">junk</ansi> -- broken toys, stolen gravestones, carnival
-  prizes, shrunken heads -- cover every surface. The air is thick with
-  <ansi fg="itemname">flies</ansi> and the smell of decay masked by cotton candy.
+  upright against one wall like a wardrobe, its lid hanging open. Mountains of <ansi fg="itemname">junk</ansi> -- broken toys, stolen gravestones, carnival
+  prizes, shrunken heads -- cover every surface. The air is thick with <ansi fg="itemname">flies</ansi> and the smell of decay masked by cotton candy.
   This is the domain of the Ghost with the Most, and it reflects his personality
   perfectly: chaotic, grotesque, and strangely magnetic.
 mapsymbol: "!"

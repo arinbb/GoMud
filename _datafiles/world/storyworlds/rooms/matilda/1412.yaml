@@ -9,8 +9,7 @@ description: >-
   of <ansi fg="itemname">swings</ansi> with chains that squeal in protest. A faded
   white <ansi fg="itemname">line</ansi> on the asphalt marks the boundary beyond
   which children must not step during break. The Trunchbull's office window
-  overlooks the entire space from above. The school gates are back to the
-  <ansi fg="exit">north</ansi>.
+  overlooks the entire space from above. The school gates are back to the <ansi fg="exit">north</ansi>.
 mapsymbol: P
 maplegend: Playground
 biome: land

@@ -2,12 +2,10 @@ roomid: 1403
 zone: Matilda
 title: Front Walk
 description: >-
-  A short concrete path leads from the Wormwood front door to the pavement. The
-  <ansi fg="itemname">garden</ansi> on either side is a wasteland of dead grass
+  A short concrete path leads from the Wormwood front door to the pavement. The <ansi fg="itemname">garden</ansi> on either side is a wasteland of dead grass
   and a single concrete <ansi fg="itemname">gnome</ansi> with a chipped nose. A
   gaudy <ansi fg="3">gold-colored car</ansi> sits in the driveway, polished to a
-  blinding shine — the only thing Mr. Wormwood truly loves. The street stretches
-  <ansi fg="exit">east</ansi> toward the village, and the Wormwood front door is
+  blinding shine — the only thing Mr. Wormwood truly loves. The street stretches <ansi fg="exit">east</ansi> toward the village, and the Wormwood front door is
   back to the <ansi fg="exit">north</ansi>.
 mapsymbol: F
 maplegend: Front Walk

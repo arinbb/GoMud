@@ -3,11 +3,9 @@ zone: six_feet_under
 title: Fisher and Sons Funeral Home
 description: >-
   A Victorian <ansi fg="10">house</ansi> on a quiet street in Los Angeles --
-  green painted wood, a <ansi fg="itemname">sign</ansi> above the porch reading
-  <ansi fg="itemname">Fisher and Sons</ansi> in discreet gold letters. The kind
+  green painted wood, a <ansi fg="itemname">sign</ansi> above the porch reading <ansi fg="itemname">Fisher and Sons</ansi> in discreet gold letters. The kind
   of building that wants to be overlooked, that has been designed with deliberate
-  restraint so that grief does not have to look at anything too loud. A small
-  <ansi fg="itemname">garden</ansi> borders the front walk, tended with care.
+  restraint so that grief does not have to look at anything too loud. A small <ansi fg="itemname">garden</ansi> borders the front walk, tended with care.
   The <ansi fg="itemname">porch</ansi> is swept clean. The neighborhood goes on
   around it, indifferent, full of living. The <ansi fg="exit">arrangement room</ansi>
   is to the east. The <ansi fg="exit">family kitchen</ansi> is to the north.

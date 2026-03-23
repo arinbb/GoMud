@@ -13,8 +13,7 @@ description: >-
   penstocks at whatever rate the Bureau of Reclamation decides. It is no longer a
   river at this point. It is a utility. The powerhouse <ansi fg="8">turbines</ansi>
   vibrate the concrete underfoot. <ansi fg="8">Spray</ansi> from the tailrace keeps
-  the gorge floor cool and damp, ferns growing in the constant mist. To the
-  <ansi fg="exit">overlook</ansi> to the <ansi fg="exit">north</ansi>, the road leads back up.
+  the gorge floor cool and damp, ferns growing in the constant mist. To the <ansi fg="exit">overlook</ansi> to the <ansi fg="exit">north</ansi>, the road leads back up.
 mapsymbol: W
 maplegend: Dam Base
 biome: cave

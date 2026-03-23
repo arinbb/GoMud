@@ -3,16 +3,12 @@ zone: Buffalo 66
 title: Ice Skating Rink
 description: >-
   An outdoor <ansi fg="itemname">rink</ansi> behind a chain-link fence, lit by
-  tall <ansi fg="itemname">sodium lamps</ansi> that cast orange pools on the
-  <ansi fg="15">ice</ansi>. The ice is scarred with blade marks, a palimpsest of
+  tall <ansi fg="itemname">sodium lamps</ansi> that cast orange pools on the <ansi fg="15">ice</ansi>. The ice is scarred with blade marks, a palimpsest of
   every circle anyone has ever skated here. <ansi fg="itemname">Benches</ansi> line
   one side, crusted with ice. A small <ansi fg="itemname">speaker</ansi> mounted
-  on a pole plays faint music — something old, something slow. The
-  <ansi fg="12">sky</ansi> above is the deep blue-black of a Buffalo winter night.
-  <ansi fg="15">Snow</ansi> falls in the lamplight, each flake catching the orange
+  on a pole plays faint music — something old, something slow. The <ansi fg="12">sky</ansi> above is the deep blue-black of a Buffalo winter night. <ansi fg="15">Snow</ansi> falls in the lamplight, each flake catching the orange
   glow for a moment before disappearing onto the dark ice. The strip club is
-  back to the <ansi fg="exit">north</ansi>. A residential street leads
-  <ansi fg="exit">west</ansi>.
+  back to the <ansi fg="exit">north</ansi>. A residential street leads <ansi fg="exit">west</ansi>.
 mapsymbol: I
 maplegend: Ice Rink
 biome: snow

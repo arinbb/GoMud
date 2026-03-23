@@ -9,8 +9,7 @@ description: >-
   difference between inside and out. A <ansi fg="itemname">waitress</ansi> stands
   behind the counter, staring at nothing. Coffee is fifty cents and it tastes like
   it. The <ansi fg="15">fluorescent</ansi> lights give everything a flat, timeless
-  quality — it could be any decade in here. The Brown house is back to the
-  <ansi fg="exit">north</ansi>. A road leads <ansi fg="exit">east</ansi> toward a
+  quality — it could be any decade in here. The Brown house is back to the <ansi fg="exit">north</ansi>. A road leads <ansi fg="exit">east</ansi> toward a
   bowling alley.
 mapsymbol: R
 maplegend: Diner

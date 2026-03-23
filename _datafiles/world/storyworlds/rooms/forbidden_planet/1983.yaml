@@ -4,14 +4,12 @@ title: The C-57D
 description: >-
   The interior of United Planets Cruiser C-57D hums with the controlled energy
   of a ship at rest. The circular <ansi fg="itemname">command deck</ansi>
-  spreads before you, its consoles lit with amber and green. Banks of
-  <ansi fg="itemname">instruments</ansi> line the curved wall, monitoring
+  spreads before you, its consoles lit with amber and green. Banks of <ansi fg="itemname">instruments</ansi> line the curved wall, monitoring
   everything from hull integrity to local subspace fluctuations. In the center,
   the captain's chair sits empty before a transparent dome that gives a
   panoramic view of the alien landscape. The crew move through their duties
   with the measured efficiency of men who have crossed between the stars and
-  know what the dark holds. A short corridor leads to the
-  <ansi fg="itemname">crew quarters</ansi>. The outer <ansi fg="exit">hatch</ansi>
+  know what the dark holds. A short corridor leads to the <ansi fg="itemname">crew quarters</ansi>. The outer <ansi fg="exit">hatch</ansi>
   leads north to the landing site.
 mapsymbol: C
 maplegend: The C-57D

@@ -6,9 +6,7 @@ description: >-
   spire pierces the swirling sky above. The church itself is rendered in deep blues
   and grays, its walls solid against the turbulence overhead. A few <ansi fg="itemname">benches</ansi>
   sit along the square's edge, painted in simple browns. The square is paved with
-  cobblestones that catch the starlight in tiny flecks of white and yellow. To the
-  <ansi fg="exit">north</ansi>, the lane leads back toward the village edge. The
-  <ansi fg="exit">south</ansi> continues deeper into the sleeping village. An
+  cobblestones that catch the starlight in tiny flecks of white and yellow. To the <ansi fg="exit">north</ansi>, the lane leads back toward the village edge. The <ansi fg="exit">south</ansi> continues deeper into the sleeping village. An
   old <ansi fg="itemname">fountain</ansi> stands dry in the center of the square,
   its basin filled with fallen leaves of painted gold.
 mapsymbol: '+'

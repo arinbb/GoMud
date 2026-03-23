@@ -6,13 +6,11 @@ description: >-
   low and dark and smells intensely of rodent, but it is organized in a way
   that suggests habitation — not residence, exactly, but visitation. Frequent,
   enthusiastic visitation. <ansi fg="itemname">Rat traps</ansi> of various
-  designs hang from the ceiling on strings, a mobile of rodent management.
-  <ansi fg="itemname">Chalk drawings</ansi> cover the walls — not graffiti
+  designs hang from the ceiling on strings, a mobile of rodent management. <ansi fg="itemname">Chalk drawings</ansi> cover the walls — not graffiti
   but something more like documentation, as if Charlie is recording the
   behavior of the rats as a naturalist might, if the naturalist ate cat food
   and huffed paint thinner. The rats here move with comfort. This is their
-  territory too, and they know it, and they are not afraid of you. To the
-  <ansi fg="exit">up</ansi> is the apartment.
+  territory too, and they know it, and they are not afraid of you. To the <ansi fg="exit">up</ansi> is the apartment.
 mapsymbol: RT
 maplegend: Rat Tunnel
 biome: cave

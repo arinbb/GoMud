@@ -2,16 +2,13 @@ roomid: 1408
 zone: Matilda
 title: Miss Honey's Classroom
 description: >-
-  A bright, warm classroom that feels like a different world from the rest of
-  <ansi fg="8">Crunchem Hall</ansi>. <ansi fg="10">Sunlight</ansi> pours through
-  clean windows onto rows of small wooden <ansi fg="itemname">desks</ansi>. A
-  <ansi fg="itemname">blackboard</ansi> at the front is covered in neat, careful
+  A bright, warm classroom that feels like a different world from the rest of <ansi fg="8">Crunchem Hall</ansi>. <ansi fg="10">Sunlight</ansi> pours through
+  clean windows onto rows of small wooden <ansi fg="itemname">desks</ansi>. A <ansi fg="itemname">blackboard</ansi> at the front is covered in neat, careful
   handwriting. <ansi fg="itemname">Wildflowers</ansi> in a jam jar sit on the
   teacher's desk beside a pile of exercise books. Children's <ansi fg="itemname">artwork</ansi>
   is pinned to every available surface — bright, hopeful paintings that push back
   against the grey institutional walls. A stick of white <ansi fg="itemname">chalk</ansi>
-  rests in the blackboard tray, perfectly still. The corridor is back to the
-  <ansi fg="exit">south</ansi>.
+  rests in the blackboard tray, perfectly still. The corridor is back to the <ansi fg="exit">south</ansi>.
 mapsymbol: H
 maplegend: Miss Honey's Class
 biome: house

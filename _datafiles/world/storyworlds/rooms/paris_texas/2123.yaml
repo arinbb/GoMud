@@ -3,16 +3,14 @@ zone: Paris Texas
 title: "Walts House, LA"
 description: >-
   A <ansi fg="yellow">suburban house</ansi> in Los Angeles, clean and cared-for
-  in the way a house is when someone has made it deliberately into a home.
-  <ansi fg="itemname">Toys</ansi> are arranged on a shelf with a neatness that
+  in the way a house is when someone has made it deliberately into a home. <ansi fg="itemname">Toys</ansi> are arranged on a shelf with a neatness that
   suggests a child who likes order. A <ansi fg="itemname">kitchen</ansi> smells
   of coffee. Photographs on the wall show a <ansi fg="itemname">boy</ansi> at
   various ages, always grinning, always caught mid-motion. One photo near the
   window shows four people — a woman, a man, a small boy, a younger man —
   standing in front of a car. Someone has dusted the frame carefully. This is
   a house that knows how to miss people. To the <ansi fg="exit">west</ansi>,
-  the highway. To the <ansi fg="exit">north</ansi>, the backyard. To the
-  <ansi fg="exit">east</ansi>, the road to Houston.
+  the highway. To the <ansi fg="exit">north</ansi>, the backyard. To the <ansi fg="exit">east</ansi>, the road to Houston.
 mapsymbol: W
 maplegend: "Walts House"
 biome: house
