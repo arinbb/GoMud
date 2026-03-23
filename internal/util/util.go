@@ -183,6 +183,11 @@ func LogRoll(name string, rollResult int, targetNumber int) {
 }
 
 func SplitString(input string, lineWidth int) []string {
+	// ANSI-tag-aware word wrapping.
+	// Treats <ansi ...>content</ansi> blocks as atomic units whose visible width
+	// is only the content between tags (the tags themselves are zero-width).
+	xmlAnsi := regexp.MustCompile(`</?ansi[^>]*>`)
+
 	var result []string
 	var currentLine string
 	currentLen := 0
@@ -190,53 +195,149 @@ func SplitString(input string, lineWidth int) []string {
 	parts := strings.Split(input, "\n")
 
 	for _, textLine := range parts {
-		words := wordRegex.FindAllString(textLine, -1)
+		// Tokenize into ansi-aware words: first split by tags to preserve them,
+		// then split non-tag segments into words.
+		tokens := splitAnsiAwareTokens(textLine, xmlAnsi)
 
-		l := len(words)
+		for _, token := range tokens {
+			visLen := runewidth.StringWidth(xmlAnsi.ReplaceAllString(token, ""))
 
-		skip := false
-		for idx, word := range words {
-			if skip {
-				skip = false
+			if visLen > lineWidth {
+				if currentLine != "" {
+					result = append(result, strings.TrimRight(currentLine, " "))
+					currentLine = ""
+					currentLen = 0
+				}
+				result = append(result, token)
 				continue
 			}
 
-			wordLen := runewidth.StringWidth(word)
-
-			if idx < l-1 && punctuationRegex.MatchString(words[idx+1]) {
-				wordLen += runewidth.StringWidth(words[idx+1])
-				word += words[idx+1]
-				skip = true
-			} else {
-				skip = false
-			}
-
-			if wordLen > lineWidth {
-				result = append(result, word)
-				continue
-			}
-
-			if currentLen+wordLen > lineWidth {
+			if currentLen+visLen > lineWidth {
 				if currentLine != "" {
 					result = append(result, strings.TrimRight(currentLine, " "))
 				}
-				// clear spaces at the beginning of the line
-				currentLine = strings.TrimLeft(word, " ")
-				currentLen = runewidth.StringWidth(currentLine)
+				currentLine = strings.TrimLeft(token, " ")
+				currentLen = runewidth.StringWidth(xmlAnsi.ReplaceAllString(currentLine, ""))
 			} else {
-				currentLine += word
-				currentLen += wordLen
+				currentLine += token
+				currentLen += visLen
 			}
 		}
 
 		if currentLine != "" {
-			result = append(result, currentLine)
+			result = append(result, strings.TrimRight(currentLine, " "))
 			currentLine = ""
 			currentLen = 0
 		}
 	}
 
 	return result
+}
+
+// splitAnsiAwareTokens splits text into word-level tokens while keeping
+// <ansi ...>content</ansi> blocks intact as single tokens.
+func splitAnsiAwareTokens(text string, xmlAnsi *regexp.Regexp) []string {
+	var tokens []string
+
+	// Find all tag positions
+	tagLocs := xmlAnsi.FindAllStringIndex(text, -1)
+	if len(tagLocs) == 0 {
+		// No tags — use original word splitting
+		words := wordRegex.FindAllString(text, -1)
+		l := len(words)
+		skip := false
+		for idx, word := range words {
+			if skip {
+				skip = false
+				continue
+			}
+			if idx < l-1 && punctuationRegex.MatchString(words[idx+1]) {
+				word += words[idx+1]
+				skip = true
+			}
+			tokens = append(tokens, word)
+		}
+		return tokens
+	}
+
+	// Process text segment by segment, treating <ansi>...</ansi> as atomic
+	pos := 0
+	depth := 0
+	blockStart := -1
+
+	for pos < len(text) {
+		// Check if we're at a tag
+		foundTag := false
+		for _, loc := range tagLocs {
+			if loc[0] == pos {
+				tagStr := text[loc[0]:loc[1]]
+				if strings.HasPrefix(tagStr, "</") {
+					// Closing tag
+					depth--
+					if depth <= 0 {
+						depth = 0
+						if blockStart >= 0 {
+							// Emit the whole <ansi>...</ansi> block as one token
+							block := text[blockStart:loc[1]]
+							tokens = append(tokens, block)
+							blockStart = -1
+						}
+					}
+				} else {
+					// Opening tag
+					if depth == 0 {
+						blockStart = loc[0]
+					}
+					depth++
+				}
+				pos = loc[1]
+				foundTag = true
+				break
+			}
+		}
+		if foundTag {
+			continue
+		}
+
+		if depth > 0 {
+			// Inside an ansi block — skip characters (they'll be emitted with the block)
+			pos++
+			continue
+		}
+
+		// Outside any tag — collect until next tag or end
+		nextTag := len(text)
+		for _, loc := range tagLocs {
+			if loc[0] > pos {
+				nextTag = loc[0]
+				break
+			}
+		}
+		segment := text[pos:nextTag]
+		// Split this plain segment into words
+		words := wordRegex.FindAllString(segment, -1)
+		l := len(words)
+		skip := false
+		for idx, word := range words {
+			if skip {
+				skip = false
+				continue
+			}
+			if idx < l-1 && punctuationRegex.MatchString(words[idx+1]) {
+				word += words[idx+1]
+				skip = true
+			}
+			tokens = append(tokens, word)
+		}
+		pos = nextTag
+	}
+
+	// Handle unclosed tags (emit remaining block)
+	if blockStart >= 0 && blockStart < len(text) {
+		tokens = append(tokens, text[blockStart:])
+	}
+
+	return tokens
 }
 
 // Splits a string by adding line breaks at the end of each line

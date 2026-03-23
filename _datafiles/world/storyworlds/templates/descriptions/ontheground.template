@@ -1,7 +1,6 @@
 {{- $displayed := 0 -}}{{- $groundItems := .GroundStuff -}}
 {{- $itemCt := len $groundItems -}}
-{{- if ne $itemCt 0 }}<ansi fg="room-description{{ if or .IsNight .IsDark }}-dark{{ end }}">You see here:</ansi>
-    {{- range $index, $itemName := $groundItems -}}
+{{- if ne $itemCt 0 }}<ansi fg="room-description{{ if or .IsNight .IsDark }}-dark{{ end }}">You see here: </ansi>{{- range $index, $itemName := $groundItems -}}
         {{- $displayed = add $displayed 1 -}}
         <ansi fg="item">{{ $itemName }}</ansi>{{- if ne $displayed $itemCt }}{{- if ne $displayed (sub $itemCt 1) }}, {{ else }} and {{ end }}{{ end -}}
     {{- end }}
