@@ -1,0 +1,27 @@
+mobid: 504
+zone: six_feet_under
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote works on the preparation table with focused, unhurried care."
+  - "emote adjusts the angle of the work light, checks it, adjusts again."
+  - "emote compares the work to the reference photograph. Nods once."
+  - "emote sets down the brush and steps back to look. He is satisfied but not finished."
+  - ''
+  - ''
+  - "say You give them back. That is what you do. You give the family their person back."
+  - "emote picks up the airbrush and tests the pressure on a paper towel."
+activitylevel: 20
+character:
+  name: Rico Diaz
+  description: >-
+    A man in his mid-thirties with the steady hands and focused eyes of a
+    craftsman who has mastered a difficult art. He is compact and careful
+    in his movements, speaks with a precision that matches the precision
+    of his work. He is proud of what he does -- properly proud, the pride
+    of someone who has earned a skill that matters and applies it with
+    full attention. He grew up poor in East LA and built himself into
+    something through discipline and craft. He considers the Fishers his
+    family, though he will not say this directly. He shows it in the work.
+  raceid: 1
+  level: 5

@@ -1,0 +1,63 @@
+roomid: 2226
+zone: six_feet_under
+title: The Fisher Living Room
+description: >-
+  A living room that is actually lived in. A long <ansi fg="itemname">couch</ansi>
+  faces a television that is usually on, usually ignored. An armchair in the
+  corner -- <ansi fg="8">Nathaniel Sr's chair</ansi> -- has not been sat in by
+  anyone since he died, a fact nobody has articulated and everyone knows. Family
+  <ansi fg="itemname">photographs</ansi> cover one wall, an accumulation of
+  decades -- school portraits, holidays, a few that include Nathaniel Sr. in the
+  years before everything. A <ansi fg="itemname">bookshelf</ansi> holds an
+  unorganized collection of paperbacks and oddities. The <ansi fg="exit">kitchen</ansi>
+  is to the west. <ansi fg="exit">Upstairs</ansi> leads to the bedrooms.
+  <ansi fg="exit">Nates room</ansi> is to the north.
+mapsymbol: L
+maplegend: Fisher Living Room
+biome: house
+exits:
+  west:
+    roomid: 2225
+  up:
+    roomid: 2227
+  nates room:
+    roomid: 2228
+    mapdirection: north
+nouns:
+  couch: >-
+    A long couch with three cushions, slightly sunken in the middle where
+    everyone always sits. The upholstery has been replaced once. The frame is
+    original. It holds the shape of years of family watching television and not
+    watching television and sitting next to each other without talking and talking
+    without saying anything.
+  chair: >-
+    Nathaniel Sr's armchair. Brown leather, a little cracked at the armrests.
+    The indentation of him is still there, or seems to be. Nobody sits in it.
+    Nobody has suggested getting rid of it. It sits in its corner doing the
+    work of being present, which is its only remaining function, and it does
+    it thoroughly.
+  photographs: >-
+    A wall of photographs, years of family life in frames of different sizes.
+    School portraits in sequence. A Halloween where Claire was a witch and
+    Nate was something he chose himself and David was something appropriate.
+    A Christmas with snow that seems improbable for LA. Nathaniel Sr. in several
+    of them, looking like the center of gravity that he was.
+  bookshelf: >-
+    Paperbacks, mostly. Some of Nathaniels old woodworking books. A few of
+    Ruths self-help books from different decades, each representing a period
+    of her searching. Claires art books, taken down and put back wrong.
+    Nates Moleskines from college that he never throws away.
+  television: >-
+    On, but nobody is watching it. Something with a laugh track. The sound
+    is turned low enough that it becomes ambient noise, the television equivalent
+    of white noise, a way of not being alone in a room without having to
+    acknowledge the company.
+spawninfo: []
+idlemessages:
+- The television is on. Nobody is watching it. The sound is too low to make out the words.
+- The empty armchair in the corner holds its shape, patient, occupying space.
+- Someone has left a half-empty mug on the coffee table. It has been there since this morning.
+- The photographs on the wall go back decades. The ones with Nathaniel Sr. are distributed throughout, his presence woven in.
+- A floorboard creaks upstairs. Someone moving around in the night, unable to sleep.
+- Ruth has rearranged the bookshelf again. Nobody will notice. She will feel slightly better for having done it.
+- The living room light is warm and low. This time of evening, the house feels almost like itself.

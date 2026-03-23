@@ -1,0 +1,51 @@
+roomid: 2250
+zone: Harvest
+title: Words Between the Lines of Age
+description: >-
+  Underground. A long, low <ansi fg="8">tunnel</ansi> that runs in one
+  direction and does not seem to end. The walls are earth, roots pushing
+  through, the smell of soil and old wood and something slightly sweet and
+  slightly dark. The sound here is hypnotic -- a <ansi fg="itemname">guitar
+  drone</ansi> that started some time ago and has been going since, the long
+  jamming outro of the last track, the place the album goes when it stops
+  being an album and becomes a state you can inhabit. <ansi fg="8">Words</ansi>
+  appear on the walls in the dim light, written in chalk that is already fading:
+  fragments, phrases, the spaces between lines where meaning lives when the
+  words themselves are not enough. The tunnel continues forward. You could
+  follow it to wherever words go when they are done. Or you could go back up
+  into the light, the ranch, the golden afternoon that is still happening up
+  there as it always will be.
+mapsymbol: '0'
+maplegend: Words Between the Lines of Age
+biome: cave
+exits:
+  up:
+    roomid: 2240
+    exitmessage: The tunnel releases you and you climb back up to the ranch, blinking in the gold light.
+nouns:
+  tunnel: >-
+    The tunnel is not metaphorical. It is a place the last track on the record
+    leads to -- the extended jam, the long fade, the music continuing past the
+    point where most music stops. It is eight minutes and thirty-one seconds of
+    not knowing where you are going, which is the correct length for that kind
+    of not-knowing.
+  drone: >-
+    The guitar drone is a single chord that has been held for longer than you
+    can measure. Below it, a bass pulse. Above it, something that might be a
+    pedal steel or might be the room itself resonating. The music at this point
+    is less a song and more a condition. You are inside it. It is also inside you.
+  words: >-
+    The chalk words on the walls are illegible in places, fading into the damp.
+    What you can read: between the. lines of. age. the spaces where. nothing
+    is written. are where. everything. lives. Some of the words have been
+    written over by other words, earlier drafts, the ones that did not quite
+    say it. This is the revision history of the album. This is what the record
+    was trying to reach. These walls are what it reached.
+idlemessages:
+- The drone continues, the guitar chord sustained past all reasonable duration, becoming something else.
+- Words on the wall catch the dim light and almost make sense, then slip away again.
+- The roots push through the earth overhead, very slowly, doing what roots do.
+- The bass pulse continues underneath everything, patient as the earth itself.
+- Somewhere forward in the tunnel, the music is still going. It has always been going.
+- The chalk on the walls is fading. The words will be gone soon. Something will remain.
+- The tunnel holds the sound the way sleep holds a dream -- loosely, and only for now.

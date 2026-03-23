@@ -1,0 +1,51 @@
+roomid: 2204
+zone: The Wire
+title: Orlandos Club
+description: >-
+  A strip club in a converted <ansi fg="8">row house storefront</ansi>, the windows
+  blacked out with contact paper, a sign reading ORLANDOS above the door in
+  red neon that flickers on one letter. Inside, the light is low and warm in the
+  way that low warm light is designed to make you forget what time it is. A
+  <ansi fg="itemname">bar</ansi> runs along one wall, bottles lined up with the
+  seriousness of a dispensary. <ansi fg="8">Tables</ansi> in the back are where
+  actual business happens -- the kind of business that is not about the club.
+  The <ansi fg="itemname">back office</ansi> is where Avon takes meetings that
+  are not reported anywhere. The music is loud enough to cover conversation but
+  not so loud that you cannot hear what matters. This is a front, and it is
+  also a real place, which is how the best fronts work.
+  West Baltimore is to the <ansi fg="exit">west</ansi>.
+mapsymbol: O
+maplegend: Orlandos Club
+biome: house
+exits:
+  west:
+    roomid: 2203
+nouns:
+  bar: >-
+    Fully stocked. The liquor is real. The bartender knows what he sees and
+    what he does not see, which is the primary qualification for this job.
+    He makes good drinks. He makes them without being asked twice.
+  tables: >-
+    Round tables in the shadows at the back. The chairs are padded.
+    The conversations that happen at these tables are not casual.
+    They are business meetings that happen in a strip club because a strip
+    club is where nobody has to explain what they are doing there.
+  office: >-
+    A door at the back, unmarked. The kind of door that exists for people
+    who know it exists. Avon runs the organization from in there. The
+    paperwork for the organization is not kept in there, because there is
+    no paperwork. The decisions are kept in there.
+spawninfo:
+- mobid: 493
+  message: '<ansi fg="8">Avon Barksdale holds court near the back tables, the king in his kingdom.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 494
+  message: '<ansi fg="8">Stringer Bell arrives with a book under his arm, already calculating.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The neon sign outside flickers. The E in ORLANDOS goes out and comes back.
+- Music pulses from the speakers -- something with bass that you feel in the chest.
+- The bartender polishes a glass that was already clean and sets it down without looking up.
+- A conversation at the back tables ends. Both men stand. Nobody shakes hands. Nobody needs to.
+- The door opens. Someone enters, scans the room, and sits down. They were expected.
+- The music changes. The bass drops. The back-table conversations continue at exactly the same volume.

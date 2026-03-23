@@ -1,0 +1,44 @@
+-
+  Supported:
+    "nate fisher": ["brenda chenowith"]
+  Conversation:
+    - ["#1 say I keep coming back."]
+    - ["#2 say I know."]
+    - ["#1 say Is that -- what does that mean."]
+    - ["#2 emote closes her book without losing the page"]
+    - ["#2 say It means you keep coming back."]
+    - ["#1 say That's not an analysis."]
+    - ["#2 say No. For once it is not."]
+    - ["#1 emote sits down across from her"]
+    - ["#2 say Nate."]
+    - ["#1 say What."]
+    - ["#2 say I know."]
+-
+  Supported:
+    "nate fisher": ["brenda chenowith"]
+  Conversation:
+    - ["#1 say We damage each other."]
+    - ["#2 say Yes."]
+    - ["#1 say That's it. That's your whole response."]
+    - ["#2 say What do you want me to say."]
+    - ["#1 emote runs a hand through his hair"]
+    - ["#1 say I want you to tell me it doesn't have to be like this."]
+    - ["#2 emote looks at him for a moment"]
+    - ["#2 say It doesn't have to be like this."]
+    - ["#1 say Do you believe that."]
+    - ["#2 emote picks up her book again"]
+    - ["#2 say Ask me again tomorrow."]
+-
+  Supported:
+    "nate fisher": ["brenda chenowith"]
+  Conversation:
+    - ["#1 say You see everything."]
+    - ["#2 emote does not look up from the book"]
+    - ["#2 say I see what I see."]
+    - ["#1 say Does that get lonely."]
+    - ["#2 emote is quiet for a moment"]
+    - ["#2 say Sometimes."]
+    - ["#1 say Me too."]
+    - ["#2 emote looks up at him"]
+    - ["#2 say I know."]
+    - ["#1 emote sits down near her, not touching, present"]

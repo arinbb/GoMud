@@ -1,0 +1,24 @@
+mobid: 511
+zone: harvest
+hostile: false
+maxwander: 0
+activitylevel: 10
+idlecommands:
+  - emote rocks slowly in the porch chair, watching the afternoon change.
+  - emote whittles a stick with a small knife, the shavings falling to the porch boards.
+  - emote watches the wheat fields with the patience of a man who has watched many seasons change.
+  - ''
+  - ''
+  - ''
+  - emote sets down the whittling and just sits for a while, hands on the chair arms, looking at nothing.
+character:
+  name: the Old Man
+  description: >-
+    A weathered man in his seventies, leather-faced, hands like roots, the kind
+    of person who has been in one place long enough to become part of it. He
+    sits in a rocking chair on the cottage porch with the ease of a man who has
+    sat in this chair ten thousand times and expects to sit in it ten thousand
+    more. He does not speak unless spoken to, and when he does speak it is
+    slowly, as if words cost something and he is spending them carefully.
+  raceid: 1
+  level: 10

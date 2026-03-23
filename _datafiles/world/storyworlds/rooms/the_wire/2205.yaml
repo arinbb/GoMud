@@ -1,0 +1,43 @@
+roomid: 2205
+zone: The Wire
+title: The Vacants
+description: >-
+  Abandoned <ansi fg="8">row houses</ansi>, their windows long since boarded or
+  broken, their doors hanging or missing entirely. The brick faces are intact --
+  brick does not give up -- but behind the brick there is <ansi fg="8">nothing</ansi>.
+  Or not nothing. Silence has a texture here, a particular quality of held breath.
+  <ansi fg="itemname">Weeds</ansi> have pushed up through the floors inside, through
+  the boards that covered the floors, the root systems indifferent to ownership.
+  The <ansi fg="itemname">walls</ansi> inside carry marks of occupation and absence
+  both. <ansi fg="red">Something</ansi> has been left in these houses that the houses
+  do not speak about. This is where Baltimore buries the things it cannot address.
+  The Pit is back to the <ansi fg="exit">north</ansi>.
+mapsymbol: V
+maplegend: The Vacants
+biome: house
+exits:
+  north:
+    roomid: 2200
+nouns:
+  weeds: >-
+    Queen Anne's lace and sumac and something with purple flowers that does not
+    have a common name. They have taken the floors. They are working on the walls.
+    In ten years the houses will be green. The city will not notice.
+  walls: >-
+    Plaster over lath, crumbling to the floor in dry chunks. Somebody has written
+    on one wall in marker. The message is illegible now, faded to the ghost of an
+    intention. But someone needed to write it down, which was something.
+  nothing: >-
+    Not nothing. You look more carefully and there are signs of recent use --
+    a flattened cardboard box, a cleared space, marks on the floor that are
+    not weeds. The vacants are used by people who have nowhere else to go,
+    and by people who need places that ask no questions. Both come here.
+spawninfo: []
+idlemessages:
+- Wind moves through the broken windows and the houses breathe, technically.
+- Something shifts in one of the vacants -- a board settling, or something else.
+- A pigeon walks the sill of a broken window and flies away without landing.
+- The silence here is architectural. It was built into these houses along with everything else.
+- Rain drips through a hole in a roof somewhere. The steady patience of water on brick.
+- The block used to have thirty families in it. The block has no families now.
+- You feel watched but there is nobody. Or there is nobody visible.

@@ -1,0 +1,25 @@
+mobid: 499
+zone: the_wire
+hostile: false
+maxwander: 1
+idlecommands:
+- 'emote grades papers at his desk with a red pen, writing notes in the margins that are longer than the answers.'
+- 'emote watches the classroom door and the classroom window and the kids with the alert attention of someone who has learned to read rooms.'
+- 'say Okay. So. If you had sixty dollars and you needed to make the money last a week -- what is that per day?'
+- 'emote erases something from the board and writes it differently and it is better this way.'
+- ''
+- 'emote looks at the window where the street is visible and returns his attention to the classroom with the deliberate choice that implies.'
+activitylevel: 25
+character:
+  name: Prez
+  description: >-
+    Roland Pryzbylewski -- Prez -- a former Baltimore police officer who shot
+    a wall and an undercover officer and eventually a kid, and who has arrived
+    at teaching seventh-grade math as the place where he can do genuine good
+    with limited collateral damage. He was not a good cop. He is becoming a
+    good teacher, which is harder and pays less and requires him to care about
+    individual people in a way that police work did not reward. He has traded
+    one institution for another and found that the second one might fit better,
+    which is more than most people in West Baltimore get to discover about themselves.
+  raceid: 1
+  level: 6

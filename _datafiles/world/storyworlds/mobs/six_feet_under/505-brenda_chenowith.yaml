@@ -1,0 +1,28 @@
+mobid: 505
+zone: six_feet_under
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote reads, pen in hand, marking passages with focused attention."
+  - "emote lights a cigarette and immediately begins analyzing the impulse."
+  - "emote looks at something across the room like it represents a pattern she is decoding."
+  - "emote closes the book she is reading and opens a different one."
+  - ''
+  - ''
+  - "say People think insight is a gift. It is not. It is work. It is exhausting work."
+  - "emote pours an inch of wine and looks at it before drinking."
+activitylevel: 20
+character:
+  name: Brenda Chenowith
+  description: >-
+    A woman in her mid-thirties whose intelligence is immediately apparent
+    and slightly intimidating -- not because she performs it, but because
+    she cannot turn it off. She was a psychological case study at age six,
+    raised by therapists, published in academic papers, and has spent her
+    adult life figuring out who she is when she is not a subject. She has
+    a psychologist's capacity to see what people are doing under what they
+    say they are doing, which is useful and exhausting and makes sustained
+    intimacy very difficult. She and Nate are magnetically, complicatedly
+    attached. Books everywhere. A cigarette. She sees you immediately.
+  raceid: 1
+  level: 5

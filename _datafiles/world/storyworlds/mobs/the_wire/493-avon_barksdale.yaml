@@ -1,0 +1,24 @@
+mobid: 493
+zone: the_wire
+hostile: false
+maxwander: 1
+idlecommands:
+- 'emote holds court from the back table, his attention moving through the room like a slow current.'
+- 'emote watches the club entrance and the room and the street outside with the comprehensive attention of someone who has had to be this careful for years.'
+- 'say You know what I am? I am a man who understands loyalty. Loyalty is everything in this thing.'
+- 'emote remembers something -- the old days, the early corners, the first time he understood what power was -- and the memory passes across his face.'
+- ''
+- 'emote makes a small gesture and someone across the room moves. This is how kings move rooms.'
+activitylevel: 20
+character:
+  name: Avon Barksdale
+  description: >-
+    A compact, muscular Black man in his forties, dressed well but practically --
+    this is not a man who wears suits to feel like he wears suits. He has run
+    the West Baltimore drug trade since his twenties and the authority of that
+    history is present in the way he occupies space. Not loud. Not announcing.
+    Simply there in the way of something that has been there for a very long
+    time. He values loyalty above profit, which is his strength and, according
+    to Stringer Bell, his only weakness.
+  raceid: 1
+  level: 13

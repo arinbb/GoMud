@@ -1,0 +1,25 @@
+mobid: 492
+zone: the_wire
+hostile: false
+maxwander: 1
+idlecommands:
+- 'emote lights a cigar with the ceremony the occasion deserves and exhales a long, philosophical stream of smoke.'
+- 'emote shakes his head at McNulty with the expression of a man who has shaken his head at McNulty many times.'
+- 'say I am a murder police. I work murders. I do not want to know about anything else.'
+- 'emote reviews a crime scene photograph with focused unhappiness.'
+- ''
+- 'emote adjusts his fedora with the deliberateness of a man who understands that presentation is half the battle.'
+- 'say You done messed up now. You done messed up bad.'
+activitylevel: 25
+character:
+  name: Bunk Moreland
+  description: >-
+    A large, well-dressed Black man in a three-piece suit and a fedora, a
+    cigar permanently in or near his mouth. He is McNultys partner and best
+    friend and the voice of practical wisdom in a department full of people
+    who confuse activity with effectiveness. He is a genuine murder detective --
+    methodical, experienced, good at his job in the unglamorous way that real
+    expertise looks when it is not being performed for an audience. He has
+    made peace with what this city is. The peace is ongoing work.
+  raceid: 1
+  level: 9

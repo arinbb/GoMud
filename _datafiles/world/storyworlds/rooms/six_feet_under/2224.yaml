@@ -1,0 +1,50 @@
+roomid: 2224
+zone: six_feet_under
+title: The Body Fridge
+description: >-
+  The cold room. A row of <ansi fg="8">steel doors</ansi> set into the wall,
+  each large enough to slide a body through. A <ansi fg="itemname">handle</ansi>
+  on each door, a <ansi fg="itemname">tag</ansi> holder beside it. The temperature
+  is kept at thirty-eight degrees Fahrenheit. The <ansi fg="itemname">floor</ansi>
+  is sealed concrete. The <parameter name="itemname">light</ansi> is a single
+  overhead fixture, unadorned. This is not a room for comfort. It is a room for
+  waiting -- the dead wait here until Rico is ready, until the family has made
+  their decisions, until the paperwork is signed, until the world catches up with
+  what has happened. A <ansi fg="itemname">logbook</ansi> on a small shelf by
+  the door tracks who is here and since when. The <ansi fg="exit">prep room</ansi>
+  is to the west.
+mapsymbol: C
+maplegend: Body Fridge
+biome: house
+exits:
+  west:
+    roomid: 2223
+nouns:
+  doors: >-
+    Steel drawer fronts, heavy, sealed. Each one holds someone who was, until
+    very recently, a person going about their life. The handles are cold to
+    the touch. You leave them closed.
+  handle: >-
+    Cold steel, smooth. The handle opens with a pull and a slight resistance
+    of the seal. You do not pull it. Some things do not need to be done just
+    because they can be.
+  logbook: >-
+    A logbook tracking occupancy: name, date of death, date received, assigned
+    to. The entries are in David's careful handwriting, or occasionally Rico's.
+    The dates go back years. The most recent entry is fresh.
+  floor: >-
+    Sealed concrete, sloped slightly toward a central drain. Clean. Everything
+    in this room is clean. Cleanliness is not about aesthetics here. It is
+    about respect.
+  light: >-
+    A single overhead fixture, fluorescent, no shade. It lights the room
+    completely and casts no shadows. There is nowhere to look that is not lit.
+    The room does not make concessions to atmosphere.
+spawninfo: []
+idlemessages:
+- The refrigeration unit cycles on with a low mechanical hum, then settles back to its baseline.
+- The cold is steady and even and does not vary. This is what it is supposed to do.
+- A tag on one of the drawer handles has been filled in recently. The handwriting is David's.
+- The room is quiet in a way that has nothing to do with silence. It is a specific quiet.
+- The temperature gauge on the wall reads thirty-eight degrees. It always reads thirty-eight degrees.
+- Nothing moves in here. That is the point. The waiting happens here, patient and cold, until it is time.

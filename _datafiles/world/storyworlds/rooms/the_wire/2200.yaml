@@ -1,0 +1,55 @@
+roomid: 2200
+zone: The Wire
+title: The Pit
+description: >-
+  A low-rise project courtyard, the ground broken concrete and old asphalt, weeds
+  pushing through every crack. Against the chain-link fence sits an
+  <ansi fg="itemname">orange couch</ansi>, sun-bleached and listing, its cushions
+  compressed by years of corner boys waiting out the hours. The <ansi fg="8">buildings</ansi>
+  here are low and institutional, brick the color of dried clay.
+  <ansi fg="8">Lookouts</ansi> lean in doorways with the practiced casualness of people
+  whose job is to notice everything. The <ansi fg="itemname">package</ansi> moves here.
+  The money moves here. The police come and go and the game continues exactly as before.
+  The <ansi fg="exit">towers</ansi> are to the east, <ansi fg="exit">west Baltimore</ansi>
+  to the north, and the row houses go <ansi fg="exit">south</ansi> toward the vacants.
+mapsymbol: P
+maplegend: The Pit
+biome: city
+exits:
+  east:
+    roomid: 2201
+  north:
+    roomid: 2203
+  south:
+    roomid: 2205
+nouns:
+  couch: >-
+    An orange sectional sofa that has no business being in a courtyard, which is
+    precisely why it is here. It is the throne room of the Pit. Business is
+    conducted from this couch. Judgments are rendered. The springs are shot but
+    nobody says anything. You do not comment on the couch.
+  buildings: >-
+    Low-rise public housing, three stories, brick facing peeling away from
+    concrete block. The windows on the upper floors have people in them who
+    are not visible but are there. The game is played in the courtyard but
+    observed from above.
+  package: >-
+    You cannot see it and would not find it if you looked. But it is here
+    somewhere -- in a stash, behind a brick, under the couch, with a youngster
+    running lookout twenty feet away. It is always here. That is the whole point.
+  lookout: >-
+    A boy, maybe thirteen. He is doing nothing. He is watching everything.
+    He is making sixty dollars a day to do nothing, which is more than his mother
+    makes at the laundry, so the math is not complicated, even if the consequences are.
+spawninfo:
+- mobid: 496
+  message: '<ansi fg="8">Marlo Stanfield materializes in the Pit, still as a stone, watching everything.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- A lookout boy calls something in a low voice and the courtyard rearranges itself without visible hurry.
+- A police cruiser rolls past the end of the street. Nobody runs. Nobody needs to.
+- The orange couch absorbs another minute of this corner, which has absorbed a thousand years of corners.
+- Rain is coming. The sky over West Baltimore has a yellow-grey bruise along the horizon.
+- A package changes hands somewhere in the shadows. If you saw it, you did not see it.
+- 'Someone upstairs puts on music. It drifts down into the courtyard and disappears.'
+- The game is the game. The Pit has been the Pit since before anyone here was born.

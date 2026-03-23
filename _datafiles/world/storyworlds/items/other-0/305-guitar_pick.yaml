@@ -1,0 +1,15 @@
+itemid: 305
+name: guitar pick
+namesimple: pick
+displayname: a <ansi fg="itemname">worn guitar pick</ansi>
+description: >-
+  A medium-weight guitar pick, celluloid, worn smooth on one side from years of
+  downstrokes. The other side still has the faint ghost of a logo, rubbed away
+  by use until only the outline remains. It is the kind of pick that has played
+  ten thousand songs and knows the shape of every chord. It smells of old wood
+  and rosin and California dust. When you hold it between your fingers, your
+  hand wants to strum something.
+type: object
+subtype: usable
+uses: 0
+value: 0

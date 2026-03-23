@@ -1,0 +1,56 @@
+roomid: 2202
+zone: The Wire
+title: The Rooftop
+description: >-
+  Twenty stories above West Baltimore, and you can see all of it -- the grid of
+  <ansi fg="8">row houses</ansi> stretching east and west, their brick facades
+  weathered to the color of rust and grey clay, punctuated by the occasional
+  fresh-painted corner store. The <ansi fg="itemname">water tower</ansi> marks
+  the skyline to the north. <ansi fg="8">Downtown</ansi> gleams in the distance,
+  towers of glass and steel that might as well be another country. Below, the
+  <ansi fg="itemname">Pit</ansi> is a small grey rectangle, the orange couch
+  invisible from here. A <ansi fg="itemname">boy</ansi> sits near the edge,
+  watching the streets below with complete professional attention. He does not
+  look up. He already knows you are here. The <ansi fg="exit">towers</ansi>
+  are below.
+mapsymbol: R
+maplegend: Rooftop
+biome: city
+exits:
+  down:
+    roomid: 2201
+nouns:
+  boy: >-
+    A kid, maybe twelve, sitting on an overturned milk crate at the roof edge.
+    He has a phone and uses it. He is working. This is his job: to watch the
+    street below and call down anything that does not belong. He is good at it.
+    He has been doing it since he was nine. He does not go to school anymore,
+    which is a fact that the school does not pursue with much urgency.
+  pit: >-
+    From up here it is just a small rectangle of cracked asphalt and the orange
+    smudge of the couch. You cannot see the transactions. You cannot see the
+    thing that makes the Pit the Pit. But it is there.
+  houses: >-
+    Row houses going in every direction, block after block after block. Baltimore
+    built in brick and did not stop. Most of them are inhabited. Some are vacant.
+    The vacant ones have a particular look from up here -- darker windows, slightly
+    collapsed rooflines, the way a face looks when the person has left it.
+  water_tower: >-
+    A weathered water tower bearing the faded letters of a company that no longer
+    exists. It serves the neighborhood that it looks down upon. From up here you
+    can see that the city makes a kind of sense as a system -- everything connected,
+    everything dependent, everything broken in the same way.
+  downtown: >-
+    Glass towers catching the sun. The Inner Harbor. Cranes and crabs and the
+    convention center and people having a different kind of Baltimore entirely.
+    From here it looks close. It is not close. The highway is between here and
+    there, and the highway is not a metaphor. Or it is also a metaphor.
+spawninfo: []
+idlemessages:
+- The boy on the milk crate speaks quietly into his phone without moving his eyes from the street.
+- Wind comes off the harbor and crosses the whole city before it gets to this rooftop.
+- A police helicopter circles somewhere to the north, then pulls away. The boy notes it.
+- The city below breathes. Traffic and sirens and distant music. The sound of a system running.
+- Below, in the Pit, something small shifts. The boy sees it. His thumb moves on the phone.
+- Clouds drag their shadows across the rooftops of West Baltimore one block at a time.
+- From up here you can see that the grid was once a plan. That someone had a plan. That it did not work.

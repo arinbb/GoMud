@@ -1,0 +1,58 @@
+roomid: 2231
+zone: six_feet_under
+title: The Cemetery
+description: >-
+  Green <ansi fg="10">grass</ansi> between the <ansi fg="itemname">graves</ansi>,
+  the green that only cemeteries maintain because they have the budget and the
+  obligation and the time. A Los Angeles <ansi fg="itemname">sky</ansi> above,
+  blue and unhurried. The <ansi fg="itemname">headstones</ansi> are in rows that
+  are not quite rows -- slight variations in age and height that give the cemetery
+  its real character. Near the center, a <ansi fg="itemname">grave</ansi> with
+  fresh flowers: <ansi fg="itemname">Nathaniel Fisher Sr.</ansi>, dates, a brief
+  inscription. The family comes here. They come separately, usually. They stand
+  at the grave and have the conversation that cannot happen across a kitchen table.
+  It is quieter here than anywhere else in the show. Things can be said here that
+  cannot be said anywhere else. The <ansi fg="exit">entrance</ansi> is to the north.
+mapsymbol: Y
+maplegend: The Cemetery
+biome: land
+exits:
+  entrance:
+    roomid: 2220
+    mapdirection: north
+nouns:
+  grass: >-
+    Green, even, carefully maintained. The kind of lawn that would be aspirational
+    in a neighborhood but here is just functional -- the dead deserve this. The
+    sprinklers run early in the morning. The grass is always green. This is one
+    of the things that is reliable about this place.
+  graves: >-
+    The headstones in their approximate rows. Names and dates, mostly. Some
+    with small additional lines -- a sentence or a phrase that the family
+    chose to say in stone what they could not say in time. The older ones
+    are weathered to the same grey. The newer ones are still white.
+  sky: >-
+    LA blue, high and clear. A cemetery sky. It does not concern itself with
+    what is below it, which is either a comfort or it is not.
+  headstones: >-
+    Each one a compression of a life into dates and a name and sometimes a
+    line. 'Beloved Father.' 'She Loved Her Garden.' 'Gone Too Soon.' The
+    formulas of grief that feel insufficient when you write them and then
+    turn out to hold something after all.
+  grave: >-
+    Nathaniel Samuel Fisher Sr. The dates. And beneath: 'He Taught Us How
+    to Live.' The family put that on after a long discussion. It is true and
+    it is complicated and it is what the stone says. Fresh flowers in the
+    grave vase -- Ruth was here recently. She comes on Thursdays.
+spawninfo:
+- mobid: 507
+  respawnrate: 15 real minutes
+idlemessages:
+- A crow lands on a nearby headstone, looks around with its black intelligent eyes, and moves on.
+- The sprinklers run briefly at the far end of the cemetery, a soft hiss, then shut off.
+- Someone is visiting a grave two rows over. They brought no flowers. They just stand there.
+- Wind moves through the cemetery in a long gentle wave. The flowers on a grave lean slightly.
+- The cemetery is quiet in the way that has nothing to do with the absence of sound.
+- Light comes across the grass at an angle that makes each blade cast a shadow. Everything here casts a shadow.
+- A car pulls up at the cemetery entrance, parks, and the driver sits in it for a while before getting out.
+- Ruth has left fresh flowers at Nathaniel Sr's grave. White lilies. He liked gardenias but lilies were what they had.

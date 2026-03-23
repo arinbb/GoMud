@@ -1,0 +1,17 @@
+itemid: 153
+name: The Wire film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">The Wire</ansi>
+description: >-
+  A film reel in a battered metal canister, the latch held shut with a strip of
+  electrical tape. The label is hand-lettered in block capitals on masking tape:
+  'THE WIRE. HBO. 2002-2008. BALTIMORE.' Below that, in smaller print, someone has
+  written in blue ballpoint: 'Five seasons. Five institutions. One city that does
+  not change and is never going to change and knows it.' The canister is cold and
+  slightly damp, as if it has been sitting in a basement. When you hold it you
+  hear very faintly -- or imagine you do -- a police siren, and someone calling
+  'Five-O!' from somewhere above.
+type: object
+subtype: usable
+uses: 0
+value: 0

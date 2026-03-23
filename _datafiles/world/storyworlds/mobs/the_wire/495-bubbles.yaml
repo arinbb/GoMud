@@ -1,0 +1,25 @@
+mobid: 495
+zone: the_wire
+hostile: false
+maxwander: 1
+idlecommands:
+- 'emote adjusts the shirts on the cart with the care of someone who has made order out of less.'
+- 'emote counts his money twice, folds it, puts it in his pocket, and resumes watching the street.'
+- 'say Shirts! Three dollars! Anybody need a shirt!'
+- 'emote looks for something with his eyes moving quick and specific, the trained scanning of someone who knows what they are looking for.'
+- ''
+- 'emote sits on an overturned crate for a moment, just a moment, and closes his eyes.'
+activitylevel: 30
+character:
+  name: Bubbles
+  description: >-
+    A thin Black man of indeterminate age -- the street ages people at its own
+    rate -- with quick eyes and a shopping cart loaded with white t-shirts and
+    the particular alertness of someone who has learned that missing things
+    costs more than paying attention. He is an addict and a police informant and
+    genuinely one of the most perceptive people in West Baltimore. He knows
+    everything that happens on these streets because he is a permanent, portable
+    fixture of them. He is trying. That is what you need to understand about Bubbles.
+    He is trying, and trying in Baltimore, in the game, on the corners -- it costs.
+  raceid: 1
+  level: 4

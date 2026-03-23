@@ -1,0 +1,54 @@
+roomid: 2227
+zone: six_feet_under
+title: Claires Bedroom
+description: >-
+  The room of someone who is becoming an artist and knows it and is not sure
+  what to do with that yet. <ansi fg="itemname">Art supplies</ansi> cover a
+  desk by the window -- charcoals, pastels, brushes in jars of dirty water,
+  reference sheets. A <ansi fg="itemname">lava lamp</ansi> on the dresser
+  sends slow shapes through the amber light. Photographs she has taken are
+  pinned to the wall in a dense overlapping grid -- the funeral home, the
+  family, the street outside, the stranger things she notices. A
+  <ansi fg="itemname">camera</ansi> on the desk, loaded. Her bed is made,
+  which is a recent development. The window looks out on the street. The
+  <ansi fg="exit">living room</ansi> is below. Something about this room
+  feels like it is preparing to leave.
+mapsymbol: C
+maplegend: Claires Bedroom
+biome: house
+exits:
+  down:
+    roomid: 2226
+nouns:
+  supplies: >-
+    Charcoals and pastels and tubes of paint, some organized, most not.
+    Sketchbooks stacked and stacked, years of them. A self-portrait in
+    charcoal pinned above the desk that is better than she thinks it is.
+    She draws what she sees. She sees more than she knows what to do with.
+  lamp: >-
+    The lava lamp sends its shapes through amber -- a slow, hypnotic cycle
+    of rising and falling. It has been on her dresser since she was fourteen.
+    It is the light she does her best thinking under. She would never say this.
+  photographs: >-
+    Her photographs cover the wall in a dense pinned grid, overlapping,
+    some crooked. She photographs the funeral home because she grew up in
+    it and it is strange and it is home. She photographs the family because
+    they are impossible and she loves them. She photographs strangers because
+    people are the subject, always. The self-portraits look sideways at the camera.
+  camera: >-
+    A film camera, a manual SLR, loaded. There is something slightly miraculous
+    about film -- the commitment of it, the fact that you cannot delete a
+    photograph and take another one. You get what you got. Claire likes this.
+    It matches something in how she sees.
+spawninfo:
+- mobid: 503
+  respawnrate: 10 real minutes
+idlemessages:
+- Claire photographs something out the window with the economy of someone who has learned to move before the moment leaves.
+- The lava lamp cycles through its shapes, amber light rising and falling. The room is quiet except for this.
+- A sketchbook lies open on the desk, a drawing in progress -- charcoal lines that are almost something.
+- Claire pins a new photograph to the wall, stepping back to look at where it fits in the constellation.
+- Someone plays music in the room. It is something Claires age and slightly defiant.
+- The window is open. Street noise comes in -- a car, a bird, someone talking on their phone.
+- She is reading something, one knee up, the book at an angle. She does not look up.
+- A drawing gets crumpled, thrown, smoothed out and reconsidered. She picks up the charcoal again.

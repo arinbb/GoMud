@@ -1,0 +1,19 @@
+-
+  Supported:
+    "omar little": ["*"]
+  Conversation:
+    - ["#1 emote steps into the open from the shadows of the alley. He does not hurry. He does not hide."]
+    - ["#1 say Good morning."]
+    - ["#1 emote carries the shotgun loose at his side. It is a fact, like the trenchcoat, like the scar."]
+    - ["#1 say I am not here for whatever you are doing. I am here for what I am here for."]
+    - ["#1 emote watches the end of the street with professional patience."]
+    - ["#1 say A man gotta have a code."]
+-
+  Supported:
+    "omar little": ["*"]
+  Conversation:
+    - ["#1 emote whistles three notes, low, clear, and final."]
+    - ["#1 say Everybody know the whistle."]
+    - ["#1 emote lets the silence after it say what the silence says."]
+    - ["#1 say The corners hear it and they know what it means."]
+    - ["#1 say It means I am coming. That is all. That is enough."]

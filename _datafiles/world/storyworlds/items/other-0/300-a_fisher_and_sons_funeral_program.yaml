@@ -1,0 +1,17 @@
+itemid: 300
+name: a Fisher and Sons funeral program
+namesimple: program
+displayname: a <ansi fg="itemname">Fisher and Sons funeral program</ansi>
+description: >-
+  Cream paper, folded once, the Fisher and Sons name at the top in discreet
+  gold lettering. Inside: a name, two dates, a photograph, a brief order of
+  service. 'We are gathered.' The usual words, chosen because they are true
+  and because they carry the weight of every time they have been said before.
+  At the bottom: 'Fisher and Sons, caring for families since 1983.' The
+  paper is heavy, the kind that costs something, the kind that says the
+  occasion deserves this. You fold it again along the original crease and
+  hold it. Somewhere in Los Angeles, the phone is ringing.
+type: object
+subtype: readable
+uses: 0
+value: 0

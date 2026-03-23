@@ -1,0 +1,71 @@
+roomid: 2207
+zone: The Wire
+title: The Detail Office
+description: >-
+  A basement room under the <ansi fg="8">courthouse</ansi>, not an office so much
+  as a repurposed storage space that has been equipped with the minimum: folding
+  tables, mismatched <ansi fg="itemname">chairs</ansi>, a whiteboard covered in
+  <ansi fg="yellow">names and connections</ansi> drawn in dry-erase marker that
+  will not fully erase. <ansi fg="yellow">Fluorescent lights</ansi> hum at a
+  frequency that suggests they were installed in 1987 and never serviced.
+  <ansi fg="itemname">Wiretap equipment</ansi> occupies one end of a folding table
+  -- reel-to-reel recorders, headphones, a phone junction box. <ansi fg="itemname">Lester
+  Freamon</ansi> sits at a desk in the corner building something small from wood
+  with the patience of a man who has understood the long game for decades.
+  The board on the wall is the whole case: money, names, arrows connecting them.
+  West Baltimore is to the <ansi fg="exit">south</ansi>, the courthouse is to the
+  <ansi fg="exit">east</ansi>, and <ansi fg="exit">City Hall</ansi> is north from
+  the courthouse.
+mapsymbol: D
+maplegend: The Detail Office
+biome: house
+exits:
+  south:
+    roomid: 2203
+  east:
+    roomid: 2208
+  city_hall:
+    roomid: 2209
+    mapdirection: north
+nouns:
+  board: >-
+    A whiteboard covered with names in boxes connected by arrows, some
+    solid and some dotted. At the center: AVON BARKSDALE. Around him:
+    STRINGER BELL, PROPOSITION JOE, and a dozen others. Off to one side,
+    newer, in different handwriting: MARLO STANFIELD, with arrows going
+    off in directions that have not yet been fully traced. There is a lot
+    of board that is still empty.
+  equipment: >-
+    A pen register, a recorder, headphones. Court-authorized, barely.
+    Everything done with this equipment has to be documented and justified
+    and approved at three levels, which is why Lester Freamon looks the
+    way he looks about procedure. He is not against procedure. He is in
+    favor of procedure. He just wants the procedure to work.
+  chairs: >-
+    Metal folding chairs, the kind that cities buy in bulk and deploy
+    everywhere that is not worth comfortable chairs. Three of them are
+    occupied. McNulty and Bunk are in two of them. The third has a
+    jacket on it but nobody in it.
+  lights: >-
+    Fluorescent tubes, 40 watts, the kind that cast a light that is the
+    color of bureaucratic defeat. In this light, everything looks like a
+    case file. Everything looks like evidence. Maybe that is why they
+    do not replace them.
+spawninfo:
+- mobid: 490
+  message: '<ansi fg="yellow">Jimmy McNulty drops into a chair and starts going through case files, already muttering.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 492
+  message: '<ansi fg="yellow">Bunk Moreland settles in across from McNulty, lights a cigar, and shakes his head at everything.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 497
+  message: '<ansi fg="yellow">Lester Freamon works at his corner desk, his miniature in progress, listening to everything.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The wiretap recorder turns, taking down a conversation in another part of the city.
+- McNulty pins another connection on the board and steps back and squints at it.
+- 'The fluorescent light flickers once, hums back up to its permanent, inadequate brightness.'
+- Bunk examines a crime scene photo with the expression of a man who has seen too many crime scene photos.
+- Lester sets down a piece of his miniature and picks up a different piece without looking up.
+- Someone upstairs in the courthouse drops something heavy. The ceiling creaks. Nobody reacts.
+- A phone rings. McNulty does not move to answer it. Bunk answers it. He shakes his head.

@@ -1,0 +1,52 @@
+roomid: 2233
+zone: six_feet_under
+title: The Open Road
+description: >-
+  <ansi fg="10">Highway</ansi> stretching forward in the early morning light.
+  Los Angeles giving way to California giving way to the open country north.
+  The <ansi fg="itemname">road</ansi> ahead is long and empty and gold in the
+  morning. The <ansi fg="itemname">mountains</ansi> in the distance. The
+  <ansi fg="itemname">sky</ansi> going from pink to blue as you drive. Music
+  on the radio -- something by Sia, barely audible, everything else quiet.
+  In the rearview <ansi fg="itemname">mirror</ansi> the funeral home recedes,
+  LA recedes, everyone you love growing smaller. You know what happens next.
+  You have seen the flash-forwards. You know how everyone ends. But right now
+  you are in the car and the road is forward and the music is playing and you
+  are alive. Right now, right now, you are alive. No exits except
+  <ansi fg="exit">back</ansi> -- but why would you go back.
+mapsymbol: R
+maplegend: The Open Road
+biome: road
+exits:
+  back:
+    roomid: 2227
+nouns:
+  road: >-
+    The highway running north out of LA. Lane lines moving past. The asphalt
+    in the morning light. No other cars right now, just this car and this road
+    and this moment of between. Claire is driving. You understand what it is
+    to drive away. The road goes forward and does not stop.
+  mountains: >-
+    The San Gabriels to the east, turning gold as the sun comes up behind them.
+    Mountains at the edge of the basin, the boundary of Los Angeles. Past them,
+    the desert. Past that, everything else. The road goes through.
+  sky: >-
+    Going from pink to blue as the sun rises. The particular early morning sky
+    of California that Claire has been photographing since she could hold a camera.
+    She does not photograph it now. She drives into it.
+  mirror: >-
+    The rearview mirror holds LA receding -- the skyline getting smaller, the
+    funeral home somewhere in it, the family somewhere in it, everything she is
+    leaving. She looks at the road ahead. This is not abandonment. This is necessary.
+    You can love a place and leave it. You can love people and drive away.
+    She drives.
+spawninfo: []
+idlemessages:
+- The road lines tick past. The mountains stay ahead, getting no closer and no further, just there.
+- Something by Sia plays on the radio at the threshold of hearing. Just music. Just this.
+- The sky is going from pink to blue. It is doing this slowly and then all at once.
+- The dashboard hums with the speed of the road. Eighty miles per hour. Forward.
+- 'In the rearview: Los Angeles, smaller. In the windshield: everything else.'
+- The road is empty right now. This is the moment between where you were and where you are going. It will not last. That is not the point.
+- You are alive right now. This is the road. This is the morning. This is what you have.
+- The music plays. The road goes. Right now, right now, you are alive.

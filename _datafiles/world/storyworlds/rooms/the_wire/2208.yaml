@@ -1,0 +1,47 @@
+roomid: 2208
+zone: The Wire
+title: The Courthouse
+description: >-
+  The Baltimore City <ansi fg="8">courthouse</ansi>, its marble lobby high and
+  <ansi fg="8">cold</ansi> and ringing with the sound of heel strikes on stone.
+  <ansi fg="itemname">Lawyers</ansi> move through with the practiced speed of people
+  billing by the hour. <ansi fg="itemname">Defendants</ansi> sit on benches in
+  their church clothes, waiting for a system that knows their name only from a
+  file number. The <ansi fg="itemname">judges</ansi> here are part of the game too,
+  which is not a corruption of the institution so much as a clarification of what
+  the institution has always been. Plea deals happen in hallways. Evidence gets
+  suppressed in motions. The wiretap authorizations the Detail needs are decided
+  on the third floor by a judge who is running for something. The <ansi fg="exit">Detail</ansi>
+  is to the west, and the <ansi fg="exit">city hall</ansi> exit runs north.
+mapsymbol: C
+maplegend: The Courthouse
+biome: house
+exits:
+  west:
+    roomid: 2207
+  north:
+    roomid: 2209
+nouns:
+  lawyers: >-
+    Three varieties: the ones who believe in something, the ones who believe
+    in the billable hour, and the ones who are too tired to distinguish between
+    the two. They move through the marble lobby with briefcases that contain
+    arguments. The arguments will be heard. Whether they will matter is
+    a separate question.
+  defendants: >-
+    Young men, mostly. In button-down shirts that belong to a father or an uncle
+    or came from a thrift store specifically for this. They are waiting. The
+    system runs on waiting. If you can make someone wait long enough, sometimes
+    they accept what is offered just to stop waiting.
+  judges: >-
+    You cannot see them from here. They are upstairs. They are part of a system
+    that is part of a city that is part of a game. A judge once told someone
+    in this building that the game is rigged. He was right. He was also a player.
+spawninfo: []
+idlemessages:
+- A lawyer checks his watch, recalibrates, and heads for the elevator.
+- Someone is called. A name echoes off the marble and is absorbed by it.
+- A defendant straightens his collar and looks at the ceiling as if it has advice.
+- The revolving door brings in another batch of the city to be processed.
+- Papers shuffle somewhere. The system requires paper. The paper requires systems.
+- Heel clicks on marble. Briefcase clicks. The courthouse percussion section.

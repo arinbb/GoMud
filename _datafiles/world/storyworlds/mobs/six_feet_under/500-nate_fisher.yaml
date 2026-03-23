@@ -1,0 +1,27 @@
+mobid: 500
+zone: six_feet_under
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote runs both hands through his hair and exhales through his nose."
+  - "emote stares out the kitchen window at nothing in particular."
+  - "emote drums his fingers on the table once, stops, looks at his hand."
+  - "emote shifts in his chair like he is considering getting up. He does not get up."
+  - ''
+  - ''
+  - "say I never wanted this. I want you to know that."
+  - "emote goes to the window again. He does this a lot."
+activitylevel: 25
+character:
+  name: Nate Fisher
+  description: >-
+    A man in his mid-thirties who carries his good looks like something he
+    did not ask for and is not sure what to do with. He has the face of
+    someone who was probably magnetic at twenty-two and has since acquired
+    something more complicated -- warmth mixed with a kind of restlessness,
+    the look of a person who came home when he did not plan to and is still
+    working out whether that was the right choice. He dresses casually, runs
+    his hands through his hair constantly, and is almost always on the verge
+    of saying something he has not quite figured out how to say yet.
+  raceid: 1
+  level: 5

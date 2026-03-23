@@ -1,0 +1,25 @@
+mobid: 496
+zone: the_wire
+hostile: false
+maxwander: 1
+idlecommands:
+- 'emote stands in the Pit and watches everything, saying nothing.'
+- 'emote stares at a corner boy until the corner boy looks away first. This takes no time at all.'
+- ''
+- ''
+- 'emote waits. Marlo Stanfield does not fidget. He does not pace. He waits.'
+- 'say My name is my name.'
+activitylevel: 10
+character:
+  name: Marlo Stanfield
+  description: >-
+    A young Black man, maybe twenty-five, with a face that has been deliberately
+    emptied of expression. He does not telegraph. He does not perform. He
+    simply is, and what he is controls the entire West Baltimore drug trade
+    with a ruthlessness that Avon Barksdale, who is not a gentle man, would
+    find excessive. Marlo took what Barksdale built and took it further and
+    then kept going, and the places he has gone are the vacants, the sealed
+    houses, the brick and silence where Baltimore buries what it cannot account
+    for. There are no relationships in Marlo. There is only calculation.
+  raceid: 1
+  level: 14

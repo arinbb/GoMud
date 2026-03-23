@@ -1,0 +1,61 @@
+roomid: 2225
+zone: six_feet_under
+title: The Fisher Kitchen
+description: >-
+  The emotional center of the house. A <ansi fg="yellow">kitchen</ansi> that
+  has seen every version of this family -- every argument, every breakfast,
+  every late night, every silence that needed filling with cooking. The
+  <ansi fg="itemname">stove</ansi> has something on it, always. Ruth cooks the
+  way other people breathe. A long <ansi fg="itemname">table</ansi> with six
+  chairs takes up most of the room, worn smooth from years of elbows and meals
+  and difficult conversations. A <ansi fg="itemname">window</ansi> above the
+  sink looks out on the back yard. Photographs cover the <ansi fg="itemname">refrigerator</ansi>
+  -- family accumulation, held by magnets from places visited and forgotten.
+  The <ansi fg="exit">entrance</ansi> is to the south. The
+  <ansi fg="exit">living room</ansi> is to the east.
+mapsymbol: K
+maplegend: The Fisher Kitchen
+biome: house
+exits:
+  entrance:
+    roomid: 2220
+    mapdirection: south
+  east:
+    roomid: 2226
+nouns:
+  stove: >-
+    A gas stove with six burners, older than the renovation around it, kept
+    because Ruth will not replace it. She knows every quirk of it -- which
+    burner runs hot, how long the oven takes to come up. Something is on it
+    right now. The smell of it fills the kitchen and goes upstairs.
+  table: >-
+    Six chairs around a long wooden table. The surface is worn smooth from
+    decades of use. There are rings from cups and marks from where Nate used
+    to drum his fingers. The grain of the wood has absorbed years of this family.
+    Everything important that has ever happened in this house has happened
+    at this table.
+  window: >-
+    The window above the sink looks out on the back yard -- the flower beds Ruth
+    keeps, the old swing set that nobody has taken down, a lemon tree that
+    produces more lemons than the family can ever use. Ruth stands at this window
+    sometimes and looks at it for a long time.
+  refrigerator: >-
+    A refrigerator covered in a twenty-year accumulation of magnets -- from
+    national parks and airport gift shops and the backs of cereal boxes.
+    Photographs held by them: school pictures, Christmas cards, a photo of
+    Nathaniel Sr. at a barbecue, laughing, not knowing. Notes in various
+    handwritings. A grocery list, half-completed.
+spawninfo:
+- mobid: 500
+  respawnrate: 10 real minutes
+- mobid: 502
+  respawnrate: 10 real minutes
+idlemessages:
+- Ruth moves between the stove and the counter with the efficiency of someone who has done this ten thousand times. She is not thinking about what she is doing.
+- Something on the stove smells extraordinary -- garlic, something browning, something slow.
+- Nate sits at the table with a cup of coffee going cold in front of him and stares at the window.
+- The refrigerator hums. The magnets hold. The photographs are still there.
+- A chair scrapes back from the table. Someone stands up and goes somewhere. The argument is not over.
+- The kitchen is warm when the rest of the house is not. Ruth keeps it warm. This is not an accident.
+- Sunlight comes through the window above the sink and falls across the table in a yellow stripe.
+- Someone opens the refrigerator and closes it without taking anything. They were not looking for food.

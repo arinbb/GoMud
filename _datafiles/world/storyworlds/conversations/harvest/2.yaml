@@ -1,0 +1,23 @@
+-
+  Supported:
+    "neil young": ["*"]
+  Conversation:
+    - ["#1 say The land is the thing. Once you find the right land you stop running."]
+    - ["#1 emote looks at the fields."]
+    - ["#1 say I ran for a long time before I got here."]
+-
+  Supported:
+    "neil young": ["*"]
+  Conversation:
+    - ["#1 say Heart of Gold. Everyone thinks they know what it is about."]
+    - ["#1 emote adjusts the harmonica in its neck rack."]
+    - ["#1 say That is fine. Songs belong to whoever is listening to them."]
+    - ["#1 say Mine is still mine. Both things are true."]
+-
+  Supported:
+    "neil young": ["*"]
+  Conversation:
+    - ["#1 say Nashville surprised me. The players there -- they can play anything."]
+    - ["#1 say You hum them a chord change they have never heard and they find the pocket in thirty seconds."]
+    - ["#1 emote strums a slow country chord.", "#1 say Ben Keith especially. The pedal steel on this record."]
+    - ["#1 say That sound is California but it could only have come from Nashville."]

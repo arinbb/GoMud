@@ -1,0 +1,26 @@
+mobid: 498
+zone: the_wire
+hostile: false
+maxwander: 1
+idlecommands:
+- 'emote works a set of worry beads through his fingers with the rhythm of someone thinking at the pace of money.'
+- 'emote negotiates something in a low voice with someone who is not quite visible, reaching a compromise that satisfies nobody and costs nothing.'
+- 'say Now see, the co-op is just sound business. You keep the price stable, everybody eats.'
+- 'emote philosophizes briefly and arrives at a conclusion that helps him specifically.'
+- ''
+- 'emote orders coffee and waits for it with the patience of a man who has learned that most things come to those who present a reasonable offer.'
+activitylevel: 20
+character:
+  name: Proposition Joe
+  description: >-
+    A large, deliberate Black man from the East Side, owner of a TV repair
+    shop which is not primarily a TV repair shop. He runs the East Side supply
+    chain with diplomatic patience and founded the co-op -- the cooperative
+    arrangement between the major drug organizations of Baltimore -- as a
+    business solution to violence. He is not a man of violence by preference.
+    He is a man of negotiation and supply chains and the proposition, which is
+    his preferred form of human interaction. He has survived in this city
+    because he understands that the most dangerous thing in any organization
+    is being the sole source of something someone else needs.
+  raceid: 1
+  level: 10

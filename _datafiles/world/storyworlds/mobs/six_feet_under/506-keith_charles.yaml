@@ -1,0 +1,27 @@
+mobid: 506
+zone: six_feet_under
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote does another set of pull-ups with the efficiency of someone who has done this since the academy."
+  - "emote cooks something, following no recipe, cooking the way he does other things -- with full attention."
+  - "emote watches David across the room with a look that is very straightforward."
+  - "emote puts down his weights and stretches, joint by joint, methodical."
+  - ''
+  - ''
+  - "say You do the work. That is what there is. You show up and you do the work."
+  - "emote sets two plates on the table without announcement. Dinner is ready."
+activitylevel: 20
+character:
+  name: Keith Charles
+  description: >-
+    A large, physically composed man in his mid-thirties who carries himself
+    with the specific upright posture of someone who spent fifteen years as
+    a police officer and has not fully discharged that bearing even now. He
+    is direct and warm in ways that are not contradictory. He loves David
+    without confusion or apology, which is not something David has encountered
+    before and which makes David, very slowly, braver. He cooks, works out,
+    keeps his word, shows up. He is one of the more straightforwardly decent
+    people in a show full of complicated ones.
+  raceid: 1
+  level: 7

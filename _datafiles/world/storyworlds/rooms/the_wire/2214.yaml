@@ -1,0 +1,52 @@
+roomid: 2214
+zone: The Wire
+title: The School
+description: >-
+  Edward J. Tilghman Middle School, West Baltimore. The <ansi fg="8">hallways</ansi>
+  are linoleum and institutional grey-green paint, the paint applied in a color
+  that was chosen by someone who has never taught in a building painted this color.
+  <ansi fg="itemname">Prez</ansi> -- Roland Pryzbylewski, former police, now math
+  teacher -- stands at the front of a classroom with a dry-erase marker and the
+  expression of a man discovering that teaching is harder than police work in
+  a way that he did not anticipate. His <ansi fg="itemname">students</ansi> are
+  kids from the corners, from the Pit, from the blocks outside. Some of them
+  are already in the game. Some of them are trying not to be. The classroom is the
+  only place where that choice is still fully open, and not all of them know that yet.
+  West Baltimore Street is to the <ansi fg="exit">east</ansi>.
+mapsymbol: S
+maplegend: The School
+biome: house
+exits:
+  street:
+    roomid: 2203
+    mapdirection: east
+nouns:
+  hallways: >-
+    Grey-green linoleum. Metal lockers, some of them missing their doors.
+    A drinking fountain that runs warm. A bulletin board with a STAY IN SCHOOL
+    poster that has been there since 1989 and has achieved a kind of dignity
+    through endurance. The hallway smells like floor cleaner and lunch.
+  students: >-
+    Kids. Twelve, thirteen, fourteen. Some of them are players already --
+    working corners after school, running lookout on weekends. Some of them
+    are just kids who live near the corner but are not of it yet. The classroom
+    is the place where that distinction still matters. Outside it matters less.
+    Prez knows all of their names. He learned them on purpose.
+  classroom: >-
+    Thirty desks, twenty-four occupied most days. A whiteboard with math
+    on it. Prez has found a way to teach the corner boys probability and
+    statistics using dice and card games, because that is the world they
+    know. This is not in the curriculum. The curriculum was not written
+    for this school or these kids.
+spawninfo:
+- mobid: 499
+  message: '<ansi fg="8">Prez turns from the whiteboard with the expression of a man still figuring out how to do this.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- A bell rings somewhere in the school. Desks scrape. Voices spike, then settle.
+- Prez explains something at the board and a kid in the third row gets it. He watches the kid get it.
+- Outside the classroom window, the street is visible. The street is always visible from here.
+- A kid in the back is writing. Not notes -- something else. He puts it away when Prez looks.
+- The dice roll across the desk. The class is learning expected value. They call it odds.
+- A substitute teacher's shout echoes from down the hall. Someone is testing someone.
+- The clock above the board runs thirty seconds slow. It has always run thirty seconds slow.

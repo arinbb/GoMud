@@ -1,0 +1,26 @@
+mobid: 491
+zone: the_wire
+hostile: false
+maxwander: 0
+idlecommands:
+- 'emote whistles three notes, low and clear, and waits.'
+- 'emote chambers a round in the shotgun with the easy familiarity of someone tying their shoes.'
+- 'emote watches the fence line at the end of the alley without moving.'
+- ''
+- ''
+- 'emote reaches into his coat and removes a box of Honey Nut Cheerios, shakes some into his hand, and eats them.'
+- 'say Aint no shame in my game.'
+activitylevel: 20
+character:
+  name: Omar Little
+  description: >-
+    A lean Black man in a long grey trenchcoat, a scar running from cheek to
+    chin on the left side, shotgun held at his side in the easy way of someone
+    who has carried one for years. His eyes move constantly, professionally.
+    He is the most feared man in West Baltimore and also possibly the most
+    principled -- he robs drug dealers only, holds a code that most people
+    in this city abandoned years ago, and genuinely does not care what anyone
+    thinks about that. When he whistles, the corners empty. When he walks,
+    Baltimore pays attention.
+  raceid: 1
+  level: 12

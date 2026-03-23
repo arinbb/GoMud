@@ -1,0 +1,28 @@
+mobid: 501
+zone: six_feet_under
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote straightens a flower arrangement with two careful adjustments."
+  - "emote checks his phone, reads something, puts it away without expression."
+  - "emote straightens his tie though it does not need straightening."
+  - "emote reviews a folder of paperwork with the focus of someone who uses focus as a form of control."
+  - ''
+  - ''
+  - "say Someone has to do this. If not me, who."
+  - "emote looks at the arrangement he just straightened. He straightens it again."
+activitylevel: 25
+character:
+  name: David Fisher
+  description: >-
+    A man in his mid-thirties with the contained, careful manner of someone
+    who has been managing things since childhood and has become very good
+    at it, at some cost. He is handsome in a way he does not use, and
+    dressed with a precision that signals the importance of presentation
+    -- a tie, always, even on weekends, even when nobody is coming. His
+    face is controlled and expressive in turns; something in him is always
+    working very hard to hold itself together, and occasionally the effort
+    shows. He is the one who actually runs the funeral home. This is not
+    adequately acknowledged.
+  raceid: 1
+  level: 5

@@ -1,0 +1,8 @@
+mutatorid: baltimore-game
+namemodifier:
+  behavior: append
+  text: (the game)
+  colorpattern: none
+alertmodifier:
+  text: The game is the game. Always.
+  colorpattern: none

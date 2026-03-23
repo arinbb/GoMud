@@ -1,0 +1,49 @@
+roomid: 2201
+zone: The Wire
+title: The Towers
+description: >-
+  High-rise public housing, twenty stories of <ansi fg="8">concrete and broken promise</ansi>.
+  The elevator has not worked since the second Bush administration and nobody
+  has filed a work order that has gone anywhere. The <ansi fg="itemname">lobby</ansi>
+  smells of ammonia and older things. <ansi fg="8">Stash houses</ansi> occupy
+  strategic apartments on multiple floors -- the higher up, the more warning you get.
+  The walls of the stairwell are layered with <ansi fg="itemname">tags</ansi>, some
+  going back years, an unintended archive of everyone who passed through. A
+  <ansi fg="itemname">lookout</ansi> on the roof has eyes on three streets below.
+  The <ansi fg="exit">Pit</ansi> is to the west, and the <ansi fg="exit">rooftop</ansi>
+  is above.
+mapsymbol: T
+maplegend: The Towers
+biome: house
+exits:
+  west:
+    roomid: 2200
+  up:
+    roomid: 2202
+nouns:
+  lobby: >-
+    The tile floor is cracked along lines that have been cracked so long they
+    are permanent features of the building, like load-bearing fractures. A
+    bulletin board on the wall is empty except for staple holes. The mailboxes
+    are mostly broken. The ones that are not broken are mostly empty.
+  stash: >-
+    You cannot find the stash. That is the point of the stash. But somewhere
+    in this building, behind a panel or in a vent or under a loose board, there
+    is product. It is always there. The game does not stop because the police
+    arrive. It moves. Then it comes back.
+  tags: >-
+    Layers of spray paint, years of names and symbols and crossed-out names and
+    gang signs and sometimes just words -- I WAS HERE. I WAS HERE TOO. I AM
+    STILL HERE. The wall knows more names than anyone living.
+  lookout: >-
+    High above, barely visible -- a figure at the edge of the roof, watching
+    the streets below with a casual thoroughness that is not casual at all.
+    They have a phone. The phone is a tool. Tools have purposes.
+spawninfo: []
+idlemessages:
+- Somewhere in the stairwell, a door opens and closes. The echo takes a long time to die.
+- From above, muffled through concrete floors, the sound of a television arguing with itself.
+- 'The elevator doors open. The elevator is broken. They close again. The mechanism has hope.'
+- A child runs through the lobby and out the far door. Small sneakers on cracked tile. Gone.
+- The building hums with the sound of dozens of lives stacked on top of each other, each contained.
+- Rain starts outside. Through the lobby windows the street turns dark and gleaming.

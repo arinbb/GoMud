@@ -1,0 +1,16 @@
+name: The Wire
+roomid: 2200
+autoscale:
+  minimum: 1
+  maximum: 10
+defaultbiome: city
+mutators:
+- mutatorid: baltimore-game
+idlemessages:
+- A distant police siren rises and fades somewhere in West Baltimore.
+- Someone calls out a lookout warning from a window above. The street goes quiet.
+- Rain taps against brick. It is always about to rain in Baltimore, or just done.
+- The smell of exhaust and fried chicken and something chemical underneath.
+- A corner boy shifts on his feet, watching a car that slows and then does not stop.
+- The city grinds on. It does not stop. It has never stopped.
+- Somewhere, someone is watching someone else. That is the nature of the game.

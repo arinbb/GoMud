@@ -1,0 +1,29 @@
+mobid: 507
+zone: six_feet_under
+hostile: false
+maxwander: 3
+idlecommands:
+  - "emote appears in the doorway for a moment and then is not there."
+  - "emote sits in the armchair for one second and then the armchair is empty."
+  - "emote stands at the kitchen window, looking out, and then is gone."
+  - "emote is briefly there at the end of the hallway, full-sized, real, gone."
+  - ''
+  - ''
+  - "say You work very hard at being dead."
+  - "emote looks at you with the understanding of someone who is no longer afraid of anything."
+activitylevel: 10
+character:
+  name: Nathaniel Fisher Sr
+  description: >-
+    A man in his sixties who should not be here. He is dead -- has been dead
+    since New Years Eve, since the bus, since the cigarettes he went to get.
+    And yet here he is, appearing in the doorways and the kitchen and at the
+    foot of beds, as solid as he ever was, wearing what he died in or what
+    he preferred or something in between. He founded Fisher and Sons. He
+    built something. He left too soon to see what it became. He visits
+    because that is what love does -- it does not stop just because one
+    party is no longer breathing. He is sardonic and warm and occasionally
+    insufferable. He was a difficult man. He was the center of this family.
+    He will not say anything too useful. That is not how it works.
+  raceid: 1
+  level: 10

@@ -1,0 +1,53 @@
+roomid: 2220
+zone: six_feet_under
+title: Fisher and Sons Funeral Home
+description: >-
+  A Victorian <ansi fg="10">house</ansi> on a quiet street in Los Angeles --
+  green painted wood, a <ansi fg="itemname">sign</ansi> above the porch reading
+  <ansi fg="itemname">Fisher and Sons</ansi> in discreet gold letters. The kind
+  of building that wants to be overlooked, that has been designed with deliberate
+  restraint so that grief does not have to look at anything too loud. A small
+  <ansi fg="itemname">garden</ansi> borders the front walk, tended with care.
+  The <ansi fg="itemname">porch</ansi> is swept clean. The neighborhood goes on
+  around it, indifferent, full of living. The <ansi fg="exit">arrangement room</ansi>
+  is to the east. The <ansi fg="exit">family kitchen</ansi> is to the north.
+  The <ansi fg="exit">garage</ansi> is to the west.
+mapsymbol: F
+maplegend: Fisher and Sons
+biome: house
+exits:
+  east:
+    roomid: 2221
+  north:
+    roomid: 2225
+  west:
+    roomid: 2229
+    mapdirection: west
+nouns:
+  sign: >-
+    Fisher and Sons, Funeral Directors. The gold lettering is clean and plain.
+    Est. 1983. The sons are Nate and David. Their father started this. Their
+    father is gone. The sign remains.
+  house: >-
+    Green Victorian, two stories, a wide front porch. It looks like a house
+    that used to be a house and was converted into a business without fully
+    committing to either. The living quarters are upstairs. The dead are in
+    the basement. In between, families come to say goodbye.
+  garden: >-
+    Low plantings along the front walk -- birds of paradise, agapanthus,
+    the modest hardy plants of Los Angeles that bloom without being asked.
+    Someone keeps them watered. It is probably Ruth.
+  porch: >-
+    A wide front porch with a wooden swing that nobody sits in during business
+    hours. Two potted ferns bracket the front door. A small brass knocker in
+    the shape of a flower. The door is always unlocked during operating hours.
+    Death does not keep banker's hours.
+spawninfo: []
+idlemessages:
+- A hearse pulls up to the side entrance quietly, its engine barely audible. It does not hurry.
+- The phone rings inside the house. Someone answers on the second ring. Their voice is professional, gentle, practiced.
+- A couple walks up the front path, holding hands and not talking. They look like they have not slept.
+- The morning light comes through the ferns and throws long green shadows across the porch.
+- A delivery van stops at the curb. The driver carries an arrangement of white lilies to the side door.
+- Somewhere inside, someone is playing soft recorded music. Strings, unhurried, chosen for its absence of opinion.
+- The street is quiet. In Los Angeles, quiet streets are an achievement, paid for and maintained.

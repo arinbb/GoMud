@@ -1,0 +1,36 @@
+-
+  Supported:
+    "jimmy mcnulty": ["bunk moreland"]
+  Conversation:
+    - ["#1 emote spreads a case file across the table and pushes some of Lester's miniatures aside to do it."]
+    - ["#2 emote looks at the miniatures that were moved and then at McNulty."]
+    - ["#2 say Those are not yours to move."]
+    - ["#1 say I need the table, Bunk."]
+    - ["#2 say McNulty. What did I do? What did I do to deserve this?"]
+    - ["#1 emote ignores this and points at a connection on the case file."]
+    - ["#1 say Look at this. The money from the corners to the stash to -- look at this line."]
+    - ["#2 emote looks at the line. He sees it."]
+-
+  Supported:
+    "jimmy mcnulty": ["bunk moreland"]
+  Conversation:
+    - ["#1 say You want to get a drink after this."]
+    - ["#2 emote lights his cigar without looking up from the crime scene photo."]
+    - ["#2 say It is eleven in the morning, Jimmy."]
+    - ["#1 say I know what time it is."]
+    - ["#2 emote exhales smoke and looks at him."]
+    - ["#2 say Yeah. Okay. One drink."]
+    - ["#1 emote nods once. This is friendship, in their language."]
+-
+  Supported:
+    "jimmy mcnulty": ["bunk moreland"]
+  Conversation:
+    - ["#2 say You know what your problem is?"]
+    - ["#1 say Which one."]
+    - ["#2 emote points the cigar at him."]
+    - ["#2 say You got good police instincts and no off switch."]
+    - ["#1 say Rawls has got an off switch and look how that turned out."]
+    - ["#2 say McNulty."]
+    - ["#1 say What."]
+    - ["#2 say Shut up and work the case."]
+    - ["#1 emote shuts up and works the case."]

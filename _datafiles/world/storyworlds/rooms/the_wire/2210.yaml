@@ -1,0 +1,51 @@
+roomid: 2210
+zone: The Wire
+title: The Docks
+description: >-
+  The Port of Baltimore, Local 1514, the <ansi fg="8">International Brotherhood
+  of Stevedores</ansi>. The piers smell of diesel and brine and the particular
+  exhaustion of men whose work the city depends on and has forgotten about.
+  <ansi fg="itemname">Shipping containers</ansi> are stacked four and five high
+  in rows that go back as far as you can see, their metal sides painted with
+  the names of shipping lines from a dozen countries. The <ansi fg="8">cranes</ansi>
+  are enormous and precise and most of them are idle. The union hall has a
+  <ansi fg="itemname">bulletin board</ansi> with job postings and a phone number
+  and a photograph of Frank Sobotka that was taken when things were different.
+  The port is dying. Containerization killed it slower than anyone expected
+  and faster than anyone was ready for. The <ansi fg="exit">street</ansi> is to
+  the east, and the <ansi fg="exit">Greek Diner</ansi> is to the north.
+mapsymbol: K
+maplegend: The Docks
+biome: shore
+exits:
+  street:
+    roomid: 2203
+    mapdirection: east
+  north:
+    roomid: 2213
+nouns:
+  containers: >-
+    Corrugated steel, twelve meters, stenciled with codes and destinations.
+    Rotterdam. Busan. Baltimore. Some of them have been here longer than they
+    should. One of them, season two will tell you, contained something that
+    was not listed on the manifest. The containers do not know what is inside
+    them. Or they do not say.
+  cranes: >-
+    Italian-built gantry cranes, sixty feet high, designed for a port at full
+    capacity. At full capacity these cranes processed twelve thousand containers
+    a week. They do not process twelve thousand containers a week anymore.
+    They stand over the dock like monuments to what the dock used to be.
+  bulletin: >-
+    Job postings: work calls for Monday, Wednesday, Friday. Fewer calls than
+    last year. Fewer than the year before that. A flyer for the union hall
+    picnic in June. A photograph of Frank Sobotka at a dock workers rally,
+    maybe ten years ago, when there was something to rally around.
+spawninfo: []
+idlemessages:
+- A crane moves, slowly, across the dock. One container shifted. The crane stops.
+- The harbor is grey and wide and does not care about the problems of the port.
+- A seagull lands on a container, regards the dock, and goes somewhere with more fish.
+- The sound of men arguing somewhere in the rows of containers, then silence.
+- Diesel smoke from a loader. The smell of fuel and salt water and rust.
+- A work call goes out. A dozen men stand up. More men stay seated. The ratio is wrong.
+- The port is dying and everyone here knows it and nobody says it because saying it does not help.

@@ -1,0 +1,59 @@
+roomid: 2232
+zone: six_feet_under
+title: Davids Apartment
+description: >-
+  The life David has built with Keith, separate from the funeral home though
+  not far from it. An <ansi fg="itemname">apartment</ansi> that is genuinely
+  domestic -- not decorated to impress but arranged to be lived in. Keith's
+  <ansi fg="itemname">workout equipment</ansi> in one corner, maintained and
+  used. David's <ansi fg="itemname">books</ansi> on a shelf in alphabetical
+  order, which he knows is something people tease him about and which he
+  does not plan to change. A <ansi fg="itemname">kitchen table</ansi> with
+  two chairs where they eat dinner and talk about their days, or do not talk
+  about their days but are present while the other one talks. Photographs
+  of Keith and David on the <ansi fg="itemname">wall</ansi> -- not a lot,
+  but there. The apartment is evidence of a life that David built on purpose
+  after years of not knowing if he could have it. It is hard-won and real.
+  The <ansi fg="exit">entrance</ansi> leads back to the funeral home.
+mapsymbol: D
+maplegend: Davids Apartment
+biome: house
+exits:
+  entrance:
+    roomid: 2220
+    mapdirection: south
+nouns:
+  apartment: >-
+    Modest but real. The furniture is actual furniture bought together, not
+    handed down, not temporary. The lease is in both names. This is a home
+    that two people have made. David has never had a home that was his own
+    before. He is still getting used to what that means.
+  equipment: >-
+    Keith's weights and a pull-up bar. He uses them in the early morning
+    before David is up. The equipment is kept clean and ordered -- Keith's
+    version of the discipline he brought from fifteen years as a cop.
+    The physical world is something Keith can manage. He respects it.
+  books: >-
+    Alphabetical by author. Mostly history, some theology, some fiction.
+    David was raised in a family business surrounded by death and he has
+    needed other things to think about. The books are that. They are not
+    for show. He has read all of them.
+  table: >-
+    Two chairs at a kitchen table. This is where David and Keith have their
+    real conversations -- the ones that matter, the ones that are difficult,
+    the ones where they say things they have been carrying for a while.
+    The table holds those conversations steadily.
+  wall: >-
+    A few photographs: David and Keith at a friend's wedding, clearly happy.
+    A photo at a beach somewhere. One at the funeral home in front of the
+    sign, formal, a good day. They exist in photographs. This is not nothing.
+spawninfo:
+- mobid: 506
+  respawnrate: 10 real minutes
+idlemessages:
+- Keith is working out in the corner, methodical and quiet, not performing the exercise.
+- David has arranged the bookshelf again. It was already alphabetical. The order is now also thematic within the alphabetical.
+- The apartment is clean in a way that is not compulsive but is considered. Someone here cares about the space.
+- Two coffee cups on the table. One finished, one half. This is a Wednesday morning.
+- A photograph on the wall catches the light -- David and Keith, clearly happy, caught at a good moment.
+- Keith comes out of the kitchen with two plates and sets them on the table without announcement. Dinner is ready.

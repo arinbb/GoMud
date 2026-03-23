@@ -1,0 +1,73 @@
+roomid: 2203
+zone: The Wire
+title: West Baltimore Street
+description: >-
+  A long block of <ansi fg="8">row houses</ansi>, their <ansi fg="itemname">brick
+  fronts</ansi> marked by decades of weather and intention. Steps lead up to
+  narrow <ansi fg="itemname">stoops</ansi> where old women sit in the afternoon
+  and teenagers congregate at night. A <ansi fg="itemname">corner store</ansi>
+  anchors the far end of the block, its window advertising wire-transferred money
+  and single cigarettes and the lottery. This is the real Baltimore -- not the
+  harbor, not the convention center, but this block, this smell of fried chicken
+  and old rain, this sky that is always about to do something. <ansi fg="8">Corner
+  boys</ansi> work the block with the relaxed efficiency of people doing their job.
+  The <ansi fg="exit">Pit</ansi> is to the south, <ansi fg="exit">Orlandos</ansi>
+  is to the east, the <ansi fg="exit">Detail</ansi> is to the north,
+  <ansi fg="exit">Hamsterdam</ansi> is to the west, and <ansi fg="secret-exit">something</ansi>
+  might be found by those who listen.
+mapsymbol: W
+maplegend: West Baltimore Street
+biome: city
+exits:
+  south:
+    roomid: 2200
+  east:
+    roomid: 2204
+  north:
+    roomid: 2207
+  hamsterdam:
+    roomid: 2206
+    mapdirection: west
+  docks:
+    roomid: 2210
+    mapdirection: west
+  newsroom:
+    roomid: 2211
+    mapdirection: north
+  school:
+    roomid: 2214
+    mapdirection: west
+  whistle:
+    roomid: 2215
+    secret: true
+  listen:
+    roomid: 2215
+    secret: true
+nouns:
+  houses: >-
+    Two-story brick row houses, most of them. Built around 1920 for workers
+    who mostly do not live here anymore. The bones of the houses are good.
+    What happened to the bones happened slowly, then all at once.
+  stoops: >-
+    The stoops are the social infrastructure of this block. Everything of
+    importance that happens here happens on a stoop or in view of a stoop.
+    The old women sitting out know more about this block than any detective.
+    They will not tell you. They have reasons for that.
+  store: >-
+    Corner store. Wire transfers to El Salvador and Guatemala. Loosies -- single
+    cigarettes -- two for a dollar. Lottery tickets. The kind of store that
+    does not need a sign because everyone already knows where it is.
+  boys: >-
+    Young men, teenagers mostly, some younger, working the corners with
+    a professionalism that has no outlet. They have learned a system.
+    The system works, as systems go, until it does not. It always eventually
+    does not. They have not learned that part yet. Most of them will.
+spawninfo: []
+idlemessages:
+- A corner boy lifts his chin at a passing car and makes a nearly invisible hand signal.
+- The corner store door swings open. A woman comes out with milk and a lottery ticket. She walks fast.
+- Someone plays music from an upper window. A Baltimore summer sound, thick and specific.
+- Rain has been threatening for an hour. The street smells like rain that has not arrived yet.
+- An old woman on a stoop watches the block with the calm surveillance of someone who has seen it all before.
+- A stray dog trots through with somewhere to be. The corner boys ignore it. They have priorities.
+- The block is always the block. Different players, same positions, same corner, same game.

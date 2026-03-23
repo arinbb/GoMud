@@ -1,0 +1,36 @@
+-
+  Supported:
+    "neil young": ["the old man"]
+  Conversation:
+    - ["#1 say I have been here eight months."]
+    - ["#2 emote rocks once. 'I know.'"]
+    - ["#1 say It feels longer."]
+    - ["#2 say That is how you know you are home."]
+    - ["#1 emote looks at the fields.", "#1 emote says nothing for a long moment."]
+    - ["#2 say The wheat will be ready in three weeks. Maybe four."]
+    - ["#1 say I know."]
+    - ["#2 say I know you know.", "#2 emote rocks."]
+-
+  Supported:
+    "neil young": ["the old man"]
+  Conversation:
+    - ["#2 say You were playing last night. Late."]
+    - ["#1 say Sorry if it carried over the fence."]
+    - ["#2 emote waves a hand. 'It carried.'"]
+    - ["#2 say I did not mind."]
+    - ["#1 say What did you hear?"]
+    - ["#2 say Something sad. Then something not as sad."]
+    - ["#1 emote nods."]
+    - ["#2 say That is usually the order of it."]
+-
+  Supported:
+    "neil young": ["the old man"]
+  Conversation:
+    - ["#1 say Old man."]
+    - ["#2 emote looks up from the whittling."]
+    - ["#1 say Look at my life."]
+    - ["#2 emote is quiet for a long moment."]
+    - ["#2 say I am looking."]
+    - ["#1 say What do you see?"]
+    - ["#2 say Twenty-four. Which is a lot. And not much. Both at once."]
+    - ["#1 emote writes something in the notebook.", "#1 say Yeah."]

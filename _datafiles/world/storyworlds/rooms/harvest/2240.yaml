@@ -1,0 +1,93 @@
+roomid: 2240
+zone: Harvest
+title: Broken Arrow Ranch
+description: >-
+  Northern California, 1972. A working ranch in the late afternoon, the kind
+  of place that earns its quiet. A weathered <ansi fg="itemname">barn</ansi>
+  leans slightly southward, its red paint faded to the color of dried blood
+  and rust. <ansi fg="itemname">Wheat fields</ansi> roll out to the east and
+  north, the stalks heavy and gold in the slant light. A <ansi fg="itemname">
+  dirt road</ansi> disappears into the hills. The ranch house is simple,
+  low, the kind of house a man builds when he plans to stay. On the fence post
+  nearest the barn, a <ansi fg="itemname">harmonica</ansi> rests on the top
+  rail -- left there the way you leave something when you know you will come
+  back for it. The neighbor's <ansi fg="10">cottage</ansi> is just visible to
+  the north through the fence line, the old man's rocker on the porch. The air
+  smells of dry grass and woodsmoke and the particular sweetness of a harvest
+  that is almost ready.
+mapsymbol: R
+maplegend: Broken Arrow Ranch
+biome: farmland
+exits:
+  track1:
+    roomid: 2241
+    mapdirection: north
+    exitmessage: The highway stretches out ahead, dusk settling over the asphalt.
+  track2:
+    roomid: 2242
+    mapdirection: northeast
+    exitmessage: The wheat field opens around you, the stalks taller than your head.
+  track3:
+    roomid: 2243
+    mapdirection: east
+    exitmessage: The door swings open on an empty house, the piano waiting.
+  track4:
+    roomid: 2244
+    mapdirection: southeast
+    exitmessage: A spotlight cuts through the dark. You walk toward it.
+  track5:
+    roomid: 2245
+    mapdirection: south
+    exitmessage: Fiddle music spills through the barn door, bright and fast.
+  north:
+    roomid: 2246
+    exitmessage: You follow the fence line to the neighbor's cottage.
+  east:
+    roomid: 2247
+    exitmessage: The ground drops away and suddenly you are very high above the world.
+  south:
+    roomid: 2248
+    exitmessage: The air changes, red clay under your feet, the South pressing in.
+  west:
+    roomid: 2249
+    exitmessage: A small stage, a single light. You approach quietly.
+  down:
+    roomid: 2250
+    exitmessage: Steps lead underground, into the long hypnotic dark.
+nouns:
+  barn: >-
+    A working barn, tools hung in order on the walls, hay stacked in the loft.
+    The smell of horses and oil and old wood. A guitar case sits open on a hay
+    bale, the instrument gone -- someone took it out to play. The door is never
+    quite shut. Light falls through the gaps in the planks in thin gold bars.
+  fields: >-
+    Wheat, heavy and gold and almost ready. You run your hand along the tops of
+    the stalks and they bend and spring back. The field stretches to the ridge.
+    In the evening light it looks like something out of a painting of a country
+    that used to exist, or still does somewhere, if you know where to look.
+  road: >-
+    A dirt road leading up into the hills, tire tracks in the dry dust. It goes
+    somewhere and comes from somewhere and right now it is empty and orange in
+    the late light. The kind of road you drive when you have no particular
+    destination and that is the whole point.
+  harmonica: >-
+    A Marine Band harmonica, key of C, worn at the edges where a man's hands
+    have held it for years. It is almost too personal to pick up. You bring it
+    to your lips and blow a single note -- it rings across the ranch, clear and
+    aching, and then fades into the wheat.
+  cottage: >-
+    Just visible through the fence line -- a small white cottage, a front porch,
+    a rocking chair in motion. The old man has been here for decades. The land
+    knows his name. He is part of the place the way a fence post is part of the
+    place, worn by weather and still standing.
+spawninfo:
+- mobid: 510
+  message: Neil Young sits on the fence rail, acoustic guitar across his knees, looking at the fields.
+idlemessages:
+- An acoustic guitar drifts from the direction of the barn, unhurried, a man playing for no one in particular.
+- The wheat shifts in the evening breeze, a long golden wave moving from east to west and gone.
+- The pedal steel bends a note somewhere over the ridge, the sound carrying clean in the dry air.
+- A hawk turns slow circles above the field, riding something invisible.
+- The light thickens toward gold. Everything on the ranch looks permanent and temporary at once.
+- Somewhere a screen door bangs, the sound carrying across the still afternoon air.
+- The harmonica on the fence post catches the late light, a thin line of silver.

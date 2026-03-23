@@ -1,0 +1,27 @@
+mobid: 503
+zone: six_feet_under
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote holds the camera up and photographs something without explanation."
+  - "emote paints over something she did, frowning, then unpaints it."
+  - "emote looks at the wall of photographs, head tilted, evaluating."
+  - "emote argues with someone who is not here, under her breath."
+  - ''
+  - ''
+  - "say Art is the only thing that is actually real. I think about this constantly."
+  - "emote adds a photograph to the wall, steps back, pins it somewhere else."
+activitylevel: 25
+character:
+  name: Claire Fisher
+  description: >-
+    A young woman in her early twenties with paint on her hands and a
+    camera around her neck and the specific aliveness of someone who sees
+    everything and has not yet learned to pretend otherwise. She is the
+    youngest Fisher, which means she grew up watching everyone else's drama
+    and translating it into art. She is funny and angry and talented and
+    she has not figured out yet where to go, which is the most interesting
+    problem of her life right now. She looks at you like she is considering
+    whether to photograph you.
+  raceid: 1
+  level: 5

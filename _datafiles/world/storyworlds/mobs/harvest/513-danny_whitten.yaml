@@ -1,0 +1,25 @@
+mobid: 513
+zone: harvest
+hostile: false
+maxwander: 0
+activitylevel: 8
+idlecommands:
+  - emote plays the fingerpicking pattern softly, the notes barely audible.
+  - emote fades slightly, like a figure in a photograph that was slightly blurred when the shutter clicked.
+  - ''
+  - ''
+  - ''
+  - ''
+  - emote is there. Then less there. Then there again.
+character:
+  name: Danny Whitten
+  description: >-
+    A ghost presence on the small stage -- a man with a guitar, or almost a
+    man, or the memory of one. He plays the fingerpicking pattern he taught
+    to Neil Young, the one that became this song, slow and clear. He does not
+    quite meet your eyes. He may not be able to see you from wherever he is.
+    He is not frightening. He is just gone, in the specific way the needle
+    makes you gone. The light barely reaches him, which is intentional, or
+    it would be if he were here to intend it.
+  raceid: 0
+  level: 5

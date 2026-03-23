@@ -1,0 +1,29 @@
+mobid: 502
+zone: six_feet_under
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote stirs something on the stove, tasting it, adjusting, tasting again."
+  - "emote stands at the kitchen window and looks at the yard for a long moment."
+  - "emote wipes her hands on her apron and then wipes them again."
+  - "emote puts away dishes with the methodical care of someone who needs to be doing something with her hands."
+  - ''
+  - ''
+  - "say I worry. That is what I do. I worry and I cook."
+  - "emote goes to the window again. She does this many times a day."
+activitylevel: 25
+character:
+  name: Ruth Fisher
+  description: >-
+    A woman in her late fifties who has spent decades being the center of
+    this family's gravity while believing she was peripheral to it. She
+    is small and precise in her movements, with hands that are always doing
+    something -- cooking, gardening, adjusting, cleaning. Her face holds
+    grief in the way that soil holds water: thoroughly, without display.
+    She raised three children in a funeral home and managed the books and
+    made every meal and now her husband is gone and she is discovering, with
+    some anxiety and some relief, that she does not know who she is when
+    she is not managing someone else's life. She is in the process of
+    finding out.
+  raceid: 1
+  level: 5

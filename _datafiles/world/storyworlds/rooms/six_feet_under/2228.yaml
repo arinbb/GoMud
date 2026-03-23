@@ -1,0 +1,53 @@
+roomid: 2228
+zone: six_feet_under
+title: Nates Room
+description: >-
+  The prodigal son's room, unchanged since he left for Seattle. A room that
+  became a <ansi fg="itemname">museum</ansi> of someone who did not want to
+  be preserved. High school posters still on the wall -- bands, a map of the
+  world with pins in the places he wanted to go. A <ansi fg="itemname">shelf</ansi>
+  of trophies and books from a self he shed like a skin. The <ansi fg="itemname">bed</ansi>
+  with its old quilt, made now because Ruth makes it. A <ansi fg="itemname">window</ansi>
+  with a view of the side yard and the garage where the hearse lives. Nate
+  has complicated feelings about this room, about the version of himself it holds,
+  about the fact that he came back. The room waits for him patiently, which is
+  its own kind of pressure. Down to the <ansi fg="exit">living room</ansi>.
+mapsymbol: N
+maplegend: Nates Room
+biome: house
+exits:
+  living:
+    roomid: 2226
+    mapdirection: south
+nouns:
+  museum: >-
+    The room has the quality of a time capsule sealed by someone else and
+    opened too late. The posters are still straight. The shelf is dusted.
+    Ruth has maintained it as if he would come back at sixteen instead of
+    thirty-four, with the whole intervening mess of his life behind him.
+  shelf: >-
+    Athletic trophies -- soccer, track. A few books from high school English.
+    A yearbook. A coffee can full of guitar picks. The person these objects
+    belonged to is still recognizable in Nate, but barely. He shed a lot of
+    skins between here and Seattle.
+  bed: >-
+    An old quilt on the bed, slightly faded. Ruth makes it every day he is
+    home and every day he is not, out of habit or hope or the way that making
+    beds makes the future feel manageable.
+  window: >-
+    The window looks out over the side yard to the garage where the hearse
+    is parked. Nate used to look out this window and think about leaving.
+    He left. He came back. The window looks the same.
+  posters: >-
+    Bands he liked at seventeen. A world map with red pins in places --
+    Barcelona, Auckland, Marrakech, places he was planning to go before
+    his father died and the business came back into view. Some of those
+    pins are still aspirational. Some he has been to since.
+spawninfo: []
+idlemessages:
+- Nate stands at the window looking out at the side yard with an expression that is difficult to read from here.
+- The room holds its teenage version of him with perfect fidelity. He does not always appreciate this.
+- A copy of Rilke is on the nightstand. It was not there before. He brought it back.
+- The trophies on the shelf catch the light. He was good at things, once, in the way you are good at things at seventeen.
+- Ruth has made the bed again. The quilt is precisely arranged. This is love in its most persistent form.
+- Something about this room makes Nate quieter than he is elsewhere in the house. He sits on the bed sometimes and does not explain why.

@@ -1,0 +1,52 @@
+roomid: 2215
+zone: The Wire
+title: Omars Alley
+description: >-
+  A <ansi fg="8">narrow passage</ansi> between two row houses, the kind of space
+  that appears on no city map and belongs to whoever knows it is here. The brick
+  walls are close on both sides, damp, the mortar crumbling at eye level. At one
+  end, the alley opens onto a <ansi fg="itemname">back court</ansi> with a view
+  of three backyards and two escape routes. This is <ansi fg="8">Omars territory</ansi>
+  in the way that a hunting ground is a hunting ground -- not owned, but known.
+  Omar Little leans against the wall in his <ansi fg="itemname">trenchcoat</ansi>,
+  a <ansi fg="itemname">shotgun</ansi> held loose at his side, the scar on his
+  cheek catching the grey Baltimore light. He is not hiding. He is not advertising.
+  He is simply <ansi fg="8">here</ansi>, which in West Baltimore is a form of
+  authority. You can hear the street from here but the street cannot see you.
+mapsymbol: A
+maplegend: Omars Alley
+biome: city
+exits: {}
+nouns:
+  court: >-
+    A small open space between the backs of four row houses, concrete and
+    weed-grass, three overturned milk crates and a rusted oil drum. Two
+    exits: over the fence to the left, through the gate to the right.
+    Omar knows both exits. He has used both exits. He always knows where
+    the exits are.
+  trenchcoat: >-
+    A long grey trenchcoat, worn soft. Not a disguise -- everyone in Baltimore
+    knows what a man in a grey trenchcoat with a shotgun means. The trenchcoat
+    is Omar. It is his flag, his announcement, his statement of purpose.
+    When corner boys see it, they call out: Omar coming. Omar coming.
+  shotgun: >-
+    A Mossberg 500, 12-gauge. Omar robs drug dealers for a living. He does
+    not sell drugs. He does not use them. This is his code, and the code is
+    real. He has held the code for years on streets where codes are expensive.
+    The shotgun is part of the code. It announces seriousness.
+  scar: >-
+    A long scar on the left cheek, origin unspecified. In West Baltimore,
+    scars are a form of biography. The scar says: this man has been in
+    situations and is still here. Both halves of that sentence matter.
+spawninfo:
+- mobid: 491
+  message: '<ansi fg="8">Omar Little steps out of the shadows, trenchcoat moving, shotgun at his side. He has been here the whole time.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Omar whistles three notes, low and clear, and the sound travels further than it should.
+- 'He chambers a round with the casual efficiency of someone checking the time: reflexive, informational.'
+- Omar watches the fence line. His eyes move. Everything else is still.
+- A cat moves along the top of the alley wall. Omar tracks it briefly, then does not.
+- 'The sounds of the street are audible from here: sirens, voices, the city running. Omar listens.'
+- He reaches into his coat and produces a Honey Nut Cheerios box, shakes some into his hand, eats them. His code does not cover cereal.
+- Omar says nothing. In this alley, silence is a form of communication.

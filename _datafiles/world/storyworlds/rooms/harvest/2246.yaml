@@ -1,0 +1,59 @@
+roomid: 2246
+zone: Harvest
+title: Old Man
+description: >-
+  A small white <ansi fg="itemname">cottage</ansi> at the edge of the property,
+  weathered but kept, the kind of house a person lives in for decades and stops
+  seeing as a house. A <ansi fg="itemname">rocking chair</ansi> on the front
+  porch moves in the afternoon air, the old man in it, his hands resting on
+  the arms with the ease of a man who has made peace with stillness. The
+  <ansi fg="itemname">fence line</ansi> that separates his land from the
+  younger man's is low and old and mostly just there to have a fence line.
+  <ansi fg="itemname">Tools</ansi> hang in order on the porch wall -- a
+  hammer, a saw, a hoe -- each one placed where a man's hand reaches without
+  looking. The view from this porch is the same as the view from the ranch
+  across the fence. From here it looks different. Twenty-four and twenty-four
+  used to be the same number. It is not the same number anymore.
+mapsymbol: '6'
+maplegend: Old Man
+biome: house
+exits:
+  south:
+    roomid: 2240
+    exitmessage: You walk back down the fence line to the ranch.
+spawninfo:
+- mobid: 511
+  message: The Old Man rocks on his porch, watching the fields change in the afternoon light.
+nouns:
+  cottage: >-
+    The cottage is not grand but it is enough. It has been enough for a long
+    time. The paint is fresh on the windowsills, the gutters are clear, the
+    vegetable garden on the north side is tended with care. This is what it
+    looks like when a man has been in one place long enough to make it right.
+    Not perfect. Right.
+  chair: >-
+    The rocking chair moves in a small constant arc, the sound of it on the
+    porch boards a rhythm you could set your whole day to. The arms are smooth
+    from long use. The wood has the warm color of something that has been
+    touched ten thousand times by the same hands. Sit in it and you feel
+    something about time that you could not have felt from the ground.
+  fence: >-
+    The fence line is low enough to step over easily, and neither man has
+    ever gone through the gate unless the situation called for a gate. It is
+    a conversation piece as much as a boundary -- the line that makes two
+    properties of what is really one landscape. Young man, old man, same
+    view, different years. The fence is the years.
+  tools: >-
+    A hammer worn smooth at the handle. A hand saw with a nick in the third
+    tooth. A hoe that leans just slightly left from years of use. They are
+    not decorative. They have been used this week. They will be used next
+    week. The organization of them is the organization of a mind that has had
+    decades to figure out where things should go.
+idlemessages:
+- The rocking chair makes its small arc, back and forth, back and forth, the sound of all the years in it.
+- The Old Man watches the fields the way someone watches something they have watched for decades.
+- A crow lands on the fence post, looks at the old man, and flies on without event.
+- The vegetable garden on the north side is perfect in the way that only years of practice makes perfect.
+- The afternoon light catches the old man the same way it catches the fence posts -- gold on everything.
+- Somewhere across the fence, the younger man is playing guitar. The old man listens without saying so.
+- The tools on the porch wall are in perfect order, the order of a mind that has had time to find it.

@@ -1,0 +1,52 @@
+roomid: 2206
+zone: The Wire
+title: Hamsterdam
+description: >-
+  A few blocks that <ansi fg="8">Deputy Ops Colvin</ansi> carved out of West
+  Baltimore and told the dealers to use. An experiment in managed chaos. The deal
+  was simple: you do your business here, we do not arrest you there. The corner
+  boys came. Then the users came. Then the food trucks and the health workers
+  and the church vans. Then, eventually, the cameras. <ansi fg="itemname">Dealers</ansi>
+  work in the open here with a casualness that is almost surreal, their product
+  visible, their transactions uncontested. A <ansi fg="itemname">church van</ansi>
+  is parked at the corner, handing out sandwiches and clean needles, which two
+  weeks ago would have been impossible and is now Tuesday. It should not work.
+  It works, in the way that things that should not work sometimes work, until
+  someone with more authority finds out. West Baltimore Street is to the
+  <ansi fg="exit">east</ansi>.
+mapsymbol: H
+maplegend: Hamsterdam
+biome: city
+exits:
+  east:
+    roomid: 2203
+    mapdirection: east
+nouns:
+  dealers: >-
+    They are here. They are visible. This is the whole point. They do not
+    run. They do not look over their shoulders more than twice a minute.
+    This is, for them, a remarkable experience, equivalent to breathing
+    clean air after a lifetime in a mine. They will not say that. They
+    would say: it is what it is.
+  van: >-
+    A church van, white, with a hand-painted cross on the side and a folding
+    table set up with sandwiches in plastic wrap and a cooler of juice and
+    a box of clean needles and a stack of pamphlets in English and Spanish.
+    The woman running it has been trying to get here for years and could not
+    get here until Colvin made this legal, which is the kind of irony that
+    does not look like irony from the inside.
+  experiment: >-
+    This is the experiment. A man named Howard Bunny Colvin, who has been a
+    cop for thirty years and seen everything, decided to try a thing. The
+    thing works. The crime statistics in the rest of the district have
+    improved significantly. Nobody cares about that part. They care about
+    the part that looks bad on camera.
+spawninfo: []
+idlemessages:
+- The church van lady offers a sandwich to a corner boy. He takes it after a moment. He is hungry.
+- Someone lights up in the open, standing in the street, which is technically now legal here.
+- A health worker moves through the crowd with a clipboard and no particular judgment.
+- The absence of sirens is the strangest sound in West Baltimore.
+- Two corner boys argue about something that has nothing to do with business. They have free time now.
+- A city councilman drives past in a sedan, slows, keeps moving. He has seen nothing. He has seen everything.
+- It should not be this quiet. The quiet is the experiment.

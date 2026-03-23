@@ -1,0 +1,46 @@
+roomid: 2229
+zone: six_feet_under
+title: The Garage
+description: >-
+  The business end of Fisher and Sons. A long black <ansi fg="itemname">hearse</ansi>
+  occupies most of the space -- a late-model Cadillac, polished to a deep shine,
+  impeccable. Along the walls, <ansi fg="itemname">flower arrangements</ansi> in
+  various states of preparation wait in buckets of water and on shelves, ordered
+  from florists and assembled here for services. A <ansi fg="itemname">pegboard</ansi>
+  of tools along one wall -- not for the car, for the other work: stretchers,
+  gurneys, transfer equipment. The garage smells of floral and car wax and
+  underneath that something practical and cold. This is where the machinery
+  of death-as-a-business operates, unglamorously and necessarily. The
+  <ansi fg="exit">entrance</ansi> is to the east.
+mapsymbol: G
+maplegend: The Garage
+biome: house
+exits:
+  entrance:
+    roomid: 2220
+    mapdirection: east
+nouns:
+  hearse: >-
+    A Cadillac hearse, black, polished. It is the most maintained vehicle
+    in the building because it has to be. It carries the dead with propriety.
+    The inside is lined in black fabric and holds a gurney with clamps on
+    the floor. The exterior has no dings, no scratches. David maintains it
+    himself, on Saturday mornings, with Turtle Wax and patience.
+  flowers: >-
+    Arrangements in progress: white lilies in a tall vase, a low arrangement
+    of roses and eucalyptus, carnations in three colors being sorted. The
+    flowers will be in the slumber room by this afternoon. Right now they
+    are still just flowers waiting to become condolence.
+  pegboard: >-
+    A pegboard of outlines where tools go, each with its shadow on the board
+    so you know where it lives. Stretcher fittings. Straps. A transfer board.
+    The tools for moving bodies with dignity and without drama. David knows
+    every one by name and use.
+spawninfo: []
+idlemessages:
+- The hearse sits polished and patient. It is not in a hurry. It has work to do later.
+- Someone has left the garage door partially open. LA light comes in at an angle across the hearse's hood.
+- The flower arrangements are being finished. Stems trimmed, arrangement adjusted, wrapping tied. The work is careful.
+- A radio somewhere plays softly. Something instrumental. The garage has its own ambient sound.
+- David checks the hearse's fuel level with the precision of someone who has been stranded before and will not be again.
+- The smell of gardenias from the flower prep mingles with car wax. This combination will always mean this place.

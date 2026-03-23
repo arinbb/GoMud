@@ -1,0 +1,27 @@
+-
+  Supported:
+    "avon barksdale": ["stringer bell"]
+  Conversation:
+    - ["#2 emote sets down the economics textbook and leans forward."]
+    - ["#2 say We should be thinking about the property. The legitimate property."]
+    - ["#1 emote looks at him."]
+    - ["#1 say We are in the game, String. That is what we are."]
+    - ["#2 say We could be more than the game."]
+    - ["#1 say What does that even mean. What does that mean, String."]
+    - ["#2 emote opens the textbook to a page he has marked."]
+    - ["#2 say It means this. It means getting out from under all this."]
+    - ["#1 emote looks at the page and then at Stringer."]
+    - ["#1 say I hear you. I do. But I am not built for that, String."]
+-
+  Supported:
+    "avon barksdale": ["stringer bell"]
+  Conversation:
+    - ["#1 say The corners are ours. We take them and we hold them."]
+    - ["#2 say Taking corners costs bodies."]
+    - ["#1 say That is the price."]
+    - ["#2 emote closes the textbook."]
+    - ["#2 say The price is too high for what we get. The return on that investment is negative."]
+    - ["#1 emote looks at Stringer the way you look at someone speaking a language you know but do not always agree with."]
+    - ["#1 say You always been about the money, String."]
+    - ["#2 say And you always been about the corners."]
+    - ["#1 say Yeah. And the corners are still ours."]

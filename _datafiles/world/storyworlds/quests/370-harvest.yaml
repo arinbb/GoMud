@@ -1,0 +1,20 @@
+questid: 370
+name: Harvest
+description: >-
+  Walk the Broken Arrow Ranch from season to season. Arrive at the ranch,
+  find the Heart of Gold, sit with the Old Man, listen to the Needle, and
+  hear every track before the harvest moon sets.
+reward:
+  experience: 4000
+  item_id: 305
+  playermessage: >-
+    You have walked the whole ranch, heard every song, and come out the other
+    side changed in ways you cannot yet name. As a memento, you receive a
+    guitar pick -- worn smooth on one side, the kind that has played ten
+    thousand songs and will play ten thousand more.
+steps:
+- description: Arrive at Broken Arrow Ranch.
+- description: Find the Heart of Gold stage.
+- description: Meet the Old Man on his porch.
+- description: Hear the Needle and the Damage Done.
+- description: Return to the ranch after walking all ten tracks.

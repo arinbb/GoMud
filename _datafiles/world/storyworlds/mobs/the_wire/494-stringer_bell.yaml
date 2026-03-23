@@ -1,0 +1,25 @@
+mobid: 494
+zone: the_wire
+hostile: false
+maxwander: 1
+idlecommands:
+- 'emote reads from an economics textbook with the focused attention of someone who understands that the information is useful.'
+- 'emote makes a series of calls, each one brief and conclusive, each one moving something somewhere.'
+- 'say Supply and demand. That is all this is. Supply and demand with no government oversight.'
+- 'emote runs a calculation in his head and reaches a conclusion that does not change his expression.'
+- ''
+- 'emote marks a passage in the textbook with a careful pencil line and turns the page.'
+activitylevel: 25
+character:
+  name: Stringer Bell
+  description: >-
+    A tall, composed Black man who carries himself like someone who made a decision
+    early about what he was going to be and has been executing that decision
+    ever since. He takes economics classes at the community college. He runs
+    the Barksdale Organization like a supply chain, applying the vocabulary
+    of legitimate business to illegitimate operations with such fluency that
+    the categories seem arbitrary. He is brilliant and ruthless and fundamentally
+    mistaken about which world he actually lives in, which is the central tragedy
+    of his arc.
+  raceid: 1
+  level: 12

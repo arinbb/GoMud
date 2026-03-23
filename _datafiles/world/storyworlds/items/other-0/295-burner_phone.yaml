@@ -1,0 +1,16 @@
+itemid: 295
+name: burner phone
+namesimple: phone
+displayname: a <ansi fg="itemname">burner phone</ansi>
+description: >-
+  A cheap prepaid flip phone in a cracked plastic case, the kind you buy at
+  a corner store for twenty dollars and throw away when the minutes run out.
+  The screen is scratched. A piece of electrical tape over the battery
+  compartment holds it together. When you flip it open it shows one contact
+  saved simply as 'OMAR'. A souvenir from Baltimore. From the corners, the
+  Detail, the vacants. From the game. You know, in the particular way of
+  someone who has been there, that the game is the game. Always.
+type: object
+subtype: usable
+uses: 0
+value: 1

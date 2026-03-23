@@ -1,0 +1,19 @@
+itemid: 157
+name: Harvest vinyl LP
+namesimple: record
+displayname: a vinyl LP labeled <ansi fg="itemname">Neil Young - Harvest</ansi>
+description: >-
+  A single LP in a gatefold sleeve, Reprise Records, 1972. The cover is a
+  photograph of Neil Young standing in a field, flannel and denim, looking
+  slightly away from the camera, the way people look when they are about to
+  say something true. The sleeve is golden at the edges from age and light.
+  Inside: one side of vinyl, ten tracks, the grooves pressed deep and clean.
+  You can see the wider quiet gap before track four -- Heart of Gold -- where
+  the needle has to find the song all over again. The whole thing smells like
+  cardboard and 1972 and something warm and unhurried and California. When you
+  tilt it toward the light, a single groove catches and you can hear,
+  impossibly faintly, a harmonica searching for something it has not yet found.
+type: object
+subtype: usable
+uses: 0
+value: 0

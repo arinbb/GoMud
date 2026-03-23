@@ -1,0 +1,60 @@
+roomid: 2223
+zone: six_feet_under
+title: The Prep Room
+description: >-
+  The basement <ansi fg="8">preparation room</ansi> -- cool, clinical, lit by
+  overhead fluorescents that turn everything the color of fact. A stainless steel
+  <ansi fg="itemname">embalming table</ansi> occupies the center of the room,
+  tilted slightly for drainage. Along one wall, a row of <ansi fg="itemname">cabinets</ansi>
+  holds chemicals, instruments, cosmetics, wigs, thread. Against another wall,
+  an <ansi fg="itemname">airbrush kit</ansi> and <ansi fg="itemname">reference photos</ansi>
+  spread across a worktable -- Rico restores faces from photographs, giving back
+  what illness or accident took away. The room smells of <ansi fg="itemname">formaldehyde</ansi>
+  and cosmetics and underneath those, something cold and clean. This is where the
+  art happens, the art nobody talks about at dinner parties. The <ansi fg="exit">entrance</ansi>
+  is to the south. The <ansi fg="exit">body fridge</ansi> is to the east.
+mapsymbol: P
+maplegend: Prep Room
+biome: house
+exits:
+  south:
+    roomid: 2220
+  east:
+    roomid: 2224
+nouns:
+  table: >-
+    Stainless steel, tilted slightly, drains at the low end. The surface is
+    immaculate. Rico cleans it before and after every preparation. He treats
+    it the way a surgeon treats an operating table -- with the respect due
+    to the work done on it.
+  cabinets: >-
+    Rows of chemicals with clinical names. Instruments on a tray, sorted by
+    function. Cosmetics in a range that would shame a department store --
+    every skin tone, every finish, every undertone. A spool of thread that
+    you do not want to think about.
+  airbrush: >-
+    A professional airbrush setup on a wheeled cart. Rico uses it for the
+    final work -- the color matching, the subtle texture. He trained for this.
+    He is proud of this. He should be.
+  photos: >-
+    Reference photographs that families provide. A smiling face at a picnic.
+    A formal portrait. A candid from someone's phone. Rico studies these and
+    then recreates what they show, as faithfully as he can. He gives the family
+    their person back, one last time.
+  formaldehyde: >-
+    The smell is unmistakable once you know it -- a sharp chemical sweetness
+    that sits under everything in this room. You get used to it, they say.
+    Rico has gotten used to it. He barely notices anymore. He notices other
+    things: the quality of the light, the texture of a complexion, whether
+    his work tonight honors the person in the photograph.
+spawninfo:
+- mobid: 504
+  respawnrate: 8 real minutes
+idlemessages:
+- Rico bends close to his work, a brush in one hand, the reference photo in the other. He is comparing.
+- The fluorescent lights hum at a frequency that sits just below awareness but is always there.
+- A chemical timer beeps once and is silenced. Rico makes a note on his clipboard.
+- The prep room is the most honest room in the building. Everything else in the funeral home is about comfort. This room is about the work.
+- Rico sets down his tools and steps back to look at what he has done. He tilts his head. He picks up the brush again.
+- The drain in the floor is clean. It is always clean. Rico insists on this.
+- A radio plays quietly in the corner -- something in Spanish, low, rhythmic. Rico works to it without noticing.

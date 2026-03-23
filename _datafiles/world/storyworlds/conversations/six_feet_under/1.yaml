@@ -1,0 +1,47 @@
+-
+  Supported:
+    "nate fisher": ["david fisher"]
+  Conversation:
+    - ["#1 say We need to talk about the Kowalski service."]
+    - ["#2 emote does not look up from his paperwork"]
+    - ["#2 say It is handled."]
+    - ["#1 say I know it is handled. I want to know how it is handled."]
+    - ["#2 say The same way I handle everything. Competently and without having to explain it afterward."]
+    - ["#1 emote runs a hand through his hair"]
+    - ["#1 say David."]
+    - ["#2 say Nate."]
+    - ["#1 say We are partners. That means I get to know things."]
+    - ["#2 emote puts down the paperwork and looks at his brother"]
+    - ["#2 say Yes. We are partners. Dad left you forty percent and me thirty and Rico thirty."]
+    - ["#2 say So yes. Partners."]
+-
+  Supported:
+    "nate fisher": ["david fisher"]
+  Conversation:
+    - ["#1 say Do you ever think about selling?"]
+    - ["#2 emote stops arranging flowers"]
+    - ["#2 say No."]
+    - ["#1 say Never. Not once."]
+    - ["#2 say Dad built this. It is ours. No."]
+    - ["#1 emote looks at the walls of the funeral home"]
+    - ["#1 say I spent fifteen years trying to get away from it."]
+    - ["#2 say And you came back."]
+    - ["#1 emote is quiet for a moment"]
+    - ["#1 say He died."]
+    - ["#2 emote resumes arranging the flowers with more force than necessary"]
+    - ["#2 say Yes. He did."]
+-
+  Supported:
+    "nate fisher": ["david fisher"]
+  Conversation:
+    - ["#1 say You're carrying too much."]
+    - ["#2 say I carry what needs carrying."]
+    - ["#1 say David."]
+    - ["#2 emote straightens a flower arrangement"]
+    - ["#1 say Keith is good for you."]
+    - ["#2 emote pauses in the arrangement"]
+    - ["#2 say Yes. He is."]
+    - ["#1 say I just --"]
+    - ["#2 say I know, Nate."]
+    - ["#1 emote nods"]
+    - ["#1 say Good. Okay."]

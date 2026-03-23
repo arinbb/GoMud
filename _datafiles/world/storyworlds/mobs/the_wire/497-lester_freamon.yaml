@@ -1,0 +1,25 @@
+mobid: 497
+zone: the_wire
+hostile: false
+maxwander: 1
+idlecommands:
+- 'emote works at the corner desk with a piece of wood the size of a matchbook, shaping it with a small knife and total concentration.'
+- 'emote stares at the board on the wall for a long time and then makes a small addition that changes the meaning of something.'
+- 'say All the pieces matter.'
+- 'emote follows a thread on the board with one finger, tracing money through six different entities to a seventh that is the point.'
+- ''
+- 'emote holds the miniature up to the light to check the detail. The detail is perfect. It has always been the point that the detail is perfect.'
+activitylevel: 20
+character:
+  name: Lester Freamon
+  description: >-
+    A lean, precise Black man in his fifties who was buried in the pawnshop
+    unit for thirteen years for the crime of investigating a judge and was
+    pulled out when McNulty needed someone who understood that good police
+    work is the same thing as patience. He builds miniature Victorian dollhouse
+    furniture in his spare time. His hands are as careful on the evidence as
+    they are on the wood. He is the best detective in the Baltimore Police
+    Department by a margin that nobody in command wants to acknowledge, because
+    acknowledging it would require explaining the thirteen years.
+  raceid: 1
+  level: 11

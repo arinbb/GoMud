@@ -1,0 +1,28 @@
+questid: 360
+name: Six Feet Under
+description: >-
+  Walk through the world of the Fisher family -- the funeral home on a quiet
+  LA street, the kitchen where everything is argued and cooked and survived,
+  the prep room where Rico practices his art, the cemetery where Nathaniel Sr
+  waits in the green grass, and the open road where Claire drives away into
+  a future that she and everyone she loves is already living toward. Stay
+  with the dead. Stay with the living. Find the road.
+reward:
+  experience: 5000
+  item_id: 300
+  playermessage: >-
+    You have walked through the Fisher house. You have sat at the kitchen table
+    and visited the prep room and stood at the grave in the green cemetery and
+    found the open road where Claire drives north with Sia on the radio and
+    everything she loves behind her getting smaller. You know what happens to
+    all of them. You have seen the flash-forwards. But right now, right now,
+    they are alive. As a keepsake, you carry a Fisher and Sons funeral program
+    -- cream paper, discreet gold lettering, a life compressed into dates
+    and a name and the small ceremony of goodbye.
+steps:
+- description: Enter Fisher and Sons Funeral Home.
+- description: Visit the arrangement room where families choose.
+- description: See the prep room where Rico does his work.
+- description: Have dinner in the Fisher kitchen.
+- description: Visit the cemetery where Nathaniel Sr is buried.
+- description: Find the open road.

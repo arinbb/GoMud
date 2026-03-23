@@ -1,0 +1,53 @@
+roomid: 2209
+zone: The Wire
+title: City Hall
+description: >-
+  The <ansi fg="8">mayors office</ansi> in Baltimore City Hall, a room of
+  <ansi fg="itemname">dark wood</ansi> and <ansi fg="8">flags</ansi> and a view
+  of the Inner Harbor that has been used in so many press conferences it has
+  become a backdrop prop. The <ansi fg="itemname">desk</ansi> is enormous and
+  paperless, because the paper is handled by people who are not the mayor.
+  <ansi fg="8">Tommy Carcetti</ansi> is here, or the idea of him: a white
+  councilman from a city that is majority Black, climbing through a system
+  that is eating the people it was built to serve, driven partly by genuine
+  reform impulse and partly by the ambition that is indistinguishable from it.
+  The <ansi fg="itemname">phones</ansi> are always ringing. The calls are from
+  people who want things that cannot be given and from people who want to give
+  things that should not be taken. The <ansi fg="exit">courthouse</ansi> is to the
+  south via the <ansi fg="exit">detail</ansi>.
+mapsymbol: G
+maplegend: City Hall
+biome: house
+exits:
+  detail:
+    roomid: 2207
+    mapdirection: south
+nouns:
+  desk: >-
+    A large mahogany desk, bare except for a leather blotter and a phone
+    with too many lines. The desk was chosen for the room. The room was chosen
+    for the view. The view was chosen for what it says about the city to
+    people who are not in the city.
+  wood: >-
+    Dark paneling, the kind that says this room is serious. The wood absorbs
+    sound and mood both. Whatever is said in here sounds more official. It
+    does not become more official. It sounds more official. This is not a
+    small distinction.
+  phones: >-
+    Four lines, all of them important, all of them problems. The state delegation.
+    The police commissioner. The head of the teachers union. The developer who
+    is waiting on a permit. Pick one. They are all the same conversation.
+  harbor: >-
+    The window behind the desk frames the Inner Harbor. From here it looks
+    like a functioning city. The cranes, the convention center, the restaurants
+    along the water. Carcetti stands at this window when he needs to remember
+    why he is doing this. He stands at it when he needs to remember that he is
+    doing it wrong.
+spawninfo: []
+idlemessages:
+- A staffer knocks, enters with a folder, gets a nod, exits. This is the rhythm of governance.
+- One of the phone lines rings and then stops before anyone answers it.
+- The view from the window catches the late afternoon light off the harbor. It is, objectively, beautiful.
+- Someone is already preparing the talking points for the press conference nobody has decided to have yet.
+- Carcetti would be at this window, if he were here, trying to feel something genuine. It is harder than it looks.
+- The city budget sits on a credenza. Nobody is reading it. The deficit is in there, patient, waiting.

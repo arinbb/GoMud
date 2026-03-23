@@ -1,0 +1,55 @@
+roomid: 2230
+zone: six_feet_under
+title: Brendas House
+description: >-
+  A different kind of house from the Fisher house -- books, everywhere, and
+  not decoratively. Brenda's <ansi fg="itemname">books</ansi> are read,
+  annotated, stacked in arguments with each other. A therapist's
+  <ansi fg="itemname">couch</ansi> faces two chairs in one corner, though this
+  is not her office -- it is her home, and the arrangement is coincidental or
+  it is not. An <ansi fg="itemname">ashtray</ansi> on the coffee table with a
+  cigarette burned down. A half-empty bottle of <ansi fg="itemname">wine</ansi>.
+  The room feels like a mind in conversation with itself -- intelligent,
+  restless, unable to simply be. Brenda cannot stop analyzing things, including
+  herself, which is both her greatest skill and her most exhausting quality.
+  The <ansi fg="exit">funeral home</ansi> is east.
+mapsymbol: B
+maplegend: Brendas House
+biome: house
+exits:
+  funeral home:
+    roomid: 2220
+    mapdirection: east
+nouns:
+  books: >-
+    Psychology, philosophy, neuroscience, fiction, theory, memoir. Not
+    organized, but she knows where everything is. Post-its bristle from
+    the pages of half a dozen volumes open simultaneously. Brenda reads
+    the way some people argue -- with full attention and no deference.
+    She has been the most intelligent person in every room she has ever
+    been in and she knows it and it has not made things easier.
+  couch: >-
+    A long couch that is also, depending on context, a therapy couch.
+    Brenda is not seeing patients here, officially, but the arrangement
+    of the furniture says something about how she organizes space --
+    she cannot resist the therapeutic geometry.
+  ashtray: >-
+    An ashtray with a cigarette burned to the filter. Brenda smokes
+    when she is thinking and she is always thinking. She has tried to
+    quit three times. She will try again. Not today.
+  wine: >-
+    A half-empty bottle of something red on the coffee table, no glass
+    visible. She has been here for a while, or not long and this is
+    her second. The bottle is not a problem. The reason for the bottle
+    might be.
+spawninfo:
+- mobid: 505
+  respawnrate: 10 real minutes
+idlemessages:
+- Brenda marks a passage in the book she is reading, her pen moving quickly, her expression focused.
+- She stubs out a cigarette and immediately thinks about lighting another one. She waits.
+- The books on the table have shifted -- she has been rearranging the argument.
+- She stands at the window for a while, thinking about something that is not visible in her expression.
+- A pen taps against the coffee table in a irregular rhythm. She does not notice she is doing it.
+- The book in her lap is face-down now. She is somewhere else entirely.
+- She pours another inch of wine and picks up her book again without drinking it.

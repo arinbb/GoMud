@@ -1,0 +1,52 @@
+roomid: 2211
+zone: The Wire
+title: The Baltimore Sun Newsroom
+description: >-
+  The <ansi fg="8">newsroom</ansi> of the Baltimore Sun, a large open floor of
+  <ansi fg="itemname">desks</ansi> and monitors and the sound of keyboards going at
+  different tempos. The <ansi fg="8">fluorescent overheads</ansi> are identical to
+  the ones in the Detail office, which is not a coincidence -- both are institutions
+  running on budgets that have been cut past the bone. The back wall has <ansi fg="itemname">
+  award plaques</ansi> from the 1990s when there were more reporters and more resources
+  and the paper still believed it could cover the city as the city deserved to be
+  covered. <ansi fg="8">Gus Haynes</ansi>, the city editor, stands at the assignment
+  board with the expression of a man responsible for reporting everything important
+  with half the people he needs. A <ansi fg="itemname">scanner</ansi> crackles on one
+  desk. The <ansi fg="exit">street</ansi> is to the south.
+mapsymbol: N
+maplegend: Baltimore Sun Newsroom
+biome: house
+exits:
+  street:
+    roomid: 2203
+    mapdirection: north
+nouns:
+  desks: >-
+    Open plan. Some desks with two monitors, most with one, a few with monitors
+    that are old enough to be CRTs. The desks of reporters who were laid off last
+    year still have their desk items on them because nobody has cleared them.
+    This is not sentimentality. It is that nobody has been assigned the task.
+  plaques: >-
+    Pulitzers, SPJ awards, NABJ awards, a Maryland Press Association plaque from
+    2001. The best year the Sun had was also the last year the Sun had that many
+    people. The plaques document an institution at its peak, and the peak is behind
+    them, which everybody knows. Nobody takes the plaques down.
+  scanner: >-
+    Police scanner, permanently on, the audio of the city running like a river
+    through the newsroom. Codes and addresses and the voice of dispatch. Somebody
+    has to listen to it all day in case something is a story. Today someone is
+    listening. Tomorrow the task may be doubled or eliminated. These are the options.
+  haynes: >-
+    Gus Haynes, city editor. He came up through crime and city hall and now he
+    runs the city desk with whatever he has, which is not what he had five years ago.
+    He knows which stories matter. He is not always able to tell them. This is the
+    particular frustration of the fifth season.
+spawninfo: []
+idlemessages:
+- Keys click at irregular intervals across the newsroom floor.
+- The scanner crackles. An address in East Baltimore. Someone writes it down.
+- Gus marks something on the assignment board and erases it and marks it differently.
+- A phone rings at an empty desk and goes to voicemail. The desk has been empty for months.
+- Someone is arguing about a headline in the back. The argument is about nineteen words.
+- The paper hits the stands at 5 AM. It is 3 PM and this is only the beginning of tonight.
+- What the city does tonight, the city will read about tomorrow. If the paper has the people to cover it.

@@ -1,0 +1,56 @@
+roomid: 2221
+zone: six_feet_under
+title: The Arrangement Room
+description: >-
+  A room designed for the most difficult conversation. <ansi fg="itemname">Casket
+  samples</ansi> line the walls in polished wood and brushed metal, each with
+  a small tasteful <ansi fg="itemname">price card</ansi> in a brass holder.
+  A round <ansi fg="itemname">table</ansi> in the center is covered with a
+  cream cloth, and on it sit folders of <ansi fg="itemname">brochures</ansi>
+  -- service packages, burial options, cremation, keepsakes. Two upholstered
+  chairs face a third across the table. The lighting is soft, neither bright
+  nor dark. A box of <ansi fg="itemname">tissues</ansi> sits at the corner of
+  the table, placed with care. Everything in this room has been chosen to make
+  an unbearable thing slightly more bearable. The <ansi fg="exit">entrance</ansi>
+  is to the west. The <ansi fg="exit">slumber room</ansi> is to the south.
+mapsymbol: A
+maplegend: Arrangement Room
+biome: house
+exits:
+  west:
+    roomid: 2220
+  south:
+    roomid: 2222
+nouns:
+  caskets: >-
+    The display models run from plain pine to mahogany with brass fittings.
+    Each has a small card noting the model name -- Serenity, Heritage, Eternal --
+    and a price. The prices are all more than you expect. Death is expensive.
+    David knows every model by name and can explain the difference with a
+    precision that is both professional and slightly heartbreaking.
+  table: >-
+    A round table covered in cream cloth, no sharp edges, nothing imposing.
+    The choice of round over rectangular was deliberate -- no head of the table,
+    nobody across from nobody. Everyone equal in their grief.
+  brochures: >-
+    Folders of options. Direct burial. Traditional service. Graveside only.
+    Cremation with memorial. Cremation without memorial. There are more choices
+    than you expect. Death is full of choices, which is its own kind of cruelty.
+  tissues: >-
+    A box of white tissues at the corner of the table. It has been placed with
+    the same care as everything else in this room. It will be used.
+  price: >-
+    The numbers are tactful, presented without apology. Fisher and Sons does
+    not apologize for the cost of their services. They do the work with dignity.
+    The price reflects the dignity.
+spawninfo:
+- mobid: 501
+  respawnrate: 10 real minutes
+idlemessages:
+- A family enters the arrangement room looking stunned, as if the week has not been real yet. David speaks to them quietly.
+- The brochures on the table have been straightened recently. They will be straightened again after this.
+- A casket sample catches the light from the window. The grain of the wood is beautiful in a way that feels inappropriate to notice.
+- Someone has placed a small vase of white flowers on the corner table. Ruth, probably.
+- The tissue box is almost empty. Someone will replace it before the next family comes in.
+- Silence in the arrangement room is a different kind of silence. It has weight and purpose.
+- David straightens his tie and checks his reflection briefly in the polished surface of a casket lid.

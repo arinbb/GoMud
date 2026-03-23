@@ -1,0 +1,47 @@
+roomid: 2212
+zone: The Wire
+title: Bubbles Cart
+description: >-
+  A stretch of sidewalk where <ansi fg="8">Bubbles</ansi> works his route with a
+  <ansi fg="itemname">shopping cart</ansi> loaded with <ansi fg="itemname">white
+  t-shirts</ansi>, loose and folded. The cart has a handmade sign leaning against
+  it reading SHIRTS $3 in marker on cardboard. Bubbles moves through this city
+  like someone who has been dissolved and reconstituted so many times he is now
+  part of the air of it -- he knows every corner, every face, every angle of
+  approach and escape. He is an addict and an informant and a human being,
+  which is three things and most institutions can only handle one at a time.
+  The <ansi fg="exit">Pit</ansi> is to the east.
+mapsymbol: B
+maplegend: Bubbles Cart
+biome: city
+exits:
+  pit:
+    roomid: 2200
+    mapdirection: east
+nouns:
+  cart: >-
+    A standard wire shopping cart, the kind that gets borrowed from a grocery
+    store and not returned. It is loaded with white t-shirts in graduated
+    sizes. The cart is also Bubbles's office, his storefront, and his reason
+    to be somewhere legitimate at any given time, which matters.
+  shirts: >-
+    White Fruit of the Loom, three dollars. They move well on a hot day.
+    Bubbles knows this city block by block -- who will buy, who will not,
+    what time the shift workers come out, when to be somewhere else. The
+    shirts are a business. The business is staying alive.
+  sign: >-
+    SHIRTS $3. Written in black marker on the cardboard back of a cereal box.
+    The lettering is careful. Bubbles has good handwriting, which nobody
+    mentions because there is no context to mention it in.
+spawninfo:
+- mobid: 495
+  message: '<ansi fg="8">Bubbles pushes his cart into position, scanning the street with quick, experienced eyes.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Bubbles arranges the shirts on his cart with a care that the task technically does not require.
+- 'A passerby stops, looks at the shirts, buys one. Transaction complete: three dollars.'
+- Bubbles counts his money. The count is quick. He has counted it before.
+- Someone walks past too fast, and Bubbles tracks them with his eyes without moving his head.
+- The street empties for a moment. Bubbles is still. He is used to waiting.
+- Bubbles calls out to a passing neighbor. They exchange something -- words, a nod, information.
+- The cart squeaks on one wheel. It has been squeaking for months. It is the sound of Bubbles working.

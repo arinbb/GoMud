@@ -1,0 +1,25 @@
+mobid: 490
+zone: the_wire
+hostile: false
+maxwander: 1
+idlecommands:
+- 'emote picks up a case file and reads it with the focused expression of a man ignoring everything else in his life.'
+- 'emote refills his coffee mug from the pot on the corner of the folding table and does not offer anyone else a cup.'
+- 'say You know what the problem is? The problem is nobody upstairs wants to know what we know.'
+- 'emote pins another connection on the board and steps back and squints at it with his head tilted.'
+- ''
+- ''
+- 'emote argues with himself in a low voice about something that is probably right and also probably his fault.'
+- 'say Rawls can go to hell. The case is the case.'
+activitylevel: 30
+character:
+  name: Jimmy McNulty
+  description: >-
+    A Baltimore detective in his late thirties who looks like someone has been
+    using him to sand wood. Dark circles under eyes that are still sharp.
+    A sport coat he has owned too long. The smell of Irish whiskey and cigarettes
+    and the particular cologne of a man trying harder at work than at anything
+    else. He is brilliant and self-destructive and usually right, and being right
+    has cost him more than being wrong would have.
+  raceid: 1
+  level: 8

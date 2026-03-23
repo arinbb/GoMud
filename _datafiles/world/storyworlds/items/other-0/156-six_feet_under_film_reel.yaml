@@ -1,0 +1,19 @@
+itemid: 156
+name: Six Feet Under film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Six Feet Under</ansi>
+description: >-
+  A film reel in a heavy metal canister, the label printed in the clean
+  sans-serif of an HBO production. Six Feet Under. The canister is cool
+  to the touch, not warm like the others -- there is something deliberate
+  in the temperature of it. When you hold it up to the light and look
+  through the celluloid you can see: a green Victorian house on a quiet
+  Los Angeles street, a sign that reads Fisher and Sons, a front porch
+  swept clean. A hearse in the driveway, barely visible at the edge of
+  the frame. Someone is on the phone inside. A family is coming. If you
+  listen closely you can hear the opening notes of the theme -- piano,
+  strings, something that begins with a death and keeps going.
+type: object
+subtype: usable
+uses: 0
+value: 0

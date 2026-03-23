@@ -1,0 +1,62 @@
+roomid: 2245
+zone: Harvest
+title: Are You Ready for the Country
+description: >-
+  The inside of the ranch <ansi fg="itemname">barn</ansi> at full tilt -- hay
+  bales pushed aside to make a dance floor, <ansi fg="10">lanterns</ansi>
+  strung from the rafters, casting warm moving light across everything. A
+  <ansi fg="itemname">fiddle</ansi> sings somewhere up in the loft, bright
+  and fast, the kind of playing that forces your feet to move. <ansi fg="itemname">
+  Boots</ansi> on wood floor, the sound of it the heartbeat of the room. A
+  <ansi fg="itemname">pedal steel guitar</ansi> bends and bends and bends, the
+  sound of the country itself if you pressed it into one sustained note. The
+  barn smells of hay and horses and woodsmoke and the particular sweat of a
+  room full of people who are dancing because there is nothing else to do when
+  the fiddle is going. In the loft, above it all, a <ansi fg="itemname">
+  banner</ansi> reads: HARVEST DANCE. The question is not whether you are
+  ready. The question is whether you were ever anything but.
+mapsymbol: '5'
+maplegend: Are You Ready for the Country
+biome: house
+exits:
+  ranch:
+    roomid: 2240
+    mapdirection: north
+    exitmessage: You slip out through the barn door, back into the cool night air.
+spawninfo:
+- mobid: 512
+  message: The Stray Gators are set up in the barn, pedal steel and bass and drums, waiting for the next number.
+nouns:
+  barn: >-
+    The whole barn opened up and made into a dance hall for one night. The
+    horses are in the far paddock. The hay is stacked to one side. The floor
+    has been swept -- mostly -- and the lantern light makes it look better
+    than it is, which is fine, which is the whole point of lantern light.
+  fiddle: >-
+    The fiddle player is up in the loft, face not quite visible, playing a
+    reel that has been going for twenty minutes and shows no sign of stopping.
+    The bow moves fast. The strings sing. It is the sound of a tradition
+    that is older than this barn and will outlast it.
+  boots: >-
+    The sound is what you notice first -- boots on planks, rhythmic and
+    collective, the whole floor speaking at once. Country dancing has the
+    logic of something ancient, the logic of bodies that have been working
+    all day and need to move differently for a while.
+  pedal: >-
+    Ben Keith's pedal steel, set up near the back, the sound coming from it
+    like weather coming in from the west -- you feel it before you hear it.
+    He bends a note and holds it past the point of comfort and then releases
+    it and every person in the barn takes a breath at the same moment.
+  banner: >-
+    HARVEST DANCE in red letters on a white sheet, slightly crooked because
+    someone stapled it up in a hurry. Below it, someone has added in smaller
+    writing: Sept. 12, 1972. The year is not necessary information. It is
+    this year. It is every year.
+idlemessages:
+- The fiddle runs up a fast reel in the loft, the bow barely touching the strings, the sound pure joy.
+- Boots hit the planks in a rhythm that seems to come from the floor itself, the barn keeping time.
+- The pedal steel bends a note and the whole room bends with it.
+- Lantern light swings in the draft from the open door, shadows leaping.
+- Someone whoops from the far corner of the barn and the fiddle answers back.
+- The smell of hay and horses and woodsmoke and sweat -- the barn working at full capacity.
+- A dancing couple spins through the lantern light and is gone into the dark on the other side.

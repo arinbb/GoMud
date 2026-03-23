@@ -1,0 +1,51 @@
+roomid: 2243
+zone: Harvest
+title: A Man Needs a Maid
+description: >-
+  An empty house, perfectly quiet. A <ansi fg="itemname">grand piano</ansi>
+  dominates the front room, its lid open, the keys exposed as if waiting for
+  someone who has stepped out and will return. Through the far <ansi fg="itemname">
+  window</ansi>, the ranch fields are visible in the golden afternoon, beautiful
+  and irrelevant. A <ansi fg="itemname">table set for one</ansi> occupies the
+  kitchen doorway -- plate, glass, fork, knife, everything arranged with care,
+  no one sitting at it. The walls carry an enormous, barely-perceptible
+  <ansi fg="8">sound</ansi>, as if the London Symphony Orchestra is being
+  played from somewhere very far away, through walls, through wood and plaster
+  and years. It fills the emptiness without quite filling it. Someplace there
+  should be someone. There is no one.
+mapsymbol: '3'
+maplegend: A Man Needs a Maid
+biome: house
+exits:
+  ranch:
+    roomid: 2240
+    mapdirection: west
+    exitmessage: You step back out into the warmth of the ranch.
+nouns:
+  piano: >-
+    A grand piano, walnut finish, the lid propped open. The keys are clean,
+    not dusty -- someone plays this. But no one is playing it now. Middle C
+    is slightly flat, warm and round and imperfect, the way things get when
+    they are loved and lived with and not quite maintained. You could sit
+    down and play. There is no one here to hear it. That is both the problem
+    and the solution.
+  window: >-
+    The window looks out over the ranch fields, the wheat gold, the sky going
+    amber. It is a beautiful view. Looking at it from inside, the glass between
+    you and the world, the beauty has the particular quality of something you
+    are not quite part of. It is the view a man watches when he is thinking
+    about something else.
+  table: >-
+    A table set for one. This is its whole meaning. Everything that can be
+    communicated about loneliness is communicated by a table set for one in a
+    quiet house in the late afternoon. The plate is clean. The glass is empty.
+    The chair is pulled slightly out, as if someone sat down and then thought
+    better of it.
+idlemessages:
+- The orchestra swells somewhere in the walls, enormous and gorgeous, and then recedes like a tide.
+- The piano holds a chord that no one played -- a resonance from somewhere, the wood remembering.
+- A door settles in its frame in another room. No one is there.
+- The table for one catches the afternoon light, everything arranged, nothing eaten.
+- The London Symphony plays on, faint and enormous, the sound of a man filling his house with music because he cannot fill it with people.
+- A curtain shifts in a draft from nowhere. The window is closed.
+- Outside the window, the ranch goes on being beautiful, perfectly indifferent.

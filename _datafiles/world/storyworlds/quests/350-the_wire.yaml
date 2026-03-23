@@ -1,0 +1,23 @@
+questid: 350
+name: The Wire
+description: >-
+  Baltimore. The corners, the Detail, the docks, the schools, the newsroom.
+  Five seasons, five institutions, one city. Arrive at the Pit. Find the Detail
+  office. Walk the corners of West Baltimore. Look into the vacants. Follow the
+  money wherever it leads. Find Omar. All the pieces matter.
+reward:
+  experience: 5500
+  item_id: 295
+  playermessage: >-
+    You have moved through Baltimore -- the Pit, the Detail, the vacants,
+    the corners, Omars Alley. You have seen the game from the inside.
+    The game does not care that you saw it. It continues regardless.
+    As a memento of your time in West Baltimore, you receive a burner phone.
+    One contact saved: OMAR. The game is the game. Always.
+steps:
+- description: Arrive at the Pit. The corners. The orange couch. The game begins.
+- description: Find the Detail Office. The wiretap room. Where they follow the money.
+- description: Walk West Baltimore Street. The corners. The corner boys. The real city.
+- description: Enter the Vacants. The abandoned row houses. Where Baltimore buries things.
+- description: Follow the money. Find someone who understands what that means.
+- description: Find Omars Alley. The secret corner. The man with the code.

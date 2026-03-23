@@ -1,0 +1,38 @@
+-
+  Supported:
+    "ruth fisher": ["*"]
+  Conversation:
+    - ["#1 say Are you hungry. I made too much. I always make too much."]
+    - ["#2 emote looks at the stove"]
+    - ["#1 say Sit down. It is no trouble. It is never any trouble."]
+    - ["#2 say Ruth, you do not have to --"]
+    - ["#1 say I want to. It gives me something to do with my hands."]
+    - ["#1 emote sets a plate on the table with practiced efficiency"]
+    - ["#1 say Nathaniel always ate everything I made. He never said no."]
+    - ["#1 emote pauses at the stove"]
+    - ["#1 say I miss cooking for him."]
+-
+  Supported:
+    "ruth fisher": ["*"]
+  Conversation:
+    - ["#1 say I have been taking a class."]
+    - ["#2 say Oh?"]
+    - ["#1 say A pottery class. On Tuesdays."]
+    - ["#1 emote wipes her hands on her apron"]
+    - ["#1 say I am not good at it."]
+    - ["#2 say Do you like it?"]
+    - ["#1 emote considers this genuinely"]
+    - ["#1 say I think so. It is something that is just mine."]
+    - ["#1 say I have not had many things that were just mine."]
+-
+  Supported:
+    "ruth fisher": ["*"]
+  Conversation:
+    - ["#1 say I worry about Nate."]
+    - ["#2 say Nate is fine."]
+    - ["#1 say He is not fine. He is trying to be fine. That is different."]
+    - ["#2 emote cannot argue with this"]
+    - ["#1 say And David -- David takes care of everything and nobody takes care of David."]
+    - ["#1 emote looks at the kitchen window"]
+    - ["#1 say And Claire is going to leave and that is right and I am not ready."]
+    - ["#1 say Is anyone ever ready."]

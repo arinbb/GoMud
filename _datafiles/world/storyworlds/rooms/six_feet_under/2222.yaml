@@ -1,0 +1,54 @@
+roomid: 2222
+zone: six_feet_under
+title: The Slumber Room
+description: >-
+  The room where the dead receive their visitors. A <ansi fg="itemname">casket</ansi>
+  rests on a bier at the far end, its lid open, filled with white silk and silence.
+  <ansi fg="10">Flower arrangements</ansi> line the walls and fill the air with
+  a sweetness that is carefully calibrated -- present but not overwhelming, beautiful
+  but not festive. <ansi fg="itemname">Folding chairs</ansi> are arranged in
+  semicircles facing the casket, most of them empty now. A <ansi fg="itemname">sign</ansi>
+  on a small easel bears a name and dates -- a whole life compressed into a hyphen.
+  Soft recorded <ansi fg="itemname">music</ansi> plays from speakers you cannot
+  locate. The room is dim, the light coming from sconces on the walls, warm and
+  low. The <ansi fg="exit">arrangement room</ansi> is to the north.
+mapsymbol: V
+maplegend: Slumber Room
+biome: house
+exits:
+  north:
+    roomid: 2221
+nouns:
+  casket: >-
+    An open casket on a bier, lined in white silk. Inside, the deceased lies
+    as if asleep -- hence the name of this room. The embalmer's art has done
+    its work. The face is peaceful in a way that the living face rarely is.
+    This is a gift Rico gives: the last image the family carries.
+  flowers: >-
+    Arrangements of white lilies, roses, carnations, chrysanthemums. Cards
+    on small plastic forks say things like 'With Deepest Sympathy' and 'Gone
+    But Not Forgotten.' The flowers are real and they will wilt. Right now
+    they are still holding.
+  chairs: >-
+    Folding chairs in careful rows. Some are occupied by people sitting with
+    their grief, alone or in clusters. Others wait. After the service they
+    will be stacked and put away and the room will be prepared for the next.
+  sign: >-
+    A name and two dates on a small sign with a photograph. Between the dates
+    a hyphen -- that small mark that contains all of it, everything that
+    happened in between. The photograph shows someone younger, smiling,
+    not knowing.
+  music: >-
+    Something quiet from speakers you cannot find. Strings, a piano, nothing
+    that would impose. The music has been chosen to support grief without
+    directing it. It is doing its job.
+spawninfo: []
+idlemessages:
+- A woman sits alone in one of the chairs, not crying, just present. She has been here a long time.
+- The flowers shift slightly in the air from the ventilation system. They hold their arrangement.
+- A man in a good suit stands at the casket for a long moment, then touches the edge of the silk and steps back.
+- The music changes to something slightly different, same tempo, same warmth. Nobody notices.
+- A family enters together, the children trying to understand what they are seeing.
+- The room holds its quiet carefully, like it is something that could be broken if you were not careful.
+- Someone has left a folded piece of paper on the edge of the casket. A letter. It will go in.
+- The light from the sconces makes everyone look like themselves from a long time ago.

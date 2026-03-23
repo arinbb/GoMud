@@ -1,0 +1,15 @@
+name: six_feet_under
+roomid: 2220
+autoscale:
+  minimum: 1
+  maximum: 10
+defaultbiome: house
+mutators:
+- mutatorid: fisher-grief
+idlemessages:
+- The phone rings once, somewhere in the house, and is answered. Another death, somewhere in Los Angeles.
+- A flower arrangement wilts imperceptibly in the hallway. Beauty insisting on itself in the middle of loss.
+- Somewhere a door opens and closes quietly. The business of death is always open.
+- LA light comes through the windows at an angle that makes everything look a little like a photograph of itself.
+- The smell of formaldehyde is faint but present, underneath everything, a reminder of what this building is for.
+- Someone is crying somewhere in the house. It is not a dramatic cry. It is the quiet kind that goes on for a long time.

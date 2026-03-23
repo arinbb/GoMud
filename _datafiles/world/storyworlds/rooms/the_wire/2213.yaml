@@ -1,0 +1,50 @@
+roomid: 2213
+zone: The Wire
+title: The Greek Diner
+description: >-
+  A diner near the waterfront, <ansi fg="8">booths along the wall</ansi>, a
+  counter with stools, the kind of place that has been the same for forty years
+  and intends to be the same for forty more. The <ansi fg="itemname">menu</ansi>
+  is laminated and comprehensive. The <ansi fg="itemname">coffee</ansi> is hot
+  and comes in a ceramic mug without being asked for. A <ansi fg="8">Greek man</ansi>
+  named Spiros, who is called the Greek, sits in the back booth with someone across
+  from him whose face is turned away. Their conversation is very quiet and very final.
+  The diner knows nothing about this. The diner is just a diner. The diner has
+  been just a diner, in this way, for many years. The <ansi fg="exit">docks</ansi>
+  are to the south.
+mapsymbol: G
+maplegend: The Greek Diner
+biome: house
+exits:
+  docks:
+    roomid: 2210
+    mapdirection: south
+nouns:
+  menu: >-
+    Laminated, four pages. Breakfast all day. Greek specialties on the third page.
+    The kind of menu that has not changed since Clinton was president because
+    the menu works and the customers come for what they came for last time.
+    The menu is not a metaphor. Everything else in this diner might be a metaphor.
+  coffee: >-
+    Hot, in a white ceramic mug with a brown ring at the waterline from
+    ten thousand previous mugs. Good coffee. The kind of good coffee that
+    requires no explanation, which is something this diner understands about
+    its customers.
+  greek: >-
+    The man in the back booth. You cannot hear what he is saying. He has
+    been sitting in this booth for twenty years, doing business that the
+    authorities have not been able to connect to him through paper or
+    testimony or wiretap. He drinks coffee. He pays cash. He knows no one.
+    He is the end of the chain, and the chain does not lead back to him.
+spawninfo:
+- mobid: 498
+  message: '<ansi fg="8">Proposition Joe settles into a booth, producing a set of worry beads, ready to negotiate.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Coffee is poured. Refilled without asking. This is the service standard of a serious diner.
+- The man in the back booth does not look up. He does not need to look up. He already knows.
+- A bell above the door rings. A customer enters. The counterman nods. That is sufficient.
+- The grill hisses. Eggs. Bacon. The smell of an institution that knows what it is.
+- Outside, a ship horn sounds from the harbor, distant and formal.
+- The booth in the back is always this booth. The man in it is always this man.
+- Nothing that happens in this diner can be proved to have happened in this diner.
