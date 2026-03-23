@@ -1,0 +1,32 @@
+mobid: 593
+zone: the_sandlot
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote adjusts his thick glasses and squints toward the pool."
+  - "emote is staring at something in the direction of the pool with complete focus."
+  - "say I have a plan."
+  - "emote pulls out a small notebook and makes a note with great seriousness."
+  - "say Wendy Peffercorn is the most beautiful girl I have ever seen. This is not an opinion. It's a fact."
+  - "emote pushes his glasses up his nose and nods slowly to himself."
+  - ""
+  - ""
+activitylevel: 15
+character:
+  name: Squints Palledorous
+  description: >-
+    A wiry kid with enormous thick glasses that make his eyes look like
+    they belong to a different, larger creature. The glasses are always
+    sliding down his nose. He pushes them up about every thirty seconds.
+    He is the planner of the group -- deliberate, patient, operating on
+    a timeline that only he knows. His whole summer is organized around
+    one objective.
+  raceid: 1
+  level: 4
+  equipment:
+    body:
+      itemid: 20101
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

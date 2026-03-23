@@ -1,0 +1,32 @@
+mobid: 574
+zone: mtvs_the_state
+hostile: false
+maxwander: 0
+idlecommands:
+- 'emote smiles at you warmly and too readily.'
+- 'say Hey! Great to see you! I have snacks if you want snacks.'
+- 'emote adjusts the snack bowl a half-inch in your direction.'
+- 'say I got the good kind. Of snacks. The specific good kind you like.'
+- 'say Everything okay? You seem great. You are doing great.'
+- 'emote nods at you with the nod of someone confirming something internal.'
+- ''
+- ''
+activitylevel: 40
+character:
+  name: Doug
+  description: >-
+    A man in a cardigan and khakis, standing in the middle of a very normal
+    apartment, smiling. The smile is warm. The smile is immediate. The smile
+    does not stop. He offers snacks. He asks how you are. Everything he says
+    is the correct thing to say. Everything he does is the correct thing to do.
+    Something is wrong. You cannot identify it. Nothing is wrong. That is it.
+    That is exactly it.
+  raceid: 1
+  level: 3
+  equipment:
+    body:
+      itemid: 20105
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20172

@@ -1,0 +1,34 @@
+mobid: 573
+zone: mtvs_the_state
+hostile: false
+maxwander: 0
+idlecommands:
+- 'emote grips the railing and stares into the middle distance. "Oh, the human race."'
+- 'say Oh, the human race.'
+- 'emote shakes their head slowly at something only they can see.'
+- 'say I have been on this ship a long time. I have seen things.'
+- 'emote exhales. The sea does not apologize.'
+- 'say Every time I think I have reached the limits of my disappointment, the human race finds new territory.'
+- ''
+- ''
+activitylevel: 50
+character:
+  name: Captain Monterey Jack
+  description: >-
+    A sea captain of mature years, dressed in a weathered military jacket and
+    fedora, gripping the ship's railing with the grip of someone who has something
+    to hold on to. His face is the face of a person who has seen too much of
+    humanity and draws from this not hatred, which would be too simple, but a
+    profound and renewable sorrow. He says "Oh, the human race" the way other
+    people say "good morning." It is both a greeting and a eulogy.
+  raceid: 1
+  level: 5
+  equipment:
+    body:
+      itemid: 20119
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170
+    head:
+      itemid: 20163

@@ -1,0 +1,52 @@
+roomid: 2424
+zone: The Sandlot
+title: The Dugout
+description: >-
+  The dugout is a natural depression in the earth along the east side of
+  the field, cool and shaded by an overhang of eroded red dirt. A few rough
+  <ansi fg="itemname">planks</ansi> serve as benches. A <ansi fg="itemname">canteen</ansi>
+  of water sits in the shade, passed from hand to hand between innings. Someone
+  has carved team names and scores and obscenities into the wooden wall at
+  the back. A <ansi fg="itemname">treehouse</ansi> ladder leans against the
+  big oak tree directly above -- the treehouse itself is up there, invisible
+  through the leaves. The view from here takes in the whole sandlot, the fence,
+  the neighborhood. This is the best seat in the house.
+mapsymbol: d
+maplegend: The Dugout
+biome: land
+exits:
+  west:
+    roomid: 2422
+  up:
+    roomid: 2430
+nouns:
+  planks: >-
+    Rough planks laid across two stacks of cinder blocks, worn smooth
+    by years of kids sitting on them between innings. The middle plank
+    has a crack but it hasn't broken yet. Everyone knows not to sit
+    in the middle.
+  canteen: >-
+    An army-surplus canteen full of water from somebody's garden hose.
+    It tastes like rubber and summer. It is the best water in the world.
+  carvings: >-
+    The wall of the dugout is covered in years of carved records --
+    scores, dates, names, arguments. BENNY IS THE BEST is carved large
+    and deep near the top. Below it, in smaller letters: YEAH-YEAH WAS HERE.
+    Below that, in fresh cuts: THIS IS THE GREATEST PLACE ON EARTH.
+  treehouse: >-
+    The treehouse is up in the big oak, accessible by a wooden ladder
+    nailed to the trunk. You can't see it from here -- just the ladder
+    disappearing into the leaves. The treehouse is where the really
+    serious planning happens.
+  field: >-
+    From the dugout you can see the whole sandlot -- the bases, the
+    mound, the outfield fence. From here it looks like the most
+    important place in the world, which it is.
+idlemessages:
+- Someone is carving something new into the wall of the dugout with a pocket knife.
+- The canteen makes the rounds, everyone taking a pull before handing it on.
+- 'From the planks, you have a perfect view of the whole field.'
+- A bat leans against the back wall of the dugout, its barrel nicked and scarred.
+- The shade here is about ten degrees cooler than the field.
+- Benny Rodriguez says something in a low voice and everyone laughs.
+- 'From somewhere above, through the oak leaves, voices drift down from the treehouse.'

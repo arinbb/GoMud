@@ -1,0 +1,35 @@
+-
+  Supported:
+    "matilda wormwood": ["miss honey"]
+  Conversation:
+    - ["#1 say Miss Honey? Do you think a person can be born into the wrong family?"]
+    - ["#2 emote pauses in what she is doing and looks at the child with full attention", "#2 say What do you mean?"]
+    - ["#1 say I mean... my family thinks reading is strange. They think I'm strange. But here, with books, I feel — normal."]
+    - ["#2 say You are not strange, Matilda. You are extraordinary."]
+    - ["#1 emote looks uncertain", "#1 say But is that the same as belonging somewhere?"]
+    - ["#2 emote sits down at her own level", "#2 say I think some people have to find where they belong. It doesn't always come with the family you're given."]
+    - ["#1 emote absorbs this very quietly"]
+-
+  Supported:
+    "matilda wormwood": ["miss honey"]
+  Conversation:
+    - ["#1 say I read all the books in the library last summer. Every single one."]
+    - ["#2 emote blinks", "#2 say All of them?"]
+    - ["#1 say The children's section took two weeks. Then I moved on."]
+    - ["#2 say What did you read?"]
+    - ["#1 say Dickens. The Brontes. Kipling. Some Hemingway, though I found him short on adjectives."]
+    - ["#2 emote stares at this small person", "#2 say How old are you?"]
+    - ["#1 say Five and a half. Nearly six.", "#1 emote says this as if it is not remarkable at all."]
+    - ["#2 emote makes a note to speak to the education board"]
+-
+  Supported:
+    "miss honey": ["matilda wormwood"]
+  Conversation:
+    - ["#1 say I want to show you something, if that's alright."]
+    - ["#2 emote looks up attentively"]
+    - ["#1 emote hesitates", "#1 say It's a poem I learned when I was small. My father used to read it to me."]
+    - ["#2 say I'd like to hear it."]
+    - ["#1 emote recites it slowly, and something shifts in her voice when she does — a door opening just slightly"]
+    - ["#2 emote sits very still, listening with her whole self"]
+    - ["#1 say He was a kind man, my father.", "#1 emote says it quietly, as if trying to decide if she believes it."]
+    - ["#2 emote reaches out and takes her hand, gently", "#2 say Tell me about him."]

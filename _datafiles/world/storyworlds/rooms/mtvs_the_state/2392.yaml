@@ -1,0 +1,52 @@
+roomid: 2392
+zone: MTVs The State
+title: The Green Room
+description: >-
+  The green room behind the stage, where performers wait to go on. The walls are
+  actually <ansi fg="itemname">green</ansi> — a pale institutional green that predates
+  anyone's decision about color. A long <ansi fg="itemname">mirror</ansi> with bulb
+  lights runs the length of one wall, and performers check their costumes and their
+  faces in it between takes. A <ansi fg="itemname">craft services table</ansi> along
+  the opposite wall holds the standard offerings: a tray of <ansi fg="itemname">bagels</ansi>,
+  cold cuts, a <ansi fg="itemname">coffee urn</ansi> that has been running since
+  morning. A <ansi fg="itemname">couch</ansi> in the corner holds whoever is between
+  sketches. The energy here is the energy between — the space between one thing ending
+  and the next beginning. To the <ansi fg="exit">west</ansi> is the Awards Show.
+mapsymbol: G
+maplegend: The Green Room
+biome: house
+exits:
+  west:
+    roomid: 2389
+nouns:
+  green: >-
+    The walls are the color of every backstage room that has ever existed. This green
+    is the color of waiting. It is not a bad color. It is the color of the moment
+    before.
+  mirror: >-
+    The vanity mirror with its ring of incandescent bulbs. In this mirror you look
+    like a person who is about to do something. The bulbs are warm. The reflection
+    is honest.
+  craft: >-
+    The craft services table, a staple of any production. Bagels. Cold cuts fanned
+    in an oval. A vegetable tray with ranch dip. The good coffee is gone; what remains
+    is technically coffee.
+  bagels: >-
+    A tray of bagels, some whole, some already sliced by someone who got here earlier.
+    In New York, the bagels are non-negotiable. They are here. They are good. They
+    are slightly past their peak but still entirely acceptable.
+  coffee: >-
+    The coffee urn has been running since the first call. The coffee it now produces
+    is a record of that passage of time. It is very strong. It does what coffee does.
+  couch: >-
+    A couch that has held everyone who has been in this green room. If the couch
+    could talk it would tell you things about the moments before — the nervousness,
+    the jokes, the stillness before walking out to do the thing.
+idlemessages:
+- Someone runs costume adjustments in front of the mirror, nodding at what they see.
+- The craft services table is restocked with a quiet professionalism.
+- Two performers sit on the couch, not talking, ready to go back out.
+- A call sheet on the wall lists the sketch order. Several have been checked off.
+- The coffee urn gurgles. No one refills it. It continues regardless.
+- Someone laughs suddenly from behind the closed door to the stage. The sketch is going well.
+- The green room is between. Everything here is between something and something else.

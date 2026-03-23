@@ -1,0 +1,54 @@
+roomid: 2384
+zone: MTVs The State
+title: Porcupine Racetrack
+description: >-
+  A proper <ansi fg="itemname">racetrack</ansi>, miniaturized to accommodate its
+  athletes. The <ansi fg="itemname">track</ansi> is a half-mile oval of packed dirt
+  with a painted white <ansi fg="itemname">starting line</ansi>. Small
+  <ansi fg="itemname">bleachers</ansi> line both sides, mostly empty except for a few
+  very committed spectators. The <ansi fg="itemname">scoreboard</ansi> shows odds in
+  a font too small to read from here. In the gates, porcupines wait. They are not
+  large. They are not fast, by objective measure. But they are porcupines, and they
+  are racing, and the announcer has a microphone and a belief in what he is doing
+  that transcends the objective facts of porcupine speed. To the
+  <ansi fg="exit">east</ansi> is the MTV Studio. To the <ansi fg="exit">north</ansi>
+  is the Diner.
+mapsymbol: R
+maplegend: Porcupine Racetrack
+biome: road
+exits:
+  east:
+    roomid: 2380
+  north:
+    roomid: 2388
+nouns:
+  racetrack: >-
+    A regulation racetrack scaled for porcupines. The engineering required to produce
+    this is not acknowledged anywhere on the premises, but it was considerable.
+  track: >-
+    Packed dirt, smooth on the straightaways and slightly banked at the curves. The
+    porcupines know these curves. They have trained on these curves. They are, within
+    the context of porcupine racing, professionals.
+  bleachers: >-
+    Metal bleachers that seat perhaps sixty people total. Today there are eight people
+    in them. All eight are watching with the focused intensity of true believers. This
+    sport does not need large crowds. It needs the right crowds.
+  scoreboard: >-
+    A scoreboard showing race times, porcupine names, and betting odds. The porcupine
+    names are things like SPINAL and NEEDLEPOINT and QUILLIAM. The odds are calculated
+    with more seriousness than most things in this world are calculated.
+  starting: >-
+    The white painted line that divides before from during. The porcupines approach it
+    with what can only be described as purpose.
+spawninfo:
+- mobid: 578
+  message: '<ansi fg="11">The Porcupine Announcer takes the microphone with the gravity of a man who has been trusted with something important.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The announcer narrates porcupine positions with the precision of a man who has studied this.
+- A porcupine crosses the finish line. The eight spectators make the sound of a full stadium.
+- The starting gates rattle. The porcupines are ready. They are always ready.
+- The scoreboard updates. The odds shift. Someone in the bleachers recalculates.
+- A porcupine pauses mid-race to investigate something on the track. The announcer describes this.
+- The dirt track shimmers in the afternoon light. The porcupines cast small, spiky shadows.
+- Someone in the bleachers says 'Come on, Needlepoint' with complete sincerity.

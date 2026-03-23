@@ -1,0 +1,36 @@
+-
+  Supported:
+    "the mad hatter": ["the caterpillar"]
+  Conversation:
+    - ["#1 say You! Yes, YOU! Do you know what time it is?"]
+    - ["#2 emote exhales a long slow curl of smoke", "#2 say Time is not my department."]
+    - ["#1 say It's not mine either! Time and I had a falling out. We no longer speak."]
+    - ["#2 say Then you are both free."]
+    - ["#1 emote considers this", "#1 say Or we are both trapped. How does one tell?"]
+    - ["#2 say One asks the right question."]
+    - ["#1 say AH! But WHICH question? THAT is always the question. Tea?"]
+    - ["#2 say No."]
+    - ["#1 say Wonderful! Clean cups, then."]
+-
+  Supported:
+    "the mad hatter": ["the caterpillar"]
+  Conversation:
+    - ["#1 say I've been wondering. Do you know who you are?"]
+    - ["#2 say I know precisely who I am. The question is whether YOU know."]
+    - ["#1 emote counts on his fingers with great urgency", "#1 say I am the Hatter. I am at a tea party. The party has been going on since six o'clock."]
+    - ["#2 say And what time is it now?"]
+    - ["#1 emote stares at his watch", "#1 say Still six. It has been six for quite some time."]
+    - ["#2 say Then why are you still here?"]
+    - ["#1 say Because it is TEA TIME!", "#1 emote bangs on the table with emphasis."]
+    - ["#2 emote blinks slowly through another curl of smoke"]
+-
+  Supported:
+    "the caterpillar": ["the mad hatter"]
+  Conversation:
+    - ["#1 say Who are you."]
+    - ["#2 say I am having tea! I am the Hatter! I am—"]
+    - ["#1 say Yes, yes. But WHO. Are. You."]
+    - ["#2 emote goes very still", "#2 say That is an EXTREMELY rude question."]
+    - ["#1 say It is the only question."]
+    - ["#2 say I haven't the faintest idea and I would thank you not to bring it up."]
+    - ["#1 emote exhales a perfect ring", "#1 say That is at least an honest answer."]

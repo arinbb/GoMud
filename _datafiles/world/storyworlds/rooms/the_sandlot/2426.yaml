@@ -1,0 +1,51 @@
+roomid: 2426
+zone: The Sandlot
+title: The Outfield Fence
+description: >-
+  The far end of the sandlot, where the rough grass meets the tall wooden
+  <ansi fg="8">fence</ansi>. Up close, the fence is older than it looked from
+  home plate -- the planks dark and warped, gaps plugged with rusted wire.
+  Scratches and gouges in the wood mark the heights of a hundred balls that
+  hit the fence instead of clearing it. No ball that has gone over has come
+  back. The fence is eight feet tall in most places, twelve in others, as if
+  it grew to keep up with whatever is on the other side. On the other side,
+  something large breathes in the shadows. You can hear it.
+mapsymbol: F
+maplegend: Outfield Fence
+biome: land
+exits:
+  north:
+    roomid: 2422
+  south:
+    roomid: 2427
+    secret: true
+    exitmessage: You find a loose plank and squeeze through into the yard beyond.
+nouns:
+  fence: >-
+    Boards of rough-hewn wood, old and dark with years of weather. Where
+    the gaps aren't plugged with wire they're plugged with dirt and moss.
+    The fence has a smell to it -- old wood and something animal. Near
+    the top, the planks are scratched in long parallel marks from the
+    outside. From claws.
+  scratches: >-
+    Long parallel gouges in the outside of the fence planks. They start
+    about a foot from the top and run down four or five feet, the kind
+    of marks something large and determined makes while jumping. There
+    are a lot of them. Whatever made these has been jumping for years.
+  gaps: >-
+    Between two planks near the bottom, a gap just wide enough to see
+    through. What you see on the other side is shadow and old grass
+    and something that might be a dog bowl the size of a washtub.
+    You look away. You look back. The bowl is still there.
+  balls: >-
+    Buried in the grass at the base of the fence, half a dozen old baseballs,
+    dead from too many hits, their stitching unraveling. The balls that
+    didn't quite clear. They stayed on this side. They are the lucky ones.
+idlemessages:
+- Something on the other side of the fence moves in the shadow. Heavy. Slow.
+- A low growl comes through a gap in the planks, then silence.
+- The fence creaks in the heat like something straining against it from the other side.
+- In the gap between two planks, a dark eye blinks once, then withdraws.
+- The grass near the fence is pressed flat in a long shape, as if something lay there.
+- You can hear breathing on the other side. Slow, deep, patient.
+- A ball-shaped indentation in the dirt at the fence base -- one of the lost ones, retrieved by nobody.

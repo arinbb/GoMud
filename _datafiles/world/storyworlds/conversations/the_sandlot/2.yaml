@@ -1,0 +1,22 @@
+-
+  Supported:
+    "benny rodriguez": ["scotty smalls"]
+  Conversation:
+    - ["#1 say Hey. You want to play?"]
+    - ["#2 emote looks around.", "#2 say Me?"]
+    - ["#1 say Yeah you.", "#1 emote shrugs.", "#1 say Everybody can play."]
+    - ["#2 say I'm not -- I don't really know everyone yet.", "#2 say I just moved here."]
+    - ["#1 say Doesn't matter.", "#1 emote hands him a glove.", "#1 say You're right field."]
+    - ["#2 emote looks at the glove.", "#2 say Okay."]
+    - ["#1 emote nods once.", "#1 say Okay."]
+-
+  Supported:
+    "benny rodriguez": ["scotty smalls"]
+  Conversation:
+    - ["#1 say Your stance is wrong."]
+    - ["#2 say I thought I was --"]
+    - ["#1 say Watch. Feet here. Weight back.", "#1 emote demonstrates without hurry.", "#1 say Hip rotation comes last."]
+    - ["#2 emote tries to copy it, getting maybe sixty percent right."]
+    - ["#1 say Better.", "#1 emote says it simply, no performance in it."]
+    - ["#2 say Really?"]
+    - ["#1 say Yeah. Do it again.", "#1 emote watches him.", "#1 say Better."]

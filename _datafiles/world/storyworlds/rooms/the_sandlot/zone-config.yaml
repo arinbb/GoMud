@@ -1,0 +1,17 @@
+name: The Sandlot
+roomid: 2420
+autoscale:
+  minimum: 1
+  maximum: 8
+defaultbiome: land
+mutators:
+- mutatorid: sandlot-summer
+idlemessages:
+- A bat cracks against a ball somewhere nearby, clean and sharp, the best sound in the world.
+- Kids shout and laugh across an open field in the summer heat.
+- The smell of cut grass and red dirt drifts through the warm air.
+- A dog barks once from behind the tall wooden fence at the far end of the lot.
+- The ice cream truck jingle floats in from two streets over, then fades.
+- Sprinklers tick and hiss on somebody's lawn.
+- A bicycle wheel spins lazily in the afternoon heat.
+- The summer of 1962 hangs over everything like a held breath.

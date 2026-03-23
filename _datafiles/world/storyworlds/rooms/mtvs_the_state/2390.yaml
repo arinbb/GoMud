@@ -1,0 +1,44 @@
+roomid: 2390
+zone: MTVs The State
+title: The Ball Pit
+description: >-
+  An enormous ball pit of the type found in the soft-play areas of fast food restaurants
+  circa 1994, except this one is larger than it should be and deeper than the physics
+  allow and the <ansi fg="itemname">balls</ansi> are the colors of a fever dream:
+  red, yellow, blue, green, in quantities that exceed what a normal space could contain.
+  The <ansi fg="itemname">walls</ansi> are padded blue foam. The <ansi fg="itemname">edge</ansi>
+  of the pit has a short vinyl railing. You could get in. You could sink into it.
+  Some part of your brain that has been waiting since childhood for this is now
+  very interested. To the <ansi fg="exit">north</ansi> is The Barrel.
+  To the <ansi fg="exit">east</ansi> is Space Station 11.
+mapsymbol: L
+maplegend: The Ball Pit
+biome: house
+exits:
+  north:
+    roomid: 2382
+  east:
+    roomid: 2386
+nouns:
+  balls: >-
+    Thousands of plastic balls in primary colors and their combinations. They are
+    the exact size and weight of childhood and they move the way childhood moves —
+    freely, without caring about consequences. The balls are always the right temperature.
+    This is because they are made of a certain type of plastic. It is not meaningful.
+    It feels meaningful.
+  walls: >-
+    Blue foam padding on all surfaces. You could hit these walls at speed and feel
+    only softness. This is what the walls are for. Everything in a ball pit is there
+    to make the falling safe.
+  edge: >-
+    The vinyl-covered edge of the pit, where you stand before you get in. Many people
+    stand here for a long time. The getting-in is the thing. Standing at the edge is
+    just the moment before the thing.
+idlemessages:
+- The balls shift and resettle with the sound of a thousand small collisions.
+- Something moves beneath the surface of the ball pit. A person, probably. Probably a person.
+- The primary colors of the pit are almost painful in their vibrancy.
+- Someone, somewhere in the balls, laughs. It echoes off the padded walls.
+- A single red ball rolls to the edge and teeters and falls back in.
+- The ball pit is exactly what you were hoping it would be. This is rare.
+- You could spend a long time in here. Some people have spent a very long time in here.

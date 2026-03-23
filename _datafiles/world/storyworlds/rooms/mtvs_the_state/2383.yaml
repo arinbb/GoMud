@@ -1,0 +1,53 @@
+roomid: 2383
+zone: MTVs The State
+title: Captain Monterey Jacks Ship
+description: >-
+  The <ansi fg="itemname">deck</ansi> of a sailing vessel, creaking with the motion
+  of imagined seas. Rope <ansi fg="itemname">rigging</ansi> hangs from a tall wooden
+  <ansi fg="itemname">mast</ansi>. The <ansi fg="itemname">railing</ansi> is worn
+  smooth where hands have gripped it in moments of disappointment, which is most moments
+  aboard this ship. Captain Monterey Jack stands at the <ansi fg="itemname">helm</ansi>,
+  gazing out at something that is not here. He has the posture of a man who has seen
+  too much of the human race and draws from that experience a profound and renewable
+  sorrow. The horizon is always doing something. The human race is always doing something
+  worse. To the <ansi fg="exit">north</ansi> is the MTV Studio. To the
+  <ansi fg="exit">east</ansi> is the Taco Stand.
+mapsymbol: C
+maplegend: Monterey Jacks Ship
+biome: shore
+exits:
+  north:
+    roomid: 2380
+  east:
+    roomid: 2387
+nouns:
+  deck: >-
+    The wooden deck is salt-bleached and well-traveled. It has carried Captain Monterey
+    Jack to many places. In all those places he has observed the human race and found
+    it wanting. The deck has witnessed a great deal of sighing.
+  rigging: >-
+    Rope lines run from the deck up to the mast and crosswise in patterns that sailors
+    understand. Captain Monterey Jack has learned these patterns. He is excellent at
+    navigation. He is less at peace with what he finds when he arrives.
+  mast: >-
+    A tall wooden mast from which the sails can be set. No sails are currently set.
+    The ship drifts. The Captain prefers it this way when reflecting on human failure.
+  railing: >-
+    The railing at the ship's edge, worn smooth and dark where hands have clutched it
+    during moments of quiet despair. The wood is warm. The despair is warmer.
+  helm: >-
+    A large wooden wheel with spokes worn to a shine. Captain Monterey Jack stands
+    at it the way he stands at everything — as if the universe owes him an explanation
+    and has yet to provide one satisfactory.
+spawninfo:
+- mobid: 573
+  message: '<ansi fg="3">Captain Monterey Jack grips the railing and stares into the middle distance with magnificent dissatisfaction.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Captain Monterey Jack exhales slowly. The sea does not apologize.
+- The ship rocks. Everything is impermanent. He has known this for years.
+- A seagull lands on the railing. The Captain regards it. The gull leaves.
+- The rigging makes a sound like someone starting to speak and then thinking better of it.
+- The water below is dark and moves with the indifference of things that do not have opinions about the human race.
+- Somewhere in the distance, someone is probably doing something disappointing. Always.
+- The horizon is exactly as far away as it always is. This is not reassuring.

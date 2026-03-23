@@ -1,0 +1,35 @@
+-
+  Supported:
+    "jack torrance": ["wendy torrance"]
+  Conversation:
+    - ["#1 say Wendy, darling. I need you to stop interrupting me when I'm working."]
+    - ["#2 emote wrings her hands nervously", "#2 say I'm sorry, Jack. I just... we haven't talked in days."]
+    - ["#1 say I'm WORKING, Wendy. A man has responsibilities. A man has a CALLING."]
+    - ["#2 say Of course. I understand. It's just Danny seems—"]
+    - ["#1 say Danny is FINE. Danny is perfectly fine. Stop smothering the boy."]
+    - ["#2 emote looks down at the floor", "#2 say You're right. I'm sorry."]
+    - ["#1 emote turns back to the typewriter and begins hitting keys with excessive force"]
+-
+  Supported:
+    "jack torrance": ["wendy torrance"]
+  Conversation:
+    - ["#1 say You know what your problem is, Wendy? You have no respect for the creative process."]
+    - ["#2 say Jack, please. I just asked if you wanted dinner."]
+    - ["#1 say DINNER. Always with the dinner. The great American novel doesn't stop for DINNER."]
+    - ["#2 say You've been up there all day. You haven't eaten since—"]
+    - ["#1 emote slams both palms on the typewriter desk", "#1 say FIVE MONTHS. Five months I've been sober. Five months I've given everything to this family."]
+    - ["#2 say I know. I know you have."]
+    - ["#1 say And all I ask is to be LEFT ALONE to do my work. Is that too much? Is it?"]
+    - ["#2 emote takes a small step backward", "#2 say No. It's not too much."]
+-
+  Supported:
+    "wendy torrance": ["jack torrance"]
+  Conversation:
+    - ["#1 say Jack? I've been thinking... maybe we should call the ranger station. Just to check in."]
+    - ["#2 emote looks up slowly", "#2 say Why."]
+    - ["#1 say Danny's been having nightmares again. And I thought maybe a little contact with the outside—"]
+    - ["#2 say We are here to do a JOB, Wendy. Not to make phone calls and chat with rangers."]
+    - ["#1 say I know, but—"]
+    - ["#2 say The radio works fine. If there is an emergency, we have the radio. There is no emergency."]
+    - ["#1 emote looks around the empty hall, uncertain", "#1 say No. You're right. No emergency."]
+    - ["#2 emote watches her leave and sits very still for a very long moment"]

@@ -1,0 +1,22 @@
+-
+  Supported:
+    "squints palledorous": ["yeah-yeah"]
+  Conversation:
+    - ["#1 say I've been watching her for three summers.", "#1 emote adjusts glasses."]
+    - ["#2 say Yeah-yeah."]
+    - ["#1 say I have a plan.", "#1 say The plan involves the deep end of the pool."]
+    - ["#2 say Yeah?"]
+    - ["#1 say The deep end, and timing, and a willingness to commit fully to the bit.", "#1 say She's going to notice me."]
+    - ["#2 say Yeah-yeah!", "#2 emote nods with tremendous enthusiasm."]
+    - ["#1 emote pushes his glasses up.", "#1 say I knew you'd understand."]
+-
+  Supported:
+    "squints palledorous": ["yeah-yeah"]
+  Conversation:
+    - ["#1 say Okay the plan is ready.", "#1 say Today is the day."]
+    - ["#2 say Yeah?!"]
+    - ["#1 say I'm going to need you to not watch.", "#1 say Or watch. Honestly your choice."]
+    - ["#2 say Yeah-yeah.", "#2 emote considers.", "#2 say Yeah."]
+    - ["#1 say The key is not panicking in the deep end.", "#1 emote pauses.", "#1 say Which I will definitely not do."]
+    - ["#2 say ...Yeah?"]
+    - ["#1 say I'll be fine.", "#1 emote says this with the confidence of someone who has thought about it a lot.", "#1 say I'll be fine."]

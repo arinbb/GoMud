@@ -1,0 +1,22 @@
+-
+  Supported:
+    "vincent": ["*"]
+  Conversation:
+    - ["#1 say The trouble with other painters is they paint what a thing looks like. I try to paint what it FEELS like."]
+    - ["#2 emote watches him"]
+    - ["#1 say Anyone can look at a field and say 'that is yellow.' But what kind of yellow? The yellow of despair? Of hope? Of grain ready for harvest that will never be yours?"]
+    - ["#2 say Those all sound very different."]
+    - ["#1 say They ARE very different! That is the whole point!", "#1 emote gestures passionately with a paintbrush."]
+    - ["#2 say So which kind of yellow are the stars?"]
+    - ["#1 emote goes quiet, looking up at the swirling sky", "#1 say The kind that keeps you company at three in the morning."]
+-
+  Supported:
+    "vincent": ["*"]
+  Conversation:
+    - ["#1 say I wrote to Theo that I cannot sleep. That the painting will not leave me alone."]
+    - ["#2 say Does he write back?"]
+    - ["#1 say Always. He is the only one who has always written back.", "#1 emote smiles with real warmth."]
+    - ["#2 say That's good."]
+    - ["#1 say It is everything, actually. You don't know how cold the night is until someone has set a candle in the window for you."]
+    - ["#2 emote says nothing — this seems to require none"]
+    - ["#1 emote turns back to the canvas and begins painting with urgent, grateful strokes"]

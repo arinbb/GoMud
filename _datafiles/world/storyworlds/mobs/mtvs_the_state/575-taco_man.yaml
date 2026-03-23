@@ -1,0 +1,31 @@
+mobid: 575
+zone: mtvs_the_state
+hostile: false
+maxwander: 0
+idlecommands:
+- 'emote flips meat on the griddle with practiced precision.'
+- 'say Good taco today. Very good taco.'
+- 'emote stares briefly at the griddle with an expression of mild philosophical weight.'
+- 'say You want a taco? I have tacos.'
+- 'emote wipes down the cart edge with a cloth.'
+- 'say Every taco is different. Every one.'
+- ''
+- ''
+activitylevel: 45
+character:
+  name: Taco Man
+  description: >-
+    A man in an apron behind a taco cart, with the steady presence of someone
+    who has found their post and maintains it. He makes tacos. He thinks about
+    what it means to make tacos. He has the specific philosophical gravity of
+    a person who takes their work seriously in a way that encompasses more than
+    the work. He also just makes very good tacos.
+  raceid: 1
+  level: 3
+  equipment:
+    body:
+      itemid: 20115
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

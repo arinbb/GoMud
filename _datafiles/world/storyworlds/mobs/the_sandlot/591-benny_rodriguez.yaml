@@ -1,0 +1,33 @@
+mobid: 591
+zone: the_sandlot
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote steps into the batter's box and takes a slow, easy practice swing."
+  - "emote catches a ball one-handed without looking, bare-handed, like it's nothing."
+  - "say Smalls. Try it again. Keep your elbow up."
+  - "emote throws a ball straight up and catches it behind his back."
+  - "emote leans against the backstop and watches the field with quiet assessment."
+  - "say Anybody can learn to play. You just gotta want it."
+  - ""
+  - ""
+activitylevel: 20
+character:
+  name: Benny Rodriguez
+  description: >-
+    A lean, confident kid in a baseball jersey and jeans, cap on straight,
+    sneakers worn to the shape of his feet. He moves like someone who has
+    never once been unsure of where his body is in space. He is the best
+    player on the sandlot. He might be the best player in the whole
+    neighborhood. He is generous with it, which makes him twice as good.
+  raceid: 1
+  level: 7
+  equipment:
+    body:
+      itemid: 20130
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171
+    head:
+      itemid: 20161

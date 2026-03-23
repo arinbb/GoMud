@@ -1,0 +1,58 @@
+roomid: 2428
+zone: The Sandlot
+title: Mr. Mertles Porch
+description: >-
+  A wide front porch on gray clapboard, shaded by <ansi fg="10">wisteria</ansi>
+  growing over a wooden trellis. A porch swing moves in a slow arc, and in it
+  sits <ansi fg="itemname">Mr. Mertle</ansi> -- James Earl Jones himself,
+  massive and still, wearing a cardigan despite the heat, his eyes hidden
+  behind dark glasses. He knows you are there before you reach the steps.
+  A <ansi fg="itemname">radio</ansi> on the porch railing plays a ball game,
+  the announcer's voice threading through the summer air. On the wall,
+  framed <ansi fg="itemname">photographs</ansi> of teams and players from an
+  era before the current one. Mr. Mertle played with the great ones. He
+  knows what baseball is for.
+mapsymbol: M
+maplegend: Mr. Mertles Porch
+biome: house
+exits:
+  north:
+    roomid: 2427
+nouns:
+  mertle: >-
+    Herman Mertle. Blind now, has been for years. Played Negro League
+    ball in the thirties and forties -- before Jackie Robinson opened
+    the doors that should never have been closed. He played with Babe
+    Ruth in an exhibition game once. He keeps that ball under glass.
+    He sits on this porch every afternoon and listens to games on the
+    radio and knows more about baseball than everyone on both teams
+    combined.
+  photographs: >-
+    Framed black-and-white photographs on the porch wall -- team shots,
+    action shots, men in old-style uniforms. A young Herman Mertle,
+    tall and easy in his stance, holding a bat with the confidence of
+    someone who has made peace with the universe. His teammates crowd
+    in around him, all of them long gone to wherever baseball players go.
+  radio: >-
+    A Zenith table radio on the porch railing, its dial glowing amber
+    through the afternoon shade. The announcer's voice is describing
+    a game in fine detail. Mr. Mertle listens with his whole body,
+    leaning forward slightly at the important moments.
+  glasses: >-
+    Dark glasses, the kind that suggest the wearer would rather you
+    didn't ask about them. Mr. Mertle's eyes are behind them. He lost
+    his sight years ago. He doesn't mention it. He listens to the radio
+    and knows everything that's happening on the field as well as
+    anyone in the stadium.
+idlemessages:
+- Mr. Mertle rocks slowly in the porch swing, listening to the radio with perfect attention.
+- "He says, without turning his head -- I know you are there."
+- The radio announcer describes a double to right-center and Mr. Mertle nods once, satisfied.
+- The wisteria smells like the whole summer concentrated into one breath.
+- Mr. Mertle holds his coffee cup without looking at it, moving it to his lips with the precision of long practice.
+- "He tilts his head toward the sound of the sandlot behind the fence -- Those boys play every day."
+- The porch swing creaks on its chain. The neighborhood is quiet except for the radio.
+spawninfo:
+- mobid: 596
+  message: "Mr. Mertle sits in the porch swing with his hands on his knees, his face turned slightly toward the sound of the sandlot."
+  respawnrate: 3 real minutes

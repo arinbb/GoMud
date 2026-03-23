@@ -1,0 +1,36 @@
+-
+  Supported:
+    "the queen of hearts": ["*"]
+  Conversation:
+    - ["#1 say You there! What are you doing in MY garden?"]
+    - ["#2 emote freezes"]
+    - ["#1 say Stand up straight when I address you! STRAIGHTER! That is not straight enough!"]
+    - ["#2 emote stands very straight"]
+    - ["#1 emote examines them with a gaze like a hawk examining a very small mouse", "#1 say Hmm. Your head is still attached. For now."]
+    - ["#2 say Thank you, Your Majesty."]
+    - ["#1 say Don't thank me. I haven't decided yet."]
+-
+  Supported:
+    "the queen of hearts": ["*"]
+  Conversation:
+    - ["#1 say Do you play croquet?"]
+    - ["#2 say I... yes?"]
+    - ["#1 say Wrong answer."]
+    - ["#2 say No?"]
+    - ["#1 say ALSO wrong! OFF WITH YOUR—", "#1 emote pauses, consulting something invisible."]
+    - ["#1 say We are SHORT on heads today. You may play croquet."]
+    - ["#2 emote exhales with relief"]
+    - ["#1 say If you lose, however, the situation will be re-evaluated."]
+-
+  Supported:
+    "the queen of hearts": ["*"]
+  Conversation:
+    - ["#1 say I have a very simple system. Those who please me keep their heads. Those who displease me do not."]
+    - ["#2 emote nods carefully"]
+    - ["#1 say You are nodding. That pleases me. Continue."]
+    - ["#2 emote nods again"]
+    - ["#1 say Now you are OVER-nodding. It looks SYCOPHANTIC."]
+    - ["#2 emote stops"]
+    - ["#1 say Now you have STOPPED! Do you think you can simply STOP?"]
+    - ["#1 emote bellows", "#1 say OFF WITH—"]
+    - ["#1 emote pauses again", "#1 say ...Someone bring me tea. I shall decide later."]

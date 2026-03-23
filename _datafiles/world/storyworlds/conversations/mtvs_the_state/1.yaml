@@ -1,0 +1,32 @@
+-
+  Supported:
+    "barry": ["levon"]
+  Conversation:
+    - ["#1 say Levon. Do you ever think about why we live in the barrel?"]
+    - ["#2 say I think about it sometimes.", "#2 emote looks at the ceiling of the barrel."]
+    - ["#1 say And?"]
+    - ["#2 say And then I stop thinking about it because I am already here.", "#2 emote shrugs."]
+    - ["#1 say That is what I think too.", "#1 emote nods."]
+    - ["#2 say The barrel is good, Barry."]
+    - ["#1 say The barrel is very good."]
+-
+  Supported:
+    "barry": ["levon"]
+  Conversation:
+    - ["#1 say Levon. What would you do if you did not live in the barrel."]
+    - ["#2 emote thinks carefully."]
+    - ["#2 say I would probably live somewhere else.", "#2 emote pauses. 'But worse.'"]
+    - ["#1 say I have thought about this.", "#1 emote adjusts the rug."]
+    - ["#1 say The answer is the same."]
+    - ["#2 say The barrel is the answer.", "#2 emote nods."]
+    - ["#1 say Yes."]
+-
+  Supported:
+    "barry": ["levon"]
+  Conversation:
+    - ["#1 say I like the rug."]
+    - ["#2 say I know. You picked it."]
+    - ["#1 say I picked it well.", "#1 emote looks at the rug."]
+    - ["#2 say You did. It is a good rug."]
+    - ["#1 say Thank you, Levon."]
+    - ["#2 say You are welcome, Barry."]

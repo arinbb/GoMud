@@ -1,0 +1,34 @@
+mobid: 578
+zone: mtvs_the_state
+hostile: false
+maxwander: 0
+idlecommands:
+- 'say And Needlepoint makes the turn! Coming up fast on Quilliam! The crowd goes wild!'
+- 'emote raises the microphone and speaks with total conviction.'
+- 'say We have a PHOTO FINISH, folks! I have never seen porcupines run like this!'
+- 'say And I am OUTTA HEEERE!'
+- 'emote calls the race with the professional intensity of someone who believes in what they are covering.'
+- 'say Quilliam takes the lead! Spinal in second! Needlepoint investigating something — come ON, Needlepoint!'
+- ''
+- ''
+activitylevel: 60
+character:
+  name: The Porcupine Announcer
+  description: >-
+    A man in a business suit and necktie, holding a microphone at the ready,
+    positioned at the announcer's booth of the Porcupine Racetrack with the
+    professional authority of someone who has been given a significant trust
+    and is honoring it. He calls porcupine races with the intensity and specificity
+    of someone who covers championship events. This is a championship event.
+    The porcupines are champions.
+  raceid: 1
+  level: 3
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172
+    neck:
+      itemid: 20180

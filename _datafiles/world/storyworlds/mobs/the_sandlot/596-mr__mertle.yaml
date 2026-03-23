@@ -1,0 +1,31 @@
+mobid: 596
+zone: the_sandlot
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote rocks slowly in the porch swing, head tilted toward the sandlot."
+  - "emote listens to the radio with complete attention."
+  - "say Those boys play every day. Rain or shine."
+  - "emote holds his coffee cup without looking at it and drinks with practiced ease."
+  - "say I can hear a good swing from a quarter mile. That Benny boy. He has it."
+  - "emote tilts his face toward the sound of the game."
+  - ""
+  - ""
+activitylevel: 10
+character:
+  name: Mr. Mertle
+  description: >-
+    A large, powerful man gone to stillness, sitting in a porch swing in
+    a cardigan despite the summer heat. His dark glasses don't move much.
+    He doesn't need them to -- he hears everything that matters. He played
+    Negro League baseball in the thirties. He played with the greats. He
+    knows more about the game than the game knows about itself.
+  raceid: 1
+  level: 10
+  equipment:
+    body:
+      itemid: 20105
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

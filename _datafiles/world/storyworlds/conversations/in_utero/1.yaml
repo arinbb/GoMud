@@ -1,0 +1,33 @@
+-
+  Supported:
+    "a sound engineer": ["*"]
+  Conversation:
+    - ["#1 say You want to know why it sounds like that? Because it IS like that."]
+    - ["#2 emote looks at the mixing board"]
+    - ["#1 say Every producer in Los Angeles would have cleaned this up. Made it presentable. I made it LOUD."]
+    - ["#2 say Is louder better?"]
+    - ["#1 emote adjusts a single fader a millimeter", "#1 say Truer. Not better. TRUER."]
+    - ["#1 say The distortion isn't a mistake. The distortion is the POINT."]
+-
+  Supported:
+    "a sound engineer": ["*"]
+  Conversation:
+    - ["#1 say Two weeks. That's all we had. Fourteen days to record the whole thing."]
+    - ["#2 say Is that enough time?"]
+    - ["#1 say For a band that actually plays together? Yes. For a band that knows what they want to say? More than enough."]
+    - ["#1 emote threads fresh tape onto the reel-to-reel with practiced efficiency"]
+    - ["#1 say They came in knowing. That's rare. Most bands discover the album in the studio. These three already had it."]
+    - ["#2 say Had what?"]
+    - ["#1 emote gestures vaguely at the ceiling, where the sound has already been"]
+    - ["#1 say IT. The thing. You either have it or you're looking for it. They had it."]
+-
+  Supported:
+    "a sound engineer": ["*"]
+  Conversation:
+    - ["#1 say No headphone mix. No click track. No tuner on the guitars."]
+    - ["#2 emote looks surprised", "#2 say Why not?"]
+    - ["#1 say Because a tuner makes you play IN TUNE. And sometimes the song isn't in tune. Sometimes the song is angry."]
+    - ["#1 emote listens to something only he can hear", "#1 say Anger has its own pitch. You can't quantize that."]
+    - ["#2 say Couldn't you fix it in the mix?"]
+    - ["#1 emote stares at them", "#1 say Get out of my studio."]
+    - ["#1 emote turns back to the board, shaking his head with professional offense"]

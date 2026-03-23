@@ -1,0 +1,48 @@
+roomid: 2387
+zone: MTVs The State
+title: Taco Stand
+description: >-
+  A street-corner taco stand of modest construction: a <ansi fg="itemname">cart</ansi>
+  with a striped <ansi fg="itemname">awning</ansi>, a <ansi fg="itemname">griddle</ansi>
+  radiating heat and the smell of carnitas, a <ansi fg="itemname">menu board</ansi>
+  hand-lettered in chalk. Taco Man stands behind the cart with the presence of someone
+  who has found his place in the order of things and is at peace with it, mostly, except
+  for the moments when the cosmic weight of taco preparation becomes visible in his eyes.
+  He makes good tacos. He thinks about what it means to make good tacos. These are not
+  separate activities. To the <ansi fg="exit">west</ansi> is Captain Monterey Jack's Ship.
+mapsymbol: T
+maplegend: Taco Stand
+biome: city
+exits:
+  west:
+    roomid: 2383
+nouns:
+  cart: >-
+    The taco cart is well-maintained and has been in this location long enough to
+    have a regular clientele. The cart knows its customers. The cart is a taco cart.
+    It does not know anything. But it has been here a long time.
+  awning: >-
+    A striped canvas awning — red and white, or possibly orange and yellow, the colors
+    of a thing that is meant to attract attention and provide shade simultaneously.
+    It does both. It does its job.
+  griddle: >-
+    The flat griddle is hot and in use. Meat sizzles. Onions and peppers wait their
+    turn. The griddle is the axis around which the taco stand rotates, the center
+    of the operation, the place where ingredients become tacos and tacos become
+    something to think about.
+  menu: >-
+    The menu board lists tacos: carnitas, pollo, carne asada, something called "the
+    philosophical." The prices are reasonable. The philosophical is the same price
+    as the others.
+spawninfo:
+- mobid: 575
+  message: '<ansi fg="14">Taco Man appears behind his cart, flipping meat on the griddle with the practiced ease of someone who has made peace with being excellent at something existential.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Taco Man assembles a taco with the deliberate care of someone who knows this moment will not come again.
+- The griddle sizzles. Steam rises. Something essential is happening at this cart.
+- Taco Man stares briefly at the middle distance, spatula in hand, then returns to the griddle.
+- The smell of carnitas drifts across the street corner and pulls at something in your chest.
+- A customer takes their taco and walks away. Taco Man watches them go.
+- The menu board says 'the philosophical.' No one has asked about the philosophical yet today.
+- Taco Man refills the onion bin. The onions are cut precisely. He cut them this morning.

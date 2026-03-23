@@ -1,0 +1,32 @@
+-
+  Supported:
+    "pee-wee herman": ["*"]
+  Conversation:
+    - ["#1 say I'm trying to think but nothing happens!"]
+    - ["#2 emote stares at him"]
+    - ["#1 emote gestures grandly at nothing in particular", "#1 say There's a lot of things about me you don't know anything about, Dottie. Things that would HORRIFY you."]
+    - ["#2 say What kinds of things?"]
+    - ["#1 say I'm a loner, Dottie. A rebel.", "#1 emote nods with great seriousness."]
+-
+  Supported:
+    "pee-wee herman": ["*"]
+  Conversation:
+    - ["#1 emote bounces on his heels with barely contained excitement"]
+    - ["#1 say You know what today is? Today is the BEST DAY EVER."]
+    - ["#2 say Why?"]
+    - ["#1 say Because it's TODAY! It's happening RIGHT NOW. And I am HERE for it."]
+    - ["#2 emote considers this"]
+    - ["#1 say Some people have BIG TV's. But I am in the WORLD. There's a difference!"]
+    - ["#2 say I guess that's one way to look at it."]
+    - ["#1 say HA! I know you are, but what am I?"]
+-
+  Supported:
+    "pee-wee herman": ["*"]
+  Conversation:
+    - ["#1 say I say we all pull together and get my bike back!"]
+    - ["#2 emote looks uncertain"]
+    - ["#1 say My bike was STOLEN. STOLEN! It's out there somewhere and it MISSES me."]
+    - ["#2 say How do you know it misses you?"]
+    - ["#1 emote stares as if this is the most obvious thing in the world", "#1 say Because I MISS IT. That's how feelings work, Simone."]
+    - ["#2 emote blinks", "#2 say My name isn't—"]
+    - ["#1 say It's in the basement of the Alamo! I know where it is!"]

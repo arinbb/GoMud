@@ -1,0 +1,25 @@
+mobid: 597
+zone: the_sandlot
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote sniffs the air with authority."
+  - "emote pads slowly across the yard, each footfall deliberate."
+  - "emote regards you with enormous dark eyes and a slow-moving tail."
+  - "emote yawns, revealing a mouth that could contain a regulation baseball with room to spare."
+  - "emote lies down heavily in the grass and sighs."
+  - "emote raises his head at some sound only he can hear, then relaxes."
+  - ""
+  - ""
+activitylevel: 10
+character:
+  name: the Beast
+  description: >-
+    An English Mastiff of such size that the word dog doesn't quite cover
+    it. Two hundred pounds. Jowls like a judge. Paws like dinner plates.
+    He moves with the slow authority of something that has never had to
+    hurry because nothing has ever required him to hurry. His eyes are
+    warm and old and wise. His name is Hercules. He has eaten many baseballs.
+    His tail is wagging.
+  raceid: 9
+  level: 8

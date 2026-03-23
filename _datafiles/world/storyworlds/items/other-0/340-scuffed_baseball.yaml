@@ -1,0 +1,14 @@
+itemid: 340
+name: scuffed baseball
+namesimple: baseball
+displayname: a <ansi fg="itemname">scuffed baseball</ansi>
+description: >-
+  A baseball so heavily used that the stitching is frayed and the leather
+  is dark with dirt and sweat and summer. It has been hit a thousand times.
+  The cowhide is soft in the places where hands have gripped it and hard
+  where it has met wooden bats. It does not need to be signed by anyone
+  famous. It is signed by every kid who ever played with it.
+type: object
+subtype: usable
+uses: 0
+value: 0

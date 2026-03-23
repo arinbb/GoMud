@@ -1,0 +1,32 @@
+-
+  Supported:
+    "vincent": ["the postman"]
+  Conversation:
+    - ["#1 say Roulin, do you ever look at the night sky and feel... small?"]
+    - ["#2 emote considers this with his characteristic deliberateness", "#2 say Small? No. Comfortable, maybe. Like a blanket over everything."]
+    - ["#1 say Yes! YES! That is exactly it. The night is not threatening — it is WARM."]
+    - ["#2 say You've been painting at night again."]
+    - ["#1 say I had to go out with candles in my hatband so I could see the canvas. The neighbors thought I had lost my mind."]
+    - ["#2 emote laughs warmly", "#2 say The neighbors already thought that, Vincent."]
+    - ["#1 emote laughs too, genuinely, the anxiety lifting briefly", "#1 say Ha! Fair enough. Fair enough."]
+-
+  Supported:
+    "vincent": ["the postman"]
+  Conversation:
+    - ["#1 say The yellow. Roulin, the yellow in the stars — nobody else paints it that way."]
+    - ["#2 say What way?"]
+    - ["#1 say Like it's ALIVE. Like it's breathing. Yellow should breathe. Most painters make it flat."]
+    - ["#2 emote strokes his magnificent beard", "#2 say My uniform is blue. Does blue breathe?"]
+    - ["#1 say Everything breathes if you look at it long enough! Your blue is the blue of duty, of steadiness. It has a HEARTBEAT."]
+    - ["#2 say I never thought of my uniform as having a heartbeat."]
+    - ["#1 emote already pulling out his notebook", "#1 say Sit still. The light is right. I need to paint you again."]
+    - ["#2 emote sighs with great fond resignation"]
+-
+  Supported:
+    "vincent": ["*"]
+  Conversation:
+    - ["#1 say You see those cypress trees? They are like a dark flame against the sky."]
+    - ["#2 emote looks up"]
+    - ["#1 say Everyone says they are gloomy. But a flame is not gloomy — it is REACHING. Always upward. Always straining toward something."]
+    - ["#2 say What are they straining toward?"]
+    - ["#1 emote looks up with complete sincerity", "#1 say The stars. What else is there to strain toward?"]

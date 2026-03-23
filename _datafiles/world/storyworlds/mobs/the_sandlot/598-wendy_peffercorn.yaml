@@ -1,0 +1,30 @@
+mobid: 598
+zone: the_sandlot
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote adjusts her sunglasses and surveys the pool with professional calm."
+  - "emote applies sunscreen with deliberate thoroughness, as if aware of an audience."
+  - "emote blows the whistle once at something on the far end of the pool."
+  - "emote opens her paperback, reads one page, and puts it down again."
+  - "emote scans the pool with the systematic attention of someone who is actually good at her job."
+  - "emote pushes her sunglasses down one centimeter and then back up again."
+  - ""
+  - ""
+activitylevel: 10
+character:
+  name: Wendy Peffercorn
+  description: >-
+    The lifeguard. She is seventeen and has been working this pool for
+    three summers and knows every kid who swims here. She sits in her
+    white one-piece and wide-brimmed hat with the calm authority of
+    someone who knows she is being watched and has decided not to care.
+    She is very good at her job. She is also the involuntary center of
+    Squints Palledorous's entire summer.
+  raceid: 1
+  level: 6
+  equipment:
+    body:
+      itemid: 20111
+    feet:
+      itemid: 20174

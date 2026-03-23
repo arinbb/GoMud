@@ -1,0 +1,26 @@
+-
+  Supported:
+    "pee-wee herman": ["francis buxton"]
+  Conversation:
+    - ["#1 say Francis! What are you doing here?"]
+    - ["#2 say Daddy had you followed, Pee-wee. He says you stole something from me."]
+    - ["#1 say I didn't STEAL anything! If you want me to tell you what's IN my pockets, I'll tell you — a rubber band, some lint, and NOT YOUR BIKE."]
+    - ["#2 emote turns red", "#2 say That bike should be MINE! I offered you anything you wanted!"]
+    - ["#1 say You can't BUY what I have, Francis. Some things aren't for sale."]
+    - ["#2 say Everything's for sale! Daddy says so!"]
+    - ["#1 emote narrows his eyes with great dignity", "#1 say Your daddy doesn't know everything."]
+    - ["#2 say He knows MORE than your daddy!"]
+    - ["#1 say My daddy doesn't carry a briefcase everywhere!"]
+    - ["#2 emote gasps in outrage"]
+-
+  Supported:
+    "francis buxton": ["pee-wee herman"]
+  Conversation:
+    - ["#1 say I'm going to tell Daddy what you said. About the briefcase."]
+    - ["#2 say Go ahead! Tell your DADDY! Tell him PEE-WEE SAID HI!"]
+    - ["#1 say You're going to be VERY SORRY, Pee-wee Herman. VERY. SORRY."]
+    - ["#2 say I'm not sorry about ANYTHING!"]
+    - ["#1 say Daddy is getting you a LAWYER."]
+    - ["#2 emote puts his hands on his hips", "#2 say Tell your lawyer I said 'I know you are, but what am I.'"]
+    - ["#1 emote sputters", "#1 say That doesn't even MAKE SENSE AS A LEGAL RESPONSE!"]
+    - ["#2 say I know you are, but what am I?", "#2 emote grins triumphantly."]

@@ -1,0 +1,63 @@
+roomid: 2425
+zone: The Sandlot
+title: The Public Pool
+description: >-
+  The Valley Vista public pool shimmers in the afternoon heat, impossibly
+  blue, surrounded by <ansi fg="10">green-painted chain link</ansi> and
+  concrete decking so hot it burns the soles of your feet. <ansi fg="itemname">Inner tubes</ansi>
+  drift on the surface. A <ansi fg="itemname">high dive</ansi> stands at the
+  deep end, its shadow falling across the water. The <ansi fg="itemname">lifeguard stand</ansi>
+  is occupied by Wendy Peffercorn, who sits above it all in her white one-piece
+  and sunglasses, doing the thing she does with the sunscreen that makes
+  Squints Palledorous completely incapable of rational thought. The smell of
+  chlorine is thick and good in the summer air.
+mapsymbol: P
+maplegend: The Public Pool
+biome: land
+exits:
+  south:
+    roomid: 2421
+  north:
+    roomid: 2431
+nouns:
+  pool: >-
+    The pool is fifty meters long and blinding blue. The water is cold
+    in the deep end and warm in the shallow end, which tells you something
+    about where most of the kids are swimming. The bottom is painted
+    with lane lines that nobody follows.
+  wendy: >-
+    Wendy Peffercorn, the lifeguard. She is seventeen and magnificent
+    and sits in her chair with the calm authority of someone who has
+    done this for three summers. She notices everything but says very
+    little. Squints has had a plan to get her attention since June and
+    the plan is both terrible and, in its own way, perfect.
+  'high dive': >-
+    The high dive -- three meters up, with a view of the whole pool
+    and half the neighborhood. The line to the high dive is always
+    long. The drop is always farther than it looked from the ground.
+    Nobody goes up twice without a pause at the top.
+  'lifeguard stand': >-
+    The tall white lifeguard chair, positioned at the midpoint of the
+    pool. Wendy Peffercorn sits in it with a whistle and a bottle of
+    sunscreen and a paperback novel she hasn't opened once all summer.
+    She is watching. She is always watching.
+  'inner tubes': >-
+    Black rubber inner tubes from gas stations, smooth on the outside
+    and smelling of rubber and chlorine. The best way to spend an
+    afternoon in 1962 is floating in one of these with your eyes closed
+    and the sun on your face.
+idlemessages:
+- Wendy Peffercorn slowly applies sunscreen while Squints, forty feet away, begins to formulate a plan.
+- A cannonball off the high dive sends a wall of water across the deck.
+- The pool smells of chlorine and summer and the specific happiness of not being in school.
+- Someone calls "MARCO!" from the shallow end. Nobody answers "POLO" for a very long time.
+- An inner tube drifts across the pool, occupied by nobody, going nowhere, perfectly content.
+- Wendy pushes her sunglasses down her nose and surveys the pool. Everyone straightens up slightly.
+- A kid does a belly flop off the low dive. The sound travels three blocks.
+spawninfo:
+- mobid: 598
+  message: "Wendy Peffercorn climbs into the lifeguard chair and adjusts her sunglasses with two fingers."
+  respawnrate: 3 real minutes
+- mobid: 593
+  message: "Squints Palledorous stations himself at the edge of the pool with his glasses gleaming and a very specific expression on his face."
+  respawnrate: 3 real minutes

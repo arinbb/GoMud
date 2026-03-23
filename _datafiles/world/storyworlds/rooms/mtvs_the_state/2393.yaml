@@ -1,0 +1,49 @@
+roomid: 2393
+zone: MTVs The State
+title: The Street
+description: >-
+  A New York City <ansi fg="itemname">sidewalk</ansi> outside the MTV studio,
+  circa 1994. The <ansi fg="itemname">building</ansi> behind you has the MTV logo
+  on its facade, larger than makes sense. The <ansi fg="itemname">street</ansi>
+  itself is fully New York: yellow cabs, a hot dog cart, a man walking fast with
+  a purpose you cannot identify. A <ansi fg="itemname">newsstand</ansi> on the
+  corner sells papers that have this year's headlines on them. The city moves at
+  its own speed around you — indifferent, magnificent, specific. This is 1994.
+  This is New York. The show is being made upstairs and the city has no idea and
+  does not need to. The city is its own show. <ansi fg="exit">Up</ansi> leads back
+  to the MTV Studio.
+mapsymbol: K
+maplegend: The Street
+biome: city
+exits:
+  up:
+    roomid: 2380
+nouns:
+  sidewalk: >-
+    The New York City sidewalk, a river of concrete that carries everyone in all
+    directions simultaneously. The sidewalk has seen everything. The sidewalk does
+    not remember any of it. The sidewalk just goes.
+  building: >-
+    The MTV building, a tower of glass and the cultural confidence of early 90s
+    cable television. The logo is enormous on the facade. Inside this building,
+    right now, someone is making something that will be remembered.
+  street: >-
+    A two-way street full of yellow cabs moving with the aggression of things
+    that have somewhere to be and believe the somewhere is urgent. Horns are used.
+    The horns are correct.
+  newsstand: >-
+    The corner newsstand with its array of papers and magazines. The headlines
+    are the headlines of 1994. Things are happening. Things are always happening
+    in New York in 1994.
+  cart: >-
+    A hot dog cart on the corner, steam rising from the water tray. The hot dog
+    vendor has the posture of a person who has stood in this exact spot for a long
+    time and knows every face that passes and does not say so.
+idlemessages:
+- A cab accelerates through a yellow light with total conviction.
+- Someone on the sidewalk is talking too loud on a cell phone the size of a shoe.
+- The steam from a subway grate rises and disperses in the wind.
+- A delivery person on a bike weaves through traffic with the fluid intelligence of water.
+- Somewhere up the block, someone is playing music from a car with the windows down.
+- The newsstand guy flips to a new page of a paper and then flips back.
+- New York in 1994 smells like exhaust and concrete and the specific ambition of the place.

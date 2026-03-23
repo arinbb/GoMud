@@ -1,0 +1,57 @@
+roomid: 2382
+zone: MTVs The State
+title: The Barrel
+description: >-
+  The interior of a very large wooden <ansi fg="itemname">barrel</ansi> — surprisingly
+  spacious, surprisingly livable. Barry and Levon have arranged it with care. There is
+  a small <ansi fg="itemname">shelf</ansi> with books on it. There is a <ansi fg="itemname">rug</ansi>
+  that does not fit but has been made to fit. Two <ansi fg="itemname">chairs</ansi>
+  face each other at the angle of two people who have had every conversation with
+  each other and are ready to have them all again. A <ansi fg="itemname">candle</ansi>
+  provides warm light. The curved walls give the space a quality of enclosure that
+  feels chosen rather than imposed. This is a home. The fact that it is a barrel is
+  secondary. To the <ansi fg="exit">west</ansi> is the MTV Studio. To the
+  <ansi fg="exit">south</ansi> is the Ball Pit.
+mapsymbol: B
+maplegend: The Barrel
+biome: house
+exits:
+  west:
+    roomid: 2380
+  south:
+    roomid: 2390
+nouns:
+  barrel: >-
+    A very large wooden barrel with staves of dark oak. From the outside it would
+    look like a barrel. From the inside it looks like home. Barry and Levon have
+    been here long enough that the distinction no longer seems interesting.
+  shelf: >-
+    A small wooden shelf mounted between two staves. It holds several paperback books,
+    a coffee cup, and a small framed photograph that you cannot quite see. Everything
+    on this shelf has been chosen.
+  rug: >-
+    A small area rug, circular, in warm colors. It does not fit the curved floor
+    of the barrel perfectly and it does not need to. It fits well enough. Well enough
+    is a concept Barry and Levon have mastered.
+  chairs: >-
+    Two wooden chairs facing each other at the exact angle of a conversation. Not
+    parallel — angled. The angle of two people who want to look at each other but
+    also occasionally look away.
+  candle: >-
+    A pillar candle in a ceramic holder. The wax has dripped and rehardened many times.
+    The light it gives is the light of a place where people are at home.
+spawninfo:
+- mobid: 571
+  message: '<ansi fg="cyan">Barry settles into his chair with the particular comfort of a man in his own space.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 572
+  message: '<ansi fg="cyan">Levon appears and takes his chair, crossing one leg over the other, at ease.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The barrel creaks once, settling, the way wood does when it has been somewhere long enough to relax.
+- Barry and Levon sit in their chairs. They are thinking. This is enough.
+- The candle flame bends toward the wall and then back. There is no draft. It just does that.
+- Someone outside knocks on the barrel. Barry and Levon look at each other. They do not answer.
+- The rug is comfortable underfoot in the way of rugs that have been chosen with care.
+- Levon adjusts in his chair. Barry notices. Neither says anything.
+- The books on the shelf have been read. They will be read again.

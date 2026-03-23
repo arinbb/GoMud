@@ -1,0 +1,53 @@
+roomid: 2389
+zone: MTVs The State
+title: The Awards Show
+description: >-
+  A <ansi fg="itemname">stage</ansi> set for an awards ceremony of unclear prestige.
+  Red <ansi fg="itemname">curtains</ansi> frame the proscenium. A <ansi fg="itemname">podium</ansi>
+  stands center stage with a microphone, its light blinking standby. <ansi fg="itemname">Seats</ansi>
+  arranged in rows face the stage, occupied by the kind of audience that attends
+  awards shows — dressed up, attentive, holding small envelopes. A large painted
+  <ansi fg="itemname">backdrop</ansi> reads "THE AWARDS" in the font of official
+  recognition. The awards being given are not specified. This does not matter. The
+  fact of giving them is the point. To the <ansi fg="exit">down</ansi> is the MTV Studio.
+  To the <ansi fg="exit">east</ansi> is the Green Room.
+mapsymbol: A
+maplegend: The Awards Show
+biome: city
+exits:
+  down:
+    roomid: 2380
+  east:
+    roomid: 2392
+nouns:
+  stage: >-
+    A raised wooden stage with a polished floor that reflects the footlights. The
+    kind of stage where things are recognized. Where someone stands and holds something
+    and is told they have done it correctly.
+  curtains: >-
+    Red velvet curtains, theatrical, the color of importance. They open for acts and
+    close between them. They are currently open.
+  podium: >-
+    The podium has a microphone and a small light that illuminates the notes of
+    whoever is speaking. It is the kind of podium where acceptance speeches happen.
+    Where people say things they have not prepared and mean all of it.
+  seats: >-
+    Rows of folding chairs dressed up with chair covers and small bows. The audience
+    sits in them, dressed in their best, holding their envelopes, waiting to find out
+    if they have won something.
+  backdrop: >-
+    The painted backdrop reads THE AWARDS in block letters. No sponsor. No category.
+    Just THE AWARDS. This is either profound or the budget ran out before they finished.
+    Both can be true.
+spawninfo:
+- mobid: 577
+  message: '<ansi fg="13">Michael Ian Black takes the podium with the comfortable authority of someone who has always known he would eventually stand here.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Someone in the audience opens their program and checks the category list.
+- The podium microphone pops softly. The sound engineer adjusts something. The pop does not recur.
+- An envelope is handed to the presenter. The envelope is sealed. The outcome is already decided.
+- Applause rises from the audience for no discernible reason and then subsides.
+- The footlights pulse once and stabilize. The stage is ready.
+- The backdrop shimmers slightly under the hot stage lights.
+- Someone whispers in the third row. It is the most important whisper of the evening.

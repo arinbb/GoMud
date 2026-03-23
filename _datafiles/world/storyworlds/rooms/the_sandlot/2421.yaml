@@ -1,0 +1,52 @@
+roomid: 2421
+zone: The Sandlot
+title: The Neighborhood Street
+description: >-
+  The main residential street of the neighborhood, lined with <ansi fg="10">elm trees</ansi>
+  that arch overhead in a long green tunnel. <ansi fg="itemname">Ranch houses</ansi>
+  sit behind neat lawns with sprinklers ticking in the afternoon heat. A
+  <ansi fg="itemname">bicycle</ansi> leans against a mailbox, no lock, the way
+  things were in 1962. The sandlot is at the south end of the street -- you can
+  hear the distant crack of a bat from here. A <ansi fg="itemname">drugstore</ansi>
+  sits at the east corner. North, the glint of a chain-link fence marks the
+  public pool.
+mapsymbol: .
+maplegend: Neighborhood Street
+biome: land
+exits:
+  west:
+    roomid: 2420
+  south:
+    roomid: 2422
+  east:
+    roomid: 2423
+  north:
+    roomid: 2425
+nouns:
+  trees: >-
+    Elm trees line both sides of the street, big enough that their canopies
+    touch overhead. In the summer heat their shade is a physical relief.
+    They have been here longer than any of the houses. They will be here
+    after the kids who played beneath them are grown.
+  bicycle: >-
+    Someone's Schwinn, red, leaning against a mailbox like it was parked
+    for five minutes and never came back for. No lock. Nobody locked their
+    bikes in 1962. Or at least, not on this street.
+  houses: >-
+    Ranch houses with attached garages and color-coordinated shutters, the
+    kind of houses that were brand new in the late fifties and already feel
+    permanent. Kids have grown up in all of them. Most of the kids on this
+    street have known each other since kindergarten.
+  drugstore: >-
+    The corner drugstore -- a soda fountain and magazine rack and a
+    pharmacist who knows everyone's name. The bell over the door rings
+    when you go in. It is the kind of drugstore that doesn't exist anymore.
+idlemessages:
+- A kid on a bicycle blazes past without looking at you, heading south toward the sandlot.
+- Sprinklers tick on the lawn next door, sweeping slowly across the grass.
+- The distant crack of a bat drifts up from the south end of the street.
+- A screen door bangs somewhere down the block. Then quiet again.
+- The elm trees make dappled shadows on the hot pavement.
+- An ice cream truck jingle drifts through the neighborhood, two blocks east, getting closer.
+- Somebody's mom calls a name from an upstairs window. Nobody answers.
+- The neighborhood smells like cut grass and hot pavement and the end of June.

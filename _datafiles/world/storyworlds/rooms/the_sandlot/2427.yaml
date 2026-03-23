@@ -1,0 +1,56 @@
+roomid: 2427
+zone: The Sandlot
+title: Mr. Mertles Yard
+description: >-
+  The yard on the other side of the fence is larger than it should be,
+  old <ansi fg="10">oaks</ansi> throwing shade over long grass that hasn't
+  been cut in a while. The house is gray clapboard, porch-fronted, quiet.
+  A <ansi fg="itemname">dog bowl</ansi> the size of a washtub sits near the
+  back steps, recently emptied. A <ansi fg="itemname">chain</ansi> runs from
+  a stake in the ground to the porch post -- heavy chain, the links worn
+  bright from use. The chain is slack. The <ansi fg="itemname">Beast</ansi>
+  is here somewhere. You can feel him before you see him -- the way the air
+  in the yard seems to belong to something enormous and patient. Then you
+  see him.
+mapsymbol: Y
+maplegend: Mr. Mertles Yard
+biome: land
+exits:
+  north:
+    roomid: 2426
+    exitmessage: You squeeze back through the loose plank.
+  south:
+    roomid: 2428
+nouns:
+  beast: >-
+    Hercules. The Beast. The English Mastiff who has lived behind the
+    fence since before anyone can remember, who has eaten dozens of
+    baseballs and broken every contraption the boys have ever built
+    to retrieve one. Up close, he is enormous -- two hundred pounds of
+    dog, all of it jowl and paw and deep, dark eyes. He is looking at you.
+    His tail is moving. It is moving the way a tail moves when a dog is
+    happy to see someone. Oh.
+  bowl: >-
+    A ceramic dog bowl the size of a washtub. Recently licked clean.
+    The inside is worn smooth from years of a very large tongue.
+  chain: >-
+    Heavy iron chain, each link as thick as your wrist, running from
+    a deep-set stake in the ground to the porch post. Worn bright
+    from years of pulling. Currently slack. This chain could hold
+    a truck. Whether it can hold the Beast is, apparently, situational.
+  grass: >-
+    Long grass, full of clover and dandelions, undisturbed by mowing.
+    A paradise for a large dog. Here and there, the flattened circles
+    where an enormous animal has lain down. The grass is warm with sun.
+idlemessages:
+- The Beast regards you with enormous dark eyes. His tail sweeps slowly back and forth.
+- He takes one step toward you and the ground seems to notice.
+- The Beast lowers his massive head and sniffs the air in your direction. He appears satisfied.
+- A low sound comes from the Beast -- deep, resonant, not a growl. More like a greeting.
+- His paw, resting on the grass, is the size of a dinner plate.
+- The chain shifts and settles. The Beast ignores it.
+- He blinks at you slowly, the way dogs do when they are comfortable with you. This is good.
+spawninfo:
+- mobid: 597
+  message: "The Beast rounds the corner of the house and stops, fixing you with a stare that could freeze a lesser creature mid-stride. His tail begins to wag."
+  respawnrate: 3 real minutes

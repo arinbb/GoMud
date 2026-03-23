@@ -1,0 +1,51 @@
+roomid: 2381
+zone: MTVs The State
+title: The Pudding Room
+description: >-
+  It is what it says. The room is full of <ansi fg="itemname">pudding</ansi>. Not a little
+  pudding — a lot of pudding. Two hundred and forty dollars worth of pudding, which
+  turns out to be an enormous quantity when you commit to it. Chocolate pudding in
+  <ansi fg="itemname">cups</ansi>. Pudding in <ansi fg="itemname">bowls</ansi>. A small
+  <ansi fg="itemname">kiddie pool</ansi> of pudding in the corner. The smell is
+  overwhelming in the specific way that sweetness becomes something else when there is
+  too much of it. Louie stands here, the architect of all this, with the calm
+  satisfaction of someone who has solved a problem that only he could see.
+  To the <ansi fg="exit">south</ansi> leads back to the MTV Studio. To the
+  <ansi fg="exit">east</ansi> is Doug's Apartment.
+mapsymbol: P
+maplegend: The Pudding Room
+biome: house
+exits:
+  south:
+    roomid: 2380
+  east:
+    roomid: 2385
+nouns:
+  pudding: >-
+    The pudding is everywhere. It is the right amount of pudding, which is to say it
+    is too much pudding, which is to say it is exactly the right amount. Chocolate.
+    Always chocolate. The $240 was spent with enormous care and no hesitation.
+  cups: >-
+    Dozens of individual pudding cups, arranged in clusters. Some are open. Some have
+    a spoon in them. All of them are full or recently emptied and immediately replaced.
+    Louie has a system.
+  bowls: >-
+    Larger vessels for the more serious pudding experience. Ceramic bowls that look
+    like they came from a kitchen that also has regular things in it, but this room
+    is not a regular room anymore.
+  pool: >-
+    A small plastic kiddie pool — the kind sold for children in summer — filled with
+    chocolate pudding. This is the culmination. This is what two hundred and forty
+    dollars reaches toward if you let it follow its natural logic all the way.
+spawninfo:
+- mobid: 570
+  message: '<ansi fg="yellow">Louie appears in the pudding room, spreading his arms wide to indicate all of this, all of it, as if introducing you to a dear friend.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The pudding is very still. It is waiting.
+- A spoon stands upright in a bowl of pudding, perfectly balanced, for no reason.
+- The smell of chocolate pudding is absolute. There is no other smell in this room.
+- Louie gestures at the pudding with the pride of a man who knows what he wants.
+- A cup of pudding shimmers in the overhead light.
+- The temperature in this room is exactly the temperature pudding likes to be.
+- Somewhere, a refrigerator hums. The pudding needs to stay cold. Louie has planned for this.

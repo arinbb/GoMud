@@ -1,0 +1,27 @@
+mobid: 571
+zone: mtvs_the_state
+hostile: false
+maxwander: 0
+idlecommands:
+- 'say I think the barrel is a good place to live. I have thought about it carefully.'
+- 'emote adjusts the rug with the satisfaction of a homeowner.'
+- 'say Levon. Does it feel like home to you? Because to me it feels like home.'
+- 'emote looks around the barrel with quiet appreciation.'
+- 'say A man needs a space that is his. This space is ours. That is the same thing.'
+- ''
+- ''
+activitylevel: 45
+character:
+  name: Barry
+  description: >-
+    A man in overalls, seated in a wooden chair inside a barrel, with the calm
+    and settled posture of someone who has decided where he lives and is content
+    with that decision. He is thoughtful. He philosophizes about the barrel the
+    way other people philosophize about existence. To him these are the same inquiry.
+  raceid: 1
+  level: 3
+  equipment:
+    body:
+      itemid: 20108
+    feet:
+      itemid: 20170

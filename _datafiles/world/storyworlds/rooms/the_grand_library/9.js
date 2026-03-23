@@ -12,7 +12,7 @@ var SOUVENIR_ZONES = [
     "nineteen_eighty_four", "forbidden_planet", "seinfeld",
     "harold_and_maude", "its_always_sunny", "the_andy_griffith_show",
     "up_in_smoke", "paris_texas", "northern_exposure",
-    "the_wire", "six_feet_under", "harvest"
+    "the_wire", "six_feet_under", "harvest", "mtvs_the_state"
 ];
 
 var SOUVENIR_NAMES = [
@@ -26,7 +26,7 @@ var SOUVENIR_NAMES = [
     "Nineteen Eighty Four", "Forbidden Planet", "Seinfeld",
     "Harold and Maude", "Its Always Sunny", "The Andy Griffith Show",
     "Up in Smoke", "Paris Texas", "Northern Exposure",
-    "The Wire", "Six Feet Under", "Harvest"
+    "The Wire", "Six Feet Under", "Harvest", "MTVs The State"
 ];
 
 function onCommand(cmd, rest, user, room) {

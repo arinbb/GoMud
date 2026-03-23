@@ -1,0 +1,28 @@
+mobid: 576
+zone: mtvs_the_state
+hostile: false
+maxwander: 0
+idlecommands:
+- 'emote drifts slowly across the module, beard spreading in the zero gravity.'
+- 'emote strokes their beard with the thoughtfulness of someone in communion with something large.'
+- 'say The beard helps in space. Aerodynamically. This is not the scientific explanation but it is the true one.'
+- 'emote pushes off one wall with a single finger and glides.'
+- 'say Space Station 11 is the best posting I have received. The beard is why.'
+- ''
+- ''
+activitylevel: 40
+character:
+  name: The Bearded Man
+  description: >-
+    A man in a jumpsuit aboard Space Station 11, with a beard of extraordinary
+    volume and reach, currently drifting in the zero gravity of orbital space in
+    a form that suggests both intellectual depth and a readiness to float
+    somewhere useful if required. He strokes the beard. The beard is central to
+    the operation. He does not explain why. It is self-evident.
+  raceid: 1
+  level: 4
+  equipment:
+    body:
+      itemid: 20129
+    feet:
+      itemid: 20177

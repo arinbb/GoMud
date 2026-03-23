@@ -1,0 +1,42 @@
+roomid: 2431
+zone: The Sandlot
+title: The Bike Path
+description: >-
+  A packed-dirt path behind the pool, wide enough for two bikes abreast, running
+  through a belt of <ansi fg="10">trees</ansi> between the neighborhood and
+  the open fields beyond. <ansi fg="itemname">Bicycle tracks</ansi> run in
+  every direction -- the accumulated miles of a summer's worth of going nowhere
+  in particular as fast as possible. The smell of pine and dry grass and
+  chain oil hangs in the air. On a good afternoon you can make this path
+  from one end to the other in under three minutes, and the whole world feels
+  like it belongs to you.
+mapsymbol: B
+maplegend: The Bike Path
+biome: land
+exits:
+  south:
+    roomid: 2425
+  east:
+    roomid: 2432
+nouns:
+  tracks: >-
+    Bicycle tracks pressed into the dirt from a hundred rides. You
+    can read them like a record -- where someone braked hard, where
+    someone turned tight, where someone fell. The summer is written
+    in these marks.
+  trees: >-
+    A screen of pine and scrub oak between the path and the open
+    field. Good shade in the afternoon. Good cover if you don't want
+    to be seen from the street.
+  path: >-
+    Packed dirt, smooth in the middle and looser at the edges. Long
+    enough that you can get a real head of speed before you have to
+    brake. The best bike path in the neighborhood. Possibly the best
+    bike path in the world, by the only measurement that matters at age twelve.
+idlemessages:
+- A kid on a Schwinn blazes past, standing on the pedals, going flat out.
+- The chain of a bicycle ticks rhythmically as someone coasts down the path.
+- The pine trees make a soft sound in the breeze, like they are breathing.
+- Tire tracks in the dirt show someone took the corner too fast and made it anyway.
+- The smell of chain oil and pine and dry summer grass is the smell of freedom.
+- From the bike path, the neighborhood looks exactly like what it is -- the whole world.

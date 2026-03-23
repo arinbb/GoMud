@@ -1,0 +1,35 @@
+-
+  Supported:
+    "bilbo baggins": ["gandalf"]
+  Conversation:
+    - ["#1 say I want to make something very clear, Gandalf. I did not ask for any of this."]
+    - ["#2 emote raises an eyebrow over his pipe", "#2 say Did you not?"]
+    - ["#1 say I most certainly did NOT. I was quite happy in my hobbit-hole. Happy as a clam."]
+    - ["#2 say And yet here you are. Far from home, considerably thinner, and considerably braver."]
+    - ["#1 emote splutters", "#1 say I am NOT braver! I am merely... further away from safety than I would prefer."]
+    - ["#2 emote chuckles softly", "#2 say That, my dear Bilbo, is precisely what bravery is."]
+    - ["#1 emote goes quiet, chewing on this", "#1 say Well. I still maintain it was very unfair of you to put my name on that contract."]
+-
+  Supported:
+    "bilbo baggins": ["gandalf"]
+  Conversation:
+    - ["#1 say Are you QUITE sure this is all necessary? Dragons, treasure, a mountain full of dwarves—"]
+    - ["#2 say The world is not in your armchair, Bilbo."]
+    - ["#1 say My armchair is an EXCELLENT armchair, I'll have you know! Very comfortable. Very safe."]
+    - ["#2 say Very small."]
+    - ["#1 emote stops walking", "#1 say I beg your pardon?"]
+    - ["#2 say The world is large. You have seen very little of it."]
+    - ["#1 say I have seen ENOUGH of it, thank you very much!", "#1 emote keeps walking anyway."]
+    - ["#2 emote watches him go with a knowing smile"]
+-
+  Supported:
+    "bilbo baggins": ["gandalf"]
+  Conversation:
+    - ["#1 say Tell me something honestly, Gandalf. Do you actually think this will work?"]
+    - ["#2 emote puffs his pipe thoughtfully"]
+    - ["#1 say The dragon. The mountain. Thirteen dwarves and one very reluctant hobbit. Does this plan actually WORK?"]
+    - ["#2 say I have found that the best adventures very rarely go according to plan."]
+    - ["#1 say That is extraordinarily unhelpful."]
+    - ["#2 say And yet you are still here."]
+    - ["#1 emote opens his mouth, then closes it", "#1 say ...Infuriating wizard."]
+    - ["#2 emote smiles into his beard"]

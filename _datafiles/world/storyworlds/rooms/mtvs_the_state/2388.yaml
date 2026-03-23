@@ -1,0 +1,48 @@
+roomid: 2388
+zone: MTVs The State
+title: The Diner
+description: >-
+  A classic American diner: <ansi fg="itemname">booths</ansi> with red vinyl upholstery,
+  a <ansi fg="itemname">counter</ansi> with spinning stools, a <ansi fg="itemname">pie case</ansi>
+  lit from within displaying rotating options, a <ansi fg="itemname">jukebox</ansi>
+  in the corner playing something from 1994. The fluorescent lights do what fluorescent
+  lights do. Coffee is always available. The diner is the setting for sketches about
+  regular people doing regular things that suddenly go completely sideways — a couple
+  at dinner, an awkward first date, a person ordering a meal who gradually reveals
+  something extraordinary about themselves. Everyone here started normal.
+  To the <ansi fg="exit">south</ansi> is the Porcupine Racetrack.
+mapsymbol: N
+maplegend: The Diner
+biome: city
+exits:
+  south:
+    roomid: 2384
+nouns:
+  booths: >-
+    Red vinyl booths, some with tape over splits in the upholstery, all of them
+    occupied by the ghosts of sketches that happened here. A couple arguing about
+    something that wasn't really what they were arguing about. A date that was going
+    fine until it wasn't. People who came in hungry and left different.
+  counter: >-
+    A long counter with stools that spin freely and have seen years of lunch rushes.
+    The counter is where you sit if you are alone or if you prefer a view of the
+    kitchen and the controlled chaos behind the pass-through window.
+  pie: >-
+    The pie case is lit with the reverence its contents deserve. Cherry, apple, and
+    something with a meringue topping so high it might be architectural. The pies
+    rotate on the display shelf with the slow dignity of things that have already won.
+  jukebox: >-
+    A 1990s jukebox with a digital display showing the current selection. Something
+    by a band you half-remember is playing at the volume of a thing that is present
+    but not dominant. It is exactly right for eating eggs at 2am.
+  coffee: >-
+    The coffee is in a glass carafe on a heating element. It has been there for a
+    while. It is extremely hot. It is exactly what it needs to be.
+idlemessages:
+- Two people in a booth are having a conversation that seems normal and then takes a turn.
+- The jukebox changes songs. No one put in money. This is fine.
+- A waitress refills coffee cups with the economy of motion of someone who has done this ten thousand times.
+- The pie case rotates the cherry pie to the front. It was already in the front.
+- Someone at the counter is reading a newspaper. The headline is visible but not legible.
+- The fluorescent lights hum in the specific key of fluorescent lights in diners.
+- A bell above the door rings. No one enters. No one leaves. The bell was just doing that.

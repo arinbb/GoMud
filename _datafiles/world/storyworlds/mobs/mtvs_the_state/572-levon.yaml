@@ -1,0 +1,28 @@
+mobid: 572
+zone: mtvs_the_state
+hostile: false
+maxwander: 0
+idlecommands:
+- 'say I agree with Barry. About the barrel. In general.'
+- 'emote nods at whatever Barry just said.'
+- 'say The barrel is good. I have no complaints about the barrel.'
+- 'emote settles deeper into their chair in the comfortable way of someone at home.'
+- 'say Barry said something earlier that I keep thinking about. About the barrel.'
+- ''
+- ''
+activitylevel: 40
+character:
+  name: Levon
+  description: >-
+    A man in overalls, seated in the other wooden chair in the barrel, with
+    the posture of someone who agrees with the general situation and is ready
+    to specify his agreement if asked. He and Barry share the barrel. He thinks
+    this is correct. He does not have a more complex position than that, and does
+    not need one.
+  raceid: 1
+  level: 3
+  equipment:
+    body:
+      itemid: 20108
+    feet:
+      itemid: 20170

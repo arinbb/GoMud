@@ -1,0 +1,22 @@
+-
+  Supported:
+    "ham porter": ["*"]
+  Conversation:
+    - ["#1 say You're killing me.", "#1 emote shakes his head slowly.", "#1 say You know that?"]
+    - ["#2 emote pauses."]
+    - ["#1 say Just -- killing me.", "#1 emote gestures at the whole situation.", "#1 say Slowly."]
+    - ["#2 say I didn't even do anything."]
+    - ["#1 say That's the problem.", "#1 emote points a finger.", "#1 say That's exactly the problem."]
+    - ["#2 emote looks around for support and finds none."]
+    - ["#1 emote claps them on the shoulder.", "#1 say Come on. Your turn to hit."]
+-
+  Supported:
+    "ham porter": ["*"]
+  Conversation:
+    - ["#1 say I'm the best catcher in this neighborhood.", "#1 emote states this as fact."]
+    - ["#2 say ...Okay."]
+    - ["#1 say You don't believe me.", "#1 emote turns to face them fully."]
+    - ["#2 say I didn't say anything."]
+    - ["#1 say You didn't have to.", "#1 emote puts on his catcher's mask.", "#1 say Watch me work."]
+    - ["#2 emote watches."]
+    - ["#1 emote receives an imaginary pitch cleanly and fires an imaginary throw to second.", "#1 say Tell me that's not the best."]

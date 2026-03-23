@@ -1,0 +1,44 @@
+roomid: 2432
+zone: The Sandlot
+title: The Vacant Lot
+description: >-
+  An empty lot at the edge of the neighborhood, overgrown with <ansi fg="10">weeds</ansi>
+  and <ansi fg="10">goldenrod</ansi> and one very determined <ansi fg="itemname">apple tree</ansi>
+  that nobody planted. This was supposed to be a house. Instead it became the
+  place where kids go when they don't have anywhere else to be. A <ansi fg="itemname">storm drain</ansi>
+  at the far end is surrounded by a constellation of bottle caps and lost marbles.
+  The <ansi fg="itemname">goldenrod</ansi> is taller than you. When the wind
+  moves through it, it moves like something alive and slow. This lot will become
+  a house eventually. For now, it is better than a house.
+mapsymbol: v
+maplegend: The Vacant Lot
+biome: land
+exits:
+  west:
+    roomid: 2431
+nouns:
+  'apple tree': >-
+    An apple tree growing in the middle of an empty lot, descended from
+    a seed that a bird dropped or a kid threw, nobody knows. It is old
+    enough to have apples. The apples are small and hard and sour and
+    perfect. In August they will be ripe. It is July.
+  goldenrod: >-
+    Tall goldenrod, shoulder-height on a grown-up, invisible-height
+    on a twelve-year-old. Moving through it is like moving through water.
+    Insects move in the flowers. The smell is dry and sweet and old.
+  drain: >-
+    A storm drain set in the curb at the far end of the lot, its grate
+    surrounded by the accumulated offerings of years -- bottle caps,
+    marbles, a melted army man, two pennies. The neighborhood gives
+    things to this drain without meaning to.
+  weeds: >-
+    Magnificent weeds. Queen Anne's lace and goldenrod and whatever
+    that tall purple thing is called. The lot has been going its own
+    way for several years and it has made excellent choices.
+idlemessages:
+- The goldenrod moves in the breeze like something with a slow opinion about things.
+- A bee investigates the apple tree blossoms with professional focus.
+- The storm drain gurgles faintly, moving the last of yesterday's rain.
+- The lot smells like summer and dry weeds and the particular freedom of unimproved land.
+- Something small moves in the tall weeds -- a cat, probably, or the neighborhood's bravest squirrel.
+- From here, the sandlot is just a sound -- the distant crack of a bat, the shout of kids.

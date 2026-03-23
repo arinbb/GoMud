@@ -1,0 +1,33 @@
+-
+  Supported:
+    "the quiet old lady": ["*"]
+  Conversation:
+    - ["#1 emote looks up from her knitting, surprised by the presence", "#1 say Oh. Hello."]
+    - ["#2 emote looks around the room"]
+    - ["#1 say It's nearly time. The room knows."]
+    - ["#2 say What time is it?"]
+    - ["#1 emote looks at the window, where the moon has risen", "#1 say Goodnight time. It comes the same every night. It's very reliable."]
+    - ["#2 say That's comforting."]
+    - ["#1 emote nods slowly, needles clicking", "#1 say Yes. That's the right word. Exactly the right word."]
+-
+  Supported:
+    "the quiet old lady": ["*"]
+  Conversation:
+    - ["#1 emote gestures softly at the room", "#1 say The bowl of mush has gone cold. That's all right."]
+    - ["#2 emote nods"]
+    - ["#1 say The fire is low. The moon has moved."]
+    - ["#1 say These are not problems. These are how you know time is passing."]
+    - ["#2 say Do you say goodnight every night?"]
+    - ["#1 emote pauses, as if genuinely considering this for the first time", "#1 say Every night that there is a room to say it in. That is most nights. I am grateful."]
+-
+  Supported:
+    "the quiet old lady": ["*"]
+  Conversation:
+    - ["#1 emote sets down her knitting and looks at them directly", "#1 say You should sleep."]
+    - ["#2 say I'm not tired."]
+    - ["#1 say That's what they all say."]
+    - ["#2 say Who?"]
+    - ["#1 emote nods toward the small bed", "#1 say Little ones. Big ones too, sometimes. Nobody wants to say goodnight."]
+    - ["#2 say Why not?"]
+    - ["#1 emote picks up her knitting again", "#1 say Because it means the day is over. But the day being over is not a sad thing. It means it happened."]
+    - ["#2 emote sits down, slowly, considering this"]

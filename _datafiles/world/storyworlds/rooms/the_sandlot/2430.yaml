@@ -1,0 +1,50 @@
+roomid: 2430
+zone: The Sandlot
+title: The Treehouse
+description: >-
+  High in the branches of the big oak, the treehouse is a room made of scrap
+  lumber and salvaged plywood, held together with nails and summers of work.
+  The <ansi fg="itemname">floor</ansi> is solid enough if you know which boards
+  to avoid. A <ansi fg="itemname">telescope</ansi> points south through a gap
+  in the leaves -- aimed, with no ambiguity, at the public pool. From up here
+  the whole neighborhood is visible: the sandlot, the street, the rooftops
+  and trees that make up the small geography of a 1962 summer. The walls
+  have <ansi fg="itemname">plans</ansi> tacked to them -- schemes, blueprints,
+  diagrams. Most of them involve the fence.
+mapsymbol: T
+maplegend: The Treehouse
+biome: land
+exits:
+  down:
+    roomid: 2424
+nouns:
+  telescope: >-
+    A department-store refractor, mounted on a wooden tripod, aimed
+    through a very specific gap in the oak leaves toward the south end
+    of the neighborhood. The eyepiece is worn from use. Squints Palledorous
+    has logged more hours at this telescope than any astronomer at any
+    observatory. He is not looking at stars.
+  plans: >-
+    Pages of hand-drawn plans tacked to the plywood walls -- diagrams
+    of pulleys and ropes and catapults and contraptions of increasing
+    complexity. At the center of each diagram is a wall labeled THE FENCE
+    and on the other side of the fence, a ball. None of the plans have
+    worked. New plans keep appearing. The failure is part of the process.
+  floor: >-
+    The treehouse floor is solid in the corners and questionable in the
+    middle. The second board from the ladder is the one to step over.
+    Everyone knows this. Anyone who doesn't know this learns very quickly
+    and from a height of about twelve feet.
+  view: >-
+    From the treehouse window to the south, the whole neighborhood is
+    laid out: the sandlot, the street, the houses with their ticking
+    sprinklers. In the distance, the glint of the public pool. On a
+    clear day, from this height, you can almost see Wendy Peffercorn
+    in her lifeguard chair. The telescope helps.
+idlemessages:
+- The treehouse sways slightly in the oak tree, which is not alarming once you get used to it.
+- Through the south window, the sandlot is a perfect diamond of red dirt and green grass.
+- The plans on the wall rustle in the breeze. Someone has added a new diagram overnight.
+- The telescope has been adjusted since you last looked at it. The aim is slightly different.
+- A jay lands in the branches overhead and regards the treehouse with suspicion.
+- From up here, the fence at the south end of the sandlot looks conquerable. Barely.

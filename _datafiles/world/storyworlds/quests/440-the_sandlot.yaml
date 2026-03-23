@@ -1,0 +1,25 @@
+questid: 440
+name: The Sandlot
+description: >-
+  It's the summer of 1962 and you're the new kid. Nobody knows you.
+  But the sandlot is at the end of the street, and baseball is the
+  universal language. Find your way in. Play the game. Meet the
+  neighborhood. And whatever you do -- don't lose anything important
+  over the fence.
+reward:
+  experience: 5000
+  item_id: 340
+  playermessage: >-
+    You played the whole summer. The sandlot, the pool, the fence and what
+    was behind it. Mr. Mertle on his porch, listening to the radio,
+    remembering things that happened before you were born. The Beast,
+    who was just a dog. The boys, who were your friends before you
+    knew they were going to be your friends. It goes by fast. It
+    always does. As a reminder, Mr. Mertle presses a scuffed baseball
+    into your hand. You take it. You head home.
+steps:
+- description: Arrive in the neighborhood.
+- description: Play ball at the sandlot.
+- description: Visit the public pool.
+- description: Hit the ball over the outfield fence.
+- description: Meet Mr. Mertle on his porch.

@@ -1,0 +1,30 @@
+mobid: 577
+zone: mtvs_the_state
+hostile: false
+maxwander: 1
+idlecommands:
+- 'emote looks at the camera with composed amusement. There is no camera. He looks anyway.'
+- 'say I want to be very clear about what is happening here.'
+- 'emote surveys the room with the expression of someone who has already made their assessment and is letting you catch up.'
+- 'say The show is, objectively, excellent. I say this without bias, which is impossible, but I say it anyway.'
+- 'say We are eleven people and we are doing this together and it is better than anything any of us could have done alone. I feel strongly about this.'
+- ''
+- ''
+activitylevel: 55
+character:
+  name: Michael Ian Black
+  description: >-
+    A young man in a leather jacket with the composed, ironic self-awareness of
+    someone who has fully inhabited both the joke and the sincerity inside it
+    and resolved the tension between them by deciding they are the same. He looks
+    at the camera even when there is no camera. He breaks the fourth wall the
+    way other people hold doors open: as a matter of basic courtesy.
+  raceid: 1
+  level: 5
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

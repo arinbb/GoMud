@@ -1,0 +1,12 @@
+mutatorid: the-state
+namemodifier:
+  behavior: append
+  text: (absurd)
+  colorpattern: rainbow
+descriptionmodifier:
+  behavior: append
+  text: Everything here operates by a different logic. Go with it.
+  colorpattern: rainbow
+alertmodifier:
+  text: 'Something is happening here that does not follow the rules. This is intentional.'
+  colorpattern: rainbow

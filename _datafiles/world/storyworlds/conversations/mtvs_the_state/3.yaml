@@ -1,0 +1,25 @@
+-
+  Supported:
+    "captain monterey jack": ["*"]
+  Conversation:
+    - ["#1 say Oh, the human race."]
+    - ["#2 emote looks at them."]
+    - ["#1 say Do you know what they did? The human race?", "#1 emote grips the railing."]
+    - ["#2 say What did they do?"]
+    - ["#1 say The usual.", "#1 emote stares at the horizon. 'The absolute usual.'"]
+    - ["#2 emote is quiet for a moment."]
+    - ["#1 say I sail to get away from it. And then there I am at port. And there they are.", "#1 emote shakes their head."]
+    - ["#2 say Maybe they mean well."]
+    - ["#1 say Oh, they mean well.", "#1 emote says it with tremendous weight. 'That is the tragedy of it.'"]
+-
+  Supported:
+    "captain monterey jack": ["*"]
+  Conversation:
+    - ["#1 say You seem all right."]
+    - ["#2 say Thank you."]
+    - ["#1 say I say that to people sometimes. Close up, individually, they are usually all right.", "#1 emote stares into the middle distance."]
+    - ["#1 say It is the aggregate. The human race in aggregate. That is the problem."]
+    - ["#2 emote nods carefully."]
+    - ["#1 say You understand.", "#1 emote looks at them. 'You are part of the aggregate. You understand the problem.'"]
+    - ["#2 say I am aware of this."]
+    - ["#1 say Oh, the human race.", "#1 emote almost smiles."]

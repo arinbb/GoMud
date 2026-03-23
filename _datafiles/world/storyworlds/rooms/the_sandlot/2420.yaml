@@ -1,0 +1,50 @@
+roomid: 2420
+zone: The Sandlot
+title: Smalls House
+description: >-
+  A modest two-story house on a quiet suburban street, freshly moved into and
+  not yet home. The <ansi fg="itemname">front porch</ansi> has one chair and
+  a squeaky third step. Inside, cardboard <ansi fg="itemname">moving boxes</ansi>
+  are still stacked against the walls. Through the window, your new stepfather
+  Bill's <ansi fg="itemname">study</ansi> is visible -- dark wood, a desk, and
+  shelves full of things you are not supposed to touch. The neighborhood
+  stretches east down the block. It is the summer of 1962 and you don't know
+  a single person within a hundred miles.
+mapsymbol: H
+maplegend: Smalls House
+biome: house
+exits:
+  east:
+    roomid: 2421
+nouns:
+  porch: >-
+    A wooden front porch with one rocking chair and a potted geranium that
+    hasn't been watered enough. The third step creaks under any weight. It
+    is a good porch for sitting and feeling like the only kid in the world
+    who doesn't have any friends.
+  boxes: >-
+    Moving boxes stacked in every room, most still taped shut. Your mom
+    keeps saying she'll unpack them this weekend. That was three weekends
+    ago. Home isn't the boxes. Home is somewhere you haven't found yet.
+  study: >-
+    Bill's study. Dark, serious, full of baseball memorabilia and framed
+    photographs. A ball under glass on the desk -- signed, special,
+    irreplaceable. You have been told not to touch anything in here with
+    an emphasis that a kid remembers.
+  street: >-
+    A quiet residential street lined with elm trees. Sprinklers tick on
+    lawns. Kids you don't know ride bikes somewhere beyond the end of the
+    block. The neighborhood has the feel of a place that has been here
+    forever, where everybody already knows everybody else.
+idlemessages:
+- The third step on the porch creaks under the weight of nothing in particular.
+- From inside the house, your mom calls your name -- but it fades before you have to answer.
+- A moving box shifts slightly and settles with a cardboard sigh.
+- The neighborhood is so quiet you can hear a lawn mower three blocks away.
+- Through the window, the ball in Bill's study catches the afternoon light.
+- A sprinkler on the neighbor's lawn ticks a slow, patient rhythm.
+- You are the new kid. Everything starts somewhere.
+spawninfo:
+- mobid: 590
+  message: "Scotty Smalls stands on the porch, hands in his pockets, looking like a kid who very badly wants to be somewhere else."
+  respawnrate: 3 real minutes

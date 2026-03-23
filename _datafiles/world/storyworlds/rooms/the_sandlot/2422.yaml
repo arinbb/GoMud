@@ -1,0 +1,74 @@
+roomid: 2422
+zone: The Sandlot
+title: The Sandlot
+description: >-
+  The <ansi fg="yellow">sandlot</ansi> is a roughly diamond-shaped clearing at
+  the end of the street -- packed red dirt worn smooth by ten thousand games,
+  four <ansi fg="itemname">base bags</ansi> laid out in the eternal geometry of
+  baseball. The <ansi fg="10">outfield</ansi> is ragged grass that fades into
+  weeds before it reaches the tall wooden <ansi fg="8">fence</ansi> at the
+  south end. Beyond the fence, nothing good has ever come back. The <ansi fg="itemname">dugout</ansi>
+  is a dip in the earth on the east side, cool and shaded. A <ansi fg="itemname">bat</ansi>
+  leans against a chain-link backstop. This is the whole world. Everything
+  that matters happens here.
+mapsymbol: S
+maplegend: The Sandlot
+biome: land
+exits:
+  north:
+    roomid: 2421
+  east:
+    roomid: 2424
+  south:
+    roomid: 2426
+nouns:
+  fence: >-
+    The tall wooden fence at the south end of the sandlot. Ancient,
+    warped, dark with weather. Nothing hit over it has ever come back.
+    Every kid in the neighborhood knows what lives on the other side.
+    You don't talk about it. You don't think about it too hard. You play
+    the ball in front of you and hope.
+  bases: >-
+    Four base bags -- home, first, second, third -- worn flat by years
+    of cleats. The dirt around home plate is packed the hardest, scored
+    with the marks of a thousand batters digging in. These bases have
+    been the scene of more arguments than any courtroom in the county.
+  bat: >-
+    A wooden bat, Louisville Slugger, leaning against the backstop like
+    it owns the place. The handle is taped with black friction tape,
+    the barrel scarred with use. When you pick it up, your hands know
+    what to do with it even if your swing doesn't.
+  dugout: >-
+    A natural depression in the ground on the east side of the field,
+    cool and shaded, with a plank or two for sitting. This is where you
+    wait your turn, argue about batting order, drink lukewarm water from
+    a shared canteen. The dugout is where you become part of the team
+    before you ever step to the plate.
+  outfield: >-
+    Ragged grass that runs from the infield to the wooden fence. Uneven
+    and full of ruts, so that a clean ground ball can take a wild hop
+    on its way to the outfielder. The grass is greener near the fence
+    where nobody mows. Deeper in the outfield the air feels different --
+    heavier, older.
+idlemessages:
+- A bat cracks and a ball shoots into the outfield, arcing high against the blue sky.
+- 'Someone calls out from across the diamond: "Go! Go! Go!"'
+- Red dirt puffs up from a slide into second base, a cloud of summer.
+- The fence at the south end creaks once in the heat, then goes quiet.
+- Benny Rodriguez winds up at the mound and delivers a pitch that barely looks real.
+- The smell of sunscreen and sweat and red dirt hangs in the warm air.
+- A ball thwacks into a catcher's mitt -- solid, perfect, the whole point of everything.
+- 'Ham Porter spits in the direction of the batter''s box and says: "You''re killing me, Smalls."'
+spawninfo:
+- mobid: 591
+  message: "Benny Rodriguez is in the batter's box, taking cuts with a lazy ease that makes it look effortless."
+  respawnrate: 3 real minutes
+- mobid: 592
+  message: "Ham Porter crouches behind home plate, mask pushed up on his forehead, eating something out of a paper bag."
+  respawnrate: 3 real minutes
+- mobid: 594
+  message: "Yeah-Yeah leans against the backstop, nodding at things nobody else said."
+  respawnrate: 4 real minutes
+- mobid: 595
+  message: "Kenny DeNunez winds up on the pitcher's mound and fires an imaginary fastball toward the plate."
+  respawnrate: 4 real minutes

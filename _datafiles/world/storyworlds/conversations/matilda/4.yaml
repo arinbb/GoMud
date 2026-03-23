@@ -1,0 +1,36 @@
+-
+  Supported:
+    "miss trunchbull": ["*"]
+  Conversation:
+    - ["#1 emote towers over them like a storm front arriving", "#1 say What are you doing?"]
+    - ["#2 emote goes perfectly still"]
+    - ["#1 say You are BREATHING. Do you think this is a place for BREATHING?"]
+    - ["#2 say It's... a corridor?"]
+    - ["#1 say It is MY corridor! And in MY corridor, you breathe only when I say you may breathe!"]
+    - ["#2 emote tries to determine if this is serious"]
+    - ["#1 say That is not the face of a child who understands me.", "#1 emote leans uncomfortably close."]
+    - ["#1 say I have put children in the Chokey for LESS than that face."]
+-
+  Supported:
+    "miss trunchbull": ["*"]
+  Conversation:
+    - ["#1 say I have been in charge of this school for TWENTY-THREE YEARS."]
+    - ["#2 emote listens"]
+    - ["#1 say In that time I have never had a child I could not break. NOT ONE."]
+    - ["#2 say What about—"]
+    - ["#1 emote cuts them off with a look that could stop a charging rhino", "#1 say NOT. ONE."]
+    - ["#2 emote goes quiet"]
+    - ["#1 say The children who say they hate me — those I can work with. It's the ones who think they're SMART that make me tired."]
+    - ["#1 emote scans the corridor with narrow, suspicious eyes"]
+-
+  Supported:
+    "miss trunchbull": ["*"]
+  Conversation:
+    - ["#1 say Do you know what I was? Before headmistress?"]
+    - ["#2 emote shakes their head"]
+    - ["#1 say HAMMER THROW. County champion. Three years running."]
+    - ["#1 emote demonstrates the rotation briefly, horrifyingly", "#1 say The technique is the same, you know. Proper grip, proper release, proper follow-through."]
+    - ["#2 emote stares"]
+    - ["#1 say Don't look at me like that. I was an ATHLETE. Discipline is discipline."]
+    - ["#1 say Now. Do you have somewhere to be?"]
+    - ["#2 emote flees"]

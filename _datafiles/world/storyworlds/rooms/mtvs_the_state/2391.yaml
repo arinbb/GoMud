@@ -1,0 +1,61 @@
+roomid: 2391
+zone: MTVs The State
+title: NYU Dorm Room
+description: >-
+  A small, aggressively lived-in <ansi fg="itemname">dorm room</ansi> at New York
+  University, circa 1988-1992. Two <ansi fg="itemname">beds</ansi> pushed to opposite
+  walls. A <ansi fg="itemname">desk</ansi> covered in papers and a half-broken
+  <ansi fg="itemname">typewriter</ansi> and a VHS <ansi fg="itemname">camcorder</ansi>
+  on a cheap tripod. <ansi fg="itemname">Posters</ansi> of comedians and bands and
+  movies cover the walls in overlapping layers. The <ansi fg="itemname">whiteboard</ansi>
+  on the door has "THE STATE" written on it in dry-erase marker and below that a
+  list of sketch ideas, some crossed out, most not. This is where it started. Eleven
+  kids found each other here, or somewhere exactly like here, and decided to make
+  the funniest thing possible. The decision was made in a room just like this one.
+  To the <ansi fg="exit">west</ansi> is Doug's Apartment.
+mapsymbol: Y
+maplegend: NYU Dorm Room
+biome: house
+exits:
+  west:
+    roomid: 2385
+nouns:
+  dorm: >-
+    The dorm room of someone who is becoming who they are going to be. The evidence
+    is in every corner: the books they are reading, the movies they are collecting,
+    the jokes they are writing on the whiteboard at 2am. This is the incubator.
+  beds: >-
+    Two twin XL beds with mismatched sheets. One has a pillow that has been on the
+    floor and replaced approximately a thousand times. The other is more made.
+    People are different, even about beds.
+  desk: >-
+    A desk covered in the paper evidence of thinking. Notes, drafts, crossed-out
+    lines, arrows connecting ideas to other ideas. The chaos is organized to the
+    person whose chaos it is.
+  typewriter: >-
+    A portable typewriter that sticks on the letter E. Scripts typed on this typewriter
+    have an unusual number of e-less substitutions. You can see the workarounds in
+    old drafts. "And I'm outa here!" instead of "And I'm outtee here!"
+  camcorder: >-
+    A VHS camcorder on a cheap plastic tripod, aimed at the cleared floor space that
+    serves as the staging area. This is how you make a television show in 1991 before
+    you have a television show. You point the camera at the thing and you do the thing.
+  posters: >-
+    The wall is archaeological — layers of posters going back years. Monty Python.
+    SCTV cast. National Lampoon. Some band. A movie poster for something that made
+    someone laugh enough to put it here. They are all here together, the comedic
+    influences of eleven people, overlapping.
+  whiteboard: >-
+    The whiteboard on the door reads THE STATE at the top in letters that have been
+    written and erased and rewritten until they are permanent shadows in the board.
+    Below that: sketch ideas. "Louie and the pudding." "Two guys. A barrel. It's fine."
+    "The porcupines." "What if the awards show but also the awards are wrong." All of
+    it is here, at the beginning, in dry-erase marker on a dorm room door.
+idlemessages:
+- Someone laughs in the hallway, the kind of laugh of a person who has just thought of something.
+- The camcorder records. There is no tape in it. It records anyway.
+- A draft blows through the cracked window and lifts the edge of a script on the desk.
+- The whiteboard has been added to. A new idea appears in different handwriting.
+- The posters watch with the approval of precedents that know they are being honored.
+- The typewriter keys are cold. It is late. Someone will be back tomorrow to use it.
+- This is NYU. This is 1991. This is before. Everything after began here.

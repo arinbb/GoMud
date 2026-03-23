@@ -1,0 +1,46 @@
+roomid: 2429
+zone: The Sandlot
+title: The Carnival
+description: >-
+  The summer carnival occupies the fairgrounds at the edge of town --
+  a field that spends the rest of the year as a parking lot and in July
+  becomes something else entirely. The <ansi fg="itemname">Ferris wheel</ansi>
+  turns against the twilight sky. A <ansi fg="yellow">midway</ansi> of games
+  and concessions runs down the center, smelling of fried dough and spun
+  sugar. A <ansi fg="itemname">chew tobacco stand</ansi> at the near end
+  of the midway has already sold to several kids who are regretting it.
+  At night, the carnival lights make everything look golden and possible.
+  Even the kids who have been here a hundred times feel the pull of it.
+mapsymbol: C
+maplegend: The Carnival
+biome: land
+exits:
+  west:
+    roomid: 2423
+  south:
+    roomid: 2433
+nouns:
+  'ferris wheel': >-
+    The Ferris wheel turns slowly against the sky, each gondola swaying.
+    At the top you can see the whole neighborhood -- the sandlot, the
+    pool, the rooftops. From up there the fence at the south end of
+    the sandlot doesn't look as tall as it does from the outfield. Everything
+    is smaller from high up.
+  midway: >-
+    Ring toss, dunk tank, the one with the rubber ducks and the squirt
+    gun. Prizes hanging from the top of each booth in impossible profusion.
+    Ham Porter has won three times at the baseball pitch booth and he
+    refuses to stop telling people about it.
+  tobacco: >-
+    A dark ball of chewing tobacco sits in Ham Porter's cheek at this
+    very moment, and the experience is not going the way he told everyone
+    it would go. Several other kids are learning the same lesson at
+    various points along the midway. Nobody comes out of this story ahead.
+idlemessages:
+- The Ferris wheel turns and turns against the summer sky, all lights and slow motion.
+- The midway barker calls out with cheerful aggression toward everyone who passes.
+- The smell of fried dough and spun sugar and something chemical is almost too much at once.
+- Somewhere near the ring toss, Ham Porter is disputing a ruling with great authority.
+- The carnival lights make everyone look golden and young.
+- A kid comes out of the chew tobacco experience considerably paler than he went in.
+- Music from the carousel bleeds into music from the midway until it becomes one sound.

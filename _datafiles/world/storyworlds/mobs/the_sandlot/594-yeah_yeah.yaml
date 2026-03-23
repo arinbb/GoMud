@@ -1,0 +1,31 @@
+mobid: 594
+zone: the_sandlot
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say Yeah-yeah."
+  - "emote nods vigorously at something nobody said."
+  - "say Yeah. Yeah!"
+  - "emote leans against the backstop and agrees with the general situation."
+  - "say Yeah-yeah, yeah."
+  - "emote gives a thumbs up to the field in general."
+  - ""
+  - ""
+activitylevel: 15
+character:
+  name: Yeah-Yeah
+  description: >-
+    A kid of medium height with very strong opinions about agreeing with things.
+    He wears a tie-dye shirt and shorts and sneakers, and he has the energy
+    of someone who is very much present and accounted for. He says yeah-yeah
+    the way some people say well or okay -- as punctuation, as affirmation,
+    as a complete worldview.
+  raceid: 1
+  level: 4
+  equipment:
+    body:
+      itemid: 20125
+    legs:
+      itemid: 20155
+    feet:
+      itemid: 20171

@@ -1,0 +1,23 @@
+-
+  Supported:
+    "lloyd the bartender": ["jack torrance"]
+  Conversation:
+    - ["#1 emote sets out a fresh glass without being asked", "#1 say You seem troubled tonight, Mr. Torrance."]
+    - ["#2 say Troubled? No, Lloyd. Never better. The words are coming. The place is talking to me."]
+    - ["#1 say Yes. The Overlook does have a way of... communicating."]
+    - ["#2 emote leans on the bar", "#2 say You know what this place needs? MORE people like us. People who UNDERSTAND it."]
+    - ["#1 say It has had many fine guests over the years, sir. Many fine guests."]
+    - ["#2 say They all came back, didn't they. One way or another."]
+    - ["#1 emote smiles in a way that does not quite reach his eyes", "#1 say The Overlook keeps what it loves, Mr. Torrance."]
+-
+  Supported:
+    "lloyd the bartender": ["jack torrance"]
+  Conversation:
+    - ["#1 say Would you care for another, sir?"]
+    - ["#2 say You know, I told my wife I was sober. I told myself."]
+    - ["#1 emote places a fresh bourbon on the bar with absolute precision", "#1 say Of course, sir."]
+    - ["#2 say This doesn't count. None of this counts. This is the Gold Room. Different rules."]
+    - ["#1 say Quite right, sir. Quite right. The house has its own standards."]
+    - ["#2 emote picks up the glass and stares at it", "#2 say You know what I love about you, Lloyd? You never judge."]
+    - ["#1 say It's not my place to judge, Mr. Torrance. Only to serve."]
+    - ["#2 say A man after my own heart.", "#2 emote drinks deeply."]

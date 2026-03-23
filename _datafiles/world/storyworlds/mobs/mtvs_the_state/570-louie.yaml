@@ -1,0 +1,33 @@
+mobid: 570
+zone: mtvs_the_state
+hostile: false
+maxwander: 0
+idlecommands:
+- 'say I wanna dip my balls in it.'
+- 'emote gestures broadly at all of the pudding.'
+- 'say Two hundred and forty dollars. Of pudding. I spent it all.'
+- 'emote dips a spoon in a cup of pudding and holds it up to the light.'
+- 'say You could dip anything in it. ANYTHING. Do you understand what I am saying to you?'
+- 'emote adds another pudding cup to the arrangement with the care of a person completing a very important project.'
+- 'say I have more pudding than I will ever need. That is not the point. The point is the pudding.'
+- ''
+- ''
+activitylevel: 55
+character:
+  name: Louie
+  description: >-
+    A man in a Hawaiian shirt and shorts, standing in a room full of pudding
+    with the serene satisfaction of someone who has followed a thought all the
+    way to its conclusion. He is not embarrassed by the pudding. He is proud
+    of the pudding. The pudding represents something. You can tell that he
+    knows exactly what it represents and that explaining it to you would take
+    longer than you have but that he would be willing to try.
+  raceid: 1
+  level: 3
+  equipment:
+    body:
+      itemid: 20102
+    legs:
+      itemid: 20155
+    feet:
+      itemid: 20174

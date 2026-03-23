@@ -1,0 +1,16 @@
+itemid: 330
+name: pudding cup
+namesimple: pudding
+displayname: a <ansi fg="itemname">pudding cup</ansi>
+description: >-
+  A single-serve pudding cup, chocolate flavor, sealed with a foil lid. Someone
+  has written "$240" on the lid in black Sharpie, the handwriting of a person
+  who has thought carefully about what they have spent and has no regrets. The
+  cup is one of many. There are always more. The pudding inside is exactly the
+  right temperature, as pudding kept at room temperature is. There is nothing
+  special about this cup except that it is one of two hundred and forty dollars
+  worth of pudding, which makes it the most specific pudding in the world.
+type: object
+subtype: usable
+uses: 0
+value: 50

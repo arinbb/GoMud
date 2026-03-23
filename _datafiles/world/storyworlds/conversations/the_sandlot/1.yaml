@@ -1,0 +1,22 @@
+-
+  Supported:
+    "ham porter": ["scotty smalls"]
+  Conversation:
+    - ["#1 say You're killing me Smalls!"]
+    - ["#2 emote blinks.", "#2 say What did I do?"]
+    - ["#1 say What did you -- you don't know what Babe Ruth is?! The Sultan of Swat! The King of Crash!", "#1 emote gestures broadly."]
+    - ["#2 say I know who Babe Ruth is.", "#2 say I just -- I didn't know he signed that specific ball."]
+    - ["#1 emote stares at him for a long moment.", "#1 say You're killing me."]
+    - ["#2 emote looks at the ground."]
+    - ["#1 say Okay look. Come here. I'm gonna show you how to hold a bat.", "#1 emote picks up the Louisville Slugger."]
+-
+  Supported:
+    "ham porter": ["scotty smalls"]
+  Conversation:
+    - ["#1 say The pitcher winds up --", "#1 emote does a full dramatic windup."]
+    - ["#2 say And throws the ball?", "#2 say I know this part."]
+    - ["#1 say And throws the ball.", "#1 emote deflates slightly.", "#1 say Yeah."]
+    - ["#2 say I'm trying, Ham."]
+    - ["#1 emote looks at him.", "#1 say I know. You're not the worst kid I've ever seen.", "#1 emote pauses.", "#1 say You're not the best either."]
+    - ["#2 say ...Thanks?"]
+    - ["#1 say You're killing me Smalls."]

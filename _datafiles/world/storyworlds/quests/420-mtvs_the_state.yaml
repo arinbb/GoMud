@@ -1,0 +1,24 @@
+questid: 420
+name: MTVs The State
+description: >-
+  Experience the world of The State — eleven kids from NYU who got a TV show
+  on MTV and made something genuinely, defiantly funny from 1993 to 1995.
+  Enter the studio, find the pudding, visit the barrel, attend the porcupine
+  race, and witness the awards show. The show is on. You are in it.
+reward:
+  experience: 4000
+  item_id: 330
+  playermessage: >-
+    You have done it. You stood in the MTV studio and felt the voltage of
+    eleven people making exactly the thing they wanted to make. You visited
+    the pudding. You understood the barrel. You watched porcupines race with
+    the focus of a true believer. You witnessed the awards show. You carry
+    with you one pudding cup, chocolate flavor, with $240 written on the lid
+    in Sharpie. It is one of many. There are always more. That is the whole
+    point of two hundred and forty dollars worth of pudding.
+steps:
+- description: Enter the MTV Studio.
+- description: Find the pudding in the Pudding Room.
+- description: Visit Barry and Levon in the barrel.
+- description: Attend the porcupine race.
+- description: Witness the awards show.

@@ -1,0 +1,16 @@
+name: MTVs The State
+roomid: 2380
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: city
+mutators:
+- mutatorid: the-state
+idlemessages:
+- Someone nearby delivers a punchline to a joke that has no setup.
+- The laugh track comes from nowhere, hangs in the air a moment, and dissipates.
+- A man walks past in a costume that requires no explanation and receives none.
+- The MTV logo flickers on a monitor somewhere, morphing into something stranger.
+- A sketch begins and ends before you can determine what it was about.
+- Someone is about to do something inadvisable. They do it. It works out.
+- The energy here is cheap sets and total commitment and complete sincerity.

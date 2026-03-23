@@ -1,0 +1,49 @@
+roomid: 2423
+zone: The Sandlot
+title: The Drugstore
+description: >-
+  The corner drugstore is cool and dim after the summer heat outside. A
+  <ansi fg="itemname">soda fountain</ansi> runs along the left wall -- chrome
+  stools, red vinyl cushions, a girl in a white apron working the taps. The
+  <ansi fg="itemname">magazine rack</ansi> holds the new issue of Life and a
+  spinner of paperback westerns. A glass case by the register displays
+  <ansi fg="itemname">baseball cards</antml>, rubber erasers, and a small
+  selection of pocket knives. The pharmacist, Mr. Buckner, knows everyone by
+  name. The bell over the door has the best sound in the neighborhood.
+mapsymbol: D
+maplegend: The Drugstore
+biome: house
+exits:
+  west:
+    roomid: 2421
+  east:
+    roomid: 2429
+nouns:
+  fountain: >-
+    The soda fountain -- cherry Cokes, vanilla phosphates, root beer floats.
+    The girl behind the counter has been working here three summers and
+    knows every kid's order by heart. The stools spin if you're quick about
+    it. This is the most sophisticated establishment any of these kids
+    will visit until high school.
+  magazines: >-
+    Life magazine from two weeks ago, Sports Illustrated with Mantle on
+    the cover, a rack of westerns and detective novels. The new issues come
+    in on Thursdays. The used ones get sold at a discount on Mondays.
+  cards: >-
+    A glass case of baseball cards, bubble gum included. Mickey Mantle,
+    Roger Maris, Sandy Koufax, Willie Mays. The really good ones are
+    behind the glass where you can't get your fingerprints on them.
+    Ham Porter has three of them and he won't shut up about it.
+  pharmacist: >-
+    Mr. Buckner in his white coat, sorting pills behind a raised counter.
+    He has been here since the store opened in 1948. He knows which kids
+    are sick, which are faking, and which ones just want to spend an
+    afternoon in the air conditioning.
+idlemessages:
+- The soda fountain hisses as the girl fills a glass with cherry Coke.
+- The bell over the door rings as another kid comes in out of the heat.
+- A ceiling fan turns slowly, pushing the cool air around without much ambition.
+- Someone at the counter is trying to make a single nickel last the whole afternoon.
+- The magazine rack spins lazily in the breeze from the door.
+- Mr. Buckner calls a name from behind the pharmacy counter in a tone that means the prescription is ready.
+- The smell of vanilla syrup and old paper and cool linoleum drifts through the store.

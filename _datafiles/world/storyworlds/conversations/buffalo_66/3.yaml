@@ -1,0 +1,39 @@
+-
+  Supported:
+    "billy brown": ["layla"]
+  Conversation:
+    - ["#1 say You don't have to stay, you know. Nobody's keeping you here."]
+    - ["#2 emote looks at him steadily", "#2 say I know."]
+    - ["#1 say So then why—"]
+    - ["#2 say I want to."]
+    - ["#1 emote opens his mouth, closes it, opens it again", "#1 say That doesn't make any SENSE."]
+    - ["#2 say It doesn't have to make sense."]
+    - ["#1 emote looks like a man who has never been told this before and is not sure he believes it", "#1 say You're a very weird person."]
+    - ["#2 say I know.", "#2 emote smiles just slightly."]
+-
+  Supported:
+    "billy brown": ["layla"]
+  Conversation:
+    - ["#1 say My parents... they never. They never once said. You know. The thing."]
+    - ["#2 emote waits quietly"]
+    - ["#1 say The THING. The word. That some people say to their kids."]
+    - ["#2 say I know what word you mean."]
+    - ["#1 say Right. So I never—", "#1 emote stops and stares at the ceiling."]
+    - ["#1 say I never knew what it felt like to think somebody actually. You know."]
+    - ["#2 say I know."]
+    - ["#1 emote finally looks at her", "#1 say How are you so calm about everything?"]
+    - ["#2 say I'm a good listener.", "#2 emote says this simply, like it explains everything. It does."]
+-
+  Supported:
+    "layla": ["billy brown"]
+  Conversation:
+    - ["#1 say Why do you keep talking about football?"]
+    - ["#2 emote stops", "#2 say What?"]
+    - ["#1 say Every time you get close to saying something real, you talk about the Bills."]
+    - ["#2 say The Bills are REAL! The '91 Super Bowl was a REAL THING THAT HAPPENED!"]
+    - ["#1 emote watches him patiently"]
+    - ["#2 emote deflates slowly, like a tire with a slow leak", "#2 say ...Scott Wood missed the kick."]
+    - ["#1 say I know."]
+    - ["#2 say It was right there. It was RIGHT THERE and then it wasn't."]
+    - ["#1 emote nods gently", "#1 say Yeah. I know that feeling."]
+    - ["#2 emote looks at her and understands that she does not mean football"]

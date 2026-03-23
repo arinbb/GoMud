@@ -1,0 +1,30 @@
+-
+  Supported:
+    "the grady twins": ["*"]
+  Conversation:
+    - ["#1 say Hello."]
+    - ["#1 say Would you like to play with us?"]
+    - ["#2 emote takes a small step back"]
+    - ["#1 say We've always been here."]
+    - ["#1 say We will always be here."]
+    - ["#1 emote tilts her head at exactly the same angle as her sister"]
+-
+  Supported:
+    "the grady twins": ["*"]
+  Conversation:
+    - ["#1 say It's not so bad here, you know."]
+    - ["#1 say Once you stop trying to leave."]
+    - ["#2 emote says nothing, very quietly"]
+    - ["#1 say Our father was the caretaker."]
+    - ["#1 say Now we are."]
+    - ["#1 emote smiles in perfect unison with her sister", "#1 say We always will be."]
+-
+  Supported:
+    "the grady twins": ["*"]
+  Conversation:
+    - ["#1 say You can feel it, can't you."]
+    - ["#1 say The hotel."]
+    - ["#2 emote looks around the empty corridor"]
+    - ["#1 say It knows you're here."]
+    - ["#1 say It knows everything about you."]
+    - ["#1 emote speaks with her sister in exact unison", "#1 say It's been waiting."]

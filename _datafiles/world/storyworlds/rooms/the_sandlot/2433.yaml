@@ -1,0 +1,48 @@
+roomid: 2433
+zone: The Sandlot
+title: Fourth of July Field
+description: >-
+  The field where the neighborhood watches fireworks on the Fourth of July --
+  a wide, flat expanse of <ansi fg="10">dry summer grass</ansi> at the edge
+  of town, good for blankets and lawn chairs and families who don't need much
+  to be happy. The sky overhead is enormous and dark and waiting. Smoke from
+  <ansi fg="itemname">sparklers</ansi> traces brief bright lines in the air.
+  A <ansi fg="itemname">cooler</ansi> full of soda pop sits unattended and
+  invites itself to be raided. On the Fourth of July, this field is the center
+  of everything. The fireworks go up and the neighborhood watches and for one
+  evening nobody thinks about tomorrow. The sky fills with light and color.
+  Everyone goes quiet at the same time.
+mapsymbol: 4
+maplegend: Fourth of July Field
+biome: land
+exits:
+  north:
+    roomid: 2429
+nouns:
+  fireworks: >-
+    The fireworks go up from the far end of the field and burst overhead
+    in blooms of gold and red and white. The sound arrives a fraction
+    of a second later -- crump, then the echo off the hills. Every
+    burst makes the crowd go quiet for a second, then a sound like
+    a held breath releasing.
+  sparklers: >-
+    Sparklers in the hands of every kid in the neighborhood, writing
+    names and shapes in light that lasts for exactly long enough to
+    see and not long enough to keep. The smell of spent sparkler
+    is the smell of summer nights.
+  cooler: >-
+    A red Coleman cooler full of ice and bottles of RC Cola and
+    Nehi orange and grape. The ice is mostly water now. The bottles
+    are still cold. Nobody is watching the cooler. The cooler is undefended.
+  grass: >-
+    Dry summer grass, the kind that crackles under your feet in July.
+    Families have put blankets down across the whole field. Dogs wander
+    between the blankets. Someone's grandfather has already fallen asleep.
+idlemessages:
+- A firework goes up and bursts overhead -- red, then gold, then the slow colored drift downward.
+- Sparklers carve names in the dark air, bright and temporary.
+- The neighborhood is together in this field -- all of them, families and kids and dogs and all.
+- Someone sets off a string of firecrackers on the far side of the field. Dogs complain.
+- The cooler is being raided methodically and with great efficiency.
+- The whole sky lights up gold and for a moment everyone looks up at the same time.
+- The smell of gunpowder and dry grass and someone's hamburgers drifts across the field.

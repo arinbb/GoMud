@@ -1,0 +1,32 @@
+-
+  Supported:
+    "thorin oakenshield": ["bilbo baggins"]
+  Conversation:
+    - ["#1 emote regards the hobbit with a measuring look", "#1 say You held your ground back there, Master Baggins. I did not expect that."]
+    - ["#2 say Honestly, neither did I."]
+    - ["#1 say A hobbit who surprises himself is at least capable of surprises."]
+    - ["#2 say Is that a compliment?"]
+    - ["#1 emote pauses", "#1 say Do not press your luck."]
+    - ["#2 emote smiles", "#2 say I'll take it as one."]
+-
+  Supported:
+    "thorin oakenshield": ["bilbo baggins"]
+  Conversation:
+    - ["#1 say My grandfather built Erebor into the greatest kingdom under the mountain. What he had, I will reclaim."]
+    - ["#2 emote listens carefully", "#2 say You loved him."]
+    - ["#1 emote stops, surprised by this", "#1 say He was King Under the Mountain. He was—"]
+    - ["#2 say You loved him."]
+    - ["#1 emote is quiet for a long moment", "#1 say He made us great. And then Smaug took it all. Every stone, every chamber, every memory."]
+    - ["#2 say That is why I'm here. Not for gold. For what that gold means to you."]
+    - ["#1 emote looks at the hobbit with something very close to gratitude", "#1 say ...You are an unusual creature, Master Baggins."]
+-
+  Supported:
+    "thorin oakenshield": ["bilbo baggins"]
+  Conversation:
+    - ["#1 say I will ask you something directly. Why did you come back? At the tunnel. You could have run."]
+    - ["#2 say You would have done the same."]
+    - ["#1 say We are dwarves. We do not abandon our company. But you are a hobbit. You had no obligation."]
+    - ["#2 emote thinks about this carefully", "#2 say I have a home to go back to. A real home. You don't, not yet."]
+    - ["#1 emote says nothing"]
+    - ["#2 say That seemed like reason enough to stay."]
+    - ["#1 emote grips the hobbit's shoulder briefly, says nothing more, and walks ahead"]

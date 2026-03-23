@@ -1,0 +1,31 @@
+mobid: 590
+zone: the_sandlot
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote fumbles a catch, the ball popping off his glove and rolling to the ground."
+  - "emote pushes his glasses up and squints toward the outfield fence."
+  - "say I don't know what I'm doing out here."
+  - "emote watches Benny and tries to copy his stance, getting most of it wrong."
+  - "say Is it always this hot?"
+  - "emote picks up the ball and examines it like he's never seen one before."
+  - ""
+  - ""
+activitylevel: 20
+character:
+  name: Scotty Smalls
+  description: >-
+    A skinny kid in a cable-knit sweater that is completely wrong for the
+    heat, wearing khakis that don't quite fit. New sneakers, clean. He
+    looks like someone who dressed for a different summer in a different
+    neighborhood. His expression is somewhere between wanting very badly
+    to belong and being fairly sure he doesn't. He is trying.
+  raceid: 1
+  level: 3
+  equipment:
+    body:
+      itemid: 20124
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20171

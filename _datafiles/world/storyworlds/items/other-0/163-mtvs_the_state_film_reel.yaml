@@ -1,0 +1,19 @@
+itemid: 163
+name: MTVs The State film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">MTVs The State</ansi>
+description: >-
+  A film reel in a round metal canister, the label hand-lettered in block print
+  with a Sharpie that was running low: MTVS THE STATE -- 1993-1995. The canister
+  has stickers on it: a smiley face, a thumbs-up, and a small drawing of a porcupine.
+  The metal is cheap. When you hold it up to the light and look through the celluloid,
+  you can see: a television studio with plywood sets and overhead lights too bright,
+  a man in a Hawaiian shirt standing in a room that is entirely full of pudding,
+  two people in a barrel reading books. The footage is lo-fi and the colors are
+  saturated in the way of early 90s video stock and everyone in it is completely,
+  totally, absolutely committed to what they are doing. The camera shakes slightly.
+  This is correct. The camera should shake. It was held by a person.
+type: object
+subtype: usable
+uses: 0
+value: 0

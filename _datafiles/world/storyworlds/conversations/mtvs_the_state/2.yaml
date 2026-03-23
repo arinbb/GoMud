@@ -1,0 +1,24 @@
+-
+  Supported:
+    "louie": ["*"]
+  Conversation:
+    - ["#1 say Do you want to dip something in the pudding?"]
+    - ["#2 emote looks at the pudding."]
+    - ["#1 say You can dip anything. Literally anything.", "#1 emote gestures at all of the pudding."]
+    - ["#2 say What would I dip?"]
+    - ["#1 say I do not know. That is the beauty of it. You have to discover that for yourself."]
+    - ["#2 emote looks at the pudding for a long moment."]
+    - ["#1 say Two hundred and forty dollars worth.", "#1 emote spreads their arms."]
+    - ["#2 say That is a lot of pudding."]
+    - ["#1 say Yes.", "#1 emote nods. 'Yes it is.'"]
+-
+  Supported:
+    "louie": ["*"]
+  Conversation:
+    - ["#1 say I have been thinking about the pudding."]
+    - ["#2 say You are always thinking about the pudding."]
+    - ["#1 say Because there is always pudding to think about.", "#1 emote gestures at the room."]
+    - ["#2 emote nods slowly."]
+    - ["#1 say The pudding is still here. It will always be here. That is the thing about two hundred and forty dollars worth of pudding."]
+    - ["#2 say What is the thing?"]
+    - ["#1 say It is enough. It is more than enough. That is the thing."]

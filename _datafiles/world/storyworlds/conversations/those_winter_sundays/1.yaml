@@ -1,0 +1,31 @@
+-
+  Supported:
+    "the father": ["*"]
+  Conversation:
+    - ["#1 emote rises before the others are awake"]
+    - ["#1 say Cold again."]
+    - ["#1 emote dresses in the dark, each motion practiced, economical, private"]
+    - ["#1 say The fire won't start itself."]
+    - ["#2 emote watches from the doorway, still half asleep"]
+    - ["#1 emote does not look up", "#1 say Go back to bed. It's not warm yet."]
+-
+  Supported:
+    "the father": ["*"]
+  Conversation:
+    - ["#1 emote splits kindling with steady, calloused hands"]
+    - ["#1 say Nobody asks about the hands, you know."]
+    - ["#2 emote says nothing"]
+    - ["#1 say Cracked all the way to bleeding, some mornings. But the house is warm by the time they come down."]
+    - ["#1 emote sets the wood carefully in the grate", "#1 say That counts for something."]
+    - ["#2 say Of course it does."]
+    - ["#1 emote does not respond to this, only strikes the match"]
+-
+  Supported:
+    "the father": ["*"]
+  Conversation:
+    - ["#1 say I polished his shoes for Sunday. Did I mention that?"]
+    - ["#2 emote shakes their head"]
+    - ["#1 say Nobody asked me to. Nobody thanked me. It just... it needed doing."]
+    - ["#1 emote looks at his hands for a moment", "#1 say There's a way of loving that doesn't say so. I don't know if he understood that."]
+    - ["#2 emote is quiet"]
+    - ["#1 say I don't know if I said it right. Any of it.", "#1 emote turns away, adds another log to the fire."]

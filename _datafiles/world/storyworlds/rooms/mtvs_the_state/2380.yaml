@@ -1,0 +1,64 @@
+roomid: 2380
+zone: MTVs The State
+title: MTV Studio
+description: >-
+  The main stage of an MTV television studio, circa 1994. The <ansi fg="itemname">set</ansi>
+  is deliberately cheap — painted plywood flats, mismatched <ansi fg="itemname">furniture</ansi>
+  dragged in from somewhere, bright overhead <ansi fg="itemname">lights</ansi> on aluminum
+  rigs that make everything look a little washed out and a little too real. A camera
+  on a rolling dolly points at a taped mark on the floor. The <ansi fg="itemname">MTV logo</ansi>
+  is everywhere: on the walls, on a coffee mug, on a baseball cap someone left on a
+  stool. Eleven young people from NYU have converted this space through sheer force
+  of will and an extremely limited budget. The air smells like gel and electricity
+  and the specific ambition of people in their mid-twenties who believe — correctly —
+  that what they are doing matters. To the <ansi fg="exit">north</ansi> is the Pudding Room.
+  To the <ansi fg="exit">east</ansi> is The Barrel. To the <ansi fg="exit">south</ansi> is
+  Captain Monterey Jack's Ship. To the <ansi fg="exit">west</ansi> is the Porcupine
+  Racetrack. <ansi fg="exit">Up</ansi> leads to the Awards Show stage. <ansi fg="exit">Down</ansi>
+  to The Street.
+mapsymbol: M
+maplegend: MTV Studio
+biome: city
+exits:
+  north:
+    roomid: 2381
+  east:
+    roomid: 2382
+  south:
+    roomid: 2383
+  west:
+    roomid: 2384
+  up:
+    roomid: 2389
+  down:
+    roomid: 2393
+nouns:
+  set: >-
+    The set is the set. It is plywood and paint and the absolute conviction that
+    the material does not matter, that the material has never mattered, that the
+    thing that matters is the eleven people who showed up and said yes and did it.
+    It looks exactly like what it is and that is exactly the point.
+  furniture: >-
+    A couch, a stool, a folding table, a chair with a broken leg propped up with
+    a stack of cue cards. None of it matches. All of it works. This is the furniture
+    of people who are too busy making the thing to worry about the furniture.
+  lights: >-
+    The overhead lights are the kind that make everything equally bright and equally
+    fake and equally real. Under these lights every face looks like it's about to
+    deliver a punchline. Under these lights every moment is a sketch.
+  logo: >-
+    The MTV logo of the 1990s: the blocky M with the TV inset, animated in the real
+    world by being printed on everything. It is a flag. It says: this is happening
+    now, on television, for people who are young and paying attention.
+spawninfo:
+- mobid: 577
+  message: '<ansi fg="13">Michael Ian Black strolls onto the set, hands in jacket pockets, surveying the room with the composed amusement of someone who has already seen through everything and likes it anyway.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The camera light blinks red. Someone, somewhere, is watching.
+- A stagehand runs through carrying something unidentifiable at low speed.
+- The set wobbles slightly. Everyone ignores this. The show continues.
+- An intern tapes a new mark on the floor with gaffer tape, then steps back to assess.
+- A monitor shows static, then a clip of something, then static again.
+- The overhead lights hum at exactly the frequency of creative momentum.
+- Someone backstage says 'Take two' in a tone that implies this is going well.

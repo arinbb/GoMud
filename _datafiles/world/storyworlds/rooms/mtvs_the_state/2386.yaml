@@ -1,0 +1,53 @@
+roomid: 2386
+zone: MTVs The State
+title: Space Station 11
+description: >-
+  The interior of Space Station 11, where gravity is optional and beards are mandatory.
+  The <ansi fg="itemname">walls</ansi> are lined with blinking <ansi fg="itemname">panels</ansi>
+  that display readings of unclear significance. <ansi fg="itemname">Equipment</ansi>
+  floats in the middle distance, held to the walls by velcro and institutional
+  optimism. The Bearded Men of Space Station 11 float through the module in their
+  jumpsuits, each one attended by a magnificent <ansi fg="itemname">beard</ansi> that
+  drifts in the zero gravity like a living thing, like a pet that has chosen to live
+  on a face. The <ansi fg="itemname">viewport</ansi> shows stars. There are always
+  stars. To the <ansi fg="exit">west</ansi> is the Ball Pit.
+mapsymbol: S
+maplegend: Space Station 11
+biome: cave
+exits:
+  west:
+    roomid: 2390
+nouns:
+  walls: >-
+    The curved walls of the station module, covered in handles and velcro patches and
+    the accumulated equipment of people living in space. Everything is fastened to
+    something. Floating free objects are a hazard in zero gravity. The beards are
+    technically a hazard. Exceptions have been made.
+  panels: >-
+    Banks of buttons and readouts that monitor the station's systems. Lights blink
+    in patterns that suggest purpose. The Bearded Men understand these patterns. They
+    have memorized them while floating in contemplative silence.
+  equipment: >-
+    Scientific and operational equipment, secured to walls and ceiling. Tools for
+    the work of being in space. The Bearded Men use these tools. They also stroke
+    their beards. Both activities are considered part of the job.
+  beard: >-
+    The beards of the Space Station 11 crew are extraordinary. In zero gravity they
+    achieve forms that would be impossible under normal conditions. They billow. They
+    spread. They describe the shape of a thought about something very important.
+  viewport: >-
+    The circular viewport shows an unobstructed view of space. Stars beyond counting.
+    The slow roll of planet below. The Bearded Men look out here sometimes and stroke
+    their beards and do not say anything. Nothing needs to be said.
+spawninfo:
+- mobid: 576
+  message: '<ansi fg="6">A Bearded Man drifts through the hatch, beard spreading magnificently in the absence of gravity, and takes a position near a console.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- A Bearded Man drifts past, rotating slowly, stroking his beard in thoughtful zero gravity.
+- The station hums with the sound of life support. In space, all sounds are important.
+- The viewport fills briefly with the limb of a planet and then it passes and there are just stars.
+- A Bearded Man pushes off the wall with one finger and floats across the module.
+- The beards of Space Station 11 drift in the recycled air like slow, magnificent kelp.
+- Two Bearded Men make eye contact across the module. Something is understood between them.
+- The readout panels blink. Everything is nominal. The beards are nominal. Space is nominal.

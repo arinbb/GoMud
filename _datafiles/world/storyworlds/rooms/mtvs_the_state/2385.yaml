@@ -1,0 +1,56 @@
+roomid: 2385
+zone: MTVs The State
+title: Dougs Apartment
+description: >-
+  An apartment that is entirely, unassailably <ansi fg="itemname">normal</ansi>.
+  The <ansi fg="itemname">couch</ansi> is the couch of a person who bought a couch.
+  The <ansi fg="itemname">television</ansi> is on, showing something unremarkable.
+  There are <ansi fg="itemname">snacks</ansi> in a bowl on the <ansi fg="itemname">coffee table</ansi>.
+  Framed <ansi fg="itemname">pictures</ansi> on the wall — a landscape, a lighthouse,
+  a family portrait in which everyone is fine. Doug sits in the center of all this
+  normalcy, smiling the smile of someone who has prepared very carefully for your
+  arrival. Nothing is wrong. Nothing identifiable is wrong. That is precisely it.
+  To the <ansi fg="exit">west</ansi> is the Pudding Room. To the <ansi fg="exit">east</ansi>
+  is the NYU Dorm Room.
+mapsymbol: D
+maplegend: Dougs Apartment
+biome: house
+exits:
+  west:
+    roomid: 2381
+  east:
+    roomid: 2391
+nouns:
+  normal: >-
+    Everything in this apartment is exactly what it appears to be. There is no reason
+    to feel the way you feel right now. Doug has made sure of that. The normalcy is
+    comprehensive and therefore somehow its own form of unsettling.
+  couch: >-
+    A couch in neutral tones. Clean. The cushions are the right firmness. Someone has
+    recently plumped them. They look exactly like couch cushions should look.
+  television: >-
+    A television showing something pleasant. The volume is at a considerate level. The
+    programming is fine. It is all fine. Doug has selected it for being fine.
+  snacks: >-
+    A bowl of mixed snacks — pretzels, perhaps, or crackers — arranged in a bowl
+    that has been placed at the exact right angle. Doug refills this bowl. He has
+    refilled it for you specifically.
+  coffee: >-
+    A coffee table with nothing on it except the snack bowl and a coaster. The coaster
+    is there because Doug cares about wood surfaces. He cares about a lot of things.
+  pictures: >-
+    The framed pictures on the wall are the pictures of a person who has pictures on
+    their wall. A landscape. A lighthouse. A family photo that is fine. Everything here
+    is fine.
+spawninfo:
+- mobid: 574
+  message: '<ansi fg="8">Doug appears in his apartment and immediately indicates the snack bowl, smiling warmly and too readily.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Doug adjusts the snack bowl a half-inch to the left. It was already in the right place. He adjusts it back.
+- The television murmurs pleasantly. There is nothing unpleasant about it.
+- Doug smiles at you again. He is always happy to see you.
+- A clock on the wall ticks with perfect regularity. This is normal. This is what clocks do.
+- Doug offers you a snack with the gesture of someone for whom offering snacks is a deeply considered act.
+- The apartment temperature is perfect. Exactly perfect. Doug set it earlier specifically.
+- Everything is fine. Everything here is absolutely fine.

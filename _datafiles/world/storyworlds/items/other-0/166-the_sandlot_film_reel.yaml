@@ -1,0 +1,14 @@
+itemid: 166
+name: The Sandlot film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="yellow">The Sandlot</ansi>
+description: >-
+  A chrome-edged film canister, warm to the touch, smelling faintly of
+  summer -- cut grass and red dirt and something sweet, like iced lemonade
+  on a hot afternoon. The label is handwritten in block letters over a
+  drawing of a baseball diamond: THE SANDLOT, 1993. When you hold it
+  still, you can almost hear the distant crack of a bat.
+type: object
+subtype: usable
+uses: 0
+value: 0
