@@ -1,0 +1,72 @@
+roomid: 2149
+zone: Northern Exposure
+title: Eds Video Store
+description: >-
+  <ansi fg="yellow">Eds Video Store</ansi> is the film school of Cicely.
+  The shelves hold everything -- not a curated collection but an accumulation,
+  organized by a system that Ed could explain but which would take longer
+  than finding the film yourself. <ansi fg="itemname">Cassette cases</ansi>
+  fill every available surface, handwritten labels on the ones Ed dubbed
+  himself from television. A <ansi fg="itemname">television</ansi> on a
+  high shelf plays continuously, sometimes something Ed is watching for
+  research, sometimes something he fell asleep to and which has been
+  running since. <ansi fg="itemname">Ed's camera</ansi> sits on the counter
+  with a half-filled notebook beside it. The walls are covered in
+  <ansi fg="itemname">movie posters</ansi> -- Kubrick and Kurosawa, Ford and
+  Fellini, and several handmade posters for films Ed has made himself.
+  The store is not just a business. It is where Ed is becoming what he is.
+  To the <ansi fg="exit">south</ansi>, Main Street.
+mapsymbol: V
+maplegend: Eds Video Store
+biome: house
+exits:
+  south:
+    roomid: 2140
+    simplename: street
+    fancyname: south out the door to Main Street
+    exitmessage: You step out of the video store onto Main Street.
+    mapdirection: north
+nouns:
+  cassettes: >-
+    Hundreds of VHS cassettes, spanning everything that has been on film since
+    the medium was invented. Ed has seen all of them. He can quote from most
+    of them. He cross-references them in a mental index that would be the envy
+    of any archivist. 'It's like Kurosawa does here,' he says, 'except it is
+    in Cicely.' This is not as strange as it sounds.
+  camera: >-
+    Ed's camera is a consumer-grade video camera that he has used with the
+    commitment of a professional. It goes everywhere with him. Ed believes
+    that looking at things through a lens is a way of understanding them more
+    deeply. This may or may not be true but the films Ed makes from it are
+    strange and good and full of Cicely light.
+  posters: >-
+    The handmade posters for Ed's films are the best thing on the walls.
+    'The Raven Chronicles' -- hand-lettered with a drawing of the totem.
+    'Cicely: A Documentary.' 'The Moose and Other Mysteries.' Each one made
+    with the complete seriousness of someone who does not yet know whether
+    he is allowed to have such ambitions, and has decided to have them anyway.
+  television: >-
+    The television runs continuously. Right now: something classic, something
+    Ed is watching with full attention, pausing mentally at the moments that
+    teach him something. Ed learns to make films by watching them until he
+    understands how they were made. Then he makes films. Then he watches
+    them to understand what he did. This is the complete curriculum.
+  notebook: >-
+    Ed's notebook beside the camera is dense with notes -- not shot lists but
+    thoughts. Questions. Observations about people in Cicely that he will
+    turn into scenes. A drawing of the raven. On one page, in large letters:
+    'WHY DO SOME STORIES STAY?' Below that, several possible answers, all
+    crossed out. The question remains.
+spawninfo:
+- mobid: 483
+  message: '<ansi fg="10">Ed Chigliak looks up from the counter, where he has been making notes in his notebook, his expression the friendly openness of someone who finds most people genuinely interesting.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Ed stacks several cassettes and moves them to a different shelf, rearranging by a logic only he can see.
+- The television plays something -- a close-up, a long wide shot, something Ed has seen twelve times and will watch again.
+- Ed makes a note in his notebook with the focused speed of someone catching a thought before it moves on.
+- A customer asks Ed for a recommendation and he asks three questions first, then finds the exact right film.
+- Ed holds his camera up and frames a shot of the afternoon light through the store window. He lowers it. Not yet.
+- The movie posters catch the light from the window -- Kurosawa, Ford, Fellini, and Ed's own raven.
+- Ed watches a moment of film on the television with an expression of absolute absorption, then writes something down.
+- The smell of old plastic and wood polish and something that might be popcorn lingers in the warm store air.

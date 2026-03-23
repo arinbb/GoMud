@@ -1,0 +1,29 @@
+mobid: 485
+zone: northern_exposure
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote sings along to whatever is playing on the jukebox, her voice surprisingly good."
+  - ""
+  - "say Holling, do you think I could be a singer? Like actually a singer?"
+  - ""
+  - "emote serves a drink with the flair of someone who finds beauty in small precise things."
+  - ""
+  - "say I was Miss Northwest Territories. Which sounds like a joke but it was a real thing I won."
+  - ""
+  - "emote wipes down the bar with the focused authority of someone who takes their work seriously."
+activitylevel: 28
+character:
+  name: Shelly Tambo
+  description: >-
+    Former Miss Northwest Territories, current wife of Holling Vincoeur and
+    co-proprietor of The Brick, Shelly is twenty-six in a town of much older
+    people and has decided this is interesting rather than limiting. She is
+    bright in the way that comes from paying attention to everything, pretty
+    in the way that was her primary identity once and is now one of several
+    things she is, funny without meaning to be. She has depths that surprise
+    her as much as anyone. She loves Holling with a completeness that the
+    age difference does not explain and does not need to. She sings when she
+    thinks no one is listening. Everyone is listening. She is very good.
+  raceid: 1
+  level: 7

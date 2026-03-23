@@ -1,0 +1,29 @@
+mobid: 488
+zone: northern_exposure
+hostile: false
+maxwander: 3
+idlecommands:
+  - "emote stands in the middle of the road, regarding everything with the vast bovine serenity of a creature that has never doubted its right to be exactly here."
+  - ""
+  - "emote bends its enormous head to eat something from the gutter. It is not in a hurry."
+  - ""
+  - "emote walks slowly through the area, its massive bulk moving with a grace that is technically impossible."
+  - ""
+  - "emote lifts its head and looks directly at you for a long moment, then looks away, having determined you are not interesting."
+  - ""
+  - "emote stands very still for no apparent reason."
+activitylevel: 15
+character:
+  name: The Moose
+  description: >-
+    The moose of Cicely is not a moose. Or rather, it is entirely a moose,
+    but it is also the moose -- the one that appears on Main Street regularly,
+    that has appeared in The Brick's front window, that has been seen in the
+    post office and on the roof of the radio station. No one named it. Everyone
+    knows it. It moves through Cicely with the authority of something that was
+    here first and intends to be here last, accepting the town as a minor
+    interruption in its otherwise moose-focused existence. It has never
+    charged anyone. It has never been fed. It simply persists, enormous and
+    calm, as a fact of life in Cicely, Alaska.
+  raceid: 1
+  level: 6

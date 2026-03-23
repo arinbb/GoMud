@@ -1,0 +1,30 @@
+questid: 340
+name: Northern Exposure
+description: >-
+  Experience the world of Northern Exposure -- Cicely, Alaska, 1990. Dr. Joel
+  Fleischman has been sent from New York City to practice medicine in the remotest
+  small town in the country. The wilderness is enormous, the people are
+  extraordinary, and Chris Stevens is broadcasting philosophy into the cold
+  morning air. Find The Brick. Tune in to KBHR. Meet the moose. Explore the
+  wilderness. Watch the northern lights reflected in the lake. Cicely will change
+  you. That is what Cicely does.
+reward:
+  experience: 4500
+  item_id: 290
+  playermessage: >-
+    You have moved through Cicely, Alaska -- Main Street and The Brick and the
+    radio station and the wilderness and the lake where the aurora doubles in
+    the still water. You have heard Chris Stevens on the radio. You have seen
+    the moose. The town has received you the way Cicely receives everyone: with
+    the particular patience of a place that knows it changes people and has
+    learned to wait for the change to happen. As a memento of your time in
+    interior Alaska, you carry a small carved raven -- smooth cedar, dark and
+    perfect, the Tlingit transformer who brought light into the world and keeps
+    an eye on things.
+steps:
+- description: Arrive in Cicely, Alaska. Find yourself on Main Street with the mountains on every side.
+- description: Visit The Brick and feel the warmth of the best bar in the Alaskan wilderness.
+- description: Tune in to KBHR and hear Chris Stevens broadcasting into the cold morning air.
+- description: Be acknowledged by the moose of Cicely. It will look at you. You will know.
+- description: Explore the Alaskan wilderness and feel the true scale of this country.
+- description: Reach the lake and see the northern lights -- in the sky, and in the water.

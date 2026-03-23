@@ -1,0 +1,66 @@
+roomid: 2148
+zone: Northern Exposure
+title: The Wilderness
+description: >-
+  Here the town ends and <ansi fg="cyan">Alaska</ansi> begins, without apology
+  and without transition. The <ansi fg="10">spruce forest</ansi> is immediate
+  and enormous -- trees that have been here centuries, their upper branches
+  moving in a wind that does not reach the ground. A <ansi fg="10">river</ansi>
+  runs somewhere close, its sound a constant beneath everything else. The
+  <ansi fg="itemname">mountains</ansi> fill the northern horizon, white-capped
+  and absolute, the kind of mountains that make a person understand the phrase
+  'geological time' in a way no textbook can. The <ansi fg="cyan">sky</ansi>
+  is everywhere up here, bigger than any sky in the lower forty-eight. At night
+  the <ansi fg="cyan">northern lights</ansi> fill it entirely -- green and cyan
+  ribbons folding and brightening over the peaks. A narrow <ansi fg="10">trail</ansi>
+  leads south toward Cicely. To the <ansi fg="exit">south</ansi>, town.
+  To the <ansi fg="exit">south</ansi> via the lake trail is the lake itself.
+mapsymbol: W
+maplegend: The Wilderness
+biome: forest
+exits:
+  south:
+    roomid: 2140
+    simplename: town
+    fancyname: south down the trail toward Cicely
+    exitmessage: You follow the trail south through the trees toward the lights of Cicely.
+    mapdirection: south
+  north:
+    roomid: 2151
+    exitmessage: You follow a narrow track north through the spruce toward the lake.
+nouns:
+  mountains: >-
+    The mountains are beyond scale -- the Alaskan kind, not the Colorado kind.
+    They are not scenic. They are geological fact. Snow on the upper slopes
+    is permanent; the lower snowline descends in winter and retreats in the
+    brief summer and the mountains themselves are unchanged by this. They have
+    been unchanged by quite a lot. Human presence in this landscape is a
+    recent development that the mountains have not yet registered.
+  sky: >-
+    The sky at this latitude has a quality the lower forty-eight cannot produce.
+    It is too large. In summer it is too light -- the sun circles without setting,
+    and the quality of that endless day is something you can only understand
+    by being in it. In winter the dark arrives with the same total authority.
+    And between: the aurora. The northern lights are not decorative. They are
+    something happening in the physics of the world, and you are simply
+    present for it.
+  river: >-
+    The river is cold and clear, glacial melt that has been moving downhill
+    since the ice retreated ten thousand years ago. It contains fish. Ed
+    knows exactly which fish and where. Joel has attempted to fish here once
+    and considers it one of his more interesting failures.
+  trail: >-
+    The trail back to Cicely is narrow and slightly muddy and absolutely
+    necessary. It is the line between the town and everything the town is
+    surrounded by. People who walk out here alone sometimes come back different.
+    Not always visibly. But different.
+spawninfo: []
+idlemessages:
+- A moose moves somewhere in the spruce, enormous and unhurried, generating a sound disproportionate to its grace.
+- The river speaks continuously, a sound that is under everything else here.
+- Wind through the upper spruce branches -- a distant rushing that does not reach the forest floor.
+- The northern lights are visible at the edge of the sky even now, a faint suggestion of green and cyan.
+- A wolf howl from somewhere north -- one long note, then silence, then an answer from further away.
+- The cold here is honest. It does not pretend to be anything other than what it is.
+- A spruce cone falls. The sound is very loud in the silence. Then the silence returns, full as before.
+- The mountains catch the last light of afternoon and give it back as something amber and impossible.

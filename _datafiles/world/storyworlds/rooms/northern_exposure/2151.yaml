@@ -1,0 +1,59 @@
+roomid: 2151
+zone: Northern Exposure
+title: The Lake
+description: >-
+  The lake north of Cicely is the kind of lake Alaska makes with casual
+  abundance -- <ansi fg="cyan">wide and cold</ansi>, ringed by spruce trees
+  and the distant white peaks, its surface <ansi fg="itemname">still</ansi>
+  in the morning and riffled by afternoon wind, always a <ansi fg="10">mirror</ansi>
+  of whatever sky is above it. <ansi fg="itemname">Floatplanes</ansi> use
+  the north end as a landing strip -- Maggie's, mostly, and one or two others.
+  A small <ansi fg="itemname">dock</ansi> extends into the water, weathered
+  grey and slightly tilted, reliable. People come here to <ansi fg="itemname">fish</ansi>
+  and to think, which in Cicely are often the same activity. At night the
+  <ansi fg="cyan">aurora</ansi> reflects in the water, doubling the lights --
+  what is above and what is below indistinguishable until the wind moves the
+  surface. To the <ansi fg="exit">south</ansi>, the wilderness trail back toward town.
+mapsymbol: K
+maplegend: The Lake
+biome: shore
+exits:
+  south:
+    roomid: 2148
+    exitmessage: You follow the trail south through the spruce back toward the wilderness and Cicely.
+nouns:
+  water: >-
+    The water is cold and very clear. In the shallows you can see the bottom --
+    gravel and sand and the occasional dark shape that is a fish holding in the
+    current. In the deep middle the water is a blue-black that goes all the
+    way to somewhere that has never been warm. Glacial melt from ten thousand
+    years ago, moving very slowly toward the sea.
+  dock: >-
+    The dock extends into the lake on pilings that lean slightly west, which
+    is the direction the winter ice pushes them, which is what the dock has
+    accepted over years of winter. It is still functional and perfectly safe
+    and only slightly tilted, which is a reasonable description of most things
+    in Cicely.
+  floatplanes: >-
+    The floatplane tie-down at the north end of the lake -- two cleats, a
+    length of rope, the marks of many landings in the soft bank. Maggie's
+    plane is often here. When it is absent she is somewhere in the air above
+    Alaska, which she prefers. The lake accepts the planes and releases them
+    without opinion.
+  aurora: >-
+    At night the aurora fills the sky above the lake and then again in the
+    water below, two sets of northern lights folding and brightening. The
+    reflection is slightly delayed -- you see the sky lights first, then
+    they arrive in the water, then they both move, then neither is more real
+    than the other. People come out here specifically for this. They do not
+    always talk about why.
+spawninfo: []
+idlemessages:
+- The lake surface moves in the wind, a slight riffling that catches and releases the light.
+- A loon calls from the far end -- that descending minor-key sound that means you are somewhere genuinely wild.
+- The dock creaks once in the current, then settles back into its familiar lean.
+- The mountains reflect in the still water, upside-down and perfect, until a trout rises and breaks them.
+- The northern lights are visible even now at the edge of the sky -- green and cyan, barely there.
+- Silence at the lake is a different thing than silence in town. This silence contains much more.
+- A floatplane passes overhead at altitude, engine-sound fading north toward somewhere further.
+- The spruce forest surrounds the lake on three sides, dark and patient. The fourth side is the sky.

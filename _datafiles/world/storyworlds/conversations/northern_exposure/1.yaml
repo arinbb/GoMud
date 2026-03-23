@@ -1,0 +1,32 @@
+-
+  Supported:
+    "joel fleischman": ["maggie oconnell"]
+  Conversation:
+    - ["#1 say I'm just saying that a functioning deli within two hundred miles is not an unreasonable thing to want."]
+    - ["#2 emote looks at him.", "#2 say Joel."]
+    - ["#1 say I am a doctor. I went to Columbia. I have needs."]
+    - ["#2 say You have preferences. There is a difference. People have needs. You have preferences."]
+    - ["#1 emote opens his mouth.", "#1 emote closes it."]
+    - ["#2 emote allows herself a brief expression of private satisfaction."]
+-
+  Supported:
+    "joel fleischman": ["maggie oconnell"]
+  Conversation:
+    - ["#2 say The weather tomorrow is going to be clear. I'm flying up to Sleetmute and back."]
+    - ["#1 say You say that like it's a normal sentence."]
+    - ["#2 say It is a normal sentence."]
+    - ["#1 say Sleetmute. You are flying to a place called Sleetmute. Alone."]
+    - ["#2 say I'm always alone. That's the point of flying.", "#2 emote looks out the window at the mountains."]
+    - ["#1 emote watches her looking at the mountains and says nothing for a moment."]
+    - ["#1 say Be careful."]
+    - ["#2 emote is surprised.", "#2 say I always am."]
+-
+  Supported:
+    "joel fleischman": ["maggie oconnell"]
+  Conversation:
+    - ["#1 say Do you ever miss it? Wherever you're from?"]
+    - ["#2 say Michigan. And no. Not really."]
+    - ["#1 say How is that possible."]
+    - ["#2 say Because I'm here. You can't miss a place you left on purpose when you're where you meant to go."]
+    - ["#1 emote considers this.", "#1 say I didn't mean to come here."]
+    - ["#2 say I know.", "#2 emote looks at him.", "#2 say Maybe that's the difference."]

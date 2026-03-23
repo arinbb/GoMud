@@ -1,0 +1,77 @@
+roomid: 2144
+zone: Northern Exposure
+title: Joels Office
+description: >-
+  Dr. Joel Fleischman practices medicine in a converted cabin that is either
+  charming or inadequate depending entirely on whether you grew up in
+  <ansi fg="cyan">Manhattan</ansi> or <ansi fg="10">Alaska</ansi>. The
+  <ansi fg="itemname">diplomas</ansi> on the wall -- Columbia, Johns Hopkins --
+  are in stark contrast to the <ansi fg="8">log walls</ansi> behind them.
+  A <ansi fg="itemname">medical bag</ansi> sits packed and ready on the
+  <ansi fg="itemname">desk</ansi>, next to a stack of <ansi fg="itemname">journals</ansi>
+  that look recently read. The <ansi fg="itemname">examination table</ansi>
+  is standard issue; the <ansi fg="itemname">window</ansi> above it frames a
+  view of spruce trees and mountains that no Manhattan clinic has ever
+  approximated. An <ansi fg="itemname">answering machine</ansi> blinks.
+  Someone has taped a hand-drawn map of Cicely to the wall with pushpins
+  marking home addresses, presumably for house calls. Joel is doing good
+  work here. He would not like you to mention it. To the <ansi fg="exit">east</ansi>
+  is Main Street. To the <ansi fg="exit">east</ansi>, Joels cabin awaits
+  via a connecting path -- the cabin exit is labeled <ansi fg="exit">cabin</ansi>.
+mapsymbol: O
+maplegend: Joels Office
+biome: house
+exits:
+  east:
+    roomid: 2140
+    simplename: street
+    fancyname: back out to Main Street
+    exitmessage: You step out of the office onto Main Street.
+    mapdirection: east
+  west:
+    roomid: 2152
+    simplename: cabin
+    fancyname: through the connecting path to the cabin
+    exitmessage: You follow the short path from the office to Joels cabin.
+    mapdirection: west
+nouns:
+  diplomas: >-
+    Two diplomas in matching frames, slightly crooked on the log wall. Columbia
+    University College of Physicians and Surgeons. The other from a prestigious
+    residency program. They represent six years of Joel's life and a debt to the
+    State of Alaska that currently has him practicing medicine in a town that
+    considers a broken snowmobile a medical emergency. Joel straightens them
+    sometimes. They go crooked again. This is Alaska.
+  journals: >-
+    A stack of New England Journal of Medicine, JAMA, and several specialty
+    publications that Joel has read cover to cover and annotated in his small,
+    precise handwriting. He is, despite everything, an excellent doctor. He
+    stays current. He cares, which is the thing he is least willing to admit.
+  desk: >-
+    A plain wooden desk that was not designed to hold the weight of New York
+    intellectual ambition, but it manages. Joel has organized it with the
+    precision of someone who believes that personal order is all that stands
+    between civilization and the void. The void being Alaska.
+  window: >-
+    The window above the examination table looks directly into the Alaskan
+    wilderness -- spruce trees so close you could touch them, mountains
+    beyond, a sky that has never heard of New York City. Joel looks out
+    this window sometimes between patients and his expression is hard to read.
+    Not entirely unhappy. This is the part he does not discuss.
+  answering: >-
+    The answering machine blinks with three messages. All three are probably
+    about the same broken leg or snow-related injury. Joel will sigh, collect
+    his bag, and go. He always goes. This is also the part he does not discuss.
+spawninfo:
+- mobid: 480
+  message: '<ansi fg="8">Joel Fleischman looks up from his desk with the expression of a man who has been in Alaska long enough that it is starting to feel like his life, which is its own kind of emergency.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Joel reads a medical journal with the focused intensity of a man maintaining his identity through bibliography.
+- Joel looks out the window at the mountains and his expression does something complicated that he immediately rearranges.
+- The answering machine blinks. Joel regards it with the deliberation of a hostage negotiator.
+- Joel picks up the phone and dials a New York number and gets voicemail and hangs up without leaving a message.
+- A file folder labeled FLEISCHMAN PATIENT RECORDS has grown thick. Everyone in Cicely is in there now.
+- Joel straightens his diplomas. They will be crooked again by morning. This is Alaska.
+- Someone knocks on the door. Joel calls out 'come in' with the resigned tone of a man expecting a moose-related injury.
+- The medical bag is organized with New York precision. The practice is, despite itself, exactly what this town needs.

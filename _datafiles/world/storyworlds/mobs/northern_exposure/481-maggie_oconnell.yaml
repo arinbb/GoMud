@@ -1,0 +1,30 @@
+mobid: 481
+zone: northern_exposure
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote checks her flight jacket for keys, finds them, puts them back."
+  - ""
+  - "say The weather window this afternoon is perfect. I should be in the air."
+  - ""
+  - "emote looks at the aviation charts on the table and traces a route with one finger."
+  - ""
+  - "say Fleischman would find a reason to complain about a perfect sky. He always does."
+  - ""
+  - "emote stands at the north window and looks out at the mountains with an expression of pure uncomplicated love."
+activitylevel: 28
+character:
+  name: Maggie OConnell
+  description: >-
+    A bush pilot operating out of Cicely, Alaska, with the specific self-possession
+    of someone who navigates by instruments and instinct in equal measure. She wears
+    her brown leather flight jacket like a second skin. Her hair is usually in a
+    practical arrangement. Her opinions are always ready. She is completely at home
+    in the Alaskan wilderness and in the air above it, and finds the distinction
+    between the two somewhat academic. She has had a series of boyfriends who have
+    died in increasingly improbable accidents, which is a thing she does not discuss
+    and which everyone in Cicely knows. She is tougher than almost anyone she has
+    ever met, and softer than she intends to be, and the distance between those
+    two things is where her life actually happens.
+  raceid: 1
+  level: 9

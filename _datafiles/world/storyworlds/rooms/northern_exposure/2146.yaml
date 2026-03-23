@@ -1,0 +1,69 @@
+roomid: 2146
+zone: Northern Exposure
+title: Maggies Cabin
+description: >-
+  <ansi fg="yellow">Maggies cabin</ansi> is the home of someone who does not
+  require rescue and would like that noted. It is <ansi fg="10">tidy</ansi>
+  and purposeful, every object earning its place. <ansi fg="itemname">Aviation charts</ansi>
+  cover the kitchen table -- she navigates in the air and on the ground by the
+  same precision. A <ansi fg="itemname">flight jacket</ansi> hangs by the door,
+  worn to a particular softness that only years of use produces. <ansi fg="itemname">Photographs</ansi>
+  on the mantle include a floatplane, some mountains, and several people who are
+  no longer alive, which is its own story that Maggie does not tell and is always
+  present. A <ansi fg="itemname">bookshelf</ansi> holds paperbacks with cracked
+  spines. The <ansi fg="itemname">window</ansi> faces north and on clear nights
+  the northern lights fill the glass entirely. To the <ansi fg="exit">south</ansi>,
+  Main Street.
+mapsymbol: M
+maplegend: Maggies Cabin
+biome: house
+exits:
+  south:
+    roomid: 2140
+    simplename: street
+    fancyname: south down the path to Main Street
+    exitmessage: You walk south along the path toward Main Street.
+    mapdirection: south
+nouns:
+  charts: >-
+    Aviation charts of the region -- the lakes, the mountains, the landing
+    strips, the emergency landing strips, the places that are not quite
+    landing strips but will do. Maggie has marked them in pencil with her
+    own notations: conditions, approaches, the tricky crosswind at the lake
+    inlet. She knows this air the way other people know their own faces.
+  jacket: >-
+    The flight jacket is brown leather, worn to butter softness. Inside the
+    collar, in black marker: M. O'CONNELL. The patches are from various
+    Alaskan aviation operations. It smells of jet fuel and cold air and the
+    particular independence of someone who moves through the world at altitude.
+  photographs: >-
+    The photographs on the mantle are a careful arrangement of people and
+    places. A floatplane on a summer lake, morning light. Mountains. A man
+    whose name is not written anywhere -- one of the boyfriends, the ones
+    who did not make it. Maggie does not look at that photograph when other
+    people are in the room. She looks at it when she is alone. This tells
+    you something.
+  window: >-
+    The north-facing window is the best feature of the cabin and Maggie
+    knows it. On dark nights the aurora fills the glass -- green and cyan,
+    folding and unfurling over the mountains like something breathing. Maggie
+    has watched it a thousand times and it still stops her. She does not
+    tell people this. But she has arranged the couch to face the window.
+  bookshelf: >-
+    Paperbacks with cracked spines. Adventure, mostly. Some history. One
+    shelf of poetry that she would not explain to you if you asked. A
+    much-handled copy of 'Stick and Rudder: An Explanation of the Art of
+    Flying' sits at the end with the authority of a primary text.
+spawninfo:
+- mobid: 481
+  message: '<ansi fg="10">Maggie OConnell leans against the doorframe, arms crossed, with the expression of someone who is completely at home and completely ready to leave at a moment''s notice. Both things are simultaneously true.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Maggie unfolds an aviation chart and traces a route with one finger, checking distances.
+- The flight jacket hangs by the door, ready. It is always ready. That is the whole point of it.
+- Maggie looks out the north window at the mountains and her expression is complicated in the specific way of someone who loves where they are.
+- The sound of a floatplane engine somewhere distant -- someone else in the air, someone Maggie can identify by engine sound.
+- Maggie reads a paperback with the focused attention of someone who reads to think, not to relax.
+- A cold draft through the north window, then Maggie gets up and closes it without drama, and sits back down.
+- The photographs on the mantle are in a specific order that Maggie once moved and then put back exactly the same.
+- From outside, the sound of the Cicely afternoon -- Main Street, a truck, someone calling to someone else, the raven.

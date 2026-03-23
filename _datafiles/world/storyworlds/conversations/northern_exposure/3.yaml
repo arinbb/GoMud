@@ -1,0 +1,29 @@
+-
+  Supported:
+    "holling vincoeur": ["shelly tambo"]
+  Conversation:
+    - ["#1 emote sets a glass down on the bar in front of her.", "#1 say What are you thinking about?"]
+    - ["#2 say Everything. Nothing. Do you think I could learn French?"]
+    - ["#1 say I think you could learn anything you decided to learn."]
+    - ["#2 emote looks at him.", "#2 say You always say that."]
+    - ["#1 say I always mean it."]
+-
+  Supported:
+    "holling vincoeur": ["shelly tambo"]
+  Conversation:
+    - ["#2 say Holling, do you ever regret anything?"]
+    - ["#1 emote takes a moment.", "#1 say Some things, yes."]
+    - ["#1 say Not this.", "#1 emote gestures at the bar, at her, at everything."]
+    - ["#2 emote is quiet for a moment.", "#2 say Me neither."]
+    - ["#2 emote leans on the bar.", "#2 say But ask me again in twenty years."]
+    - ["#1 say I will."]
+-
+  Supported:
+    "holling vincoeur": ["shelly tambo"]
+  Conversation:
+    - ["#2 say I was thinking about the pageant. Miss Northwest Territories. I was seventeen."]
+    - ["#1 say You were magnificent."]
+    - ["#2 say You weren't there."]
+    - ["#1 say I have seen the photographs.", "#1 emote smiles.", "#1 say Magnificent."]
+    - ["#2 emote rolls her eyes but she is smiling.", "#2 say You are a complete embarrassment."]
+    - ["#1 say Yes."]

@@ -1,0 +1,17 @@
+itemid: 290
+name: small carved raven
+namesimple: raven
+displayname: a <ansi fg="itemname">small carved raven</ansi>
+description: >-
+  A raven carved from dark cedar, smooth and palm-sized, its wings slightly
+  raised in the gesture that precedes flight. The carving is Tlingit in style
+  -- not decorative but meaningful, each line a decision. The raven's eye is
+  a single inlaid dot of dark stone, bright and watchful. In Tlingit tradition
+  the raven is the transformer, the one who brought light into the world through
+  cunning and persistence. This one fits perfectly in your hand. You found it
+  in Cicely, Alaska, where Ed Chigliak keeps one eye on everything and the
+  raven keeps both eyes on Ed.
+type: object
+subtype: usable
+uses: 0
+value: 0

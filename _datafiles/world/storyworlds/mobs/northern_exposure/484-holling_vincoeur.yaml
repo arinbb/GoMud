@@ -1,0 +1,28 @@
+mobid: 484
+zone: northern_exposure
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote polishes the bar with a cloth, moving with the unhurried efficiency of a man who has done this ten thousand times."
+  - ""
+  - "say I trapped this territory for fifteen years before I opened the bar. I know every tree."
+  - ""
+  - "emote sets out two glasses and pours something amber into them, then reconsiders and puts one away."
+  - ""
+  - "say Shelly. Have I told you lately."
+  - ""
+  - "emote looks out at the room from behind the bar with the calm expression of a man in exactly the right place."
+activitylevel: 20
+character:
+  name: Holling Vincoeur
+  description: >-
+    A French-Canadian ex-trapper who opened The Brick and married a woman thirty
+    years his junior and has spent the years since discovering that both decisions
+    were the best he ever made. Holling is large in the way that comes from decades
+    of physical work -- not imposing, just very present. His hands are enormous
+    and gentle. He knows the wilderness around Cicely the way a book knows its own
+    words, and he knows The Brick the same way. He is quieter than most bar owners,
+    which is a kind of intelligence. He listens. He pours. He says exactly what he
+    means, which is not always very much, and it is always enough.
+  raceid: 1
+  level: 10

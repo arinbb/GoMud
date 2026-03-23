@@ -1,0 +1,71 @@
+roomid: 2145
+zone: Northern Exposure
+title: The Radio Station KBHR
+description: >-
+  <ansi fg="cyan">KBHR</ansi> -- K-Bear -- is a small wooden building with a
+  large <ansi fg="itemname">antenna</ansi> on the roof and an outsized
+  presence in the Cicely consciousness. Inside, the broadcast booth holds
+  the sacred objects: a <ansi fg="itemname">microphone</ansi> on a gooseneck
+  stand, a <ansi fg="itemname">turntable</ansi> with a stack of <ansi fg="itemname">vinyl</ansi>
+  beside it, a battered <ansi fg="itemname">cart machine</ansi> for jingles,
+  and a <ansi fg="itemname">headset</ansi> hanging on a nail. Bookshelves line
+  the walls -- not records but <ansi fg="itemname">books</ansi>, hundreds of
+  them, Whitman and Thoreau and Kerouac and Jung and Rilke and more, all of
+  them read, all annotated. This is where <ansi fg="yellow">Chris Stevens</ansi>
+  lives as much as anywhere. The ON AIR light glows red. The microphone is
+  always warm. Through a smudged window, the spruce trees and the backs of
+  the Main Street buildings are visible. To the <ansi fg="exit">north</ansi>,
+  Main Street. To the <ansi fg="secret-exit">west</ansi>, through the back
+  door, something Chris has been building.
+mapsymbol: R
+maplegend: KBHR Radio
+biome: house
+exits:
+  north:
+    roomid: 2140
+    exitmessage: You step out of the station into the Cicely afternoon.
+  west:
+    roomid: 2153
+    secret: true
+    exitmessage: You slip out the back door of the station into the field behind.
+nouns:
+  microphone: >-
+    The microphone is a vintage ribbon mic, warm-sounding and forgiving. Chris
+    speaks into it every morning and whatever comes out is not radio in the
+    commercial sense -- it is philosophy, poetry, confession, invitation. The
+    whole valley receives it. Most of the valley listens. Some of the valley
+    has been changed by it without knowing exactly when.
+  vinyl: >-
+    Crates and stacks of vinyl, organized by a system that is partly genre,
+    partly mood, partly the logic of a man who believes music is argument.
+    Coltrane next to Hank Williams. Beethoven next to the Ramones. Chris plays
+    what the morning requires, and the morning always requires something specific.
+  books: >-
+    The books at KBHR are working documents -- spines broken, pages dog-eared,
+    passages underlined in three different colors. Whitman gets the most
+    annotation. Thoreau is second. The Jung volumes have marginalia that run
+    into the margins and then onto sticky notes glued to the pages.
+  antenna: >-
+    The KBHR antenna on the roof catches the wind and sways, but it has never
+    fallen. It broadcasts into a vast silence and the silence receives it.
+    On clear days the signal reaches fifty miles. On days when conditions are
+    right, further. Chris believes the signal reaches wherever it needs to.
+  headset: >-
+    The headset hangs on a nail beside the microphone, waiting for the next
+    broadcast. Chris puts it on and becomes something -- not different exactly,
+    but more himself. The voice that comes through the headset is the voice
+    of someone who has thought very hard about what it means to speak into
+    the air and have strangers receive it.
+spawninfo:
+- mobid: 482
+  message: '<ansi fg="cyan">Chris Stevens swivels in his broadcast chair, reaching over to lower the fader on a song that is fading out anyway, his eyes already going somewhere philosophical.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Chris reads something aloud very quietly to himself, testing the sound of the words before the air takes them.
+- A record turns on the turntable -- something slow and searching, filling the small station with sound.
+- The ON AIR light pulses once, a red heartbeat in the warm room.
+- Chris makes a note in the margin of a book, then a second note connecting it to something else, then leans back and looks at the ceiling.
+- The crackle of the transmitter is a constant here, a low hum that means the signal is going out, the signal is always going out.
+- Outside the smudged window, a cloud shadow crosses the spruce line, and Chris watches it move with the attention of a man who finds everything interesting.
+- A song ends and there is a moment of silence before Chris reaches for the microphone, and in that moment the whole station breathes.
+- Books everywhere. This is a man who believes that thinking clearly requires reading continuously.

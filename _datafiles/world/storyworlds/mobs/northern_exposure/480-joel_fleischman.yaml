@@ -1,0 +1,27 @@
+mobid: 480
+zone: northern_exposure
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote reads a medical journal with the focused intensity of a man maintaining his identity through bibliography."
+  - ""
+  - "say I cannot believe they sent me here. This is not a posting. This is a punishment."
+  - ""
+  - "emote looks out the window at the mountains and his expression does something complicated."
+  - "say Do you know what I could be doing right now? In Manhattan? At an actual hospital?"
+  - ""
+  - "emote straightens his diplomas on the log wall. They are immediately crooked again."
+activitylevel: 25
+character:
+  name: Joel Fleischman
+  description: >-
+    A young doctor from New York City who has been in Cicely, Alaska long enough
+    that it is beginning to show in small ways he pretends not to notice. He is
+    thin, dark-haired, well-dressed by Alaskan standards, always slightly alarmed
+    by his immediate surroundings. His medical bag is always packed, his diplomas
+    are always on the wall, and his opinions about Alaska are always available.
+    He is, underneath all of this, a very good doctor and a more adaptable person
+    than he knows. He does not know this yet. He suspects it, and finds the
+    suspicion alarming.
+  raceid: 1
+  level: 8

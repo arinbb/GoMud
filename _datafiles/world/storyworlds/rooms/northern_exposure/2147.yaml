@@ -1,0 +1,63 @@
+roomid: 2147
+zone: Northern Exposure
+title: The Raven Totem
+description: >-
+  At the western edge of Cicely, where the town ends and the wilderness makes
+  its case, stands the <ansi fg="cyan">Raven Totem</ansi>. It is a carved
+  cedar pole, perhaps twelve feet tall, weathered to grey and silver, depicting
+  a <ansi fg="itemname">raven</ansi> at the top with wings half-spread, as if
+  mid-thought. Below the raven, faces and figures carved in the Tlingit tradition
+  -- <ansi fg="itemname">stories</ansi> encoded in wood, readable to those
+  who know how, felt by those who do not. The totem is old. It was here
+  before the town. The <ansi fg="10">spruce trees</ansi> press close on
+  either side, and the air here is different -- quieter, or fuller, depending
+  on how you hear silence. <ansi fg="yellow">Ed</ansi> comes here. He does
+  not always come to think. Sometimes he comes to be thought through.
+  To the <ansi fg="exit">east</ansi>, Main Street.
+mapsymbol: T
+maplegend: The Raven Totem
+biome: land
+exits:
+  east:
+    roomid: 2140
+    exitmessage: You walk east back toward the sounds of Cicely.
+nouns:
+  raven: >-
+    The carved raven at the top of the totem faces east, toward the morning.
+    Its wings are half-spread in the gesture that precedes flight, or perhaps
+    follows landing -- the moment of decision that is the raven's specialty.
+    In Tlingit tradition, Raven is the transformer, the trickster, the one
+    who brought light into the world through cunning and persistence. Ed's
+    raven -- his spirit guide -- visits him here sometimes. Or he visits it.
+    The distinction may not matter.
+  stories: >-
+    The figures carved below the raven are stories in the oldest sense --
+    not narrative but meaning, compressed into form. A figure with outstretched
+    arms. An animal that might be a bear or might be something else. Faces
+    looking outward in different directions. Ed has spent hours here with
+    a sketchbook. He is making a film about this. He is always making a film.
+    The film and the totem are the same project.
+  trees: >-
+    The spruce trees on either side of the totem are large and old. Their
+    roots go under the totem base. The relationship is one of long mutual
+    accommodation. The trees have grown around the totem. The totem stands
+    amid the trees. Neither has given way. This is the appropriate relationship
+    between human things and wild things.
+  ground: >-
+    The ground around the base of the totem is worn smooth by feet -- Ed's
+    feet, mainly. The earth here smells of cedar and moss and the particular
+    cold that comes off the mountains at this time of year. Someone has left
+    a small offering at the base: a feather, dark and perfect.
+spawninfo:
+- mobid: 483
+  message: '<ansi fg="10">Ed Chigliak stands before the Raven Totem with his hands in his pockets and a thoughtful expression, his camera bag over one shoulder, looking at the carved figures the way he looks at all of his research -- carefully, with genuine wonder.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Ed stands very still before the totem for a long moment, then writes something in a small notebook.
+- A raven -- a real one, not carved -- lands in the spruce tree to the left and watches everything with bright, intelligent eyes.
+- The wind moves through the spruce needles in a sound that is almost a word, almost not.
+- Ed lifts his camera and frames a shot of the totem against the sky, then lowers it without pressing the shutter. Not yet.
+- The carved faces in the totem catch the light differently by the hour, as if they are having a slow conversation with the sun.
+- The cold here is clean and deep, the kind of cold that comes from a continent of wilderness rather than a street of buildings.
+- The offering at the base of the totem -- the dark feather -- moves in the wind but does not blow away.
+- Ed sits cross-legged on the ground before the totem and closes his eyes. This is also a form of filming.

@@ -1,0 +1,69 @@
+roomid: 2140
+zone: Northern Exposure
+title: Main Street Cicely
+description: >-
+  The main -- and largely only -- street of <ansi fg="cyan">Cicely, Alaska</ansi>,
+  population 215. The buildings are low and weathered, paint peeling in the
+  way that suggests character rather than neglect. A hand-painted sign reads
+  <ansi fg="yellow">CICELY, ALASKA -- FOUNDED 1909</ansi> with what appears to
+  be a portrait of two women in Victorian dress. The mountains rise on every
+  side, enormous and indifferent, capped with snow that does not intend to melt.
+  A <ansi fg="10">spruce forest</ansi> crowds the edges of town like an audience.
+  The air is cold and clean and smells of pine resin and woodsmoke. To the
+  <ansi fg="exit">east</ansi> is The Brick. To the <ansi fg="exit">north</ansi>,
+  Ruths General Store. To the <ansi fg="exit">south</ansi>, the radio station.
+  To the <ansi fg="exit">west</ansi>, the Raven Totem. And everywhere, the vast
+  Alaskan wilderness pressing close, beautiful and unmoved by human concern.
+mapsymbol: C
+maplegend: Main Street Cicely
+biome: land
+exits:
+  east:
+    roomid: 2141
+    exitmessage: You push open the door to The Brick. Warmth and the smell of coffee hit you immediately.
+  north:
+    roomid: 2143
+    exitmessage: You step into Ruths General Store, where a small bell above the door announces you.
+  south:
+    roomid: 2145
+    exitmessage: You follow the sound of KBHR down the street to the radio station.
+  west:
+    roomid: 2147
+    exitmessage: You walk toward the carved raven at the edge of town.
+nouns:
+  sign: >-
+    The founding sign of Cicely, Alaska, 1909. It depicts two women in elaborate
+    Victorian dress -- Cicely and Roslyn, the town founders, according to local
+    legend. The painting is crude but full of conviction. Someone has added a
+    smaller sign below: POP. 215. Then below that, in different handwriting: 216.
+    Then 214. The town is keeping track of something.
+  mountains: >-
+    The mountains are beyond scale in the way Alaskan mountains always are. They
+    do not care about the town at their feet. They were here ten thousand years
+    before the first person arrived and they will be here ten thousand years after
+    the last one leaves, and they find both facts equally unremarkable.
+  forest: >-
+    Black spruce and birch crowd close to the edge of town, as if the wilderness
+    is maintaining a polite but firm perimeter. Bears have been seen at this
+    perimeter. Also wolves. The forest is not hostile. It is simply much more
+    real than the buildings it surrounds.
+  buildings: >-
+    A few dozen structures, some wood-frame, some log, all of them functional
+    before they are pretty. The Brick has a neon moose in the window. The General
+    Store has a bulletin board outside with notices about lost dogs and aurora
+    viewing parties. The radio station has an antenna on the roof that sways
+    slightly in the wind.
+spawninfo:
+- mobid: 488
+  message: '<ansi fg="10">A very large moose ambles out of the spruce trees and stands in the middle of the street, regarding everything with supreme bovine dignity.</ansi>'
+  respawnrate: 8 real minutes
+  maxwander: 3
+idlemessages:
+- The moose is somewhere on this street. It always is. Cicely exists in relationship to the moose.
+- A dog barks twice somewhere, then stops, apparently satisfied.
+- The KBHR transmitter on the station roof catches the afternoon light and flashes once, silver.
+- A truck passes slowly down the street, the driver lifting two fingers from the wheel in greeting.
+- The mountains change color by the hour -- blue to purple to pink at dusk, depending on the clouds.
+- Wood smoke curls from the chimney of The Brick. The coffee is on. It is always on.
+- A raven lands on the power line above you and watches with one eye, then the other.
+- Mud season or snow season or the brief extraordinary summer -- whatever the season, this feels like the realest place in Alaska.

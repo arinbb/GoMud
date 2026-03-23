@@ -1,0 +1,30 @@
+mobid: 487
+zone: northern_exposure
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote polishes the display case of the moon rock with a soft cloth, examining his reflection in the glass."
+  - ""
+  - "say This town has potential. Untapped potential. I intend to tap it."
+  - ""
+  - "emote stands before the American flag in a posture that is not quite a salute but close."
+  - ""
+  - "say I went to the moon. There are perhaps twelve people alive who can say that."
+  - ""
+  - "emote consults his development maps, makes a notation with purpose."
+activitylevel: 22
+character:
+  name: Maurice Minnifield
+  description: >-
+    Former NASA astronaut, current developer and booster of Cicely, Alaska,
+    Maurice Minnifield is a man who has been to the moon and considers this
+    foundational to his identity and all subsequent decisions. He is broad-
+    shouldered, ex-military precise, conservative in the political and
+    sartorial senses, a man who believes in America and progress and the
+    particular kind of manifest destiny that involves building a resort in
+    interior Alaska. He is also, underneath a considerable amount of armor,
+    a person who chose Cicely because something in the wilderness answered
+    something in him that Houston and Washington did not. He would not say
+    this. His moon rock says it for him.
+  raceid: 1
+  level: 11

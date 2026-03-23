@@ -1,0 +1,17 @@
+itemid: 152
+name: Northern Exposure film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Northern Exposure</ansi>
+description: >-
+  A film reel in a battered metal canister, the latch slightly bent from cold
+  weather, a sticker on the lid showing a cartoon moose standing in a road.
+  'NORTHERN EXPOSURE' is printed on the label in the font of a small-town
+  newspaper, below which someone has written in pencil: 'CBS, 1990-1995.
+  Cicely, Alaska. Pop. 215. A doctor from New York. A bush pilot. A philosopher
+  on the radio. The moose.' When you hold the canister you feel a breath of
+  cold air, clean and piney, and hear very faintly the sound of a radio
+  broadcast drifting across a vast and improbable sky.
+type: object
+subtype: usable
+uses: 0
+value: 0

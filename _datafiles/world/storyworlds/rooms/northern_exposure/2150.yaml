@@ -1,0 +1,74 @@
+roomid: 2150
+zone: Northern Exposure
+title: Maurices Lodge
+description: >-
+  <ansi fg="yellow">Maurices Lodge</ansi> is the largest and most intentional
+  building in Cicely, which is saying something about Maurice Minnifield and
+  something about Cicely. The <ansi fg="itemname">main room</ansi> is hunting
+  lodge and command center -- <ansi fg="itemname">trophy heads</ansi> on the
+  walls alongside <ansi fg="itemname">framed photographs</ansi> of Maurice with
+  various dignitaries, several U.S. presidents, and the Apollo program. At the
+  center of the mantle, lit from above: a <ansi fg="cyan">moon rock</ansi> in
+  a small display case, the actual moon, brought back personally, the centerpiece
+  of Maurice's biography. A large <ansi fg="itemname">American flag</ansi>
+  stands beside the fireplace. Maps of Cicely and the surrounding region, with
+  Maurice's development plans marked in red, cover the <ansi fg="itemname">table</ansi>.
+  This man came to Alaska and decided to improve it. The improvement is ongoing.
+  To the <ansi fg="exit">east</ansi>, Main Street.
+mapsymbol: L
+maplegend: Maurices Lodge
+biome: house
+exits:
+  east:
+    roomid: 2140
+    simplename: street
+    fancyname: east out to Main Street
+    exitmessage: You step out of the lodge onto Main Street.
+    mapdirection: east
+nouns:
+  moonrock: >-
+    The moon rock sits in its display case under a small spotlight, a chunk
+    of grey basalt from the Sea of Tranquility, approximately 3.8 billion
+    years old. Maurice handled it. He brought it back. It is, in his view,
+    the most important object in Alaska, and possibly on Earth. He is not
+    entirely wrong about this. He polishes the case often. The rock does not
+    need polishing -- it has been in vacuum for most of its existence -- but
+    the polishing is not really for the rock.
+  photographs: >-
+    The wall of photographs is a biography in frames. Young Maurice in a
+    flight suit, pre-mission, the expression of someone who believes entirely
+    in the future. Maurice with Nixon. With Armstrong. With a series of
+    other astronauts whose names he will tell you if you do not ask. Then
+    Cicely: the early days, the lodge under construction, Maurice at various
+    ribbon-cuttings for things he built. The progression is of a man who
+    landed on the Moon and then landed in Alaska and found the second one
+    equally demanding.
+  flag: >-
+    The flag is a proper flag, full size, carefully maintained, hung with
+    the precision of a military man who knows what the protocol requires.
+    Maurice salutes it sometimes, alone, when he thinks no one is watching.
+    This is not a performance. It is the most private thing about him.
+  maps: >-
+    The development maps spread across Maurice's table show Cicely as it is
+    and Cicely as Maurice intends it to be. Hotels. A golf course. A runway
+    extension. A resort, possibly. Maurice has been planning these things
+    for years. Most of them have not been built. The maps are updated
+    regularly anyway. Hope, in Maurice's lexicon, is a plan.
+  trophies: >-
+    The trophy heads on the walls represent decades of Alaskan hunting -- elk,
+    moose, bear, smaller things. Maurice hunted them properly, by his own
+    standards, which are exacting. Each one has a date. He remembers all
+    of them. He would not call it sentiment. He would call it record-keeping.
+spawninfo:
+- mobid: 487
+  message: '<ansi fg="yellow">Maurice Minnifield stands before his moon rock with the posture of a man who has been to space and considers this fact foundational to all subsequent decisions.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Maurice polishes the moon rock display case with a soft cloth, checking the reflection of the room in its surface.
+- Maurice consults his development maps, makes a mark, then stands back and surveys them with satisfaction.
+- The American flag beside the fireplace stirs in a draft and Maurice looks at it the way he looks at the moon rock -- with private feeling.
+- Maurice opens a file folder labeled CICELY DEVELOPMENT PHASE 4 and reads with the focused intent of a man who intends to implement this.
+- The photographs on the wall catch the afternoon light. Maurice has stopped seeing them consciously. They are the wallpaper of his identity.
+- Maurice pours himself something from the good bottle and stands at the window looking out at his town.
+- A knock at the door. Maurice says 'Enter' with the authority of someone who has given this command in significant places.
+- The lodge is warm and substantial, which is how Maurice prefers everything to be.

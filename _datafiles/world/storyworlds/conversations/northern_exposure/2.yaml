@@ -1,0 +1,28 @@
+-
+  Supported:
+    "chris stevens": ["*"]
+  Conversation:
+    - ["#1 say I have been thinking this morning about Heraclitus. You cannot step in the same river twice."]
+    - ["#1 say But here is the thing nobody talks about: the river knows this and keeps going anyway."]
+    - ["#1 say That is the instruction. Keep going anyway.", "#1 emote pauses to let that land."]
+-
+  Supported:
+    "chris stevens": ["*"]
+  Conversation:
+    - ["#1 say Whitman says he is large. He contains multitudes."]
+    - ["#1 say Cicely proves this. Every person in this town is at least three people."]
+    - ["#1 emote looks at whoever is nearby.", "#1 say You included. Possibly more."]
+-
+  Supported:
+    "chris stevens": ["*"]
+  Conversation:
+    - ["#1 say Good morning, or afternoon, or whatever the light is doing where you are."]
+    - ["#1 say The aurora last night was extraordinary. If you missed it I am sorry. Come back tonight."]
+    - ["#1 say The lights don't care whether you watch. But watching changes something in you. That is the transaction."]
+-
+  Supported:
+    "chris stevens": ["*"]
+  Conversation:
+    - ["#1 say I want to talk to you about the piano I am building a catapult to launch."]
+    - ["#1 say Not the piano. Not the catapult. The moment of the arc."]
+    - ["#1 say The arc is the argument. Everything before it is just engineering.", "#1 emote seems satisfied with this."]

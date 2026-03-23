@@ -1,0 +1,70 @@
+roomid: 2152
+zone: Northern Exposure
+title: Joels Cabin
+description: >-
+  Dr. Joel Fleischman lives in a one-room <ansi fg="8">log cabin</ansi> that he
+  considers an injustice and has made, without noticing, into a home. <ansi fg="itemname">New York</ansi>
+  posters on the log walls: the Met, the Village, a subway map with certain
+  lines highlighted that Joel has looked at so many times he can walk them in
+  his sleep. A <ansi fg="itemname">bookshelf</ansi> holds both medical texts
+  and a growing collection of Alaska natural history that he did not intend
+  to acquire. A <ansi fg="itemname">desk</ansi> holds letters to New York
+  people who are receding, slowly, into the medium distance of his life.
+  A <ansi fg="itemname">coat hook</ansi> bears a parka that fits him now,
+  after two winters, in the way a parka has to fit -- worn in, adapted to.
+  The <ansi fg="itemname">window</ansi> looks toward the mountains and the
+  spruce line and not Manhattan, which is the point. To the <ansi fg="exit">east</ansi>,
+  Joels office.
+mapsymbol: J
+maplegend: Joels Cabin
+biome: house
+exits:
+  east:
+    roomid: 2144
+    simplename: office
+    fancyname: east through the connecting path to the office
+    exitmessage: You walk the short path from the cabin back to Joels office.
+    mapdirection: west
+nouns:
+  posters: >-
+    The New York posters are an assertion, a homeland maintained in the form
+    of paper. The Metropolitan Museum. A Village Voice concert listing for
+    a show in 1987. The subway map with the Upper West Side circled and
+    certain restaurants marked. Joel looks at them less than he used to.
+    He has noticed this and is not sure what to do with the information.
+  bookshelf: >-
+    The bookshelf that began as medical texts alone now includes: 'The Snow
+    Leopard,' two volumes on Alaskan birds, a field guide to spruce insects,
+    something about the Tlingit Nation that Ed recommended, and 'Coming Into
+    the Country' by John McPhee, deeply dog-eared. Joel bought the Alaska
+    books reluctantly. He has read them all.
+  desk: >-
+    The desk has a letter to his mother that is three weeks old and still
+    not finished. Beside it, a letter to his friend David in New York that
+    begins 'I have been here two years' and trails off after the third
+    paragraph because whatever he was going to say next requires more honesty
+    than he could manage that day.
+  parka: >-
+    The parka on the hook is an Alaskan parka, not a New York parka. He
+    bought it in a panic his first winter and it has been faithful ever
+    since. It is warm, practical, not remotely stylish. It fits. Joel
+    wears it without ceremony now, which is its own kind of ceremony.
+  window: >-
+    The window shows spruce trees and the mountain behind them, the same
+    view it has always shown. Joel looked out this window his first morning
+    here with pure despair. He looks out it now with something that has no
+    simple name but is not despair. Alaska changed the shape of something
+    inside him. He would not say this out loud.
+spawninfo:
+- mobid: 480
+  message: '<ansi fg="8">Joel Fleischman is standing at the window of his cabin looking at the mountains with an expression he would describe as frustration and which looks, from the outside, like something else entirely.</ansi>'
+  respawnrate: 6 real minutes
+idlemessages:
+- Joel looks at the New York subway map on the wall and then out the window at the spruce line. He does this comparison less often than he used to.
+- The letter on the desk has not moved. Joel adds a sentence and then crosses it out.
+- Joel picks up the Alaska natural history book and reads it with the reluctant absorption of someone learning to love something they did not plan to love.
+- The parka on the hook is broken in now -- soft at the elbows, warm in the specific way of things that know you.
+- Joel makes coffee on the small stove and does not complain about the stove, which is Alaskan progress.
+- The window light is the Alaskan kind -- too much in summer, not enough in winter, but always real.
+- Joel sits on the edge of the bed and looks at nothing in particular with the expression of a man doing internal accounting.
+- The cabin is not what Joel planned, but it is, by most measures, sufficient. By some measures, more.

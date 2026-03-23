@@ -1,0 +1,30 @@
+mobid: 486
+zone: northern_exposure
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote reads behind the counter, her reading glasses on, her attention completely given to the page."
+  - ""
+  - "say Someone is going to need this book before the week is out. I can always tell."
+  - ""
+  - "emote arranges a shelf with small precise adjustments."
+  - ""
+  - "say Good afternoon. What are you looking for?"
+  - ""
+  - "emote makes a note in her small order book, then closes it with the finality of someone who has the situation handled."
+activitylevel: 18
+character:
+  name: Ruth-Anne Miller
+  description: >-
+    Ruth-Anne has run the General Store for longer than most of Cicely's current
+    residents have been alive, and she intends to continue. She is small and white-
+    haired and moves with the unhurried efficiency of someone who has never had
+    a reason to rush. Her face has the kind of lines that come from decades of
+    paying attention to things. She reads everything, forgets nothing, gives
+    advice only when asked and only exactly as much as is needed. She knows
+    what every person in Cicely is looking for, often before they do. The store
+    is organized by her logic alone and she can find anything in under thirty
+    seconds. She is the eldest thing in Cicely that is not a mountain. She has
+    the authority of someone who has outlasted a great many certainties.
+  raceid: 1
+  level: 12

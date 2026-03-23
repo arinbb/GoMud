@@ -1,0 +1,17 @@
+name: Northern Exposure
+roomid: 2140
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: land
+mutators:
+- mutatorid: cicely-aurora
+idlemessages:
+- A raven circles overhead, banking once in the cold blue air, then vanishes behind the spruce.
+- The distant sound of KBHR drifts through the valley on the wind -- Chris Stevens, philosophical even at this hour.
+- The Alaskan sky is impossible in its scale, bigger than any sky has a right to be.
+- Snow or mud or wildflowers, depending on the season, but always the smell of pine and cold water.
+- Somewhere out there the moose is doing exactly what it wants. It always is.
+- The northern lights ripple at the edge of vision -- green and cyan ribbons folding slowly across the dark.
+- A floatplane buzzes overhead, banking toward the lake. Maggie, probably.
+- The silence out here is not empty. It is the most crowded silence you have ever been in.

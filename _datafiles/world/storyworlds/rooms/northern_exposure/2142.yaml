@@ -1,0 +1,69 @@
+roomid: 2142
+zone: Northern Exposure
+title: The Brick Back Room
+description: >-
+  Behind the bar is where The Brick keeps its real conversations. The back room
+  is half <ansi fg="itemname">storage</ansi> -- cases of beer, canned goods,
+  extra glasses in cardboard sleeves -- and half <ansi fg="8">living space</ansi>,
+  with a worn <ansi fg="itemname">couch</ansi> against one wall and a small table
+  where Holling keeps his accounts. A <ansi fg="itemname">window</ansi> looks
+  out on the alley and the spruce line beyond. The room smells of cedar and
+  beer and the particular intimacy of a place where two people have been
+  comfortable with each other for a long time. <ansi fg="yellow">Photographs</ansi>
+  cover one wall -- Holling's trapping years, the early days of The Brick, a
+  young Shelly at what appears to be a beauty pageant, various Cicely community
+  events going back decades. Through the door to the <ansi fg="exit">south</ansi>
+  is the bar proper.
+mapsymbol: K
+maplegend: Back Room
+biome: house
+exits:
+  south:
+    roomid: 2141
+    simplename: bar
+    fancyname: back through the bar door
+    exitmessage: You step back out through the door into the bar.
+    mapdirection: south
+nouns:
+  photographs: >-
+    A wall of memory. Holling as a young man in furs and boots, somewhere
+    north of here, a different life entirely. The Brick in its early days,
+    a hand-painted sign over the door. Shelly at seventeen in a sash that
+    says MISS NORTHWEST TERRITORIES, beaming with the confidence of someone
+    who has not yet discovered how complicated things get. Recent Cicely
+    events -- the annual run, a town meeting that appears to have gotten
+    heated, the moose in various locations around town.
+  couch: >-
+    A couch that has absorbed twenty years of quiet conversation. It is
+    orange and brown plaid and very comfortable in the way furniture
+    gets comfortable when it stops trying to be anything other than a couch.
+    The indentation on the left side is Holling's. The one on the right
+    is Shelly's. They fit perfectly.
+  window: >-
+    The window looks out on the alley between The Brick and the next building,
+    and beyond that on the spruce tree line where the town ends and Alaska
+    begins. At this time of day the light through the spruce is green and
+    cold and very beautiful. Holling looks out this window often. He knows
+    what he gave up to have what he has. He has decided it is worth it.
+  accounts: >-
+    Holling's account books are handwritten, neat columns of numbers going
+    back years. The Brick has always made money. Not a lot, but enough. In
+    the margins of several pages are notes that are not about the accounts
+    at all -- observations, fragments, once what appears to be the beginning
+    of a letter. The books contain two stories: the bar, and the man.
+spawninfo:
+- mobid: 484
+  message: '<ansi fg="yellow">Holling comes through from the bar, taking a moment for himself back here, his broad shoulders relaxing slightly once the door closes behind him.</ansi>'
+  respawnrate: 6 real minutes
+- mobid: 485
+  message: '<ansi fg="yellow">Shelly follows Holling through, settling onto the couch with the ease of someone who is exactly where she wants to be.</ansi>'
+  respawnrate: 6 real minutes
+idlemessages:
+- Holling opens the accounts book and studies a column of figures, then writes something in the margin that is not a number.
+- Shelly hums something to herself, not quite recognizable, not quite the jukebox song from out front.
+- The couch creaks once, then settles.
+- Through the wall, the muffled sound of The Brick -- a laugh, a glass set down, the pool table's break.
+- Holling stands at the window for a long moment, looking at the spruce line where his old life lives.
+- Shelly picks up one of the old photographs and looks at it with the expression of someone understanding something for the first time.
+- The cedar and beer smell of the back room is the smell of a life being built from good materials.
+- A moment of pure quiet back here -- the bar keeps its noise to itself on the other side of the door.

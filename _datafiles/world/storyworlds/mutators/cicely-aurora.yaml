@@ -1,0 +1,12 @@
+mutatorid: cicely-aurora
+namemodifier:
+  behavior: append
+  text: (aurora)
+  colorpattern: cyan
+descriptionmodifier:
+  behavior: append
+  text: The northern lights are at the edge of the sky, green and cyan, folding slowly over the mountains.
+  colorpattern: none
+alertmodifier:
+  text: The air is cold and clean and smells of pine resin and the particular silence of a place very far north.
+  colorpattern: none

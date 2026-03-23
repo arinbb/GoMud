@@ -1,0 +1,76 @@
+roomid: 2141
+zone: Northern Exposure
+title: The Brick
+description: >-
+  The warmest place in <ansi fg="cyan">Cicely</ansi>. The Brick is bar, diner,
+  community center, and confessional booth rolled into one long, low-ceilinged
+  room. <ansi fg="yellow">Wood paneling</ansi> absorbs the light from the bar
+  fixtures and gives it back warm and amber. A massive <ansi fg="itemname">moose head</ansi>
+  watches proceedings from above the bar with the patient authority of a minor
+  god. The <ansi fg="itemname">pool table</ansi> is green felt and slightly
+  warped, which everyone knows and no one mentions. Booths line one wall, each
+  one bearing years of carved initials. Behind the bar, every bottle is in its
+  place -- <ansi fg="yellow">Holling</ansi> knows where each one lives and
+  reaches for them without looking. The smell is <ansi fg="itemname">coffee</ansi>
+  and something roasting and old wood and decades of good talk. This is where
+  Cicely happens. Back through the door to the <ansi fg="exit">north</ansi>
+  is the back room. To the <ansi fg="exit">west</ansi>, Main Street.
+mapsymbol: B
+maplegend: The Brick
+biome: house
+exits:
+  west:
+    roomid: 2140
+    exitmessage: You step back out into the Cicely cold.
+  north:
+    roomid: 2142
+    simplename: bar
+    fancyname: through the door behind the bar
+    exitmessage: You slip through the door behind the bar into the back room.
+    mapdirection: north
+nouns:
+  moose: >-
+    A truly heroic moose head mounted above the bar, the rack spanning nearly
+    four feet. Its glass eyes have the particular quality of glass eyes that
+    have witnessed everything -- every argument, every confession, every
+    long night, every bad joke. Holling shot it himself, years ago, before
+    the bar, before Shelly, before he became whatever he is now. He does not
+    talk about the moose. The moose remains.
+  pool: >-
+    The pool table is the social center of The Brick's social center. The felt
+    is dark green and worn to a shine near the pockets. The warp is famous
+    -- it introduces a predictable eastward bias that locals factor into
+    every shot. Strangers always lose their first game blaming the table.
+    Then they lose the second game knowing about it, which is somehow worse.
+  coffee: >-
+    The coffee at The Brick is strong, hot, and exactly what Alaska requires.
+    It comes in thick ceramic mugs that have survived years of being set down
+    hard. It is the best coffee within two hundred miles, which is not a small
+    claim in this geography.
+  bar: >-
+    The long wooden bar is Holling's achievement -- built by hand from local
+    spruce, polished to a glow by decades of elbows. Every barstool has a
+    regular and every regular has a story and every story has been told here
+    more than once, each time slightly better.
+  booths: >-
+    Vinyl booths, each one bearing the archaeological record of years of
+    occupation. Names, dates, declarations of feeling, a few mathematical
+    calculations of uncertain purpose. The booth nearest the window has
+    'JOEL + M' carved into the wood, half-hidden under a condiment tray.
+    Nobody mentions it. Everyone knows it is there.
+spawninfo:
+- mobid: 484
+  message: '<ansi fg="yellow">Holling Vincoeur emerges from behind the bar, setting down a glass he was polishing, his large hands moving with the practiced ease of a man who has been doing this for decades.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 485
+  message: '<ansi fg="yellow">Shelly Tambo appears from the kitchen doorway, carrying a plate with the particular flair of someone who could have been a dancer but chose to be extraordinary here instead.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Holling refills someone's coffee without being asked. He always knows before you do.
+- The jukebox in the corner plays something country that nobody chose and everybody tolerates.
+- A draft of cold air from the door, then warmth closes back in around you like a hand.
+- Someone at the bar is arguing about the moose population with the certainty of someone who has counted each one personally.
+- Shelly wipes down the counter with a cloth that smells of pine cleaner and sets down a glass that rings true.
+- The sound of pool balls from the back -- a clean break, then deliberation.
+- The wood in the walls breathes in the heat. The Brick is alive in the way only old buildings are alive.
+- From somewhere, the smell of Holling's moose chili. It wins every informal competition it has ever entered.

@@ -1,0 +1,30 @@
+mobid: 483
+zone: northern_exposure
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote watches something in the middle distance with complete absorption, as if filming it in his head."
+  - ""
+  - "say You know what this reminds me of? There is a shot in Kurosawa. In Rashomon. Where the light comes through the trees."
+  - ""
+  - "emote writes something in his small notebook with focused speed."
+  - ""
+  - "say My spirit guide told me something this morning. I am still working out what it meant."
+  - ""
+  - "emote holds up his camera and frames a shot, then lowers it slowly. Not yet."
+activitylevel: 25
+character:
+  name: Ed Chigliak
+  description: >-
+    Half-Tlingit, half-unknown, entirely himself, Ed Chigliak grew up in Cicely
+    and has absorbed its strangeness and its beauty with the openness of someone
+    who was not taught to be suspicious of either. He carries a camera most of
+    the time. He has a spirit guide, a raven, who communicates in ways Ed is
+    always interpreting. He knows everything ever put on film, can quote from
+    it, cross-reference it, and use it to illuminate whatever situation he is
+    currently in. He is making a film about Cicely. He is always making a film
+    about Cicely. The film is his life and his life is the film, and the raven
+    watches both. He is younger than he seems and wiser than he knows, which is
+    also the other way around.
+  raceid: 1
+  level: 7

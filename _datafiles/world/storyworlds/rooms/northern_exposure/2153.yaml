@@ -1,0 +1,62 @@
+roomid: 2153
+zone: Northern Exposure
+title: The Catapult Field
+description: >-
+  In the field behind the KBHR station, partially screened from the road by
+  a stand of birch trees, <ansi fg="yellow">Chris Stevens</ansi> has been
+  building a <ansi fg="cyan">catapult</ansi>. It is enormous. It is also
+  beautiful, in the specific way of things built with complete commitment to
+  a vision that most people would not have. The <ansi fg="itemname">frame</ansi>
+  is seasoned spruce, jointed with the precision of someone who taught himself
+  joinery for this specific purpose. The <ansi fg="itemname">throwing arm</ansi>
+  is a full twenty feet, counterweighted with a drum of concrete. The
+  <ansi fg="itemname">sling</ansi> hangs ready. Nearby, a <ansi fg="itemname">piano</ansi>
+  -- an upright, slightly weather-damaged -- waits with the patience of a
+  piano that knows what is going to happen to it and has made its peace with
+  that. This is <ansi fg="cyan">art</ansi>. Chris has written this in red
+  paint on the frame: <ansi fg="cyan">ART</ansi>. He is not wrong. To the
+  <ansi fg="exit">east</ansi>, back to the station.
+mapsymbol: X
+maplegend: The Catapult
+biome: land
+exits:
+  east:
+    roomid: 2145
+    exitmessage: You walk back around to the front of the station.
+nouns:
+  catapult: >-
+    The catapult is a trebuchet design, historically accurate, scaled up.
+    Chris researched this for three weeks in Ruth-Anne's store, cross-
+    referencing medieval siege engine manuals with structural engineering
+    texts. The result is functional. Cicely does not know what to make of
+    this, which is the appropriate response to most of Chris's projects.
+  frame: >-
+    The spruce frame is remarkable joinery -- mortise and tenon, wooden
+    pegs, nothing metal except the axle bearing. Chris learned to do this.
+    He taught himself from books. He finds this the most natural thing in
+    the world: identifying what you need to know and then knowing it.
+  piano: >-
+    The piano is an upright Steinway, donated by an estate sale in Juneau
+    that did not know what else to do with it. It is slightly out of tune
+    from the weather, which Chris considers appropriate. It will be launched
+    into the air above Cicely. This is what it was waiting for. Chris knows
+    this. The piano knows this.
+  arm: >-
+    The throwing arm is a single spruce timber, twenty feet of it, moving
+    on its axle with a smoothness that took three attempts to achieve.
+    The counterweight is a fifty-gallon drum of concrete. When it releases,
+    the piano will travel approximately two hundred feet before its
+    relationship with gravity becomes definitive. The arc will be magnificent.
+spawninfo:
+- mobid: 482
+  message: '<ansi fg="cyan">Chris Stevens is here, checking the throwing arm with a level, his expression the absolute focus of someone doing the most important thing they have ever done.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Chris checks the axle bearing with his hand, feeling for smoothness, and nods once.
+- The piano sits in the field with the dignity of an instrument that has decided to be a projectile.
+- Chris walks the length of the throwing arm twice, looking up at it, his lips moving slightly.
+- A birch leaf falls and lands on the piano's keys, producing a sound so small only the field hears it.
+- Chris stands back and looks at the catapult with his arms crossed and the expression of a man who loves his work.
+- The counterweight -- the concrete drum -- shifts slightly in the wind, and the arm moves a centimeter. Chris records this.
+- From the station, through the back wall, the faint sound of a record playing. Chris put it on before coming out here.
+- The word ART on the frame catches the afternoon light, red on spruce, permanent.

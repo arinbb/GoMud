@@ -1,0 +1,29 @@
+mobid: 482
+zone: northern_exposure
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote spins a record on the turntable and listens to the first few bars with his eyes closed."
+  - ""
+  - "say Walt Whitman said: 'I am large, I contain multitudes.' Cicely proves this every single day."
+  - ""
+  - "emote makes a note in the margin of a book he is reading."
+  - ""
+  - "say Good morning, Cicely. Or good afternoon. The time is approximate. The intention is constant."
+  - ""
+  - "emote picks up a piece of scrap wood and examines it with the attention of a man who sees potential in materials."
+activitylevel: 30
+character:
+  name: Chris Stevens
+  description: >-
+    The voice of KBHR, Cicely's radio station, Chris Stevens is a philosopher,
+    artist, ex-convict, and ordained minister who arrived in Alaska by a route
+    that makes complete sense if you understand that some people are assembled
+    from a wider-than-average set of influences. He is tall and unhurried, with
+    the look of someone who has spent serious time outdoors and equally serious
+    time with books. He quotes Whitman and Thoreau and Jung with equal fluency.
+    He is currently building a trebuchet to launch a piano into the air over
+    Cicely because he believes this is art, which it is. He is never not thinking.
+    He is never not broadcasting. The boundary between the two is permeable.
+  raceid: 1
+  level: 9
