@@ -1,0 +1,66 @@
+roomid: 2072
+zone: The Andy Griffith Show
+title: The Schoolyard
+description: >-
+  The schoolyard behind Mayberry Elementary -- a wide open space of
+  <ansi fg="10">grass and packed earth</ansi> with a <ansi fg="itemname">swing set</ansi>
+  that has been here since approximately forever, its chains worn soft and the
+  arc of each swing worn into the ground below. A great <ansi fg="itemname">oak
+  tree</ansi> stands at the edge of the yard, its branches spread wide enough to
+  shade a third of the schoolyard, with a length of rope knotted around the
+  lowest branch. A <ansi fg="itemname">sandbox</ansi> in the corner holds its
+  sand in a settled, well-used way. The school building itself stands at the far
+  end -- white clapboard, red door, two rows of windows. This is where Opie
+  learns things and where the things he learns are tested against what he
+  already knows from Andy, which is a more significant curriculum. At this
+  hour there is no school, which means the yard is all energy and no
+  organization, which is correct. To the <ansi fg="exit">town</ansi> is Main Street.
+mapsymbol: S
+maplegend: The Schoolyard
+biome: land
+exits:
+  town:
+    roomid: 2063
+    mapdirection: east
+nouns:
+  swing set: >-
+    Two swings, chain links worn soft, the rubber seats cracked with age and
+    sun. Opie swings here most afternoons after school -- not particularly
+    high, not particularly fast, just enough to move the air and think.
+    The arcs of the swings have worn two hollows in the ground below,
+    curved and smooth, the record of years of small feet.
+  oak tree: >-
+    The oak tree is enormous and has been enormous for long enough that the
+    town does not remember when it was not enormous. The rope tied to the
+    lowest branch is for climbing, or swinging, or just for holding. The
+    bark is rough with age. The canopy shades the whole corner of the yard.
+    This is the kind of tree a town is proud of.
+  sandbox: >-
+    A sandbox built from railroad ties, filled with sand from somewhere,
+    in use since before anyone thought to record when it was installed.
+    The sand is well-worked, bearing the evidence of armies, roads, rivers,
+    and elaborate constructions of which no trace remains. The sandbox is
+    always waiting for the next project.
+  school: >-
+    White clapboard schoolhouse with a red door and two rows of windows.
+    Inside: wooden desks, chalkboards, the particular smell of chalk and
+    old books and a hundred years of children learning things. Miss Crump
+    teaches here. She is good at it. She is also, currently, Andy's girlfriend,
+    which Opie has opinions about.
+  rope: >-
+    A thick rope knotted around the lowest branch of the oak, frayed at the
+    bottom end where a thousand hands have grabbed it. The rope swings slightly
+    in the breeze. It was put there for Opie but it is available to everyone.
+spawninfo:
+- mobid: 453
+  message: '<ansi fg="10">Opie Taylor runs across the schoolyard with the unrestrained speed of a boy who has just been released from somewhere and has something exciting to get to.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The swing set moves in the breeze without anyone on it, the chains making a gentle sound.
+- A ball rolls across the yard from somewhere and comes to rest against the sandbox. Nobody chases it.
+- The oak tree sways once, throwing its shadow around the yard, then stills.
+- Somebody has drawn a hopscotch grid in chalk on the packed earth near the building. Numbers 1 through 8.
+- The sandbox holds the ghost-shapes of the last construction, smoothed by wind but not entirely gone.
+- A sparrow lands in the sandbox, pecks at something, decides against it, and flies back to the oak.
+- The red door of the school building is closed, which means school is out, which means the yard is available for whatever needs to happen in it.
+- The afternoon is quiet now that the children have dispersed. The yard holds their energy in reserve.

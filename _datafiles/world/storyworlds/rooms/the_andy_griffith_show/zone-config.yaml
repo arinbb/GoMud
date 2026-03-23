@@ -1,0 +1,16 @@
+name: The Andy Griffith Show
+roomid: 2060
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: land
+mutators:
+- mutatorid: mayberry-peace
+idlemessages:
+- A screen door bangs somewhere down the street, the sound carrying clean and clear in the quiet air.
+- Birdsong fills the warm afternoon -- mockingbirds, sparrows, the lazy call of a dove.
+- The smell of something baking drifts from an open kitchen window and wraps around you like a hug.
+- Distant laughter from somewhere nearby floats past on a breeze that smells of cut grass and honeysuckle.
+- A dog barks twice, then stops. Somewhere a screen door opens and a voice calls supper. Peace returns.
+- Crickets begin their evening song, a slow rising chorus from the fields at the edge of town.
+- The light is golden and unhurried. Mayberry runs on its own time, which is slower than anywhere else.

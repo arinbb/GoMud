@@ -1,0 +1,30 @@
+roomid: 713
+zone: Tennessee
+title: Roan High Knob Shelter
+description: "Roan High Knob Shelter is the highest shelter on the entire Appalachian Trail, sitting at 6,275 feet near the summit of Roan High Knob. Unlike every other shelter on the AT, this one is an enclosed log cabin with a real door, real windows, and a real roof overhead. It was built in 1933 as a fire warden's cabin by the Civilian Conservation Corps, and it has the solid, handcrafted feel of Depression-era mountain construction\x97hand-hewn logs fitted tight, the chinking still sound after ninety years. The cabin sleeps fifteen on wooden bunks arranged around the interior walls. A heavy wooden door swings shut against the wind, and glass windows let in pale light filtered through the surrounding balsam fir forest. The air up here smells like Christmas\x97a sharp, clean scent of Fraser fir and balsam that saturates everything. Dense clouds roll through at eye level. A piped spring provides water about a hundred yards below the cabin. A bear box and privy serve the site. A trail register sits on a shelf inside the cabin."
+biome: mountains
+mapsymbol: A
+maplegend: Roan High Knob
+exits:
+  trail:
+    roomid: 38
+    exitmessage: You follow the side trail back to the AT on the Roan ridgeline.
+    mapdirection: west
+nouns:
+  cabin: "This is no ordinary AT shelter. It is a proper enclosed log cabin built by the CCC in 1933 as a fire warden's cabin. The logs are hand-hewn and fitted with a craftsman's precision. The chinking is sound, the roof tight, the door heavy. At 6,275 feet, this is the highest shelter on the entire Appalachian Trail."
+  bunks: "Wooden bunks line the interior walls, enough for fifteen hikers. The wood is worn smooth by decades of sleeping bags and tired bodies. Names and dates are carved into some of the bunk frames\x97the oldest ones are barely legible."
+  door: "A heavy wooden door with iron hinges and a simple latch. When closed, it actually keeps the wind and rain out\x97a luxury unknown to hikers accustomed to three-sided shelters."
+  windows: "Real glass windows set into the log walls, letting pale light filter in through the surrounding balsam fir. The glass is old and slightly wavy, distorting the view of the dark forest outside."
+  register: "A trail register sits on a shelf inside the cabin, better protected from the elements than most. The entries here tend toward the reverential. People know this place is special."
+  spring: "A piped spring provides water about a hundred yards below the cabin. Reliable and numbingly cold at this elevation."
+  fir: "Balsam fir and Fraser fir surround the cabin, their dark needles releasing a sharp resinous scent that permeates everything. The forest is dense and dark, the trees draped in moss. Many of the Fraser firs are dead or dying, killed by the balsam woolly adelgid."
+  privy: "A privy near the cabin, at the highest elevation of any privy on the AT. The view from the privy, when the clouds part, is extraordinary."
+  bearbox: "A bear box near the cabin entrance."
+  carvings: "Names and dates carved into the bunk frames and walls span decades. Some are barely legible, scratched by hikers who passed through half a century ago. The oldest visible carving reads 1947."
+idlemessages:
+- The smell of balsam fir fills the cabin\x97sharp, clean, like Christmas morning in the mountains.
+- Cloud rolls through at eye level, engulfing the cabin in cold gray mist.
+- The heavy door rattles in the wind but holds. The cabin creaks with the satisfaction of ninety years of standing.
+- Dead Fraser firs stand like gray sentinels around the cabin, victims of the balsam woolly adelgid.
+- A junco hops along the windowsill, pecking at invisible crumbs.
+- The wind roars outside but barely penetrates the hand-hewn log walls. The CCC built this to last.

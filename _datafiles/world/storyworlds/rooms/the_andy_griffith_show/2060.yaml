@@ -1,0 +1,61 @@
+roomid: 2060
+zone: The Andy Griffith Show
+title: Andys Front Porch
+description: >-
+  Two <ansi fg="itemname">rocking chairs</ansi> sit side by side on a wide wooden porch
+  that faces the quiet street. The boards are worn smooth by years of evenings.
+  A <ansi fg="itemname">guitar</ansi> leans against the wall beside the door, and a
+  <ansi fg="10">honeysuckle vine</ansi> climbs the porch rail, filling the warm air with
+  sweetness. The sky above Mayberry is the color of <ansi fg="yellow">peach preserves</ansi>
+  at this hour, fading slowly toward purple at the edges. <ansi fg="10">Fireflies</ansi>
+  are beginning to blink in the yard. This is the emotional center of everything.
+  Whatever trouble exists in Mayberry, it gets worked out here, in these chairs,
+  in the long unhurried conversations of a summer evening. To the <ansi fg="exit">east</ansi>
+  is the living room. To the <ansi fg="exit">south</ansi> the porch steps lead down
+  to the street.
+mapsymbol: P
+maplegend: Andys Front Porch
+biome: house
+exits:
+  east:
+    roomid: 2061
+  south:
+    roomid: 2063
+nouns:
+  rocking chairs: >-
+    Two cane-back rocking chairs, the paint worn to bare wood on the armrests
+    where hands have rested ten thousand times. They face the yard and the street
+    and the darkening sky. This is where problems get solved in Mayberry. Not
+    dramatically. Just slowly, with patience and good sense and the sounds of
+    a summer evening. Sit a while.
+  guitar: >-
+    An old acoustic guitar, nothing fancy, with a warm amber finish gone soft
+    with years of handling. The strings are a little worn but they ring true.
+    Andy plays it most evenings, usually something simple, usually quiet. A
+    single chord rings out if you pluck a string -- warm and clean in the
+    evening air.
+  honeysuckle: >-
+    The vine has climbed the porch rail over many summers and now drapes it
+    completely. In the evening warmth the small white flowers release a sweetness
+    that is just about the best smell in Mayberry, which is saying something.
+  fireflies: >-
+    They blink on and off in the gathering dark like scattered thoughts, like
+    morse code from the yard. Opie used to try to catch them in a jar. Andy
+    always made him let them go before bed.
+  yard: >-
+    The front yard of the Taylor house. A big maple throws shade across the
+    grass in the afternoon. There is a mailbox at the end of the walk with
+    TAYLOR on it in faded letters. Nothing complicated. Everything right.
+spawninfo:
+- mobid: 450
+  message: '<ansi fg="10">Andy Taylor sits in one of the rocking chairs, guitar across his knees, watching the fireflies come out.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- A firefly blinks on once, off, then on again near the honeysuckle vine at the porch rail.
+- The rocking chair creaks softly as the evening breeze moves through the yard.
+- Somewhere down the street, a neighbor calls a child in for supper. The voice carries warmth.
+- The guitar makes a single soft chord as the wood settles in the cooling evening air.
+- A mockingbird runs through its entire catalog from the maple tree -- robin, wren, cardinal, jay.
+- The sky goes from peach to rose to a deep blue that smells of honeysuckle and cut grass.
+- A car passes slowly on the street below. The driver waves. Everyone waves in Mayberry.
+- The porch boards creak with a sound like contentment, like a house that knows it is a home.

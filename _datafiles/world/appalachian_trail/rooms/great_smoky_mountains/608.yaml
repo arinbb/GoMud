@@ -1,0 +1,27 @@
+roomid: 608
+zone: Great Smoky Mountains
+title: Pecks Corner Shelter
+description: "Pecks Corner Shelter sits at 5,280 feet where the AT meets the Hughes Ridge Trail, a junction that gives this remote shelter a crossroads feel despite its isolation. The shelter is tucked into spruce-fir forest that is beginning to transition back to hardwoods at this slightly lower elevation. The chain-link bear fence is standard, the sleeping platform worn smooth. This is deep backcountry\x97no road access, no day-hikers, no cell service. The hikers who stay here have earned their rest with miles of ridge walking. A spring runs below the shelter, reliable but requiring a short walk down a steep side trail. The Hughes Ridge Trail drops south to the Smokemont campground and the Blue Ridge Parkway, an escape route for hikers who need to bail out."
+biome: mountains
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 64
+    exitmessage: You follow the side trail back to the AT ridge.
+    mapdirection: west
+nouns:
+  shelter: "A remote Smokies shelter at the Hughes Ridge junction. Quieter than the shelters near Newfound Gap. The chain-link fence, stone walls, and timber frame are standard, but the isolation gives this one a different character."
+  junction: "The Hughes Ridge Trail meets the AT here, dropping south toward Smokemont campground on the Blue Ridge Parkway. It is an emergency escape route for hikers in trouble\x97a long, steep descent but it reaches a road."
+  fence: "The chain-link bear fence. In this remote section, the bears are less habituated to humans and more genuinely wild."
+  register: "A thinner register than the shelters near Newfound Gap. The entries here tend toward longer, more reflective writing\x97the kind of thoughts that come from deep solitude on the trail."
+  spring: "The spring is down a short but steep side trail below the shelter. Cold and reliable. The walk back up with full water bottles is a reminder that water has weight."
+  privy: "A well-maintained composting privy set back in the spruce forest."
+  hughesridge: "TODO_RESEARCH: History of the Hughes Ridge Trail and the Hughes family settlement patterns in this area of the Smokies before park creation."
+idlemessages:
+- The junction sign creaks on its post, the only man-made sound for miles.
+- Deep in the spruce forest, a woodpecker drums on a dead trunk, the rhythm carrying far in the still air.
+- The isolation here is palpable. No roads, no day-hikers, no sound of civilization.
+- A red-backed vole scurries across the shelter platform and vanishes into a gap in the stones.
+- Wind funnels through the ridge gap, carrying the smell of balsam from miles of forest.
+- The spring trickles faintly from below, barely audible over the wind.

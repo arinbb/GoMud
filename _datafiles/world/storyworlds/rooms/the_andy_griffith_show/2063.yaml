@@ -1,0 +1,66 @@
+roomid: 2063
+zone: The Andy Griffith Show
+title: Main Street Mayberry
+description: >-
+  The main street of Mayberry, North Carolina -- one of the most peaceable
+  thoroughfares in all of television, and therefore in all of the world.
+  <ansi fg="10">Elm trees</ansi> line both sides of the street, their canopies
+  meeting overhead to form a tunnel of shade. The storefronts are clean and
+  modest -- painted wood, hand-lettered signs, <ansi fg="itemname">window boxes</ansi>
+  with geraniums. A <ansi fg="itemname">bench</ansi> outside the hardware store
+  holds two old men playing checkers in the afternoon sun, moving pieces at the
+  pace of a town that has nowhere pressing to be. Everyone who passes waves.
+  Not the distracted half-wave of a city, but the full easy wave of a neighbor
+  who is genuinely glad to see you. To the <ansi fg="exit">north</ansi> is the
+  Taylor house. To the <ansi fg="exit">east</ansi> the courthouse. To the
+  <ansi fg="exit">south</ansi> is Floyds. To the <ansi fg="exit">west</ansi>
+  is Wallys Filling Station. To the <ansi fg="exit">northwest</ansi> the road leads
+  out of town past the schoolyard.
+mapsymbol: M
+maplegend: Main Street Mayberry
+biome: land
+exits:
+  north:
+    roomid: 2060
+  east:
+    roomid: 2064
+  south:
+    roomid: 2066
+  west:
+    roomid: 2068
+  northwest:
+    roomid: 2072
+    mapdirection: northwest
+nouns:
+  bench: >-
+    A wooden bench worn smooth by generations of Mayberry residents sitting on
+    it and watching the street go by. The two old men with the checkerboard have
+    been here most afternoons since time immemorial. They play slowly and talk
+    slower. Neither one has any pressing business elsewhere.
+  window boxes: >-
+    Each storefront has a window box planted with red and pink geraniums, watered
+    regularly, the blooms vivid against the white-painted wood. Nobody organized
+    this. Everyone just does it. This is Mayberry.
+  elm trees: >-
+    Mature elms line both sides of Main Street, their canopies reaching to meet
+    overhead. They throw dappled shade across the sidewalk in a way that makes
+    even the middle of summer feel bearable. The town has been planting and tending
+    these trees for longer than anyone can remember.
+  checkers: >-
+    The two old men on the bench are locked in a checkers game of unhurried
+    complexity. One of them moves a piece. The other considers. A car passes.
+    A pigeon lands on the curb and looks at the board. The consideration continues.
+  hardware store: >-
+    A general hardware store with a hand-lettered sign and a porch where
+    the bench sits. Inside you can see barrels of nails, coils of rope, paint
+    in a rainbow of practical colors, and the particular smell of metal and
+    sawdust that hardware stores have always had.
+idlemessages:
+- Two people stop on the sidewalk and have a conversation that involves laughter and absolutely no urgency.
+- A car rolls past at twenty miles an hour. The driver waves at nobody in particular. Habit of the town.
+- The checkers game on the bench reaches a critical juncture. Neither player rushes.
+- A bird lands on the bench back between the two old men and is not disturbed and does not disturb.
+- The elm trees sway together in a slow unified motion, moving the light on the sidewalk like water.
+- A child runs past at the speed of a child who has somewhere exciting to be and no obstacles between here and there.
+- The whole street smells of geraniums and cut grass and something cooking somewhere that you cannot quite identify.
+- Mayberry goes about its afternoon at the pace Mayberry chooses, which is unhurried and always has been.

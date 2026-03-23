@@ -1,0 +1,37 @@
+roomid: 31
+zone: North Carolina
+title: Nantahala Mountains / Franklin Area
+description: "The trail rolls through the heart of the Nantahala range, crossing a series of balds and gaps between Standing Indian and the Nantahala Outdoor Center. To the west, the town of Franklin sits in the Little Tennessee River valley\x97the first officially designated AT Community, recognized in 2010 for its support of thru-hikers. Franklin was built on the site of Nikwasi, a Cherokee town that thrived here for a thousand years. The Nikwasi Mound, a 20-foot earthen ceremonial mound, still stands in the center of town, one of the oldest intact structures in the Appalachians. Wayah Bald rises ahead, its name Cherokee for wolf\x97red wolves once roamed these ridges and were sacred to the Cherokee. A CCC-built stone observation tower crowns the bald, offering 360-degree views of the Nantahala range."
+biome: forest
+mapsymbol: F
+maplegend: Franklin Area
+exits:
+  south:
+    roomid: 30
+    exitmessage: The trail heads south toward the NC/GA border.
+  north:
+    roomid: 32
+    exitmessage: The trail descends toward the Nantahala Outdoor Center and Wesser.
+  carter_gap:
+    roomid: 501
+    exitmessage: A blue-blazed side trail descends to Carter Gap Shelter.
+    mapdirection: west
+  siler_bald:
+    roomid: 502
+    exitmessage: A blue-blazed side trail leads to Siler Bald Shelter.
+    mapdirection: east
+nouns:
+  franklin: "Franklin, NC lies in the valley to the west, a small mountain town of about 4,000 people. In 2010 it became the first officially designated AT Community, a recognition of the town's longstanding support of thru-hikers. Shuttles run from Winding Stair Gap to town. The resupply options are solid\x97a grocery store, outfitter, and more restaurants than a town this size should have."
+  nikwasi: "The Nikwasi Mound stands in the center of Franklin, a 20-foot earthen ceremonial mound built by the Cherokee over a thousand years ago. It is one of the oldest intact structures in the Appalachians. The Cherokee considered Nikwasi one of their most sacred towns\x97legend says the Nunnehi, the immortal spirit people, lived inside the mound and emerged to defend the town in battle. TODO_RESEARCH: Full Nikwasi legend, the Nunnehi stories, Cherokee governance at Nikwasi."
+  wayah: "Wayah Bald rises to 5,342 feet, its grassy summit crowned by a stone observation tower built by the Civilian Conservation Corps in 1937. The name Wayah is Cherokee for wolf. Red wolves\x97smaller and more reclusive than gray wolves\x97once roamed these ridges in numbers. They were sacred to the Cherokee, who considered them teachers and guides. The last wild red wolves in these mountains were killed in the early 1900s. TODO_RESEARCH: Cherokee wolf mythology, red wolf ecology and reintroduction efforts."
+  tower: "The Wayah Bald observation tower was built by the CCC in 1937 from native stone. It offers unobstructed 360-degree views of the Nantahala range\x97wave after wave of blue-green ridges stretching to every horizon. On clear days you can see the Smokies to the north."
+  mound: "The Nikwasi Mound is visible from certain vantage points along the trail\x97a gentle green hump in the center of Franklin, surrounded by parking lots and storefronts. It has survived a thousand years of human activity around it, and the Cherokee still consider it sacred ground."
+  blazes: "White blazes lead north toward Wayah Bald and the Nantahala gorge beyond."
+idlemessages:
+- Flame azaleas bloom in brilliant orange along the ridgeline, impossibly bright against the dark forest.
+- A red-tailed hawk circles above Wayah Bald, riding the thermals that rise from the sun-warmed summit.
+- The trail passes through a rhododendron tunnel so thick it blocks the sky entirely.
+- A spring seeps from beneath a moss-covered rock, cold and clear, pooling in a natural basin.
+- The stone tower on Wayah Bald is visible through a gap in the trees, gray against the blue sky.
+- A black bear crashes through the undergrowth somewhere downslope, the sound of breaking branches fading into the hollow.
+- The smell of wild bergamot drifts up from a sunny clearing beside the trail.

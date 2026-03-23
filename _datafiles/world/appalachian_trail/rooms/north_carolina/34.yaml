@@ -1,0 +1,30 @@
+roomid: 34
+zone: North Carolina
+title: Fontana Dam
+description: "Fontana Dam rises 480 feet above the Little Tennessee River, the tallest dam east of the Rocky Mountains. The Tennessee Valley Authority built it between 1940 and 1944, a wartime crash project to generate electricity for the aluminum smelters feeding the war effort. At its peak, over 5,000 workers lived in a temporary town on the riverbank, working around the clock. When TVA filled Fontana Lake behind the dam, entire communities were drowned\x97homesteads, churches, cemeteries, and the old Highway 288, all submerged beneath cold mountain water. The AT crosses the top of the dam on a narrow road, 480 feet of concrete separating the deep lake from the plunge of the spillway. Ahead lies the entrance to Great Smoky Mountains National Park. The Fontana Hilton\x97the legendary shelter near the dam\x97has hot showers, a covered porch, and flush toilets, luxuries that seem almost hallucinatory after weeks on the trail."
+biome: road
+mapsymbol: D
+maplegend: Fontana Dam
+exits:
+  south:
+    roomid: 33
+    exitmessage: The trail heads south into the Cheoah Mountains.
+  north:
+    roomid: 60
+    exitmessage: You cross the dam and enter Great Smoky Mountains National Park.
+nouns:
+  dam: "Fontana Dam is a massive concrete gravity dam, 480 feet tall and 2,365 feet long. It was built in just three years during World War II, an astonishing feat of engineering and labor. The dam generates hydroelectric power for the entire Tennessee Valley. Standing on top, you can feel the low hum of the turbines through the concrete beneath your feet."
+  lake: "Fontana Lake stretches 29 miles behind the dam, its waters covering what was once a valley of farms, roads, and small communities. When the lake filled in 1944, hundreds of families had already been relocated. But the old roads, foundations, and cemeteries remain beneath the surface. On drought years, when the water drops, remnants of the old world sometimes emerge\x97a chimney, a stone wall, the skeleton of a bridge. TODO_RESEARCH: Names of the communities flooded by Fontana Lake, specific stories of relocation."
+  shelter: "The Fontana Hilton is the most famous shelter on the AT. It is not actually a Hilton. It is a three-sided shelter near the dam with a covered porch, picnic tables, flush toilets, and hot showers\x97amenities so luxurious by trail standards that thru-hikers named it with the only comparison that seemed adequate. The register here is legendary, filled with ecstatic entries about hot water."
+  spillway: "The spillway drops 480 feet on the downstream side of the dam. Looking over the edge produces a queasy vertigo\x97the river is a thin silver thread impossibly far below. The power of the contained water is almost palpable."
+  highway: "Old Highway 288 once ran through the valley where Fontana Lake now sits. When TVA built the dam, the road was never relocated\x97it simply vanished beneath the rising water. The state promised a replacement road along the north shore of the lake. It was never completed. The unfinished roadbed is still visible in places, ending abruptly at tunnel mouths that open onto nothing. Locals call it the Road to Nowhere. TODO_RESEARCH: The full Road to Nowhere story, the 2010 settlement with Swain County."
+  smokies: "The Great Smoky Mountains rise to the north like a dark wall, their peaks wreathed in the blue haze that gives them their name. The AT enters the park just beyond the dam and climbs to elevations above 6,000 feet. It is the most visited section of the entire trail."
+  blazes: "White blazes lead across the top of the dam. On the far side, a brown sign marks the entrance to Great Smoky Mountains National Park."
+idlemessages:
+- The dam hums beneath your feet, a low vibration from the massive turbines inside the concrete.
+- Fontana Lake stretches away to the east, dark and still, hiding drowned communities beneath its surface.
+- A bald eagle circles above the lake, scanning the water for fish near the dam's outflow.
+- The Smokies loom to the north, their summits lost in the blue haze that gives them their name.
+- A thru-hiker emerges from the Fontana Hilton shower looking reborn, grinning like a person who has just remembered what hot water is.
+- The spillway drops away on the downstream side, the depth dizzying. The river is a thread far below.
+- A park ranger truck crosses the dam, heading into the Smokies. The backcountry permit office is just ahead.

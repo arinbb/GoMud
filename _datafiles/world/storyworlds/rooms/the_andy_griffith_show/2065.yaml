@@ -1,0 +1,57 @@
+roomid: 2065
+zone: The Andy Griffith Show
+title: The Jail Cell
+description: >-
+  A modest jail cell -- really two cells divided by iron bars, with a common
+  wall on the far side. The <ansi fg="itemname">cot</ansi> in the left cell has a
+  folded <ansi fg="itemname">blanket</ansi> that is noticeably well-arranged,
+  more domestic than penal. This is effectively Otis Campbells room. He
+  lets himself in with his own key when he needs to sleep it off, tidies up
+  after himself, and lets himself back out when he is ready. The Mayberry
+  jail is, by any measure, the most comfortable and least threatening jail
+  in North Carolina. The <ansi fg="itemname">iron bars</ansi> are good solid
+  bars but the <ansi fg="itemname">cell door</ansi> is currently unlocked,
+  as it usually is. To the <ansi fg="exit">office</ansi> is the way back to
+  the courthouse.
+mapsymbol: J
+maplegend: The Jail Cell
+biome: house
+exits:
+  office:
+    roomid: 2064
+    mapdirection: west
+nouns:
+  cot: >-
+    A narrow iron cot with a thin mattress covered in ticking. Otis Campbell
+    has slept on this cot on a very large number of Friday nights. He keeps
+    it neat, out of a kind of professional pride. The blanket is always
+    folded the same way. Some routines are anchoring.
+  blanket: >-
+    A worn wool blanket, folded into a precise rectangle on the end of the
+    cot. Otis folds this blanket every single time he leaves. Nobody asked
+    him to. He just does. There is a dignity to it that the word 'drunk
+    tank' does not capture.
+  iron bars: >-
+    Solid, well-maintained iron bars, painted black, installed with the
+    conviction of a previous generation that jails should feel like jails.
+    They do. But in Mayberry the feeling is undercut by the unlocked door
+    and the folded blanket and the general understanding that Otis will be
+    back on Saturday.
+  cell door: >-
+    The cell door is unlocked. It is usually unlocked. Otis Campbell has
+    a key. This was Andys decision, made with his characteristic quiet
+    logic: if Otis is going to sleep it off somewhere, better it be here
+    than somewhere cold. The door stays unlocked. Otis stays safe.
+spawninfo:
+- mobid: 455
+  message: '<ansi fg="8">Otis Campbell is already in the cell, having let himself in with his own key, arranged the blanket to his satisfaction, and settled onto the cot with the ease of a man at home.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The cell door swings slightly on its hinges, open or nearly so, as it usually is.
+- The blanket on the cot is folded with a precision that suggests some things in life can be controlled.
+- A shaft of afternoon light comes through the small window and lies across the floor without any opinion about it.
+- The iron bars cast a shadow grid on the wall. It is an orderly, geometric shadow.
+- From the office comes the sound of Barney checking his equipment. The sounds of a man who takes procedure seriously.
+- The cot creaks once, as if it is dreaming, then is still.
+- Somewhere outside the window a mockingbird is going through its repertoire. It gets to the whippoorwill and stops.
+- The cell is tidy and smells of metal and, faintly, of Otis, which is whiskey and good intentions.

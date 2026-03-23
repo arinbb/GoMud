@@ -1,0 +1,37 @@
+roomid: 65
+zone: Great Smoky Mountains
+title: Tricorner Knob to Davenport Gap
+description: "The trail enters the most remote and wild section of the Smokies, threading along the high ridge between Pecks Corner and Davenport Gap. This is the eastern end of the park, where the crowds thin to nothing and the forest closes in with a density that borders on claustrophobic. The ridge climbs over nameless knobs and through dense spruce tangles before descending to lower elevations where hardwoods reclaim the canopy. Mt. Cammerer's fire tower stands on a rocky promontory to the north, a stone-and-timber tower built by the Civilian Conservation Corps in the 1930s, its panoramic windows commanding a view of the French Broad River valley and the mountains of eastern Tennessee. The trail finally drops steeply to Davenport Gap at 1,975 feet, where Interstate 40 roars through the gap and the Great Smoky Mountains National Park ends as abruptly as it began. You have walked seventy miles of ridgeline. The Smokies release you back into the world."
+biome: mountains
+mapsymbol: D
+maplegend: Tricorner/Davenport
+exits:
+  south:
+    roomid: 64
+    exitmessage: The trail climbs south along the ridge toward Newfound Gap.
+  north:
+    roomid: 35
+    exitmessage: You descend to Davenport Gap and exit the Great Smoky Mountains National Park.
+  tricorner:
+    roomid: 609
+    exitmessage: A short side trail leads to Tricorner Knob Shelter.
+    mapdirection: west
+  cosby:
+    roomid: 610
+    exitmessage: A side trail drops to Cosby Knob Shelter.
+    mapdirection: east
+nouns:
+  tower: "The Mt. Cammerer fire tower is a stone-and-timber structure built by the Civilian Conservation Corps in the 1930s, perched on a rocky promontory with a sheer drop on three sides. The panoramic windows are cracked and cloudy but intact, and the views are among the best in the park\x97the French Broad River valley, the mountains of eastern Tennessee, and on clear days, the haze-blue ridges stretching north into Virginia. The CCC boys hauled every stone up the mountain by hand and mule."
+  cammerer: "Mt. Cammerer was named for Arno B. Cammerer, the third director of the National Park Service, who helped shepherd the Smokies through the complicated process of becoming a national park. The summit is rocky and wind-blasted, with stunted rhododendron and mountain laurel clinging to the crevices."
+  ccc: "The Civilian Conservation Corps built much of the infrastructure in the Smokies during the 1930s\x97fire towers, trail, bridges, shelters. Young men from across the country, many from cities, sent to these mountains during the Depression. They earned thirty dollars a month and sent twenty-five home. The stonework of the Cammerer tower is their monument."
+  davenport: "Davenport Gap marks the eastern boundary of Great Smoky Mountains National Park at 1,975 feet. Interstate 40 roars through the gap below, trucks and cars streaming between Knoxville and Asheville. The transition from deep wilderness to interstate highway is jarring. A parking area and a kiosk mark the park boundary."
+  gap: "The gap is a wind funnel between the mountains, channeling the sound of Interstate 40 up from below. After seventy miles of ridgeline solitude, the sound of traffic is almost offensive. But it also means Standing Bear Farm hostel is only a few miles away, and that means food."
+  firetower: "TODO_RESEARCH: Detailed construction history of the Mt. Cammerer fire tower - exact CCC company that built it, construction dates, restoration history. The tower was restored by volunteers in the 1990s after decades of neglect."
+idlemessages:
+- The hum of Interstate 40 rises from the gap below, a constant mechanical undertone after days of natural silence.
+- A black bear crosses the trail ahead, unhurried, and vanishes into a rhododendron thicket without looking back.
+- The forest is dense and dark here, the canopy closing overhead like a tunnel.
+- Wind moans through the stone windows of the distant Cammerer fire tower.
+- A scarlet tanager flashes through the understory, impossibly bright against the green.
+- The trail is rooty and rocky, demanding attention with every step.
+- Far below, the French Broad River glints silver in its valley, winding north toward Tennessee.

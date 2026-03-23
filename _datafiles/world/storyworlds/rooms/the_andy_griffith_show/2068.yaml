@@ -1,0 +1,65 @@
+roomid: 2068
+zone: The Andy Griffith Show
+title: Wallys Filling Station
+description: >-
+  A gas station of the era when gas stations had <ansi fg="itemname">mechanics</ansi>
+  who knew your name and your car. Two <ansi fg="itemname">gas pumps</ansi> stand
+  at attention out front, painted white with red lettering, the glass globes on
+  top showing the octane. Under the <ansi fg="itemname">canopy</ansi> a car is
+  raised on a jack with Goober visible beneath it, whistling something tuneless,
+  handing himself tools. A <ansi fg="itemname">parts counter</ansi> inside has fan
+  belts and oil cans and a calendar on the wall from a tire company featuring a
+  woman with a large tire and no apparent explanation. <ansi fg="10">Goober Pyle</ansi>
+  and <ansi fg="10">Gomer Pyle</ansi> work here -- Goober under the car, Gomer
+  pumping gas and marveling at things. To the <ansi fg="exit">east</ansi> is Main
+  Street. To the <ansi fg="exit">south</ansi> is the church.
+mapsymbol: G
+maplegend: Wallys Filling Station
+biome: land
+exits:
+  east:
+    roomid: 2063
+  south:
+    roomid: 2069
+nouns:
+  gas pumps: >-
+    Two pumps, white with red lettering, the kind with the visible glass column
+    that shows the gas level rising as it fills. The pumps have a satisfying
+    mechanical quality -- clunking and dinging -- that modern pumps have
+    traded away for speed and silence and a lesser experience.
+  canopy: >-
+    A metal canopy extends over the pump area, providing shade and a surface
+    upon which Goober has stuck a number of calendars, notices, and one bumper
+    sticker that says MAYBERRY in green letters that he made himself and is
+    proud of.
+  parts counter: >-
+    The parts counter has everything a car needs if the car is from the 1960s
+    and lives in Mayberry. Fan belts, oil cans, spark plugs, a mysterious
+    collection of gaskets. Goober knows where everything is without looking.
+    He is excellent at his job, even if he explains it at great length.
+  car: >-
+    A sedan of approximate 1962 vintage, raised on a jack, one wheel removed,
+    Goober visible in silhouette underneath it. The car belongs to someone in
+    Mayberry who trusted Goober with it, which is to say everyone in Mayberry.
+    Goober is good with cars. He is thorough and honest and will explain
+    everything he does whether or not you want to know.
+  calendar: >-
+    A calendar from a tire company. Goober has circled several dates including
+    the church social, the day Andys fishing permit renews, and something
+    marked SPECIAL EVENT that he has not explained to anyone.
+spawninfo:
+- mobid: 456
+  message: '<ansi fg="10">Goober Pyle rolls out from under the car, pushes his cap back, and gives you a look of profound and simple welcome.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 457
+  message: '<ansi fg="10">Gomer Pyle stands by the gas pump with an expression of perpetual mild amazement, like a man who has just learned about air and finds it remarkable.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The sound of Goober whistling something tuneless drifts out from under the car.
+- A gas pump dings once as someone across town fills up. The sound carries in the afternoon quiet.
+- Gomer looks up at the sky with an expression of someone encountering clouds for the first time and finding them deeply interesting.
+- The smell of motor oil and gasoline and something with axle grease mingles into the specific smell of useful work being done.
+- Goober calls for a wrench and a hand appears from somewhere with one. The filling station has its own choreography.
+- A car pulls up to the pump and Gomer materializes immediately, chamois in hand, ready for service.
+- The canopy throws a precise rectangle of shade across the pumps. Everything functions. This is a good filling station.
+- Goober says something from under the car that is probably important and is definitely about the car.

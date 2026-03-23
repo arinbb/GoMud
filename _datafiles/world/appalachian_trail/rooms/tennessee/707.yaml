@@ -1,0 +1,27 @@
+roomid: 707
+zone: Tennessee
+title: Hogback Ridge Shelter
+description: "Hogback Ridge Shelter sits just below the ridgeline in a stand of mixed hardwoods, protected from the worst of the wind by the hogback ridge above. The three-sided shelter sleeps eight on a raised platform. A spring-fed creek runs in the hollow below, requiring a moderate descent for water. The forest here is mature second-growth oak and hickory, the canopy high enough to allow good airflow. Wild boar rootings scar the ground in places\x97the hogs have pushed into these mountains and are tearing up the forest floor. A bear box and privy serve the site. A trail register hangs from the front post."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 37
+    exitmessage: You follow the blue-blazed side trail back to the AT.
+    mapdirection: west
+nouns:
+  shelter: "A well-built three-sided shelter just below the ridgeline. The location is sheltered but not claustrophobic."
+  platform: "The sleeping platform holds eight. Clean and well-maintained."
+  register: "A trail register in a zip-lock bag. The pages are in good shape."
+  creek: "A spring-fed creek runs in the hollow below the shelter. The descent is moderate but the water is reliable."
+  rootings: "Wild boar have torn up patches of the forest floor around the shelter, their snouts churning the soil in search of roots and grubs. The damage is ugly but the hogs are rarely seen\x97they are wary of people."
+  privy: "A standard privy uphill from the shelter."
+  bearbox: "A bear box at the clearing edge, its paint worn but its latches solid."
+idlemessages:
+- Acorns drop through the canopy, bouncing off branches before hitting the ground.
+- A wild boar has rooted up a patch of forest floor nearby, leaving raw earth exposed.
+- The hogback ridge above blocks the wind, creating a pocket of stillness.
+- A gray squirrel spirals up an oak trunk, clutching an acorn in its teeth.
+- The spring-fed creek murmurs in the hollow below, just out of sight.
+- A barred owl starts its evening call from the ridge above.

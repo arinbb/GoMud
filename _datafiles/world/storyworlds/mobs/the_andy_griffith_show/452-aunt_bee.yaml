@@ -1,0 +1,27 @@
+mobid: 452
+zone: the_andy_griffith_show
+hostile: false
+maxwander: 1
+idlecommands:
+  - 'emote opens the oven, checks on something, closes it with satisfied authority.'
+  - 'emote wipes her hands on her apron and begins rolling out another pie crust with the efficiency of a professional.'
+  - 'say Now you sit down and have something to eat. You look like you need something to eat.'
+  - 'emote sets another place at the table with the certainty of someone who knows there will be someone to fill it.'
+  - 'emote hums something tuneless and contented while stirring a pot on the stove.'
+  - 'say Andy is going to be hungry when he gets in. He always is.'
+  - 'emote arranges the mason jars on the shelf with small precise adjustments, the peach preserves always on the left.'
+  - 'say That pie should be ready in about twenty minutes. You are welcome to wait.'
+activitylevel: 15
+character:
+  name: Aunt Bee
+  description: >-
+    A woman of middle years with a capable face and an apron that is never
+    quite clean and a manner that is maternal without being soft. She is not
+    Andys mother -- she stepped in to raise Opie and run the household and
+    she does both with the same systematic competence. She bakes because baking
+    is love made edible. She always sets an extra place because someone always
+    needs feeding. She worries because that is how she shows she cares. She
+    is the person who keeps the Taylor house from being just a building where
+    a man and his son live, and they both know it.
+  raceid: 1
+  level: 6

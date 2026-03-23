@@ -1,0 +1,62 @@
+roomid: 2062
+zone: The Andy Griffith Show
+title: Andys Kitchen
+description: >-
+  Aunt Bees kitchen. Every surface is immaculate. The <ansi fg="itemname">stove</ansi>
+  is the center of authority here -- a wide white range with four burners, all of them
+  capable of producing something remarkable. A <ansi fg="itemname">pie crust</ansi> is
+  rolled out on the <ansi fg="itemname">counter</ansi>, dusted with flour, waiting.
+  <ansi fg="yellow">Mason jars</ansi> of preserves line the shelf above the window
+  in a row of amber and crimson and deep purple -- peach, strawberry, blackberry,
+  apple butter. The <ansi fg="itemname">kitchen table</ansi> has four chairs and
+  always has room for one more. The window above the sink frames the backyard maple
+  and a square of pure <ansi fg="yellow">blue sky</ansi>. Everyone ends up in this
+  kitchen eventually. Aunt Bee makes sure of it. The <ansi fg="exit">living room</ansi>
+  is to the south.
+mapsymbol: K
+maplegend: Andys Kitchen
+biome: house
+exits:
+  south:
+    roomid: 2061
+nouns:
+  stove: >-
+    A white enamel range, wide and well-used, the burners darkened from years
+    of serious cooking. This is not a stove for people who boil pasta and call
+    it dinner. This is Aunt Bees stove, which means it produces fried chicken,
+    pot roast, layer cakes, four varieties of pie, and the indefinable smell of
+    a home that is taken care of.
+  preserves: >-
+    The mason jars catch the light beautifully. Peach. Strawberry. Blackberry.
+    Apple butter. Each one labeled in Aunt Bees careful handwriting with the
+    year and the fruit and, in parentheses, a note about the batch -- 'extra
+    sweet.' 'Good year for peaches.' 'Give to Mrs. Burch.' The whole shelf
+    is a record of summers.
+  pie crust: >-
+    A round of pastry dough rolled thin and even, dusted with flour, ready for
+    filling. Aunt Bee handles pie crust the way a surgeon handles instruments --
+    with focused expertise and no unnecessary motion. The crust will be perfect.
+    It is always perfect.
+  table: >-
+    The kitchen table is covered in oilcloth printed with a pattern of red
+    cherries. Four chairs around it, all slightly different, all comfortable.
+    This table has hosted thousands of breakfasts, hundreds of talks that
+    mattered, and a quantity of pie that defies calculation.
+  counter: >-
+    The kitchen counter runs along two walls, white tile with red trim that
+    Aunt Bee keeps spotless. Mixing bowls, rolling pin, a canister set labeled
+    FLOUR and SUGAR and COFFEE. The flour canister has been open. Something is
+    being made.
+spawninfo:
+- mobid: 452
+  message: '<ansi fg="yellow">Aunt Bee turns from the stove with a wide warm smile, flour on her hands and a look of complete satisfaction.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The stove ticks as it heats, a sound of useful purpose and domestic intention.
+- A jar of peach preserves catches the afternoon light and glows like a small amber lantern.
+- The smell of baking -- butter, sugar, cinnamon, something with vanilla -- is everywhere and overwhelming in the best possible way.
+- Flour floats gently from the counter like the most benign kind of dust.
+- The window above the sink shows the backyard maple going gold in the afternoon.
+- A bee bumbles past the window, considers the kitchen, moves on. Even bees respect Aunt Bees domain.
+- The sound of a wooden spoon against a mixing bowl -- three taps, then silence, then three more taps.
+- Someone has set four places at the table. There is always room at this table.

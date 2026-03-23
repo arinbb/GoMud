@@ -1,0 +1,28 @@
+roomid: 19
+zone: Georgia
+title: Plumorchard Gap Shelter
+description: "A three-sided wooden shelter sits at 3,050 feet in Plumorchard Gap\x97the last AT shelter in Georgia. The North Carolina border is just a few miles north, and the character of the trail is already changing. The forest here is thick and lush, with rhododendron tunnels and tall hardwoods. The shelter is standard construction, well-maintained, with a reliable spring nearby. The privy is off to the right, the bear box at the clearing edge. There is a feeling of transition here\x97Georgia behind you, the Smokies ahead. A trail register hangs from the shelter post."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 21
+    exitmessage: You follow the blue-blazed side trail back to the AT.
+    mapdirection: west
+nouns:
+  shelter: "The last AT shelter in Georgia. Standard three-sided lean-to, well-maintained. Someone has written \"GA/NC\" on the wall with a small arrow pointing north."
+  platform: "The sleeping platform holds about twelve. The wood is in good shape. Hikers have scratched state-line countdown tallies into the edge."
+  register: "The shelter register is full of entries about crossing into North Carolina\x97a milestone for northbound thru-hikers. First state line of the journey."
+  water: "A reliable spring flows nearby. Clear and cold, one of the better sources in this section."
+  spring: "The spring runs steadily from a rocky seep. It has been reliable for years."
+  privy: "The privy is off to the right, standard AT construction."
+  bearbox: "A steel bear box, well-used. The latch still functions."
+  border: "The Georgia-North Carolina border is just a few miles north. You can almost feel the state line from here."
+idlemessages:
+- The last Georgia shelter. North Carolina waits just a few miles ahead.
+- Rhododendron tunnels arch over the trail leading north, dark and glossy.
+- A spring peeper chorus rises from the wet areas around the gap as evening falls.
+- The forest feels different here\x97thicker, lusher, already hinting at the Smokies to come.
+- A hiker's scratched tally on the shelter post counts down miles to the NC border.
+- The air smells of rich earth and rhododendron, heavy with moisture from the gap.

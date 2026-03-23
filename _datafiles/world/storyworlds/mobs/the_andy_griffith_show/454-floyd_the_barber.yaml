@@ -1,0 +1,27 @@
+mobid: 454
+zone: the_andy_griffith_show
+hostile: false
+maxwander: 1
+idlecommands:
+  - 'emote sweeps a small accumulation of hair from the floor with deliberate, unhurried strokes.'
+  - 'say Now, I should not say this, but -- well, I suppose a little. Now the thing is --'
+  - 'emote trims the ends of an invisible haircut with intense concentration and no apparent urgency.'
+  - 'say Did you hear about the Hendersons? On Oak Street? Now I am not one to talk, but what I HEARD was --'
+  - 'emote adjusts the candy-stripe pole outside the window to a fractionally better angle.'
+  - 'say I had a fellow in here this morning. From Mount Pilot. Very interesting hairline. Very.'
+  - 'emote opens his scissors twice in the air, considering them, and puts them down in a slightly different position.'
+  - 'say Now where was I. Right. Now the interesting part -- and I think you will find this interesting --'
+activitylevel: 15
+character:
+  name: Floyd the Barber
+  description: >-
+    A man of indeterminate middle age with a mild face and a gentle manner
+    that belies the comprehensive information operation he runs from behind
+    these two barber chairs. He cuts hair slowly. He gathers information
+    quickly. He dispenses it at a pace that requires you to stay in the
+    chair until the story is complete, which is always after the haircut
+    is finished. He means well. He always means well. He is the gentle
+    nervous system of Mayberry gossip, and Mayberry would miss him if
+    he were not here, the way you miss a comfortable chair.
+  raceid: 1
+  level: 4

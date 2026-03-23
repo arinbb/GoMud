@@ -1,0 +1,27 @@
+roomid: 714
+zone: Tennessee
+title: Mountaineer Falls Shelter
+description: "Mountaineer Falls Shelter sits near a scenic waterfall that drops thirty feet over a ledge of ancient gneiss into a deep pool below. The three-sided shelter sleeps eight on a raised platform. The falls provide the water source\x97a reliable, dramatic one. The roar of the water is audible from the shelter, a steady bass note underlying everything. The forest is lush with hemlock and rhododendron, the spray from the falls keeping everything perpetually damp and green. Tent sites are limited on the rocky terrain. A bear box and privy serve the site. A trail register hangs from the front post."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 39
+    exitmessage: You follow the blue-blazed side trail back to the AT.
+    mapdirection: east
+nouns:
+  shelter: "A three-sided shelter near the falls. The constant spray keeps the air damp and the logs green with moss."
+  platform: "The sleeping platform holds eight. The wood is slightly damp from the perpetual mist."
+  register: "A trail register in a zip-lock bag, its pages wrinkled from the humidity."
+  falls: "Mountaineer Falls drops thirty feet over a ledge of ancient gneiss into a deep pool. The water fans out over the rock face, catching light when the sun finds it through the canopy. The roar is constant and soothing."
+  pool: "A deep pool at the base of the falls, cold and clear. Swimming is possible but the water is numbingly cold."
+  privy: "A privy perched on the rocky terrain above the shelter."
+  bearbox: "A bear box on a relatively flat patch of ground near the shelter."
+idlemessages:
+- The waterfall roars steadily, filling the hollow with white noise.
+- Spray from the falls drifts through the air, misting everything within fifty yards.
+- A water ouzel bobs on a rock at the edge of the pool, dipping into the current.
+- Hemlock boughs drip with spray, their dark needles beaded with water.
+- Rainbow fragments flash in the falls' mist when a shaft of sunlight breaks through.
+- The ancient gneiss of the ledge is smooth and dark, polished by millennia of falling water.

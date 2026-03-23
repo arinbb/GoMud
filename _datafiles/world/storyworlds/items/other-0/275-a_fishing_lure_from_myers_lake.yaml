@@ -1,0 +1,18 @@
+itemid: 275
+name: a fishing lure from Myers Lake
+namesimple: lure
+displayname: a <ansi fg="cyan">fishing lure from Myers Lake</ansi>
+description: >-
+  A hand-tied fishing lure from Myers Lake in Mayberry, North Carolina. It is
+  small and slightly bent from use -- a bright spinner with a tuft of colored
+  feathers at the hook, the kind tied by someone who knows what they are doing
+  and does not need it to be fancy. A short length of line is still attached
+  where it was cut from Andy's pole. The lure smells of lake water and pine
+  resin and something harder to identify -- the specific smell of an afternoon
+  that had nothing wrong in it. You could fish with this lure. You could just
+  carry it. Either way it will remind you that the most peaceable place in the
+  world is only a film reel away.
+type: object
+subtype: usable
+uses: 0
+value: 50

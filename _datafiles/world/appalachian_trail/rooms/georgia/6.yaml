@@ -1,0 +1,24 @@
+roomid: 6
+zone: Georgia
+title: Approach to Blood Mountain
+description: "The trail climbs steadily through increasingly rugged terrain, each mile harder than the last. The forest transitions from open hardwoods to a dense tangle of hemlock, mountain laurel, and rhododendron\x97the understory closing in as the elevation builds. Rocky sections demand careful footwork, the trail threading between exposed roots and jutting stones. Switchbacks carve up the mountainside in long, grinding traverses. Through occasional breaks in the canopy, you catch glimpses of the ridgeline ahead and the valleys falling away behind you. Blood Mountain, the highest point on the AT in Georgia at 4,461 feet, looms somewhere above, still hidden by the forest. The air thins. Your pack feels heavier."
+biome: mountains
+mapsymbol: "^"
+maplegend: Blood Mtn Approach
+exits:
+  south:
+    roomid: 5
+  north:
+    roomid: 7
+nouns:
+  laurel: "Mountain laurel crowds the trail on both sides, its gnarled branches creating a low tunnel of glossy leaves. In late May and June, it explodes with clusters of pink and white blossoms."
+  rocks: "The trail grows increasingly rocky as you gain elevation\x97ankle-twisting stones and exposed bedrock that demand constant attention. This is not flat-ground walking."
+  ridgeline: "The ridgeline rises ahead of you, partially obscured by the forest canopy. Somewhere up there is the summit of Blood Mountain, but you cannot quite see it yet\x97only the promise of more climbing."
+idlemessages:
+- Your breathing grows heavier as the trail steepens through another endless switchback.
+- A cascade of loose stones skitters downhill as your boot catches a rock wrong.
+- The forest canopy thickens overhead, hemlock and laurel blocking out the sky.
+- Wind moans through the ridgeline above, carrying the promise of exposed summit views.
+- A raven croaks somewhere ahead, its black shape cutting between the treetops.
+- The trail narrows to a rocky spine between two ravines, demanding careful footing.
+- Sweat stings your eyes. The climb to Blood Mountain is relentless.

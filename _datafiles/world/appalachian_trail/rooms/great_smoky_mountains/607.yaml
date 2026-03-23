@@ -1,0 +1,26 @@
+roomid: 607
+zone: Great Smoky Mountains
+title: Icewater Spring Shelter
+description: "Icewater Spring Shelter perches at 5,920 feet on the ridge between Newfound Gap and Charlie's Bunion, one of the highest and most popular shelters in the Smokies. Its popularity owes to proximity to Newfound Gap\x97day hikers and weekend backpackers crowd this shelter, and on busy weekends it can feel more like a campground than a backcountry experience. But the setting is magnificent: dense spruce-fir forest, sweeping views from the nearby ridge, and the spring that gives the shelter its name\x97a flow of water so cold it numbs your teeth and aches in your fillings. The chain-link bear fence is standard, and reservations are mandatory. The sleeping platform holds twelve, but the shelter has hosted far more on crowded nights. Charlie's Bunion is only a mile and a half north along the ridge, a scramble worth every step."
+biome: mountains
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 64
+    exitmessage: You follow the side trail back to the AT near Newfound Gap.
+    mapdirection: west
+nouns:
+  shelter: "The most popular backcountry shelter in the Smokies, owing to easy access from Newfound Gap. On weekends it is packed. On weeknights it is merely crowded. The stone-and-timber construction is sound, the chain-link fence well-maintained."
+  spring: "Icewater Spring lives up to its name. The water emerges from a rock seep at near-freezing temperature year-round. It is possibly the coldest natural spring on the AT. Filling a water bottle makes your hands ache within seconds."
+  fence: "The chain-link fence is in good repair\x97this shelter gets enough traffic and ranger attention to stay well-maintained."
+  register: "A thick register, filled fast by the high volume of visitors. Day-hikers from Newfound Gap mix with thru-hikers in the entries, their perspectives worlds apart."
+  privy: "The privy serves double duty as the most-visited backcountry privy in the park. It shows."
+  bunion: "Charlie's Bunion is visible from the ridge near the shelter\x97a rocky outcrop jutting from the ridgeline, its exposed stone the result of a 1925 fire followed by a 1929 cloudburst that stripped the soil bare."
+idlemessages:
+- Day-hikers from Newfound Gap crowd the shelter area, marveling at the idea of sleeping behind a chain-link fence.
+- The spring flows with a sound like a tiny waterfall, impossibly cold for a summer day.
+- A peregrine falcon screams from the cliffs near Charlie's Bunion, defending its nesting ledge.
+- Cloud rolls in from the east, engulfing the ridge and turning the forest into a gray maze.
+- Someone is cooking ramen on the shelter platform. The smell drifts through the spruce forest like a siren song.
+- The ridge wind finds every gap in the shelter's walls.

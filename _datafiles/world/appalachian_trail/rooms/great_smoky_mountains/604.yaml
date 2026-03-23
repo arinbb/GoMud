@@ -1,0 +1,26 @@
+roomid: 604
+zone: Great Smoky Mountains
+title: Silers Bald Shelter
+description: "Silers Bald Shelter sits at 5,460 feet near the old bald that is slowly surrendering to the forest. The shelter occupies a small clearing in dense spruce-fir forest, high enough on the ridge to catch the full force of the weather. The air here is noticeably cooler and thinner than the hardwood elevations below. Chain-link fencing spans the front as always, and a reservation is required. The bald itself, once a sweeping grassland, is mostly overgrown now with blackberry brambles, mountain laurel, and young spruce trees that have marched uphill from the forest edge. The register is full of debate about whether the Park Service should maintain the balds or let nature take its course. The spring is a short walk downhill, reliable but cold enough to ache."
+biome: mountains
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 62
+    exitmessage: You follow the side trail back to the AT ridge.
+    mapdirection: east
+nouns:
+  shelter: "High-elevation Smokies shelter in dense spruce-fir forest. The wood is darkened by moisture and age. The chain-link fence is beaded with condensation on most mornings."
+  bald: "Silers Bald was once a grand open meadow, but without grazing or fire it is returning to forest. Blackberry, laurel, and young trees crowd the old grassland. In twenty years it may be forest entirely. The debate about whether to intervene is ongoing."
+  fence: "The chain-link bear fence, wet with condensation. At this elevation, everything is damp."
+  register: "A contentious register. Half the entries argue the Park Service should mow the bald. The other half say let nature decide. Both sides are passionate."
+  spring: "The spring is downhill to the south, cold enough to make your teeth hurt. Reliable even in dry seasons\x97the high-elevation seeps are fed by condensation as much as rainfall."
+  spruce: "Red spruce crowd the shelter clearing, their dark pointed crowns blocking most of the sky. The trees are draped with old-man's-beard lichen, giving the forest a primeval, almost enchanted feel."
+idlemessages:
+- Condensation drips from the spruce boughs in a steady patter, even when no rain falls.
+- The wind moans through the spruce trunks, a sound that never quite stops at this elevation.
+- Old-man's-beard lichen hangs from the branches like gray-green curtains, swaying in the breeze.
+- A red squirrel chatters from a spruce branch, incensed by your presence in its territory.
+- The air smells of wet spruce, cold stone, and the faintly medicinal scent of balsam resin.
+- Cloud settles on the ridge, and the shelter becomes an island in white mist.

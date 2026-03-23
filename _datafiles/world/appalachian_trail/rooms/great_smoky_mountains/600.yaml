@@ -1,0 +1,27 @@
+roomid: 600
+zone: Great Smoky Mountains
+title: Mollies Ridge Shelter
+description: "Mollies Ridge Shelter sits at 4,570 feet on the high ridgeline, the first Smokies shelter north of Fontana Dam. Like all shelters in the park, it is enclosed on three sides with a chain-link fence across the front\x97an unusual feature designed to keep black bears from helping themselves to hikers' food and sleeping bags. The fence gives these shelters a slightly prisonlike feel, but given that the Smokies have one of the densest black bear populations in the eastern United States, it is a reasonable precaution. A reservation is required to stay here. The sleeping platform is rough-hewn timber, and the tin roof amplifies every raindrop into a drumroll. A trail register hangs from a nail on the center post. The privy is uphill to the east. A spring provides water a short walk downhill."
+biome: mountains
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 61
+    exitmessage: You follow the side trail back to the AT ridge.
+    mapdirection: east
+nouns:
+  shelter: "A standard Smokies backcountry shelter\x97three-sided stone-and-timber construction with a heavy chain-link fence across the open front. The fence has a gate that latches with a simple hook, enough to deter bears but not exactly Fort Knox. The sleeping platform holds twelve, though on crowded nights eighteen will squeeze in."
+  fence: "Chain-link fencing spans the open front of the shelter, floor to ceiling. It gives the shelter the look of a cage or a very rustic zoo exhibit. The gate latches with a simple hook from the inside. Bears have occasionally figured out the latch, leading to memorable nights for everyone involved."
+  platform: "Rough timber planks, slightly uneven, raised two feet off the ground. The wood is darkened with decades of use, smooth in the most popular spots. Mouse droppings line the edges."
+  register: "A spiral-bound notebook in a zip-lock bag. The entries are a mix of trail names, weather complaints, bear sighting reports, and the occasional philosophical reflection on why anyone would voluntarily sleep behind a chain-link fence on a mountain."
+  spring: "A spring emerges from the hillside below the shelter, piped into a collection basin. The water is cold and clear. Filter before drinking\x97the Smokies backcountry teems with life, not all of it visible."
+  privy: "The privy sits uphill to the east, its location announced by its aroma. A standard Smokies composting privy with a view, if you leave the door open, that many hotels would charge extra for."
+  bearbox: "TODO_RESEARCH: Exact style of bear storage at Mollies Ridge - cable system or steel box. Smokies shelters use various bear-proofing methods depending on the era of installation."
+idlemessages:
+- The chain-link fence rattles softly in the night wind.
+- A mouse skitters across the sleeping platform with the confidence of an animal that owns the place.
+- The tin roof ticks and pings as the temperature drops.
+- Wind rushes through the gap, making the shelter creak like a ship at sea.
+- Something large moves through the brush below the shelter. Probably a bear. Probably.
+- The spring trickles steadily in the darkness, a liquid metronome.

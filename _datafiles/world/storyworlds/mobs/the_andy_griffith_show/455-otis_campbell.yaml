@@ -1,0 +1,27 @@
+mobid: 455
+zone: the_andy_griffith_show
+hostile: false
+maxwander: 0
+idlecommands:
+  - 'emote sleeps on the cot with the deep untroubled sleep of a man who has found his safe harbor.'
+  - 'emote rolls over on the cot and pulls the blanket up with the unconscious precision of long practice.'
+  - 'say Mmm. No more. Just five more minutes.'
+  - 'emote sits up briefly, looks around the cell with calm recognition, lies back down.'
+  - 'emote snores once, stops, snores again. The cell is peaceful.'
+  - 'say I just need to -- I will be up in a minute. Just -- a minute.'
+  - 'emote rearranges the folded blanket at the foot of the cot for the third time, for reasons.'
+  - 'emote hums three bars of something while his eyes are still closed, then is quiet again.'
+activitylevel: 5
+character:
+  name: Otis Campbell
+  description: >-
+    A portly man in his fifties, rumpled and affable, with the dignified bearing
+    of a man who has found a workable system. His system is: when Friday gets
+    away from him, he lets himself into the Mayberry jail with his own key,
+    sleeps it off on the cot, folds the blanket, and lets himself back out
+    on Saturday. Andy gave him the key because this is safer than the
+    alternatives. Otis is not a bad man. He is a man with a weakness and
+    a town that has decided to be kind about it. He is, in his own way,
+    a regular.
+  raceid: 1
+  level: 2

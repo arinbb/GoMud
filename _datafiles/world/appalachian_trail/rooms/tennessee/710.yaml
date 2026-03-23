@@ -1,0 +1,27 @@
+roomid: 710
+zone: Tennessee
+title: Curley Maple Gap Shelter
+description: "Curley Maple Gap Shelter sits in a small gap surrounded by curly maple trees\x97a variety prized by woodworkers for its beautiful figured grain. The three-sided shelter sleeps six on a raised platform. A spring runs about two hundred yards down a blue-blazed trail. The gap provides a natural windbreak, and the shelter clearing is pleasant and well-drained. The curly maples around the shelter are gnarled and beautiful, their bark twisted in distinctive spiraling patterns. A bear box and privy serve the site. A trail register hangs from the front post."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 38
+    exitmessage: You follow the blue-blazed side trail back to the AT.
+    mapdirection: east
+nouns:
+  shelter: "A compact three-sided shelter in good repair, nestled in its namesake gap among curly maple trees."
+  platform: "The sleeping platform holds six. The wood is smooth and clean."
+  register: "A trail register in its zip-lock bag, hanging from a nail."
+  spring: "A spring runs downhill from the shelter, about two hundred yards by blue-blazed trail. Reliable in most conditions."
+  maples: "Curly maple trees surround the shelter, their bark twisted in spiraling patterns. The wood of these trees has a distinctive wavy grain highly prized by luthiers and furniture makers."
+  privy: "A privy in the tree line behind the shelter."
+  bearbox: "A bear box at the clearing edge."
+idlemessages:
+- Maple leaves turn slowly in the breeze, catching the light as they fall.
+- The gap is sheltered and quiet, the wind passing over without descending.
+- A nuthatch works its way headfirst down a curly maple trunk, probing the twisted bark.
+- The spring murmurs below, a faint sound just at the edge of hearing.
+- The curly maples glow in the slanting light, their bark patterns like frozen whirlpools.
+- A distant rumble of thunder echoes off the ridgeline above.

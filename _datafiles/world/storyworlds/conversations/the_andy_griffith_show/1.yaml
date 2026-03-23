@@ -1,0 +1,53 @@
+-
+  Supported:
+    "andy taylor": ["barney fife"]
+  Conversation:
+    - ["#1 emote sets the guitar down and gives Barney a patient look."]
+    - ["#2 say Andy, I have been thinking. I think we should establish a curfew."]
+    - ["#1 say A curfew."]
+    - ["#2 say Nine o'clock. Everybody inside by nine. That eliminates a WHOLE category of potential crime."]
+    - ["#1 emote considers this with the expression of a man who is going to say no but wants Barney to feel heard."]
+    - ["#2 say I have run the numbers. Curfew, stricter patrol routes, mandatory sign-in at the courthouse --"]
+    - ["#1 say Barney."]
+    - ["#2 say AND we double the fine for jaywalking --"]
+    - ["#1 say Barney."]
+    - ["#2 emote stops."]
+    - ["#1 say These are good ideas for a different town. Mayberry people trust us because we trust them first."]
+    - ["#2 emote sits down at his desk with the deflation of a man who has been nipped."]
+    - ["#2 say I suppose."]
+    - ["#1 say The bullet stays in the pocket, Barney."]
+    - ["#2 say The bullet stays in the pocket."]
+-
+  Supported:
+    "andy taylor": ["barney fife"]
+  Conversation:
+    - ["#2 say Andy, I want you to look at this."]
+    - ["#1 say What am I looking at."]
+    - ["#2 emote spreads a hand-drawn map across Andys desk."]
+    - ["#2 say This is a patrol optimization chart. I have divided Mayberry into four sectors. A, B, C, and D."]
+    - ["#1 emote looks at the map."]
+    - ["#1 say Barney, Mayberry has eleven streets."]
+    - ["#2 say Twelve if you count the alley behind the hardware store, which I DO."]
+    - ["#1 say You have divided eleven streets into four sectors."]
+    - ["#2 say Twelve streets. Four sectors. The math works out."]
+    - ["#1 emote folds the map gently and hands it back."]
+    - ["#1 say Good work, Barney."]
+    - ["#2 emote takes the map back with the satisfaction of a man whose thoroughness has been recognized."]
+-
+  Supported:
+    "andy taylor": ["barney fife"]
+  Conversation:
+    - ["#2 say Andy. Andy, I want to talk to you about something."]
+    - ["#1 say Go ahead."]
+    - ["#2 say Otis was in here again last night."]
+    - ["#1 say I know."]
+    - ["#2 say He has his own KEY, Andy."]
+    - ["#1 say I know that too."]
+    - ["#2 emote looks at the ceiling with the expression of a man marshaling a significant argument."]
+    - ["#2 say Now I am not saying Otis is a bad person. I am saying that giving a man his own KEY to the JAIL is --"]
+    - ["#1 say Safe. It keeps Otis safe on Friday nights."]
+    - ["#2 emote is quiet for a moment."]
+    - ["#2 say He folded the blanket."]
+    - ["#1 say He always folds the blanket."]
+    - ["#2 emote is quiet again, thinking about this."]
+    - ["#2 say Well. All right then."]

@@ -1,0 +1,53 @@
+roomid: 2
+zone: Springer Mountain
+title: Springer Mountain Shelter
+description: >-
+  A sturdy three-sided wooden shelter sits in a small clearing just off the AT,
+  built in 1993 by the Georgia Appalachian Trail Club. The open front faces
+  downhill, offering a view through the trees. A wooden <ansi fg="itemname">sleeping
+  platform</ansi> runs the length of the shelter, enough room for about twelve
+  hikers laid side by side. A <ansi fg="itemname">bear box</ansi> stands nearby for food
+  storage, and a <ansi fg="itemname">privy</ansi> path leads off into the woods. A
+  <ansi fg="itemname">register</ansi> hangs from a nail inside the shelter. A reliable
+  <ansi fg="itemname">spring</ansi> flows downhill to the east. This is the first shelter
+  northbound hikers reach — Mile 0.2, elevation 3,730 feet.
+mapsymbol: A
+maplegend: Springer Shelter
+biome: forest
+exits:
+  trail:
+    roomid: 1
+    exitmessage: You hike the short side trail back up to the AT.
+  north:
+    roomid: 3
+    exitmessage: You rejoin the AT and head north, descending toward Stover Creek.
+nouns:
+  platform: >-
+    A wooden sleeping platform about eight inches off the ground, running the full
+    width of the shelter. It sleeps twelve if everyone cooperates. The wood is
+    scarred with carved initials, trail names, and dates going back decades.
+  spring: >-
+    A small but reliable spring emerges from the hillside about fifty yards
+    downhill to the east. The water runs clear and cold over mossy rocks. Filter
+    or treat before drinking — even the cleanest-looking backcountry water can
+    harbor giardia.
+  privy: >-
+    A wooden outhouse down a short path, with a crescent moon cut in the door.
+    Its interior is dark and pungent. A roll of toilet paper sits in a coffee
+    can to keep it dry. Please pack out what you pack in.
+  register: >-
+    A spiral-bound notebook in a ziplock bag, hanging from a nail. The pages are
+    warped from humidity. Entries range from single-line signatures to full-page
+    essays about hopes, fears, and blisters. Someone has drawn a surprisingly
+    good portrait of a mouse.
+  bear box: >-
+    A heavy metal bear-proof food storage box, painted brown. The latch requires
+    opposable thumbs, which is the whole point. Store all food, toiletries, and
+    anything with a scent inside overnight.
+idlemessages:
+- A shelter mouse peers at you from a gap in the floorboards, whiskers twitching.
+- 'Water drips from the roof edge, a slow metronome marking time.'
+- 'The spring gurgles downhill, a sound that says: drink me, but filter first.'
+- Wind rattles the tin roof, a hollow drumming that fills the shelter.
+- 'A daddy longlegs picks its way across the sleeping platform with infinite patience.'
+- 'Someone has carved KATAHDIN OR BUST into the shelter beam. Below it, someone else carved: BUST.'

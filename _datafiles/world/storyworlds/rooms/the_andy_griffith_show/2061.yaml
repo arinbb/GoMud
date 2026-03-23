@@ -1,0 +1,56 @@
+roomid: 2061
+zone: The Andy Griffith Show
+title: Andys Living Room
+description: >-
+  A living room that smells of <ansi fg="yellow">lemon polish</ansi> and something
+  baking. The furniture is simple and honest -- a <ansi fg="itemname">sofa</ansi>
+  covered in a floral pattern that Aunt Bee chose and nobody questions, a
+  <ansi fg="itemname">braided rug</ansi> in the center of the floor, a
+  <ansi fg="itemname">side table</ansi> with a reading lamp that casts a warm circle
+  of <ansi fg="yellow">amber light</ansi>. On the table sits a fresh-baked
+  <ansi fg="itemname">pie</ansi>, cooling on a wire rack, filling the room with
+  the smell of apples and cinnamon. This is Aunt Bees domain. Everything here
+  has been dusted, straightened, and arranged with the quiet authority of a woman
+  who runs a household the way a craftsman runs a workshop -- with pride and
+  without fuss. The <ansi fg="exit">porch</ansi> is to the west. The
+  <ansi fg="exit">kitchen</ansi> is to the north.
+mapsymbol: L
+maplegend: Andys Living Room
+biome: house
+exits:
+  west:
+    roomid: 2060
+  north:
+    roomid: 2062
+nouns:
+  sofa: >-
+    A wide sofa upholstered in a blue-and-cream floral pattern, the cushions
+    worn soft with years of sitting. Andy and Opie have had ten thousand
+    conversations here, side by side in the evening. The fabric is faded just
+    slightly in the spot where the lamp light falls. This sofa has been witness
+    to a great deal of good sense being dispensed.
+  rug: >-
+    A braided rug, oval, the colors of autumn -- rust and cream and warm brown
+    -- spread in the center of the floor like a quiet statement about what a
+    home should feel like. Aunt Bee made it herself, over the course of two
+    winters, and she does not mention this.
+  pie: >-
+    An apple pie, golden-crust, still warm from the oven, sitting on a wire
+    rack on the side table. The smell of cinnamon and brown sugar fills the
+    room. This is the kind of pie that has been perfected over years of baking
+    for people you love. There is no better smell in all of Mayberry, and in
+    Mayberry that is a serious competition.
+  lamp: >-
+    A floor lamp with a cream fabric shade that diffuses the light into
+    something warm and ambient. This is reading light, talking light, the
+    kind of light that makes every problem seem smaller than it did in
+    the fluorescent glare of the courthouse.
+idlemessages:
+- The pie on the side table releases one more wave of cinnamon and apple and everything good.
+- A clock on the wall ticks with the measured patience of a Mayberry afternoon.
+- The braided rug is positioned exactly as Aunt Bee positioned it, which is to say correctly.
+- The sofa cushions hold the shape of whoever last sat there. The indent is gentle and recent.
+- A sparrow lands on the windowsill outside, looks in, decides to continue its business elsewhere.
+- The reading lamp hums softly with the contentment of a lamp that has a purpose.
+- Through the window, the maple tree in the yard sways once in a breeze that carries honeysuckle.
+- The whole house breathes in a long slow rhythm, like something that knows it is loved.

@@ -1,0 +1,8 @@
+mutatorid: mayberry-peace
+namemodifier:
+  behavior: append
+  text: (peaceful)
+  colorpattern: green
+alertmodifier:
+  text: The air in Mayberry is warm and unhurried. Something baked is cooling somewhere nearby. This is the most peaceable place in the world.
+  colorpattern: green

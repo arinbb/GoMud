@@ -1,0 +1,27 @@
+mobid: 456
+zone: the_andy_griffith_show
+hostile: false
+maxwander: 1
+idlecommands:
+  - 'emote slides out from under the car on a creeper, pushes the cap back on his head, and looks at you with a big open smile.'
+  - 'say Hey!'
+  - 'emote disappears back under the car. The sound of wrenching and the occasional comment about the carburetor follows.'
+  - 'say Now the thing about this here engine is -- you want to know? I can explain the whole thing if you want.'
+  - 'emote wipes his hands on a rag and then puts the rag in his pocket, which is already full of rags.'
+  - 'say I can do impressions. You want to hear one? Cary Grant. I do a real good Cary Grant.'
+  - 'emote checks the oil on the car with the satisfied focus of someone whose work is going well.'
+  - 'say Andy says I talk too much about engines. I just think if you understand how a thing works, it is more interesting.'
+activitylevel: 25
+character:
+  name: Goober Pyle
+  description: >-
+    A large, friendly man in coveralls with grease on his hands and a cap
+    pushed back on his head, and an expression of permanent, uncomplicated
+    goodwill toward everything and everyone. He is an excellent mechanic --
+    thorough, honest, genuinely gifted with engines -- who is also an
+    enthusiast of impressions, trivia, and explaining things in full. He is
+    Gomer's cousin. He is simple in the good sense of the word. His
+    simplicity is not a limitation. It is a choice made by a man who does
+    not need complications to feel alive.
+  raceid: 1
+  level: 4

@@ -1,0 +1,26 @@
+roomid: 715
+zone: Tennessee
+title: Moreland Gap Shelter
+description: "Moreland Gap Shelter sits in a quiet gap between two ridges, surrounded by mature hardwood forest. The three-sided shelter sleeps eight on a raised platform. A spring-fed creek trickles through the gap about fifty yards from the shelter. The gap provides natural wind protection, and the forest canopy is high enough to let in good light while still providing shade. The shelter is clean and well-maintained, one of the better-kept shelters in this section. A bear box and privy serve the site. A trail register hangs from the front post."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 39
+    exitmessage: You follow the blue-blazed side trail back to the AT.
+    mapdirection: west
+nouns:
+  shelter: "A well-kept three-sided shelter in a pleasant gap. The logs are in excellent condition."
+  platform: "The sleeping platform holds eight. Clean and dry."
+  register: "A trail register in good condition."
+  creek: "A spring-fed creek trickles through the gap, small but reliable."
+  privy: "A clean privy in the tree line."
+  bearbox: "A standard bear box at the clearing edge."
+idlemessages:
+- The gap is quiet and sheltered, a pocket of calm between the ridges.
+- A spring-fed creek trickles over mossy stones, barely audible.
+- Hardwood leaves drift down through the canopy in the afternoon breeze.
+- A box turtle crosses the trail near the shelter, slow and deliberate.
+- The forest here feels old and settled, the trees tall and widely spaced.
+- A thrush sings its evening song from deep in the understory.

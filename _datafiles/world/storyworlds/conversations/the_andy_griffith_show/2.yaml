@@ -1,0 +1,37 @@
+-
+  Supported:
+    "floyd the barber": ["*"]
+  Conversation:
+    - ["#1 say Now I should not say this, but --"]
+    - ["#2 emote pauses whatever they are doing."]
+    - ["#1 say What I heard -- and you did NOT hear this from me -- is that somebody on Maple Street has been leaving their porch light on past ten o'clock."]
+    - ["#2 say Is that right."]
+    - ["#1 say Three nights in a row."]
+    - ["#2 emote considers the gravity of this information."]
+    - ["#1 emote trims air near his scissors meaningfully."]
+    - ["#1 say I am not drawing any conclusions."]
+    - ["#1 say I am just saying what I heard."]
+-
+  Supported:
+    "floyd the barber": ["*"]
+  Conversation:
+    - ["#1 say Now there is something you should know about your hair."]
+    - ["#2 say My hair."]
+    - ["#1 say I notice these things. Professionally."]
+    - ["#2 emote waits."]
+    - ["#1 say There is potential there. Real potential. A slight adjustment -- nothing dramatic, just here and maybe --"]
+    - ["#1 emote makes a small decisive gesture near his own head."]
+    - ["#1 say You think about it. No pressure."]
+    - ["#2 emote touches their hair involuntarily."]
+-
+  Supported:
+    "floyd the barber": ["*"]
+  Conversation:
+    - ["#1 say Did you hear about the Henderson boy? From the house on Oak?"]
+    - ["#2 say I do not think I have."]
+    - ["#1 say Well now, I should not say too much --"]
+    - ["#1 emote trims something invisible with professional deliberateness."]
+    - ["#1 say What I will say is that some people have very interesting plans for the summer and I know what some of them are."]
+    - ["#2 say What are they."]
+    - ["#1 emote sets the scissors down at a new angle."]
+    - ["#1 say I did not say I was going to TELL you. I said I KNOW them. There is a difference."]

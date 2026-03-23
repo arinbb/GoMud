@@ -1,0 +1,27 @@
+roomid: 711
+zone: Tennessee
+title: Cherry Gap Shelter
+description: "Cherry Gap Shelter sits in a gap thick with black cherry trees, their dark trunks rising straight and tall through the surrounding hardwood forest. The three-sided shelter sleeps eight on a raised platform. A reliable stream crosses the blue-blazed trail about a quarter mile from the shelter. The gap is pleasant and open, with good airflow and enough flat ground for several tent sites. In spring, the cherry trees bloom white, and in late summer, the ground is littered with small dark cherries that draw bears. A bear box and privy serve the site. A trail register hangs from the front post."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 38
+    exitmessage: You follow the blue-blazed side trail back to the AT.
+    mapdirection: west
+nouns:
+  shelter: "A standard three-sided shelter in the cherry gap. Well-maintained with a sound roof."
+  platform: "The sleeping platform holds eight comfortably. The wood is in good shape."
+  register: "A trail register in its protective bag."
+  stream: "A reliable stream crosses the blue-blazed trail about a quarter mile from the shelter. Clear and cold."
+  cherries: "Black cherry trees surround the gap. In late summer, the ground is covered with small dark cherries. Bears love them. Keep your food in the bear box."
+  privy: "A privy in the tree line downhill."
+  bearbox: "A heavy bear box, especially important here during cherry season when bears are frequent visitors."
+idlemessages:
+- Cherry leaves rustle overhead, their serrated edges catching the light.
+- A black cherry drops from a branch and lands with a soft thud in the leaf litter.
+- A bear has left claw marks on one of the cherry trunks, reaching for the high branches.
+- The stream murmurs along the blue-blazed trail, just out of sight.
+- A tanager flashes scarlet through the dark cherry trunks, startling in its brightness.
+- The gap smells of ripe fruit and warm earth, a sweet late-summer fragrance.

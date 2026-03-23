@@ -1,0 +1,26 @@
+roomid: 605
+zone: Great Smoky Mountains
+title: Double Spring Gap Shelter
+description: "Double Spring Gap Shelter sits at 5,505 feet in a narrow saddle between peaks, surrounded by a cathedral of red spruce and Fraser fir. Two springs\x97the double springs that give the gap its name\x97emerge from the hillside on opposite sides of the gap, making this one of the best-watered shelter sites in the Smokies. The shelter is the standard chain-link-fronted design, the timber and stone darkened by perpetual dampness at this elevation. You are only two and a half miles from Kuwohi, the highest point on the entire AT, and the forest here feels like it belongs in another latitude\x97dense boreal spruce, old-man's-beard lichen draping every branch, and the standing gray trunks of dead Fraser firs interspersed among the living like headstones. The air smells of balsam and wet stone."
+biome: mountains
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 62
+    exitmessage: You follow the side trail back to the AT ridge.
+    mapdirection: east
+nouns:
+  shelter: "A high-elevation Smokies shelter, perpetually damp. The chain-link fence is beaded with water droplets that catch the light. The sleeping platform is cool to the touch even on summer afternoons."
+  springs: "Two springs emerge from the hillside, one on each side of the gap\x97hence the name. Both are cold and reliable, piped to collection basins. Having water on both sides of the shelter is a luxury in the backcountry."
+  fence: "The chain-link bear fence, damp with condensation. A few spruce needles are caught in the links."
+  register: "The register notes the proximity to Kuwohi. Many entries are written with the excitement of hikers who know they will reach the AT highpoint tomorrow."
+  ghosttrees: "Dead Fraser firs stand among the living spruce and young fir, gray and stripped of bark. At this elevation they are everywhere, victims of the balsam woolly adelgid. The living trees seem to crowd around the dead, as if mourning."
+  lichen: "Old-man's-beard lichen hangs from every branch, gray-green and wispy, swaying in the slightest breeze. It thrives in the perpetual moisture of the high-elevation spruce forest. The lichen is an indicator of clean air\x97it cannot tolerate pollution."
+idlemessages:
+- Both springs trickle in the darkness, a stereo lullaby of cold water.
+- Lichen sways from the spruce branches like ghostly curtains.
+- The dead firs creak in the wind, a sound like old hinges.
+- Condensation drips from the shelter eaves in a steady rhythm.
+- A junco hops along the shelter platform, pecking at crumbs, utterly unafraid of humans.
+- The air at 5,500 feet is noticeably thinner. You feel each breath.

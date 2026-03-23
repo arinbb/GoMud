@@ -1,0 +1,27 @@
+roomid: 4
+zone: Georgia
+title: Hawk Mountain
+description: "The trail climbs steeply through mixed hardwoods toward the summit of Hawk Mountain. The switchbacks grow tighter, the footing rockier, as you gain elevation through oak, hickory, and scattered pine. Rocky outcroppings jut from the mountainside, their gray faces streaked with lichen. Through breaks in the canopy, views begin to open\x97ridgeline after ridgeline rolling southward toward Springer, northward toward the higher peaks ahead. The trail here is narrow and rooty, demanding attention with every step. Hawks ride the thermals above the ridge, giving this mountain its name."
+biome: mountains
+mapsymbol: H
+maplegend: Hawk Mtn
+exits:
+  south:
+    roomid: 3
+  north:
+    roomid: 5
+  shelter:
+    roomid: 11
+    exitmessage: A blue-blazed side trail descends 0.3 miles to Hawk Mountain Shelter.
+    mapdirection: east
+nouns:
+  rocks: "Gray granite outcroppings push through the thin mountain soil, their surfaces rough with lichen and moss. Some are large enough to sit on and rest your legs after the climb."
+  vista: "Through the bare hardwood branches, you can see ridgelines stretching to the south\x97the rolling spine of the Blue Ridge, each successive ridge a paler shade of blue. On a clear day, you can almost trace the trail back toward Springer."
+  blazes: "White blazes mark the rocky trail, sometimes painted directly on exposed rock faces where no trees are close enough."
+idlemessages:
+- A red-tailed hawk circles above the ridge, its sharp cry cutting through the mountain air.
+- Wind gusts across the exposed ridgeline, rustling through dry oak leaves that still cling to the branches.
+- Your boots scrape against loose rock as the trail steepens through another switchback.
+- A chipmunk darts across the trail and vanishes into a crevice between boulders.
+- The view south opens momentarily through a gap in the trees, ridgelines layered in haze.
+- A woodpecker hammers at a dead snag somewhere upslope, the sound echoing off the rocks.

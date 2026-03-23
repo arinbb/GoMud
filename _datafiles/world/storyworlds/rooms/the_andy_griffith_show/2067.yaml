@@ -1,0 +1,55 @@
+roomid: 2067
+zone: The Andy Griffith Show
+title: The Drugstore
+description: >-
+  A soda fountain and drugstore of the 1960s variety -- a <ansi fg="itemname">counter</ansi>
+  of white Formica with red vinyl stools, a <ansi fg="itemname">soda fountain</ansi>
+  with chrome fittings and glass dome covers over plates of pie, a
+  <ansi fg="itemname">jukebox</ansi> in the corner that plays the same twelve songs on
+  rotation. The pharmacist works quietly behind the raised counter in the back,
+  filling prescriptions at the pace of a man who went to pharmacy school in
+  Mayberry and will retire in Mayberry. <ansi fg="yellow">Milkshake glasses</ansi> line
+  a shelf behind the counter, catching the light. The <ansi fg="itemname">booths</ansi>
+  along the wall are the after-school location, the first-date location, the
+  three-sodas-to-work-up-courage location. To the <ansi fg="exit">west</ansi> is
+  Floyds Barber Shop.
+mapsymbol: D
+maplegend: The Drugstore
+biome: house
+exits:
+  west:
+    roomid: 2066
+nouns:
+  counter: >-
+    A long counter of white Formica with a rounded edge, the red vinyl stools
+    spinning freely and positioned at intervals suggesting that this is a
+    counter where people sit for a while, not just to order and go. The
+    counter has been here since before anyone thought to wonder when it arrived.
+  soda fountain: >-
+    The soda fountain has levers and spouts and chrome fittings that catch
+    the light, glass jars of straws, and the particular capability of producing
+    cherry cokes, chocolate malts, and vanilla phosphates that are better than
+    anything you would get somewhere with a more modern apparatus.
+  jukebox: >-
+    A Wurlitzer jukebox, 1962, the dome lit up amber and green, cycling through
+    twelve songs that cover the complete emotional range of Mayberry, which is
+    warmth, mild excitement, contentment, and something wistful about summer
+    evenings and young people doing young-people things.
+  booths: >-
+    Three booths with red vinyl upholstery, patched in two places with electrical
+    tape, the tables just large enough for two people and two sodas. Many things
+    have been decided in these booths. Several important things have been not-quite
+    said in them. Mayberry history lives in the booths at the drugstore.
+  milkshake glasses: >-
+    Tall frosted metal cups lined up behind the counter, cooling in a row. When
+    one is filled -- chocolate malt, strawberry, vanilla -- it comes with a paper
+    straw and a glass beside it with the overflow. The glass is the best part.
+idlemessages:
+- The jukebox plays its next song with the warm mechanical certainty of a thing doing exactly what it was made to do.
+- A stool spins slowly on its own, finds its resting point, stops.
+- The soda fountain drips one slow drip from a nozzle. Nobody rushes to address it. It is fine.
+- Two teenagers share a chocolate malt with two straws in a booth. They are not speaking. They do not need to.
+- The pharmacy counter in the back is very quiet and very busy in the way that quiet competence always is.
+- The chrome on the soda fountain catches the afternoon light and throws a warm circle on the ceiling.
+- Someone has left a copy of the Mayberry Gazette on the counter. The headlines are local and mild.
+- The smell of vanilla and chocolate and something faintly medicinal blends into a smell that is specifically and only this place.

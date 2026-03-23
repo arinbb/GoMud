@@ -1,0 +1,52 @@
+roomid: 2073
+zone: The Andy Griffith Show
+title: Mount Pilot Road
+description: >-
+  The road that leads out of Mayberry toward <ansi fg="8">Mount Pilot</ansi> --
+  the closest real city, twelve miles by the county road. The road is paved
+  where it hits the edge of town, then narrows into something more deliberate.
+  The Mayberry <ansi fg="itemname">water tower</ansi> is visible over the trees,
+  white and round, MAYBERRY painted on it in block letters that you can read
+  from here. This is the edge of Mayberry -- the last point where it is still
+  entirely itself before the world begins to intrude. A
+  <ansi fg="itemname">road sign</ansi> points two ways: MAYBERRY 0.5 MI and
+  MOUNT PILOT 11.5 MI. People from Mayberry go to Mount Pilot for things
+  Mayberry does not have. They always come back. There is a reason they
+  always come back. To the <ansi fg="exit">south</ansi> is the way back to
+  Main Street.
+mapsymbol: '~'
+maplegend: Mount Pilot Road
+biome: land
+exits:
+  south:
+    roomid: 2063
+nouns:
+  water tower: >-
+    The Mayberry water tower, white and round and tall, visible from most
+    of the county. MAYBERRY in block letters around the middle. The water
+    tower is the landmark that tells you how close you are to home, whether
+    you are coming from Mount Pilot or from anywhere else. When you see it
+    you know you are nearly there. When you leave and it recedes behind
+    you, you feel that too.
+  road sign: >-
+    A green metal sign on a post at the edge of the road. MAYBERRY 0.5 MI
+    with an arrow pointing back the way you came. MOUNT PILOT 11.5 MI with
+    an arrow pointing away. Two distances on one sign. The arithmetic of
+    coming and going. Most people in Mayberry have looked at this sign and
+    quietly chosen the number on the left.
+  road: >-
+    The road to Mount Pilot. Clean pavement. Yellow centerline. It goes
+    straight out between the fields and the pines and then bends out of
+    sight. The world is out there somewhere past that bend. It is a
+    perfectly fine world. But this is Mayberry, and Mayberry is right here,
+    and that is the thing about the road to Mount Pilot: you can always
+    see the water tower from it.
+idlemessages:
+- The water tower stands above the treeline, white and solid, bearing the name of the town in quiet authority.
+- A car passes on the road in the direction of Mount Pilot. It does not slow. It probably has business there.
+- The road goes straight between the fields and bends out of sight. What is beyond the bend is the rest of the world.
+- A crow calls from the fence line and flies off in the direction of Mount Pilot, making better time than most.
+- The Mayberry water tower catches the afternoon light and goes from white to gold for a few minutes.
+- Standing at the edge of town, you can hear both places at once -- the town behind you, the country road ahead.
+- The road sign marks both distances with equal impartiality. The choice, as always, is yours.
+- A smell of honeysuckle from the Mayberry side drifts past and settles around you like a gentle suggestion.

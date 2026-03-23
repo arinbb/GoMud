@@ -1,0 +1,26 @@
+roomid: 602
+zone: Great Smoky Mountains
+title: Russell Field Shelter
+description: "Russell Field Shelter sits at 4,360 feet in a gap on the ridgeline, slightly lower and more sheltered than the exposed balds to the north and south. The forest here is transitional\x97tall hardwoods mixing with the first red spruce, the canopy dense enough to block most of the ridge wind. Like all Smokies shelters, a chain-link fence spans the open front, and a reservation is required. This shelter sees less traffic than Spence Field or Mollies Ridge, giving it a quieter, more remote feel. The old Russell Field\x97once a grassy opening maintained by grazing cattle before the park was established\x97has largely grown over with young trees and shrubs, though patches of grass remain. A reliable spring flows downhill."
+biome: mountains
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 61
+    exitmessage: You follow the side trail back to the AT ridge.
+    mapdirection: north
+nouns:
+  shelter: "A quieter Smokies shelter, tucked in a gap below the ridge. The chain-link fence is standard issue, the sleeping platform worn smooth. The stonework shows the hand-laid craftsmanship of an earlier era."
+  fence: "The chain-link bear fence, bolted to timber framing. The gate hook is bent from years of use but still functional."
+  field: "Russell Field was once an open meadow maintained by grazing livestock before the park was created. Without grazing, the forest is slowly reclaiming it. Young trees and blackberry brambles encroach from the edges, but patches of grass hold on, defiant."
+  register: "The register is thinner than the ones at more popular shelters\x97fewer entries, more solitude. The hikers who stay here tend toward the contemplative."
+  spring: "A reliable spring downhill from the shelter, emerging from a rocky seep beneath a moss-covered boulder. The water is cold and clean."
+  privy: "The standard Smokies privy, uphill and downwind. Its isolation is almost peaceful."
+idlemessages:
+- The gap is sheltered from the worst of the ridge wind, and the forest is hushed.
+- An owl calls from the hardwoods above the shelter, its voice deep and resonant in the gap.
+- The spring trickles steadily, a sound so constant it becomes part of the silence.
+- Young trees in the old Russell Field rustle in a breeze that does not reach the shelter.
+- A salamander emerges from beneath a rock near the spring, glistening black and orange.
+- The shelter is quiet tonight. You might be the only person for miles.

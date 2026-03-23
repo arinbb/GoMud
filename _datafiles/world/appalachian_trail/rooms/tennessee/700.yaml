@@ -1,0 +1,27 @@
+roomid: 700
+zone: Tennessee
+title: Groundhog Creek Shelter
+description: "A sturdy three-sided wooden shelter sits in a small clearing beside Groundhog Creek, which runs clear and cold over a bed of smooth stones. The shelter is well-maintained, with a raised sleeping platform that sleeps eight comfortably. A fire ring sits in front, its stones blackened from years of evening fires. Flat tent sites are scattered through the surrounding hardwood forest. A bear box stands near the shelter, and the privy is a short walk uphill. Groundhog Creek provides reliable water year-round. A trail register hangs from a nail on the front post."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 35
+    exitmessage: You follow the blue-blazed side trail back to the AT.
+    mapdirection: east
+nouns:
+  shelter: "A standard AT three-sided lean-to with a raised wooden sleeping platform. The tin roof is patched in places but keeps the rain out. Mouse damage is evident along the edges of the platform."
+  platform: "The sleeping platform is rough-hewn lumber, raised about two feet off the ground. Room for eight, though you will be shoulder to shoulder at capacity."
+  register: "A spiral-bound notebook in a zip-lock bag hangs from a nail. Trail names, dates, miles hiked, and the occasional bit of trail wisdom fill the pages."
+  creek: "Groundhog Creek runs clear and cold over smooth stones just below the shelter. It is a reliable water source year-round, though filtering is always recommended."
+  privy: "A basic wooden privy sits uphill from the shelter. The door latches but does not lock."
+  bearbox: "A heavy steel bear box, dented and scratched, stands at the edge of the clearing."
+  tentsites: "Several flat spots in the surrounding forest offer decent tent sites. The ground is soft leaf litter over packed earth."
+idlemessages:
+- Groundhog Creek murmurs over its stones, a steady sound that fills the clearing.
+- A mouse rustles somewhere inside the shelter wall, already scouting for the evening's crumbs.
+- The fire ring smells of old ash and charcoal, the memory of a hundred hiker campfires.
+- A nuthatch spirals headfirst down a tree trunk near the shelter, probing bark for insects.
+- The tin roof pings and ticks as it expands in the afternoon sun.
+- A chipmunk sits on the bear box lid, cheeks stuffed, watching you with bright eyes.

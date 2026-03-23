@@ -1,0 +1,55 @@
+roomid: 2070
+zone: The Andy Griffith Show
+title: The Road to Myers Lake
+description: >-
+  A dirt road that leaves Main Street behind almost immediately -- three steps
+  onto it and the storefronts are gone and there is nothing but <ansi fg="10">pine
+  trees</ansi> on both sides and the smell of <ansi fg="10">pine resin and warm earth</ansi>
+  in the late afternoon heat. The road is packed down by years of feet going to
+  and from the fishing hole. <ansi fg="itemname">Fishing poles</ansi> lean against
+  a pine here -- someone left them, or they belong here, or in Mayberry the
+  distinction does not always matter. A <ansi fg="itemname">bait can</ansi> sits in
+  the shade. The road narrows ahead and the sound of water begins, very faint.
+  <ansi fg="cyan">Myers Lake</ansi> is this way. The road back to town is to the
+  <ansi fg="exit">south</ansi>. The fishing hole is to the <ansi fg="exit">lake</ansi>.
+mapsymbol: R
+maplegend: Road to Myers Lake
+biome: land
+exits:
+  town:
+    roomid: 2063
+    mapdirection: north
+  lake:
+    roomid: 2071
+    mapdirection: south
+nouns:
+  fishing poles: >-
+    Three cane poles, twelve feet long, with simple lines and simple hooks.
+    No lures, no tackle boxes, no equipment requiring a manual. Andy fishes
+    with cane poles because cane poles are the point. The equipment should
+    never be more complicated than the peace you are after.
+  bait can: >-
+    A tin can with a plastic lid, sitting in the shade, containing worms
+    and a little dirt from Andy's garden. The lid is on but not tight.
+    The can is always here when you need it, which means Andy left it for
+    exactly this purpose.
+  pine trees: >-
+    North Carolina pine trees, tall and straight, the kind that have been
+    here since before the road and will be here long after. The light comes
+    through them in long amber shafts in the afternoon. The smell of pine
+    resin is warm and specific and does not exist anywhere else in quite
+    this way.
+  road: >-
+    The dirt road, packed firm, the color of red clay. Boots have traveled
+    this road, mostly at a walk, mostly without urgency, mostly carrying
+    cane poles. The destination is not the point. The walk is not even the
+    point. The destination is the fishing hole. That is the point.
+idlemessages:
+- The pine trees breathe out their warm resin smell in a wave that comes and goes with the breeze.
+- A woodpecker works at a pine somewhere off the road -- three taps, a pause, three more taps.
+- The bait can sits in its patch of shade, not doing anything, which is exactly what a bait can should do.
+- The road narrows ahead where the pines crowd in, and the sound of water grows slightly louder.
+- A squirrel crosses the road at speed, pauses at the far side to assess the situation, continues.
+- The afternoon light filters through the pines in long amber shafts. Everything smells of warm earth.
+- A cicada starts up from the treeline, runs its full sequence, stops. The silence after is complete.
+- Somewhere ahead, not far, a heron calls once over water. The fishing hole is not far now.

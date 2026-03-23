@@ -1,0 +1,38 @@
+roomid: 64
+zone: Great Smoky Mountains
+title: Newfound Gap / Charlie's Bunion
+description: "The trail descends from Kuwohi to Newfound Gap, where US 441 crosses the Smokies ridge at 5,046 feet\x97the only road through the park. A stone terrace marks the spot where President Franklin Roosevelt dedicated Great Smoky Mountains National Park on September 2, 1940, and the Rockefeller Memorial honors the five million dollar donation from the Laura Spelman Rockefeller Memorial Fund that helped purchase the land from logging companies and private owners. Unlike the great western parks carved from federal land, every acre of the Smokies was bought. North of the gap, the trail climbs through magnificent spruce forest to Charlie's Bunion, a spectacular rocky outcrop named in one of the AT's best stories: in the 1920s, hiker Charlie Conner showed his sore foot to Horace Kephart, the writer and park advocate, who declared it looked just like a bunion on the rock formation above. Kephart vowed to get the name on a government map. He did."
+biome: mountains
+mapsymbol: N
+maplegend: Newfound Gap
+exits:
+  south:
+    roomid: 63
+    exitmessage: The trail climbs south toward Kuwohi, the AT highpoint.
+  north:
+    roomid: 65
+    exitmessage: The trail continues north along the ridge toward Tricorner Knob.
+  icewater:
+    roomid: 607
+    exitmessage: A side trail leads to Icewater Spring Shelter.
+    mapdirection: east
+  pecks:
+    roomid: 608
+    exitmessage: A blue-blazed trail descends to Pecks Corner Shelter.
+    mapdirection: east
+nouns:
+  gap: "Newfound Gap sits at 5,046 feet where US 441 crosses the Smokies ridge. The parking lot is always crowded with tourists who have driven up from Gatlinburg or Cherokee. For thru-hikers, it represents civilization\x97the chance to hitch to town for resupply. For day-hikers and tourists, it is the view they came for. The state line runs through the middle of the lot."
+  memorial: "The Rockefeller Memorial is a low stone wall with a bronze plaque honoring the Laura Spelman Rockefeller Memorial Fund's five-million-dollar contribution to the creation of the park. John D. Rockefeller Jr. made the donation in 1928, matching funds raised by citizens of Tennessee and North Carolina. Without it, this forest might still be a patchwork of logging operations."
+  terrace: "The stone terrace where FDR stood on September 2, 1940 to dedicate the park. He spoke briefly about the value of preserving wild places, then the crowd dispersed into what was, at last, officially a national park. The terrace is worn smooth by millions of tourist feet."
+  bunion: "Charlie's Bunion is a dramatic rocky outcrop jutting from the ridge north of Newfound Gap. The exposed rock was created by a devastating wildfire in 1925 followed by a cloudburst in 1929 that stripped the soil to bare rock. The name comes from Charlie Conner's sore foot and Horace Kephart's promise to put the name on a government map. The views from the Bunion are vertiginous\x97a thousand-foot drop into the Porters Creek drainage."
+  kephart: "Horace Kephart was a writer, outdoorsman, and the primary advocate for the creation of the national park. He lived in the Smokies for years, writing about the mountain people and the vanishing wilderness. He died in a car accident in 1931, before the park was fully established. Mt. Kephart, visible from the ridge, is named for him."
+  road: "US Route 441, the Newfound Gap Road, is the only road that crosses the park from north to south. It connects Cherokee, North Carolina to Gatlinburg, Tennessee. For thru-hikers, it is a lifeline\x97a chance to hitch to town for food, showers, and a bed. The parking lot smells of exhaust and sunscreen."
+  tourists: "Day-trippers from Gatlinburg and Cherokee crowd the Newfound Gap overlook\x97families in flip-flops, couples taking selfies, kids chasing each other around the stone wall. They stare at thru-hikers with a mixture of curiosity and pity. You stare back with a mixture of envy and contempt for their clean clothes and access to cheeseburgers."
+idlemessages:
+- A tourist asks if you hiked all the way up from the parking lot. You smile and say yes.
+- The wind carries exhaust fumes from the Newfound Gap parking lot, a jarring contrast to days of clean mountain air.
+- Cloud pours over the ridge like slow water, flowing down the North Carolina side and evaporating.
+- A family poses for photos at the state line marker, one foot in Tennessee, one in North Carolina.
+- The rocky spine of Charlie's Bunion is visible to the north, jutting from the ridge like a clenched fist.
+- A shuttle van idles in the parking lot, TRAIL MAGIC painted on the side, waiting to take weary hikers to Gatlinburg.
+- Somewhere up the ridge, a peregrine falcon screams, defending its nesting territory on the cliffs.

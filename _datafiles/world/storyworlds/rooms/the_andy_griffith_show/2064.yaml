@@ -1,0 +1,67 @@
+roomid: 2064
+zone: The Andy Griffith Show
+title: The Courthouse
+description: >-
+  The Mayberry sheriffs office and courthouse -- a modest room with a great deal
+  of authority invested in it. Two <ansi fg="itemname">desks</ansi> face the front
+  window: Andys, which is large and organized and holds a <ansi fg="itemname">telephone</ansi>
+  and a framed photo of Opie; and Barneys, which is smaller and covered with
+  procedural notes, hand-drawn maps of potential criminal activity, and a
+  <ansi fg="itemname">notebook</ansi> full of contingency plans. A <ansi fg="itemname">gun
+  rack</ansi> on the wall holds two rifles and notably empty spaces below -- Barney
+  keeps his single bullet in his shirt pocket, not in a gun, for reasons of safety.
+  The <ansi fg="itemname">jail cells</ansi> are visible through the open doorway to
+  the east -- two cells with iron-bar doors, both currently unlocked. The office
+  smells faintly of <ansi fg="8">gun oil and coffee</ansi>. To the
+  <ansi fg="exit">west</ansi> is Main Street. Through the doorway to the
+  <ansi fg="exit">cell</ansi> is the jail.
+mapsymbol: C
+maplegend: The Courthouse
+biome: house
+exits:
+  west:
+    roomid: 2063
+  cell:
+    roomid: 2065
+    mapdirection: east
+nouns:
+  desks: >-
+    Two desks side by side facing the window. Andys is the picture of calm
+    competence -- papers in order, phone in reach, nothing superfluous.
+    Barneys is a war room, covered in notes about crime prevention strategies,
+    suspect descriptions, patrol routes, and what appears to be a hand-drawn
+    organizational chart of Mayberrys criminal element, which is limited.
+  gun rack: >-
+    A standard wall-mounted gun rack holding two rifles above an empty lower
+    section. The empty lower section is where Barney Fifes pistol does not live,
+    because Barneys pistol lives in its holster on Barneys belt, and the one
+    bullet it is issued lives in Barneys shirt pocket, where it cannot
+    accidentally discharge. This is Andys policy. It is a wise policy.
+  notebook: >-
+    Barneys notebook is dense with preparation. Crime statistics for Mayberry
+    since 1960 (minimal). Patrol schedules (thorough). A section marked
+    CONTINGENCIES with elaborate plans for scenarios that have not occurred
+    and are unlikely to occur. Barney has prepared for all of them.
+  telephone: >-
+    The office telephone, black, Bakelite, sits on Andys desk. When it rings
+    it usually means something has happened in Mayberry that requires Andys
+    patient attention. It rings infrequently, and things that require patient
+    attention are usually resolved by the end of the afternoon.
+  cells: >-
+    Two iron-bar jail cells visible through the doorway. Both are currently
+    empty, unless Otis has let himself in, which Otis does with some regularity.
+    The cell on the left has a blanket folded on the cot. That is Otis's cell,
+    effectively. He keeps it tidy.
+spawninfo:
+- mobid: 451
+  message: '<ansi fg="yellow">Barney Fife stands very straight behind his desk, one hand hovering near his holster with the vigilance of a man who has not had a criminal to deal with today but remains fully prepared for one.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The telephone sits silent on Andys desk, waiting to be needed.
+- The jail cells are empty. This is the normal state of the Mayberry jail, except for Otis, who does not count.
+- From outside the window, the sound of Main Street going about its unhurried business drifts in.
+- Barneys notebook lies open on his desk. A new contingency plan is being developed. It is thorough.
+- The gun rack holds its rifles in a silence that suggests they are very rarely consulted.
+- A coffee cup on Andys desk sends up a thin thread of steam. The sheriff is around somewhere.
+- A fly enters the courthouse window and reconsidered almost immediately, as well it should.
+- The office clock ticks. Whatever crime there is to prevent in Mayberry today has already been prevented.

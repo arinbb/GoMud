@@ -1,0 +1,60 @@
+roomid: 2069
+zone: The Andy Griffith Show
+title: The Church
+description: >-
+  Mayberrys white clapboard church, modest and perfect. The <ansi fg="itemname">steeple</ansi>
+  rises above the elm trees in a clean white line that has been oriented toward
+  the sky with the quiet confidence of a building that knows what it is for.
+  <ansi fg="itemname">Wooden pews</ansi> line both sides of the central aisle, the
+  wood worn smooth from decades of Sunday mornings. Morning light comes through
+  <ansi fg="yellow">plain glass windows</ansi> -- no stained glass, this is Mayberry,
+  not a cathedral -- and falls across the pews in warm rectangles. A
+  <ansi fg="itemname">hymn board</ansi> at the front shows this weeks selections in
+  individual white letters. The <ansi fg="itemname">organ</ansi> waits at the side,
+  polished and patient. This church does not demand anything of you. It just is here,
+  the way Mayberry is here -- solid, undemonstrative, ready when you need it. To the
+  <ansi fg="exit">north</ansi> is Wallys Filling Station.
+mapsymbol: X
+maplegend: The Church
+biome: house
+exits:
+  north:
+    roomid: 2068
+nouns:
+  steeple: >-
+    The steeple is white and straight and points up with the simplicity of
+    something that has one thing to say and says it without elaboration.
+    The bell inside has been ringing on Sunday mornings longer than anyone
+    in Mayberry can remember, which is long enough to have become part of
+    the town's own heartbeat.
+  pews: >-
+    Wooden pews, worn smooth and golden from decades of Sunday presence.
+    Andy and Opie sit in the third pew on the left. This is known and
+    accepted. Aunt Bee is usually two pews back with Clara Edwards. Barney
+    sits wherever there is room, but he stands very straight.
+  hymn board: >-
+    The hymn board shows this weeks selections in white plastic letters,
+    the kind you have to place one by one, which means someone in this
+    congregation takes that job seriously. The hymns are traditional and
+    familiar. Nobody is going to be surprised by this weeks hymn board.
+    That is the point of it.
+  organ: >-
+    A small pipe organ of no great ambition but complete sincerity, kept
+    polished by whoever polishes things in this church, which is several
+    people who would not take credit for it. When it plays on Sunday
+    morning the sound carries to the street and then further, which is
+    also the point.
+  windows: >-
+    Plain glass windows, not stained -- the light comes through clear and
+    falls across the pews in warm rectangles that shift through the morning.
+    Some churches make their windows spectacular. This church makes its
+    light honest. Both are correct approaches. This one is Mayberrys.
+idlemessages:
+- The organ rests in the side aisle with the patience of something that will play again Sunday and has no objection to waiting.
+- Light falls through the plain glass windows in long clean rectangles that move slowly across the pews as the sun travels.
+- The hymn board shows its selections in white letters. Someone placed each one carefully.
+- The church is quiet in the particular way of a building that holds a lot of singing and then goes very still between services.
+- A cardinal lands on the windowsill outside, looks in, and decides to continue its business. Even birds respect the quiet here.
+- The pews creak once in the afternoon warmth, settling deeper into their purpose.
+- The smell of old wood and beeswax candles and something faintly floral -- probably Aunt Bee -- lingers from Sunday.
+- Through the open door comes the sound of the filling station, distant, and then a bird, and then nothing.

@@ -1,0 +1,26 @@
+roomid: 609
+zone: Great Smoky Mountains
+title: Tricorner Knob Shelter
+description: "Tricorner Knob Shelter sits at 5,920 feet where three ridges meet, giving the knob its name. This is one of the highest and most remote shelters in the Smokies, surrounded by dense spruce-fir forest that blocks views but creates an atmosphere of deep wilderness isolation. The shelter is the standard chain-link-fronted design, weathered by decades of high-elevation storms. Few day-hikers reach this point\x97it is a full day's walk from the nearest road at Newfound Gap. The spruce forest here is thick with old-man's-beard lichen and the standing dead trunks of Fraser fir. The spring is reliable but the trail to it is rough. At nearly 6,000 feet, the nights are cold even in midsummer, and the air has that thin, clean quality of true mountain elevation."
+biome: mountains
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 65
+    exitmessage: You follow the side trail back to the AT ridge.
+    mapdirection: east
+nouns:
+  shelter: "A high and remote Smokies shelter where three ridges converge. The stone foundation is dark with moss, the timber frame silvered by weather. The chain-link fence has a few patches where repairs were made with wire."
+  knob: "Tricorner Knob gets its name from the convergence of three ridges at this point\x97the main Smokies crest plus two subsidiary ridges dropping off to the north and south. It is a geographic hinge point in the mountain chain."
+  fence: "The chain-link fence shows its age at this remote location\x97a few patches, some rust, but still functional. Rangers visit less frequently here than at the more accessible shelters."
+  register: "A thin register with spacious entries. The hikers who make it here tend to write more and linger longer. Some entries are genuinely philosophical."
+  spring: "The spring is down a rough side trail that drops steeply through spruce roots and mossy rocks. The water is extremely cold and reliable. Bring a headlamp if you are filtering after dark\x97the trail is treacherous."
+  lichen: "Old-man's-beard lichen hangs in thick curtains from every spruce branch. In fog, the lichen seems to glow faintly, giving the forest an ethereal, almost magical quality."
+idlemessages:
+- The three ridges funnel wind from every direction, the shelter creaking in its crossfire.
+- Lichen sways from the spruce branches in slow motion, silver-green in the fading light.
+- A saw-whet owl calls from the spruce tangle, a monotonous beeping like a truck backing up.
+- The forest is so dense here that the sky is visible only as scattered fragments between the crowns.
+- Frost forms on the shelter platform even in June. This is nearly 6,000 feet.
+- The silence between gusts of wind is enormous, the kind of silence that has weight.

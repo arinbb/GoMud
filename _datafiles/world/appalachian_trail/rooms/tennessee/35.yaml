@@ -1,0 +1,39 @@
+roomid: 35
+zone: Tennessee
+title: Hot Springs, NC Area
+description: "The trail descends from the high Smokies border into the French Broad River valley and the tiny town of Hot Springs, North Carolina\x97one of the few places where the Appalachian Trail passes directly through the center of a community. The main street is barely two blocks long, lined with hostels, an outfitter, and a couple of restaurants that cater to hikers. Below town, the French Broad River slides wide and slow past bluffs of exposed rock. Natural hot springs bubble up along the riverbank, their mineral-rich waters steaming in the cool mountain air. The Cherokee knew these springs long before Europeans arrived. During the First World War, the grand Mountain Park Hotel that stood here was converted into an internment camp for German merchant sailors\x97an unlikely prison in these remote mountains."
+biome: forest
+mapsymbol: H
+maplegend: Hot Springs
+exits:
+  south:
+    roomid: 65
+    exitmessage: The trail climbs back toward the Great Smoky Mountains.
+  north:
+    roomid: 36
+    exitmessage: The trail leaves Hot Springs, climbing north toward Max Patch.
+  groundhog:
+    roomid: 700
+    exitmessage: A blue-blazed side trail leads to Groundhog Creek Shelter.
+    mapdirection: west
+  roaring:
+    roomid: 701
+    exitmessage: A side trail descends to Roaring Fork Shelter.
+    mapdirection: east
+  deer_park:
+    roomid: 702
+    exitmessage: A blue-blazed trail leads to Deer Park Mountain Shelter.
+    mapdirection: west
+nouns:
+  springs: "Natural hot springs bubble up along the French Broad River, their mineral-rich waters maintaining a steady temperature year-round. The Cherokee called this place the warm springs and used them for centuries. Stone-lined soaking pools have been built along the bank, fed by the natural flow."
+  river: "The French Broad is one of the oldest rivers in the world, older than the mountains it cuts through. Here it runs wide and gentle past limestone bluffs, its surface broken by the occasional ripple of a smallmouth bass."
+  town: "Hot Springs is barely a town\x97a post office, a gas station, a couple of restaurants, an outfitter, and more hostels than you can count. The AT runs right down the main road. White blazes are painted on telephone poles."
+  hotel: "Nothing remains of the grand Mountain Park Hotel that once stood here. During the First World War, it served as an internment camp for German merchant sailors captured from ships in American ports. The sailors were brought to these remote mountains, far from any coast, to wait out the war."
+  blazes: "White blazes are painted on telephone poles and fence posts through town\x97the trail runs right down the main street before crossing the bridge and heading north."
+idlemessages:
+- Steam rises from the hot springs along the riverbank, curling in the cool mountain air.
+- A hiker emerges from the outfitter with a new pair of trail runners, grinning like a kid at Christmas.
+- The French Broad slides past, wide and unhurried, its surface catching the light.
+- Someone is playing guitar on the porch of one of the hostels, the sound drifting down the empty main street.
+- The smell of burgers from the trail cafe mingles with the mineral tang of the springs.
+- A shuttle van pulls up, disgorging a group of hikers fresh off the trail, blinking in the sunlight.

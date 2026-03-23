@@ -1,0 +1,28 @@
+roomid: 8
+zone: Georgia
+title: Neel Gap / Mountain Crossings
+description: "The trail descends steeply from Blood Mountain and arrives at something utterly unexpected\x97a building straddling the trail itself. The Appalachian Trail passes directly through the stone breezeway of Mountain Crossings, a hiker outfitter built in 1937 of native stone and heavy timber. This is the only place on the entire 2,190-mile trail where it passes through a man-made structure. The breezeway is cool and shaded, the stone walls thick and solid on either side. Through the arched opening, you can see the outfitter's entrance, shelves of gear and food visible through the windows. Outside, US-19/129 crosses at Neel Gap, and a lone tree near the parking lot is draped with pairs of hiking boots\x97boots abandoned by thru-hikers who quit the trail here, dangling by their laces like strange fruit. The boot tree is a memorial and a warning."
+biome: road
+mapsymbol: M
+maplegend: Mountain Crossings
+exits:
+  south:
+    roomid: 7
+  north:
+    roomid: 9
+nouns:
+  building: "Mountain Crossings outfitter occupies a handsome stone building constructed in 1937 by the CCC. Heavy timber beams support the roof. The stone breezeway through which the AT passes is wide enough for a hiker with a full pack, its walls cool and slightly damp."
+  boots: "Dozens of pairs of hiking boots dangle from the branches of a tree near the parking lot, hung by their laces. Each pair represents a thru-hiker who quit the trail at Neel Gap\x97about 30 miles into a 2,190-mile journey. Some boots are fresh, others sun-bleached and cracked with age."
+  outfitter: "Through the windows, you can see racks of gear, shelves of freeze-dried meals, bins of candy bars and trail mix. The staff here are famous for pack shakedowns\x97they will go through your pack, item by item, and help you lighten your load. Many hikers leave Neel Gap with pounds less on their backs."
+  road: "US-19/129 is a two-lane highway that crosses the trail at Neel Gap. Cars and trucks rush past, their noise a shock after days of forest silence. The road connects Dahlonega to Blairsville."
+  breezeway: "The stone breezeway is an arched passage through the building\x97the AT literally passes through it, white blazes painted on either end. The stones are cool to the touch, the air shaded and still. It is a strange and wonderful thing, walking through a building on the Appalachian Trail."
+  tree: "A gnarled oak near the parking lot serves as the famous boot tree. Pairs of hiking boots hang from every reachable branch, left by thru-hikers who decided their journey ended here at mile 31.6."
+  history: "This place was called Walasi-Yi by the Cherokee — 'home of the great frog.' A Cherokee village once stood just south of the gap. In 1838, the Cherokee inhabitants were forcibly removed during the Trail of Tears. The gap was called Frogtown Gap until W.R. Neel surveyed a highway route through here around 1924, and the name was changed to honor him. The CCC built the stone building in 1937. It served as a restaurant and inn, was nearly demolished in the 1960s, and was saved when locals got it placed on the National Register of Historic Places in 1977. Mountain Crossings has operated here as an outfitter since 1983."
+idlemessages:
+- A hiker emerges from the outfitter carrying a lighter pack and a relieved expression.
+- Boots sway gently in the breeze on the boot tree, each pair a story of dreams deferred.
+- A car door slams in the parking lot. Someone is either starting or ending a journey.
+- The smell of coffee drifts from the outfitter, impossibly tempting after days of instant packets.
+- A trail angel has set up a camp stove in the parking lot, offering hot dogs to passing hikers.
+- The stone breezeway is cool and shaded, a brief respite from the Georgia sun.
+- You can hear hikers inside the outfitter debating the merits of various stove systems.

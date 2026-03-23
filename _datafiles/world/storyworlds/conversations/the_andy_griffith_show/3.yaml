@@ -1,0 +1,51 @@
+-
+  Supported:
+    "goober pyle": ["gomer pyle"]
+  Conversation:
+    - ["#1 say Gomer, can I ask you something."]
+    - ["#2 say Sure, Goober."]
+    - ["#1 say How does a carburetor work. Like, just -- the basic idea."]
+    - ["#2 say Well now."]
+    - ["#2 emote thinks about this seriously."]
+    - ["#2 say I think it is the part that goes in the engine."]
+    - ["#1 say ...yeah."]
+    - ["#2 say With the -- fuel?"]
+    - ["#1 say Yeah, that is the part."]
+    - ["#2 say Shazam."]
+    - ["#1 say You want me to explain it?"]
+    - ["#2 say I thought you just asked me to explain it."]
+    - ["#1 say I did. But you only got as far as 'goes in the engine.'"]
+    - ["#2 say That is the right general area though."]
+    - ["#1 say Yes it is."]
+-
+  Supported:
+    "goober pyle": ["gomer pyle"]
+  Conversation:
+    - ["#2 say Goober, do you ever wonder where clouds go?"]
+    - ["#1 say Where clouds go."]
+    - ["#2 say Like, they are there, and then they are somewhere else. Where do they go?"]
+    - ["#1 emote wipes his hands on the rag and thinks about this."]
+    - ["#1 say They just move. Wind moves them."]
+    - ["#2 say But where TO."]
+    - ["#1 say ...somewhere else."]
+    - ["#2 say Shazam."]
+    - ["#1 say That is not a -- that is not really an answer."]
+    - ["#2 say I know. But it is kind of amazing anyway."]
+    - ["#1 emote thinks about this and decides Gomer has a point."]
+-
+  Supported:
+    "gomer pyle": ["goober pyle"]
+  Conversation:
+    - ["#1 say Goober."]
+    - ["#2 say Yeah."]
+    - ["#1 say Do you ever think about how you know things you did not know you knew until somebody asked you?"]
+    - ["#2 say Like what."]
+    - ["#1 say Like, I know what a carburetor does because you told me. But now I feel like I always knew."]
+    - ["#2 emote considers this from under the car."]
+    - ["#2 say I think that is just how learning works."]
+    - ["#1 say Golly."]
+    - ["#2 say Yeah."]
+    - ["#1 say That is really something."]
+    - ["#2 say Surprise surprise surprise."]
+    - ["#1 say Hey, that is my thing."]
+    - ["#2 say It is everybody's thing now."]

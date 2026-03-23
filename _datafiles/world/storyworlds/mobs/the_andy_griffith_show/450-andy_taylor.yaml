@@ -1,0 +1,27 @@
+mobid: 450
+zone: the_andy_griffith_show
+hostile: false
+maxwander: 1
+idlecommands:
+  - 'emote picks out a slow chord on the guitar, the notes hanging in the evening air.'
+  - 'emote sets the guitar across his knees and looks out at the yard with a look of complete satisfaction.'
+  - 'emote whittles something from a piece of pine, the shavings falling to the porch boards.'
+  - 'say Well, I tell you what. Sometimes things have a way of working out if you just give them room to.'
+  - 'emote rocks once, forward and back, with the easy rhythm of a man who has nowhere to be and is fine with that.'
+  - 'emote watches a firefly blink in the yard with the expression of someone who finds this remarkable every time.'
+  - 'say Barney means well. He always means well. That counts for a lot.'
+  - 'emote plays three notes on the guitar, stops, considers, plays them again. Getting it right matters.'
+activitylevel: 10
+character:
+  name: Andy Taylor
+  description: >-
+    A tall man in his thirties with an easy smile and the kind of calm that
+    comes not from nothing ever going wrong but from everything eventually
+    being worked out. He wears his sheriffs uniform without the gun -- he
+    never carries a gun, which is either naive or profoundly confident
+    depending on how you look at it. He looks at everything with patient,
+    direct attention. He has a guitar. He uses it. He is the sheriff, the
+    father, and the moral center of Mayberry, and he carries all three of
+    those things with the same unhurried competence.
+  raceid: 1
+  level: 10

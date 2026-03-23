@@ -1,0 +1,28 @@
+roomid: 60
+zone: Great Smoky Mountains
+title: Entering the Smokies / Fontana Dam North
+description: "You cross the top of Fontana Dam\x97480 feet of concrete holding back the Little Tennessee River\x97and step into the Great Smoky Mountains National Park. A sign marks the boundary, weathered but legible. Beyond it the trail climbs steeply through a hardwood forest that feels older and wilder than anything you have walked through before. The air changes immediately\x97cooler, damper, heavy with the smell of moss and decaying wood. This is the most visited national park in America, but the AT corridor through it feels remote and primal. The famous blue haze drifts through the hollows, a natural fog the Cherokee called Shaconage\x97place of blue smoke. You will need a permit and reservations for the shelters ahead. There is no stealth camping in the Smokies."
+biome: mountains
+mapsymbol: F
+maplegend: Fontana/Park Entry
+exits:
+  south:
+    roomid: 34
+    exitmessage: You cross back over Fontana Dam toward the North Carolina lowlands.
+  north:
+    roomid: 61
+    exitmessage: The trail climbs steeply into the Great Smoky Mountains.
+nouns:
+  dam: "Fontana Dam stretches 480 feet high and 2,365 feet across the Little Tennessee River. Built by TVA in 1942-1944 to power aluminum smelting for the war effort, it created Fontana Lake and displaced several small mountain communities. Walking across the top feels like crossing a threshold between worlds."
+  sign: "A brown National Park Service sign marks the boundary. GREAT SMOKY MOUNTAINS NATIONAL PARK. Below it, a smaller notice about backcountry permits and bear regulations."
+  haze: "The famous blue haze drifts through the valleys and hollows, softening every ridge and summit into layers of blue-gray watercolor. It comes from volatile organic compounds released by the dense vegetation\x97terpenes from millions of trees reacting with humidity and ozone. The Cherokee called it Shaconage. The settlers just called it smoke."
+  permit: "A laminated notice reminds hikers that backcountry permits are REQUIRED in the Great Smoky Mountains. Thru-hikers can self-register at the kiosk. All shelter stays must be reserved in advance. No stealth camping. No exceptions."
+  lake: "Fontana Lake stretches behind the dam, a deep impoundment of startlingly clear water surrounded by forested ridges. The communities of Proctor, Judson, and Forney Creek lie beneath its surface, drowned when the dam was completed in 1944."
+  kiosk: "A self-registration kiosk for thru-hikers stands near the park boundary. You fill out a permit form, noting your planned shelter stops through the park. The system operates largely on the honor system, but rangers do check."
+idlemessages:
+- The haze drifts through the hollow below, blue and dreamlike, smelling faintly of balsam.
+- A raven launches from a dead hemlock snag, its wingbeats audible in the stillness.
+- The sound of water far below echoes up from Fontana Lake, muffled by distance and forest.
+- Wind stirs the canopy overhead, and for a moment the blue haze thins to reveal layer upon layer of ridges.
+- A red-spotted newt crosses the trail, bright orange against the dark leaf litter.
+- Somewhere deep in the forest, a pileated woodpecker hammers at a dead trunk, the sound carrying for half a mile.

@@ -1,0 +1,27 @@
+mobid: 453
+zone: the_andy_griffith_show
+hostile: false
+maxwander: 2
+idlecommands:
+  - 'emote throws a ball against the side of the building and catches it on the bounce, absorbed in the rhythm of it.'
+  - 'say Hey! Do you know how to do a cartwheel? I have been trying to do one but my arms are not long enough.'
+  - 'emote looks at something in the grass with intense scientific focus, crouches down, looks closer.'
+  - 'say Pa says a man has to do what a man thinks is right, but that is the part I am still working out.'
+  - 'emote runs from one end of the yard to the other for no apparent reason, arrives, appears satisfied.'
+  - 'say I found a frog this morning. I named him Chester. I put him back, though, because Pa said.'
+  - 'emote sits down suddenly in the grass and begins doing something elaborate with two sticks and a length of string.'
+  - 'say Do you think fish have feelings? I have been wondering about this.'
+activitylevel: 40
+character:
+  name: Opie Taylor
+  description: >-
+    A red-haired boy of about eight or nine years old, freckled, in overalls
+    and a plaid shirt, with the look of a person who is paying attention to
+    everything. His eyes are wide and direct in the manner of someone who
+    has not yet learned to pretend not to notice things. He asks questions
+    the way other people breathe -- constantly and without apology. He is
+    Andys son and he shows it, not in the same calm that Andy has but in
+    the same fundamental decency working its way to the surface. He is
+    going to be all right.
+  raceid: 1
+  level: 2

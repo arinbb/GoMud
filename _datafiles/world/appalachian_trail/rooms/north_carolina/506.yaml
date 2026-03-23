@@ -1,0 +1,28 @@
+roomid: 506
+zone: North Carolina
+title: Cable Gap Shelter
+description: "Cable Gap Shelter sits at 2,880 feet, the lowest shelter in the Cheoah section, tucked into a gap near the headwaters of a creek that flows down to Fontana Lake. The shelter is named for the cable logging operations that once stripped these slopes bare in the early twentieth century\x97steel cables strung between ridges to drag cut timber downhill to the railroad. The forest has grown back, but if you know where to look, you can still find old cable fragments rusting in the undergrowth, and the foundations of the log skidder platforms cut into the hillside. The shelter is a basic three-sided lean-to, showing its years. A reliable creek runs nearby. Fontana Dam is a day's walk to the north, and thru-hikers at Cable Gap begin to feel the gravitational pull of the Fontana Hilton's legendary hot showers."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 33
+    exitmessage: You follow the blue-blazed side trail back to the AT.
+    mapdirection: west
+nouns:
+  shelter: "A basic three-sided lean-to in a low gap. The wood is dark and showing its age. Moss grows along the base of the walls. It is functional but not fancy."
+  platform: "The sleeping platform is worn and slightly damp from the low elevation humidity. Room for about ten."
+  register: "The shelter register is filled with entries about Fontana Dam\x97thru-hikers counting down miles to hot showers and real food."
+  creek: "A creek runs past the shelter, flowing downhill toward Fontana Lake. The water is reliable and relatively warm at this lower elevation. It runs over a bed of rounded stones and sandy gravel."
+  cables: "If you look carefully in the undergrowth near the shelter, you can find remnants of the old logging cables\x97rusted steel strands half-buried in leaf litter and moss. Cable logging was brutal work that stripped entire mountainsides bare in the early 1900s. The forest has recovered remarkably well. TODO_RESEARCH: Specific logging companies that operated here, dates of major operations, impact on Cherokee communities."
+  foundations: "Cut into the hillside above the shelter, you can make out the flat platforms where log skidders once sat\x97machines that used the cables to drag cut trees down the mountain. The platforms are slowly being reclaimed by rhododendron and ferns."
+  privy: "The privy is downhill from the shelter, set back in the undergrowth."
+  bearbox: "A standard bear box at the clearing edge. At this lower elevation, bear activity is high."
+idlemessages:
+- The creek below the shelter runs strong, its sound filling the low gap.
+- A rusted cable fragment pokes from the leaf litter, a remnant of the logging era.
+- The lower elevation makes this gap warmer and more humid than the ridgetops above.
+- A wood thrush sings its spiraling song from the recovering second-growth forest.
+- Fontana Dam is close now. You can almost hear the promise of hot showers on the wind.
+- A copperhead glides across the trail near the creek, its copper and brown bands catching the filtered light.

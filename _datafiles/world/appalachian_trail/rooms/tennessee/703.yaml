@@ -1,0 +1,26 @@
+roomid: 703
+zone: Tennessee
+title: Spring Mountain Shelter
+description: "A small shelter sits in a saddle on Spring Mountain, tucked into a grove of hardwoods where the wind cannot quite reach. The three-sided structure sleeps six on a raised platform. A reliable spring bubbles up from mossy rocks about two hundred yards down the blue-blazed trail. The shelter clearing is quiet and secluded, surrounded by oak and hickory with an understory of witch hazel. The approach from the AT is a steady half-mile descent. A bear box and privy serve the site. A trail register hangs from the front post."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 36
+    exitmessage: You follow the blue-blazed side trail back to the AT.
+    mapdirection: east
+nouns:
+  shelter: "A compact three-sided shelter in good condition. The logs are relatively new and still have a faint cedar smell. Small but cozy."
+  platform: "The sleeping platform is tight for six but manageable. The wood is clean and unworn."
+  register: "A trail register hangs in its protective bag, the pages still mostly dry."
+  spring: "A reliable spring emerges from mossy rocks downhill. The water is cold and clean, bubbling up from deep underground."
+  privy: "A well-maintained privy sits uphill from the shelter. Someone even left a roll of toilet paper in a coffee can."
+  bearbox: "A standard bear box at the clearing's edge, painted brown to blend with the forest."
+idlemessages:
+- The spring bubbles quietly from its mossy source, a steady dependable sound.
+- Witch hazel branches scratch against each other in the light breeze.
+- A towhee scratches in the leaf litter near the shelter, kicking leaves in both directions.
+- The saddle is calm and sheltered, the wind passing overhead without descending.
+- Acorns patter down from the oaks, bouncing off the shelter roof with sharp ticks.
+- The forest is thick and quiet here, the AT feeling very far away.

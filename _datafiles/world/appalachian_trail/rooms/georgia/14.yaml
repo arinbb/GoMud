@@ -1,0 +1,28 @@
+roomid: 14
+zone: Georgia
+title: Whitley Gap Shelter
+description: "A three-sided wooden shelter sits in a quiet gap at 3,370 feet, accessible via a 1.2-mile blue-blazed side trail off the AT. The detour is worth it\x97the shelter is well-maintained, with a dependable spring at the midpoint of the side trail and decent views through the trees when the leaves are down. The sleeping platform is standard, the privy functional. A bear box guards the clearing. The remoteness keeps crowds thin. The 1.2-mile walk back to the AT in the morning is the price of admission. A trail register hangs from the shelter post."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 9
+    exitmessage: You follow the 1.2-mile blue-blazed side trail back to the AT.
+    mapdirection: east
+nouns:
+  shelter: "A standard three-sided lean-to, well-maintained despite its remoteness. The 1.2-mile side trail keeps the crowds away, and the shelter shows it\x97less wear, fewer mouse problems, a quieter feel."
+  platform: "The sleeping platform is in good shape. Room for ten or twelve. The wood is lighter than the heavily-used shelters closer to Springer."
+  register: "The shelter register has fewer entries than most\x97the 1.2-mile side trail discourages casual visitors. The entries tend to be longer, more reflective."
+  water: "A dependable spring flows at the midpoint of the side trail to the shelter. Cold and clear, one of the more reliable sources in this section."
+  spring: "The spring is about 0.6 miles back along the side trail. It runs dependably even in dry weather."
+  privy: "The privy is tucked behind the shelter in a stand of mountain laurel."
+  bearbox: "A bear box in decent condition. Less dented than the ones closer to Springer\x97fewer hikers means less use."
+  views: "When the leaves are down in winter, you can see the ridgeline through gaps in the trees. In summer, the canopy closes everything in."
+idlemessages:
+- The gap is quiet here, 1.2 miles from the trail. The sounds of the forest are undisturbed.
+- A pileated woodpecker hammers at a dead oak near the shelter, its red crest flashing.
+- The remoteness of this shelter is its own reward\x97no crowds, no noise, just forest.
+- Wind sifts through the gap, carrying the sweet smell of mountain laurel.
+- A deer steps into the clearing, freezes, then bounds silently into the trees.
+- The side trail back to the AT stretches 1.2 miles through quiet forest.

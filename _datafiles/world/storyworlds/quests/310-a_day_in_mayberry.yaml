@@ -1,0 +1,26 @@
+questid: 310
+name: A Day in Mayberry
+description: >-
+  Spend a day in Mayberry, North Carolina -- the most peaceable town in all
+  of television. Sit on Andys porch. Visit the courthouse and find out about
+  the bullet. Get a haircut at Floyds. Go down to Myers Lake and cast a line
+  in the dark water. Come home to Aunt Bees pie. That is a day. That is the
+  whole thing. That is everything.
+reward:
+  experience: 4000
+  item_id: 275
+  playermessage: >-
+    You have spent a day in Mayberry -- the porch, the courthouse, Floyds,
+    the fishing hole, Aunt Bees kitchen. You have done all of it at the pace
+    Mayberry requires, which is slow and unhurried and correct. As a memento
+    of your time in the most peaceable town in the world, you receive a fishing
+    lure from Myers Lake. It is hand-tied, slightly bent from use, and still
+    has a piece of Andy's line attached. It smells of lake water and pine resin
+    and a summer afternoon that never quite ended.
+steps:
+- description: 'Sit on Andys front porch and take in the evening.'
+- description: 'Visit the Mayberry courthouse.'
+- description: 'Meet Deputy Barney Fife and learn about the bullet.'
+- description: 'Get a haircut at Floyds Barber Shop.'
+- description: 'Go fishing at Myers Lake.'
+- description: 'Come home to Aunt Bees pie.'

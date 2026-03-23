@@ -1,0 +1,28 @@
+roomid: 504
+zone: North Carolina
+title: Wesser Bald Shelter
+description: "Wesser Bald Shelter sits at 4,115 feet on the ridgeline between Wayah Bald and the Nantahala Gorge, with a fire tower on the summit a short walk above. The shelter is a wooden lean-to in a clearing of mountain laurel and northern red oak, the sleeping platform for about a dozen. A spring runs reliably nearby, flowing from a seep in the rocky hillside. The fire tower on Wesser Bald is an old USFS steel tower, its observation cab accessible by a steep ladder. From the top, you can see the Nantahala Gorge dropping away to the east and the endless ridgelines of the southern Nantahala to the south. Thru-hikers headed north know that the descent from here to the NOC is one of the steepest and most knee-punishing on the southern AT\x97nearly 3,000 feet in five miles."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 32
+    exitmessage: You follow the blue-blazed side trail back to the AT.
+    mapdirection: west
+nouns:
+  shelter: "A standard AT shelter at the base of Wesser Bald. The walls are dark with weather, the platform worn smooth. Mountain laurel presses close to the clearing on all sides."
+  platform: "The sleeping platform holds about twelve. The wood is smooth and slightly splintered at the edges from years of pack straps dragging across it."
+  register: "The shelter register is full of entries about the impending descent to the NOC or the brutal climb up from it, depending on direction. Knee pain is a recurring theme."
+  spring: "A spring flows from a rocky seep about 60 yards downhill. The flow is reliable but not heavy\x97plan time to fill bottles."
+  tower: "The Wesser Bald fire tower is a steel USFS structure on the summit above the shelter. The observation cab is accessible by a steep ladder. The views from the top are expansive\x97the Nantahala Gorge visible to the east, the ridgeline stretching north and south. TODO_RESEARCH: Year the fire tower was built, how long it was actively staffed, fire history in the Nantahala."
+  privy: "The privy is off the main clearing, set back in the mountain laurel."
+  bearbox: "A bear box sits at the clearing edge, its latch mechanism well-used."
+  gorge: "Through gaps in the trees, you can see the Nantahala Gorge dropping away to the east\x97a dark cleft in the mountains where the river runs in permanent shadow. The descent ahead is notorious."
+idlemessages:
+- Wind rattles the metal fire tower on the summit above, a faint metallic creaking.
+- Mountain laurel blooms in dense pink clusters around the shelter clearing.
+- A thru-hiker massages their knees at the shelter, dreading the descent to the NOC tomorrow.
+- The Nantahala Gorge is visible through gaps in the canopy, a dark shadow between ridges.
+- A Carolina wren sings its emphatic song from the laurel thicket, impossibly loud.
+- The spring trickles downhill, barely audible over the wind in the ridgetop trees.

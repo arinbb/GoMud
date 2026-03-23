@@ -1,0 +1,73 @@
+roomid: 2071
+zone: The Andy Griffith Show
+title: The Fishing Hole
+description: >-
+  <ansi fg="cyan">Myers Lake.</ansi> The fishing hole. The single most peaceful
+  room in all of Mayberry and therefore in all the world. The water is
+  <ansi fg="cyan">dark green and still</ansi>, reflecting the sky and the trees
+  in a surface that is only disturbed, slowly, by the ring of a fish rising.
+  <ansi fg="10">Willow trees</ansi> overhang the bank, their trailing branches
+  touching the water. The bank itself is <ansi fg="10">grass worn to soft mud</ansi>
+  at the water's edge, the particular mud of a fishing spot visited weekly for
+  years. Two <ansi fg="itemname">cane poles</ansi> are propped in forked sticks
+  at the water's edge, their lines in the water. A <ansi fg="itemname">bait bucket</ansi>
+  sits in the shade. Somewhere up the bank, a <ansi fg="itemname">lunch pail</ansi>
+  sits with what is probably Aunt Bees sandwiches in it, wrapped in wax paper.
+  There is no sound here except water and birds and the occasional distant music
+  of Andy whistling something on the way here or back. The <ansi fg="10">afternoon
+  light</ansi> is thick and golden and slow. Nothing bad has ever happened at
+  Myers Lake. Nothing bad could. To the <ansi fg="exit">road</ansi> is the way
+  back to town.
+mapsymbol: F
+maplegend: The Fishing Hole
+biome: land
+exits:
+  road:
+    roomid: 2070
+    mapdirection: north
+nouns:
+  water: >-
+    Dark green water, still and deep, the color of something permanent.
+    The lake does not care about anything that is happening in town.
+    The lake has its own schedule, which is the schedule of fish and weather
+    and seasons, and all of those move slowly. This is why you come here.
+  cane poles: >-
+    Two twelve-foot cane poles propped in forked sticks at the water's edge,
+    their lines trailing into the dark water. The bobbers float motionless.
+    They have been floating like this for a while. That is fine. That is
+    the point of cane poles at Myers Lake. You are not here to catch fish.
+    You are here to be here.
+  willow trees: >-
+    Old willows with long trailing branches that touch the surface of the
+    lake and stir slightly in the water as the breeze moves them. The
+    willows have been here long enough that they are part of the landscape
+    the way the lake is part of the landscape -- something that was here
+    before the question of how long was worth asking.
+  lunch pail: >-
+    A tin lunch pail with a latch, sitting in the shade of the willow.
+    Inside: two sandwiches wrapped in wax paper (chicken salad on white,
+    the way Opie likes), two oatmeal cookies, and a small jar of sweet tea.
+    Aunt Bee packed this. She did not ask if anyone wanted a packed lunch.
+    She just packed it.
+  bobber: >-
+    A red-and-white cork bobber floating motionless on the dark water.
+    It has not moved in some time. This is fine. The bobber will move
+    when the fish decide it is time for the bobber to move, and not before,
+    and that is exactly as it should be.
+  bank: >-
+    The grassy bank slopes to the water's edge, the grass worn away to
+    smooth dark mud at the exact spot where generations of Mayberry feet
+    have stood and sat and waited for the bobber to move. The mud is soft
+    and accepts a boot print. The bank smells of lake water and earth and
+    the specific mineral smell of somewhere that holds water.
+idlemessages:
+- The bobber drifts a fraction of an inch and stops. The lake breathes in its own way.
+- A heron stands at the far bank, still as a fence post, watching the water with professional patience.
+- The willow branches trail in the water, moving very slightly, making the lake surface uncertain at the edges.
+- A fish rises somewhere out in the dark water -- one ring expanding slowly outward until it reaches the bank and disappears.
+- A bullfrog calls from the reeds on the far side, deep and unhurried, once, and then is quiet for a long time.
+- The afternoon light lies across the water in a sheet of gold that shifts as the willows move.
+- Somewhere up the road, very faint, the sound of Andy whistling drifts through the pines. He is coming, or going, or just somewhere near.
+- Everything here is exactly as it should be. The lake. The poles. The lunch pail. The long golden afternoon. Everything.
+- A dragonfly hovers over the surface, iridescent, then arrows away. The water closes where it was.
+- The sky above the lake is the particular blue of a North Carolina afternoon that has run out of urgency.

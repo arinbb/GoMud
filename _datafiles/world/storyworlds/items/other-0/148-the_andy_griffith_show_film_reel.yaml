@@ -1,0 +1,20 @@
+itemid: 148
+name: The Andy Griffith Show film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="10">The Andy Griffith Show</ansi>
+description: >-
+  A film reel in a CBS television canister, the metal warm and slightly worn
+  at the edges the way a much-loved thing gets worn. The label is handwritten
+  in plain block letters: THE ANDY GRIFFITH SHOW. When you hold it up to the
+  light the celluloid shows something that stops you still for a moment: a
+  front porch. Two rocking chairs. A man with a guitar in the amber light of
+  a summer evening. There are fireflies beginning to blink in the yard. If you
+  hold very still you can hear it, just barely -- a guitar picking out a simple
+  melody, and underneath that, if you lean in, the sound of crickets and a
+  screen door and a world where things always work out with patience and good
+  sense and the long unhurried conversations of people who care about each other.
+  Mayberry. It is waiting for you.
+type: object
+subtype: usable
+uses: 0
+value: 0

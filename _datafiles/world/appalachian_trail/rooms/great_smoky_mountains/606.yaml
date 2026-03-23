@@ -1,0 +1,27 @@
+roomid: 606
+zone: Great Smoky Mountains
+title: Mt. Collins Shelter
+description: "Mt. Collins Shelter sits at 5,870 feet in dense spruce-fir forest, one of the highest shelters on the entire AT. The trees here are almost entirely red spruce and Fraser fir, with the dead gray trunks of adelgid-killed firs outnumbering the living in places. The shelter is perpetually damp\x97at this elevation, clouds frequently settle in the forest and stay for days. Moss covers every surface that holds still long enough: the shelter walls, the rocks around the spring, the log benches. The chain-link bear fence fronts the standard stone-and-timber structure. Kuwohi summit is only three miles south, and many hikers use this shelter as their base for summiting the AT highpoint. The spring is one of the most reliable in the park, emerging from a rock face just downhill from the shelter."
+biome: mountains
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 63
+    exitmessage: You follow the side trail back to the AT ridge toward Kuwohi.
+    mapdirection: south
+nouns:
+  shelter: "A high-elevation shelter in the boreal zone, perpetually wrapped in cloud and moisture. The stone walls are green with moss. The timber is dark with decades of damp. It feels ancient, though it was built within living memory."
+  fence: "The chain-link bear fence, filmed with moisture. Moss is beginning to colonize the lower links."
+  spring: "The spring emerges from a rock face below the shelter, a strong flow even in dry seasons. At 5,870 feet, this water is snowmelt-cold year-round. The collection basin is green with algae and surrounded by moss."
+  moss: "Moss covers everything at this elevation\x97the shelter walls, the surrounding rocks, the fallen logs, the trail itself in places. It is thick, green, and wet, a living carpet that makes the forest floor look upholstered."
+  register: "The register is damp. Everything at this shelter is damp. The entries are written in pencil because pens refuse to write on wet paper."
+  privy: "Uphill through dense spruce. The path to the privy is a moss garden, spongy underfoot."
+  ghosttrees: "TODO_RESEARCH: Specific mortality rates for Fraser fir at Mt. Collins elevation. Some studies estimate 90%+ mortality of mature trees across the southern Appalachians."
+idlemessages:
+- Cloud settles through the spruce forest, reducing visibility to the shelter's width.
+- Water drips from every surface. The shelter, the trees, the moss, the fence. Everything weeps.
+- A winter wren explodes into song from the spruce tangle, impossibly loud for its size.
+- The moss on the shelter wall is so thick you could push your finger into it to the first knuckle.
+- A salamander emerges from beneath the mossy shelter foundation, bright orange against the green.
+- The spring runs steadily, a sound like a small clock ticking in the forest.

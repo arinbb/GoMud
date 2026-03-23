@@ -1,0 +1,66 @@
+roomid: 2066
+zone: The Andy Griffith Show
+title: Floyds Barber Shop
+description: >-
+  The social center of Mayberry disguised as a place of commerce. Two
+  <ansi fg="itemname">barber chairs</ansi> face a long mirror framed with
+  photos of hairstyles that were current once, on a timeline that Floyd does
+  not closely track. A <ansi fg="itemname">candy-stripe pole</ansi> turns
+  slowly outside the window. The <ansi fg="itemname">waiting bench</ansi>
+  along the wall is the real purpose of this establishment -- it is where
+  Mayberry information is distributed, compared, embellished, and filed.
+  Floyd moves between chairs at a considered pace, clipping with the
+  deliberate slowness of a man who is paid by the haircut and is in no hurry
+  to finish. <ansi fg="yellow">Mirrors</ansi> on both walls reflect the shop
+  back and forth into a progression of barbershops extending to some comfortable
+  infinity. To the <ansi fg="exit">north</ansi> is Main Street. To the
+  <ansi fg="exit">east</ansi> is the drugstore.
+mapsymbol: B
+maplegend: Floyds Barber Shop
+biome: house
+exits:
+  north:
+    roomid: 2063
+  east:
+    roomid: 2067
+nouns:
+  barber chairs: >-
+    Two red-and-chrome barber chairs, upholstered in cracked leather, hydraulic
+    pedals at the base for height adjustment. Floyd uses them at a pace that
+    suggests the hydraulic mechanism has never been pressed urgently. Sitting
+    in one is to invite conversation, hair adjustment, and whatever Floyd has
+    heard today, which is everything.
+  candy-stripe pole: >-
+    The red-and-white pole turns outside the window with the patient rotation
+    of a Mayberry institution. It has turned this way since Floyd opened, which
+    was before the question of when was worth examining closely. It turns. Floyd
+    clips. Mayberry talks. This is the rhythm of the shop.
+  waiting bench: >-
+    The bench along the wall where people sit to wait for a haircut, or to
+    not wait for a haircut at all, just to sit and hear what Floyd has to say
+    about what is going on. The bench is the information hub of Mayberry.
+    More is learned on this bench than in the newspaper, which comes out
+    Thursdays and is already outdated by Wednesday.
+  mirrors: >-
+    Two large mirrors, one behind each chair, angled so that each reflects the
+    other and creates a long receding corridor of barbershops. In each
+    reflection Floyd is cutting hair, slightly smaller, receding toward a
+    theoretical infinity of haircuts in comfortable shops in towns that are
+    very much like Mayberry. Perhaps that is exactly what is there.
+  scissors: >-
+    Floyds good scissors, kept on the counter in a glass jar with a comb and
+    a pair of clippers. He handles them with more reverence than speed. The
+    haircut will be finished when it is finished, and probably not before.
+spawninfo:
+- mobid: 454
+  message: '<ansi fg="yellow">Floyd the Barber stands behind the nearest chair, scissors in hand, cutting something invisible, his expression that of a man who has important news and is calibrating the proper moment to share it.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The candy-stripe pole turns outside the window in its slow persuasive rotation.
+- Floyd sweeps a small accumulation of hair from around the chair with practiced efficiency.
+- The waiting bench creaks as someone settles in for a long sit and the news that comes with it.
+- The smell of talc and barbershop powder and something with bay rum in it hangs in the air pleasantly.
+- Floyd says something under his breath that sounds like the beginning of a very good story.
+- The mirrors reflect the shop back and forth into that warm comfortable infinity of Mayberry barbershops.
+- Scissors snick softly. The pace is deliberate. A haircut here is never rushed and always worthwhile.
+- The window frames Main Street. Floyds view from this window has witnessed most of Mayberrys history.

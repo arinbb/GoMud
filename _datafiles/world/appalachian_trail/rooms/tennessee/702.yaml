@@ -1,0 +1,27 @@
+roomid: 702
+zone: Tennessee
+title: Deer Park Mountain Shelter
+description: "A solid shelter perches on the side of Deer Park Mountain, surrounded by mixed hardwoods and mountain laurel. The three-sided structure sleeps eight on a raised wooden platform. A spring-fed water source trickles from a pipe in the hillside about a hundred yards below the shelter\x97reliable in most seasons but occasionally slowing to a drip in late summer. The shelter clearing offers filtered views through the trees of the ridges rolling south toward the Smokies. Tent sites dot the slope around the clearing. A bear box and privy serve the site. A trail register hangs from a nail on the front post."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 35
+    exitmessage: You follow the blue-blazed side trail back to the AT.
+    mapdirection: east
+nouns:
+  shelter: "A well-maintained three-sided shelter with a solid tin roof. The logs are in good shape, the platform clean. One of the better shelters in this section."
+  platform: "The raised sleeping platform holds eight hikers. The wood is worn but sound."
+  register: "A trail register in a zip-lock bag, the pages slightly wrinkled from humidity."
+  spring: "A piped spring trickles from the hillside below the shelter. The water is cold and clear when it is flowing, but can slow to barely a drip in the dry weeks of late summer."
+  privy: "A standard wooden privy uphill from the shelter, in reasonable condition."
+  bearbox: "A heavy steel bear box sits at the clearing edge. The latch mechanism is stiff but functional."
+  views: "Through gaps in the hardwood canopy, you can see ridgelines rolling south toward the Great Smokies, blue and hazy in the distance."
+idlemessages:
+- The piped spring trickles quietly in the hillside below, a thin thread of sound.
+- Mountain laurel crowds the edges of the clearing, its twisted branches forming natural walls.
+- A pileated woodpecker drums on a dead tree nearby, the sound carrying through the forest.
+- The view south through the trees shows ridge after ridge fading to blue.
+- A deer picks its way through the hardwoods below the shelter, pausing to look at you before moving on.
+- The shelter clearing smells of leaf litter and the faint sweetness of mountain laurel.

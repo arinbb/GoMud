@@ -1,0 +1,27 @@
+roomid: 720
+zone: Tennessee
+title: Double Springs Shelter
+description: "Double Springs Shelter is the last shelter before Damascus, Virginia\x97Trail Town, USA. The three-sided shelter sits near two springs that emerge from the hillside within fifty yards of each other, giving the shelter its name. The structure sleeps eight on a raised platform. The double water sources mean this is one of the most reliable water stops in the section. The forest is mixed hardwood, the trail easy and rolling as it descends the final stretch of Iron Mountain toward Damascus. The excitement of approaching a major trail town is palpable\x97register entries here are universally optimistic. A bear box and privy serve the site. A trail register hangs from the front post."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 39
+    exitmessage: You follow the blue-blazed side trail back to the AT.
+    mapdirection: east
+nouns:
+  shelter: "A three-sided shelter in good condition. The last one before Damascus."
+  platform: "The sleeping platform holds eight. The wood is well-worn from heavy use\x97everyone passes through here."
+  register: "A trail register that is thicker than most. Everyone writes in this one. Damascus is tomorrow."
+  springs: "Two springs emerge from the hillside within fifty yards of each other, both reliable. Together they provide some of the most dependable water in the section."
+  privy: "A well-used privy near the shelter."
+  bearbox: "A bear box at the clearing's edge."
+  damascus: "Damascus, Virginia is just ahead\x97the AT passes right through the center of town. Trail Days happens here every May, the biggest hiker festival on the trail. Hostels, restaurants, outfitters, and an entire community that lives and breathes the trail."
+idlemessages:
+- Both springs trickle steadily, a stereo murmur from either side of the shelter.
+- A northbound hiker passes, practically jogging. Damascus tomorrow.
+- The register entries here are universally giddy. Trail town fever is real.
+- The trail ahead descends gently, rolling down Iron Mountain toward Virginia.
+- A woodpecker drums somewhere in the hardwoods, its rhythm steady and insistent.
+- The forest feels lighter here, more open. Civilization is close. You can sense it.

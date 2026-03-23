@@ -1,0 +1,27 @@
+mobid: 451
+zone: the_andy_griffith_show
+hostile: false
+maxwander: 1
+idlecommands:
+  - 'emote adjusts his holster with the practiced urgency of a man who has adjusted his holster ten thousand times and would adjust it ten thousand more.'
+  - 'say Nip it. Nip it in the bud. That is the ONLY way to handle a situation before it becomes a situation.'
+  - 'emote paces the length of the office with his hands clasped behind his back, surveying the room for criminal activity.'
+  - 'emote reaches for his bullet, checks that it is still in his shirt pocket, finds it, is reassured.'
+  - 'say I got it under control. I have everything completely under control.'
+  - 'emote straightens up very tall and gives the room a look of maximum official authority.'
+  - 'say A deputy has to be ready at all times. ALL times. You never know when something is going to happen.'
+  - 'emote consults his notebook with the focused energy of a man who has many contingency plans and values all of them.'
+activitylevel: 30
+character:
+  name: Barney Fife
+  description: >-
+    A thin man of nervous energy and absolute sincerity, in a deputy sheriffs
+    uniform that fits him with military precision because he has pressed it
+    himself, twice. His eyes are alert in the manner of a man who expects
+    something to happen at any moment and is fully prepared for it, even
+    if it does not. He carries one bullet. He keeps it in his shirt pocket.
+    This is Andys policy and Barney complies with it, though not without
+    opinions. He is, at all times, doing his very best. His very best is
+    something to behold.
+  raceid: 1
+  level: 5

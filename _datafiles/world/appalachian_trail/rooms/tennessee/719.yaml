@@ -1,0 +1,28 @@
+roomid: 719
+zone: Tennessee
+title: Iron Mountain Shelter
+description: "Iron Mountain Shelter sits in a saddle along the long spine of Iron Mountain, which forms the Tennessee-Virginia border for over forty miles. The three-sided shelter sleeps eight on a raised platform. A spring emerges from the hillside about two hundred yards below. The saddle is surrounded by mixed hardwood forest\x97oak, hickory, and tulip poplar\x97with an understory of blueberry and huckleberry that draws bears in late summer. The trail from here runs steadily northeast along the border ridge toward Damascus. You can feel Virginia getting closer. A bear box and privy serve the site. A trail register hangs from the front post."
+biome: forest
+mapsymbol: A
+maplegend: Shelter
+exits:
+  trail:
+    roomid: 39
+    exitmessage: You follow the blue-blazed side trail back to the AT.
+    mapdirection: west
+nouns:
+  shelter: "A solid three-sided shelter in the Iron Mountain saddle. The state line runs nearby."
+  platform: "The sleeping platform holds eight. Well-maintained."
+  register: "A trail register in its zip-lock bag."
+  spring: "A spring about two hundred yards below the shelter. Reliable and cold."
+  border: "The Tennessee-Virginia border runs along the Iron Mountain ridgeline near the shelter. You are walking the state line. Damascus and Virginia proper are just ahead."
+  blueberries: "Blueberry and huckleberry bushes grow in the understory. In late summer, they draw bears from miles around."
+  privy: "A privy in the hardwoods behind the shelter."
+  bearbox: "A bear box, well-used during berry season."
+idlemessages:
+- The Iron Mountain ridgeline runs northeast, a dark spine marking the state line between Tennessee and Virginia.
+- Blueberry bushes rustle in the understory as something feeds among them.
+- The trail ahead runs straight along the border ridge, pointing toward Virginia.
+- An acorn woodpecker drums on a dead oak, the sound echoing through the saddle.
+- The forest smells of oak leaves, warm earth, and the faint sweetness of ripe berries.
+- Damascus is getting close. You can almost feel the pull of town ahead.

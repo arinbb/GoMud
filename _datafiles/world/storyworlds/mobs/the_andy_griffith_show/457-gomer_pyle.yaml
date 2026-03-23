@@ -1,0 +1,28 @@
+mobid: 457
+zone: the_andy_griffith_show
+hostile: false
+maxwander: 1
+idlecommands:
+  - 'say Shazam!'
+  - 'emote pumps a tire with great enthusiasm, then stops to stare at the tire with profound admiration for what he has just accomplished.'
+  - 'say Well golly! Did you see that? I never get tired of seeing that.'
+  - 'emote watches a butterfly cross the lot with the open wonder of someone for whom this is still remarkable.'
+  - 'say Surprise surprise surprise!'
+  - 'emote wipes down the windshield of a car and then wipes it again because there was a spot he missed and then wipes it a third time because now he wants to be thorough.'
+  - 'say You know what I been thinking about? How does a carburetor actually work? I asked Goober and he is still explaining.'
+  - 'emote stands in the middle of the station lot looking at the sky with an expression of someone encountering blue for the first time.'
+activitylevel: 30
+character:
+  name: Gomer Pyle
+  description: >-
+    A young man with an enormous, open face and the expression of someone
+    who finds the world astonishing on a reliable basis. He says shazam.
+    He says golly. He says surprise surprise surprise. He means all of
+    it. He is simple and sincere and his sincerity has a specific quality --
+    it is not naive exactly, it is more that he has decided to remain
+    present to the world instead of learning to take it for granted.
+    He pumps gas at Wallys with care and goodwill. He will eventually
+    join the Marines and become a legend. For now he is here, marveling
+    at tires and butterflies and the general miracle of the afternoon.
+  raceid: 1
+  level: 3

@@ -1,0 +1,32 @@
+roomid: 9
+zone: Georgia
+title: Tesnatee Gap to Hogpen Gap
+description: "The trail rolls along the ridgeline through a series of mountain gaps, each one a brief descent to a road crossing followed by another grinding climb. Tesnatee Gap and Hogpen Gap both offer paved road crossings on Richard Russell Scenic Highway. Between the gaps, the trail undulates over minor peaks and through saddles, the hardwood forest opening occasionally to reveal long views through winter-bare trees. The walking is steady\x97not as steep as Blood Mountain, but relentless in its rhythm of climb and descend. White blazes mark the way through oak, hickory, and tulip poplar. The ridgeline trail has the feel of a long hallway through the sky, the forest a green wall on either side."
+biome: forest
+mapsymbol: "-"
+maplegend: Tesnatee/Hogpen
+exits:
+  south:
+    roomid: 8
+  north:
+    roomid: 20
+  whitley:
+    roomid: 14
+    exitmessage: A blue-blazed side trail leads 0.5 miles down to Whitley Gap Shelter.
+    mapdirection: west
+  lowgap:
+    roomid: 15
+    exitmessage: A blue-blazed side trail leads 0.2 miles to Low Gap Shelter.
+    mapdirection: east
+nouns:
+  gap: "Mountain gaps are low points in the ridgeline where roads find passage and wind funnels through. Tesnatee Gap and Hogpen Gap are both crossed by the Richard Russell Scenic Highway, offering road access to the trail."
+  road: "The Richard Russell Scenic Highway (GA-348) crosses the trail at both Tesnatee Gap and Hogpen Gap. Small gravel pulloffs serve as trailhead parking for day hikers and section hikers."
+  ridge: "The ridgeline runs roughly north-south here, and the trail follows its spine, climbing and descending over minor knobs and through shallow saddles. It is classic Blue Ridge walking\x97never flat, never extreme."
+  blazes: "White blazes appear regularly on tree trunks along the ridgeline, the familiar rectangles guiding you northward. At the road crossings, blazes are painted on posts to mark where the trail resumes on the other side."
+idlemessages:
+- The trail dips into another gap and climbs out the other side in the endless ridgeline rhythm.
+- Wind stirs the bare branches of the hardwoods, rattling them like bones overhead.
+- A pileated woodpecker hammers at a dead tree, its red crest flashing in the filtered light.
+- The sound of a car on the scenic highway drifts up from one of the gaps below.
+- Sunlight breaks through the canopy in golden shafts, illuminating the leaf-littered trail.
+- A thru-hiker passes you headed south, trail name written on their pack in duct tape.
