@@ -1,0 +1,51 @@
+roomid: 2328
+zone: Siamese Dream
+title: Geek U.S.A.
+description: >-
+  Everything moving. The fastest room on the album. The <ansi
+  fg="itemname">drums</ansi> are the first thing -- Jimmy Chamberlin's kit
+  at the far end, the snare cracking in a jazz-trained polyrhythm that should
+  not work at this tempo but works perfectly. The <ansi fg="itemname">floor</ansi>
+  vibrates with kick drum impact. Sweat on every surface. The air is hot and
+  close and smells of punk shows in small rooms -- body heat, beer, the
+  particular electricity of a crowd in motion. <ansi fg="itemname">Guitar
+  walls</ansi> rise and fall like the wave pattern of a crowd surfing, up
+  and down and up again, the pace relentless. Nobody is standing still.
+  The lights strobe. This is the fastest thing the band has ever played.
+  Jimmy is the one holding it together. The <ansi fg="exit">studio</ansi>
+  is back to the southeast.
+mapsymbol: '8'
+maplegend: Geek USA
+biome: house
+exits:
+  southeast:
+    roomid: 2320
+nouns:
+  drums: >-
+    Jimmy Chamberlin's Ludwig kit, set up with a jazz drummer's touch and
+    played with a punk drummer's fury. The kick drum is tuned so tight it
+    sounds like a rifle shot. The snare is cracking on the two-and-four but
+    with fills that land in places the two-and-four never expected. The hi-hat
+    is barely closed, barely open, somewhere in between, the ghost notes between
+    the main hits constituting a second melody. This is what jazz-trained fury
+    sounds like. This is the greatest drumming on the record.
+  floor: >-
+    The floor absorbs kick drum impact and returns it amplified. With every
+    beat, the ground bucks slightly underfoot, the whole room percussive, not
+    just the drum kit but the walls and ceiling and your own skeleton. To stand
+    in this room is to be inside a rhythm section. Your heartbeat adjusts to
+    match. It has no choice.
+  walls: >-
+    The guitar walls rise in sheets, the chords compressed and aggressive,
+    everything moving at the tempo of the drums. The walls are not passive
+    here -- they push back, the reflections returning as more rhythm, the
+    delay timed to the snare, the reverb adding mass to an already massive
+    sound. Up and down and up. The wave pattern of something that will not
+    stop.
+idlemessages:
+- The kick drum hits again and the floor bucks once, the whole room a percussion instrument.
+- Jimmy Chamberlin lands a fill in a place no fill should land and everything locks into a new gear.
+- 'Sweat on every surface -- the particular exertion of music played at maximum speed, held together by jazz technique.'
+- The guitar walls surge upward on the chorus and come down hard, the impact physical.
+- 'A strobe light catches the cymbal at the peak of a crash -- frozen for a fraction of a second, then gone.'
+- The tempo does not slow. There is no indication it will slow. This is simply the speed of this room.

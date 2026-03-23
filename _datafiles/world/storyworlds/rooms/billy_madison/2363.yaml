@@ -1,0 +1,58 @@
+roomid: 2363
+zone: Billy Madison
+title: Miss Lippys Classroom
+description: >-
+  A first and second grade classroom arranged with the precise chaos of a teacher
+  who has been doing this long enough to know that order is a suggestion. <ansi fg="itemname">Tiny desks</ansi>
+  are arranged in crooked rows, each one sized for a seven-year-old and therefore
+  ridiculous to sit in if you are twenty-seven. The <ansi fg="itemname">blackboard</ansi>
+  is covered in chalk numbers and the alphabet, written in that perfect teacher
+  cursive that no child will ever exactly replicate. A <ansi fg="itemname">reading corner</ansi>
+  has a tiny rug and a beanbag and a stack of picture books. On the <ansi fg="itemname">supply table</ansi>
+  sits a massive jar of white <ansi fg="itemname">paste</ansi> with a spreader sitting
+  in it. The paste has been opened. There are finger marks in it. Miss Lippy sits
+  at the front with an expression that suggests she has tasted something recently.
+  <ansi fg="exit">South</ansi> returns to the hallway.
+mapsymbol: L
+maplegend: Miss Lippys Classroom
+biome: house
+exits:
+  south:
+    roomid: 2362
+nouns:
+  desks: >-
+    Tiny wooden desks with the accumulated carvings and scribbles of ten years of
+    first-graders. Hearts, initials, crude renderings of dinosaurs, the word "BUTT"
+    repeated in several handwriting styles. The history of childhood anxiety preserved
+    in wood.
+  blackboard: >-
+    The alphabet stretches across the top in Miss Lippy's perfect teacher cursive:
+    Aa Bb Cc. Numbers below that. Then a sentence in careful chalk: "Today we are
+    learning about the Industrial Revolution." This seems advanced for first grade.
+    But Miss Lippy has opinions about curriculum.
+  corner: >-
+    A little reading nook with a round rug, a beanbag that has lost significant
+    structural integrity, and a stack of picture books. "Where the Wild Things Are."
+    "The Very Hungry Caterpillar." "Alexander and the Terrible, Horrible, No Good,
+    Very Bad Day." Alexander gets it.
+  table: >-
+    The supply table holds construction paper in sixteen colors, safety scissors
+    with the blunt ends, glue sticks that have been left uncapped, and the paste jar.
+    The paste jar is prominent. The paste jar is the center of this table's energy.
+  paste: >-
+    A large jar of white school paste, the kind that has been in classrooms since
+    the Eisenhower administration. The spreader is resting in it at an angle that
+    suggests recent use. The paste smells sweet in a way that is probably not
+    intentional. You can see Miss Lippy's fingerprints in it.
+spawninfo:
+- mobid: 560
+  message: "<ansi fg=\"yellow\">Miss Lippy drifts in from the supply closet, absently licking her fingers, looking neither guilty nor unguilty.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The paste jar gleams in the fluorescent light, open and inviting and technically non-toxic.
+- Someone has drawn a surprisingly good penguin on the blackboard that was definitely not there before.
+- The beanbag in the reading corner exhales slowly, as if thinking about something important.
+- Miss Lippy writes something on the blackboard and then erases it with the sleeve of her cardigan.
+- A construction paper turkey from Thanksgiving still hangs from the ceiling, rotating slowly.
+- The smell of paste and chalk dust and small-child anxiety is overwhelming and oddly comforting.
+- One of the tiny desks has "BILLY WAS HERE" carved into it, then scratched out, then recarved.

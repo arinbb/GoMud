@@ -1,0 +1,54 @@
+roomid: 2307
+zone: The Office
+title: The Warehouse
+description: >-
+  Down the freight elevator and into the ground floor of the building, where the
+  paper actually lives. Industrial <ansi fg="itemname">metal shelving</ansi> stretches
+  wall to wall, loaded with wrapped reams and boxed cartons of every paper weight and
+  finish that Dunder Mifflin sells. A <ansi fg="itemname">basketball hoop</ansi> is
+  mounted at the far end of the space -- regulation height, regulation rim, one of
+  the few things in this building that is regulation anything. <ansi fg="itemname">Darryl's
+  office</ansi> is a glass-walled room in the corner, visible from the warehouse floor,
+  containing a small keyboard that Darryl plays when he is thinking. The floor is
+  concrete. The light is different down here -- warmer, less fluorescent, more
+  industrial. The <ansi fg="exit">lobby elevator</ansi> is up. A set of <ansi fg="exit">loading
+  bay doors</ansi> to the south open onto the Scranton sky.
+mapsymbol: W
+maplegend: Warehouse
+biome: house
+exits:
+  up:
+    roomid: 2300
+  south:
+    roomid: 2314
+nouns:
+  shelving: >-
+    Industrial steel shelving, floor to ceiling, loaded with Dunder Mifflin's
+    inventory: copy paper in reams, reams in boxes, boxes on pallets, pallets
+    stacked to the ceiling on the back rows. The whole thing is a wall of paper
+    products, which is either impressive or disheartening depending on whether
+    you consider paper a living business or a dying one.
+  hoop: >-
+    A basketball hoop mounted at exactly ten feet, because Darryl insisted on
+    the regulation height when it was installed and would not negotiate on this.
+    The floor below is marked in tape for a three-point line. Games have been
+    played here between the office floor staff and the warehouse crew. The
+    warehouse has won more of them.
+  office: >-
+    Darryl's glass-walled office is a smaller, more purposeful space than Michael's --
+    the office of a man who actually runs something. A keyboard sits on a stand near
+    his desk, the one he plays when he is working through something. His desk is
+    organized. His chair is comfortable. He has earned it.
+spawninfo:
+- mobid: 530
+  message: '<ansi fg="8">Darryl Philbin is in his glass-walled office, sitting at his desk, one hand resting on the keyboard beside him with the casual proximity of a man who writes music the way other people make coffee -- automatically, in the gaps.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- A forklift moves somewhere in the back of the warehouse, slow and purposeful.
+- Darryl plays three notes on the keyboard. Stops. Plays them again. Makes a note.
+- A stack of paper boxes shifts slightly and resettles. This is fine.
+- From the loading bay, the sound of a truck backing up -- three beeps, pause, three beeps.
+- The fluorescent lights down here are different from upstairs -- warmer, older, more honest.
+- Someone bounces a basketball once on the warehouse floor. Once. Then stops. The sound echoes.
+- The freight elevator cable hums as someone calls it from the floor above.
+- A handwritten sign near the basketball hoop reads 'WAREHOUSE WINS 47 - OFFICE 12. SCOREBOARD UPDATED 4/15.'

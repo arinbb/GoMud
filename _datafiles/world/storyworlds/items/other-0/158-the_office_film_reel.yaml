@@ -1,0 +1,22 @@
+itemid: 158
+name: The Office film reel
+namesimple: reel
+displayname: a film reel canister labeled <ansi fg="8">THE OFFICE (US) - COMPLETE SERIES</ansi>
+description: >-
+  A round metal film canister, gunmetal grey, about the diameter of a dinner plate
+  and the depth of a hardcover novel. The label on the front is a plain adhesive
+  sticker with 'THE OFFICE (US) - COMPLETE SERIES' printed in a font that looks like
+  it came from an office label maker, which it did. The label has a small corner curl
+  where the adhesive has started to lose its grip, the way adhesive does on things
+  that have been handled. The canister is slightly lighter than you expect, which is
+  the opposite of how significant things usually feel in your hands. You hold it and
+  you can hear something -- not quite sound, more like the faint pressurized potential
+  of nine years of television: fluorescent lights, a jelly bean jar, someone's lunch
+  in the microwave, the sound of a kiss happening just past the range of the camera's
+  ability to see. The Screening Room shelves are labeled. This one is in the TV
+  section, between 'Friends (1994)' and 'Parks and Recreation (2009).' It has been
+  picked up and returned many times.
+type: object
+subtype: usable
+uses: 0
+value: 0

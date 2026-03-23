@@ -1,0 +1,64 @@
+roomid: 2302
+zone: The Office
+title: Michael's Office
+description: >-
+  The corner office. The regional manager's domain. The first thing you notice is
+  the <ansi fg="itemname">World's Best Boss mug</ansi> on the desk -- white ceramic,
+  black text, purchased by Michael Scott for himself from a Spencer's Gifts in 2003.
+  He has never doubted it. The <ansi fg="itemname">Dundie awards</ansi> line the
+  shelf behind the desk, self-designed trophies for a ceremony Michael invented,
+  awarded at a Chili's in Scranton each year with great sincerity. A <ansi fg="itemname">plasma
+  TV</ansi> is mounted on the wall -- this cost the office budget more than it should
+  have and Michael considers it an investment in culture. The desk is covered in
+  <ansi fg="itemname">improv DVDs</ansi> and a dog-eared copy of 'The 7 Habits of
+  Highly Effective People' that has clearly never been opened past chapter two.
+  Through the window to the west, reception and the bullpen beyond are visible.
+  The <ansi fg="exit">reception area</ansi> is to the west.
+mapsymbol: M
+maplegend: Michael's Office
+biome: house
+exits:
+  west:
+    roomid: 2301
+nouns:
+  mug: >-
+    World's Best Boss. White. Ceramic. The words are printed in a plain sans-serif
+    font, which somehow makes it more earnest than a fancier font would. Michael
+    bought this at a Spencer's Gifts in the Steamtown Mall. He found it immediately.
+    He did not consider other options. He has never once doubted the accuracy of
+    the claim, which is either delusional or the most profound self-belief you have
+    ever witnessed in a mid-size regional paper company.
+  dundies: >-
+    A row of Dundie awards on the shelf behind the desk. Each is a small trophy with
+    a figure of a man at the top, spray-painted gold, with a hand-laminated label
+    identifying the category. 'Longest Engagement.' 'Best Boss.' 'Extreme Repulsiveness.'
+    'Whitest Sneakers.' Michael designed all of these. He gave most of them to himself.
+    He means every one of them as a kindness.
+  tv: >-
+    A flat-panel plasma television, mounted on the wall at the expense of approximately
+    one thousand four hundred dollars from the office supply budget that year. Michael
+    watches inspirational clips on it during slow afternoons. He has also used it to
+    show the office his audition tape, his comedy special, and a video he shot of his
+    hands doing 'jazz hands' for three minutes.
+  dvds: >-
+    A stack of improv comedy DVDs: 'The Second City Guide to Being Spontaneous,'
+    'Yes And: The Way of Improv,' 'Whose Line Is It Anyway? Season 4.' They are watched.
+    The lessons have not transferred in the ways intended.
+  habits: >-
+    The 7 Habits of Highly Effective People. The spine is uncracked past habit two.
+    The bookmark is on page forty-seven and appears to have been there for years.
+    This is Michael Scott's relationship with self-improvement: enthusiastic acquisition,
+    optimistic beginning, graceful abandonment.
+spawninfo:
+- mobid: 520
+  message: '<ansi fg="8">Michael Scott is in his office, standing behind his desk with the particular stance of a man who is ABOUT to do something. He has not yet decided what.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Michael opens the blinds, surveys the bullpen, closes the blinds. He does this several times.
+- The World's Best Boss mug is moved to a slightly more prominent position on the desk.
+- A Dundie award is briefly held up and looked at by its creator with unironic pride.
+- The plasma TV is on. It is playing something Michael considers 'motivational.'
+- From behind the closed door comes the sound of someone attempting to beatbox.
+- Michael's chair squeaks. He gets up, walks to the window, stands there, returns to his chair.
+- A sticky note is written on the wall calendar. The handwriting is very large.
+- The speakerphone goes on. Michael says 'Hello? Hello?' There is no one on the other end.

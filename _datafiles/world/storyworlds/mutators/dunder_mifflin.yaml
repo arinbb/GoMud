@@ -1,0 +1,12 @@
+mutatorid: dunder-mifflin
+namemodifier:
+  behavior: append
+  text: (mundane)
+  colorpattern: none
+descriptionmodifier:
+  behavior: append
+  text: The fluorescent lights hum overhead.
+  colorpattern: none
+alertmodifier:
+  text: You feel the gentle, persistent weight of corporate mediocrity.
+  colorpattern: none

@@ -1,0 +1,52 @@
+roomid: 2372
+zone: Billy Madison
+title: ODoyle Territory
+description: >-
+  A section of the school parking lot and adjacent sidewalk that has been claimed
+  by the ODoyle family through years of consistent presence and volume. <ansi fg="itemname">Bicycles</ansi>
+  are chained to the fence in a cluster that indicates ownership. A <ansi fg="itemname">van</ansi>
+  idles at the far end with the ODoyle insignia if you know what to look for, which
+  is the family resemblance. Multiple O'Doyles of various ages occupy the <ansi fg="itemname">benches</ansi>
+  and curb in a relaxed territorial arrangement. They are not specifically doing
+  anything illegal. They are simply being O'Doyle and that is its own thing. The
+  <ansi fg="itemname">asphalt</ansi> here has "OD RULES" spray-painted on it, faded
+  now but repainted faithfully every year. There is a strange smell in the air,
+  like something that rhymes with "destiny" but goes sideways. <ansi fg="exit">East</ansi>
+  returns to middle school.
+mapsymbol: O
+maplegend: ODoyle Territory
+biome: land
+exits:
+  east:
+    roomid: 2367
+nouns:
+  bicycles: >-
+    Seven bicycles, all well-maintained in the specific way of people who use
+    their bikes for transportation rather than recreation. Each one has a small
+    sticker on it. The stickers all say "OD RULES." They applied them themselves.
+  van: >-
+    A full-size passenger van, tan, mid-eighties, idling with the patience of
+    a vehicle that goes where the family goes. The rear bumper has "ODOYLE RULES"
+    painted on it in careful letters. This is a family with a clear brand identity.
+  benches: >-
+    Concrete benches near the parking lot, occupied by O'Doyles of every grade.
+    They are not exactly threatening -- they are more like a force of nature. They
+    have always been here. They will always be here. O'Doyle rules.
+  asphalt: >-
+    "OD RULES" in spray paint, at least three layers deep. You can see where
+    the old coats bled through. This spot has been tagged every year for as long
+    as anyone can remember. It is a monument to one family's very consistent
+    opinion of themselves.
+spawninfo:
+- mobid: 563
+  message: "<ansi fg=\"yellow\">ODoyle rolls into view, flanked by two younger ODoyles, with the absolute confidence of a person who has never once doubted their own rules.</ansi>"
+  respawnrate: 5 real minutes
+  forcehostile: false
+idlemessages:
+- ODoyle says something and the assembled ODoyles all nod with family solidarity.
+- One of the bicycles leans further against the fence, creaking faintly.
+- The van idles. The van is always idling. It is ready to go.
+- A younger ODoyle is doing homework on the concrete bench, which is actually surprisingly admirable.
+- The spray-painted OD RULES on the asphalt glows faintly in the parking lot light.
+- From somewhere nearby, the distant sound of a car hitting a very large puddle. Then silence.
+- A bird lands on top of the van. An ODoyle looks at it. The bird leaves immediately.

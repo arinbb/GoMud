@@ -1,0 +1,33 @@
+mobid: 558
+zone: billy_madison
+hostile: false
+maxwander: 1
+activitylevel: 40
+idlecommands:
+  - "emote writes something in a student file and closes it with quiet finality."
+  - "say Every student who comes through that door is capable of something. I've never been wrong about that."
+  - "emote drinks from the World's Okayest Principal mug with genuine satisfaction."
+  - "say Some days this job is hard. Most days it's the best job there is."
+  - "emote looks at the framed crayon drawing on the wall."
+  - ""
+  - "say The 1974 state championship was a very good year. I don't talk about it. But it was."
+character:
+  name: Principal Anderson
+  description: >-
+    A man in his fifties who has been principal long enough to have stopped
+    being surprised by people and started being genuinely interested in them
+    instead. His suit is pressed but comfortable, the suit of someone who decided
+    years ago that he wasn't going to be intimidating. His handshake is real. His
+    patience is not infinite but it is very large. There are three wrestling trophies
+    on his shelf that he never mentions and never removes. He gave a man-child in a
+    Hawaiian shirt a legitimate chance to prove himself, and he was right to.
+  raceid: 1
+  level: 6
+  alignment: 80
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172

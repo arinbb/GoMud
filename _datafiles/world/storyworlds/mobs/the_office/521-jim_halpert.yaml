@@ -1,0 +1,36 @@
+mobid: 521
+zone: the_office
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote looks directly at the camera with an expression that contains approximately nine paragraphs."
+  - "emote glances at Dwight's desk, and the corner of his mouth moves."
+  - "say So. Yeah."
+  - "emote leans back in his chair at the precise angle of a man doing the least possible amount of work while appearing to work."
+  - "emote picks up the phone, puts it back down, makes a note on a yellow sticky."
+  - ''
+  - "emote looks toward reception, pauses, looks back at his monitor. Looks toward reception again."
+  - "say I don't think it is weird. That's my position and I think it's correct."
+  - "emote types something very fast and then deletes all of it."
+activitylevel: 20
+character:
+  name: Jim Halpert
+  description: >-
+    A tall man in his late twenties to mid-thirties depending on the season, in a
+    flannel shirt or an oxford, khakis, sneakers. His hair is a controlled chaos.
+    He has the look of a person who is much smarter than his current situation
+    requires and has found peace with this, mostly. His default expression is a
+    gentle irony that never quite becomes cruelty. When something happens nearby,
+    he does not look at it directly -- he looks at the camera, which is always
+    just to the right of the fourth wall, and the look says everything. He is the
+    best person in this office and he knows it and he doesn't mention it and that
+    is also part of why he is the best person in this office.
+  raceid: 1
+  level: 7
+  equipment:
+    body:
+      itemid: 20101
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20171

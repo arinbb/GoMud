@@ -1,0 +1,17 @@
+itemid: 315
+name: Big Muff pedal
+namesimple: pedal
+displayname: a battered <ansi fg="itemname">Big Muff Pi distortion pedal</ansi>
+description: >-
+  An Electro-Harmonix Big Muff Pi distortion pedal, battered and scratched,
+  the red paint worn through to bare metal at the edges. The gain knob is
+  turned all the way up. The sustain knob is turned all the way up. The tone
+  knob is somewhere in the middle, which is where Billy Corgan always left it.
+  Two dents in the housing from being stomped too hard on stages in 1993. A
+  strip of masking tape on the bottom is labeled in marker: SIAMESE. This is
+  the sound. Everything beautiful filtered through maximum fuzz until it
+  becomes something new.
+type: object
+subtype: usable
+uses: 0
+value: 0

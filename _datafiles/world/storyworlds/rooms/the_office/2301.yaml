@@ -1,0 +1,68 @@
+roomid: 2301
+zone: The Office
+title: Reception
+description: >-
+  The front desk of Dunder Mifflin, the first thing anyone sees when they come
+  through the glass doors. <ansi fg="itemname">Pam's desk</ansi> sits at the center
+  of this space -- a modest workstation with a <ansi fg="itemname">phone</ansi> that
+  rings more than seems reasonable and a <ansi fg="itemname">jelly bean jar</ansi>
+  that is perpetually half-full, because Pam refills it when it gets too low and
+  nobody has ever asked her to do this. A <ansi fg="itemname">visitor log</ansi> sits
+  open on the desk. Through the <ansi fg="itemname">window</ansi> to the east you can
+  see directly into Michael's office, a fact that Michael finds enormously comforting
+  and everyone else finds mildly oppressive. The <ansi fg="exit">lobby</ansi> is to
+  the south. The <ansi fg="exit">bullpen</ansi> is to the north. <ansi fg="exit">Michael's
+  office</ansi> is to the east. The <ansi fg="exit">break room</ansi> is to the west.
+mapsymbol: R
+maplegend: Reception
+biome: house
+exits:
+  south:
+    roomid: 2300
+  north:
+    roomid: 2303
+  east:
+    roomid: 2302
+  west:
+    roomid: 2309
+nouns:
+  desk: >-
+    Pam's desk is orderly but lived-in. There are small drawings pinned to the
+    partition -- watercolor studies of the parking lot, a cartoon of a stapler with
+    a face, a color swatch she has labeled 'Scranton sky, February.' The phone sits
+    at the left. The jelly bean jar at the right. Everything in its considered place.
+  phone: >-
+    A standard office phone, the kind with twelve lines and a hold button that plays
+    a tinny version of 'The Girl from Ipanema.' Pam has answered this phone several
+    thousand times. She can say 'Dunder Mifflin, this is Pam' in her sleep. She
+    probably has.
+  jar: >-
+    The jelly bean jar. Crystal clear, about two-thirds full of jelly beans in
+    assorted flavors. There is always one flavor nobody wants -- today it appears
+    to be licorice. The jar has no official purpose. It is just there, and has
+    always been there, and the office is warmer for it.
+  jellybeans: >-
+    The jelly beans come in the standard assortment: cherry, lime, orange, lemon,
+    grape, and the licorice ones that sit in a small mournful cluster at the bottom
+    because nobody takes them but nobody throws them away either.
+  window: >-
+    A large window in the partition wall between reception and Michael's office.
+    Michael had it installed so he could 'keep an eye on things' and also so things
+    could keep an eye on him. He waves through it more than is strictly necessary.
+  log: >-
+    The visitor log. Today's entries include: a paper supply rep at 9:15 AM, someone
+    from corporate who signed their name illegibly, and 'David Brent, management
+    consultant' crossed out and rewritten as 'Michael Scott, Regional Manager.'
+spawninfo:
+- mobid: 523
+  message: '<ansi fg="8">Pam Beesly sits at the reception desk, already at work, the phone tucked between her ear and shoulder while she sketches something small and careful in the corner of a notepad.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The phone on Pam's desk rings twice. She answers it before the third ring. 'Dunder Mifflin, this is Pam.'
+- Someone buzzes up from the lobby. Pam checks the visitor log without looking hurried about it.
+- Through the window to Michael's office, a light turns on and then off again for no visible reason.
+- The jelly bean jar has been disturbed. One person has taken three. Another person has taken one. The jar is still basically full.
+- A fax comes in, curling out of the machine beside the desk in a slow, authoritative scroll.
+- Pam doodles something in the margin of a memo -- the kind of drawing that is too good for the paper it is on.
+- The front doors open and close. Whoever it was had the wrong floor.
+- From the bullpen to the north comes a low tide of mouse-clicking and the occasional sigh.

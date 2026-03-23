@@ -1,0 +1,50 @@
+roomid: 2329
+zone: Siamese Dream
+title: Mayonaise
+description: >-
+  Clouds made of guitar. You can walk on them. The most beautiful room on
+  the album. The <ansi fg="itemname">floor</ansi> is guitar clouds -- dense,
+  layered, warm, the texture of something between air and water, yielding
+  slightly under each step. Above and below and all around, more <ansi
+  fg="itemname">layers</ansi> drift at different altitudes, each one a
+  different chord voicing, a different delay setting, the whole architecture
+  a vertical map of the song's emotional range. The light is the color of
+  late afternoon in a place you loved when you were young. A <ansi
+  fg="itemname">voice</ansi> comes from somewhere -- not singing, not speaking,
+  something between them, the words: fool enough to almost be it. You know
+  what that means. The feeling is familiar and beautiful and slightly too much.
+  The <ansi fg="exit">studio</ansi> is back below.
+mapsymbol: '9'
+maplegend: Mayonaise
+biome: house
+exits:
+  down:
+    roomid: 2320
+nouns:
+  floor: >-
+    Guitar clouds as a walking surface. They yield slightly -- not soft enough
+    to sink through, dense enough to support weight, the texture of layered
+    sound made physical. Each step sends a small ripple through the cloud
+    beneath your feet, the ripple propagating outward and returning as a
+    harmonic. You are leaving footprints in sound. They fill back in slowly.
+  layers: >-
+    The guitar layers at different altitudes are each distinct and separate
+    -- you can walk between them, reach up to touch a mid-range cloud, look
+    down at a bass-frequency floor, watch the overtones float above everything
+    like cirrus. The clouds are made of the specific sound of a Les Paul through
+    a Big Muff -- warm but with an edge, beautiful but with a grain. This is
+    what Billy Corgan's guitar sounds like when it is allowed to be everything
+    it wants to be.
+  voice: >-
+    The voice comes from somewhere inside the layers. It is singing about being
+    almost something -- almost brave, almost free, almost the person you were
+    trying to become when you were still trying. The fool enough to almost be
+    it. You recognize the feeling. You have been almost something your whole life.
+    The voice does not judge this. The voice is the same way.
+idlemessages:
+- A guitar cloud drifts past at shoulder height, warm and grainy, leaving a slight harmonic in its wake.
+- Late afternoon light in the color of somewhere you loved -- the specific gold that means that place and no other.
+- 'The voice says: fool enough. You know exactly what that means.'
+- Two cloud layers merge briefly at the horizon, their harmonics combining into something that should not be a chord but is.
+- Your footprints in the guitar floor fill back in slowly, the sound reclaiming the space you displaced.
+- The most beautiful room. You can stay as long as you need to. The room does not rush you.

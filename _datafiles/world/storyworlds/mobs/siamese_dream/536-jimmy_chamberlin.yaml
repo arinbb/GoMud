@@ -1,0 +1,30 @@
+mobid: 536
+zone: siamese_dream
+hostile: false
+maxwander: 0
+activitylevel: 15
+idlecommands:
+  - emote plays a drum fill that shouldn't work at this tempo but lands perfectly, the sticks bouncing back up before the last beat resolves.
+  - emote wipes sweat from his face with the back of his hand, adjusting the snare stand.
+  - emote taps a complex rhythm on the edge of the hi-hat, one hand only, not looking at what he is doing.
+  - ''
+  - ''
+  - emote plays the kick drum pattern from Geek USA without thinking about it, muscle memory.
+character:
+  name: Jimmy Chamberlin
+  description: >-
+    The best drummer in the band, possibly the best drummer in rock in 1993.
+    Jazz-trained, playing at the intersection of jazz technique and punk fury.
+    His fills land in places that should not exist. His snare is cracked dry
+    and precise. Behind the kit he is perfectly focused, the only member of
+    the band who is reliably and completely present. His demons are not in
+    the studio with him. They are waiting outside. He plays like he knows that.
+  raceid: 1
+  level: 10
+  equipment:
+    body:
+      itemid: 20101
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

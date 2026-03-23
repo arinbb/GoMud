@@ -1,0 +1,32 @@
+-
+  Supported:
+    "billy madison": ["*"]
+  Conversation:
+    - ["#1 emote looks at you with the sudden intensity of a man who has had a thought."]
+    - ["#1 say You know what I was just thinking? Shampoo and conditioner should be on the same bottle."]
+    - ["#1 say Then you don't have to switch. You just do them both. Together."]
+    - ["#1 emote nods very seriously. 'I call it shampoo-ditioner.'"]
+    - ["#1 say It's going to be huge."]
+-
+  Supported:
+    "carl alphonse": ["billy madison"]
+  Conversation:
+    - ["#1 say Lunch is ready."]
+    - ["#2 say Oh man. Is it the good sandwich?"]
+    - ["#1 say It's always the same sandwich, Billy."]
+    - ["#2 say But is it the GOOD one?"]
+    - ["#1 emote pauses. 'I put extra chips in today.'"]
+    - ["#2 emote does a small fist pump. 'CARL!'"]
+    - ["#1 emote slides the bag across. The name is written in crayon. There is a star.", "#1 say You can do it."]
+    - ["#2 emote picks up the bag and looks at the star for a moment. 'Thanks, Carl.'"]
+-
+  Supported:
+    "principal anderson": ["billy madison"]
+  Conversation:
+    - ["#1 say Billy. How are we doing?"]
+    - ["#2 say Good! I got seven out of ten on the fractions quiz. SEVEN."]
+    - ["#1 say That's improved from last week."]
+    - ["#2 say That's improved from last YEAR. I didn't know what fractions were last year.", "#2 emote is genuinely thrilled."]
+    - ["#1 emote allows a small smile. 'Seven out of ten is a passing grade.'"]
+    - ["#2 say I PASSED. I passed something!"]
+    - ["#1 say You did. Go to class.", "#1 emote goes back to his paperwork. The small smile stays."]

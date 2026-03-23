@@ -1,0 +1,35 @@
+mobid: 523
+zone: the_office
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote answers the phone: 'Dunder Mifflin, this is Pam.'"
+  - "emote sketches something small in the corner of a notepad -- a window, a tree, a face seen from a distance."
+  - "emote refills the jelly bean jar from a bag in the desk drawer, which she does every Tuesday."
+  - "say Hi! Can I help you with something?"
+  - ''
+  - "emote glances north toward the bullpen with an expression of quiet and complicated feeling."
+  - "emote sorts incoming mail with the practiced efficiency of someone who has done this thousands of times."
+  - "say I went to art school. For a semester. I'm still -- I think about going back."
+  - "emote adds a small drawing to the partition wall with a thumbtack."
+activitylevel: 20
+character:
+  name: Pam Beesly
+  description: >-
+    A woman in her mid-to-late twenties in a cardigan and a long skirt and sandals,
+    her hair in a loose arrangement that is casual in a way that took consideration.
+    She has a face that is pleasant and open, the face of the person at the front
+    desk who makes the whole building warmer. There is a quality of unrealized potential
+    about her that the show spends nine seasons converting, slowly and beautifully,
+    into realized potential. She doodles on everything. The doodles are good. She
+    does not know they are good, but she knows she likes doing them, and that is the
+    beginning of knowing.
+  raceid: 1
+  level: 6
+  equipment:
+    body:
+      itemid: 20105
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20174

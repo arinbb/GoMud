@@ -1,0 +1,62 @@
+roomid: 2313
+zone: The Office
+title: Accounting Corner
+description: >-
+  The accounting corner is near the conference room, tucked against the south wall
+  of the office floor -- three desks, three accountants, a small shared printer, and
+  the most internally complex interpersonal situation in Dunder Mifflin. <ansi fg="itemname">Angela's
+  desk</ansi> is immaculate, adorned with a calendar featuring a different cat breed
+  each month and a small framed photograph of Sprinkles, her cat, in a pose that Angela
+  considers dignified. <ansi fg="itemname">Kevin's desk</ansi> has a bowl of something
+  on it. It is unclear whether the bowl is a permanent fixture or a temporary one.
+  <ansi fg="itemname">Oscar's desk</ansi> is the organized desk of a man who is doing
+  accounting correctly and does not wish to discuss the other two desks. The <ansi fg="itemname">shared
+  printer</ansi> between the desks has a paper jam. It always has a paper jam. The
+  <ansi fg="exit">conference room</ansi> is below. The <ansi fg="exit">bullpen</ansi>
+  is accessible from here as well.
+mapsymbol: AC
+maplegend: Accounting
+biome: house
+exits:
+  down:
+    roomid: 2306
+  west:
+    roomid: 2303
+nouns:
+  angelas: >-
+    Angela's desk: a model of order. The in-tray and out-tray are labeled in her
+    precise handwriting. The cat calendar is open to the correct month. The photograph
+    of Sprinkles is in a silver frame, cleaned regularly. The desk surface has a small
+    cross on the corner -- small, unobtrusive, an anchor point. Angela Martin is
+    the strictest person in the Scranton office. She is also, if you look at her desk
+    long enough, someone who loves what she loves completely.
+  kevins: >-
+    Kevin Malone's desk has a bowl on it. The bowl contains pretzels, or crackers,
+    or something. Kevin's accounting work is on his computer screen, halfway done.
+    Kevin is a good accountant -- genuinely, he is a good accountant -- and this
+    is one of the things the show established quietly and then mostly left alone.
+    His desk also has a rubber band ball he has been adding to since 2004.
+  oscars: >-
+    Oscar Martinez's desk: organized, current, the filing correct, the monitor showing
+    an actual spreadsheet that is actually being worked on. Oscar is the accountant of
+    the accounting department who actually does accounting. His desk has a small succulent,
+    a mug that says 'Actually...' which was given to him as a joke and which he uses
+    unironically because it is accurate, and a framed photo of his family.
+  printer: >-
+    The shared accounting printer, a laser unit that prints everything for the three
+    accountants and jams approximately once every thirty pages. The jam tray is
+    currently ajar. The little amber light is blinking. The printer has been in this
+    condition for a while and will be in this condition when you leave.
+spawninfo:
+- mobid: 526
+  message: '<ansi fg="8">Angela Martin is at her desk in the accounting corner, doing something precise with a highlighter and a spreadsheet, her posture expressing judgment of everything in her peripheral vision.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Angela highlights something and puts the cap back on the highlighter with a small definitive click.
+- The shared printer blinks its amber jam light. Nobody is going to fix it right now.
+- Kevin's rubber band ball is slightly larger than it was yesterday. The project continues.
+- Oscar has updated something on his spreadsheet and the numbers are now correct. They were already correct.
+- From this corner, the entire bullpen is visible in peripheral range. Angela is aware of all of it.
+- A memo is placed in Angela's in-tray. She picks it up immediately. She reads it. She puts it in the out-tray.
+- Kevin takes a pretzel from the bowl and eats it with an expression of great satisfaction.
+- The cat calendar is turned to a photo of an Abyssinian. Angela glances at it and the morning is better.

@@ -1,0 +1,55 @@
+roomid: 2368
+zone: Billy Madison
+title: High School Hallway
+description: >-
+  The high school end of the building has a completely different energy -- <ansi fg="itemname">band
+  posters</ansi> for real concerts, a vending machine that sells actual coffee, and
+  a specific smell of AXE body spray and ambition. <ansi fg="itemname">Seniors</ansi>
+  move through the hallway with the practiced cool of people who have been here
+  long enough to stop being impressed. The <ansi fg="itemname">class schedule</ansi>
+  on the wall lists electives that did not exist in elementary school: Economics,
+  Auto Shop, AP Chemistry. One room has a sign that reads "DEBATE CLUB -- ALL
+  WELCOME" with half the letters fallen off. A <ansi fg="itemname">water fountain</ansi>
+  by the bathroom has been broken since 1991 and everyone knows it but the work
+  order has been lost. To the <ansi fg="exit">west</ansi> is middle school. To the
+  <ansi fg="exit">north</ansi> is the principal's office. To the <ansi fg="exit">east</ansi>
+  is the cafeteria.
+mapsymbol: H
+maplegend: High School Hallway
+biome: house
+exits:
+  west:
+    roomid: 2367
+  north:
+    roomid: 2369
+  east:
+    roomid: 2370
+nouns:
+  posters: >-
+    Concert posters for bands that were either very popular or very cool, rarely
+    both simultaneously. Someone has added a thought bubble to the Nirvana poster
+    that says "SMELLS LIKE TEEN SPIRIT" with an arrow pointing at the AXE display
+    near the vending machine. This is the funniest thing in the building.
+  seniors: >-
+    A group of seniors moving through the hallway with the slow, deliberate pace
+    of people who are counting down their days here. They have that specific senior
+    expression: world-weary, slightly superior, and fundamentally terrified about
+    what comes next. Two of them are wearing graduation hoodies already. It is October.
+  schedule: >-
+    The class schedule lists: AP History, AP Chemistry, AP English, Calculus,
+    Gym (required), Auto Shop (elective), Home Ec (elective), Band, and one
+    enigmatic block labeled simply "STUDY HALL." Study Hall is where things happen.
+  fountain: >-
+    The water fountain by the bathroom has a handwritten sign taped to it:
+    "OUT OF ORDER -- USE OTHER FOUNTAIN." The other fountain is at the other
+    end of the building. Someone has added to the sign: "has been out of order
+    since 1991." Someone else has added: "I was born after 1991 and it was
+    already broken." The sign is a collaboration.
+idlemessages:
+- The vending machine dispenses a can of coffee with a clunk that seems disproportionately loud.
+- A senior walks past without looking at anyone, which is a very specific kind of power move.
+- The broken water fountain drips once, as if trying to be relevant.
+- From the debate club room, the sound of one person arguing very enthusiastically with no response.
+- Lockers slam in a staggered rhythm down the hall, like applause for nothing in particular.
+- The bell rings and the hallway transforms from empty to full to empty again in under sixty seconds.
+- Someone's backpack is so heavy it sounds like a small avalanche when it hits the floor.

@@ -1,0 +1,59 @@
+roomid: 2364
+zone: Billy Madison
+title: Veronicas Classroom
+description: >-
+  Third grade, and the classroom is organized with the warm precision of someone
+  who actually loves teaching. <ansi fg="itemname">Reading groups</ansi> are arranged
+  in the corners with their own little bookshelves. A <ansi fg="itemname">science corner</ansi>
+  has a terrarium with a <ansi fg="itemname">turtle</ansi> and a careful label that
+  says "Mister President -- Please do not tap the glass." The <ansi fg="itemname">chalkboard</ansi>
+  has today's date and three learning goals written in neat, enthusiastic handwriting.
+  Gold star <ansi fg="itemname">stickers</ansi> are distributed among the students'
+  work displayed on the wall. Several of the gold stars, unmistakably, belong to
+  papers written in an adult's handwriting. Veronica Vaughn stands near the window
+  with the posture of someone who is aware they are being watched and has decided
+  to be professional about it. <ansi fg="exit">West</ansi> returns to the hallway.
+mapsymbol: V
+maplegend: Veronicas Classroom
+biome: house
+exits:
+  west:
+    roomid: 2362
+nouns:
+  groups: >-
+    The reading groups have names: the Eagles, the Sparrows, and the Penguins.
+    The Penguins group has an empty desk with "BILLY" written on a paper nameplate
+    in crayon. The nameplate has a small penguin drawn on it. Someone made this
+    with care.
+  corner: >-
+    A science display featuring local amphibians and a growing bean plant that
+    has actually grown into a very impressive bean plant. A chart on the wall
+    tracks its progress. The third-graders are invested in this bean plant in a
+    way that is genuinely touching.
+  turtle: >-
+    Mister President lives in a well-maintained glass terrarium with a heat lamp
+    and a small bowl of turtle pellets. He is approximately forty years old. He
+    has seen a lot of third graders come and go. He is unbothered by all of it.
+    Please do not tap the glass.
+  chalkboard: >-
+    Today's learning goals: 1) Practice multiplication tables (4s and 5s).
+    2) Write a paragraph about something you learned this week. 3) Be kind
+    to everyone. Goal three is underlined twice.
+  stickers: >-
+    Gold star stickers on papers displayed along the wall. Most are on correct
+    third-grade work. One is on a paper titled "What I Did This Summer" that
+    is three pages long and contains references to a swimming pool, a penguin,
+    and a deep philosophical meditation on the nature of growing up. The
+    handwriting is an adult's. It got a gold star AND a smiley face.
+spawninfo:
+- mobid: 556
+  message: "<ansi fg=\"yellow\">Veronica Vaughn moves to the front of the classroom, arranging papers with the focused calm of someone who has learned to be very calm.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- Mister President the turtle moves approximately one centimeter and everyone in the building feels it.
+- Gold stars catch the afternoon light and scatter tiny sparkles across the ceiling.
+- A student's paper on the wall reads "My Hero Is Billy Madison Because He Tries Real Hard."
+- Veronica writes something at her desk and then looks out the window for a long moment.
+- The bean plant in the science corner has, against all odds, produced an actual bean.
+- From outside, the sound of kids at recess erupts and then resolves back into general childhood noise.
+- Someone has left an apple on Veronica's desk. It is fresh and red and placed with obvious intention.

@@ -1,0 +1,20 @@
+itemid: 310
+name: Worlds Best Boss mug
+namesimple: mug
+displayname: a white ceramic mug labeled <ansi fg="itemname">World's Best Boss</ansi>
+description: >-
+  A white ceramic coffee mug with 'World's Best Boss' printed on the side in plain
+  black sans-serif text. The handle is chipped on the lower curve -- not broken, just
+  chipped, a small triangular notch that has been there long enough to be part of the
+  mug's personality. The bottom has a permanent coffee ring, a dark brown aureole
+  from years of being set down on desks and conference tables and the driver's side
+  cupholder of a PT Cruiser. Michael Scott bought this mug for himself at a Spencer's
+  Gifts in the Steamtown Mall in 2003. He found it immediately. He did not consider
+  other options. The claim it makes is printed with complete conviction in a font that
+  communicates reliability. When you hold it, you feel a complicated warmth -- equal
+  parts self-delusion and genuine love, which is the exact emotional composition of
+  Michael Scott himself.
+type: object
+subtype: usable
+uses: 0
+value: 5

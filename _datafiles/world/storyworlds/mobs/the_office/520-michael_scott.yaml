@@ -1,0 +1,37 @@
+mobid: 520
+zone: the_office
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say That is what she said."
+  - "emote holds up the World's Best Boss mug and looks at it with quiet, comprehensive satisfaction."
+  - "say Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me."
+  - "emote looks out the office window at the bullpen with the expression of a shepherd."
+  - "say I am the cool boss. The cool dad. The cool boss who is also kind of a dad."
+  - "emote picks up a Dundie award and weighs it in one hand, nodding."
+  - "say Sometimes I will start a sentence and I don't even know where it's going. I just hope I find it somewhere along the way."
+  - ''
+  - "say I knew exactly what to do but in a much more real sense I had no idea what to do."
+  - "emote practices a dance move behind the desk, pleased with the result."
+activitylevel: 30
+character:
+  name: Michael Scott
+  description: >-
+    A man in his early forties in a business suit that fits well and is slightly more
+    casual than it intends to be. His hair is neat. His face cycles between enthusiasm,
+    woundedness, confidence, and the look of a man who has just said something he will
+    need to explain further. He holds a white ceramic mug that says 'World's Best Boss.'
+    He is the Regional Manager of Dunder Mifflin Scranton. He is, in the most
+    comprehensive and honest sense of the word, a lot. He is also, if you stay with
+    it, genuinely lovable, which is the most complicated thing about him.
+  raceid: 1
+  level: 8
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172
+    neck:
+      itemid: 20180

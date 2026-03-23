@@ -1,0 +1,33 @@
+mobid: 529
+zone: the_office
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote prepares to say something, reconsiders, and does not say it."
+  - "say I'm HR, so technically I work for corporate. Not for Michael. Just -- that's a distinction that matters."
+  - "emote reads a memo and writes a comment in the margin that nobody will read."
+  - ''
+  - "say I have a daughter. She's great. She's actually great."
+  - "emote checks to see if anyone is watching before eating his lunch at his desk, which technically violates the policy he enforces."
+  - "say I wrote a murder mystery novel. It's not published yet. It might not be."
+  - "emote waves at someone across the office. They do not wave back. He was prepared for this."
+activitylevel: 15
+character:
+  name: Toby Flenderson
+  description: >-
+    A thin man in his early forties in a cardigan and khakis and dress shoes, with
+    a face that has arrived at a permanent expression of gentle resignation, which
+    is not unhappiness exactly, but is a long-term accommodation to a situation.
+    He is the HR representative for Dunder Mifflin Scranton. Michael Scott has
+    described him as 'a buzzkill' and 'HR, which means he works for corporate, so
+    he's not really part of our family.' Toby reports to corporate. He is part of
+    the office family. He is the part that gets cut out of the photo.
+  raceid: 1
+  level: 5
+  equipment:
+    body:
+      itemid: 20105
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20172

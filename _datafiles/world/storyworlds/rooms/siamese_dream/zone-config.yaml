@@ -1,0 +1,16 @@
+name: Siamese Dream
+roomid: 2320
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: house
+mutators:
+- mutatorid: siamese-dream
+musicfile: ambient_distortion
+idlemessages:
+- Guitar layers build in the walls like geological strata, each one a different frequency of longing.
+- The air tastes of solder and cigarette smoke and the particular tension of a band that is barely holding together.
+- 'A Big Muff pedal hums at the edge of perception -- gain at maximum, the signal clipping into something beautiful and wrong.'
+- 'The year is 1993. Atlanta is hot. The band is falling apart. The record will outlast all of it.'
+- Something in the walls vibrates at a frequency that feels less like sound and more like an emotion with no name.
+- The distortion never stops. It only changes shape -- whisper, roar, whisper again.

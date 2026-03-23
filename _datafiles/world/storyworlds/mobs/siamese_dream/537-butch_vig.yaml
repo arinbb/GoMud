@@ -1,0 +1,32 @@
+mobid: 537
+zone: siamese_dream
+hostile: false
+maxwander: 0
+activitylevel: 15
+idlecommands:
+  - emote adjusts a fader on the Neve board by a fraction, listening with his eyes closed.
+  - say We have enough guitar. We have enough.
+  - emote makes a note in the session log and circles it twice.
+  - emote leans forward to check a level, the VU meter needles swinging into the red and back.
+  - ''
+  - ''
+  - emote suggests another arrangement for the bridge, sketching chord shapes on a legal pad.
+character:
+  name: Butch Vig
+  description: >-
+    The producer, trying to hold the sessions together with the patience of
+    someone who produced Nevermind nine months ago and knows what a difficult
+    album can become. He has a session log that is becoming a diary of a band
+    in crisis. He believes in the record. He believes in it enough to stay in
+    Atlanta all summer with broken air conditioning and a band that is barely
+    speaking to each other. The Neve board is his instrument. He plays it
+    with the same care Billy plays the guitar.
+  raceid: 1
+  level: 10
+  equipment:
+    body:
+      itemid: 20101
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

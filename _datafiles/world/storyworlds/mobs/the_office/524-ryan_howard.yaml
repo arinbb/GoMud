@@ -1,0 +1,32 @@
+mobid: 524
+zone: the_office
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote checks his phone with the attention of someone reading dispatches from his actual life."
+  - "say I have an MBA."
+  - "emote looks around the annex with the practiced distance of someone who is not really here."
+  - ''
+  - "say The temp thing is temporary. Obviously."
+  - "emote types something on his phone and stares at the send button for a moment before pressing it."
+  - "say I've been thinking about a startup. The space is interesting right now."
+  - "emote straightens his collar."
+activitylevel: 15
+character:
+  name: Ryan Howard
+  description: >-
+    A young man in his mid-twenties in a business suit that he wears like someone
+    who recently decided to wear business suits. He is handsome in a way that he
+    is aware of. He started as the temp and has been the temp and has also been the
+    VP and has been back as the temp and has accepted none of these situations as
+    permanent while treating each one as if it might determine everything. His phone
+    is in his hand or on his desk face-up at all times.
+  raceid: 1
+  level: 5
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172

@@ -1,0 +1,32 @@
+mobid: 538
+zone: siamese_dream
+hostile: false
+maxwander: 0
+activitylevel: 5
+idlecommands:
+  - emote sits in the corner, not playing, the bass guitar across her lap untouched.
+  - emote looks at the recording light. It is always on.
+  - ''
+  - ''
+  - ''
+  - emote is barely present, more absence than presence, the seat occupied but the music not.
+character:
+  name: the Ghost of DArcy
+  description: >-
+    The bassist, barely here. The bass guitar rests across her lap and she is
+    not playing it -- Billy played the bass parts himself. She is present in
+    the studio in a way that is mostly technical: she exists, she is in the
+    room, her name is on the record. But something has pulled her attention
+    elsewhere, and the empty bass track on the tape reels is a kind of ghost
+    that the music carries without acknowledgment. She is not unhappy. She is
+    simply elsewhere. The music went on without her. The music was always going
+    to go on without her.
+  raceid: 1
+  level: 10
+  equipment:
+    body:
+      itemid: 20113
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20177

@@ -1,0 +1,59 @@
+roomid: 2305
+zone: The Office
+title: The Kitchen
+description: >-
+  The Dunder Mifflin office kitchen, which is either a social hub or a crime scene
+  depending on the day. The <ansi fg="itemname">refrigerator</ansi> is a complex
+  ecosystem of labeled containers, passive-aggressive sticky notes, and one Tupperware
+  that has been there since at least 2007 and whose owner is not coming forward. The
+  <ansi fg="itemname">microwave</ansi> smells like fish because someone microwaves fish
+  in it every Tuesday and this has never been addressed through any channel formal or
+  informal. A <ansi fg="itemname">coffee maker</ansi> produces something brown and hot
+  and that is the most that can be said for it. The <ansi fg="itemname">vending machine</ansi>
+  against the wall takes quarters and sometimes delivers the item and sometimes does
+  not, and this is somehow not a metaphor for anything, it is just a broken vending
+  machine. Kevin is often near the microwave. The <ansi fg="exit">bullpen</ansi> is to
+  the east.
+mapsymbol: K
+maplegend: Kitchen
+biome: house
+exits:
+  east:
+    roomid: 2303
+nouns:
+  refrigerator: >-
+    A standard office refrigerator, completely overwhelmed by its responsibilities.
+    The inside is a layered archive of office life: containers labeled 'KELLY - DO NOT
+    EAT,' a birthday cake that was not finished on the day of the birthday and has not
+    been finished since, two different people's yogurt, a six-pack of beer that has
+    been there so long it has become communal property, and the Tupperware. You do not
+    look too closely at the Tupperware.
+  microwave: >-
+    The office microwave, a Panasonic from approximately 2004, with buttons worn
+    smooth and a door handle that requires a specific technique. The interior is
+    clean enough, but there is a smell. It is fish. It is always fish. Whoever
+    brings fish to microwave in a shared office kitchen has never once considered
+    the downstream effects of this choice. They will not start now.
+  coffee: >-
+    The coffee maker has been in continuous service for eleven years and makes a coffee
+    that is adequate. Not good. Not bad. Adequate in the way that everything in this
+    office is adequate -- sufficient to continue, insufficient to celebrate.
+  vending: >-
+    The vending machine offers chips, crackers, candy bars, and one slot labeled
+    'Pretzel' that is usually empty except on Pretzel Day. On Pretzel Day, the line
+    extends into the bullpen and morale spikes to its highest measurable point of
+    the year. Pretzel Day is the one unambiguous good thing about working at Dunder
+    Mifflin. Nobody discusses this openly but everyone knows it.
+spawninfo:
+- mobid: 525
+  message: '<ansi fg="8">Kevin Malone is at the microwave, waiting with the patient focus of a man for whom this moment -- heating his lunch -- is the primary event of the morning.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The microwave runs for two minutes. It beeps. The smell of fish intensifies briefly and then stabilizes.
+- Kevin opens the refrigerator, closes it, opens it again, takes something, closes it.
+- A sticky note on the refrigerator reads 'PLEASE LABEL YOUR FOOD' in large letters. Below it, someone has stuck a label that says 'Food (mine).'
+- The coffee maker gurgles through its cycle and produces something that will do.
+- Someone has left a birthday card on the counter to be signed. The card is for someone whose birthday was three days ago.
+- The vending machine hums and occasionally clicks as if considering whether to give the chips or not.
+- A dish is in the drying rack that has been there long enough to be dry. It will remain in the rack indefinitely.
+- Kevin counts something quietly at the counter. He is not sure he has the right number. He starts over.

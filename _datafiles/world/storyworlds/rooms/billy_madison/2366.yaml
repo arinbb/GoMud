@@ -1,0 +1,54 @@
+roomid: 2366
+zone: Billy Madison
+title: Carls Kitchen
+description: >-
+  The Madison mansion kitchen is enormous, stainless steel and black granite, designed
+  for a professional and operated by one. <ansi fg="itemname">Pots</ansi> hang from a
+  ceiling rack over a central island where Carl Alphonse has been feeding this family
+  for twenty years. A <ansi fg="itemname">chalkboard menu</ansi> on the wall lists
+  today's offerings in Carl's careful handwriting. A stack of neatly folded <ansi fg="itemname">brown
+  paper bags</ansi> sits by the refrigerator -- Billy's lunches, packed every single
+  day without being asked, each one containing a peanut butter sandwich, a juice box,
+  chips, and a note. There is always a note. The whole room smells of something
+  wonderful in progress -- the indefinite smell of someone cooking for people they
+  love. <ansi fg="exit">North</ansi> returns to the mansion.
+mapsymbol: K
+maplegend: Carls Kitchen
+biome: house
+exits:
+  north:
+    roomid: 2360
+nouns:
+  pots: >-
+    Heavy-bottomed pots and pans hanging from the ceiling rack by size, smallest
+    to largest. They are seasoned with decades of use, darkened and warm, the
+    kind of cookware that has made thousands of meals. You could tell Carl's
+    history from these pots if you knew how to read them.
+  menu: >-
+    Today's menu is written in Carl's careful block capitals: LUNCH: Peanut
+    butter on whole wheat, apple slices, juice box (apple). DINNER: Chicken
+    marsala, roasted vegetables, rolls. SNACK (Billy): Chips, juice box (grape).
+    The snack entry is underlined. Carl knows what matters.
+  bags: >-
+    Stacks of brown paper lunch bags, each one pre-labeled "BILLY" in Carl's
+    handwriting, each one containing a complete lunch. Some bags have small
+    drawings on them -- a sun, a penguin, a star. Carl draws on the bags.
+    He has been drawing on the bags for twenty years. He will draw on them
+    for twenty more.
+  refrigerator: >-
+    The refrigerator is a commercial unit big enough to supply a restaurant.
+    It is perfectly organized: leftovers labeled by date, ingredients grouped
+    by function, a whole shelf devoted to juice boxes in three flavors.
+    Apple, grape, and fruit punch. Carl is prepared for all juice emergencies.
+spawninfo:
+- mobid: 559
+  message: "<ansi fg=\"yellow\">Carl Alphonse comes in from the pantry, wiping his hands on his apron, already knowing what needs to be done next.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- Something on the stove makes a soft sound that means it is almost ready.
+- Carl writes something on the chalkboard menu and then steps back to look at it critically.
+- A stack of brown paper lunch bags shifts as Carl adds a new one to the pile.
+- The refrigerator hums in the satisfied way of a refrigerator that is doing its job well.
+- From the pantry, the sound of something being found that was needed.
+- The kitchen smells of peanut butter and something warm and the specific care of someone who feeds people because they love them.
+- Carl folds a paper bag with the efficiency of someone who has done it ten thousand times and still means it every time.

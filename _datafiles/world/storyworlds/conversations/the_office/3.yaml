@@ -1,0 +1,41 @@
+-
+  Supported:
+    "kevin malone": ["angela martin"]
+  Conversation:
+    - ["#1 say Angela."]
+    - ["#2 emote does not look up."]
+    - ["#1 say I found this in the break room."]
+    - ["#1 emote holds something up."]
+    - ["#2 say That is cat food."]
+    - ["#1 say It says chicken."]
+    - ["#2 say It is cat food, Kevin."]
+    - ["#1 emote looks at it."]
+    - ["#1 say It did taste like something was off."]
+    - ["#2 emote closes her eyes briefly."]
+-
+  Supported:
+    "angela martin": ["kevin malone"]
+  Conversation:
+    - ["#1 say Kevin."]
+    - ["#2 emote looks up from his snack."]
+    - ["#1 say You are chewing very loudly."]
+    - ["#2 say I have a lot to chew."]
+    - ["#1 emote's expression conveys seven distinct complaints without words."]
+    - ["#2 say I can chew quieter."]
+    - ["#2 emote chews quieter."]
+    - ["#1 say Thank you."]
+    - ["#1 emote returns to her spreadsheet."]
+    - ["#2 emote gradually returns to normal chewing volume."]
+-
+  Supported:
+    "kevin malone": ["angela martin"]
+  Conversation:
+    - ["#1 say Angela."]
+    - ["#2 emote does not look up."]
+    - ["#1 say Do you think cats like chili?"]
+    - ["#2 say No."]
+    - ["#1 say I thought maybe Sprinkles would have liked --"]
+    - ["#2 emote looks up sharply."]
+    - ["#2 say We do not discuss Sprinkles."]
+    - ["#1 emote nods. He genuinely regrets this."]
+    - ["#2 emote returns to her spreadsheet with a fixed expression."]

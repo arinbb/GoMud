@@ -1,0 +1,58 @@
+roomid: 2360
+zone: Billy Madison
+title: Madison Mansion
+description: >-
+  The Madison family estate sprawls across a manicured New Jersey hillside in
+  the aggressively tasteful way that only old money achieves. The <ansi fg="itemname">foyer</ansi>
+  is enormous — marble floors, a winding <ansi fg="itemname">staircase</ansi> you could
+  film a movie on, and more rooms than anyone actually needs. <ansi fg="itemname">Trophies</ansi>
+  and <ansi fg="itemname">plaques</ansi> commemorating the Madison Hotel chain cover the
+  walls with the modest pride of a man who is not modest. The whole house smells of
+  cleaning products and inherited comfort. To the <ansi fg="exit">north</ansi> is the
+  pool. To the <ansi fg="exit">east</ansi> is the elementary school hallway. To the
+  <ansi fg="exit">south</ansi> is the kitchen. To the <ansi fg="exit">west</ansi> is
+  Frank's office.
+mapsymbol: M
+maplegend: Madison Mansion
+biome: house
+exits:
+  north:
+    roomid: 2361
+  east:
+    roomid: 2362
+  south:
+    roomid: 2366
+  west:
+    roomid: 2373
+nouns:
+  foyer: >-
+    The foyer is aggressively grand — high ceilings, marble floors polished to
+    a mirror shine, a chandelier that probably has a name. Everything here says
+    "we have money and we want you to be comfortable but not more comfortable
+    than us." It is a very specific architectural message.
+  staircase: >-
+    A curved staircase that sweeps up to the second floor with the confidence
+    of a staircase that knows it is the focal point of every party held here.
+    Billy has, at various points, slid down the banister, tripped down the
+    stairs, and once made a dramatic entrance that only he found dramatic.
+  trophies: >-
+    Awards, plaques, and framed citations honoring Frank Madison and the Madison
+    Hotel chain. "Hotel Magnate of the Year, 1987." "Distinguished Hospitality
+    Leadership." "Chamber of Commerce Excellence." Frank's achievements are
+    aggressively displayed, and yet the house has always felt slightly empty.
+  plaques: >-
+    Each plaque tells a story about the hotel empire. The most worn one, handled
+    more than any other, simply reads "Madison Hotels — Family First." Frank had
+    it made when Billy's mother died. It's the only one he ever looks at.
+spawninfo:
+- mobid: 555
+  message: "<ansi fg=\"yellow\">Billy Madison stumbles into the foyer from somewhere, holding a juice box and looking like a man who has just remembered he has responsibilities.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The chandelier tinkles faintly as someone runs upstairs, shaking the whole house.
+- A television somewhere in the mansion is playing cartoons at maximum volume.
+- The phone rings. It stops. It rings again. Billy is not going to answer it.
+- From somewhere outside, there is the distant sound of someone cannonballing into a pool.
+- The marble floor reflects your face back at you, slightly distorted, like a funhouse mirror that costs $40,000.
+- A framed hotel brochure falls off the wall for no apparent reason. It says "MADISON HOTELS - YOUR HOME AWAY FROM HOME."
+- Someone is singing in the shower. The song is not recognizable but the enthusiasm is genuine.

@@ -1,0 +1,18 @@
+itemid: 325
+name: lunch bag with a note from Carl
+namesimple: lunch bag
+displayname: a <ansi fg="itemname">brown paper lunch bag</ansi> from Carl
+description: >-
+  A brown paper lunch bag with your name written on it in blue crayon, the letters
+  careful and generous the way someone writes when they want the name to look good.
+  Near the top, Carl has drawn a small star. The bag is folded shut at the top with
+  two neat creases. Inside, when you open it, you find a peanut butter sandwich on
+  whole wheat bread in a small plastic bag, a bag of chips (extra chips, you can
+  tell from the weight), an apple juice box, and a folded note. The note is on lined
+  paper, written in Carl's careful block capitals. It says: YOU CAN DO IT. The ink
+  is dark and the letters are even and he has written this seven thousand times and
+  meant it every single time including this one.
+type: object
+subtype: usable
+uses: 0
+value: 0

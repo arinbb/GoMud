@@ -1,0 +1,32 @@
+-
+  Supported:
+    "billy corgan": ["butch vig"]
+  Conversation:
+    - ["#1 say I want another guitar layer on Soma."]
+    - ["#2 say We have nineteen tracks on Soma."]
+    - ["#1 say I can hear where the next one goes."]
+    - ["#2 emote looks at the session log.", "#2 say Where."]
+    - ["#1 say Bars twelve through twenty-four. An octave up from the Rhodes part."]
+    - ["#2 emote considers this.", "#2 say One track. Then we listen."]
+    - ["#1 say Two."]
+    - ["#2 say One, then we see.", "#2 emote opens the patch bay."]
+-
+  Supported:
+    "billy corgan": ["butch vig"]
+  Conversation:
+    - ["#2 say The Today vocal is the one."]
+    - ["#1 emote stops playing."]
+    - ["#2 say Take seven. The one from this morning. That is it."]
+    - ["#1 say I can do it better."]
+    - ["#2 say You can do it different. That one is right."]
+    - ["#1 emote is quiet.", "#1 say Play it back."]
+    - ["#2 emote rolls the tape.", "#2 say Listen."]
+    - ["#1 emote listens to himself singing.", "#1 emote says nothing for a long time.", "#1 say Okay."]
+-
+  Supported:
+    "butch vig": ["*"]
+  Conversation:
+    - ["#1 say The record is going to be something."]
+    - ["#1 emote looks at the session log."]
+    - ["#1 say I know that sounds like producer talk. But I mean it."]
+    - ["#1 say Something is happening in this room. Despite everything. Maybe because of everything."]

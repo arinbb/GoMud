@@ -1,0 +1,54 @@
+-
+  Supported:
+    "jim halpert": ["dwight schrute"]
+  Conversation:
+    - ["#1 emote looks at Dwight's stapler. Looks at Dwight. Looks at the camera."]
+    - ["#2 say I know what you're thinking."]
+    - ["#1 say I'm not thinking anything."]
+    - ["#2 say You are thinking about a prank. I can see it on your face."]
+    - ["#1 emote maintains complete innocence."]
+    - ["#2 say I have swept my desk for foreign objects. I have checked my stapler. I have checked my keyboard."]
+    - ["#1 say Dwight."]
+    - ["#2 say What."]
+    - ["#1 say Relax."]
+    - ["#2 emote is not relaxed. Will not relax. Relaxing would be the prank."]
+-
+  Supported:
+    "jim halpert": ["dwight schrute"]
+  Conversation:
+    - ["#2 say Bears."]
+    - ["#1 emote looks up from his monitor."]
+    - ["#2 say Bears. Beets. Battlestar Galactica."]
+    - ["#1 say What?"]
+    - ["#2 say Name a fact."]
+    - ["#1 say Those are three things that start with B."]
+    - ["#2 say Those are the three most important B's in the known world."]
+    - ["#1 emote looks at the camera. The camera agrees this is happening."]
+    - ["#2 say You cannot argue with this."]
+    - ["#1 say I'm not going to argue with this."]
+-
+  Supported:
+    "dwight schrute": ["jim halpert"]
+  Conversation:
+    - ["#1 say Assistant Regional Manager."]
+    - ["#2 emote glances up."]
+    - ["#1 say That is my title."]
+    - ["#2 say I know your title, Dwight."]
+    - ["#1 say Some people say Assistant TO the Regional Manager."]
+    - ["#2 emote is quiet."]
+    - ["#1 say Those people are wrong."]
+    - ["#2 say Yeah."]
+    - ["#1 emote watches him for signs of a smirk. There is a smirk. He logs it."]
+-
+  Supported:
+    "jim halpert": ["dwight schrute"]
+  Conversation:
+    - ["#1 say Hey Dwight. Question."]
+    - ["#2 say State it."]
+    - ["#1 say In a survival situation. No resources. Just you and the wilderness."]
+    - ["#2 emote sits up straighter. This is his territory."]
+    - ["#1 say How long could you survive?"]
+    - ["#2 say Indefinitely."]
+    - ["#1 say Indefinitely."]
+    - ["#2 say Possibly longer."]
+    - ["#1 emote looks at the camera. The camera knew this was coming."]

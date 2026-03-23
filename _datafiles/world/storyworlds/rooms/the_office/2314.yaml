@@ -1,0 +1,59 @@
+roomid: 2314
+zone: The Office
+title: Schrute Farms
+description: >-
+  You have arrived at Schrute Farms, a 60-acre beet farm and bed-and-breakfast in
+  Honesdale, Pennsylvania, owned and operated by Dwight K. Schrute. The <ansi fg="10">beet
+  fields</ansi> stretch in all directions -- row after row of beet greens in the
+  Pennsylvania soil, their leaves catching the morning light, their roots dark in
+  the earth below. The smell is clean and earthy: soil and green things and the
+  particular richness of a working farm. A <ansi fg="itemname">farmhouse</ansi> sits
+  at the center of the property, built in the 1800s by the Schrute family, which has
+  owned this land without interruption since and intends to continue doing so. A
+  hand-painted <ansi fg="itemname">sign</ansi> at the entrance reads: 'SCHRUTE FARMS
+  -- BED AND BREAKFAST -- RATED BEST AGRITOURISM EXPERIENCE IN PENNSYLVANIA (self-
+  designated).' The property is clearly productive and clearly lived-in and clearly
+  presided over by someone who takes all of this with complete seriousness. The
+  <ansi fg="exit">parking lot</ansi> / warehouse is to the north. <ansi fg="exit">The
+  church</ansi> is to the west.
+mapsymbol: SF
+maplegend: Schrute Farms
+biome: farmland
+exits:
+  north:
+    roomid: 2308
+  west:
+    roomid: 2315
+nouns:
+  fields: >-
+    The beet fields of Schrute Farms, tended with precision. The rows are perfectly
+    spaced. The soil has been amended with nutrients that Dwight has researched
+    extensively. Beet farming is not easy work and Dwight has never wanted easy work.
+    He has wanted this work, specifically, on this land, which is his family's land,
+    which is his. The beets are coming along beautifully.
+  farmhouse: >-
+    The Schrute farmhouse: 1800s construction, stone foundation, wood frame,
+    a porch that wraps around the front with two rocking chairs that are positioned
+    for observation rather than relaxation. The interior, visible through the front
+    window, is furnished with things that have been here for generations. The
+    bedroom available for B&B guests has been described in online reviews as
+    'interesting,' 'unforgettable,' and 'smelling strongly of beet.'
+  sign: >-
+    'SCHRUTE FARMS -- BED AND BREAKFAST -- RATED BEST AGRITOURISM EXPERIENCE IN
+    PENNSYLVANIA.' There are no asterisks. There is no citation. The parenthetical
+    'self-designated' is Dwight's own addition, included not as a disclaimer but
+    as a point of pride: he made this designation himself because he believed it
+    to be accurate, and he sees no reason to pretend otherwise.
+spawninfo:
+- mobid: 522
+  message: '<ansi fg="8">Dwight Schrute is in the beet fields, moving between the rows with the focused purpose of a man conducting an inspection that will reveal everything he needs to know about how the farm is doing, which is well.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The beet fields run in perfect rows to the tree line at the edge of the property.
+- From the farmhouse comes the smell of something cooking -- something with beet in it.
+- A crow lands in the field, looks at the crops, and decides against them. Dwight has prepared for crows.
+- The farm implements in the barn shed -- plows, irrigation tools, things with handles -- are perfectly maintained.
+- The Scranton air out here is cleaner. The hills are closer. Pennsylvania is doing its best.
+- A Schrute Farms brochure is tacked to the gatepost. 'AGRITOURISM AT ITS FINEST.' The brochure has a beet on it.
+- From somewhere on the property, a crow alarm goes off -- a recorded crow distress call Dwight installed to deter actual crows. It is working.
+- The beet greens in the nearest row are dark and healthy. Dwight knows each plant by its approximate position.

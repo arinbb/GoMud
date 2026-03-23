@@ -1,0 +1,46 @@
+roomid: 2310
+zone: The Office
+title: The Stairwell
+description: >-
+  The internal stairwell of the Scranton Business Park building -- concrete steps,
+  painted cinder block walls, a railing that is stable but not elegant. The stairwell
+  is not a destination; it is a transition space, which makes it the perfect place for
+  conversations that cannot happen at desks. The <ansi fg="itemname">walls</ansi> are
+  marked with years of passage -- a scuff here, a handprint there, something written
+  in Sharpie near the second-floor landing that says 'JIM + PAM' inside a heart, which
+  was written by neither Jim nor Pam but which has been here long enough that everyone
+  has decided it is canonical. The <ansi fg="itemname">fluorescent fixture</ansi> on
+  the landing flickers on a three-second cycle, a pattern so consistent that it has
+  become ambient. Private conversations happen here. Real things are said here. The
+  stairwell has heard more truth than the conference room ever will. The <ansi fg="exit">break room</ansi> is to the south. The <ansi fg="exit">rooftop</ansi> is up.
+mapsymbol: T
+maplegend: Stairwell
+biome: house
+exits:
+  south:
+    roomid: 2309
+  up:
+    roomid: 2311
+nouns:
+  walls: >-
+    Painted cinder block, institution-grey, marked with years. There is a scuff at
+    hip height on the second-floor landing where a filing cabinet once clipped the
+    wall on its way up. There is a handprint in what appears to be ink near the bottom
+    of the stairs that nobody has cleaned because nobody comes down here on purpose.
+    And there, on the wall at the landing: 'JIM + PAM' in a heart, written in Sharpie
+    by someone who was rooting for them before they knew to root.
+  fixture: >-
+    The fluorescent light on the stairwell landing flickers every three seconds: on,
+    on, on, off, on, on, on, off. This is not a new condition. Everyone who has ever
+    used this stairwell has adapted to it, the way you adapt to anything that is
+    consistently present.
+spawninfo: []
+idlemessages:
+- The fluorescent light flickers on its three-second cycle. You count it without deciding to count it.
+- Footsteps on the stairs above -- someone coming down, pausing at the landing, going back up.
+- From behind the stairwell door, the muffled sound of office life continuing without you.
+- The fire extinguisher on the wall has been there since the building was built. It has never been used.
+- Someone pushes the stairwell door open, looks in, decides against the stairs, leaves.
+- The building settles. A small sound in the wall, the kind old buildings make to prove they are still there.
+- "JIM + PAM. The Sharpie heart on the landing wall. It has been here longer than it should have taken."
+- A draft moves through the stairwell from the propped door below, carrying the smell of parking lot.

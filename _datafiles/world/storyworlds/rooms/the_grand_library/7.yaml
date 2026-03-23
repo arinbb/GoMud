@@ -68,6 +68,9 @@ spawninfo:
 - itemid: 157
   container: shelf
   respawnrate: 1 real minutes
+- itemid: 159
+  container: shelf
+  respawnrate: 1 real minutes
 idlemessages:
 - The turntable platter rotates slowly, waiting for a record to play.
 - The tape deck's VU meters flicker, picking up a ghost signal from somewhere.

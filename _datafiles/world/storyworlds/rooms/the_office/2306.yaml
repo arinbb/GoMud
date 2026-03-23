@@ -1,0 +1,59 @@
+roomid: 2306
+zone: The Office
+title: The Conference Room
+description: >-
+  The long table. The whiteboard. The projector that takes ten minutes to warm up.
+  The chairs that are not quite comfortable enough to sit in for more than forty
+  minutes, which is, some say, intentional. The <ansi fg="itemname">whiteboard</ansi>
+  at the front of the room is dense with agendas, half-erased diagrams, and a
+  drawing of a face that has been there since 2008 and survived every meeting since.
+  A <ansi fg="itemname">motivational poster</ansi> on the wall shows a mountain and
+  the word 'TEAMWORK' and has been providing this information since before anyone
+  currently employed at Dunder Mifflin started working there. The projector screen
+  is half-lowered. The chairs are arranged around the long table with the resigned
+  order of furniture that knows what is coming. Every meeting that has ever gone
+  wrong in this company has gone wrong in this room. Many of them have gone wrong
+  in interesting ways. The <ansi fg="exit">bullpen</ansi> is to the south. The
+  <ansi fg="exit">accounting corner</ansi> is up.
+mapsymbol: C
+maplegend: Conference Room
+biome: house
+exits:
+  south:
+    roomid: 2303
+  up:
+    roomid: 2313
+nouns:
+  whiteboard: >-
+    Today's whiteboard contains: 'Q3 GOALS' underlined twice, a pie chart that adds
+    up to more than 100%, a list of synergy-adjacent words (leverage, paradigm, forward-
+    thinking, solutions), a drawing of a face that has been there since 2008, and in
+    small writing in the corner, in a handwriting that is identifiably Jim's: 'that's
+    what she said.' It is unclear when this was written. It does not refer to anything
+    specific on the whiteboard. It refers to everything on the whiteboard.
+  poster: >-
+    'TEAMWORK.' A mountain at sunset. A silhouette of a person at the top with arms
+    spread. This poster has been in this room since approximately 2001 and has never
+    been updated or replaced. It no longer communicates anything to anyone who works
+    here. It is furniture.
+  projector: >-
+    The conference room projector takes eleven minutes to warm up and produces an
+    image that is either too bright or too dim, never calibrated. Michael's PowerPoint
+    presentations -- which he makes himself, with animations -- look exactly the way
+    you would imagine they look on a projector that is either too bright or too dim.
+  table: >-
+    The long conference table, laminate wood-effect, surrounded by eight rolling
+    chairs. The table has hosted: performance reviews, birthday parties, interventions,
+    a wedding shower, a breakup, three fire safety trainings, one actual fire, and
+    every single meeting Michael has ever called in the nine years he has worked here.
+    The table knows everything.
+spawninfo: []
+idlemessages:
+- The chairs are arranged around the table. They have been arranged. They will be rearranged. They will be arranged again.
+- The projector screen is half-lowered. Someone left it this way. It will stay this way.
+- The whiteboard marker is dried out. There is another marker in the tray. Nobody has switched them.
+- Through the glass wall, the bullpen is visible -- rows of heads, the gentle ambient of work being performed.
+- Someone left a coffee mug on the table. It is from a meeting that ended hours ago. The coffee is cold.
+- The TEAMWORK poster's mountain catches the fluorescent light and for a moment seems almost aspirational.
+- "An agenda paper is on the table: Q3 Review -- 10 items. The meeting went to item three."
+- The room smells like dry-erase marker and the ghost of someone's afternoon snack.

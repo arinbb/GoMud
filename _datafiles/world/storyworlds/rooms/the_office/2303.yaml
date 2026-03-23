@@ -1,0 +1,80 @@
+roomid: 2303
+zone: The Office
+title: The Bullpen
+description: >-
+  The open floor of Dunder Mifflin, where the actual work happens, or at least
+  where the actual work is supposed to happen. Rows of <ansi fg="itemname">cubicle
+  partitions</ansi> in standard corporate beige divide the space into workstations,
+  each one a small universe of personal expression within corporate constraint.
+  <ansi fg="itemname">Jim's desk</ansi> faces <ansi fg="itemname">Dwight's desk</ansi>
+  across a narrow aisle -- this arrangement was not an accident. The <ansi fg="itemname">copier</ansi>
+  in the corner has a yellow 'OUT OF ORDER' sign that has been there long enough
+  that someone has written underneath it: 'as always.' A <ansi fg="itemname">whiteboard</ansi>
+  on one wall shows Q3 sales targets next to a drawing of a beet. The fluorescent
+  lights maintain their eternal hum. <ansi fg="exit">Reception</ansi> is to the
+  south. The <ansi fg="exit">annex</ansi> is to the east. The <ansi fg="exit">conference
+  room</ansi> is to the north. The <ansi fg="exit">kitchen</ansi> is to the west.
+mapsymbol: B
+maplegend: The Bullpen
+biome: house
+exits:
+  south:
+    roomid: 2301
+  east:
+    roomid: 2304
+  north:
+    roomid: 2306
+  west:
+    roomid: 2305
+nouns:
+  partitions: >-
+    The cubicle partitions are the color of old cream, upholstered in a fabric
+    that absorbs sound and personality with equal efficiency. Over years of
+    occupation, each workstation has been quietly personalized: a photo here, a
+    bobblehead there, a dried flower taped to the partition wall with a small note
+    that says 'from Pam.' The partitions do not actually provide privacy. Everyone
+    can hear everything. This is understood and not acknowledged.
+  jims: >-
+    Jim's desk: relatively clean, a single coffee mug, a photo facing away from you,
+    and the desk drawer left slightly open in a way that could mean anything. The
+    surface of Jim's desk has held thousands of carefully staged pranks. You can
+    almost see the history of it -- the gelatin, the staples, the bobblehead, the
+    nickels. None of the evidence remains. Jim is very thorough.
+  dwights: >-
+    Dwight's desk: meticulously organized, with a small nameplate that reads 'Assistant
+    Regional Manager' though the official title is 'Assistant TO the Regional Manager.'
+    A beet farm desk calendar. A bobblehead of himself. A copy of 'The Art of War.'
+    A bear in a chef's hat -- this is a prank Jim installed and Dwight has never
+    gotten rid of it, though he says it intimidates people. Everything on this desk
+    is exactly where Dwight put it. If you move anything, he will know.
+  copier: >-
+    The Dunder Mifflin Ricoh multifunction copier, which has been out of order in
+    some capacity since approximately 2005. The yellow sign taped to it reads 'OUT
+    OF ORDER' and beneath that, in different handwriting: 'as always.' Someone has
+    drawn a small sad face on the sign. The copier occasionally makes noises that
+    suggest it is alive and suffering.
+  whiteboard: >-
+    The Q3 sales targets are on the whiteboard in blue marker, neat columns of
+    numbers that represent the only thing that is supposed to matter here. Next to
+    the sales figures, in clearly different handwriting and red marker: a very detailed
+    drawing of a beet. Below the beet: 'Schrute 2006.' Below that, in Jim's handwriting:
+    'nice beet.'
+spawninfo:
+- mobid: 521
+  message: '<ansi fg="8">Jim Halpert is at his desk, leaning back in his chair with the expression of someone who has found the precise angle at which work appears to be happening without actually happening.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 522
+  message: '<ansi fg="8">Dwight Schrute is at his desk directly across from Jim, sitting with the posture of a man who considers good posture a tactical advantage.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 527
+  message: '<ansi fg="8">Stanley Hudson has materialized at his desk with a crossword puzzle that is clearly more important to him than anything Dunder Mifflin needs from him today.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Jim glances at the camera. The glance contains entire paragraphs.
+- Dwight corrects something on his desk calendar and recorrects it and is satisfied.
+- The copier makes a grinding noise and produces three blank pages. Nobody investigates.
+- Stanley writes a word in his crossword and then erases it, dissatisfied.
+- Someone's computer plays a sound effect. It is not work-related.
+- A paper airplane crosses the bullpen at low altitude and disappears behind a partition.
+- Two people have a conversation in which everything is conveyed through tone and nothing through words.
+- The phone on someone's desk rings. They let it go to voicemail. They were looking right at it.

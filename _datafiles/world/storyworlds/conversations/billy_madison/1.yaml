@@ -1,0 +1,32 @@
+-
+  Supported:
+    "billy madison": ["ernie the penguin"]
+  Conversation:
+    - ["#1 say Ernie. ERNIE. Listen to me. Do you think I can do this?"]
+    - ["#2 emote tilts its head. Its eyes are very warm."]
+    - ["#1 say I'm serious. Twelve grades. Do you think I can actually do twelve grades?"]
+    - ["#2 emote waddles slightly forward and blinks once, slowly."]
+    - ["#1 emote looks at the penguin for a long moment. 'Yeah. Yeah, you're right.'"]
+    - ["#1 say Thanks, buddy. You always know what to say.", "#1 emote gives the penguin a juice box."]
+    - ["#2 emote accepts the juice box with tremendous dignity."]
+-
+  Supported:
+    "billy madison": ["ernie the penguin"]
+  Conversation:
+    - ["#1 say Ernie, what do you think about fractions?"]
+    - ["#2 emote tilts its head."]
+    - ["#1 say I know, I know. I thought they were stupid too. But here's the thing."]
+    - ["#1 emote leans down to penguin level. 'A half is one over two. A quarter is one over four. It's about SHARING things.'"]
+    - ["#2 emote nods. Or appears to nod."]
+    - ["#1 say Exactly! Exactly what I said. You're so smart, Ernie."]
+-
+  Supported:
+    "billy madison": ["ernie the penguin"]
+  Conversation:
+    - ["#1 say I think Miss Vaughn likes me."]
+    - ["#2 emote tilts its head at a precise angle."]
+    - ["#1 say I mean as a student. Professionally. She gave me a gold star."]
+    - ["#2 emote blinks."]
+    - ["#1 say Okay maybe also as a person. But MOSTLY as a student. That's the important thing.", "#1 emote picks up a juice box. 'She's great.'"]
+    - ["#2 emote adjusts its invisible bow tie."]
+    - ["#1 say Don't give me that look."]

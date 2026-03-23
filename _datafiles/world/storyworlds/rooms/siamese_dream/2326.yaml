@@ -1,0 +1,58 @@
+roomid: 2326
+zone: Siamese Dream
+title: Disarm
+description: >-
+  Acoustic wood and cello strings visible in the air. The room is small and
+  intimate, built from <ansi fg="itemname">old wood</ansi> -- warm grain, worn
+  soft by decades of hands, the kind of wood that has absorbed so many sounds
+  it makes a slight music when you run your palm across it. <ansi
+  fg="itemname">Cello strings</ansi> are suspended in the air at shoulder
+  height, tuned and vibrating, playing themselves at a frequency just below
+  audible. A <ansi fg="itemname">child's drawing</ansi> is pinned to one wall
+  -- crayon on construction paper, a house and a sun and two figures that are
+  not quite together and not quite apart. A single acoustic <ansi
+  fg="itemname">guitar</ansi> leans in the corner. The room has been holding
+  its breath for twenty years. The killer in me is the killer in you. The
+  <ansi fg="exit">studio</ansi> is back to the northeast.
+mapsymbol: '6'
+maplegend: Disarm
+biome: house
+exits:
+  northeast:
+    roomid: 2320
+nouns:
+  wood: >-
+    The walls, the floor, the low ceiling: all old wood, darkened by time and
+    warm with something that has soaked in from the outside. Run your fingers
+    along the grain and you feel the history of sound -- decades of music played
+    in this room, absorbed into the fiber, available now as a kind of warmth
+    that no amount of careful carpentry could replicate. The wood knows things.
+  strings: >-
+    Cello strings suspended at shoulder height, anchored at each end to something
+    invisible, bowing and unbowing themselves with an almost-audible frequency.
+    The sound they make is below the threshold of hearing but above the threshold
+    of feeling. Stand very still and you feel it in your sternum. There are eight
+    of them. They are in tune with each other. They are not in tune with anything
+    else in the world.
+  drawing: >-
+    Crayon on construction paper, a child's drawing: a house with a yellow sun,
+    grass, two figures. The figures are roughly the same size. There is a space
+    between them that is wider than it looks at first. The sun's rays extend all
+    the way to the edge of the paper. Someone wrote at the bottom in a child's
+    printing: DISARM. The paper has been handled many times -- the corners are
+    soft, the colors worn in the middle.
+  guitar: >-
+    A Martin acoustic guitar in the corner, out of its case, leaning carefully
+    against the wooden wall. No pick. No amp. Just the guitar and the room and
+    the cello strings vibrating at their inaudible frequency. The strings are
+    medium gauge, the action low. Someone has played it so much the finish is
+    worn through at the sound hole. The sound it makes is honest in the way that
+    unamplified things are honest -- no gain, no effect, no distance between
+    the instrument and the air.
+idlemessages:
+- The cello strings vibrate imperceptibly, their frequency felt in the sternum rather than the ears.
+- 'The child''s drawing casts a crayon-colored light on the floor -- yellow sun, green grass, two figures not quite touching.'
+- 'The acoustic guitar in the corner makes a small, involuntary sound -- a string settling, a harmonic releasing.'
+- The wood breathes. It has absorbed enough music to breathe.
+- 'Silence in this room is not empty. It is full of what has been said and what has not been said and the distance between them.'
+- Something in the room wants to cry. Not from sadness exactly. From recognition.

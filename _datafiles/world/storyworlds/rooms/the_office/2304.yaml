@@ -1,0 +1,67 @@
+roomid: 2304
+zone: The Office
+title: The Annex
+description: >-
+  The back corner of the Dunder Mifflin floor, known informally as the Annex --
+  the place where people end up when they do not end up anywhere else. The carpet
+  is the same as the bullpen carpet, the fluorescent lights are the same lights,
+  but there is a quality of <ansi fg="8">geographic marginality</ansi> to this space
+  that the people stationed here are aware of and respond to in their different ways.
+  A <ansi fg="itemname">filing cabinet</ansi> sits against the wall, its top drawer
+  labeled 'HR: DO NOT OPEN' in a handwriting that suggests this is a legal position,
+  not a suggestion. <ansi fg="itemname">Ryan's desk</ansi> near the door has the
+  uneasy energy of someone who is certain this is temporary. <ansi fg="itemname">Toby's
+  HR corner</ansi> has the energy of someone who has accepted that it is not.
+  <ansi fg="itemname">Creed's area</ansi> at the far end has an energy that is
+  difficult to name. The <ansi fg="exit">bullpen</ansi> is to the west.
+mapsymbol: X
+maplegend: The Annex
+biome: house
+exits:
+  west:
+    roomid: 2303
+nouns:
+  cabinet: >-
+    A four-drawer filing cabinet, steel grey, labeled with small plastic tabs.
+    The top drawer: 'HR: DO NOT OPEN.' This is a legal instruction. The second
+    drawer: 'Performance Reviews 2003-2012.' The third drawer: 'Complaints (Filed).'
+    The bottom drawer has no label. It is locked. Toby locked it himself and has
+    since lost the key. He does not want to think about what is in it.
+  ryans: >-
+    Ryan Howard's desk, occupied with the proprietary distance of a man who considers
+    himself between situations. His MBA is not framed on the wall because he is not
+    staying. His phone is face-up at all times. He once burned the branch down
+    metaphorically and also almost literally, and he has been back twice since then.
+    The desk says 'temporary.' Everything says temporary.
+  tobys: >-
+    Toby Flenderson's HR corner, a space that has been furnished with the careful
+    minimalism of a man making the best of things. A small succulent on the corner
+    of the desk. A printed 'Happy HR Day!' banner that is not a real day. A framed
+    photograph of his daughter. Toby is the HR rep, the moral center, the voice
+    of reason that nobody wants to hear. His name on the org chart is directly below
+    Michael's name. Michael has never acknowledged this relationship.
+  creeds: >-
+    Creed Bratton's corner. You look at it. Something about it is not quite right,
+    though you cannot identify what. There is a gym bag under the desk. There is
+    a laminated badge for a company that you do not think exists anymore. There is
+    a sprout growing in a paper cup. Nobody knows how long Creed has worked here.
+    Creed does not know how long Creed has worked here.
+spawninfo:
+- mobid: 524
+  message: '<ansi fg="8">Ryan Howard is at his desk looking at his phone, which contains the future of Dunder Mifflin, or possibly his own future, or possibly just Twitter. It is hard to say.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 529
+  message: '<ansi fg="8">Toby Flenderson is at his HR desk, present and accounted for, waiting to contribute something that will not be received well.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 528
+  message: '<ansi fg="8">Creed Bratton is at his desk doing something that you cannot quite see from this angle. You are not sure you want to see it from any angle.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- Ryan checks his phone with the expression of someone waiting for a text that will change things.
+- Toby prepares to say something. He reconsiders. He will try again later.
+- From Creed's direction comes a faint sound that could be humming, or whittling, or something else entirely.
+- The filing cabinet drawer opens and closes without explanation.
+- A memo about HR compliance sits on Toby's desk, read, annotated, and destined to be ignored.
+- Ryan straightens his collar. He is, in his mind, elsewhere.
+- Someone has placed a mug on top of the filing cabinet. The mug says 'World's Okayest Employee.'
+- The light in the annex is slightly dimmer than in the bullpen. Nobody has ever fixed this.

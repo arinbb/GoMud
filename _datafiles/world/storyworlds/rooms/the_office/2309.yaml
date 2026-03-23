@@ -1,0 +1,60 @@
+roomid: 2309
+zone: The Office
+title: The Break Room
+description: >-
+  The break room is where Dunder Mifflin employees go when they need to be in a room
+  that is not their desk but also not anywhere in particular. A <ansi fg="itemname">couch</ansi>
+  along one wall -- utilitarian grey upholstery, slightly compressed in the middle from
+  years of use -- faces a small <ansi fg="itemname">television</ansi> that gets cable but
+  is always on something nobody chose. A <ansi fg="itemname">bulletin board</ansi> holds
+  notices that have been here since 2004, a reminder about the upcoming Pretzel Day that
+  has not been updated to reflect which year, and a handwritten note that says 'whoever
+  keeps leaving their mug in the sink: you know who you are.' A <ansi fg="itemname">table
+  and chairs</ansi> in the center of the room serve as a satellite meeting space, a lunch
+  location, and occasionally the setting for something true. Jim and Pam have sat at this
+  table. The conversations they've had here are in the walls. The <ansi fg="exit">reception
+  area</ansi> is to the east. The <ansi fg="exit">stairwell</ansi> is to the north.
+mapsymbol: BR
+maplegend: Break Room
+biome: house
+exits:
+  east:
+    roomid: 2301
+  north:
+    roomid: 2310
+nouns:
+  couch: >-
+    The break room couch. It sags in the middle where years of briefly-escaped employees
+    have sat and eaten their lunches and looked at the television and not thought about
+    work for twenty minutes. Jim and Pam sat on this couch. They talked about the
+    future once, carefully, without saying what they meant, in the way people do when
+    they are not ready to say what they mean but the feeling is already too large for
+    the room. The couch held this conversation without comment.
+  television: >-
+    The break room TV is a 27-inch CRT, mounted on a rolling cart, receiving about forty
+    channels of cable. It is always on something -- a game show, a soap opera, the Weather
+    Channel when someone changed it and nobody changed it back. The remote is on top of
+    the TV, which means it requires getting up to change the channel, which means nobody
+    changes the channel.
+  bulletin: >-
+    The break room bulletin board: a mix of notices old and new, somewhat palimpsestic.
+    'Flu shots available in the annex -- Oct 3.' 'LOST: one red stapler (not a joke).'
+    'Company wellness challenge begins Monday.' 'Book club meets Thursdays -- all welcome
+    (this means you, Meredith).' 'PRETZEL DAY -- DATE TBD.' The Pretzel Day notice has
+    been here for three years. Everyone still believes it applies.
+  table: >-
+    The break room table, laminate wood-effect, seating four, the surface marked with
+    rings from coffee mugs that have been here and gone. This table has been the location
+    of lunches eaten alone, lunches eaten together, awkward silences, one marriage proposal
+    practice run, at least two breakups, and the slow beginning of something that took
+    years to become what it became.
+spawninfo: []
+idlemessages:
+- The television plays a game show. Nobody is watching it but nobody has turned it off.
+- Someone sits on the break room couch for exactly fifteen minutes and then gets up and goes back.
+- The bulletin board has a new notice pinned over an old notice. Both remain visible at the edges.
+- The refrigerator in the kitchen hums audibly from here. The microwave answers with occasional beeps.
+- Two people come in, pour coffee, and leave without speaking. This is a comfortable silence.
+- The couch cushions are slightly out of alignment. Someone sat there recently.
+- A candy wrapper on the table from a vending machine purchase. The candy was already eaten.
+- From somewhere in this room, a ghost of a laugh. Something was funny here once, and the room remembers.

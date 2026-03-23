@@ -1,0 +1,23 @@
+questid: 380
+name: The Office
+description: >-
+  Experience a day at Dunder Mifflin Paper Company, Scranton, Pennsylvania. Visit
+  Michael's office, sit through a conference room meeting, find your way to the
+  rooftop, and make the delivery run to Schrute Farms. The most ordinary extraordinary
+  workplace in television history is waiting.
+reward:
+  experience: 4500
+  item_id: 310
+  playermessage: >-
+    You have walked the entire Dunder Mifflin office, from lobby to rooftop to beet
+    farm, and experienced the show's central thesis firsthand: that ordinary people
+    in an ordinary place can be extraordinary, if you pay close enough attention.
+    As a memento, you receive Michael Scott's World's Best Boss mug -- chipped on
+    the handle, coffee-ringed on the bottom, purchased for himself from a Spencer's
+    Gifts in 2003, and absolutely accurate.
+steps:
+- description: Arrive at Dunder Mifflin, Scranton.
+- description: Visit Michael's Office.
+- description: Attend a conference room meeting.
+- description: Find the rooftop.
+- description: Make the delivery run to Schrute Farms.

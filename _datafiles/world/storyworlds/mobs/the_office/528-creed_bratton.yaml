@@ -1,0 +1,34 @@
+mobid: 528
+zone: the_office
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say Nobody steals from Creed Bratton and gets away with it. The last person to do it, I never heard from them again. I'm the last person to do it."
+  - "emote does something at his desk that is not identifiable from this angle."
+  - "say I've been in worse places than this. I've been in much better places than this. Both are true."
+  - ''
+  - "say If I don't have a name badge, am I still here? Philosophically."
+  - "emote eats something that is not from the kitchen. Where it came from is unclear."
+  - "say I grow my own mung beans on a damp cloth in my desk drawer. It is very nutritious."
+  - "emote looks up and makes direct eye contact with the camera for too long."
+activitylevel: 20
+character:
+  name: Creed Bratton
+  description: >-
+    A man of indeterminate age with a tie-dye shirt and blue jeans and sneakers,
+    with white hair and the calm, settled expression of a man who has either
+    achieved profound inner peace or who has simply stopped worrying about things
+    that worry other people. His official title at Dunder Mifflin is Quality
+    Assurance Director, which is not explained. Nobody knows exactly what he does.
+    He does not always know what he does. He has done things before working here
+    that he does not discuss. He is the most unsettling and somehow the most zen
+    character in the show.
+  raceid: 1
+  level: 8
+  equipment:
+    body:
+      itemid: 20125
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

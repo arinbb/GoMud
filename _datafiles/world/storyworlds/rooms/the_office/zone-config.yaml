@@ -1,0 +1,19 @@
+name: The Office
+roomid: 2300
+autoscale:
+  minimum: 1
+  maximum: 10
+defaultbiome: house
+mutators:
+- mutatorid: dunder-mifflin
+idlemessages:
+- The fluorescent lights hum. They have always been humming. They will always hum.
+- Someone nearby is microwaving fish. No one will say anything about it.
+- The copier jams. It always jams. Nobody knows why. Nobody will ever know why.
+- A phone rings twice and goes to voicemail. The message will not be listened to today.
+- Someone has taken someone else's yogurt from the fridge. This will not be addressed directly.
+- The sound of a stapler somewhere. Then silence. Then typing.
+- A meeting has been scheduled. Everyone already knows the meeting will accomplish nothing.
+- From the bullpen comes the low murmur of people pretending to work harder than they are.
+- Someone laughs at something and then stops laughing abruptly when they realize someone is watching.
+- The clock on the wall reads 3:17 PM. It has been reading 3:17 PM for longer than seems possible.

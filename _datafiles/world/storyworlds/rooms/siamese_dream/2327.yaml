@@ -1,0 +1,49 @@
+roomid: 2327
+zone: Siamese Dream
+title: Soma
+description: >-
+  The room starts empty. You can feel it start -- there is a moment when you
+  enter that the <ansi fg="itemname">silence</ansi> is complete, a held breath,
+  a white room with nothing in it. Then the bass note enters from below the
+  floor. Then the guitar harmonic from the east wall. Then another layer, and
+  another, each one arriving so quietly you cannot hear it arrive, only notice
+  that it is there. By the time the room is full you cannot remember it being
+  empty. The <ansi fg="itemname">walls</ansi> bow outward under the pressure
+  of accumulated sound. The <ansi fg="itemname">ceiling</ansi> has risen
+  slightly, or the sound has filled the space and made it feel taller. The
+  volume has no top. The beauty has no top. The <ansi fg="exit">studio</ansi>
+  is back to the east.
+mapsymbol: '7'
+maplegend: Soma
+biome: house
+exits:
+  east:
+    roomid: 2320
+nouns:
+  silence: >-
+    You can only find the silence by arriving exactly when the room begins.
+    For a fraction of a second before the bass enters, there is nothing: white
+    walls, white air, white sound. The silence is the inhale before the song.
+    Once the bass note arrives, the silence is gone, and the room will fill
+    until the walls bow outward. The silence is the most important part. It is
+    the part that makes everything else possible.
+  walls: >-
+    The walls have bowed outward. You can see the curvature -- slight, but real,
+    the physical evidence of sound accumulated past the room's capacity to
+    contain it. The plaster has cracked in long horizontal lines. The cracks
+    emit a low frequency as sound escapes through them. The walls have been
+    doing this for as long as the song has been playing. They have not broken.
+    They bow and they hold.
+  ceiling: >-
+    The ceiling is three feet higher than it was when you entered. Or the sound
+    has filled the room so completely that the distance between floor and ceiling
+    has become indeterminate. Guitar harmonics collect at the top, higher
+    frequencies stratifying above lower ones, the whole thing a column of sound
+    with a floor you can stand on and a ceiling you cannot reach.
+idlemessages:
+- Another layer enters from the west wall. You did not hear it arrive. It is simply present.
+- The walls bow outward another millimeter under the pressure of everything that has been added.
+- The bass note from below the floor is now in your feet, your legs, your chest, your throat.
+- 'Something in the layering approaches a wall of sound -- not yet, but soon, the way a wave approaches but does not yet break.'
+- A guitar harmonic hovers at the ceiling, too high for ears but felt in the scalp, a frequency like sunlight.
+- The room is still filling. There is no indication it will stop. The beauty has no top.

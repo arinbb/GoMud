@@ -1,0 +1,35 @@
+-
+  Supported:
+    "billy corgan": ["jimmy chamberlin"]
+  Conversation:
+    - ["#1 say Play it again."]
+    - ["#2 emote plays the drum fill. Exactly as before."]
+    - ["#1 say Again."]
+    - ["#2 emote plays it again.", "#2 emote says nothing."]
+    - ["#1 emote listens with his eyes closed.", "#1 say The ride cymbal on the fourth beat. Earlier."]
+    - ["#2 emote adjusts and plays the fill again."]
+    - ["#1 say Yes. That. Again."]
+    - ["#2 emote plays it again without comment.", "#2 emote wipes sweat from his face."]
+-
+  Supported:
+    "billy corgan": ["jimmy chamberlin"]
+  Conversation:
+    - ["#2 say How many takes today."]
+    - ["#1 say As many as it takes."]
+    - ["#2 emote nods once.", "#2 say Okay."]
+    - ["#1 say You sound right on the last one. The last twelve bars."]
+    - ["#2 say I know."]
+    - ["#1 say I want to get that in the whole track."]
+    - ["#2 say Then we run it again."]
+    - ["#1 emote nods and goes back to the guitar."]
+-
+  Supported:
+    "billy corgan": ["jimmy chamberlin"]
+  Conversation:
+    - ["#1 say The kick on Geek USA."]
+    - ["#2 emote is already nodding."]
+    - ["#1 say Is it too much?"]
+    - ["#2 say No."]
+    - ["#1 say Butch thinks it is too much."]
+    - ["#2 say It is exactly as much as it needs to be."]
+    - ["#1 emote smiles very slightly.", "#1 say Okay. Again."]

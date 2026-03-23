@@ -1,0 +1,53 @@
+roomid: 2300
+zone: The Office
+title: Dunder Mifflin Lobby
+description: >-
+  The elevator opens and you are here. <ansi fg="8">Dunder Mifflin Paper Company,
+  Scranton Business Park, Scranton, Pennsylvania.</ansi> The lobby is beige. Not
+  aggressively beige, not aspirationally beige -- just beige, the color of a company
+  that has never once thought about its own color. The <ansi fg="itemname">Dunder
+  Mifflin sign</ansi> hangs on the wall in corporate navy and white, featuring a
+  small illustration of a tree that implies the paper comes from somewhere considered
+  and sustainable. It does not. A <ansi fg="itemname">security camera</ansi> watches
+  from the corner with the passive indifference of surveillance that has never caught
+  anything interesting. The <ansi fg="exit">reception area</ansi> is through the
+  glass doors to the north. The <ansi fg="exit">parking lot</ansi> is to the east.
+  The <ansi fg="exit">warehouse</ansi> is below.
+mapsymbol: L
+maplegend: Lobby
+biome: house
+exits:
+  north:
+    roomid: 2301
+  east:
+    roomid: 2308
+  down:
+    roomid: 2307
+nouns:
+  sign: >-
+    The Dunder Mifflin logo: a stylized tree, navy blue on white, beneath which the
+    full company name in a font that communicates reliability without excitement.
+    'Dunder Mifflin Paper Company.' Below that, in smaller text: 'Infinite Diversity
+    in Infinite Combinations.' This is actually their real slogan. Nobody who works
+    here has ever thought about what it means.
+  camera: >-
+    A small security camera mounted in the upper corner of the lobby. The little red
+    light blinks steadily. At some point someone decided this office needed a security
+    camera. The camera has witnessed eleven years of birthday cakes, disciplinary
+    meetings, Pretzel Day, and at least one flaming car in the parking lot. It has
+    recorded all of it with total neutrality.
+  elevator: >-
+    Standard corporate elevator, doors the same beige as everything else. The button
+    panel is worn smooth from years of hands pressing 'two' and 'warehouse.' Someone
+    has put a small sticker of a cat near the 'door open' button. Nobody knows who.
+    Nobody has asked.
+spawninfo: []
+idlemessages:
+- The elevator dings, the doors open, and nobody gets off. The doors close again.
+- A visitor signs the guest log at the reception window, their handwriting too careful.
+- The fluorescent tube above flickers for precisely one second and then recovers.
+- The Dunder Mifflin sign seems slightly crooked. It has seemed slightly crooked for years.
+- The intercom crackles once. Nothing comes out of it. It crackles again. Still nothing.
+- A fire drill alarm briefly tests itself and falls silent. No one moves.
+- From somewhere above comes the distant sound of a meeting beginning. The tone is already resigned.
+- The security camera's red light blinks steadily, recording nothing of consequence.

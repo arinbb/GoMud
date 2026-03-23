@@ -1,0 +1,12 @@
+mutatorid: siamese-dream
+namemodifier:
+  behavior: append
+  text: (layered)
+  colorpattern: purple
+descriptionmodifier:
+  behavior: append
+  text: Guitar layers build in the walls like geological strata.
+  colorpattern: purple
+alertmodifier:
+  text: The distortion hums at a frequency that feels like longing.
+  colorpattern: purple

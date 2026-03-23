@@ -1,0 +1,56 @@
+roomid: 2312
+zone: The Office
+title: Michael's Car
+description: >-
+  Michael Scott's <ansi fg="itemname">PT Cruiser</ansi>, parked in the reserved
+  spot, which is also somewhat his territory. The interior is a personal archive:
+  a <ansi fg="itemname">GPS unit</ansi> on the dash with the voice set to a custom
+  setting Michael named 'Caleb' but which is just the standard male voice, a stack
+  of <ansi fg="itemname">improv comedy CDs</ansi> in the center console next to a
+  parking ticket dated two months ago, and hanging from the rearview mirror a small
+  <ansi fg="itemname">Dundie</ansi> -- a miniature version, spray-painted gold, on
+  a chain. The back seat contains a blazer he was planning to wear last month, a
+  foam sword from a team-building exercise, and a bag from Hooters that is empty.
+  The car smells like Michael's cologne and a pine air freshener that has been here
+  since 2006. It is a car that tries very hard. The <ansi fg="exit">parking lot</ansi>
+  is to the west.
+mapsymbol: CAR
+maplegend: Michael's Car
+biome: house
+exits:
+  west:
+    roomid: 2308
+nouns:
+  cruiser: >-
+    The PT Cruiser in silver-grey, chosen by Michael because it 'looked cool and
+    also retro and also a little bit like the Batmobile.' It does not look like the
+    Batmobile. It is a PT Cruiser. The paint is in good condition. The interior is
+    less good but is very personal. Michael loves this car the way he loves most
+    things: completely, without reservation, with a sincerity that is harder to mock
+    than it first appears.
+  gps: >-
+    The GPS unit on the dash, a Garmin from approximately 2005, voice set to a
+    male British accent that Michael has named 'Caleb.' Caleb has directed Michael
+    into a lake once. Michael drove into the lake because Caleb said to. When asked
+    about this, Michael said: 'Caleb said keep going. I kept going. I trust Caleb.'
+  cds: >-
+    A stack of improv comedy CDs in the center console: 'UCB: Volume 3,' 'Yes And!
+    A Comedy Album,' 'The Second City Records Collection.' They are played. The cases
+    are cracked from being stacked wrong. Michael knows several improv rules by heart
+    and violates most of them in practice. The rules are in his heart. The application
+    is somewhere else.
+  dundie: >-
+    A miniature Dundie award on a keychain, hanging from the rearview mirror. It was
+    made from a larger Dundie award that Michael cut down with a hacksaw and drilled
+    a hole through for the chain. It swings when the car moves, catching the light,
+    tiny and gold and completely sincere.
+spawninfo: []
+idlemessages:
+- The PT Cruiser sits in its reserved spot with the quiet dignity of something that belongs here.
+- The pine air freshener has faded to a whisper of pine. It has been a long six years for this car.
+- The miniature Dundie on the mirror catches the parking lot light and throws a small gold spot on the dash.
+- "Caleb the GPS is off. The screen is dark. Caleb is waiting. Caleb is always waiting."
+- The improv CDs in the center console catch the light -- cracked cases, used edges, played.
+- "A business card is tucked into the visor: MICHAEL G. SCOTT - REGIONAL MANAGER - WORLDS BEST BOSS."
+- From outside the car, through the window, the Scranton Business Park parking lot looks like a whole world.
+- The back seat blazer has been here long enough to seem intentional.

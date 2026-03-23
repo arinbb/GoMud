@@ -1,0 +1,56 @@
+roomid: 2362
+zone: Billy Madison
+title: Elementary School Hallway
+description: >-
+  A hallway that smells of crayons, industrial floor wax, and the very specific
+  anxiety of being eight years old. <ansi fg="itemname">Lockers</ansi> painted that
+  particular shade of institutional green line both walls. <ansi fg="itemname">Artwork</ansi>
+  from students is taped to every surface -- turkeys made from hand outlines, houses
+  with doors too big for the walls, suns in the corners of every page. A <ansi fg="itemname">bulletin board</ansi>
+  near the entrance displays the lunch menu and a motivational poster featuring a
+  <ansi fg="itemname">kitten</ansi> hanging from a branch that says "Hang in there!"
+  One of the locker handles has been licked recently. You don't want to know by whom.
+  To the <ansi fg="exit">west</ansi> is the mansion. To the <ansi fg="exit">north</ansi>
+  is Miss Lippy's classroom. To the <ansi fg="exit">east</ansi> is Veronica's classroom.
+  To the <ansi fg="exit">south</ansi> is the playground.
+mapsymbol: E
+maplegend: Elementary Hallway
+biome: house
+exits:
+  west:
+    roomid: 2360
+  north:
+    roomid: 2363
+  east:
+    roomid: 2364
+  south:
+    roomid: 2365
+nouns:
+  lockers: >-
+    Institutional green lockers, the kind that have heard thirty years of
+    combination failures, forgotten lunches, and the very specific anguish
+    of elementary school social hierarchies. Several have stickers on them
+    that the administration has been trying to remove since 1987.
+  artwork: >-
+    The hallway is a gallery of childhood at its most earnest. Every sun
+    has rays. Every house has smoke from the chimney. Every family portrait
+    shows everyone the same height because perspective is hard. It is the
+    most sincere art exhibit you have ever seen.
+  board: >-
+    The bulletin board lists today's lunch (pizza, corn, chocolate milk,
+    and a fruit cup that no one will touch), upcoming events (Science Fair,
+    Book Report Due, Fire Drill), and a note from Principal Anderson that
+    reads "TOGETHER WE CAN DO ANYTHING." There are hand-drawn stars around it.
+  kitten: >-
+    A laminated poster of a kitten dangling from a tree branch. "Hang in
+    there!" it says. The kitten has been hanging there for years. It is
+    still hanging there. The kitten has not given up. The kitten is an
+    inspiration to us all.
+idlemessages:
+- The bell rings somewhere deep in the school, and for a moment the entire building holds its breath.
+- A child's drawing of a penguin is taped to one of the lockers. The penguin looks very self-assured.
+- Someone left a half-eaten apple on top of a locker. It has been there long enough to be educational.
+- The floor wax smell intensifies every time the janitor's cart squeaks past in the distance.
+- A lone crayon rolls slowly down the hall under its own momentum, red, going somewhere.
+- 'From one of the classrooms, a voice: "Now, class, who can tell me the capital of New Jersey?" Silence.'
+- The kitten poster watches over everything with an expression of professional serenity.

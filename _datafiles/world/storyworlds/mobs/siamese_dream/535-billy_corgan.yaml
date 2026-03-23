@@ -1,0 +1,34 @@
+mobid: 535
+zone: siamese_dream
+hostile: false
+maxwander: 0
+activitylevel: 15
+idlecommands:
+  - emote layers another guitar track over the ones already recorded, adjusting the Big Muff gain by a fraction.
+  - emote stares at the mixing board faders for a long moment, then writes something in a spiral notebook.
+  - say One more take.
+  - emote picks up a Les Paul and plays a single chord -- massive, distorted, exactly right.
+  - ''
+  - ''
+  - emote crosses out a lyric and rewrites it, the pen pressing hard into the paper.
+character:
+  name: Billy Corgan
+  description: >-
+    A shaved head and a Zero t-shirt and the absolute certainty of someone who
+    knows exactly what the record should sound like and is willing to play every
+    guitar part himself to get it there. He is thin and intense and his fingers
+    are always moving, finding chord shapes in the air, working through
+    something. The dysfunction around him is real -- the band barely held
+    together, Jimmy fighting his addiction, the album nearly collapsing -- and
+    he is making something beautiful anyway. Maybe because of it. Maybe in spite
+    of it. He has already played all the guitar parts himself. He is about to
+    play them again.
+  raceid: 1
+  level: 10
+  equipment:
+    body:
+      itemid: 20125
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20177

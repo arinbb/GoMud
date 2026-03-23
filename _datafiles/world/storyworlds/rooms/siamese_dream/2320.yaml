@@ -1,0 +1,85 @@
+roomid: 2320
+zone: Siamese Dream
+title: Triclops Sound Studios
+description: >-
+  Atlanta, Georgia. Summer 1993. The air conditioning has been broken for three
+  days. The <ansi fg="itemname">control room</ansi> is a cathedral of tape
+  machines and outboard gear, every rack unit blinking in the semi-darkness. A
+  massive <ansi fg="itemname">mixing board</ansi> stretches the length of the
+  room, its faders set to positions that should not work but somehow do. Behind
+  the glass, the <ansi fg="itemname">live room</ansi> is a tangle of guitar
+  cables, empty coffee cups, and amplifiers arranged in a semicircle like a jury
+  deliberating. Reels of two-inch <ansi fg="itemname">tape</ansi> stack against
+  the wall in cardboard boxes, each one labeled in Sharpie. The red light is on.
+  It is always on here. The <ansi fg="exit">north</ansi> wall shimmers like
+  Cherub Rock. <ansi fg="exit">Northeast</ansi> breathes quiet and loud. To the
+  <ansi fg="exit">east</ansi>, impossible sunshine. <ansi fg="exit">Southeast</ansi>
+  drones and stretches. <ansi fg="exit">South</ansi> floats in zero gravity. <ansi
+  fg="exit">Southwest</ansi> rings with acoustic wood. <ansi fg="exit">West</ansi>
+  builds from nothing. <ansi fg="exit">Northwest</ansi> burns with speed. <ansi
+  fg="exit">Up</ansi>, clouds of guitar. <ansi fg="exit">Down</ansi>, a boy and
+  the stars.
+mapsymbol: S
+maplegend: Triclops Sound Studios
+biome: house
+exits:
+  north:
+    roomid: 2321
+  northeast:
+    roomid: 2322
+  east:
+    roomid: 2323
+  southeast:
+    roomid: 2324
+  south:
+    roomid: 2325
+  southwest:
+    roomid: 2326
+  west:
+    roomid: 2327
+  northwest:
+    roomid: 2328
+  up:
+    roomid: 2329
+  down:
+    roomid: 2330
+nouns:
+  board: >-
+    The mixing board is a Neve 8078 -- a desk the size of a dining table, its
+    faders mapped to 24 tracks. Most of the faders are pushed high. The gain
+    staging is aggressive. There are no digital readouts, no computer screens.
+    Just analog signal flowing through circuits, captured to tape. Written in
+    marker on a strip of masking tape along the top: "MORE GUITARS."
+  control: >-
+    The control room smells of magnetic oxide, coffee, and the particular anxiety
+    of a band that has been in here for weeks. Butch Vig sits at the center,
+    flanked by outboard compressors and reverb units. The walls are covered in
+    acoustic foam with pictures torn from magazines. One of them is a photo of
+    a Siamese cat.
+  live: >-
+    Through the control room glass, the live room: guitar amplifiers stacked two
+    high, a Marshall Silver Jubilee at the center. Cables run everywhere. In the
+    corner, a Ludwig drum kit with Remo heads, the snare already dented from
+    Jimmy's playing. The air in there is hotter than the control room, and it
+    smells like amp tubes and sweat and something that might be genius.
+  tape: >-
+    Boxes of two-inch tape reels stacked against the wall, each one labeled in
+    Billy's handwriting. CHERUB ROCK TAKE 1-4. TODAY KEEP THIS ONE. SOMA FINAL
+    FINAL. The tape itself is a brownish-red, fragile, analog. Every sound on
+    this record exists as a physical groove in magnetic oxide. The music is real
+    in a way that will matter later.
+spawninfo:
+- mobid: 535
+  message: 'Billy Corgan looks up briefly from his guitar, then looks back down.'
+- mobid: 536
+  message: 'Jimmy Chamberlin settles behind the drum kit, adjusting the snare stand.'
+- mobid: 537
+  message: 'Butch Vig leans over the mixing board, making a small adjustment to a fader.'
+idlemessages:
+- The tape reels turn slowly, the heads reading sixteen tracks of layered guitar simultaneously.
+- 'Someone mutters something from the live room -- too muffled to make out, but it sounds tired.'
+- The air conditioning rattles once and goes silent again. The heat in the room is another instrument.
+- A guitar string buzzes softly from the live room -- open A, ringing through a cranked Marshall.
+- Butch Vig makes a small notation in his session log and erases it immediately.
+- 'The smell of coffee and electronics hangs in the air, the scent of a record being born through clenched teeth.'
+- 'An empty cassette case sits on the edge of the board. Written on the liner insert in red marker: SIAMESE DREAM.'

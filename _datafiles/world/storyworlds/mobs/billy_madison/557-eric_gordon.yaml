@@ -1,0 +1,36 @@
+mobid: 557
+zone: billy_madison
+hostile: false
+maxwander: 1
+activitylevel: 60
+idlecommands:
+  - "emote straightens his tie with the efficiency of a man who never unloosens it."
+  - "say Frank, the board is behind me on this. The numbers are clear."
+  - "emote reviews documents with an expression of calculating satisfaction."
+  - "say Sometimes the right move is the one no one else has the stomach to make."
+  - "emote looks around the room as if assessing its value."
+  - ""
+  - "say Legacy is just sentiment. Sentiment doesn't appear on a balance sheet."
+  - "emote makes a note in his legal pad with specific deliberateness."
+character:
+  name: Eric Gordon
+  description: >-
+    A man in an expensive suit who has the face of someone who has always won by
+    the rules he wrote himself. His hair is perfect. His smile is the kind that
+    does not reach his eyes because his eyes are doing something else entirely --
+    calculating, assessing, finding angles. He carries a briefcase that has never
+    contained anything except paperwork designed to take something from someone
+    else. He is not a monster. He is something worse: a man who is completely
+    convinced he is reasonable.
+  raceid: 1
+  level: 7
+  alignment: -60
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172
+    neck:
+      itemid: 20180

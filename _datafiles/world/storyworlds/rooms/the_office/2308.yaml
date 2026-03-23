@@ -1,0 +1,54 @@
+roomid: 2308
+zone: The Office
+title: The Parking Lot
+description: >-
+  The Scranton Business Park parking lot, a modest expanse of cracked asphalt
+  surrounded by the specific Pennsylvania sky that the opening credits show every
+  week -- usually overcast, occasionally bright, always more beautiful than a parking
+  lot has any right to be. The <ansi fg="itemname">Dunder Mifflin reserved spot</ansi>
+  near the entrance has a hand-painted sign that reads 'MICHAEL SCOTT - REGIONAL
+  MANAGER' in letters that suggest Michael painted it himself. A <ansi fg="itemname">dumpster</ansi>
+  sits in the far corner, useful on multiple occasions over the years. The <ansi fg="itemname">Scranton
+  skyline</ansi> is visible to the north -- the bridges, the hills, the grey and green
+  of a mid-size Pennsylvania city that the show has taught you to love. The air smells
+  like car exhaust and early spring or late fall, whichever is more melancholy.
+  The <ansi fg="exit">lobby</ansi> is to the west. <ansi fg="exit">Schrute Farms</ansi>
+  is to the south. <ansi fg="exit">Michael's car</ansi> is parked to the east.
+mapsymbol: P
+maplegend: Parking Lot
+biome: road
+exits:
+  west:
+    roomid: 2300
+  south:
+    roomid: 2314
+  east:
+    roomid: 2312
+nouns:
+  spot: >-
+    'MICHAEL SCOTT - REGIONAL MANAGER.' The sign is hand-lettered in blue paint on
+    a white piece of wood, mounted on a pole with more hardware than the sign requires.
+    The spot is the closest one to the door. Michael lobbied for it for two years
+    before just making the sign himself. Nobody has challenged it. This is either
+    a victory or a reflection of how much energy everyone is conserving for other things.
+  dumpster: >-
+    The parking lot dumpster, steel green, slightly dented. It has been the site of
+    multiple off-site conversations, one actual fire, one very long phone call, and at
+    least three incidents that were later described at corporate as 'parking lot matters.'
+    Something smells faintly organic from within. This is normal.
+  skyline: >-
+    The Scranton skyline: the Delaware Avenue bridge, the hills going green or brown
+    depending on the season, the water tower visible to the northeast, the modest
+    downtown cluster of buildings that are shorter than you expect from a city and
+    taller than you expect from a small town. Scranton. It is not glamorous. It is,
+    the show has argued consistently across nine seasons, enough.
+spawninfo: []
+idlemessages:
+- A car pulls into the lot and parks three spaces from the nearest other car. This is correct parking behavior.
+- The reserved spot sign glints in the light. 'MICHAEL SCOTT - REGIONAL MANAGER.' It is still there.
+- The Scranton sky is doing something interesting -- clouds moving fast, a break of blue in the grey.
+- A shopping cart from somewhere has migrated to the edge of the lot. Nobody knows where it came from.
+- From the lobby entrance, the distant sound of the elevator. Someone is coming down.
+- The dumpster lid opens and closes in the wind. Once. It is fine.
+- A car alarm goes off in the distance, not this lot, somewhere nearby. It stops after thirty seconds.
+- The parking lot light comes on, though it is not quite dark. It always comes on early.

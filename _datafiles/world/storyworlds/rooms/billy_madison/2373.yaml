@@ -1,0 +1,59 @@
+roomid: 2373
+zone: Billy Madison
+title: Franks Office
+description: >-
+  The office of Frank Madison, hotel magnate, is the room of a man who built something.
+  The <ansi fg="itemname">mahogany desk</ansi> is immense and functional -- not decorative.
+  The <ansi fg="itemname">walls</ansi> have maps of Madison Hotel locations, revenue
+  charts that all go upward, and framed newspaper articles about the company's growth.
+  One article is circled in red pen: "Frank Madison Names Son Billy as Heir." It is
+  the only one with anything personal written on it -- in the margin, in Frank's
+  handwriting: "???". Behind the desk, a small <ansi fg="itemname">photo frame</ansi>
+  turned slightly inward holds a picture of a woman and a very small Billy. Frank's
+  <ansi fg="itemname">calendar</ansi> is full of board meetings and hotel openings
+  and one recurring weekly block simply labeled "Billy." Not "Meeting re: Billy."
+  Just Billy. <ansi fg="exit">East</ansi> returns to the mansion.
+mapsymbol: F
+maplegend: Franks Office
+biome: house
+exits:
+  east:
+    roomid: 2360
+nouns:
+  desk: >-
+    An enormous mahogany desk covered in the organized paperwork of a man who
+    runs a hotel empire without anyone else running it for him. Every document
+    is where it belongs. The in-box is full. The out-box is never empty. Frank
+    Madison has been working at this desk for thirty years and will work at it
+    for thirty more if his heart allows it.
+  walls: >-
+    Revenue charts, hotel expansion maps, press clippings, framed articles.
+    "MADISON HOTELS -- 50 PROPERTIES!" "FRANK MADISON: NEW JERSEY'S HOTELIER
+    OF THE DECADE." In the bottom corner of one map, barely visible, a small
+    drawing in crayon: a stick figure and what might be a penguin. Someone
+    tiny drew that once and Frank never covered it.
+  photo: >-
+    A photograph of a woman with Billy's eyes holding a baby that can only be
+    Billy, recognizable even then by the expression of guileless joy. Frank is
+    at the edge of the frame, not centered, as if he was always just about to
+    walk out of the shot. The frame is turned slightly so Frank can't quite see
+    it from his chair but didn't move it far enough away.
+  calendar: >-
+    Every Tuesday at 3pm: "Billy." Not "Meeting: Billy." Not "Check-in: Billy."
+    Just his name. It has been there for twenty years. Frank added it when Billy
+    was seven. He has never missed a Tuesday.
+spawninfo:
+- mobid: 562
+  message: "<ansi fg=\"yellow\">Frank Madison emerges from behind his desk with the slow authority of a man who has spent sixty years deciding things.</ansi>"
+  respawnrate: 5 real minutes
+- mobid: 557
+  message: "<ansi fg=\"yellow\">Eric Gordon enters from the far door, briefcase in hand, with the specific energy of a man who is about to ruin something.</ansi>"
+  respawnrate: 7 real minutes
+idlemessages:
+- Frank signs something at his desk without looking up, the pen moving with forty years of practice.
+- The revenue chart on the wall goes up in all directions. It has always gone up. Frank expects this.
+- The photo on the desk catches the afternoon light and for a moment the room is very quiet.
+- Eric Gordon's reflection is visible in the window glass for a moment, hovering, then gone.
+- The calendar on Frank's desk is open to this week. Tuesday at 3pm is circled.
+- Frank stands at the window looking at the hotel expansion map for a long time without marking anything.
+- The phone on the desk rings. Frank answers it on the first ring, the way he always has.

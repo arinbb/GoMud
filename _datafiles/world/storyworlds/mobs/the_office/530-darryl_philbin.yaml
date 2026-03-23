@@ -1,0 +1,33 @@
+mobid: 530
+zone: the_office
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote plays three notes on the keyboard beside his desk, pauses, plays them again."
+  - "say The warehouse runs this office. The office just doesn't know it."
+  - "emote looks up at the ceiling in the direction of the office floor above and shakes his head once."
+  - ''
+  - "emote writes something in a notebook that is clearly not work-related."
+  - "say I'm working on some music. It's coming along."
+  - "emote bounces the basketball once on the warehouse floor. The sound echoes."
+  - "say The warehouse team could manage this company better than the upstairs team. I'm not even making a point. I'm stating a fact."
+activitylevel: 20
+character:
+  name: Darryl Philbin
+  description: >-
+    A tall man in his early forties in a work shirt and jeans and steel-toed boots,
+    with a face that expresses what he wants it to express and nothing else. He manages
+    the Dunder Mifflin warehouse with the quiet competence of a man who has been doing
+    this correctly for years and is aware that the people above him are not always doing
+    their jobs correctly. He plays keyboard. He has music in him that is looking for
+    its moment. He is smarter than Michael and knows it, and the show knows it, and
+    lets this be true without making it a joke.
+  raceid: 1
+  level: 8
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20170

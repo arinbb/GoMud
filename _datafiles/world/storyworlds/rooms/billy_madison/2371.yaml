@@ -1,0 +1,62 @@
+roomid: 2371
+zone: Billy Madison
+title: Academic Decathlon Stage
+description: >-
+  The school gymnasium transformed for the event. A <ansi fg="itemname">stage</ansi>
+  at one end holds two <ansi fg="itemname">podiums</ansi> facing each other and a
+  moderator's table. <ansi fg="itemname">Bleachers</ansi> line both sides, packed
+  with students, faculty, Frank Madison's entire hotel board, and miscellaneous
+  observers who have no idea what they're watching but can feel the stakes. A <ansi fg="itemname">banner</ansi>
+  above the stage reads "ACADEMIC DECATHLON -- KNOWLEDGE IS POWER." One podium
+  is labeled "BILLY MADISON." The other is labeled "ERIC GORDON." The <ansi fg="itemname">scoreboards</ansi>
+  on either side of the stage are even. This is the final round. The <ansi fg="itemname">lights</ansi>
+  are very bright. Everyone is watching. Billy stands at his podium looking like a
+  man who has spent twelve grades getting to this exact moment and is not going to
+  waste it. <ansi fg="exit">South</ansi> returns to the cafeteria.
+mapsymbol: D
+maplegend: Academic Decathlon Stage
+biome: house
+exits:
+  south:
+    roomid: 2370
+nouns:
+  stage: >-
+    A raised wooden stage that normally hosts school plays and talent shows has
+    been reconfigured for maximum academic theater. The wood creaks under the
+    weight of expectations.
+  podiums: >-
+    Two podiums face each other across the stage. Billy's has a juice box on
+    the shelf below the lectern, placed there by Carl. Eric's has a glass of
+    water and a legal pad with notes in aggressive handwriting. The contrast
+    tells you everything.
+  bleachers: >-
+    The bleachers are at capacity. Students, teachers, Frank Madison's board of
+    directors (looking confused and uncomfortable), and in the front row, Veronica
+    Vaughn, who is watching Billy with an expression that is not quite professional
+    neutrality. Carl is three rows back, leaning forward, his hands folded.
+  banner: >-
+    ACADEMIC DECATHLON -- KNOWLEDGE IS POWER. The banner is professionally made
+    and hung crooked. Someone noticed but no one fixed it. In the history of
+    academic competition, this is fine. The knowledge remains powerful regardless
+    of banner alignment.
+  scoreboards: >-
+    The scoreboards on both sides read the same number. Tied. Every point has
+    mattered. Every answer has counted. It comes down to this: one question,
+    one answer, the whole thing hinging on one grade's worth of knowledge that
+    Billy Madison has spent the last year actually learning.
+  lights: >-
+    Stage lights pointed at both podiums with the impersonal brightness of
+    spotlight, which finds both the prepared and the unprepared equally and
+    offers no comfort to either.
+spawninfo:
+- mobid: 557
+  message: "<ansi fg=\"yellow\">Eric Gordon strides onto the stage and takes his podium with the satisfaction of a man who has already decided he's won.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The bleachers creak as three hundred people collectively hold their breath.
+- The scoreboards click and reset, ready for the final answer.
+- Eric Gordon writes something on his legal pad and underlines it twice with grim satisfaction.
+- Billy's juice box sits on the shelf below his podium. Carl put it there. It means something.
+- The banner sways slightly in the gym's air conditioning, its message unchanged.
+- The moderator clears their throat and the entire room goes quiet with a snap.
+- 'From the front row, a single voice: Carl, very quietly, saying "You can do it."'

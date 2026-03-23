@@ -1,0 +1,49 @@
+roomid: 2365
+zone: Billy Madison
+title: The Playground
+description: >-
+  An asphalt expanse behind the elementary school, bounded by a chain-link fence
+  and populated by the full anarchy of recess. A <ansi fg="itemname">swing set</ansi>
+  lists slightly to one side. A <ansi fg="itemname">jungle gym</ansi> painted yellow
+  has been climbed by approximately fourteen thousand children. The <ansi fg="itemname">blacktop</ansi>
+  has four-square courts painted on it, three of them faded, one recently repainted
+  by someone who cares. In the center of everything is a large open space clearly
+  designated for one purpose: <ansi fg="itemname">dodgeball</ansi>. The red rubber
+  balls are racked near the fence. Everyone gives this space a certain amount of
+  respect. To the <ansi fg="exit">north</ansi> is the hallway. To the <ansi fg="exit">south</ansi>
+  is the middle school.
+mapsymbol: G
+maplegend: The Playground
+biome: land
+exits:
+  north:
+    roomid: 2362
+  south:
+    roomid: 2367
+nouns:
+  swings: >-
+    Four swings, two of which work perfectly and two of which have that specific
+    chain-twist that turns a normal swing into a spinning experience. The good
+    swings are always taken. The twisted ones build character.
+  jungle: >-
+    The yellow jungle gym has the structural integrity of something built to
+    last and the aesthetic of something built in 1972. It has been repainted
+    four times. Every layer is a different year. If you could core it like a
+    tree, you'd find the history of the school's budget in paint colors.
+  blacktop: >-
+    Four-square courts, hopscotch grids, the vague residue of a game of
+    marbles from 1994. The asphalt here is the archive of childhood. Also
+    it has scraped many knees.
+  dodgeball: >-
+    The dodgeball court is an open rectangle of blacktop with red balls
+    stacked neatly in a wire rack by the fence. There is a hierarchy to
+    dodgeball. There is always a hierarchy. You look at the balls and
+    feel something primal and joyful and slightly violent stir in you.
+idlemessages:
+- A red dodgeball rolls slowly across the blacktop in the wind, coming to rest at your feet.
+- The swing set creaks rhythmically in the breeze, even though no one is on it.
+- From somewhere behind the jungle gym, the sound of a complex negotiation between seven-year-olds.
+- A tetherball pole stands alone at the edge of the court. The tetherball is wound tight.
+- The bell has not rung yet. Recess continues. The blacktop universe expands.
+- 'Chalk drawings cover every inch of available pavement: suns, hopscotch, the word "RECESS FOREVER."'
+- Someone left a lunch box on the jungle gym. It has been there since Tuesday.

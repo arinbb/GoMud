@@ -1,0 +1,19 @@
+itemid: 161
+name: Billy Madison film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Billy Madison (1995)</ansi>
+description: >-
+  A standard 35mm film reel in a round metal canister, the kind that lived in
+  theater projection booths from the age before digital. The canister lid has
+  a handwritten label in blue marker: "BILLY MADISON (1995) -- UNIVERSAL -- 1h 29m."
+  Someone has drawn a small penguin next to the title, just a few strokes of ink,
+  but unmistakably a penguin with a bow tie. The reel smells of old celluloid and
+  something like peanut butter, which should not be possible. When you hold it up
+  to the light, the frames show a man in a Hawaiian shirt standing in the middle of
+  an elementary school hallway, looking slightly lost and entirely earnest. He is
+  holding a juice box. He is trying very hard. The whole reel has that quality --
+  everything in it is trying very hard and meaning every second of it.
+type: object
+subtype: usable
+uses: 0
+value: 0

@@ -1,0 +1,53 @@
+roomid: 2361
+zone: Billy Madison
+title: The Pool
+description: >-
+  An Olympic-sized <ansi fg="itemname">swimming pool</ansi> stretches across the
+  back of the Madison estate, its water an obscene shade of blue that only comes
+  from money. <ansi fg="itemname">Lawn chairs</ansi> are scattered around the deck
+  at the angles of a man who spends serious time out here. A <ansi fg="itemname">beer</ansi>
+  cooler sits near the diving board, sweating in the afternoon sun. The <ansi fg="itemname">diving board</ansi>
+  is premium fiberglass and has been used extensively. An inflatable <ansi fg="itemname">penguin</ansi>
+  floats in the shallow end, though something about it seems less inflatable than
+  it should. More real. More like a penguin that has opinions. The <ansi fg="exit">south</ansi>
+  leads back to the mansion.
+mapsymbol: P
+maplegend: The Pool
+biome: land
+exits:
+  south:
+    roomid: 2360
+nouns:
+  pool: >-
+    The water is that particular blue that only exists in private pools maintained
+    by people with too much money. It is perfect and perfectly pointless and Billy
+    loves it with the uncomplicated love of a man who has never had to think about
+    pool maintenance.
+  chairs: >-
+    Lawn chairs arranged with the casual precision of someone who has given
+    serious thought to optimal tanning angles. Several have Billy's imprint
+    permanently pressed into them. There is a specific lawn chair that is
+    Billy's chair. Everyone knows which one it is.
+  beer: >-
+    A cooler full of cold beers and also one juice box, which is clearly
+    Billy's. The juice box is apple flavored. This feels correct.
+  board: >-
+    The diving board flexes with a satisfying spring. Probably a premium model.
+    The kind of diving board you only get if your dad owns the hotel chain.
+  penguin: >-
+    An inflatable penguin float for the pool, except it looks extraordinarily
+    lifelike, and its eyes are following you, and it tilts its head in a way
+    that no inflatable has ever tilted its head. It is Ernie. You feel this
+    in your chest. Ernie is the realest thing in New Jersey right now.
+spawninfo:
+- mobid: 561
+  message: "<ansi fg=\"yellow\">Ernie the Penguin waddles in from the pool deck, adjusting his invisible bow tie with tremendous dignity.</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- The pool water laps gently against the tile in the breeze from nowhere.
+- The inflatable penguin turns slightly in the pool, as if tracking movement.
+- A beer can pops open by itself from the heat. This is fine. Everything is fine.
+- The diving board groans slightly, as if remembering a spectacular cannonball.
+- Sunlight breaks into prismatic shards on the pool surface and the whole world goes quiet for a moment.
+- 'From inside the mansion, faintly: "ERNIE! Have you seen my juice box?" Silence. Then: "Never mind, I found it."'
+- The penguin in the pool blinks. You are certain it blinked.

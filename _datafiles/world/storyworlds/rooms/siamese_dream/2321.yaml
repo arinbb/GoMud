@@ -1,0 +1,47 @@
+roomid: 2321
+zone: Siamese Dream
+title: Cherub Rock
+description: >-
+  A cathedral of feedback. The <ansi fg="itemname">walls</ansi> are made of
+  sound -- layers of distorted guitar stacked so high they become architecture,
+  amber and gold, the color of honey in late afternoon light. Reverb pools
+  in the corners like water. The floor vibrates at a low frequency that
+  you feel more in your chest than in your feet. At the center, a single
+  <ansi fg="itemname">microphone</ansi> stands in a ring of amplifiers, the
+  amps all pointed inward, all turned to ten, all humming with barely
+  contained intention. The air smells of overdriven tubes and the particular
+  ozone smell of electricity pushed past its limits. This is the first song.
+  This is the opening salvo. The <ansi fg="exit">studio</ansi> is back to the
+  south.
+mapsymbol: '1'
+maplegend: Cherub Rock
+biome: house
+exits:
+  south:
+    roomid: 2320
+nouns:
+  walls: >-
+    The walls are not plaster or concrete. They are made of compressed guitar
+    signal, wave after wave, each one a slightly different tuning, a slightly
+    different tempo, all of them conspiring together into something that looks
+    solid. Touch one and your fingers disappear into warm vibration. The honey
+    color comes from somewhere without a source, everywhere and nowhere, the
+    color of the song itself.
+  microphone: >-
+    A Shure SM7B on a chrome stand, positioned exactly right -- close enough
+    for presence, far enough for air. The cable trails across the floor to the
+    amp ring. Someone has written on the pop filter in black marker: WHO WANTS
+    HONEY? The question is rhetorical. Everyone wants honey. That is the point.
+  amplifiers: >-
+    Eight Marshall amplifiers in a ring, pointed inward, all turned to the same
+    gain setting. The speaker cones flutter with sub-bass frequencies. The
+    combined output of eight Marshalls at this proximity creates a standing wave
+    -- a wall of sound you walk through rather than walk past. Your clothes
+    vibrate. Your teeth hum. The sound is a physical force.
+idlemessages:
+- The feedback sustains longer than physics should allow, the note bending upward through registers that have no names.
+- Honey-colored light pulses with the tempo of the song, the room itself breathing in four-four time.
+- The amplifier ring hums with barely contained power, each speaker cone fluttering at the edge of breakup.
+- 'A chord rises from somewhere below the floor -- massive, distorted, a question posed at maximum volume.'
+- The smell of hot amp tubes fills the air, sweet and electric, the smell of something working exactly as hard as it can.
+- The walls of sound shift slightly, a new frequency threading through the existing layers, impossible to locate.

@@ -1,0 +1,33 @@
+mobid: 527
+zone: the_office
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote works a crossword puzzle with the focused absorption of a man who has found his purpose."
+  - "emote checks the clock on the wall. Looks at it. Looks at the crossword."
+  - "say Did I stutter?"
+  - ''
+  - "emote sighs at something that has appeared in his peripheral vision. The sigh is comprehensive."
+  - "emote writes a crossword answer and looks satisfied."
+  - "say I wake up every morning in a bed that is too comfortable, with a wife who is too wonderful, and I come to this place. That is my life."
+  - "emote checks the clock again. It is not five o'clock. It is never five o'clock when you want it to be."
+activitylevel: 10
+character:
+  name: Stanley Hudson
+  description: >-
+    A heavyset man in his mid-fifties in a work shirt and slacks and dress shoes,
+    with a face that communicates his position on virtually everything without
+    moving. He has a crossword puzzle open on his desk every day. He finishes it
+    every day. He does his actual work during the remaining time, which is
+    sufficient. He has been at Dunder Mifflin for a long time and has developed
+    a system for getting through the day that involves the crossword, a minimum
+    of unnecessary engagement, and pretzel days. He loves pretzel day.
+  raceid: 1
+  level: 7
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172

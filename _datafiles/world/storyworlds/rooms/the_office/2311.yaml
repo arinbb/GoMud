@@ -1,0 +1,56 @@
+roomid: 2311
+zone: The Office
+title: The Rooftop
+description: >-
+  The roof of the Scranton Business Park. Access through a heavy door at the top of
+  the stairwell, and then you are outside, and Scranton opens up around you. The
+  <ansi fg="itemname">Scranton skyline</ansi> from up here is genuinely beautiful --
+  the bridge, the hills going soft at the edges, the water tower, the spread of the
+  city in the late afternoon light. A <ansi fg="itemname">HVAC unit</ansi> hums in
+  the corner, the ambient bass note of the building's life. Someone has left a
+  <ansi fg="itemname">lawn chair</ansi> up here -- a folding chair, slightly rusted,
+  positioned to face the view. The chair has been here long enough to belong. The
+  air is fresh in a way the inside of the building has never been. This is the kind
+  of place where things happen that can only happen outside, above everything, when
+  the ordinary world is still visible but also somehow very far below. The <ansi fg="exit">stairwell</ansi>
+  is back down.
+mapsymbol: T
+maplegend: Rooftop
+biome: city
+exits:
+  down:
+    roomid: 2310
+nouns:
+  skyline: >-
+    The Scranton, Pennsylvania skyline at whatever time of day it is. The Delaware
+    Avenue bridge curves over the river. The hills are green or brown or white
+    depending on the season, and regardless of the season they are soft, the way
+    Pennsylvania hills are soft. The water tower reads 'SCRANTON' in letters you
+    can see from up here. The downtown buildings are clustered together in a modest,
+    dignified way. It is not New York. It is not Chicago. It is Scranton. And the
+    show spent nine seasons arguing, gently and persistently, that this is enough.
+    Standing up here, you believe it.
+  hvac: >-
+    The HVAC unit on the corner of the roof -- a large metal box, painted industrial
+    grey, venting the building's breath into the sky. It hums constantly and has
+    been humming since the building was installed. This is the source of the hum
+    that pervades every room in Dunder Mifflin. You found it. It does not solve anything.
+  chair: >-
+    A folding lawn chair, aluminum frame, plastic webbing in green and white, one
+    leg slightly shorter than the others and stabilized by a folded paper wedge. It
+    is facing the view. Someone brought it up here on purpose, at some specific time,
+    and left it here. Whether they came back to it or whether they left it as a
+    standing invitation is unclear. You sit in it anyway. It holds.
+spawninfo:
+- mobid: 526
+  message: '<ansi fg="8">Angela Martin is on the rooftop, standing very straight near the HVAC unit with her arms crossed and an expression that suggests she came up here to be alone and the HVAC unit is acceptable company.</ansi>'
+  respawnrate: 5 real minutes
+idlemessages:
+- The wind moves across the rooftop -- not strong, just present, the way Scranton air moves.
+- 'The Scranton skyline sits in the middle distance doing what it does: being sufficient.'
+- The HVAC unit cycles up and then down, its hum deepening and lightening through the day.
+- A bird lands on the parapet wall, looks at the view, leaves.
+- From below, muffled through the roof, the sound of the building going about its day.
+- The lawn chair sways almost imperceptibly in the wind, as if someone recently sat in it.
+- The sky is doing something particular up here -- the clouds moving the way clouds move when you are watching them.
+- In the evening light, the Delaware Avenue bridge glows at its edges, just slightly, just enough.

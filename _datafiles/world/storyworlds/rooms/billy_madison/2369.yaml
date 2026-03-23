@@ -1,0 +1,58 @@
+roomid: 2369
+zone: Billy Madison
+title: The Principals Office
+description: >-
+  Principal Max Anderson's office is the kind of office that becomes a comfortable
+  place after you've been sent here enough times. The <ansi fg="itemname">desk</ansi>
+  is buried in papers but organized in the way of someone who knows exactly where
+  everything is. A <ansi fg="itemname">framed photo</ansi> on the desk shows Anderson
+  with a fishing rod and a look of pure uncomplicated happiness. Behind him on the
+  <ansi fg="itemname">bookshelf</ansi> are education theory books, several wrestling
+  trophies from the 1970s that Anderson never mentions but never puts away, and a
+  small framed sign that reads "EVERY STUDENT CAN LEARN -- SOME DAYS MORE THAN
+  OTHERS." The <ansi fg="itemname">diplomas</ansi> on the wall are genuine. Anderson
+  earned every one. He sits across from you with the expression of a man who has seen
+  everything and still chooses to be kind about it. <ansi fg="exit">South</ansi>
+  returns to the hallway.
+mapsymbol: O
+maplegend: The Principals Office
+biome: house
+exits:
+  south:
+    roomid: 2368
+nouns:
+  desk: >-
+    Principal Anderson's desk is a working desk, not a showpiece. Papers in
+    stacks that have meaning. A coffee mug that says "World's Okayest Principal"
+    that a student gave him as a joke and he kept un-ironically. A red pen
+    that has graded approximately one million papers. A desk calendar with
+    appointments and also small notes to himself like "Buy milk" and "Call
+    Billy's dad re: progress report."
+  photo: >-
+    A framed photograph of Principal Anderson standing on a dock somewhere,
+    holding a fish, grinning with unguarded happiness. He looks different in
+    this picture -- younger and lighter and entirely himself. On the back of
+    the frame, barely visible, someone has written "MAX, SUMMER 1989."
+  bookshelf: >-
+    Education theory, pedagogical journals, a worn copy of Piaget's child
+    development work with so many tabs it barely closes. And the wrestling
+    trophies -- three of them, never mentioned, never removed. "STATE CHAMPION
+    1974." "RUNNER-UP 1975." "MOST IMPROVED 1973." The 1973 one he likes best.
+  diplomas: >-
+    Four frames on the wall: Bachelor of Education, Master of School Administration,
+    a certificate for something called "Restorative Justice in the Classroom," and
+    in a slightly different frame, a drawing made in crayon that says "PRINSIPAL
+    ANDERSON IS THE BEST by Billy M., AGE 8." It's the only one that gets dusted
+    regularly.
+spawninfo:
+- mobid: 558
+  message: "<ansi fg=\"yellow\">Principal Anderson looks up from his desk with an expression that is simultaneously 'I know why you're here' and 'I believe you can do better.'</ansi>"
+  respawnrate: 5 real minutes
+idlemessages:
+- Principal Anderson makes a note in the margin of a paper and underlines it twice.
+- The clock on the wall ticks with the steady patience of a man who has been principal for twenty-two years.
+- A student passes in the hall outside. Anderson looks up, says nothing, looks back down.
+- The wrestling trophies catch the afternoon light from the window and throw small gold shadows.
+- Anderson drinks from his "World's Okayest Principal" mug with the contentment of someone who has the right mug.
+- The phone rings. Anderson answers it with "Anderson." It is not a greeting. It is a complete sentence.
+- The framed crayon drawing shifts slightly in a draft from under the door.

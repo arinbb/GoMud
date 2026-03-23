@@ -1,0 +1,33 @@
+mobid: 526
+zone: the_office
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote purses her lips at something in the middle distance that has disappointed her."
+  - "say My cats are fine. Thank you for not asking."
+  - "emote realigns the framed photo of Sprinkles on her desk by approximately two millimeters."
+  - ''
+  - "emote looks across the office with the expression of a woman who has logged seven violations in the past hour."
+  - "say Standards exist for a reason."
+  - "emote straightens her cardigan and the act is a small judgment on everyone who has not straightened their cardigan."
+  - "say Bandit is doing very well. I have seventeen cats. This is a normal number of cats."
+activitylevel: 20
+character:
+  name: Angela Martin
+  description: >-
+    A small, precise woman in a cardigan buttoned to the collar and a long skirt
+    and modest loafers. Her hair is neat. Her posture is correct. Her expression
+    is the expression of a woman with extremely high standards for everything,
+    including the behavior of other people in her vicinity, and a genuine
+    incomprehension of why those standards are not universally shared. She loves
+    cats with a completeness that is one of her two or three unguarded qualities.
+    The rest she guards carefully.
+  raceid: 1
+  level: 6
+  equipment:
+    body:
+      itemid: 20105
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20172

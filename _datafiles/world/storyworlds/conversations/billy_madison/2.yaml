@@ -1,0 +1,19 @@
+-
+  Supported:
+    "eric gordon": ["frank madison"]
+  Conversation:
+    - ["#1 say Frank, the board has reviewed the projections. The numbers support a transition."]
+    - ["#2 emote keeps writing without looking up."]
+    - ["#1 say With proper management, the chain could triple in size within five years."]
+    - ["#2 say I built it with sixty rooms and a bad carpet. I'll decide when it's time."]
+    - ["#1 emote smooths his lapel. 'Of course. I'm only thinking about the company's future.'"]
+    - ["#2 emote looks up once. 'I know what you're thinking about.' He goes back to writing."]
+-
+  Supported:
+    "eric gordon": ["frank madison"]
+  Conversation:
+    - ["#1 say Frank. The academic decathlon is a formality. You know that."]
+    - ["#2 say I set the terms. I'll honor them."]
+    - ["#1 say Be reasonable. Billy is a good kid but he's not --"]
+    - ["#2 say I set the terms. I'll honor them.", "#2 emote turns back to the window."]
+    - ["#1 emote adjusts his tie. His expression does something controlled.", "#1 say Of course."]

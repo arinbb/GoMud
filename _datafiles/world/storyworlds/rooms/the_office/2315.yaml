@@ -1,0 +1,59 @@
+roomid: 2315
+zone: The Office
+title: The Church
+description: >-
+  The First United Methodist Church of Scranton, Pennsylvania, where the ordinary
+  extraordinary moments of Dunder Mifflin have gathered for the important occasions.
+  The <ansi fg="itemname">sanctuary</ansi> is plain white with dark wood pews and
+  stained glass windows that let in a filtered Pennsylvania light that makes the
+  dust motes visible, slowly turning. Phyllis Vance was married here, to Bob Vance
+  of Vance Refrigeration, in a ceremony that Michael partially hijacked. Jim Halpert
+  stood in this church in a grey suit and looked at a woman in a white dress and
+  the look on his face was a whole season of television compressed to a single moment.
+  A <ansi fg="itemname">program</ansi> on the pew reads: 'Phyllis Lapin and Bob Vance.'
+  A small <ansi fg="itemname">altar arrangement</ansi> of white flowers is still fresh.
+  The <ansi fg="itemname">pews</ansi> are half-full with the sense of people who have
+  been here, recently, for something that mattered. The <ansi fg="exit">Schrute Farms
+  road</ansi> is to the east.
+mapsymbol: CH
+maplegend: The Church
+biome: house
+exits:
+  east:
+    roomid: 2314
+nouns:
+  sanctuary: >-
+    The First United Methodist Church sanctuary: white walls, dark pews, morning
+    light through the stained glass doing something particular with the air. It
+    is the kind of church that looks exactly like a church, which is to say it is
+    exactly right. The acoustics are quiet in the way that church acoustics are
+    quiet -- sounds travel differently here than outside. Voices carry. Silences
+    carry more.
+  program: >-
+    The wedding program: 'The Wedding of Phyllis Lapin and Bob Vance of Vance
+    Refrigeration.' The cover has two interlocking rings and a small photo of the
+    couple. Inside: hymn selections, the order of service, a note from Phyllis
+    thanking 'my Dunder Mifflin family' and mentioning specifically that everyone
+    is invited to the reception but that there is a seating chart and 'please find
+    your seat before the cocktail hour ends.' Someone has written in the margin,
+    in Jim's handwriting: 'found our seat. also, wow.'
+  flowers: >-
+    The altar arrangement: white lilies, white roses, green fern, tied with a white
+    ribbon. They are fresh. The church smells like them. Phyllis chose them herself
+    and she chose well -- they are exactly the right flowers for a wedding in a
+    Pennsylvania church in late February or early April, whichever it is.
+  pews: >-
+    Dark oak pews, polished, the kneelers down from the last service. The cushions
+    are needle-pointed by various members of the congregation over the years, each
+    one different, each one an act of labor and patience. The pew where Jim sat at
+    the wedding is three rows back on the left. You can tell which one it is.
+spawninfo: []
+idlemessages:
+- The stained glass light moves slowly across the pews as the sun tracks across the Pennsylvania sky.
+- The flowers on the altar are still fresh. Someone brought them recently or they last a very long time.
+- A hymnal is open on one of the pews, left mid-page by someone who had to go.
+- The church is quiet in the way churches are quiet -- a sound that has its own texture.
+- 'From outside the front doors, the muffled sound of Pennsylvania: cars passing, birds, a distant train.'
+- The program on the pew rustles slightly in the air from the heating vent. 'Bob Vance of Vance Refrigeration.'
+- Light moves across the floor at the rate that light moves, which is patient and inevitable.
+- In the back of the church, someone has forgotten their coat on a pew. It is a sensible coat.

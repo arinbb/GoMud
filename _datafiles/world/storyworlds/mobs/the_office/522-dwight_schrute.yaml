@@ -1,0 +1,37 @@
+mobid: 522
+zone: the_office
+hostile: false
+maxwander: 1
+idlecommands:
+  - "say Fact: bears eat beets. Bears. Beets. Battlestar Galactica."
+  - "emote straightens everything on his desk with the focused precision of a man who will notice if anything is moved."
+  - "say As Assistant Regional Manager, I am responsible for the safety and security of all staff."
+  - "emote looks around the office with the surveillance intensity of someone who is definitely the right person for this."
+  - "say I have been farming beets since I was six years old. I am not bragging. I am stating a fact."
+  - ''
+  - "say The three most deadly creatures in America: the black bear, the Eastern diamondback rattlesnake, and the accountant."
+  - "emote checks the desk drawer, confirms its contents, closes it."
+  - "say Battlestar Galactica is not science fiction. It is science fact with narrative elements."
+activitylevel: 35
+character:
+  name: Dwight Schrute
+  description: >-
+    A compact man in his early thirties in a collared work shirt, dark trousers,
+    heavy work boots, and a necktie that communicates authority rather than fashion.
+    His posture is military. His expression is the permanent expression of a man
+    who is ready for something and is somewhat disappointed that the something has
+    not yet happened. He has a bobblehead of himself on his desk. He considers
+    this normal. He is the Assistant Regional Manager -- he will correct you if you
+    say Regional Manager -- and he takes this seriously with a completeness that
+    passes through absurdity and comes out the other side as something almost noble.
+  raceid: 1
+  level: 9
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170
+    neck:
+      itemid: 20180

@@ -1,0 +1,34 @@
+mobid: 559
+zone: billy_madison
+hostile: false
+maxwander: 1
+activitylevel: 60
+idlecommands:
+  - "emote folds a brown paper lunch bag with precise, practiced care."
+  - "say Lunch is ready. I put extra chips in today because today feels like an extra chips day."
+  - "emote writes a note on a small piece of paper and tucks it into a bag."
+  - "say You can do it. I know you can do it. I've always known."
+  - "emote stirs something on the stove without looking at it, the way you only can after twenty years."
+  - ""
+  - "emote checks the refrigerator, counts the juice boxes, nods."
+  - "say Some days the job is making sure things are good. Most days that's the only job."
+character:
+  name: Carl Alphonse
+  description: >-
+    A man in his forties who has been the Madisons' butler and, more importantly,
+    their family, for twenty years. He wears an apron over dark trousers like a
+    man who takes both the cooking and the presentation seriously. His face has
+    the kindness of someone who decided a long time ago that kindness was the right
+    call and has never revisited that decision. He packs Billy's lunch every day.
+    He writes a note. He has written approximately seven thousand notes. He means
+    every one of them.
+  raceid: 1
+  level: 4
+  alignment: 90
+  equipment:
+    body:
+      itemid: 20115
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

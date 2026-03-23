@@ -1,0 +1,36 @@
+mobid: 562
+zone: billy_madison
+hostile: false
+maxwander: 1
+activitylevel: 40
+idlecommands:
+  - "emote reviews documents at his desk with the thorough attention of someone who trusts nothing unreviewed."
+  - "say The hotel chain didn't build itself. Someone had to make the hard calls."
+  - "emote looks at the photo on his desk for a moment and then looks away."
+  - "say I've been thinking about the succession plan. I'm still thinking about it."
+  - "emote signs something. The pen moves without hesitation."
+  - ""
+  - "emote stands at the window looking at the property for a long time without moving."
+character:
+  name: Frank Madison
+  description: >-
+    A man in his sixties who built a hotel empire from nothing and is now facing
+    the question of what he built it for. He is broad-shouldered and patrician in
+    a New Jersey way -- the money is earned, not inherited. His suit is the same
+    cut as the one he bought when the first hotel turned a profit. He stands like
+    a man who has been making decisions for forty years and still finds it tiring.
+    He loves his son more than he can easily say, which is why he usually doesn't
+    say it, which is something he has started to understand about himself too late
+    and also just in time.
+  raceid: 1
+  level: 8
+  alignment: 40
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20156
+    feet:
+      itemid: 20172
+    neck:
+      itemid: 20180

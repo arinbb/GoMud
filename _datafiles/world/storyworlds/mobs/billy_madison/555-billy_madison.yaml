@@ -1,0 +1,37 @@
+mobid: 555
+zone: billy_madison
+hostile: false
+maxwander: 2
+activitylevel: 80
+idlecommands:
+  - "emote reads a shampoo bottle with intense concentration, lips moving slightly."
+  - "say Shampoo is better. I go on first and clean the hair. No wait -- conditioner is better. I leave the hair silky and smooth. Oh really fool? REALLY?"
+  - "emote looks around the room for the penguin. 'ERNIE? ERNIE, BUDDY?'"
+  - "say I was just thinking about this. I've been to twelve grades now and the weirdest part is I actually liked it."
+  - "emote holds up a juice box and considers it seriously before inserting the straw."
+  - "say Back to school. Back to school. To prove to Dad that I'm not a fool."
+  - ""
+  - "emote mouths the alphabet to himself, getting slightly stuck around Q, restarting, nailing it."
+  - "say You know what? I learned something today. I actually legitimately learned something today."
+  - "emote waves at someone who may or may not be there."
+character:
+  name: Billy Madison
+  description: >-
+    A man in his late twenties with the energy of someone who has no idea he should
+    be embarrassed about anything. His hair is slightly chaotic. He is holding a
+    juice box. He looks like someone who got everything wrong for a long time and
+    recently started getting things right and cannot quite believe it. His eyes are
+    warm and slightly unfocused, as if he is always in the middle of a thought that
+    was better before he said it out loud. He means well, constantly and completely.
+    He is wearing a Hawaiian shirt in a way that suggests he has never considered
+    not wearing a Hawaiian shirt.
+  raceid: 1
+  level: 5
+  alignment: 100
+  equipment:
+    body:
+      itemid: 20102
+    legs:
+      itemid: 20155
+    feet:
+      itemid: 20174

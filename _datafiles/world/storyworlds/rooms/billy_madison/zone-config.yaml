@@ -1,0 +1,15 @@
+name: Billy Madison
+roomid: 2360
+autoscale:
+  minimum: 1
+  maximum: 5
+defaultbiome: house
+mutators:
+- mutatorid: back-to-school
+idlemessages:
+- Someone nearby says something completely ridiculous and means every word of it.
+- The smell of paste and construction paper drifts on the breeze.
+- A school bus rumbles past, trailing laughter and poorly memorized multiplication tables.
+- Someone just got hit in the face with a dodgeball and they totally deserved it.
+- The lake behind the mansion sparkles in the New Jersey afternoon.
+- A penguin waddles past in the middle distance. You are absolutely certain you did not imagine it.

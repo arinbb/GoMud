@@ -1,0 +1,32 @@
+mobid: 525
+zone: the_office
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote stares at the microwave, then at his lunch, then back at the microwave."
+  - "say My chili is famous. People have said so."
+  - "emote counts something on his fingers, gets to seven, starts over."
+  - ''
+  - "emote opens the refrigerator and looks into it with the patience of a man waiting for inspiration."
+  - "say The thing about cookies is there are never enough. That is the thing about cookies."
+  - "emote gets a snack from the vending machine, looks at it, eats it, is satisfied."
+  - "say I'm good at numbers. People don't always know that about me. But I'm good at numbers."
+activitylevel: 15
+character:
+  name: Kevin Malone
+  description: >-
+    A large man in his forties in a flannel shirt and khakis, with a soft face that
+    carries an expression of chronic low-level contentment interrupted occasionally
+    by genuine enthusiasm about food. Kevin Malone is an accountant at Dunder Mifflin
+    Scranton and is better at accounting than people give him credit for, which is
+    a quiet fact the show drops in occasionally and then moves past. He makes a chili.
+    The chili is famous. The chili did not survive the morning of February 13th, 2009.
+  raceid: 1
+  level: 5
+  equipment:
+    body:
+      itemid: 20101
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20171

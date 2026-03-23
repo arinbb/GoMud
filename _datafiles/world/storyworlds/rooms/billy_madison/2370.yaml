@@ -1,0 +1,50 @@
+roomid: 2370
+zone: Billy Madison
+title: The Cafeteria
+description: >-
+  The school cafeteria at peak Thursday energy. <ansi fg="itemname">Long tables</ansi>
+  with attached seats stretch in rows, filling and emptying with the tidal rhythm
+  of lunch periods. The <ansi fg="itemname">lunch line</ansi> stretches along one
+  wall, staffed by the lunch ladies behind a sneeze guard with the focused energy of
+  professionals who have served ten thousand kids and remain unshakeable. The <ansi fg="itemname">menu
+  board</ansi> lists today's special in hand-lettered chalk: SLOPPY JOE. CORN.
+  CHOCOLATE MILK. The smell of sloppy joe fills the entire building and possibly
+  the parking lot. <ansi fg="itemname">Lunch trays</ansi> clatter and slide in a
+  rhythm that is its own kind of music. Someone at table four is building a tower
+  out of chocolate milk cartons. This will end poorly but not yet. <ansi fg="exit">West</ansi>
+  returns to the hallway. <ansi fg="exit">North</ansi> leads to the stage.
+mapsymbol: C
+maplegend: The Cafeteria
+biome: house
+exits:
+  west:
+    roomid: 2368
+  north:
+    roomid: 2371
+nouns:
+  tables: >-
+    The long cafeteria tables with their attached spinning seats -- the kind
+    that are technically comfortable for a seven-year-old and genuinely
+    uncomfortable for everyone else. Every table has a social designation that
+    no one has ever written down but everyone understands perfectly.
+  line: >-
+    The lunch line moves with the efficiency of a well-drilled operation. The
+    lunch staff behind the sneeze guard serve with the mechanical focus of
+    people who have found their calling. Portions are consistent. The sloppy
+    joe is distributed with a specific slap of the ladle that means business.
+  board: >-
+    TODAY: SLOPPY JOE -- CORN -- CHOCOLATE MILK -- FRUIT CUP. The sloppy joe
+    entry has been underlined. Someone among the lunch staff feels strongly about
+    the sloppy joe. You respect this.
+  trays: >-
+    Brown plastic lunch trays, the indestructible kind that have survived every
+    middle school experiment conducted upon them since 1978. Some have faded
+    graffiti from the Reagan era. They are essentially immortal.
+idlemessages:
+- The sloppy joe smell intensifies and then recedes like a very fragrant tide.
+- Someone drops a lunch tray at the far end of the room. The cafeteria erupts in applause.
+- The chocolate milk carton tower at table four grows by one more carton. Critically.
+- A lunch lady smacks the sloppy joe ladle on a new tray with professional authority.
+- The ambient noise of three hundred kids eating is its own kind of white noise, almost peaceful.
+- Someone argues about whether the sloppy joe counts as two food groups. The debate is heated.
+- A single corn kernel rolls off a tray and makes its long journey across the floor, solo, free.

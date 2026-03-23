@@ -1,0 +1,36 @@
+-
+  Supported:
+    "michael scott": ["*"]
+  Conversation:
+    - ["#1 say Hey. Hey. Let me ask you something."]
+    - ["#2 emote looks up."]
+    - ["#1 say Are we friends?"]
+    - ["#2 emote considers how to answer this."]
+    - ["#1 say Because I consider us friends. I consider everyone here my friend."]
+    - ["#1 say My family."]
+    - ["#1 emote looks around the office with genuine love."]
+    - ["#1 say This is my family. They don't always know it. But they feel it."]
+-
+  Supported:
+    "michael scott": ["*"]
+  Conversation:
+    - ["#1 say You know what I want more than anything?"]
+    - ["#2 emote waits."]
+    - ["#1 say I want to be loved."]
+    - ["#2 emote nods slowly."]
+    - ["#1 say Not romantically. I mean -- also romantically. But mainly. I just want people to love me."]
+    - ["#1 say Is that weird?"]
+    - ["#1 say That's what she said."]
+    - ["#1 emote laughs at his own joke with full conviction."]
+-
+  Supported:
+    "michael scott": ["*"]
+  Conversation:
+    - ["#1 say I am a great manager. I think you know this."]
+    - ["#2 emote waits with a neutral expression."]
+    - ["#1 say People think managing is about paperwork. Performance reviews. Quotas."]
+    - ["#1 say Those people have never managed."]
+    - ["#1 say Managing is about heart."]
+    - ["#1 emote puts hand on heart."]
+    - ["#1 say Right here. That is where the managing happens."]
+    - ["#2 emote has no response to this that would not start something."]

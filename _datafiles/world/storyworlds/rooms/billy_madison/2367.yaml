@@ -1,0 +1,55 @@
+roomid: 2367
+zone: Billy Madison
+title: Middle School Hallway
+description: >-
+  The middle school hallway hits differently. The <ansi fg="itemname">lockers</ansi>
+  are taller here, and someone has drawn on them with permanent marker in ways
+  the administration has given up fighting. The <ansi fg="itemname">bulletin board</ansi>
+  advertises a student council election in which the candidates are very serious
+  about the cafeteria pizza situation. <ansi fg="itemname">Trophy cases</ansi> display
+  the accumulated athletic achievements of the school and also several science fair
+  ribbons and one award for Best School Spirit that dates to 1989 and no one has
+  contested since. The hallway has the ambient tension of a place where social
+  hierarchies are being actively negotiated at all hours. You can feel the <ansi fg="itemname">social
+  pressure</ansi> from here. To the <ansi fg="exit">north</ansi> is the playground.
+  To the <ansi fg="exit">east</ansi> is the high school. To the <ansi fg="exit">west</ansi>
+  is O'Doyle territory.
+mapsymbol: J
+maplegend: Middle School Hallway
+biome: house
+exits:
+  north:
+    roomid: 2365
+  east:
+    roomid: 2368
+  west:
+    roomid: 2372
+nouns:
+  lockers: >-
+    Taller than the elementary school lockers but bearing the same accumulated
+    scars of adolescence. Phone numbers (to what?), band logos, the word
+    "WHATEVER" in bubble letters. One locker has a sticker of a skull. It
+    belonged to someone who was going through something, probably.
+  board: >-
+    Student council election! Vote for Melissa or vote for Derek. Melissa
+    promises to "fix the pizza situation." Derek promises "more pep." There
+    are posters in both their handwriting. Neither poster mentions the other.
+    This is already political.
+  cases: >-
+    Glass cases display football trophies, basketball trophies, a tennis trophy
+    for 1991 that no one saw coming, and three science fair ribbons for projects
+    on "Potato Electricity," "Does Music Affect Plant Growth?" (answer: yes), and
+    a project simply titled "THE FUTURE." The future project won second place.
+  pressure: >-
+    You can feel it. The invisible force field of middle school social dynamics.
+    Who is popular. Who is not. Who was popular last week and is not now. The whole
+    hallway vibrates at the frequency of twelve-year-olds trying to figure out
+    who they are, which is the highest-stress frequency in the known universe.
+idlemessages:
+- Two students argue near the lockers about something that will matter for exactly two more weeks.
+- A locker slams with a sound that echoes down the hall like a small explosion.
+- The trophy case catches the fluorescent light and throws it around in small triumphant rectangles.
+- Someone walks past very quickly, clearly in the middle of a social emergency.
+- The school PA system crackles but says nothing, as if reconsidering whatever it was about to say.
+- A backpack that has been dropped sits against a locker like a small abandoned monument.
+- The lunch bell is not yet ringing. The waiting is its own kind of tension.

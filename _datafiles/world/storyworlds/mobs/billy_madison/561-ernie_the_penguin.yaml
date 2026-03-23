@@ -1,0 +1,29 @@
+mobid: 561
+zone: billy_madison
+hostile: false
+maxwander: 2
+activitylevel: 40
+idlecommands:
+  - "emote waddles in a small dignified circle."
+  - "emote tilts its head and regards you with profound penguin intelligence."
+  - "emote adjusts an invisible bow tie with its wing."
+  - "emote stands very still at the edge of the pool, watching the water with the patience of someone who has all the time in the world."
+  - ""
+  - "emote blinks once, slowly, the way a penguin blinks when it is thinking about something deep."
+  - "emote makes a small sound that could be a word if you were listening at exactly the right frequency."
+character:
+  name: Ernie the Penguin
+  description: >-
+    A penguin of indeterminate realness. He stands about two feet tall and wears
+    what appears to be a tuxedo, which penguins technically always do, but Ernie
+    seems to wear his with particular intention. His eyes are dark and warm and
+    they track you with an attention that seems more than animal. Whether he is
+    real or imaginary is a philosophical question that Billy Madison has never
+    entertained because it is a stupid question. Ernie is real. Ernie is here.
+    Ernie is your friend.
+  raceid: 1
+  level: 2
+  alignment: 100
+  equipment:
+    body:
+      itemid: 20103

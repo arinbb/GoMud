@@ -1,0 +1,12 @@
+mutatorid: back-to-school
+namemodifier:
+  behavior: append
+  text: "(academic)"
+  colorpattern: rainbow
+descriptionmodifier:
+  behavior: append
+  text: The smell of chalk dust and cafeteria pizza is everywhere.
+  colorpattern: rainbow
+alertmodifier:
+  text: "Back to school. Back to school. To prove to Dad that you're not a fool."
+  colorpattern: rainbow

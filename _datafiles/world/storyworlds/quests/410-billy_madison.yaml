@@ -1,0 +1,30 @@
+questid: 410
+name: Billy Madison
+description: >-
+  A twenty-seven-year-old manchild must repeat grades 1 through 12 to earn his
+  father's hotel empire. Arrive at the Madison Mansion. Attend elementary school.
+  Survive third grade with Veronica Vaughn. Cross the playground into middle
+  school. Walk the high school. And finally, reach the Academic Decathlon Stage,
+  where everything comes down to one question. Billy has been studying. Billy
+  has been trying. You can do it, Billy. You really can.
+reward:
+  experience: 4500
+  item_id: 325
+  playermessage: >-
+    You have walked the whole journey -- the mansion, the crayon smell of
+    elementary school, Veronica's classroom with the gold stars and the turtle,
+    the playground, middle school's ambient social pressure, the high school
+    hallway, and finally the stage where it all came down to one question about
+    the Industrial Revolution. Billy answered it. He actually answered it.
+    As a memento of your time in New Jersey, Carl Alphonse presses a brown
+    paper lunch bag into your hands. Your name is on it in crayon. There is
+    a star near the top. Inside is a perfect peanut butter sandwich and a note.
+    The note says: You can do it.
+steps:
+- description: Arrive at the Madison Mansion. Begin the journey back to school.
+- description: Walk the elementary school hallway. The crayons. The paste. The kitten poster.
+- description: Visit Veronica's classroom. Meet the third-grade teacher. Try not to be weird about it.
+- description: Cross the playground. The dodgeball courts. The swings. The blacktop.
+- description: Enter the middle school. Navigate the social pressure and the trophy cases.
+- description: Walk the high school hallway. Almost there. Almost done.
+- description: Reach the Academic Decathlon Stage. This is what it was all for.
