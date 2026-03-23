@@ -1,0 +1,26 @@
+-
+  Supported:
+    "john hammond": ["dr. ian malcolm"]
+  Conversation:
+    - ["#1 say You know, Dr. Malcolm, I've been thinking about what you said. On the helicopter. Before we landed."]
+    - ["#2 emote shifts his injured leg", "#2 say You mean the part where I said the park would fail."]
+    - ["#1 say You were very certain."]
+    - ["#2 say The mathematics were certain. I was just communicating them."]
+    - ["#1 say We spared no expense. Every system, every redundancy—"]
+    - ["#2 say Your scientists were so preoccupied with whether or not they could that they didn't stop to think if they should."]
+    - ["#1 emote is quiet for a moment", "#1 say That's a very convenient argument for a man who didn't build anything."]
+    - ["#2 emote almost smiles", "#2 say You're not wrong about that. Building things is genuinely hard. What you built is genuinely extraordinary."]
+    - ["#1 say Then—"]
+    - ["#2 say The extraordinary part and the dangerous part are not in conflict. They are the same part."]
+-
+  Supported:
+    "john hammond": ["dr. ian malcolm"]
+  Conversation:
+    - ["#1 say When I was a young man, I ran a flea circus. Did I ever tell you that?"]
+    - ["#2 say You did not."]
+    - ["#1 say Tiny stage. Tiny lights. The people thought they could see the fleas performing. They couldn't, of course. But they believed. The wonder was real even if the trick was an illusion."]
+    - ["#2 emote listens without interrupting, which is unusual for him"]
+    - ["#1 say This park was supposed to be different. The real thing. Not an illusion."]
+    - ["#2 say It was real. That was the problem."]
+    - ["#1 emote looks at him", "#1 say You really take no pleasure in being right."]
+    - ["#2 say None whatsoever. I would very much like to have been wrong about this one."]

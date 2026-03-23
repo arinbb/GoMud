@@ -1,0 +1,24 @@
+mobid: 253
+zone: jurassic_park
+hostile: false
+maxwander: 1
+activitylevel: 35
+idlecommands:
+- emote examines a leaf sample up close, then sets it down and moves to the next specimen with efficient purpose.
+- say The paleobotany here is extraordinary. Some of these species have been extinct for sixty million years.
+- emote makes a quick note without slowing down.
+- say Alan needs to see this. The fern spore distribution alone would take years to study properly.
+- ""
+- emote glances around the room, assessing, already moving to the next thing.
+character:
+  name: Dr. Ellie Sattler
+  description: >-
+    A woman in her early thirties, dressed for fieldwork in practical layers,
+    hair pulled back. She moves through any room the way a capable person
+    moves through a crisis: efficiently, without drama, doing the next
+    necessary thing. She is a paleobotanist who has seen more than most of
+    her colleagues in plant biology, and she approaches the island's flora
+    with the focus of someone who knows that understanding it might save lives.
+    It might. She is already working on that.
+  raceid: 1
+  level: 8

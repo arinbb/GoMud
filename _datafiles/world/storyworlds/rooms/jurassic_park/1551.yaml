@@ -1,0 +1,64 @@
+roomid: 1551
+zone: Jurassic Park
+title: The Main Gates
+description: >-
+  The road ends at a pair of <ansi fg="itemname">massive wooden gates</ansi>,
+  thirty feet tall, fashioned from rough-hewn tropical hardwood and bound with
+  iron. <ansi fg="10">JURASSIC PARK</ansi> is carved into the crossbeam in
+  enormous letters, and torches flicker in iron brackets on either side despite
+  the daylight — a theatrical touch, deliberately primordial. The gates stand
+  open just now, though their sheer scale makes clear they could crush whatever
+  passed through them. Beyond the gates, the <ansi fg="exit">tour road</ansi>
+  curves north into the park interior, flanked by jungle so dense it forms a
+  green wall. A <ansi fg="itemname">viewing platform</ansi> stands to one side,
+  and a path leads <ansi fg="exit">west</ansi> along the perimeter toward the
+  raptor pens. The torches hiss and gutter in a breeze that carries the smell of
+  wet earth and something enormous living not far away.
+mapsymbol: G
+maplegend: Main Gates
+biome: land
+exits:
+  west:
+    roomid: 1550
+  north:
+    roomid: 1552
+  path:
+    roomid: 1566
+    mapdirection: west
+nouns:
+  gates: >-
+    Thirty feet of tropical hardwood banded with iron. The engineering is
+    medieval in spirit — massive, blunt, designed to hold back something that
+    does not negotiate. You notice the hinges are on the outside. Whatever
+    these gates were designed to contain, it was designed to push outward.
+  torches: >-
+    Iron wall brackets holding torches that burn even in daylight. Hammond's
+    idea, you imagine — everything theatrical, everything designed to evoke
+    wonder and awe. The flames gutter in the wet jungle breeze.
+  platform: >-
+    A wooden viewing platform built into the gate structure, with a ladder
+    and a safety railing. From up here, visitors could look down at the road
+    and the arriving jeeps. The railing is already weathering in the humidity.
+  sign: >-
+    The carved letters are enormous, each one a foot deep in the hardwood.
+    JURASSIC PARK. Below it, smaller: "Where the Mesozoic Era Lives Again."
+    Below that, an amber InGen logo. The whole thing radiates Hammond's gift
+    for spectacle.
+spawninfo:
+- mobid: 254
+  message: Robert Muldoon walks the fence line toward the raptor pen, shotgun under his arm.
+  idlecommands:
+  - emote surveys the perimeter with narrowed eyes, shotgun tucked under his arm.
+  - say Those fences better be holding. Check them again.
+  - ""
+  - emote adjusts his khaki hat and stares toward the raptor pen.
+  - say Something's off today. I can feel it.
+  - ""
+  respawnrate: 4 real minutes
+idlemessages:
+- The massive gates creak in the jungle wind, straining at their hinges as if something tested them from the other side.
+- The torches flare suddenly, driven sideways by a gust that smells of vegetation and distant rain.
+- From somewhere deep in the park, a sound rises and falls — not quite a call, not quite a warning.
+- The carved letters in the gate crossbeam cast long shadows in the torch light. JURASSIC PARK.
+- Insects sing in the jungle on both sides, a wall of sound that swells and ebbs with no apparent cause.
+- A security camera on the gate tower pans slowly, silently, watching the road.

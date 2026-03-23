@@ -1,0 +1,62 @@
+roomid: 1562
+zone: Jurassic Park
+title: The Kitchen
+description: >-
+  The staff kitchen is industrial steel — stainless prep tables, hanging pot
+  racks, commercial ovens, and a walk-in cold storage unit at the far end.
+  Everything gleams in the fluorescent light, which flickers every few seconds
+  when the backup generator cycles. The kitchen was designed to serve five
+  hundred guests a day. Right now it serves as something else. <ansi fg="red">The
+  walk-in door</ansi> is ajar, letting out cold air in a visible plume. The
+  <ansi fg="red">pot rack</ansi> sways slightly — not all of the swaying is
+  from the storm. <ansi fg="itemname">Ladles</ansi> and <ansi fg="itemname">pots</ansi>
+  hang in rows, any one of which would make a sound if disturbed. The kitchen
+  is very quiet. The kitchen is not empty. It is the kind of quiet that has
+  <ansi fg="red">intelligence</ansi> behind it — patient, specific, watching
+  the space between the prep tables with an attention that is not random. The
+  entrance is to the <ansi fg="exit">west</ansi>. There is nowhere else to go.
+mapsymbol: K
+maplegend: Kitchen
+biome: house
+exits:
+  west:
+    roomid: 1559
+spawninfo:
+- mobid: 256
+  message: >-
+    A Velociraptor rounds the far end of the prep table, its head low, its footfalls deliberate.
+  idlecommands:
+  - emote moves along the prep table edge, taloned foot clicking once on the tile floor before silence reasserts itself.
+  - emote tilts its head at a precise angle, tracking something with one enormous amber eye.
+  - emote tests the air with a flicker of its tongue, processing data.
+  - emote is motionless for a long moment, then shifts its weight to the other foot.
+  - ""
+  - ""
+  respawnrate: 4 real minutes
+nouns:
+  ladles: >-
+    Steel ladles hanging from the pot rack on S-hooks, arranged by size from
+    small to enormous. If one were knocked loose — by an elbow, a shoulder,
+    a tail — it would clatter against its neighbors and every one of them
+    would swing and ring. The raptor knows this. It moves around the rack
+    without touching it.
+  pots: >-
+    Commercial stockpots, twelve-quart and twenty-quart, hanging in rows.
+    Heavy. Loud. If you pulled one down to use as a weapon you would make
+    a sound that would tell everything in the kitchen exactly where you were.
+  walkindoor: >-
+    The walk-in cold storage door stands three inches open. Cold air pours
+    from the gap in a visible fog. Someone went in there. Or something used
+    the door to let the cold out, which is a more complicated thought.
+  tiles: >-
+    White ceramic floor tiles, scrupulously clean. The kitchen staff took
+    pride in this floor. You can see your reflection in it, which means
+    something that is close to the floor and close to you could see its
+    reflection too.
+idlemessages:
+- A ladle on the pot rack sways without being touched. The sway is too deliberate for a draft.
+- The fluorescent lights flicker once — a full second of darkness — then return. In that second, something moved.
+- Cold air from the walk-in unit rolls across the floor in a low fog, obscuring the base of the prep tables.
+- A footfall — clawed, precise, brief — echoes from behind the far bank of ovens. Then nothing.
+- The reflection in the stainless steel oven door shows the kitchen behind you. You look at it carefully.
+- Something breathes in this room. The breathing is controlled, deliberate, and not yours.

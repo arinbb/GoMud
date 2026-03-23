@@ -1,0 +1,52 @@
+roomid: 1554
+zone: Jurassic Park
+title: The Dilophosaurus Paddock
+description: >-
+  The track ventures off-road here into a lush, dripping section of jungle where
+  the <ansi fg="red">Dilophosaurus paddock</ansi> begins. An electric fence
+  follows the tree line, though in several places it sags and the warning lights
+  blink an uncertain amber. The vegetation here is denser, wetter — ferns brush
+  your ankles, and water drips from every surface. The air is very still. The
+  paddock appears empty at first glance. That is almost certainly not correct.
+  Dilophosaurs are shy, the briefing materials said. They prefer to observe
+  before they act. Something watches you from the tree line. You can see nothing
+  specific — but the sensation is precise and certain. A crashed <ansi fg="itemname">Jeep
+  12</ansi> sits in the mud to the north, half-swallowed by undergrowth. A figure
+  slumped over the wheel. The main road loops back <ansi fg="exit">south</ansi>.
+  The Jeep is accessible to the <ansi fg="exit">north</ansi>.
+mapsymbol: D
+maplegend: Dilophosaurus Paddock
+biome: land
+exits:
+  road:
+    roomid: 1552
+    mapdirection: south
+  north:
+    roomid: 1567
+nouns:
+  fence: >-
+    A chain-link fence topped with electric wire. The warning lights should be
+    green. Several are amber. One is red. The fence itself is intact, but
+    sagging posts suggest something has pushed against it. The voltage readout
+    panel near the gate shows an intermittent signal. Nedry's systems work,
+    mostly.
+  ferns: >-
+    Enormous prehistoric ferns, dripping with moisture, filling every space
+    between the trees. They brush your face and arms as you pass. Behind them,
+    things could be standing perfectly still and you would not see them until
+    they were close enough to touch.
+  trees: >-
+    The tree line here is dense and dark. Whatever is in the paddock uses these
+    trees as cover, approaching the fence line in the shadows where the motion
+    sensors have more difficulty. Smart. Surprisingly smart.
+  jeep: >-
+    Jeep 12 — the one that went off-road. It's stuck in deep mud, tilted at
+    an angle, a broken tree branch through the windshield. Someone was in
+    a very great hurry and did not make it.
+idlemessages:
+- The ferns to your left tremble. The wind is not blowing.
+- A low, melodic trilling sound floats from somewhere in the trees. Birdlike. Not a bird.
+- The amber warning lights on the fence blink in an irregular pattern that might be a malfunction or might be something.
+- You hear a sound like a very large dog moving through tall grass. It stops when you turn toward it.
+- The air here smells different — muskier, with something underneath it, something like a vivarium on a larger scale.
+- Somewhere in the tree line, a branch snaps under a weight. Silence follows, more attentive than the sound.

@@ -1,0 +1,25 @@
+mobid: 252
+zone: jurassic_park
+hostile: false
+maxwander: 1
+activitylevel: 20
+idlecommands:
+- emote eats another spoonful of ice cream with the slow deliberation of a man who has decided that pleasures are not to be deferred.
+- say We spared no expense. Every detail. This place was built to last.
+- emote taps his ivory-handled cane gently against the floor.
+- say The children will be all right. Tim and Lex are resilient. Children are resilient.
+- ""
+- say I wanted them to see it. I wanted everyone to see it. The wonder of it.
+character:
+  name: John Hammond
+  description: >-
+    A white-haired man in his late seventies, stout and elegantly dressed in
+    a white linen suit, carrying an ivory-handled cane topped with a piece of
+    amber containing a trapped mosquito. He has the bearing of a man who has
+    spent his entire life making impossible things happen through the simple
+    mechanism of refusing to accept that they were impossible. He is eating
+    ice cream. He will keep eating ice cream. It is the only thing currently
+    within his control, and he is savoring it with the precision of a man who
+    knows the difference between cost and expense.
+  raceid: 1
+  level: 5

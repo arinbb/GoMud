@@ -1,0 +1,26 @@
+mobid: 259
+zone: jurassic_park
+hostile: false
+maxwander: 0
+activitylevel: 20
+idlecommands:
+- emote checks an incubator readout and makes a small, precise adjustment.
+- say The hatch rate is within acceptable parameters. The modifications are working.
+- emote notes something on his clipboard with the calm economy of a man who trusts his instruments.
+- ""
+- emote holds a shell fragment up to the light and studies it without expression.
+- say There are always variables. I've accounted for them.
+character:
+  name: Dr. Henry Wu
+  description: >-
+    A neat, handsome man in his forties in a white lab coat over a pressed
+    collared shirt. He is the architect of Jurassic Park's genetics program —
+    the one who actually made it work, who solved the problems that Hammond's
+    investors thought were unsolvable. He speaks precisely and without
+    apparent emotion about things that should produce emotion. His clipboard
+    contains modifications to the dinosaurs' genome that no one else knows
+    about. He believes this is responsible science. He does not believe he
+    needs to explain himself to Hammond, or to anyone. He is very calm. He
+    is always very calm.
+  raceid: 1
+  level: 8

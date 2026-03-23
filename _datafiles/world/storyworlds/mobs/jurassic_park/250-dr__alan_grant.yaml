@@ -1,0 +1,24 @@
+mobid: 250
+zone: jurassic_park
+hostile: false
+maxwander: 1
+activitylevel: 25
+idlecommands:
+- emote adjusts his wide-brimmed hat and squints into the middle distance with the concentration of a man solving a fossil record.
+- emote takes careful notes in a field book, not quite watching where he writes.
+- say They're moving in herds. The social structure is more complex than any of the models predicted.
+- emote holds a hand out flat, watching for the ground vibration with his palm.
+- ""
+- emote crouches down to examine something at ground level, completely absorbed.
+character:
+  name: Dr. Alan Grant
+  description: >-
+    A compact, weathered man in his late forties, dressed practically in khaki
+    work shirt and trousers, a wide-brimmed hat pulled low. He looks like what
+    he is: a man who spends most of his time on his knees in the Montana dirt.
+    His expression is habitually focused, reserved, occasionally lit from
+    within by the pure intellectual pleasure of understanding something new.
+    He does not like computers. He does not especially like children. He is
+    very good in a crisis, which surprises him most of all.
+  raceid: 1
+  level: 8

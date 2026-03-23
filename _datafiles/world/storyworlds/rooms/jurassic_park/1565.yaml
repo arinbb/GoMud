@@ -1,0 +1,75 @@
+roomid: 1565
+zone: Jurassic Park
+title: The Control Room
+description: >-
+  The Jurassic Park control room is a wall of <ansi fg="red">monitors</ansi>
+  — dozens of screens showing camera feeds from across the park, most of them
+  now static or displaying error codes. The central workstation belongs to
+  Dennis Nedry; its desk is buried under candy wrappers, code printouts,
+  and the evidence of a man who worked long hours for what he considered
+  insufficient pay. His screensaver — the infamous <ansi fg="red">animated
+  man wagging his finger</ansi> — loops on the primary screen: "Ah ah ah.
+  You didn't say the magic word." The security panel at the far wall shows
+  the park's <ansi fg="red">safety systems</ansi> in their compromised state.
+  Red across the board. Ray Arnold's station is covered in cigarette ash and
+  has been worked to death. The emergency phone line is open. The park's
+  automated systems continue to run in the background, trying to do their
+  jobs without instruction. The corridor leads back <ansi fg="exit">south</ansi>
+  to the Visitor Center.
+mapsymbol: C
+maplegend: Control Room
+biome: house
+exits:
+  south:
+    roomid: 1559
+spawninfo:
+- mobid: 255
+  message: Dennis Nedry sits at his workstation, hunched over his keyboard, a candy bar half-eaten at his elbow.
+  idlecommands:
+  - emote types with aggressive, resentful energy, muttering under his breath.
+  - say You think I don't know what I'm worth? I know exactly what I'm worth.
+  - emote opens another candy bar without stopping typing.
+  - say I'm the only one who actually understands how this system works. Every single part of it.
+  - ""
+  - emote glances at the screensaver with something approaching fondness.
+  respawnrate: 4 real minutes
+- mobid: 260
+  message: Ray Arnold is at his workstation, another cigarette going, squinting at cascading error messages.
+  idlecommands:
+  - emote lights a cigarette off the one he just finished without looking away from the screen.
+  - say God damn Nedry. God damn it.
+  - emote types a command, watches the result, types another, faster.
+  - say Hold onto your butts.
+  - ""
+  - emote rubs his face with both hands and stares at the screen.
+  respawnrate: 4 real minutes
+nouns:
+  monitors: >-
+    A wall of television monitors, arranged in a grid. Most show static or
+    ERROR: NO SIGNAL. A few still have feeds — the helipad, the main gates,
+    the hatchery interior. On one screen, the T. Rex paddock camera shows
+    only darkness and rain. The camera is still pointed where the paddock
+    was. The fence is in frame. The fence is not intact.
+  screensaver: >-
+    Nedry's screensaver: an animated fat man in a bow tie wagging his finger
+    from side to side, accompanied by the message "AH AH AH. YOU DIDN'T SAY
+    THE MAGIC WORD." It loops. It has looped thousands of times. It is still
+    looping now. This screensaver is why several people are dead.
+  nedrystation: >-
+    The workstation of Dennis Nedry: three monitors (one playing the screensaver),
+    a keyboard buried under candy wrappers, a coffee mug with a ring stain on
+    every printout. Post-it notes everywhere. One reads: "Barbasol 7am dock."
+    Another reads: "Don't forget the embryos." Another reads, in different
+    ink: "I am NOT overpaid."
+  arnoldstation: >-
+    Ray Arnold's station is orderly by comparison, though covered in ash.
+    A full ashtray. A half-empty pack. The screen shows cascading error logs
+    from Nedry's code intrusion — line after line of red text. Arnold has been
+    working through them manually, one by one. He's made progress.
+idlemessages:
+- Nedry's screensaver loops again. "Ah ah ah. You didn't say the magic word." The finger wags.
+- The security panel updates: another paddock goes red. The automated system logs it and does nothing.
+- Ray Arnold stubs out a cigarette and immediately lights another. He does not look up from the screen.
+- An alarm sounds — distant, somewhere in the building — and is not acknowledged by anyone.
+- The monitors cycle through their error states. One feed comes back for a moment, then drops to static.
+- The automated tour guide system fires a status update from an Explorer somewhere in the park, still waiting for instructions.

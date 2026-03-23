@@ -1,0 +1,60 @@
+roomid: 1561
+zone: Jurassic Park
+title: The Dining Room
+description: >-
+  The staff dining room is long and well-appointed, its walls hung with botanical
+  prints of prehistoric flora, its <ansi fg="itemname">central table</ansi>
+  capable of seating twenty. John Hammond's personal dining set occupies the
+  head of the table — fine china, real silver, linen napkins in their rings.
+  Hammond himself is here most evenings, eating ice cream with the quiet
+  persistence of a man who will not accept that his dream is failing. <ansi fg="itemname">Ice
+  cream</ansi> melts in a bowl at the table's head, forming a small white lake.
+  Everything about the room speaks to Hammond's conviction that a resort-quality
+  experience was possible — the flowers in the vase, the wine rack along one
+  wall, the printed menus still in their leather holders. The menus include
+  <ansi fg="itemname">dinosaur-shaped chicken nuggets</ansi> as a children's
+  option. <ansi fg="exit">West</ansi> returns to the main hall.
+mapsymbol: D
+maplegend: Dining Room
+biome: house
+exits:
+  west:
+    roomid: 1560
+spawninfo:
+- mobid: 252
+  message: John Hammond sits at the head of the table, eating ice cream.
+  idlecommands:
+  - emote eats a spoonful of ice cream with stubborn, methodical pleasure.
+  - say We spared no expense. Every detail. The finest ingredients.
+  - emote waves his cane gently at the room. We could have it all running again, you know.
+  - say The kids will be all right. They're with Grant. He's good with children.
+  - ""
+  - say I wanted to show them something real. Something that would take their breath away.
+  respawnrate: 5 real minutes
+nouns:
+  icecream: >-
+    A bowl of vanilla ice cream, made from the park's own recipe — Hammond
+    insisted on it. Real vanilla, fresh cream. "Spared no expense," as he
+    always says. The ice cream is melting in the warm air, pooling around
+    the edge of the fine china bowl. He keeps eating it anyway.
+  table: >-
+    A long mahogany table, seating twenty, set with linen and silver and
+    china. The settings at the far end are undisturbed. The ones near Hammond
+    have been pushed aside. He eats alone, as he increasingly does.
+  menus: >-
+    Leather-bound menus with gold-embossed JURASSIC PARK logos. The chef's
+    menu reads like a fine restaurant — locally sourced greens, fresh fish,
+    braised meats. The children's menu features dinosaur-shaped chicken
+    nuggets, pterodactyl-shaped cookies, and a brontosaurus burger. The
+    children's menu was Hammond's personal idea.
+  prints: >-
+    Framed botanical prints of prehistoric plants — Ginkgo biloba, cycads,
+    tree ferns, araucarian conifers — all executed in the style of Victorian
+    natural history illustration. Very beautiful. Very expensive. Very on-theme.
+idlemessages:
+- The ice cream in Hammond's bowl melts another fraction of an inch. He doesn't seem to notice.
+- Hammond murmurs something to himself about investors and second phases and how all great enterprises face initial setbacks.
+- The flowers in the vase are beginning to wilt. No one has changed the water in some time.
+- A wine glass on the rack vibrates gently, resonating with something large moving outside the building.
+- The dining room is warm and lit and civilized. Everything outside it is not.
+- Hammond sets down his spoon, looks at the door for a long moment, then picks up the spoon again.

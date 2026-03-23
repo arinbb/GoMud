@@ -1,0 +1,54 @@
+roomid: 1568
+zone: Jurassic Park
+title: The Treetop Hideout
+description: >-
+  You are in the upper canopy — sixty feet above the meadow floor, in a platform
+  of branches and bark worn smooth by the Brachiosauruses that browse this level.
+  The view below is the meadow, the lake, and three Brachiosauruses moving
+  through it with the unhurried dignity of living monuments. From up here you
+  understand their scale more fully: the neck of the nearest one reaches almost
+  to your level and extends above you, its head level with your chest. It is the
+  size of an office building. It smells of warm animal and crushed leaves and
+  sunlight. The Brachiosaurus turns its head and regards you with one enormous,
+  calm eye. Then it <ansi fg="cyan">sneezes</ansi> — a vast, wet, full-body
+  sneeze that rains down on you from above. The sneeze of a forty-ton animal.
+  You are thoroughly covered. The Brachiosaurus returns to its browsing,
+  unbothered. This is the best moment on the island. This is the only moment
+  when everything is exactly as Hammond imagined it. A rope <ansi fg="exit">ladder</ansi>
+  descends to the meadow below.
+mapsymbol: T
+maplegend: Treetop Hideout
+biome: land
+exits:
+  down:
+    roomid: 1553
+nouns:
+  brachiosaurus: >-
+    You are at eye level with the Brachiosaurus head. The eye that regards
+    you is warm and dark and utterly ancient. The pupil is the size of your
+    fist. There is no menace in it — only presence. Prehistoric, enormous,
+    alive presence. It chews a treetop the size of a compact car. You could
+    reach out and touch its jaw if you were feeling very brave.
+  canopy: >-
+    The upper canopy is a second world — birds that never descend, orchids
+    growing in the crooks of branches, bromeliads holding cups of water in
+    their centers. Insects you've never seen. The air is cleaner here, or
+    seems so. The sound of the jungle below is muffled by leaves.
+  view: >-
+    From up here: the full meadow, the lake, the distant mountains with their
+    caps of cloud. The three Brachiosauruses below are map-sized. The tour road
+    is a thin grey line through the green. The Visitor Center is visible through
+    a gap in the canopy, its glass catching the light. Everything looks peaceful.
+    Everything looks exactly as Hammond promised it would.
+  sneeze: >-
+    The Brachiosaurus sneeze. It happens. You were not warned. You cannot
+    prepare for a sneeze of this magnitude. It is warm and comprehensive and
+    you will carry it with you for the rest of the day. The Brachiosaurus
+    is indifferent to your condition.
+idlemessages:
+- The Brachiosaurus below sways its head from side to side and hums — a resonance you feel in the platform planks.
+- A cool breeze moves through the canopy, carrying the smell of rain and distant jungle and warm animal.
+- The lake catches the afternoon light and throws it up into the canopy in shifting golden fragments.
+- A bird you cannot identify lands two feet away on a branch, cocks its head at you, and takes off again.
+- The sounds of the island below rise up filtered through sixty feet of leaf — the distant mechanical, the living constant.
+- The Brachiosaurus reaches its head to exactly your height and strips a mouthful of leaves from the branch beside you.

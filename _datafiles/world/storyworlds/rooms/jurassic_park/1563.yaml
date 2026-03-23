@@ -1,0 +1,65 @@
+roomid: 1563
+zone: Jurassic Park
+title: The DNA Lab
+description: >-
+  The genetics lab smells of cold air and ethanol and the faint sweetness of
+  culture medium. Workbenches line the walls, covered in <ansi fg="cyan">microscopes</ansi>,
+  centrifuges, and the amber glow of <ansi fg="cyan">sequencing equipment</ansi>
+  still running its cycles — the park's power systems haven't failed here yet.
+  A presentation screen on the far wall shows the automated <ansi fg="itemname">Mr.
+  DNA</ansi> presentation on loop: the cheerful cartoon strand of DNA explaining
+  how InGen extracted dinosaur blood from mosquitoes preserved in amber, filled
+  the gaps with frog DNA, and reconstituted life from a forty-million-year-old
+  blueprint. The explanation makes it sound reasonable. The reality is not
+  reasonable. Along one wall, a row of <ansi fg="cyan">amber specimens</ansi>
+  lines a display case — insects trapped in golden resin for millions of years,
+  each one labeled. The hatchery is to the <ansi fg="exit">east</ansi>. The
+  Visitor Center entrance is back to the <ansi fg="exit">north</ansi>.
+mapsymbol: L
+maplegend: DNA Lab
+biome: house
+exits:
+  north:
+    roomid: 1559
+  east:
+    roomid: 1564
+spawninfo:
+- mobid: 253
+  message: Dr. Ellie Sattler is at a workbench, examining plant specimens from the island.
+  idlecommands:
+  - emote holds a leaf sample up to the light and frowns at it.
+  - say These fern spores are wrong. The toxicology profile doesn't match any known species.
+  - emote makes a note and moves on with brisk efficiency.
+  - say The paleobotany is fascinating. Some of these plants haven't existed for sixty-five million years.
+  - ""
+  - emote examines a piece of amber in the display case with professional interest.
+  respawnrate: 5 real minutes
+nouns:
+  amber: >-
+    The amber collection lines one wall in a locked display case. Dozens of
+    specimens, each one lit from below to show the trapped insect inside.
+    Gnats, beetles, ants, flies — and there, in the center of the case, a
+    mosquito. You can see the detail of its compound eye, the curve of its
+    proboscis. Forty million years old. The insect that started everything.
+  mrdna: >-
+    The Mr. DNA presentation plays on a loop on the large screen: a cartoon
+    DNA helix with a cheerful face explains the extraction process in simple
+    terms. "How do we do it? First, we find the blood..." The presentation
+    was designed for school groups. It makes the most audacious scientific
+    achievement in human history sound like a cooking show.
+  microscopes: >-
+    Research-grade electron microscopes and optical instruments. Slides prepared
+    and ready. Under one scope, someone left a slide of dinosaur cells — you
+    can see the culture dish label: "Velociraptor antirrhopus, Generation 7."
+    The cells under the microscope look ordinary. They are not ordinary.
+  sequencers: >-
+    DNA sequencing machines running quiet background cycles, their amber
+    screens scrolling base-pair data. A-T-G-C, A-T-G-C, the building blocks
+    of life, flowing in an endless river. Somewhere in that river, dinosaur.
+idlemessages:
+- The Mr. DNA presentation loops again from the beginning. His cheerfulness is undiminished by what he enabled.
+- The centrifuges hum in their automated cycle, spinning samples to conclusions no one is here to read.
+- Amber light from the specimen case throws warm shadows across the lab benches.
+- A sequence readout scrolls across the nearest monitor — base pairs rushing past faster than thought.
+- The cold air from the lab systems carries the smell of preservation and experiment and careful, patient science.
+- One of the amber specimens catches the light at an angle that makes the mosquito inside look alive.

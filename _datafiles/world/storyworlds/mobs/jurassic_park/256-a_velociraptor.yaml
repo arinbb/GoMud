@@ -1,0 +1,28 @@
+mobid: 256
+zone: jurassic_park
+hostile: true
+maxwander: 0
+activitylevel: 40
+hates:
+- human
+idlecommands:
+- emote moves along the prep table edge with the precise, clawed economy of something that has calculated the shortest distance between two points and found it.
+- emote tilts its head to a perfect angle and tracks movement with one amber, vertical-pupiled eye.
+- emote is completely still for a long, deliberate moment. Then shifts its weight. Then is still again.
+- emote tests the air with a quick flicker of its tongue, processing the information.
+- ""
+- ""
+character:
+  name: a Velociraptor
+  description: >-
+    Six feet at the hip, one hundred sixty pounds of compressed speed and
+    intention. Its coloration is olive and amber, patterned to suggest but not
+    quite achieve camouflage. It moves with the fluid, minimalist precision
+    of something that has never made an unnecessary movement in its life.
+    The large curved claw on the second toe of each foot is held retracted
+    while walking, which makes a specific quiet click on the tile floor.
+    Its eye is amber and vertical-pupiled and full of calculation. It is
+    looking at you the way a chess player looks at the board three moves
+    before the inevitable.
+  raceid: 5
+  level: 20

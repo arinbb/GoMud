@@ -1,0 +1,47 @@
+roomid: 1557
+zone: Jurassic Park
+title: The Electric Fence
+description: >-
+  The perimeter <ansi fg="red">electric fence</ansi> runs along the hill here
+  in a nine-foot grid of chain-link and electrified wire, its <ansi fg="itemname">voltage
+  indicators</ansi> cycling between green and the terrible amber of a warning
+  state. This is the fence Tim Murphy climbed in the dark while it was off,
+  and which came back on while he was still on it. The <ansi fg="itemname">scorch
+  marks</ansi> are still there — on the wire, on the post where someone grabbed
+  it. The current runs through everything: fence, posts, ground rods, and if
+  you touch the wrong thing at the wrong moment the current runs through you.
+  The fence here is climbable — barely — up to the <ansi fg="exit">north</ansi>
+  toward the paddock, or you can go back <ansi fg="exit">south</ansi> to the
+  Gallimimus flats below. The fence hums with a sound that is almost musical
+  and not musical at all.
+mapsymbol: F
+maplegend: Electric Fence
+biome: land
+exits:
+  climb:
+    roomid: 1555
+    mapdirection: north
+  south:
+    roomid: 1558
+nouns:
+  fence: >-
+    Nine feet of chain-link topped with three strands of electrified wire at
+    10,000 volts. The indicator lights cycle: green, amber, green, amber. The
+    system is fluctuating. When it's green, ten thousand volts. When it's amber,
+    something in between. When it's dark... that was when Tim climbed it.
+  scorchmarks: >-
+    Dark carbon marks on the chain links and the wooden post at the four-foot
+    level where someone grabbed on — grabbed on, and then the power came back.
+    The wood is blackened in a perfect handprint. The smell of burnt insulation
+    lingers even in the rain.
+  indicators: >-
+    Small green LED indicators every six feet along the fence, showing active
+    current. Most are green. Two are amber. One is dark. The dark one is not
+    a relief — it is a warning about what happens to the pattern.
+idlemessages:
+- The fence hums with current, a high electric whine that sets your teeth on edge.
+- An indicator light flickers from green to amber and back, the voltage fluctuating.
+- Rain runs down the fence wire in rivulets, each droplet catching the green indicator light.
+- The scorch marks on the post are the shape of a hand. Someone held on here. In the dark.
+- A frog jumps against the lower fence wire and is flung back — unhurt, at this section, this moment.
+- The fence indicator closest to you goes dark for three full seconds, then returns to green.

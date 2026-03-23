@@ -1,0 +1,19 @@
+itemid: 185
+name: chunk of amber
+namesimple: amber
+displayname: a chunk of amber with a mosquito inside
+description: >-
+  A palm-sized piece of amber — deep golden-orange, translucent, warm to the
+  touch — with a mosquito preserved inside in perfect detail. You can see the
+  compound eyes, the proboscis, the articulation of the six legs, all rendered
+  with a clarity that forty million years should not have permitted. The
+  mosquito is mid-flight, frozen at the moment of landing on a tree branch,
+  blood drawn from something that no longer exists. The amber was shaped and
+  polished but the specimen is genuine — genuine enough that the distinction
+  between souvenir and miracle blurs if you hold it in the right light. John
+  Hammond had one like this on the top of his walking cane. His contained the
+  future of an island. This one contains the memory of it.
+type: object
+subtype: usable
+uses: 0
+value: 200

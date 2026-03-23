@@ -1,0 +1,27 @@
+mobid: 258
+zone: jurassic_park
+hostile: false
+maxwander: 1
+activitylevel: 10
+idlecommands:
+- emote extends its neck to an impossible height and strips a mouthful of canopy leaves with a sound like tearing canvas.
+- emote 's footstep is a tremor felt in the knees before it is heard.
+- emote makes a low, resonant call felt in the chest rather than heard with the ears. Somewhere across the meadow, another answers.
+- emote 's enormous tail sweeps in a slow arc, counterbalancing the weight of its forty-foot neck.
+- ""
+- ""
+character:
+  name: a Brachiosaurus
+  description: >-
+    Eighty feet from nose to tail, forty feet to the top of its upstretched
+    neck, weighing somewhere between fifty and eighty tons. Its coloration is
+    blue-grey with subtle patterning, the skin rough and dry despite the
+    tropical air. It moves with the slow certainty of something that has no
+    natural predators in this meadow and knows it — each step deliberate,
+    each swing of the neck graceful in the way that cranes are graceful, the
+    grace of scale and counterbalance. When it regards you with its eye —
+    dark, warm, the size of a dinner plate — there is no aggression and no
+    recognition, only a vast, calm presence. You are very small. The world,
+    in this moment, is very old.
+  raceid: 5
+  level: 1

@@ -1,0 +1,26 @@
+mobid: 255
+zone: jurassic_park
+hostile: false
+maxwander: 0
+activitylevel: 30
+idlecommands:
+- emote types with the aggressive energy of a man with grievances and a deadline.
+- say You think this job runs itself? You think ANY of this runs itself?
+- emote opens another candy bar without interrupting his typing.
+- say I am not getting paid enough. I want that on the record.
+- ""
+- emote glances at the screensaver on his secondary monitor with something approaching affection.
+character:
+  name: Dennis Nedry
+  description: >-
+    A heavyset man in his thirties with an unkempt appearance and an air of
+    chronic resentment barely concealed under professional competence. His
+    workspace is a catastrophe of candy wrappers, code printouts, and
+    coffee-ringed documents. He built this park's computer systems essentially
+    single-handedly, and he knows it, and he believes he is not sufficiently
+    compensated for this knowledge, and he is doing something about it. His
+    eyes are constantly moving — to the door, to the clock, to the primary
+    monitor — with the quality of attention that belongs to someone with a plan
+    and a timetable and a Barbasol can in his bag.
+  raceid: 1
+  level: 5

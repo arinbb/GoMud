@@ -1,0 +1,16 @@
+name: Jurassic Park
+roomid: 1550
+autoscale:
+  minimum: 1
+  maximum: 20
+defaultbiome: land
+mutators:
+- mutatorid: isla-nublar
+musicfile: jurassic_park_theme.mp3
+idlemessages:
+- Something enormous moves through the jungle. You feel it in your bones before you hear it.
+- A distant roar rolls across the island like thunder, deep enough to rattle your teeth.
+- The trees sway far above, disturbed by something passing on the other side of the canopy.
+- Insects fill the humid air with constant, layered sound that stops abruptly — then resumes.
+- The smell of tropical vegetation and wet earth is overwhelming and ancient.
+- Somewhere in the distance, something screams — it might have been a bird.

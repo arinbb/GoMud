@@ -1,0 +1,50 @@
+roomid: 1550
+zone: Jurassic Park
+title: Isla Nublar Helipad
+description: >-
+  The helicopter touches down on a concrete pad carved from living jungle, and
+  the rotors wash hot tropical air over you as the engine spins down. Isla
+  Nublar rises in every direction — <ansi fg="10">volcanic mountains</ansi>
+  wreathed in mist, dense <ansi fg="10">jungle</ansi> dropping steeply to either
+  side, everything green and wet and ancient. The air smells of rain and
+  vegetation and something else, something you cannot name but that makes the
+  hair on the back of your neck rise. A weathered <ansi fg="itemname">welcome
+  sign</ansi> reads <ansi fg="10">JURASSIC PARK — COSTA RICA</ansi> in bold
+  letters above an amber InGen logo. A paved <ansi fg="exit">road</ansi> winds
+  east toward the park entrance. The Pacific Ocean glitters far below on the
+  western cliffs. You are on an island. There is no going back the way you came.
+mapsymbol: H
+maplegend: Helipad
+biome: land
+exits:
+  east:
+    roomid: 1551
+nouns:
+  sign: >-
+    A large wooden welcome sign, weathered by tropical humidity. The amber
+    InGen logo glints above the words JURASSIC PARK — COSTA RICA. Below that,
+    in smaller letters: "An InGen Company." Below that, smaller still, barely
+    legible: "Not responsible for injuries resulting from exhibits."
+  mountains: >-
+    Steep volcanic peaks rise through low clouds, their slopes covered in
+    impenetrable green jungle. The island was chosen, you understand, for its
+    isolation. No one comes here by accident.
+  jungle: >-
+    The jungle presses in from every side — dense, dark, and alive with sound.
+    It is not like a park or a preserve. It is a working ecosystem, millions of
+    years old, indifferent to your presence.
+  ocean: >-
+    The Pacific Ocean. Flat and blue and enormous. The cliffs drop two hundred
+    feet straight down to the water. Costa Rica is forty miles away. The
+    mainland might as well be the moon.
+  helicopter: >-
+    The helicopter that brought you here sits cooling on the pad, rotors still.
+    The pilot is already preparing for the return trip. You get the feeling he
+    doesn't like to linger on the island.
+idlemessages:
+- The helicopter's engine ticks as it cools, the only mechanical sound in a world of living noise.
+- A flock of tropical birds erupts from the jungle canopy to the east, shrieking as they scatter.
+- The humid air settles on your skin like a warm, wet blanket. You are already sweating.
+- Far below, waves crash against the volcanic cliffs in a rhythm older than memory.
+- The mist around the mountain peaks shifts and breathes. Something moves within it.
+- The jungle exhales — a slow exhalation of oxygen and spore and ancient, patient life.

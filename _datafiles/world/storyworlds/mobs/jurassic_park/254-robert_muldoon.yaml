@@ -1,0 +1,27 @@
+mobid: 254
+zone: jurassic_park
+hostile: false
+maxwander: 2
+activitylevel: 20
+idlecommands:
+- emote scans the perimeter, eyes moving in a systematic pattern, missing nothing.
+- emote checks the round in his SPAS-12 shotgun with quiet mechanical precision.
+- say Those fences better be holding.
+- emote adjusts the brim of his bush hat and watches the tree line.
+- ""
+- say I've worked with lions. Cape buffalo. Crocs. The raptors are in a different category entirely.
+- say Clever girl.
+- ""
+character:
+  name: Robert Muldoon
+  description: >-
+    A compact, muscular man in his fifties, khaki from head to boot, with
+    a game warden's bush hat and a SPAS-12 shotgun loaded with sabot rounds.
+    He was the best game warden in Kenya before Hammond recruited him.
+    He does not believe in Jurassic Park. He believes in the raptors.
+    He is professionally frightened of them, which is the correct response,
+    and he never lets the fear show, which is also the correct response.
+    He moves the way predators move: economically, without wasted gesture,
+    always aware of the nearest exit.
+  raceid: 1
+  level: 12

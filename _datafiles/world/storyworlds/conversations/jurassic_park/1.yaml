@@ -1,0 +1,24 @@
+-
+  Supported:
+    "dr. alan grant": ["dr. ian malcolm"]
+  Conversation:
+    - ["#1 say The social behavior alone — the herding, the vocalizations — it's more sophisticated than any of the models predicted."]
+    - ["#2 emote shifts with a wince", "#2 say The models were wrong because the assumptions were wrong. You assumed you knew what you were recreating."]
+    - ["#1 say We knew what the animals were. The genetics were confirmed."]
+    - ["#2 say You knew the genetics. You knew approximately what the skeleton looked like. You didn't know the behavior. You couldn't. The behavior is gone."]
+    - ["#1 emote frowns at this.", "#1 say And yet the behavior is... consistent. The pack structure, the nest behavior—"]
+    - ["#2 say Consistent with your projections because your projections were made after you built the animals. Confirmation bias on a geological scale."]
+    - ["#1 say That's unfair."]
+    - ["#2 say It might be. I'm working with incomplete data. We all are. That's the point."]
+-
+  Supported:
+    "dr. alan grant": ["dr. ian malcolm"]
+  Conversation:
+    - ["#1 say You said the park would fail. Before we landed, you said it."]
+    - ["#2 emote gestures vaguely at the general situation", "#2 say I said it. I want to be clear that I said it."]
+    - ["#1 say And you were right."]
+    - ["#2 say Yes."]
+    - ["#1 say And that's not actually satisfying, is it."]
+    - ["#2 emote looks at the ceiling", "#2 say No. No, it's really not."]
+    - ["#1 emote nods slowly", "#1 say The animals are extraordinary, Ian. Whatever else is true, the animals are extraordinary."]
+    - ["#2 say ...Yes. They are. I'll give you that."]

@@ -1,0 +1,29 @@
+mobid: 257
+zone: jurassic_park
+hostile: false
+maxwander: 0
+activitylevel: 15
+idlecommands:
+- emote 's footstep sends a shockwave through the ground that you feel from your feet to your back teeth.
+- emote 's presence registers first as vibration, then as sound — a subsonic percussion from somewhere in the dark paddock.
+- emote breathes out and the exhalation fogs in the rain beyond the fence like the sigh of something geological.
+- ""
+- ""
+- ""
+character:
+  name: the T. Rex
+  description: >-
+    Forty feet from snout to tail, twelve feet at the hip, seven tons of
+    Tyrannosaurus rex. In the rain and the dark it is more sound than vision
+    at first — the impact tremors, the subsonic vocalization, the single
+    footfall that shakes the mud in a circle ten feet wide. When it enters
+    the light it is a revelation of scale: the head alone is five feet long,
+    the eye the size of a hubcap, the teeth as long as your hand. It is not
+    fast, exactly — but it covers the distance between where it is and where
+    you are in a number of steps that you do not have time to count. It does
+    not hunt by sight. It hunts by sound and movement and the extraordinary
+    olfactory capability of a predator that has had sixty-five million years
+    of continuous development. It is the apex. It is the endpoint. Everything
+    that has ever lived on this island is somewhere in its food web.
+  raceid: 5
+  level: 30

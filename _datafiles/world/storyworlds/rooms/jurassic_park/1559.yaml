@@ -1,0 +1,64 @@
+roomid: 1559
+zone: Jurassic Park
+title: The Visitor Center Entrance
+description: >-
+  The Visitor Center looms before you — an enormous structure of glass and
+  concrete designed to awe, its vast <ansi fg="itemname">atrium</ansi> windows
+  reflecting the sky. It is an architectural statement about human ambition,
+  which is perhaps not the statement it was intended to make. Above the main
+  entrance, a vast fabric <ansi fg="itemname">banner</ansi> reads <ansi fg="10">WHEN
+  DINOSAURS RULED THE EARTH</ansi> in bold yellow letters — though it hangs
+  at a slight angle now, one corner torn loose in the storm. The lobby doors
+  stand open. The building is unfinished in places; scaffolding still stands
+  on the south wing, and extension cords run along the floor. John Hammond
+  wanted it open before it was ready. The <ansi fg="exit">north</ansi> entrance
+  leads to the main hall. The <ansi fg="exit">east</ansi> takes you to the
+  kitchen. The DNA lab is to the <ansi fg="exit">south</ansi>. A <ansi fg="exit">corridor</ansi>
+  leads northwest to the control room.
+mapsymbol: V
+maplegend: Visitor Center
+biome: house
+exits:
+  west:
+    roomid: 1558
+  north:
+    roomid: 1560
+  east:
+    roomid: 1562
+  south:
+    roomid: 1563
+  corridor:
+    roomid: 1565
+    mapdirection: northwest
+spawninfo:
+- mobid: 251
+  message: Dr. Ian Malcolm is propped against a wall near the entrance, injured, still talking.
+  idlecommands:
+  - emote shifts his weight with a wince, one leg stretched out before him, wrapped in makeshift bandaging.
+  - say Life, uh... finds a way.
+  - emote makes a vague gesture at the surrounding chaos that somehow encompasses everything.
+  - say You see, the problem with this park — and I predicted this, I want that on the record — is entropy.
+  - ""
+  - say Chaos theory isn't just academic. It's what happens when you think you control things you don't control.
+  respawnrate: 5 real minutes
+nouns:
+  banner: >-
+    A massive fabric banner depicting a Brachiosaurus skeleton against a sunset.
+    WHEN DINOSAURS RULED THE EARTH. One corner has torn loose in the storm
+    and the banner hangs diagonal, swaying. Under the circumstances, the slogan
+    has acquired a different resonance.
+  atrium: >-
+    The atrium windows are floor-to-ceiling glass, two stories high, framing
+    a view of jungle that is now actively pressing against the building.
+    Vines have already begun exploring the seams of the glass.
+  scaffolding: >-
+    Steel scaffolding still in place on the south facade. The construction was
+    never quite finished. This was supposed to be a detail, a minor delay.
+    It feels more significant now.
+idlemessages:
+- The banner above the entrance sways in no wind, its edges fraying where the corner has torn.
+- Extension cords snake across the lobby floor to temporary power banks. Half of them are no longer connected to anything.
+- The automatic doors to the main hall open and close on their own cycle, responding to motion sensors that have been triggered by something.
+- Rain has begun pooling on the lobby floor through a cracked atrium window, spreading slowly.
+- Dr. Malcolm mutters something under his breath that sounds like a mathematical formula.
+- From the kitchen corridor, a sound — metallic and deliberate — echoes through the building.

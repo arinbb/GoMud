@@ -1,0 +1,26 @@
+mobid: 260
+zone: jurassic_park
+hostile: false
+maxwander: 0
+activitylevel: 35
+idlecommands:
+- emote lights a new cigarette off the last one without looking away from the cascading error log on his screen.
+- say God damn Nedry. I'm gonna have to go through every single line of this by hand.
+- emote types a command, watches the result, exhales smoke, types another command.
+- say Hold onto your butts.
+- ""
+- emote rubs both hands over his face and stares at the screen with the expression of a man who has looked into the abyss of someone else's bad code.
+character:
+  name: Ray Arnold
+  description: >-
+    A thin man in his forties with a permanent cigarette and a permanent
+    squint, the squint being the expression a man develops after years of
+    looking at screens in a dark control room. He is the chief engineer of
+    Jurassic Park, which means he knows every system in the building and he
+    knows exactly how badly Nedry has broken them. He is methodical and
+    competent and tired, the specific tiredness of someone who has been
+    cleaning up other people's messes for so long it has become his entire
+    professional identity. His ashtray is full. He will empty it later.
+    There's no time now. There's never time now.
+  raceid: 1
+  level: 6

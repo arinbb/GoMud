@@ -1,0 +1,63 @@
+roomid: 1566
+zone: Jurassic Park
+title: The Raptor Pen
+description: >-
+  The exterior viewing area of the Velociraptor paddock is a raised platform
+  of treated timber, overlooking the pen through a heavy chainlink barrier.
+  The pen itself is not impressive to look at — a concrete-floored enclosure,
+  trees trimmed back from the fence line, the ground churned by heavy use.
+  The raptors are not visible. They are almost never visible. This is the thing
+  Muldoon knows that the others don't fully understand: the raptors are always
+  there, always watching, always thinking several steps ahead. The <ansi fg="itemname">fence</ansi>
+  hums with ten thousand volts. The <ansi fg="itemname">feeding door</antml>
+  at the far end of the pen is a reinforced steel hatch with a hydraulic
+  mechanism — the one the raptors have been systematically studying. <ansi fg="red">Three
+  of them.</ansi> There are three of them. The <ansi fg="exit">path</ansi>
+  leads back east toward the main gates.
+mapsymbol: R
+maplegend: Raptor Pen
+biome: land
+exits:
+  path:
+    roomid: 1551
+    mapdirection: east
+spawninfo:
+- mobid: 254
+  message: Robert Muldoon stands at the barrier, watching the empty pen.
+  idlecommands:
+  - emote never takes his eyes off the pen for more than a second at a time.
+  - say They're watching us right now. From the tree line, from the shadows. Always.
+  - emote checks the bolt action on his SPAS-12 with practiced economy of motion.
+  - say They're faster than you think. Faster than anything on this island.
+  - ""
+  - say The fence is the only thing keeping them honest. And they're working on that too.
+  respawnrate: 4 real minutes
+nouns:
+  pen: >-
+    The Velociraptor paddock. Concrete floor, worn smooth in certain patterns
+    you find unsettling when you think about what made them. Trimmed trees
+    forming a clean perimeter. A single dead tree in the center for enrichment.
+    The raptors are not in the visible part of the pen. The visible part of
+    the pen is not where the raptors live.
+  fence: >-
+    Heavy chainlink, ten thousand volts, twelve feet high. Posts set in
+    concrete eighteen inches deep. The fence is intact. The fence has been
+    intact for the entire six months the raptors have lived here. This is
+    not because the raptors haven't tried.
+  feedingdoor: >-
+    A reinforced steel panel at the far end of the pen, opened by a hydraulic
+    mechanism from the outside. The door is how the raptors receive their
+    food allotment. The raptors have been studying this door for months.
+    The hydraulic lever has fresh scratches on it. From the outside.
+  muldoon: >-
+    Robert Muldoon: khaki shirt, khaki shorts, bush hat, SPAS-12 shotgun
+    loaded with sabot rounds. He was a game warden in Kenya before Hammond
+    hired him. He has worked with lions, crocodiles, cape buffalo. He is
+    more afraid of the raptors than of any of those.
+idlemessages:
+- Something moves in the shadowed part of the pen — you see the grass bend, then stillness.
+- Muldoon tilts his head, listening. He heard something. He doesn't say what.
+- The fence hums with current. A leaf blows against it and crisps in a small white flash.
+- From inside the pen, the sound of something heavy being moved — a log, a rock, something being tested.
+- The scratches on the feeding door's exterior lever catch your eye. Recent. Very recent.
+- Three. There are three of them. Muldoon has said this twice now and both times he meant it as a warning.

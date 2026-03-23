@@ -1,0 +1,15 @@
+itemid: 127
+name: Wayne's World film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Wayne's World</ansi>
+description: >-
+  A film reel in a canister that someone has decorated with stickers of guitars,
+  rock logos, and the words "PARTY TIME EXCELLENT" in black marker, underlined
+  twice. The lid has a hand-drawn Wayne's World logo — two interlocked W's — that
+  might have been drawn by someone named Garth based on the careful, precise
+  linework. When you hold it to your ear, you can hear a faint, joyful guitar
+  riff and the distant sound of a crowd going absolutely excellent.
+type: object
+subtype: usable
+uses: 0
+value: 0

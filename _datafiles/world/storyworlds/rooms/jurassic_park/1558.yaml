@@ -1,0 +1,49 @@
+roomid: 1558
+zone: Jurassic Park
+title: The Gallimimus Flats
+description: >-
+  The jungle opens into a wide, grassy plain — an unexpected expanse of open
+  land in the island's interior. The <ansi fg="10">Gallimimus flats</ansi> are
+  named for the ostrich-mimic dinosaurs that run here in loose groupings, their
+  long necks extended, their legs a blur of motion. They move like water —
+  individual animals cohering into a flock, shifting direction as one body with
+  an instinct older than thought. A hundred of them crossing the plain creates
+  a sound like distant thunder, the earth trembling under their collective
+  weight. When the <ansi fg="red">Tyrannosaurus</ansi> enters the flats to
+  hunt, the Gallimimus explode apart in every direction, and the predator makes
+  its choice, and something dies in the tall grass. You can hear it from here.
+  The Visitor Center complex rises to the <ansi fg="exit">east</ansi>. The
+  paddock is back to the <ansi fg="exit">south</ansi>. The fence section is
+  to the <ansi fg="exit">north</ansi>.
+mapsymbol: G
+maplegend: Gallimimus Flats
+biome: land
+exits:
+  south:
+    roomid: 1555
+  east:
+    roomid: 1559
+  north:
+    roomid: 1557
+nouns:
+  gallimimus: >-
+    Ostrich-dinosaurs, eight feet tall at the hip, built entirely for speed.
+    Their feathers — yes, feathers, small and vestigial along the forearms —
+    are bright amber in the sun. They move in loose groups, heads up, watching
+    everything. When one turns to run, they all turn. The mechanism of the
+    stampede is ancient and involuntary and beautiful and terrifying.
+  grass: >-
+    Tall savannah grass, yellowed in patches where the Gallimimus have cropped
+    it short, green elsewhere. It ripples in the wind. Things move through it
+    that are not wind.
+  plain: >-
+    Open land, perhaps a quarter mile across — broad by human standards,
+    cramped by the scale of the things that use it. The sight lines are good.
+    You can see whatever is coming. That is the consolation.
+idlemessages:
+- A group of Gallimimus erupts from the tall grass fifty yards away, running flat-out for no visible reason.
+- The ground trembles — not the T. Rex, you tell yourself. Just the Gallimimus. Just the herd.
+- The flock wheels overhead — no, not overhead: they run along the plain edge, a waterfall of dinosaurs.
+- In the distance, something large enters the grass on the far side of the plain. The Gallimimus react instantly.
+- The sound of the running herd fades, and in the silence, you hear a single short percussion: a footstep. Very heavy.
+- The tall grass to the south sways in a pattern that has nothing to do with the wind's direction.

@@ -1,0 +1,63 @@
+roomid: 1564
+zone: Jurassic Park
+title: The Hatchery
+description: >-
+  The hatchery is warm and humid, its walls lined with <ansi fg="cyan">incubator
+  units</ansi> humming at precise temperatures. The room smells of warm, moist
+  air and something animal — the first breath of creatures that have not existed
+  on earth for sixty-five million years. <ansi fg="cyan">Eggs</ansi> fill the
+  incubators: leathery, cream-colored, slightly larger than a football. Some
+  are in varying stages of hatch — fragments of shell at the bottom of
+  incubator trays, tiny forms curled in the warmth. A <ansi fg="itemname">baby
+  raptor</ansi> the size of a large chicken moves along the floor near the
+  incubators, blinking and investigating everything with the intense attention
+  of the newly born. It is <ansi fg="cyan">absurdly charming</ansi>. You keep
+  having to remind yourself what it will become. Dr. Wu keeps detailed
+  <ansi fg="itemname">hatch records</ansi> on a clipboard nearby. The DNA
+  lab is back to the <ansi fg="exit">west</ansi>.
+mapsymbol: H
+maplegend: Hatchery
+biome: house
+exits:
+  west:
+    roomid: 1563
+spawninfo:
+- mobid: 259
+  message: Dr. Henry Wu moves between the incubators with the unhurried precision of a man who has done this ten thousand times.
+  idlecommands:
+  - emote checks an incubator readout and makes a small adjustment to the humidity setting.
+  - say The hatch rate is above ninety percent this cycle. The protocol is working.
+  - emote notes something on the clipboard with a ballpoint pen.
+  - say There are always... variables. I've built them into the models.
+  - ""
+  - emote lifts an eggshell fragment and examines it against the light.
+  respawnrate: 5 real minutes
+nouns:
+  eggs: >-
+    Leathery dinosaur eggs, cream-white and slightly translucent at the thin
+    end where you can almost see movement inside. Each one is catalogued —
+    species, generation number, hatch date projection. The labels include
+    species that are not on the official tour route. Wu is always working
+    on the next generation.
+  incubators: >-
+    Climate-controlled incubation units maintaining 99.1 degrees Fahrenheit
+    and 60% humidity — the conditions that, after extensive experiment, produce
+    the best hatch rates. Each unit has a digital readout and an alarm system.
+    Several alarms are currently silenced.
+  babyraptor: >-
+    It is roughly the size of a large chicken, mottled green-brown, moving
+    with the unsteady curiosity of the newly hatched. It makes small chirping
+    sounds. It looks at you with enormous eyes. It is, objectively, adorable.
+    Dr. Wu does not appear to find it adorable. He finds it a successful result.
+  records: >-
+    Wu's hatch records on a clipboard: species, generation numbers, genetic
+    modification notes. The modifications are extensive — more than the public
+    knows about. More, you suspect, than Hammond knows about. Wu's handwriting
+    is very small and very precise.
+idlemessages:
+- An incubator alarm chirps briefly — a hatch in progress — and Wu moves to it without urgency.
+- The baby raptor investigates the base of an incubator unit with complete focus, then moves on.
+- The warm humid air carries the smell of new life — an ancient smell, unchanged across geological time.
+- An egg in the nearest incubator rocks slightly. Something inside has decided it is time.
+- Wu speaks quietly to himself, reciting modifications and adjustments like a liturgy.
+- The incubator readouts scroll their data: temperature, humidity, heart rate, movement. All nominal.

@@ -1,0 +1,25 @@
+-
+  Supported:
+    "robert muldoon": ["*"]
+  Conversation:
+    - ["#1 say I need you to listen to what I'm about to say."]
+    - ["#2 emote turns to give full attention"]
+    - ["#1 say The raptors are not in their pen. They have not been in their pen for some time. They are somewhere on these grounds."]
+    - ["#2 say How many?"]
+    - ["#1 say Three. There are three of them."]
+    - ["#1 say If you see one — if you see any sign of one — you move immediately to a structure with a solid door. Not chain-link. Not glass. A door you can close and lock."]
+    - ["#2 say And if I'm not near a structure?"]
+    - ["#1 emote looks at you steadily", "#1 say Then you stay very still. And you hope the second one isn't already behind you."]
+-
+  Supported:
+    "robert muldoon": ["*"]
+  Conversation:
+    - ["#1 say The thing about the raptors—"]
+    - ["#2 say What about them?"]
+    - ["#1 say They hunt in pairs. Always in pairs, minimum. The one you see is the distraction."]
+    - ["#2 say The distraction."]
+    - ["#1 say The one you don't see is the one that matters. Every single time."]
+    - ["#1 emote scans the perimeter while talking without breaking stride"]
+    - ["#1 say I worked in Africa for fifteen years. Lions, leopards, Cape buffalo. I have never worked with an animal that concerned me the way these animals concern me."]
+    - ["#2 say Why?"]
+    - ["#1 say Because they're smarter than me. And they know it."]

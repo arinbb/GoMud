@@ -1,0 +1,21 @@
+questid: 130
+name: Jurassic Park
+description: >-
+  Experience Isla Nublar from arrival to escape. Find wonder in the
+  Brachiosaurus meadow. Survive the T. Rex paddock. Navigate the kitchen.
+  Restore the systems. Get everyone out.
+reward:
+  experience: 6000
+  item_id: 185
+  playermessage: >-
+    You have survived Jurassic Park. As a memento, you receive a chunk of amber
+    with a mosquito preserved inside — forty million years old, perfect in every
+    detail, warm in your hand. Life found a way. It always does.
+steps:
+- description: Arrive on Isla Nublar.
+- description: Witness the Brachiosaurus in the meadow.
+- description: Visit the DNA lab and understand how it was done.
+- description: Experience the T. Rex paddock.
+- description: Survive the kitchen raptor encounter.
+- description: Reach the control room.
+- description: Reach the Main Hall and escape.

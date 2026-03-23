@@ -1,0 +1,73 @@
+roomid: 1555
+zone: Jurassic Park
+title: The T. Rex Paddock
+description: >-
+  The tour track ends at the <ansi fg="red">T. Rex paddock</ansi>. Rain falls
+  in a steady curtain, drumming on the metal roof of the viewing station and
+  turning the unpaved paddock into a dark expanse of mud and shadows. A lone
+  <ansi fg="itemname">goat post</ansi> stands in the center of the paddock, the
+  tethered goat conspicuously absent — the chain hangs loose, gnawed through.
+  The electric fence stretches away in both directions, its <ansi fg="red">voltage
+  indicators</ansi> dark. Not amber. Dark. The fence is not on. Somewhere in
+  the paddock — in the dark, in the rain, in the impossible black between the
+  trees — something is there. You know this the way you know things before you
+  know them: the <ansi fg="red">cup of water</ansi> on the dashboard of the
+  Explorer is vibrating. Concentric rings. One per second. Getting stronger.
+  The <ansi fg="exit">east</ansi> path leads to the wrecked Explorer. A
+  crumbling fence to the <ansi fg="exit">north</ansi> opens onto the Gallimimus
+  flats. The <ansi fg="secret-exit">climb</ansi> leads south to the electric
+  fence section.
+mapsymbol: T
+maplegend: T. Rex Paddock
+biome: land
+exits:
+  south:
+    roomid: 1552
+  east:
+    roomid: 1556
+  north:
+    roomid: 1558
+  climb:
+    roomid: 1557
+    secret: true
+    mapdirection: south
+nouns:
+  fence: >-
+    The paddock fence is electrified chainlink, nine feet high with another
+    three feet of barbed wire at the top. It should be carrying ten thousand
+    volts. Right now the indicator lights are dark. The fence is cold and
+    dead, and somewhere on the other side of it, something very large is
+    awake and aware.
+  goat: >-
+    The goat is gone. The post stands in the center of the paddock, chain
+    lying in the mud. The chain was not cut. It was pulled apart, link by link.
+    The post itself is leaning at a ten-degree angle, driven into the ground
+    and then the ground shifted.
+  water: >-
+    A plastic cup of water on the dashboard of the nearest Explorer. Sitting
+    perfectly still — except that it's not. Concentric rings ripple across
+    the surface once. Twice. Each time, stronger than the last. The interval
+    between rings is decreasing.
+  rain: >-
+    Tropical rain, the kind that comes in as a wall. It hammers the metal
+    viewing station roof, fills every depression in the mud, drips from
+    every leaf. The visibility is dropping. The darkness is complete beyond
+    the fence line.
+spawninfo:
+- mobid: 257
+  message: The ground shakes, and in the darkness beyond the fence, something enormous moves.
+  idlecommands:
+  - emote 's footstep sends a shockwave through the ground that you feel from your knees to your teeth.
+  - emote 's presence is announced by a vibration in the mud, in the fence posts, in the metal viewing station structure.
+  - emote lets out a sound that is not quite a roar — it's lower than that, more physical, a pressure wave rather than a noise.
+  - ""
+  - ""
+  - ""
+  respawnrate: 3 real minutes
+idlemessages:
+- The cup of water on the dashboard ripples. Concentric circles. One per second. Getting stronger.
+- The rain intensifies, and for a moment you cannot see to the far fence line. Something could be anywhere.
+- A deep vibration moves through the mud, up through your feet, into your chest. Impact tremors.
+- The fence indicator lights are all dark. The fence is not on. The fence is NOT on.
+- The goat chain in the paddock sways in no wind at all, as if something brushed past it.
+- A tree at the paddock's far edge leans and falls with a crash muffled by rain. Something walked through it.

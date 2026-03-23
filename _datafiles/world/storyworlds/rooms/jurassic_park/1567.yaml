@@ -1,0 +1,53 @@
+roomid: 1567
+zone: Jurassic Park
+title: Nedry's Jeep
+description: >-
+  Jeep 12 is lodged in the mud twenty feet from the main track, its front
+  wheels buried to the axle, engine dead, one door left hanging open. Dennis
+  Nedry was here. He was in a very great hurry and the island was not cooperative.
+  His <ansi fg="itemname">Barbasol can</ansi> — the fake shaving cream can
+  modified to carry stolen dinosaur embryos in a central refrigerated cylinder
+  — sits on the passenger seat. It's open. It's empty. The embryos are gone.
+  <ansi fg="red">On the ground</ansi> near the door, a neat pile of wet clothing
+  and the remains of a meal. Dilophosaurus. They eat quickly. They're thorough.
+  The <ansi fg="itemname">docking equipment</ansi> Nedry was carrying — cargo
+  manifests, the ship's berth number, his payment arrangements — is scattered
+  in the mud, still legible. A <ansi fg="itemname">rope</ansi> is tied to the
+  Jeep's winch. It still stretches into the trees. It goes nowhere good. The
+  <ansi fg="exit">south</ansi> path leads back to the Dilophosaurus paddock.
+mapsymbol: J
+maplegend: Nedry's Jeep
+biome: land
+exits:
+  south:
+    roomid: 1554
+nouns:
+  barbasol: >-
+    A can of Barbasol shaving cream, modified by Nedry with considerable
+    ingenuity — the pressurized interior has been gutted and replaced with
+    a refrigerated cylinder containing padded slots for fifteen dinosaur
+    embryos. The lid is off. The slots are empty. The embryos are gone.
+    Whether Nedry dropped it running or it was taken from him after is
+    a distinction that no longer matters.
+  manifests: >-
+    Cargo manifests for a freighter called the Biosyn. Berthed at the East
+    Dock. Departure scheduled for 6 AM. Nedry's name is on the shipping
+    documents as "special cargo." A handwritten note in the margin: "$1.5M
+    on delivery. Don't be late." He was going to be very, very late.
+  rope: >-
+    Nedry attached this rope to the Jeep's winch, ran it through the trees,
+    and tried to attach it to something that could pull the Jeep free. The
+    rope is still attached to the winch. It goes into the trees at an angle.
+    There's nothing attached to the other end.
+  clothing: >-
+    Wet clothing in the mud near the driver's door. A windbreaker. Canvas
+    cargo pants. The kind of things you pack when you're planning to spend
+    a night on a ship. They are empty and wet and tell the end of the story
+    that the open Barbasol can began.
+idlemessages:
+- The Jeep's interior light is still on, running the battery down. It will go dark soon.
+- Rain fills the ruts the Jeep's tires carved in the mud as it tried to reverse free.
+- The wet documents in the mud are still legible. The name BIOSYN appears three times on the top sheet.
+- Something in the tree line watches the Jeep. The tree line is very still.
+- The winch rope sways slightly in the rain. From the trees, just the sound of dripping.
+- The Barbasol can sits on the seat, lid off, completely clean inside. Not a trace of embryo material.

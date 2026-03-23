@@ -1,0 +1,15 @@
+itemid: 126
+name: Jurassic Park film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="itemname">Jurassic Park</ansi>
+description: >-
+  A large film reel in a battered aluminum canister, sun-faded amber sticker
+  on the lid reading JURASSIC PARK — STEVEN SPIELBERG — UNIVERSAL PICTURES
+  1993. The canister is warm to the touch, as though it just came off a
+  projector that has been running it on loop for thirty years. If you hold
+  it near your ear, you can hear John Williams' four ascending notes — the
+  theme — playing from nowhere at all, thin as a memory, insistent as wonder.
+type: object
+subtype: usable
+uses: 0
+value: 0

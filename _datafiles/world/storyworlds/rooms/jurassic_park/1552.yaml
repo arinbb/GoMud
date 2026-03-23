@@ -1,0 +1,52 @@
+roomid: 1552
+zone: Jurassic Park
+title: The Tour Road
+description: >-
+  You are on the main <ansi fg="itemname">tour road</ansi> through Jurassic
+  Park, a paved track embedded with the <ansi fg="itemname">electric rail</ansi>
+  that guides the Ford Explorer tour vehicles on their automated circuit. The
+  jungle rises on both sides in dense green walls, thirty feet high, alive with
+  unseen movement and layered sound. The Explorers — bright yellow and green,
+  numbered and sleek — sit parked and waiting in a row, their automated tour
+  guide systems chirping softly to themselves. The road curves <ansi fg="exit">south</ansi>
+  toward the main gates and <ansi fg="exit">east</ansi> to the Brachiosaurus
+  meadow. Another branch curves <ansi fg="exit">north</ansi> into the deeper
+  park. A muddy track disappears into the trees to the northwest — the
+  <ansi fg="exit">dilophosaurus paddock</ansi> road.
+mapsymbol: R
+maplegend: Tour Road
+biome: land
+exits:
+  south:
+    roomid: 1551
+  east:
+    roomid: 1553
+  north:
+    roomid: 1555
+  dilophosaurus:
+    roomid: 1554
+    mapdirection: northwest
+nouns:
+  explorers: >-
+    Ford Explorer XLTs, custom-painted in the park's colors — cream and hunter
+    green — with the Jurassic Park logo on the doors. They're electric, running
+    on the tour track. The interiors are upholstered in green, with a video
+    screen in the headrest of each seat and a recorded guide narration ready to
+    play. Mr. DNA stares up from the screen menu, waiting.
+  rail: >-
+    A metal track embedded in the center of the road, flush with the asphalt.
+    The tour vehicles ride this track on an automated circuit, controlled from
+    the main control room. Right now the vehicles are parked and still. The
+    whole system has been shut down. Nobody's told the tour vehicles yet.
+  jungle: >-
+    The jungle is not decorative. It is not a backdrop. It is a living system
+    of trees and vines and undergrowth that has been here for millions of years
+    and will be here long after everyone on this island is dead. Things move
+    in it. The road through the middle of it seems very thin.
+idlemessages:
+- One of the parked Explorers beeps softly — its tour narration activating on some internal timer, speaking into the empty road.
+- The jungle on either side trembles. Not from wind. Something passes through it, briefly.
+- The electric rail in the road hums with current, a low vibration you feel through your feet.
+- A bright tropical bird lands on the roof of an Explorer, cocks its head at you, and departs.
+- The tour guide recording plays a snatch of narration before cutting off: "...and if you look to your left..."
+- The smell of recent rain rises from the road's hot asphalt, mixing with green jungle and something musky.

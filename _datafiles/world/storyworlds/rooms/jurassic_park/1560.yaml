@@ -1,0 +1,54 @@
+roomid: 1560
+zone: Jurassic Park
+title: The Main Hall
+description: >-
+  The main hall of the Visitor Center is a cathedral to ambition. The <ansi fg="cyan">rotunda</ansi>
+  soars above you, its ceiling sixty feet overhead painted with a mural of
+  prehistoric life — Cretaceous seas, Jurassic forests, Triassic deserts, all
+  rendered in rich earth tones. At the center of the rotunda, two enormous
+  <ansi fg="itemname">T. Rex skeletons</ansi> rear up in dramatic combat postures
+  — the original fossils Hammond commissioned, before he had living ones — their
+  bones wired into impossible drama, jaws wide, locked in a battle that never
+  happened. The <ansi fg="itemname">WHEN DINOSAURS RULED THE EARTH</ansi> banner
+  hangs from the upper level, trailing nearly to the floor now, torn in places.
+  Natural light pours through the atrium, casting long shadows through the fossil
+  ribs. This is where the tour began. This is where it ends. <ansi fg="exit">South</ansi>
+  leads back to the entrance. <ansi fg="exit">East</ansi> to the dining room.
+mapsymbol: M
+maplegend: Main Hall
+biome: house
+exits:
+  south:
+    roomid: 1559
+  east:
+    roomid: 1561
+nouns:
+  skeletons: >-
+    Two T. Rex skeletons in dramatic combat poses, articulated with steel
+    armatures and suspended in permanent conflict. The fossils are real — genuine
+    Tyrannosaurus remains, extracted, cleaned, and reassembled at enormous cost.
+    Under the atrium light, the bones glow amber. They are beautiful. They are
+    also somewhat smaller than you now know the living version to be.
+  rotunda: >-
+    The ceiling is sixty feet overhead, painted with the full sweep of geological
+    time. Each era rendered in loving detail by artists Hammond flew in from the
+    mainland. In the cracked plaster of the storm damage, you notice a hairline
+    fissure running through the Cretaceous mural — the sky split open right
+    where the meteorite would have struck.
+  banner: >-
+    WHEN DINOSAURS RULED THE EARTH. The banner has torn further and hangs
+    nearly to the floor, its yellow letters obscured by creases. Something
+    pushed through this hall earlier. The banner went with it.
+  mural: >-
+    Floor-to-ceiling murals along the curved walls depict different geological
+    periods — shallow Cretaceous seas thick with ammonites, Jurassic forests
+    where sauropods browse, Triassic deserts where the earliest dinosaurs picked
+    their way between rocks. It is the deep time of the world, rendered in
+    tempera on plaster. It is breathtaking. It has also never been more true.
+idlemessages:
+- The two fossil T. Rex skeletons catch the shifting light and their shadows move across the mural walls, animated.
+- The torn banner drifts in an air current from somewhere — an open door, a broken window, the building breathing.
+- Plaster dust sifts from the rotunda ceiling above, disturbed by a sound too large and too close.
+- The light through the atrium shifts as a cloud — or something larger than a cloud — passes overhead.
+- Water drips from a crack in the rotunda dome, landing in a pool that is growing slowly across the inlaid floor.
+- From somewhere below the rotunda, deep in the building's structure, a low vibration travels through the floor.

@@ -1,0 +1,76 @@
+roomid: 1553
+zone: Jurassic Park
+title: The Brachiosaurus Meadow
+description: >-
+  You come around a curve in the road and the jungle opens up into a vast
+  <ansi fg="cyan">meadow</ansi>, and there — there — rising above the tree line
+  like living architecture, a <ansi fg="cyan">Brachiosaurus</ansi> stands in
+  the afternoon light. Then another. Then three more. They move with the
+  unhurried certainty of things that have no natural predators in this meadow,
+  their necks extending forty feet into the air to strip leaves from the high
+  canopy with a sound like tearing canvas. The <ansi fg="cyan">lake</ansi>
+  behind them catches the light and throws it back in fragments. Everything
+  smells of crushed vegetation and warm water and something living that is
+  utterly, impossibly ancient. One of them turns its head, and its eye — calm,
+  dark, and the size of a dinner plate — regards you for a moment before its
+  neck swings away. You are very small. The world is very old. The sense of
+  pure, uncomplicated <ansi fg="cyan">wonder</ansi> is like a physical blow.
+  A wooden observation platform offers a view to the <ansi fg="exit">east</ansi>
+  from the treetop level via a rope ladder to the <ansi fg="exit">up</ansi>.
+mapsymbol: B
+maplegend: Brachiosaurus Meadow
+biome: land
+exits:
+  west:
+    roomid: 1552
+  up:
+    roomid: 1568
+nouns:
+  brachiosaurus: >-
+    They are not like anything you imagined. The photographs and models and
+    fossil skeletons do not convey the sound of them — the deep resonant vocalizations,
+    the earthquake rumble of their footsteps, the tearing and chewing of treetops
+    consumed by the ton. Their skin is blue-grey and patterned, surprisingly
+    beautiful. They are herbivores but you feel their scale in your chest like
+    a low note played on an instrument too large to exist.
+  lake: >-
+    A clear lake fed by mountain streams, surrounded by ferns and cycads that
+    were old when the dinosaurs were young. The Brachiosauruses wade in to drink,
+    their reflections fragmenting in the ripples. Dragonflies skim the surface.
+    The water is perfect and blue and ancient.
+  trees: >-
+    Enormous trees — taller than any you've seen outside a photograph — their
+    upper canopy forming a ceiling of green light sixty feet above. The
+    Brachiosauruses are stripping the highest branches with calm efficiency.
+  meadow: >-
+    Wide open grassland dotted with prehistoric cycads and ferns, ringed by
+    jungle. The size of the meadow becomes apparent only relative to the animals
+    in it, which are so large that the meadow seems barely adequate.
+spawninfo:
+- mobid: 258
+  message: A Brachiosaurus lumbers into the meadow with the slow gravity of a moving hill.
+  idlecommands:
+  - emote stretches its neck to an impossible height and strips a mouthful of leaves from the canopy.
+  - emote 's footstep sends a tremor through the ground you feel in your knees.
+  - emote makes a low, resonant call — felt in the chest more than heard — and another answers from across the meadow.
+  - emote 's enormous tail sweeps slowly, counterbalancing the weight of its neck.
+  - ""
+  - ""
+  respawnrate: 3 real minutes
+- mobid: 250
+  message: Dr. Alan Grant stands at the meadow's edge, hat in hand, utterly transfixed.
+  idlecommands:
+  - emote removes his hat slowly, staring at the Brachiosauruses with an expression of pure, stricken wonder.
+  - say They're moving in herds. They do move in herds.
+  - emote takes a few careful steps forward, as though getting closer might make this more real.
+  - say Look at the way it moves. The center of mass shifting with each step. The skeletal architecture — it's right. It's exactly right.
+  - ""
+  - emote scribbles something in a field notebook, then looks up again and forgets entirely about the notebook.
+  respawnrate: 5 real minutes
+idlemessages:
+- A Brachiosaurus extends its neck above you and the shadow it casts is like a cloud passing over the sun.
+- The ground trembles — not violently, but steadily, as a dozen tons of animal shifts its weight.
+- A deep resonant call rolls across the meadow, and the others answer, one by one. It feels like music made by the earth.
+- One of the Brachiosauruses wades into the lake, and the water rises around its legs in a slow bow wave.
+- The smell of the meadow is overwhelming — torn leaves, animal warmth, lake water, living earth.
+- A flock of small prehistoric-looking birds erupts from the grass between the giants' feet, wheeling and crying.

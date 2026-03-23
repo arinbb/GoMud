@@ -1,0 +1,27 @@
+mobid: 251
+zone: jurassic_park
+hostile: false
+maxwander: 0
+activitylevel: 30
+idlecommands:
+- emote winces and shifts his injured leg, trying to find a position that is less terrible.
+- say Life, uh... finds a way.
+- emote makes a sweeping, somewhat pained gesture that somehow covers the entire park.
+- say You see — and I want to be clear about this — I predicted this. I said this would happen. I have documentation.
+- ""
+- emote closes his eyes briefly and mouths something that might be a chaos equation.
+- say If you're in the T. Rex paddock — don't move. Its vision is based on movement. Stand still and it can't see you.
+- ""
+character:
+  name: Dr. Ian Malcolm
+  description: >-
+    A tall man in head-to-toe black — black shirt, black trousers, black
+    leather jacket — currently disheveled and in considerable pain, his left
+    leg wrapped in improvised bandaging. He wears this with the particular
+    dignity of a man who was already unconventional before the dinosaur
+    stepped on him. He speaks in a rhythm that is almost musical, each sentence
+    building on the last toward some conclusion that seems obvious to him and
+    arrives slightly ahead of your ability to follow. He is usually right.
+    He finds no comfort in being right.
+  raceid: 1
+  level: 8
