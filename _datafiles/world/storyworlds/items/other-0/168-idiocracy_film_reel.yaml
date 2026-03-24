@@ -1,0 +1,16 @@
+itemid: 168
+name: Idiocracy film reel
+namesimple: reel
+displayname: a film reel labeled <ansi fg="yellow">Idiocracy</ansi>
+description: >-
+  A chrome-edged film canister, slightly warm, smelling faintly of something
+  chemical and citrus -- the particular smell of a world that replaced water
+  with a sports drink and is starting to notice the consequences. The label
+  is printed in aggressive block letters over a drawing of a Brawndo can:
+  IDIOCRACY, 2006. Something about holding it makes you feel slightly
+  stupider, or possibly just more aware of the gradient. When you tilt it,
+  the film inside shifts with a sound like electrolytes sloshing.
+type: object
+subtype: usable
+uses: 0
+value: 0

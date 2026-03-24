@@ -1,0 +1,17 @@
+name: Idiocracy
+roomid: 2470
+autoscale:
+  minimum: 1
+  maximum: 10
+defaultbiome: city
+mutators:
+- mutatorid: idiocracy-dumb
+idlemessages:
+- A Brawndo vending machine in the corner flashes ELECTROLYTES in aggressive yellow light.
+- Every screen in sight is showing the same thing -- a close-up of a butt. Laughter track.
+- A misspelled billboard reads CARLS JR -- YOR KIDS ARE OWR KIDS. You read it three times.
+- Someone nearby says something is gay. You do not ask them to clarify.
+- The Brawndo jingle plays from somewhere. It does not stop. It has never stopped.
+- A citizen trips over something obvious and acts like it is the environments fault.
+- OW MY BALLS plays from every speaker simultaneously. Everyone laughs.
+- A sign reads COSTCO WELCOMES YOU TO THE FUTUR. The E was never added.

@@ -1,0 +1,30 @@
+mobid: 616
+zone: idiocracy
+hostile: false
+maxwander: 2
+activitylevel: 8
+idlecommands:
+  - "emote laughs at something. There was nothing to laugh at."
+  - "emote kicks something nearby. Not for any reason."
+  - "say OW MY BALLS."
+  - "emote looks at their own hand with brief scientific curiosity, then loses interest."
+  - "say You think Brawndo has more electrolytes than regular Brawndo?"
+  - "emote agrees with whatever the last thing anyone said was."
+  - ""
+character:
+  name: a 2505 Citizen
+  description: >-
+    Another citizen of the future -- this one in mesh and cargo shorts, comfortable
+    and untroubled in the specific way of someone who has never encountered an
+    obstacle they were expected to solve. Their shoes are flip flops. Their
+    expression is open. They are not unhappy. Unhappiness requires a comparison
+    point and they have not been provided one.
+  raceid: 1
+  level: 1
+  equipment:
+    body:
+      itemid: 20106
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20175

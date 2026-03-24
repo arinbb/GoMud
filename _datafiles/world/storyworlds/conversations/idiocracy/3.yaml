@@ -1,0 +1,21 @@
+-
+  Supported:
+    "president camacho": ["*"]
+  Conversation:
+    - ["#1 say I KNOW THINGS ARE BAD RIGHT NOW.", "#1 emote grabs whoever is nearby by the shoulder."]
+    - ["#1 say THE CROPS ARE DYING. THE ECONOMY IS WHATEVER. I KNOW.", "#1 emote fires a weapon into the air."]
+    - ["#1 say BUT WE GOT THIS. I PROMISE YOU WE GOT THIS.", "#1 emote flexes."]
+    - ["#1 say I BROUGHT IN A REAL SMART GUY. HIS NAME IS JOE. JOE KNOWS STUFF."]
+    - ["#1 say JOE IS GONNA FIX EVERYTHING. THE CROPS. THE WATER THING.", "#1 say WHATEVER THING JOE KNOWS. JOE KNOWS IT."]
+    - ["#1 emote straightens his fur coat.", "#1 say I WOULD NOT LET YOU DOWN. I AM THE PRESIDENT."]
+    - ["#1 say DWAYNE ELIZONDO MOUNTAIN DEW HERBERT CAMACHO.", "#1 say THAT IS ME. I AM RIGHT HERE."]
+-
+  Supported:
+    "president camacho": ["*"]
+  Conversation:
+    - ["#1 say YOU WANT TO KNOW ABOUT THE CROPS?", "#1 emote does not wait for an answer."]
+    - ["#1 say THE CROPS ARE DYING BECAUSE THEY NEED -- JOE SAYS THEY NEED WATER.", "#1 emote nods."]
+    - ["#1 say NOT BRAWNDO. WATER. LIKE FROM A PIPE.", "#1 say I KNOW. I KNOW. I WAS SURPRISED TOO."]
+    - ["#1 say BECAUSE EVERYBODY KNOWS BRAWNDO HAS ELECTROLYTES.", "#1 say BUT JOE SAYS WATER. JOE IS THE SMART ONE."]
+    - ["#1 say SO WE ARE GONNA DO WATER.", "#1 emote fires the weapon."]
+    - ["#1 say AMERICA!", "#1 emote holds the weapon above his head."]

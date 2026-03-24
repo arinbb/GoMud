@@ -1,0 +1,27 @@
+-
+  Supported:
+    "frito pendejo": ["joe bauers"]
+  Conversation:
+    - ["#1 say Okay so here is how it works. Everything is run by Brawndo."]
+    - ["#2 emote stares at him.", "#2 say How is everything -- what does that even mean, everything is run by Brawndo?"]
+    - ["#1 say Like, Brawndo bought, like, the FDA, and also the FCC, and basically the government. They own it.", "#1 say Also Costco owns the law schools. That is where I got my degree."]
+    - ["#2 say Your law degree.", "#2 emote says this carefully."]
+    - ["#1 say Yeah. Costco. It is a real degree. I have it laminated.", "#1 emote takes out the diploma."]
+    - ["#2 emote looks at the diploma for a long time.", "#2 say Okay. Okay."]
+    - ["#1 say You want to see the time machine later?"]
+    - ["#2 say Frito. I need you to focus. The crops are dying. Nobody is using water.", "#2 say Can we -- can we just do one thing at a time?"]
+    - ["#1 emote considers this.", "#1 say Yeah but the time machine is pretty cool though."]
+-
+  Supported:
+    "frito pendejo": ["joe bauers"]
+  Conversation:
+    - ["#2 say So who is in charge? Like actually in charge?"]
+    - ["#1 say Camacho. President Camacho. He was a wrestler.", "#1 say Also he did some movies. Not -- not the kind of movies you are thinking of. Well. Some of them."]
+    - ["#2 say He was elected.", "#2 emote says this not as a question."]
+    - ["#1 say Yeah. He is real popular. He can do a backflip.", "#1 emote nods."]
+    - ["#2 emote is very quiet."]
+    - ["#1 say He is not bad though. Like, he is trying.", "#1 say He made you Secretary of the Interior. He thinks you can fix the crops."]
+    - ["#2 say I just -- I need water. I need regular water on the fields.", "#2 say That is the whole solution. Water."]
+    - ["#1 say But Brawndo has electrolytes. Plants crave --"]
+    - ["#2 emote holds up a hand."]
+    - ["#1 say Yeah okay. Water. Cool."]

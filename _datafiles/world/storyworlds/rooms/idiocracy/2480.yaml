@@ -1,0 +1,60 @@
+roomid: 2480
+zone: Idiocracy
+title: The Stadium
+description: >-
+  The stadium holds a hundred thousand people and every seat is full. The
+  <ansi fg="red">scoreboard</ansi> overhead reads MONDAY NIGHT REHABILITATION in
+  the style of a sports event, with sponsor logos for Brawndo, Carls Jr, and
+  something called ELECTRO-WEDGE. The <ansi fg="itemname">arena floor</ansi>
+  is currently occupied by a monster truck, a mattress-filled pit, a contestant
+  in orange, and a dildo launcher mounted on a hydraulic arm. The
+  <ansi fg="itemname">announcer booth</ansi> is elevated and clearly visible,
+  where Beef Supreme stands in a sequined vest with the energy of a man who
+  has found his calling. The <ansi fg="itemname">crowd</ansi> is eating. The
+  crowd is always eating. The crowd will be eating when civilization ends,
+  which may be soon, which they will also eat to.
+mapsymbol: A
+maplegend: The Stadium
+biome: city
+exits:
+  south:
+    roomid: 2472
+nouns:
+  scoreboard: >-
+    The scoreboard lists: ROUND 1 -- ACCUSED: JOE BAUERS (MONDAY NIGHT REHABILITATION)
+    -- CRIME: BEING A SMARTASS -- SPONSOR: BRAWNDO. The score is tracked not in
+    points but in crowd reactions, with categories labeled PAIN, EMBARRASSMENT,
+    TEARS, and TOTAL HUMILIATION. Each category has a meter that fills up.
+    The meter for TOTAL HUMILIATION is currently at 70% because Joe has not
+    cried yet. The crowd is working on this.
+  floor: >-
+    The arena floor is a mixture of surfaces -- dirt, rubber matting, a section
+    that appears to be actual AstroTurf, and a pit of mattresses which is where
+    people land. The monster truck is parked at one end and its engine is running.
+    It has been running since the truck was delivered in 2498 and nobody has
+    figured out how to turn it off. The dildo launcher is the official sponsor's
+    equipment. It is the most beloved element of the show.
+  booth: >-
+    The announcer booth is a glass-fronted structure elevated thirty feet above
+    the arena. Inside it, Beef Supreme paces. His sequined vest catches the
+    stadium lights. He is holding two microphones -- one for his voice and one
+    for the sound effects board. He knows every name of every contestant in
+    every language they are still using in 2505, which is mostly just one.
+  crowd: >-
+    A hundred thousand people, eating, watching, anticipating. They have been
+    here since morning. Several of them live here now. The Brawndo cans in their
+    hands are not empty because the seats have built-in refill ports. The
+    refill ports were installed by the Brawndo Corporation as a public service
+    in exchange for the naming rights to the air inside the stadium.
+idlemessages:
+- Beef Supreme announces something and the crowd loses consciousness with joy.
+- The monster truck revs and the stadium shakes and everyone cheers at the shaking.
+- The dildo launcher fires into the stands. Someone catches it. The crowd goes insane.
+- MONDAY NIGHT REHABILITATION plays its theme song, which is extremely loud and sounds like Brawndo tastes.
+- Beef Supreme says a name and the crowd boos it and cheers it at the same time.
+- A contestant runs across the arena floor and falls in the mattress pit. Crowd: ecstatic.
+- The Brawndo refill ports hiss and a hundred thousand new Brawndos are dispensed simultaneously.
+spawninfo:
+- mobid: 614
+  message: 'Beef Supreme sweeps into the arena in his sequined vest, both microphones live, already announcing something.'
+  respawnrate: 3 real minutes

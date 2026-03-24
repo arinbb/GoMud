@@ -1,0 +1,33 @@
+mobid: 611
+zone: idiocracy
+hostile: false
+maxwander: 1
+activitylevel: 20
+idlecommands:
+  - "emote fires an assault rifle into the air once to get everyones attention. He has it."
+  - "emote flexes. Just -- flexes. For no reason except that it is available to him."
+  - "say I KNOW THINGS ARE MESSED UP BUT WE GOT THIS. I PROMISE YOU WE GOT THIS."
+  - "emote straightens his fur coat with the seriousness of a man adjusting his armor before battle."
+  - "say JOE IS GONNA FIX EVERYTHING. I PUT MY WHOLE PRESIDENTIAL REPUTATION ON THIS."
+  - "emote does a brief impression of a wrestling move on an imaginary opponent. It is technically presidential."
+  - ""
+character:
+  name: President Camacho
+  description: >-
+    Dwayne Elizondo Mountain Dew Herbert Camacho -- President of the United States,
+    former professional wrestler, former adult film performer, current Brawndo
+    spokesperson -- is a large man in a fur coat and wrestling boots with an American
+    flag bandana and the energy of someone who was born for stages and has been on
+    one, in some form, since age sixteen. He carries an assault rifle in the casual
+    way that some people carry an umbrella -- not as a weapon exactly, more as a
+    prop that communicates authority. He is the most powerful man in the world. He
+    is also trying very hard. In 2505 these two facts are not in conflict.
+  raceid: 1
+  level: 10
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20155
+    feet:
+      itemid: 20177

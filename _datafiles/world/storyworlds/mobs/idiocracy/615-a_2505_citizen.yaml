@@ -1,0 +1,31 @@
+mobid: 615
+zone: idiocracy
+hostile: false
+maxwander: 2
+activitylevel: 8
+idlecommands:
+  - "emote stares at a small screen. Does not blink."
+  - "emote drinks a Brawndo. Looks at the can. Drinks more."
+  - "say That is gay."
+  - "emote walks into something avoidable. Recovers. Walks into it again."
+  - "say BRAWNDO GOT WHAT PLANTS CRAVE."
+  - ""
+  - ""
+character:
+  name: a 2505 Citizen
+  description: >-
+    A citizen of 2505 America -- the product of five hundred years of genetic
+    averaging and the complete removal of selective pressure toward intelligence.
+    They are wearing athletic wear that has never been near athletics. They are
+    carrying a Brawndo. They are watching something. Their expression is the
+    expression of contentment that comes from having everything available to you
+    that you are capable of wanting.
+  raceid: 1
+  level: 1
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20175

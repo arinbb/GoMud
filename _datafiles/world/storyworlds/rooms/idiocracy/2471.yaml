@@ -1,0 +1,52 @@
+roomid: 2471
+zone: Idiocracy
+title: The Trash Avalanche
+description: >-
+  This was once an apartment building. You can tell because the walls still have
+  the ghost of floral wallpaper under six feet of compacted garbage. Five hundred
+  years of human waste -- <ansi fg="itemname">fast food containers</ansi>, broken
+  screens, expired Brawndo cans, unread instruction manuals, things that were
+  once furniture -- has settled into a dense archaeological record of decline.
+  A <ansi fg="itemname">staircase</ansi> is visible in the far wall, half-buried,
+  leading nowhere useful. The <ansi fg="itemname">ceiling</ansi> has partially
+  collapsed under the weight of the trash above, and through the hole you can
+  see more trash. A <ansi fg="itemname">path</ansi> has been trampled through
+  the debris, just wide enough for one person who is not in a hurry.
+mapsymbol: T
+maplegend: Trash Avalanche
+biome: city
+exits:
+  west:
+    roomid: 2470
+  east:
+    roomid: 2472
+nouns:
+  containers: >-
+    Hundreds of fast food containers -- Carls Jr, Buttfudruckers, something that
+    used to be called a restaurant but is now just an abstraction of grease. Each
+    container still has its logo, and each logo looks like it was designed by
+    someone who understood advertising but had never encountered restraint. Some
+    containers are five hundred years old. They look exactly the same as the
+    new ones.
+  staircase: >-
+    The staircase leads up about four steps before disappearing into a wall of
+    compacted garbage. On the second step, someone has left a single shoe, size
+    twelve, its mate nowhere in sight. The banister is bent at a forty-five-degree
+    angle, which is somehow worse than if it were broken entirely.
+  ceiling: >-
+    Through the hole in the ceiling you can see the floor above, which is also
+    mostly trash, and through a second hole above that, more trash, and you
+    understand that this goes up for many stories. The building is not so much
+    a building anymore as a geological stratum of human output.
+  path: >-
+    The path through the garbage is worn smooth by foot traffic, which means
+    people come through here regularly. Footprints in the dust at the edges
+    are all sizes. Some are barefoot. You try not to think about why.
+idlemessages:
+- Something shifts in the trash wall to your left. Then it settles. Then it shifts again.
+- The smell is beyond description. You stop trying to describe it after the first breath.
+- A Brawndo can rolls off a pile and clatters down three feet of garbage before stopping.
+- Somewhere above, through several layers of compacted waste, something drops with a distant thud.
+- The floral wallpaper pattern -- roses, you think -- is visible for about six inches near the baseboard.
+- A faded magazine cover peeks from the trash. The headline reads ELECTROLYTES: WHUT ARE THEY?
+- A pile of garbage in the corner is wearing a hat.

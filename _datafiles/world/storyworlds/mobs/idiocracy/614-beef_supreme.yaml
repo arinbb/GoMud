@@ -1,0 +1,32 @@
+mobid: 614
+zone: idiocracy
+hostile: false
+maxwander: 0
+activitylevel: 25
+idlecommands:
+  - "emote makes a crowd noise with his mouth that is surprisingly accurate for one person."
+  - "say LADIES AND GENTLEMEN -- WELCOME TO MONDAY NIGHT REHABILITATION!"
+  - "emote mimes revving a monster truck engine. He is good at this."
+  - "say AND THE CROWD -- GOES -- WILD!"
+  - "emote adjusts his sequined vest with the seriousness of a man maintaining his instrument."
+  - "say UP NEXT -- CONTESTANT NUMBER FOUR -- ACCUSED OF TALKING REAL SMART AND USIN LONG WORDS!"
+  - ""
+character:
+  name: Beef Supreme
+  description: >-
+    The voice of Monday Night Rehabilitation is a large man in a sequined vest
+    that catches every light it encounters and throws it back amplified. He holds
+    two microphones at all times -- one for his voice, one for sound effects --
+    and he is never not announcing something. He has found his calling and his
+    calling is announcing the rehabilitation of criminals to a hundred thousand
+    people while monster trucks idle and the dildo launcher tracks its target.
+    He loves his job. In 2505 that is a remarkable thing.
+  raceid: 1
+  level: 5
+  equipment:
+    body:
+      itemid: 20107
+    legs:
+      itemid: 20155
+    feet:
+      itemid: 20177

@@ -1,0 +1,54 @@
+roomid: 2477
+zone: Idiocracy
+title: Carls Jr
+description: >-
+  The Carls Jr in 2505 is larger than the concept of Carls Jr implies.
+  Every surface bears the <ansi fg="red">star logo</ansi> and below every
+  star logo, a reminder: <ansi fg="red">YOUR KIDS ARE NOW PROPERTY OF CARLS JR.</ansi>
+  This is not a slogan. This is the result of the Child Welfare Privatization
+  Act of 2308, under which Carls Jr acquired legal guardianship over a
+  significant portion of the child population in exchange for feeding them.
+  The children receive <ansi fg="itemname">Kids Meals</ansi> in perpetuity.
+  The <ansi fg="itemname">speaker</ansi> at the counter says EXTRA BIG ASS FRY
+  with the particular warmth of a corporation that has learned to approximate
+  affection. A <ansi fg="itemname">disclaimer</ansi> on the wall lists the
+  terms of the Child Welfare Agreement in print so small it requires a
+  microscope and a desire to feel terrible.
+mapsymbol: C
+maplegend: Carls Jr
+biome: city
+exits:
+  west:
+    roomid: 2476
+nouns:
+  logo: >-
+    The Carls Jr star logo in 2505 has been stylized into something that is
+    simultaneously a star, a crown, a corporate seal, and a warning. It appears
+    on every surface. The children in the play area all wear small star pins on
+    their uniforms. The pins are welded on. They do not come off.
+  meals: >-
+    The Kids Meal box is red and yellow and has a drawing of a happy child
+    receiving a Kids Meal. The child in the drawing is wearing a star pin. Inside
+    each Kids Meal: a burger, a small fry, a Brawndo Kidz (smaller can, same
+    electrolytes), and a form to sign over additional rights. The toy this week
+    is a miniature Carls Jr play set, which includes a tiny Kids Meal box, which
+    includes a tinier form.
+  speaker: >-
+    'WELCOME TO CARLS JR. WOULD YOU LIKE AN EXTRA BIG ASS FRY WITH THAT?'
+    The voice is warm. The voice has been calibrated for warmth. The warmth
+    is a business decision. 'CARLS JR. BELIEVES IN FAMILY. CARLS JR. IS FAMILY.
+    YOUR CHILDREN ARE OUR FAMILY. HAVE A NICE DAY.'
+  disclaimer: >-
+    The disclaimer on the wall covers the Child Welfare Agreement, the
+    Supplemental Nutrition Compact, the Educational Services Addendum, and
+    a section titled MISCELLANEOUS RIGHTS TRANSFER. You would need to be
+    literate, have two hours, and want to feel sad to read the whole thing.
+    The last paragraph begins: 'By eating on these premises...'
+idlemessages:
+- The speaker announces that Children's Hour starts in fifteen minutes. Several adults look nervous.
+- A row of children in Carls Jr uniforms eats identical Kids Meals in perfect synchronization.
+- 'WOULD YOU LIKE AN EXTRA BIG ASS FRY?' the speaker asks. Nobody said anything first.
+- The star logo rotates slowly on a screen above the counter. It is very patriotic somehow.
+- A child turns in their Kids Meal box for a new one, exchanges their toy, and logs the transaction.
+- The manager comes out and straightens a star logo that was already straight.
+- Two employees high-five because the drive-through numbers are up. They do not know what numbers means.

@@ -1,0 +1,57 @@
+roomid: 2481
+zone: Idiocracy
+title: Brawndo HQ
+description: >-
+  The Brawndo Corporation headquarters is the tallest building in the hemisphere
+  and is shaped like a Brawndo can, which is either impressive or a sign. The
+  <ansi fg="yellow">lobby</ansi> is a vast space of polished floors and Brawndo-green
+  surfaces with a <ansi fg="yellow">fountain</ansi> at the center that dispenses
+  Brawndo instead of water. The <ansi fg="itemname">stock ticker</ansi> runs along
+  the top of every wall -- Brawndo has been the only publicly traded company since
+  2214, when it acquired all the others. The <ansi fg="itemname">mission statement</ansi>
+  is carved in thirty-foot letters above the entrance: BRAWNDO: IT'S GOT
+  ELECTROLYTES. This is the complete mission statement. A bank of elevators
+  serves the upper floors where the agricultural division, the political division,
+  the media division, the water division, and the government division operate.
+mapsymbol: B
+maplegend: Brawndo HQ
+biome: city
+exits:
+  east:
+    roomid: 2472
+  north:
+    roomid: 2482
+nouns:
+  lobby: >-
+    The lobby of Brawndo HQ is designed to make you feel both welcome and small.
+    The floors are so reflective you can see yourself walking on yourself. The
+    Brawndo-green accent lighting gives everything a quality that might be called
+    sickly in a less profitable context. Employees move through the lobby with
+    the purposeful speed of people who work for the only company in the world
+    and know it.
+  fountain: >-
+    The Brawndo fountain is the first thing you see when you enter and it is
+    magnificent in the specific way that things are magnificent when they cost
+    more than some nations. It cycles through a choreographed sequence every
+    fifteen minutes. The Brawndo that comes out of it has extra electrolytes
+    for the corporate setting. Nobody has drunk from this fountain. It is not
+    for drinking. It is a statement.
+  ticker: >-
+    The stock ticker reads: BRWD -- UP 12 POINTS. Then: BRWD -- UP 14 POINTS.
+    Then: ALL MARKETS UP BECAUSE THERE IS ONLY ONE MARKET AND IT IS BRAWNDO.
+    The ticker has been running since the market opened in 2214 and the stock
+    has gone up every single day, which is not suspicious because everyone agrees
+    it is not suspicious.
+  statement: >-
+    IT'S GOT ELECTROLYTES. Thirty feet tall. Carved in Brawndo-green stone.
+    Lit from below. There was a longer mission statement originally -- something
+    about innovation and the human spirit and responsible growth. It was removed
+    in 2289 because the electrolytes part tested better.
+idlemessages:
+- The Brawndo fountain performs its choreographed sequence. Several employees stop to watch. They have seen it a thousand times.
+- A Brawndo executive passes through carrying a briefcase. The briefcase is also Brawndo-green.
+- The stock ticker announces a new high. An alarm goes off. Everyone high-fives.
+- An elevator opens and three people get out, all drinking Brawndo, all wearing the same expression.
+- A press release is being dictated in the corner: 'BRAWNDO GOOD. WATER BAD. ELECTROLYTES. END.'
+- The PA system plays the Brawndo jingle -- the corporate version, which has a key change.
+- An employee at the lobby desk stamps a form. The form is a Brawndo purchase order. For more Brawndo.

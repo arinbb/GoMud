@@ -1,0 +1,60 @@
+roomid: 2478
+zone: Idiocracy
+title: The Oval Office
+description: >-
+  The Oval Office is recognizable -- the same oval shape, the same desk, the same
+  flags flanking the chair. What is different: the <ansi fg="itemname">desk</ansi>
+  has been replaced by something from a monster truck sponsor, the <ansi fg="itemname">flags</ansi>
+  are accompanied by a WWE championship belt mounted on the wall, and the
+  <ansi fg="red">carpet</ansi> features an enormous portrait of President Camacho
+  in a pose that appears to be simultaneously presidential and intimidating and
+  advertising something. The <ansi fg="itemname">television</ansi> in the corner
+  shows a monster truck rally. The one beside it shows a different monster truck rally.
+  A <ansi fg="itemname">weapon rack</ansi> behind the presidents chair holds what
+  appears to be three assault rifles and a flamethrower. The Secretary of State
+  stands near the door looking like someone who has forgotten why they came in.
+mapsymbol: O
+maplegend: Oval Office
+biome: city
+exits:
+  south:
+    roomid: 2479
+  north:
+    roomid: 2484
+nouns:
+  desk: >-
+    The Resolute Desk was replaced in 2387 with something called the MAXIMUM POWER
+    DESK, which is a desk made of chrome-finished steel with a Brawndo logo inlaid
+    in the surface. On the desk: a phone that may or may not work, a jar of beef
+    jerky, a Brawndo can in a presidential koozie that says CAMACHO 2504-2508,
+    and a folder labeled TOP SEECRET that contains a photo of a monster truck.
+  flags: >-
+    The American flag on the left. The President's personal flag on the right --
+    it depicts a man flexing, surrounded by flames, holding an eagle. The eagle
+    is also flexing. This flag was designed by the President and approved by the
+    President and is considered by the President to be his greatest achievement
+    except for winning the Presidential Wrestling Tournament six times.
+  carpet: >-
+    The carpet portrait of Camacho shows him in his full presidential regalia --
+    a fur coat, wrestling boots, a crown, an American flag bandana, and an expression
+    that suggests he has just heard something both offensive and worthy of immediate
+    physical response. He is the most powerful man in the world. He is also standing
+    on him as you walk.
+  rack: >-
+    The weapon rack holds three assault rifles, a flamethrower labeled EXECUTIVE
+    DECISION MAKER, and what appears to be a custom weapon with the Presidential
+    Seal engraved on the stock. A placard below the rack reads: PRESIDENT CAMACHO
+    RESERVES THE RIGHT TO FIRE A WEAPON AT ANY TIME INCLUDING IN CONGRESS.
+    This is the law.
+idlemessages:
+- President Camacho fires a weapon into the air to signal the start of a meeting. The meeting has not started.
+- The Secretary of State stands near the door and says nothing. She has been standing there since Tuesday.
+- Both televisions play monster trucks simultaneously. The sound bleeds into itself.
+- Camacho flexes at the mirror behind the desk, checks his hair, flexes again.
+- A Cabinet member enters, says something, and Camacho fires a weapon into the ceiling to indicate he is thinking.
+- The presidential phone rings. Camacho lifts it, says 'YEAH', listens for four seconds, hangs up.
+- A aide brings a folder. Camacho looks at it. The folder has a picture on the cover. He looks at the picture.
+spawninfo:
+- mobid: 611
+  message: 'President Dwayne Elizondo Mountain Dew Herbert Camacho strides in with the energy of a man who believes he is always being filmed -- because he is.'
+  respawnrate: 3 real minutes

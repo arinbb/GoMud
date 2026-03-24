@@ -1,0 +1,30 @@
+mobid: 617
+zone: idiocracy
+hostile: false
+maxwander: 0
+activitylevel: 15
+idlecommands:
+  - "say Welcome to Costco. I love you."
+  - "emote beams at anyone within range of her Costco-assigned warmth radius."
+  - "say Welcome to Costco. I love you."
+  - "emote straightens her orange vest. It did not need straightening. She straightens it anyway."
+  - "say Welcome to Costco. I love you."
+  - ""
+character:
+  name: a Costco Greeter
+  description: >-
+    She has been greeting customers at this Costco entrance for twenty-two years
+    and she means every greeting. The orange vest fits her perfectly because she
+    has worn it so long it has conformed. She says I love you with the warm specific
+    sincerity of someone who was trained to say it, said it ten thousand times, and
+    at some point stopped performing it and started meaning it. Costco is her world.
+    You are welcome to it.
+  raceid: 1
+  level: 2
+  equipment:
+    body:
+      itemid: 20108
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20171

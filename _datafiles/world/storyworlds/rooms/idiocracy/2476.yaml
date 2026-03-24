@@ -1,0 +1,56 @@
+roomid: 2476
+zone: Idiocracy
+title: Fuddruckers
+description: >-
+  The sign above the door used to say Fuddruckers. Over five hundred years,
+  with each generation finding the existing name slightly too tame, it has
+  been modified. The current sign says something that would not be printable
+  in any century except this one, rendered in the same cheerful red-and-yellow
+  font as the original. Inside, the <ansi fg="itemname">menu board</ansi>
+  offers items in sizes ranging from Big Ass to Extra Big Ass to the
+  promotional Big Ass Ass size available this month only. The <ansi fg="itemname">booths</ansi>
+  are original Fuddruckers vinyl, cracked and patched with electrical tape
+  and branded with the current name. The <ansi fg="itemname">kitchen</ansi>
+  is visible through a pass-through window. The food comes out in bags.
+  Everything comes out in bags. The bags have the name on them too.
+mapsymbol: F
+maplegend: Fuddruckers
+biome: city
+exits:
+  north:
+    roomid: 2472
+  east:
+    roomid: 2477
+nouns:
+  menu: >-
+    The menu board lists: THE BIG ASS BURGER (with cheese), THE EXTRA BIG ASS
+    BURGER (with extra cheese), THE BIG ASS FRY (a container larger than your
+    head), THE EXTRA BIG ASS FRY (a container larger than your torso), THE
+    BIG ASS SHAKE (comes in Brawndo flavor), and a kids meal called THE LITTE
+    ASS MEAL which contains a toy. The toy is a miniature Brawndo can. All
+    items include a coupon for more items. The coupon says YOU DESERVE THIS.
+  booths: >-
+    The booths have that permanent booth quality -- the kind of vinyl that
+    will outlast every other material on earth, cracking and yellowing but
+    never quite destroying itself. Names are carved into the table. Most of
+    the names are misspelled. One table reads UPGRAYEDD WAS HERE -- TWO DS.
+    There is a Brawndo dispenser at every booth. The Brawndo is included in
+    the price of the meal. The meal is also Brawndo, essentially.
+  kitchen: >-
+    Through the pass-through you can see the kitchen. Several employees are
+    managing the food-production process with the focused energy of people
+    who have been trained to do exactly one thing. The one thing is putting
+    food in bags. They are very good at this. Nothing else is happening in
+    there. Nothing else needs to happen.
+idlemessages:
+- A voice from the speaker: 'WELCOME TO -- THE RESTAURANT. CAN I TAKE YOUR ORDER.'
+- Someone orders an Extra Big Ass Fry. The employee nods with deep professional respect.
+- The smell of the food is intense in the way that things are intense when they have no restraint.
+- A tray slides across the pass-through. On it: a bag. In the bag: more bags.
+- OW MY BALLS plays on the restaurant screen. The lunch rush barely notices.
+- Two citizens in adjacent booths are having the exact same conversation they have every day.
+- A child points at the menu and says 'big' and is given the Extra Big Ass version by default.
+spawninfo:
+- mobid: 615
+  message: 'A citizen is eating something out of a bag the size of a pillowcase with complete satisfaction.'
+  respawnrate: 3 real minutes

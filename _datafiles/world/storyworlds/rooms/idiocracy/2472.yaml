@@ -1,0 +1,74 @@
+roomid: 2472
+zone: Idiocracy
+title: The Street
+description: >-
+  This is America in 2505 and the first thing you notice is the <ansi fg="itemname">signage</ansi>.
+  Every surface is a billboard. Every billboard is either a Brawndo advertisement or a Carls Jr
+  advertisement or a Brawndo-Carls Jr co-branded advertisement. The <ansi fg="itemname">road</ansi>
+  beneath your feet is cracked and unrepaired, the cracks themselves filled in with flattened fast
+  food containers. A <ansi fg="yellow">Brawndo vending machine</ansi> on the corner cycles
+  through its jingle on an infinite loop. Citizens in various states of
+  <ansi fg="itemname">athletic wear</ansi> shuffle past with the relaxed gait of people who
+  have nowhere to be and no concept of urgency. Every screen you can see -- and you can see
+  many screens -- is showing OW MY BALLS. The horizon is brown.
+mapsymbol: S
+maplegend: The Street
+biome: city
+exits:
+  west:
+    roomid: 2471
+  north:
+    roomid: 2473
+  east:
+    roomid: 2474
+  south:
+    roomid: 2476
+  stadium:
+    roomid: 2480
+    secret: false
+  alley:
+    roomid: 2483
+    secret: false
+nouns:
+  signage: >-
+    BRAWNDO -- IT'S GOT WHAT PLANTS CRAVE. CARLS JR -- BECAUSE YOU DESERVE TO EAT.
+    WELCOME TO 2505 -- AMERICA'S FINEST CENTURY. OW MY BALLS -- TUESDAYS 9PM. A
+    sign that appears to be a public service announcement reads: READING IS FOR
+    PEOPLE WHO DONT HAVE SCREENS. The fine print at the bottom says this message
+    was brought to you by Brawndo. There is no irony intended. There is no irony
+    available.
+  road: >-
+    The road is technically still a road in the same way that a collapsed building
+    is technically still a building. The original asphalt shows in patches. Everything
+    else is a composition of discarded things -- containers, packaging, a child's
+    shoe, the back half of a motorized scooter, several Brawndo cans crushed flat
+    and used as filler. You could patch it. You have the concept of patching.
+    Nobody here does.
+  machine: >-
+    The Brawndo vending machine is enormous, roughly the size of a small car, and
+    its label is designed to make you feel that drinking a Brawndo is the single
+    most patriotic act available to a human being. IT'S GOT ELECTROLYTES. ELECTROLYTES
+    ARE WHAT PLANTS CRAVE. PLANTS CRAVE BRAWNDO. The machine also dispenses a
+    nutrition bar that is technically made of Brawndo. The machine's speakers play
+    the jingle. The jingle has been playing since 2107 without interruption.
+  wear: >-
+    The citizens of 2505 dress primarily in athletic wear that has never been near
+    an athletic event. Mesh jerseys. Enormous basketball shorts. Crocs in colorways
+    that do not occur in nature. Several people are wearing their clothes inside-out
+    in a way that appears intentional. Fashion in 2505 is the result of five hundred
+    years of no one caring at all.
+idlemessages:
+- A citizen walks into the Brawndo machine, stares at it, then walks into it again.
+- OW MY BALLS plays from a screen mounted six feet up on a crumbling concrete pillar.
+- Two citizens argue loudly. They are arguing about which is better -- Brawndo Original or Brawndo with extra electrolytes.
+- A monster truck idles at the corner, revving for no reason. It has CAMACHO 4-EVR spray-painted on the door.
+- A Carls Jr employee in a paper hat stands outside holding a sign that says FEED U. She is not doing anything else.
+- The Brawndo jingle achieves a particularly aggressive key change and no one looks up.
+- Somewhere, a child is watching OW MY BALLS and laughing, and the laugh sounds exactly like the laugh on the show.
+spawninfo:
+- mobid: 615
+  message: 'A citizen shuffles past staring at a small screen, nearly walks into you, continues without acknowledgment.'
+  respawnrate: 2 real minutes
+- mobid: 616
+  message: 'Another citizen stands at the Brawndo machine, pressing the same button over and over with total conviction.'
+  respawnrate: 2 real minutes

@@ -1,0 +1,60 @@
+roomid: 2474
+zone: Idiocracy
+title: St Gods Memorial Hospital
+description: >-
+  The waiting room of St Gods Memorial Hospital has not been updated since 2301
+  and was not properly updated before that. The <ansi fg="itemname">chairs</ansi>
+  are the stackable plastic kind, arranged in rows facing a screen showing OW MY BALLS.
+  A <ansi fg="itemname">triage desk</ansi> is staffed by a person in a lab coat eating
+  a Carls Jr bag. On the wall hangs a diagram of the human body with several of
+  the organs labeled incorrectly. In the examination area behind a half-drawn curtain,
+  the <ansi fg="itemname">diagnosis machine</ansi> occupies most of the room -- it
+  is about the size of a photo booth and its readout has three settings. The air
+  smells of antiseptic and Brawndo and the particular hopelessness of a medical
+  facility that has confused activity with competence.
+mapsymbol: H
+maplegend: Hospital
+biome: city
+exits:
+  west:
+    roomid: 2472
+  east:
+    roomid: 2475
+nouns:
+  chairs: >-
+    The waiting room chairs are arranged with mathematical precision in the sense
+    that whoever arranged them was thinking about rows rather than human comfort.
+    Several chairs have COSTCO printed on the underside. The chair nearest the
+    door has a form on it -- a medical intake form -- that asks for name, complaint,
+    and favorite Brawndo flavor. The form does not ask about symptoms. Symptoms
+    are apparently optional.
+  desk: >-
+    The triage desk has a computer on it that has not been turned on since 2389.
+    The person behind the desk is wearing a stethoscope around her neck over her
+    Carls Jr uniform. She will take your information. She will write it on a Post-it
+    note. She will put the Post-it note in a stack of Post-it notes. Nothing will
+    happen with the Post-it note. This is 2505 medicine.
+  machine: >-
+    The diagnosis machine is the size of a photo booth. You step inside, it takes
+    a reading of some kind, and a ticket prints from a slot at the bottom. The
+    ticket has one word on it. The word is always either SICK, FINE, or TARD.
+    The machine is the most advanced diagnostic technology available in 2505.
+    It was designed in 2298 by Brawndo Medical Solutions. It has a Brawndo logo
+    on it. Everything has a Brawndo logo on it.
+  diagram: >-
+    The human body diagram on the wall labels the liver as the boner and the
+    lungs as the big air bags and the brain as the thinky bit. The heart is
+    correctly labeled. Someone corrected the heart label with a marker and
+    then drew a Brawndo logo over the correction.
+idlemessages:
+- The diagnosis machine whirs and prints a ticket that says TARD. No one is in it.
+- Dr. Lexus walks through carrying a clipboard he has not read.
+- OW MY BALLS plays in the waiting room. Two patients laugh. One does not. He may be asleep.
+- The triage desk person asks someone their favorite Brawndo flavor and writes it down very carefully.
+- A patient is told their condition is 'gay' and they leave, satisfied with this diagnosis.
+- The Brawndo vending machine in the corner is labeled MEDICAL BRAWNDO -- FOR HEALING.
+- An announcement plays: 'DR. LEXUS TO AISLE FOUR. DR. LEXUS TO WHATEVER.'
+spawninfo:
+- mobid: 613
+  message: 'Dr. Lexus strides in with the purposeful air of someone who has no idea what they are doing but does it with confidence.'
+  respawnrate: 3 real minutes

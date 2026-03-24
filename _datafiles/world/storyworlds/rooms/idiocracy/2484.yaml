@@ -1,0 +1,57 @@
+roomid: 2484
+zone: Idiocracy
+title: The White House Lawn
+description: >-
+  The South Lawn of the White House in 2505 is partly the original grass,
+  partly a motocross track, and partly a half-pipe for skateboarding that
+  was added during the Camacho administration as a recreational initiative.
+  The <ansi fg="itemname">monster trucks</ansi> parked near the Rose Garden
+  are official government vehicles. The <ansi fg="itemname">presidential podium</ansi>
+  stands near the center of the lawn, still there from this morning's press
+  conference, or possibly last month's. The <ansi fg="itemname">White House</ansi>
+  building itself is intact and largely original behind its rolling exterior
+  of sponsor banners and the giant WWE title belt mounted over the north
+  portico. A <ansi fg="itemname">flag</ansi> flies -- the Stars and Stripes,
+  with the Brawndo logo in the canton, which replaced the fifty stars in 2308.
+mapsymbol: W
+maplegend: White House Lawn
+biome: land
+exits:
+  south:
+    roomid: 2478
+nouns:
+  trucks: >-
+    The government monster trucks have the Presidential Seal on their doors --
+    the updated one, with the eagle holding a Brawndo can and the wrestling belt.
+    Each truck is approximately the size of a house. They park on the grass
+    because there is nowhere else to park them and because the Camacho administration
+    views lawn damage as evidence of executive power. The grass under each truck
+    is dead. Nobody has planted anything to replace it. There is a Brawndo
+    sprinkler in the corner of the lawn.
+  podium: >-
+    The presidential podium has the Presidential Seal on the front. The microphone
+    is live. If you stand at it, you are technically giving a press conference.
+    The Brawndo logo on the seal catches the sun. A stack of index cards on the
+    podium shelf reads THINGS TO SAY: 1) ELECTROLYTES. 2) WE GOT THIS. 3) FIRE
+    WEAPON. 4) AMERICA. The rest of the cards are blank.
+  house: >-
+    The White House is still white. This is the most traditional thing about it.
+    The columns are original, the portico is original, the windows are original.
+    The things attached to it -- the sponsor banners for Brawndo and Carls Jr,
+    the WWE title belt over the north entrance, the half-pipe in what used to
+    be the Jacqueline Kennedy Garden -- were added more recently. The building
+    survived. The gravity of the office survived less well.
+  flag: >-
+    The Stars and Stripes, with the Brawndo can logo where the blue canton used
+    to be. The flag was updated by executive order in 2308. The order said the
+    stars were too complicated and the electrolytes were more relevant. The flag
+    flies at the same height as always. The wind catches it the same way.
+    Something about it still looks like a flag.
+idlemessages:
+- A monster truck does a slow lap of the lawn. The ground shakes. The podium wobbles.
+- The half-pipe is in use. A Secret Service agent skates it between security sweeps.
+- A gardener tries to water the grass around the trucks. The Brawndo sprinkler competes.
+- Camacho does pull-ups on the goal post someone installed near the fountain.
+- A press corps assembles in front of the podium with cameras. Nobody is at the podium yet. They wait.
+- A government monster truck's hydraulics hiss and it settles three inches to the left.
+- The WWE title belt glints in the sun from its place above the north portico.

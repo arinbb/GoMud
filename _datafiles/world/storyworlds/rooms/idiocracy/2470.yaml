@@ -1,0 +1,54 @@
+roomid: 2470
+zone: Idiocracy
+title: The Hibernation Chamber
+description: >-
+  Deep underground, a military installation the world above has forgotten entirely.
+  The walls are concrete and bureaucratic grey, cracked now, trailing moss and long
+  brown water stains. Rows of <ansi fg="itemname">cryo pods</ansi> stand in the dark
+  like steel coffins, most of them sprung open, most of them empty -- their occupants
+  long since tumbled out into a world they did not choose. A <ansi fg="itemname">chart</ansi>
+  on the wall lists subjects by name and projected hibernation end-date; every date
+  is five hundred years wrong. The <ansi fg="itemname">pod</ansi> nearest the door
+  still has a damp outline in the shape of a man. The air smells of rust and old
+  cold and something that might be the residue of five centuries of waiting. A
+  flickering fluorescent tube makes everything the color of an old bruise.
+mapsymbol: H
+maplegend: Hibernation Chamber
+biome: dungeon
+exits:
+  east:
+    roomid: 2471
+nouns:
+  chart: >-
+    OPERATION HUMAN HIBERNATION -- SUBJECT ROSTER. Column one: name. Column two:
+    rank. Column three: projected emergence date. The dates run 2005, 2005, 2005
+    down the page. Someone has stamped every row OVERDUE in red ink. The last entry
+    reads BAUERS, J. -- PRIVATE -- MOST AVERAGE AMERICAN. The stamp on his row
+    is smudged, as if someone pressed it down with more force than necessary.
+  pod: >-
+    The nearest cryo pod is roughly the size and shape of an upright coffin, hinged
+    at the front, padded inside with a material that was once white foam and is now
+    the color of old teeth. The interior holds a faint human-shaped depression. A
+    small screen above the release latch reads SUBJECT RELEASED -- DAY 182,625.
+    Someone has written on the door in grease pencil: ITS 2505 DUMMY.
+  pods: >-
+    The other pods are open and empty. Several are tipped over. One has been
+    completely removed from its housing -- probably used as a couch. On the floor
+    near each one is a faint outline of a body, as if whoever woke up lay there
+    for a very long time before standing up and walking into the future without
+    a plan.
+  dust: >-
+    The dust on the floor is five centuries thick. You can see footprints going
+    out but not back. Something about that is worse than everything else in here.
+idlemessages:
+- A fluorescent tube flickers twice, buzzes, and steadies to its bruise-purple hum.
+- The silence down here is the silence of a place that has not heard a sound in a very long time.
+- Somewhere in the pod bank, a small red light blinks its patient emergency blink.
+- The air is cold and stale with the particular staleness of a sealed room in the year 2505.
+- A drop of water falls from the ceiling and lands in dust so thick it barely makes a mark.
+- One pod door swings slightly in a draft you cannot locate the source of.
+- The emergency exit sign above the east door reads EMRGNCY XIT in chipped red paint.
+spawninfo:
+- mobid: 610
+  message: 'Joe Bauers is sitting on the floor next to the pod, knees to his chest, trying to process the last thirty seconds of a five-hundred-year sleep.'
+  respawnrate: 3 real minutes

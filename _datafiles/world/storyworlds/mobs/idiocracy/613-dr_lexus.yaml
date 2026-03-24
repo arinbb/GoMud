@@ -1,0 +1,34 @@
+mobid: 613
+zone: idiocracy
+hostile: false
+maxwander: 0
+activitylevel: 10
+idlecommands:
+  - "emote reads the Brawndo label on a can with the focus of someone reviewing a medical text."
+  - "emote pokes at the diagnosis machine with one finger as if checking whether it is warm."
+  - "say Your condition is -- hang on -- the machine says TARD. That is your diagnosis. Okay."
+  - "emote writes something on a clipboard. It is a Brawndo logo."
+  - "say Treatment is Brawndo. Brawndo has electrolytes. Electrolytes are what the body craves."
+  - ""
+  - ""
+character:
+  name: Dr. Lexus
+  description: >-
+    Dr. Lexus is wearing a lab coat over a Carls Jr uniform, which is something
+    you would not see in a functional medical system but is extremely on-brand for
+    2505. He has a stethoscope. He has a clipboard. He has the smooth professional
+    confidence of someone who has never been second-guessed because second-guessing
+    requires a standard to guess against and in 2505 the standard is the diagnosis
+    machine and the diagnosis machine says what it says. He is not a real doctor.
+    The concept of a real doctor has been largely replaced by the diagnosis machine
+    and Brawndo Medical Solutions. He does his best with what he has. What he has
+    is a laminator, a stamp, and electrolytes.
+  raceid: 1
+  level: 4
+  equipment:
+    body:
+      itemid: 20110
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

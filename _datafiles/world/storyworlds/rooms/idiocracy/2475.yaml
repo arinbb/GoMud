@@ -1,0 +1,50 @@
+roomid: 2475
+zone: Idiocracy
+title: The Courtroom
+description: >-
+  The Honorable Judge Hector presides over the People's Court of 2505 from a
+  <ansi fg="itemname">bench</ansi> that was clearly purchased from Costco and
+  assembled incorrectly. The <ansi fg="itemname">gallery</ansi> is packed --
+  trials in 2505 are entertainment in the same way that OW MY BALLS is entertainment,
+  which is to say they require nothing from the audience except the ability to
+  point and react. The <ansi fg="red">prosecution</ansi> and defense tables face
+  each other at angles that suggest whoever arranged the furniture was working
+  from memory. A <ansi fg="itemname">screen</ansi> behind the bench shows the
+  defendant's crimes in large friendly letters. The concept of innocent until
+  proven guilty has been simplified to guilty, which saves time.
+mapsymbol: J
+maplegend: The Courtroom
+biome: city
+exits:
+  west:
+    roomid: 2474
+nouns:
+  bench: >-
+    The judges bench has a Costco sticker on the front that was never removed.
+    It reads JUDGES BENCH KIT -- ASSEMBLY REQUIRED -- SOME PARTS MISSING. The
+    judge sits behind it with the authority of someone who was elected not because
+    of legal knowledge but because he could do a backflip at the campaign rally.
+    His gavel is a length of PVC pipe wrapped in electrical tape. It is effective.
+  gallery: >-
+    The gallery is standing room only. The people in the gallery are eating. Several
+    are recording on devices. One woman in the front row has brought a Brawndo koozie
+    for her Brawndo can. The mood is festive in the way that things are festive when
+    no one has been taught the difference between a spectacle and a tragedy.
+  screen: >-
+    The screen reads: DEFENDANT: JOE BAUERS -- CRIMES: TALKING FANCY, BEING A SMARTASS,
+    NOT CARING ABOUT THE MOVIE (JUST A BUTT), SAYING WATER SHOULD GO ON PLANTS,
+    BEING GENERALLY FRUITY. Below this, in smaller text: ALSO POSSIBLY A FAG.
+    Below that: GUILTY. This verdict was entered before the trial began as a
+    time-saving measure.
+  table: >-
+    The defense table has a plastic folding chair and a yellow legal pad. Frito has
+    written on the legal pad: NOT GUILTY (MAYBE). He has underlined MAYBE twice.
+    He is very proud of this legal strategy. He got his law degree from Costco.
+idlemessages:
+- The gallery gasps at something that is not surprising. They gasp at everything.
+- Judge Hector hits his PVC pipe gavel on the bench. It makes a sound like hitting a bench with a pipe.
+- Someone in the gallery yells 'GUILTY' and everyone agrees without waiting for more information.
+- A prosecution lawyer points at the defendant. The gallery takes this as evidence.
+- The bailiff is wearing a Carls Jr hat over his bailiff hat. No one has addressed this.
+- The verdict screen flickers, then re-displays GUILTY in a slightly larger font.
+- Someone in the back asks what the trial is about. Someone else tells them it does not matter.

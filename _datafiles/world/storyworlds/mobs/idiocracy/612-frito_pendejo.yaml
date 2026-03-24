@@ -1,0 +1,34 @@
+mobid: 612
+zone: idiocracy
+hostile: false
+maxwander: 1
+activitylevel: 10
+idlecommands:
+  - "emote drinks a Brawndo with the satisfied air of someone confirming a belief they already had."
+  - "emote watches something on a small screen. Does not look up."
+  - "say I went to Costco. Law school. I have a degree. It is laminated."
+  - "emote scratches himself with the ease of someone in their own home regardless of where they actually are."
+  - "say The time machine totally works. I went to the past once. There were hot chicks."
+  - "say Go away. I am batin."
+  - ""
+  - ""
+character:
+  name: Frito Pendejo
+  description: >-
+    Joes lawyer, court-appointed, Costco-educated. Frito is a man who has achieved
+    a perfect equilibrium between the minimum effort required to exist and the
+    maximum satisfaction available for that effort. He wears a stained shirt with
+    the comfortable authority of a man who has not been cold in years. His Costco
+    law degree is framed, laminated, and the most important thing he owns. He
+    believes in the time machine in the alley. He believes in it completely. He
+    was there when it was built. He built it. He knows it works because he
+    believes it works, which in 2505 is the same thing as knowing.
+  raceid: 1
+  level: 3
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20175

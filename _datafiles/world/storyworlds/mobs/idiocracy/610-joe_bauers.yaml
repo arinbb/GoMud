@@ -1,0 +1,35 @@
+mobid: 610
+zone: idiocracy
+hostile: false
+maxwander: 1
+activitylevel: 15
+idlecommands:
+  - "emote looks around the room with the expression of someone performing a calculation they are not sure they have the right inputs for."
+  - "say Okay. Okay. So everybody -- everybody here -- everybody just -- okay."
+  - "emote tries to explain that plants need water and trails off when he sees the expression on the faces around him."
+  - "say Water. From the sky. Regular water. Just -- it goes on things and they grow. That is how that works."
+  - "emote sits down. Stands up. Sits down again."
+  - "say I have an average IQ. I scored a hundred. I am average. Back in -- I was average. I was exactly average."
+  - ""
+  - ""
+character:
+  name: Joe Bauers
+  description: >-
+    A man in his late thirties who looks like approximately half the men in any
+    given zip code in early twenty-first century America -- medium height, medium
+    build, a face that would not stand out in a lineup for anything. He is wearing
+    clothes that were frozen with him and are now five hundred years out of date,
+    which makes him look, in 2505, like a time traveler, which he is. His
+    expression is the expression of someone who has just discovered that their
+    IQ of one hundred is now the highest in the world and is not sure whether to
+    feel proud of this or devastated by it. He has settled on a kind of sustained
+    overwhelmed calm that is doing its best.
+  raceid: 1
+  level: 5
+  equipment:
+    body:
+      itemid: 20126
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

@@ -1,0 +1,67 @@
+roomid: 2473
+zone: Idiocracy
+title: Costco
+description: >-
+  It is impossible to describe the scale of Costco in 2505 except to say that
+  you cannot see the far wall and there may not be one. The <ansi fg="itemname">aisles</ansi>
+  extend in every direction, stacked to the structural limit with bulk merchandise
+  in quantities that presuppose a purchasing unit larger than a family -- perhaps
+  a nation. Somewhere in the middle distance is a <ansi fg="itemname">Starbucks</ansi>
+  which no longer serves coffee. Somewhere further is the <ansi fg="itemname">law school</ansi>,
+  a folding table with a laminator. A <ansi fg="itemname">greeter</ansi> stands
+  at every entrance in an orange vest. The lighting is the aggressive fluorescent
+  white of a place that does not believe in shadows. The smell is Brawndo and
+  bulk pretzels and the particular scent of civilization having given up on
+  small retail.
+mapsymbol: C
+maplegend: Costco
+biome: city
+exits:
+  south:
+    roomid: 2472
+  north:
+    roomid: 2485
+nouns:
+  aisles: >-
+    Aisle 1 through approximately aisle 47,000. You are in Aisle 3,847. The
+    merchandise appears to be: 200-count packs of athletic socks, a pallet
+    of Brawndo in the 96-can variety pack, several refrigerators still in
+    their boxes, a thing that might be a vehicle, and enough beef jerky
+    to feed a settlement. Every price tag ends in .97 because the .97 was
+    never updated. Everything costs the same as it cost in 2094 because
+    pricing is also something that was not updated.
+  starbucks: >-
+    The Starbucks sign is original and intact. The menu behind the counter
+    is not coffee. It is not anything you can identify by name. The barista
+    -- who is wearing a Starbucks apron and a Costco vest simultaneously --
+    will tell you it is a beverage. She will tell you it contains electrolytes.
+    The cups still say Starbucks. The cups still ask for your name. Your name
+    is spelled wrong on the cup. Everyone's name has been spelled wrong since 2198.
+  law: >-
+    The Costco Law School is a folding table near the paint section. There is
+    a laminator. There is a stack of cardstock cut to diploma size. There is
+    a man in a graduation gown eating a hot dog. The diploma costs $199.97
+    which is the same price as the refrigerators. It is fully accredited by
+    the Costco Department of Educational Solutions. It is the only accredited
+    law school remaining in the Western Hemisphere.
+  greeter: >-
+    The greeter stands exactly at the entrance threshold with the posture of
+    someone who has been told that standing at the entrance threshold is the
+    most important thing in the world and has believed it for twenty years.
+    She will tell you she loves you. She means it in the sense that Costco
+    has trained her to mean it. That might still count.
+idlemessages:
+- The PA system announces a sale on Brawndo that has been running continuously since 2401.
+- A forklift passes in the middle distance, carrying something so large you cannot identify it.
+- Someone in the law school aisle is having their photo taken with their new diploma. They are crying happy tears.
+- The greeter says 'Welcome to Costco. I love you.' for the four hundredth time today. She sounds like she means it.
+- A child rides a bulk-pack of paper towels like a horse. No adult intervenes or even notices.
+- The fluorescent lights buzz at a frequency that makes everything feel slightly more stupid than it is.
+- An announcement plays: 'ATTENTION COSTCO SHOPPERS: BRAWNDO IS ON SALE. BRAWNDO LOVES YOU.'
+spawninfo:
+- mobid: 617
+  message: 'A Costco Greeter materializes at the entrance in her orange vest, arms wide.'
+  respawnrate: 2 real minutes
+- mobid: 612
+  message: 'Frito Pendejo stands in the law school aisle, pointing proudly at a framed diploma on the folding table.'
+  respawnrate: 4 real minutes

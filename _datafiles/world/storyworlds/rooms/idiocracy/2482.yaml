@@ -1,0 +1,57 @@
+roomid: 2482
+zone: Idiocracy
+title: The Dust Bowl
+description: >-
+  The fields stretch from here to the horizon under a sky the color of old
+  <ansi fg="8">concrete</ansi>. Everything is dead. The <ansi fg="8">soil</ansi>
+  is dry and cracked in the geometric pattern of something that has not been
+  rained on in decades, or rather something that has been rained on only with
+  <ansi fg="yellow">Brawndo</ansi>, which has the same electrolytes as sports
+  drinks, which plants apparently do not crave, or at least these plants do not,
+  and these plants are not ambiguous about it -- they are brown and brittle and
+  completely dead in a way that communicates a strong opinion. The
+  <ansi fg="itemname">Brawndo sprinklers</ansi> tick in a slow circle, misting
+  yellow-green liquid over the dry earth with the patience of something that
+  does not know it is doing the wrong thing. In the cracked soil, if you look
+  closely, you can see the ghost of what this once was.
+mapsymbol: D
+maplegend: Dust Bowl
+biome: land
+exits:
+  south:
+    roomid: 2481
+nouns:
+  soil: >-
+    The soil is the color and texture of something that has given up. It is
+    not simply dry -- it is exhausted. Five hundred years of Brawndo irrigation
+    have changed its chemistry in ways that nothing can grow in. You can see
+    where rows of crops used to be in the faint geometry of the dead earth.
+    The furrows are still there. The plants are not. The electrolytes are very
+    much still there. You can smell them.
+  sprinklers: >-
+    The Brawndo sprinklers are the TurboGro 9000 series, each one branded with
+    the Brawndo logo. They rotate on a timer set in 2301 and not adjusted since.
+    The liquid they spray is Brawndo Agricultural Grade, which is the same as
+    regular Brawndo with a different label. Every sixty seconds another fine
+    mist of electrolytes settles over the completely dead farmland. This has
+    been happening every sixty seconds for a very long time.
+  sky: >-
+    The sky here is the color of old concrete -- not a weather condition exactly,
+    more like an atmosphere that has absorbed five hundred years of emissions
+    and Brawndo agricultural spray and decided to keep some of it. The sun gets
+    through. It is not warm in a good way. It is warm in the way of a planet
+    that has been working at this for too long.
+  ghost: >-
+    If you kneel down and look at the soil, you can see the outline of what
+    were once crop rows -- the geometry of intentional planting, furrow and
+    crown, the evidence of someone who stood here and knew what they were
+    doing. That person is five hundred years gone. The furrows remain. The
+    knowledge does not.
+idlemessages:
+- A Brawndo sprinkler completes its arc and mists a field of brown, dead stalks. They do not respond.
+- The wind moves a thin layer of dust from one dead field to another dead field.
+- Far away, a Brawndo delivery truck arrives to refill the sprinkler tanks. It is very efficient.
+- You dig your toe into the soil. It crumbles. Nothing lives in it. Nothing wants to.
+- The smell of Brawndo -- sharp, chemical, vaguely citrus -- is overpowering at this distance.
+- A crow lands on a dead cornstalk. Looks at it. Leaves. Even the crows know.
+- A sign at the field edge reads: BRAWNDO GROWS AMERICA. The field behind the sign disagrees.

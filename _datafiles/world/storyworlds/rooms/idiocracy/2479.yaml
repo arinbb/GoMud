@@ -1,0 +1,56 @@
+roomid: 2479
+zone: Idiocracy
+title: Congress
+description: >-
+  The chamber of the United States Congress in 2505 is the original hall, mostly
+  intact, which makes the contrast more vivid. The <ansi fg="itemname">seats</ansi>
+  are full of representatives eating, sleeping, watching screens, and occasionally
+  saying things that are not policy. The <ansi fg="itemname">podium</ansi> at the
+  front has a microphone into which someone said something this morning that was
+  recorded as official legislative testimony. The <ansi fg="itemname">ceiling</ansi>
+  is painted with classical allegories that look down on what is happening below
+  with an expression that the painter, being dead, cannot comment on. A
+  <ansi fg="itemname">bullet hole pattern</ansi> in the ceiling tiles marks where
+  President Camacho fired his rifle last session to get the floor. It worked. It
+  always works. Order was restored.
+mapsymbol: L
+maplegend: Congress
+biome: city
+exits:
+  north:
+    roomid: 2478
+nouns:
+  seats: >-
+    The seats of Congress are filled with 537 representatives and senators who
+    were elected primarily on the basis of how good they look on camera and
+    how many times they said the word electrolytes during the campaign. Several
+    are asleep. One is watching OW MY BALLS on a device held below the desk,
+    which is the most covert thing anyone in this building has done in decades.
+  podium: >-
+    The podium has a seal on it. The seal has been updated: it still has the
+    eagle, but the eagle is now holding a Brawndo can and the traditional
+    motto has been replaced with ELECTROLYTES: WE GOT EM. The microphone at
+    the podium is live. Whatever you say into it is technically legislation.
+    Nobody is stopping you.
+  ceiling: >-
+    The ceiling paintings show Justice, Liberty, Knowledge, and Virtue as classical
+    figures. Justice is blindfolded, which is original. Liberty holds a torch, which
+    is original. Knowledge holds a scroll, which is original. Virtue is looking
+    directly down at the floor of Congress with an expression that was definitely
+    not in the original design but has been there for about two hundred years and
+    no one has fixed it.
+  holes: >-
+    The bullet hole pattern in the ceiling tiles begins at the back of the chamber
+    and traces a diagonal toward the podium -- Camacho warming up, then bringing
+    the weapon to bear on the general direction of attention. The holes spell
+    nothing. They are not intentional art. They are the result of a man firing
+    a weapon inside a government building to get people to stop talking, and it
+    working every single time.
+idlemessages:
+- A representative stands up, says something about electrolytes, and sits down. Others applaud.
+- The chamber dissolves into shouting for forty-five seconds, then quiets when someone fires a gun.
+- A page delivers folders. The folders are put on desks and not opened.
+- Someone at the podium says the word 'Brawndo' and there is spontaneous applause.
+- A vote is called. Everyone votes yes. Someone asks what they voted on. Nobody knows. It passed.
+- President Camacho enters through the south door. Forty people stand and flex back at him.
+- A CNN-equivalent ticker runs across the bottom of every screen: CONGRESS DOES SOMETHING.

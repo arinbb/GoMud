@@ -1,0 +1,30 @@
+questid: 460
+name: Idiocracy
+description: >-
+  Joe Bauers, most average man in America, was frozen in a military hibernation
+  experiment in 2005 and woke up in 2505 to find he is the smartest person alive.
+  This is not a compliment to Joe. It is an observation about everyone else.
+  The crops are dying. Nobody will water them with water. The president fires a
+  weapon to get attention. The hospital diagnoses people as TARD. Somewhere,
+  a man named Frito has built a time machine out of a porta-potty. Navigate
+  the future. Find the one thing that might fix it. Use water. Use actual water.
+reward:
+  experience: 5000
+  item_id: 350
+  playermessage: >-
+    You watered the crops. With water. H-two-O. The thing that plants have always
+    needed, that the soil remembered even after five hundred years of Brawndo
+    irrigation, that the furrows in the dead fields were still shaped to receive.
+    Something is growing. Not much. Not yet. But the soil darkened and took the
+    water and something is happening in there that electrolytes cannot account for.
+    In your hand is a dented green can of Brawndo -- a souvenir from a future that
+    maybe, now, does not have to happen exactly like this. The can is cold. It has
+    electrolytes. You know what electrolytes are and you know what they are not.
+    That puts you ahead of most of 2505. That puts you ahead of almost everyone.
+steps:
+- description: Wake up in the Hibernation Chamber and take stock of the year 2505.
+- description: Survive the Trash Avalanche and reach the street.
+- description: Get officially diagnosed at St Gods Memorial Hospital.
+- description: Stand trial in the Courtroom of 2505 justice.
+- description: Meet President Dwayne Elizondo Mountain Dew Herbert Camacho in the Oval Office.
+- description: Water the dying crops in the Dust Bowl with actual water.

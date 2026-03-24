@@ -1,0 +1,34 @@
+mobid: 618
+zone: idiocracy
+hostile: false
+maxwander: 1
+activitylevel: 10
+idlecommands:
+  - "emote adjusts his coat with the careful precision of someone who takes their coat very seriously."
+  - "emote counts something. It may be money. It may be respect. Both are currencies here."
+  - "say Two Ds. For a double dose of my pimpin."
+  - "emote scans the room with the assessment of a man calculating angles."
+  - "say You want to know why two Ds? You want me to explain again? I will explain again."
+  - ""
+  - ""
+character:
+  name: Upgrayedd
+  description: >-
+    Upgrayedd -- spelled with two Ds, for a double dose of his pimping -- is a
+    man with the patient confidence of someone who has explained the two Ds many
+    times and will explain them many more and does not find this diminishing. He
+    wears a leather jacket and a gold chain and dark trousers and carries himself
+    with the assurance of someone whose personal brand is very clear to him. The
+    name is important. The spelling is important. If you do not understand the
+    two Ds he will tell you about them.
+  raceid: 1
+  level: 4
+  equipment:
+    body:
+      itemid: 20104
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20177
+    neck:
+      itemid: 20181

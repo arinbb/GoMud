@@ -1,0 +1,59 @@
+roomid: 2485
+zone: Idiocracy
+title: Costco Law School
+description: >-
+  Technically inside Costco, occupying the aisle between the paint section and
+  the bulk toilet paper. The Costco Law School takes up a space roughly the
+  size of a parking spot: one <ansi fg="itemname">folding table</ansi>, two
+  folding chairs, a <ansi fg="itemname">laminator</ansi>, a stack of letter-sized
+  cardstock, and a man in a graduation gown eating a hot dog. The
+  <ansi fg="itemname">diploma</ansi> on display reads: THIS CERTIFIES THAT THE
+  BEARER HAS COMPLETED THE COSTCO LAW PROGRAM AND IS HEREBY QUALIFIED TO DO
+  LAW. It is signed by the Dean, who is also the man with the hot dog. The
+  program takes one afternoon. The <ansi fg="itemname">curriculum poster</ansi>
+  on the folding table lists the course offerings. There are two. Both are called LAW.
+mapsymbol: L
+maplegend: Law School
+biome: city
+exits:
+  south:
+    roomid: 2473
+nouns:
+  table: >-
+    The folding table is a standard Costco folding table, which means it is
+    bulk-purchased, durable, and inoffensive. On it: the laminator (warm, humming),
+    the cardstock stack, a rubber stamp that says CERTIFIED LAW GRADUATE, a
+    stamp pad in Brawndo-green, and a form to fill out to receive your diploma.
+    The form asks for name, signature, and Costco membership number. It does
+    not ask about legal experience. That is not a criteria.
+  laminator: >-
+    The laminator is the beating heart of the Costco Law School. It is a
+    standard laminator purchased from the same Costco aisle it now occupies,
+    which is a bootstrap origin story that everyone here finds inspiring. It
+    runs hot. The diplomas come out slightly warm to the touch, which makes
+    them feel earned.
+  diploma: >-
+    The sample diploma on display reads: THIS IS TO CERTIFY THAT [NAME] HAS
+    COMPLETED ALL REQUIREMENTS OF THE COSTCO SCHOOL OF LAW INCLUDING LAW 101
+    AND LAW 101 ADVANCED AND IS HEREBYE DECLARED AN ATTORNEY AT LAW OF THE
+    COSTCO SYSTEM OF JUSTICE. SIGNED: DEAN JOHNSON (ALSO THE JANITOR). The
+    Costco seal is embossed in the corner. It is the same seal as the one on
+    the bulk pretzels.
+  poster: >-
+    COSTCO LAW SCHOOL COURSE OFFERINGS:
+    LAW 101 -- BASICS OF LAW (2 hours -- includes lunch)
+    LAW 101 ADVANCED -- MORE LAW (2 hours -- also includes lunch)
+    BOTH COURSES REQUIRED FOR GRADUATION. GRADUATION SAME DAY.
+    COSTCO MEMBERS SAVE $20. NOT A COSTCO MEMBER? JOIN COSTCO.
+idlemessages:
+- The laminator hums and produces another warm diploma. The Dean stamps it without looking up.
+- A new student sits down, fills out the form in two minutes, and receives their diploma.
+- They shake the Deans hand. The Dean is still eating his hot dog during the handshake.
+- A graduate poses with their diploma next to the toilet paper display for a photo.
+- The Dean explains the legal principle of 'not guilty maybe' to a new student. It takes four seconds.
+- A Costco announcement plays: 'ATTENTION SHOPPERS: LAW SCHOOL GRADUATES NEAR AISLE 3847.'
+- Someone walks by pulling a cart of bulk paper towels, accidentally knocking the curriculum poster.
+spawninfo:
+- mobid: 612
+  message: 'Frito Pendejo stands at the folding table with his framed Costco law degree, proudly explaining its legal significance to anyone nearby.'
+  respawnrate: 4 real minutes

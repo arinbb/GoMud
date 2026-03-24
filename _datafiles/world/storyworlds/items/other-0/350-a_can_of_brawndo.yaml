@@ -1,0 +1,18 @@
+itemid: 350
+name: a can of Brawndo
+namesimple: brawndo
+displayname: a dented can of <ansi fg="yellow">Brawndo</ansi>
+description: >-
+  A dented green can labeled BRAWNDO THE THIRST MUTILATOR in aggressive block
+  letters. The design does not leave room for subtlety: the word BRAWNDO is
+  approximately three times larger than it needs to be, rendered in a yellow-gold
+  that implies both lightning and sports. Below it: IT'S GOT ELECTROLYTES. Below
+  that, in smaller letters, a reminder: ELECTROLYTES ARE WHAT PLANTS CRAVE. The
+  can is cold and slightly damp the way cans from vending machines always are.
+  When you shake it, you can feel the electrolytes. You do not know what
+  electrolytes are. Nobody in 2505 knows what electrolytes are. This has not
+  slowed down the marketing.
+type: object
+subtype: usable
+uses: 0
+value: 0

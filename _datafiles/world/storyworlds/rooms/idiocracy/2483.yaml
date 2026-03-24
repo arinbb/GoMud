@@ -1,0 +1,60 @@
+roomid: 2483
+zone: Idiocracy
+title: The Time Machine
+description: >-
+  The alley smells of garbage and old Brawndo and something that might be hope
+  dying in a very specific location. At the end of the alley, where the trash
+  has been pushed back to create a small clear space, stands the
+  <ansi fg="itemname">time machine</ansi>. It is a <ansi fg="8">porta-potty</ansi>.
+  It has been decorated with duct tape and electrical components salvaged from
+  other devices and a hand-painted sign that reads TIME MASHEEN -- DO NOT TUCH.
+  Frito Pendejo says it definitely works. He says he went to the past once and
+  it was fine and there were hot chicks. The <ansi fg="itemname">control panel</ansi>
+  inside is a phone keypad, a CB radio, and what appears to be a toaster with
+  the coils removed. It does not smell like a time machine. It smells exactly
+  like what it is.
+mapsymbol: M
+maplegend: The Time Machine
+biome: city
+exits:
+  east:
+    roomid: 2472
+nouns:
+  machine: >-
+    The porta-potty has been painted silver with a wide brush, the kind of
+    wide-brush effort that suggests a person who had a lot of silver paint and
+    a clear afternoon and no supervision. The word TIME is painted in red on
+    the door. The word MASHEEN is painted below it in smaller letters, as if
+    the painter was working with limited red paint. Duct tape covers the seams
+    in a pattern that implies structural reinforcement but provides none.
+  panel: >-
+    Inside, past the smell, the control panel has been built into the wall
+    using a CB radio, a phone keypad with numbers 0-9 and a star key,
+    and what was once a toaster. The toaster still has crumbs in it.
+    A sticky note on the keypad reads: ENTER YEAR. Another sticky note
+    below it reads: THEN WAIT. A third sticky note that appears to have
+    been added later reads: IT DID NOT WORK FOR UPGRAYEDD DO NOT LET HIM
+    IN HEAR.
+  sign: >-
+    TIME MASHEEN -- DO NOT TUCH. Below this, in smaller print: PROPERTY OF
+    FRITO PENDEJO ESQ -- COSTCO LAW DEGREE CERTIFIED OWNER. Below this,
+    in the smallest print: IF YOU ARE FROM THE PAST PLEASE TAKE ME WITH YOU
+    I HAVE MONEY.
+  trash: >-
+    The alley around the time machine has been cleared of trash in an arc
+    of about eight feet, presumably because Frito wanted a clear landing
+    zone for time travelers from the future arriving. The cleared space is
+    the most intentional thing in this alley. The ring of trash around it
+    is about twelve feet tall.
+idlemessages:
+- Frito pats the side of the time machine with genuine confidence.
+- The time machine sits silently in the alley and does not do anything.
+- Something drips from the time machine's roof. You do not investigate what.
+- A pigeon lands on top of the time machine, looks at it, and leaves.
+- The CB radio inside crackles with static, then silence, then more static.
+- Frito pushes some buttons and waits. Nothing happens. He nods as if this is progress.
+- The alley is quiet except for the distant sound of Brawndo ads and the wind over trash.
+spawninfo:
+- mobid: 612
+  message: 'Frito Pendejo is standing next to the time machine with his arms crossed, nodding at it with deep proprietary satisfaction.'
+  respawnrate: 4 real minutes
