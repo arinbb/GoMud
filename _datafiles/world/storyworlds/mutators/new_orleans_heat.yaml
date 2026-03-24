@@ -1,0 +1,12 @@
+mutatorid: new-orleans-heat
+namemodifier:
+  behavior: append
+  text: (humid)
+  colorpattern: none
+descriptionmodifier:
+  behavior: append
+  text: The humidity wraps around everything like a warm, wet hand.
+  colorpattern: none
+alertmodifier:
+  text: New Orleans heat radiates from every surface, thick and unapologetic.
+  colorpattern: none

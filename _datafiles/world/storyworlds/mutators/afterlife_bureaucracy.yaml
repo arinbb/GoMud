@@ -1,0 +1,12 @@
+mutatorid: afterlife-bureaucracy
+namemodifier:
+  behavior: append
+  text: (haunted)
+  colorpattern: none
+descriptionmodifier:
+  behavior: append
+  text: Something between the living and the dead lingers here.
+  colorpattern: none
+alertmodifier:
+  text: The air smells of chalk dust and old paperwork from the afterlife.
+  colorpattern: none

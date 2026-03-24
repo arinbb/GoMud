@@ -4,6 +4,8 @@ autoscale:
   minimum: 1
   maximum: 5
 defaultbiome: house
+mutators:
+- mutatorid: wormwood-garish
 idlemessages:
 - 'Somewhere nearby, a small voice is reading aloud in a whisper — too quiet to make out the words.'
 - The smell of cheap perfume and fish fingers drifts through the air.

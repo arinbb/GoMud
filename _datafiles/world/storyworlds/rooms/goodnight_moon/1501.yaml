@@ -23,6 +23,12 @@ exits:
     roomid: 1500
     exitmessage: You step back out of the painting, through the frame, and into the great green room.
 nouns:
+  cow: >-
+    The cow of the painting, suspended in permanent mid-arc, her four legs
+    tucked in the posture of flight. Her coat is the warm brown of a barn
+    door, her eyes round and dark and entirely untroubled by the physics of
+    what she is doing. She has always been here, in this moment, in this leap.
+    She will always be here. She finds this acceptable.
   moon: >-
     So close here. A white disk of absolute size, filling the sky, filling
     your vision. It is not cold. It is not warm. It is simply light --

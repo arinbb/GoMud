@@ -19,6 +19,17 @@ exits:
     roomid: 1965
     mapdirection: south
 nouns:
+  table: >-
+    A canteen table like all the others -- aluminum surface, bolted to the
+    floor, slightly sticky. Syme has claimed this corner through repetition
+    and the unspoken authority of someone who clearly belongs here. His
+    dictionary takes up most of the table. His tray has been pushed to the
+    edge. The Victory Gin sits untouched. He is working.
+  tray: >-
+    The standard canteen tray: watery stew, a hunk of bread, the glass of
+    Victory Gin that the Ministry provides at lunch. Syme's tray has gone
+    cold. He has not noticed. He is explaining Newspeak to Winston and the
+    food is not the point. The food was never the point.
   dictionary: >-
     The Eleventh Edition of the Newspeak dictionary, Syme's life work.
     It is not yet complete. But the direction is clear: every edition

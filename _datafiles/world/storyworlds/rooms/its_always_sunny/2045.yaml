@@ -16,6 +16,29 @@ description: >-
 mapsymbol: BM
 maplegend: The Basement
 biome: cave
+nouns:
+  pipes: >-
+    A tangle of pipes runs along the ceiling and upper walls -- heating pipes,
+    plumbing pipes, a few pipes whose purpose is genuinely unclear. They knock
+    and hiss on cold mornings and fall silent on warm ones with no apparent
+    pattern. Charlie has given several of them names. This is not documented
+    anywhere official.
+  boxes: >-
+    Cardboard boxes line the walls in varying states of collapse, labeled in
+    Charlie's handwriting with systems that made sense at the time of labeling.
+    STUFF. BAR STUFF. NOT RATZ. MAYBE RATZ. CHRISTMAS (undated). They have
+    been here so long they have become load-bearing.
+  floor: >-
+    Concrete, damp, cold, marked with the footprints of years. A drain in
+    the center of the floor is doing its best. A bucket near the far wall
+    collects a steady drip from a pipe above. The bucket has been here since
+    before Charlie. The drip has been here since before the bucket.
+  furnace: >-
+    An ancient gas furnace, hulking and temperamental, that heats the pub
+    through a series of groans and complaints. Charlie is the only person
+    who knows how to talk it back into service when it goes out, which it
+    does three or four times a winter. The relationship between Charlie and
+    the furnace is the most stable relationship in the building.
 exits:
   north:
     roomid: 2042

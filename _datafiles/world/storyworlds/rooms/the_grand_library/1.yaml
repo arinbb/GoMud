@@ -7,7 +7,7 @@ description: >-
   light spills from brass lanterns mounted along curving mahogany balustrades. A
   sweeping staircase spirals upward to the mezzanine level. The air hums with a
   quiet energy, as though the stories contained within these walls are alive and
-  waiting. A large oak <ansi fg="itemname">reception desk</ansi> stands at the center, and a worn leather <ansi fg="itemname">guestbook</ansi> lies open upon it.
+  waiting. A large oak <ansi fg="itemname">reception desk</ansi> stands at the center, and a worn leather <ansi fg="itemname">guestbook</ansi> lies open upon it. Book Stacks rise to the <ansi fg="exit">north</ansi>, the Screening Room glows to the <ansi fg="exit">east</ansi>, the Gallery hangs to the <ansi fg="exit">west</ansi>, and music drifts from the <ansi fg="exit">south</ansi>. A staircase leads <ansi fg="exit">up</ansi>. Side passages lead to the <ansi fg="exit">arcade</ansi> and <ansi fg="exit">trophy</ansi> room.
 mapsymbol: A
 maplegend: Atrium
 biome: house
@@ -23,11 +23,13 @@ exits:
   south:
     roomid: 7
     exitmessage: You follow the sound of distant music down a corridor to the south.
-  southwest:
+  arcade:
     roomid: 8
+    mapdirection: southwest
     exitmessage: You follow the glow of CRT monitors through a side passage to the Arcade.
-  southeast:
+  trophy:
     roomid: 9
+    mapdirection: southeast
     exitmessage: You step into a warm, amber-lit alcove lined with glass shelves.
 nouns:
   desk: >-

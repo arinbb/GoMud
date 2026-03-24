@@ -17,6 +17,24 @@ exits:
   south:
     roomid: 2
 nouns:
+  chains: >-
+    Iron chains anchor several of the rarest volumes to their shelves, padlocked
+    with locks whose keys have not been seen in decades. The chains are heavy
+    and slightly warm to the touch, as if conducting something from the books
+    themselves. The books they restrain seem content with the arrangement.
+    Whatever is in them, it wants to be read in place, not carried off.
+  books: >-
+    The books here are different from those in the main stacks. Some are bound
+    in materials that resist identification. Some have titles in languages that
+    do not exist. One volume has no title at all and a cover that does not open
+    the same way twice. The librarian has opinions about which ones may be
+    taken out. She does not share them unless asked directly.
+  candle: >-
+    A single tallow candle in the reading alcove, burning with a perfectly
+    still flame that has not wavered once since you entered. It is not a
+    draft-free room. There is simply something about this candle. It burns
+    at the same rate regardless of how long you stay. You could read here
+    for years and find it unchanged.
   alcove: >-
     The reading alcove is small and intimate, just large enough for the chair
     and a narrow table. The candle flame doesn't flicker -- it burns perfectly

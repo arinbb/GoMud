@@ -20,6 +20,19 @@ exits:
   north:
     roomid: 2431
 nouns:
+  lifeguard: >-
+    The lifeguard chair stands tall at the midpoint of the pool, white-painted
+    wood going slightly grey in the sun, the seat elevated just enough to see
+    everything and be seen by everyone. It is the only real throne at Valley
+    Vista public pool. Wendy Peffercorn sits in it with the calm authority of
+    someone who has mastered her domain. The domain is fifty meters of chlorinated
+    water and everyone in it. She has mastered it completely.
+  towels: >-
+    Beach towels laid out along the concrete decking in the spots that got
+    claimed earliest in the morning. Striped ones, solid ones, one that says
+    PROPERTY OF YMCA in faded block letters. They bake in the afternoon sun
+    alongside the kids who own them. By four o'clock everything smells of
+    chlorine and warm terry cloth and coconut sunscreen.
   pool: >-
     The pool is fifty meters long and blinding blue. The water is cold
     in the deep end and warm in the shallow end, which tells you something

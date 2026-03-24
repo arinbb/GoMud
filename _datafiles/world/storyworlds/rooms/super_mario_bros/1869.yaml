@@ -25,6 +25,24 @@ exits:
     roomid: 1870
     mapdirection: south
 nouns:
+  clouds: >-
+    The clouds in World 5 are white and solid-looking against the cooler sky,
+    the same pixel-art clouds as World 1 but set against a blue that reads as
+    later in the day, or later in the journey. They are static, decorative,
+    part of the background layer that you can see but never reach. From here
+    they look like they might offer rest. They do not.
+  bricks: >-
+    Brick blocks line the elevated platforms here, more numerous than in the
+    earlier worlds, requiring more navigation and less straightforward running.
+    Each one can be broken if you are Super Mario. Each one is solid if you are
+    not. The bricks here are slightly darker than World 1 bricks. This is
+    deliberate. The game is talking to you through color.
+  gap: >-
+    The gaps between platforms here are wider -- not impossible, but requiring
+    commitment. You must leave the solid ground and trust your momentum. The
+    gaps are not bottomless in the literal sense; the screen scrolls and
+    eventually so would you. But they feel bottomless, which amounts to the
+    same thing at speed.
   palette: >-
     The colors here are subtly different -- same world, different hues.
     The sky is cooler, the ground lighter, the trees a gray-tinged green.

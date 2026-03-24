@@ -23,6 +23,22 @@ exits:
     roomid: 2040
     mapdirection: east
 nouns:
+  stage: >-
+    A low raised platform -- two steps up, nothing more -- that creates the
+    necessary separation between performer and audience. In this room, in
+    this context, the stage is where Dee stands when the Gang decides she
+    needs to be reminded of something. The stage does not protect the person
+    standing on it. If anything, it makes them more visible.
+  microphone: >-
+    A cheap microphone on a stand, slightly bent from a previous incident.
+    The kind of mic that picks up every breath and amplifies every hesitation.
+    Dee has held this mic in dreams where the crowd is silent for the right
+    reasons. The dreams are detailed and specific. They have not yet come true.
+  stool: >-
+    A bar stool positioned stage-right, the kind that communicates casualness --
+    a performer at ease, confident enough to sit. Dennis sometimes leans on it
+    while delivering particularly cutting observations. It is a prop in a show
+    that Dee did not agree to be in.
   attention: >-
     The focused attention of the Gang is a powerful thing. It has been deployed
     against Dee in this room and it is not comfortable to witness. They are not

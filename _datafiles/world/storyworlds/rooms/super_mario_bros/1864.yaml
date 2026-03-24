@@ -21,6 +21,18 @@ exits:
   east:
     roomid: 1865
 nouns:
+  throne: >-
+    The throne room behind Toad is visible through the doorway -- stone
+    walls, red carpet, a dais with an ornate chair on it. The chair is empty.
+    It has been empty the entire time you have been traveling through these
+    castles. The room smells faintly of lava smoke and something floral, which
+    is the princess's perfume, or was. She was here recently. She is not here now.
+  mushroom: >-
+    A question-mark block near the doorway glows faintly gold. If you hit it
+    from below, it will yield something useful -- a mushroom, maybe, or a
+    fire flower, or a star. The blocks in this game always give you something.
+    That has been the deal from the beginning. Hit the block; receive the gift.
+    The generosity of the Mushroom Kingdom is unconditional, even in defeat.
   toad: >-
     Toad is about two feet tall, round-headed, wearing a white mushroom cap
     with red spots and a vest over a blue shirt. He has the particular

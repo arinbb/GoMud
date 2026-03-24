@@ -1,0 +1,12 @@
+mutatorid: psychokinetic-energy
+namemodifier:
+  behavior: append
+  text: (PKE active)
+  colorpattern: none
+descriptionmodifier:
+  behavior: append
+  text: Your hair stands on end from residual psychokinetic energy.
+  colorpattern: none
+alertmodifier:
+  text: A faint green glow pulses at the edge of your vision. PKE readings are elevated.
+  colorpattern: none

@@ -20,6 +20,23 @@ exits:
   south:
     roomid: 1866
 nouns:
+  sky: >-
+    Nintendo blue, unvarying, the color of a sky that was designed to be a sky
+    and nothing more. No clouds here, no weather, no atmosphere in the literal
+    sense. Just the solid, reliable backdrop that tells you: this is outside,
+    this is day, this is the world. The sky in the Mushroom Kingdom never changes
+    while you are moving through it. That is part of the deal.
+  blocks: >-
+    Question-mark blocks hover in the air at head height, gold-glowing, patient.
+    Hit one from below and it yields its contents -- a mushroom, a coin, a
+    flower, once in a while a star. Brick blocks line the platforms above, solid
+    and breakable if you are powered up. The Mushroom Kingdom encodes generosity
+    into its architecture. Everything here can give you something.
+  pipes: >-
+    Green warp pipes emerge from the ground at regular intervals, their openings
+    just wide enough for a man in overalls to drop into. Some lead underground.
+    Some spawn Piranha Plants on a fixed cycle. Some go nowhere. The pipes are
+    the visual grammar of this world, the punctuation of the horizontal scroll.
   trees: >-
     Pixel-art trees with round, dark-green canopies on straight trunks --
     simpler than real trees, reduced to their essential tree-ness. They

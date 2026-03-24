@@ -7,16 +7,24 @@ description: >-
   souvenirs you have gathered from the worlds you have visited. Each shelf
   is labeled with a small brass placard, waiting for an object to give it
   meaning. A warm amber light illuminates whatever you have placed here.
-  The atrium is back to the <ansi fg="exit">northwest</ansi>. Type <ansi fg="command">collection</ansi> to see your progress. Use <ansi fg="command">storage add</ansi> and <ansi fg="command">storage remove</ansi> to manage your shelf.
+  The <ansi fg="exit">atrium</ansi> is back through the alcove. Type <ansi fg="command">collection</ansi> to see your progress. Use <ansi fg="command">storage</ansi> to manage your shelf.
 mapsymbol: T
 maplegend: Trophy Room
 biome: house
 isstorage: true
 exits:
-  northwest:
+  atrium:
     roomid: 1
+    mapdirection: northwest
     exitmessage: You step back into the Grand Atrium.
 nouns:
+  glass: >-
+    The glass fronts of the display cases are thick and slightly curved, the
+    kind that makes everything behind them look slightly more significant.
+    The objects inside seem to know they are being displayed. A guitar pick
+    leans against the inside wall. A hunting cap is positioned at an angle
+    that took real consideration. The glass is always clean, which is not
+    a small thing in a library.
   shelves: >-
     Glass-fronted shelves with small brass placards. Some are empty, waiting.
     Others hold the treasures of worlds you have walked through — a vial of

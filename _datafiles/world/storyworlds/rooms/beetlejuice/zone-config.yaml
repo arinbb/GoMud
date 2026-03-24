@@ -4,6 +4,8 @@ autoscale:
   minimum: 1
   maximum: 5
 defaultbiome: house
+mutators:
+- mutatorid: afterlife-bureaucracy
 idlemessages:
 - Calypso music drifts from somewhere you can't quite place, then fades.
 - A fat fly buzzes past your ear, louder than it should be.

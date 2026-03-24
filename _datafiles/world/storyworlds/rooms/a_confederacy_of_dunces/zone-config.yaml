@@ -4,6 +4,8 @@ autoscale:
   minimum: 1
   maximum: 5
 defaultbiome: city
+mutators:
+- mutatorid: new-orleans-heat
 idlemessages:
 - The heat rises from the pavement in visible waves, thick as gravy, carrying the smell of frying oysters and spilled beer.
 - 'Somewhere nearby, a trumpet moans a slow blues line that curls through the humid air like cigarette smoke.'

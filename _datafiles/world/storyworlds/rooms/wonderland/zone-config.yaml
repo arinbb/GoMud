@@ -4,6 +4,8 @@ autoscale:
   minimum: 1
   maximum: 5
 defaultbiome: forest
+mutators:
+- mutatorid: wonderland-logic
 idlemessages:
 - Nothing is quite the right size here. The flowers seem too large, or perhaps you are too small.
 - A grin without a cat floats past, lingering in the air before fading.

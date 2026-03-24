@@ -5,6 +5,29 @@ description: A long institutional corridor lit by sickly green fluorescents.
 mapsymbol: H
 maplegend: Hallway
 biome: dungeon
+nouns:
+  doors: >-
+    Numbered doors line the corridor, each one identical -- the same beige
+    paint, the same institutional handle, the same faint sense of dread.
+    The numbers do not follow any system recognizable to the living. Some
+    doors have numbers that are colors. One door has a number that is a sound.
+    None of them open from the outside.
+  lights: >-
+    Sickly green fluorescent tubes run the length of the ceiling, buzzing at
+    a frequency just below conscious annoyance. They flicker in sequence, one
+    after another down the corridor like a wave, as if signaling something to
+    someone who knows what the signals mean.
+  floor: >-
+    The floor is linoleum, the color of old teeth, cold through your shoes.
+    It stretches the length of the corridor without seam or variation. Scuff
+    marks from ten thousand afterlife arrivals trace paths to doors that may
+    or may not have answered them.
+  numbers: >-
+    The door numbers here do not conform to any logic the living would recognize.
+    Some appear to be fractions. One appears to be a smell. Another changes
+    when you look directly at it. The bureaucracy of the afterlife requires
+    precise numbers; it is not the afterlife's fault that precision means
+    something different here.
 exits:
   south:
     roomid: 612

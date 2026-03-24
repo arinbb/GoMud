@@ -1,0 +1,12 @@
+mutatorid: desert-resistance
+namemodifier:
+  behavior: append
+  text: (wild)
+  colorpattern: none
+descriptionmodifier:
+  behavior: append
+  text: The desert hums with quiet defiance against everything man-made.
+  colorpattern: none
+alertmodifier:
+  text: Red rock dust coats your skin. The wilderness does not want to be tamed.
+  colorpattern: none

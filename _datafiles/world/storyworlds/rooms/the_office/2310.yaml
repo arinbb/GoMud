@@ -22,6 +22,25 @@ exits:
   up:
     roomid: 2311
 nouns:
+  stairs: >-
+    Concrete steps with a painted yellow edge on each tread, worn to almost
+    nothing in the center. The stairwell has seen thousands of conversations
+    that could not happen at desks -- confessions, proposals rehearsed out
+    loud, arguments had and rehad, the quiet crying that a break room does
+    not provide enough privacy for. The stairs remember all of it, which is
+    to say they are just stairs.
+  railing: >-
+    A steel pipe railing, coated in decades of institutional paint, solid
+    and uninspiring and absolutely there when you need it. Jim has leaned on
+    this railing during at least eleven conversations that mattered. Dwight
+    has used it to brace during six practice falls. It is the most load-bearing
+    relationship in the building.
+  'fire extinguisher': >-
+    A red fire extinguisher in a bracket on the wall, last inspected in a year
+    that seems optimistic. It has never been used. Michael once pretended to use
+    it during a fire drill and the incident is still in the building's incident
+    log. The extinguisher has outlasted three property managers and will outlast
+    several more.
   walls: >-
     Painted cinder block, institution-grey, marked with years. There is a scuff at
     hip height on the second-floor landing where a filing cabinet once clipped the

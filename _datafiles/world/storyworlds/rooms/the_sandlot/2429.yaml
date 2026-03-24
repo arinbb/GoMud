@@ -20,6 +20,25 @@ exits:
   south:
     roomid: 2433
 nouns:
+  rides: >-
+    The carnival rides hum and spin and swing in the warm summer evening --
+    the Tilt-A-Whirl, the Scrambler, a kiddie roller coaster that the older
+    kids have to fold themselves into. The rides smell of grease and hot metal
+    and something sweet. Each one has a line. Each line has a kid counting
+    the people ahead of them with the specific focus of someone for whom
+    waiting is the hardest thing they have ever done.
+  lights: >-
+    String lights and neon and the rotating colored spots on the Ferris wheel
+    gondolas turn the fairground golden as the sun goes down. In the dark the
+    carnival looks like it is on fire in the best possible way. Everything looks
+    better in carnival lights. The chewing tobacco looks worse, but everything
+    else looks better.
+  'cotton candy': >-
+    Pink spun sugar on a paper cone, weightless and immediately necessary.
+    It costs twenty-five cents and is worth every penny and is gone before
+    you have made three steps. Your fingers are sticky for the rest of the
+    evening, which is fine because the rest of the evening is also the best
+    evening you can currently imagine.
   'ferris wheel': >-
     The Ferris wheel turns slowly against the sky, each gondola swaying.
     At the top you can see the whole neighborhood -- the sandlot, the

@@ -23,6 +23,18 @@ exits:
     roomid: 1900
     mapdirection: south
 nouns:
+  path: >-
+    A narrow dirt path winds through the rose beds, just wide enough for one
+    person walking carefully. It has been walked by the Little Prince, who lay
+    down beside it and wept when he understood what he was looking at. The
+    path continues in both directions among the rows, identical roses on either
+    side, and does not lead anywhere that resolves the question the garden asks.
+  thorns: >-
+    Each rose has four thorns, the same four thorns his rose has. The thorns
+    are not decorative. They are part of the rose's character, part of the
+    difficulty of loving something that can hurt you simply by being what it is.
+    His rose, on B-612, is proud of her thorns. She believes they protect her.
+    They do not protect her. He protects her. That is what tending means.
   roses: >-
     Five thousand roses, each one identical to the next, each one identical
     to the rose in the glass dome on B-612. They are beautiful and they are

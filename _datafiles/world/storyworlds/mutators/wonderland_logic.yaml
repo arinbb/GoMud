@@ -1,0 +1,12 @@
+mutatorid: wonderland-logic
+namemodifier:
+  behavior: append
+  text: (curious)
+  colorpattern: none
+descriptionmodifier:
+  behavior: append
+  text: The rules here are not the rules you know.
+  colorpattern: none
+alertmodifier:
+  text: Reality bends gently, like a playing card in a breeze.
+  colorpattern: none

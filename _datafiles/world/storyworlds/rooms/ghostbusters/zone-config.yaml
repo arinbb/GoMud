@@ -4,6 +4,8 @@ autoscale:
   minimum: 1
   maximum: 10
 defaultbiome: city
+mutators:
+- mutatorid: psychokinetic-energy
 idlemessages:
 - Somewhere in the distance, a siren wails and then cuts off abruptly.
 - The air smells faintly of slime and ozone, like lightning hit a hot dog cart.

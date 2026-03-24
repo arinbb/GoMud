@@ -4,6 +4,8 @@ autoscale:
   minimum: 1
   maximum: 10
 defaultbiome: desert
+mutators:
+- mutatorid: desert-resistance
 idlemessages:
 - 'The desert silence is immense, broken only by wind and the distant cry of a hawk.'
 - A heat shimmer rises from the red rock, bending the horizon like a fever dream.
