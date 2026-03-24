@@ -39,20 +39,14 @@ nouns:
     A well-worn beanbag chair in front of the main screen. It has that
     particular collapsed-in shape of a seat that has been sat in for many
     hours by many people, all of them leaning forward.
-containers:
-  console: {}
 spawninfo:
 - itemid: 134
-  container: console
   respawnrate: 1 real minutes
 - itemid: 136
-  container: console
   respawnrate: 1 real minutes
 - itemid: 137
-  container: console
   respawnrate: 1 real minutes
 - itemid: 167
-  container: console
   respawnrate: 1 real minutes
 idlemessages:
 - The console hums quietly, its power light a steady green eye in the dim room.
