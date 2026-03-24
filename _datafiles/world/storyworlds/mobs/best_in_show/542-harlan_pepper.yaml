@@ -1,0 +1,35 @@
+mobid: 542
+zone: best_in_show
+hostile: false
+maxwander: 1
+idlecommands:
+  - 'emote reaches into the bag and produces a nut. He holds it up to the light and nods with quiet satisfaction.'
+  - 'say You know what I was thinking about on the drive up? Pine nuts. How they come from a pinecone. Not many people think about that.'
+  - 'emote pats Hubert twice. Hubert''s tail lifts and falls once, which is his full range of tail expression.'
+  - 'say Back home I''ve got a pecan tree. Forty years old. My daddy planted it.'
+  - 'emote looks around the room with the easy comfort of a man who is genuinely fine wherever he is.'
+  - ''
+  - 'say Hubert''s got the best nose I''ve ever seen on a dog. And I''ve seen a lot of dogs.'
+  - 'emote is quiet for a moment in the comfortable way of a man who does not need to fill silence.'
+activitylevel: 20
+character:
+  name: Harlan Pepper
+  description: >-
+    Harlan Pepper is from Pine Nut, North Carolina, which is the name of a real
+    town. He is a ventriloquist by trade, a fisherman by preference, and a
+    competitive dog handler by devotion to Hubert, his Bloodhound, who is
+    approximately the size of a piece of furniture and smells of the Deep South.
+    Harlan moves through the world slowly and without friction. He knows the names
+    of every kind of nut -- not just the common ones, but the obscure ones, the
+    regional ones -- and he will tell you about all of them if you give him the
+    opening. He is never unkind and never in a rush. He is, somehow, exactly who
+    he appears to be, which is rarer than it sounds.
+  raceid: 1
+  level: 6
+  equipment:
+    body:
+      itemid: 20101
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20170

@@ -1,48 +1,59 @@
 roomid: 2353
 zone: Best in Show
-title: The Parking Lot
+title: Best in Show Winners Circle
 description: >-
-  The Mayflower Kennel Club parking lot at 10 PM. The show is over. The
-  <ansi fg="itemname">cars</ansi> are being loaded: crates into trunks, gear bags
-  into back seats, dogs walking on leads to their respective vehicles with the relaxed
-  bearing of animals that did their jobs and are ready to sleep. The <ansi fg="itemname">lights</ansi>
-  of the parking lot are sodium yellow, casting everyone in the amber of aftermath.
-  A few handlers stand by their cars talking, not ready to stop talking yet, the evening
-  still too big to put away. Somewhere nearby, a dog wins Best in Show and then it is
-  over, and the Best in Show dog is going home the same way all the other dogs are going
-  home, in a crate in a car, dreaming whatever dogs dream after they've been excellent in
-  public. The <ansi fg="exit">venue entrance</ansi> is to the east.
-mapsymbol: P
-maplegend: The Parking Lot
+  The <ansi fg="yellow">Winners Circle</ansi> is a small elevated platform at
+  the north end of the main ring, set apart by <ansi fg="itemname">gold rope</ansi>
+  on brass standards. The carpet here is the same hunter green as the ring, but this
+  section has never been walked on by anything that did not win. A single
+  <ansi fg="itemname">spotlight</ansi> illuminates the platform. The
+  <ansi fg="itemname">trophy table</ansi> holds the Best in Show cup -- silver,
+  heavy, engraved with winners going back to 1903 -- and the blue-and-gold
+  <ansi fg="itemname">ribbon</ansi>. The official <ansi fg="itemname">photographer</ansi>
+  is positioned to one side, camera ready. The bleachers are visible, the audience
+  expectant. Whatever happens in this circle has happened one hundred and twenty years
+  in a row, and it will happen again tonight. The <ansi fg="exit">show ring</ansi>
+  is south via the circle exit.
+mapsymbol: C
+maplegend: Winners Circle
 biome: city
 exits:
-  east:
-    roomid: 2345
+  south:
+    roomid: 2343
+    mapdirection: south
 nouns:
-  cars: >-
-    The cars in the parking lot are a cross-section of people who spend significant
-    money on dogs: some are new, some are old, all have dog hair in them and crates
-    in the back and the specific configuration of the interior of a car owned by a
-    person who travels with a large dog competitively. They all smell the same way
-    inside. It is a good smell.
-  lights: >-
-    The sodium lights of the parking lot cast everything amber. In this light,
-    the handlers loading their cars look like figures in an old photograph, doing
-    something that has always been done and will continue to be done long after this
-    specific night.
-  handler: >-
-    Gerry Fleck is loading Winky's crate into the back of his car. He looks up,
-    sees you, smiles the uncomplicated smile of a man who came here and had a good
-    time regardless of the outcome and is going home and will sleep well. Cookie
-    is by the passenger door. She waves. Her left shoe has developed a small problem.
-    Gerry notices. He takes her arm. They laugh.
+  rope: >-
+    The gold rope on brass standards is purely ceremonial. It says: this place is
+    different. This place is set apart. Nothing that crosses this rope tonight will
+    be the same afterward. The rope is thin enough that any dog could step over it.
+    The idea is that no dog should have to.
+  spotlight: >-
+    The spotlight comes from a single source above. When you stand in it, the rest
+    of the room recedes. You understand, under this light, what it feels like to be
+    the only thing that matters for a moment. Even if that moment belongs to a dog.
+    Especially if that moment belongs to a dog.
+  trophy: >-
+    The Best in Show cup. Silver, genuine, engraved. The names go back to 1903 --
+    names of dogs in the formal naming convention that says: this animal was
+    officially excellent. The most recent name at the bottom is last year's winner.
+    Below it, space for tonight's.
+  ribbon: >-
+    The blue-and-gold Best in Show ribbon is larger than it needs to be. This is
+    entirely correct. This is the largest possible dog show ribbon because this is
+    the largest possible result of a dog show. Someone spent the night before this
+    show dreaming about holding this. They were right to.
+  photographer: >-
+    The official photographer has a professional camera, two lenses, and the calm
+    patience of someone who has taken this photograph before and knows exactly how
+    to make a dog and its handler look their best in the ten seconds after a win
+    when everything is true and nothing has been processed yet.
 spawninfo:
 idlemessages:
-- A trunk opens and a crate slides in. A car door closes. Another car leaves.
-- Two handlers stand by a minivan still talking about a moment in the ring. They are not ready to let the night go.
-- A dog that has been in show stance all day is finally lying down in the back of a car, absolutely done with being upright.
-- Gerry Fleck catches Cookie as she trips slightly on the parking lot curbing. They're both laughing before she's fully steady.
-- Harlan walks Hubert to an old pickup truck. Hubert gets in. The truck dips noticeably. Harlan pats the roof twice and gets in.
-- A car starts, its headlights sweeping across the parking lot, and then it's gone, and the parking lot is slightly emptier.
-- Someone finds a Busy Bee in their gear bag. They were not expecting it. They squeeze it reflexively. A dog in a nearby car responds.
-- The last light in the venue building clicks off. The show is over. The parking lot remains.
+- The spotlight holds steady on the platform. Whatever it is waiting for, it will wait.
+- A handler walks past the winners circle on their way to the ring, not looking at it, absolutely looking at it.
+- The photographer checks his camera, changes a setting, checks it again.
+- The trophy cup catches the light and throws a small white reflection onto the ceiling.
+- The audience in the bleachers is very quiet now. Best in Show is close.
+- Someone in the audience says something to their neighbor in a low voice. The word Weimaraner is audible.
+- The gold rope gleams. The platform waits. The names on the trophy wait for one more name.
+- The ring is empty now. The judging is almost done. Soon.

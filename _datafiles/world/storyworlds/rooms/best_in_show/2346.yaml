@@ -1,61 +1,58 @@
 roomid: 2346
 zone: Best in Show
-title: Grooming Area
+title: The Flecks Station Wagon
 description: >-
-  The grooming area is organized bedlam. <ansi fg="itemname">Grooming tables</ansi> line
-  the walls, each one occupied by a dog being primped, blown out, sprayed, combed, or
-  otherwise prepared for the ring with an intensity of focus that most surgeons would find
-  excessive. The sound is: blow-dryers, dogs, the intermittent snap of a slicker brush,
-  someone's radio playing something that nobody asked for. The <ansi fg="itemname">smell</ansi>
-  is forty different conditioning sprays blending into a single, specific olfactory
-  signature. Stefan and Scott have the most elaborate setup in the room: their station
-  has three <ansi fg="itemname">lighting rigs</ansi>, two mirrors, and a garment bag
-  containing Miss Agnes's show coat in a shade of white that Stefan has described as
-  "not white, luminous." Against the far wall, Christy Cummings works on Rhapsody in
-  White in focused silence. The <ansi fg="exit">entrance</ansi> is west. <ansi fg="exit">Backstage</ansi>
+  The interior of a station wagon from Shakey Hills, Ohio. The rear seat is
+  folded down and a <ansi fg="itemname">travel crate</ansi> is strapped in where
+  it belongs, lined with a familiar-smelling blanket. In the crate,
+  <ansi fg="itemname">Winky</ansi> the Norwich Terrier sits with his ears fully
+  deployed, watching the parking lot through the window with the focused attention
+  of a dog that knows something is happening and is ready for whatever it is. The
+  front seat holds a <ansi fg="itemname">fly-fishing catalog</ansi> open to a page
+  with three circled photographs, a thermos with a sticker of a trout on it, and a
+  pair of <ansi fg="itemname">left shoes</ansi> -- both of them left, both of them
+  for the left foot -- tucked under the passenger seat. The car smells like dog
+  shampoo and something warm and midwestern and fine. The <ansi fg="exit">parking lot</ansi>
   is south.
-mapsymbol: G
-maplegend: Grooming Area
+mapsymbol: W
+maplegend: The Flecks Station Wagon
 biome: house
 exits:
-  west:
-    roomid: 2345
   south:
-    roomid: 2347
+    roomid: 2342
 nouns:
-  tables: >-
-    The grooming tables are professional-grade: non-slip surface, adjustable height,
-    the arm with the loop that holds the dog steady. Each one is a personal territory.
-    The handler's whole philosophy of dog showing is visible in how they've laid out
-    their equipment. Some are clinical. Some are loving. Some are both.
-  smell: >-
-    The smell is genuinely impressive in its complexity. There is a high note of
-    something floral -- that's Stefan's conditioning spray, imported from France.
-    Below it, something cedar-adjacent -- Harlan's product, from a tack shop in
-    North Carolina. In the middle, a broad warm note that is just dog. The whole
-    thing is not unpleasant. It is very, very specific.
-  lights: >-
-    Stefan and Scott's lighting rig casts Miss Agnes in a warm golden light that
-    makes her look, if you squint slightly, like an advertisement for something that
-    costs a great deal of money and is absolutely worth it. Stefan turns her gently.
-    Adjusts the light. Turns her again. Says something in a low voice that is either
-    to her or to Scott or to nobody.
-  mirror: >-
-    The grooming area mirror is currently reflecting Stefan looking at Miss Agnes
-    from three angles simultaneously and finding all three satisfactory.
+  crate: >-
+    The travel crate is well-used and carefully maintained. The latch is sound.
+    The blanket inside is Winky's -- he has had it since he was a puppy and it
+    smells like home. Winky sits in it now with his ears at full alert, watching
+    the parking lot with the precise focus of a dog that takes its responsibilities
+    seriously. His responsibilities include watching. He is very good at watching.
+  winky: >-
+    Winky the Norwich Terrier is in the crate watching the parking lot. He is small
+    and tan and wire-haired, and his ears stand straight up like small flags. He
+    tracks movement in the lot with the smooth, professional eye of an animal that
+    has been to shows before. He is not nervous. He is ready. He has been ready.
+    He is, according to Gerry and Cookie Fleck, the best dog in the world, which
+    is a position he occupies with complete grace.
+  catalog: >-
+    A fly-fishing equipment catalog, open to page forty-seven. Three items are
+    circled in pencil: an Elk Hair Caddis, a Parachute Adams, and what appears to
+    be a Blue-Winged Olive nymph. The circles are thoughtful, not impulsive. These
+    are things being considered for Beaver Creek next spring. The decision will not
+    be rushed.
+  shoes: >-
+    Two left shoes under the passenger seat. Both of them left. Cookie Fleck has
+    two left feet -- actual, medical, both shoes for the left foot -- and she walks
+    just fine. The shoes were found through a catalog from Vermont. Gerry drove to
+    Vermont to pick them up in person. He said the drive was worth it. He would do
+    it again. He would do it every time.
 spawninfo:
-- mobid: 545
-  message: "<ansi fg=\"8\">Stefan Vanderhoof lifts Miss Agnes onto the grooming table with the careful reverence of a man handling something fragile and irreplaceable. He steps back, tilts his head, and regards her with the focused attention of an artist at work.</ansi>"
-  respawnrate: 5 real minutes
-- mobid: 546
-  message: "<ansi fg=\"8\">Scott Donlan appears at Stefan's elbow carrying a brush, a spray bottle, and an expression of complete professional dedication. He hands the brush to Stefan. They do not need to discuss this. They have been doing this for years.</ansi>"
-  respawnrate: 5 real minutes
 idlemessages:
-- A blow-dryer roars to life at a nearby table, and a Labrador briefly becomes twice its normal size.
-- Stefan steps back from Miss Agnes, tilts his head, adjusts one strand of hair, and steps back again.
-- Scott says something to Stefan in a low voice. Stefan nods without looking away from Miss Agnes.
-- A handler at the next table sprays conditioning product and it drifts in a fine mist that catches the light.
-- Two dogs on adjacent tables regard each other with the specific tension of two competitors who know what this is.
-- Christy Cummings brushes Rhapsody in White in long, even strokes. The poodle stands perfectly still. This is years of training.
-- "Someone's scissors click: snip snip snip. The sound is very deliberate. Every cut matters."
-- The overhead lights are supplemented by portable rigs that cast everyone in slightly theatrical lighting. The dogs look better than the people.
+- Winky tracks a passing car with his ears, determines it is not the Flecks, and returns to general monitoring.
+- The thermos reflects a small rectangle of parking lot light from the front seat.
+- Winky yawns, showing all his small teeth, and resettles with his chin on his paws. He is comfortable. He is waiting.
+- The fly-fishing catalog has been open to this page for the last forty minutes. The decision is still pending.
+- A gust of wind moves through the parking lot. Winky's ears rotate toward it. He files this information.
+- The car smells exactly like a car that belongs to two nice people and one excellent dog.
+- Winky hears something outside. He stands up in the crate. He sits back down. It was not them.
+- The left shoes under the passenger seat have been through three dog shows. They have more to do.

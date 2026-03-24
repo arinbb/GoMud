@@ -1,62 +1,61 @@
 roomid: 2343
 zone: Best in Show
-title: Fleck Room
+title: The Main Show Ring
 description: >-
-  The Flecks' hotel room has the cheerful disorder of two nice people who have been
-  traveling together for a long time and are comfortable with each other's chaos. A
-  <ansi fg="itemname">Norwich Terrier</ansi> named Winky is asleep on one of the
-  pillows in a way that leaves Gerry and Cookie approximately seventy percent of the
-  bed. The <ansi fg="itemname">dresser</ansi> holds a framed photo of Winky at a previous
-  show, a tube of conditioning spray, and a postcard of Sheboygan, Wisconsin that has
-  been in Gerry's wallet since 2001. A <ansi fg="itemname">fly-fishing catalog</ansi>
-  is open on the nightstand beside a glass of water and a half-eaten granola bar. Cookie's
-  <ansi fg="itemname">shoes</ansi> -- two left shoes, technically, both for the left foot --
-  are by the door. The room smells like dog shampoo and something warm and midwestern.
-  The <ansi fg="exit">lobby</ansi> is east.
-mapsymbol: F
-maplegend: Fleck Room
-biome: house
+  The main ring of the Mayflower Kennel Club Dog Show is a green rectangle of
+  competition-grade <ansi fg="itemname">carpet</ansi> under a cathedral of lights.
+  <ansi fg="itemname">Bleachers</ansi> rise on three sides, occupied by an audience
+  that knows exactly what they are watching and reacts accordingly. At the center, a
+  <ansi fg="itemname">judging table</ansi> draped in white holds the silver Best in
+  Show cup, polished to a standard that suggests it was polished twice. A handler and
+  dog enter the far end and begin their pattern -- the handler's footsteps precise, the
+  dog's gait absolutely textbook. The ring announcer's voice is clear and measured.
+  This is where it all comes down. The <ansi fg="exit">registration hall</ansi> is
+  south. The <ansi fg="exit">judges table</ansi> is east. The <ansi fg="exit">press box</ansi>
+  is west. The <ansi fg="exit">bleachers</ansi> are accessible from the side. The
+  <ansi fg="exit">circle</ansi> lies to the north.
+mapsymbol: S
+maplegend: The Main Show Ring
+biome: city
 exits:
+  south:
+    roomid: 2341
   east:
-    roomid: 2340
+    roomid: 2347
+  west:
+    roomid: 2348
+  bleachers:
+    roomid: 2352
+    mapdirection: northeast
+  circle:
+    roomid: 2353
+    secret: true
 nouns:
-  winky: >-
-    Winky the Norwich Terrier is asleep on one of the pillows in the absolute
-    boneless abandon of a dog that has complete trust in the universe. His ears
-    stick straight up even in sleep. He is small, tan, wire-haired, and according
-    to Gerry and Cookie Fleck, the best dog in the world. In a field of excellent
-    dogs, this is a claim that requires defense. Gerry and Cookie are prepared to
-    provide it.
-  dresser: >-
-    The framed photo shows Winky at the Greater Binghamton Kennel Club show last
-    spring, third in group, but the ribbon is missing because Cookie stepped on it
-    and then Gerry stepped on Cookie's foot because they were both going for the
-    ribbon and then they both laughed for about a minute and a half. It is a good
-    photo.
-  catalog: >-
-    A fly-fishing equipment catalog from Gerry's employer, Dogfish Tackle and Supply.
-    The catalog is open to a page of hand-tied flies. Gerry has circled three of them
-    in pencil. It is the same page he always opens to. These are the best flies. He
-    has had this catalog for three years.
-  shoes: >-
-    Two left shoes. Both of them left. Cookie Fleck has two left feet -- a condition
-    that is real, medical, and something she and Gerry have long since made their peace
-    with. She walks just fine. She just does it with two left shoes. Gerry once ordered
-    her a special pair from a catalog in Vermont. That was fifteen years ago. He still
-    talks about it.
+  carpet: >-
+    The show carpet is hunter green, regulation weight, freshly laid. It gives dogs
+    the grip to move at their best gaiting speed without slipping. Handlers train
+    on carpet like this. A dog's gait looks different on carpet than on hard floor,
+    and the judge knows exactly what to look for on each surface.
+  bleachers: >-
+    The audience in the bleachers has the focused quiet of people who understand
+    what they are watching. This is not a casual crowd. The applause, when it comes,
+    is the applause of connoisseurs -- they clap for a dog's movement the way other
+    audiences clap for a perfect note.
+  table: >-
+    The judging table is a simple rectangle draped in white. Dr. Theodore Millbank III
+    will stand here. He will watch. He will make the decision. The silver cup sits to
+    one side, polished and patient. Beside it, the blue-and-gold Best in Show ribbon,
+    larger than it needs to be, entirely correct in its size.
 spawninfo:
-- mobid: 540
-  message: "<ansi fg=\"8\">Gerry Fleck looks up from the fly-fishing catalog with a smile of uncomplicated welcome. Winky lifts his head from the pillow, ears rotating toward the door, and decides you are fine.</ansi>"
-  respawnrate: 5 real minutes
-- mobid: 541
-  message: "<ansi fg=\"8\">Cookie Fleck is organizing Winky's show supplies with the methodical calm of a woman who has done this many times and enjoys it. She glances over and gives you the warm, direct smile of someone who assumes you are good until proven otherwise.</ansi>"
+- mobid: 546
+  message: '<ansi fg="8">Christy Cummings moves through the ring with Rhapsody in White at perfect heel. Her focus is absolute. She sees you, nods once, and moves on. Rhapsody does not look at you. Rhapsody is working.</ansi>'
   respawnrate: 5 real minutes
 idlemessages:
-- Winky lifts his head, blinks, confirms everything is fine, and goes back to sleep.
-- Gerry turns a page in the catalog, taps a photo of a dry fly, and makes a satisfied sound.
-- Cookie checks Winky's show lead, unclips it, checks it again, hangs it on the door handle.
-- The two of them have a brief, comfortable conversation in the shorthand of people who have been married a long time.
-- Gerry looks at Winky and then at Cookie with an expression of a man who has exactly what he needs and knows it.
-- Cookie opens her show bag, takes out a brush, brushes Winky twice, and puts the brush back. This was not necessary. She just wanted to.
-- Winky relocates from the pillow to Gerry's feet and makes himself into a small, determined lump.
-- A television in another room can be heard faintly. The Flecks do not turn theirs on.
+- A dog and handler enter the ring and begin the down-and-back. The dog is textbook. The handler is invisible.
+- The audience responds to a particularly good gaiting pattern with a murmur of genuine appreciation.
+- Between groups the ring is briefly empty. The carpet gleams. The trophy waits.
+- A handler repositions for the free-stack. The dog stands perfectly still. The judge circles. Nobody breathes.
+- The ring announcer says a breed name and registered name in a voice that makes even ordinary things sound official.
+- 'The lights overhead are theatrical: bright white on the green carpet, picking up the sheen of every coat.'
+- Christy Cummings runs through the gaiting pattern once more from memory. Her lips move slightly. She is counting steps.
+- Dr. Millbank circles a dog slowly, examining structure, then steps back and makes a notation. He nods once.

@@ -1,0 +1,38 @@
+-
+  Supported:
+    "michael scott": ["toby flenderson"]
+  Conversation:
+    - ["#1 emote opens the office door and sees Toby."]
+    - ["#1 say No. No no no no no."]
+    - ["#2 emote looks up."]
+    - ["#2 say I just had a quick HR --"]
+    - ["#1 say Why are you here? Why are you always HERE?"]
+    - ["#2 emote absorbs this."]
+    - ["#1 emote retreats into his office and closes the door."]
+    - ["#2 emote sits back down. He was prepared for this."]
+-
+  Supported:
+    "toby flenderson": ["michael scott"]
+  Conversation:
+    - ["#1 say Michael, I just need two minutes for a quick --"]
+    - ["#2 say Toby."]
+    - ["#1 say It's about the --"]
+    - ["#2 say TOBY."]
+    - ["#1 emote waits."]
+    - ["#2 say I am going to need you to go back to your area."]
+    - ["#2 say The annex. That's your area."]
+    - ["#1 emote nods once and walks back toward the annex."]
+    - ["#1 emote almost says something. Decides not to."]
+-
+  Supported:
+    "michael scott": ["toby flenderson"]
+  Conversation:
+    - ["#1 say Do you know what my dream is?"]
+    - ["#2 emote looks up from his desk, surprised to be asked."]
+    - ["#2 say What's your dream?"]
+    - ["#1 say To manage a team of people who genuinely love me."]
+    - ["#2 emote opens his mouth."]
+    - ["#1 say Not you. Not you, Toby. Don't."]
+    - ["#2 emote closes his mouth."]
+    - ["#1 emote looks out the office window with a faraway expression."]
+    - ["#2 emote goes back to his paperwork with the expression of a man who is used to this."]

@@ -1,66 +1,47 @@
 roomid: 2340
 zone: Best in Show
-title: Taft Hotel Lobby
+title: Mayflower Kennel Club Entrance
 description: >-
-  The lobby of the <ansi fg="yellow">Taft Hotel</ansi>, Philadelphia, the night before the
-  Mayflower Kennel Club Dog Show. The word "chaos" does not quite cover it. Every
-  <ansi fg="itemname">armchair</ansi> has a dog on it. The <ansi fg="itemname">front desk</ansi>
-  is staffed by a man doing his level best to maintain professionalism in the face of a
-  <ansi fg="itemname">Weimaraner</ansi> that has been staring at him for twenty minutes without
-  blinking. A Standard Poodle in a <ansi fg="itemname">travel crate</ansi> beside the luggage
-  cart has been groomed to a standard of beauty that makes most humans feel inadequate.
-  The <ansi fg="itemname">elevator</ansi> door opens periodically to release another owner with
-  a rolling bag, a show lead, and the focused energy of someone who has been preparing for
-  this for a very long time. The <ansi fg="exit">bar</ansi> beckons to the north. The
-  <ansi fg="exit">Swan suite</ansi> is east. The <ansi fg="exit">Fleck room</ansi> is west.
-  The <ansi fg="exit">venue</ansi> is south.
-mapsymbol: T
-maplegend: Taft Hotel Lobby
-biome: house
+  The entrance hall of the <ansi fg="yellow">Mayflower Kennel Club Dog Show</ansi>,
+  Philadelphia. Banners in hunter green and gold hang from the rafters. A pair of
+  <ansi fg="itemname">registration tables</ansi> staffed by volunteers in matching
+  blazers check in handlers and their dogs. The <ansi fg="itemname">schedule board</ansi>
+  lists today's groups in clean serif type -- the final line reads BEST IN SHOW,
+  7 PM, Main Ring, in a typeface slightly larger than the rest. The composite smell
+  of forty different conditioning sprays fills the air. Dogs move through in every
+  direction, each one aware at some level that something important is about to happen.
+  Their owners are more visibly aware. The <ansi fg="exit">registration hall</ansi>
+  is north. The <ansi fg="exit">parking lot</ansi> is east.
+mapsymbol: E
+maplegend: Kennel Club Entrance
+biome: city
 exits:
   north:
     roomid: 2341
   east:
     roomid: 2342
-  west:
-    roomid: 2343
-  south:
-    roomid: 2345
 nouns:
-  armchair: >-
-    Every armchair in the lobby currently has a dog in it, or has recently had a dog
-    in it, or is being regarded by a dog as a future sitting location. The hotel
-    staff have accepted this. At some point last year, they accepted this.
-  desk: >-
-    The front desk clerk is a man named Dale who has been working here for eleven
-    years and has never before experienced anything like the Mayflower weekend. His
-    face is a study in controlled professional dismay. Behind him, the key rack
-    is fully occupied. Every room is taken by someone with a dog.
-  weimaraner: >-
-    The Weimaraner sits six feet from the front desk and stares at the clerk with
-    the focused, unblinking attention of an animal that knows exactly what it wants
-    and has infinite patience. The clerk has tried not making eye contact. It does
-    not help. The Weimaraner's name is Beatrice.
-  crate: >-
-    The travel crate is custom-fitted, ventilated, and worth more than most cars.
-    Inside it, a Standard Poodle called Rhapsody in White sits in perfect composure,
-    as if she is simply waiting for the world to catch up to her standard.
-  elevator: >-
-    The elevator opens every few minutes to reveal another dog-show contestant in
-    various states of readiness. Some have their grooming cases. Some have their
-    dogs on leads. Some have the thousand-yard stare of someone who has been doing
-    this for eight years and is not sure if they love it or if it has simply
-    become who they are.
+  registration: >-
+    The registration table has two clipboards, a laminator, name tags, and the
+    focused energy of people who have memorized the rule book. One volunteer handles
+    a dispute about an AKC number with the calm certainty of someone who has been
+    right about this seventeen times before and knows she is right again.
+  board: >-
+    The schedule board: Sporting Group 9 AM, Hound Group 11 AM, Working Group 1 PM,
+    Terrier Group 2 PM, Non-Sporting Group 3 PM, Toy Group 4 PM, Herding Group 5 PM.
+    Then, below all of that, a gold star beside the words BEST IN SHOW, 7 PM, Main Ring.
+    The star seems entirely sincere.
+  banners: >-
+    Mayflower Kennel Club banners in hunter green and gold. The club seal shows a
+    dog in show stance. The words read EXCELLENCE IN BREEDING SINCE 1903. The banners
+    are pressed. Everything here is pressed.
 spawninfo:
-- mobid: 540
-  message: "<ansi fg=\"8\">Gerry Fleck ambles into the lobby with a pleasant smile, Winky the Norwich Terrier trotting at his heel. He looks around with the contentment of a man who is genuinely happy to be here and is not entirely sure why everyone else seems so tense.</ansi>"
-  respawnrate: 5 real minutes
 idlemessages:
-- A Norwich Terrier trots across the lobby tile and disappears under an armchair.
-- The elevator opens. A man steps out carrying a show lead, a grooming box, and an expression of controlled determination.
-- 'Dale at the front desk answers the phone and, without being asked, says: "Yes, we do allow dogs. Yes, all kinds."'
-- A woman in a trim blazer walks past carrying a poodle under one arm and a trophy case under the other. She is already winning in her own mind.
-- Two handlers stop in the middle of the lobby to compare conditioning spray recommendations. Nobody else uses this much spray.
-- A Bloodhound lumbers through the lobby with solemn purpose. Where it is going, it is not saying.
-- The bellhop has walked past with the same luggage cart six times. His expression says he does not want to explain.
-- A dog being walked to the elevator turns its head and makes eye contact with you. This dog has competed before. This dog knows things.
+- A Terrier on a show lead nearly pulls its handler off their feet. The handler recovers. The Terrier is unrepentant.
+- Someone checks in at the registration table, gets a number pinned to their lapel, and walks toward the venue with new bearing.
+- Two dogs pass each other at the entrance and perform the full protocol of sniffing and assessment in about four seconds.
+- 'An announcement crackles over the PA system: "Hound Group to Ring Two. Hound Group to Ring Two." Several people move faster.'
+- A woman with a clipboard walks in, reads the schedule board, and adjusts her watch by one minute.
+- The doors open and close and each opening brings a brief rush of cold November Philadelphia air and another person with a dog.
+- One registration volunteer says something to the other. They laugh briefly. Then they go back to checking names.
+- A Shih Tzu passes through at ankle height, magnificent, impeccably groomed, entirely unaware of its own improbability.

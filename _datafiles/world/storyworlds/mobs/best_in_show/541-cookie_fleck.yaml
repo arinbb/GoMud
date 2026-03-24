@@ -3,31 +3,33 @@ zone: best_in_show
 hostile: false
 maxwander: 1
 idlecommands:
-  - "emote checks Winky's ears with the careful attention of a woman who has been doing this for years and enjoys it."
-  - "say He's going to be wonderful today. I just know it."
-  - "emote nearly trips slightly and recovers with practiced ease. Two left feet. Literally."
-  - "say Gerry found me shoes. In Vermont. He drove to Vermont for shoes."
-  - "emote smiles at someone nearby with the open, unguarded warmth of a person who has no enemies."
-  - ""
-  - "emote organizes the show bag with methodical pleasure."
-  - "say I ran into Tommy Kaufman in the lobby. You know Tommy? From the Kokomo show? Sweet man."
+  - 'emote checks Winky''s ears with the careful attention of a woman who has been doing this for years and enjoys it.'
+  - 'say He''s going to be wonderful today. I just know it.'
+  - 'emote nearly trips slightly and recovers with practiced ease. Two left feet. Literally.'
+  - 'say Gerry found me shoes. In Vermont. He drove to Vermont for shoes.'
+  - 'emote smiles at someone nearby with the open, unguarded warmth of a person who has no enemies.'
+  - ''
+  - 'emote organizes the show bag with methodical pleasure.'
+  - 'say I ran into Tommy Kaufman earlier. You know Tommy? From the Kokomo show? Sweet man.'
 activitylevel: 20
 character:
   name: Cookie Fleck
   description: >-
-    Cookie Fleck has two left feet -- actual, medical, both shoes for the left foot --
-    and she walks just fine. She has made complete peace with this, the way she has made
-    complete peace with most things, which is to say thoroughly and without drama. She
-    is warm without being soft, friendly without being incautious, and entirely comfortable
-    with who she is. She met Gerry at a dog show twelve years ago. She had a lot of
-    ex-boyfriends before that -- a lot -- and she does not think about them much, though
-    they occasionally appear, at dog shows, as local vendors or parking attendants, in
-    ways that she finds unremarkable and Gerry finds slightly alarming and she finds his
-    finding it alarming charming.
+    Cookie Fleck has two left feet -- actual, medical, both shoes for the left
+    foot -- and she walks just fine. She has made complete peace with this, the way
+    she has made complete peace with most things, which is to say thoroughly and
+    without drama. She is warm without being soft, friendly without being incautious,
+    and entirely comfortable with who she is. She met Gerry at a dog show twelve
+    years ago. She had a lot of ex-boyfriends before that -- a lot -- and she does
+    not think about them much, though they occasionally appear at dog shows as local
+    vendors or parking attendants, in ways she finds unremarkable and Gerry finds
+    slightly alarming and she finds his finding it alarming charming.
   raceid: 1
   level: 5
   equipment:
     body:
-      itemid: 20111
+      itemid: 20105
+    legs:
+      itemid: 20151
     feet:
-      itemid: 20174
+      itemid: 20171

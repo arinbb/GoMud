@@ -1,28 +1,39 @@
-// Best in Show - Backstage
+// Best in Show -- The Judges Table (2347)
 var LIBRARY_ROOM = 3;
+var QUEST_ID = 400;
+
+function onEnter(user, room) {
+    if (user.HasQuest(QUEST_ID)) {
+        var step = user.GetMiscCharacterData("bis_quest_step");
+        if (step == "3") {
+            user.SetMiscCharacterData("bis_quest_step", "4");
+            SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Quest: Best in Show -- You have met the judge. The Winners Circle is somewhere in the main show ring -- search carefully.)</ansi>");
+        }
+    }
+    return false;
+}
 
 function onCommand(cmd, rest, user, room) {
-
     if (cmd == "return") {
         SendUserMessage(user.UserId(), "");
-        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">Backstage dissolves. The pacing handlers, the crates, the whiteboard with its seven names -- all fading back into celluloid. The Grand Library settles around you, unhurried and free of competitive pressure.</ansi>");
-        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " steps past the gear bags and back through the screen to the Grand Library.", user.UserId());
+        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The judges table dissolves. Dr. Millbank's clipboard, the breed standards, the untouched water glass -- all folding back into film. The Grand Library settles around you, its air unscented by anything that required Cambridge to understand.</ansi>");
+        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " steps back from the judges table and through the screen to the Grand Library.", user.UserId());
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }
 
-    if (cmd == "pace" || cmd == "wait" || cmd == "breathe") {
-        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You pace the backstage corridor. The concrete is cold under your feet. The fluorescent lights buzz. The muffled sound of the ring floats through the wall. You understand, standing here, what it is to care this much about something. The pacing helps. It doesn't help. It's what there is to do.</ansi>");
+    if (cmd == "judge" || (cmd == "ask" && rest.indexOf("judge") >= 0) || cmd == "talk") {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Dr. Millbank regards you with the composed attention of a man who has time for direct questions and not much else at the moment. 'The standard is the standard,' he says. 'Everything else is subjectivity, and we are not here for subjectivity.' He makes a small note on his clipboard. Whether the note is about you or about a dog you cannot tell. With Dr. Millbank, it is probably about a dog.</ansi>");
         return true;
     }
 
-    if (cmd == "look" && rest.indexOf("board") >= 0 || cmd == "read" && rest.indexOf("board") >= 0) {
-        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The Best in Show order: Vizsla, Bloodhound, Standard Schnauzer, Norwich Terrier, Standard Poodle, Shih Tzu, Border Collie. Seven dogs. One judge. One moment. The whiteboard is perfectly clean except for these seven words. Someone erased everything else. This was all that needed to be here.</ansi>");
+    if (cmd == "look" && rest.indexOf("program") >= 0 || cmd == "read" && rest.indexOf("program") >= 0) {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The program lists tonight's entrants: a Vizsla, a Bloodhound, a Standard Schnauzer, a Norwich Terrier, a Standard Poodle, a Shih Tzu, a Border Collie. Seven group winners. Each one was, in their group, the best. Now they compete against each other, and the categories dissolve, and there is only the standard and one man's informed eye. One of them will be enough.</ansi>");
         return true;
     }
 
-    if (cmd == "sit" && (rest.indexOf("bench") >= 0 || rest == "")) {
-        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You sit on the bench. The wood has the weight of years of people sitting on it before things happened. You look at the 'Good luck' scratched into the surface. You don't know who wrote it or who it was for. It lands anyway.</ansi>");
+    if (cmd == "read" && rest.indexOf("clipboard") >= 0 || cmd == "look" && rest.indexOf("clipboard") >= 0) {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The clipboard is angled slightly away from you. Dr. Millbank notices you looking. He does not angle it further away. He simply looks at you with the patient expression of a man who would prefer you did not. You look away. This was the correct response. He makes a note. The note is probably not about you. Probably.</ansi>");
         return true;
     }
 

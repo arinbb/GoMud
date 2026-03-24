@@ -1,0 +1,35 @@
+mobid: 548
+zone: best_in_show
+hostile: false
+maxwander: 0
+idlecommands:
+  - 'emote surveys the ring with the composed authority of someone who has done this many times and found it satisfactory each time.'
+  - 'emote makes a small notation on his clipboard. His handwriting is precise. It is always precise.'
+  - 'say The standard is the standard. Everything else is subjectivity.'
+  - 'emote circles the current exhibit slowly, examining structure, balance, movement.'
+  - 'emote nods once at something. This is the highest visible expression of approval he offers.'
+  - ''
+  - 'say Excellent topline. Excellent.'
+  - 'emote checks his watch. Everything is on schedule. It is always on schedule.'
+activitylevel: 15
+character:
+  name: Dr Theodore Millbank
+  description: >-
+    Dr. Theodore Millbank has been judging the Mayflower Kennel Club Dog Show for
+    eleven years. He was born in Kent, educated at Cambridge, and has been in dogs
+    his entire adult life. He does not chat. He does not speculate. He does not say
+    things on the basis of anything other than the standard and his own informed
+    judgment, both of which he trusts completely and applies without hesitation. He
+    is the kind of man who makes rooms feel more organized just by being in them.
+    He knows exactly what the best dog in this show looks like. He will know it when
+    he sees it. He sees it once a year, and once a year it is different, and he is
+    never surprised and never bored.
+  raceid: 1
+  level: 8
+  equipment:
+    body:
+      itemid: 20100
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

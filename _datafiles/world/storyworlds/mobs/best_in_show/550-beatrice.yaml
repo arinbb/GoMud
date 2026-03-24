@@ -1,0 +1,26 @@
+mobid: 550
+zone: best_in_show
+hostile: false
+maxwander: 0
+idlecommands:
+  - 'emote whimpers once, very quietly, and monitors the room with her grey eyes.'
+  - 'emote paces the length of the room and returns to the same spot.'
+  - 'emote tracks movement in the room with the focused attention of a creature monitoring the emotional climate of her owners.'
+  - 'emote lies down, surveys the situation, and determines it is going to be fine.'
+  - 'emote looks at Meg with uncomplicated love.'
+  - ''
+  - 'emote mirrors Meg''s breathing pattern. They have been doing this together for years.'
+  - 'emote wags her tail once. This is her highest endorsement.'
+activitylevel: 10
+character:
+  name: Beatrice
+  description: >-
+    A Weimaraner of remarkable grey eyes and the absolute sovereignty of a dog who
+    has never once been told no. She belongs to Meg and Hamilton Swan. She is also,
+    by any objective measure, the most emotionally functional individual in the Swan
+    hotel room. Her vet has confirmed that Weimaraners are sensitive to emotional
+    states. With Beatrice, this is less a breed characteristic and more a specific
+    professional skill she has developed over six years of living with the Swans.
+    She will win or not win. Either way she is magnificent and she knows it.
+  raceid: 11
+  level: 4

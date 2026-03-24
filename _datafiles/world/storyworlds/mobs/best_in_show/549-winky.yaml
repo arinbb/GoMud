@@ -1,0 +1,26 @@
+mobid: 549
+zone: best_in_show
+hostile: false
+maxwander: 0
+idlecommands:
+  - 'emote wags his tail with full sincerity.'
+  - 'emote sniffs everything in reach with focused professional interest.'
+  - 'emote lifts his ears to maximum deployment and monitors the room.'
+  - 'emote sits perfectly still, watching the door. He is waiting for something. He knows what it is.'
+  - 'emote tilts his head fifteen degrees to one side.'
+  - ''
+  - 'emote confirms everything is fine and settles back into position.'
+  - 'emote wags his tail again. This is always worth doing.'
+activitylevel: 10
+character:
+  name: Winky
+  description: >-
+    A Norwich Terrier, small and tan and wire-haired, his ears standing straight
+    up like two small flags regardless of what else is happening. He is in a show
+    crate but holds himself with the bearing of a dog that understands why he is
+    here and has no anxiety about it. His name is Winky. He belongs to Gerry and
+    Cookie Fleck of Shakey Hills, Ohio. He is, according to Gerry and Cookie, the
+    best dog in the world. In a field of excellent dogs, this is a position he
+    occupies with complete grace and zero self-consciousness.
+  raceid: 11
+  level: 2

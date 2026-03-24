@@ -1,32 +1,32 @@
-// Best in Show - Mayflower Kennel Club Entrance
+// Best in Show -- The Hotel Lobby (2345)
 var LIBRARY_ROOM = 3;
-var QUEST_ID = 400;
-
-function onEnter(user, room) {
-    // Quest step: arrive at the venue
-    if (user.HasQuest(QUEST_ID)) {
-        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Quest: Best in Show -- You have arrived at the Mayflower Kennel Club. Explore the grooming area, the show ring, and meet the competitors.)</ansi>");
-    }
-    return false;
-}
 
 function onCommand(cmd, rest, user, room) {
-
     if (cmd == "return") {
         SendUserMessage(user.UserId(), "");
-        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The Mayflower entrance dissolves. The banners, the schedule board, the dogs on leads -- all of it folding back into the film canister. The Grand Library settles in around you, quiet and dogless.</ansi>");
-        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " slips past the registration table and steps back through the screen to the Grand Library.", user.UserId());
+        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The hotel lobby dissolves. The dogs in the armchairs, Dale at the desk, the poodle in her crate -- all folding back into celluloid. The Grand Library settles around you, warm and quiet and free of competitive grooming.</ansi>");
+        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " looks around the lobby one last time and steps back through the screen to the Grand Library.", user.UserId());
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }
 
-    if (cmd == "read" && rest.indexOf("board") >= 0 || cmd == "look" && rest.indexOf("schedule") >= 0) {
-        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The schedule: Sporting Group 9 AM, Hound Group 11 AM, Working Group 1 PM, Terrier Group 2 PM, Non-Sporting Group 3 PM, Toy Group 4 PM, Herding Group 5 PM -- and then, in a typeface slightly larger than the rest: BEST IN SHOW, 7 PM, Main Ring. The gold star beside it seems entirely sincere.</ansi>");
+    if (cmd == "pet" || cmd == "pat") {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You reach toward a passing dog. The dog accepts this with the composure of a professional. Its owner watches with the mild pride of someone whose dog is being correctly appreciated.</ansi>");
         return true;
     }
 
-    if (cmd == "register" || (cmd == "check" && rest.indexOf("in") >= 0)) {
-        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The registration volunteer looks up. 'Name and breed?' You realize you do not have a dog. She waits. 'Observer,' you say. She makes a note. She has seen this before. 'Enjoy the show,' she says, and means it.</ansi>");
+    if (cmd == "look" && (rest.indexOf("dale") >= 0 || rest.indexOf("desk") >= 0 || rest.indexOf("clerk") >= 0)) {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Dale has the look of a man who went into hotel management for the stability. He finds the Mayflower weekend, in his own words, not exactly what he expected when he took the job, which was also not what he expected, but less so now. He is a professional. The Weimaraner is still staring at him. He does not make eye contact. This does not help.</ansi>");
+        return true;
+    }
+
+    if (cmd == "look" && (rest.indexOf("rhapsody") >= 0 || rest.indexOf("poodle") >= 0 || rest.indexOf("crate") >= 0)) {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Rhapsody in White sits in her travel crate with the absolute composure of an animal that knows exactly what it is and has always known. She glances at you. She has assessed you. The assessment is complete. She looks away. This is not unkind. She simply has other things to think about.</ansi>");
+        return true;
+    }
+
+    if (cmd == "sit") {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You find an armchair. A dog has recently been in this armchair. The warmth and a few small hairs confirm it. You sit anyway. It is a comfortable armchair. The lobby moves around you -- handlers, dogs, the soft noise of a building full of people who care about something. You could stay here a while.</ansi>");
         return true;
     }
 

@@ -1,61 +1,58 @@
 roomid: 2344
 zone: Best in Show
-title: Harlan's Room
+title: Grooming Area
 description: >-
-  Harlan Pepper's hotel room looks like a man moved into it and then immediately made
-  it his. A <ansi fg="itemname">Bloodhound</ansi> named Hubert takes up most of the floor
-  in a magnificent sprawl of ears and loose skin. A <ansi fg="itemname">ventriloquist
-  dummy</ansi> is propped in the corner, its painted face fixed in an expression of
-  permanent mild surprise. The <ansi fg="itemname">nightstand</ansi> has a book about
-  fly-fishing, a small bag of <ansi fg="itemname">mixed nuts</ansi>, and a photograph of
-  Hubert from last year that Harlan keeps because Hubert looked particularly good that day.
-  A <ansi fg="itemname">fishing rod case</ansi> leans against the wall. The room has the
-  warm, easy smell of a man and a dog who travel together constantly and have worked out
-  all the logistics. The <ansi fg="exit">bar</ansi> is south. Sherri Ann's suite is
-  <ansi fg="exit">east</ansi>.
-mapsymbol: H
-maplegend: Harlan's Room
+  The grooming area is organized bedlam. <ansi fg="itemname">Grooming tables</ansi>
+  line the walls, each occupied by a dog being primped, blown out, sprayed, combed,
+  or otherwise prepared with an intensity of focus that most surgeons would find
+  excessive. The sound is: blow-dryers, dogs, the intermittent snap of a slicker
+  brush, someone's radio playing something nobody asked for. The
+  <ansi fg="itemname">smell</ansi> is forty conditioning sprays combining into a
+  single, specific olfactory signature. Harlan Pepper works at one station with the
+  unhurried ease of a man who is comfortable everywhere, his Bloodhound sitting
+  beside the table with the gravity of a monument. At the far station,
+  <ansi fg="itemname">Harlan's ventriloquist dummy</ansi> is propped in a folding
+  chair, its painted expression fixed in permanent mild surprise. A
+  <ansi fg="itemname">bag of mixed nuts</ansi> sits open on the counter. The
+  <ansi fg="exit">registration hall</ansi> is west.
+mapsymbol: G
+maplegend: Grooming Area
 biome: house
 exits:
-  south:
+  west:
     roomid: 2341
-  east:
-    roomid: 2351
 nouns:
-  hubert: >-
-    Hubert the Bloodhound is a monument in dog form. He lies on the floor with
-    the absolute authority of an animal that has accepted gravity as a personal
-    philosophy. His ears are approximately eight inches long. His jowls are
-    architectural. His nose, according to Harlan, can track a scent that is
-    four days old across a creek, through a pine forest, and into a shopping
-    mall parking lot. Hubert does not compete like other dogs. Hubert simply is.
+  tables: >-
+    The grooming tables are professional-grade: non-slip surface, adjustable
+    height, the arm with the loop. Each one is a personal territory. You can read
+    a handler's entire philosophy of dog showing in how they have laid out their
+    equipment. Some are clinical. Some are loving. Some are both.
+  smell: >-
+    The smell is genuinely impressive in its complexity. A high note of something
+    floral. Below it, something cedar-adjacent from a tack shop in North Carolina.
+    In the middle, a broad warm note that is just dog. The whole thing is not
+    unpleasant. It is very, very specific.
   dummy: >-
-    The ventriloquist dummy sits in the corner with the expression they all have:
-    that fixed, slightly startled look, painted eyebrows raised forever in the
-    mild surprise of someone who has just heard an unexpected piece of news.
-    Harlan is a ventriloquist. He is better at it than you might expect. The dummy's
-    name is not mentioned, which is somehow more unsettling than if it had a name.
+    The ventriloquist dummy has the expression they all have: that fixed, slightly
+    startled look, painted eyebrows raised forever in the mild surprise of someone
+    who has just heard unexpected news. Harlan is a ventriloquist. He is better at
+    it than you might expect. The dummy's name is not mentioned, which is somehow
+    more unsettling than if it had one.
   nuts: >-
-    A small bag of mixed nuts. Harlan has opinions about nuts. Extensive, specific,
-    unprompted opinions. He knows the name of every kind of nut. He knows things
-    about nuts that require travel to acquire. He will share them. He will share them
-    freely and at length and with the warmth of a man who is glad someone is finally
-    asking.
-  rod: >-
-    A fly-fishing rod case, well-traveled. Harlan fishes as he does most things: with
-    patient competence and deep regional knowledge and a vocabulary that assumes you
-    share his familiarity with Southern waterways, which you probably do not. He
-    does not hold this against you.
+    A small bag of mixed nuts, open. Harlan has opinions about nuts. Extensive,
+    specific, unprompted opinions. He knows the name of every kind of nut. He will
+    share them if you give him the opening. He will share them freely and at length
+    and with the warmth of a man who is glad someone is finally asking.
 spawninfo:
-- mobid: 544
-  message: "<ansi fg=\"8\">Harlan Pepper sits in the chair by the window, a bag of mixed nuts in his hand, Hubert at his feet. He looks up with the unhurried friendliness of a man who has never once been in a rush and sees no reason to start now.</ansi>"
+- mobid: 542
+  message: '<ansi fg="8">Harlan Pepper looks up from the grooming table with the unhurried friendliness of a man who has never once been in a rush. His Bloodhound, Hubert, sits beside the table in a magnificent sprawl of ears and loose skin. Harlan reaches into a bag of mixed nuts without looking at it.</ansi>'
   respawnrate: 5 real minutes
 idlemessages:
-- Harlan reaches into the bag and pulls out a nut. He holds it up to the light and nods with quiet satisfaction.
-- Hubert lifts his nose and samples the air with the focused intensity of a professional. Then he goes back to sleep.
-- The ventriloquist dummy sits in the corner in perfect silence. It does not move. It does not need to.
-- Harlan looks out the window at Philadelphia with the equanimity of a man who is fine wherever he is.
+- A blow-dryer roars to life at a nearby station and a Labrador briefly becomes twice its normal size.
+- Harlan reaches into the bag and produces a nut. He holds it up to the light and nods with quiet satisfaction.
+- Hubert lifts his enormous nose and samples the air with the focused intensity of a professional. Then he goes back to being still.
+- Someone's scissors click -- snip snip snip -- with deliberate precision. Every cut matters.
+- Harlan looks at the ventriloquist dummy across the room. The dummy does not move. It does not need to.
+- A handler at the next station sprays conditioning product and it drifts in a fine mist that catches the light.
 - Hubert shifts and his ears redistribute across the floor in a new configuration that is somehow more dramatic.
-- Harlan pats Hubert twice. Hubert's tail lifts and falls once. Acknowledgment. Affection. Mutual understanding.
-- The room is very quiet in the comfortable way of a man and a dog who have traveled together enough to be easy in silence.
-- Harlan picks up the dummy, looks at it, sets it back down. He was checking something. He does not explain what.
+- The grooming area lights are supplemented by portable rigs. Everyone looks slightly theatrical. The dogs look better than the people.

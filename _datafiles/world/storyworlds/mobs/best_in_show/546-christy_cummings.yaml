@@ -1,0 +1,34 @@
+mobid: 546
+zone: best_in_show
+hostile: false
+maxwander: 1
+idlecommands:
+  - 'emote reviews the legal pad notes with focused attention.'
+  - 'say We''ve run the pattern forty-seven times. She knows it. I know it. We know it together.'
+  - 'emote adjusts Rhapsody''s lead with careful, precise hands.'
+  - 'emote checks the showing order on the clipboard. Everything is correct. It was correct last time.'
+  - 'say The lighting in Ring Two is better than Ring One. We''ll use that.'
+  - ''
+  - 'emote is quiet, studying something in the middle distance that is probably a mental image of the ring.'
+  - 'say She moves well on the left. We go left on the down-and-back.'
+activitylevel: 20
+character:
+  name: Christy Cummings
+  description: >-
+    Christy Cummings is a professional dog handler -- the person who actually takes
+    Rhapsody in White into the ring while Sherri Ann watches from the bleachers. She
+    has credentials, certifications, a track record, and the focused competence of
+    someone who has turned a passion into a profession and has not lost the passion.
+    She is efficient at all times. She has a legal pad. The legal pad has notes.
+    The notes are comprehensive. She says of Sherri Ann that she is a wonderful
+    owner. The statement is true and complete. She is the kind of person with a
+    legal pad.
+  raceid: 1
+  level: 6
+  equipment:
+    body:
+      itemid: 20122
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

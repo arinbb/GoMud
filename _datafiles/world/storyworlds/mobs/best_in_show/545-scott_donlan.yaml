@@ -1,0 +1,33 @@
+mobid: 545
+zone: best_in_show
+hostile: false
+maxwander: 1
+idlecommands:
+  - 'emote hands Stefan the brush before Stefan asks for it. This is the rhythm they have.'
+  - 'say The light in here isn''t ideal. We should have brought the secondary rig.'
+  - 'emote checks the grooming checklist on the clipboard, runs a finger down it, makes a small notation.'
+  - 'say She looks incredible. Stefan, she looks incredible.'
+  - 'emote adjusts one of the lights fractionally. The difference is visible only to Stefan, who nods.'
+  - ''
+  - 'say The catalog shoot last fall was practice for this. We''ve been practicing for this.'
+  - 'emote looks at Miss Agnes with the straightforward love of a man who has never had trouble expressing it.'
+activitylevel: 20
+character:
+  name: Scott Donlan
+  description: >-
+    Scott Donlan runs the operational side of the catalog while Stefan runs the
+    creative side. At dog shows he is Stefan's second: the clipboard, the checklist,
+    the secondary lighting rig, the brush that arrives before it is asked for. He is
+    efficient in the way that comes from caring about the outcome. He and Stefan have
+    been together long enough that their communication at a grooming table is almost
+    entirely nonverbal. Miss Agnes tolerates them both equally, which means she
+    tolerates them completely.
+  raceid: 1
+  level: 6
+  equipment:
+    body:
+      itemid: 20100
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

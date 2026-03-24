@@ -1,0 +1,35 @@
+-
+  Supported:
+    "harlan pepper": ["*"]
+  Conversation:
+    - ["#1 say You know what I was thinking about on the drive up?"]
+    - ["#1 emote holds up a nut"]
+    - ["#1 say Pine nuts. How they come from a pinecone. Most people don't think about that."]
+    - ["#1 emote waits to see if the other person finds this as interesting as he does"]
+-
+  Supported:
+    "harlan pepper": ["*"]
+  Conversation:
+    - ["#1 say There's a pecan grove back home. Forty years old. My daddy planted it."]
+    - ["#1 emote is quiet for a moment, thinking about it"]
+    - ["#1 say Pecan's a hickory. Carya illinoinensis, technically."]
+    - ["#1 say Not many people know that."]
+    - ["#1 emote seems pleased that he does."]
+-
+  Supported:
+    "harlan pepper": ["gerry fleck"]
+  Conversation:
+    - ["#1 say You fish?"]
+    - ["#2 say Fly fishing, yeah."]
+    - ["#1 say I fish. More of a baitcasting man myself. Different rivers."]
+    - ["#2 say What rivers?"]
+    - ["#1 say Down home we've got the Yadkin. The New River."]
+    - ["#2 emote nods with genuine interest"]
+    - ["#2 say I'm mostly Midwestern creeks. Beaver Creek, usually. Different hatch."]
+    - ["#1 say Different fish too, probably."]
+    - ["#2 say Smallmouth mostly."]
+    - ["#1 emote nods"]
+    - ["#1 say Good fish."]
+    - ["#2 say Good fish."]
+    - ["#1 emote is quiet for a comfortable moment"]
+    - ["#2 emote is also comfortable with the quiet"]

@@ -1,55 +1,59 @@
 roomid: 2341
 zone: Best in Show
-title: Taft Hotel Bar
+title: Registration Hall
 description: >-
-  The hotel bar is doing brisk business tonight, and most of it is handlers. The
-  <ansi fg="itemname">bar itself</ansi> is a long mahogany counter with brass fixtures
-  and the permanent faint smell of decades of spilled beer. A <ansi fg="itemname">television</ansi>
-  in the corner shows a local news segment about tomorrow's show. The <ansi fg="itemname">barstools</ansi>
-  are occupied by people who are either celebrating a previous win, mourning a previous
-  loss, or planning something for tomorrow that involves a great deal of hairspray. A
-  <ansi fg="itemname">bowl of pretzels</ansi> sits on the bar. At least one dog has been
-  in the pretzels. The bartender has decided not to mention it. The <ansi fg="exit">lobby</ansi>
-  is south. Stairs to the <ansi fg="exit">upper floor</ansi> are north.
-mapsymbol: B
-maplegend: Hotel Bar
-biome: house
+  The main registration and check-in hall of the Mayflower Kennel Club is the
+  crossroads of the show. <ansi fg="itemname">Handlers</ansi> move through in
+  all directions, dogs in tow, clipboards raised, numbers pinned. A long corridor
+  of <ansi fg="itemname">bulletin boards</ansi> lines one wall with the day's
+  judging schedule, breed ring assignments, and one handwritten note asking if
+  anyone has seen a lost lead in black leather with a brass clip. The
+  <ansi fg="itemname">announcer's board</ansi> at the far end shows live ring
+  results updated in marker. The smell is institutional -- linoleum and fluorescent
+  lights and the particular composite of forty dog shampoos. The
+  <ansi fg="exit">entrance</ansi> is south. <ansi fg="exit">The Main Show Ring</ansi>
+  is north. The <ansi fg="exit">grooming area</ansi> is east. The
+  <ansi fg="exit">hotel</ansi> is west. The <ansi fg="exit">vendor hall</ansi>
+  is through the vendors corridor.
+mapsymbol: R
+maplegend: Registration Hall
+biome: city
 exits:
   south:
     roomid: 2340
   north:
+    roomid: 2343
+  east:
     roomid: 2344
+  west:
+    roomid: 2345
+  vendors:
+    roomid: 2351
+    mapdirection: northwest
 nouns:
-  bar: >-
-    The mahogany bar has the comfortable weight of a place that has served a lot
-    of people with a lot of problems. Tonight those problems are almost exclusively
-    dog-show-related, which the bar has never had to address before. It is
-    addressing them with whisky and patience.
-  television: >-
-    The local news is doing a segment: "Mayflower Kennel Club Comes to Philadelphia."
-    The anchor is trying to sound interested. The field reporter is standing outside
-    the venue, explaining what a Weimaraner is, to a camera, at 6 PM, in November.
-    Everyone in the bar is watching it with the intensity of people being covered by
-    a journalist who does not quite understand what they do.
-  barstools: >-
-    The barstools are occupied by a cross-section of competitive dog handling:
-    the veteran who has been here twelve times, the nervous newcomer on their first
-    show, the couple who are not speaking, and the man alone at the end who seems
-    to have made peace with something.
-  pretzels: >-
-    A bowl of pretzels. Several are missing. A handler nearby looks away with
-    the carefully neutral expression of someone who knows exactly where the
-    pretzels went and is not going to volunteer that information.
+  handlers: >-
+    The handlers in the registration hall have the bearing of people who have done
+    this before. They know where to stand, what to sign, how to hold the lead so
+    the dog looks its best even standing in a hallway. The ones doing it for the
+    first time are distinguishable by how hard they are trying to look like the ones
+    who have done it before.
+  boards: >-
+    The bulletin boards hold the day's complete schedule, ring maps, breed
+    breakdowns, and the rules regarding prohibited grooming products in the
+    ring. Several of the rules are underlined. Someone has added a question
+    mark next to one of them. Below it, someone else has crossed out the
+    question mark and written CORRECT.
+  announcer: >-
+    The live results board shows group winners as they are declared. Sporting
+    Group: Vizsla. Hound Group: Bloodhound. The marker is still wet on the
+    last entry. More will follow.
 spawninfo:
-- mobid: 544
-  message: "<ansi fg=\"8\">Harlan Pepper settles onto a barstool with the ease of a man who is comfortable everywhere he goes. Hubert the Bloodhound sits beside him on the floor, enormous and patient and smelling of the deep South.</ansi>"
-  respawnrate: 5 real minutes
 idlemessages:
-- A handler at the bar pulls out a spiral notebook and makes notes about tomorrow's showing order.
-- Two women compare training philosophies at the end of the bar. Their philosophies are incompatible. They are both correct.
-- The television cuts to a commercial. Everyone looks away and then back when it returns.
-- A dog sleeping under a barstool shifts and sighs. The sound is somehow the most honest thing in the room.
-- The bartender refills a glass without being asked. He has learned to read the room tonight.
-- Someone orders a second drink and says "just one more" in the voice of someone who has been saying that for an hour.
-- A man at the bar is telling someone about a show in Cleveland in 1997. He has been telling this story for forty minutes.
-- The ice machine kicks on in the back. The dogs do not react. The handlers all look up.
+- A handler stops to check the ring assignment board, traces a finger across it, and nods.
+- Two dogs pass in opposite directions. Both are impeccably groomed. Neither acknowledges the other.
+- 'The PA system crackles: "Norwich Terrier Group to Ring Four. Norwich Terrier Group to Ring Four."'
+- A man in a blazer hurries through carrying a tray of water bowls. The dogs he passes all look up.
+- Someone pins a number to their lapel, straightens it, and stands slightly taller.
+- The linoleum floor squeaks under a cart of grooming equipment moving toward the east corridor.
+- A Bloodhound pauses in the middle of the hall and lifts its enormous nose. The crowd parts around it naturally.
+- Two handlers who clearly know each other well exchange a brief nod that contains an entire conversation about yesterday.

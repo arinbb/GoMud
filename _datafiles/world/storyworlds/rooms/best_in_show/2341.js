@@ -1,23 +1,34 @@
-// Best in Show - Taft Hotel Bar
+// Best in Show -- Registration Hall (2341)
 var LIBRARY_ROOM = 3;
+var QUEST_ID = 400;
+
+function onEnter(user, room) {
+    if (user.HasQuest(QUEST_ID)) {
+        var step = user.GetMiscCharacterData("bis_quest_step");
+        if (step == "" || step == null || step == "0") {
+            user.SetMiscCharacterData("bis_quest_step", "1");
+            SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Quest: Best in Show -- You have registered at the hall. Explore the grooming area, the show ring, and meet the judge.)</ansi>");
+        }
+    }
+    return false;
+}
 
 function onCommand(cmd, rest, user, room) {
-
     if (cmd == "return") {
         SendUserMessage(user.UserId(), "");
-        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The bar fades to celluloid. The handlers and their dogs and their complicated feelings about tomorrow dissolve into the familiar warmth of the Grand Library.</ansi>");
-        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " drains their glass, sets it on the mahogany, and steps backward through the film.", user.UserId());
+        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The registration hall dissolves. The bulletin boards, the corridor, the handlers moving in all directions -- all folding back into film. The Grand Library settles around you, quiet and un-fluorescent.</ansi>");
+        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " steps back from the bulletin board and through the screen to the Grand Library.", user.UserId());
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }
 
-    if (cmd == "drink" || cmd == "order") {
-        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The bartender slides a glass your direction without comment. It is what you needed. Tonight, before the show, in a hotel bar in Philadelphia, surrounded by anxious handlers and their incredibly well-groomed dogs, it is exactly what you needed.</ansi>");
+    if (cmd == "look" && rest.indexOf("board") >= 0 || cmd == "read" && rest.indexOf("board") >= 0) {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The live results board: Sporting Group winner -- Vizsla. Hound Group winner -- Bloodhound. Working Group winner -- Standard Schnauzer. Terrier Group -- not yet posted. The marker pen sits uncapped on the ledge, ready for the next update. The Best in Show line is blank. It will not be blank for much longer.</ansi>");
         return true;
     }
 
-    if (cmd == "watch" || (cmd == "look" && rest.indexOf("tv") >= 0) || (cmd == "look" && rest.indexOf("television") >= 0)) {
-        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The field reporter outside the venue is explaining, to the camera and to nobody in particular, that the Mayflower Kennel Club Dog Show is a 'prestigious event' in a tone that suggests he had to look up what 'prestigious' meant in this context. The handlers at the bar regard him with the quiet contempt of people being misunderstood on local television.</ansi>");
+    if (cmd == "look" && rest.indexOf("lost") >= 0 || cmd == "look" && rest.indexOf("note") >= 0) {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The handwritten note reads: HAS ANYONE SEEN A BLACK LEATHER SHOW LEAD WITH A BRASS CLIP? INITIALS J.H. INSIDE LOOP. VERY IMPORTANT. Below it someone has helpfully added: FOUND IT -- C.W. The crisis has passed.</ansi>");
         return true;
     }
 

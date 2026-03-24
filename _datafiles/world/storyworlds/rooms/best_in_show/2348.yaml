@@ -1,55 +1,54 @@
 roomid: 2348
 zone: Best in Show
-title: The Show Ring
+title: The Press Box
 description: >-
-  The main ring of the Mayflower Kennel Club Dog Show is a green rectangle of
-  competition-grade <ansi fg="itemname">carpet</ansi> under a cathedral of lights.
-  <ansi fg="itemname">Bleachers</ansi> rise on three sides, occupied by the kind of
-  audience that knows exactly what they are watching and reacts accordingly. At the
-  center, a <ansi fg="itemname">judging table</ansi> with a silver cup on it and a blue
-  <ansi fg="itemname">ribbon</ansi> that has not yet been given to anyone. The
-  <ansi fg="exit">entrance</ansi> is north. The <ansi fg="exit">commentary booth</ansi>
-  is east. The <ansi fg="exit">winners circle</ansi> is south.
-mapsymbol: R
-maplegend: The Show Ring
-biome: city
+  A narrow elevated room overlooking the main ring through a wide window, just
+  large enough for two chairs, a <ansi fg="itemname">broadcast desk</ansi>, two
+  <ansi fg="itemname">microphones</ansi>, and whatever is happening between Buck
+  Laughlin and Trevor Beckwith at any given moment. <ansi fg="itemname">Monitors</ansi>
+  show multiple camera angles of the ring below. An earpiece cable runs from the
+  desk to an untouched cup of coffee. A stack of <ansi fg="itemname">index cards</ansi>
+  beside Buck's microphone contains research that Buck has not consulted and will
+  not consult. Trevor's notes are immaculate. Trevor's face is the face of a man
+  doing his absolute best. Buck is saying something. Trevor is already redirecting
+  it. The <ansi fg="exit">show ring</ansi> is east.
+mapsymbol: B
+maplegend: The Press Box
+biome: house
 exits:
-  north:
-    roomid: 2345
   east:
-    roomid: 2349
-  south:
-    roomid: 2352
+    roomid: 2343
 nouns:
-  carpet: >-
-    The show carpet is hunter green, regulation weight, freshly laid. It provides
-    the grip that allows dogs to move at their best gaiting speed without slipping.
-    Handlers know this carpet. They have trained on carpet like this. A dog's gait
-    looks different on hard floor than on carpet, and the judge knows what to look for.
-  bleachers: >-
-    The audience in the bleachers has the focused quiet of people who understand
-    what they're watching. This is not a casual crowd. The applause, when it comes,
-    is the applause of connoisseurs. They clap for a dog's movement the way other
-    audiences clap for a perfect note.
-  table: >-
-    The judging table is a simple rectangle draped in white. Dr. Theodore Millbank III
-    will stand here. He will watch. He will make the decision. The silver cup on the
-    table is this year's Best in Show trophy. It is polished to a degree that suggests
-    it was polished twice, and both times by someone who cared.
-  ribbon: >-
-    The Best in Show ribbon is blue and gold. It is large. It is beautiful. It is,
-    depending on who you are, the culmination of years of work or just a piece of cloth.
-    For everyone in this building, it is the former.
+  desk: >-
+    The broadcast desk has two positions: TREVOR BECKWITH and BUCK LAUGHLIN, both
+    in the same font, as if they are equivalent. They are not equivalent in
+    preparation. They are equal in title and in the effect they have, together,
+    on the broadcast, which is to say one of them provides information and one of
+    them provides something that is harder to categorize but which viewers seem
+    to find compelling.
+  microphones: >-
+    Two microphones. Trevor's is correctly positioned and will stay that way.
+    Buck's is correctly positioned and will not stay that way. Buck gestures
+    when he talks. This is a documented issue. The technical director has adapted.
+  monitors: >-
+    The monitors show the ring from above, from the side, and from the close-up
+    lens that catches dogs' faces. The close-up camera is Buck's favorite. Several
+    things Buck has said about dogs' faces on this camera have required redirection.
+  cards: >-
+    The index cards contain comprehensive information: breed histories, judging
+    criteria, notable champion lineages. There is a producer's note attached that
+    reads PLEASE DO NOT SPECULATE ABOUT THE PRIVATE LIVES OF THE HANDLERS with
+    a follow-up post-it that says THIS MEANS YOU BUCK. Buck has not read either note.
 spawninfo:
-- mobid: 549
-  message: "<ansi fg=\"8\">Dr. Theodore Millbank III takes his position at the judging table. He surveys the ring with the practiced eye of a man who has judged this show eleven times and found it, each time, completely satisfactory. The room adjusts to his presence.</ansi>"
+- mobid: 547
+  message: '<ansi fg="8">Buck Laughlin settles into his commentary chair with the ease of a man who has never been nervous. He says something into the microphone. Trevor Beckwith, beside him, does not visibly react. Trevor has extensive experience not visibly reacting to things Buck says.</ansi>'
   respawnrate: 5 real minutes
 idlemessages:
-- A dog and handler team enter the ring and begin their pattern -- the handler's footsteps precise, the dog's gait absolutely textbook.
-- The audience responds to a particularly good down-and-back with a murmur of appreciation.
-- Dr. Millbank circles a dog slowly, examining structure, then steps back and makes a note.
-- A handler in the ring keeps their eyes on their dog with the focused calm of someone who has done this hundreds of times.
-- The ring announcer says a dog's breed and registered name. The audience in the bleachers who know that breed sit up slightly.
-- A dog executes the free-stack -- standing still for examination -- with absolute composure. Dr. Millbank nods once.
-- 'The lights overhead are theatrical: bright white on the carpet, picking up the sheen of every coat.'
-- Between groups, the ring is briefly empty. The carpet gleams. The trophy waits. The whole room holds its breath.
+- Buck leans into the microphone. Trevor redirects him, smoothly, to the dog currently being shown.
+- Trevor consults his notes and provides precise breed information. Buck says 'huh' and then says something else.
+- Buck is laughing at something he said. Trevor is watching the ring with professional focus.
+- 'Trevor says: "And there you have it, an exceptional Norwich Terrier." Buck says: "You know what else is exceptional?"'
+- The camera cuts to a close-up of a dog. Buck has feelings about this. They are genuine feelings. They are not appropriate for broadcast.
+- Trevor summarizes judging criteria clearly and correctly. Buck adds a story about a dog his neighbor had in 1987.
+- Buck removes his earpiece. The floor producer makes a note. Trevor continues without breaking stride.
+- Buck looks at the index cards for approximately three seconds. He sets them down. He will not return to the index cards.

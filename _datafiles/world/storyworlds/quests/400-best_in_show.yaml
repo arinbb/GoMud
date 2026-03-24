@@ -1,21 +1,23 @@
 questid: 400
 name: Best in Show
 description: >-
-  Check into the Taft Hotel, meet the competitors and their remarkable dogs, watch
-  the grooming and the ring, and witness the culmination of a year of work -- the
-  moment when Best in Show is decided, and seven dogs stand in a ring, and one of
-  them is excellent.
+  Enter the Mayflower Kennel Club Dog Show, register at the hall, visit the grooming
+  area where Harlan Pepper names his nuts and Stefan Vanderhoof discusses luminosity,
+  watch the main show ring, meet Dr. Theodore Millbank at the judges table, and
+  witness the moment when Best in Show is decided and one dog is officially excellent.
 reward:
-  experience: 4500
+  experience: 5000
   item_id: 320
   playermessage: >-
-    You have seen it all -- the hotel lobby full of dogs, the grooming area, the
-    show ring under its cathedral of lights, and the Winners Circle where everything
-    is decided. As a souvenir, you receive a Busy Bee dog toy. It makes a sound
-    between a honk and a wheeze when squeezed. Somewhere, a Weimaraner perks up.
+    You have seen it all -- the entrance hall, the grooming area, the show ring
+    under its cathedral of lights, and the Winners Circle where everything comes
+    down to one judge, seven dogs, and the standard. As a souvenir, you receive
+    a Busy Bee dog toy. When you squeeze it, it makes a sound. Somewhere, a
+    Weimaraner perks up.
 steps:
-- description: Check into the Taft Hotel and see who has arrived.
-- description: Meet the dog show competitors in their rooms.
-- description: Watch the grooming process -- the primping, the spraying, the focus.
-- description: Enter the Mayflower Kennel Club main ring.
-- description: Stand in the Winners Circle and see what the whole thing has been about.
+- description: Enter the Mayflower Kennel Club Dog Show.
+- description: Register at the hall and explore the venue.
+- description: Visit the grooming area and watch the preparation.
+- description: Enter the main show ring and watch the competition.
+- description: Meet the judge at the judges table.
+- description: Find the Winners Circle and witness Best in Show.

@@ -1,41 +1,53 @@
-// Best in Show - The Show Ring
-// COMMANDS: judge, best in show (easter egg 200 XP)
+// Best in Show -- The Press Box (2348)
+// COMMANDS: announce, comment, commentate (easter egg 200 XP)
 var LIBRARY_ROOM = 3;
 
-function onCommand(cmd, rest, user, room) {
+var BUCK_LINES = [
+    "You lean into the microphone. 'And the Bloodhound enters the ring, and -- you know what, my uncle had a dog like that. Big dog. Ate a whole ham once. Just the whole ham. Nobody knew he'd done it until it became clear eventually.'",
+    "You describe the Weimaraner's movement with full enthusiasm. Several things you say turn out to be things you should not say about a dog on television. Trevor says 'And she does look magnificent.' This ends the segment.",
+    "You make an observation about the poodle's haircut. The observation goes somewhere unexpected. Buck, somewhere offscreen, is nodding. Trevor is studying his notes with tremendous intensity.",
+    "You tell a story about a dog show you went to once. The story has no clear resolution. It ends because you ran out of things you remember. Trevor says 'Back to the ring.'",
+    "You ask a question about whether the dog knows it won. You ask it live, on air, into the microphone. Trevor says 'A great question, and I think we can all see from Rhapsody's bearing that she knows.' You meant it differently. The broadcast moves on."
+];
 
+function onCommand(cmd, rest, user, room) {
     if (cmd == "return") {
         SendUserMessage(user.UserId(), "");
-        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The show ring dissolves. The carpet, the lights, the bleachers -- all folding back into film. The Grand Library returns and it is very quiet here, the way places get quiet after something has mattered.</ansi>");
-        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " steps back from the ring and through the screen to the Grand Library.", user.UserId());
+        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The press box dissolves. Buck's voice fades mid-sentence about something. Trevor's face -- patient, professional, experienced -- is the last thing to go. The Grand Library returns, blessedly silent.</ansi>");
+        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " removes the headset, sets it on the desk, and steps back through the screen to the Grand Library.", user.UserId());
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }
 
-    if (cmd == "judge" || (rest.indexOf("best in show") >= 0)) {
-        var key = "easter_best_in_show_judge";
+    if (cmd == "announce" || cmd == "comment" || cmd == "commentate" || cmd == "broadcast" || cmd == "mic") {
+        var key = "easter_bis_announce";
         if (user.GetMiscCharacterData(key) != "found") {
             user.SetMiscCharacterData(key, "found");
-            user.GrantXP(200, "Show Ring judgment");
+            user.GrantXP(200, "Buck Laughlin commentary");
+            var idx = Math.floor(Math.random() * BUCK_LINES.length);
+            var line = BUCK_LINES[idx];
             SendUserMessage(user.UserId(), "");
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Dr. Millbank regards you with the composed authority of a man who has seen everything in thirty years of judging and remains unflappable about all of it.</ansi>");
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">'You are not a dog,' he observes.</ansi>");
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You agree. You are not a dog.</ansi>");
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">'Nevertheless,' he says, and makes a note on his clipboard. He looks at you for a long moment with the evaluating eye of a man who has judged structure, movement, and overall balance in hundreds of animals, and then he makes one more small note. 'You move well enough,' he says. This is the highest compliment he will offer a human. You accept it.</ansi>");
-            SendUserMessage(user.UserId(), "<ansi fg=\"3\">(+200 XP: Judged by Dr. Millbank)</ansi>");
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You sit in Buck Laughlin's chair. You pull the microphone toward you. You look at the ring below. You begin.</ansi>");
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">" + line + "</ansi>");
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Trevor says 'Thank you, Buck.'</ansi>");
+            SendUserMessage(user.UserId(), "<ansi fg=\"3\">(+200 XP: Color Commentary)</ansi>");
         } else {
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Dr. Millbank glances at you from his clipboard. He has already judged you. His assessment stands.</ansi>");
+            var idx = Math.floor(Math.random() * BUCK_LINES.length);
+            var line = BUCK_LINES[idx];
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You lean into the microphone again.</ansi>");
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">" + line + "</ansi>");
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Trevor says 'Thank you, Buck.'</ansi>");
         }
         return true;
     }
 
-    if (cmd == "gait" || cmd == "walk" || cmd == "run" || cmd == "trot") {
-        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You walk across the show carpet. The audience in the bleachers -- the ones who know what they're looking at -- watch with polite incomprehension. Dr. Millbank observes your movement with professional attention. His expression does not change. This is a kind of respect.</ansi>");
+    if (cmd == "watch" || (cmd == "look" && rest.indexOf("ring") >= 0)) {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Through the booth window, the show ring spreads below: the green carpet, the bleachers, the lights. A handler and dog are moving through their pattern right now. From up here you can see the whole geometry of it -- how the handler positions relative to the judge, how the dog's head carriage changes with each stride. Buck is quiet for once. He is watching too. There are moments, between the things he says, when he sees what everyone else sees.</ansi>");
         return true;
     }
 
-    if (cmd == "stack" || cmd == "stand" || cmd == "pose") {
-        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You attempt the free-stack: feet square, head up, absolutely still. You hold it for three seconds. Four. Five. Dr. Millbank watches. The audience in the bleachers is quiet. You are not a show dog, but in this moment you are trying very hard to be the best possible version of whatever you are, and there is something in that the room recognizes.</ansi>");
+    if (cmd == "read" && rest.indexOf("card") >= 0 || cmd == "look" && rest.indexOf("card") >= 0) {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You look at Buck's index cards. They are comprehensive and well-researched. Breed standards, judging history, notable champions, fascinating context. None of this has been used. The producer's post-it notes are both still attached. You flip to the card about Norwich Terriers. It is accurate and interesting. Buck will not read it. This is a specific kind of tragedy.</ansi>");
         return true;
     }
 

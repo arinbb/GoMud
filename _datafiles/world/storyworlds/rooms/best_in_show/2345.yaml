@@ -1,59 +1,56 @@
 roomid: 2345
 zone: Best in Show
-title: Mayflower Kennel Club Entrance
+title: The Hotel Lobby
 description: >-
-  The entrance to the <ansi fg="yellow">Mayflower Kennel Club Dog Show</ansi> is
-  everything a dog show entrance should be: banners in the Mayflower colors hanging from
-  the rafters, a <ansi fg="itemname">registration table</ansi> staffed by two volunteers
-  in matching blazers who have been here since six this morning and will be here until
-  midnight, a <ansi fg="itemname">board</ansi> listing the day's schedule in clean serif
-  type, and the overwhelming composite smell of forty different dog shampoos combining
-  into something that is not unpleasant but is extremely specific. Handlers move through
-  with dogs on leads, all of the dogs visibly aware that something important is about to
-  happen, all of the humans either very calm or not calm at all. The <ansi fg="exit">hotel</ansi>
-  is north. The <ansi fg="exit">grooming area</ansi> is east. <ansi fg="exit">The Show Ring</ansi>
-  is south. The <ansi fg="exit">vendor hall</ansi> is west.
-mapsymbol: M
-maplegend: Mayflower Entrance
-biome: city
+  The lobby of the Taft Hotel, Philadelphia -- the official hotel of the Mayflower
+  Kennel Club Dog Show. Every <ansi fg="itemname">armchair</ansi> has a dog in it,
+  or has recently had a dog in it, or is being regarded by a dog as a future sitting
+  location. The <ansi fg="itemname">front desk</ansi> is staffed by a man named Dale
+  who is maintaining professional composure in the face of a Weimaraner that has been
+  staring at him for twenty minutes without blinking. A Standard Poodle in a
+  <ansi fg="itemname">travel crate</ansi> beside the luggage cart sits in perfect
+  composure, as if she is waiting for the world to catch up to her standard. Scott
+  Donlan and Stefan Vanderhoof are at a corner table with their Shih Tzu, Miss Agnes,
+  discussing the lighting situation with the intensity of people for whom the lighting
+  situation is a genuine professional concern. The <ansi fg="exit">registration hall</ansi>
+  is east. <ansi fg="exit">Hotel rooms</ansi> are north. The <ansi fg="exit">hotel bar</ansi>
+  is west.
+mapsymbol: H
+maplegend: The Hotel Lobby
+biome: house
 exits:
-  north:
-    roomid: 2340
   east:
-    roomid: 2346
-  south:
-    roomid: 2348
+    roomid: 2341
+  north:
+    roomid: 2349
   west:
     roomid: 2350
-  outside:
-    roomid: 2353
-    mapdirection: northwest
 nouns:
-  registration: >-
-    The registration table has two clipboards, a laminator, a roll of name tags,
-    and the energy of people who have memorized the rule book. One volunteer is
-    handling a dispute about a dog's AKC number with the calm certainty of someone
-    who has had this exact dispute seventeen times before and was right every time.
-  board: >-
-    The schedule board lists the day's events in clean type: Sporting Group (9 AM),
-    Hound Group (11 AM), Working Group (1 PM), Terrier Group (2 PM), Non-Sporting
-    Group (3 PM), Toy Group (4 PM), Herding Group (5 PM), Best in Show (7 PM).
-    Each entry has a ring number. The 7 PM slot has a small gold star beside it.
-  banners: >-
-    Mayflower Kennel Club banners in hunter green and gold hang from the rafters.
-    They bear the club's seal, which features a dog in show stance, and the words
-    "EXCELLENCE IN BREEDING SINCE 1903." The banners are pressed. Everything here
-    is pressed. This is an institution that irons its banners.
+  armchair: >-
+    Every armchair in the lobby has a dog in it or evidence of a recent dog.
+    The hotel staff made peace with this arrangement sometime last year. The
+    armchairs are not damaged. The dogs have excellent manners. This is a
+    dog-show hotel. Everyone knew what they were signing up for.
+  desk: >-
+    Dale at the front desk has worked here eleven years and has never before
+    experienced a weekend like this one. His face shows professional composure
+    doing a significant amount of work. Behind him the key rack is full. Every
+    room is occupied by someone with a dog.
+  crate: >-
+    The travel crate is custom-fitted, ventilated, and lined with what appears
+    to be memory foam. Inside, a Standard Poodle called Rhapsody in White sits
+    in perfect stillness, not sleeping, simply waiting. She is ready. She has
+    been ready for two weeks. She is waiting for everyone else to catch up.
 spawninfo:
-- mobid: 549
-  message: "<ansi fg=\"8\">Dr. Theodore Millbank III passes through the entrance with the unhurried authority of a man who has judged this show eleven times and finds it, each time, completely satisfactory. He nods at the volunteers. They stand a little straighter.</ansi>"
+- mobid: 545
+  message: '<ansi fg="8">Scott Donlan arrives in the lobby carrying a clipboard and an expression of complete professional focus. He finds the corner table, sets down the clipboard, and begins organizing tomorrow''s timeline with the thoroughness of a man for whom nothing is left to chance.</ansi>'
   respawnrate: 5 real minutes
 idlemessages:
-- A Terrier on a show lead nearly pulls its handler off their feet with enthusiasm. The handler recovers. The Terrier is unrepentant.
-- A handler checks in at the registration table, gets a number pinned to their lapel, and walks toward the ring with a new bearing.
-- Two dogs pass each other at the entrance and perform the full protocol of sniffing and assessment in approximately four seconds.
-- 'An announcement crackles over the PA system: "Hound Group to Ring Two. Hound Group to Ring Two." Several people move faster.'
-- A woman with a catalog walks in, reads the schedule board, and adjusts her watch by one minute. Her dog waits.
-- The doors open and close and each opening brings a brief rush of cold November Philadelphia air and another person with a dog.
-- One of the registration volunteers says something to the other one. They both laugh briefly. Then they go back to checking names.
-- A Shih Tzu passes through at ankle height, magnificent, impeccably groomed, completely unaware of its own improbability.
+- A Norwich Terrier trots across the lobby tile and disappears under an armchair.
+- Dale at the front desk answers the phone and says, without being asked, 'Yes, we do allow dogs.'
+- A woman in a trim blazer walks past carrying a poodle under one arm and a grooming case under the other.
+- Two handlers compare conditioning spray recommendations in low, serious voices. Nobody else uses this much spray.
+- A Bloodhound lumbers through the lobby with solemn purpose. Where it is going, it is not saying.
+- The elevator opens. A man steps out carrying a show lead, a grooming box, and an expression of controlled determination.
+- Scott Donlan makes a small notation on the clipboard. He was already ready. This note confirms it.
+- A dog being walked to the elevator turns its head and makes eye contact with you. This dog has competed before. This dog knows things.

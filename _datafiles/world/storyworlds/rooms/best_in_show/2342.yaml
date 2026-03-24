@@ -1,63 +1,51 @@
 roomid: 2342
 zone: Best in Show
-title: Swan Suite
+title: The Parking Lot
 description: >-
-  The Swan suite is a standard hotel room elevated, by force of personality, into a
-  battleground. A <ansi fg="itemname">Weimaraner</ansi> named Beatrice lies on the king
-  bed with the absolute sovereignty of a dog who has been informed, at length, that she
-  is special. The <ansi fg="itemname">coffee table</ansi> holds a Starbucks cup, a
-  <ansi fg="itemname">self-help book</ansi> with the spine broken at a chapter called
-  "Communicating Your Needs," and a second Starbucks cup that is cold because the argument
-  started before anyone finished drinking. The <ansi fg="itemname">bathroom mirror</ansi>
-  has a sticky note on it that reads something in neat handwriting that is either a
-  daily affirmation or a threat. The room is very clean, very tense, and very small for
-  the amount of feeling currently being processed in it. The <ansi fg="exit">lobby corridor</ansi>
-  is west. Sherri Ann's suite is <ansi fg="exit">east</ansi>.
-mapsymbol: W
-maplegend: Swan Suite
-biome: house
+  The Mayflower Kennel Club parking lot at November dusk. Sodium
+  <ansi fg="itemname">lights</ansi> cast everything amber. The cars are a
+  cross-section of people who spend significant money on dogs -- some new, some
+  old, all with crates in the back and the specific interior configuration of a
+  vehicle owned by someone who competes with a large animal. A few
+  <ansi fg="itemname">station wagons</ansi> near the east wall are packed for a
+  multi-day run: grooming cases, garment bags, a case of water, a bag of premium
+  kibble. The <ansi fg="itemname">Flecks station wagon</ansi> is north -- you can
+  see the Ohio plates from here and what appears to be a Norwich Terrier through
+  the rear window, very alert. The <ansi fg="exit">entrance</ansi> is west. The
+  <ansi fg="exit">wagon</ansi> is north.
+mapsymbol: P
+maplegend: The Parking Lot
+biome: city
 exits:
   west:
     roomid: 2340
-  east:
-    roomid: 2351
+  north:
+    roomid: 2346
 nouns:
-  weimaraner: >-
-    Beatrice the Weimaraner occupies the center of the king bed with the regal
-    certainty of an animal that has never once been told no. Her grey eyes track
-    movement in the room with the focus of a creature who is monitoring the
-    emotional climate of her owners and finding it, as usual, unstable. She is
-    magnificent. She is also, technically, the most functional individual in
-    this room.
-  coffee: >-
-    Two Starbucks cups. Both are cold. The argument that caused them to go cold
-    began when one of them said something about the appointment with Dr. Millbank,
-    and then the other one said something about the thing that happened at the
-    Starbucks last Tuesday, and then both of them were talking simultaneously in
-    the precise, careful, therapy-fluent language of two people who have been told
-    by a professional exactly how to fight.
-  book: >-
-    A copy of "Feel the Feelings and Also Be Fine: A Journey." The spine is cracked
-    at the chapter on "Communicating Your Needs Without Making It About You." There
-    are margin notes in two different handwriting styles. One is neat. One is emphatic.
-  mirror: >-
-    The sticky note on the bathroom mirror reads: "I am worthy of love and I also
-    believe in Beatrice." Below it, in a different pen: "We are a team. We are a
-    team. WE ARE A TEAM." It is unclear which of the Swans wrote which part, but
-    both parts were clearly written during separate moments of necessity.
+  lights: >-
+    The sodium lights of the parking lot cast everything in amber, the way old
+    photographs look. In this light the handlers loading or unloading their cars
+    look like figures from another era doing something that has always been done
+    and will continue to be done long after tonight.
+  wagons: >-
+    The station wagons near the east wall have that particular look: rear seats
+    folded, crate strapped in, a towel over the crate, a lint roller visible
+    through the glass. One has a bumper sticker that says PROUD HANDLER. Another
+    has a sticker from a dog show in Ohio. This region is well-represented tonight.
+  wagon: >-
+    The Flecks station wagon from Shakey Hills, Ohio. Ohio plates, a couple of
+    small dents, a bumper sticker from what might be a fishing supply store.
+    Through the rear window: a Norwich Terrier in a travel crate, ears fully
+    deployed, watching the parking lot with the keen attention of a dog that
+    knows something is happening and is ready for it. A fly-fishing catalog sits
+    on the passenger seat. This is a car lived in by good people.
 spawninfo:
-- mobid: 542
-  message: "<ansi fg=\"8\">Hamilton Swan stands near the window, holding a cold Starbucks, looking out at Philadelphia with the expression of a man who is composing his feelings into the precise vocabulary his therapist recommended and finding the vocabulary insufficient.</ansi>"
-  respawnrate: 5 real minutes
-- mobid: 543
-  message: "<ansi fg=\"8\">Meg Swan sits on the edge of the bed beside Beatrice, one hand on the Weimaraner's flank, practicing slow breathing. The breathing is not working. She switches to a different breathing pattern. That one is also not working.</ansi>"
-  respawnrate: 5 real minutes
 idlemessages:
-- Beatrice shifts on the bed and both Swans look at her simultaneously with identical expressions of concern.
-- Hamilton opens his mouth, composes something, closes his mouth, opens it again, says nothing.
-- Meg picks up the self-help book, reads a paragraph, sets it down, picks up the Starbucks cup, discovers it is cold.
-- The room is very quiet in the way rooms get quiet when two people are saying nothing very loudly.
-- Beatrice yawns. In the context of this room, this yawn carries significant emotional weight.
-- Hamilton checks his watch. Meg notices him checking his watch. He notices her noticing. They both look at Beatrice.
-- The heating unit cycles on. The sound of it is briefly a relief from the silence.
-- Somewhere in the suite, a phone buzzes. Neither of them picks it up.
+- A car door slams. A dog inside shifts in its crate. The car rocks once.
+- Two handlers stand by a minivan comparing notes on something. They are not done talking yet.
+- A trunk opens and a crate slides in with a practiced motion that suggests this has been done many times.
+- Headlights sweep across the parking lot as another competitor arrives.
+- Gerry Fleck can be seen through the station wagon window, checking something on his phone with an expression of uncomplicated patience.
+- The cold November air is very clear. You can see your breath. You can see the dogs breathing too.
+- Someone walks a dog along the row of cars before heading in. The dog wants to smell everything. The handler has learned to allow for this.
+- A Bloodhound gets into a pickup truck with the slow inevitability of a large thing settling. The truck dips noticeably.

@@ -1,53 +1,63 @@
 roomid: 2349
 zone: Best in Show
-title: Commentary Booth
+title: Hotel Room - The Swans
 description: >-
-  The commentary booth is a narrow elevated room overlooking the ring through a wide
-  window, just large enough for two chairs, a <ansi fg="itemname">broadcast desk</ansi>,
-  two <ansi fg="itemname">microphones</ansi>, and whatever is happening between Buck
-  Laughlin and Trevor Beckwith at any given moment. <ansi fg="itemname">Monitors</ansi>
-  show multiple camera angles of the ring below. An <ansi fg="itemname">earpiece</ansi>
-  cable runs from the desk to an untouched cup of coffee. A stack of
-  <ansi fg="itemname">index cards</ansi> beside Buck's microphone contains research that
-  Buck has not consulted and will not consult. Trevor's notes are immaculate. Trevor's
-  face is the face of a man doing his very best. The <ansi fg="exit">show ring</ansi>
-  is west.
-mapsymbol: C
-maplegend: Commentary Booth
+  The Swans' hotel room has the tense neatness of a room where two people are
+  communicating carefully. A <ansi fg="itemname">Weimaraner</ansi> named Beatrice
+  lies on the king bed with the absolute sovereignty of a dog who has been informed,
+  at length, that she is special. The <ansi fg="itemname">coffee table</ansi> holds
+  two Starbucks cups that are cold because the conversation that caused them to go
+  cold started before anyone finished drinking. A <ansi fg="itemname">self-help book</ansi>
+  is open on the bed beside Beatrice, spine broken at a chapter called Communicating
+  Your Needs. The <ansi fg="itemname">bathroom mirror</ansi> has two sticky notes in
+  different handwriting. Hamilton stands near the window, composing something. Meg is
+  beside Beatrice, doing the breathing. Beatrice monitors both of them with the calm
+  authority of a dog who has been through this before and knows how it ends.
+  The <ansi fg="exit">hotel lobby</ansi> is south.
+mapsymbol: W
+maplegend: Hotel Room - The Swans
 biome: house
 exits:
-  west:
-    roomid: 2348
+  south:
+    roomid: 2345
 nouns:
-  desk: >-
-    The broadcast desk has the professional geometry of a place that takes itself
-    seriously. Two positions, two name cards -- TREVOR BECKWITH and BUCK LAUGHLIN --
-    both in the same clean font, as if they are equivalent, which they are in
-    title and not in preparation.
-  microphones: >-
-    Two microphones. Trevor's is positioned correctly and precisely. Buck's is
-    positioned correctly and will not remain there. Buck gestures when he talks.
-    This is a documented issue that the technical director has adapted to.
-  monitors: >-
-    The monitors show the ring from the overhead camera, the floor camera, and
-    the close-up lens that catches dogs' faces. The close-up camera is Buck's
-    favorite. He has already said something about it that Trevor had to redirect.
-  cards: >-
-    The index cards contain: breed histories, notable champion lineages, judging
-    criteria for each group, show records, and a note from the producer that reads
-    "PLEASE DO NOT SPECULATE ABOUT THE PRIVATE LIVES OF THE HANDLERS." The note
-    is recent. It has a post-it on it that says "THIS MEANS YOU BUCK." Buck has
-    not read it.
+  weimaraner: >-
+    Beatrice the Weimaraner occupies the center of the king bed with the certainty
+    of an animal that has never once been told no. Her grey eyes track movement in
+    the room with the focus of a creature monitoring the emotional climate of her
+    owners and finding it, as usual, unstable. She is magnificent. She is also the
+    most functional individual currently in this room.
+  coffee: >-
+    Two Starbucks cups. Both cold. The conversation that caused them to go cold
+    began with something about Dr. Millbank -- the other one, the therapist, not
+    the judge -- and then escalated in the precise, therapy-fluent vocabulary of
+    two people who have been told exactly how to have this argument and are having
+    it correctly.
+  book: >-
+    A copy of Feel the Feelings and Also Be Fine: A Journey. The spine is cracked
+    at the chapter on Communicating Your Needs Without Making It About You. There
+    are margin notes in two handwriting styles. One is neat. One is emphatic.
+  mirror: >-
+    The sticky note on the bathroom mirror reads: I am worthy of love and I also
+    believe in Beatrice. Below it, in different pen: We are a team. We are a team.
+    WE ARE A TEAM. It is unclear which Swan wrote which part, but both were clearly
+    written during separate moments of necessity.
 spawninfo:
-- mobid: 548
-  message: "<ansi fg=\"8\">Buck Laughlin settles into his commentary chair with the ease of a man who has never been nervous a day in his life. He says something into the microphone. Trevor Beckwith, beside him, does not visibly react. Trevor has extensive experience not visibly reacting.</ansi>"
+- mobid: 543
+  message: '<ansi fg="8">Meg Swan is beside Beatrice on the bed, one hand on the Weimaraner''s flank, doing the breathing her therapist showed her. The breathing is not working perfectly. She is cycling through breathing patterns to find one that works. None of them are working perfectly.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 544
+  message: '<ansi fg="8">Hamilton Swan stands near the window holding a cold Starbucks, looking at Philadelphia with the expression of a man composing his feelings into vocabulary his therapist recommended and finding the vocabulary slightly insufficient for this specific occasion.</ansi>'
+  respawnrate: 5 real minutes
+- mobid: 550
+  message: '<ansi fg="8">Beatrice the Weimaraner lifts her head from the bed and surveys the room. She has assessed the situation. She lies back down. This is her assessment: it is going to be fine.</ansi>'
   respawnrate: 5 real minutes
 idlemessages:
-- Buck leans into the microphone and says something. Trevor redirects him, smoothly, to the dog currently being shown.
-- Trevor consults his notes and provides precise information about breed history. Buck says "huh" and then says something else.
-- Buck is laughing at something he said. Trevor is watching the ring with professional focus.
-- A floor producer's voice comes through the earpiece. Trevor adjusts accordingly. Buck has removed his earpiece.
-- Buck points at something on the monitor and says something that is technically a question but is actually a statement about something inappropriate.
-- 'Trevor says: "And there you have it -- a truly exceptional Norwich Terrier." Buck says: "You know what else is exceptional?"'
-- The camera cuts to a close-up of a dog's face. Buck has feelings about this.
-- Trevor summarizes the judging criteria clearly and correctly. Buck adds a story about a dog his neighbor had in 1987 that went another direction.
+- Beatrice shifts on the bed and both Swans look at her simultaneously with identical expressions of concern.
+- Hamilton opens his mouth, composes something, closes his mouth, opens it again, says nothing.
+- Meg picks up the self-help book, reads a paragraph, sets it down, picks up the cold Starbucks cup.
+- The room is very quiet in the way rooms get quiet when two people are saying nothing very loudly.
+- Beatrice yawns. In the context of this room, this yawn carries significant emotional weight.
+- Hamilton checks his watch. Meg notices. He notices her noticing. They both look at Beatrice.
+- The heating unit cycles on. The sound is briefly a relief from the silence.
+- A phone buzzes on the nightstand. Neither of them picks it up. They look at it, then at each other, then at Beatrice.

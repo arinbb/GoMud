@@ -1,64 +1,55 @@
 roomid: 2351
 zone: Best in Show
-title: Sherri Anns Suite
+title: The Vendors Hall
 description: >-
-  Sherri Ann Cabot's suite is the nicest room in the hotel, because Sherri Ann Cabot
-  can afford the nicest room in the hotel and does not see a reason to apologize for this.
-  The furniture is tasteful. The <ansi fg="itemname">flowers</ansi> in the vase are fresh.
-  A <ansi fg="itemname">Standard Poodle</ansi> called Rhapsody in White occupies a custom
-  <ansi fg="itemname">cushion</ansi> beside the window in the specific posture of a dog who
-  has always had a very nice cushion. A framed <ansi fg="itemname">photograph</ansi> on the
-  dresser shows Sherri Ann and Rhapsody at last year's Westminster show -- not quite first,
-  but the photograph is framed in silver, which says something about how she remembers it.
-  A <ansi fg="itemname">pamphlet</ansi> for Christy Cummings's dog-handling services is on
-  the nightstand beside a bottle of still water and a phone that has been ringing. The
-  <ansi fg="exit">Swan suite corridor</ansi> is west.
-mapsymbol: S
-maplegend: Sherri Anns Suite
+  The vendors hall is a long room lined with tables selling every conceivable
+  dog-related product. <ansi fg="itemname">Conditioning sprays</ansi> in fifteen
+  formulations. <ansi fg="itemname">Show leads</ansi> in every color and material.
+  A table selling <ansi fg="itemname">dog portraits</ansi> in oil, watercolor, and
+  one format the artist describes as impressionistic realism which looks, honestly,
+  like something painted by a ghost. Near the back wall, a vendor sells rubber and
+  plush dog toys, and among them, prominently featured, is the
+  <ansi fg="itemname">Busy Bee</ansi>: a squeaky rubber bumblebee in yellow and
+  black that resonates at a frequency Weimaraners find particularly activating.
+  There are signs. The hall hums with the specific commerce of people hoping to
+  find something that might help. The <ansi fg="exit">registration hall</ansi> is
+  accessible south.
+mapsymbol: V
+maplegend: The Vendors Hall
 biome: house
 exits:
-  west:
-    roomid: 2342
+  south:
+    roomid: 2341
+    mapdirection: south
 nouns:
-  flowers: >-
-    The flowers are white calla lilies in a clear glass vase with cut stems and
-    fresh water. Someone arranged them this morning. The someone was probably
-    Sherri Ann, because Sherri Ann has opinions about flowers that are quiet but
-    firm.
-  poodle: >-
-    Rhapsody in White is a Standard Poodle of championship bearing. In the suite
-    she is relaxed, her show clip slightly softened, her enormous eyes at rest.
-    She knows Sherri Ann. She knows Christy. She knows the ring. She does not
-    know you, which she demonstrates by acknowledging you with precisely the
-    amount of attention you have earned.
-  cushion: >-
-    The custom cushion is sized for a Standard Poodle, padded generously, upholstered
-    in ivory fabric. There is a small embroidered name on one corner: "RHAPSODY."
-    This cushion was made for this dog. The dog knows this. The cushion knows this.
-  photograph: >-
-    The silver-framed photograph from Westminster last year. Sherri Ann, immaculate
-    in her best blazer. Rhapsody, at perfect stance. The judge is in the background,
-    looking at another dog. This year, Sherri Ann has noted, things will be different.
-    The photograph is angled on the dresser so that it's the first thing visible from
-    the door.
-  pamphlet: >-
-    Christy Cummings Professional Dog Handling Services. The pamphlet lists credentials,
-    show wins, and client testimonials. One of the testimonials is from Sherri Ann Cabot.
-    It says, in its entirety: "Christy is dedicated." This is accurate. It is also,
-    somehow, the most comprehensive thing you can say about Christy Cummings.
+  sprays: >-
+    The conditioning spray table is operated by a woman who can describe the
+    difference between protein-based and silicone-based coat conditioning in more
+    detail than you have words for. She has samples. She will give you samples.
+    The explanation of each sample will be thorough.
+  leads: >-
+    Show leads in leather, nylon, cotton, and one material the vendor calls technical
+    fabric with the same reverence you would use for aerospace composites. The thin
+    show leads used in the ring are works of engineering: maximum control, minimum
+    visibility.
+  portraits: >-
+    The oil portraits are good. The watercolors are better. The impressionistic
+    realism portraits look like the dogs are visible through fog, or grief, which
+    the artist says is intentional. You believe her. This does not make them less
+    unsettling.
+  bee: >-
+    The Busy Bee. A rubber bumblebee in yellow and black with a squeaker built into
+    the thorax. The package says THE SQUEAK THAT DOGS LOVE! in a font that is very
+    confident about this. The Busy Bee occupies a special place in the folklore of
+    this show. There is at least one Weimaraner in this building for whom the sight
+    of a Busy Bee is deeply activating. The vendor has several. They are two dollars.
 spawninfo:
-- mobid: 547
-  message: "<ansi fg=\"8\">Sherri Ann Cabot looks up from the phone with the polished warmth of a woman who has been trained by circumstance to be pleasant at all times. She sets the phone down. It rings again immediately. She looks at it, then at you, with an expression that is not entirely readable.</ansi>"
-  respawnrate: 5 real minutes
-- mobid: 550
-  message: "<ansi fg=\"8\">Christy Cummings is going over tomorrow's showing notes on a legal pad. Her handwriting is precise and the notes are thorough. She looks up briefly, nods, and goes back to her notes. Christy is dedicated.</ansi>"
-  respawnrate: 5 real minutes
 idlemessages:
-- Rhapsody lifts her head from the cushion, surveys the suite, finds it satisfactory, and lays her head back down.
-- Sherri Ann checks her reflection in the mirror with the quick, practiced evaluation of someone for whom appearance is a professional standard.
-- The phone on the nightstand buzzes. Sherri Ann glances at it with an expression of informed neutrality.
-- Christy makes a note on the legal pad. The note is probably about Rhapsody. Everything Christy writes is probably about Rhapsody.
-- Sherri Ann strokes Rhapsody's ear with the absent tenderness of a woman who, whatever else is true, genuinely loves this dog.
-- The suite is very quiet in the way suites are when two people in them have an arrangement that works.
-- Christy stretches, reviews her notes from the top, makes one small addition, and nods. Tomorrow is covered.
-- Sherri Ann looks at the silver-framed photograph for a moment. Then she looks at Rhapsody. She smiles.
+- A handler picks up a conditioning spray, reads the label with focused attention, and buys two.
+- The portrait artist is working on a miniature of a Dachshund from memory. The likeness is excellent.
+- Someone picks up a Busy Bee, squeezes it, and puts it down. A dog three tables away lifts its head.
+- The show lead vendor is explaining the physics of a slip lead to someone who asked a simple question.
+- A Busy Bee falls off the table and squeaks when it hits the floor. Every dog within earshot has an opinion.
+- The conditioning spray vendor is describing the difference between two products that appear identical. The difference is real.
+- 'The vendor hall has the specific energy of commerce adjacent to competition: everyone is buying things that might help, hoping.'
+- A child picks up a plush rabbit from the toy table. A nearby handler gives them a look. The child puts it back.

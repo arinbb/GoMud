@@ -3,14 +3,14 @@ zone: best_in_show
 hostile: false
 maxwander: 1
 idlecommands:
-  - "emote smiles at someone passing by with the reflexive warmth of a man who likes people."
-  - "emote adjusts Winky's show lead with careful, practiced hands."
-  - "say You know, I think he's really ready this year. I can just tell."
-  - "emote looks around the room with the contented expression of a man who is fine wherever he is."
-  - "say Cookie says I worry too much, but I don't think I worry at all. I just think about it a lot."
-  - ""
-  - "emote hums something tuneless and pleasant to himself."
-  - "say Nice place. They did a nice job with this place."
+  - 'emote smiles at someone passing by with the reflexive warmth of a man who likes people.'
+  - 'emote adjusts Winky''s show lead with careful, practiced hands.'
+  - 'say You know, I think he''s really ready this year. I can just tell.'
+  - 'emote looks around the room with the contented expression of a man who is fine wherever he is.'
+  - 'say Cookie says I worry too much, but I don''t think I worry at all. I just think about it a lot.'
+  - ''
+  - 'emote hums something tuneless and pleasant to himself.'
+  - 'say Nice place. They did a nice job with this place.'
 activitylevel: 20
 character:
   name: Gerry Fleck
@@ -21,15 +21,14 @@ character:
     and Supply. He is the nicest person in any room he enters. Not naively nice --
     genuinely nice, with the quiet competence of a man who has decided to go through
     life being easy to be around and has been succeeding at this for approximately
-    forty-five years. He wears a cardigan. It is the correct cardigan. Behind him, at
-    the end of a show lead, a Norwich Terrier named Winky regards the world with an
-    expression that mirrors Gerry's exactly.
+    forty-five years. Behind him, at the end of a show lead, a Norwich Terrier named
+    Winky regards the world with an expression that mirrors Gerry's exactly.
   raceid: 1
   level: 5
   equipment:
     body:
-      itemid: 20105
+      itemid: 20122
     legs:
-      itemid: 20152
+      itemid: 20151
     feet:
-      itemid: 20172
+      itemid: 20171

@@ -1,46 +1,32 @@
-// Best in Show - Swan Suite
-// COMMANDS: argue, fight (easter egg)
+// Best in Show -- The Parking Lot (2342)
+// COMMANDS: look wagon, two left feet (easter egg 200 XP)
 var LIBRARY_ROOM = 3;
 
 function onCommand(cmd, rest, user, room) {
-
     if (cmd == "return") {
         SendUserMessage(user.UserId(), "");
-        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The Swan suite dissolves. The cold Starbucks, the self-help book, Beatrice on the bed -- all of it folds back into film and the Grand Library settles around you like a room that does not require therapy to exist in.</ansi>");
-        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " backs slowly out of the Swan suite and steps through the screen to the Grand Library.", user.UserId());
+        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The parking lot dissolves. The amber lights, the cars, the dogs in their crates -- all folding back into celluloid. The Grand Library settles around you, warm and permanent, and you carry with you the image of a Norwich Terrier watching a parking lot with infinite patience.</ansi>");
+        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " watches the last headlights sweep across the lot and steps back through the screen to the Grand Library.", user.UserId());
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }
 
-    if (cmd == "argue" || cmd == "fight") {
-        var key = "easter_best_in_show_argue";
+    if ((cmd == "look" && rest.indexOf("wagon") >= 0) || cmd == "two" || (cmd == "look" && rest.indexOf("fleck") >= 0)) {
+        var key = "easter_bis_wagon";
         if (user.GetMiscCharacterData(key) != "found") {
             user.SetMiscCharacterData(key, "found");
-            user.GrantXP(150, "Swan Suite argument");
+            user.GrantXP(200, "Fleck station wagon");
             SendUserMessage(user.UserId(), "");
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You attempt to communicate your needs using the vocabulary both Swans have been practicing. It comes out as: 'I feel that this situation is -- I hear you saying -- what I'm trying to express is --'</ansi>");
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Hamilton looks at you. Meg looks at you. They look at each other. Something shifts.</ansi>");
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">'They get it,' Meg says.</ansi>");
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">'I know,' Hamilton says.</ansi>");
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Beatrice wags her tail once.</ansi>");
-            SendUserMessage(user.UserId(), "<ansi fg=\"3\">(+150 XP: Therapy-Fluent)</ansi>");
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You walk over to the Flecks station wagon. Winky the Norwich Terrier tracks your approach with both ears at full deployment. Through the glass you can see the back seat: a show lead hung on the headrest, a thermos with a sticker of a fish on it, a copy of a fly-fishing catalog with three pages turned down, and two shoes on the floor that are, now that you look at them, both left shoes. Both of them. For the left foot. There is something about this car that is entirely, irreducibly fine.</ansi>");
+            SendUserMessage(user.UserId(), "<ansi fg=\"3\">(+200 XP: Two Left Feet)</ansi>");
         } else {
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You've already done the emotional labor here. The Swans appreciate the effort.</ansi>");
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Winky is still watching from the crate. He has been watching this whole time. He is extremely good at watching. His ears are at full alert. He will wait as long as it takes.</ansi>");
         }
         return true;
     }
 
-    if (cmd == "pet" || cmd == "pat") {
-        if (rest.indexOf("beatrice") >= 0 || rest.indexOf("dog") >= 0 || rest.indexOf("weimaraner") >= 0 || rest == "") {
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You reach toward Beatrice. She regards you with her grey eyes. She has made a decision about you and the decision, apparently, is acceptable. She allows it. Both Swans watch with the pride of parents whose child has made a new friend.</ansi>");
-        } else {
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You offer a pat to whoever will accept it. In this room, Beatrice is the most receptive.</ansi>");
-        }
-        return true;
-    }
-
-    if (cmd == "read" || (cmd == "look" && rest.indexOf("book") >= 0)) {
-        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You open the book to a random page. Chapter Seven: 'Saying What You Mean Without Meaning What You Say.' The chapter is six pages long and contains forty-three instances of the phrase 'in a healthy way.'</ansi>");
+    if (cmd == "wave" && rest.indexOf("winky") >= 0 || cmd == "pet" || cmd == "knock") {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You wave at Winky through the glass. He tilts his head exactly seventeen degrees to one side. His ears tilt with him. This is the most interested another creature has ever looked at you.</ansi>");
         return true;
     }
 

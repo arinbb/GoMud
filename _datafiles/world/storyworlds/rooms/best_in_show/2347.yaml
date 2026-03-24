@@ -1,53 +1,51 @@
 roomid: 2347
 zone: Best in Show
-title: Backstage
+title: The Judges Table
 description: >-
-  The backstage area is where the handlers pace. A narrow corridor behind the main ring,
-  lit by practical fluorescent fixtures, <ansi fg="itemname">crates</ansi> and
-  <ansi fg="itemname">gear bags</ansi> stacked along one wall. This is where people come
-  to be nervous in private. The air has a specific quality: the smell of competition, which
-  is mostly adrenaline and conditioning spray. A <ansi fg="itemname">whiteboard</ansi> on
-  the wall lists the showing order for Best in Show in neat printed letters. Handlers move
-  through in both directions, some with dogs, some alone, their faces set in the various
-  masks of people who care very much about what is about to happen. A <ansi fg="itemname">bench</ansi>
-  runs along the far wall where someone is sitting with a dog, talking to it in a very
-  low voice, the way you talk to something you love before something important. The
-  <ansi fg="exit">grooming area</ansi> is north.
-mapsymbol: K
-maplegend: Backstage
-biome: house
+  The judges table sits at the north end of the main ring, slightly elevated, with
+  a clear sight line to the entire competition carpet. A simple white-draped
+  <ansi fg="itemname">table</ansi> holds a clipboard, two pens, a glass of water
+  untouched since this morning, and a printed copy of the breed standards for all
+  seven groups competing tonight. Dr. Theodore Millbank III stands here with the
+  composed authority of a man who has occupied this position eleven times and found
+  it, each time, completely satisfactory. His <ansi fg="itemname">clipboard</ansi>
+  holds notes in a handwriting that is precise and legible and entirely his own. A
+  printed <ansi fg="itemname">program</ansi> lists the evening's Best in Show
+  entrants. The <ansi fg="exit">show ring</ansi> is west.
+mapsymbol: J
+maplegend: The Judges Table
+biome: city
 exits:
-  north:
-    roomid: 2346
+  west:
+    roomid: 2343
 nouns:
-  crates: >-
-    Travel crates in a range of sizes, all high-end, all labeled with breed names
-    and handler surnames in neat marker. Some of them have small blankets inside.
-    Some of them have a favorite toy. All of them are empty right now -- the dogs
-    are all out there, getting ready.
-  bags: >-
-    The gear bags are professional and very full. Extra leads, towels, spray
-    bottles, lint rollers (many lint rollers), number holders, business cards,
-    photographs of previous wins, protein bars that have been in the bottom of
-    the bag since the last show. The detritus of competitive dog showing.
-  whiteboard: >-
-    The Best in Show order on the whiteboard: Sporting (Vizsla), Hound (Bloodhound),
-    Working (Standard Schnauzer), Terrier (Norwich), Non-Sporting (Poodle), Toy
-    (Shih Tzu), Herding (Border Collie). Seven groups. One winner. The whiteboard
-    is very clean. Someone erased everything else and wrote only this.
-  bench: >-
-    The bench is wooden, institutional, permanent. Someone has scratched "Good luck"
-    into it at some point, without specifying to whom.
+  table: >-
+    The judges table is set with the authority of a place where decisions are
+    made. The breed standards document is well-worn at the edges -- this is not
+    a prop. The glass of water has been here since morning. Dr. Millbank does not
+    require water during judging. He requires clarity, which he has.
+  clipboard: >-
+    The clipboard holds Dr. Millbank's notes. The handwriting is small, precise,
+    and in a shorthand he developed over thirty years of judging. The entries
+    cover structure, movement, temperament, and coat -- each rated on a scale that
+    exists only in his mind and is, by all evidence, entirely accurate.
+  program: >-
+    The Best in Show program lists tonight's entrants: Ch. Fairfield Galaxy of
+    Stars (Vizsla, Sporting), Ch. Hubert the Elder (Bloodhound, Hound), Ch. Iron
+    Duke of Stansfield (Standard Schnauzer, Working), Ch. Winky of Shakey Hills
+    (Norwich Terrier, Terrier), Ch. Rhapsody in White (Standard Poodle,
+    Non-Sporting), Ch. Miss Agnes of Vanderhoof (Shih Tzu, Toy), Ch. Galway
+    Mist (Border Collie, Herding). Seven dogs. One judge. One decision.
 spawninfo:
-- mobid: 550
-  message: "<ansi fg=\"8\">Christy Cummings moves through backstage with Rhapsody in White at perfect heel position. Christy's focus is absolute. She sees you, acknowledges you with a brief nod, and moves on. Rhapsody does not look at you. Rhapsody is working.</ansi>"
+- mobid: 548
+  message: '<ansi fg="8">Dr. Theodore Millbank III takes his position at the judges table. He surveys the ring with the practiced eye of a man who has judged this show eleven times and found it, each time, exactly what it should be. The room adjusts to his presence.</ansi>'
   respawnrate: 5 real minutes
 idlemessages:
-- A handler runs through the gaiting pattern in the corridor, their footsteps precise on the concrete floor.
-- Gerry Fleck passes through with Winky, talking to him in a low, reassuring voice. Winky's ears are at full alert.
-- Cookie stands near the crates, eyes closed, lips moving slightly. She is either praying or running through the course. Possibly both.
-- A dog sits perfectly still while its handler adjusts a single strand of hair. The dog does not move. The dog has been here before.
-- 'The muffled sound of the ring announcer floats through the walls: another group is being judged.'
-- Someone paces backstage with the rhythm of a person who has tried everything else and has been reduced to pacing.
-- A treat is produced from somewhere and a dog takes it with focused, professional interest. The treat is a reward for something. The dog understands this.
-- The fluorescent light flickers once. Several handlers look up. It steadies. They look back down.
+- Dr. Millbank makes a small notation on his clipboard. The notation is precise. It was considered.
+- He circles a dog slowly, examining structure, then steps back and makes another notation.
+- Dr. Millbank nods once at something he sees. This is the highest visible expression of approval he offers.
+- He checks his watch. Everything is on schedule. It is always on schedule.
+- A handler positions their dog for examination. Dr. Millbank observes with the focused calm of a man who has seen exactly this many times and finds it, still, worth seeing carefully.
+- He turns a page in the breed standards. He already knows what it says. He turns it anyway.
+- Dr. Millbank looks up from the clipboard at the ring. Something has caught his attention. He watches. He makes a note.
+- The judge is quiet for a moment. Nobody in the room makes a sound.

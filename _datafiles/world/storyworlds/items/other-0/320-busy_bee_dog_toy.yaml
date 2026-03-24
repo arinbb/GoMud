@@ -3,15 +3,17 @@ name: Busy Bee dog toy
 namesimple: bee
 displayname: a rubber <ansi fg="itemname">Busy Bee</ansi> dog toy
 description: >-
-  A squeaky rubber bumblebee in yellow and black, approximately the size of your
-  fist. The label reads "BUSY BEE -- The Squeak That Dogs Love!" in a font that
-  seems overly confident about this claim. The squeaker is built into the thorax.
-  When compressed it produces a sound that is best described as a honk crossed with
-  a wheeze -- a sound that is unremarkable to most mammals and deeply significant to
-  at least one specific Weimaraner named Beatrice who will not be named on the packaging
-  but who is, nevertheless, very much part of this toy's story. The rubber is slightly
-  tacky, the way inexpensive dog toys are. It cost two dollars. It caused a minor incident
-  at the Mayflower Kennel Club Dog Show. It is worth keeping.
+  A well-chewed rubber bumblebee in yellow and black, approximately the size of your
+  fist. The label reads BUSY BEE -- The Squeak That Dogs Love! in a font that seems
+  overly confident about this claim. The squeaker is built into the thorax. When
+  compressed it produces a sound that is best described as a honk crossed with a wheeze
+  -- a sound that is unremarkable to most mammals and deeply significant to at least
+  one specific Weimaraner named Beatrice who will not be named on the packaging but
+  who is, nevertheless, very much part of this toy's story. The rubber is slightly
+  tacky, the way inexpensive dog toys are. It cost two dollars. It caused a minor
+  incident at the Mayflower Kennel Club Dog Show. It was Winky's favorite. When you
+  squeeze it, it makes a feeble wheeze that somehow contains all the love between a
+  person and their dog.
 type: object
 subtype: usable
 uses: 0

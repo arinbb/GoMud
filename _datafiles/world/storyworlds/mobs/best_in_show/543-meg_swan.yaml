@@ -3,33 +3,34 @@ zone: best_in_show
 hostile: false
 maxwander: 1
 idlecommands:
-  - "emote takes a slow breath and releases it. Another. This is the breathing pattern. The breathing pattern helps."
-  - "say I know. I know that. I'm not saying you're wrong. I'm saying I felt a certain way about it."
-  - "emote looks at Beatrice with uncomplicated love."
-  - "say We met at Starbucks. Both reaching for the same drink. It was -- I know how it sounds. It was real."
-  - "emote picks up the self-help book, reads a line, sets it down."
-  - ""
-  - "say I think I need to talk to Dr. Millbank -- not the judge, our therapist. Different Millbank."
-  - "emote smooths her jacket with the habitual precision of someone for whom appearance is a form of control."
+  - 'emote takes a slow breath and releases it. Another. This is the breathing pattern. The breathing pattern helps.'
+  - 'say I know. I know that. I''m not saying you''re wrong. I''m saying I felt a certain way about it.'
+  - 'emote looks at Beatrice with uncomplicated love.'
+  - 'say We met at Starbucks. Both reaching for the same drink. I know how it sounds. It was real.'
+  - 'emote picks up the self-help book, reads a line, sets it down.'
+  - ''
+  - 'say I think I need to call Dr. Millbank -- not the judge, our therapist. Different Millbank.'
+  - 'emote smooths her jacket with the habitual precision of someone for whom appearance is a form of control.'
 activitylevel: 20
 character:
   name: Meg Swan
   description: >-
-    Meg Swan is, by any objective standard, doing very well. She is together, intelligent,
-    professionally accomplished, married to someone she chose at a Starbucks counter in
-    a moment that still moves her, and the co-owner of a champion Weimaraner. She is also
-    anxious in the specific modern way of people who have done all the right things --
-    therapy, books, the breathing, communication skills -- and found that doing all the
-    right things does not fully address the feeling. She and Hamilton are not fighting.
-    They are communicating. The communication is, currently, tense. Beatrice monitors both
-    of them from the bed with the calm authority of a dog who has been through this before
-    and knows how it ends.
+    Meg Swan is, by any objective standard, doing very well. She is together,
+    intelligent, professionally accomplished, married to someone she chose at a
+    Starbucks counter in a moment that still moves her, and the co-owner of a
+    champion Weimaraner. She is also anxious in the specific modern way of people
+    who have done all the right things -- therapy, books, the breathing,
+    communication skills -- and found that doing all the right things does not
+    fully address the feeling. She and Hamilton are not fighting. They are
+    communicating. The communication is, currently, tense. Beatrice monitors both
+    of them from the bed with the calm authority of a dog who has been through
+    this before and knows how it ends.
   raceid: 1
   level: 6
   equipment:
     body:
-      itemid: 20103
+      itemid: 20125
     legs:
-      itemid: 20156
+      itemid: 20154
     feet:
-      itemid: 20175
+      itemid: 20172
