@@ -36,6 +36,16 @@ nouns:
     rhythm that speaks of war, mischief, and the cracking of bones. The
     goblins drum when they are happy. The goblins are always happy when
     they have prisoners.
+  graffiti: >-
+    Crude scratches in the tunnel walls -- stick figures, rude words in
+    the Goblin tongue, tallies of prisoners. One section shows what appears
+    to be a very bad drawing of the Great Goblin looking dignified. It does
+    not succeed. The artist has been eaten, in all probability.
+  torches: >-
+    Crude iron brackets driven into the tunnel walls, holding torches of
+    pitch-soaked wood. They smoke terribly and produce more smell than
+    light. In the dark between them, anything could be hiding. Probably
+    something is. Something almost always is.
 idlemessages:
 - The goblin drums change rhythm, growing faster. Something is happening deeper in the tunnels.
 - A torch gutters and nearly goes out, plunging your section of tunnel into momentary blackness.

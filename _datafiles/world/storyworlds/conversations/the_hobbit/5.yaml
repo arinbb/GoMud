@@ -1,0 +1,24 @@
+-
+  Supported:
+    "gandalf": ["bilbo baggins"]
+  Conversation:
+    - ["#1 say You know, I did not choose you at random, Mr. Baggins."]
+    - ["#2 emote looks up, surprised"]
+    - ["#2 say You didn't?"]
+    - ["#1 say There is something about a hobbit's heart that a wizard's cannot replace. You carry what others cannot."]
+    - ["#2 say That is very cryptic, Gandalf. Even for you."]
+    - ["#1 emote puffs his pipe thoughtfully", "#1 say You have pity, Bilbo. And mercy. And the capacity to be moved by things that would not move a dwarf or an elf."]
+    - ["#2 say I'm moved by seed-cakes. And a warm fire."]
+    - ["#1 emote smiles", "#1 say Exactly so. And that matters more than you know."]
+-
+  Supported:
+    "gandalf": ["bilbo baggins"]
+  Conversation:
+    - ["#1 say Your mother was a Took, your father a Baggins. A fortunate combination."]
+    - ["#2 say People say that as if it explains everything. It explains nothing."]
+    - ["#1 say It explains a great deal. The Took in you wants adventure. The Baggins in you wants home. Between the two, you will always find the right path."]
+    - ["#2 emote stops walking", "#2 say That is either very wise or very convenient for you."]
+    - ["#1 emote chuckles", "#1 say Perhaps both."]
+    - ["#2 say You are the most infuriating person I have ever met."]
+    - ["#1 say And yet here you are. Considerably further from home than is comfortable."]
+    - ["#2 emote sighs and keeps walking", "#2 say ...Yes. Here I am."]

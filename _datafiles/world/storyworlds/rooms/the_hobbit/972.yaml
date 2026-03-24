@@ -36,6 +36,16 @@ nouns:
     Inside you can see a glint of gold, the gleam of fine elven swords, and
     a terrible smell. The swords Orcrist and Glamdring were found here, along
     with a small blade that would come to be called Sting.
+  mutton: >-
+    A leg of mutton clutched in Tom the troll's stone fist, forever
+    undelivered to his stone mouth. The bone is real -- the trolls were
+    roasting stolen sheep before Bilbo blundered into their camp. The meat
+    itself is long gone. Birds saw to that. Tom has not noticed.
+  bushes: >-
+    A stand of hawthorn and elder thick enough to hide a cave entrance from
+    casual eyes. The trolls used the cave as their larder and bolt-hole.
+    Gandalf found the elven swords inside, wrapped in cloth, old and
+    beautiful and out of place among the bones and stolen goods.
 idlemessages:
 - A bird lands on Tom the troll's stone nose, chirps once, and flies away unimpressed.
 - 'The stone trolls sit in eternal silence, their argument frozen at its most heated point.'

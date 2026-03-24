@@ -38,6 +38,33 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
+    if (question.indexOf("bet") >= 0 || question.indexOf("wager") >= 0 || question.indexOf("money") >= 0 || question.indexOf("debt") >= 0) {
+        mob.Command("emote 's expression goes somewhere complicated.");
+        mob.Command("say The bet. Right. I bet five thousand dollars that the Bills would win. Five thousand dollars I didn't have.", 1.5);
+        mob.Command("say The Bills SHOULD have won. Scott Wood SHOULD have made that kick.", 3.0);
+        mob.Command("say I covered the debt doing things I'm not proud of and then I took the fall when things went sideways. Five years.", 5.0);
+        mob.Command("emote 's voice goes flat and quiet", 7.0);
+        mob.Command("say The thing about prison is it gives you a LOT of time to think about who put you there.", 8.5);
+        return true;
+    }
+
+    if (question.indexOf("photo") >= 0 || question.indexOf("picture") >= 0 || question.indexOf("booth") >= 0) {
+        mob.Command("emote goes still for a moment.");
+        mob.Command("say The photo booth? Yeah. That was... that was something.", 1.5);
+        mob.Command("say Four pictures. Four chances to look like a normal person. It was harder than it sounds.", 3.0);
+        mob.Command("emote touches his jacket pocket briefly, unconsciously.", 5.0);
+        return true;
+    }
+
+    if (question.indexOf("angry") >= 0 || question.indexOf("anger") >= 0 || question.indexOf("rage") >= 0 || question.indexOf("yell") >= 0) {
+        mob.Command("emote looks like he's about to deny it, then doesn't.");
+        mob.Command("say Yeah. I know. I know I am.", 1.5);
+        mob.Command("say When you grow up in a house where nobody's paying attention, you get loud. That's just. That's what happens.", 3.0);
+        mob.Command("emote stares at the floor.", 5.0);
+        mob.Command("say I'm working on it.", 6.5);
+        return true;
+    }
+
     var defaults = [
         "say What do you WANT? I'm busy. I have things to DO.",
         "say Stop LOOKING at me like that. I don't need your pity.",

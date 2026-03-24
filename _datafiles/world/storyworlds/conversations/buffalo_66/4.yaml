@@ -1,0 +1,27 @@
+-
+  Supported:
+    "jan brown": ["jimmy brown"]
+  Conversation:
+    - ["#1 say Do you remember Billy's birthday? His sixth one?"]
+    - ["#2 emote looks up slowly, surprised by the question"]
+    - ["#1 say There was a game that day. Bills and the Dolphins. I couldn't miss it."]
+    - ["#2 say Jan."]
+    - ["#1 say It was a divisional game, Jimmy. I couldn't just MISS it."]
+    - ["#2 emote hums a few quiet notes and looks at the floor"]
+    - ["#1 emote shifts in her chair, not looking at him", "#1 say I made him a cake after. He was asleep by then."]
+    - ["#2 say I remember."]
+    - ["#1 say The Bills won that day, at least."]
+    - ["#2 emote does not answer. The humming resumes, very quietly."]
+-
+  Supported:
+    "jimmy brown": ["jan brown"]
+  Conversation:
+    - ["#1 emote hums a slow, meandering melody to himself"]
+    - ["#2 say What is that? What are you always HUMMING?"]
+    - ["#1 emote stops, blinking", "#1 say I don't know. I heard it somewhere."]
+    - ["#2 say You've been humming it for thirty years."]
+    - ["#1 say Have I? I didn't notice."]
+    - ["#2 emote looks at him for a long, complicated moment"]
+    - ["#1 say Is the game on?"]
+    - ["#2 say It's always on, Jimmy."]
+    - ["#1 emote resumes humming, settling deeper into the recliner"]

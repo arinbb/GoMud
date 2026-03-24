@@ -1,0 +1,33 @@
+-
+  Supported:
+    "thorin oakenshield": ["*"]
+  Conversation:
+    - ["#1 say My grandfather Thror made Erebor into the wonder of the age. We are not talking about gold alone."]
+    - ["#1 emote stares into the distance, his expression fierce and sorrowful together"]
+    - ["#1 say He made something. A kingdom where dwarves were respected. Where our craft was prized above all others."]
+    - ["#1 say Smaug took that. Not just the treasure. The meaning of it."]
+    - ["#1 emote falls silent, and the silence says the rest"]
+-
+  Supported:
+    "thorin oakenshield": ["bilbo baggins"]
+  Conversation:
+    - ["#1 say The Arkenstone was found at the very heart of the mountain by my grandfather's grandfather."]
+    - ["#2 emote listens carefully"]
+    - ["#1 say When Thror held it, his crown was complete. His people were complete. There was a rightness to things."]
+    - ["#2 say And now Smaug sits on it."]
+    - ["#1 emote 's jaw tightens", "#1 say Smaug sits on everything. He does not even know what the Arkenstone means. He just knows it is beautiful and that beauty should be hoarded."]
+    - ["#2 say That sounds rather like —"]
+    - ["#1 emote fixes him with a look", "#1 say Do not finish that sentence."]
+    - ["#2 emote wisely does not finish that sentence"]
+-
+  Supported:
+    "thorin oakenshield": ["bilbo baggins"]
+  Conversation:
+    - ["#1 say My people wandered for years after the dragon came. Years. Without purpose. Without home."]
+    - ["#2 say And you carry that with you."]
+    - ["#1 emote looks sharply at him, then away"]
+    - ["#1 say Every dwarf carries it. We do not speak of it."]
+    - ["#2 say Maybe you should."]
+    - ["#1 say Maybe hobbits should mind their own affairs."]
+    - ["#2 emote shrugs", "#2 say Probably. But here we both are, far from home and marching toward a dragon."]
+    - ["#1 emote is quiet a long moment", "#1 say ...Yes. Here we are."]

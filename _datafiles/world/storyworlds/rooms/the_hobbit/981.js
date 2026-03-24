@@ -11,6 +11,25 @@ function onCommand(cmd, rest, user, room) {
         return true;
     }
 
+    if (cmd == "climb" || (cmd == "climb" && (rest.indexOf("tree") >= 0 || rest.indexOf("branch") >= 0)) || (cmd == "look" && rest.indexOf("canopy") >= 0) || (cmd == "look" && rest.indexOf("above") >= 0)) {
+        if (user.GetMiscCharacterData("hobbit_climb_tree") == "true") {
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You look up into the canopy again, but the spiders have repositioned. The memory of open sky above the forest returns to you, brief and beautiful.</ansi>");
+            return true;
+        }
+        user.SetMiscCharacterData("hobbit_climb_tree", "true");
+        user.GrantXP(200, "climbing above the Mirkwood canopy");
+        SendUserMessage(user.UserId(), "<ansi fg=\"green\">You choose the tallest oak and begin to climb -- through the grey webs, past the watching spider-eyes, up through the airless dark of Mirkwood's middle layer, branches growing thinner, the light growing stranger above you.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"6\">And then you break through.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Sunlight. Actual sunlight, warm and golden, washing over you like the memory of something you had forgotten was real. The treetops of Mirkwood stretch away in every direction like a green sea, glittering with dew and the wings of butterflies. The sky above is blue -- unbelievably, extravagantly blue. To the east, at the very edge of sight, something catches the sun: the Lonely Mountain.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The dwarves are still below in the dark. The path is still lost. But for this one moment, you know where you are -- and that the world is larger than the forest, and that light still exists beyond it.</ansi>");
+        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">+200 XP for climbing above the Mirkwood canopy!</ansi>");
+        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " climbs straight up through the web-hung canopy and disappears for a long moment. When they return, blinking in the shadow, their face still holds the memory of sunlight.", user.UserId());
+        return true;
+    }
+
     if ((cmd == "cut" && rest.indexOf("web") >= 0) || (cmd == "free" && rest.indexOf("dwarf") >= 0) || (cmd == "free" && rest.indexOf("dwarves") >= 0)) {
         if (user.GetMiscCharacterData("hobbit_freed_dwarves") == "true") {
             SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You slash at the webs again, but the dwarves have already been freed. The spiders hiss with frustration from the canopy. You have already proven your courage here.</ansi>");

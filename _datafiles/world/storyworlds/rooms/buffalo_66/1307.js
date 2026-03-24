@@ -17,5 +17,19 @@ function onCommand(cmd, rest, user, room) {
         return true;
     }
 
+    if (cmd == "order" || cmd == "eat" || (cmd == "sit" && rest.length == 0) || (cmd == "drink" && rest.indexOf("coffee") >= 0)) {
+        SendUserMessage(user.UserId(), "<ansi fg=\"8\">The waitress slides a laminated menu across the counter without being asked. You order coffee and maybe something from the pie case -- the kind of pie that has been there long enough to become an institution. She pours the coffee without looking at you. It is fifty cents and it is not good and it is exactly right.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"8\">You sit at the counter. The diner hums around you -- the coffee warmer, the fluorescents, the refrigerator case. The waitress refills your cup before you ask. Nobody is watching. Nobody cares where you have been or where you are going. For five minutes, in a diner in Buffalo, you are just a person at a counter. It is enough. It is more than enough.</ansi>");
+        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " sits at the diner counter. The waitress pours coffee. The diner hums.", user.UserId());
+
+        if (user.GetMiscCharacterData("buffalo66_diner_order") != "found") {
+            user.SetMiscCharacterData("buffalo66_diner_order", "found");
+            user.GrantXP(150, "sitting down in the diner");
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Some places just let you exist. [+150 XP]</ansi>");
+        }
+        return true;
+    }
+
     return false;
 }

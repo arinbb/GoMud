@@ -38,6 +38,16 @@ nouns:
     Great River Anduin catches the sun. And far to the east, solitary and
     unmistakable, a single peak rises above all others -- the Lonely
     Mountain, Erebor, where the dragon waits.
+  nests: >-
+    The great eagle nests are built on the highest outcrops, woven from
+    whole pine trees with trunks as thick as a man's waist. The nests are
+    enormous. Inside them, eaglets the size of large dogs peer over the
+    rim with fierce golden eyes. Their parents could carry off a pony.
+  feathers: >-
+    Eagle feathers scattered on the ledge, each one a meter long and shot
+    through with gold and brown. The quills are thick as a man's thumb.
+    In the old days, elves and men prized eagle feathers for fletching --
+    an arrow tipped with one would fly straight and true above all others.
 idlemessages:
 - An eagle swoops past the ledge, so close you feel the wind from its wings in your hair.
 - The sun breaks through the clouds and gilds the mountain tops in liquid gold.

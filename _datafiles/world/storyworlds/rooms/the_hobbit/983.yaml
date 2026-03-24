@@ -38,6 +38,18 @@ nouns:
     its summit wreathed in cloud. Once the greatest dwarf kingdom in the
     north. Now the lair of Smaug the dragon. The people of Lake-town eye
     it with a mixture of dread and desperate hope.
+  master: >-
+    The Master of Lake-town's hall rises above the neighboring buildings, its
+    windows lit and its banner flying. The Master is a fat, clever man who
+    got where he is by knowing which way the wind blows and which songs the
+    people want to hear. He is singing the old songs about Thorin right now.
+    He has not thought past that.
+  lake: >-
+    The Long Lake stretches in every direction, dark and cold, its surface
+    ruffled by the wind off the Lonely Mountain. Fish dart in the shallows
+    under the stilts. Kingfishers skim the surface. The water is clean and
+    cold and has been here since before men came to this land, and will be
+    here after they are gone.
 idlemessages:
 - A fisherman hauls in a net of silver lake-fish, grunting with the weight.
 - 'The wooden platforms creak and sway beneath your feet. The lake laps at the stilts below.'

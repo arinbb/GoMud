@@ -33,6 +33,31 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
+    if (question.indexOf("season") >= 0 || question.indexOf("year") >= 0 || question.indexOf("record") >= 0) {
+        mob.Command("emote finally looks away from the screen, just for a moment.");
+        mob.Command("say Six and four. SIX AND FOUR. We should be eight and two. The officiating in the Cincinnati game alone—", 1.0);
+        mob.Command("say They had FOUR holding calls. FOUR. All on us. None on them.", 2.5);
+        mob.Command("emote turns back to the game, jaw set.", 4.0);
+        mob.Command("say But we're still in it. We're ALWAYS still in it.", 5.5);
+        return true;
+    }
+
+    if (question.indexOf("kelly") >= 0 || question.indexOf("quarterback") >= 0 || question.indexOf("jim") >= 0) {
+        mob.Command("emote straightens up with genuine reverence.");
+        mob.Command("say Jim Kelly is the greatest quarterback who ever lived. I will not hear otherwise.", 1.0);
+        mob.Command("say That arm. That poise. That man took this city to four Super Bowls.", 2.5);
+        mob.Command("emote shakes her head slowly.", 4.0);
+        mob.Command("say It wasn't HIS fault. It was never his fault.", 5.5);
+        return true;
+    }
+
+    if (question.indexOf("happy") >= 0 || question.indexOf("sad") >= 0 || question.indexOf("feel") >= 0 || question.indexOf("how are") >= 0) {
+        mob.Command("emote blinks, as if the question is in a foreign language.");
+        mob.Command("say I'm fine. Bills are playing. Why wouldn't I be fine?", 1.0);
+        mob.Command("emote turns back to the screen. The question has already been forgotten.", 2.5);
+        return true;
+    }
+
     mob.Command("say Can't talk. Game's on.");
     mob.Command("emote turns back to the television.", 1.0);
     return true;

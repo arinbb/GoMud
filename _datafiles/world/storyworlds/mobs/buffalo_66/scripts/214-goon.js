@@ -22,6 +22,30 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
+    if (question.indexOf("bet") >= 0 || question.indexOf("wager") >= 0 || question.indexOf("super bowl") >= 0) {
+        mob.Command("emote 's expression doesn't change at all, which is its own answer.");
+        mob.Command("say People bet on things. Sometimes they lose. That's the business.", 1.5);
+        mob.Command("say The Bills losing four Super Bowls was very good for this city's economy.", 3.0);
+        mob.Command("say For some people in this city.", 4.5);
+        return true;
+    }
+
+    if (question.indexOf("prison") >= 0 || question.indexOf("jail") >= 0 || question.indexOf("time") >= 0) {
+        mob.Command("emote rolls the coin across his knuckles once, twice, three times.");
+        mob.Command("say Five years is a long time to think about things.", 1.5);
+        mob.Command("say A man comes out of five years one of two ways.", 3.0);
+        mob.Command("emote lets the coin rest", 5.0);
+        mob.Command("say I'm watching to see which way Billy came out.", 6.5);
+        return true;
+    }
+
+    if (question.indexOf("dangerous") >= 0 || question.indexOf("threat") >= 0 || question.indexOf("hurt") >= 0 || question.indexOf("scared") >= 0) {
+        mob.Command("emote looks at you with something between amusement and pity.");
+        mob.Command("say I'm just a guy in a bar. Minding my business.", 1.5);
+        mob.Command("emote 's eyes say something very different.", 3.0);
+        return true;
+    }
+
     var defaults = [
         "emote looks at you for a long moment, weighing something.",
         "say You asking a lot of questions for someone who doesn't look like they want the answers.",

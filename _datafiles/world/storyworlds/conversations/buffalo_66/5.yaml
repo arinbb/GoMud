@@ -1,0 +1,36 @@
+-
+  Supported:
+    "billy brown": ["layla"]
+  Conversation:
+    - ["#1 say You know what the worst part is?"]
+    - ["#2 emote waits"]
+    - ["#1 say Not the prison. Not the five years. The worst part is I went in angry and came out angry and I don't know how to stop."]
+    - ["#2 say You came out with me."]
+    - ["#1 emote opens his mouth to say something defensive and then doesn't"]
+    - ["#1 say Yeah."]
+    - ["#2 say That's something."]
+    - ["#1 say It's something."]
+    - ["#1 emote goes quiet, and the quiet is different from his usual quiet. Less armored."]
+-
+  Supported:
+    "billy brown": ["*"]
+  Conversation:
+    - ["#1 say I'm not a bad person. I want people to know that."]
+    - ["#1 emote says this to no one in particular, staring at the wall"]
+    - ["#1 say I made some choices. Bad ones. Choices that a bad person might have made but I made them for different reasons."]
+    - ["#1 emote pauses"]
+    - ["#1 say The reasons don't really hold up now that I say them out loud."]
+    - ["#1 emote is quiet for a moment", "#1 say I'm working on it."]
+-
+  Supported:
+    "billy brown": ["layla"]
+  Conversation:
+    - ["#1 say Nobody ever asked me what I wanted. As a kid. What I wanted to be or what I cared about."]
+    - ["#2 emote listens without filling the silence"]
+    - ["#1 say There was the Bills. There was the Super Bowl. There was the house and the wallpaper and the game on TV."]
+    - ["#1 say And there was me, somewhere in the background, not quite in any of the pictures."]
+    - ["#2 say I'm asking now."]
+    - ["#1 emote looks at her as if this is a trick question", "#1 say What?"]
+    - ["#2 say What do you want, Billy?"]
+    - ["#1 emote stares at her for a long time", "#1 say I don't know. Nobody ever asked before."]
+    - ["#2 emote nods once, gently", "#2 say Take your time."]
