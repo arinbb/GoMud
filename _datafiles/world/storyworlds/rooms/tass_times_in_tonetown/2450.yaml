@@ -1,0 +1,71 @@
+roomid: 2450
+zone: Tass Times in Tonetown
+title: Gramps Cabin
+description: >-
+  A small, comfortable cabin that smells of wood smoke and machine oil. The
+  <ansi fg="itemname">workbench</ansi> along the east wall is covered in tools,
+  coils of wire, and half-finished contraptions whose purpose is not immediately
+  obvious. A <ansi fg="itemname">rocking chair</ansi> faces the cold fireplace,
+  a dog-eared <ansi fg="itemname">journal</ansi> on its arm. On the north wall,
+  hanging between two framed <ansi fg="itemname">photographs</ansi>, is an
+  <ansi fg="magenta">iron hoop</ansi> roughly the size of a truck tire. The
+  metal glows faintly at its edges -- a soft, impossible light. There is a
+  note on the kitchen table in Gramps' handwriting. The hoop hums with a
+  frequency you feel in your back teeth. The south exit leads deeper into the
+  cabin.
+mapsymbol: C
+maplegend: Gramps Cabin
+biome: house
+exits:
+  south:
+    roomid: 2451
+  south-secret:
+    roomid: 2465
+    secret: true
+nouns:
+  workbench: >-
+    Gramps' workbench is a beautiful chaos of invention. Circuit boards, copper
+    wire, lenses, gyroscopes, and tools you cannot name are arranged in piles
+    that make sense to only one person. A half-assembled device in the center
+    might be a radio. Or a compass. Or something for which there is no word yet.
+    A calendar on the wall above it is open to a month in 1986.
+  chair: >-
+    A well-worn rocking chair angled toward the dead fireplace. The cushion has
+    a permanent impression of someone who sat here often and long. On the arm
+    is an old journal, a pen clipped to its cover. The chair is empty. The
+    stillness around it is the specific stillness of a place recently vacated.
+  journal: >-
+    Gramps' journal, left on the rocking chair. The most recent entries grow
+    increasingly excited -- pages about dimensional theory, about a place called
+    Tonetown, about the hoop. The last entry reads: "It works. I am going through.
+    If I am not back by Tuesday, tell nobody." The date is three Tuesdays ago.
+  photographs: >-
+    Two framed photographs flank the glowing hoop. The left one shows a younger
+    Gramps shaking hands with a thin, sharp-featured man in a grey suit -- both
+    grinning in a laboratory. The right one is Gramps alone, holding the iron
+    hoop above his head in triumph, sunlight behind him. In neither photograph
+    does he look like a man who could go missing.
+  hoop: >-
+    The iron hoop hums with a low, almost subsonic energy. Its edges glow in
+    colors that shift from magenta to gold to something with no name. The air
+    inside the hoop's circle shimmers slightly, like heat off summer pavement,
+    but the shimmer reveals glimpses of somewhere else -- angular neon buildings,
+    impossible colors, a sky that is too purple to be sky. It smells of electricity
+    and something faintly sweet. It is obviously a door. Where it goes is obvious
+    too, if you are paying attention.
+  note: >-
+    The note on the kitchen table reads: "Gone exploring. Do not follow. (Follow
+    if I'm not back by Tuesday.) The hoop is perfectly safe. Feed the dog."
+    Below that, in different ink, as if added later: "The dog's name is Spot."
+idlemessages:
+- The iron hoop on the wall hums with a low, subsonic frequency that you feel more than hear.
+- Through the shimmering center of the hoop, you catch a half-second glimpse of angular neon architecture.
+- Spot trots in from outside, sniffs at the hoop, wags once, and looks at you expectantly.
+- One of the contraptions on the workbench ticks softly, counting something down or up.
+- The cabin is ordinary in every way except the glowing portal on the north wall.
+- A wind from outside rattles the window, carrying the smell of pine needles and late summer.
+- The hoop's light pulses once, brighter, as if noticing you.
+spawninfo:
+- mobid: 605
+  message: "Spot bounds in through the back door, tail whipping, and plants himself near the hoop with an air of canine purpose."
+  respawnrate: 3 real minutes

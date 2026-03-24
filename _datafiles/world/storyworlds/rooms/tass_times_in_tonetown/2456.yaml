@@ -1,0 +1,62 @@
+roomid: 2456
+zone: Tass Times in Tonetown
+title: The Tass Market
+description: >-
+  If downtown is the exhibition of tassness and the Jam Session is its
+  cathedral, the Tass Market is its factory. <ansi fg="magenta">Racks</ansi>
+  of jumpsuits in every angle-defying cut line the walls, organized by
+  chromatic intensity rather than size. A wall of <ansi fg="itemname">boots</ansi>
+  displays footwear from practical to architectural. <ansi fg="itemname">Sunglasses</ansi>
+  on a rotating display case offer lenses in shapes that suggest strong positions
+  on geometry. A <ansi fg="itemname">fitting room</ansi> with a curtain printed
+  in a dazzling geometric pattern promises transformation. The proprietor, a
+  Tonetown citizen of legendary taste, watches from the counter with an
+  assessment that is not unkind but is absolutely honest. A sign reads:
+  <ansi fg="magenta">YOU CANNOT BE TASS IN WHAT YOU ARE WEARING NOW.</ansi>
+  Tass Avenue is back to the <ansi fg="exit">west</ansi>.
+mapsymbol: M
+maplegend: The Tass Market
+biome: house
+exits:
+  west:
+    roomid: 2455
+nouns:
+  racks: >-
+    The jumpsuit racks hold garments that cover the entire spectrum of deliberate
+    self-expression. Electric blue with geometric cutouts. Magenta with angular
+    shoulder assertions. A black and white check so sharp it creates its own
+    optical effect. Each jumpsuit has a tag that describes not the size but the
+    tass level -- Emerging, Committed, Fully Tass. None of the ones on the
+    rack are below Committed.
+  boots: >-
+    The boot wall is an anthology of elevated footwear. From practical ankle
+    boots with geometric stitching to platform constructions that add a full
+    six inches and require a certain confidence to navigate. Each pair is in
+    a color that has a name but the name is more of a feeling. Spike. Neon.
+    The thing you feel when the bass drops. There are no boots here that would
+    not be noticed.
+  sunglasses: >-
+    The rotating display offers lenses in lightning bolt frames, angular
+    hexagons, something that appears to be a question mark, and a pair whose
+    lenses are actually different colors from each other. All are described
+    on their tags as EXTREMELY TASS. One pair has no description. The tag
+    just says: YOU KNOW WHY.
+  fitting: >-
+    The fitting room curtain is printed in a geometric pattern that creates
+    the visual impression of the curtain being further away than it is. Inside,
+    a mirror that is slightly taller than normal makes you look like a slightly
+    more angular version of yourself. Most people who go in looking ordinary
+    come out looking like someone who lives here.
+  sign: >-
+    The sign is not cruel. It is simply direct. YOU CANNOT BE TASS IN WHAT
+    YOU ARE WEARING NOW. Below it, smaller: WE CAN HELP. This is the founding
+    principle of the Tass Market -- not judgment but salvation. They have seen
+    worse. They have fixed worse. They are ready.
+idlemessages:
+- The racks rotate slowly, presenting new options to anyone willing to reconsider their current choices.
+- The fitting room curtain parts and a customer emerges in a geometric jumpsuit, clearly improved.
+- The proprietor adjusts a display with the precision of someone rearranging a gallery exhibition.
+- New stock arrives through a back door, still in angular packaging, in colors that have not yet been worn in public.
+- 'The sign glows softly: YOU CANNOT BE TASS IN WHAT YOU ARE WEARING NOW.'
+- A citizen walks in, surveys the racks for three seconds, selects something immediately, and goes straight to the fitting room.
+- The sunglasses display rotates to show a pair whose lenses are somehow more opinionated than the others.

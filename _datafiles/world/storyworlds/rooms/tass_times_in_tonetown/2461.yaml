@@ -1,0 +1,74 @@
+roomid: 2461
+zone: Tass Times in Tonetown
+title: Snottys Laboratory
+description: >-
+  The laboratory where Donn Snotty prosecutes his war on color and individuality
+  is a room that looks like someone described a scientist's workspace to a person
+  who had heard of science but found it gauche. <ansi fg="8">Beakers</ansi> and
+  apparatus line the <ansi fg="itemname">benches</ansi> in strict parallel rows,
+  their contents a uniform grey. The <ansi fg="itemname">untass ray</ansi>
+  stands in the center -- a chrome device on a tripod, its emitter a dull disc
+  aimed at nothing in particular but clearly aimed with intent. <ansi fg="8">Wires</ansi>
+  run from the device to a bank of grey <ansi fg="itemname">instruments</ansi>
+  along the south wall, each one measuring something in units that correspond
+  to degrees of blandness. <ansi fg="yellow">Donn Snotty</ansi> adjusts his
+  machinery with the satisfaction of a man whose plan is working. North, a door
+  leads down to the <ansi fg="itemname">dungeon</ansi>. West leads back through
+  the mansion gates.
+mapsymbol: L
+maplegend: Snottys Laboratory
+biome: house
+exits:
+  west:
+    roomid: 2460
+  north:
+    roomid: 2462
+nouns:
+  beakers: >-
+    The beakers contain substances in a range from grey to slightly darker grey.
+    Each one is labeled in the same standard font as the SNOTTY INDUSTRIES sign
+    outside: CHROMATIC NEUTRALIZER, TASS INHIBITOR COMPOUND, BLANDNESS CATALYST.
+    The substances do not bubble dramatically. They sit in their beakers with
+    the flat certainty of things that do not need to perform their danger. The
+    labels are technically accurate. That is the worst thing about them.
+  benches: >-
+    The laboratory benches are in strict rows at precise intervals. Each bench
+    holds equipment in positions that were measured rather than felt. The
+    overall arrangement communicates nothing about the people who work here
+    except that they followed instructions. There is no sense of discovery in
+    this room. There is a sense of completion -- of a plan being executed toward
+    a predetermined conclusion. It is the opposite of a real laboratory.
+  ray: >-
+    The untass ray is the centerpiece of Snotty's operation. A chrome device
+    on an adjustable tripod, its emitter a dull disc that looks like nothing
+    you would be afraid of until you understand what it does. The dial on the
+    back reads OUTPUT: MAXIMUM. The device hums with a frequency that is
+    exactly the opposite of the Tonetown sound -- low, monotonous, the sonic
+    equivalent of beige. It is aimed in the direction of downtown. Its range,
+    according to a chart on the wall, has been increasing.
+  instruments: >-
+    The instrument bank measures tass levels in Tonetown in real time. The
+    readouts are all declining. A graph on one screen shows the past six months
+    of tass index data as a line that was never going to go anywhere good. Snotty
+    has a note pinned next to this screen that reads GOOD PROGRESS in a handwriting
+    that conveys no excitement. He considers this progress. He is, in the specific
+    vocabulary of Tonetown, comprehensively untass.
+  wires: >-
+    The wires connecting the untass ray to its instruments are grey and run in
+    straight lines without any concession to visual interest. They are fastened
+    at regular intervals with identical grey clips. They represent, in wire form,
+    everything that is wrong with Donn Snotty's aesthetic philosophy. A wire
+    does not have to be this boring. But Snotty chose grey clips. He chose them
+    from a catalog. There is a picture of him choosing them, apparently, somewhere.
+idlemessages:
+- The untass ray hums its monotonous frequency, aimed at downtown, doing its slow damage.
+- A readout on the instrument bank ticks another tass index point downward and nobody in this room minds.
+- Snotty consults his chart, makes a note in his bland handwriting, and looks satisfied with the data.
+- A beaker of Chromatic Neutralizer catches the grey light and reflects nothing interesting back.
+- The instruments along the south wall record, in real time, the continuing victory of blandness.
+- A wire clip falls from the bench. It is grey. It lands on the grey floor. Nothing changes.
+- Through the north door, something moves in the dungeon -- a shuffle, a cough, a sound of someone waiting.
+spawninfo:
+- mobid: 602
+  message: "Donn Snotty emerges from behind the instrument bank, adjusting the untass ray's aim by exactly one degree."
+  respawnrate: 5 real minutes

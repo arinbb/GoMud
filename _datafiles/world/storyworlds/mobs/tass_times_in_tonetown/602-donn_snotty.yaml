@@ -1,0 +1,35 @@
+mobid: 602
+zone: tass_times_in_tonetown
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote adjusts the untass ray by a precise fraction of a degree."
+  - "say Order is not the enemy of creativity. Order is the precondition. Without order, nothing works."
+  - "emote reviews his tass index chart and makes a small, satisfied notation."
+  - "emote straightens a beaker that was already straight."
+  - "say Tass is not a culture. It is a pathology. I am treating it."
+  - "emote surveys the laboratory with the expression of a man who considers this room his masterpiece."
+  - ""
+  - ""
+activitylevel: 15
+character:
+  name: Donn Snotty
+  description: >-
+    A thin, sharp-featured man in a grey suit that has been pressed to a
+    severity beyond mere tidiness. His grey trousers match his jacket
+    precisely. His loafers are clean. His hair is orderly without being
+    interesting. He carries himself with the certainty of a man who has
+    decided what the world should be and built a machine to enforce it.
+    His face, in repose, is the expression of someone who does not
+    dislike people -- he simply believes they would be better if they were
+    less. He was, the photographs suggest, someone else once. He does
+    not appear to miss being that person.
+  raceid: 1
+  level: 10
+  equipment:
+    body:
+      itemid: 20110
+    legs:
+      itemid: 20153
+    feet:
+      itemid: 20172

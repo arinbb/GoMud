@@ -1,0 +1,22 @@
+-
+  Supported:
+    "the editor": ["*"]
+  Conversation:
+    - ["#1 say The tass index is at thirty-four! THIRTY-FOUR!", "#1 emote shakes a page of copy."]
+    - ["#2 emote backs up slightly."]
+    - ["#1 say Historical low! The lowest point since we started measuring!", "#1 say And nobody is talking about it loudly enough!"]
+    - ["#2 say The paper is talking about it --"]
+    - ["#1 say The paper is not talking about it LOUDLY ENOUGH.", "#1 emote waves at the printing press.", "#1 say LOUDER. BIGGER TYPE. THE SNOTTY EXPOSE IS PAGE ONE EVERY DAY UNTIL SOMETHING CHANGES."]
+    - ["#2 emote makes a note.", "#2 say I will increase the type size."]
+    - ["#1 say Thank you!", "#1 emote is already moving.", "#1 say Also I need photographs. Of the dungeon. Who is going to the dungeon?"]
+-
+  Supported:
+    "the editor": ["*"]
+  Conversation:
+    - ["#1 say I have confirmed the hoop connection. Snotty and Gramps. Partners from 1974 to 1982."]
+    - ["#2 say That is in the paper?"]
+    - ["#1 say It is on the pinboard. It will be in the paper when I have the second source.", "#1 emote makes a mark on the board."]
+    - ["#2 say Who is the first source?"]
+    - ["#1 say Ennio.", "#1 say Ennio knows everything.", "#1 say He is my best source. He is everybody's best source.", "#1 say He refuses to be cited, obviously."]
+    - ["#2 say Obviously."]
+    - ["#1 say I need the second source from inside the mansion.", "#1 emote looks at the door.", "#1 say Someone needs to go inside that mansion."]

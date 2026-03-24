@@ -1,0 +1,36 @@
+mobid: 607
+zone: tass_times_in_tonetown
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote checks your tassness with a brief, decisive evaluation."
+  - "say The avenue is a good street. It has always been a good street. Snotty will not change that."
+  - "emote dances a few steps to the music leaking from the Jam Session, then stops, satisfied."
+  - "emote sneers faintly at the direction of the swamp and turns back toward the good part of the city."
+  - "say I did not wake up today to be untass. Neither should you."
+  - "emote strikes a brief angular pose and releases it, smooth and unhurried."
+  - ""
+  - ""
+activitylevel: 25
+character:
+  name: a Tonetown citizen
+  description: >-
+    A citizen of Tonetown dressed for the avenue: a mesh top in deep magenta
+    over vinyl pants that catch the neon light from the storefronts, spike
+    boots with architectural heels, a neon choker at the neck that matches
+    nothing and coordinates with everything. They move through the avenue
+    with the ease of someone who has walked this block ten thousand times
+    and finds it correctly stimulating every time. Their expression holds
+    the specific satisfaction of someone who is exactly where they should be,
+    dressed exactly as they decided to be.
+  raceid: 1
+  level: 3
+  equipment:
+    body:
+      itemid: 20106
+    legs:
+      itemid: 20155
+    feet:
+      itemid: 20174
+    neck:
+      itemid: 20181

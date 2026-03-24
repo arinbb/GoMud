@@ -1,0 +1,19 @@
+itemid: 345
+name: Tonetown shades
+namesimple: shades
+displayname: a pair of <ansi fg="magenta">Tonetown shades</ansi>
+description: >-
+  A pair of angular, neon-tinted sunglasses from Tonetown. The frames are
+  lightning bolt shapes in magenta-pink metal, the lenses a deep tinted
+  gradient from electric blue at the top to warm amber at the bottom. When
+  you put them on, everything looks a little more tass -- the world gains
+  edges and colors it did not have before, angles asserting themselves with
+  new confidence, ordinary things becoming briefly extraordinary. The lenses
+  are scratched from adventure. The scratches are part of the story. Gramps
+  pressed these into your hands before you came back through the hoop. They
+  are from a city that believes, on the evidence, that being completely yourself
+  is the most important work you can do.
+type: object
+subtype: usable
+uses: 0
+value: 0

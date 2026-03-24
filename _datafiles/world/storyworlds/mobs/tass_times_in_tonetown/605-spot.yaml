@@ -1,0 +1,27 @@
+mobid: 605
+zone: tass_times_in_tonetown
+hostile: false
+maxwander: 2
+idlecommands:
+  - "emote wags their tail with the full-body commitment of a dog with no reservations about the situation."
+  - "emote sniffs at the base of the glowing hoop with professional thoroughness."
+  - "emote looks at you, then the hoop, then back at you, with clear communicative intent."
+  - "emote trots in a purposeful circle and returns to sit in front of you."
+  - "emote barks once -- not alarmed, just noting something."
+  - "emote puts their head on your foot and looks up with the expression of a dog who has found the correct person."
+  - ""
+  - ""
+activitylevel: 40
+character:
+  name: Spot
+  description: >-
+    A dog of medium size and confident bearing whose coat is the warm
+    brown and white of a dog that has been on many adventures and expects
+    more. Spot came through the hoop with you -- or perhaps Spot was
+    already here, or perhaps Spot has always been in the place between
+    dimensions where dogs go when they are not being accounted for. Their
+    eyes hold the specific intelligence of a dog who understands everything
+    and has decided that the best way to express this is enthusiasm. They
+    are, in the Tonetown reckoning, extremely tass.
+  raceid: 11
+  level: 3

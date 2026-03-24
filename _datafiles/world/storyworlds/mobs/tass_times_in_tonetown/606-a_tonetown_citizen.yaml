@@ -1,0 +1,35 @@
+mobid: 606
+zone: tass_times_in_tonetown
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote surveys your outfit with the practiced eye of someone who has strong and immediate opinions."
+  - "emote poses at the corner, geometric and deliberate, maximizing the visual impact of their jumpsuit."
+  - "say Tassness is not what you wear. It is how certain you are about what you wear."
+  - "emote strides across the intersection with the confident angularity of someone who belongs here."
+  - "emote adjusts their sunglasses and does not soften the assessment."
+  - "say You have potential. I say that neutrally. It is an observation, not a compliment. Not yet."
+  - ""
+  - ""
+activitylevel: 25
+character:
+  name: a Tonetown citizen
+  description: >-
+    A citizen of Tonetown dressed in the full idiom of the place: a jumpsuit
+    in electric blue with geometric cutouts at the shoulders, neon leggings
+    visible below the knee, platform boots that add four inches and require
+    commitment to navigate, a mohawk hat perched at an angle that was decided
+    at length. Their expression combines the accessibility of someone who
+    wants to be seen with the slight distance of someone whose standards are
+    non-negotiable. They are, by every metric available in this dimension, tass.
+  raceid: 1
+  level: 3
+  equipment:
+    body:
+      itemid: 20103
+    legs:
+      itemid: 20154
+    feet:
+      itemid: 20173
+    head:
+      itemid: 20163

@@ -1,0 +1,71 @@
+roomid: 2457
+zone: Tass Times in Tonetown
+title: The Jam Session
+description: >-
+  The Jam Session is not a bar with live music. The Jam Session is live music
+  with a place to stand while you listen. The <ansi fg="magenta">stage</ansi>
+  at the far end is lit with angular colored beams that shift in time with
+  the bass. A <ansi fg="itemname">band</ansi> plays something that splits the
+  difference between post-punk and pure color, all elbows and angular chord
+  shapes and a drummer who seems personally offended by any silence. The
+  <ansi fg="itemname">crowd</ansi> moves in the way that Tonetown citizens
+  move when they are in their element -- which is to say, with the absolute
+  physical certainty that they are doing this correctly. <ansi fg="yellow">The
+  Bouncer</ansi> at the entrance gives you a look that measures your outfit
+  in under a second. The walls are covered in <ansi fg="itemname">show flyers</ansi>
+  in overlapping layers, an archaeological record of every band that was ever
+  tass in this town. Tass Avenue is back to the <ansi fg="exit">east</ansi>.
+mapsymbol: J
+maplegend: The Jam Session
+biome: house
+exits:
+  east:
+    roomid: 2455
+nouns:
+  stage: >-
+    The Jam Session stage is a raised platform of angular black wood lit from
+    above by beams of magenta and electric blue. The back wall is a mural of
+    geometric shapes in motion. When a band is playing, the light shifts in
+    exact synchrony with the music -- the stage is technically a separate
+    instrument, operated by a dedicated lighting technician who treats it
+    that way. When the stage is dark between sets, it is still performing.
+    It is performing being ready.
+  band: >-
+    The current band plays an angular style -- guitars tuned to be confrontational,
+    bass mixed to be felt below the kneecap, a drummer who has strong opinions
+    about time and expresses them by occasionally disagreeing with it. The
+    singer does not so much stand at the microphone as occupy it, claiming
+    the space with the specific body language of someone who has practiced
+    being exactly this person. They are, undeniably, extremely tass.
+  crowd: >-
+    The Jam Session crowd dances with the conviction of people for whom this
+    is not entertainment but practice. The moves are angular, sharp, deliberate
+    -- this is not loose dancing. This is dancing as a position statement.
+    Everyone is dressed for the music, or the music is dressed for them. From
+    the outside it looks competitive. From the inside it looks like belonging.
+  flyers: >-
+    The walls are a palimpsest of show flyers going back years, each one
+    designed in the angular geometric style of Tonetown visual culture. Bands
+    with names like Angular Persistence, The Tass Collective, Geometric
+    Neon Situation, Donn Snotty (crossed out in marker, many times, with
+    increasing force). The older layers show a different era -- more color,
+    more bands, more shows. Fewer crossed-out names.
+  bouncer: >-
+    The Bouncer at the Jam Session entrance is a person of few words and total
+    authority. They assess each arrival in under two seconds, measuring the
+    tass level with a practiced eye that has no room for appeals. Their own
+    outfit is a reference to a reference -- tass operating at the tertiary
+    level, the most advanced form. Their nod of approval means more than
+    most things that have ever been said to you.
+idlemessages:
+- The bass from the stage goes through you like a decision you made that turned out to be right.
+- The Bouncer assesses a newcomer at the door, takes exactly one second, and grants the nod.
+- The band transitions between songs with a silence that is itself a beat -- held, then released.
+- Someone in the crowd executes a move so angular and precise that the people around them pause to register it.
+- Show flyers flutter on the wall as the sound pressure from the bass shifts the air.
+- The lighting rig shifts color in the space between the last note and the first -- magenta to electric blue.
+- The Bouncer nods at someone whose outfit clearly justifies it. The someone tries not to smile. They smile.
+spawninfo:
+- mobid: 608
+  message: "The Bouncer takes up their position by the door, arms crossed, eyes already measuring."
+  respawnrate: 3 real minutes

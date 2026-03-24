@@ -1,0 +1,34 @@
+mobid: 608
+zone: tass_times_in_tonetown
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote crosses their arms and surveys the entrance with the patience of someone who does not hurry anything."
+  - "emote evaluates a new arrival in under two seconds and gives the nod."
+  - "say The Jam Session is for people who mean it. The door is the first question."
+  - "emote uncrosses and recrosses their arms, settling into a slightly different geometry."
+  - "emote nods at someone whose outfit clearly justifies it. The someone does not smile. They do."
+  - "emote watches the avenue with the calm attention of someone who has seen everything and sorted it correctly."
+  - ""
+  - ""
+activitylevel: 10
+character:
+  name: The Bouncer
+  description: >-
+    A person at the entrance to the Jam Session who occupies their position
+    with the complete authority of someone who does not need to demonstrate it.
+    Their leather vest is worn over blue jeans that have been worn to the
+    specific softness of long use. Their combat boots plant them with
+    finality. They assess each arrival in under two seconds. The assessment
+    is accurate. Their nod of approval, when it comes, is the most important
+    nod available in this part of Tonetown. Their refusal is equally
+    authoritative and considerably less comfortable to receive.
+  raceid: 1
+  level: 7
+  equipment:
+    body:
+      itemid: 20107
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20177

@@ -1,0 +1,34 @@
+mobid: 600
+zone: tass_times_in_tonetown
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote adjusts a wire on the half-built device with a precision that suggests muscle memory."
+  - "say I've been working on the problem. Captivity clarifies things."
+  - "emote flips through a stack of papers and nods at something only he can see."
+  - "emote sits back and looks at the dungeon ceiling with the expression of a man calculating distances."
+  - "say Tonetown was wonderful when we first came through. It still is, mostly. Snotty hasn't won yet."
+  - "emote examines the cell lock from his side, not with frustration but with professional interest."
+  - ""
+  - ""
+activitylevel: 20
+character:
+  name: Gramps
+  description: >-
+    An older man in a corduroy jacket that has seen better decades, his
+    dark trousers creased from too long sitting, his loafers worn at the
+    heels in the way of a man who walks while thinking. His eyes are the
+    brightest thing in the dungeon -- quick, curious, the eyes of someone
+    who has not stopped inventing just because he is a prisoner. His white
+    hair has the organized disorder of a scientist between discoveries.
+    He looks like someone who built something remarkable and would do
+    it again, is possibly doing it right now in some sense you cannot see.
+  raceid: 1
+  level: 8
+  equipment:
+    body:
+      itemid: 20126
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

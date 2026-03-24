@@ -1,0 +1,37 @@
+mobid: 603
+zone: tass_times_in_tonetown
+hostile: false
+maxwander: 1
+idlecommands:
+  - "emote shouts something about page one at a reporter who is already working on page one."
+  - "say This is the biggest story in Tonetown history! Bigger! It is history happening to Tonetown!"
+  - "emote reads a page of copy, grimaces at the third paragraph, and starts marking it up."
+  - "emote waves aggressively at the printing press, as if encouraging it."
+  - "say We need photographs. We need sources. We need someone to go south and come back alive with a story."
+  - "emote stands in the middle of the newsroom looking like a person who is simultaneously five places."
+  - ""
+  - ""
+activitylevel: 30
+character:
+  name: The Editor
+  description: >-
+    A person of relentless forward motion dressed in a press vest worn over
+    a shirt that was probably ironed this morning but has achieved character
+    since. Their blue jeans are practical. Their sneakers are fast. Their
+    visor is a gesture toward shade for eyes that spend their day at close
+    range with the urgent. They move through the newsroom as if the floor
+    is a racetrack and the deadline is always five minutes away, which it is,
+    which it always is. Their voice carries the practiced projection of someone
+    who has spent years competing with a printing press for the attention of
+    the room.
+  raceid: 1
+  level: 6
+  equipment:
+    body:
+      itemid: 20105
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171
+    head:
+      itemid: 20162

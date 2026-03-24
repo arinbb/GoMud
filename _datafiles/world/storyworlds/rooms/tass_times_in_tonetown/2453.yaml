@@ -1,0 +1,63 @@
+roomid: 2453
+zone: Tass Times in Tonetown
+title: The Tonetown Times
+description: >-
+  The newsroom of the Tonetown Times is organized chaos wearing a press badge.
+  <ansi fg="itemname">Reporters</ansi> type furiously at angular workstations,
+  their screens showing copy in fonts that have opinions. The <ansi fg="itemname">printing
+  press</ansi> at the back wall clatters continuously, ejecting fresh pages with
+  mechanical authority. Headlines on a <ansi fg="itemname">pinboard</ansi> behind
+  the Editor's desk track the ongoing Snotty crisis in block type: UNTASS SPREADS
+  SOUTH. JAM SESSION ATTENDANCE DOWN. EDITOR FURIOUS (CONT. FROM P. 1). The
+  <ansi fg="yellow">Editor</ansi> stands at the center of it all, wearing a visor
+  and an expression of permanent urgent displeasure. The smell of ink and hot
+  paper and deadline fills the air. Downtown is back to the <ansi fg="exit">west</ansi>.
+mapsymbol: N
+maplegend: The Tonetown Times
+biome: house
+exits:
+  west:
+    roomid: 2452
+nouns:
+  reporters: >-
+    The reporters of the Tonetown Times are dressed for the story -- angular,
+    fast, annotated with press credentials they wear as fashion. Their copy
+    appears on screens in real time, each sentence more urgent than the last.
+    One of them has a camera around their neck. One of them is on four phones
+    simultaneously. One of them has not moved or blinked in twenty minutes
+    and may be the best reporter in the building.
+  press: >-
+    The printing press at the back wall is a magnificent old machine, angular
+    and deliberate, its surfaces decorated with the ink of ten thousand editions.
+    It runs at a speed that suggests it knows something you don't. Fresh pages
+    slide out from its maw in rhythmic intervals, each one bearing the angular
+    masthead of the Tonetown Times and news too urgent to wait.
+  pinboard: >-
+    The Editor's pinboard is a timeline of the Tonetown crisis. Photographs
+    of Snotty's mansion spreading, maps of the untass zone's growth, interviews
+    with citizens who've lost their tass. Connecting strings in red and green
+    and magenta link events, witnesses, locations. At the center, circled in
+    thick marker: DONN SNOTTY. Below it in smaller print: FIND GRAMPS.
+  camera: >-
+    A camera on the corner desk, next to a contact sheet of photographs.
+    The photos show Snotty's mansion gates, the toxic swamp, citizens looking
+    diminished in grey surroundings. Photographic evidence of the untass
+    incursion. The Editor keeps pointing at the camera and then at the door.
+  copy: >-
+    The copy being written right now, on every screen in the room, is part of
+    a single ongoing story: the documentation of Tonetown's struggle against
+    Donn Snotty's program of enforced blandness. Every reporter here is a
+    first draft of history, working under a deadline that is always five
+    minutes from now.
+idlemessages:
+- The printing press clatters out another edition, each page a fresh accusation against Donn Snotty.
+- The Editor shouts a deadline at no one in particular and somehow three reporters type faster.
+- A reporter tears a page from their printer, reads it, grimaces, and starts over immediately.
+- The pinboard gains another photograph -- Snotty's untass zone has expanded another block.
+- 'Someone calls across the room: ''We need a photo of the dungeon!'' Nobody moves because everyone is already moving.'
+- An intern rushes past with a stack of papers that represent either the solution or the problem.
+- The angular font of the Times masthead catches the light on a fresh page rolling out of the press.
+spawninfo:
+- mobid: 603
+  message: "The Editor strides out of a back office, visor glowing, already shouting something about page one."
+  respawnrate: 3 real minutes

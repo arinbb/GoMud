@@ -1,0 +1,65 @@
+roomid: 2459
+zone: Tass Times in Tonetown
+title: The Toxic Swamp
+description: >-
+  The swamp is what happens when someone with resources and contempt for color
+  is left unsupervised. <ansi fg="10">Dead trees</ansi> stand in arrangements
+  that suggest they were alive recently and remember it. The <ansi fg="10">water</ansi>
+  between their roots is a particular shade of green that is not a healthy green
+  but rather a green that used to be something else and was converted against
+  its will. <ansi fg="itemname">Pipes</ansi> from Snotty's operation emerge
+  from the eastern undergrowth, discharging a pale grey effluent that hits the
+  water with a sound of small defeat. The air tastes of chemicals and something
+  that was once a chromatic aspiration. The sky overhead is technically still
+  the Tonetown sky but it has been argued into a lower register. To the east,
+  the <ansi fg="itemname">mansion gates</ansi> are barely visible through the
+  chemical haze. North leads back toward the road. This place is not tass.
+  This place is the definition of the problem.
+mapsymbol: S
+maplegend: Toxic Swamp
+biome: swamp
+exits:
+  north:
+    roomid: 2458
+  east:
+    roomid: 2460
+nouns:
+  trees: >-
+    The dead trees of the swamp are the most comprehensively untass things in
+    Tonetown. They stand in grey-brown postures of complete aesthetic defeat.
+    Their branches hold no angles of intent -- they droop with the exhaustion
+    of things that used to be colorful and are not anymore. Some still have
+    leaves. The leaves are the specific beige of a world that has given up
+    arguing about what color it should be.
+  water: >-
+    The swamp water is a green that spent too long near Snotty's pipes. It
+    is still technically a color but it has lost the argument. Small bubbles
+    break the surface at irregular intervals -- the chemical runoff interacting
+    with whatever the water used to contain. You would not touch this water.
+    You would not look at it for long without feeling diminished.
+  pipes: >-
+    Grey industrial pipes emerge from the undergrowth to the east, running
+    from the direction of Snotty's mansion to terminate just above the water.
+    From each pipe, a thin stream of pale grey liquid descends in a thin arc.
+    The liquid is not exactly water. The grey is not exactly a color. Whatever
+    Snotty's untass process produces, this is its exhaust.
+  haze: >-
+    The chemical haze over the swamp is a visible thing -- a faint grey that
+    occupies the air between you and the mansion gates. It smells of flat
+    surfaces and denied potential. The mansion, seen through it, looks even
+    more deliberately unglamorous than it probably is up close. Though it
+    probably is this bad up close.
+  undergrowth: >-
+    What grows here grew before the pipes arrived and has been managing
+    since. Scrubby, determined, all in shades of grey-green. Some of it is
+    still trying -- a bright green shoot here, a stubborn wildflower there,
+    doing its best in circumstances that are working against it. It is the
+    most tass thing in the swamp, and it does not know it.
+idlemessages:
+- A pipe discharges a thin grey stream into the water with a sound like a small apology.
+- 'The water surface breaks in a slow bubble: the swamp processing another dose of untass runoff.'
+- A dead tree loses a branch to nothing in particular. The branch falls without drama. The tree does not care.
+- The chemical smell is stronger here, close and specific -- the smell of Snotty's operation at full output.
+- Through the eastern haze the mansion gates are a dark shape, deliberate and unfriendly.
+- Something that used to be bright moves in the undergrowth -- a bird or small animal, muted to grey by proximity.
+- The sky overhead has the correct shape but the wrong saturation. Tonetown's sky should not look like this.

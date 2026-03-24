@@ -1,0 +1,19 @@
+itemid: 167
+name: Tass Times in Tonetown game disc
+namesimple: disc
+displayname: a game disc labeled <ansi fg="magenta">Tass Times in Tonetown</ansi>
+description: >-
+  A CD-ROM in a jewel case whose cover art is a fever dream of angular neon
+  geometry: buildings that lean with deliberate confidence, citizens in outfits
+  assembled from the most extreme choices in any wardrobe, and at the center,
+  a glowing iron hoop that leads to a world the normal world would find
+  exhausting and magnificent in equal measure. The disc itself is the
+  magenta of a place that does not apologize for its choices. When you
+  hold it to the light, the data surface refracts into colors that have
+  no names in any language except Tonetown's. The case smells faintly of
+  ozone and hair product. The menu screen, if you could see it, asks
+  one question: ARE YOU TASS ENOUGH?
+type: object
+subtype: usable
+uses: 0
+value: 0

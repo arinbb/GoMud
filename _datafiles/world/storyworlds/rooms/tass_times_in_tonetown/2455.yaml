@@ -1,0 +1,77 @@
+roomid: 2455
+zone: Tass Times in Tonetown
+title: Tass Avenue
+description: >-
+  The main commercial artery of Tonetown is a continuous spectacle of
+  <ansi fg="magenta">storefronts</ansi> competing for the honor of being the
+  most visually declarative building on the block. Mannequins in <ansi
+  fg="itemname">shop windows</ansi> model outfits that function as complete
+  aesthetic arguments. <ansi fg="itemname">Music</ansi> leaks from every
+  doorway -- synth, post-punk, new wave -- each shop having a different opinion
+  about what the block should sound like, the whole becoming an accidental
+  symphony. Citizens carry shopping bags in shapes that suggest the contents
+  are ideas rather than objects. To the east, the <ansi fg="itemname">Tass
+  Market</ansi> glows with the particular light of a place that can fix what
+  is wrong with your wardrobe. West, the bass from the <ansi fg="itemname">Jam
+  Session</ansi> pulses like a second heartbeat. The avenue continues south
+  toward the swamp road, and north back to downtown.
+mapsymbol: A
+maplegend: Tass Avenue
+biome: city
+exits:
+  north:
+    roomid: 2452
+  east:
+    roomid: 2456
+  west:
+    roomid: 2457
+  south:
+    roomid: 2458
+  climb:
+    roomid: 2464
+    secret: true
+nouns:
+  storefronts: >-
+    Every storefront on Tass Avenue is a provocation in glass and neon. The
+    shoe shop has a window display that appears to depict the evolution of
+    footwear as a moral argument. The record shop has walls of vinyl arranged
+    by color rather than artist. The accessories boutique sells only objects
+    that make you look like you have more opinions than you did before. Each
+    one is individually too much. Together they are, somehow, exactly right.
+  windows: >-
+    The shop windows of Tass Avenue hold mannequins in jumpsuits that lean
+    at angles that suggest velocity. Asymmetric cuts, geometric prints, color
+    blocking that refuses to apologize. The mannequins all have the same
+    featureless face, which somehow makes the clothes more important. You
+    notice that nothing in any of these windows looks like anything you own.
+  music: >-
+    Four shops, four styles, all bleeding into the avenue at once. A bouncing
+    synth bass from the east. Angular guitar chords from the west. A drum
+    machine in irregular time from somewhere above. A melody from a shop
+    across the street that might be a jingle or might be a manifesto. Together,
+    on this street, it coheres into something that functions as the sound of
+    a place that takes music seriously and personally.
+  bags: >-
+    The shopping bags of Tass Avenue citizens are in the same angular aesthetic
+    as everything else -- paper bags with geometric handles, handles that form
+    shapes, shapes that convey meaning. A citizen walks past with a bag printed
+    with the single word TASS in six colors simultaneously. Whatever is in the
+    bag is secondary. The bag is the point.
+  avenue: >-
+    Tass Avenue stretches two blocks in each direction, lined with shops,
+    lamp posts with unusual shapes, street art painted at angles that match
+    the building facades. The sidewalk tiles form a pattern that resolves into
+    a face if you look at it from exactly the right distance. It is the face
+    of someone who has strong opinions about your footwear.
+idlemessages:
+- A citizen exits the Tass Market holding a bag of what must be new boots, walking taller already.
+- The bass from the Jam Session carries all the way up the avenue -- you feel it more than hear it.
+- A window display changes overnight and the new mannequin arrangement is somehow more confrontational.
+- Two shoppers compare items from rival bags with the seriousness of treaty negotiations.
+- The street art on the south wall shifted when you were not looking. The face it depicts is now judging you.
+- A gust carries music from three different storefronts at once, mixing into something briefly perfect.
+- Someone climbs the fire escape on the building to the north with clear expertise and no explanation.
+spawninfo:
+- mobid: 607
+  message: "A Tonetown citizen saunters out of a shop doorway, new purchase in an angular bag, and surveys the avenue with satisfaction."
+  respawnrate: 3 real minutes

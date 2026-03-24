@@ -1,0 +1,7 @@
+mutatorid: tonetown-tass
+namemodifier:
+  behavior: append
+  text: "(tass)"
+  colorpattern: rainbow
+alertmodifier:
+  text: The air hums with neon frequencies and the distant bass of a synthesizer city that decided, collectively, to be exactly itself.

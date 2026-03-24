@@ -1,0 +1,63 @@
+roomid: 2458
+zone: Tass Times in Tonetown
+title: The Swamp Road
+description: >-
+  At the edge of Tass Avenue, the neon fades like a radio signal going out
+  of range. The <ansi fg="itemname">buildings</ansi> here are less committed
+  to their angles, the facades more muted, as if the color is being leached
+  from them by something to the south. The <ansi fg="itemname">pavement</ansi>
+  changes texture underfoot -- from the smooth angular tiles of downtown to
+  something rougher, older, less maintained. <ansi fg="10">A smell</ansi>
+  arrives from the south before anything visual does: chemical, flat, the
+  olfactory equivalent of grey. The road ahead descends toward a smear of
+  <ansi fg="10">dead vegetation</ansi> on the horizon. The citizens of
+  Tonetown do not come this way unless they have to. The last neon sign is
+  behind you. It reads <ansi fg="magenta">TURN BACK (SERIOUSLY)</ansi>.
+  Tass Avenue is north. South leads into the swamp.
+mapsymbol: R
+maplegend: Swamp Road
+biome: road
+exits:
+  north:
+    roomid: 2455
+  south:
+    roomid: 2459
+nouns:
+  buildings: >-
+    The buildings on the south end of the avenue are in the same angular style
+    as downtown, but the color is wrong -- faded, as if something in the
+    southern air disagrees with pigment. A few shops here are shuttered, their
+    windows blank. One still has stock in the window but the mannequin is
+    dressed in a jumpsuit that has gone slightly grey. This is what the untass
+    zone does. It doesn't destroy. It dims.
+  pavement: >-
+    The angular paving tiles of Tonetown give way here to plain concrete, then
+    to cracked concrete, then to something that is mostly cracked concrete and
+    aggressive weeds. The transition is gradual but unmistakable. You are leaving
+    the maintained part of Tonetown. The maintained part does not wave goodbye.
+  smell: >-
+    Whatever Snotty's operation is producing, its byproduct is a smell that
+    is the opposite of the ozone-and-hair-product of downtown. This is flat,
+    chemical, slightly sweet in the way that things are sweet when the
+    sweetness is wrong. It is the smell of something being converted from
+    one thing to another thing it did not want to be.
+  vegetation: >-
+    The plant life at the road's edge changes character south of the last
+    building. The trees here are real but look like someone described trees
+    to a person who had never seen one and they built them from the description
+    -- present but wrong, branches at angles that don't quite match the weight
+    they're meant to hold. The leaves are still green, but a green that has
+    been told to be less than it is.
+  sign: >-
+    The last neon sign before the swamp road proper reads TURN BACK (SERIOUSLY)
+    in magenta, on a signpost that someone planted in the last good pavement
+    before the road gets complicated. Below it, in smaller letters, a newer
+    addition in less confident hand: GRAMPS WENT THIS WAY.
+idlemessages:
+- The neon of downtown is a warm glow behind you. Ahead the light has a different quality -- less.
+- The chemical smell from the south is faint here but present, like a warning at a reasonable volume.
+- A gust from the north brings a last hit of Tonetown music before the air goes quiet and grey.
+- The last streetlight on this road flickers with the specific uncertainty of a light on borrowed time.
+- The pavement under your feet changes from angular art tiles to plain function to something cracked.
+- A Tonetown citizen stops at the edge of the maintained area, looks south, shakes their head, turns back.
+- The sign says TURN BACK (SERIOUSLY). The sign has seen things.

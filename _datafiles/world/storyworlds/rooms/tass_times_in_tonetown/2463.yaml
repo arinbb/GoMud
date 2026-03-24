@@ -1,0 +1,72 @@
+roomid: 2463
+zone: Tass Times in Tonetown
+title: Tonetown Jail
+description: >-
+  The Tonetown Jail is not cruel. It is simply grey. The walls are painted
+  the same studied beige as Snotty's mansion -- a coincidence that nobody
+  in Tonetown thinks is a coincidence. <ansi fg="itemname">Holding cells</ansi>
+  line the east wall, occupied by citizens whose only crime was insufficient
+  tassness in a public area. They sit on benches with the muted posture of
+  people whose color has been temporarily suspended pending review. <ansi
+  fg="yellow">The Jailer</ansi> occupies the desk near the exit, consulting
+  a <ansi fg="itemname">regulation binder</ansi> with the focus of someone who
+  has found their calling. A <ansi fg="itemname">notice</ansi> on the wall
+  lists the current tass minimums for public spaces. The south exit leads back
+  toward downtown. You should not be here. Leaving requires either making a
+  case for your tassness or waiting for the Jailer to get distracted.
+mapsymbol: J
+maplegend: Tonetown Jail
+biome: house
+exits:
+  south:
+    roomid: 2452
+nouns:
+  cells: >-
+    The holding cells are clean, well-maintained, and comprehensively beige.
+    Their current occupants include a citizen whose jumpsuit was judged merely
+    adequate, another whose sunglasses were deemed insufficiently angular, and
+    a third who apparently told a Tonetown official that conformity is
+    conformity regardless of the direction. They nod at you with the solidarity
+    of the detained. One of them has already started redesigning their outfit
+    on a piece of paper. They will be better when they get out.
+  binder: >-
+    The regulation binder is three inches thick and growing. It contains the
+    complete and official tass standards for every public space in Tonetown:
+    minimum jumpsuit angularity by district, required color saturation levels
+    by street classification, acceptable boot heel heights by venue type.
+    These regulations have been tightening every six months. The Jailer
+    consults this binder before, during, and after every assessment. They
+    find it clarifying.
+  notice: >-
+    The notice on the wall is typed in the same standard font as all Snotty
+    Industries documentation: MINIMUM TASS REQUIREMENTS FOR PUBLIC SPACES.
+    Current requirements: Outfits must achieve Level 4 (Committed) or above.
+    Footwear must include angular element. Hair must demonstrate deliberate
+    choice. At the bottom, a small addition in different typeface: THESE
+    REQUIREMENTS HAVE BEEN SET BY SNOTTY INDUSTRIES. THE TONETOWN COUNCIL
+    DID NOT VOTE ON THEM. The addition is growing a patina of age.
+  desk: >-
+    The Jailer's desk holds the regulation binder, a standard-issue pen, a
+    cup of standard-issue coffee that has gone standard-issue cold, and a
+    framed photograph turned face-down. The photograph, if you could see it,
+    shows the Jailer in a much more colorful outfit, about six years ago,
+    at what appears to be a Jam Session show. They were, by any measure,
+    extremely tass.
+  exit: >-
+    The south exit from the jail is not locked. The Tonetown Jail operates on
+    social rather than physical detention -- you are free to leave, but leaving
+    declares your tass level to the street. The Jailer will assess your outfit
+    before you go. They will make a note. The note goes in a file. The file
+    eventually goes to Snotty's office.
+idlemessages:
+- The Jailer leafs through the regulation binder to a section you suspect is about outfit angularity.
+- One of the detained citizens has covered their cell wall with outfit redesigns. They are improving rapidly.
+- The Jailer grades your outfit with a quick glance and makes a note that you are not sure is positive.
+- Standard-issue overhead lighting hums at a frequency calibrated to be neither calming nor interesting.
+- A detained citizen catches your eye and gives you the small nod of someone who understands the situation.
+- The Jailer jangles their keys at no one in particular, establishing that there are keys and they have them.
+- 'A handwritten note slides under the door of one cell: outfit redesign tips from the citizen next door.'
+spawninfo:
+- mobid: 604
+  message: "The Jailer sets down the regulation binder and looks up at the new arrival with the practiced neutrality of someone who has made many assessments."
+  respawnrate: 3 real minutes

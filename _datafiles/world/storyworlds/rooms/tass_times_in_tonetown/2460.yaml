@@ -1,0 +1,67 @@
+roomid: 2460
+zone: Tass Times in Tonetown
+title: Snottys Mansion Gates
+description: >-
+  The gates of Donn Snotty's mansion are a philosophical statement in wrought
+  iron and poor taste. <ansi fg="8">Gargoyles</ansi> crouch on the gateposts,
+  each one carved in a style that can only be described as deliberately untass
+  -- their expressions not fierce or impressive but simply blank, bureaucratic,
+  the architectural equivalent of grey wall-to-wall carpeting. The <ansi
+  fg="itemname">gates</ansi> themselves are impressive in scale but offensive
+  in design -- heavy, angular in the wrong way, the ironwork making shapes
+  that suggest rules and limits rather than the angular ambition of Tonetown's
+  architecture. The <ansi fg="itemname">facade</ansi> of the mansion visible
+  beyond them is aggressively beige. The <ansi fg="itemname">security placard</ansi>
+  reads SNOTTY INDUSTRIES in a font so standard it constitutes an act of
+  aggression. The swamp is west. The laboratory is through the gates to the east.
+mapsymbol: G
+maplegend: Snottys Mansion Gates
+biome: land
+exits:
+  west:
+    roomid: 2459
+  east:
+    roomid: 2461
+nouns:
+  gargoyles: >-
+    The gargoyles are the worst gargoyles you have ever seen, and they are
+    the worst gargoyles because they are inoffensive. A truly great gargoyle
+    terrifies. These gargoyles shrug. They are carved with technically correct
+    anatomy in a technically correct style with technically correct proportions.
+    Nothing about them was decided by someone who cared. They are, in a word,
+    untass, and they are untass so deliberately that they must be intentional.
+    Donn Snotty commissioned these gargoyles personally. He is proud of them.
+  gates: >-
+    The gates are massive, black, heavy with unloved ironwork. They move on
+    hinges that do not squeak, which is almost worse. A gate should squeak.
+    A gate should announce itself. These gates open with the mechanical
+    certainty of a thing that does not need to impress you. They are not
+    impressive. They are merely functional. Snotty would say that functional
+    is better than impressive. He would be wrong.
+  facade: >-
+    Beyond the gates, the mansion's facade is a large beige. Not warm beige.
+    Not an interesting beige. The beige of a decision not to decide. The
+    windows are regular rectangles in regular rows. The columns are the
+    right height. The roof has the right pitch. Every proportional choice
+    is defensible and none of them are interesting. It took effort to build
+    something this thoroughly ordinary. That is, perversely, almost impressive.
+  placard: >-
+    SNOTTY INDUSTRIES, in a sans-serif font that was chosen because it was
+    the default. Below it: DIVISION OF CONFORMITY SOLUTIONS. Below that: IF
+    YOU ARE READING THIS, YOU MAY BE TOO INTERESTING FOR THIS FACILITY. The
+    last line has the feel of something added by an employee who no longer
+    works there.
+  haze: >-
+    The chemical haze is thicker here at the gates -- a visible grey that
+    sits in the air between you and the mansion, produced by Snotty's operation
+    and expelled through the swamp pipes. Up close it has a texture, almost.
+    Like the air has been processed through a machine that removes whatever
+    quality makes it worth breathing.
+idlemessages:
+- The gargoyles stare at nothing with the commitment of very well-made nothing.
+- The gates stand open, which is the worst thing about them -- they do not even trouble themselves to be locked.
+- 'A gust carries the chemical smell from inside the grounds: flat, grey, the exhaust of an untass operation.'
+- The SNOTTY INDUSTRIES placard catches no light. It has rejected light as an aesthetic choice.
+- Beyond the gates, the mansion sits in its beige certainty, doing nothing interesting with its considerable size.
+- Something moves behind one of the rectangular windows, grey-suited, purposeful, and deeply untass.
+- The gargoyle on the right post appears, in certain lighting, to be slightly more resigned than the one on the left.

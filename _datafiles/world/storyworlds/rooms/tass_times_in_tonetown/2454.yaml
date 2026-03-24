@@ -1,0 +1,67 @@
+roomid: 2454
+zone: Tass Times in Tonetown
+title: Ennios Bar
+description: >-
+  Ennio's Bar is the dark opposite of Tonetown's neon excess -- and somehow,
+  paradoxically, the tassest place in town. Low <ansi fg="itemname">lighting</ansi>
+  from lamps with colored gel filters paints everything in amber and deep magenta.
+  The <ansi fg="itemname">bar</ansi> itself is a long sweep of angular black
+  wood, bottles arrayed behind it in colors that glow from within. <ansi
+  fg="itemname">Cocktails</fg> sit on the rail like small artworks,
+  garnished with things that may or may not be edible. The <ansi fg="itemname">clientele</ansi>
+  leans on stools and in booths with the practiced ease of people who have
+  decided the world is worth observing from exactly this position. Behind the
+  bar, <ansi fg="yellow">Ennio</ansi> moves with the unhurried confidence of a
+  man who has seen everything and has opinions about all of it. Downtown is
+  back to the <ansi fg="exit">east</ansi>.
+mapsymbol: B
+maplegend: Ennios Bar
+biome: house
+exits:
+  east:
+    roomid: 2452
+nouns:
+  lighting: >-
+    The light in Ennio's is chosen the way a sommelier chooses wine -- with
+    authority and purpose. Amber from above, a deep magenta from under the
+    bar rail, occasional blue from the booth corners. It makes everyone look
+    like they belong in a film that has not been made yet. The effect is
+    deliberate. Ennio lit this room himself and will explain exactly why if
+    you ask him, which he prefers you do.
+  bar: >-
+    The bar is a masterpiece of angular black wood, its surface worn smooth
+    by decades of elbows and conversations. Behind it, the bottle display
+    arranges spirits by color in a gradient that runs from deep violet through
+    all the neons to a clear that somehow catches the light magenta. Ennio
+    knows where every bottle is without looking. He will tell you there is
+    no substitute for this kind of knowledge.
+  cocktails: >-
+    The cocktails on the rail are the color of distant planets. One glows
+    electric green with something that might be citrus peel spiraling down
+    into it. One is a deep magenta with a crystalline garnish that hums
+    faintly. One is simply clear but refracts light into colors that don't
+    appear in the spectrum until you look at them in a place like this. Each
+    one is, the menu notes, extremely tass.
+  clientele: >-
+    The regulars at Ennio's have achieved a level of tass that operates below
+    the surface. They don't perform it -- they simply are it. Their outfits
+    are quieter than downtown but more considered. They talk in low voices
+    about things that matter. This is where you come when you're done showing
+    off and want to actually know something.
+  booth: >-
+    A corner booth with deep cushions in angular geometric fabric. The table
+    holds an ashtray, two empty glasses with interesting residue, and a paper
+    napkin with something written on it in small, urgent handwriting. The
+    handwriting looks like Gramps'.
+idlemessages:
+- Ennio polishes a glass in slow circles, watching the door without appearing to watch the door.
+- Ice clinks in a glass somewhere down the bar with a sound that is exactly right.
+- One of the regulars says something low and private that makes the person next to them nod slowly.
+- A new cocktail appears on the rail, unnamed, glowing a color that might be called twilight magenta.
+- The ambient music in here is a single chord sustained at conversation volume -- present but not intrusive.
+- Ennio refills a glass without being asked, slides it across the bar, and returns to his observations.
+- The colored lighting shifts almost imperceptibly, cycling through a sequence only Ennio controls.
+spawninfo:
+- mobid: 601
+  message: "Ennio sets a glass on the rail, folds his cloth over his shoulder, and turns to see who just walked in."
+  respawnrate: 3 real minutes

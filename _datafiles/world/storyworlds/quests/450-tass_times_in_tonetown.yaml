@@ -1,0 +1,31 @@
+questid: 450
+name: Tass Times in Tonetown
+description: >-
+  You came through the hoop into Tonetown -- a parallel dimension of neon,
+  angular architecture, and a culture where being completely yourself is the
+  highest value. Your grandfather Gramps is missing, captured by Donn Snotty,
+  a former partner turned villain who is turning Tonetown grey with his untass
+  ray. The city is fighting back. You need to become tass enough to navigate it,
+  find Gramps, and stop Snotty before the gradient reaches downtown and the
+  most colorful city in any dimension goes permanently beige.
+reward:
+  experience: 5000
+  item_id: 345
+  playermessage: >-
+    You made it through the hoop and across every block of Tonetown -- the
+    neon downtown, the avenue, the Jam Session, the bar, the swamp, the
+    mansion, the dungeon. You found Gramps and you stopped the machine.
+    The tass index, when the ray went dark, immediately began to rise.
+    The Editor will have the headline in the morning. Ennio is making
+    a drink that commemorates the occasion. The Bouncer at the Jam Session
+    door gave you a nod that will last a lifetime. As a reminder of everything
+    Tonetown is, Gramps presses a pair of Tonetown shades into your hands
+    before you go back through the hoop. Put them on sometimes. The world
+    gains edges and colors it did not have before. That is the whole point.
+steps:
+- description: Arrive in Tonetown through the hoop.
+- description: Become tass -- get your outfit at the Tass Market.
+- description: Get the story from Ennio at the bar.
+- description: Infiltrate Snottys mansion through the swamp.
+- description: Find Gramps in the dungeon.
+- description: Confront Snotty and stop the untass ray.

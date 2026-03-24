@@ -1,0 +1,34 @@
+mobid: 604
+zone: tass_times_in_tonetown
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote jangles their keys in a slow, authoritative rhythm."
+  - "emote reviews a page in the regulation binder with the focus of someone finding something they needed."
+  - "emote peers at you over the desk with an assessment that is thorough and neutral."
+  - "say The regulations are the regulations. I did not write them. I implement them."
+  - "emote makes a note in a file with the penmanship of someone who takes the written record seriously."
+  - "emote glances at the face-down photograph on the desk, then returns to the binder."
+  - ""
+  - ""
+activitylevel: 10
+character:
+  name: The Jailer
+  description: >-
+    A person whose uniform fits with the precision of someone who puts it
+    on the same way every morning. Their khakis are the regulation khaki.
+    Their combat boots lace to the regulation height. Their expression
+    holds the practiced neutrality of someone who sees a great deal and
+    records it all and reveals very little. They are good at their job.
+    Whether their job is good is a separate question they have been sitting
+    with for about three years now. There is a face-down photograph on their
+    desk that is not, despite appearances, irrelevant to this question.
+  raceid: 1
+  level: 5
+  equipment:
+    body:
+      itemid: 20108
+    legs:
+      itemid: 20152
+    feet:
+      itemid: 20177

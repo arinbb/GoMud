@@ -1,0 +1,22 @@
+-
+  Supported:
+    "a tonetown citizen": ["a tonetown citizen"]
+  Conversation:
+    - ["#1 say Did you hear about Miran? From the south district?"]
+    - ["#2 say What happened?"]
+    - ["#1 say They got cited. Level Two. In public.", "#1 emote shakes their head."]
+    - ["#2 say Level Two? But Miran is --"]
+    - ["#1 say Level Two because the new minimums went up again and their jumpsuit was last season's cut.", "#1 say Last season is now below minimum. Snotty's regulation."]
+    - ["#2 emote is quiet. 'That is not a tass law. That is a fashion law.'"]
+    - ["#1 say Snotty would say those are the same thing.", "#1 say Miran would say that is the problem."]
+-
+  Supported:
+    "a tonetown citizen": ["a tonetown citizen"]
+  Conversation:
+    - ["#1 say I went to the Jam Session last night.", "#1 emote pauses.", "#1 say The Bouncer didn't even take the two seconds. Just nodded."]
+    - ["#2 say Immediately?"]
+    - ["#1 say Immediately.", "#1 emote looks satisfied in a way that is clearly genuine."]
+    - ["#2 say You wore the geometric jumpsuit.", "#2 say I knew you would eventually."]
+    - ["#1 emote looks at their own outfit.", "#1 say It has the right shoulder angles.", "#1 say I was not sure until I was standing at the door. Then I was sure."]
+    - ["#2 say That is how you know it is correct. The uncertainty goes away at the door."]
+    - ["#1 say Yes.", "#1 emote nods once."]

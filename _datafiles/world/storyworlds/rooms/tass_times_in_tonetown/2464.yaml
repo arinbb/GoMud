@@ -1,0 +1,70 @@
+roomid: 2464
+zone: Tass Times in Tonetown
+title: The Rooftops
+description: >-
+  The rooftops of Tonetown are the one place where the whole city makes sense
+  at once. From up here, the <ansi fg="magenta">neon grid</ansi> of downtown
+  spreads north, all angular buildings and glowing signs, a map of a place
+  that decided what it wanted to be and followed through. To the south, the
+  color gradient is visible as a physical fact -- the magenta and electric
+  blue of Tass Avenue fading through the neutral tones of the swamp road to
+  the grey-brown of the toxic swamp and Snotty's pale mansion. The whole
+  story of the city is legible from here: what it is, what it used to be
+  everywhere, what it's becoming in the south. <ansi fg="itemname">Wind</ansi>
+  moves through the rooftop landscape carrying music from the Jam Session and
+  chemicals from the swamp in alternating gusts. The <ansi fg="itemname">fire
+  escape</ansi> below leads back down to Tass Avenue.
+mapsymbol: R
+maplegend: The Rooftops
+biome: cliffs
+exits:
+  down:
+    roomid: 2455
+nouns:
+  grid: >-
+    From the rooftops, the neon grid of downtown is revealed as a deliberate
+    design. The buildings are not randomly arranged -- they form a pattern,
+    angular and intentional, the whole downtown block a piece of architecture
+    that makes more sense from above than from street level. The signs pulse
+    in a sequence. It might be a message. It might just be beautiful. Both
+    are true in Tonetown.
+  gradient: >-
+    The color gradient of the city is nakedly visible from up here. North:
+    full saturation, maximum tass, the colors the city was built to be. Center:
+    the avenue at full operational tass. South: a degradation, the colors
+    losing argument to the grey chemicals, the buildings there already starting
+    to look like they are thinking about giving up. Snotty's mansion sits at
+    the bottom of the gradient like a punctuation mark that negates everything
+    before it. The question the city is asking, from up here, is obvious:
+    which direction does the gradient move from here?
+  wind: >-
+    The rooftop wind alternates with each gust. A north wind brings music --
+    the bass from the Jam Session, synthesizer notes from somewhere on the
+    avenue, the ambient Tonetown sonic environment at volume. A south wind
+    brings the chemical flatness of the swamp, a grey smell that wants to
+    occupy your sinuses and replace the music smell. You face north for
+    the better wind. You keep your back to the south because you understand
+    the stakes.
+  escape: >-
+    The fire escape that brought you up here is a standard angular metal
+    structure in a bright magenta that matches the building's trim. It goes
+    down to Tass Avenue in a series of deliberate zigzags. From the rooftop
+    looking down at it, you can see that the zigzag pattern forms a word in
+    the Tonetown alphabet. The word is, apparently, TASS, written in fire
+    escape geometry by an architect who wanted the building to express itself
+    in every dimension available.
+  view: >-
+    The view from the rooftops of Tonetown is the kind of view that makes the
+    stakes clear. To the north, something worth saving. To the south, something
+    worth stopping. Between them, the city and all its citizens trying to be
+    exactly themselves at a time when someone with a machine is trying to make
+    them less. From up here you can see both the problem and the place that
+    has the answer, which is the same city, viewed from the right altitude.
+idlemessages:
+- From up here the neon grid of downtown pulses with the rhythm of a city that knows what it is.
+- A south wind brings the chemical smell. A north wind erases it with music from the Jam Session.
+- The color gradient between downtown and the swamp is visible as a clean line -- tass against untass.
+- Snotty's mansion sits at the edge of the city like a grey full stop at the end of a colorful sentence.
+- The wind off the rooftops carries synthesizer notes that resolve into something that sounds like a question.
+- From this height you can see citizens moving through the streets -- their outfits small bright points of color.
+- The fire escape shifts slightly in the wind with a metallic note that is accidentally musical.

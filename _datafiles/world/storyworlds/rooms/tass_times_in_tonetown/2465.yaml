@@ -1,0 +1,74 @@
+roomid: 2465
+zone: Tass Times in Tonetown
+title: Gramps Workshop
+description: >-
+  Behind a false wall in the cabin, accessed through a disguised panel in
+  the bookcase, Gramps' real workshop is the room where the hoop was born.
+  <ansi fg="itemname">Blueprints</ansi> cover every surface -- rolled, folded,
+  pinned flat, layered four deep on the main table. They show the hoop in
+  every stage of development: sketches from the initial idea, precise engineering
+  drawings, annotated revisions, and a final schematic that shows how the iron
+  ring becomes a portal between dimensions. <ansi fg="itemname">Models</ansi>
+  of the hoop in various sizes hang from the ceiling on strings, some of them
+  glowing faintly with residual dimensional energy. <ansi fg="itemname">Notes</ansi>
+  on the walls track the discovery of Tonetown: early confused entries becoming
+  clearer, then excited, then urgent. The most recent note reads: IF SNOTTY
+  GETS THE HOOP SPECS, HE CAN CLOSE THE PORTAL PERMANENTLY. DO NOT LET
+  SNOTTY GET THE HOOP SPECS. South leads back to the main cabin.
+mapsymbol: W
+maplegend: Gramps Workshop
+biome: house
+exits:
+  north:
+    roomid: 2450
+nouns:
+  blueprints: >-
+    The hoop blueprints are a record of scientific obsession made physical.
+    The earliest pages show rough sketches -- what seems to be a dream of
+    a door that goes somewhere unexpected. The middle pages are engineering
+    precision, the kind of drawing that can be built from, dimensions and
+    materials and tolerances specified to a degree that suggests Gramps knew
+    exactly what he was doing even when nobody else did. The final pages show
+    the completed design and, beside it, a hand-drawn map of what lies through
+    the completed hoop: Tonetown, labeled with a penmanship so excited it
+    leans forward.
+  models: >-
+    Small hoop models hang from the workshop ceiling on strings -- some in
+    iron, some in other metals, some in materials that look experimental. A
+    few of them pulse with a faint dimensional energy, their interiors showing
+    the characteristic shimmer of portal technology at rest. One of them,
+    slightly larger than the others, rotates slowly on its string and appears
+    to show, in its shimmering center, a moving image of downtown Tonetown
+    as it was before the untass incursion -- vivid, saturated, perfect.
+  notes: >-
+    The notes on the workshop walls tell the story of a discovery. Early
+    entries: intrigued, uncertain, describing dimensional anomalies in the
+    hoop's test phase. Middle entries: the first transit, the shock and wonder
+    of Tonetown, Ennio at the bar, the Editor, the way everything felt more
+    real in the saturated light of a place where colors had opinions. Late
+    entries: growing worry about Snotty. The last entry is not a date and
+    text. It is a name circled in red marker: FRANKLIN SNARL. With an arrow
+    pointing to DONN SNOTTY. With the annotation: I SHOULD HAVE SEEN IT.
+  workbench: >-
+    The main workbench holds the components of the hoop's improvement -- a
+    second-generation device, more compact, more powerful, with a range
+    adjuster that the original hoop lacks. Gramps was working on this when
+    he went through and did not come back. The device is 90% complete. The
+    remaining 10% would take about an hour if you knew what you were doing,
+    which you don't, and a minute if Gramps were here, which he isn't yet.
+  photograph: >-
+    On the workshop wall between two blueprint sections, a photograph from
+    earlier: Gramps and a younger man, sharper-featured, standing in front of
+    an early version of the hoop. Both are grinning. Both look like people
+    on the edge of something wonderful. Gramps has written below it: "Franklin
+    and I, 1979. Before he became Donn Snotty. Before blandness became a
+    business plan." The young man in the photo is clearly recognizable as
+    the grey-suited figure at the mansion.
+idlemessages:
+- The hoop models hanging from the ceiling rotate slowly in different directions, as if discussing something.
+- One of the smaller model hoops pulses with portal energy and shows, briefly, a glimpse of Tonetown in full color.
+- The blueprints on the table rustle in a draft from the hidden door -- Gramps' whole theory, stirring.
+- The notes on the wall read like a friendship becoming a warning becoming something that had to be stopped.
+- The workbench device is almost complete. It needs Gramps to finish it. Gramps needs you to find him first.
+- Dimensional energy hums faintly from the model hoops -- a frequency just like the full-size hoop in the cabin.
+- 'The circled name on the wall reads: FRANKLIN SNARL. Below it, in Gramps'' hand: ''I should have seen it.'''

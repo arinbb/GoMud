@@ -1,0 +1,35 @@
+mobid: 601
+zone: tass_times_in_tonetown
+hostile: false
+maxwander: 0
+idlecommands:
+  - "emote polishes a glass in slow, unhurried circles and watches the door."
+  - "emote mixes a neon cocktail with the precision of a person who has made ten thousand of them."
+  - "say I've seen a lot come through that door. Most of them needed something. Most of them got it."
+  - "emote sets a glass on the rail and slides it to the far end without looking."
+  - "emote watches the street through the front window with a stillness that contains more information than it reveals."
+  - "say The bar is the same. The city changes around it. That's what a bar is for."
+  - ""
+  - ""
+activitylevel: 15
+character:
+  name: Ennio
+  description: >-
+    A man who has been behind this bar long enough that he and the bar
+    have reached an accommodation about who is in charge. His bartender
+    vest is immaculate, his dark trousers knife-creased, his loafers
+    polished. He moves with the economy of someone who has calculated the
+    exact minimum motion needed to do everything perfectly. His face holds
+    the considered neutrality of a person who knows a great deal and has
+    learned that appearing to know it all at once is counterproductive.
+    He will tell you what you need to know when you need to know it.
+    He has been waiting to tell you several things for some time.
+  raceid: 1
+  level: 6
+  equipment:
+    body:
+      itemid: 20102
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20172

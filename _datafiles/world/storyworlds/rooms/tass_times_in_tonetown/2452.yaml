@@ -1,0 +1,75 @@
+roomid: 2452
+zone: Tass Times in Tonetown
+title: Downtown Tonetown
+description: >-
+  Tonetown's downtown is an argument between every visual idea that ever existed,
+  and every visual idea is winning. <ansi fg="magenta">Neon signs</ansi> stack
+  six deep on buildings that have no right angles -- each facade a different
+  color, each window a different shape, every surface competing for the title
+  of Most Deliberately Itself. Citizens move through the streets in <ansi
+  fg="itemname">outfits</ansi> assembled from fashion's most extreme experiments:
+  angular shoulders, asymmetric hemlines, hair sculpted into shapes that defy
+  gravity and good sense. They walk with the purposeful stride of people who
+  know they are being watched and approve. A <ansi fg="itemname">newsstand</ansi>
+  displays the <ansi fg="yellow">Tonetown Times</ansi> in fresh stacks. The air
+  hums with synthesizer music and social judgment. To the north is the hoop
+  passage. East leads to the newspaper. West leads to Ennios. South opens onto
+  <ansi fg="magenta">Tass Avenue</ansi>.
+mapsymbol: D
+maplegend: Downtown Tonetown
+biome: city
+exits:
+  north:
+    roomid: 2451
+  east:
+    roomid: 2453
+  west:
+    roomid: 2454
+  south:
+    roomid: 2455
+  jail:
+    roomid: 2463
+    secret: true
+nouns:
+  signs: >-
+    The neon signs of Downtown Tonetown are a civic text. TASS OR PASS. BE
+    YOURSELF (BUT CORRECTLY). UNTASS IS ILLEGAL (NOT REALLY) (KIND OF). The
+    signs cycle through colors at different speeds, creating a visual rhythm
+    that the citizens seem to navigate by instinct. The one over the intersection
+    reads WELCOME TO TONETOWN -- CONFORM TO NONCONFORMITY.
+  outfits: >-
+    Every citizen on this street is dressed as if they competed in a sport
+    where points are awarded for commitment. Jumpsuits in colors that name
+    themselves. Boots that add four inches and say something about the wearer's
+    philosophy. Hair that communicates via geometry. Sunglasses with frames
+    shaped like lightning bolts. You feel immediately, acutely, like you are
+    wearing the wrong thing.
+  newsstand: >-
+    A newsstand at the corner holds fresh stacks of the Tonetown Times, their
+    headlines in bold angular fonts: SNOTTY EXPANDS UNTASS ZONE SOUTH OF AVENUE.
+    TASS LEVELS DROP FOR THIRD CONSECUTIVE MONTH. EDITOR FURIOUS. A smaller
+    headline at the bottom reads: NEWCOMER IN TOWN -- TASS OR NOT? (POLL INSIDE).
+  architecture: >-
+    The buildings of downtown are an ongoing architectural rebellion. Nothing
+    here was built without a strong opinion. Doorways are rhomboids. Windows
+    are irregular hexagons. Walls lean outward at angles that suggest confidence
+    rather than structural failure. The overall effect is of a city that decided
+    to be interesting and followed through completely.
+  citizens: >-
+    Tonetown citizens move through their streets with the bearing of people who
+    have already been judged and found excellent. They assess each other -- and
+    you -- with a quick, practiced eye. A glance that measures your outfit, your
+    posture, your willingness to be angular. They do not seem cruel about it.
+    They seem sincere. To them, tassness is a value, like kindness or courage.
+idlemessages:
+- A citizen in a geometric jumpsuit pauses mid-stride to evaluate your outfit and does not hide their conclusion.
+- The neon signs cycle through their colors in an irregular sequence that somehow still feels like a beat.
+- The Tonetown Times headline today reads SNOTTY PUSHES SOUTH and nobody looks pleased about it.
+- Two citizens compare the angles of their respective hairstyles with the seriousness of architects.
+- 'A synthesizer sting plays from somewhere above -- three notes ascending, like a question about your style.'
+- Somebody walks past in boots so platform-elevated they must have rehearsed the gait.
+- The smell of neon and hair product and something faintly electric fills the downtown air.
+spawninfo:
+- mobid: 606
+  message: "A Tonetown citizen strides out of a side alley and takes up a position in the middle of the sidewalk, posing."
+  respawnrate: 3 real minutes

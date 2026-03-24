@@ -51,6 +51,9 @@ spawninfo:
 - itemid: 137
   container: console
   respawnrate: 1 real minutes
+- itemid: 167
+  container: console
+  respawnrate: 1 real minutes
 idlemessages:
 - The console hums quietly, its power light a steady green eye in the dim room.
 - 'A faint chiptune melody plays from one of the dormant arcade cabinets — just a few notes, then silence.'

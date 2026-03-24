@@ -1,0 +1,16 @@
+name: Tass Times in Tonetown
+roomid: 2450
+autoscale:
+  minimum: 1
+  maximum: 8
+defaultbiome: city
+mutators:
+- mutatorid: tonetown-tass
+idlemessages:
+- A neon sign buzzes and flickers somewhere overhead, cycling through colors that do not exist in the normal world.
+- The distant thump of a bass line from the Jam Session pulses through the angular walls.
+- A Tonetown citizen strides past in an outfit so deliberately outrageous it loops back around to art.
+- The smell of something electric and slightly sweet hangs in the air -- like ozone mixed with hair product.
+- Somewhere a synthesizer plays three notes and stops, as if testing whether the world is listening.
+- An untass breeze from the south carries the faint chemical smell of Snotty's swamp.
+- The buildings here do not have right angles. They have opinions.

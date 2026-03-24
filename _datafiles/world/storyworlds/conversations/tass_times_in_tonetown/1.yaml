@@ -1,0 +1,22 @@
+-
+  Supported:
+    "ennio": ["*"]
+  Conversation:
+    - ["#1 emote sets a glass down and looks out the front window at the street."]
+    - ["#1 say I have been behind this bar twenty years. I have watched this city be exactly itself for twenty years."]
+    - ["#2 emote listens."]
+    - ["#1 say Three years ago Snotty Industries opened on the south side. I watched the gradient start.", "#1 emote taps the bar once."]
+    - ["#1 say My regulars used to come in at full tass. Now they come in at Level Five. Last month, Level Four.", "#1 say They do not mention it. But I see it."]
+    - ["#2 say That is -- that is not good.", "#2 emote looks toward the south."]
+    - ["#1 say No. It is not good. But this bar is the same.", "#1 say The bar does not go grey. Not while I am behind it."]
+-
+  Supported:
+    "ennio": ["*"]
+  Conversation:
+    - ["#1 say Gramps came in here the night before he went south. Had the evidence in a folder."]
+    - ["#2 emote straightens up. 'Evidence of what?'"]
+    - ["#1 say The hoop schematics. Snotty had been trying to access them remotely. To close the portal.", "#1 emote refills a glass."]
+    - ["#1 say Gramps said if Snotty closes the portal, Tonetown is sealed off. Nobody comes in from outside.", "#1 say Nobody comes to help."]
+    - ["#2 say And then --"]
+    - ["#1 say And then Snotty has all the time in the world.", "#1 emote is quiet."]
+    - ["#2 emote looks at the door."]

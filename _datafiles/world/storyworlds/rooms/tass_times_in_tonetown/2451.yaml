@@ -1,0 +1,55 @@
+roomid: 2451
+zone: Tass Times in Tonetown
+title: Through the Hoop
+description: >-
+  The passage between worlds is not a tunnel so much as a conversation between
+  two realities, conducted at high volume. <ansi fg="magenta">Color</ansi> arrives
+  first -- not colors you know, but colors that remember being something more,
+  saturated past the point of sense. Then <ansi fg="itemname">sound</ansi> folds
+  in: bass frequencies, a synthesizer sustain, something percussive and deliberate.
+  The <ansi fg="itemname">walls</ansi> -- if these are walls -- are planes of
+  shifting geometry, angular and urgent. Behind you, the cabin is already just
+  a warm memory, a smell of wood smoke going cold. Ahead, through the rippling
+  boundary, the shapes of <ansi fg="magenta">Tonetown</ansi> resolve: neon and
+  impossible and waiting. The passage is brief but the passage is permanent.
+  You will not come out the same person who went in.
+mapsymbol: H
+maplegend: Through the Hoop
+biome: house
+exits:
+  north:
+    roomid: 2450
+  south:
+    roomid: 2452
+nouns:
+  color: >-
+    The colors here are not in the normal spectrum. They are colors that the
+    normal world decided against -- too loud, too committed, too willing to
+    be exactly themselves. Magenta, but angrier. Green, but more so. A
+    yellow that is trying to tell you something important. You absorb them
+    through the skin.
+  sound: >-
+    A sustained synthesizer note bends upward as you move forward. Bass
+    frequencies you feel in your sternum. Something like a drum machine
+    running at a tempo that matches nothing biological, and yet your body
+    finds it immediately. This is the sound of a place that takes its music
+    seriously and wants you to know it.
+  walls: >-
+    The geometry here rejects the right angle. Surfaces meet at degrees that
+    suggest strong opinions. The angles are deliberate -- each one chosen for
+    maximum visual impact, each one saying something about the architectural
+    philosophy of a dimension that considers blandness a moral failing.
+  boundary: >-
+    The place where the two worlds meet is visible as a slight shimmer, like
+    the edge of a soap bubble. From the Tonetown side it looks like a hole
+    in the air shaped exactly like Gramps' iron hoop. From this side it looks
+    like the whole cabin, impossibly small, going away from you at the speed
+    of a decision.
+idlemessages:
+- The transition does not take long. What it takes instead is everything about your previous assumptions.
+- Color arrives before anything else -- a full sensory immersion in tones the normal world does not permit.
+- The bass note sustains itself around you, patient and massive, marking the boundary between here and there.
+- Behind you the cabin is a warm brownish memory. Ahead Tonetown is a neon argument you are about to enter.
+- The geometry shifts slightly underfoot. Not unsteady -- certain. Aggressively certain.
+- A voice, very faint, seems to say something enthusiastic in a language that is almost English.
+- You are between two worlds for exactly the time it takes to commit to entering the second.

@@ -1,0 +1,70 @@
+roomid: 2462
+zone: Tass Times in Tonetown
+title: The Dungeon
+description: >-
+  Beneath Snotty's mansion, the dungeon is the most honest room in the building --
+  it makes no pretense about its purpose. Stone walls, <ansi fg="8">grey</ansi>
+  as everything else here, sweat in the damp air. A single <ansi fg="itemname">lamp</ansi>
+  burns with the minimum amount of light necessary to be technically on. Iron
+  <ansi fg="itemname">bars</ansi> divide the far half of the room into cells.
+  In the nearest cell, surrounded by scraps of paper covered in small, energetic
+  writing and a collection of objects that have been repurposed into components
+  of something, sits <ansi fg="yellow">Gramps</ansi>. He looks up when you enter
+  with the expression of a man who told himself not to get his hopes up and is
+  getting his hopes up. His corduroy jacket is wrinkled. His eyes are bright.
+  He has clearly been working on something. He will explain it if you ask.
+  The door to the laboratory is south.
+mapsymbol: U
+maplegend: The Dungeon
+biome: dungeon
+exits:
+  south:
+    roomid: 2461
+nouns:
+  bars: >-
+    The iron bars are standard dungeon bars -- heavy, grey, set in concrete
+    with the thoroughness of someone who expected to use them and was right.
+    The lock is simple by Tonetown standards, which means it is a device that
+    does one thing without flourish. The key to it is presumably somewhere
+    logical. Gramps has been examining the lock from his side with scientific
+    interest and a patience that suggests he has a plan or is very close to
+    having one.
+  lamp: >-
+    A single lamp on a bracket in the ceiling. It burns at the exact wattage
+    necessary to see without being comfortable. This is a deliberate calibration.
+    Snotty's dungeons are not torture chambers; they are correctional facilities
+    for people whose main crime is being interesting. The lamp is grey. The
+    light it produces is grey. Even the shadows here have been discouraged.
+  papers: >-
+    The floor of Gramps' cell is covered in papers -- diagrams, calculations,
+    what appear to be engineering notes for a device of considerable ingenuity.
+    He has been using the time productively. The writing is in the same
+    excited, cramped hand as the journal at the cabin. The diagrams show
+    something that might be an amplifier for the hoop, or a tass detector,
+    or a way to disrupt the untass ray from a distance. Possibly all three.
+  cell: >-
+    The cell is small but not cruel. Gramps has arranged it with the
+    instinct of an inventor -- objects sorted by potential use, a corner
+    designated for thinking, a spot by the bars for watching the laboratory
+    door. He has a system. The system is keeping him sane and productive.
+    He has been here long enough to know when Snotty passes through and how
+    long the guard takes on a patrol. He has been waiting, patiently, for
+    someone to arrive with the ability to do something about the door.
+  components: >-
+    Among the scraps of paper, Gramps has assembled a small collection of
+    components: a coil of wire, a magnet taken from something, two small
+    lenses, a battery. They are arranged not randomly but intentionally.
+    Whatever he is building from dungeon salvage and scientific principle,
+    it is close to finished. He needs one more thing. He will tell you what.
+idlemessages:
+- Gramps looks up from his papers with an expression that cycles through hope, caution, and more hope.
+- The damp walls of the dungeon collect sound -- you can hear the untass ray humming from above.
+- Gramps mutters a calculation, scratches something out, mutters another, and appears satisfied.
+- The lamp flickers once, threatening darkness, then resettles into its minimal commitment to light.
+- From the cell, Gramps watches the laboratory door with the patience of a scientist who has learned to wait.
+- Papers rustle as Gramps reorganizes his components with the purposefulness of a man with a plan.
+- 'Through the bars, Gramps says quietly: ''You came. Good. I was starting to run out of dungeon problems to solve.'''
+spawninfo:
+- mobid: 600
+  message: "Gramps looks up from his papers, squinting at the door with the cautious optimism of a man who has been wrong about rescue before."
+  respawnrate: 5 real minutes
