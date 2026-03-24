@@ -47,6 +47,12 @@ nouns:
 spawninfo:
 - mobid: 200
   message: "A thin man in round glasses sits behind the mixing board, threading tape."
+- mobid: 201
+  message: "Kurt Cobain sits on a guitar case, a battered Mustang across his knees, staring at the floor."
+- mobid: 202
+  message: "Krist Novoselic unfolds himself from a folding chair, bass in hand, already six feet seven."
+- mobid: 203
+  message: "Dave Grohl drops onto the drum stool and immediately starts taping his knuckles."
 idlemessages:
 - The tape reels spin silently, the magnetic heads reading ghosts of performances already laid down.
 - Someone left a half-smoked cigarette balanced on the edge of the mixing board. The ash is two inches long and still growing.

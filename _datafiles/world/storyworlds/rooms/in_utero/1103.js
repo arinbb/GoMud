@@ -23,5 +23,16 @@ function onCommand(cmd, rest, user, room) {
         }
     }
 
+    if (cmd == "sing") {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You hum the melody. The garden responds -- flowers opening slightly toward you, the meat-colored sky pulsing once in time with the tune. The song has one of the great pop melodies of its decade, married to imagery that should not be beautiful but is. You can hear the cello line now, emerging from beneath the distortion, threading through the rot. It is patient. It has been waiting for you to notice it.</ansi>");
+        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " begins to hum. The garden leans in to listen.", user.UserId());
+        return true;
+    }
+
+    if (cmd == "listen") {
+        SendUserMessage(user.UserId(), "<ansi fg=\"8\">You stand still and let the song find you. The chorus is a sustained, anguished love letter and a terror simultaneously -- the specific vertigo of needing someone completely. The verses are quieter, observational, the notebooks of someone cataloging his own psyche with scientific distance. The cello at the end plays the root note and does not let go. It is the sound of loyalty refusing to leave.</ansi>");
+        return true;
+    }
+
     return false;
 }

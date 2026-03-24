@@ -20,5 +20,27 @@ function onCommand(cmd, rest, user, room) {
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " orders a drink and stares into the swirling green depths.", user.UserId());
         return true;
     }
+    if (cmd == "touch" || cmd == "feel") {
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You touch the red wall. The paint vibrates -- not literally, but the color itself seems to have a frequency, a low aggression that moves through your palm. Vincent described this red as expressing the terrible passions of humanity. Under your fingers it feels like that: warm, slightly nauseating, undeniably alive. You take your hand away feeling slightly compromised.</ansi>");
+        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " touches the red wall and holds still, feeling the color's weight.", user.UserId());
+        return true;
+    }
+
+    if (cmd == "smell" || cmd == "sniff") {
+        SendUserMessage(user.UserId(), "<ansi fg=\"8\">Absinthe, cheap wine, tobacco smoke, and gas light -- the specific atmosphere of places where people go when they have nowhere else to be. And underneath it all, linseed oil, the truth of the medium. You are standing in a painting of a place that smelled like loss. The paint adds its own honest note.</ansi>");
+        return true;
+    }
+
+    if (cmd == "look" && (rest.indexOf("color") >= 0 || rest.indexOf("red") >= 0 || rest.indexOf("green") >= 0 || rest.indexOf("wall") >= 0)) {
+        SendUserMessage(user.UserId(), "<ansi fg=\"12\">You really look at the colors. Red walls, green ceiling, yellow-green floor -- they do not harmonize, they argue. Vincent chose complementary colors placed at maximum contrast to create a sense of psychological agitation. This painting was not meant to be pleasant to look at. It was meant to make you feel what these particular humans, in this particular place, at this particular hour, felt. It works.</ansi>");
+        return true;
+    }
+
+    if (cmd == "paint" || cmd == "brush") {
+        SendUserMessage(user.UserId(), "<ansi fg=\"14\">You add a stroke of red to the wall -- matching the existing color, deepening a shadow. Immediately the room feels more oppressive, more enclosed. You have contributed to the terrible passions of humanity. You put the brush down. Some paintings are better left alone. Vincent would disagree. Vincent painted this place anyway.</ansi>");
+        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " adds a brushstroke to the red wall, deepening a shadow.", user.UserId());
+        return true;
+    }
+
     return false;
 }

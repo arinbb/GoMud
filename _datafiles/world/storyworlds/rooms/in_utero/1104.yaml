@@ -38,6 +38,17 @@ nouns:
     split into fragments that do not quite align. You are taller in one shard,
     shorter in another. In one fragment you are smiling. In another you are not
     there at all.
+  spotlight: >-
+    The single spotlight overhead burns at a wattage designed to expose rather than
+    illuminate. It turns everything it touches into overexposure -- bleached, flattened,
+    the nuance burned away. There is nowhere to stand that is not in it. The room has
+    no shadows, which is itself a kind of violence.
+  fist: >-
+    Someone put their fist through the wall at shoulder height, in the dead center
+    of a poster that reads NEVERMIND. The hole is clean, the plaster punched rather
+    than crumbling, the force concentrated. The poster is still there around it. The
+    word NEVERMIND frames the hole perfectly. This was either an accident or it was
+    the most deliberate thing anyone has ever done.
 idlemessages:
 - The spotlight flickers, plunging the room into darkness for a heartbeat before slamming back on, harsher than before.
 - A new line of graffiti appears on the wall. You did not see anyone write it. The paint is still wet.

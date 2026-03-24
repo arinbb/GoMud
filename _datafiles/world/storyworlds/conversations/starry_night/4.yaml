@@ -1,0 +1,33 @@
+-
+  Supported:
+    "vincent": ["*"]
+  Conversation:
+    - ["#1 say You see this sky? The whole thing is moving."]
+    - ["#2 emote looks up"]
+    - ["#1 say Most people look at the night sky and see fixed points. I see currents. Rivers of light with direction and force."]
+    - ["#2 say Is that what you paint?"]
+    - ["#1 say I try to paint what the sky actually is. Not what it looks like. What it IS."]
+    - ["#2 emote considers this"]
+    - ["#1 emote already reaching for the notebook, already somewhere else", "#1 say People think I exaggerate. I do not exaggerate. I simply see."]
+-
+  Supported:
+    "vincent": ["*"]
+  Conversation:
+    - ["#1 say The color blue. Do you know how many blues there are?"]
+    - ["#2 say I suppose--"]
+    - ["#1 say Prussian blue. Cobalt. Cerulean. Ultramarine. Indigo. The blue of shadow, which is not blue at all but violet. The blue of water at night. The blue of the space between stars."]
+    - ["#2 say How do you choose?"]
+    - ["#1 emote holds his hands up, stained cadmium yellow and prussian blue", "#1 say You do not choose. You look until you see the true color, and then you use the paint that is most honest about what you saw."]
+    - ["#2 say That sounds very simple."]
+    - ["#1 say It is the hardest thing I have ever tried to do.", "#1 emote looks at his stained hands for a moment."]
+-
+  Supported:
+    "vincent": ["*"]
+  Conversation:
+    - ["#1 say I painted this from my window at Saint-Paul-de-Mausole."]
+    - ["#2 say The asylum?"]
+    - ["#1 emote nods, no self-pity in it", "#1 say The view was good. The light in Provence is extraordinary. Even through barred windows, it was extraordinary."]
+    - ["#2 say Did it help? The painting?"]
+    - ["#1 say It helped me to understand what I was seeing. Nothing else helped more than that."]
+    - ["#2 emote says nothing, which is the right response"]
+    - ["#1 emote looks up at the swirling sky with quiet ownership", "#1 say This sky is mine. I made it. Whatever else happens, this sky is mine."]

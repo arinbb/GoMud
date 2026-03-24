@@ -1,0 +1,34 @@
+mobid: 201
+zone: in_utero
+hostile: false
+maxwander: 0
+activitylevel: 15
+idlecommands:
+  - emote plays a jagged guitar fragment -- two chords, a bend, and a sudden stop -- then stares at the floor.
+  - emote writes something in a spiral notebook, crosses most of it out, circles one word.
+  - emote adjusts the strap on the battered Mustang, not looking at anything in particular.
+  - emote lights a cigarette and lets it burn in his fingers without smoking it.
+  - ''
+  - ''
+  - emote strums a single downstroke, the guitar barely plugged in, the note hanging in the tape-hiss air.
+  - emote reads a page from a worn paperback, holds it for a moment, sets it face-down.
+character:
+  name: Kurt Cobain
+  description: >-
+    Twenty-five years old and already carrying too much. He sits hunched in a
+    flannel shirt and a cardigan that has seen too many motel rooms, a battered
+    Fender Mustang across his knees, his hair lank and unwashed, his eyes pale
+    and watchful and occasionally, unexpectedly, bright with something that is
+    not pain. The notebook next to him is full of crossed-out lines. He writes
+    because something in him requires it, the same way the guitar requires it.
+    When he looks up, the look is assessing, not hostile. He has been
+    misquoted enough times to take a moment before trusting a new audience.
+  raceid: 1
+  level: 10
+  equipment:
+    body:
+      itemid: 20105
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

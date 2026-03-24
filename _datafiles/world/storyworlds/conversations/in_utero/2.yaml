@@ -1,0 +1,45 @@
+-
+  Supported:
+    "kurt cobain": ["krist novoselic"]
+  Conversation:
+    - ["#2 say How many takes on the Frances Farmer vocal?"]
+    - ["#1 say Enough."]
+    - ["#2 emote waits."]
+    - ["#1 say Three. Four. It is done."]
+    - ["#2 say It sounds right."]
+    - ["#1 emote looks at the tape reels through the glass.", "#1 say It sounds like what it is."]
+    - ["#2 say Yeah.", "#2 emote says nothing else."]
+-
+  Supported:
+    "kurt cobain": ["krist novoselic"]
+  Conversation:
+    - ["#2 say You should sleep."]
+    - ["#1 say I am not tired."]
+    - ["#2 emote looks at the four empty coffee cups.", "#2 say That is not what tired means."]
+    - ["#1 emote almost smiles.", "#1 say I know what tired means."]
+    - ["#2 say Albini can keep the tape rolling without us."]
+    - ["#1 say The tape does not roll without me in the room."]
+    - ["#2 emote sits down next to him.", "#2 say Okay."]
+    - ["#1 say Thanks for staying."]
+-
+  Supported:
+    "kurt cobain": ["krist novoselic"]
+  Conversation:
+    - ["#1 say This is the record we were supposed to make after Bleach."]
+    - ["#2 emote thinks about this."]
+    - ["#2 say Instead of Nevermind?"]
+    - ["#1 say Instead of everything that came with Nevermind."]
+    - ["#2 say The money."]
+    - ["#1 say The attention. The opinions. The being watched."]
+    - ["#2 say We can not go back."]
+    - ["#1 emote picks at a guitar string quietly.", "#1 say No. But we can make this."]
+-
+  Supported:
+    "kurt cobain": ["krist novoselic"]
+  Conversation:
+    - ["#1 say I want it to be like the Pixies. Like the Vaselines."]
+    - ["#2 say Loud-quiet-loud."]
+    - ["#1 say No. Honest. The Pixies are honest."]
+    - ["#2 say They are also loud-quiet-loud."]
+    - ["#1 emote concedes this with a gesture.", "#1 say Fine. Honest AND loud-quiet-loud."]
+    - ["#2 emote laughs once.", "#2 say That I can work with."]

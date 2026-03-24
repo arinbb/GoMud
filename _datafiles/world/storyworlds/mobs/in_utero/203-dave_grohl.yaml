@@ -1,0 +1,32 @@
+mobid: 203
+zone: in_utero
+hostile: false
+maxwander: 3
+activitylevel: 25
+idlecommands:
+  - 'emote drums his fingers on every surface he passes, unable to stop.'
+  - 'say I am going to hit these drums so hard today. Just -- so hard.'
+  - 'emote grins with pure uncomplicated enthusiasm.'
+  - 'emote air-drums through a complex fill, fully committed, eyes closed.'
+  - 'say The secret to drumming in this band is to play like you are trying to keep up. You are always trying to keep up.'
+  - 'emote tapes up two fresh blisters on his knuckles and flexes his hands experimentally.'
+  - 'say I love this. I genuinely love this. The noise, the recording, all of it.'
+character:
+  name: Dave Grohl
+  description: >-
+    A broad-shouldered young man radiating a physical energy that seems to require
+    constant expenditure -- he drums his fingers on tables, bounces on his heels,
+    taps out rhythms on his own thighs. His grin is enormous and genuine, a bright
+    counterpoint to the album's darkness. His hands are large and perpetually
+    blistered, the tools of someone who hits things very hard for a living. He is
+    the engine underneath -- the force that drives the songs forward when everything
+    else is threatening to collapse inward. Where the music aches, he attacks.
+  raceid: 1
+  level: 12
+  equipment:
+    body:
+      itemid: 20101
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20171

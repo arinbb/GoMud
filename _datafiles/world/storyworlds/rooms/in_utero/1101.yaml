@@ -36,6 +36,19 @@ nouns:
     The judge's bench, split clean down the center. No gavel -- just a guitar pick
     embedded in the wood where the gavel should be. The nameplate reads nothing. The
     crack runs deep, and if you look into it, it seems to go down forever.
+  exhibit: >-
+    Three items arranged on a folding table where evidence is displayed. Exhibit A
+    is a platinum record in a cracked frame. Exhibit B is a syringe with a blue
+    cap, placed with awful care on a white cloth. Exhibit C is a love letter, hand-
+    written, its ink smeared from water or something like it. No verdict is posted.
+    The jury box behind you has twenty-four empty seats, each one with a name tag
+    that reads simply FAN.
+  record: >-
+    A copy of Nevermind propped against the witness stand. The cover shows a baby
+    in water reaching for a dollar on a fishhook. Someone has written over the cover
+    in red marker: THIS WAS THE TRAP. Whether they mean the image, the album, or
+    the success it brought is not specified. The record is still sealed. It has
+    never been played in this room.
 idlemessages:
 - The television flickers between footage and static, the signal decaying a little more each time.
 - A newspaper headline peels from the wall and floats to the floor, landing face-down.

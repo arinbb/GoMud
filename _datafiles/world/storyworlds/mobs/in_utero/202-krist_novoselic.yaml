@@ -1,0 +1,34 @@
+mobid: 202
+zone: in_utero
+hostile: false
+maxwander: 0
+activitylevel: 15
+idlecommands:
+  - emote tunes the bass, the low E string dropping a quarter-step then finding pitch.
+  - emote laughs at something he thought of, alone, without explaining what.
+  - emote reads a newspaper folded to the politics section, his brow creasing.
+  - emote adjusts the amp settings, turns the bass knob one click to the right.
+  - ''
+  - ''
+  - emote looks over at Kurt and seems about to say something, then decides against it.
+  - emote stretches his enormous frame, hands nearly brushing the ceiling, and resettles.
+character:
+  name: Krist Novoselic
+  description: >-
+    Six foot seven and built like someone who was meant for a different century.
+    He holds the bass guitar the way a normal person holds a ukulele -- easily,
+    with no drama. He is the most politically aware person in the room and the
+    most likely to have an opinion about Balkan geopolitics, which he will share
+    if asked and occasionally if not. He worries about Kurt in a way that is
+    visible if you know to look for it. He is loyal in the specific way of someone
+    who has decided loyalty is the thing he has to offer and intends to offer it
+    completely.
+  raceid: 1
+  level: 10
+  equipment:
+    body:
+      itemid: 20113
+    legs:
+      itemid: 20151
+    feet:
+      itemid: 20170

@@ -1,0 +1,32 @@
+-
+  Supported:
+    "kurt cobain": ["*"]
+  Conversation:
+    - ["#1 emote stares at the notebook page for a long time."]
+    - ["#1 say The song is about not being able to say what you mean. Naturally."]
+    - ["#2 emote listens"]
+    - ["#1 say You write it down because speaking it directly is impossible. Then the writing becomes the thing. Then everyone analyzes the thing you wrote as a substitute for the thing you meant."]
+    - ["#2 say Is that frustrating?"]
+    - ["#1 emote looks up", "#1 say It is the only way I know how to do it."]
+-
+  Supported:
+    "kurt cobain": ["*"]
+  Conversation:
+    - ["#1 say I used to think fame would make the stomach pain worse. I was right."]
+    - ["#2 emote looks at him"]
+    - ["#1 say That is not a complaint. That is just an accurate observation."]
+    - ["#2 say What does make it better?"]
+    - ["#1 emote thinks. Genuinely thinks.", "#1 say Playing. When we are actually playing, I do not notice it."]
+    - ["#2 say So play more."]
+    - ["#1 say That is the plan.", "#1 emote picks up the guitar."]
+-
+  Supported:
+    "kurt cobain": ["dave grohl"]
+  Conversation:
+    - ["#1 say Dave. When you play Tourette's, what are you thinking about?"]
+    - ["#2 say Nothing. Absolutely nothing. That is the point."]
+    - ["#1 emote nods slowly", "#1 say Yeah. Yeah, that is exactly right."]
+    - ["#2 say The fast ones are easy. Fast and loud and just -- you stop thinking and start being."]
+    - ["#1 say I wish more of it worked like that."]
+    - ["#2 emote grins", "#2 say That is why we have Very Ape."]
+    - ["#1 emote almost smiles", "#1 say That is exactly why we have Very Ape."]
