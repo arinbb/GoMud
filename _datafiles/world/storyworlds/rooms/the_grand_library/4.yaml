@@ -34,10 +34,10 @@ nouns:
     includes the artist, title, medium, and a note about what world lies within
     the frame.
 containers:
-  shelf: {}
+  shelves: {}
 spawninfo:
 - itemid: 105
-  container: shelf
+  container: shelves
   respawnrate: 1 real minutes
 idlemessages:
 - A figure in one of the paintings turns its head slightly. You blink, and it's facing forward again.
