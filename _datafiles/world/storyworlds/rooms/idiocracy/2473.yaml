@@ -57,7 +57,7 @@ idlemessages:
 - The greeter says 'Welcome to Costco. I love you.' for the four hundredth time today. She sounds like she means it.
 - A child rides a bulk-pack of paper towels like a horse. No adult intervenes or even notices.
 - The fluorescent lights buzz at a frequency that makes everything feel slightly more stupid than it is.
-- An announcement plays: 'ATTENTION COSTCO SHOPPERS: BRAWNDO IS ON SALE. BRAWNDO LOVES YOU.'
+- 'An announcement plays: ''ATTENTION COSTCO SHOPPERS: BRAWNDO IS ON SALE. BRAWNDO LOVES YOU.'''
 spawninfo:
 - mobid: 617
   message: 'A Costco Greeter materializes at the entrance in her orange vest, arms wide.'

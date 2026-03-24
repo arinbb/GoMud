@@ -53,7 +53,7 @@ idlemessages:
 - The triage desk person asks someone their favorite Brawndo flavor and writes it down very carefully.
 - A patient is told their condition is 'gay' and they leave, satisfied with this diagnosis.
 - The Brawndo vending machine in the corner is labeled MEDICAL BRAWNDO -- FOR HEALING.
-- An announcement plays: 'DR. LEXUS TO AISLE FOUR. DR. LEXUS TO WHATEVER.'
+- 'An announcement plays: ''DR. LEXUS TO AISLE FOUR. DR. LEXUS TO WHATEVER.'''
 spawninfo:
 - mobid: 613
   message: 'Dr. Lexus strides in with the purposeful air of someone who has no idea what they are doing but does it with confidence.'
