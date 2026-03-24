@@ -1,0 +1,45 @@
+-
+  Supported:
+    "billy corgan": ["the ghost of darcy"]
+  Conversation:
+    - ["#1 say The bass line on Soma."]
+    - ["#2 emote looks at the bass guitar across her lap."]
+    - ["#1 say I recorded it myself."]
+    - ["#2 say I know."]
+    - ["#1 emote waits for a reaction that does not come."]
+    - ["#1 say It needed a specific tone. Very specific."]
+    - ["#2 say I know what tone you wanted."]
+    - ["#1 emote has nothing to say to that.", "#1 say ...Okay."]
+-
+  Supported:
+    "billy corgan": ["the ghost of darcy"]
+  Conversation:
+    - ["#2 say Are we credited for the parts we did not play?"]
+    - ["#1 emote does not look up from the mixing board."]
+    - ["#1 say You are credited as a member of the band."]
+    - ["#2 say That is not what I asked."]
+    - ["#1 emote is quiet for a long moment.", "#1 say The record is what it needed to be."]
+    - ["#2 say Yes."]
+    - ["#2 emote looks out the window at the Atlanta night.", "#2 say That is the whole answer."]
+-
+  Supported:
+    "billy corgan": ["the ghost of darcy"]
+  Conversation:
+    - ["#1 say Disarm."]
+    - ["#2 emote looks up."]
+    - ["#1 say You play on that one."]
+    - ["#2 say I know."]
+    - ["#1 say It sounds right."]
+    - ["#2 emote is quiet for a moment.", "#2 say It is a beautiful song."]
+    - ["#1 emote nods once.", "#1 say Yes."]
+    - ["#2 say You should let more of them be like that."]
+    - ["#1 emote looks like this has not occurred to him.", "#1 say ...Maybe."]
+-
+  Supported:
+    "the ghost of darcy": ["*"]
+  Conversation:
+    - ["#1 say The bass is an anchor. You feel it before you notice it."]
+    - ["#1 emote sets her hand flat on the bass guitar body, feeling the wood."]
+    - ["#1 say When it is right you do not notice it. When it is wrong the whole song falls apart."]
+    - ["#1 emote lifts her hand.", "#1 say Whether I play it or someone else plays it."]
+    - ["#1 emote looks at the control room glass.", "#1 say The bass is still there."]

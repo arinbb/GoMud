@@ -33,9 +33,54 @@ nouns:
     The doors come in every conceivable size, from grand double doors tall
     enough for a giant to tiny doors that a mouse would have to duck through.
     Each has a different knocker, handle, or keyhole. None of them open.
+  hole: >-
+    You look up. The rabbit hole stretches above you into absolute darkness,
+    a perfect cylinder of earth and roots. As you fell you passed shelf after
+    shelf -- jars of marmalade, maps, books, a painting of a fish on a plate.
+    There is no going back up that way. The fall has ended but the strangeness has not.
+  shelves: >-
+    The earthen walls of the hall are lined with wooden shelves, carved directly
+    into the soil. On them sit jars labeled in careful copperplate: Orange Marmalade,
+    Piccalilli, Chutney (Mango), and one that simply says Best Intentions.
+    Most are empty. The marmalade jar, you notice, was already open when you passed it.
+  bottle: >-
+    A small glass bottle with a paper label tied around its neck reading DRINK ME
+    in elegant letters. The liquid inside is a beautiful shimmering thing -- it has
+    a peculiar mixed flavour of cherry-tart, custard, pineapple, roast turkey,
+    toffee, and hot buttered toast. Drinking it would make you smaller. Probably.
+  cake: >-
+    A little cake on the glass table with the words EAT ME worked in currants
+    on the top. It smells of almond icing. The question of whether it will make
+    you grow or shrink is left deliberately ambiguous.
+  clock: >-
+    Somewhere in the walls, a clock ticks. You cannot see it, only hear it --
+    and it seems to be ticking backwards. Each backward tick sounds like a small
+    decision being unmade.
+  roots: >-
+    The roots of enormous trees have broken through the earthen ceiling and walls,
+    dangling in tangled curtains. Some of them are wrapped around door frames,
+    as if the roots are slowly, patiently absorbing the doors. A few roots have
+    grown through the shelves and around the jars, claiming them for the earth above.
+  darkness: >-
+    The far end of the hall dissolves into a darkness that is not simply an absence
+    of light but a presence of its own -- a thick, curious darkness that seems to
+    lean toward you. Objects left near it have a tendency to become slightly
+    smaller than they were. Or possibly the darkness is becoming slightly larger.
+  marmalade: >-
+    The jar is labeled Orange Marmalade in precise copperplate handwriting.
+    It is empty. It was empty when you passed it on the way down, though you
+    considered taking it. The act of not taking it during a fall at high speed
+    seems, in retrospect, surprisingly responsible.
 idlemessages:
 - Something scurries behind one of the locked doors. A mouse? Something larger?
 - The tiny door at the end of the hall seems to shimmer, as if the garden beyond it is beckoning.
 - A clock ticks somewhere, but it seems to be counting backward.
 - You could swear the hall is longer than it was a moment ago.
 - The "DRINK ME" bottle on the table bubbles faintly, though no one has touched it.
+- One of the locked doors rattles briefly, then is still. Whatever is on the other side has decided against coming through.
+- You are the exact wrong size for every single door in this hall. This, you sense, is the point.
+- A jar labeled "Orange Marmalade" sits on a nearby shelf. It is conspicuously empty. You were not tempted to try it during the fall. Probably.
+- The hall grows and shrinks slightly as you watch. The table remains the same size. You appear to be getting smaller, and then larger, and then the correct size for a hall that is now different.
+- The curtain at the end of the hall stirs with no wind. Something on the other side knows you are there.
+- You catch a glimpse through a keyhole -- someone is coming down from above, very slowly, with much more time to examine the shelves than you had.
+- The backwards clock gains two minutes, then loses three. It apologizes by making a sound exactly like a cricket clearing its throat.

@@ -1,0 +1,62 @@
+-
+  Supported:
+    "the mad hatter": ["the cheshire cat"]
+  Conversation:
+    - ["#1 say Cat! Have you the time?"]
+    - ["#2 emote manifests slowly from the branches above, grin first"]
+    - ["#2 say It is whatever time it always is here."]
+    - ["#1 say Six o'clock. Teatime. Permanently. I KNOW. I meant what time is it ELSEWHERE."]
+    - ["#2 say Elsewhere? Oh, time moves there. Quite normally. Forward, mostly."]
+    - ["#1 emote goes rather quiet"]
+    - ["#1 say Forward."]
+    - ["#2 say Yes. One thing after another, in sequence."]
+    - ["#1 emote stares into his teacup for a long time", "#1 say How terrible. Have some tea."]
+    - ["#2 say I don't drink tea."]
+    - ["#1 say Neither do I, strictly speaking. But I pour it. The motion is comforting."]
+-
+  Supported:
+    "the cheshire cat": ["the mad hatter"]
+  Conversation:
+    - ["#1 say Do you ever wonder what you were like before?"]
+    - ["#2 say Before what?"]
+    - ["#1 say Before time stopped. Before always-teatime."]
+    - ["#2 emote examines his teacup with sudden uncertainty"]
+    - ["#2 say I sold hats. I had appointments. I was somewhere on a Tuesday once."]
+    - ["#1 say Do you miss Tuesday?"]
+    - ["#2 emote is quiet for longer than usual"]
+    - ["#2 say I miss the IDEA of Tuesday. The actual Tuesday I can no longer recall."]
+    - ["#1 say That seems about right."]
+    - ["#2 emote begins to fade", "#1 say Wait! Was it a good Tuesday?"]
+    - ["#1 say Probably better than Wednesday."]
+-
+  Supported:
+    "the queen of hearts": ["the caterpillar"]
+  Conversation:
+    - ["#1 say YOU. What are you doing in my garden?"]
+    - ["#2 emote exhales a slow smoke ring and says nothing"]
+    - ["#1 say I asked you a question. Answer it."]
+    - ["#2 say Who are you."]
+    - ["#1 say I BEG your pardon?"]
+    - ["#2 say That is the first question. It is also a useful one in this situation."]
+    - ["#1 emote draws herself to full height", "#1 say I am the QUEEN OF HEARTS. That is WHO I AM."]
+    - ["#2 say Mm. A role. But who are you."]
+    - ["#1 emote opens mouth", "#1 emote closes mouth"]
+    - ["#1 say OFF WITH—", "#1 emote pauses", "#1 say This is a very irritating conversation."]
+    - ["#2 say Most important ones are."]
+-
+  Supported:
+    "the caterpillar": ["the queen of hearts"]
+  Conversation:
+    - ["#1 say You give many orders."]
+    - ["#2 say I am the Queen. It is what I do."]
+    - ["#1 say And when the orders are not followed?"]
+    - ["#2 say Then I give more orders. Louder ones."]
+    - ["#1 emote takes a slow draw from the hookah"]
+    - ["#1 say And if louder orders are also not followed?"]
+    - ["#2 say Then I question the competence of everyone around me."]
+    - ["#1 say Have you considered that the orders might be the problem?"]
+    - ["#2 emote says nothing for a very long moment"]
+    - ["#2 say No."]
+    - ["#1 say That is one answer."]
+    - ["#2 say It is the correct answer."]
+    - ["#1 emote exhales a smoke question mark and says nothing further"]

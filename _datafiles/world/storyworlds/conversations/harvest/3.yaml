@@ -1,0 +1,43 @@
+-
+  Supported:
+    "neil young": ["the stray gators"]
+  Conversation:
+    - ["#1 say The Heart of Gold feel. The way the pedal steel comes in on the chorus."]
+    - ["#2 emote bends the E string slowly, listening to himself.", "#2 say Earlier?"]
+    - ["#1 say No. Exactly there. But lighter. Like it is arriving instead of landing."]
+    - ["#2 emote plays the figure again, the bend softer, the volume pedal backed off.", "#2 say Like that?"]
+    - ["#1 emote listens for a long moment.", "#1 say Yes. That. Do not change it."]
+-
+  Supported:
+    "neil young": ["the stray gators"]
+  Conversation:
+    - ["#2 say The Harvest take this morning. The one with the barn sound on it."]
+    - ["#1 emote nods.", "#1 say The room was right."]
+    - ["#2 say Tim got a different tone on the bass. Lower, more midrange. You heard it?"]
+    - ["#1 say I heard it.", "#1 say It sounds like the wheat field looks."]
+    - ["#2 emote thinks about this.", "#2 say That is a strange thing to say."]
+    - ["#1 say It is an accurate thing to say."]
+    - ["#2 emote concedes this by playing the bass line in question.", "#2 say Yeah. Okay."]
+-
+  Supported:
+    "neil young": ["the stray gators"]
+  Conversation:
+    - ["#1 say Are You Ready For the Country. Up-tempo."]
+    - ["#2 say How up-tempo."]
+    - ["#1 emote taps a rhythm on the fence post.", "#1 say That."]
+    - ["#2 say Faster than Nashville comfortable."]
+    - ["#1 say Nashville can handle it."]
+    - ["#2 emote plays a short pedal steel phrase at the indicated tempo.", "#2 say Nashville can handle it."]
+    - ["#1 say I know.", "#1 emote almost smiles.", "#1 say I would not have asked if I did not know."]
+-
+  Supported:
+    "neil young": ["the stray gators"]
+  Conversation:
+    - ["#2 say The London tracks. A Man Needs a Maid."]
+    - ["#1 say What about them."]
+    - ["#2 say You did those without us."]
+    - ["#1 say The London Symphony. Yes."]
+    - ["#2 say Was that right?"]
+    - ["#1 emote looks at the fields.", "#1 say Some songs need more than a guitar can carry."]
+    - ["#1 say You would not have wanted to play on those. They needed a different size."]
+    - ["#2 emote considers this and nods once."]

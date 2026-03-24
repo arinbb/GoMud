@@ -34,6 +34,36 @@ nouns:
     It's a very wide grin, stretching from ear to ear -- if the ears were
     visible. The grin seems amused by something only it understands. Which,
     given that this is Wonderland, could be anything or nothing at all.
+  branch: >-
+    The branch the Cat favors is a high one, curved at an impossible angle that
+    would not support any ordinary weight. The bark where the Cat rests is worn
+    smooth. Faint claw marks circle it in a spiral, as if the Cat sometimes
+    spins in its sleep. Or does something more deliberate.
+  leaves: >-
+    The leaves of the oak move without wind, each one turning slightly as though
+    watching you with a hundred small green faces. When you stare at them long
+    enough, they seem to arrange themselves into letters. Then words. Then
+    something that might be advice. Then they stop and are just leaves again.
+  stripes: >-
+    When the Cat is fully visible, its stripes are a deep amber and charcoal,
+    perfectly regular. When it begins to fade, the stripes go last, hanging in
+    the air like a theorem that hasn't been proven wrong yet. Some philosophers
+    find this more disturbing than the grin. The Cat, if asked, would say this
+    is because the philosophers are asking the wrong question.
+  clearing: >-
+    The clearing is a perfect circle of short grass, surrounded on all sides by
+    the same forest that surrounds it from every other direction. It feels like
+    the pause between two sentences -- the kind where you are not sure which
+    sentence comes next, or whether you were the one who was speaking.
+  sky: >-
+    The sky above the clearing is a peculiar color -- not exactly blue, not
+    exactly anything familiar. Stars are visible even in daylight, though they
+    are not the usual stars. They do not twinkle. They watch.
+  pawprint: >-
+    At the base of the tree is a single pawprint in the soil, perfectly clear --
+    each toe, each pad, the precise weight of something that chose to be here
+    once. There is no second pawprint. The Cat arrived by other means. Or perhaps
+    this is where it stopped choosing to have feet.
 spawninfo:
 - mobid: 14
   message: The Cheshire Cat appears, grin-first, on a branch overhead.
@@ -47,6 +77,14 @@ spawninfo:
   - ""
   - emote reappears suddenly, upside-down on a different branch.
   - ""
+  - say How do you like the Queen?
+  - ""
+  - say Begin at the beginning. Go on till you come to the end. Then stop.
+  - ""
+  - emote grins very widely and says nothing at all, which is somehow louder than speaking.
+  - ""
+  - say Ask me about directions. Or madness. Or what you want to get to.
+  - ""
   respawnrate: 2 real minutes
 idlemessages:
 - The Cheshire Cat's grin floats past at eye level, unattached to any visible cat.
@@ -54,3 +92,9 @@ idlemessages:
 - '"Did you say something?" asks a voice from nowhere. Or perhaps from everywhere.'
 - The signpost arrows slowly rotate to point in entirely new contradictory directions.
 - For a moment, you see the Cat fully materialized -- a large tabby with an impossibly wide smile. Then it fades again.
+- The leaves of the oak rearrange into a pattern you almost recognize, then scatter in a breeze that does not exist.
+- A low sound comes from somewhere above -- not quite a purr, not quite a laugh. Something in between, or perhaps entirely outside both categories.
+- '"You know," says the air conversationally, "it does not matter what road you take if you don''t know where you''re going." A pause. "But between you and me, it matters quite a lot which road you take."'
+- The single pawprint at the base of the tree is fresh. You were watching the whole time and saw nothing arrive.
+- The sky shows stars that are not quite where stars should be. One of them blinks. Stars do not blink.
+- The clearing holds its shape very carefully, as if it is aware of being observed and wants to make a good impression.

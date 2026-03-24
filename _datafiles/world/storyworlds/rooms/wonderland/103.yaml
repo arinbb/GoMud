@@ -32,6 +32,35 @@ nouns:
     The Hatter's famous hat, a tall silk topper with a card tucked into the band
     reading "In this style 10/6." It's seen better days -- the silk is worn and
     the brim is bent.
+  dormouse: >-
+    The Dormouse is crammed between the Hatter and the March Hare, fast asleep
+    with its head drooping into a saucer. It mumbles occasionally -- something
+    about treacle, or possibly Elsie and Lacie and Tillie and their well. Its
+    ears twitch when anyone raises their voice, which is always.
+  bread: >-
+    There is bread-and-butter on the table, in quantities that suggest someone
+    optimistically expected a much larger party. The butter has been applied with
+    a pocket-watch -- you can see the minute-hand marks in it. The bread is
+    stale. Time has been standing still here; the bread has not.
+  watch: >-
+    The Hatter's pocket watch bobs in a teacup. It was dipped there two years
+    ago when time stopped, as a punishment or an experiment -- it's unclear which.
+    The watch still reads six o'clock. The butter has not helped its mechanism.
+  march: >-
+    The March Hare sits at the far end of the table, ears very long, expression
+    very earnest. It is currently buttering something that is not bread. It does
+    not notice. It pours tea with the confidence of someone who has never once
+    hit the cup, and does not intend to start now.
+  sugar: >-
+    The sugar bowl has been passed so many times it has grooves worn into its
+    handles. There is no sugar left. There hasn't been sugar since before six
+    o'clock, which is to say since before always. The tongs are still in the
+    butter, exactly where someone left them in a different kind of emergency.
+  tree: >-
+    The great tree overhead drops leaves at irregular intervals into cups, bread,
+    and once into the Dormouse's ear. The Dormouse twitched but did not wake.
+    The tree is not malicious -- it has simply been standing here since six
+    o'clock, and has developed opinions about things below it.
 spawninfo:
 - mobid: 11
   message: The Hatter looks up from his teacup with wild eyes.
@@ -45,6 +74,14 @@ spawninfo:
   - ""
   - say It's always six o'clock now. Always teatime.
   - ""
+  - say A very merry unbirthday to you!
+  - ""
+  - emote counts his teacups with increasing alarm.
+  - ""
+  - say Move down! MOVE DOWN! Clean cups!
+  - ""
+  - say Ask me about the riddle. Or time. Or my hat!
+  - ""
   respawnrate: 2 real minutes
 idlemessages:
 - The Hatter moves one seat to the left, dragging the Dormouse along by its ear.
@@ -52,3 +89,10 @@ idlemessages:
 - The Dormouse opens one eye, murmurs something about treacle, and falls back asleep.
 - A clock on the table reads six o'clock. It always reads six o'clock.
 - The Hatter examines his watch, shakes it, holds it to his ear, then dips it in his tea.
+- The March Hare butters his watch and holds it to the light with great satisfaction. The mechanism is ruined. He does not appear to consider this a problem.
+- 'A leaf falls into a teacup. The Hatter drinks it anyway. The March Hare gives you a look that clearly means: this is normal.'
+- '"Move down! Move down!" The entire tea party shifts one seat to the left, achieving nothing except a change of scenery.'
+- The Dormouse murmurs in its sleep about three sisters who live at the bottom of a treacle well. Its ears twitch. It does not wake.
+- The teapot pours itself without being asked. Tea covers several saucers and the March Hare's left shoe. No one comments.
+- 'The Hatter counts the cups, loses count, starts again with a different number, and declares the result satisfactory.'
+- A second leaf falls from the tree. The Hatter drinks his tea with the leaf in it. The March Hare does the same. The Dormouse cannot, being asleep, so the Hatter does it for them.

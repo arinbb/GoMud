@@ -16,7 +16,6 @@ biome: house
 exits:
   atrium:
     roomid: 1
-    mapdirection: northeast
     exitmessage: You step back out into the Grand Atrium.
 nouns:
   station: >-

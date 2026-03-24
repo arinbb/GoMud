@@ -1,0 +1,42 @@
+-
+  Supported:
+    "the queen of hearts": ["the cheshire cat"]
+  Conversation:
+    - ["#1 say You! CAT! I have told you before about disappearing."]
+    - ["#2 emote manifests slowly, grin first"]
+    - ["#1 say That is extremely irritating. Stop it at once."]
+    - ["#2 say I find it rather efficient. Have you considered disappearing?"]
+    - ["#1 say I am the QUEEN. Queens do not disappear."]
+    - ["#2 say Pity. The grin is the best part to keep."]
+    - ["#1 emote goes very red", "#1 say OFF WITH YOUR—"]
+    - ["#2 emote begins to fade", "#2 say With my what?"]
+    - ["#1 say Your GRIN! Off with your—", "#1 emote stares at a grin floating in midair"]
+    - ["#1 say This is unsatisfactory."]
+    - ["#2 say Most things are, if you think about them long enough."]
+-
+  Supported:
+    "the queen of hearts": ["the cheshire cat"]
+  Conversation:
+    - ["#1 say I have been trying to execute you for three weeks."]
+    - ["#2 say Mm. How is that going."]
+    - ["#1 say Not WELL. The executioner says you can't cut off a head if there is no body. The King says there's no body if there's no head. I say OFF WITH THE—"]
+    - ["#2 emote considers this with the detached interest of a philosopher"]
+    - ["#2 say You appear to have found a genuine paradox."]
+    - ["#1 say I don't WANT a paradox! I want an execution!"]
+    - ["#2 say You might try executing the paradox."]
+    - ["#1 emote opens her mouth, closes it, opens it again", "#1 say ...That is not a terrible idea."]
+    - ["#2 emote grins wider than should be geometrically possible"]
+-
+  Supported:
+    "the cheshire cat": ["the queen of hearts"]
+  Conversation:
+    - ["#1 say Tell me -- does it bother you? That no one actually loses their head?"]
+    - ["#2 say The King PARDONS everyone. It is most undermining."]
+    - ["#1 say So the sentences are purely theatrical."]
+    - ["#2 emote goes very still with controlled fury"]
+    - ["#2 say They are NOT theatrical. They are PREVENTATIVE."]
+    - ["#1 say Preventative of what?"]
+    - ["#2 say Of people continuing to do the things that caused me to sentence them."]
+    - ["#1 say But they continue to do those things."]
+    - ["#2 say Because the King keeps PARDONING them. This is a systemic failure and NOT a reflection on the SENTENCES."]
+    - ["#1 emote fades to just a grin", "#1 say I see. So it's working perfectly."]

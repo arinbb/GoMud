@@ -35,6 +35,37 @@ nouns:
   hedgehogs: >-
     The hedgehogs refuse to stay curled up and keep wandering off. They look as
     confused by the game as you are.
+  flamingo: >-
+    One of the Queen's flamingos is standing nearby looking profoundly
+    embarrassed. Its neck is clearly designed for elegant curves but has been
+    bent into a right angle in an attempt to make it useful as a croquet mallet.
+    It has opinions about this arrangement. It is not sharing them. Yet.
+  cards: >-
+    Three card soldiers -- the Two, Five, and Seven of Spades -- crouch near
+    the rose bushes with their paintbrushes. Their flat faces cannot show fear
+    but everything else about them radiates it. One of them is painting a rose
+    white by accident, then red on top, then white again in a spiral of panic.
+  paint: >-
+    Open cans of red paint sit among the rose bushes. The paint is a specific
+    shade of red that can best be described as "evidence." It is on the petals,
+    on the grass, on the cards' flat faces, and on a small sign nearby that
+    probably used to say something important and now just says red.
+  procession: >-
+    The royal procession moves at a pace that implies extreme urgency while
+    achieving very little progress. Card soldiers march in uneven rows trying
+    to look military. Courtiers follow at a nervous distance. The executioner
+    brings up the rear with the expression of someone whose services are always
+    in demand and never quite appreciated.
+  crown: >-
+    The Queen's crown is enormous and golden and perfectly suited to someone
+    who has never once considered that another person's head might deserve to
+    stay where it is. It catches the light and throws pieces of it everywhere.
+    It is, by any measure, a magnificent crown. It is also somewhat terrifying.
+  walkway: >-
+    Stone walkways wind between the hedges in a pattern that seems logical
+    until you follow one and end up back where you started. The pattern seems
+    designed less for navigation than for the pleasure of watching someone
+    navigate it. Someone is always watching here.
 spawninfo:
 - mobid: 12
   message: The Queen of Hearts sweeps into the garden, her card soldiers marching behind her.
@@ -46,6 +77,14 @@ spawninfo:
   - emote glares imperiously at everyone present.
   - say Let the croquet match begin!
   - ""
+  - say Every head in this garden is conditionally attached. Remember that.
+  - ""
+  - emote sweeps her gaze across the garden like a searchlight.
+  - ""
+  - say Verdict first! Always verdict first!
+  - ""
+  - say Ask me about justice. Or roses. Or croquet, if you dare.
+  - ""
   respawnrate: 3 real minutes
 idlemessages:
 - A card gardener whispers frantically to another, 'Quick, paint faster, the Queen is coming!'
@@ -53,3 +92,10 @@ idlemessages:
 - A hedgehog uncurls and waddles away from its position on the croquet lawn.
 - '"Off with their heads!" echoes from somewhere in the garden. The card soldiers tremble.'
 - Paint drips from a poorly-covered white rose, forming a small red puddle on the path.
+- The Five of Spades accidentally gets paint on the Seven of Spades. They argue about it in furious whispers, the argument itself sounding like a very quiet game of cards.
+- A flamingo turns its neck to look at you with one golden eye. It appears to be judging you.
+- The Queen's procession can be heard approaching -- the rhythmic tramp of card soldiers and the distant, satisfied sound of someone inventing reasons to be displeased.
+- A hedgehog makes eye contact with you. It has made a decision. It walks away. You were not involved in the decision.
+- The Two of Spades has painted the same rose three times. Each time it is more red. Each time it is somehow worse. The Two of Spades does not know why.
+- 'The Queen pauses mid-procession to inspect a hedge. ''Satisfactory,'' she says. The hedge wilts slightly anyway.'
+- The walkway you are standing on seems slightly shorter than it was a moment ago. You are moving toward where you started whether you like it or not.

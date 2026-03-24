@@ -1,0 +1,42 @@
+-
+  Supported:
+    "the caterpillar": ["the cheshire cat"]
+  Conversation:
+    - ["#1 say Who are you."]
+    - ["#2 emote materializes, amused", "#2 say That is my question to ask."]
+    - ["#1 say It is everyone's question. That is why it is important."]
+    - ["#2 say I know who I am. I am a cat who grins. The grin persists. The cat is optional."]
+    - ["#1 say The grin without the substance is a kind of lie."]
+    - ["#2 say Or a kind of argument. The grin says: something was here. Something that smiled."]
+    - ["#1 emote exhales a smoke question mark"]
+    - ["#1 say Something that smiled is not the same as someone who smiled."]
+    - ["#2 say No. But it is a start."]
+    - ["#1 say Hmm."]
+-
+  Supported:
+    "the caterpillar": ["the cheshire cat"]
+  Conversation:
+    - ["#1 say You know what you will become."]
+    - ["#2 emote is quiet for a moment", "#2 say I know what I am. What I will become is a separate matter."]
+    - ["#1 say I will become something else entirely. The transformation is inevitable."]
+    - ["#2 say Does that trouble you?"]
+    - ["#1 say No. I am curious."]
+    - ["#2 say That is the correct response."]
+    - ["#1 say What will YOU become?"]
+    - ["#2 emote grins wider than the conversation seems to warrant"]
+    - ["#2 say I expect I will become more of what I am. That is a kind of transformation too."]
+    - ["#1 emote exhales a slow thoughtful ring of smoke"]
+-
+  Supported:
+    "the cheshire cat": ["the caterpillar"]
+  Conversation:
+    - ["#1 say Do you ever answer your own question?"]
+    - ["#2 say Which question."]
+    - ["#1 say Who are you."]
+    - ["#2 emote is still for a long moment"]
+    - ["#2 say I have been a caterpillar for my entire life. Before that, I was an egg. Soon I will be something else."]
+    - ["#2 say Which of these is me?"]
+    - ["#1 say All of them. None of them. One particular one that you haven't decided yet."]
+    - ["#2 say That is either profound or unhelpful."]
+    - ["#1 say Most profound things are unhelpful. Most unhelpful things contain something profound. The overlap is the interesting part."]
+    - ["#2 emote exhales a smoke arrow pointing at the cat", "#2 say I will consider that."]

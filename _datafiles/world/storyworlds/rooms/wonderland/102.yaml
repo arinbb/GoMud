@@ -29,9 +29,53 @@ nouns:
   dodo: >-
     The Dodo is a plump, dignified bird with an air of confused authority. It
     seems to be organizing some kind of race that has no clear beginning or end.
+  shore: >-
+    A narrow strip of dry ground runs along the east wall, just wide enough to
+    stand on without getting your feet wet. The ledge is covered in a fine salt
+    crust -- dried tears, pooled and evaporated over an uncountable number of
+    crying sessions by an uncountable number of very large people.
+  reflection: >-
+    You look at your reflection in the still surface of the pool. The reflection
+    looks back. Then it does something you didn't do -- it tilts its head
+    slightly, as though considering you. Then it smiles. You did not smile.
+    When you look again, it is just a reflection.
+  bottle: >-
+    A small glass bottle bobs in the pool, sealed with a cork. Inside is a
+    rolled paper that reads: "The best way out is always through. The second best
+    way out is sometimes back the way you came, if you can remember which way that is."
+  creatures: >-
+    A procession of wet and indignant animals crowds the dry ledge: the Mouse,
+    the Dodo, a Lory who keeps insisting it is older and therefore wiser, an
+    Eaglet who has very little to say but says it with great conviction, and
+    a Duck who gets into a long argument with the Mouse about whether a French
+    lesson is the same thing as something dry. They are all very wet. They are
+    all very cross. They are managing both feelings at once with considerable dignity.
+  ledge: >-
+    The narrow dry ledge along the east wall is just wide enough for one person
+    and several animals if everyone squeezes. The salt crust along its edge
+    tells a story of many tides, many tears, many long afternoons of swimming
+    in grief. Someone scratched a small shape into the stone -- it looks like
+    a rabbit, or possibly a door, or possibly just a scratch.
+  sky: >-
+    Through the high windows along the hall, you can see a sky that is neither
+    inside nor outside. It is the color of recently cried tears -- not dark,
+    not bright, but a specific tender grey that means the worst is over but
+    the strange is only beginning.
+  lory: >-
+    The Lory is a large, colorful parrot perched on the ledge, ruffling its
+    feathers with maximum displeasure. It maintains that it is older than the Mouse
+    and therefore should speak first and be listened to longest. The Mouse disagrees.
+    The argument has been going on since before the pool existed.
 idlemessages:
 - The Mouse splashes past, muttering something about cats in French.
 - The Dodo announces that the Caucus-Race has begun. Or ended. It's unclear.
 - A wave laps at your feet, warm and salty. Someone must have been very sad indeed.
 - The birds swim in circles, occasionally bumping into each other and apologizing profusely.
 - You see your own reflection in the pool, but it seems to be a slightly different version of you.
+- The Mouse makes a sharp turn and begins swimming a figure-eight. The Dodo attempts to follow and collides with a Lory, who accepts the apology with great dignity.
+- Your reflection in the pool winks. You did not wink. You are now watching your reflection very carefully.
+- The Dodo clears its throat and announces that everyone has won and all must have prizes. The prizes are not specified.
+- The pool surface ripples even though nothing has touched it. Somewhere below, a memory is moving.
+- The Lory tells the Mouse it is older and therefore right. The Mouse tells the Lory it is wet. They are both correct.
+- A very small crab emerges from the pool onto the ledge, examines your shoes, and returns to the pool without comment.
+- The reflection in the pool has been watching you this whole time. It waves. You wave back. It keeps waving after you stop.

@@ -7,7 +7,7 @@ description: >-
   light spills from brass lanterns mounted along curving mahogany balustrades. A
   sweeping staircase spirals upward to the mezzanine level. The air hums with a
   quiet energy, as though the stories contained within these walls are alive and
-  waiting. A large oak <ansi fg="itemname">reception desk</ansi> stands at the center, and a worn leather <ansi fg="itemname">guestbook</ansi> lies open upon it. Book Stacks rise to the <ansi fg="exit">north</ansi>, the Screening Room glows to the <ansi fg="exit">east</ansi>, the Gallery hangs to the <ansi fg="exit">west</ansi>, and music drifts from the <ansi fg="exit">south</ansi>. A staircase leads <ansi fg="exit">up</ansi>. Side passages lead to the <ansi fg="exit">arcade</ansi> and <ansi fg="exit">trophy</ansi> room.
+  waiting. A large oak <ansi fg="itemname">reception desk</ansi> stands at the center, a worn leather <ansi fg="itemname">guestbook</ansi> open upon it.
 mapsymbol: A
 maplegend: Atrium
 biome: house
@@ -25,11 +25,9 @@ exits:
     exitmessage: You follow the sound of distant music down a corridor to the south.
   arcade:
     roomid: 8
-    mapdirection: southwest
     exitmessage: You follow the glow of CRT monitors through a side passage to the Arcade.
   trophy:
     roomid: 9
-    mapdirection: southeast
     exitmessage: You step into a warm, amber-lit alcove lined with glass shelves.
 nouns:
   desk: >-
@@ -44,7 +42,7 @@ nouns:
     belt hangs beside what looks like a dragon in flight, and the Big Dipper
     shares the sky with a compass rose made of stars.
 spawninfo:
-- mobid: 1
+- mobid: 100
   message: The Librarian quietly appears from behind a shelf.
   idlecommands:
   - say Welcome to the Grand Library. Books to the north, films to the east, art to the west, music to the south.
@@ -54,7 +52,6 @@ spawninfo:
   - emote adjusts their spectacles and peers at a dusty tome.
   - ""
   - wander
-  levelmod: 50
   respawnrate: 1 real minutes
 idlemessages:
 - A <ansi fg="mobname">visitor</ansi> crosses the atrium, their footsteps echoing softly on the marble floor.

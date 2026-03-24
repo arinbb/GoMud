@@ -33,6 +33,32 @@ nouns:
     The smoke from the hookah smells of flowers and something slightly
     medicinal. It forms shapes as it rises -- vowels mostly, but occasionally a
     question mark.
+  caterpillar: >-
+    The Caterpillar is a truly improbable creature -- about three inches tall,
+    bright blue, and smoking with the focused dedication of someone who has
+    resolved to be deeply unimpressed by everything. Its many legs are folded
+    beneath it. It has not blinked once since you arrived. You are not certain
+    it knows how.
+  spores: >-
+    Pale spores drift constantly from the mushroom caps, catching the filtered
+    light like slow-moving snow. Each spore contains something -- a fragment of
+    thought, a half-formed question, a color that doesn't have a name yet.
+    They settle on your eyelashes and disappear.
+  moss: >-
+    The ground is carpeted in moss so dense and soft it absorbs every footstep.
+    Tiny things live in it -- beetles in iridescent armor, ants carrying crumbs
+    larger than themselves, and something that might be a miniature door with a
+    miniature knocker.
+  path: >-
+    Several paths wind between the mushroom stalks. They seem straightforward
+    enough but double back in unexpected ways -- you can see both where you
+    started and where you might be going from the same point on each path.
+    The paths have opinions about which way you should go. They are wrong.
+  acorn: >-
+    A single large acorn sits in a hollow in the moss, the size of a footstool.
+    Its surface is carved with tiny letters that run in circles: WHO ARE YOU WHO
+    ARE YOU WHO ARE YOU, repeating without end or answer. The cap fits
+    perfectly. You could sit on it. The Caterpillar would find this deeply ironic.
 spawninfo:
 - mobid: 10
   message: The Caterpillar regards you with half-closed eyes from atop the mushroom.
@@ -43,6 +69,16 @@ spawninfo:
   - ""
   - emote blows a perfect smoke ring that forms the letter O.
   - ""
+  - say Explain yourself.
+  - ""
+  - say Keep your temper.
+  - ""
+  - emote exhales a long slow breath and watches it drift.
+  - ""
+  - say You will be something else before long. Most things are.
+  - ""
+  - say Ask me about mushrooms. Or identity. Or transformation.
+  - ""
   respawnrate: 2 real minutes
 idlemessages:
 - A mushroom spore drifts past your face, glowing faintly purple.
@@ -50,3 +86,10 @@ idlemessages:
 - Something small rustles through the moss at the base of a mushroom.
 - The mushroom caps seem to shift color slightly, like a slow-motion kaleidoscope.
 - A tiny door is visible at the base of the largest mushroom, barely an inch tall.
+- The Caterpillar exhales slowly and the smoke forms the words WHO ARE YOU before drifting apart.
+- A blade of grass bends toward you as you pass. Interested, perhaps. Or judgmental. Hard to say.
+- The light here is the color of questions -- amber and uncertain, filtered through caps of every impossible hue.
+- The hookah smoke forms a perfect question mark, then a period, then erases itself completely.
+- An ant emerges from the moss carrying a crumb larger than its head. It looks at you with great composure and carries on.
+- The mushroom you are standing nearest shifts its cap slightly, as if shrugging. No mushroom has ever shrugged before. This one has managed it.
+- 'From somewhere very high up, the Caterpillar speaks a single word: Exactly. You were not talking. Exactly.'
