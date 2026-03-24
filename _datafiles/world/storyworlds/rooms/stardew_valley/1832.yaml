@@ -3,16 +3,11 @@ zone: Stardew Valley
 title: Robins Carpenter Shop
 description: >-
   The smell of fresh sawdust and pine resin hits you before you reach the door.
-  Robin's shop is organized with a craftsperson's precision — <ansi
-  fg="itemname">wood</ansi> stacked and sorted by type, <ansi
-  fg="itemname">stone</ansi> in careful piles, <ansi
-  fg="itemname">blueprints</ansi> pinned to every surface. A large <ansi
-  fg="itemname">workbench</ansi> dominates the center, tools arranged around
+  Robin's shop is organized with a craftsperson's precision — <ansi fg="itemname">wood</ansi> stacked and sorted by type, <ansi fg="itemname">stone</ansi> in careful piles, <ansi fg="itemname">blueprints</ansi> pinned to every surface. A large <ansi fg="itemname">workbench</ansi> dominates the center, tools arranged around
   it like a constellation. Robin will build you anything you can afford: a
   coop, a barn, a well, a silo, a house extension. She says building is her
   form of love — she makes spaces for people to live in, and in that way she
-  is always present in her neighbors' lives. The town is <ansi
-  fg="exit">south</ansi>.
+  is always present in her neighbors' lives. The town is <ansi fg="exit">south</ansi>.
 mapsymbol: R
 maplegend: Robins Shop
 biome: house

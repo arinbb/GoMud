@@ -9,8 +9,7 @@ description: >-
   cheery <ansi fg="itemname">chalkboard</ansi> sign reads: "FRESH SPRING SEEDS
   — support local, not Joja!" Pierre's family <ansi fg="itemname">photo</ansi>
   hangs behind the counter — him, Caroline, and Abigail, all smiling. The shop
-  is everything JojaMart is not: personal, warm, alive. To the <ansi
-  fg="exit">south</ansi> the town square waits.
+  is everything JojaMart is not: personal, warm, alive. To the <ansi fg="exit">south</ansi> the town square waits.
 mapsymbol: P
 maplegend: Pierres Store
 biome: house

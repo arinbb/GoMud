@@ -8,9 +8,7 @@ description: >-
   something rotting in a gutter. A drunk is already asleep against the wall
   at midmorning. Workmen in sheepskin coats — somehow, even in this heat —
   move past with purpose. The lane opens to larger streets in several
-  directions: <ansi fg="exit">north</ansi> to Haymarket Square, <ansi
-  fg="exit">east</ansi> to the pawnbroker's building, <ansi
-  fg="exit">south</ansi> toward the canal, <ansi fg="exit">west</ansi> to the
+  directions: <ansi fg="exit">north</ansi> to Haymarket Square, <ansi fg="exit">east</ansi> to the pawnbroker's building, <ansi fg="exit">south</ansi> toward the canal, <ansi fg="exit">west</ansi> to the
   police station. The building entrance is <ansi fg="exit">up</ansi> the
   staircase.
 mapsymbol: L

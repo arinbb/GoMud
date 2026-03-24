@@ -13,8 +13,7 @@ description: >-
   No <ansi fg="8">mirror</ansi> above the hall table — only a pale rectangle on the
   wallpaper where one used to hang. Exits lead <ansi fg="exit">south</ansi> to the
   garden, <ansi fg="exit">east</ansi> to the dining room, <ansi fg="exit">north</ansi>
-  to the drawing room, <ansi fg="exit">west</ansi> to the kitchen, and <ansi
-  fg="exit">stairs</ansi> rise to the upper landing. A heavy <ansi fg="8">curtain</ansi>
+  to the drawing room, <ansi fg="exit">west</ansi> to the kitchen, and <ansi fg="exit">stairs</ansi> rise to the upper landing. A heavy <ansi fg="8">curtain</ansi>
   hangs beneath the staircase, concealing the wall behind it.
 mapsymbol: H
 maplegend: Entrance Hall

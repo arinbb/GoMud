@@ -10,8 +10,7 @@ description: >-
   in plastic cases. A sleek <ansi fg="itemname">CD player</ansi> with a blue
   display occupies a modern stand, surrounded by <ansi fg="itemname">jewel cases</ansi>.
   A pair of massive <ansi fg="itemname">headphones</ansi> hangs from a hook on the
-  wall. The room smells of warm vacuum tubes and old vinyl. The <ansi
-  fg="exit">atrium</ansi> is back to the north.
+  wall. The room smells of warm vacuum tubes and old vinyl. The <ansi fg="exit">atrium</ansi> is back to the north.
 mapsymbol: L
 maplegend: Listening Room
 biome: house

@@ -9,9 +9,17 @@ function onCommand(cmd, rest, user, room) {
         return true;
     }
 
-    if (cmd == "drink" || (cmd == "drink" && rest.indexOf("tea") >= 0)) {
-        SendUserMessage(user.UserId(), "<ansi fg=\"3\">You take a sip of tea. It tastes of everything and nothing at the same time. 'How do you like it?' asks the Hatter eagerly. Before you can answer, the March Hare shouts 'MOVE DOWN!' and everyone shuffles one seat to the left.</ansi>");
-        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " sips some tea and is immediately swept into the chaos of musical chairs.", user.UserId());
+    if (cmd == "drink") {
+        var easterKey = "wonderland_tea";
+        if (user.GetMiscCharacterData(easterKey) != "found") {
+            user.SetMiscCharacterData(easterKey, "found");
+            user.GrantXP(200, "attending the Mad Tea Party");
+            SendUserMessage(user.UserId(), "<ansi fg=\"3\">You take a sip of tea. It tastes of everything and nothing at the same time. The Hatter asks eagerly how you like it. Before you can answer, the March Hare shouts MOVE DOWN and everyone shuffles one seat to the left.</ansi>");
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(+200 XP — A very merry unbirthday to you.)</ansi>");
+        } else {
+            SendUserMessage(user.UserId(), "<ansi fg=\"3\">You sip more tea. The Hatter has moved on to asking the Dormouse about treacle wells.</ansi>");
+        }
+        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " sips some tea and is swept into the chaos of musical chairs.", user.UserId());
         return true;
     }
 

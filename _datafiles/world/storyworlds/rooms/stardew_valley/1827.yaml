@@ -8,8 +8,7 @@ description: >-
   floor to ceiling — not organized books, but working ones, open, annotated,
   stacked in towers of their own. A <ansi fg="itemname">crystal orb</ansi>
   on a brass stand catches and refracts the purple light. The Wizard stands
-  here, always, as if he never leaves. The forest is back to the <ansi
-  fg="exit">northeast</ansi>.
+  here, always, as if he never leaves. The forest is back to the <ansi fg="exit">northeast</ansi>.
 mapsymbol: W
 maplegend: Wizards Tower
 biome: house

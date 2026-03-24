@@ -2,14 +2,11 @@ roomid: 1826
 zone: Stardew Valley
 title: Marnies Ranch
 description: >-
-  The ranch sits in a sun-warmed clearing south of the forest. The <ansi
-  fg="itemname">barn</ansi> is large and painted red, smelling powerfully of <ansi fg="itemname">hay</ansi> and warm animals. A <ansi
-  fg="itemname">cow</ansi> stands near the fence, watching you with placid,
+  The ranch sits in a sun-warmed clearing south of the forest. The <ansi fg="itemname">barn</ansi> is large and painted red, smelling powerfully of <ansi fg="itemname">hay</ansi> and warm animals. A <ansi fg="itemname">cow</ansi> stands near the fence, watching you with placid,
   enormous eyes. <ansi fg="itemname">Chickens</ansi> pick at the yard. The
   ranch is full of the sounds and smells of working animal life — not glamorous,
   not mystical, just the honest labor of care. Marnie's counter is inside but
-  she is often elsewhere on the property. The forest path goes back <ansi
-  fg="exit">north</ansi>.
+  she is often elsewhere on the property. The forest path goes back <ansi fg="exit">north</ansi>.
 mapsymbol: M
 maplegend: Marnies Ranch
 biome: farmland

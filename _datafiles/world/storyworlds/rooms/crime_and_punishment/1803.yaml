@@ -10,8 +10,7 @@ description: >-
   fat, the canal. <ansi fg="itemname">Beggars</ansi> work the edges. A
   woman at a stall is selling something from a bucket that she ladles into cups
   for a kopek. Raskolnikov has walked through this square a hundred times and
-  every time it has felt like drowning in other people's lives. To the <ansi
-  fg="exit">south</ansi> the lane leads back toward his building. To the <ansi fg="exit">east</ansi>, a passage leads to a tavern.
+  every time it has felt like drowning in other people's lives. To the <ansi fg="exit">south</ansi> the lane leads back toward his building. To the <ansi fg="exit">east</ansi>, a passage leads to a tavern.
 mapsymbol: H
 maplegend: Haymarket Square
 biome: city

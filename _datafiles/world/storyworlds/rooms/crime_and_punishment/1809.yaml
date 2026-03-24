@@ -12,8 +12,7 @@ description: >-
   here is worse than the street because there is less air. Raskolnikov came
   here once during the fever and nearly confessed everything, standing in
   this room, and then fainted instead. The room remembers this. The lane
-  is to the <ansi fg="exit">east</ansi>. A passage leads <ansi
-  fg="exit">north</ansi> to the investigator's office.
+  is to the <ansi fg="exit">east</ansi>. A passage leads <ansi fg="exit">north</ansi> to the investigator's office.
 mapsymbol: Z
 maplegend: Police Station
 biome: house

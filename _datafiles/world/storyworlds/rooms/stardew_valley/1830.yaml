@@ -2,17 +2,12 @@ roomid: 1830
 zone: Stardew Valley
 title: The Mines Level 10
 description: >-
-  Roughly ten levels down, the mine opens into a wider chamber. <ansi
-  fg="itemname">Copper ore</ansi> veins run through the gray stone walls,
-  catching your torchlight in flashes of dull orange. <ansi
-  fg="itemname">Gems</ansi> of various kinds are embedded in the rock face —
-  amethyst, topaz, the faint blue glow of aquamarine. <ansi
-  fg="itemname">Slimes</ansi> of green and blue move through the far
-  shadows, bouncing with a horrible cheerfulness. The <ansi
-  fg="itemname">ladder</ansi> back up is ten minutes of climbing. Down here
+  Roughly ten levels down, the mine opens into a wider chamber. <ansi fg="itemname">Copper ore</ansi> veins run through the gray stone walls,
+  catching your torchlight in flashes of dull orange. <ansi fg="itemname">Gems</ansi> of various kinds are embedded in the rock face —
+  amethyst, topaz, the faint blue glow of aquamarine. <ansi fg="itemname">Slimes</ansi> of green and blue move through the far
+  shadows, bouncing with a horrible cheerfulness. The <ansi fg="itemname">ladder</ansi> back up is ten minutes of climbing. Down here
   the sounds of the surface world are completely gone. There is only the mine,
-  and the dark, and the ore waiting in the walls. The exit is <ansi
-  fg="exit">up</ansi>.
+  and the dark, and the ore waiting in the walls. The exit is <ansi fg="exit">up</ansi>.
 mapsymbol: '|'
 maplegend: Mines Level 10
 biome: cave

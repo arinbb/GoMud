@@ -2,15 +2,10 @@ roomid: 1825
 zone: Stardew Valley
 title: The Beach
 description: >-
-  The Pelican Town beach: fine gray sand, tide pools thick with <ansi
-  fg="itemname">sea creatures</ansi>, the rhythmic push and pull of the ocean. <ansi fg="itemname">Driftwood</ansi> lines the high-tide mark. <ansi
-  fg="itemname">Willys shack</ansi> sits at one end of the beach — a salt-worn
+  The Pelican Town beach: fine gray sand, tide pools thick with <ansi fg="itemname">sea creatures</ansi>, the rhythmic push and pull of the ocean. <ansi fg="itemname">Driftwood</ansi> lines the high-tide mark. <ansi fg="itemname">Willys shack</ansi> sits at one end of the beach — a salt-worn
   wooden structure with fishing poles and buoys hung outside. At the other end,
   just visible, is <ansi fg="itemname">Elliotts cabin</ansi> — a small,
-  romantic thing, a typewriter visible through the window. The fishing <ansi
-  fg="exit">pier</ansi> extends south into the water. The beach path goes <ansi
-  fg="exit">north</ansi> to town. The forest is back to the <ansi
-  fg="exit">west</ansi>.
+  romantic thing, a typewriter visible through the window. The fishing <ansi fg="exit">pier</ansi> extends south into the water. The beach path goes <ansi fg="exit">north</ansi> to town. The forest is back to the <ansi fg="exit">west</ansi>.
 mapsymbol: B
 maplegend: The Beach
 biome: shore

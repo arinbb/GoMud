@@ -8,8 +8,7 @@ description: >-
   depending on the season. The <ansi fg="itemname">old log</ansi> blocking the
   deeper path requires a proper axe to clear. Through the trees to the <ansi fg="exit">southwest</ansi>, a lone <ansi fg="itemname">tower</ansi> of
   dark stone rises above the canopy, its windows glowing faint purple. The
-  forest leads <ansi fg="exit">north</ansi> back to the farm, <ansi
-  fg="exit">south</ansi> to Marnies Ranch, and <ansi fg="exit">east</ansi>
+  forest leads <ansi fg="exit">north</ansi> back to the farm, <ansi fg="exit">south</ansi> to Marnies Ranch, and <ansi fg="exit">east</ansi>
   to the beach path.
 mapsymbol: C
 maplegend: Cindersap Forest

@@ -12,8 +12,16 @@ function onCommand(cmd, rest, user, room) {
     }
 
     if (cmd == "eat" && rest.indexOf("mushroom") >= 0) {
-        SendUserMessage(user.UserId(), "<ansi fg=\"magenta\">You nibble a piece of mushroom. For a dizzying moment, the world rushes away from you as you grow three feet taller. Then it settles. The effect fades. The Caterpillar watches with mild interest.</ansi>");
-        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " nibbles a piece of mushroom and suddenly shoots upward, growing impossibly tall for a moment before shrinking back to normal.", user.UserId());
+        var easterKey = "wonderland_mushroom";
+        if (user.GetMiscCharacterData(easterKey) != "found") {
+            user.SetMiscCharacterData(easterKey, "found");
+            user.GrantXP(200, "eating a Wonderland mushroom");
+            SendUserMessage(user.UserId(), "<ansi fg=\"magenta\">You nibble a piece of mushroom. For a dizzying moment, the world rushes away from you as you grow three feet taller. Then it settles. The effect fades. The Caterpillar watches with mild interest.</ansi>");
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(+200 XP — Eat me.)</ansi>");
+        } else {
+            SendUserMessage(user.UserId(), "<ansi fg=\"magenta\">You nibble another piece. The growing and shrinking is less surprising this time. The Caterpillar yawns.</ansi>");
+        }
+        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " nibbles a piece of mushroom and suddenly shoots upward before shrinking back to normal.", user.UserId());
         return true;
     }
 

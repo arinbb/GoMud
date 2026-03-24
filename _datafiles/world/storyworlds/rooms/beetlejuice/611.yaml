@@ -9,5 +9,9 @@ exits:
   south:
     roomid: 612
 idlemessages:
-- The fluorescent lights flicker in sequence down the corridor.
-- Your footsteps echo longer than they should.
+- The fluorescent lights flicker in sequence down the corridor, buzzing like angry insects.
+- Your footsteps echo longer than they should, as if the hallway is deciding whether to let you pass.
+- A door that was not there a moment ago appears in the wall, then fades back into plaster.
+- 'The number on the nearest door reads something impossible -- a fraction, or maybe a color.'
+- A faint smell of formaldehyde and old paper drifts from somewhere behind the walls.
+- The corridor seems longer when you look one direction and shorter when you look the other.
