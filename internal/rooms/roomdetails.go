@@ -112,6 +112,13 @@ func GetDetails(r *Room, user *users.UserRecord, tinymap ...[]string) RoomTempla
 		renderNouns = true
 	}
 
+	// Highlight nouns BEFORE splitting/map overlay to avoid breaking map ANSI tags
+	if renderNouns && len(r.Nouns) > 0 {
+		for noun := range r.Nouns {
+			details.Description = strings.Replace(details.Description, noun, `<ansi fg="noun">`+noun+`</ansi>`, 1)
+		}
+	}
+
 	if len(tinymap) > 0 {
 		desclineWidth := 80 - 7 // 7 is the width of the tinymap
 		padding := 2
@@ -130,27 +137,10 @@ func GetDetails(r *Room, user *users.UserRecord, tinymap ...[]string) RoomTempla
 			description[i] += strings.Repeat(` `, padAmount) + tinymap[0][i]
 		}
 
-		if renderNouns && len(r.Nouns) > 0 {
-			for i := range description {
-				for noun, _ := range r.Nouns {
-					description[i] = strings.Replace(description[i], noun, `<ansi fg="noun">`+noun+`</ansi>`, 1)
-				}
-			}
-		}
-
 		details.Description = strings.Join(description, "\n")
 	} else {
 
 		roomDesc := util.SplitString(details.Description, 80)
-
-		if renderNouns && len(r.Nouns) > 0 {
-			for i := range roomDesc {
-				for noun, _ := range r.Nouns {
-					roomDesc[i] = strings.Replace(roomDesc[i], noun, `<ansi fg="noun">`+noun+`</ansi>`, 1)
-				}
-			}
-		}
-
 		details.Description = strings.Join(roomDesc, "\n")
 	}
 
