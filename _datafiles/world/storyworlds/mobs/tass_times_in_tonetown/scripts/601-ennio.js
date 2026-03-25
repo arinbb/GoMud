@@ -54,7 +54,7 @@ function onAsk(mob, room, eventDetails) {
     ];
     var pick = Math.floor(Math.random() * defaults.length);
     mob.Command(defaults[pick]);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {

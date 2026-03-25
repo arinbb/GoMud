@@ -27,6 +27,6 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Hmm, I'm not sure about that. Try asking me about books, movies, art, or how to return home.");
-    return true;
+    // No keyword match — let AI handle it if available
+    return false;
 }

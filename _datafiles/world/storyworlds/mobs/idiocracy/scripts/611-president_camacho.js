@@ -41,7 +41,6 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote fires the weapon into the ceiling. Not at anyone.");
-    mob.Command("say WE GOT THIS.", 1.5);
-    return true;
+    // No keyword match — let AI handle it
+    return false;
 }
