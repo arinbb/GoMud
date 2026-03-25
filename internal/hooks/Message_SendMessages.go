@@ -21,9 +21,6 @@ func Message_SendMessage(e events.Event) events.ListenerReturn {
 		return events.Continue
 	}
 
-	// Word-wrap the message text before ANSI parsing (while still XML-style tags)
-	wrappedText := util.SplitStringNL(message.Text, 80)
-
 	if message.UserId > 0 {
 
 		if user := users.GetByUserId(message.UserId); user != nil {
@@ -33,7 +30,7 @@ func Message_SendMessage(e events.Event) events.ListenerReturn {
 				return events.Continue
 			}
 
-			textOut := templates.AnsiParse(wrappedText)
+			textOut := templates.AnsiParse(message.Text)
 			if user.ScreenReader {
 				textOut = util.StripCharsForScreenReaders(textOut)
 			}
@@ -86,7 +83,7 @@ func Message_SendMessage(e events.Event) events.ListenerReturn {
 					}
 				}
 
-				textOut := templates.AnsiParse(wrappedText)
+				textOut := templates.AnsiParse(message.Text)
 				if user.ScreenReader {
 					textOut = util.StripCharsForScreenReaders(textOut)
 				}

@@ -4,6 +4,7 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
 	"github.com/GoMudEngine/GoMud/internal/users"
+	"github.com/GoMudEngine/GoMud/internal/util"
 )
 
 // ////////////////////////////////////////////////////////
@@ -23,6 +24,7 @@ func SendUserMessage(userId int, message string) {
 	}
 
 	message = userTextWrap.Wrap(message)
+	message = util.SplitStringNL(message, 80)
 
 	u.SendText(message)
 }
