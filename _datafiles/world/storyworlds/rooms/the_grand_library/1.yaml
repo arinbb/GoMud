@@ -44,11 +44,13 @@ spawninfo:
   idlecommands:
   - say Welcome to the Grand Library. Every story here is a doorway.
   - ""
-  - 'say Look at the bookshelf, projector, wall, turntable, or console to browse titles.'
+  - say Type browse to explore our collection. Pick a category, then a title.
   - ""
   - emote adjusts their spectacles and peers at a dusty tome.
   - ""
-  - say Type collection to see how many worlds you have visited.
+  - say Head up the staircase to the Overlook Tower to see your souvenir collection.
+  - ""
+  - say Sign the guestbook if you like. Every visitor leaves a mark.
   - ""
   respawnrate: 1 real minutes
 - itemid: 101
