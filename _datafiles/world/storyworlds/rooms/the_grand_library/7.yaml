@@ -55,14 +55,20 @@ nouns:
     Massive over-ear headphones, the kind that seal out the world and
     let only the music in. The ear cups are padded with worn leather.
     Putting them on would be like stepping inside the sound itself.
+containers:
+  shelves: {}
 spawninfo:
 - itemid: 150
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 129
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 157
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 159
+  container: shelves
   respawnrate: 1 real minutes
 idlemessages:
 - The turntable platter rotates slowly, waiting for a record to play.

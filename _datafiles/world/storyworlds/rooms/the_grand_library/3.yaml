@@ -36,62 +36,92 @@ nouns:
   curtains: >-
     Heavy burgundy velvet curtains frame the room, muffling sound and creating
     an intimate atmosphere. They smell faintly of popcorn and old celluloid.
+containers:
+  shelves: {}
 spawninfo:
 - itemid: 103
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 104
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 106
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 108
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 109
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 122
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 126
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 127
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 128
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 132
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 142
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 141
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 144
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 145
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 146
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 147
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 148
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 149
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 151
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 152
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 153
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 156
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 162
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 161
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 158
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 164
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 166
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 168
+  container: shelves
   respawnrate: 1 real minutes
 idlemessages:
 - The projector lens catches the light and throws a tiny rainbow across the ceiling.

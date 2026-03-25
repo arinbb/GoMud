@@ -41,30 +41,44 @@ nouns:
     your fingers along the wood, you feel tiny figures of heroes, monsters, and
     ships beneath your touch. Type browse to see what is available, then get a
     book and read or use it to step inside that story.
+containers:
+  shelves: {}
 spawninfo:
 - itemid: 101
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 102
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 107
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 119
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 121
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 123
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 124
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 131
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 133
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 138
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 139
+  container: shelves
   respawnrate: 1 real minutes
 - itemid: 143
+  container: shelves
   respawnrate: 1 real minutes
 idlemessages:
 - A book near the top shelf slides out an inch on its own, then slowly pushes itself back in.
