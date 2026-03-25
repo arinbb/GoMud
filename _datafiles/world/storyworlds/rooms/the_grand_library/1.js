@@ -55,23 +55,18 @@ function onCommand(cmd, rest, user, room) {
         }
 
         SendUserMessage(user.UserId(), "");
-        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">===== Your Souvenir Collection =====</ansi>");
-        SendUserMessage(user.UserId(), "<ansi fg=\"stat\">Collected: " + collected + " of " + total + " worlds</ansi>");
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">===== Souvenir Collection =====</ansi>");
+        SendUserMessage(user.UserId(), "<ansi fg=\"stat\">Souvenirs found: " + collected + " of " + total + "</ansi>");
         SendUserMessage(user.UserId(), "");
 
         if (found.length > 0) {
-            SendUserMessage(user.UserId(), "<ansi fg=\"10\">Found:</ansi>");
             for (var j = 0; j < found.length; j++) {
                 SendUserMessage(user.UserId(), "  <ansi fg=\"10\">* " + found[j] + "</ansi>");
             }
         }
 
-        if (missing.length > 0) {
-            SendUserMessage(user.UserId(), "");
-            SendUserMessage(user.UserId(), "<ansi fg=\"8\">Not yet discovered:</ansi>");
-            for (var k = 0; k < missing.length; k++) {
-                SendUserMessage(user.UserId(), "  <ansi fg=\"8\">- " + missing[k] + "</ansi>");
-            }
+        if (collected == 0) {
+            SendUserMessage(user.UserId(), "  <ansi fg=\"8\">None yet. Explore a world and complete its quest to earn a souvenir.</ansi>");
         }
 
         SendUserMessage(user.UserId(), "");

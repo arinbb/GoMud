@@ -15,7 +15,7 @@ description: >-
   South continues to the end.
 mapsymbol: 'S'
 maplegend: Silverfuck
-biome: dungeon
+biome: house
 exits:
   north:
     roomid: 2330

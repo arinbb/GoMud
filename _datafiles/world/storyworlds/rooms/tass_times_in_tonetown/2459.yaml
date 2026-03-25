@@ -17,7 +17,7 @@ description: >-
   This place is the definition of the problem.
 mapsymbol: S
 maplegend: Toxic Swamp
-biome: swamp
+biome: land
 exits:
   north:
     roomid: 2458

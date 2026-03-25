@@ -15,7 +15,7 @@ description: >-
   only kind of honesty left.
 mapsymbol: '8'
 maplegend: Milk It
-biome: dungeon
+biome: house
 exits:
   west:
     roomid: 1107

@@ -11,7 +11,7 @@ description: >-
   is flooded and there is no going around it.
 mapsymbol: W
 maplegend: Leech Swamp
-biome: swamp
+biome: land
 exits:
   north:
     roomid: 2406

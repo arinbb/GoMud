@@ -16,7 +16,7 @@ description: >-
   know was clenched. That is the point.
 mapsymbol: B
 maplegend: Tourette's
-biome: dungeon
+biome: house
 exits:
   west:
     roomid: 1110

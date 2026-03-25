@@ -3,7 +3,7 @@ roomid: 1100
 autoscale:
   minimum: 1
   maximum: 5
-defaultbiome: dungeon
+defaultbiome: house
 mutators:
 - mutatorid: raw-noise
 idlemessages:

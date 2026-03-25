@@ -17,7 +17,7 @@ description: >-
   further <ansi fg="exit">east</ansi>.
 mapsymbol: H
 maplegend: Henbane River
-biome: swamp
+biome: land
 exits:
   north:
     roomid: 1841

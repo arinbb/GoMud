@@ -16,7 +16,7 @@ description: >-
   You can smell it getting closer.
 mapsymbol: '2'
 maplegend: Scentless Apprentice
-biome: dungeon
+biome: house
 exits:
   west:
     roomid: 1101

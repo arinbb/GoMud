@@ -14,7 +14,7 @@ description: >-
   flickering fluorescent tube makes everything the color of an old bruise.
 mapsymbol: H
 maplegend: Hibernation Chamber
-biome: dungeon
+biome: house
 exits:
   east:
     roomid: 2471

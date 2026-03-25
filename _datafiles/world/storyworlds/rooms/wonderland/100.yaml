@@ -11,7 +11,7 @@ description: >-
   The air smells of earth, curiosity, and the faintest hint of cake frosting.
 mapsymbol: R
 maplegend: Rabbit Hole
-biome: dungeon
+biome: house
 exits:
   north:
     roomid: 101
