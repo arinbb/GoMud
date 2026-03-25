@@ -25,6 +25,7 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/connections"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/flags"
+	"github.com/GoMudEngine/GoMud/internal/aiservice"
 	"github.com/GoMudEngine/GoMud/internal/gametime"
 	"github.com/GoMudEngine/GoMud/internal/hooks"
 	"github.com/GoMudEngine/GoMud/internal/inputhandlers"
@@ -193,6 +194,11 @@ func main() {
 	} else {
 		mudlog.Warn("Discord", "info", "integration is disabled")
 	}
+
+	// AI NPC dialogue integration
+	aiservice.Init()
+	aiservice.InitMemory(int(c.Integrations.AI.MemorySize))
+	aiservice.InitRateLimiter(int(c.Integrations.AI.RateLimit), int(c.Integrations.AI.RateWindow))
 
 	mudlog.Info(
 		"Starting server",

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/GoMudEngine/GoMud/internal/aiservice"
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/keywords"
@@ -130,7 +131,9 @@ func Ask(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 		rest = strings.Join(args, ` `)
 		if handled, err := scripting.TryMobScriptEvent(`onAsk`, mobId, user.UserId, `user`, map[string]any{"askText": rest}); err == nil {
 			if !handled {
-				mob.Command(`emote shakes their head.`)
+				if !aiservice.TryAIResponse(mob, user, rest) {
+					mob.Command(`emote shakes their head.`)
+				}
 			}
 		}
 
