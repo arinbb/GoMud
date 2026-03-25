@@ -59,6 +59,7 @@ func TryAIResponse(mob *mobs.Mob, user *users.UserRecord, question string) bool 
 	mobInstanceId := mob.InstanceId
 	mobName := mob.Character.Name
 	userId := user.UserId
+	roomId := mob.Character.RoomId
 	maxTokens := int(cfg.MaxTokens)
 	timeoutSecs := int(cfg.TimeoutSecs)
 	provider := GetProvider()
@@ -115,6 +116,10 @@ func TryAIResponse(mob *mobs.Mob, user *users.UserRecord, question string) bool 
 			})
 			turnOffset += 40 // ~2 seconds between lines (at 50ms/turn)
 		}
+
+		// Try to have another NPC in the room chime in
+		lastTurn := util.GetTurnCount() + 1 + turnOffset
+		TryChimeIn(roomId, mobInstanceId, userId, question, response, mobName, lastTurn)
 	}()
 
 	return true
