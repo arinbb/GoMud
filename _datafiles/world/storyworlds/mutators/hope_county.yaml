@@ -3,5 +3,5 @@ namemodifier:
   behavior: append
   text: (occupied)
 alertmodifier:
-  text: Somewhere in the distance, a congregation is singing. The hymn carries across the Montana air like smoke from a fire you cannot see.
+  text: A congregation sings in the distance. The hymn carries like smoke.
   colorpattern: red

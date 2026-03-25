@@ -4,7 +4,7 @@ namemodifier:
   text: (scorched)
   colorpattern: red
 alertmodifier:
-  text: The heat is immense here. The air above the rock shimmers and burns. You are very small in a very large oven.
+  text: The heat is immense. The air shimmers. You are very small.
   colorpattern: red
 decayrate: 15 minutes
 playerbuffids: []

@@ -4,5 +4,5 @@ namemodifier:
   text: (prehistoric)
   colorpattern: green
 alertmodifier:
-  text: A distant roar rolls across the island from somewhere deep in the jungle — low, physical, felt in the chest before it is heard.
+  text: A distant roar rolls across the island, felt before it is heard.
   colorpattern: red

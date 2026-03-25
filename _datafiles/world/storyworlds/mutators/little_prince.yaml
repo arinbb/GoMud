@@ -4,7 +4,7 @@ namemodifier:
   text: (essential)
   colorpattern: blue-white
 alertmodifier:
-  text: 'Something in the air here is different: quieter, clearer, as if the things that matter are slightly more visible than usual.'
+  text: The air here is quieter. Things that matter are more visible.
   colorpattern: blue-white
 decayrate: 30 minutes
 playerbuffids: []

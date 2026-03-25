@@ -8,5 +8,5 @@ descriptionmodifier:
   text: Everything here operates by a different logic. Go with it.
   colorpattern: rainbow
 alertmodifier:
-  text: 'Something is happening here that does not follow the rules. This is intentional.'
+  text: Something is happening that does not follow the rules.
   colorpattern: rainbow

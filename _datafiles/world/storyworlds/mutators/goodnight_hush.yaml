@@ -8,5 +8,5 @@ descriptionmodifier:
   text: The room is growing dimmer. The fire is lower. The night has fully arrived.
   colorpattern: blue-white
 alertmodifier:
-  text: The room settles around you, quieter now, the shadows in the corners soft and deep.
+  text: The room settles, quieter now, shadows soft and deep.
   colorpattern: blue-white
