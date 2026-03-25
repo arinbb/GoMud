@@ -40,8 +40,6 @@ containers:
   shelves: {}
 spawninfo:
 - itemid: 103
-  respawnrate: 1 real minutes
-- itemid: 103
   container: shelves
   respawnrate: 1 real minutes
 - itemid: 104
