@@ -204,6 +204,9 @@ func main() {
 	// Load all the data files up front.
 	loadAllDataFiles(false)
 
+	// Pre-populate all rooms so containers/mobs are ready before any player connects.
+	rooms.PrepareAllRooms()
+
 	mudlog.Info(`========================`)
 
 	mudlog.Info("Mapper", "status", "precaching")

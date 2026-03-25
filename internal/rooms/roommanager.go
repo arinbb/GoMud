@@ -838,3 +838,14 @@ func LoadDataFiles() {
 	}
 
 }
+
+// PrepareAllRooms pre-populates all rooms so items/mobs spawn immediately
+// on startup rather than waiting for the first player visit.
+// Must be called AFTER all data files (items, mobs, mutators) are loaded.
+func PrepareAllRooms() {
+	for roomId := range roomManager.roomIdToFileCache {
+		if r := LoadRoom(roomId); r != nil {
+			r.Prepare(false)
+		}
+	}
+}
