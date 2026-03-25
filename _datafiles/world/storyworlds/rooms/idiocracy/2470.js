@@ -5,20 +5,24 @@
 var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The film reel slides into the projector with a click. The projector hums. The screen fills with a bureaucratic grey wall and a row of steel pods and a fluorescent tube flickering in the dark of a military installation five hundred years abandoned. You can feel the cold. You can feel the dust. Then you step forward through the screen and the Screening Room is gone and you are standing in the most average morning in the history of the United States -- which is to say it is the morning of the year 2505 and everything you thought you knew is about thirty seconds from becoming wrong.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
-
-    if (user.HasQuest(460) == false) {
+    var visitedKey = "visited_idiocracy";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The film reel slides into the projector with a click. The projector hums. The screen fills with a bureaucratic grey wall and a row of steel pods and a fluorescent tube flickering in the dark of a military installation five hundred years abandoned. You can feel the cold. You can feel the dust. Then you step forward through the screen and the Screening Room is gone and you are standing in the most average morning in the history of the United States -- which is to say it is the morning of the year 2505 and everything you thought you knew is about thirty seconds from becoming wrong.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+        
+        if (user.HasQuest(460) == false) {
         user.GiveQuest(460);
-    }
-
-    var step = user.GetMiscCharacterData("idiocracy_quest_step");
-    if (step == "" || step == null) {
+        }
+        
+        var step = user.GetMiscCharacterData("idiocracy_quest_step");
+        if (step == "" || step == null) {
         user.SetMiscCharacterData("idiocracy_quest_step", "1");
+        }
+        
     }
-
     return false;
 }
 
@@ -27,6 +31,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The fluorescent light flickers one last time and the cold underground air loses its grip. The grey concrete wall flattens into projection white and then you are back in the Screening Room and the film reel is clicking to its end and the screen is blank. The projector hum fades. The Screening Room is warm and quiet and smells of popcorn and you stand in it for a moment thinking about crops dying in Brawndo spray and what electrolytes actually are. You do not know what electrolytes are. Neither does anyone in 2505. This turns out to matter.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " looks around the chamber one last time, and then is simply back in the Library, carrying something unresolved.", user.UserId());
+        user.SetTempData("visited_idiocracy", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }

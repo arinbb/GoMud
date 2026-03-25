@@ -3,11 +3,15 @@
 var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"10\">You insert the disc and the screen expands outward. Pixel art dissolves into smells: fresh earth, morning dew, wood smoke from a farmhouse chimney. A letter sits on the porch railing. It is addressed to you. The valley is waiting.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
-    user.GiveQuest(190);
+    var visitedKey = "visited_stardew_valley";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"10\">You insert the disc and the screen expands outward. Pixel art dissolves into smells: fresh earth, morning dew, wood smoke from a farmhouse chimney. A letter sits on the porch railing. It is addressed to you. The valley is waiting.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+        user.GiveQuest(190);
+    }
     return false;
 }
 
@@ -17,6 +21,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"10\">The farm fades into morning light. The smell of fresh earth gives way to the smell of old books. You find yourself back in the Grand Library, the game disc warm in your hand.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " shimmers and fades like morning dew, dissolving back through the screen.", user.UserId());
+        user.SetTempData("visited_stardew_valley", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }

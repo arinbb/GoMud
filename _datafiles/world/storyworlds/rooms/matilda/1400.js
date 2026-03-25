@@ -8,6 +8,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The television screen flickers and swells, filling your vision with white noise. The garish wallpaper peels away like pages turning backward, and the smell of cheap perfume and microwave dinners fades into the warm scent of old books. The Grand Library reassembles around you.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " is swallowed by the television static, flickering and dissolving until only the smell of books remains.", user.UserId());
+        user.SetTempData("visited_matilda", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }
@@ -39,14 +40,18 @@ function onCommand(cmd, rest, user, room) {
 }
 
 function onEnter(user, room) {
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">The smell of cheap hair dye and microwave dinners hits you like a wall. A television blares at deafening volume. You are standing in the most tasteless living room in England, surrounded by garish wallpaper and foil dinner trays. Welcome to the Wormwood household — where books are a waste of time and cleverness is a disease.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
-
-    if (!user.HasQuest(100)) {
+    var visitedKey = "visited_matilda";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">The smell of cheap hair dye and microwave dinners hits you like a wall. A television blares at deafening volume. You are standing in the most tasteless living room in England, surrounded by garish wallpaper and foil dinner trays. Welcome to the Wormwood household — where books are a waste of time and cleverness is a disease.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+        
+        if (!user.HasQuest(100)) {
         user.GiveQuest(100);
+        }
+        
     }
-
     return false;
 }

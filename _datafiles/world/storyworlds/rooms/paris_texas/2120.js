@@ -9,6 +9,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"red\">The red earth dissolves. The bleached sky tears apart at the seams. The wind dies. For a moment there is nothing — not even darkness, just the absence of landscape — and then the warm smell of old books closes around you and you are back in the Screening Room, the film reel cooling in the projector.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " walks east until the desert swallows them whole. Then the desert closes. Then there is nothing.", user.UserId());
+        user.SetTempData("visited_paris_texas", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }
@@ -30,14 +31,17 @@ function onCommand(cmd, rest, user, room) {
 }
 
 function onEnter(user, room) {
-
-    if (!user.HasQuest(QUEST_ID)) {
+    var visitedKey = "visited_paris_texas";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        if (!user.HasQuest(QUEST_ID)) {
         user.GiveQuest(QUEST_ID);
+        }
+        
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"red\">The film reel loads and the projector hums. The screen fills with red. Just red — earth and sky and the shimmer of heat. Then a figure appears at the edge of the frame, walking. He has no destination. He has been walking for four years. The image swells until it is everything, and the projector sound falls away behind you, and the heat of the Texas desert lands on your skin like a hand. You are here. Wherever here is.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
     }
-
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"red\">The film reel loads and the projector hums. The screen fills with red. Just red — earth and sky and the shimmer of heat. Then a figure appears at the edge of the frame, walking. He has no destination. He has been walking for four years. The image swells until it is everything, and the projector sound falls away behind you, and the heat of the Texas desert lands on your skin like a hand. You are here. Wherever here is.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
     return false;
 }

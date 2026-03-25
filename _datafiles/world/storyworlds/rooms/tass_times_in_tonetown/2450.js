@@ -3,15 +3,19 @@
 var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"magenta\">The game disc slides into the console. The screen erupts with angular neon shapes -- magenta, electric blue, a green that has strong opinions. A hoop of light assembles itself from the center of the screen outward, buzzing with dimensional energy. The room smells of electricity and something sweet. Then the hoop fills the whole screen and you are not watching anymore. You are on the other side of it, standing in a small cabin that smells of wood smoke and invention, a glowing iron hoop on the wall ahead, a dog looking at you with expectant certainty.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
-
-    if (user.HasQuest(450) == false) {
+    var visitedKey = "visited_tass_times_in_tonetown";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"magenta\">The game disc slides into the console. The screen erupts with angular neon shapes -- magenta, electric blue, a green that has strong opinions. A hoop of light assembles itself from the center of the screen outward, buzzing with dimensional energy. The room smells of electricity and something sweet. Then the hoop fills the whole screen and you are not watching anymore. You are on the other side of it, standing in a small cabin that smells of wood smoke and invention, a glowing iron hoop on the wall ahead, a dog looking at you with expectant certainty.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+        
+        if (user.HasQuest(450) == false) {
         user.GiveQuest(450);
+        }
+        
     }
-
     return false;
 }
 
@@ -20,6 +24,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The hoop on the wall pulses once, magenta-bright. The cabin air thickens and goes sweet-electric. You step back through the shimmer and land in the Arcade, the console's screen fading from neon to black, the smell of Tonetown still faintly in your clothes.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " steps toward the glowing hoop, shimmers at its edges, and is gone.", user.UserId());
+        user.SetTempData("visited_tass_times_in_tonetown", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }

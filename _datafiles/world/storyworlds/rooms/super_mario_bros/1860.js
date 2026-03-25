@@ -3,16 +3,20 @@
 var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"10\">You insert the cartridge. The screen fills with blue sky and green ground. A small man in a red hat appears, and the most famous four notes in gaming history play: dun dun dun DUN. The pixels expand. The pixels are everywhere. You are standing on brown brick in the most famous place in gaming history. World 1-1. Start.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
-
-    if (user.HasQuest(210) == false) {
+    var visitedKey = "visited_super_mario_bros";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"10\">You insert the cartridge. The screen fills with blue sky and green ground. A small man in a red hat appears, and the most famous four notes in gaming history play: dun dun dun DUN. The pixels expand. The pixels are everywhere. You are standing on brown brick in the most famous place in gaming history. World 1-1. Start.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+        
+        if (user.HasQuest(210) == false) {
         user.GiveQuest(210);
         user.Command("queststart 210");
+        }
+        
     }
-
     return false;
 }
 
@@ -22,6 +26,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"10\">The blue sky and green ground pixelate and dissolve. The music descends one last note. The cartridge slot opens. You are back in the Arcade, the game disc warm in your hand, the cheerful primary colors fading from your vision.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " pixelates briefly, a shimmer of primary colors, then is gone -- back to the Library.", user.UserId());
+        user.SetTempData("visited_super_mario_bros", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }

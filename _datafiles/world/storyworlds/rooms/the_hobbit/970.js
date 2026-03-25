@@ -8,6 +8,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The round green door of Bag End swings shut behind you. The cozy hobbit-hole dissolves into swirling ink and parchment. Pages flutter past like autumn leaves, and with a gentle thud you find yourself back in the Grand Library, the book closed in your hands.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " steps through the round green door and dissolves into a swirl of ink and parchment, vanishing back to the Library.", user.UserId());
+        user.SetTempData("visited_the_hobbit", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }
@@ -48,9 +49,13 @@ function onCommand(cmd, rest, user, room) {
 }
 
 function onEnter(user, room) {
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">You open the book and the pages begin to turn on their own. Ink swirls up from the words, forming shapes -- green hills, a round door, the smell of seed-cakes. The library fades. You are falling through a tunnel of handwritten text and watercolor illustrations, and then you land, gently, on a warm hearthrug...</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+    var visitedKey = "visited_the_hobbit";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">You open the book and the pages begin to turn on their own. Ink swirls up from the words, forming shapes -- green hills, a round door, the smell of seed-cakes. The library fades. You are falling through a tunnel of handwritten text and watercolor illustrations, and then you land, gently, on a warm hearthrug...</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+    }
     return false;
 }

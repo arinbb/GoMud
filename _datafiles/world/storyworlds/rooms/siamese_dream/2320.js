@@ -9,14 +9,18 @@
 var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"8\">...tape hiss...</ansi>");
-    SendUserMessage(user.UserId(), "<ansi fg=\"13\">A wall of distorted guitar detonates against you -- layered and massive and beautiful -- and the Listening Room dissolves into static and heat. You are standing in a recording studio in Atlanta. The summer of 1993. The air conditioning is broken and the tape is rolling and something extraordinary is happening, despite everything.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
-
-    if (!user.HasQuest(390)) {
+    var visitedKey = "visited_siamese_dream";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"8\">...tape hiss...</ansi>");
+        SendUserMessage(user.UserId(), "<ansi fg=\"13\">A wall of distorted guitar detonates against you -- layered and massive and beautiful -- and the Listening Room dissolves into static and heat. You are standing in a recording studio in Atlanta. The summer of 1993. The air conditioning is broken and the tape is rolling and something extraordinary is happening, despite everything.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+        
+        if (!user.HasQuest(390)) {
         user.GiveQuest(390);
+        }
     }
     return false;
 }
@@ -27,6 +31,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"13\">The guitar layers peel away one by one until there is nothing left but tape hiss, and the hiss fades to silence, and you are back in the Grand Library with the smell of warm electronics still in your nose.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " dissolves into a wash of purple guitar distortion, fading back to the Library.", user.UserId());
+        user.SetTempData("visited_siamese_dream", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }

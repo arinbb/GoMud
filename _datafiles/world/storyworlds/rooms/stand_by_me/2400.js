@@ -3,15 +3,19 @@
 var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"10\">The film reel threads through the projector. The screen fills with a wide shot of a small Oregon town in summer -- a water tower, a barbershop, a kid on a bicycle, everything burnished gold. Then the camera tilts up into the branches of an oak tree and you feel the wood under your feet and the heat of the afternoon through the planks and the whole improbable warmth of being twelve years old in 1959 and thinking you have forever. The Screening Room is gone. Castle Rock is not.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
-
-    if (user.HasQuest(430) == false) {
+    var visitedKey = "visited_stand_by_me";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"10\">The film reel threads through the projector. The screen fills with a wide shot of a small Oregon town in summer -- a water tower, a barbershop, a kid on a bicycle, everything burnished gold. Then the camera tilts up into the branches of an oak tree and you feel the wood under your feet and the heat of the afternoon through the planks and the whole improbable warmth of being twelve years old in 1959 and thinking you have forever. The Screening Room is gone. Castle Rock is not.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+        
+        if (user.HasQuest(430) == false) {
         user.GiveQuest(430);
+        }
+        
     }
-
     return false;
 }
 
@@ -20,6 +24,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"10\">The light through the treehouse window shifts and flattens, the way projected light flattens when the reel runs out. The summer smell fades. The screen in the Screening Room is blank and white. The projector clicks to silence. You are back in the Grand Library. The treehouse is gone but the feeling -- the feeling lingers for a while.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " looks up from the treehouse window, and then is simply gone, like a memory you cannot hold.", user.UserId());
+        user.SetTempData("visited_stand_by_me", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }

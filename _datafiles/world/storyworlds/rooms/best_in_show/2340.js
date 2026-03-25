@@ -4,14 +4,18 @@ var LIBRARY_ROOM = 3;
 var QUEST_ID = 400;
 
 function onEnter(user, room) {
-    if (user.HasQuest(QUEST_ID) == false) {
+    var visitedKey = "visited_best_in_show";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        if (user.HasQuest(QUEST_ID) == false) {
         user.GiveQuest(QUEST_ID);
+        }
+        
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"8\">You thread the film reel. The image sharpens slowly: a convention center entrance in Philadelphia, November, fluorescent-lit, smelling of conditioning spray and dog treats. A Weimaraner near the registration desk stares at the volunteer with the focused patience of an apex predator told to sit and stay. A Bloodhound lumbers through the door with solemn purpose. Somewhere behind the banners a PA system crackles. The screen opens and you step forward and the smell is very specific and very real and you are in it now, in the middle of people who care enormously about dogs.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
     }
-
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"8\">You thread the film reel. The image sharpens slowly: a convention center entrance in Philadelphia, November, fluorescent-lit, smelling of conditioning spray and dog treats. A Weimaraner near the registration desk stares at the volunteer with the focused patience of an apex predator told to sit and stay. A Bloodhound lumbers through the door with solemn purpose. Somewhere behind the banners a PA system crackles. The screen opens and you step forward and the smell is very specific and very real and you are in it now, in the middle of people who care enormously about dogs.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
     return false;
 }
 
@@ -20,6 +24,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The entrance dissolves. The banners, the schedule board, the dogs on leads -- all folding back into celluloid. The Grand Library settles in around you, quiet and dogless.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " slips past the registration table and steps back through the screen to the Grand Library.", user.UserId());
+        user.SetTempData("visited_best_in_show", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }

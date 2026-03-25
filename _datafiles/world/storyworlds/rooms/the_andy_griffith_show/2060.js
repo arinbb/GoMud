@@ -4,21 +4,24 @@ var LIBRARY_ROOM = 1;
 var QUEST_ID = 310;
 
 function onEnter(user, room) {
-
-    if (!user.HasQuest(QUEST_ID)) {
+    var visitedKey = "visited_the_andy_griffith_show";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        if (!user.HasQuest(QUEST_ID)) {
         user.GiveQuest(QUEST_ID);
-    }
-
-    var porchKey = "andy_quest_porch";
-    if (user.GetMiscCharacterData(porchKey) != "done") {
+        }
+        
+        var porchKey = "andy_quest_porch";
+        if (user.GetMiscCharacterData(porchKey) != "done") {
         user.SetMiscCharacterData(porchKey, "done");
         user.Command("quest advance 310", 0);
+        }
+        
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"10\">You thread the film reel. For a moment there is only the soft mechanical sound of the projector finding its rhythm. Then: a screen door. It creaks open with the particular sound of a door that has opened the same way ten thousand summer evenings. Crickets rise up, slow and certain. A guitar strums softly -- nothing complicated, just a simple melody that knows exactly what it is. The image brightens and deepens: a front porch, two rocking chairs, fireflies beginning their slow blink in a yard full of honeysuckle and maple shade. A man in the near chair sets his guitar across his knees and looks up and smiles like he was expecting you. You step forward through the screen and the evening air closes warm around you and the screen door swings shut behind you and Mayberry is all there is.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
     }
-
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"10\">You thread the film reel. For a moment there is only the soft mechanical sound of the projector finding its rhythm. Then: a screen door. It creaks open with the particular sound of a door that has opened the same way ten thousand summer evenings. Crickets rise up, slow and certain. A guitar strums softly -- nothing complicated, just a simple melody that knows exactly what it is. The image brightens and deepens: a front porch, two rocking chairs, fireflies beginning their slow blink in a yard full of honeysuckle and maple shade. A man in the near chair sets his guitar across his knees and looks up and smiles like he was expecting you. You step forward through the screen and the evening air closes warm around you and the screen door swings shut behind you and Mayberry is all there is.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
     return false;
 }
 
@@ -28,6 +31,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"10\">The porch fades slowly -- fireflies last, winking out one by one -- and the Grand Library takes shape around you, warm and quiet and full of books. You can still feel the evening air on your face. You can still hear the guitar, faintly, if you try.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " stands up from the rocking chair, tips a wave toward Andy, and steps off the porch back to the Grand Library.", user.UserId());
+        user.SetTempData("visited_the_andy_griffith_show", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }

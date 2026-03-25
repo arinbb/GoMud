@@ -4,27 +4,31 @@ var LIBRARY_ROOM = 1;
 var QUEST_ID = 370;
 
 function onEnter(user, room) {
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"8\">...the needle finds the groove...</ansi>");
-    SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">A harmonica blooms from the spinning vinyl -- one long searching note -- and the Listening Room dissolves in a flood of warm gold light. You are standing on a California ranch in 1972. The wheat is tall and almost ready. The afternoon is going on forever. You are inside the album now.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
-
-    if (!user.HasQuest(QUEST_ID)) {
+    var visitedKey = "visited_harvest";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"8\">...the needle finds the groove...</ansi>");
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">A harmonica blooms from the spinning vinyl -- one long searching note -- and the Listening Room dissolves in a flood of warm gold light. You are standing on a California ranch in 1972. The wheat is tall and almost ready. The afternoon is going on forever. You are inside the album now.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+        
+        if (!user.HasQuest(QUEST_ID)) {
         user.GiveQuest(QUEST_ID);
-    }
-
-    // Quest step 5: Return to the ranch after walking all ten tracks
-    var tracksVisited = parseInt(user.GetMiscCharacterData("harvest_tracks_visited") || "0");
-    if (tracksVisited >= 10 && user.HasQuest(QUEST_ID)) {
+        }
+        
+        // Quest step 5: Return to the ranch after walking all ten tracks
+        var tracksVisited = parseInt(user.GetMiscCharacterData("harvest_tracks_visited") || "0");
+        if (tracksVisited >= 10 && user.HasQuest(QUEST_ID)) {
         user.GiveQuest(QUEST_ID);
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You have walked the whole ranch. All ten tracks. The harmonica, the pedal steel, the old man on his porch, the small dark room where the Needle played. You have heard it all and come back here to the fields in the golden afternoon where it started. The wheat is still heavy. The light is still long. The album ends. The ranch does not end.</ansi>");
         if (user.GetMiscCharacterData("souvenir_harvest") != "collected") {
-            user.SetMiscCharacterData("souvenir_harvest", "collected");
+        user.SetMiscCharacterData("souvenir_harvest", "collected");
         }
+        }
+        
     }
-
     return false;
 }
 
@@ -34,6 +38,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The harmonica phrase rises one last time, the pedal steel bends its long note toward silence, and the ranch dissolves into warm static. The golden light thins and fades. You are back in the Grand Library. The smell of wheat and woodsmoke still in your clothes.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " dissolves into a wash of pedal steel and golden light, fading back to the Library.", user.UserId());
+        user.SetTempData("visited_harvest", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }

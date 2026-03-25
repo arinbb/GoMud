@@ -3,27 +3,31 @@
 var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"10\">You open the picture book and the scent of warm milk and wool blankets rises from the pages. The illustrations glow faintly -- green walls, a red balloon, a fire dying down to coals. The pages turn themselves. Something in the room beyond is very quiet and very warm. You step through the last page and the library folds away behind you like a dream you were already forgetting.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
-
-    if (!user.HasQuest(110)) {
+    var visitedKey = "visited_goodnight_moon";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"10\">You open the picture book and the scent of warm milk and wool blankets rises from the pages. The illustrations glow faintly -- green walls, a red balloon, a fire dying down to coals. The pages turn themselves. Something in the room beyond is very quiet and very warm. You step through the last page and the library folds away behind you like a dream you were already forgetting.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+        
+        if (!user.HasQuest(110)) {
         user.GiveQuest(110);
         // Quest step 1: Enter the great green room
         user.Command("quest advance 110");
-    }
-
-    // Quest step 4: Find the little mouse (mouse spawns in 1500 too)
-    if (user.HasQuest(110) && !user.GetMiscCharacterData("gm_found_mouse")) {
+        }
+        
+        // Quest step 4: Find the little mouse (mouse spawns in 1500 too)
+        if (user.HasQuest(110) && !user.GetMiscCharacterData("gm_found_mouse")) {
         var mobs = room.GetMobs(233);
         if (mobs.length > 0) {
-            user.SetMiscCharacterData("gm_found_mouse", "true");
-            user.Command("quest advance 110");
-            SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">(Quest updated: you have found the little mouse.)</ansi>");
+        user.SetMiscCharacterData("gm_found_mouse", "true");
+        user.Command("quest advance 110");
+        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">(Quest updated: you have found the little mouse.)</ansi>");
         }
+        }
+        
     }
-
     return false;
 }
 
@@ -66,6 +70,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"blue\">The great green room sighs around you. The red balloon dips once, gently, as if nodding goodbye. The quiet old lady does not look up from her knitting, but her lips form one more word -- hush -- and the room dissolves into the smell of old paper. You are back in the Grand Library, the small picture book warm in your hands.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " grows still and blurry, like a room seen through half-closed eyes, and slowly disappears back to the Library.", user.UserId());
+        user.SetTempData("visited_goodnight_moon", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }

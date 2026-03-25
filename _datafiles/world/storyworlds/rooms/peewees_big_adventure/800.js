@@ -8,6 +8,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The colorful world of Pee-wee Herman dissolves around you like a pop-art painting melting in the rain. Toys, gadgets, and bicycles swirl into a kaleidoscope of color, then fade to the familiar quiet of the Grand Library.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " waves goodbye, spins around three times, and vanishes back to the Library.", user.UserId());
+        user.SetTempData("visited_peewees_big_adventure", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }
@@ -37,9 +38,13 @@ function onCommand(cmd, rest, user, room) {
 }
 
 function onEnter(user, room) {
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The world around you shifts and brightens impossibly. Colors become more vivid, edges become sharper, and everything takes on a toylike quality. You hear a bicycle bell, a cheerful laugh, and the clicking of an elaborate machine. You have entered the world of Pee-wee Herman.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+    var visitedKey = "visited_peewees_big_adventure";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The world around you shifts and brightens impossibly. Colors become more vivid, edges become sharper, and everything takes on a toylike quality. You hear a bicycle bell, a cheerful laugh, and the clicking of an elaborate machine. You have entered the world of Pee-wee Herman.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+    }
     return false;
 }

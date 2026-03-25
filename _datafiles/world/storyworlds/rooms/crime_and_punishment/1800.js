@@ -3,10 +3,14 @@
 var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The heavy book falls open and the smell hits you first: lime, sweat, the particular sourness of a room too small for a man too large in his thoughts. The heat of St. Petersburg in summer descends on you like a physical weight. The ceiling slopes. The walls are close. You are in a garret on the fourth floor of a building on Stolyarny Lane, and the city outside is yellow and loud and indifferent, and in this room a young man has been thinking thoughts that will not let him go.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+    var visitedKey = "visited_crime_and_punishment";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The heavy book falls open and the smell hits you first: lime, sweat, the particular sourness of a room too small for a man too large in his thoughts. The heat of St. Petersburg in summer descends on you like a physical weight. The ceiling slopes. The walls are close. You are in a garret on the fourth floor of a building on Stolyarny Lane, and the city outside is yellow and loud and indifferent, and in this room a young man has been thinking thoughts that will not let him go.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+    }
     return false;
 }
 
@@ -16,6 +20,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The stifling heat of the garret dissolves. The yellow walls and peeling paper blur into text on a page. The smell of lime and sweat gives way to old paper and binding glue. You are back in the Grand Library, Dostoevsky's novel heavy in your hands.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " grows translucent in the yellow St. Petersburg light, then fades like a fever breaking, gone back to the Library.", user.UserId());
+        user.SetTempData("visited_crime_and_punishment", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }

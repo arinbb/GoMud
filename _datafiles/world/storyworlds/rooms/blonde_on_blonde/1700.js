@@ -8,6 +8,7 @@ function onCommand(cmd, rest, user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The organ chord fades. The tape slows on its reel. Dylan looks up from the lyric sheet, nods once as if this was expected, and the studio dissolves into the smell of old vinyl and library dust. You are back in the Grand Library, the harmonica note still ringing in your inner ear.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " fades into a wash of tape hiss and organ, dissolving back to the Library.", user.UserId());
+        user.SetTempData("visited_blonde_on_blonde", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }
@@ -44,10 +45,14 @@ function onCommand(cmd, rest, user, room) {
 }
 
 function onEnter(user, room) {
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"8\">...the needle finds the groove...</ansi>");
-    SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">A harmonica wails once, high and aching, and the walls of the Listening Room dissolve into cigarette smoke and 1966 Nashville. You are standing in Columbia Studio A. Dylan is at the piano. The tape is rolling. You are inside the album now.</ansi>");
-    SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+    var visitedKey = "visited_blonde_on_blonde";
+    if (user.GetTempData(visitedKey) != "yes") {
+        user.SetTempData(visitedKey, "yes");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"8\">...the needle finds the groove...</ansi>");
+        SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">A harmonica wails once, high and aching, and the walls of the Listening Room dissolve into cigarette smoke and 1966 Nashville. You are standing in Columbia Studio A. Dylan is at the piano. The tape is rolling. You are inside the album now.</ansi>");
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
+    }
     return false;
 }
