@@ -3,14 +3,14 @@ zone: The Grand Library
 title: The Grand Library
 description: >-
   A vast circular chamber beneath a domed ceiling of painted constellations.
-  Warm brass lanterns cast golden light across mahogany shelves lining every
-  wall. The <ansi fg="cyan">bookshelf</ansi> holds novels and poetry. The
-  <ansi fg="red">projector</ansi> shelf holds film reels. A
-  <ansi fg="blue">painting</ansi> hangs on the west wall. The
-  <ansi fg="yellow">turntable</ansi> shelf holds vinyl and CDs. The
-  <ansi fg="magenta">console</ansi> holds game discs. A leather
-  <ansi fg="itemname">guestbook</ansi> lies open on the desk. A spiral
-  staircase leads <ansi fg="exit">up</ansi> to the Overlook Tower.
+  Warm brass lanterns cast golden light across mahogany shelves, a film
+  projector, a turntable, a painting, and a game console -- every medium
+  represented, every story a doorway. Type <ansi fg="command">browse</ansi>
+  to see all worlds, or <ansi fg="command">browse books</ansi>,
+  <ansi fg="command">browse films</ansi>, <ansi fg="command">browse music</ansi>,
+  <ansi fg="command">browse art</ansi>, or <ansi fg="command">browse games</ansi>.
+  A leather <ansi fg="itemname">guestbook</ansi> lies open on the desk. A
+  spiral staircase leads <ansi fg="exit">up</ansi> to the Overlook Tower.
 mapsymbol: L
 maplegend: Library
 biome: house
