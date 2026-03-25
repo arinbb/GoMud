@@ -42,5 +42,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("sfu_quest_kitchen", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">You have had dinner in the Fisher kitchen. The quest advances.</ansi>");
     }
-    return false;
+    return true;
 }

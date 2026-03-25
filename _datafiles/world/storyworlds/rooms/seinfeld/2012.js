@@ -42,5 +42,5 @@ function onCommand(cmd, rest, user, room) {
 
 function onEnter(user, room) {
     SendUserMessage(user.UserId(), "<ansi fg=\"8\">You are in the parking garage. Type 'search' or 'find car' to look for your vehicle. The car is here. Probably.</ansi>");
-    return false;
+    return true;
 }

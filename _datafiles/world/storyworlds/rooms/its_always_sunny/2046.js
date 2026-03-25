@@ -9,7 +9,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Quest updated: You have visited Charlie and Frank's apartment. The cat food is open. The pullout couch has never been folded back in. Frank Reynolds chose this. This is important information about the human condition.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

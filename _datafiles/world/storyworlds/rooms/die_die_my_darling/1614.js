@@ -81,5 +81,5 @@ function onEnter(user, room) {
         }
     }
 
-    return false;
+    return true;
 }

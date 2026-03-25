@@ -29,5 +29,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("sopranos_quest1", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">You have entered the Soprano house. The quest advances.</ansi>");
     }
-    return false;
+    return true;
 }

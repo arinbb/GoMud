@@ -8,7 +8,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"10\">The Community Center is abandoned but not empty. Something moves in the corners. Golden light drifts purposefully across the floor. The bundle boards on the walls list everything the valley could be again if someone cared enough to do the work. You read each one. You feel, strangely, like you could.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

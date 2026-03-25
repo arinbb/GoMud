@@ -22,5 +22,5 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"8\">You have arrived at the Trefoile house.</ansi>");
     }
-    return false;
+    return true;
 }

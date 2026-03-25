@@ -19,5 +19,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("cnp_q_staircase", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(Quest: You have ascended the pawnbroker's staircase.)</ansi>");
     }
-    return false;
+    return true;
 }

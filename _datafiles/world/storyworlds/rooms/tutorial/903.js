@@ -8,5 +8,5 @@ function onEnter(user, room) {
     SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Step through the portal to enter the Grand Library.</ansi>");
     SendUserMessage(user.UserId(), "<ansi fg=\"3\">Type <ansi fg=\"command\">portal</ansi> or <ansi fg=\"command\">swirling portal</ansi> to proceed.</ansi>");
 
-    return false;
+    return true;
 }

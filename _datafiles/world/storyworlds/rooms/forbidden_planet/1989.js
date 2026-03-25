@@ -43,5 +43,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("fp_q5_shaft", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(Quest update: You have descended into the Krell power shaft.)</ansi>");
     }
-    return false;
+    return true;
 }

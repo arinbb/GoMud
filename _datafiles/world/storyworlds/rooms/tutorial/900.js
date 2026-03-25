@@ -23,7 +23,7 @@ function onEnter(user, room) {
 
     mob.Command("say Welcome! Head <ansi fg=\"exit\">east</ansi> when you are ready to begin your adventure.", 1.0);
 
-    return false;
+    return true;
 }
 
 function onExit(user, room) {

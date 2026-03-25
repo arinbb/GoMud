@@ -26,5 +26,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("fp_q3_garden", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(Quest update: You have explored Altaira's garden.)</ansi>");
     }
-    return false;
+    return true;
 }

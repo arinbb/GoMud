@@ -3,7 +3,7 @@ var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
     if (!user.HasQuest(200)) {
-        return false;
+        return true;
     }
     var data = user.GetMiscCharacterData("fc5_quest_spread_eagle");
     if (data != "done") {
@@ -12,7 +12,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"10\">The Spread Eagle Bar. Resistance headquarters, last bar standing, the heart of what Hope County is fighting to remain. The country music hits you in the chest. Mary May looks up. You are here. That means something.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

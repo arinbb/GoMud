@@ -26,5 +26,5 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
     }
-    return false;
+    return true;
 }

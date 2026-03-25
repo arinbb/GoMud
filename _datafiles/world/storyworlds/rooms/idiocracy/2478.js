@@ -7,7 +7,7 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("idiocracy_quest_step", "5");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Quest updated: You met President Camacho.)</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

@@ -38,5 +38,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("buffalo66_bowlvisit", "visited");
         SendUserMessage(user.UserId(), "<ansi fg=\"12\">The bowling alley wraps around you like a dream you have had before. The light shifts blue to amber and back. The lanes stretch impossibly long. It is more beautiful than it has any right to be.</ansi>");
     }
-    return false;
+    return true;
 }

@@ -37,5 +37,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("ww_quest_step2", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(Quest: Visited Stan Mikita's Donuts.)</ansi>");
     }
-    return false;
+    return true;
 }

@@ -7,7 +7,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">You have reached the top of the story. Gozer waits. The Ghostbusters are on their way. Type 'say yes' or 'say no' when Gozer asks if you are a god.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

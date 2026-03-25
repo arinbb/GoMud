@@ -11,7 +11,7 @@ function onEnter(user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Quest: Best in Show -- You have entered the main ring. Find the judges table and witness the Best in Show competition.)</ansi>");
         }
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

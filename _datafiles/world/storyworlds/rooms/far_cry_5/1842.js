@@ -3,7 +3,7 @@ var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
     if (!user.HasQuest(200)) {
-        return false;
+        return true;
     }
     var data = user.GetMiscCharacterData("fc5_quest_falls_end");
     if (data != "done") {
@@ -12,7 +12,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"10\">Falls End. Still standing. You feel something release in your chest at the sight of the neon sign, the people moving with purpose, the resistance alive and working. It took effort to get here. It was worth the effort.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

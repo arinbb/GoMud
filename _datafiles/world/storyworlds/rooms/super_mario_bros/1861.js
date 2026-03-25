@@ -41,5 +41,5 @@ function onEnter(user, room) {
     if (user.HasQuest(210)) {
         user.Command("questadvance 210");
     }
-    return false;
+    return true;
 }

@@ -31,5 +31,5 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Quest started: The Monkey Wrench Gang. Follow the canyon country.)</ansi>");
         }
     }
-    return false;
+    return true;
 }

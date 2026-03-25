@@ -35,5 +35,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("ww_quest_step4", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(Quest: Met Alice Cooper backstage.)</ansi>");
     }
-    return false;
+    return true;
 }

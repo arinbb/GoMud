@@ -7,7 +7,7 @@ function onEnter(user, room) {
         user.Command("questadvance 210");
         user.Command("questadvance 210");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

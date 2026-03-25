@@ -3,7 +3,7 @@ var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
     // Quest completion check -- if all quest steps seen
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

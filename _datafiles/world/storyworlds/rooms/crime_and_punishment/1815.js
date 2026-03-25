@@ -56,5 +56,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("cnp_q_crossroads_visit", "seen");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Hint: At the crossroads, you can 'kneel' or 'kiss earth' to complete Raskolnikov's spiritual act.)</ansi>");
     }
-    return false;
+    return true;
 }

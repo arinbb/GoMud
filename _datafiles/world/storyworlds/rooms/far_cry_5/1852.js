@@ -3,7 +3,7 @@ var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
     if (!user.HasQuest(200)) {
-        return false;
+        return true;
     }
     var data = user.GetMiscCharacterData("fc5_quest_veterans");
     if (data != "done") {
@@ -12,7 +12,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"red\">The Veterans Center. Red light everywhere. The music barely audible and already in your chest. Jacob Seed is here, cleaning a rifle with the patience of someone who understands that most problems yield to patience. You understand why soldiers follow him. That doesn't make anything about this room better.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

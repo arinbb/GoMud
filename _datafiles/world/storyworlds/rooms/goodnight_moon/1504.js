@@ -11,7 +11,7 @@ function onEnter(user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">(Quest updated: you have found the little mouse.)</ansi>");
         }
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

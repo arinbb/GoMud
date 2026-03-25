@@ -30,5 +30,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("lp_visited_drunkard", "yes");
         user.Command("quest advance 230");
     }
-    return false;
+    return true;
 }

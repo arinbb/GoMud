@@ -8,7 +8,7 @@ function onEnter(user, room) {
     SendUserMessage(user.UserId(), "");
     SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">You come around the last bend in the pine road and the lake opens up before you -- dark green water, willow trees trailing their fingers in the surface, the sky doubled in the still water below. The bobbers float on their lines. The lunch pail sits in the shade. The afternoon has been going on for a long time and does not plan to stop. You have arrived at the most peaceful place in the world.</ansi>");
     SendUserMessage(user.UserId(), "");
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

@@ -9,7 +9,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Quest updated: You have found the scheme whiteboard. The DENNIS System is more elaborate than you expected and somehow worse.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

@@ -38,5 +38,5 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"8\">You sit down at the kitchen table. Jan does not look at you. She is watching the game. Jimmy hums something to himself. The meatloaf sits between you like a peace offering that no one wants. The fluorescent light buzzes. The Bills wallpaper watches.</ansi>");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">You have survived dinner at the Brown house. The game is on the TV — maybe you should watch it.</ansi>");
     }
-    return false;
+    return true;
 }

@@ -11,7 +11,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The T. Rex roar echoes through the rotunda. The banner falls. The bones rattle. And then, improbably, impossibly, you are still alive.</ansi>");
         SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">(Quest complete: Jurassic Park)</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

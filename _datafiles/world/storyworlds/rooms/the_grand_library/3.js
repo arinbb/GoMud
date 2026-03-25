@@ -7,7 +7,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">Film reels line the shelves — each one a world waiting to unspool.</ansi>");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">Type <ansi fg=\"command\">get <reel> shelf</ansi> to take one, then <ansi fg=\"command\">play</ansi> or <ansi fg=\"command\">use</ansi> it to enter that world.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

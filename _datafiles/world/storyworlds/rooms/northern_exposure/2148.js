@@ -9,7 +9,7 @@ function onEnter(user, room) {
         user.Command("questadvance 340");
     }
 
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

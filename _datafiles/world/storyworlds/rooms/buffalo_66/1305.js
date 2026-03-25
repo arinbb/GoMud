@@ -33,5 +33,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("buffalo66_house", "visited");
         SendUserMessage(user.UserId(), "<ansi fg=\"8\">You step into the Brown house and the air changes. It is warmer here but not warm. The television drones. Bills memorabilia watches you from every wall. No one looks up. No one says welcome home.</ansi>");
     }
-    return false;
+    return true;
 }

@@ -3,7 +3,7 @@ var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
     if (!user.HasQuest(200)) {
-        return false;
+        return true;
     }
     var data = user.GetMiscCharacterData("fc5_quest_holland");
     if (data != "done") {
@@ -12,7 +12,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Holland Valley. The golden wheat. The silos. John Seed's YES written on everything in sight. The valley is beautiful and occupied and you are here now, which changes the balance of the equation slightly.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

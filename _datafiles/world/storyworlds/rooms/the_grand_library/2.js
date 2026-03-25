@@ -7,7 +7,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">The shelves hold portal books — stories you can step inside.</ansi>");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">Type <ansi fg=\"command\">get <book> shelf</ansi> to take one, then <ansi fg=\"command\">read</ansi> or <ansi fg=\"command\">use</ansi> it to enter that world.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

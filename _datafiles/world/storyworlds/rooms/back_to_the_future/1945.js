@@ -10,7 +10,7 @@ function onEnter(user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The Enchantment Under the Sea. This is where it has to happen. George has to ask Lorraine to dance. The mirror ball spins. The band needs a guitar player. Everything is converging.</ansi>");
         }
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

@@ -7,7 +7,7 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("office_visited_michael", "yes");
         user.Command("quest 380 2", 0.5);
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

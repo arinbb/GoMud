@@ -29,5 +29,5 @@ function onEnter(user, room) {
     if (user.HasQuest(QUEST_ID)) {
         user.GiveQuest(QUEST_ID);
     }
-    return false;
+    return true;
 }

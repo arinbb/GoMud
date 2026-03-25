@@ -66,5 +66,5 @@ function onEnter(user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">This is the sandlot. Try 'play ball' or 'bat' to join the game.</ansi>");
         }
     }
-    return false;
+    return true;
 }

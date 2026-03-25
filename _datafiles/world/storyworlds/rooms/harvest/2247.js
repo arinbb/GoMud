@@ -34,5 +34,5 @@ function onEnter(user, room) {
         var count = parseInt(user.GetMiscCharacterData("harvest_tracks_visited") || "0") + 1;
         user.SetMiscCharacterData("harvest_tracks_visited", "" + count);
     }
-    return false;
+    return true;
 }

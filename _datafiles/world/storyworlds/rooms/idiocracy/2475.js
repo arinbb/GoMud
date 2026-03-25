@@ -24,7 +24,7 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("idiocracy_quest_step", "4");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Quest updated: You stood trial in the Courtroom of 2505.)</ansi>");
     }
-    return false;
+    return true;
 }
 
 function handleCourtEasterEgg(user, room) {

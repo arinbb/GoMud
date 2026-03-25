@@ -3,7 +3,7 @@ var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
     if (!user.HasQuest(200)) {
-        return false;
+        return true;
     }
     var data = user.GetMiscCharacterData("fc5_quest_church");
     if (data != "done") {
@@ -20,7 +20,7 @@ function onEnter(user, room) {
         user.GrantXP(5500, "Faced Joseph Seed at the Church of Eden's Gate");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(+5500 XP — Hope County)</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

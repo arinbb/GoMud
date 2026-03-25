@@ -44,5 +44,5 @@ function onCommand(cmd, rest, user, room) {
 function onEnter(user, room) {
     SendUserMessage(user.UserId(), "");
     SendUserMessage(user.UserId(), "<ansi fg=\"14\">You step upward and the ground falls away. The cypress tree shrinks below you. The village becomes a cluster of tiny rooftops. And the stars — the stars are everywhere, immense and blazing, turning around you in their eternal spirals.</ansi>");
-    return false;
+    return true;
 }

@@ -62,5 +62,5 @@ function onEnter(user, room) {
     SendUserMessage(user.UserId(), "<ansi fg=\"8\">The door closes behind you and you are in the booth. It is very small. The mirror fills the wall in front of you. On the other side of the glass, a woman sits in pink light. She is real. She is three feet away. She cannot see you.</ansi>");
     SendUserMessage(user.UserId(), "");
     SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">(Type 'talk' or 'speak' to pick up the receiver. Type 'return' to leave without speaking.)</ansi>");
-    return false;
+    return true;
 }

@@ -50,5 +50,5 @@ function onEnter(user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(You receive: a Krell metal disc.)</ansi>");
         }
     }
-    return false;
+    return true;
 }

@@ -7,7 +7,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The story recognizes you. The ballroom is exactly as it should be: chaotic, green, and delicious to at least one entity present.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

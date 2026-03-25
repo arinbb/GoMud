@@ -41,5 +41,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("seinfeld_q2_visited", "yes");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">(You have arrived at Monks Cafe. Order something.)</ansi>");
     }
-    return false;
+    return true;
 }

@@ -23,5 +23,5 @@ function onEnter(user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Quest: The Monkey Wrench Gang -- floated the river.)</ansi>");
         }
     }
-    return false;
+    return true;
 }

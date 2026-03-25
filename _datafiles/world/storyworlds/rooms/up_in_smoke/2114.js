@@ -40,5 +40,5 @@ function onEnter(user, room) {
         user.Command("questadvance 320");
     }
 
-    return false;
+    return true;
 }

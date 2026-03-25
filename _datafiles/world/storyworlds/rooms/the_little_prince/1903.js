@@ -42,5 +42,5 @@ function onEnter(user, room) {
     if (user.HasQuest(230) && user.GetMiscCharacterData("lp_visited_well") != "yes") {
         user.SetMiscCharacterData("lp_visited_well", "yes");
     }
-    return false;
+    return true;
 }

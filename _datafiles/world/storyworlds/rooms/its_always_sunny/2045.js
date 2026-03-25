@@ -9,7 +9,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">Quest updated: You have survived the Paddys Pub basement. The rats are real. Everything is real. Charlie works here every day. Let that sink in.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

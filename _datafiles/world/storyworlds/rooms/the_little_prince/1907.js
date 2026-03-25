@@ -31,5 +31,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("lp_visited_lamplighter", "yes");
         user.Command("quest advance 230");
     }
-    return false;
+    return true;
 }

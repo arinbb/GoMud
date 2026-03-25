@@ -69,5 +69,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("ww_quest_step5_entered", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The NO STAIRWAY sign is right there at eye level. It is the first thing you see. It is not a suggestion.</ansi>");
     }
-    return false;
+    return true;
 }

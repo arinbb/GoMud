@@ -68,5 +68,5 @@ function onEnter(user, room) {
     SendUserMessage(user.UserId(), "");
     SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You are in the Festivus room. The pole stands at the center. This is a holiday for the rest of us.</ansi>");
     SendUserMessage(user.UserId(), "<ansi fg=\"8\">(Type 'air grievances' to participate in the Airing of Grievances. Type 'feats of strength' for the feats.)</ansi>");
-    return false;
+    return true;
 }

@@ -10,7 +10,7 @@ function onEnter(user, room) {
         user.Command("quest advance 310", 0);
         SendUserMessage(user.UserId(), "<ansi fg=\"10\">(Quest advanced: A Day in Mayberry -- visited the courthouse)</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

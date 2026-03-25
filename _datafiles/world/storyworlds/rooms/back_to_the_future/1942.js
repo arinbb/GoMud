@@ -12,7 +12,7 @@ function onEnter(user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">A boy at the counter catches your eye -- hunched over a notebook, clearly nervous, clearly dreaming. That is George McFly. That is your father. And he does not know you exist yet.</ansi>");
         }
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

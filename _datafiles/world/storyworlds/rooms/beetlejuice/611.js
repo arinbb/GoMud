@@ -47,7 +47,7 @@ function onEnter(user, room) {
     SendUserMessage(user.UserId(), "");
     SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
     user.SetTempData("visited_afterlife", "true");
-    return false;
+    return true;
 }
 
 function onIdle(room) {

@@ -7,7 +7,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">Game discs and cartridges sit in the console — each one a world to play through.</ansi>");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">Type <ansi fg=\"command\">get <game> console</ansi> to take one, then <ansi fg=\"command\">play</ansi> or <ansi fg=\"command\">use</ansi> it to enter that world.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

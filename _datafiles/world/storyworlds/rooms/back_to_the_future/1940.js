@@ -15,7 +15,7 @@ function onEnter(user, room) {
         }
         
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

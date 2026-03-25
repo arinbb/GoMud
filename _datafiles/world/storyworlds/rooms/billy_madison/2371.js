@@ -20,7 +20,7 @@ function onEnter(user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(You receive: a lunch bag with a note from Carl)</ansi>");
         }
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

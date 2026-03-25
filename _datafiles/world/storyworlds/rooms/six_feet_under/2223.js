@@ -37,5 +37,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("sfu_quest_prep", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">You have seen the prep room. The quest advances.</ansi>");
     }
-    return false;
+    return true;
 }

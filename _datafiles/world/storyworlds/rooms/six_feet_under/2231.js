@@ -37,5 +37,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("sfu_quest_cemetery", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">You have come to the cemetery. The quest advances.</ansi>");
     }
-    return false;
+    return true;
 }

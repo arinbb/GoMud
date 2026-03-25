@@ -22,5 +22,5 @@ function onEnter(user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You have arrived in 1955. Hill Valley spreads out around you, scrubbed clean and full of postwar optimism. The courthouse clock tower looms ahead. This is where it all has to happen.</ansi>");
         }
     }
-    return false;
+    return true;
 }

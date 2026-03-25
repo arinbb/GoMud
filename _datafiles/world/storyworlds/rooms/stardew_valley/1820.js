@@ -12,7 +12,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
         user.GiveQuest(190);
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

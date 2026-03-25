@@ -40,5 +40,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("cnp_q_sonya", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(Quest: You have found Sonya Marmeladova.)</ansi>");
     }
-    return false;
+    return true;
 }

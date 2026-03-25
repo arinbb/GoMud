@@ -22,7 +22,7 @@ function onEnter(user, room) {
         user.GiveQuest(390);
         }
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

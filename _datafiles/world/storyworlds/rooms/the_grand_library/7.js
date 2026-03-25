@@ -7,7 +7,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">Vinyl records, CDs, and cassettes line the shelf — each one a world of sound you can enter.</ansi>");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">Type <ansi fg=\"command\">get <album> shelf</ansi> to take one, then <ansi fg=\"command\">play</ansi> or <ansi fg=\"command\">use</ansi> it to enter that world.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

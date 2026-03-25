@@ -22,5 +22,5 @@ function onEnter(user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You've arrived in the neighborhood. The sandlot is south. The whole summer is ahead of you.</ansi>");
         }
     }
-    return false;
+    return true;
 }

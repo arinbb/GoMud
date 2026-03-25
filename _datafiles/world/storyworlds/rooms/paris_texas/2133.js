@@ -21,5 +21,5 @@ function onEnter(user, room) {
     SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You step into the light and the projector image swallows you. The world goes amber and green and slightly overexposed. The sounds of the backyard — the projector clicking, the neighborhood, the evening — fall away. You are inside the film now. Inside the before.</ansi>");
     SendUserMessage(user.UserId(), "");
     SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' or 'back' to step back out of the film.)</ansi>");
-    return false;
+    return true;
 }

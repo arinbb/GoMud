@@ -7,7 +7,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">The story pulls tighter. The apartment is exactly as wrong as it should be. The refrigerator glows. Dana is home, if you can call it that anymore.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

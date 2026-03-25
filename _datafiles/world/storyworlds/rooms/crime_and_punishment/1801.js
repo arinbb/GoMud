@@ -18,5 +18,5 @@ function onEnter(user, room) {
     if (!user.HasQuest(180)) {
         user.GiveQuest(180);
     }
-    return false;
+    return true;
 }

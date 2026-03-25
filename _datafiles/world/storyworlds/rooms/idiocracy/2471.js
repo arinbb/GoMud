@@ -19,7 +19,7 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("idiocracy_quest_step", "2");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Quest updated: You survived the trash avalanche.)</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onIdle(room) {

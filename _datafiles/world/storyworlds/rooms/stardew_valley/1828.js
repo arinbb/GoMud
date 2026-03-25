@@ -8,7 +8,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">Willy nods as you walk onto the pier. He hands you a fishing rod without fanfare. 'Hold it like this,' he says. 'And wait. That is mostly what fishing is. Wait and pay attention.'</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

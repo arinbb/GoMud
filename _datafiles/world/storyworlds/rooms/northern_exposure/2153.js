@@ -43,5 +43,5 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(+200 XP -- discovered the catapult)</ansi>");
     }
 
-    return false;
+    return true;
 }

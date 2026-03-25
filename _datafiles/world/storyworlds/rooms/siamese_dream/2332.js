@@ -17,7 +17,7 @@ function onEnter(user, room) {
             user.SetMiscCharacterData("souvenir_siamese_dream", "collected");
         }
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

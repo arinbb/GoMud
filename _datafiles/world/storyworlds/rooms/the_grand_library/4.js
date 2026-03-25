@@ -7,7 +7,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">Paintings hang on the walls — some of them are doorways to the worlds they depict.</ansi>");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">Type <ansi fg=\"command\">get <painting> shelf</ansi> to take one, then <ansi fg=\"command\">enter</ansi> or <ansi fg=\"command\">use</ansi> it to step inside.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

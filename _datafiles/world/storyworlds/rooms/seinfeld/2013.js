@@ -58,5 +58,5 @@ function onCommand(cmd, rest, user, room) {
 function onEnter(user, room) {
     user.SetTempData("seinfeld_wait_count", 0);
     SendUserMessage(user.UserId(), "<ansi fg=\"8\">You enter the Chinese restaurant and give your name to the host. He writes it down. He says: five to ten minutes. You wait near the bench. The bench is full. You stand.</ansi>");
-    return false;
+    return true;
 }

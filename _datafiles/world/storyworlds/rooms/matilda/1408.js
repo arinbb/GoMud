@@ -43,5 +43,5 @@ function onEnter(user, room) {
     if (user.HasQuest(100)) {
         user.GiveQuest(100);
     }
-    return false;
+    return true;
 }

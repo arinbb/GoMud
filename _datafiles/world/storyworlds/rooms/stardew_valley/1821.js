@@ -8,7 +8,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"10\">You step into the town square and feel eyes on you -- not unfriendly, just curious. You are the newcomer. They know it. You know it. There is a particular warmth to being known in this way, if you stay long enough.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

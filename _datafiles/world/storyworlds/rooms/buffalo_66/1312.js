@@ -37,5 +37,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("buffalo66_wood", "visited");
         SendUserMessage(user.UserId(), "<ansi fg=\"8\">You step into Scott Wood's house and the air is stale with failure. The trophies gleam on the shelf, golden monuments to a life that peaked decades ago. The man in the recliner does not get up. He barely registers your presence. This is what happens after the last kick goes wide.</ansi>");
     }
-    return false;
+    return true;
 }

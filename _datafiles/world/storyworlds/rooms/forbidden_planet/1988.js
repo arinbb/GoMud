@@ -26,5 +26,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("fp_q4_lab", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(Quest update: You have entered the Krell laboratory.)</ansi>");
     }
-    return false;
+    return true;
 }

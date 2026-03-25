@@ -34,5 +34,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("wire_quest3", "done");
         user.GiveQuest(QUEST_ID);
     }
-    return false;
+    return true;
 }

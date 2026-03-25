@@ -13,5 +13,5 @@ function onCommand(cmd, rest, user, room) {
 function onEnter(user, room) {
     SendUserMessage(user.UserId(), "");
     SendUserMessage(user.UserId(), "<ansi fg=\"6\">You step into the quiet bedroom and feel the weight of a life lived in service. The shoe polish on the dresser. The pressed suit in the closet. The bed where a man sleeps briefly before rising again in the cold.</ansi>");
-    return false;
+    return true;
 }

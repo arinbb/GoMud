@@ -20,5 +20,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("fp_q2_robby", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(Quest update: You have met Robby and approached the house of Dr. Morbius.)</ansi>");
     }
-    return false;
+    return true;
 }

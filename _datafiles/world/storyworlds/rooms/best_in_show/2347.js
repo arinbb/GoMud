@@ -10,7 +10,7 @@ function onEnter(user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Quest: Best in Show -- You have met the judge. The Winners Circle is somewhere in the main show ring -- search carefully.)</ansi>");
         }
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

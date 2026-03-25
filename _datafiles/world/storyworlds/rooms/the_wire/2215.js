@@ -27,5 +27,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("souvenir_the_wire", "collected");
         user.GiveQuest(QUEST_ID);
     }
-    return false;
+    return true;
 }

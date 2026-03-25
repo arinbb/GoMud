@@ -32,5 +32,5 @@ function onCommand(cmd, rest, user, room) {
 }
 
 function onEnter(user, room) {
-    return false;
+    return true;
 }

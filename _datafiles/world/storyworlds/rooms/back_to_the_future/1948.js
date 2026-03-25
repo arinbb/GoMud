@@ -48,5 +48,5 @@ function onEnter(user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The blackboards. The DeLorean. The flux capacitor. This is where it all began. Doc Brown built the future here, one equation at a time.</ansi>");
         }
     }
-    return false;
+    return true;
 }

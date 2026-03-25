@@ -3,7 +3,7 @@ var LIBRARY_ROOM = 1;
 
 function onEnter(user, room) {
     if (!user.HasQuest(200)) {
-        return false;
+        return true;
     }
     var data = user.GetMiscCharacterData("fc5_quest_bliss");
     if (data != "done") {
@@ -12,7 +12,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"purple\">The Bliss fields. You are breathing it now. The edges of your vision are softer. The flowers are very beautiful. Faith is somewhere in them — or Faith's idea is somewhere in them — and the hymn she hums is in your chest before you realize you are hearing it.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

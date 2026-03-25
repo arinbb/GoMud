@@ -19,5 +19,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("cnp_q_haymarket", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(Quest: Haymarket Square visited.)</ansi>");
     }
-    return false;
+    return true;
 }

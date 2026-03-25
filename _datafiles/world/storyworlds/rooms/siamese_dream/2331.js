@@ -6,7 +6,7 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("quest_siamese_silverfuck", "visited");
         user.GiveQuest(QUEST_ID);
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

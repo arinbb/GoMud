@@ -40,7 +40,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"red\">The evidence of the attack is all around you. Something came here. Something invisible and enormous. It killed two men.</ansi>");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(Quest update: You have witnessed the aftermath of the monster attack.)</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onIdle(room) {

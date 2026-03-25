@@ -8,7 +8,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"10\">The door swings open into warmth and amber light. Gus sees you and raises a hand in greeting. Half the town is here. This is where the valley comes to rest at the end of the day -- to put things down for a while.</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

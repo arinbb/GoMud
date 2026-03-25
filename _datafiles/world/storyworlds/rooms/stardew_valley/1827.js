@@ -8,7 +8,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"purple\">The Wizard turns from his cauldron as if he has been expecting you. 'Ah. The new farmer. I have been watching the valley for many years. Something stirs when someone new arrives with genuine intent.' He pauses. 'Ask me about the Junimos. It will matter.'</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

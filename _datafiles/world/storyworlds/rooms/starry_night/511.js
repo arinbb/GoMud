@@ -53,5 +53,5 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You've discovered Vincent's hidden studio! The room hums with creative energy. Paintings lean against every wall, each one a window into another vision.</ansi>");
         user.GrantXP(200, "discovering the hidden studio");
     }
-    return false;
+    return true;
 }

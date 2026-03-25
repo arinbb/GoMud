@@ -7,7 +7,7 @@ function onEnter(user, room) {
         // Mark quest step for reaching the body
         // (quest engine tracks visit-based steps automatically)
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

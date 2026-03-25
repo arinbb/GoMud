@@ -17,7 +17,7 @@ function onCommand(cmd, rest, user, room) {
 
 function onEnter(user, room) {
     if (!user.HasQuest(220)) {
-        return false;
+        return true;
     }
     var step = user.GetMiscCharacterData("quest_220_step");
     if (!step) {
@@ -28,5 +28,5 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You settle into the camp. Hayduke hands you a beer without ceremony. Bonnie looks up from her journal and gives you the look she gives everyone who has earned their place here. The fire is low, the stars are out, the maps are spread on the flat rock. For a moment, in the smoke and the starlight and the smell of sage and campfire, the gang is complete. The dam is still standing. The work is not finished. But tonight, in this hidden place in the canyon, it feels possible.</ansi>");
     }
-    return false;
+    return true;
 }

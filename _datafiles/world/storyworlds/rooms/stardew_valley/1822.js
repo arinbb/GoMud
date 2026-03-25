@@ -8,7 +8,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"10\">The bell above the door chimes. Pierre looks up and his face opens into a genuine smile. 'The new farmer! Welcome. Let me know if you need anything -- seeds especially. Spring is short. Best not waste it.'</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

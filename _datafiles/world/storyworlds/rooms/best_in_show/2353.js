@@ -20,7 +20,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">Quest complete: Best in Show! You receive a Busy Bee dog toy as a souvenir of the Mayflower Kennel Club. (+250 XP)</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " steps into the Winners Circle. The spotlight is on them. The audience in the bleachers holds its breath.", user.UserId());
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

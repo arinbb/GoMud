@@ -17,7 +17,7 @@ function onCommand(cmd, rest, user, room) {
 
 function onEnter(user, room) {
     if (!user.HasQuest(220)) {
-        return false;
+        return true;
     }
     var step = user.GetMiscCharacterData("quest_220_step");
     if (step == "6") {
@@ -29,5 +29,5 @@ function onEnter(user, room) {
         user.GiveItem(CreateItem(230));
         user.GrantXP(5000, "The Monkey Wrench Gang");
     }
-    return false;
+    return true;
 }

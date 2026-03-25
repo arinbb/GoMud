@@ -26,7 +26,7 @@ function onEnter(user, room) {
 
     SendUserMessage(user.UserId(), "");
     SendUserMessage(user.UserId(), "<ansi fg=\"10\">The road is forward. The morning sky is pink and then blue. The music is playing. You know what happens next -- you have seen the flash-forwards, the quick cuts that show everyone's last moment, the whole family, all of them, going the way everything goes. You know this. And right now the road is empty and the music is playing and the sky is turning and you are in the car and you are alive. Right now. Right now. You are alive.</ansi>");
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

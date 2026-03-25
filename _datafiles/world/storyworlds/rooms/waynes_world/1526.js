@@ -32,5 +32,5 @@ function onEnter(user, room) {
         user.SetMiscCharacterData("ww_quest_step3", "done");
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">(Quest: Saw Crucial Taunt at the Gasworks.)</ansi>");
     }
-    return false;
+    return true;
 }

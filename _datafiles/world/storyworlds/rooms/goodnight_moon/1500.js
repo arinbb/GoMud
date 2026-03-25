@@ -28,7 +28,7 @@ function onEnter(user, room) {
         }
         
     }
-    return false;
+    return true;
 }
 
 function onIdle(room) {

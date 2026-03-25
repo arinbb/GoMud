@@ -10,7 +10,7 @@ function onEnter(user, room) {
             SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Quest: Best in Show -- You have registered at the hall. Explore the grooming area, the show ring, and meet the judge.)</ansi>");
         }
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

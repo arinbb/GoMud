@@ -12,7 +12,7 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Quest updated: Find the pudding.)</ansi>");
         user.Command("quest", 0);
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

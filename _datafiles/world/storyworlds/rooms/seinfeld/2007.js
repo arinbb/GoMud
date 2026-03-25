@@ -61,5 +61,5 @@ function onCommand(cmd, rest, user, room) {
 
 function onEnter(user, room) {
     SendUserMessage(user.UserId(), "<ansi fg=\"8\">You are in the soup stand. The rules are posted. Move quickly. Have exact change. Do not make conversation. Do not ask about the bread unless you want the bread, and if you want the bread, ask for it correctly.</ansi>");
-    return false;
+    return true;
 }

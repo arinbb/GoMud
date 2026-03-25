@@ -8,7 +8,7 @@ function onEnter(user, room) {
         user.Command("quest advance 110");
         SendUserMessage(user.UserId(), "<ansi fg=\"cyan\">(Quest updated: you have said goodnight to the kittens.)</ansi>");
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

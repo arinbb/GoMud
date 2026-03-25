@@ -24,7 +24,7 @@ function onEnter(user, room) {
             user.SetMiscCharacterData("souvenir_mtvs_the_state", "collected");
         }
     }
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {

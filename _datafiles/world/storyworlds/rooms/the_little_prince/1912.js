@@ -17,7 +17,7 @@ function onEnter(user, room) {
         user.Command("quest advance 230");
     }
 
-    return false;
+    return true;
 }
 
 function onCommand(cmd, rest, user, room) {
