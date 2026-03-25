@@ -1,8 +1,16 @@
 // The Grand Library — home room
-// Handles: guestbook, browse menus, enter by number
+// Handles: guestbook, cascading browse menu
 
 // All portal destinations organized by media type
 // Format: [display_name, room_id, ansi_color]
+var CATEGORIES = [
+    ["Books and Poetry", "books", "cyan"],
+    ["Films and Television", "films", "red"],
+    ["Music", "music", "yellow"],
+    ["Paintings and Visual Art", "paintings", "blue"],
+    ["Video Games", "games", "magenta"]
+];
+
 var BOOKS = [
     ["Alices Adventures in Wonderland", 100, "cyan"],
     ["The Odyssey", 200, "11"],
@@ -19,18 +27,17 @@ var BOOKS = [
 ];
 
 var FILMS = [
-    ["Blade Runner", 300, "12"],
-    ["The Princess Bride", 400, "11"],
     ["Beetlejuice", 600, "10"],
     ["Peewees Big Adventure", 800, "red"],
     ["The Shining", 950, "15"],
     ["Buffalo 66", 1300, "8"],
-    ["Jurassic Park", 1550, "9"],
     ["Waynes World", 1520, "cyan"],
+    ["Jurassic Park", 1550, "9"],
     ["Die Die My Darling", 1600, "5"],
     ["The Sopranos", 1720, "3"],
-    ["Back to the Future", 1940, "11"],
+    ["The Little Prince", 1900, "14"],
     ["Ghostbusters", 1920, "10"],
+    ["Back to the Future", 1940, "11"],
     ["Forbidden Planet", 1980, "14"],
     ["Seinfeld", 2000, "yellow"],
     ["Harold and Maude", 2020, "3"],
@@ -43,10 +50,10 @@ var FILMS = [
     ["Six Feet Under", 2220, "5"],
     ["The Office", 2300, "3"],
     ["Best in Show", 2340, "11"],
+    ["Billy Madison", 2360, "yellow"],
     ["MTVs The State", 2380, "magenta"],
     ["Stand By Me", 2400, "10"],
     ["The Sandlot", 2420, "9"],
-    ["Billy Madison", 2360, "yellow"],
     ["Idiocracy", 2470, "10"]
 ];
 
@@ -68,8 +75,21 @@ var GAMES = [
     ["Tass Times in Tonetown", 2450, "magenta"]
 ];
 
-// Track which menu the player last browsed
-function showMenu(user, title, items, menuKey) {
+function showCategories(user) {
+    user.SetTempData("library_menu", "categories");
+    SendUserMessage(user.UserId(), "");
+    SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">===== Browse the Library =====</ansi>");
+    SendUserMessage(user.UserId(), "");
+    for (var i = 0; i < CATEGORIES.length; i++) {
+        var num = i + 1;
+        SendUserMessage(user.UserId(), "  <ansi fg=\"stat\">" + num + ".</ansi> <ansi fg=\"" + CATEGORIES[i][2] + "\">" + CATEGORIES[i][0] + "</ansi>");
+    }
+    SendUserMessage(user.UserId(), "");
+    SendUserMessage(user.UserId(), "<ansi fg=\"3\">Type a number to browse that section.</ansi>");
+    SendUserMessage(user.UserId(), "");
+}
+
+function showTitles(user, title, items, menuKey) {
     user.SetTempData("library_menu", menuKey);
     SendUserMessage(user.UserId(), "");
     SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">===== " + title + " =====</ansi>");
@@ -80,25 +100,16 @@ function showMenu(user, title, items, menuKey) {
         SendUserMessage(user.UserId(), "  <ansi fg=\"stat\">" + pad + num + ".</ansi> <ansi fg=\"" + items[i][2] + "\">" + items[i][0] + "</ansi>");
     }
     SendUserMessage(user.UserId(), "");
-    SendUserMessage(user.UserId(), "<ansi fg=\"3\">Type a number to enter that world.</ansi>");
+    SendUserMessage(user.UserId(), "<ansi fg=\"3\">Type a number to enter that world, or 'browse' to go back.</ansi>");
     SendUserMessage(user.UserId(), "");
 }
 
-function getMenuItems(menuKey) {
+function getCategoryItems(menuKey) {
     if (menuKey == "books") return BOOKS;
     if (menuKey == "films") return FILMS;
     if (menuKey == "music") return MUSIC;
     if (menuKey == "paintings") return PAINTINGS;
     if (menuKey == "games") return GAMES;
-    if (menuKey == "all") {
-        var all = [];
-        for (var i = 0; i < BOOKS.length; i++) all.push(BOOKS[i]);
-        for (var j = 0; j < FILMS.length; j++) all.push(FILMS[j]);
-        for (var k = 0; k < MUSIC.length; k++) all.push(MUSIC[k]);
-        for (var l = 0; l < PAINTINGS.length; l++) all.push(PAINTINGS[l]);
-        for (var m = 0; m < GAMES.length; m++) all.push(GAMES[m]);
-        return all;
-    }
     return null;
 }
 
@@ -112,67 +123,40 @@ function enterWorld(user, room, name, destRoom) {
 
 function onCommand(cmd, rest, user, room) {
 
-    // Browse menus
-    if (cmd == "browse") {
-        if (rest == "" || rest == "all") {
-            showMenu(user, "All Worlds", getMenuItems("all"), "all");
-            return true;
-        }
-        if (rest == "books" || rest == "bookshelf" || rest == "book") {
-            showMenu(user, "Books and Poetry", BOOKS, "books");
-            return true;
-        }
-        if (rest == "films" || rest == "projector" || rest == "reels" || rest == "film" || rest == "movies" || rest == "movie") {
-            showMenu(user, "Films and Television", FILMS, "films");
-            return true;
-        }
-        if (rest == "music" || rest == "turntable" || rest == "records" || rest == "vinyl" || rest == "albums") {
-            showMenu(user, "Music", MUSIC, "music");
-            return true;
-        }
-        if (rest == "paintings" || rest == "wall" || rest == "art" || rest == "painting" || rest == "gallery") {
-            showMenu(user, "Paintings and Visual Art", PAINTINGS, "paintings");
-            return true;
-        }
-        if (rest == "games" || rest == "console" || rest == "game") {
-            showMenu(user, "Video Games", GAMES, "games");
-            return true;
-        }
-        // Default to all
-        showMenu(user, "All Worlds", getMenuItems("all"), "all");
+    // Browse — show categories (or go back to categories)
+    if (cmd == "browse" || cmd == "back") {
+        showCategories(user);
         return true;
     }
 
-    // Number selection — enter a world from the last browsed menu
+    // Number selection — context-dependent
     var num = parseInt(cmd);
     if (!isNaN(num) && num > 0) {
         var menuKey = user.GetTempData("library_menu");
-        if (menuKey != "" && menuKey != null) {
-            var items = getMenuItems(menuKey);
-            if (items != null && num <= items.length) {
-                var pick = items[num - 1];
-                enterWorld(user, room, pick[0], pick[1]);
+
+        // At the category level — pick a category
+        if (menuKey == "categories") {
+            if (num <= CATEGORIES.length) {
+                var catKey = CATEGORIES[num - 1][1];
+                var catName = CATEGORIES[num - 1][0];
+                var items = getCategoryItems(catKey);
+                showTitles(user, catName, items, catKey);
                 return true;
             } else {
-                SendUserMessage(user.UserId(), "<ansi fg=\"red\">No world at that number. Type browse to see the list.</ansi>");
+                SendUserMessage(user.UserId(), "<ansi fg=\"red\">No category at that number.</ansi>");
                 return true;
             }
         }
-    }
 
-    // Direct enter command
-    if (cmd == "enter" && rest != "") {
-        var num2 = parseInt(rest);
-        if (!isNaN(num2) && num2 > 0) {
-            var menuKey2 = user.GetTempData("library_menu");
-            if (menuKey2 != "" && menuKey2 != null) {
-                var items2 = getMenuItems(menuKey2);
-                if (items2 != null && num2 <= items2.length) {
-                    var pick2 = items2[num2 - 1];
-                    enterWorld(user, room, pick2[0], pick2[1]);
-                    return true;
-                }
-            }
+        // At a title level — enter the world
+        var items2 = getCategoryItems(menuKey);
+        if (items2 != null && num <= items2.length) {
+            var pick = items2[num - 1];
+            enterWorld(user, room, pick[0], pick[1]);
+            return true;
+        } else if (items2 != null) {
+            SendUserMessage(user.UserId(), "<ansi fg=\"red\">No title at that number. Type browse to go back.</ansi>");
+            return true;
         }
     }
 
