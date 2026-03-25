@@ -1,7 +1,7 @@
 itemid: 126
 name: Jurassic Park film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Jurassic Park</ansi>
+displayname: a film reel labeled <ansi fg="9">Jurassic Park</ansi>
 description: >-
   A large film reel in a battered aluminum canister, sun-faded amber sticker
   on the lid reading JURASSIC PARK — STEVEN SPIELBERG — UNIVERSAL PICTURES

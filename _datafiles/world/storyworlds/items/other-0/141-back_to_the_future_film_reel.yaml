@@ -1,7 +1,7 @@
 itemid: 141
 name: Back to the Future film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Back to the Future</ansi>
+displayname: a film reel labeled <ansi fg="11">Back to the Future</ansi>
 description: >-
   A chrome-edged film canister, lighter than it looks and faintly warm
   to the touch. "BACK TO THE FUTURE" is stenciled on the lid in red

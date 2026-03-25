@@ -1,7 +1,7 @@
 itemid: 152
 name: Northern Exposure film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Northern Exposure</ansi>
+displayname: a film reel labeled <ansi fg="cyan">Northern Exposure</ansi>
 description: >-
   A film reel in a battered metal canister, the latch slightly bent from cold
   weather, a sticker on the lid showing a cartoon moose standing in a road.

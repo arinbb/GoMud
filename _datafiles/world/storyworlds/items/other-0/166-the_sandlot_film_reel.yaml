@@ -1,7 +1,7 @@
 itemid: 166
 name: The Sandlot film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="yellow">The Sandlot</ansi>
+displayname: a film reel labeled <ansi fg="9">The Sandlot</ansi>
 description: >-
   A chrome-edged film canister, warm to the touch, smelling faintly of
   summer -- cut grass and red dirt and something sweet, like iced lemonade

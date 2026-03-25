@@ -1,7 +1,7 @@
 itemid: 142
 name: Ghostbusters film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Ghostbusters</ansi>
+displayname: a film reel labeled <ansi fg="10">Ghostbusters</ansi>
 description: >-
   A 35mm film reel in a battered metal canister marked with a hand-painted NO GHOST
   logo -- a cartoon ghost in a red circle with a line through it. The canister is

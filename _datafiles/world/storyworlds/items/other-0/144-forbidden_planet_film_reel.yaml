@@ -1,7 +1,7 @@
 itemid: 144
 name: Forbidden Planet film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Forbidden Planet</ansi>
+displayname: a film reel labeled <ansi fg="14">Forbidden Planet</ansi>
 description: >-
   A heavy film reel in a canister of polished aluminum with a faint green
   iridescence, as if the metal has absorbed something of the alien sky it

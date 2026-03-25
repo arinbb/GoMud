@@ -1,7 +1,7 @@
 itemid: 137
 name: Super Mario Bros game cartridge
 namesimple: cartridge
-displayname: a gray game cartridge labeled <ansi fg="itemname">Super Mario Bros</ansi>
+displayname: a gray game cartridge labeled <ansi fg="9">Super Mario Bros</ansi>
 description: >-
   A gray plastic NES cartridge, the size of a thick paperback, with a
   gold label showing Mario mid-jump against a blue sky, Bowser and Princess

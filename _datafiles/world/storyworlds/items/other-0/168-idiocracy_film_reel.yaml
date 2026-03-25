@@ -1,7 +1,7 @@
 itemid: 168
 name: Idiocracy film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="yellow">Idiocracy</ansi>
+displayname: a film reel labeled <ansi fg="10">Idiocracy</ansi>
 description: >-
   A chrome-edged film canister, slightly warm, smelling faintly of something
   chemical and citrus -- the particular smell of a world that replaced water

@@ -1,7 +1,7 @@
 itemid: 153
 name: The Wire film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">The Wire</ansi>
+displayname: a film reel labeled <ansi fg="8">The Wire</ansi>
 description: >-
   A film reel in a battered metal canister, the latch held shut with a strip of
   electrical tape. The label is hand-lettered in block capitals on masking tape:

@@ -1,7 +1,7 @@
 itemid: 143
 name: Nineteen Eighty-Four
 namesimple: book
-displayname: a battered paperback titled <ansi fg="itemname">Nineteen Eighty-Four</ansi>
+displayname: a battered paperback titled <ansi fg="8">Nineteen Eighty-Four</ansi>
 description: >-
   A slim paperback with a plain cover, its spine cracked from many readings.
   The title is printed in stark block letters on a white background. No

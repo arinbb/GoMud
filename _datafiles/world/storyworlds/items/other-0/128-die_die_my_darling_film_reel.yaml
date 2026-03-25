@@ -1,7 +1,7 @@
 itemid: 128
 name: Die Die My Darling film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Die! Die! My Darling!</ansi>
+displayname: a film reel labeled <ansi fg="5">Die! Die! My Darling!</ansi>
 description: >-
   A heavy film reel in a plain black canister. The title is stamped on the lid
   in plain block capitals: DIE! DIE! MY DARLING! Below the title, a small yellow

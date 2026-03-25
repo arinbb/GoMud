@@ -1,7 +1,7 @@
 itemid: 106
 name: Beetlejuice film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Beetlejuice</ansi>
+displayname: a film reel labeled <ansi fg="10">Beetlejuice</ansi>
 description: >-
   A 35mm film reel in a scuffed metal canister decorated with crude drawings of
   beetles and ghosts. The label reads "BEETLEJUICE" in dripping green letters.

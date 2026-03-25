@@ -1,7 +1,7 @@
 itemid: 147
 name: Its Always Sunny in Philadelphia film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Its Always Sunny in Philadelphia</ansi>
+displayname: a film reel labeled <ansi fg="yellow">Its Always Sunny in Philadelphia</ansi>
 description: >-
   A film reel in a scuffed, beer-sticky metal canister. "ITS ALWAYS SUNNY"
   is written on the lid in black marker, then someone crossed it out and

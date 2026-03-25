@@ -1,7 +1,7 @@
 itemid: 124
 name: Goodnight Moon
 namesimple: book
-displayname: a small picture book called <ansi fg="itemname">Goodnight Moon</ansi>
+displayname: a small picture book called <ansi fg="12">Goodnight Moon</ansi>
 description: >-
   A small, thin picture book, board-covered in pale green, the title stamped
   in simple letters. It is lighter than it looks. The corners are worn soft

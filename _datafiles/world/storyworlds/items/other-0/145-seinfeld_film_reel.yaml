@@ -1,7 +1,7 @@
 itemid: 145
 name: Seinfeld film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Seinfeld</ansi>
+displayname: a film reel labeled <ansi fg="yellow">Seinfeld</ansi>
 description: >-
   A film reel in a standard NBC canister, unremarkable in every material respect.
   The label reads SEINFELD in the clean sans-serif of network television. The

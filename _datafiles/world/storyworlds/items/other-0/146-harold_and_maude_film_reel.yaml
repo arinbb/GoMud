@@ -1,7 +1,7 @@
 itemid: 146
 name: Harold and Maude film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Harold and Maude</ansi>
+displayname: a film reel labeled <ansi fg="3">Harold and Maude</ansi>
 description: >-
   A film reel in a warm-worn canister, the metal handle polished smooth
   from handling. 'HAROLD AND MAUDE' is printed on the label in neat block

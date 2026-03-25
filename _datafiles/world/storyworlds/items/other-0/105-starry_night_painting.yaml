@@ -1,7 +1,7 @@
 itemid: 105
 name: Starry Night painting
 namesimple: painting
-displayname: a framed print of <ansi fg="itemname">Starry Night</ansi>
+displayname: a framed print of <ansi fg="12">Starry Night</ansi>
 description: >-
   A reproduction of Van Gogh's Starry Night in a simple wooden frame. The
   swirling blues and yellows seem impossibly vivid, more alive than any print

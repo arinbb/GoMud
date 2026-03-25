@@ -1,7 +1,7 @@
 itemid: 127
 name: Wayne's World film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Wayne's World</ansi>
+displayname: a film reel labeled <ansi fg="cyan">Wayne's World</ansi>
 description: >-
   A film reel in a canister that someone has decorated with stickers of guitars,
   rock logos, and the words "PARTY TIME EXCELLENT" in black marker, underlined

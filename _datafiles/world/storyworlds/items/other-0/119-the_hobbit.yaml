@@ -1,7 +1,7 @@
 itemid: 119
 name: The Hobbit
 namesimple: book
-displayname: a green cloth book titled <ansi fg="itemname">The Hobbit</ansi>
+displayname: a green cloth book titled <ansi fg="10">The Hobbit</ansi>
 description: >-
   A well-loved green cloth book with gold lettering on the cover and spine:
   "The Hobbit, or There and Back Again." The binding is cracked from many

@@ -1,7 +1,7 @@
 itemid: 139
 name: The Little Prince
 namesimple: book
-displayname: a slender book titled <ansi fg="itemname">The Little Prince</ansi>
+displayname: a slender book titled <ansi fg="14">The Little Prince</ansi>
 description: >-
   A slender volume with a pale cover, the kind of book that does not look
   like much until you open it. On the cover, drawn in simple lines, a small

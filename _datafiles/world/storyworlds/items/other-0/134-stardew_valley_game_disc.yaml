@@ -1,7 +1,7 @@
 itemid: 134
 name: Stardew Valley game disc
 namesimple: disc
-displayname: a game case containing <ansi fg="itemname">Stardew Valley</ansi>
+displayname: a game case containing <ansi fg="10">Stardew Valley</ansi>
 description: >-
   A game case in the familiar style of indie games: a hand-drawn cover
   showing a pixel-art farm at sunrise, a farmhouse with smoke rising, crops

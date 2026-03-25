@@ -1,7 +1,7 @@
 itemid: 133
 name: Crime and Punishment
 namesimple: book
-displayname: a heavy Russian novel titled <ansi fg="itemname">Crime and Punishment</ansi>
+displayname: a heavy Russian novel titled <ansi fg="red">Crime and Punishment</ansi>
 description: >-
   A thick novel in a dark binding, the pages dense and slightly yellowed at
   the edges. The author's name on the spine: F. Dostoevsky. 1866. You can

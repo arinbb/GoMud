@@ -1,7 +1,7 @@
 itemid: 107
 name: collected poems of Robert Hayden
 namesimple: poetry book
-displayname: a worn volume of <ansi fg="itemname">Robert Hayden's Collected Poems</ansi>
+displayname: a worn volume of <ansi fg="8">Robert Hayden's Collected Poems</ansi>
 description: >-
   A cloth-bound book of poems, its cover a deep indigo blue. The spine is
   cracked from many readings, the pages soft with use. A bookmark rests at

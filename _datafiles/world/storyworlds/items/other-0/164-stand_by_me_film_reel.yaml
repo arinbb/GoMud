@@ -1,7 +1,7 @@
 itemid: 164
 name: Stand By Me film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Stand By Me</ansi>
+displayname: a film reel labeled <ansi fg="10">Stand By Me</ansi>
 description: >-
   A round aluminum canister, worn at the edges, the kind that has traveled.
   The label is handwritten in careful block letters: STAND BY ME -- 1986.

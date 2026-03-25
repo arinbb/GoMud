@@ -1,7 +1,7 @@
 itemid: 123
 name: Matilda
 namesimple: matilda
-displayname: a copy of <ansi fg="itemname">Matilda</ansi>
+displayname: a copy of <ansi fg="magenta">Matilda</ansi>
 description: >-
   A colorful paperback with a cover illustration of a tiny girl with enormous
   dark eyes sitting in an oversized armchair, surrounded by towers of books.

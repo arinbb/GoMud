@@ -1,7 +1,7 @@
 itemid: 136
 name: Far Cry 5 disc
 namesimple: disc
-displayname: a <ansi fg="itemname">Far Cry 5 game disc</ansi>
+displayname: a <ansi fg="red">Far Cry 5 game disc</ansi>
 description: >-
   A game disc in a slim case. The cover shows a Montana landscape: golden valley,
   pine mountains, a wide blue sky. In the foreground, a family seated at a table

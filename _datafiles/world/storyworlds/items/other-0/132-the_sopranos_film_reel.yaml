@@ -1,7 +1,7 @@
 itemid: 132
 name: The Sopranos film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">The Sopranos</ansi>
+displayname: a film reel labeled <ansi fg="3">The Sopranos</ansi>
 description: >-
   A film reel in a substantial metal canister, heavier than you expect.
   "THE SOPRANOS" is printed on a label in the clean sans-serif type of

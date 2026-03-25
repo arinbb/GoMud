@@ -1,7 +1,7 @@
 itemid: 104
 name: The Princess Bride film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">The Princess Bride</ansi>
+displayname: a film reel labeled <ansi fg="11">The Princess Bride</ansi>
 description: >-
   A well-loved film reel whose canister is decorated with hand-drawn hearts and
   swords. The label reads "The Princess Bride" in elegant cursive. The canister

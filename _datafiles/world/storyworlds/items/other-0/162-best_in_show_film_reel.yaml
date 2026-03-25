@@ -1,7 +1,7 @@
 itemid: 162
 name: Best in Show film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Best in Show</ansi>
+displayname: a film reel labeled <ansi fg="11">Best in Show</ansi>
 description: >-
   A film reel in a round metal canister, the label hand-lettered in careful block
   print: BEST IN SHOW -- CASTLE ROCK ENTERTAINMENT, 2000. The canister has a few

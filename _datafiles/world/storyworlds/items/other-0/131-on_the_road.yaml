@@ -1,7 +1,7 @@
 itemid: 131
 name: On the Road
 namesimple: book
-displayname: a battered <ansi fg="itemname">On the Road</ansi> paperback
+displayname: a battered <ansi fg="3">On the Road</ansi> paperback
 description: >-
   A worn paperback copy of "On the Road" by Jack Kerouac, published 1957
   by Viking Press. The cover is a pale yellow-green with an abstract design

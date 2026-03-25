@@ -1,7 +1,7 @@
 itemid: 102
 name: The Odyssey
 namesimple: book
-displayname: an ancient copy of <ansi fg="itemname">The Odyssey</ansi>
+displayname: an ancient copy of <ansi fg="11">The Odyssey</ansi>
 description: >-
   A heavy scroll-bound volume with a cracked leather cover embossed with Greek
   meanders. The pages are thick vellum, covered in careful calligraphy. It smells

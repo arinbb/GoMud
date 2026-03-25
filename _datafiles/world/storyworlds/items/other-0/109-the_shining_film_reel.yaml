@@ -1,7 +1,7 @@
 itemid: 109
 name: The Shining film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">The Shining</ansi>
+displayname: a film reel labeled <ansi fg="15">The Shining</ansi>
 description: >-
   A heavy film reel in a frost-covered canister. "THE SHINING" is stamped
   in cold metal letters on the lid. The canister is ice-cold to the touch

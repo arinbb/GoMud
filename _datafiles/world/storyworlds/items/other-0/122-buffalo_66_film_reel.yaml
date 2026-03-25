@@ -1,7 +1,7 @@
 itemid: 122
 name: Buffalo '66 film reel
 namesimple: reel
-displayname: a film reel labeled <ansi fg="itemname">Buffalo '66</ansi>
+displayname: a film reel labeled <ansi fg="8">Buffalo '66</ansi>
 description: >-
   A film reel in a dented metal canister. "BUFFALO '66" is scratched into the
   lid with something sharp, like a key or a fingernail. The canister is cold
