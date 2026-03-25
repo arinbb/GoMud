@@ -1,0 +1,53 @@
+roomid: 5
+zone: The Grand Library
+title: The Overlook Tower
+description: >-
+  You emerge at the top of the spiral staircase into a circular tower
+  room with tall arched windows on every side. The view is impossible
+  -- through each window you glimpse a different world. One shows
+  snow-covered mountains and a vast hotel. Another shows a golden wheat
+  field under a painted sky. A third shows neon streets and angular
+  architecture. The worlds you have visited shimmer with color. The
+  ones you have not are grey and waiting. Glass-fronted
+  <ansi fg="itemname">display cases</ansi> line the curved walls between
+  the windows, each shelf labeled with a brass placard. This is your
+  personal collection. Type <ansi fg="command">storage</ansi> to manage
+  your souvenirs and <ansi fg="command">collection</ansi> to track your
+  progress. The staircase leads back <ansi fg="exit">down</ansi>.
+mapsymbol: T
+maplegend: Tower
+biome: house
+isstorage: true
+exits:
+  down:
+    roomid: 1
+    exitmessage: You descend the spiral staircase back to the Library.
+nouns:
+  windows: >-
+    Tall arched windows of thick glass, each one a portal to a different
+    view. The worlds you have explored are vivid and alive in their
+    frames. The ones you have not yet visited are grey silhouettes,
+    patient outlines waiting for you to give them color.
+  cases: >-
+    Glass-fronted display cases of polished mahogany, curved to follow
+    the tower wall. Each shelf has a small brass placard. Some hold
+    treasures -- a vial of starlight, a hunting cap, a room key, a
+    photo strip. Others wait, empty and expectant. Type storage to
+    place or retrieve your souvenirs.
+  placards: >-
+    Small brass labels engraved in a careful hand. They read things like
+    Wonderland, The Overlook, Pelican Town, Hill Valley, Tonetown. Not
+    every placard has an object yet. That is what adventures are for.
+  view: >-
+    The view from up here is extraordinary. You can see every world at
+    once, each one framed in its own window, each one a story you
+    stepped inside. The Library below is a warm golden circle. Above,
+    the dome opens to painted stars. You are at the center of all the
+    stories, and they are all real.
+idlemessages:
+- The light through the windows shifts as the worlds beyond them turn through their own days and nights.
+- 'A window to the south flickers: snow, then sunlight, then snow again. The Overlook never settles.'
+- The brass placards catch the light. The ones with souvenirs seem to glow warmer.
+- From up here you can hear the Library below -- pages turning, the Librarian murmuring, the hum of stories.
+- An empty display case catches your eye. Its placard reads a name you recognize but have not yet visited.
+- The spiral staircase creaks gently. The tower sways in a wind that comes from no particular direction.

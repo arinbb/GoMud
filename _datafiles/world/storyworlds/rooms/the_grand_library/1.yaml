@@ -8,15 +8,17 @@ description: >-
   <ansi fg="red">projector</ansi> shelf holds film reels. A
   <ansi fg="blue">painting</ansi> hangs on the west wall. The
   <ansi fg="yellow">turntable</ansi> shelf holds vinyl and CDs. The
-  <ansi fg="magenta">console</ansi> holds game discs. A glass
-  <ansi fg="itemname">display case</ansi> stores your souvenirs -- type
-  <ansi fg="command">storage</ansi> to manage it and
-  <ansi fg="command">collection</ansi> to track your progress. A leather
-  <ansi fg="itemname">guestbook</ansi> lies open on the desk.
+  <ansi fg="magenta">console</ansi> holds game discs. A leather
+  <ansi fg="itemname">guestbook</ansi> lies open on the desk. A spiral
+  staircase leads <ansi fg="exit">up</ansi> to the Overlook Tower.
 mapsymbol: L
 maplegend: Library
 biome: house
-isstorage: true
+isstorage: false
+exits:
+  up:
+    roomid: 5
+    exitmessage: You climb the spiral staircase, the brass railing cool under your hand.
 nouns:
   desk: >-
     A grand oak reception desk worn smooth by countless hands. A brass
@@ -28,9 +30,10 @@ nouns:
     The painted ceiling depicts constellations you half-recognize -- Orion
     hangs beside a dragon in flight, and the Big Dipper shares the sky
     with a compass rose made of stars.
-  case: >-
-    A glass-fronted display case for your personal souvenir collection.
-    Type storage to add or remove items. Type collection to see your progress.
+  staircase: >-
+    A spiral staircase of wrought iron and dark wood, climbing through the
+    center of the dome toward a warm light above. The brass railing is
+    worn smooth by many hands. Go up to reach the Overlook Tower.
 containers:
   bookshelf: {}
   projector: {}
