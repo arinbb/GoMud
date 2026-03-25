@@ -217,12 +217,22 @@ func (c *Config) setEnvAssignments(clear bool) {
 	// We use reflect.Indirect to handle if cfg is a pointer or not
 	v := reflect.ValueOf(c).Elem()
 
-	// We'll need the struct type as well (to get field names).
+	setEnvAssignmentsRecursive(v, clear)
+}
+
+func setEnvAssignmentsRecursive(v reflect.Value, clear bool) {
+
 	t := v.Type()
 
 	for i := 0; i < v.NumField(); i++ {
 		fieldVal := v.Field(i)
 		fieldType := t.Field(i)
+
+		// Recurse into nested structs
+		if fieldVal.Type().Kind() == reflect.Struct {
+			setEnvAssignmentsRecursive(fieldVal, clear)
+			continue
+		}
 
 		if fieldVal.Type().Kind() != reflect.String {
 			continue
