@@ -2,61 +2,48 @@ roomid: 1
 zone: The Grand Library
 title: The Grand Library
 description: >-
-  A single vast circular chamber beneath a domed ceiling of painted constellations.
-  Warm brass lanterns cast golden light across mahogany shelves that line every wall
-  from floor to ceiling. The room is organized into alcoves -- <ansi fg="cyan">books</ansi>
-  to the north, <ansi fg="red">film reels</ansi> to the east, a lone
-  <ansi fg="blue">painting</ansi> on the west wall, <ansi fg="yellow">vinyl records and CDs</ansi>
-  to the south, and <ansi fg="magenta">game discs</ansi> in a console near the door.
-  A glass-fronted <ansi fg="itemname">display case</ansi> holds your personal collection
-  of souvenirs. An oak <ansi fg="itemname">reception desk</ansi> stands at the center with
-  a worn leather <ansi fg="itemname">guestbook</ansi> open upon it.
+  A vast circular chamber beneath a domed ceiling of painted constellations.
+  Warm brass lanterns cast golden light across mahogany shelves lining every
+  wall. The <ansi fg="cyan">bookshelf</ansi> holds novels and poetry. The
+  <ansi fg="red">projector</ansi> shelf holds film reels. A
+  <ansi fg="blue">painting</ansi> hangs on the west wall. The
+  <ansi fg="yellow">turntable</ansi> shelf holds vinyl and CDs. The
+  <ansi fg="magenta">console</ansi> holds game discs. A glass
+  <ansi fg="itemname">display case</ansi> stores your souvenirs -- type
+  <ansi fg="command">storage</ansi> to manage it and
+  <ansi fg="command">collection</ansi> to track your progress. A leather
+  <ansi fg="itemname">guestbook</ansi> lies open on the desk.
 mapsymbol: L
 maplegend: Library
 biome: house
 isstorage: true
 nouns:
   desk: >-
-    A grand oak reception desk, its surface worn smooth by countless hands. A
-    small brass placard reads "Welcome, Traveler. Every story needs a reader."
+    A grand oak reception desk worn smooth by countless hands. A brass
+    placard reads "Welcome, Traveler. Every story needs a reader."
   guestbook: >-
-    The leather-bound guestbook is filled with names and notes from visitors
-    past. Some entries shimmer faintly, as if written in ink that has not quite
-    dried, even after what must be years. Type sign to add your name.
+    The guestbook is filled with names and notes. Some entries shimmer
+    faintly. Type read guestbook to read it. Type sign to add your name.
   constellations: >-
     The painted ceiling depicts constellations you half-recognize -- Orion
     hangs beside a dragon in flight, and the Big Dipper shares the sky
     with a compass rose made of stars.
-  books: >-
-    The book alcove holds novels, poetry, and epics from every tradition.
-    Leather-bound volumes, cloth-covered paperbacks, gilded folios. Some
-    spines glow faintly. Browse the shelves to find a world to enter.
-  reels: >-
-    Film reels in frost-covered canisters, warm amber tins, and battered
-    metal cases. Each one contains a world. Pick one up and play it.
-  painting: >-
-    A single framed painting hangs on the west wall. The colors shift
-    subtly when you look away. The figures seem to follow you with their
-    eyes. Pick it up and enter it.
-  records: >-
-    Vinyl LPs and CDs arranged on a shelf. Each contains a world built
-    from sound. Drop the needle or press play to step inside.
-  games: >-
-    Game discs and cartridges sit in a console. Each one a world to play
-    through. Insert a disc and press play.
   case: >-
-    A glass-fronted display case for your personal collection of souvenirs
-    from the worlds you have visited. Type storage to manage your collection.
-    Type collection to see your progress.
+    A glass-fronted display case for your personal souvenir collection.
+    Type storage to add or remove items. Type collection to see your progress.
 containers:
-  shelves: {}
+  bookshelf: {}
+  projector: {}
+  wall: {}
+  turntable: {}
+  console: {}
 spawninfo:
 - mobid: 100
   message: The Librarian quietly appears from behind a shelf.
   idlecommands:
   - say Welcome to the Grand Library. Every story here is a doorway.
   - ""
-  - say Browse the shelves to find books, films, music, art, and games. Pick one up and use it.
+  - 'say Look at the bookshelf, projector, wall, turntable, or console to browse titles.'
   - ""
   - emote adjusts their spectacles and peers at a dusty tome.
   - ""
@@ -64,158 +51,158 @@ spawninfo:
   - ""
   respawnrate: 1 real minutes
 - itemid: 101
-  container: shelves
+  container: bookshelf
   respawnrate: 1 real minutes
 - itemid: 102
-  container: shelves
+  container: bookshelf
   respawnrate: 1 real minutes
 - itemid: 107
-  container: shelves
+  container: bookshelf
   respawnrate: 1 real minutes
 - itemid: 119
-  container: shelves
+  container: bookshelf
   respawnrate: 1 real minutes
 - itemid: 121
-  container: shelves
+  container: bookshelf
   respawnrate: 1 real minutes
 - itemid: 123
-  container: shelves
+  container: bookshelf
   respawnrate: 1 real minutes
 - itemid: 124
-  container: shelves
+  container: bookshelf
   respawnrate: 1 real minutes
 - itemid: 131
-  container: shelves
+  container: bookshelf
   respawnrate: 1 real minutes
 - itemid: 133
-  container: shelves
+  container: bookshelf
   respawnrate: 1 real minutes
 - itemid: 138
-  container: shelves
+  container: bookshelf
   respawnrate: 1 real minutes
 - itemid: 139
-  container: shelves
+  container: bookshelf
   respawnrate: 1 real minutes
 - itemid: 143
-  container: shelves
+  container: bookshelf
   respawnrate: 1 real minutes
 - itemid: 103
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 104
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 106
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 108
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 109
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 122
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 126
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 127
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 128
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 132
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 141
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 142
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 144
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 145
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 146
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 147
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 148
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 149
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 151
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 152
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 153
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 156
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 158
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 161
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 162
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 164
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 166
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 168
-  container: shelves
+  container: projector
   respawnrate: 1 real minutes
 - itemid: 105
-  container: shelves
+  container: wall
   respawnrate: 1 real minutes
 - itemid: 129
-  container: shelves
+  container: turntable
   respawnrate: 1 real minutes
 - itemid: 150
-  container: shelves
+  container: turntable
   respawnrate: 1 real minutes
 - itemid: 157
-  container: shelves
+  container: turntable
   respawnrate: 1 real minutes
 - itemid: 159
-  container: shelves
+  container: turntable
   respawnrate: 1 real minutes
 - itemid: 134
-  container: shelves
+  container: console
   respawnrate: 1 real minutes
 - itemid: 136
-  container: shelves
+  container: console
   respawnrate: 1 real minutes
 - itemid: 137
-  container: shelves
+  container: console
   respawnrate: 1 real minutes
 - itemid: 167
-  container: shelves
+  container: console
   respawnrate: 1 real minutes
 idlemessages:
 - The brass lanterns flicker briefly, casting dancing shadows across the painted ceiling.
 - You hear the distant sound of pages turning, though no one else seems to be nearby.
 - A faint melody drifts down from somewhere above, like a music box playing far away.
 - The smell of old books mingles with cedar and candle wax.
-- A book near the top shelf slides out an inch on its own, then slowly pushes itself back in.
-- 'A film canister rattles on its shelf, as if the story inside is restless.'
+- A book on the shelf slides out an inch on its own, then slowly pushes itself back in.
+- 'A film canister rattles on the projector shelf, as if the story inside is restless.'
 - The painting on the west wall shifts its colors when you are not looking directly at it.
-- A vinyl record on the south shelf spins a quarter-turn by itself. The needle is not down.
+- A vinyl record near the turntable spins a quarter-turn by itself. The needle is not down.
