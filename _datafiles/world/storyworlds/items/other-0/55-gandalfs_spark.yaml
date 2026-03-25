@@ -1,0 +1,15 @@
+itemid: 55
+name: wizards spark
+namesimple: spark
+displayname: a hovering <ansi fg="15">wizards spark</ansi>
+description: >-
+  A tiny mote of white light that hovers near your shoulder, left
+  behind by a wizard who passed this way. It bobs and weaves but
+  never strays far, casting a clean steady light into dark places.
+  It hums at a frequency that suggests ancient magic.
+type: object
+subtype: usable
+uses: 0
+value: 0
+buffids:
+- 1

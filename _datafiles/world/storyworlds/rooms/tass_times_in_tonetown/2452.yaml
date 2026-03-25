@@ -61,6 +61,10 @@ nouns:
     you -- with a quick, practiced eye. A glance that measures your outfit, your
     posture, your willingness to be angular. They do not seem cruel about it.
     They seem sincere. To them, tassness is a value, like kindness or courage.
+spawninfo:
+- itemid: 54
+  message: A neon glow stick pulses on the sidewalk.
+  respawnrate: 5 real minutes
 idlemessages:
 - A citizen in a geometric jumpsuit pauses mid-stride to evaluate your outfit and does not hide their conclusion.
 - The neon signs cycle through their colors in an irregular sequence that somehow still feels like a beat.

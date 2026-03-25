@@ -1,0 +1,14 @@
+itemid: 52
+name: small candle
+namesimple: candle
+displayname: a small <ansi fg="yellow">candle</ansi> in a brass holder
+description: >-
+  A simple white candle in a small brass holder, the kind a teacher
+  might keep on her desk. The flame is steady and warm and casts a
+  gentle circle of light. It smells faintly of vanilla.
+type: object
+subtype: usable
+uses: 0
+value: 0
+buffids:
+- 1

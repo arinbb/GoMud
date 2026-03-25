@@ -1,0 +1,15 @@
+itemid: 53
+name: Fire Flower
+namesimple: flower
+displayname: a blazing <ansi fg="red">Fire Flower</ansi>
+description: >-
+  A flower made of living flame, white and orange, bobbing gently
+  in place. When you hold it your hand does not burn. The light it
+  casts is warm and flickering, enough to see through any darkness.
+  You feel slightly more powerful.
+type: object
+subtype: usable
+uses: 0
+value: 0
+buffids:
+- 1

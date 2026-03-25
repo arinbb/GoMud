@@ -1,0 +1,15 @@
+itemid: 54
+name: neon glow stick
+namesimple: glow
+displayname: a <ansi fg="magenta">neon glow stick</ansi>
+description: >-
+  A plastic tube filled with glowing chemicals in a shade of pink
+  that does not exist in nature. It pulses gently, casting enough
+  tass light to see by. The label reads TONETOWN BRAND ILLUMINATION
+  STICK -- GUARANTEED TASS OR YOUR MONEY BACK.
+type: object
+subtype: usable
+uses: 0
+value: 0
+buffids:
+- 1

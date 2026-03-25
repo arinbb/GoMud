@@ -37,6 +37,10 @@ nouns:
     Children's paintings cover the walls — bright suns, green fields, houses with
     smoke curling from chimneys. Happy pictures. Miss Honey's classroom is the one
     place in this school where children are allowed to imagine good things.
+spawninfo:
+- itemid: 52
+  message: A small candle in a brass holder sits on the desk.
+  respawnrate: 5 real minutes
 idlemessages:
 - 'Sunlight moves across the desks, warming the scratched wood and faded ink stains.'
 - The wildflowers in their jam jar seem to lean toward the window, drinking in the light.

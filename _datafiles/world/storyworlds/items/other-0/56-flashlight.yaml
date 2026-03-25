@@ -1,0 +1,15 @@
+itemid: 56
+name: flashlight
+namesimple: flashlight
+displayname: a heavy <ansi fg="yellow">flashlight</ansi>
+description: >-
+  A heavy-duty flashlight, the kind a hotel caretaker might keep
+  in a utility closet. The beam is strong but narrow, casting a
+  cone of harsh white light that makes shadows look worse. The
+  batteries are fresh. Someone left this here on purpose.
+type: object
+subtype: usable
+uses: 0
+value: 0
+buffids:
+- 1

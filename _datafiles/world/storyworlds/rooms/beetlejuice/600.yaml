@@ -30,6 +30,10 @@ nouns:
     peeling. The timbers are solid but old. There are no guardrails on the
     outside -- just a gentle wooden lip between the road and the drop to the
     river below.
+spawninfo:
+- itemid: 50
+  message: A ghostly lantern flickers to life on the mantelpiece.
+  respawnrate: 5 real minutes
 idlemessages:
 - A gust of autumn wind sends a flurry of golden leaves spiraling through the bridge.
 - The river beneath the bridge gurgles softly over mossy rocks.

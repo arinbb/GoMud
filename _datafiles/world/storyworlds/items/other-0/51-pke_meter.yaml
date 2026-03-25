@@ -1,0 +1,15 @@
+itemid: 51
+name: PKE meter
+namesimple: meter
+displayname: a glowing <ansi fg="10">PKE meter</ansi>
+description: >-
+  A handheld device with two extending sensor arms that glow bright
+  orange when psychokinetic energy is detected. The readout screen
+  casts enough light to see by. It clicks and whirs softly, always
+  measuring something invisible.
+type: object
+subtype: usable
+uses: 0
+value: 0
+buffids:
+- 1

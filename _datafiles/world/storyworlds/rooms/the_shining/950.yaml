@@ -36,6 +36,10 @@ nouns:
     Fine, dry snow drifts down steadily. It gathers in the corners of the
     steps, on the railings, in the crevices of the stonework. It is patient.
     It has all winter.
+spawninfo:
+- itemid: 56
+  message: A heavy flashlight sits on the front steps, left by a previous visitor.
+  respawnrate: 5 real minutes
 idlemessages:
 - The wind picks up, driving snow against your face in sharp little needles.
 - 'Somewhere inside the hotel, a door slams. The sound echoes across the empty parking lot.'

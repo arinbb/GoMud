@@ -1,0 +1,15 @@
+itemid: 50
+name: ghostly lantern
+namesimple: lantern
+displayname: a flickering <ansi fg="cyan">ghostly lantern</ansi>
+description: >-
+  A lantern that burns with pale green light from no visible fuel source.
+  It was left behind by someone who no longer needs to see where they are
+  going. The flame flickers in patterns that suggest it is trying to
+  communicate something. It illuminates dark spaces.
+type: object
+subtype: usable
+uses: 0
+value: 0
+buffids:
+- 1

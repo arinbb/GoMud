@@ -54,6 +54,10 @@ spawninfo:
   - emote glances wistfully at the pantry.
   - ""
   respawnrate: 3 real minutes
+
+- itemid: 55
+  message: A tiny spark of wizard-light hovers near the doorway.
+  respawnrate: 5 real minutes
 idlemessages:
 - The fire pops and sends a shower of sparks up the chimney. The kettle whistles softly.
 - A warm draft carries the smell of seed-cakes from the pantry. Your stomach rumbles.

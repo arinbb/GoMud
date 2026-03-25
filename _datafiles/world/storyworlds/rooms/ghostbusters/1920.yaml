@@ -91,6 +91,10 @@ spawninfo:
   - "emote answers the phone. 'Ghostbusters. We're very busy. Please hold. Don't actually hold, we need the money.'"
   - ""
   - ""
+
+- itemid: 51
+  message: A PKE meter hums quietly on the workbench.
+  respawnrate: 5 real minutes
 idlemessages:
 - The Ecto-1 lets out a single tick of metal cooling, like it just got back from a run.
 - The ghost trap on the worktable emits a faint rattle. Something inside shifts.

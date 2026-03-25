@@ -70,6 +70,10 @@ spawninfo:
   - emote follows Mario closely, staying just behind his left shoulder.
   - ""
   respawnrate: 3 real minutes
+
+- itemid: 53
+  message: A Fire Flower blooms from a question block.
+  respawnrate: 5 real minutes
 idlemessages:
 - 'A coin spins in the distance, catching the sun: ding!'
 - The question mark blocks bob overhead, their gold light pulsing with patient invitation.
