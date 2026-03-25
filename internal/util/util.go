@@ -1014,6 +1014,48 @@ func StrippedTagsLength(str string) int {
 	return len(stripped)
 }
 
+// WordWrap wraps text at maxWidth visible characters, preserving ANSI tags.
+// It splits on word boundaries and returns lines joined by newlines.
+func WordWrap(text string, maxWidth int) string {
+	if maxWidth <= 0 {
+		maxWidth = 80
+	}
+
+	xmlAnsi := regexp.MustCompile(`</?ansi[^>]*>`)
+
+	words := strings.Fields(text)
+	if len(words) == 0 {
+		return text
+	}
+
+	var lines []string
+	var currentLine strings.Builder
+	currentVisibleLen := 0
+
+	for _, word := range words {
+		wordVisibleLen := len(xmlAnsi.ReplaceAllString(word, ""))
+
+		if currentVisibleLen > 0 && currentVisibleLen+1+wordVisibleLen > maxWidth {
+			lines = append(lines, currentLine.String())
+			currentLine.Reset()
+			currentVisibleLen = 0
+		}
+
+		if currentVisibleLen > 0 {
+			currentLine.WriteString(" ")
+			currentVisibleLen++
+		}
+		currentLine.WriteString(word)
+		currentVisibleLen += wordVisibleLen
+	}
+
+	if currentLine.Len() > 0 {
+		lines = append(lines, currentLine.String())
+	}
+
+	return strings.Join(lines, "\n")
+}
+
 func FormatNumber(n int) string {
 	in := strconv.Itoa(n)
 	numOfDigits := len(in)
