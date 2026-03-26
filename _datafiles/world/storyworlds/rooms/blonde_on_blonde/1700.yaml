@@ -2,104 +2,99 @@ roomid: 1700
 zone: Blonde on Blonde
 title: Columbia Studio A, Nashville
 description: >-
-  February 1966. Nashville, Tennessee. The studio is a controlled chaos of <ansi fg="itemname">microphone stands</ansi> and tangled <ansi fg="itemname">cables</ansi>,
-  cigarette-scarred music stands stacked with <ansi fg="itemname">lyric sheets</ansi>
-  in Dylan's cramped hand. A <ansi fg="itemname">grand piano</ansi> sits open,
-  its bench scattered with chord charts. Through the control room glass, a <ansi fg="itemname">mixing board</ansi> of chrome and bakelite catches the
-  fluorescent light. This is where fourteen songs were recorded, sometimes three
-  or four in a single night, musicians following chord changes they had never
-  heard, finding the groove by instinct and coffee and whiskey. The Nashville
-  session players -- the best in the world -- are somewhere nearby, tuning
-  instruments, waiting for the next take. The air carries the weight of
-  something great being made without anyone entirely knowing it.
+  February 1966. Two in the morning and Columbia Studio A is wide awake. A
+  <ansi fg="itemname">grand piano</ansi> stands open at the center of the room, its lid catching
+  the fluorescent light, chord charts fanned across the bench. Al Kooper's
+  <ansi fg="itemname">organ</ansi> hums beside it, the Leslie speaker turning slow. Tangled
+  <ansi fg="itemname">cables</ansi> cross the floor in every direction, taped down in paths only the
+  session musicians understand. <ansi fg="itemname">Lyric sheets</ansi> in Dylan's cramped handwriting
+  lie scattered on music stands, on the piano lid, on the floor -- crossed-out
+  words and arrows and whole verses circled in red. Vintage RCA ribbon
+  <ansi fg="itemname">microphones</ansi> stand at attention around the room. Through the glass of the
+  vocal <ansi fg="itemname">booth</ansi>, a music stand holds another sheaf of lyrics. The <ansi fg="itemname">clock</ansi>
+  on the wall reads twenty past four but nobody believes it. Stacked <ansi fg="itemname">tape</ansi>
+  reels line the back shelf -- a double album's worth of music and then some.
+  Cigarette smoke hangs in the air like weather. The Nashville session players,
+  the best sight-readers in the world, wait with their instruments, not sure
+  what is about to happen. Nobody is sure. That is what makes it historic.
 mapsymbol: S
 maplegend: Columbia Studio A
 biome: house
-exits:
-  track1:
-    roomid: 1701
-    mapdirection: north
-    exitmessage: The brass band starts up before you even reach the door.
-  track2:
-    roomid: 1702
-    mapdirection: northeast
-    exitmessage: The slow blues pulls you down like gravity.
-  track3:
-    roomid: 1703
-    mapdirection: east
-    exitmessage: A candle flame bends as you pass through.
-  track4:
-    roomid: 1704
-    mapdirection: southeast
-    exitmessage: The cold hits you before the door opens.
-  track5:
-    roomid: 1705
-    mapdirection: south
-    exitmessage: The doorbell rings, and it sounds like desire.
-  track6:
-    roomid: 1706
-    mapdirection: southwest
-    exitmessage: Something surreal begins immediately.
-  track7:
-    roomid: 1707
-    mapdirection: west
-    exitmessage: Leopard print assaults your eyes.
-  track8:
-    roomid: 1708
-    mapdirection: northwest
-    exitmessage: The ribbons are already broken.
-  north:
-    roomid: 1709
-    exitmessage: The road forks. The judge watches.
-  east:
-    roomid: 1710
-    exitmessage: You approach the door. It does not open.
-  south:
-    roomid: 1711
-    exitmessage: The cell door swings on its hinge.
-  west:
-    roomid: 1712
-    exitmessage: The staircase begins to spiral.
-  up:
-    roomid: 1713
-    exitmessage: Guitar feedback rises from below.
-  down:
-    roomid: 1714
-    exitmessage: The warehouse opens beneath you, vast and pale.
 nouns:
   piano: >-
-    A Steinway grand, lid raised, the felt hammers worn from use. Someone has
-    left a coffee cup on the lid and nobody has moved it. The bench holds three
-    pages of chord charts in different handwriting. Middle C has a tiny piece of
-    tape on it with the number 3 written in red marker.
-  board: >-
-    The control room mixing board, visible through double-pane glass. Chrome
-    faders, bakelite knobs, an array of inputs wired to more microphones than
-    you can count. The engineer moves behind it like a man adjusting a ship.
-    Everything going in comes out as music. It is alchemy, every take.
+    A Steinway grand, lid raised, the felt hammers worn soft from hours of
+    takes. Someone has left a coffee cup on the lid and nobody has moved it.
+    The bench holds chord charts in three different hands. Charlie McCoy's
+    bass is leaned against the side. The piano is always in use here -- someone
+    is always working something out between takes.
+  organ: >-
+    Al Kooper's Hammond B-3 with the Leslie speaker cabinet beside it. The
+    organ was not supposed to be the signature sound of the album. Kooper was
+    not even supposed to be playing organ. But here it is, the tone that holds
+    everything together -- warm and swirling, a sound like light through
+    stained glass. The volume knob is set to 4.
   sheets: >-
-    Dylan's lyric sheets, dozens of them, scattered across the music stands and
-    the piano bench and the floor. The handwriting is fast and private, words
-    crossed out and written above and crossed out again. One sheet just says
-    JOHANNA in capital letters, six times, followed by a question mark.
-  microphones: >-
-    Shure SM57s, Neumann U47s, a ribbon mic on a tall stand facing the grand
-    piano. Each one wired with purpose. The placement took an hour. The takes
-    take three minutes. That is how it works.
+    Dylan's handwritten lyrics, dozens of pages scattered everywhere. The
+    handwriting is fast and private, full of crossings-out. One page works
+    through visions -- the word appears seven times in various forms, a woman
+    named Johanna who seems to be everywhere and nowhere. Another is a single
+    run-on verse about a sad-eyed lady of the lowlands, eleven minutes of
+    devotion compressed onto two sheets. A third page has JUST LIKE A WOMAN
+    written across the top, with the chorus rewritten four times. Somewhere
+    in the pile, a page reads EVERYBODY MUST GET STONED in block letters
+    with a drawing of a tambourine.
   cables: >-
-    A spaghetti of XLR cables, instrument cables, speaker cables in a dozen
-    colors, taped to the floor in paths that only the session players understand.
-    Follow the wrong one and you unplug something important.
+    A spaghetti of XLR cables, instrument cables, and speaker cables in a
+    dozen colors, taped to the floor in paths that only the session players
+    understand. Follow the wrong one and you unplug something important. The
+    Nashville cats step over them without looking, muscle memory from a
+    thousand sessions, though never one quite like this.
+  microphones: >-
+    Vintage RCA 77-DX ribbon microphones on tall chrome stands, positioned
+    with the care of a chess opening. One faces the piano, one the organ, two
+    flank the drum kit, one hangs above the bass amp. The placement took an
+    hour. The takes take three minutes. That is how it works in Nashville.
+  booth: >-
+    The vocal booth, visible through a wide glass window. Inside, a single
+    microphone on a stand, a pair of headphones draped over it, and a music
+    stand holding the latest draft of whatever Dylan is about to sing. The
+    glass is smudged with fingerprints. When Dylan is in there singing, the
+    rest of the studio goes quiet and watches through the glass like witnesses.
+  clock: >-
+    A round industrial clock on the studio wall. It reads twenty past four
+    in the morning, but nobody has checked it in hours. The sessions started
+    at two AM and will run until dawn or until Dylan says they are done,
+    whichever comes first. Time does not work normally here. A three-minute
+    song can take six hours. An eleven-minute epic can happen in one take.
+  tape: >-
+    Stacked reels of recording tape on the back shelf, each one labeled in
+    grease pencil with a song title and take number. There are a lot of
+    takes. A double album's worth of music, fourteen songs, the longest
+    rock album anyone has ever attempted. The tape is always rolling. The
+    red light is always on.
 spawninfo:
 - mobid: 280
   message: Dylan glances up from a lyric sheet, pencil behind one ear.
+- mobid: 281
+  message: The Ragman flickers at the edge of your vision, drawing circles up and down the block.
+- mobid: 282
+  message: Johanna is here -- or the ghost of her, or the vision of her, outlined in the cigarette haze.
+- mobid: 283
+  message: The Sad Eyed Lady appears in the vocal booth glass like a reflection that belongs to no one in the room.
+- mobid: 284
+  message: The Guilty Undertaker stands in the corner, his footsteps giving him away.
 - mobid: 285
   message: Al Kooper sits at the organ, adjusting the Leslie speaker speed with one careful finger.
+- mobid: 286
+  message: Louise drifts through the studio like a memory, her face half-hidden by the smoke.
 idlemessages:
-- 'A take ends. Silence. Then Dylan says: ''Again.'' They play it again.'
-- The session players tune between takes -- pedal steel, bass, piano, drums finding their center.
-- Someone in the control room laughs at something. The laughter is muffled by the glass.
-- A lyric sheet slides off a music stand and drifts to the floor. Nobody picks it up.
-- 'The organ holds a chord while Dylan scribbles a word on his sleeve, crosses it out, writes something else.'
-- The tape rolls. The red light goes on. Everything in the room changes slightly.
-- Al Kooper adjusts the Leslie speed on the organ and the sound blooms outward like weather.
+- Dylan scribbles something on a lyric sheet, crosses it out, writes it again smaller in the margin.
+- Al Kooper finds a chord on the organ and holds it. The Leslie speaker turns slow. The sound fills the room like warm water.
+- 'The tape rolls. The red light goes on. The engineer says: ''Rolling.'' Everything in the room changes slightly.'
+- One of the Nashville cats sight-reads a chord change he has never seen before and nails it on the first pass. He shakes his head, not quite believing what he just played.
+- Cigarette smoke curls upward from three different ashtrays, braiding together in the fluorescent light.
+- The clock on the wall reads an impossible hour. Nobody has gone home. Nobody wants to.
+- A session musician sets down his guitar and shakes his head slowly, a grin spreading across his face. He has never played on anything like this.
+- A harmonica wail rises from the vocal booth, high and lonesome, bending a note until it almost breaks.
+- 'Someone in the back of the studio starts humming the chorus -- ''everybody must get stoned'' -- and catches himself, but it is too late. The phrase is in the air now.'
+- The Sad Eyed Lady appears for a moment in the glass of the vocal booth, then is gone. The organ holds its chord.

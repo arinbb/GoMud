@@ -2,91 +2,88 @@ roomid: 2240
 zone: Harvest
 title: Broken Arrow Ranch
 description: >-
-  Northern California, 1972. A working ranch in the late afternoon, the kind
-  of place that earns its quiet. A weathered <ansi fg="itemname">barn</ansi>
-  leans slightly southward, its red paint faded to the color of dried blood
-  and rust. <ansi fg="itemname">Wheat fields</ansi> roll out to the east and
-  north, the stalks heavy and gold in the slant light. A <ansi fg="itemname"> dirt road</ansi> disappears into the hills. The ranch house is simple,
-  low, the kind of house a man builds when he plans to stay. On the fence post
-  nearest the barn, a <ansi fg="itemname">harmonica</ansi> rests on the top
-  rail -- left there the way you leave something when you know you will come
-  back for it. The neighbor's <ansi fg="10">cottage</ansi> is just visible to
-  the north through the fence line, the old man's rocker on the porch. The air
-  smells of dry grass and woodsmoke and the particular sweetness of a harvest
-  that is almost ready.
+  Northern California, 1972. A working ranch in the golden hour, the light the
+  color of the album cover. A weathered <ansi fg="itemname">barn</ansi> stands
+  with its doors open to the <ansi fg="itemname">fields</ansi>, hay bales pushed
+  aside for amplifiers and mic stands -- the Stray Gators set up inside, pedal
+  steel bending somewhere in the warm air. Wheat rolls east to the ridge, heavy
+  and gold and almost ready. Neil Young sits on the porch with an acoustic
+  <ansi fg="itemname">guitar</ansi> across his knees, a harmonica in a neck
+  rack catching the late light. A dirt <ansi fg="itemname">road</ansi>
+  disappears into the California hills. The old man's <ansi fg="itemname">cottage</ansi>
+  is visible across the <ansi fg="itemname">fence</ansi> line, a rocking chair
+  on its porch. A small bare <ansi fg="itemname">stage</ansi> stands by the barn
+  with a single stool and a spotlight waiting for dark. The <ansi fg="itemname">sky</ansi>
+  is vast and unhurried, a hawk turning circles above the field, the kind of sky
+  that makes you think about time.
 mapsymbol: R
 maplegend: Broken Arrow Ranch
 biome: farmland
-exits:
-  track1:
-    roomid: 2241
-    mapdirection: north
-    exitmessage: The highway stretches out ahead, dusk settling over the asphalt.
-  track2:
-    roomid: 2242
-    mapdirection: northeast
-    exitmessage: The wheat field opens around you, the stalks taller than your head.
-  track3:
-    roomid: 2243
-    mapdirection: east
-    exitmessage: The door swings open on an empty house, the piano waiting.
-  track4:
-    roomid: 2244
-    mapdirection: southeast
-    exitmessage: A spotlight cuts through the dark. You walk toward it.
-  track5:
-    roomid: 2245
-    mapdirection: south
-    exitmessage: Fiddle music spills through the barn door, bright and fast.
-  north:
-    roomid: 2246
-    exitmessage: You follow the fence line to the neighbor's cottage.
-  east:
-    roomid: 2247
-    exitmessage: The ground drops away and suddenly you are very high above the world.
-  south:
-    roomid: 2248
-    exitmessage: The air changes, red clay under your feet, the South pressing in.
-  west:
-    roomid: 2249
-    exitmessage: A small stage, a single light. You approach quietly.
-  down:
-    roomid: 2250
-    exitmessage: Steps lead underground, into the long hypnotic dark.
 nouns:
   barn: >-
-    A working barn, tools hung in order on the walls, hay stacked in the loft.
-    The smell of horses and oil and old wood. A guitar case sits open on a hay
-    bale, the instrument gone -- someone took it out to play. The door is never
-    quite shut. Light falls through the gaps in the planks in thin gold bars.
+    The barn has been converted to a recording studio without losing the barn.
+    Hay bales pushed to the walls, lanterns strung from the rafters on extension
+    cords. The Stray Gators are set up inside -- drums, bass, pedal steel, piano.
+    The smell of horses and old wood and hot vacuum tubes. The doors stay open so
+    the fields are part of the sound.
   fields: >-
-    Wheat, heavy and gold and almost ready. You run your hand along the tops of
-    the stalks and they bend and spring back. The field stretches to the ridge.
-    In the evening light it looks like something out of a painting of a country
-    that used to exist, or still does somewhere, if you know where to look.
-  road: >-
-    A dirt road leading up into the hills, tire tracks in the dry dust. It goes
-    somewhere and comes from somewhere and right now it is empty and orange in
-    the late light. The kind of road you drive when you have no particular
-    destination and that is the whole point.
-  harmonica: >-
-    A Marine Band harmonica, key of C, worn at the edges where a man's hands
-    have held it for years. It is almost too personal to pick up. You bring it
-    to your lips and blow a single note -- it rings across the ranch, clear and
-    aching, and then fades into the wheat.
+    Wheat fields rolling east in the late light, golden and heavy and almost ready.
+    You run your hand along the tops of the stalks and they bend and spring back.
+    The harvest is coming. You can feel it in the weight of the air, the way the
+    light thickens toward the ridge. This is what the whole album sounds like --
+    something ripe, something about to be gathered.
+  guitar: >-
+    Neil's acoustic Martin, worn at the frets where his fingers have lived for
+    years. A harmonica sits in a neck rack, ready to be played without putting the
+    guitar down. The sound that defined a generation -- not because it was loud or
+    complicated, but because it was honest. A flannel shirt draped over the back of
+    the chair. A glass of water on the porch rail.
   cottage: >-
-    Just visible through the fence line -- a small white cottage, a front porch,
-    a rocking chair in motion. The old man has been here for decades. The land
-    knows his name. He is part of the place the way a fence post is part of the
-    place, worn by weather and still standing.
+    The old man's place across the fence line. A small white cottage with a
+    weathered rocking chair on the front porch, tools hung in order along the
+    wall. He has been here for decades. The land knows his name. Through the
+    window you can see a kitchen table, a radio, a life arranged with the kind
+    of care that comes from having done everything once and knowing what matters.
+  road: >-
+    A dirt road disappearing into the California hills, tire tracks in the dry
+    dust. A pickup truck sits at the edge of the property, a road atlas open on
+    the seat to a page with no particular destination circled. The kind of road
+    you drive when driving is the whole point. Nashville is two thousand miles
+    east and the sessions there are still ringing in his ears.
+  stage: >-
+    A small bare stage by the barn, just boards on the dirt. A single spotlight
+    on a pole, a wooden stool, a microphone. This is where Heart of Gold lives --
+    stripped down to one man and one guitar and one truth. The stool is worn smooth.
+    The spotlight will not come on until dark, but you can feel it waiting.
+  sky: >-
+    Vast California sky going gold at the edges. A hawk turns slow circles above
+    the field, riding something invisible. Clouds stacked in the west like sheets
+    of music. The kind of sky that makes you think about time -- how much has
+    passed, how much is left, whether there is a difference. The light is so
+    warm it feels like memory.
+  fence: >-
+    The fence line between Neil's land and the old man's, weathered posts and wire
+    that has been mended more than once. This is where they talk at dusk -- two men
+    leaning on opposite sides of the same fence, watching the same light go. A
+    harmonica rests on the top rail, left there the way you leave something when
+    you know you will come back for it.
 spawninfo:
 - mobid: 510
-  message: Neil Young sits on the fence rail, acoustic guitar across his knees, looking at the fields.
+  message: Neil Young sits on the porch, acoustic guitar across his knees, looking at the fields.
+- mobid: 511
+  message: The Old Man rocks slowly on his porch across the fence line, watching the light change.
+- mobid: 512
+  message: The Stray Gators are set up in the barn, tuning and waiting for the evening session.
+- mobid: 513
+  message: Danny Whitten leans against the fence at the far end of the property, guitar case at his feet, looking at nothing.
 idlemessages:
-- An acoustic guitar drifts from the direction of the barn, unhurried, a man playing for no one in particular.
-- The wheat shifts in the evening breeze, a long golden wave moving from east to west and gone.
-- The pedal steel bends a note somewhere over the ridge, the sound carrying clean in the dry air.
-- A hawk turns slow circles above the field, riding something invisible.
-- The light thickens toward gold. Everything on the ranch looks permanent and temporary at once.
-- Somewhere a screen door bangs, the sound carrying across the still afternoon air.
-- The harmonica on the fence post catches the late light, a thin line of silver.
+- An acoustic guitar drifts from the porch, unhurried, a man playing for no one in particular.
+- The wheat shifts in the evening wind, a long golden wave moving from east to west and gone.
+- The pedal steel bends a note from inside the barn, the sound carrying clean across the property.
+- A hawk turns slow circles above the field, riding something invisible, in no hurry to land.
+- The golden light thickens. Everything on the ranch looks permanent and temporary at once.
+- A screen door creaks open and bangs shut, the sound carrying across the still afternoon air.
+- The harmonica on the fence post catches the late light, a thin line of silver on weathered wood.
+- The old man's rocker creaks in a slow rhythm across the fence, steady as a metronome.
+- The smell of warm earth and cut grass drifts across the ranch, the particular sweetness of a harvest almost ready.
+- Someone tunes a guitar inside the barn, the same string over and over, getting it right.

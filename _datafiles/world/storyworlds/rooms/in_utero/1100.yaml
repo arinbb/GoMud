@@ -5,54 +5,85 @@ description: >-
   February 1993. Cannon Falls, Minnesota. Snow buries the world outside, but in
   here the air is thick with heat and sound. <ansi fg="itemname">Microphones</ansi>
   stand like sentinels around a live room strewn with cables, pick slides, and
-  cigarette butts. A massive <ansi fg="itemname">drum kit</ansi> dominates the
-  center -- toms the size of oil drums, cymbals tarnished and cracked. Battered <ansi fg="itemname">guitars</ansi> lean against every wall, their necks scarred
-  with sticker residue and rage. Through a window into the control room, an analog <ansi fg="itemname">mixing board</ansi> glows amber, its faders set to levels
-  that would make a sound engineer weep. Reels of two-inch <ansi fg="itemname">tape</ansi>
-  spin slowly on Steve Albini's machine, capturing everything -- every breath,
-  every mistake, every moment of truth. Coffee cups and empty bottles litter the
-  floor. The red recording light is on. It is always on.
+  cigarette butts. A massive <ansi fg="itemname">drum</ansi> kit dominates the
+  center, toms the size of oil drums, cymbals tarnished and cracked from sheer
+  force. Battered <ansi fg="itemname">guitars</ansi> lean against every wall, their
+  necks scarred with sticker residue and rage. Through the control room glass, an
+  analog <ansi fg="itemname">board</ansi> glows amber, its faders set to levels that
+  would make a lesser engineer weep. Reels of two-inch <ansi fg="itemname">tape</ansi>
+  spin on Albini's machine, capturing everything raw and live -- every breath, every
+  mistake, every moment of truth. A spiral <ansi fg="itemname">notebook</ansi> lies
+  open on a guitar case, its pages dense with crossed-out lyrics. Through the
+  <ansi fg="itemname">window</ansi>, snow falls on a world that has no idea what is
+  being made in this room. The red recording light is on. It is always on.
 mapsymbol: S
 maplegend: Pachyderm Studios
 biome: house
-exits:
-  east:
-    roomid: 1101
 nouns:
   board: >-
     Albini's analog mixing board -- no computers, no digital trickery. Rows of
     faders and knobs, each one set with the precision of someone who believes the
-    room IS the sound. Tape saturation. Natural compression. The sound of a band
-    in a room, captured honestly, whether they like it or not.
+    room IS the sound. Tape saturation. Natural compression. He records bands the
+    way they sound in the room, not the way the label wants them to sound. The
+    board is warm to the touch, humming with current, every channel alive.
   drums: >-
     Dave Grohl's kit. Massive. The kick drum alone could knock down a wall. The
     snare is tuned tight and dry -- every hit cracks like a rifle shot. There are
     dents in the heads from sheer force. This is not a drum kit that is played.
-    It is a drum kit that is attacked.
+    It is a drum kit that is attacked. Stick tape unravels from the floor toms
+    where he has beaten it loose.
   guitars: >-
     A Fender Mustang, sunburst finish mostly hidden under stickers and grime. A
     Jaguar with a cracked pickguard. Both strung heavy, tuned low, plugged into
-    amps that are already distorting before you touch the strings. They smell like
-    sweat and rosin and something electric.
+    cranked <ansi fg="itemname">amplifiers</ansi> that are already distorting before
+    you touch the strings. They smell like sweat and rosin and something electric.
+    One of them is still feeding back softly, a sustained harmonic that fills the
+    room like weather.
   tapes: >-
-    Reels of two-inch analog tape, each one labeled in Sharpie with track names
-    and take numbers. This is the album in its rawest form -- magnetic oxide
-    holding frequencies that will change everything. No overdubs. No fixing it in
-    the mix. What happened in this room is what you hear.
+    Reels of two-inch analog tape, stacked on shelves and threaded through the
+    machine. Each one labeled in Sharpie with track names and take numbers -- two
+    weeks of work, the whole album laid down fast and live. This is the record in
+    its rawest form, magnetic oxide holding frequencies that will change everything.
+    No overdubs. No fixing it in the mix. What happened in this room is what you hear.
   microphones: >-
-    Condenser and dynamic microphones positioned with surgical care around the
+    Condenser and dynamic microphones positioned with surgical care around the live
     room. Albini spent longer placing these than the band spent recording most
-    tracks. Every angle, every distance, every reflection calculated to capture
-    the truth of the sound.
+    tracks. Every angle, every distance, every reflection calculated to capture the
+    truth of the sound. Room mics hang from the ceiling, picking up the space itself,
+    the air between the instruments, the sound of three people playing together in
+    a room in Minnesota in February.
+  notebook: >-
+    A spiral notebook, college-ruled, its cover stained with coffee rings and
+    cigarette burns. The pages are dense with Kurt's handwriting -- angular,
+    slanting, words crossed out and rewritten and crossed out again. You can make
+    out fragments: something about a heart-shaped box and meat-eating orchids.
+    A page about Frances Farmer and revenge. Lines about sunburn and freezing.
+    The last page with writing has just two words, circled over and over: ALL
+    APOLOGIES. The margins are filled with tiny drawings of seahorses and anatomy.
+  window: >-
+    Snow falls steadily outside the studio windows, blanketing Cannon Falls in
+    white silence. The nearest town is miles away. The nearest distraction even
+    further. This is why Albini chose this place -- isolation so complete that the
+    only thing left to do is play. The glass fogs with condensation from the heat
+    inside, and someone has drawn a frowny face in the moisture. Beyond the snow,
+    Minnesota farmland stretches flat and featureless to the horizon.
+  amplifiers: >-
+    Cranked tube amps lined against the back wall, their pilot lights glowing
+    orange in the dim room. A Fender Twin. A Mesa Boogie. They are turned up past
+    the point of clean sound, past the point of reason, into that territory where
+    the tubes start to break up and the speaker cones distort and the sound becomes
+    something physical, something you feel in your chest before you hear it in your
+    ears. This is the raw sound Albini is after. No effects pedals. No processing.
+    Just voltage and volume and truth.
 spawninfo:
-- mobid: 200
-  message: "A thin man in round glasses sits behind the mixing board, threading tape."
 - mobid: 196
   message: "Kurt Cobain sits on a guitar case, a battered Mustang across his knees, staring at the floor."
 - mobid: 197
   message: "Krist Novoselic unfolds himself from a folding chair, bass in hand, already six feet seven."
 - mobid: 198
   message: "Dave Grohl drops onto the drum stool and immediately starts taping his knuckles."
+- mobid: 200
+  message: "A thin man in round glasses sits behind the mixing board, threading tape."
 idlemessages:
 - The tape reels spin silently, the magnetic heads reading ghosts of performances already laid down.
 - Someone left a half-smoked cigarette balanced on the edge of the mixing board. The ash is two inches long and still growing.
@@ -60,3 +91,7 @@ idlemessages:
 - The red recording light pulses faintly, as if the studio itself has a heartbeat.
 - A guitar string pops somewhere in the live room, the tension finally too much.
 - 'Coffee, cold and black, sits in paper cups on every flat surface -- the fuel of a two-week session.'
+- Kurt hums something quietly to himself, almost inaudible, a melody that will be on the radio in six months.
+- Albini adjusts a microphone stand by a quarter inch, listens, adjusts it back, listens again, nods.
+- Dave hits the snare once, hard, and the crack echoes off the studio walls like a gunshot in a cathedral.
+- A low bass rumble vibrates through the floorboards -- Krist testing a line, the notes felt more than heard.

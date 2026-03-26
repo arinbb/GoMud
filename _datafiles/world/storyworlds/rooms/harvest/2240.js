@@ -1,7 +1,9 @@
 
-// Broken Arrow Ranch - Entry hub for Harvest zone
+// Broken Arrow Ranch - Single room for Harvest zone
+// ZONE COMMANDS: return (leave), play guitar/harmonica (easter egg), strum (easter egg), sit (atmosphere)
 var LIBRARY_ROOM = 1;
 var QUEST_ID = 370;
+var SOUVENIR_ID = 305;
 
 function onEnter(user, room) {
     var visitedKey = "visited_harvest";
@@ -12,33 +14,57 @@ function onEnter(user, room) {
         SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">A harmonica blooms from the spinning vinyl -- one long searching note -- and the Listening Room dissolves in a flood of warm gold light. You are standing on a California ranch in 1972. The wheat is tall and almost ready. The afternoon is going on forever. You are inside the album now.</ansi>");
         SendUserMessage(user.UserId(), "");
         SendUserMessage(user.UserId(), "<ansi fg=\"3\">(Type 'return' at any time to go back to the Grand Library.)</ansi>");
-        
+
         if (!user.HasQuest(QUEST_ID)) {
-        user.GiveQuest(QUEST_ID);
+            user.GiveQuest(QUEST_ID);
         }
-        
-        // Quest step 5: Return to the ranch after walking all ten tracks
-        var tracksVisited = parseInt(user.GetMiscCharacterData("harvest_tracks_visited") || "0");
-        if (tracksVisited >= 10 && user.HasQuest(QUEST_ID)) {
-        user.GiveQuest(QUEST_ID);
-        SendUserMessage(user.UserId(), "");
-        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You have walked the whole ranch. All ten tracks. The harmonica, the pedal steel, the old man on his porch, the small dark room where the Needle played. You have heard it all and come back here to the fields in the golden afternoon where it started. The wheat is still heavy. The light is still long. The album ends. The ranch does not end.</ansi>");
-        if (user.GetMiscCharacterData("souvenir_harvest") != "collected") {
-        user.SetMiscCharacterData("souvenir_harvest", "collected");
-        }
-        }
-        
     }
     return true;
+}
+
+function onIdle(room) {
+    var players = room.GetPlayers();
+    var i;
+    for (i = 0; i < players.length; i++) {
+        var user = GetUser(players[i]);
+        if (!user) {
+            continue;
+        }
+
+        // Track rounds spent on the ranch
+        var rounds = parseInt(user.GetTempData("harvest_rounds") || "0") + 1;
+        user.SetTempData("harvest_rounds", "" + rounds);
+
+        // Auto-complete quest after 3+ rounds
+        if (rounds >= 3 && user.HasQuest(QUEST_ID)) {
+            // Complete step 1 (arrive) and step 2 (soak it in)
+            user.GiveQuest(QUEST_ID);
+            user.GiveQuest(QUEST_ID);
+
+            SendUserMessage(user.UserId(), "");
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You have been here long enough to hear it all -- the guitar on the porch, the pedal steel in the barn, the old man's rocker across the fence, the hawk above the field. The ranch has given you everything it has. The harvest is in. The album ends. The ranch does not end.</ansi>");
+
+            if (user.GetMiscCharacterData("souvenir_harvest") != "collected") {
+                user.SetMiscCharacterData("souvenir_harvest", "collected");
+                var pick = CreateItem(SOUVENIR_ID);
+                if (pick) {
+                    user.GiveItem(pick);
+                    SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You find a guitar pick on the porch rail -- worn smooth on one side, the kind that has played ten thousand songs and will play ten thousand more. You pocket it.</ansi>");
+                }
+            }
+        }
+    }
+    return false;
 }
 
 function onCommand(cmd, rest, user, room) {
 
     if (cmd == "return") {
         SendUserMessage(user.UserId(), "");
-        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The harmonica phrase rises one last time, the pedal steel bends its long note toward silence, and the ranch dissolves into warm static. The golden light thins and fades. You are back in the Grand Library. The smell of wheat and woodsmoke still in your clothes.</ansi>");
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">The golden light thins and fades. The harmonica phrase rises one last time, the pedal steel bends its long note toward silence, and the ranch dissolves into warm static. You are back in the Grand Library. The smell of wheat and woodsmoke still in your clothes.</ansi>");
         SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " dissolves into a wash of pedal steel and golden light, fading back to the Library.", user.UserId());
         user.SetTempData("visited_harvest", "");
+        user.SetTempData("harvest_rounds", "");
         user.MoveRoom(LIBRARY_ROOM);
         return true;
     }
@@ -49,7 +75,7 @@ function onCommand(cmd, rest, user, room) {
             if (user.GetMiscCharacterData("easter_harvest_play") != "found") {
                 user.SetMiscCharacterData("easter_harvest_play", "found");
                 SendUserMessage(user.UserId(), "");
-                SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You pick up the harmonica from the fence post and blow a long note across the ranch. It carries further than you expected, out over the wheat, over the ridge, into the afternoon air. Neil Young looks up from the far end of the field. He does not say anything. He nods once, the way a man nods when someone does something he respects. You play another note. The wheat moves.</ansi>");
+                SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You pick up the harmonica from the fence post and blow a long note across the ranch. It carries further than you expected, out over the wheat, over the ridge, into the afternoon air. Neil Young looks up from the porch. He does not say anything. He nods once, the way a man nods when someone does something he respects. You play another note. The wheat moves.</ansi>");
                 SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " picks up the harmonica from the fence post and plays a long note over the ranch.", user.UserId());
                 user.GrantXP(200, "playing the harmonica at the ranch");
             } else {
@@ -63,11 +89,19 @@ function onCommand(cmd, rest, user, room) {
         if (user.GetMiscCharacterData("easter_harvest_play") != "found") {
             user.SetMiscCharacterData("easter_harvest_play", "found");
             SendUserMessage(user.UserId(), "");
-            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You find the guitar leaning against the barn and strum a G chord. It rings out across the ranch, warm and open. Neil Young looks up from the far field and nods once.</ansi>");
+            SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You find Neil's Martin leaning against the porch rail and strum a G chord. It rings out across the ranch, warm and open, the sound rolling over the wheat like wind. Neil looks up and nods once. The Stray Gators in the barn pause and listen.</ansi>");
+            SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " strums a chord on the guitar. It rings out over the ranch.", user.UserId());
             user.GrantXP(200, "playing guitar at the ranch");
         } else {
             SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You strum the guitar. The chord rings out over the wheat and fades slowly.</ansi>");
         }
+        return true;
+    }
+
+    if (cmd == "sit") {
+        SendUserMessage(user.UserId(), "");
+        SendUserMessage(user.UserId(), "<ansi fg=\"yellow\">You sit on the porch steps. The wood is warm from the afternoon sun. From here you can see the whole ranch -- the wheat, the barn with its doors open, the old man's cottage across the fence, the road going nowhere into the hills. The light is so golden it feels like it has weight. Neil plays a few bars of something quiet. You do not need to go anywhere. You are already here.</ansi>");
+        SendRoomMessage(room.RoomId(), user.GetCharacterName(true) + " sits on the porch steps and watches the light over the ranch.", user.UserId());
         return true;
     }
 

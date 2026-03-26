@@ -1,9 +1,8 @@
 questid: 370
 name: Harvest
 description: >-
-  Walk the Broken Arrow Ranch from season to season. Arrive at the ranch,
-  find the Heart of Gold, sit with the Old Man, listen to the Needle, and
-  hear every track before the harvest moon sets.
+  Visit Broken Arrow Ranch and stay long enough to hear the whole album.
+  Arrive at the ranch, soak in the golden afternoon, and let the harvest come.
 reward:
   experience: 4000
   item_id: 305
@@ -14,7 +13,4 @@ reward:
     thousand songs and will play ten thousand more.
 steps:
 - description: Arrive at Broken Arrow Ranch.
-- description: Find the Heart of Gold stage.
-- description: Meet the Old Man on his porch.
-- description: Hear the Needle and the Damage Done.
-- description: Return to the ranch after walking all ten tracks.
+- description: Soak in the ranch and hear the whole album.

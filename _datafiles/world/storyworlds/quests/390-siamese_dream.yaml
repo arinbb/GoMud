@@ -1,22 +1,19 @@
 questid: 390
 name: Siamese Dream
 description: >-
-  Walk through the whole record. Enter Triclops Sound Studios in Atlanta, 1993.
-  Hear Today in its impossible sunshine. Stand in the acoustic wood of Disarm.
-  Survive nine minutes of Silverfuck. Arrive at Luna, where the moonlight waits
-  at the end of the most beautiful difficult record of the decade.
+  Enter Triclops Sound Studios in Atlanta, 1993. The Smashing Pumpkins are
+  recording Siamese Dream. The AC is broken, the band is fracturing, and
+  Billy Corgan is layering hundreds of guitar tracks onto tape. Stay long
+  enough to hear the whole record take shape.
 reward:
   experience: 4000
   item_id: 315
   playermessage: >-
-    You have walked through the whole record -- all thirteen rooms, from the
-    cathedral of feedback to the moonlit close. A battered Big Muff Pi distortion
-    pedal appears in your hands, the gain knob all the way up. This is the sound
-    of Siamese Dream. Everything beautiful filtered through fuzz until it becomes
-    something new.
+    You have heard the whole record take shape -- from the opening detonation
+    of Cherub Rock to the quiet moonlight of Luna. A battered Big Muff Pi
+    distortion pedal appears in your hands, the gain knob all the way up.
+    This is the sound of Siamese Dream. Everything beautiful filtered through
+    fuzz until it becomes something new.
 steps:
 - description: Enter Triclops Sound Studios in Atlanta.
-- description: Stand in the impossible sunshine of Today.
-- description: Hear Disarm in the acoustic wood.
-- description: Survive Silverfuck.
-- description: Reach Luna and let the moonlight in.
+- description: Absorb the recording session.
