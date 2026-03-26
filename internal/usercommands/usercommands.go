@@ -75,6 +75,7 @@ var (
 		`enchant`:     {Enchant, false, false},
 		`experience`:  {Experience, true, false},
 		`equip`:       {Equip, false, false},
+		`feedback`:    {Feedback, true, false},
 		`flee`:        {Flee, false, false},
 		`gearup`:      {Gearup, false, false},
 		`get`:         {Get, false, false},
