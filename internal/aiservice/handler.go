@@ -51,6 +51,9 @@ func TryAIResponse(mob *mobs.Mob, user *users.UserRecord, question string) bool 
 
 	// Build system prompt
 	systemPrompt := aiCtx.SystemPrompt
+	if aiCtx.Style != "" {
+		systemPrompt += "\n\nSPEECH STYLE:\n" + aiCtx.Style
+	}
 	if aiCtx.Knowledge != "" {
 		systemPrompt += "\n\nKNOWLEDGE:\n" + aiCtx.Knowledge
 	}
