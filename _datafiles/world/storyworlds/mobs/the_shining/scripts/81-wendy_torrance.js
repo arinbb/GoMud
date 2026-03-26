@@ -43,6 +43,6 @@ function onAsk(mob, room, eventDetails) {
         "say I keep hearing things. Footsteps in empty hallways. A woman laughing."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

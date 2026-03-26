@@ -40,14 +40,11 @@ function onAsk(mob, room, eventDetails) {
     }
 
     // Default
-    mob.Command("emote looks at the camera before answering. The camera is just there, to the right. Always there.");
-    mob.Command("say Yeah, I mean -- yeah.", 2.0);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it, looks at the camera.");
-    mob.Command("say I mean.", 1.5);
-    mob.Command("emote shrugs with the minimum shrug that conveys maximum content.", 3.0);
-    return true;
+
+    return false;
 }

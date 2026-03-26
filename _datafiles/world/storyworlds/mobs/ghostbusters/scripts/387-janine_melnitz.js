@@ -38,6 +38,6 @@ function onAsk(mob, room, eventDetails) {
         "say Ghostbusters reception. How can I help you? No, that was a real question."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

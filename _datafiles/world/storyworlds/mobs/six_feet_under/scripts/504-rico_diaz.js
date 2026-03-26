@@ -47,12 +47,11 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me about the work. I'll tell you about the work."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it with a professional eye.");
-    mob.Command("say Good condition. Who maintained it.", 1.5);
-    return true;
+
+    return false;
 }

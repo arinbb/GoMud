@@ -52,8 +52,8 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me about the ice cream. It's very good ice cream."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onGive(mob, room, eventDetails) {

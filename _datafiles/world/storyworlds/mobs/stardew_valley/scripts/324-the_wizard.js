@@ -43,13 +43,11 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me about the Junimos. That is the more interesting question."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote takes it carefully, turns it over with long fingers, holds it near the cauldron light.");
-    mob.Command("say Interesting. This carries a resonance. Where did you find it?");
-    mob.Command("emote returns it with an expression you cannot fully read.", 1.5);
-    return true;
+
+    return false;
 }

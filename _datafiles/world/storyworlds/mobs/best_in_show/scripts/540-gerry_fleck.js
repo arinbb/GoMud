@@ -39,14 +39,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Hmm?");
-    mob.Command("emote looks up with the attentive expression of a man who was not expecting a question but is happy to help.", 1.5);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("say Oh, sure. Let me see that.");
-    mob.Command("emote examines it with the interested attention of a man who likes things.", 1.5);
-    mob.Command("say Hm. That's nice.", 3.0);
-    return true;
+
+    return false;
 }

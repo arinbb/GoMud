@@ -24,13 +24,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote lowers the horn for a moment and looks at you with gentle patience.");
-    mob.Command("say I am working right now. You can stay. Just stay.", 2.0);
-    mob.Command("emote raises the horn and goes back into it.", 3.5);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote glances at it between phrases, nods once, keeps playing.");
-    return true;
+
+    return false;
 }

@@ -39,14 +39,11 @@ function onAsk(mob, room, eventDetails) {
     }
 
     // Default
-    mob.Command("emote looks up with the expression of someone who expected to be left alone and is genuinely glad to be interrupted.");
-    mob.Command("say Oh! Hi. Yeah, what can I do for you?", 1.5);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it carefully.");
-    mob.Command("say I should probably document this.", 1.5);
-    mob.Command("say For HR purposes.", 3.0);
-    return true;
+
+    return false;
 }

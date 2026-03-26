@@ -36,14 +36,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote regards you with polite attention.");
-    mob.Command("say I have limited time before the next group. Please be direct.", 2.0);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with a brief but thorough evaluation.");
-    mob.Command("say The quality is evident. What is the provenance?", 2.0);
-    mob.Command("emote waits with the patience of a man comfortable with precision.", 4.0);
-    return true;
+
+    return false;
 }

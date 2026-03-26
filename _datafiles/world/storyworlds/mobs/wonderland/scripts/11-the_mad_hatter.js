@@ -57,10 +57,7 @@ function onAsk(mob, room, user, eventDetails) {
         return true;
     }
 
-    mob.Command("say WHY is a raven like a writing-desk?");
-    mob.Command("emote regards you with bright, unsettling eyes.");
-    mob.Command("say I'm sure you have a better question than THAT tucked away somewhere. Move down!");
-    return true;
+    return false;
 }
 
 function onIdle(mob, room) {

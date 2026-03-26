@@ -45,6 +45,6 @@ function onAsk(mob, room, eventDetails) {
         "emote squints at the horizon, thinking about it, then shakes his head slowly."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

@@ -55,12 +55,11 @@ function onAsk(mob, room, eventDetails) {
         "say I'm busy. Is it about the case?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it.");
-    mob.Command("say Is this evidence? Where did you get this.", 1.5);
-    return true;
+
+    return false;
 }

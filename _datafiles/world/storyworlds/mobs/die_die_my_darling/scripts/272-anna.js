@@ -43,8 +43,8 @@ function onAsk(mob, room, eventDetails) {
         "say Ask Mrs. Trefoile. Not me."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -62,7 +62,6 @@ function onShow(mob, room, eventDetails) {
         mob.Command("say Just put it away.", 4.5);
         return true;
     }
-    mob.Command("emote looks at it briefly.");
-    mob.Command("say I don't know anything about that.");
-    return true;
+
+    return false;
 }

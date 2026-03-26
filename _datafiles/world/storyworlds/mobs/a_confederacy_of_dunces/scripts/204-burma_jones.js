@@ -56,6 +56,6 @@ function onAsk(mob, room, eventDetails) {
         "emote blows a cloud of smoke and watches it drift toward the ceiling."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

@@ -53,6 +53,6 @@ function onAsk(mob, room, eventDetails) {
         "say The canyon wall does not care about your question. Neither do I, but at least I told you."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

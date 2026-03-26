@@ -36,15 +36,11 @@ function onAsk(mob, room, eventDetails) {
     }
 
     // Default: catalog description of whatever was asked
-    mob.Command("emote considers the question.");
-    mob.Command("say Everything has a story. Including what you've just asked me.", 2.0);
-    mob.Command("emote begins to tell the story.", 3.5);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote takes the item and turns it over slowly.");
-    mob.Command("say There is a catalog entry in this.", 2.0);
-    mob.Command("emote is already composing it.", 3.5);
-    return true;
+
+    return false;
 }

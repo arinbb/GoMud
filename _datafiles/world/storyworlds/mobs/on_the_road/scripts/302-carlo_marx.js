@@ -39,12 +39,11 @@ function onAsk(mob, room, eventDetails) {
         "say The night is full of signals. Are you receiving?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote stares at it with visionary intensity for a long moment.");
-    mob.Command("say Yes. This too is a poem. Everything is a poem. The problem is most people are not listening closely enough to hear it.");
-    return true;
+
+    return false;
 }

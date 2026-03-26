@@ -63,6 +63,6 @@ function onAsk(mob, room, eventDetails) {
         "emote stares at the telescreen for a moment, then looks back. His face is very blank."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

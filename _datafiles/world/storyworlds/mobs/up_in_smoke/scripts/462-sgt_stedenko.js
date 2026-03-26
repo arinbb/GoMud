@@ -44,13 +44,11 @@ function onAsk(mob, room, eventDetails) {
         "say Everything is related. You just have to find the connection. I will find it."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it sharply.");
-    mob.Command("say Where did you get that?");
-    mob.Command("emote takes out his notepad and writes something before you can answer.", 1.5);
-    return true;
+
+    return false;
 }

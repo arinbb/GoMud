@@ -54,13 +54,11 @@ function onAsk(mob, room, eventDetails) {
         "emote picks a quiet chord and lets it settle before answering."
     ];
     var pick = Math.floor(Math.random() * wisdom.length);
-    mob.Command(wisdom[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it with calm, direct attention.");
-    mob.Command("say Now where did that come from.", 1.5);
-    mob.Command("emote turns it over in his hands thoughtfully.", 3.0);
-    return true;
+
+    return false;
 }

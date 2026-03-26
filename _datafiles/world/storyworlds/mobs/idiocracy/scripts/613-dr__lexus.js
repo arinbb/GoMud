@@ -37,6 +37,6 @@ function onAsk(mob, room, eventDetails) {
         "emote presses the diagnosis machine button. The machine whirs. A ticket comes out. He does not read it."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

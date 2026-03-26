@@ -43,6 +43,6 @@ function onAsk(mob, room, eventDetails) {
         "say The hotel asks only for your dedication, sir. Your complete dedication."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

@@ -1,7 +1,7 @@
 
 function onAsk(mob, room, eventDetails) {
-    mob.Command("emote holds the window light. She does not turn. The organ chord sustains.");
-    return true;
+
+    return false;
 }
 
 function onIdle(mob, room) {

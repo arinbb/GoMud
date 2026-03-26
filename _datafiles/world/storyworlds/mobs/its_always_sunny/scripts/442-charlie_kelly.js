@@ -48,12 +48,11 @@ function onAsk(mob, room, eventDetails) {
         "say Wait, what was the question? I was thinking about the Waitress."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it with great curiosity.");
-    mob.Command("say Is that for me? Can I eat it? What happens if I eat it?", 1.5);
-    return true;
+
+    return false;
 }

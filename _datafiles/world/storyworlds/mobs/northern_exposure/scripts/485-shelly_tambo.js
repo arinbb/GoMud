@@ -38,13 +38,11 @@ function onAsk(mob, room, eventDetails) {
         "say I've been thinking about a lot of things lately. Big things. Small things. Both."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote leans over the bar to look at it properly.");
-    mob.Command("say Oh that is really something. Where did you get that?");
-    mob.Command("emote reaches out and almost touches it, then pulls her hand back with a grin.", 2.0);
-    return true;
+
+    return false;
 }

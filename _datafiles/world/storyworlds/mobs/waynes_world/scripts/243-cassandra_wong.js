@@ -35,12 +35,11 @@ function onAsk(mob, room, eventDetails) {
         "say Come to the show. You'll understand better after the show."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it.");
-    mob.Command("say That's interesting. Where does it come from?");
-    return true;
+
+    return false;
 }

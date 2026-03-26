@@ -43,9 +43,7 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say What are you gawping at? Get back to your classroom before I throw you there!");
-    mob.Command("emote glares with barely contained fury.", 1.5);
-    return true;
+    return false;
 }
 
 function onIdle(mob, room) {

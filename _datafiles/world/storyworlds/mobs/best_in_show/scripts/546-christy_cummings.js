@@ -39,14 +39,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks up briefly.");
-    mob.Command("say Yes?", 0.5);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it quickly with the focus of someone who assesses things fast.");
-    mob.Command("say Is this relevant to the show?", 1.5);
-    mob.Command("emote waits. If it is relevant, she will note it.", 3.0);
-    return true;
+
+    return false;
 }

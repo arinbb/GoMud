@@ -56,13 +56,11 @@ function onAsk(mob, room, eventDetails) {
         "say As a duly appointed officer of the law, I want you to know I am ON IT."
     ];
     var pick = Math.floor(Math.random() * responses.length);
-    mob.Command(responses[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote takes it and examines it with official scrutiny.");
-    mob.Command("say Now where did this come from. This could be evidence.", 1.5);
-    mob.Command("emote looks around the room as if the criminal may still be nearby.", 3.0);
-    return true;
+
+    return false;
 }

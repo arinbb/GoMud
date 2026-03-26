@@ -63,8 +63,8 @@ function onAsk(mob, room, eventDetails) {
         "say Have a beer and watch the stars. Most questions answer themselves."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -82,7 +82,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote glances at it and goes back to his knife.");
-    mob.Command("say Useful?", 1.0);
-    return true;
+    return false;
 }

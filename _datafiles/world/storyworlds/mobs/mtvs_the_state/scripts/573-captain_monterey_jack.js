@@ -23,16 +23,11 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote turns to look at you.");
-    mob.Command("say Oh, the human race.", 1.5);
-    mob.Command("say You seem all right. Most of them do, close up. That is the tragedy of it.", 3.0);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
     mob.Command("emote examines it.");
-    mob.Command("say A human made this. The human race made this.");
-    mob.Command("emote pauses.", 1.5);
-    mob.Command("say It is actually quite good. That is not always the case. Give them credit.", 3.0);
-    return true;
+
+    return false;
 }

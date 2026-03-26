@@ -31,12 +31,11 @@ function onAsk(mob, room, eventDetails) {
         "say I am a businesswoman. I have no time for conversation."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote takes the item in dry hands and examines it with practiced swiftness.");
-    mob.Command("say Hmm. Not much. I could give you perhaps -- come back tomorrow, I will think on it.", 2.0);
-    return true;
+
+    return false;
 }

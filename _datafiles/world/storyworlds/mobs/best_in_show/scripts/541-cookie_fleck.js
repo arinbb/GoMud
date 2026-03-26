@@ -30,14 +30,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks over with a warm, open expression.");
-    mob.Command("say What's up?", 1.0);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote leans in to look.");
-    mob.Command("say Oh, that's cute.", 1.5);
-    mob.Command("emote smiles genuinely.", 2.5);
-    return true;
+
+    return false;
 }

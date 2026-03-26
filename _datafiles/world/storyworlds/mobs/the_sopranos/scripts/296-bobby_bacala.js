@@ -30,12 +30,11 @@ function onAsk(mob, room, eventDetails) {
         "say I don't say anything I'm not sure about. That's a good policy."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with honest, gentle attention.");
-    mob.Command("say That's a good piece. Where'd you get that?", 1.5);
-    return true;
+
+    return false;
 }

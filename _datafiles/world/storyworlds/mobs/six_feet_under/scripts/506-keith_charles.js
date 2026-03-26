@@ -45,12 +45,11 @@ function onAsk(mob, room, eventDetails) {
         "say Say what you came to say."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it, assesses it, nods.");
-    mob.Command("say Okay.", 1.5);
-    return true;
+
+    return false;
 }

@@ -56,12 +56,11 @@ function onAsk(mob, room, eventDetails) {
         "say Is this relevant to the arrangements."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with professional attention.");
-    mob.Command("say I see.", 1.5);
-    return true;
+
+    return false;
 }

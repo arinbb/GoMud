@@ -44,8 +44,8 @@ function onAsk(mob, room, eventDetails) {
         "say This is -- yeah. This is good. I think this is good."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -58,7 +58,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks at it politely.");
-    mob.Command("say Oh. That's -- yeah. Cool.", 1.5);
-    return true;
+    return false;
 }

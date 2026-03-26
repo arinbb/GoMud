@@ -43,6 +43,6 @@ function onAsk(mob, room, eventDetails) {
         "say My daughter did the right thing. I want you to know I believe that."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

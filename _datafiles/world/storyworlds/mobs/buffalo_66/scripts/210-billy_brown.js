@@ -71,12 +71,11 @@ function onAsk(mob, room, eventDetails) {
         "say I'm FINE. Everything is FINE. Why does everyone keep ASKING?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote glances at it dismissively.");
-    mob.Command("say I don't care about that. I don't care about ANYTHING you have to show me.");
-    return true;
+
+    return false;
 }

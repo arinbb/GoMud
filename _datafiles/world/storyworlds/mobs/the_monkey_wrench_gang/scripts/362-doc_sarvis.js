@@ -54,8 +54,8 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me again in a more interesting way."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -73,7 +73,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote examines it.");
-    mob.Command("say Interesting. Is it flammable?", 1.0);
-    return true;
+    return false;
 }

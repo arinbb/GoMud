@@ -51,6 +51,6 @@ function onAsk(mob, room, eventDetails) {
         "emote smiles gently, but her eyes hold a sadness that never quite leaves."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

@@ -58,13 +58,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Can't talk. Game's on.");
-    mob.Command("emote turns back to the television.", 1.0);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("say Not now. Third quarter.");
-    mob.Command("emote does not look at what you are showing her.");
-    return true;
+
+    return false;
 }

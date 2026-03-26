@@ -37,6 +37,6 @@ function onAsk(mob, room, eventDetails) {
         "say Everyone who walks in here eventually says yes. Some of them just need more time to realize they want to."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

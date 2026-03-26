@@ -50,8 +50,8 @@ function onAsk(mob, room, eventDetails) {
         "say Speak carefully, stranger. My patience is not without limit."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -69,7 +69,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote regards it with regal indifference.");
-    mob.Command("say Curious. You may go.");
-    return true;
+    return false;
 }

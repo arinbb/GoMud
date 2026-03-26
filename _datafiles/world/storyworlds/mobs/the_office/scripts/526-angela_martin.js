@@ -38,13 +38,11 @@ function onAsk(mob, room, eventDetails) {
     }
 
     // Default
-    mob.Command("emote regards you with the patience of a woman who has been tolerating things all day.");
-    mob.Command("say Can I help you with something specific?", 2.0);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with clear standards being applied.");
-    mob.Command("say That is not up to code.", 1.5);
-    return true;
+
+    return false;
 }

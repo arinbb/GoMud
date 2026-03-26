@@ -35,12 +35,11 @@ function onAsk(mob, room, eventDetails) {
         "say Everything has value. The question is how you extract it."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it professionally.");
-    mob.Command("say This has some value. I could make some calls. What are you asking for it?");
-    return true;
+
+    return false;
 }

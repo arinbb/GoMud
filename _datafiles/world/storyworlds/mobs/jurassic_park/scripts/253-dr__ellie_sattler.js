@@ -43,13 +43,11 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me about something specific. I work better with specifics."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it quickly and efficiently.");
-    mob.Command("say This is interesting. What's the provenance?");
-    mob.Command("emote notes something about it in her notebook.", 1.5);
-    return true;
+
+    return false;
 }

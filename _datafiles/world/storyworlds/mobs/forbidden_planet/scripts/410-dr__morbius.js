@@ -69,8 +69,8 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me about the Krell. They are far more interesting than my domestic arrangements."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -83,7 +83,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote examines it with professional attention.");
-    mob.Command("say Interesting. But not Krell.");
-    return true;
+    return false;
 }

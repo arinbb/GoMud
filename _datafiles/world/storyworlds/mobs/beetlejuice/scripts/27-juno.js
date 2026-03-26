@@ -55,8 +55,7 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say I'm busy. Ask me something relevant — the rules, the handbook, the waiting process — or get out of my office.");
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -78,6 +77,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say I don't have time for this. File a form.");
-    return true;
+    return false;
 }

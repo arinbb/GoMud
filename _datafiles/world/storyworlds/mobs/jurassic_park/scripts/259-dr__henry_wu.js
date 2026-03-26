@@ -44,12 +44,11 @@ function onAsk(mob, room, eventDetails) {
         "say Every system here works within my specifications. Some of the systems interacted in ways I hadn't fully modeled."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote takes it, examines it with professional precision, hands it back.");
-    mob.Command("say Interesting specimen. Where did you acquire it?");
-    return true;
+
+    return false;
 }

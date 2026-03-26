@@ -32,6 +32,5 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say You doing okay? Can I get you some coffee?");
-    return true;
+    return false;
 }

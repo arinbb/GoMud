@@ -87,8 +87,8 @@ function onAsk(mob, room, eventDetails) {
         "say My valve is acting up. This conversation is a contributing factor."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -106,7 +106,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote glances at it with visible contempt.");
-    mob.Command("say Interesting. By which I mean utterly beneath my notice.");
-    return true;
+    return false;
 }

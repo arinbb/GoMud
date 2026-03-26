@@ -34,6 +34,6 @@ function onAsk(mob, room, eventDetails) {
         "say In my experience, there are two kinds of people in the world: the disciplined, and the slackers."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

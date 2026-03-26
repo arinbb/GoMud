@@ -43,6 +43,6 @@ function onAsk(mob, room, eventDetails) {
         "say The board tells you everything if you know how to listen to it."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

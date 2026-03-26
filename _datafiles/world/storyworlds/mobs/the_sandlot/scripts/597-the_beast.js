@@ -13,8 +13,7 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote regards you with deep calm intelligence and wags his tail once.");
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -27,6 +26,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote sniffs in the direction of whatever you're holding and is briefly interested, then lies back down.");
-    return true;
+    return false;
 }

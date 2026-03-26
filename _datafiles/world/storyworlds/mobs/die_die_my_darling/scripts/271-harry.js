@@ -42,12 +42,11 @@ function onAsk(mob, room, eventDetails) {
         "emote turns back to what he was doing without responding."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote glances at it without interest.");
-    mob.Command("say Put it away.");
-    return true;
+
+    return false;
 }

@@ -42,12 +42,11 @@ function onAsk(mob, room, eventDetails) {
         "say I'm listening. Make it count."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with the thoroughness of a businessman.");
-    mob.Command("say Where did you get this?");
-    return true;
+
+    return false;
 }

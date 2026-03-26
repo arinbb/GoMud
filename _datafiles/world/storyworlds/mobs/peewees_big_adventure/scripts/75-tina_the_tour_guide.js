@@ -44,9 +44,7 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Great question! But if you want to know about the Alamo, the tour, or our gift shop, I'm your gal!");
-    mob.Command("say And just so we're clear: no basement.", 2);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -58,6 +56,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Oh, neat! But not as neat as the Alamo! Did you know the original walls are still standing?");
-    return true;
+    return false;
 }

@@ -47,14 +47,11 @@ function onAsk(mob, room, eventDetails) {
     }
 
     // Default
-    mob.Command("emote regards you with the evaluative expression of a man deciding if you are a threat.");
-    mob.Command("say State your purpose.", 2.0);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with the thorough attention of a man inspecting evidence.");
-    mob.Command("say I have identified what this is.", 2.0);
-    mob.Command("say I will not be sharing that information.", 3.5);
-    return true;
+
+    return false;
 }

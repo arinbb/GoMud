@@ -26,6 +26,6 @@ function onAsk(mob, room, eventDetails) {
         "emote watches the avenue with the patience of someone who is exactly where they are supposed to be."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

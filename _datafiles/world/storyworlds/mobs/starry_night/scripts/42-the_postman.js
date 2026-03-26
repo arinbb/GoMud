@@ -44,6 +44,6 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me about Vincent — I could tell you stories about that painter all night."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

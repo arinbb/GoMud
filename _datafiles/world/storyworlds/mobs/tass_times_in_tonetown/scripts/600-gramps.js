@@ -50,8 +50,8 @@ function onAsk(mob, room, eventDetails) {
         "say The bars are simple. I have been studying the lock. I could tell you the solution if you like."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -65,7 +65,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote examines what you are showing with genuine scientific interest.");
-    mob.Command("say Interesting. That is from Tonetown, I take it? Everything from Tonetown has a certain -- quality.", 1.5);
-    return true;
+    return false;
 }

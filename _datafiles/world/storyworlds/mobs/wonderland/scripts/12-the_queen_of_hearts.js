@@ -67,9 +67,7 @@ function onAsk(mob, room, user, eventDetails) {
         return true;
     }
 
-    mob.Command("emote fixes you with a gaze of regal suspicion.");
-    mob.Command("say I haven't decided whether you've said something offensive yet. Watch your head while I deliberate.");
-    return true;
+    return false;
 }
 
 function onIdle(mob, room) {

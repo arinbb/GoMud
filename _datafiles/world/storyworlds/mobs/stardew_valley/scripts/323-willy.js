@@ -36,12 +36,11 @@ function onAsk(mob, room, eventDetails) {
         "say Come back when the tide turns. That is when they bite."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with the practiced eye of someone who has seen many things come out of the water.");
-    mob.Command("say Hm. Where did you find that? The bay gives up interesting things if you know where to look.");
-    return true;
+
+    return false;
 }

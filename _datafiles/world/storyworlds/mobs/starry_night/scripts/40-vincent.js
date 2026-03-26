@@ -61,8 +61,8 @@ function onAsk(mob, room, eventDetails) {
         "say Come, walk with me. I will show you how the light falls on the olive trees. Ask me about anything — the stars, the cafe, my friend the postman."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -75,7 +75,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote studies what you show him with an artist's intense gaze.");
-    mob.Command("say Interesting. The colors are... yes. I see it. I could paint this.");
-    return true;
+    return false;
 }

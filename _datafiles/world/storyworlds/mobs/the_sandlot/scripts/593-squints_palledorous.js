@@ -39,6 +39,6 @@ function onAsk(mob, room, eventDetails) {
         "say When the moment comes, you'll understand."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

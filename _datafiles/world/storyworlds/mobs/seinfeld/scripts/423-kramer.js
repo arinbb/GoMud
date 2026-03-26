@@ -41,14 +41,11 @@ function onAsk(mob, room, eventDetails) {
         "say There's money in this. Real money. I can smell it."
     ];
     var pick = Math.floor(Math.random() * schemes.length);
-    mob.Command(schemes[pick]);
-    mob.Command("emote begins explaining something that gets larger with each sentence.", 2.0);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with intense interest.");
-    mob.Command("say I can use this.", 1.5);
-    mob.Command("emote does not explain how.", 3.0);
-    return true;
+
+    return false;
 }

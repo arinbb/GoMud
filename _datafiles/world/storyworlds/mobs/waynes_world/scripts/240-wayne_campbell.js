@@ -58,12 +58,11 @@ function onAsk(mob, room, eventDetails) {
         "emote points finger-guns. You know what I'm saying?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with genuine focus.");
-    mob.Command("say Excellent. This is excellent. Where did you get this?");
-    return true;
+
+    return false;
 }

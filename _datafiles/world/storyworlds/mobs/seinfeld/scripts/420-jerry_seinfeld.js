@@ -58,13 +58,11 @@ function onAsk(mob, room, eventDetails) {
         "say See, this is what I mean. Everything is material."
     ];
     var pick = Math.floor(Math.random() * bits.length);
-    mob.Command(bits[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it carefully.");
-    mob.Command("say What is the deal with this?", 1.5);
-    mob.Command("emote seems to be working out the beginning of an observation.", 3.0);
-    return true;
+
+    return false;
 }

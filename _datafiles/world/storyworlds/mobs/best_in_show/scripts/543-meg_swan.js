@@ -30,14 +30,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks up. She was elsewhere.");
-    mob.Command("say Sorry -- yes. I'm listening.", 1.5);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it.");
-    mob.Command("say What does this mean to you? When you look at this, what do you feel?", 2.0);
-    mob.Command("emote waits with genuine interest.", 4.0);
-    return true;
+
+    return false;
 }

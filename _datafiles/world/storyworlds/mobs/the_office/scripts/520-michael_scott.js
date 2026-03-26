@@ -61,15 +61,13 @@ function onAsk(mob, room, eventDetails) {
         "say I have a lot of qualities. That's one of them."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it carefully.");
-    mob.Command("say Is this a gift? I accept gifts.", 1.5);
-    mob.Command("emote holds it up to show the whole room.", 3.0);
-    return true;
+
+    return false;
 }
 
 function onGive(mob, room, eventDetails) {

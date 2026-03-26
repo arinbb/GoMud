@@ -55,6 +55,6 @@ function onAsk(mob, room, eventDetails) {
         "emote looks at you with those pale blue eyes and waits. He has all the time in the world."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

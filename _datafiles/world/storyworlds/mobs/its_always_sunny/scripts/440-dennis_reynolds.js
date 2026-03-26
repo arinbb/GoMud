@@ -47,12 +47,11 @@ function onAsk(mob, room, eventDetails) {
         "emote gives you a long, evaluating look and says nothing. The rating, if there is one, is not revealed."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it briefly, then rates it on some internal scale only he knows.");
-    mob.Command("say I give that a six. Maybe a six and a half. The six is charitable.", 1.5);
-    return true;
+
+    return false;
 }

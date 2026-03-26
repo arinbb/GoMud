@@ -38,12 +38,11 @@ function onAsk(mob, room, eventDetails) {
         "say Sit down. I'll put something together."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with the appraising look of someone who knows what things cost.");
-    mob.Command("say That's nice. Is it from around here?", 1.5);
-    return true;
+
+    return false;
 }

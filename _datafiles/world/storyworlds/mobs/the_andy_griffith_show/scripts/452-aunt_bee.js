@@ -44,8 +44,8 @@ function onAsk(mob, room, eventDetails) {
         "say Have you eaten? You look like you have not eaten."
     ];
     var pick = Math.floor(Math.random() * responses.length);
-    mob.Command(responses[pick]);
-    return true;
+
+    return false;
 }
 
 function onGive(mob, room, eventDetails) {

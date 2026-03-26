@@ -66,8 +66,8 @@ function onAsk(mob, room, eventDetails) {
         "say I don't know. I don't know anything right now."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -83,6 +83,6 @@ function onShow(mob, room, eventDetails) {
         mob.Command("say Not yet.", 3.0);
         return true;
     }
-    mob.Command("emote glances at it without interest and returns to his thoughts.");
-    return true;
+
+    return false;
 }

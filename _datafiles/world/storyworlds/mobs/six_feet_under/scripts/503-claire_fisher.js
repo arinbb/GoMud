@@ -48,12 +48,11 @@ function onAsk(mob, room, eventDetails) {
         "say What do you actually want to know."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote holds it up and photographs it from two angles.");
-    mob.Command("say Good.", 1.5);
-    return true;
+
+    return false;
 }

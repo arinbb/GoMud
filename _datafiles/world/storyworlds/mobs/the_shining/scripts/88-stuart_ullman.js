@@ -39,6 +39,6 @@ function onAsk(mob, room, eventDetails) {
         "say The hotel practically runs itself. You'll barely need to lift a finger."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

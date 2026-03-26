@@ -64,14 +64,13 @@ function onAsk(mob, room, eventDetails) {
         "say Grown-ups never understand anything by themselves, so it is tiresome to explain."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines what you are showing him with the total attention of a child.");
-    mob.Command("say That is interesting. What does it do? Is it useful for sheep?");
-    return true;
+
+    return false;
 }
 
 function onIdle(mob, room) {

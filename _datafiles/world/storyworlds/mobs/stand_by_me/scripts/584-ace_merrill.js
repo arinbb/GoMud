@@ -30,6 +30,6 @@ function onAsk(mob, room, eventDetails) {
         "emote turns the switchblade over in his fingers, unhurried."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

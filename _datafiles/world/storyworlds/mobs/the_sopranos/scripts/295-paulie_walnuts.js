@@ -39,12 +39,11 @@ function onAsk(mob, room, eventDetails) {
         "say In my experience, whatever you think the problem is, the real problem is different."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote leans away slightly as if concerned about contamination, then leans back.");
-    mob.Command("say What is that? Where has that been?", 1.5);
-    return true;
+
+    return false;
 }

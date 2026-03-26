@@ -35,6 +35,6 @@ function onAsk(mob, room, eventDetails) {
         "emote watches the courtyard."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

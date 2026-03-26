@@ -46,6 +46,6 @@ function onAsk(mob, room, eventDetails) {
         "say Sit down if you want to. I don't mind the company."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

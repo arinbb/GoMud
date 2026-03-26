@@ -42,12 +42,11 @@ function onAsk(mob, room, eventDetails) {
         "say You didn't say the magic word."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote glances at it briefly.");
-    mob.Command("say Is that something I need to log? Because I'm very busy.");
-    return true;
+
+    return false;
 }

@@ -73,17 +73,13 @@ function onAsk(mob, room, eventDetails) {
     }
 
     // Default: she says goodnight to whatever they asked about
-    mob.Command("emote pauses her rocking for a fraction of a second.");
-    mob.Command("say goodnight.");
-    mob.Command("emote resumes knitting with absolute serenity.", 1.5);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote glances at what you are showing her with mild interest.");
-    mob.Command("say goodnight.");
-    mob.Command("emote returns to her knitting. Everything has been properly said goodnight to.", 1.5);
-    return true;
+
+    return false;
 }
 
 function onIdle(mob, room) {

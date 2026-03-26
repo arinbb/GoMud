@@ -38,12 +38,11 @@ function onAsk(mob, room, eventDetails) {
         "say I can bench two-fifty. Well, theoretically. The equipment at the bar is limited."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote assesses it as if it might be a weapon.");
-    mob.Command("say Could I hit someone with that? I am not saying I would. I am asking hypothetically.", 1.5);
-    return true;
+
+    return false;
 }

@@ -50,8 +50,8 @@ function onAsk(mob, room, eventDetails) {
         "say We dwarves are made of sterner stuff than most."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -69,7 +69,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote glances at it with kingly appraisal.");
-    mob.Command("say Dwarf-craft is finer, but it will serve.");
-    return true;
+    return false;
 }

@@ -41,6 +41,6 @@ function onAsk(mob, room, eventDetails) {
         "emote eyes you as if calculating your trade-in value."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

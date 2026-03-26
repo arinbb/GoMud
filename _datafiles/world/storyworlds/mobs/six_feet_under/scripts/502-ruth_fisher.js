@@ -56,8 +56,8 @@ function onAsk(mob, room, eventDetails) {
         "say I'll make more if you need it."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onGive(mob, room, eventDetails) {
@@ -68,7 +68,6 @@ function onGive(mob, room, eventDetails) {
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it carefully.");
-    mob.Command("say Where did you find that.", 1.5);
-    return true;
+
+    return false;
 }

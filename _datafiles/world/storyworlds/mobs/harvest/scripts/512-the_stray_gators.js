@@ -29,6 +29,6 @@ function onAsk(mob, room, eventDetails) {
         "say You want to hear something? Pull up a hay bale."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

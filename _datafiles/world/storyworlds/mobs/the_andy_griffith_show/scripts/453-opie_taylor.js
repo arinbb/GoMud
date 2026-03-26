@@ -36,6 +36,6 @@ function onAsk(mob, room, eventDetails) {
         "say I am trying to figure something out. Do you have a minute? It might take more than a minute."
     ];
     var pick = Math.floor(Math.random() * questions.length);
-    mob.Command(questions[pick]);
-    return true;
+
+    return false;
 }

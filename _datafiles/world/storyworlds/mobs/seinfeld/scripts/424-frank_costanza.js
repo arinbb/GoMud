@@ -40,12 +40,11 @@ function onAsk(mob, room, eventDetails) {
         "say You want to know what I think? I will TELL you what I think."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with the thoroughness of a man who finds everything inadequate.");
-    mob.Command("say This is fine. I've seen better.", 2.0);
-    return true;
+
+    return false;
 }

@@ -29,6 +29,6 @@ function onAsk(mob, room, eventDetails) {
         "say I'm working on my grip."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

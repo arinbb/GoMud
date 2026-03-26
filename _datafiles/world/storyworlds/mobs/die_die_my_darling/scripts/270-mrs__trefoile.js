@@ -65,8 +65,8 @@ function onAsk(mob, room, eventDetails) {
         "emote looks at you steadily and says nothing."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -94,9 +94,7 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks at it briefly and returns her gaze to you.");
-    mob.Command("say Is it necessary? If it is not necessary, it is vanity.");
-    return true;
+    return false;
 }
 
 function onGive(mob, room, eventDetails) {

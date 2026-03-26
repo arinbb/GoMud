@@ -63,8 +63,8 @@ function onAsk(mob, room, eventDetails) {
         "say In my experience, the right answer to almost any question is 'we'll figure it out.' Has worked so far."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -77,6 +77,6 @@ function onShow(mob, room, eventDetails) {
         mob.Command("say Tried and true. Step on the pedal, don't stare into the beam. Very basic. Very effective.");
         return true;
     }
-    mob.Command("say Interesting. What am I looking at?");
-    return true;
+
+    return false;
 }

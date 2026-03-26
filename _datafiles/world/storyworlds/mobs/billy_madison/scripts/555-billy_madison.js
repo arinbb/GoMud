@@ -57,13 +57,11 @@ function onAsk(mob, room, eventDetails) {
         "say I'm working on being smarter. I'm getting there. Fractions first, then everything else."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote takes it and looks at it with genuine interest.");
-    mob.Command("say Whoa. WHOA. Where did you get this? This is incredible. Wait --");
-    mob.Command("emote sniffs it. 'Is this what I think it is?'", 2.0);
-    return true;
+
+    return false;
 }

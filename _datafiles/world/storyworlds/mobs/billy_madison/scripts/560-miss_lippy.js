@@ -33,12 +33,11 @@ function onAsk(mob, room, eventDetails) {
         "say In first grade, we say 'I don't know yet, but I'll find out.' It's a good policy."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it thoughtfully.");
-    mob.Command("say Very interesting. We could do a craft project with this.");
-    return true;
+
+    return false;
 }

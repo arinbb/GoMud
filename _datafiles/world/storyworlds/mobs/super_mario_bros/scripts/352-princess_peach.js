@@ -30,7 +30,5 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote smiles at you with warm grace.");
-    mob.Command("say Thank you for everything. Please, have some cake.");
-    return true;
+    return false;
 }

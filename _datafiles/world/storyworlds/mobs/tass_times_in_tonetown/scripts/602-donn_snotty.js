@@ -43,8 +43,8 @@ function onAsk(mob, room, eventDetails) {
         "say If you have come to argue about tass, I have had this argument. I won it. The data is on the wall."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -58,7 +58,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks at what you are showing with the neutrality of a man who has decided not to be affected by objects.");
-    mob.Command("say Interesting. A souvenir. People do like their souvenirs.", 1.5);
-    return true;
+    return false;
 }

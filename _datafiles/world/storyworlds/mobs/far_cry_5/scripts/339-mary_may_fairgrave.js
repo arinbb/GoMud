@@ -38,6 +38,6 @@ function onAsk(mob, room, eventDetails) {
         "say You want a drink? I find most things are easier after a drink. Or during."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

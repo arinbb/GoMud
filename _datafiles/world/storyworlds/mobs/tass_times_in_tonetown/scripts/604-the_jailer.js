@@ -43,6 +43,6 @@ function onAsk(mob, room, eventDetails) {
         "say What brings you to the jail? Not your outfit -- your outfit is acceptable."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

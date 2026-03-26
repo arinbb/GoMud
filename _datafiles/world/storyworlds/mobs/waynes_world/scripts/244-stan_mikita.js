@@ -36,12 +36,11 @@ function onAsk(mob, room, eventDetails) {
         "emote nods. He's been here a while. He'll be here a while longer."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it over the counter.");
-    mob.Command("say Huh. Don't see that every day. Where'd you get it?");
-    return true;
+
+    return false;
 }

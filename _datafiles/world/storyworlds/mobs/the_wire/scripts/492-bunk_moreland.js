@@ -34,6 +34,6 @@ function onAsk(mob, room, eventDetails) {
         "emote adjusts his fedora and waits for you to say something worth responding to."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

@@ -96,8 +96,7 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Hmm, I'm not really sure about that. You could ask me about the handbook, my model town, scaring people, or... well, our situation here.");
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -129,6 +128,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Oh, that's interesting. Where did you find that?");
-    return true;
+    return false;
 }

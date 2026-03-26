@@ -37,12 +37,11 @@ function onAsk(mob, room, eventDetails) {
         "say You seem like someone who would appreciate an extremely dry observation about what is happening. Here it is:"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with composed interest.");
-    mob.Command("say This is a thing that exists. I have several observations about it. Do you want them in order of funniness or order of accuracy?");
-    return true;
+
+    return false;
 }

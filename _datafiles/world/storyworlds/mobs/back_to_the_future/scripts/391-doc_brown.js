@@ -58,8 +58,8 @@ function onAsk(mob, room, eventDetails) {
         "say There are so many variables! So MANY variables!"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -73,7 +73,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote glances at it.");
-    mob.Command("say Fascinating. Yes. Now if you'll excuse me, I need to determine the exact charge coefficient for --");
-    return true;
+    return false;
 }

@@ -27,13 +27,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks up from the clipboard.");
-    mob.Command("say Need something?", 1.0);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it efficiently.");
-    mob.Command("say Hm. Stefan would have a better opinion about this than I do. My instinct is good, though.", 2.0);
-    return true;
+
+    return false;
 }

@@ -40,6 +40,6 @@ function onAsk(mob, room, eventDetails) {
         "emote laughs at something private and goes on with her work."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

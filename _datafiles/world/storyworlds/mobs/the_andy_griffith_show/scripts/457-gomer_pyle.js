@@ -41,6 +41,6 @@ function onAsk(mob, room, eventDetails) {
         "say Is that right? That is just amazing to me. Truly amazing."
     ];
     var pick = Math.floor(Math.random() * responses.length);
-    mob.Command(responses[pick]);
-    return true;
+
+    return false;
 }

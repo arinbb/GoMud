@@ -51,6 +51,6 @@ function onAsk(mob, room, eventDetails) {
         "emote tapes another blister on his right hand and flexes it, testing."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

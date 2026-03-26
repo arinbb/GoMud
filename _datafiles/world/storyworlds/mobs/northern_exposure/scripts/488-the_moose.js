@@ -7,8 +7,8 @@ function onAsk(mob, room, eventDetails) {
         "emote blinks once, with enormous long-lashed eyes, in the way of a creature that has considered your question and found it beside the point."
     ];
     var pick = Math.floor(Math.random() * responses.length);
-    mob.Command(responses[pick]);
-    return true;
+
+    return false;
 }
 
 function onIdle(mob, room) {

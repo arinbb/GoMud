@@ -47,6 +47,6 @@ function onAsk(mob, room, eventDetails) {
         "say The tape is rolling. Keep your voice down."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

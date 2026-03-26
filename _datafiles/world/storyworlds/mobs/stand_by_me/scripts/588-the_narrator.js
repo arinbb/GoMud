@@ -49,8 +49,8 @@ function onAsk(mob, room, eventDetails) {
         "emote looks down at the boys in the treehouse below and does not answer right away."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -64,7 +64,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks at it and then at you.");
-    mob.Command("say Does this remind you of something? It should.");
-    return true;
+    return false;
 }

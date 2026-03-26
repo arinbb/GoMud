@@ -68,6 +68,6 @@ function onAsk(mob, room, eventDetails) {
         "emote looks at you steadily, then back at the notebook."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

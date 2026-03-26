@@ -47,6 +47,6 @@ function onAsk(mob, room, eventDetails) {
         "say I don't know the answer to that, but I'll think about it loudly if that helps."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

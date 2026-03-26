@@ -52,6 +52,6 @@ function onAsk(mob, room, eventDetails) {
         "emote glances over at Kurt, back to you, settles."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

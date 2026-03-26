@@ -38,13 +38,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks at you thoughtfully.");
-    mob.Command("say What do you think that means?", 2.0);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with careful, professional attention.");
-    mob.Command("say And what does this mean to you?", 2.0);
-    return true;
+
+    return false;
 }

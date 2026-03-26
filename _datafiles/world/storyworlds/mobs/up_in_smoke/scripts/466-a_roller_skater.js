@@ -34,6 +34,6 @@ function onAsk(mob, room, eventDetails) {
         "say You should skate sometime. It is the best feeling."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

@@ -40,12 +40,11 @@ function onAsk(mob, room, eventDetails) {
         "say I am never in a hurry. Are you?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at what you are showing with one golden eye.");
-    mob.Command("say Every object has a weight in the hand that has nothing to do with its size.");
-    return true;
+
+    return false;
 }

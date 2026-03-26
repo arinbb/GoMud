@@ -28,12 +28,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say ODoyle rules.");
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it.");
-    mob.Command("say ODoyle rules.", 1.5);
-    return true;
+
+    return false;
 }

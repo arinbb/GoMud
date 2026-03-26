@@ -62,6 +62,6 @@ function onAsk(mob, room, eventDetails) {
         "say I would need more information to provide a useful answer. What specifically are you trying to understand?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

@@ -36,8 +36,7 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Oh, I'm sorry, I was daydreaming. You can ask me about Paris, or the dinosaurs, or... well, mostly Paris.");
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -49,6 +48,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Oh, that's lovely! It reminds me of something you'd find in a little Parisian shop.");
-    return true;
+    return false;
 }

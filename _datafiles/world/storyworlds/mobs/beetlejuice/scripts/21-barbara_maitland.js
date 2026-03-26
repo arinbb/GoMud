@@ -50,8 +50,7 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Oh, I'm not sure about that, dear. You could ask me about Adam, the house, cooking, or... well, our rather unusual situation.");
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -72,6 +71,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Oh my, what's that? Let me see...");
-    return true;
+    return false;
 }

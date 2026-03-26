@@ -52,12 +52,11 @@ function onAsk(mob, room, eventDetails) {
         "emote watches the far end of the alley while you decide what you wanted to say."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with the thoroughness of someone who knows what things are for.");
-    mob.Command("say Where you get that.", 2.0);
-    return true;
+
+    return false;
 }

@@ -37,8 +37,5 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks up from the screen briefly.");
-    mob.Command("say What? Yeah. Sure. Okay.", 1.5);
-    mob.Command("emote looks back at the screen.", 3.0);
-    return true;
+    return false;
 }

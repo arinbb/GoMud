@@ -38,6 +38,6 @@ function onAsk(mob, room, eventDetails) {
         "emote goes back to his work."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

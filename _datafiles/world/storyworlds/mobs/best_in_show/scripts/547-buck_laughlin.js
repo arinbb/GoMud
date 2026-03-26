@@ -37,14 +37,12 @@ function onAsk(mob, room, eventDetails) {
     }
 
     var pick = Math.floor(Math.random() * BUCK_COMMENTARY.length);
-    mob.Command(BUCK_COMMENTARY[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
     mob.Command("say What is this?");
-    mob.Command("emote looks at it with the interested attention of a man who responds the same way to most things.", 1.5);
-    mob.Command("say Is this -- where does this come from? What's the story with this?", 3.0);
-    mob.Command("emote waits. He genuinely wants to know the story.", 4.5);
-    return true;
+
+    return false;
 }

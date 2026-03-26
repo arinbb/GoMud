@@ -56,13 +56,11 @@ function onAsk(mob, room, eventDetails) {
         "say I tried being cautious once. It lasted about forty minutes. Then I had better things to do."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with bright, interested eyes.");
-    mob.Command("say Oh, this is wonderful! Where did you find it?");
-    mob.Command("emote turns it over in her hands with genuine delight.", 1.5);
-    return true;
+
+    return false;
 }

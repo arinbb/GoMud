@@ -48,13 +48,11 @@ function onAsk(mob, room, eventDetails) {
         "say I have a feeling something important is about to happen. The raven was very specific this morning."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote frames it in the rectangle made by his thumbs and forefingers.");
-    mob.Command("say This is the exact kind of object that changes everything in the third act.");
-    mob.Command("emote takes it with the careful attention of a filmmaker noting a prop.", 2.0);
-    return true;
+
+    return false;
 }

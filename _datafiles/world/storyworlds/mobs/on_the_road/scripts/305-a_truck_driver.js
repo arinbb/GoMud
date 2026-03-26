@@ -38,12 +38,11 @@ function onAsk(mob, room, eventDetails) {
         "say My father drove trucks before me. His father drove horses. We are all going somewhere on something."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it, nods, looks back at the road.");
-    mob.Command("say That is a fine thing to have. You hold onto that.");
-    return true;
+
+    return false;
 }

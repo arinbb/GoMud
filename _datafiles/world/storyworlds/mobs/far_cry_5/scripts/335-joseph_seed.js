@@ -55,8 +55,8 @@ function onAsk(mob, room, eventDetails) {
         "say You are not the first person to stand where you are standing and not know what to say. Take a moment."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -70,7 +70,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks at what you are holding with the calm attention of someone reading a sign in a language they know.");
-    mob.Command("say Everything means something. What does that mean to you?", 1.5);
-    return true;
+    return false;
 }

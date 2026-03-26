@@ -47,12 +47,11 @@ function onAsk(mob, room, eventDetails) {
         "say What do you actually want to know. Not what you think you want to know."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it and immediately begins a mental inventory of its significance.");
-    mob.Command("say Interesting. Tell me where you got it.", 1.5);
-    return true;
+
+    return false;
 }

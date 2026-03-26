@@ -23,6 +23,6 @@ function onAsk(mob, room, eventDetails) {
         "say The Tass Market is east on the avenue. Just saying."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

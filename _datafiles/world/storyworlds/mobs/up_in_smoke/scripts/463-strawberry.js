@@ -34,13 +34,11 @@ function onAsk(mob, room, eventDetails) {
         "say Things have a way of working out. I have noticed this."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it with open, uncomplicated delight.");
-    mob.Command("say Oh, that is great. Where is that from?");
-    mob.Command("emote hands it back and smiles.", 1.5);
-    return true;
+
+    return false;
 }

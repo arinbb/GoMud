@@ -38,6 +38,6 @@ function onAsk(mob, room, eventDetails) {
         "say I call the pitches. I'm the one who calls the pitches."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

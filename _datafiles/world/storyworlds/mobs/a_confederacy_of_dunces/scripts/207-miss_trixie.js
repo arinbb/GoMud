@@ -40,8 +40,8 @@ function onAsk(mob, room, eventDetails) {
         "say What? Who? Where's my ham?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onGive(mob, room, eventDetails) {

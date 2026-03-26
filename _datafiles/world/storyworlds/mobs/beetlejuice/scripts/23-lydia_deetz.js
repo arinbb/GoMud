@@ -67,8 +67,7 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say I'm not sure what you're asking. You could try asking about my photography, ghosts, or what it's like being strange and unusual.");
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -91,6 +90,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Hmm. That's unusual. I like unusual.");
-    return true;
+    return false;
 }

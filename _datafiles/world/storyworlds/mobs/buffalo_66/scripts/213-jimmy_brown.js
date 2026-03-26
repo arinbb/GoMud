@@ -28,14 +28,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Hmm? What was that?");
-    mob.Command("emote seems to have already forgotten you are here.", 1.5);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote squints at it without recognition.");
-    mob.Command("say That's nice. That's very nice.");
-    mob.Command("emote goes back to humming.", 2.0);
-    return true;
+
+    return false;
 }

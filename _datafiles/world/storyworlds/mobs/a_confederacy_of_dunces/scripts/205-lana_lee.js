@@ -38,6 +38,6 @@ function onAsk(mob, room, eventDetails) {
         "emote gives you a look that could curdle milk and goes back to her ledger."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

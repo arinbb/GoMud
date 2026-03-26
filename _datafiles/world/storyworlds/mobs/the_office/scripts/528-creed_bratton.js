@@ -34,13 +34,11 @@ function onAsk(mob, room, eventDetails) {
         "say I once knew someone who asked that exact question. Different circumstances. Similar energy."
     ];
     var pick = Math.floor(Math.random() * responses.length);
-    mob.Command(responses[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("say I have one of those.", 1.0);
-    mob.Command("emote looks at it.", 2.5);
-    mob.Command("say Mine is in a better place.", 4.0);
-    return true;
+
+    return false;
 }

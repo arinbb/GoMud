@@ -43,6 +43,6 @@ function onAsk(mob, room, eventDetails) {
         "emote bounces on his heels and gives you his most sincere smile."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

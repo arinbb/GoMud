@@ -29,12 +29,11 @@ function onAsk(mob, room, eventDetails) {
         "say The thing about pudding is that it is always there. It does not judge you."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines the item.");
-    mob.Command("say Could you dip that in pudding? I am genuinely asking.");
-    return true;
+
+    return false;
 }

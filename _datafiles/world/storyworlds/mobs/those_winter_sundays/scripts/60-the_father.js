@@ -60,8 +60,8 @@ function onAsk(mob, room, eventDetails) {
         "emote looks at you with steady eyes, waiting. He is a man who expresses himself through action, not words."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -73,6 +73,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote glances at what you show him, nods once, and turns back to his work.");
-    return true;
+    return false;
 }

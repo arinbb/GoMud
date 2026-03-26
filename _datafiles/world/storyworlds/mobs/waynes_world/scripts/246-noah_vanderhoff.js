@@ -28,12 +28,11 @@ function onAsk(mob, room, eventDetails) {
         "emote smiles at you with the warmth of someone who views warmth as a tool."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("say Is that... could that be branded? I'm asking genuinely. Could that work as a co-branded opportunity?");
-    mob.Command("emote holds his product next to it for comparison.", 2.0);
-    return true;
+
+    return false;
 }

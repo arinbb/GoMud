@@ -18,8 +18,7 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote is present in the way that things are present when you are not looking at them.");
-    return true;
+    return false;
 }
 
 function onIdle(mob, room) {

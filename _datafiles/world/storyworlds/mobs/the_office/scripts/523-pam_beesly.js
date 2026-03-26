@@ -40,13 +40,11 @@ function onAsk(mob, room, eventDetails) {
     }
 
     // Default
-    mob.Command("emote answers with the warm attention of someone who is actually listening.");
-    mob.Command("say Oh! Okay, yeah, I can help with that.", 1.5);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it with genuine curiosity.");
-    mob.Command("say Oh, that's really -- where did you get this?", 1.5);
-    return true;
+
+    return false;
 }

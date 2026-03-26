@@ -34,13 +34,11 @@ function onAsk(mob, room, eventDetails) {
         "say I think the best answer to that is probably something you already know."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it thoughtfully.");
-    mob.Command("say Interesting. Where did this come from?");
-    mob.Command("emote gives it a gold star. Metaphorically. Or possibly literally.", 2.0);
-    return true;
+
+    return false;
 }

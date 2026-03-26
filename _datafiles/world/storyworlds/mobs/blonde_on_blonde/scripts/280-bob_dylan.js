@@ -64,8 +64,8 @@ function onAsk(mob, room, eventDetails) {
         "emote goes back to the lyric sheet. The pencil moves. Stops. Moves again."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onIdle(mob, room) {

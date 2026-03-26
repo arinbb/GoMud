@@ -37,12 +37,11 @@ function onAsk(mob, room, eventDetails) {
         "emote smiles. It is a complicated smile."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote studies the item.");
-    mob.Command("say I could move this. I know people.", 2.0);
-    return true;
+
+    return false;
 }

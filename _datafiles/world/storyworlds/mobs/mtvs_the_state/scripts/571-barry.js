@@ -29,12 +29,11 @@ function onAsk(mob, room, eventDetails) {
         "say I have thought about many things in this barrel. The barrel has been useful for thinking."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at the item thoughtfully.");
-    mob.Command("say Could that fit in the barrel? I ask because storage is something I think about.");
-    return true;
+
+    return false;
 }

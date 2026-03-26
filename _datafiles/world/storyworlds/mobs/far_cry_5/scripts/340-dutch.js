@@ -38,6 +38,6 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me about the terrain. I know every trail, every ford, every back road in this county."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

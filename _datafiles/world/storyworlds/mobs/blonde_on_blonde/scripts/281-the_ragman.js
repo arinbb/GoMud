@@ -45,6 +45,6 @@ function onAsk(mob, room, eventDetails) {
         "say Ask Shakespeare. He has more words than I do. They are the wrong words, but more of them."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

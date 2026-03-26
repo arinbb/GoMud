@@ -35,10 +35,8 @@ function onAsk(mob, room, eventDetails) {
 
     if (question.indexOf("president") >= 0 || question.indexOf("election") >= 0 || question.indexOf("wrestling") >= 0) {
         mob.Command("emote strikes a pose.");
-        mob.Command("say DWAYNE ELIZONDO MOUNTAIN DEW HERBERT CAMACHO. THAT IS ME. FORMER SIX-TIME WRESTLING CHAMPION. FORMER FILM ENTERTAINER. CURRENT PRESIDENT.", 1.5);
-        mob.Command("say THE PEOPLE VOTED FOR ME. THE PEOPLE KNOW WHAT THEY WANT. I AM WHAT THEY WANT.", 3.0);
-        mob.Command("emote seems genuinely touched by this.", 4.5);
-        return true;
+
+        return false;
     }
 
     // No keyword match — let AI handle it

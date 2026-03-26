@@ -46,12 +46,11 @@ function onAsk(mob, room, eventDetails) {
         "emote looks at you with the patient attention of someone who has been watching people for a living."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it carefully and makes a note in his notebook.");
-    mob.Command("say Everything is worth writing down. That is something I believe and also something that makes my life very complicated.");
-    return true;
+
+    return false;
 }

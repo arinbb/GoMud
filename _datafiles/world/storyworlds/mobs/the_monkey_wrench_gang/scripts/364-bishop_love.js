@@ -40,6 +40,6 @@ function onAsk(mob, room, eventDetails) {
         "say Make yourself useful or stand clear."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

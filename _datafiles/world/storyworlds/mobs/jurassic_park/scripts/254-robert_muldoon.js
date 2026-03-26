@@ -44,12 +44,11 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me about the raptors. I know the raptors."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote glances at it briefly without taking his eyes off the pen for long.");
-    mob.Command("say Whatever it is, keep it away from the fence.");
-    return true;
+
+    return false;
 }

@@ -66,8 +66,8 @@ function onAsk(mob, room, eventDetails) {
         "say That's nice. But have you heard about my BIKE?! Someone STOLE it!"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -87,7 +87,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Ooh, what's that?! Can I see? Can I see?!");
-    mob.Command("emote bounces up and down trying to get a better look.", 1);
-    return true;
+    return false;
 }

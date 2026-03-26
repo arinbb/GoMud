@@ -39,6 +39,6 @@ function onAsk(mob, room, eventDetails) {
         "say Does that sound right to you? Honestly. Does it sound right?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

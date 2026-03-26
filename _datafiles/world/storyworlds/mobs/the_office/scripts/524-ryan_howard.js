@@ -26,13 +26,11 @@ function onAsk(mob, room, eventDetails) {
     }
 
     // Default
-    mob.Command("emote looks up from his phone.");
-    mob.Command("say Yeah, what?", 1.5);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote glances at it briefly.");
-    mob.Command("say Is that relevant to me?", 1.5);
-    return true;
+
+    return false;
 }

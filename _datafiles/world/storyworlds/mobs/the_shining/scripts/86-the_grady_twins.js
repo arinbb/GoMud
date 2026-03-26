@@ -30,7 +30,5 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote stare at you in silence, holding hands.");
-    mob.Command("say Come and play with us.", 2.0);
-    return true;
+    return false;
 }

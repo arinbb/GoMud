@@ -57,8 +57,8 @@ function onAsk(mob, room, eventDetails) {
         "emote stares at his watch and mutters numbers to himself."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -78,7 +78,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote glances at it and looks back toward the parking lot.");
-    mob.Command("say That's great. I really gotta find Doc.");
-    return true;
+    return false;
 }

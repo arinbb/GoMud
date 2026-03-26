@@ -39,6 +39,6 @@ function onAsk(mob, room, eventDetails) {
         "say Watch the treeline. There is something moving in sector four that I do not recognize yet."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

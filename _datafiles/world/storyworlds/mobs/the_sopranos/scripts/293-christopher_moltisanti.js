@@ -31,12 +31,11 @@ function onAsk(mob, room, eventDetails) {
         "emote shows you his phone screen. Something on it. He takes it back quickly."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it with quick professional interest.");
-    mob.Command("say That could be in my movie. The texture of that -- the realness.", 1.5);
-    return true;
+
+    return false;
 }

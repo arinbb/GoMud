@@ -51,6 +51,6 @@ function onAsk(mob, room, eventDetails) {
         "emote rides his Big Wheel in a small circle, not looking at you."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

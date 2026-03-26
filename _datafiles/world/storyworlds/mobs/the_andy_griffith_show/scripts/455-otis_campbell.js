@@ -38,6 +38,6 @@ function onAsk(mob, room, eventDetails) {
         "say Come back in about an hour. I will be more useful in about an hour."
     ];
     var pick = Math.floor(Math.random() * responses.length);
-    mob.Command(responses[pick]);
-    return true;
+
+    return false;
 }

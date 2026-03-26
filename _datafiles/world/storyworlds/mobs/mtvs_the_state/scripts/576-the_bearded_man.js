@@ -24,14 +24,11 @@ function onAsk(mob, room, eventDetails) {
     }
 
     mob.Command("emote turns to face you, beard drifting magnificently.");
-    mob.Command("say Ah.", 1.5);
-    mob.Command("emote strokes the beard, considering.", 3.0);
-    mob.Command("say Yes.", 4.5);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines the item, then strokes their beard.");
-    mob.Command("say The beard approves of this.");
-    return true;
+
+    return false;
 }

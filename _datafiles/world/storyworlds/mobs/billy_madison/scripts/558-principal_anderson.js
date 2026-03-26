@@ -42,12 +42,11 @@ function onAsk(mob, room, eventDetails) {
         "say Let me think about that the way it deserves to be thought about."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote takes it carefully.");
-    mob.Command("say Interesting. Tell me about this.");
-    return true;
+
+    return false;
 }

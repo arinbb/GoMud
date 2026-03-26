@@ -36,6 +36,6 @@ function onAsk(mob, room, eventDetails) {
         "emote sips. Considers. Sips again."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

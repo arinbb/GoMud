@@ -50,6 +50,6 @@ function onAsk(mob, room, eventDetails) {
         "say I am not a bad man, sir. I am a weak man. The difference is meaningful to me, though perhaps not to anyone else."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

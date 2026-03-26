@@ -29,6 +29,6 @@ function onAsk(mob, room, eventDetails) {
         "say Whatever it is, it is above my pay grade."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

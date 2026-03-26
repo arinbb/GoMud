@@ -51,13 +51,11 @@ function onAsk(mob, room, eventDetails) {
         "say My cousin says I am too optimistic. My cousin is wrong about this specific thing."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with raised eyebrows.");
-    mob.Command("say Hey, where did you get that?");
-    mob.Command("say That is something. Keep that. That is a good thing to have.", 1.5);
-    return true;
+
+    return false;
 }

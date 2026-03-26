@@ -31,13 +31,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say You want a taco.");
-    mob.Command("emote begins assembling one without waiting for the answer.", 2.0);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it while maintaining one hand on the spatula.");
-    mob.Command("say Good. You have that. Now: taco?");
-    return true;
+
+    return false;
 }

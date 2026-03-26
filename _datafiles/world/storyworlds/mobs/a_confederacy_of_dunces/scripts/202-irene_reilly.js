@@ -48,6 +48,6 @@ function onAsk(mob, room, eventDetails) {
         "say I'm too tired to think straight. Ask me something simple."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

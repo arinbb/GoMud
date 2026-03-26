@@ -49,13 +49,11 @@ function onAsk(mob, room, eventDetails) {
         "say Alaska is not for everyone. It is, however, for me."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with the focused efficiency of someone who evaluates things for usefulness first.");
-    mob.Command("say Hm. That's interesting.");
-    mob.Command("emote looks at you with a slightly warmer expression than she intended.", 2.0);
-    return true;
+
+    return false;
 }

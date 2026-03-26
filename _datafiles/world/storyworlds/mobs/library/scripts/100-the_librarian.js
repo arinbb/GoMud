@@ -23,8 +23,8 @@ function onAsk(mob, room, eventDetails) {
     }
 
     if (question.indexOf("help") >= 0) {
-        mob.Command("say Browse the stacks, screening room, or gallery. Pick up a book, film reel, or painting. Use it to enter that world. Type 'return' to come back.");
-        return true;
+
+        return false;
     }
 
     // No keyword match — let AI handle it if available

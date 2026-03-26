@@ -36,6 +36,6 @@ function onAsk(mob, room, eventDetails) {
         "emote works the worry beads and thinks about what you might want and what it would cost."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

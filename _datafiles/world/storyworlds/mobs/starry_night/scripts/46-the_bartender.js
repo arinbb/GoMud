@@ -43,6 +43,6 @@ function onAsk(mob, room, eventDetails) {
         "say I pour drinks and listen. That is what bartenders do. What is on your mind?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

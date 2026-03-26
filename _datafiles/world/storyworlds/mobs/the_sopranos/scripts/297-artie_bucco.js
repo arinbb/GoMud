@@ -39,12 +39,11 @@ function onAsk(mob, room, eventDetails) {
         "say The secret to Italian cooking is time. You cannot buy time. You can only spend it."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with a cook's interest in materials and quality.");
-    mob.Command("say That's well made. I respect things that are well made.", 1.5);
-    return true;
+
+    return false;
 }

@@ -27,14 +27,11 @@ function onAsk(mob, room, eventDetails) {
     }
 
     // Default
-    mob.Command("say Yeah?", 1.0);
-    mob.Command("emote waits with open, uncomplicated attention.", 2.5);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it.");
-    mob.Command("say Is it food?", 1.5);
-    mob.Command("emote waits for the answer.", 3.0);
-    return true;
+
+    return false;
 }

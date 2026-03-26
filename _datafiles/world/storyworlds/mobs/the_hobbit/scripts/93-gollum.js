@@ -50,8 +50,8 @@ function onAsk(mob, room, eventDetails) {
         "say Leave us alone! Go away! We doesn't want visitors, precious, no we doesn't!"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -69,7 +69,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote peers at it suspiciously from the shadows.");
-    mob.Command("say What's it got in its nasty pocketses?");
-    return true;
+    return false;
 }

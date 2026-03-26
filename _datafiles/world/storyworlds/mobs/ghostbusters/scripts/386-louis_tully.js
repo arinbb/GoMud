@@ -40,6 +40,6 @@ function onAsk(mob, room, eventDetails) {
         "say I just want to get back into my apartment. Is that so much to ask? Apparently yes."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

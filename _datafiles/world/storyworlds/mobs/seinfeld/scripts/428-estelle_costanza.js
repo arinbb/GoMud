@@ -37,12 +37,11 @@ function onAsk(mob, room, eventDetails) {
         "emote calls for Frank from wherever she is. Frank does not respond."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines what you are showing her.");
-    mob.Command("say Does George have one of these? Because if he doesn't, he should.", 2.0);
-    return true;
+
+    return false;
 }

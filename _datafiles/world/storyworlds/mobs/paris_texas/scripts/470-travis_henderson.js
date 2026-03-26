@@ -48,13 +48,11 @@ function onAsk(mob, room, eventDetails) {
         "emote says nothing. This is not unfriendly. It is just nothing."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at what you are holding.");
-    mob.Command("emote nods slowly.", 1.5);
-    mob.Command("emote looks back at the horizon.", 3.0);
-    return true;
+
+    return false;
 }

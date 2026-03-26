@@ -22,6 +22,6 @@ function onAsk(mob, room, eventDetails) {
         "say Do you want to know where the Jam Session is? It is west. You can hear it from here."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

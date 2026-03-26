@@ -43,13 +43,11 @@ function onAsk(mob, room, eventDetails) {
         "say I'm going on in forty minutes. Ask me anything. History is my second show."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines the item with genuine curiosity.");
-    mob.Command("say Interesting. There's history in this. I can tell.");
-    mob.Command("say Do you know the provenance?", 2.0);
-    return true;
+
+    return false;
 }

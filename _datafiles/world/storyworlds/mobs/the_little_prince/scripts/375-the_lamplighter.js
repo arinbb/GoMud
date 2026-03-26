@@ -45,12 +45,11 @@ function onAsk(mob, room, eventDetails) {
         "emote wipes his brow mid-motion without slowing down."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote glances at it for exactly the duration of one lamp cycle.");
-    mob.Command("say What is it? Does it need lighting? I can light it.");
-    return true;
+
+    return false;
 }

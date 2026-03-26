@@ -51,13 +51,11 @@ function onAsk(mob, room, eventDetails) {
         "say That's a really good question and I think the answer involves frequencies."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote leans forward to examine it carefully.");
-    mob.Command("say Oh. Oh, that's interesting. Do you mind if I...?");
-    mob.Command("emote handles it with the careful precision of a technician.", 2.0);
-    return true;
+
+    return false;
 }

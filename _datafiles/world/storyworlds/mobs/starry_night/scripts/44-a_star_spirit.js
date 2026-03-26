@@ -37,6 +37,6 @@ function onAsk(mob, room, eventDetails) {
         "say We have watched from above since the first brushstroke. Ask, and we will answer in starlight."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

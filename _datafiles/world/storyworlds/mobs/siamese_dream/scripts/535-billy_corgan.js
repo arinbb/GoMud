@@ -57,6 +57,6 @@ function onAsk(mob, room, eventDetails) {
         "say I can hear what this needs to be. I just have to get it there."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

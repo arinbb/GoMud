@@ -48,13 +48,11 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me something medical. That I can actually help with."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it with professional attention.");
-    mob.Command("say Is this a medical situation? Because I have a waiting room. Technically.");
-    mob.Command("emote examines it despite himself, with the focused competence that emerges whenever anything is actually at stake.", 2.0);
-    return true;
+
+    return false;
 }

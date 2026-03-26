@@ -62,10 +62,7 @@ function onAsk(mob, room, user, eventDetails) {
         return true;
     }
 
-    mob.Command("emote appears, quite suddenly, much closer than before.");
-    mob.Command("say Did you want to know something, or did you want to feel as though you know something? They are different. Both are available.");
-    mob.Command("emote fades, leaving only the grin, which persists for a moment longer than expected.");
-    return true;
+    return false;
 }
 
 function onIdle(mob, room) {

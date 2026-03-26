@@ -45,12 +45,11 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me when the systems are back online. I'll have more time then."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote glances at it without turning from the screen.");
-    mob.Command("say Log it with Hammond. I'm busy.");
-    return true;
+
+    return false;
 }

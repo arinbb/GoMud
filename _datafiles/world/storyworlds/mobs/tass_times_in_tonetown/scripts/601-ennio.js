@@ -41,10 +41,8 @@ function onAsk(mob, room, eventDetails) {
 
     if (question.indexOf("bar") >= 0 || question.indexOf("drink") >= 0) {
         mob.Command("emote sets a glass on the rail.");
-        mob.Command("say The bar has been here since before Snotty. Will be here after.", 1.5);
-        mob.Command("say I make drinks that match the city. Saturated, intentional, exactly what they say they are.", 2.5);
-        mob.Command("say The cocktail at the far end is the one I make when things are bad. It is extremely magenta. It helps.", 3.5);
-        return true;
+
+        return false;
     }
 
     var defaults = [
@@ -67,7 +65,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote examines what you are showing.");
-    mob.Command("say From Tonetown, I assume. Things from Tonetown have a quality that is hard to describe and easy to recognize.", 1.5);
-    return true;
+    return false;
 }

@@ -46,12 +46,11 @@ function onAsk(mob, room, eventDetails) {
         "say I have four petals. Did you notice? They are arranged perfectly."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines what you are showing her with magnificent condescension.");
-    mob.Command("say Interesting. Not as interesting as I am, of course. But interesting.");
-    return true;
+
+    return false;
 }

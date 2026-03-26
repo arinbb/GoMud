@@ -42,13 +42,11 @@ function onAsk(mob, room, eventDetails) {
         "say A man without a mission is just... wandering. This is Harold's problem. I intend to fix it."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with military thoroughness.");
-    mob.Command("say What is this for? What is its function? Who authorized it?");
-    mob.Command("emote waits for answers with the patience of someone accustomed to briefings.", 1.5);
-    return true;
+
+    return false;
 }

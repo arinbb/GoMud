@@ -38,6 +38,6 @@ function onAsk(mob, room, eventDetails) {
         "say Come back when you are ready. The fields will still be here. I will still be here. I am always here."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

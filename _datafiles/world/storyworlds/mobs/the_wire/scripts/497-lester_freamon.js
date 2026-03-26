@@ -48,6 +48,6 @@ function onAsk(mob, room, eventDetails) {
         "emote waits. He is good at waiting."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

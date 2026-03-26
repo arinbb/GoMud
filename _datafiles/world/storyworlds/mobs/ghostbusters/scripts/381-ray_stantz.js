@@ -56,6 +56,6 @@ function onAsk(mob, room, eventDetails) {
         "say We started with three professors and a converted firehouse. Now we're all that stands between Manhattan and an ancient Sumerian destructor. Wild, right?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

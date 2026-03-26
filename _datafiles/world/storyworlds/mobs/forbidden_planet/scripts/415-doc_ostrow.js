@@ -36,8 +36,8 @@ function onAsk(mob, room, eventDetails) {
         "say I am keeping careful records. When we return to Earth, this data will be the most important medical document in history. If we return."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -51,7 +51,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote examines it with clinical attention.");
-    mob.Command("say Nothing anomalous. But I would want to run tests before concluding that.");
-    return true;
+    return false;
 }

@@ -33,8 +33,8 @@ function onAsk(mob, room, eventDetails) {
         "say Do you know where Pee-wee's bike is? Because I need to know. For... reasons."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -47,6 +47,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Whatever that is, I have a better one at home.");
-    return true;
+    return false;
 }

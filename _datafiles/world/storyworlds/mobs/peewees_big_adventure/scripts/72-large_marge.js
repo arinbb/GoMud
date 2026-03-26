@@ -40,9 +40,7 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Hmm. On this very night, ten years ago, I saw something on this road I'll never forget.");
-    mob.Command("say Ask me about the accident. If you dare.", 2);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -55,7 +53,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote glances at it with hollow eyes.");
-    mob.Command("say That's nice. But you should be careful what you carry on dark roads.", 1.5);
-    return true;
+    return false;
 }

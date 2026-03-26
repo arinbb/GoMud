@@ -28,12 +28,11 @@ function onAsk(mob, room, eventDetails) {
         "say I have been here a while. I would stay longer."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it.");
-    mob.Command("say Barry probably has thoughts about this. I agree with those thoughts.");
-    return true;
+
+    return false;
 }

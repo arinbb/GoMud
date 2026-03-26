@@ -36,7 +36,5 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks toward the mirror and says nothing.");
-    mob.Command("emote waits.", 2.0);
-    return true;
+    return false;
 }

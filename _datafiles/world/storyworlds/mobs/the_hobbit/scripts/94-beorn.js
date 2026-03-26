@@ -42,8 +42,8 @@ function onAsk(mob, room, eventDetails) {
         "say I am Beorn, and this is my land."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -55,7 +55,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks at it, then at you, with mild curiosity.");
-    mob.Command("say Hmph. Interesting, I suppose.");
-    return true;
+    return false;
 }

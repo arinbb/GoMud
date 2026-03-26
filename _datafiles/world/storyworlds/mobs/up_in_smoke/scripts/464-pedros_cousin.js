@@ -35,8 +35,8 @@ function onAsk(mob, room, eventDetails) {
         "say Sit down. People are always rushing. Sit. Eat."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onGive(mob, room, eventDetails) {

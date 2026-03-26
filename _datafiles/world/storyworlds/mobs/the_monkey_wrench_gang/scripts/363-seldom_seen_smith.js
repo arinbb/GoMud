@@ -57,8 +57,8 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me out on the river. Things make more sense out there."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -73,7 +73,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote turns it over in his hands.");
-    mob.Command("say The river would know what to do with this.", 1.5);
-    return true;
+    return false;
 }

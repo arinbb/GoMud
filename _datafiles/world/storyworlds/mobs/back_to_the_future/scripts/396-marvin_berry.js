@@ -35,6 +35,6 @@ function onAsk(mob, room, eventDetails) {
         "say My hand's gonna be fine. Don't worry about my hand."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

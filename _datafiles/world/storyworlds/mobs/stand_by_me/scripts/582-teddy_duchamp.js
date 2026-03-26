@@ -45,6 +45,6 @@ function onAsk(mob, room, eventDetails) {
         "emote is clearly watching something in the distance only he can see."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

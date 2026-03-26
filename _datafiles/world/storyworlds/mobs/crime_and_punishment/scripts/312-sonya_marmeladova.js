@@ -58,8 +58,8 @@ function onAsk(mob, room, eventDetails) {
         "emote folds her hands and is quiet. The quietness is not an absence of something. It is a presence."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onGive(mob, room, eventDetails) {
@@ -75,6 +75,6 @@ function onShow(mob, room, eventDetails) {
         mob.Command("say He used to wear something like this. Before.", 1.5);
         return true;
     }
-    mob.Command("emote looks at it carefully, as she looks at everything.");
-    return true;
+
+    return false;
 }

@@ -66,12 +66,11 @@ function onAsk(mob, room, eventDetails) {
         "say Sometimes it's better not to have all the answers, you know?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it carefully, taking her time.");
-    mob.Command("say That's interesting. Thank you for showing me.", 1.5);
-    return true;
+
+    return false;
 }

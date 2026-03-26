@@ -28,6 +28,6 @@ function onAsk(mob, room, eventDetails) {
         "emote acknowledges your presence with a slight tilt of her chin and goes back to watching the pool."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

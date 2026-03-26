@@ -55,12 +55,11 @@ function onAsk(mob, room, eventDetails) {
         "say The most interesting things are always the things people do not want to discuss."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with scientific attention.");
-    mob.Command("say Interesting. What are its properties? What does it do to the person who has it?");
-    return true;
+
+    return false;
 }

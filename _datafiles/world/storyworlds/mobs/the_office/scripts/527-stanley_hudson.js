@@ -37,14 +37,11 @@ function onAsk(mob, room, eventDetails) {
     }
 
     // Default
-    mob.Command("emote looks at you over the crossword.");
-    mob.Command("say Did I stutter?", 1.5);
-    mob.Command("emote returns to the crossword.", 3.0);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it.");
-    mob.Command("say Is this relevant to me?", 2.0);
-    return true;
+
+    return false;
 }

@@ -50,13 +50,11 @@ function onAsk(mob, room, eventDetails) {
         "say Cicely is going to be extraordinary. The timeline is my own business."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it with the evaluating eye of someone who has assessed many things.");
-    mob.Command("say That has value. I can see that.");
-    mob.Command("emote nods once, military brief.", 2.0);
-    return true;
+
+    return false;
 }

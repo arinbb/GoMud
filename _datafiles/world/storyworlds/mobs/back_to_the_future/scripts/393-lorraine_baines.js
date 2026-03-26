@@ -44,12 +44,11 @@ function onAsk(mob, room, eventDetails) {
         "emote hums a few bars of Earth Angel under her breath."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it politely.");
-    mob.Command("say That's very nice. Are you going to the dance?");
-    return true;
+
+    return false;
 }

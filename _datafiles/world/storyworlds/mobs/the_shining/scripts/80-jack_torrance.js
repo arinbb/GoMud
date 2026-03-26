@@ -45,10 +45,8 @@ function onAsk(mob, room, eventDetails) {
     }
 
     if (question.indexOf("room") >= 0 || question.indexOf("237") >= 0) {
-        mob.Command("emote 's expression changes — something shifts behind his eyes.");
-        mob.Command("say Room 237.");
-        mob.Command("say Something... happened in Room 237.", 2.0);
-        return true;
+
+        return false;
     }
 
     var defaults = [
@@ -70,7 +68,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote glances at it dismissively.");
-    mob.Command("say Can't you see I'm BUSY?");
-    return true;
+    return false;
 }

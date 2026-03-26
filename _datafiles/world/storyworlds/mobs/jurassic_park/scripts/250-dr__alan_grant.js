@@ -52,8 +52,8 @@ function onAsk(mob, room, eventDetails) {
         "say Some scientific discoveries don't wait for a good time."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -66,7 +66,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote examines it with professional interest.");
-    mob.Command("say Interesting. What's the context?");
-    return true;
+    return false;
 }

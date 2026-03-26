@@ -18,6 +18,5 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say I'm just here to help. That's all.");
-    return true;
+    return false;
 }

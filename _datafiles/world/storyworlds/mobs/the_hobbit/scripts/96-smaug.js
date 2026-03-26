@@ -57,8 +57,8 @@ function onAsk(mob, room, eventDetails) {
         "say Flattery will get you nowhere. But do continue. I enjoy it."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -71,7 +71,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote glances at it with supreme disinterest.");
-    mob.Command("say Trinkets. I have mountains of finer things.");
-    return true;
+    return false;
 }

@@ -47,13 +47,11 @@ function onAsk(mob, room, eventDetails) {
         "emote snaps her fingers. She just figured something out. It might not help you."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it.");
-    mob.Command("say Oh my God. Where did you get that.", 1.5);
-    mob.Command("emote does not specify whether this is admiring or horrified.", 3.0);
-    return true;
+
+    return false;
 }

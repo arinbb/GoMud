@@ -50,8 +50,8 @@ function onAsk(mob, room, eventDetails) {
         "say I am Gandalf, and Gandalf means... me."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -69,7 +69,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote examines it with interest, turning it over in his long fingers.");
-    mob.Command("say Curious. Very curious indeed.");
-    return true;
+    return false;
 }

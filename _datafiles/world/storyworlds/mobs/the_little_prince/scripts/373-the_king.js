@@ -38,13 +38,11 @@ function onAsk(mob, room, eventDetails) {
         "say You are addressing a king. Conduct yourself accordingly."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("say Bring it closer. A king examines things on his own terms.");
-    mob.Command("emote leans forward with dignity, then leans back.", 2.0);
-    mob.Command("say I believe I shall decree that this belongs to the crown.", 3.0);
-    return true;
+
+    return false;
 }

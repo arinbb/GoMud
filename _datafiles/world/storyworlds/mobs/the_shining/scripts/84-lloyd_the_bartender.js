@@ -50,6 +50,6 @@ function onAsk(mob, room, eventDetails) {
         "say The Overlook is a fine establishment, sir. The finest."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

@@ -55,13 +55,11 @@ function onAsk(mob, room, eventDetails) {
         "say Emerson says the only way out is through. In Alaska, the through part is also the out part."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote takes it and turns it over in his hands, genuinely considering it.");
-    mob.Command("say Everything is a text. This is reading it.");
-    mob.Command("say There is a story here about where this came from and who made it and what it has been through. All objects have this.", 2.0);
-    return true;
+
+    return false;
 }

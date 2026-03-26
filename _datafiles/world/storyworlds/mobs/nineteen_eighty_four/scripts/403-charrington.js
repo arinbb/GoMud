@@ -49,6 +49,6 @@ function onAsk(mob, room, eventDetails) {
         "say 'Oranges and lemons.' I keep trying to remember the rest. It will come to me."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

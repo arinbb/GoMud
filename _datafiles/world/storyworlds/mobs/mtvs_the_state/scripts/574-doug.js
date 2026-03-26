@@ -22,15 +22,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say That's such a good question!");
-    mob.Command("emote smiles at you with the full warmth of someone who finds your presence very specifically wonderful.", 1.5);
-    mob.Command("say Can I answer that for you over snacks?", 3.0);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at the item with immediate enthusiasm.");
-    mob.Command("say Oh, that's great! Where did you get that? I love that.");
-    mob.Command("say Could I hold it for a second? I won't keep it. I just want to hold it.", 2.0);
-    return true;
+
+    return false;
 }

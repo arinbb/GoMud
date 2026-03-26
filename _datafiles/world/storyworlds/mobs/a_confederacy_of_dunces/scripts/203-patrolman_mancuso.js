@@ -40,6 +40,6 @@ function onAsk(mob, room, eventDetails) {
         "say I'm working undercover. Can you tell? Please say you can't tell."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

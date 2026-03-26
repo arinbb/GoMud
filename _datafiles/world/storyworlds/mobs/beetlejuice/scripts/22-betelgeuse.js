@@ -85,8 +85,8 @@ function onAsk(mob, room, eventDetails) {
         "say I got opinions on EVERYTHING, baby! Try asking about something interesting — like ME!"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -107,6 +107,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Whatcha got there? Lemme see lemme see lemme see!");
-    return true;
+    return false;
 }

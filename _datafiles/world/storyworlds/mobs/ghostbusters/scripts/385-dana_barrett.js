@@ -32,7 +32,5 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote 's eyes glow orange.");
-    mob.Command("say The Gatekeeper does not answer questions. The Gatekeeper waits.");
-    return true;
+    return false;
 }

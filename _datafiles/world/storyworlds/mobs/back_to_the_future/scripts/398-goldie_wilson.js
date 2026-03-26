@@ -28,6 +28,6 @@ function onAsk(mob, room, eventDetails) {
         "say I'm gonna be somebody. Not a question. A statement."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

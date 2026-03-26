@@ -43,8 +43,8 @@ function onAsk(mob, room, eventDetails) {
         "say The story is Snotty. It has always been Snotty. Are you going south or not?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -58,7 +58,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks at what you are showing with the assessment of someone deciding whether it is newsworthy.");
-    mob.Command("say That is from Tonetown. Everything from Tonetown has a story. What is the story?", 1.5);
-    return true;
+    return false;
 }

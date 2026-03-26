@@ -44,6 +44,6 @@ function onAsk(mob, room, eventDetails) {
         "say You want in on something? I got a thing. Multiple things. Pick a thing."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

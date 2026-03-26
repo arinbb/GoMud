@@ -46,8 +46,8 @@ function onAsk(mob, room, eventDetails) {
         "emote rubs his face. He is very tired."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -61,7 +61,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks at it.");
-    mob.Command("say Huh. Yeah. Okay. What is that for exactly?", 1.5);
-    return true;
+    return false;
 }

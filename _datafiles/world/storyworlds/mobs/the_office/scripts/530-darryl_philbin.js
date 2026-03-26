@@ -38,13 +38,11 @@ function onAsk(mob, room, eventDetails) {
     }
 
     // Default
-    mob.Command("emote leans back in his chair and looks at you with straightforward attention.");
-    mob.Command("say What do you need?", 1.5);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it with the assessing eye of a man who manages inventory.");
-    mob.Command("say Where is this supposed to be?", 1.5);
-    return true;
+
+    return false;
 }

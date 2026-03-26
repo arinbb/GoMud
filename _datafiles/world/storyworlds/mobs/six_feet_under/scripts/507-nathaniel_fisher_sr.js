@@ -67,8 +67,8 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me something I can actually answer."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onIdle(mob, room) {

@@ -67,6 +67,6 @@ function onAsk(mob, room, eventDetails) {
         "say It is hot out here. But it is hotter in there."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

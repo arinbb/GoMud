@@ -36,6 +36,6 @@ function onAsk(mob, room, eventDetails) {
         "say I do not know a lot about a lot of things but I know a LOT about some things."
     ];
     var pick = Math.floor(Math.random() * responses.length);
-    mob.Command(responses[pick]);
-    return true;
+
+    return false;
 }

@@ -48,8 +48,8 @@ function onAsk(mob, room, eventDetails) {
         "say Follow protocols. Stay inside the perimeter after dark. That's an order."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -63,7 +63,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote examines it with professional suspicion.");
-    mob.Command("say What does this do? Can it be used as a weapon?");
-    return true;
+    return false;
 }

@@ -35,12 +35,11 @@ function onAsk(mob, room, eventDetails) {
         "say In my experience, the thing that worries you is usually not the thing you should be worried about."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with a brief, thorough glance.");
-    mob.Command("say I know what that is. You should be careful where you carry it.", 1.5);
-    return true;
+
+    return false;
 }

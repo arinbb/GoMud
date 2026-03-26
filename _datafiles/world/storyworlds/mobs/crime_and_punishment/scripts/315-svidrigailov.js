@@ -50,6 +50,6 @@ function onAsk(mob, room, eventDetails) {
         "say I am going to America. Did you know that? I have made some arrangements. America seems appropriate."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

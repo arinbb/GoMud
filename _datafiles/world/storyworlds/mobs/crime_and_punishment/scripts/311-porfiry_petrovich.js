@@ -60,8 +60,8 @@ function onAsk(mob, room, eventDetails) {
         "say You know, I think of this office as a place for conversation. Real conversation. Not the kind with agendas."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -72,7 +72,6 @@ function onShow(mob, room, eventDetails) {
         mob.Command("say I have read something very like this before, you know. Recently. Locally.", 3.5);
         return true;
     }
-    mob.Command("emote examines it with polite curiosity.");
-    mob.Command("say Hmm. Yes. Very interesting.", 1.5);
-    return true;
+
+    return false;
 }

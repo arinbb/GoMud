@@ -50,12 +50,11 @@ function onAsk(mob, room, eventDetails) {
         "say Ask me something else."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote glances at it.");
-    mob.Command("say What am I supposed to do with that.", 1.5);
-    return true;
+
+    return false;
 }

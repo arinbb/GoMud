@@ -29,14 +29,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote looks up. He is processing something.");
-    mob.Command("say I hear you. I'm -- yes. What was the question?", 2.0);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it with careful evaluation.");
-    mob.Command("say Interesting. What is the significance of this?", 2.0);
-    mob.Command("emote waits for the answer. He will process it properly.", 3.5);
-    return true;
+
+    return false;
 }

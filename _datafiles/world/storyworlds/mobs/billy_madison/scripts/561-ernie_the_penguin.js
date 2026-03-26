@@ -22,13 +22,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote tilts its head.");
-    mob.Command("emote blinks. The penguin is listening. The penguin always listens.", 1.5);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with acute penguin focus.");
-    mob.Command("emote seems to approve. It waddles slightly forward, which is approval.", 2.0);
-    return true;
+
+    return false;
 }

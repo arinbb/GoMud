@@ -24,14 +24,11 @@ function onAsk(mob, room, eventDetails) {
     }
 
     // Any other question gets the treatment
-    mob.Command("emote fixes you with the look.");
-    mob.Command("say NO SOUP FOR YOU!", 1.5);
-    mob.Command("emote points at the exit.", 2.5);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at what you are showing him.");
-    mob.Command("say What is this. This is not soup. NEXT!", 1.5);
-    return true;
+
+    return false;
 }

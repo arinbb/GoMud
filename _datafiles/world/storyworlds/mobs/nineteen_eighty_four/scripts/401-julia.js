@@ -46,6 +46,6 @@ function onAsk(mob, room, eventDetails) {
         "say I'd rather show you than explain. Explanations are dangerous."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

@@ -47,8 +47,8 @@ function onAsk(mob, room, eventDetails) {
         "say Some things in this world can't be explained. Doesn't mean they aren't real."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -61,7 +61,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote examines it with a warm, thoughtful expression.");
-    mob.Command("say Now that's interesting. Let me take a closer look.");
-    return true;
+    return false;
 }

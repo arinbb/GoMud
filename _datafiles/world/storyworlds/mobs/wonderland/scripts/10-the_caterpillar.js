@@ -57,10 +57,7 @@ function onAsk(mob, room, user, eventDetails) {
         return true;
     }
 
-    mob.Command("say ....");
-    mob.Command("emote blows a smoke question mark that hangs in the air between you.");
-    mob.Command("say Ask a better question.");
-    return true;
+    return false;
 }
 
 function onIdle(mob, room) {

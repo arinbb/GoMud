@@ -50,8 +50,8 @@ function onAsk(mob, room, eventDetails) {
         "emote gives you a look of quiet, patient intelligence."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -63,7 +63,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote examines it with the careful attention of someone who takes everything seriously.");
-    mob.Command("say That's very interesting. Thank you for showing me.");
-    return true;
+    return false;
 }

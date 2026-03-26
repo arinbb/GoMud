@@ -40,13 +40,11 @@ function onAsk(mob, room, eventDetails) {
         "emote polishes the bar and regards you with the attentive patience of a man who has heard a great many things and can hear more."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it with the careful eyes of a man who evaluates things practically first.");
-    mob.Command("say That's a useful thing.");
-    mob.Command("emote sets it on the bar and considers it.", 2.0);
-    return true;
+
+    return false;
 }

@@ -40,6 +40,5 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Hmm, I could tell you about design philosophy, the supernatural, or perhaps the handbook. One must stay informed.");
-    return true;
+    return false;
 }

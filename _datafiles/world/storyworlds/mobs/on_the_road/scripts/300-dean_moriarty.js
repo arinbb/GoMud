@@ -66,8 +66,8 @@ function onAsk(mob, room, eventDetails) {
         "say I cannot stop right now I am going somewhere but ask me again when I come back around!"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -87,7 +87,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote examines it with the focused attention of someone evaluating a car.");
-    mob.Command("say Yes! That is a thing! That is a real thing! I am glad it exists!");
-    return true;
+    return false;
 }

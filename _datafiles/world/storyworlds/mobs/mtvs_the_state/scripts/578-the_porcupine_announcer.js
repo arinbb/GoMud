@@ -24,15 +24,10 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote raises the microphone.");
-    mob.Command("say AND WE HAVE A VISITOR! Coming in from the outside, looking strong, showing interest in the sport of porcupine racing! Give them a hand!", 1.5);
-    mob.Command("emote lowers the microphone professionally.", 3.5);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote brings the microphone up.");
-    mob.Command("say AND WHAT IS THIS — a new development AT TRACKSIDE! Our visitor has produced an item! The crowd reacts!");
-    mob.Command("emote gestures at the empty bleachers where eight people are sitting.", 2.0);
-    return true;
+
+    return false;
 }

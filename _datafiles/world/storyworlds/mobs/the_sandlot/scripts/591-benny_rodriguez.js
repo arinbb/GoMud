@@ -43,6 +43,6 @@ function onAsk(mob, room, eventDetails) {
         "say You can always get better. That's the whole point."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

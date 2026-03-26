@@ -49,13 +49,11 @@ function onAsk(mob, room, eventDetails) {
         "say I was just thinking about that, actually. Heavy."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it for a long time, head tilted.");
-    mob.Command("say Heavy.");
-    mob.Command("emote nods and hands it back carefully.", 1.5);
-    return true;
+
+    return false;
 }

@@ -41,8 +41,8 @@ function onAsk(mob, room, eventDetails) {
         "say There is always food. That's what I'm here for."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onGive(mob, room, eventDetails) {
@@ -53,7 +53,6 @@ function onGive(mob, room, eventDetails) {
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it carefully.");
-    mob.Command("say Where did you find this?");
-    return true;
+
+    return false;
 }

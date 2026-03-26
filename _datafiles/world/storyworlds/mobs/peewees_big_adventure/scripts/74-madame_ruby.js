@@ -48,9 +48,7 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Ask Madame Ruby about your fortune, the spirits, or perhaps a missing bicycle?");
-    mob.Command("emote wiggles her fingers mysteriously.", 1.5);
-    return true;
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -62,8 +60,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Ooh, let me read the psychic vibrations coming off that object...");
-    mob.Command("emote closes her eyes and hums dramatically.", 1.5);
-    mob.Command("say It was made... in a PLACE! By a PERSON! The spirits never lie!", 3);
-    return true;
+    return false;
 }

@@ -21,6 +21,5 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote sighs once, formally, and goes back to watching the door.");
-    return true;
+    return false;
 }

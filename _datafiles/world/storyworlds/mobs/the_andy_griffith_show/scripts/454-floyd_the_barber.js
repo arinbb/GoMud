@@ -46,6 +46,6 @@ function onAsk(mob, room, eventDetails) {
         "emote begins sweeping and glances sideways. The information is being assembled."
     ];
     var pick = Math.floor(Math.random() * responses.length);
-    mob.Command(responses[pick]);
-    return true;
+
+    return false;
 }

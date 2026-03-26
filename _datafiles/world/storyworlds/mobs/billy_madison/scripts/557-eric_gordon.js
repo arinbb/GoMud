@@ -34,12 +34,11 @@ function onAsk(mob, room, eventDetails) {
         "say Let's keep this brief. I have a board meeting."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote looks at it with professional interest.");
-    mob.Command("say Interesting. What's the market value on that?");
-    return true;
+
+    return false;
 }

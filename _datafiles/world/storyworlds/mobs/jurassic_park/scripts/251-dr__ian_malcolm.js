@@ -51,8 +51,8 @@ function onAsk(mob, room, eventDetails) {
         "say Life finds a way. Every time. The question is whether you're still alive to appreciate it."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -65,7 +65,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote takes it, examines it, hands it back.");
-    mob.Command("say Systems within systems. Everything interesting works that way.");
-    return true;
+    return false;
 }

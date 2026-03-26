@@ -58,6 +58,6 @@ function onAsk(mob, room, eventDetails) {
         "emote resettles his spectacles. His expression is patient, entirely patient."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

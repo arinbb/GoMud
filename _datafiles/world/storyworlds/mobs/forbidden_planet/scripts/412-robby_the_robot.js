@@ -56,8 +56,8 @@ function onAsk(mob, room, eventDetails) {
         "say My current processing load includes seventeen unresolved ethical subroutine conflicts. This is above average. I manage."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -71,7 +71,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote scans the item with practiced efficiency.");
-    mob.Command("say I have catalogued this. Is there something specific you require?");
-    return true;
+    return false;
 }

@@ -49,6 +49,6 @@ function onAsk(mob, room, eventDetails) {
         "say The whole point of Newspeak is to narrow the range of thought. We are winning, you know."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

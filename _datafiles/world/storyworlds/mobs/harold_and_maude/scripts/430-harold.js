@@ -49,13 +49,11 @@ function onAsk(mob, room, eventDetails) {
         "say Maude says that life is too important to take seriously. I am still thinking about that one."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it with genuine attention, the way he examines everything.");
-    mob.Command("say What do you think it means?");
-    mob.Command("say I always ask. The answer is usually more interesting than the object.", 1.5);
-    return true;
+
+    return false;
 }

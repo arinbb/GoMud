@@ -16,9 +16,7 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote regards you with reptilian contempt.");
-    mob.Command("say I do not speak to you. I only speak to Mario. And then I fight him.");
-    return true;
+    return false;
 }
 
 function onDie(mob, room) {

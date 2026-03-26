@@ -51,12 +51,11 @@ function onAsk(mob, room, eventDetails) {
         "say My life is monotonous. I hunt chickens; men hunt me. All the chickens are alike."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote approaches slightly to look, then retreats to his previous distance.");
-    mob.Command("say I do not know what that is. But I notice you brought it to show me. That is something.");
-    return true;
+
+    return false;
 }

@@ -43,6 +43,6 @@ function onAsk(mob, room, eventDetails) {
         "emote straightens a shirt and waits."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

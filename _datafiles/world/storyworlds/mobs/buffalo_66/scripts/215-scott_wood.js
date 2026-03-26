@@ -38,12 +38,11 @@ function onAsk(mob, room, eventDetails) {
         "say You know what? It doesn't matter. None of it matters."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote barely glances at it.");
-    mob.Command("say I don't care. I don't care about anything anymore.");
-    return true;
+
+    return false;
 }

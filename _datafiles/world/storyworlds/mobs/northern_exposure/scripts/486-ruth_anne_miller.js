@@ -45,13 +45,11 @@ function onAsk(mob, room, eventDetails) {
         "say I have been in this store long enough to know that most people need two things: what they asked for, and something else."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines it without picking it up, her eyes moving over it carefully.");
-    mob.Command("say Where did you find this.");
-    mob.Command("emote nods slowly, as if confirming something she already suspected.", 2.0);
-    return true;
+
+    return false;
 }

@@ -2,17 +2,13 @@
 // A Raven - the desert witness
 
 function onAsk(mob, room, eventDetails) {
-    mob.Command("emote tilts its head and regards you with one glossy black eye.");
-    mob.Command("emote calls once: a hoarse, ambiguous sound.", 1.5);
-    mob.Command("emote returns to watching.", 3.0);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote examines the item from a safe distance.");
-    mob.Command("emote sidles closer, then retreats.", 1.5);
-    mob.Command("emote calls once and lifts from its perch, circling overhead.", 3.0);
-    return true;
+
+    return false;
 }
 
 function onIdle(mob, room) {

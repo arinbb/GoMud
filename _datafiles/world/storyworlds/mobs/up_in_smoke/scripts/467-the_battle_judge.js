@@ -34,6 +34,6 @@ function onAsk(mob, room, eventDetails) {
         "say Every band thinks they are going to win. Only one is right."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

@@ -41,6 +41,5 @@ function onAsk(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("say Hmm. You should ask me about my art, my sculptures, or what I've done with this dreadful house.");
-    return true;
+    return false;
 }

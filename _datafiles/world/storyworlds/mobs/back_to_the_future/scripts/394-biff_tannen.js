@@ -35,8 +35,8 @@ function onAsk(mob, room, eventDetails) {
         "say You got something to say to me, McFly?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onHurt(mob, room, eventDetails) {

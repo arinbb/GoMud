@@ -39,12 +39,11 @@ function onAsk(mob, room, eventDetails) {
         "say What do you want me to say? Everything is futile."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
-    mob.Command("emote glances at it with performed disinterest and then looks again more carefully.");
-    mob.Command("say That's actually kind of interesting. What is that?", 2.0);
-    return true;
+
+    return false;
 }

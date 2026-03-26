@@ -22,6 +22,6 @@ function onAsk(mob, room, eventDetails) {
         "say You got business here or you just passing through my land without asking?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }

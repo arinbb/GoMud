@@ -57,8 +57,8 @@ function onAsk(mob, room, eventDetails) {
         "say I do beg your pardon, but could we talk about something more... comfortable?"
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -77,7 +77,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote examines it curiously.");
-    mob.Command("say How interesting. We don't see many of those in the Shire.");
-    return true;
+    return false;
 }

@@ -55,8 +55,8 @@ function onAsk(mob, room, eventDetails) {
         "say Father says I ask too many questions. I think there are not enough questions to ask."
     ];
     var pick = Math.floor(Math.random() * defaults.length);
-    mob.Command(defaults[pick]);
-    return true;
+
+    return false;
 }
 
 function onShow(mob, room, eventDetails) {
@@ -69,7 +69,5 @@ function onShow(mob, room, eventDetails) {
         return true;
     }
 
-    mob.Command("emote examines it with open, unguarded curiosity.");
-    mob.Command("say I have not seen this before. Is it from Earth?");
-    return true;
+    return false;
 }
