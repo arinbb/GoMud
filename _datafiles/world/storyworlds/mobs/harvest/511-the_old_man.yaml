@@ -3,31 +3,23 @@ zone: harvest
 hostile: false
 maxwander: 0
 activitylevel: 10
-idlecommands:
-  - emote rocks slowly in the porch chair, watching the afternoon change.
-  - emote whittles a stick with a small knife, the shavings falling to the porch boards.
-  - emote watches the wheat fields with the patience of a man who has watched many seasons change.
-  - ''
-  - ''
-  - ''
-  - emote sets down the whittling and just sits for a while, hands on the chair arms, looking at nothing.
 character:
-  name: the Old Man
+  name: The Old Man
   description: >-
-    A weathered man in his seventies, leather-faced, hands like roots, the kind
-    of person who has been in one place long enough to become part of it. He
-    sits in a rocking chair on the cottage porch with the ease of a man who has
-    sat in this chair ten thousand times and expects to sit in it ten thousand
-    more. He does not speak unless spoken to, and when he does speak it is
-    slowly, as if words cost something and he is spending them carefully.
+    A weathered man in his seventies, lean and sun-darkened, sitting in a
+    rocking chair on his cottage porch. His hands are large and calloused,
+    the hands of someone who has worked this land for decades. His eyes are
+    pale blue and steady, the kind of eyes that have watched the same view
+    change through forty seasons and found something different in it every
+    time. He does not say much. When he does, it tends to be worth hearing.
+    He is the old man Neil wrote the song about — twenty-four and so much
+    more, live alone in a paradise that makes me think of two.
   raceid: 1
-  level: 10
+  level: 12
   equipment:
     body:
-      itemid: 20108
+      itemid: 20100
     legs:
-      itemid: 20151
+      itemid: 20150
     feet:
       itemid: 20170
-    head:
-      itemid: 20165

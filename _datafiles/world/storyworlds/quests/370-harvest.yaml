@@ -1,8 +1,10 @@
 questid: 370
 name: Harvest
 description: >-
-  Visit Broken Arrow Ranch and stay long enough to hear the whole album.
-  Arrive at the ranch, soak in the golden afternoon, and let the harvest come.
+  Walk the grounds of Broken Arrow Ranch in 1972. Listen to the Stray Gators
+  in the barn studio, sit with Danny Whitten in the corner, and spend time
+  with the Old Man on his cottage porch. To understand Harvest, you need both
+  the warmth and the sadness.
 reward:
   experience: 4000
   item_id: 305
@@ -13,4 +15,5 @@ reward:
     thousand songs and will play ten thousand more.
 steps:
 - description: Arrive at Broken Arrow Ranch.
-- description: Soak in the ranch and hear the whole album.
+- description: Listen to the band in the Barn Studio.
+- description: Sit with the Old Man.

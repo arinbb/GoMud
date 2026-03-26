@@ -2,35 +2,31 @@
 function onAsk(mob, room, eventDetails) {
     var question = eventDetails.askText.toLowerCase();
 
-    if (question.indexOf("pattern") >= 0 || question.indexOf("guitar") >= 0 || question.indexOf("play") >= 0) {
-        mob.Command("emote looks up briefly, as if from very far away.");
-        mob.Command("say I taught him that.");
-        mob.Command("emote keeps playing.", 2.0);
+    if (question.indexOf("song") >= 0 || question.indexOf("downtown") >= 0 || question.indexOf("music") >= 0) {
+        mob.Command("emote looks down at his guitar.");
+        mob.Command("say I wrote one. A good one. Come On Baby Let's Go Downtown.", 1.5);
+        mob.Command("say That was mine.", 3.0);
         return true;
     }
 
-    if (question.indexOf("needle") >= 0 || question.indexOf("damage") >= 0 || question.indexOf("heroin") >= 0) {
-        mob.Command("emote stops playing for a moment.");
-        mob.Command("emote starts playing again.", 2.0);
+    if (question.indexOf("neil") >= 0) {
+        mob.Command("say Neil's a good friend. Best I got.");
+        mob.Command("emote is quiet after that.", 1.5);
         return true;
     }
 
-    if (question.indexOf("neil") >= 0 || question.indexOf("young") >= 0) {
-        mob.Command("say He plays it right.");
-        mob.Command("emote fades slightly.", 2.0);
-        mob.Command("say He always played it right.");
+    if (question.indexOf("crazy horse") >= 0 || question.indexOf("band") >= 0) {
+        mob.Command("say Crazy Horse. Yeah. That was something.");
+        mob.Command("emote stares at his hands on the guitar strings.", 1.5);
         return true;
     }
 
-    // Default: just play
-    mob.Command("emote plays the pattern, the notes falling in their familiar sequence.");
+    var defaults = [
+        "emote looks up at you briefly, then back down at his guitar. His fingers find a chord but don't play it.",
+        "say I'm trying, man. I'm really trying.",
+        "emote nods slowly, not quite present, not quite gone."
+    ];
+    var pick = Math.floor(Math.random() * defaults.length);
+    mob.Command(defaults[pick]);
     return true;
-}
-
-function onIdle(mob, room) {
-    var r = Math.floor(Math.random() * 10);
-    if (r < 2) {
-        mob.Command("emote fades slightly and then resolves again, like a signal that is almost too weak.");
-    }
-    return false;
 }

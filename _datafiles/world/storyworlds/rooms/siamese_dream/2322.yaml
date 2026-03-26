@@ -1,0 +1,62 @@
+roomid: 2322
+zone: Siamese Dream
+title: The Parking Lot
+description: >-
+  Atlanta summer heat. The asphalt shimmers. A broken <ansi
+  fg="itemname">AC unit</ansi> leans against the studio wall, gutted and
+  useless -- the reason the whole building is sweltering. Jimmy Chamberlin
+  sits on the <ansi fg="itemname">curb</ansi>, smoking, his drumsticks
+  resting across his knees. Through the <ansi fg="itemname">door</ansi>
+  behind him, muffled guitar bleeds through the walls -- Billy is still in
+  there, still layering, still building. The <ansi fg="itemname">sky</ansi>
+  is white with Georgia heat. This is the other side of Siamese Dream. The
+  music inside is extraordinary. The people making it are breaking down. The
+  <ansi fg="exit">studio</ansi> door leads north back to the control room.
+mapsymbol: P
+maplegend: Parking Lot
+biome: road
+exits:
+  north:
+    roomid: 2320
+nouns:
+  ac: >-
+    The AC unit sits against the wall like a mechanical casualty, its casing
+    dented and its compressor exposed. It has been broken for eleven days now.
+    A repair sticker from a local company is peeling off the side. The whole
+    studio is sweltering because of this one dead machine, and nobody has
+    fixed it because the budget went to tape and studio time and there is
+    nothing left for comfort. The band records in the heat and the heat
+    becomes part of the sound -- the urgency, the discomfort, the inability
+    to relax into anything.
+  curb: >-
+    A concrete curb at the edge of the parking lot where Jimmy sits, his
+    long legs stretched out, drumsticks balanced across his knees. He is the
+    best drummer in rock in 1993 and he is sitting outside smoking while
+    Billy records all the guitar and bass parts without him. His talent is
+    undeniable. His demons are equally undeniable. The curb is where the
+    two things coexist.
+  sky: >-
+    White Georgia sky, the sun diffused through humidity into a brightness
+    that has no source and no direction. The heat rises from the asphalt in
+    visible waves. Atlanta in summer is an endurance test. Recording an album
+    here with broken air conditioning is something between dedication and
+    madness. The trees at the edge of the lot are motionless. There is no
+    wind. There will not be wind.
+  door: >-
+    The studio door, heavy and soundproofed, but not soundproofed enough.
+    Muffled guitar bleeds through -- you can hear the Marshalls even through
+    twelve inches of insulation and steel. The sound is enormous even at this
+    distance, filtered into something low and warm and persistent. Billy is
+    still in there. Billy is always in there.
+spawninfo:
+- mobid: 536
+  message: Jimmy Chamberlin is sitting on the curb outside, drumsticks across his knees.
+idlemessages:
+- The broken AC unit ticks in the heat, expanding metal contracting, a rhythm that is not quite music.
+- Muffled guitar bleeds through the studio walls -- layered and enormous even at this distance.
+- A car passes on the road beyond the lot, its driver unaware that one of the great records of the decade is being made in this building.
+- The heat shimmer off the asphalt makes the parking lot look like it is underwater.
+- Jimmy taps a rhythm on the curb with one drumstick, precise even when idle, the muscle memory of ten thousand fills.
+- A cicada starts up somewhere in the trees at the edge of the lot, its buzz joining the muffled distortion from inside.
+- The shadow of the building moves imperceptibly as the afternoon crawls forward. The heat does not diminish.
+- Jimmy lights another cigarette and watches the smoke rise straight up in the dead air.

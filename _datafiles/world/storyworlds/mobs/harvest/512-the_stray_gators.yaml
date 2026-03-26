@@ -2,30 +2,24 @@ mobid: 512
 zone: harvest
 hostile: false
 maxwander: 0
-activitylevel: 20
-idlecommands:
-  - emote tunes the pedal steel, bending the E string until it finds the right warm pitch.
-  - emote plays a slow country phrase on the pedal steel, the sound bending and settling.
-  - emote waits for the next number, the pedal steel resting on its stand.
-  - emote adjusts the volume pedal with one foot and plays a chord, testing the tone.
-  - ''
-  - ''
-  - emote runs through the changes of a song, slow and exploratory, not quite playing it yet.
+activitylevel: 15
 character:
-  name: the Stray Gators
+  name: The Stray Gators
   description: >-
-    The backing band -- Ben Keith on pedal steel, Tim Drummond on bass, Kenny
-    Buttrey on drums. They are the musicians who recorded Harvest in Nashville
-    and at the ranch. Ben Keith is the one you notice, the pedal steel player
-    whose bends and sustains define the album sound. He plays the instrument
-    the way weather moves -- inevitable, warm, with a specific kind of
-    tenderness that only the pedal steel can carry.
+    Neil Young's backing band for the Harvest sessions, set up on the barn
+    stage in a loose semicircle. Ben Keith on pedal steel guitar, his long
+    fingers finding notes that bend and shimmer like heat off a highway.
+    Tim Drummond on upright bass, holding down the low end with calm
+    authority. Kenny Buttrey on drums, brushes in hand, keeping time with
+    the patience of a man who knows the song will find its tempo. Jack
+    Nitzsche at the piano, adding color and weight. Together they make the
+    warm, aching sound that holds the whole album together — country and
+    rock and folk all braided into something that sounds like the California
+    landscape itself.
   raceid: 1
-  level: 8
+  level: 10
   equipment:
     body:
-      itemid: 20113
+      itemid: 20100
     legs:
-      itemid: 20151
-    feet:
-      itemid: 20171
+      itemid: 20150

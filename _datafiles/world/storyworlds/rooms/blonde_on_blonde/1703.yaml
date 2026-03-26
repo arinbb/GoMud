@@ -1,0 +1,64 @@
+roomid: 1703
+zone: Blonde on Blonde
+title: The Chelsea Hotel
+description: >-
+  A hotel room whose number keeps shifting -- 211, 311, 511, the digits
+  rearranging themselves on the brass plate whenever you look away. The
+  Chelsea Hotel, West 23rd Street, Manhattan, 1966. The <ansi fg="itemname">bed</ansi> is
+  simultaneously made and unmade, the sheets crisp and tangled at once, as
+  if two versions of the room are occupying the same space. A
+  <ansi fg="itemname">typewriter</ansi> sits on the desk, a sheet of paper rolled into the
+  platen with an unfinished lyric. The <ansi fg="itemname">window</ansi> faces east and the
+  light coming through it is the light of a dawn that takes eleven minutes
+  to arrive. A blurred <ansi fg="itemname">photograph</ansi> leans against the wall -- the
+  album cover, shot by Jerry Schatzberg, Dylan's face softened past
+  recognition into pure color and motion. The Sad Eyed Lady stands at
+  the window, backlit, radiant, silent. The organ chord that has been
+  sustaining since the first room still holds here, barely audible, like
+  a memory of sound.
+  A <ansi fg="exit">door</ansi> leads back to the loft.
+mapsymbol: C
+maplegend: The Chelsea Hotel
+biome: house
+exits:
+  door:
+    roomid: 1702
+nouns:
+  typewriter: >-
+    A Royal Quiet De Luxe portable, the same model Dylan used. A sheet of
+    paper is rolled into the platen. Typed on it in faded ribbon ink are
+    the words JOHANNA followed by four dashes -- a lyric unfinished or a
+    name that cannot be completed. The keys are cool to the touch. The
+    ribbon is nearly spent. Read it and the album closes.
+  bed: >-
+    The bed exists in two states -- the sheets freshly made with hospital
+    corners, and at the same time tangled and thrown back as if someone
+    just rose from troubled sleep. Both versions are equally real. This is
+    the Chelsea Hotel, where every room contains the ghost of the room it
+    was yesterday and the room it will be tomorrow.
+  window: >-
+    The window faces east over 23rd Street. The light coming through it is
+    the light of a dawn that takes eleven minutes to arrive -- the length
+    of Sad Eyed Lady of the Lowlands, the song that fills an entire side
+    of the album, the song that is a love letter written in the language
+    of patience. The Sad Eyed Lady stands in this light. She does not
+    turn around.
+  photograph: >-
+    The album cover photograph, shot by Jerry Schatzberg on a cold day in
+    the meatpacking district. Dylan in a suede jacket and a scarf, the
+    image deliberately blurred -- the photographer moved the camera during
+    the exposure, or Dylan moved, and the result is a face that is famous
+    and anonymous at once. You cannot quite see him. That is the point.
+    That has always been the point.
+idlemessages:
+- The room number on the brass plate shifts again -- 211, 311, 511. You stop trying to read it.
+- The Sad Eyed Lady breathes at the window. The dawn advances one minute of its eleven.
+- The typewriter sits on the desk, patient, the unfinished lyric waiting for a word that will not come.
+- Through the window, 23rd Street wakes slowly -- a delivery truck, a taxi, footsteps on the sidewalk below.
+- 'The bed is made. The bed is unmade. Both at once. The Chelsea Hotel does not choose between its versions.'
+- The photograph on the wall catches the dawn light and for a moment Dylan's face almost comes into focus. Then it blurs again.
+- The organ chord sustains. It has been sustaining since the studio, since the alley, since the loft. It will sustain until the album ends.
+- A radiator clicks on with a sound like someone clearing their throat before saying something important.
+spawninfo:
+- mobid: 283
+  message: The Sad Eyed Lady stands at the window, backlit by the eleven-minute dawn, silent and complete.

@@ -1,0 +1,64 @@
+roomid: 2242
+zone: Harvest
+title: The Old Mans Cottage
+description: >-
+  A small white cottage at the edge of the property, its paint chalky with age
+  and sun. A covered <ansi fg="itemname">porch</ansi> faces south toward the ranch,
+  with a weathered rocking <ansi fg="itemname">chair</ansi> that has worn two smooth
+  arcs in the floorboards from decades of use. <ansi fg="itemname">Tools</ansi> hang
+  in careful order on the porch wall — a hand saw, a pair of shears, a coil
+  of fence wire. The <ansi fg="itemname">view</ansi> from here is the same as from
+  the ranch — wheat fields, low hills, enormous sky — but somehow it looks
+  different from old eyes. Quieter. More complete. The fence line leads
+  <ansi fg="exit">south</ansi> back to the ranch.
+mapsymbol: C
+maplegend: Cottage
+biome: house
+exits:
+  south:
+    roomid: 2240
+    exitmessage: You follow the fence line south back to the ranch.
+nouns:
+  chair: >-
+    A wooden rocking chair, its arms polished smooth by decades of use. The
+    seat is contoured to one particular shape — the old man's shape, worn in
+    over years of sitting here watching the fields change with the seasons. It
+    rocks slowly in the breeze even when empty, keeping its own time.
+  tools: >-
+    Hand tools hung on nails in precise order — a bow saw, pruning shears,
+    a ball-peen hammer, wire cutters, a hand drill. Each one is old and
+    well-maintained, the wooden handles dark with oil and use. These are
+    the tools of a man who fixes things himself and always has.
+  view: >-
+    The same wheat fields, the same low hills, the same California sky. But
+    from the old man's porch it looks different — wider, maybe, or deeper.
+    The way a view changes when you have been looking at it for forty years
+    and you know what it looks like in every kind of light and every season.
+    The old man sees the fields not as they are today but as all the days
+    they have ever been, layered on top of each other like pages in a book.
+  porch: >-
+    A small covered porch, just big enough for the rocking chair and a
+    side table with a glass of water on it. The floorboards are swept clean.
+    A wind chime made of old keys hangs from the eave, turning slowly,
+    making a sound like tiny doors opening and closing.
+spawninfo:
+- mobid: 511
+  message: "The Old Man sits in his rocking chair, watching the fields with patient, knowing eyes."
+  idlecommands:
+  - ""
+  - ""
+  - emote rocks slowly in his chair, the runners creaking against the floorboards in a steady rhythm.
+  - ""
+  - emote squints at the horizon like he is reading something written in the light.
+  - ""
+  - ""
+  - emote nods to himself about something, a small private agreement with the world.
+  - ""
+  respawnrate: 5 real minutes
+idlemessages:
+- The rocking chair creaks in its slow rhythm, back and forth, measuring time in its own way.
+- A wind chime made of old keys turns in the breeze, each key a tiny silver voice.
+- 'The light is different here at the edge of the property — softer, older, like it has been filtered through decades.'
+- The wheat fields bend in the wind and the old man watches them the way you watch a fire — not looking for anything, just watching.
+- A screen door somewhere on the cottage closes gently, the spring pulling it shut with a quiet sigh.
+- 'The view from here is the same view as from the ranch, and entirely different.'

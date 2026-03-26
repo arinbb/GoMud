@@ -1,0 +1,77 @@
+roomid: 2241
+zone: Harvest
+title: The Barn Studio
+description: >-
+  A converted barn, its high doors propped open to the evening air. <ansi fg="itemname">Haybales</ansi>
+  have been shoved against the walls to make room for a makeshift recording
+  setup. <ansi fg="itemname">Lanterns</ansi> hang from the rafters on long chains,
+  casting warm uneven light across a bare wooden <ansi fg="itemname">stage</ansi> —
+  just a raised platform with a single spotlight and a wooden stool. The Stray
+  Gators are set up on the stage with their <ansi fg="itemname">equipment</ansi> —
+  pedal steel, bass, drums, acoustic guitars — the whole warm architecture of
+  the Harvest sound. In the far corner, half in shadow, Danny Whitten sits on
+  a haybale with a guitar across his knees, not quite part of the session
+  anymore. The only exit leads <ansi fg="exit">west</ansi> back toward the ranch.
+mapsymbol: B
+maplegend: Barn Studio
+biome: house
+exits:
+  west:
+    roomid: 2240
+    exitmessage: You step out of the barn into the golden evening light.
+nouns:
+  lanterns: >-
+    Oil lanterns on long chains, swaying gently in the draft from the open barn
+    doors. Their light is warm and unsteady, making shadows move on the walls
+    like the barn itself is breathing. This is not a professional studio — this
+    is a barn where people happen to be making one of the most beautiful albums
+    ever recorded.
+  haybales: >-
+    Rectangular bales of hay stacked against the barn walls, pushed aside to
+    make room for the recording equipment. They smell like dry grass and summer.
+    Some have been arranged as seating — you can see the impressions where people
+    have sat for hours, listening, waiting for the right take.
+  stage: >-
+    A bare wooden platform, barely raised off the barn floor. A single spotlight
+    hangs above a wooden stool at its center. This is where Heart of Gold was
+    played — just Neil on the stool with his guitar and harmonica, the Stray
+    Gators behind him, the lanterns swaying, and the California night outside
+    the open barn doors. No tricks. No studio magic. Just the song and the room
+    and the truth of it.
+  equipment: >-
+    Ben Keith's pedal steel guitar gleams in the lantern light, its chrome legs
+    and foot pedals catching every flicker. Tim Drummond's upright bass leans
+    against a hay bale. Kenny Buttrey's drum kit is set up tight and minimal —
+    kick, snare, hi-hat, one crash cymbal. A few microphones on boom stands.
+    Jack Nitzsche's piano is pushed to one side with sheet music scattered on top.
+    The sound they make together is warm and aching and entirely real.
+spawninfo:
+- mobid: 512
+  message: "The Stray Gators are on stage, tuning up, running through chord changes."
+  idlecommands:
+  - ""
+  - emote runs through a steel guitar lick, the notes bending and shimmering in the barn air.
+  - ""
+  - ""
+  - emote counts off a tempo with drumsticks clicking together — one, two, three, four.
+  - ""
+  respawnrate: 5 real minutes
+- mobid: 513
+  message: "Danny Whitten sits in the corner on a hay bale, a guitar across his knees, staring at the floor."
+  idlecommands:
+  - ""
+  - ""
+  - ""
+  - emote picks at a guitar string absently, a single note that fades into the barn's silence.
+  - ""
+  - emote looks up at the stage, then back down at his hands.
+  - ""
+  - ""
+  respawnrate: 5 real minutes
+idlemessages:
+- The pedal steel sings a long, bending note that hangs in the air like a question nobody answers.
+- Hay dust drifts through the lamplight, golden and slow, the same color as the music.
+- 'Someone taps a cymbal lightly and the shimmer fills the barn like wind through dry grass.'
+- The barn doors creak in the evening breeze and the lanterns sway, sending shadows dancing.
+- A bass note rumbles through the floorboards, felt more than heard, deep and warm.
+- 'The spotlight on the empty stool waits patiently, the way a song waits to be played.'

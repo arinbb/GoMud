@@ -4,12 +4,10 @@ autoscale:
   minimum: 1
   maximum: 5
 defaultbiome: farmland
-mutators:
-- mutatorid: harvest-gold
 idlemessages:
-- An acoustic guitar drifts through the air from somewhere on the ranch, unhurried, finding its shape.
-- The pedal steel bends a note and holds it, the sound of something that has almost been said.
-- Wind moves through the wheat in long slow waves, the whole field breathing.
-- A harmonica phrase rises and falls, searching for something it cannot quite name.
-- The afternoon light thickens toward gold. The shadows stretch. The day is ending, slowly, beautifully.
-- Somewhere a screen door bangs shut, the sound carrying across the dry California air.
+- The late afternoon light turns everything gold, the kind of gold that only exists in Northern California in autumn.
+- A breeze moves through the wheat fields, bending the stalks in long slow waves like breathing.
+- Somewhere far off, a screen door claps shut and the sound carries across the whole property.
+- The smell of dry grass and warm earth rises from the ground, patient and old.
+- A hawk circles high above the ranch, riding thermals in silence.
+- The sun is lower now. The shadows of fence posts stretch across the dirt like sundials.

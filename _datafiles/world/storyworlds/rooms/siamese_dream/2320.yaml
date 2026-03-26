@@ -1,25 +1,28 @@
 roomid: 2320
 zone: Siamese Dream
-title: Triclops Sound Studios
+title: The Control Room
 description: >-
-  Atlanta, Georgia. Summer 1993. Triclops Sound Studios. The air conditioning
-  has been broken for days and the heat sits on everything like a hand pressing
-  down. The <ansi fg="itemname">control room</ansi> is a cathedral of tape
-  machines and outboard gear, every rack unit blinking behind a massive <ansi
+  Triclops Sound Studios, Atlanta, Georgia. Summer 1993. The <ansi
+  fg="itemname">control room</ansi> is a cathedral of tape machines and
+  outboard gear, every rack unit blinking behind a massive <ansi
   fg="itemname">Neve mixing board</ansi> that stretches the width of the room,
-  hundreds of faders set to positions only Butch Vig understands. Through the
-  glass, the live room is a circle of <ansi fg="itemname">Marshall
-  amplifiers</ansi> all pointed inward like a firing squad, guitar cables coiled
-  everywhere, a <ansi fg="itemname">drum kit</ansi> that Jimmy plays like jazz
-  at punk tempos. <ansi fg="itemname">Tape reels</ansi> stack in cardboard
-  boxes along the wall, each labeled in Billy's handwriting. The red recording
-  light has been on for what feels like weeks. Billy Corgan is playing almost
-  all the guitar and bass parts himself, layering hundreds of tracks. The
-  sessions are grueling, the band is fracturing, but the music is extraordinary.
-  The air smells of solder, coffee, and overdriven tubes.
-mapsymbol: S
-maplegend: Triclops Sound Studios
+  hundreds of faders set to positions only Butch Vig understands. <ansi
+  fg="itemname">Tape reels</ansi> stack in cardboard boxes along the wall,
+  each labeled in Billy's careful handwriting. The red recording light has been
+  on for what feels like weeks. A <ansi fg="itemname">note</ansi> is taped to
+  the wall beside the board. Through the <ansi fg="itemname">glass</ansi>
+  window you can see the <ansi fg="exit">live room</ansi> to the east, where
+  amplifiers stand in a circle. The air conditioning has been broken for eleven
+  days. The <ansi fg="exit">parking lot</ansi> is visible through the door to
+  the south. The air smells of solder, coffee, and overdriven tubes.
+mapsymbol: C
+maplegend: Control Room
 biome: house
+exits:
+  east:
+    roomid: 2321
+  south:
+    roomid: 2322
 nouns:
   board: >-
     The Neve 8078 stretches across the room like a cathedral organ laid on its
@@ -27,18 +30,6 @@ nouns:
     Butch Vig sits at the center of it, riding levels with the patience of a
     surgeon. Written in marker on a strip of masking tape along the top: "MORE
     GUITARS." There are always more guitars.
-  amplifiers: >-
-    Eight Marshall stacks arranged in a circle in the live room, all cranked to
-    ten, all pointed inward at each other. This is the source of the wall of
-    sound -- not one amp but eight, each one feeding back into the others,
-    creating a harmonic pressure that you feel in your sternum before you hear
-    it in your ears. The tubes inside glow orange like tiny furnaces.
-  drums: >-
-    Jimmy Chamberlin's kit -- a Ludwig with Remo heads, the snare already dented
-    and pitted from the force of his playing. He is jazz-trained, polyrhythmic,
-    capable of impossible tempos and fills that sound like controlled demolition.
-    The sweat on the drum heads catches the light. He plays harder than anyone
-    in rock and makes it look effortless.
   tapes: >-
     Stacked reels of two-inch tape in cardboard boxes, each one labeled in
     Billy's careful handwriting. CHERUB ROCK TAKE 1-4. TODAY KEEP THIS ONE.
@@ -46,24 +37,12 @@ nouns:
     is brownish-red, fragile, analog. Every sound on this record exists as a
     physical groove in magnetic oxide. The music is real in a way that will
     matter later.
-  pedal: >-
-    The Big Muff Pi distortion pedal sits on the floor between two amplifiers,
-    always engaged, its gain knob turned all the way up. This is the signature
-    sound -- the fuzz that makes the guitars bloom and distort into something
-    that is both beautiful and violent. The LED indicator glows red like a
-    warning light that everyone has learned to ignore.
-  guitar: >-
-    Billy's Fender Stratocaster leans against an amp, his "Zero" shirt draped
-    over the cabinet beside it. He has been playing almost all the guitar and
-    bass parts himself, layering track after track after track -- forty, sixty,
-    a hundred layers of guitar on a single song, each one slightly different,
-    building a sound so dense it becomes its own weather system.
-  window: >-
-    Through the studio window, Atlanta summer. Heat shimmer rises from the
-    parking lot outside. The broken AC unit sits on the roof, visible from here,
-    doing nothing. The trees are motionless in the dead air. Inside, the
-    temperature is somewhere past uncomfortable and into hallucinatory. Nobody
-    talks about it anymore. They just keep recording.
+  glass: >-
+    Through the thick double-paned glass of the control room window, the live
+    room sprawls. Eight Marshall amplifiers in a circle, all cranked, all
+    pointed inward at each other. Billy Corgan alone with a guitar, layering
+    takes. Guitar cables coil across the floor like sleeping snakes. The glass
+    vibrates when the Marshalls hit certain frequencies.
   note: >-
     A piece of paper taped to the wall in careful handwriting: "Today is the
     greatest day I have ever known." Written during the darkest period of the
@@ -71,22 +50,14 @@ nouns:
     the budget, the schedule. The most hopeful lyric born from the deepest
     despair. The ink is smudged where someone touched it.
 spawninfo:
-- mobid: 535
-  message: 'Billy Corgan looks up briefly from his guitar, then looks back down.'
-- mobid: 536
-  message: 'Jimmy Chamberlin settles behind the drum kit, adjusting the snare stand.'
 - mobid: 537
-  message: 'Butch Vig leans over the mixing board, making a small adjustment to a fader.'
-- mobid: 538
-  message: 'Something moves at the edge of the live room -- a presence that was not there a moment ago.'
+  message: Butch Vig leans over the mixing board, making a small adjustment to a fader.
 idlemessages:
 - The tape reels turn slowly, the heads reading dozens of layered guitar tracks simultaneously.
-- A low feedback tone swells from the live room, builds to a singing harmonic, then fades back to nothing.
-- 'Billy mutters something about one more take and reaches for the Stratocaster again.'
-- "Jimmy's hi-hat ticks in the silence like a clock counting down to something."
+- A low feedback tone swells from the live room through the glass, builds to a singing harmonic, then fades back to nothing.
 - Butch Vig reaches over and nudges a fader up by a millimeter, listening to something only he can hear.
-- 'The smell of hot vacuum tubes and melting solder drifts from the amplifier circle, mixed with stale coffee.'
+- 'The smell of hot vacuum tubes and melting solder drifts through the glass from the amplifier circle, mixed with stale coffee.'
 - 'Someone''s cassette Walkman clicks to the end of a rough mix tape and auto-reverses with a mechanical thunk.'
 - The broken AC unit on the roof rattles once, coughs, and falls silent again. The heat thickens.
-- A guitar chord sustains impossibly long through the cranked Marshalls, hanging in the air like a question that refuses to resolve.
-- Billy threads another reel onto the machine and begins layering another guitar track on top of forty others, building the sound higher.
+- Muffled guitar bleeds through the glass from the live room, layered and enormous and barely contained.
+- The VU meters on the Neve swing into the red and back, needles tracking the dynamics of something beautiful.

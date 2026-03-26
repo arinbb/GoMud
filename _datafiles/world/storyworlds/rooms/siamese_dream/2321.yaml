@@ -1,0 +1,62 @@
+roomid: 2321
+zone: Siamese Dream
+title: The Live Room
+description: >-
+  Eight <ansi fg="itemname">Marshall amplifiers</ansi> arranged in a circle,
+  all pointed inward, all cranked to ten. The air inside the circle is a
+  physical thing -- pressure and heat and vibration. Billy Corgan stands at
+  the center with his <ansi fg="itemname">guitar</ansi>, layering take after
+  take, building the wall of sound one track at a time. A <ansi
+  fg="itemname">Big Muff pedal</ansi> sits on the floor, always engaged, its
+  red LED like a warning light everyone has learned to ignore. The <ansi
+  fg="itemname">Ghost of DArcy</ansi> sits by the <ansi
+  fg="itemname">window</ansi>, barely visible, the bass guitar across her lap
+  untouched. The air smells of overdriven tubes and sweat. The <ansi
+  fg="exit">control room</ansi> is through the glass to the west.
+mapsymbol: L
+maplegend: Live Room
+biome: house
+exits:
+  west:
+    roomid: 2320
+nouns:
+  amplifiers: >-
+    Eight Marshall stacks arranged in a circle, all cranked to ten, all pointed
+    inward at each other. This is the source of the wall of sound -- not one
+    amp but eight, each one feeding back into the others, creating a harmonic
+    pressure that you feel in your sternum before you hear it in your ears. The
+    tubes inside glow orange like tiny furnaces. The volume knobs have been
+    taped in place so nobody accidentally turns them down.
+  guitar: >-
+    Billy's Fender Stratocaster, the neck worn smooth from hours of playing.
+    His "Zero" t-shirt is draped over the cabinet beside it. He has been
+    playing almost all the guitar and bass parts himself -- forty, sixty, a
+    hundred layers of guitar on a single song, each one slightly different,
+    building a sound so dense it becomes its own weather system.
+  pedal: >-
+    The Big Muff Pi distortion pedal sits on the floor between two amplifiers,
+    always engaged, its gain knob turned all the way up. This is the signature
+    sound -- the fuzz that makes the guitars bloom and distort into something
+    that is both beautiful and violent. The LED indicator glows red like a
+    warning light that everyone has learned to ignore.
+  window: >-
+    Through the window, Atlanta summer heat. But that is not what draws your
+    eye. The Ghost of DArcy sits here, not quite solid, the bass guitar across
+    her lap like an artifact from a life she is no longer fully living. Billy
+    played her parts. The music went on without her. She watches it happen
+    with an expression that is not anger and not sadness but something quieter
+    than both.
+spawninfo:
+- mobid: 535
+  message: Billy Corgan looks up briefly from his guitar, then looks back down.
+- mobid: 538
+  message: Something moves at the edge of the live room -- a presence that was not there a moment ago.
+idlemessages:
+- A guitar chord sustains impossibly long through the cranked Marshalls, hanging in the air like a question that refuses to resolve.
+- Billy threads another reel onto the machine and begins layering another guitar track on top of forty others, building the sound higher.
+- 'Billy mutters something about one more take and reaches for the Stratocaster again.'
+- The Marshall amplifiers hum in unison, a low vibration you feel in your teeth more than hear.
+- A feedback harmonic rises from the amp circle, finds a pure tone, holds it for three seconds, then dissolves back into distortion.
+- The Ghost of DArcy shifts by the window, barely visible, like heat shimmer in human form.
+- Billy plays the same four bars again, slightly different this time, adding the take to the tower of takes already on tape.
+- The smell of hot vacuum tubes fills the room, mixed with the copper tang of overworked electronics.

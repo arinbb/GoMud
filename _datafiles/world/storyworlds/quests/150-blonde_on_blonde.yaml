@@ -3,8 +3,9 @@ name: Blonde on Blonde
 description: >-
   Step inside Columbia Studio A, Nashville, February 1966. Bob Dylan is
   recording his double album with session musicians who have never heard
-  these songs before. Stay for the sessions. Witness something unprecedented.
-  Bring back something to play.
+  these songs before. Read the scattered lyric sheets, explore the rooms
+  that leaked out of the music, and find the secret room where the album
+  ends.
 reward:
   experience: 4500
   item_id: 195
@@ -17,4 +18,5 @@ reward:
     in the key of A.
 steps:
 - description: Enter Columbia Studio A, Nashville.
-- description: Experience the sessions.
+- description: Read Dylans scattered lyric sheets (3 or more).
+- description: Find the Chelsea Hotel room.

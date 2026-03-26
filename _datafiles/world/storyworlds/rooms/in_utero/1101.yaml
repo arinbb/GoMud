@@ -1,0 +1,79 @@
+roomid: 1101
+zone: In Utero
+title: The Live Room
+description: >-
+  The door closes behind you and the sound hits like a wall. This is where it
+  happens -- the actual room where the album is being recorded. Battered
+  <ansi fg="itemname">amplifiers</ansi> line the back wall, their pilot lights
+  glowing orange, cranked past the point of clean sound into pure distortion.
+  A massive <ansi fg="itemname">drum</ansi> kit dominates the center, toms the
+  size of oil drums, cymbals tarnished and cracked from sheer force.
+  <ansi fg="itemname">Cables</ansi> snake across every inch of floor like a
+  nest of black serpents. A Fender Mustang -- Kurt's <ansi fg="itemname">guitar</ansi> --
+  leans against an amp, its sunburst finish hidden under stickers and grime.
+  <ansi fg="itemname">Pedals</ansi> are scattered at the foot of the amp stack,
+  though most are bypassed -- Albini does not believe in effects. The air is
+  thick with heat and volume and cigarette smoke. The band is HERE, playing,
+  recording, laying down take after take. Through the glass to the
+  <ansi fg="exit">west</ansi>, you can see Albini in the control room. The room
+  thrums with sound that you feel in your ribcage before you hear it in your ears.
+mapsymbol: L
+maplegend: Live Room
+biome: house
+exits:
+  west:
+    roomid: 1100
+  isolation:
+    roomid: 1102
+    secret: true
+    mapdirection: east
+nouns:
+  amplifiers: >-
+    Cranked tube amps lined against the back wall, their pilot lights glowing
+    orange in the dim room. A Fender Twin. A Mesa Boogie. They are turned up past
+    the point of clean sound, past the point of reason, into that territory where
+    the tubes start to break up and the speaker cones distort and the sound becomes
+    something physical, something you feel in your chest before you hear it in your
+    ears. This is the raw sound Albini is after. No effects pedals. No processing.
+    Just voltage and volume and truth.
+  drums: >-
+    Dave Grohl's kit. Massive. The kick drum alone could knock down a wall. The
+    snare is tuned tight and dry -- every hit cracks like a rifle shot. There are
+    dents in the heads from sheer force. This is not a drum kit that is played.
+    It is a drum kit that is attacked. Stick tape unravels from the floor toms
+    where he has beaten it loose.
+  cables: >-
+    A labyrinth of instrument cables, microphone cables, and power cables covering
+    every square foot of floor. XLR connectors and quarter-inch jacks. Some are
+    taped down with gaffer tape, some are just loose and waiting to trip you. Each
+    one carries signal from an instrument to a microphone to the board to the tape.
+    The nervous system of the recording.
+  guitar: >-
+    A Fender Mustang, sunburst finish mostly hidden under stickers and grime. Strung
+    heavy, tuned low, plugged into a cranked amplifier that is already distorting
+    before you touch the strings. It smells like sweat and rosin and something
+    electric. It is still feeding back softly, a sustained harmonic that fills the
+    room like weather. This is the guitar that made In Utero.
+  pedals: >-
+    A handful of effects pedals scattered on the floor near the amp stack -- a Boss
+    DS-1, a Small Clone chorus, an Electro-Harmonix Big Muff. Most of them are
+    unplugged. Albini wanted the guitar straight into the amp, no mediation, no
+    buffer between the player and the sound. The pedals sit here like relics of a
+    different recording philosophy.
+spawninfo:
+- mobid: 196
+  message: "Kurt Cobain sits on a guitar case, a battered Mustang across his knees, staring at the floor."
+- mobid: 197
+  message: "Krist Novoselic unfolds himself from a folding chair, bass in hand, already six feet seven."
+- mobid: 198
+  message: "Dave Grohl drops onto the drum stool and immediately starts taping his knuckles."
+idlemessages:
+- A guitar string pops somewhere across the room, the tension finally too much.
+- Kurt hums something quietly to himself, almost inaudible, a melody that will be on the radio in six months.
+- Dave hits the snare once, hard, and the crack echoes off the studio walls like a gunshot in a cathedral.
+- A low bass rumble vibrates through the floorboards -- Krist testing a line, the notes felt more than heard.
+- The amplifiers hum at a frequency that makes your teeth itch. It never stops.
+- Someone kicks a cable loose and a burst of static rips through the monitors before the signal finds its path again.
+- 'Kurt bends a note on the Mustang -- a long, sustained wail that could be pain or could be beauty. Impossible to tell.'
+- 'Through the glass, you see Albini make a small mark on a notepad. Another take catalogued.'
+- The smell of overheated vacuum tubes mingles with cigarette smoke and cold coffee.

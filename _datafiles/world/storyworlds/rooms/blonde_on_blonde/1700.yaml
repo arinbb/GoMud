@@ -17,9 +17,15 @@ description: >-
   Cigarette smoke hangs in the air like weather. The Nashville session players,
   the best sight-readers in the world, wait with their instruments, not sure
   what is about to happen. Nobody is sure. That is what makes it historic.
+  A door leads <ansi fg="exit">south</ansi> to the alley. Stairs go <ansi fg="exit">up</ansi> to a loft above the studio.
 mapsymbol: S
 maplegend: Columbia Studio A
 biome: house
+exits:
+  south:
+    roomid: 1701
+  up:
+    roomid: 1702
 nouns:
   piano: >-
     A Steinway grand, lid raised, the felt hammers worn soft from hours of
@@ -35,14 +41,8 @@ nouns:
     stained glass. The volume knob is set to 4.
   sheets: >-
     Dylan's handwritten lyrics, dozens of pages scattered everywhere. The
-    handwriting is fast and private, full of crossings-out. One page works
-    through visions -- the word appears seven times in various forms, a woman
-    named Johanna who seems to be everywhere and nowhere. Another is a single
-    run-on verse about a sad-eyed lady of the lowlands, eleven minutes of
-    devotion compressed onto two sheets. A third page has JUST LIKE A WOMAN
-    written across the top, with the chorus rewritten four times. Somewhere
-    in the pile, a page reads EVERYBODY MUST GET STONED in block letters
-    with a drawing of a tambourine.
+    handwriting is fast and private, full of crossings-out. Pick one up and
+    read it -- each page holds a different song trying to become itself.
   cables: >-
     A spaghetti of XLR cables, instrument cables, and speaker cables in a
     dozen colors, taped to the floor in paths that only the session players
@@ -75,18 +75,8 @@ nouns:
 spawninfo:
 - mobid: 280
   message: Dylan glances up from a lyric sheet, pencil behind one ear.
-- mobid: 281
-  message: The Ragman flickers at the edge of your vision, drawing circles up and down the block.
-- mobid: 282
-  message: Johanna is here -- or the ghost of her, or the vision of her, outlined in the cigarette haze.
-- mobid: 283
-  message: The Sad Eyed Lady appears in the vocal booth glass like a reflection that belongs to no one in the room.
-- mobid: 284
-  message: The Guilty Undertaker stands in the corner, his footsteps giving him away.
 - mobid: 285
   message: Al Kooper sits at the organ, adjusting the Leslie speaker speed with one careful finger.
-- mobid: 286
-  message: Louise drifts through the studio like a memory, her face half-hidden by the smoke.
 idlemessages:
 - Dylan scribbles something on a lyric sheet, crosses it out, writes it again smaller in the margin.
 - Al Kooper finds a chord on the organ and holds it. The Leslie speaker turns slow. The sound fills the room like warm water.
@@ -97,4 +87,3 @@ idlemessages:
 - A session musician sets down his guitar and shakes his head slowly, a grin spreading across his face. He has never played on anything like this.
 - A harmonica wail rises from the vocal booth, high and lonesome, bending a note until it almost breaks.
 - 'Someone in the back of the studio starts humming the chorus -- ''everybody must get stoned'' -- and catches himself, but it is too late. The phrase is in the air now.'
-- The Sad Eyed Lady appears for a moment in the glass of the vocal booth, then is gone. The organ holds its chord.

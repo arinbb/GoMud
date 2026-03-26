@@ -1,0 +1,66 @@
+roomid: 1702
+zone: Blonde on Blonde
+title: The Loft
+description: >-
+  A loft apartment above the studio, the small hours, the room Visions of
+  Johanna lives in. <ansi fg="itemname">Candles</ansi> burn on every flat surface -- the
+  mantel, the windowsill, the floor beside the <ansi fg="itemname">mattress</ansi> where
+  Louise sleeps or pretends to sleep. Tall factory <ansi fg="itemname">windows</ansi>
+  line one wall, and through them the city lights of Nashville flicker like
+  the city is breathing. A <ansi fg="itemname">painting</ansi> hangs on the far wall -- a
+  museum piece, or a memory of one, and every time you look at it the subject
+  shifts. The heat pipes cough and knock. The room smells like candle wax
+  and old wood and something electrical, like the air before a storm. Johanna
+  is here. Johanna is always here. She is in the candlelight and in the
+  spaces between things and in the corners of your vision, and when you turn
+  to look at her directly she becomes the room again.
+  Stairs lead <ansi fg="exit">down</ansi> to the studio.
+mapsymbol: L
+maplegend: The Loft
+biome: house
+exits:
+  down:
+    roomid: 1700
+  door:
+    roomid: 1703
+    secret: true
+nouns:
+  mattress: >-
+    A bare mattress against the wall, sheets tangled, a single wool blanket
+    half on the floor. Louise is here, breathing with the careful rhythm
+    of someone who is not quite asleep. The mattress is the most real thing
+    in the room -- physical, present, warm. Everything else in the loft is
+    visions.
+  candles: >-
+    Candles on every surface, each one a different height, the flames
+    flickering with a draft that comes from nowhere. They throw shadows
+    that move independently of the things that cast them. The candlelight
+    is the medium Johanna exists in -- she is more visible by it, but
+    never quite visible enough to describe.
+  windows: >-
+    Tall factory windows, the kind with metal frames and small panes, some
+    cracked, letting in the Nashville night. Through them the city is a
+    scatter of lights -- neon and streetlamp and the headlights of cars
+    on distant roads. The glass is old enough to warp what you see through
+    it, bending the lights into shapes that are almost meaningful.
+  painting: >-
+    A painting on the wall that resists description. Each time you look
+    at it the subject shifts -- a landscape, a portrait, an interior scene,
+    something abstract that might be a face or a city seen from very far
+    away. It is the museum painting from the song, the one the voices
+    carried until they shipped, the one you can never quite see what it
+    depicts. The frame is heavy and dark and real.
+idlemessages:
+- The candles gutter in unison. There was no draft. Johanna flickers at the edge of the light.
+- Louise stirs on the mattress, pulls the blanket closer. She murmurs something warm and inaudible.
+- The heat pipes knock twice -- the building's heartbeat, slow and arrhythmic.
+- Through the factory windows, a light in a distant building goes out. Then another comes on.
+- The painting on the wall seems to shift when you are not looking at it. You can never catch it changing.
+- 'The room holds a silence that is not empty but full -- full of the ghost of an organ chord, full of Johanna.'
+- A candle flame leans sideways for no reason, pointing toward the far wall, then straightens.
+- The city through the windows breathes. The night is getting longer or shorter. Impossible to tell which.
+spawninfo:
+- mobid: 286
+  message: Louise lies on the mattress, breathing with careful rhythm, a handful of rain or the memory of one.
+- mobid: 282
+  message: Johanna flickers in the candlelight -- present and absent, the vision the whole song orbits.

@@ -3,17 +3,19 @@ name: Siamese Dream
 description: >-
   Enter Triclops Sound Studios in Atlanta, 1993. The Smashing Pumpkins are
   recording Siamese Dream. The AC is broken, the band is fracturing, and
-  Billy Corgan is layering hundreds of guitar tracks onto tape. Stay long
-  enough to hear the whole record take shape.
+  Billy Corgan is layering hundreds of guitar tracks onto tape. Experience
+  both the sonic beauty and the human cost of making the record.
 reward:
   experience: 4000
   item_id: 315
   playermessage: >-
-    You have heard the whole record take shape -- from the opening detonation
-    of Cherub Rock to the quiet moonlight of Luna. A battered Big Muff Pi
+    You have heard both sides of Siamese Dream -- the impossible beauty of
+    the layered guitars and the human cost of making them. The sonic
+    architecture and the people it nearly destroyed. A battered Big Muff Pi
     distortion pedal appears in your hands, the gain knob all the way up.
     This is the sound of Siamese Dream. Everything beautiful filtered through
     fuzz until it becomes something new.
 steps:
 - description: Enter Triclops Sound Studios in Atlanta.
-- description: Absorb the recording session.
+- description: Listen to Billy layer guitar tracks in the Live Room.
+- description: Talk to Jimmy in the Parking Lot.

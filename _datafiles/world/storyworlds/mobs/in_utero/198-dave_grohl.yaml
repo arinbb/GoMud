@@ -1,7 +1,7 @@
 mobid: 198
 zone: in_utero
 hostile: false
-maxwander: 3
+maxwander: 0
 activitylevel: 25
 idlecommands:
   - 'emote drums his fingers on every surface he passes, unable to stop.'

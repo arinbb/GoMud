@@ -2,88 +2,81 @@ roomid: 2240
 zone: Harvest
 title: Broken Arrow Ranch
 description: >-
-  Northern California, 1972. A working ranch in the golden hour, the light the
-  color of the album cover. A weathered <ansi fg="itemname">barn</ansi> stands
-  with its doors open to the <ansi fg="itemname">fields</ansi>, hay bales pushed
-  aside for amplifiers and mic stands -- the Stray Gators set up inside, pedal
-  steel bending somewhere in the warm air. Wheat rolls east to the ridge, heavy
-  and gold and almost ready. Neil Young sits on the porch with an acoustic
-  <ansi fg="itemname">guitar</ansi> across his knees, a harmonica in a neck
-  rack catching the late light. A dirt <ansi fg="itemname">road</ansi>
-  disappears into the California hills. The old man's <ansi fg="itemname">cottage</ansi>
-  is visible across the <ansi fg="itemname">fence</ansi> line, a rocking chair
-  on its porch. A small bare <ansi fg="itemname">stage</ansi> stands by the barn
-  with a single stool and a spotlight waiting for dark. The <ansi fg="itemname">sky</ansi>
-  is vast and unhurried, a hawk turning circles above the field, the kind of sky
-  that makes you think about time.
+  Northern California, 1972. Late afternoon. The sun hangs low and golden over
+  Broken Arrow Ranch, throwing long amber light across rolling <ansi fg="itemname">fields</ansi>
+  of wheat that stretch east toward the hills. A weathered wooden <ansi fg="itemname">porch</ansi>
+  wraps around the front of a low ranch house, an acoustic <ansi fg="itemname">guitar</ansi>
+  leaning against the rail. A <ansi fg="itemname">harmonica</ansi> sits on the
+  fence post where someone left it and forgot. The <ansi fg="itemname">fence</ansi>
+  line runs north toward a small white cottage just visible through the trees.
+  The <ansi fg="itemname">sky</ansi> is enormous here — California sky, the kind
+  that makes you feel both small and free at the same time. A dirt path leads
+  <ansi fg="exit">east</ansi> to the barn. The fence line goes <ansi fg="exit">north</ansi>
+  to the old man's cottage.
 mapsymbol: R
-maplegend: Broken Arrow Ranch
+maplegend: The Ranch
 biome: farmland
+exits:
+  east:
+    roomid: 2241
+    exitmessage: You walk east along the dirt path toward the barn.
+  north:
+    roomid: 2242
+    exitmessage: You follow the fence line north toward the cottage.
 nouns:
-  barn: >-
-    The barn has been converted to a recording studio without losing the barn.
-    Hay bales pushed to the walls, lanterns strung from the rafters on extension
-    cords. The Stray Gators are set up inside -- drums, bass, pedal steel, piano.
-    The smell of horses and old wood and hot vacuum tubes. The doors stay open so
-    the fields are part of the sound.
+  porch: >-
+    A wide wooden porch, the boards sun-bleached and smooth from years of boots
+    and bare feet. A rocking chair sits at one end, a coffee mug on the rail
+    beside it, long cold. This is where the songs get written — sitting here
+    watching the light change over the fields, a guitar across your knees, waiting
+    for something true to arrive.
   fields: >-
-    Wheat fields rolling east in the late light, golden and heavy and almost ready.
-    You run your hand along the tops of the stalks and they bend and spring back.
-    The harvest is coming. You can feel it in the weight of the air, the way the
-    light thickens toward the ridge. This is what the whole album sounds like --
-    something ripe, something about to be gathered.
+    Wheat fields rolling east toward low brown hills, golden in the late
+    afternoon light. The stalks move in the wind like water, like something
+    alive and dreaming. This is the harvest the album is named for — not just
+    the crop but the gathering of something, the collecting of years and songs
+    and losses into one warm, sad, beautiful record.
   guitar: >-
-    Neil's acoustic Martin, worn at the frets where his fingers have lived for
-    years. A harmonica sits in a neck rack, ready to be played without putting the
-    guitar down. The sound that defined a generation -- not because it was loud or
-    complicated, but because it was honest. A flannel shirt draped over the back of
-    the chair. A glass of water on the porch rail.
-  cottage: >-
-    The old man's place across the fence line. A small white cottage with a
-    weathered rocking chair on the front porch, tools hung in order along the
-    wall. He has been here for decades. The land knows his name. Through the
-    window you can see a kitchen table, a radio, a life arranged with the kind
-    of care that comes from having done everything once and knowing what matters.
-  road: >-
-    A dirt road disappearing into the California hills, tire tracks in the dry
-    dust. A pickup truck sits at the edge of the property, a road atlas open on
-    the seat to a page with no particular destination circled. The kind of road
-    you drive when driving is the whole point. Nashville is two thousand miles
-    east and the sessions there are still ringing in his ears.
-  stage: >-
-    A small bare stage by the barn, just boards on the dirt. A single spotlight
-    on a pole, a wooden stool, a microphone. This is where Heart of Gold lives --
-    stripped down to one man and one guitar and one truth. The stool is worn smooth.
-    The spotlight will not come on until dark, but you can feel it waiting.
-  sky: >-
-    Vast California sky going gold at the edges. A hawk turns slow circles above
-    the field, riding something invisible. Clouds stacked in the west like sheets
-    of music. The kind of sky that makes you think about time -- how much has
-    passed, how much is left, whether there is a difference. The light is so
-    warm it feels like memory.
+    A Martin D-45 acoustic guitar, its spruce top mellowed to honey by years
+    of play. The fretboard is worn smooth at the first three positions where
+    Neil's fingers find the same open chords over and over — D, G, A, the
+    vocabulary of everything he needs to say. A capo is clipped to the headstock.
+    It smells like wood and rosin and California.
   fence: >-
-    The fence line between Neil's land and the old man's, weathered posts and wire
-    that has been mended more than once. This is where they talk at dusk -- two men
-    leaning on opposite sides of the same fence, watching the same light go. A
-    harmonica rests on the top rail, left there the way you leave something when
-    you know you will come back for it.
+    A weathered split-rail fence running north from the ranch house toward a
+    small white cottage visible through a stand of live oaks. The fence posts
+    are silvered with age, leaning slightly, held together more by habit than
+    by hardware. The old man lives up that way.
+  sky: >-
+    The sky is enormous and golden, deepening toward amber at the western
+    horizon where the sun is making its slow descent. A few high clouds catch
+    the light and hold it. This is the sky that hangs over every song on the
+    album — open, warm, tinged with something you cannot name until later, when
+    you realize it was sadness all along.
+  harmonica: >-
+    A Hohner Marine Band harmonica in the key of G, sitting on the fence post
+    where someone set it down between songs and forgot to pick it back up. The
+    chrome is warm from the sun. The reeds inside smell like breath and metal.
+    This is the harmonica that opens Heart of Gold — that searching, lonesome
+    sound that makes you feel like you are looking for something you have not
+    lost yet.
 spawninfo:
 - mobid: 510
-  message: Neil Young sits on the porch, acoustic guitar across his knees, looking at the fields.
-- mobid: 511
-  message: The Old Man rocks slowly on his porch across the fence line, watching the light change.
-- mobid: 512
-  message: The Stray Gators are set up in the barn, tuning and waiting for the evening session.
-- mobid: 513
-  message: Danny Whitten leans against the fence at the far end of the property, guitar case at his feet, looking at nothing.
+  message: "Neil Young sits on the porch steps, tuning an acoustic guitar with patient, unhurried hands."
+  idlecommands:
+  - ""
+  - ""
+  - emote plays a few quiet chords, pauses, plays them again slightly different.
+  - ""
+  - emote looks out at the fields and squints, like he is listening to something only he can hear.
+  - ""
+  - emote picks up the harmonica, blows a single long note, then sets it back down.
+  - ""
+  respawnrate: 5 real minutes
 idlemessages:
-- An acoustic guitar drifts from the porch, unhurried, a man playing for no one in particular.
-- The wheat shifts in the evening wind, a long golden wave moving from east to west and gone.
-- The pedal steel bends a note from inside the barn, the sound carrying clean across the property.
-- A hawk turns slow circles above the field, riding something invisible, in no hurry to land.
-- The golden light thickens. Everything on the ranch looks permanent and temporary at once.
-- A screen door creaks open and bangs shut, the sound carrying across the still afternoon air.
-- The harmonica on the fence post catches the late light, a thin line of silver on weathered wood.
-- The old man's rocker creaks in a slow rhythm across the fence, steady as a metronome.
-- The smell of warm earth and cut grass drifts across the ranch, the particular sweetness of a harvest almost ready.
-- Someone tunes a guitar inside the barn, the same string over and over, getting it right.
+- A meadowlark calls from the fence line, two notes repeated, the simplest song in the world.
+- The wheat fields ripple in the breeze and the whole landscape seems to breathe.
+- The porch boards creak as the house settles in the warmth of the afternoon.
+- A truck passes on the distant highway, the sound arriving late and fading slowly.
+- The guitar on the porch hums faintly in the wind, a single harmonic rising and falling.
+- 'Dust motes hang in the golden light like tiny planets, suspended and still.'

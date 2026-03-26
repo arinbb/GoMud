@@ -3,30 +3,22 @@ zone: harvest
 hostile: false
 maxwander: 0
 activitylevel: 15
-idlecommands:
-  - emote plays a slow fingerpicked phrase on his acoustic guitar, the notes falling like rain.
-  - emote adjusts the harmonica in its neck rack with one careful finger.
-  - emote looks out over the wheat fields for a long moment, unmoving.
-  - emote writes something in a small notebook, crosses it out, writes it again.
-  - ''
-  - ''
-  - emote strums a G chord and lets it decay into the afternoon.
 character:
   name: Neil Young
   description: >-
-    A tall young man in flannel and denim, an acoustic guitar slung across his
-    back, a harmonica in a neck rack at his chest. Twenty-four years old and
-    already writing songs that will outlast him. There is a quiet intensity
-    about him, the look of someone who is always slightly somewhere else --
-    inside a lyric, inside a chord change, inside a question he has been
-    asking for years. The ranch is his, or will be. He sits on the fence rail
-    with the comfort of a man who already knows where home is.
+    A lean man in a flannel shirt and faded jeans, sitting on the porch with
+    an acoustic guitar across his knees. His hair is long and straight, his
+    face young but already carrying the look of someone who has seen more than
+    he expected to. He plays with his eyes half-closed, finding chords by feel,
+    letting the songs come to him rather than chasing them. A harmonica rack
+    hangs around his neck. He looks like California and Canada at the same time
+    — open spaces, long roads, the patience of someone raised on prairies.
   raceid: 1
   level: 10
   equipment:
     body:
-      itemid: 20101
+      itemid: 20100
     legs:
-      itemid: 20151
+      itemid: 20150
     feet:
       itemid: 20170

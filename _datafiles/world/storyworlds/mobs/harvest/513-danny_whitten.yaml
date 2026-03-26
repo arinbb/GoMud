@@ -2,24 +2,24 @@ mobid: 513
 zone: harvest
 hostile: false
 maxwander: 0
-activitylevel: 8
-idlecommands:
-  - emote plays the fingerpicking pattern softly, the notes barely audible.
-  - emote fades slightly, like a figure in a photograph that was slightly blurred when the shutter clicked.
-  - ''
-  - ''
-  - ''
-  - ''
-  - emote is there. Then less there. Then there again.
+activitylevel: 5
 character:
   name: Danny Whitten
   description: >-
-    A ghost presence on the small stage -- a man with a guitar, or almost a
-    man, or the memory of one. He plays the fingerpicking pattern he taught
-    to Neil Young, the one that became this song, slow and clear. He does not
-    quite meet your eyes. He may not be able to see you from wherever he is.
-    He is not frightening. He is just gone, in the specific way the needle
-    makes you gone. The light barely reaches him, which is intentional, or
-    it would be if he were here to intend it.
-  raceid: 0
-  level: 5
+    A young man sitting in the corner of the barn on a hay bale, a guitar
+    across his knees. He is thin and pale, his eyes present but fading, like
+    a radio station you are slowly driving out of range of. He was the
+    guitarist for Crazy Horse, Neil's other band — the loud one, the raw one.
+    He wrote Come On Baby Let's Go Downtown. He is talented and haunted and
+    everyone in the barn knows he is in trouble. He does not play with the
+    Stray Gators. He just sits in the corner and watches, not quite part of
+    the session anymore, not quite gone yet.
+  raceid: 1
+  level: 8
+  equipment:
+    body:
+      itemid: 20100
+    legs:
+      itemid: 20150
+    feet:
+      itemid: 20170

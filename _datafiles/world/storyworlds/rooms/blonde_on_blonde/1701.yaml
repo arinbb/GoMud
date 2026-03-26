@@ -1,0 +1,61 @@
+roomid: 1701
+zone: Blonde on Blonde
+title: The Alley Behind the Studio
+description: >-
+  The back door of Columbia Studio A opens onto a Nashville alley at two in
+  the morning. <ansi fg="itemname">Neon</ansi> signs from the honky-tonks on Broadway
+  reflect in shallow <ansi fg="itemname">puddles</ansi> on the asphalt -- red and blue
+  and green smeared across the wet ground like paint that will not dry. A
+  <ansi fg="itemname">guitar case</ansi> sits open on the curb, a few coins glinting inside
+  it, though no one is playing. The studio <ansi fg="itemname">door</ansi> behind you leaks a thin
+  line of light and the muffled sound of an organ chord that will not resolve.
+  The air smells like rain on hot asphalt and cigarette smoke and something
+  older -- the smell of songs that have escaped the studio and are living in
+  the alley now, made flesh, walking around with faces and opinions. Two
+  figures stand in the neon wash: one carries a burlap sack, the other checks
+  a pocket watch. They are not from Nashville. They are from the album.
+  The studio is <ansi fg="exit">north</ansi>. A fire escape leads <ansi fg="exit">up</ansi> to the loft.
+mapsymbol: A
+maplegend: The Alley
+biome: city
+exits:
+  north:
+    roomid: 1700
+  up:
+    roomid: 1702
+nouns:
+  neon: >-
+    Neon signs from the honky-tonks on lower Broadway, half a block away --
+    Tootsies Orchid Lounge, Ernests Tubb Record Shop, the names of places
+    where country music lives its public life. The light they throw is warm
+    and unreliable, and it makes the alley look like the inside of a jukebox.
+  puddles: >-
+    Shallow puddles on the asphalt from an earlier rain. The neon signs
+    reflect in them -- red and blue and green -- so the ground looks like
+    it is full of drowned light. Step in one and the colors scatter and
+    reform. The puddles have been here all night. They will be here at dawn.
+  case: >-
+    A guitar case, open on the curb, lined in crushed red velvet. A few
+    coins sit in the bottom -- quarters and dimes, an old silver dollar.
+    No guitar. No player. Just the case, open like a mouth, waiting for
+    someone to come back and fill it with music or close it and walk away.
+  door: >-
+    The back door of Columbia Studio A. A thin line of fluorescent light
+    leaks from the crack at the bottom. Through it you can hear the muffled
+    sound of the organ, a bass line being walked through, and occasionally
+    Dylan's voice -- not singing yet, just talking, giving directions that
+    are more like suggestions, the way he does.
+idlemessages:
+- A neon sign flickers and the puddles on the asphalt change color, red to blue, like a mood shift.
+- The muffled sound of a harmonica bleeds through the studio door, high and thin and lonesome.
+- The Ragman moves something from one pocket to another. Whatever it was, it clinked.
+- The Guilty Undertaker checks his pocket watch. The hour is always wrong. He checks it anyway.
+- A cat crosses the alley with the deliberate pace of something that has business elsewhere.
+- The smell of rain on hot asphalt mixes with cigarette smoke drifting from under the studio door.
+- 'From lower Broadway, the sound of a steel guitar -- real Nashville, the old kind, pedal steel crying in the night.'
+- A taxicab passes the mouth of the alley without stopping. Its headlights sweep across the puddles once.
+spawninfo:
+- mobid: 281
+  message: The Ragman stands in the neon wash, his burlap sack shifting with the weight of uncategorizable objects.
+- mobid: 284
+  message: The Guilty Undertaker lurks near the studio door, checking his pocket watch with professional concern.

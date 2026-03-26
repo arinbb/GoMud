@@ -1,0 +1,53 @@
+roomid: 1102
+zone: In Utero
+title: The Isolation Booth
+description: >-
+  A tiny room. Padded walls the color of old bone. A single
+  <ansi fg="itemname">microphone</ansi> stands in the center on a boom stand,
+  its pop filter casting a small shadow under the single bare bulb overhead.
+  The door seals behind you and the silence is sudden and total -- not the
+  absence of sound but its opposite, a presence, a weight. The padding
+  absorbs everything. Your breathing. Your heartbeat. The faint ringing in
+  your ears from the live room. This is where the vocals were recorded.
+  Just Kurt and the microphone in a room designed to hold nothing but a
+  voice. A spiral <ansi fg="itemname">notebook</ansi> lies on the floor beside
+  the mic stand, its pages covered in angular handwriting. The only exit
+  leads <ansi fg="exit">west</ansi> back to the live room.
+mapsymbol: I
+maplegend: Isolation Booth
+biome: house
+exits:
+  west:
+    roomid: 1101
+nouns:
+  microphone: >-
+    A Neumann U87 condenser microphone, mounted on a boom stand at mouth
+    height. The pop filter is slightly bent from use. This single microphone
+    captured every vocal on In Utero -- every scream, every whisper, every
+    word Kurt wrote in the notebook and then spoke into the air of this tiny
+    padded room. The mesh grille still carries the faint ghost of breath.
+    Beside the mic stand, a spiral notebook lies open on the floor.
+  notebook: >-
+    A spiral notebook, college-ruled, its cover stained with coffee rings and
+    cigarette burns. The pages are dense with Kurt's handwriting -- angular,
+    slanting, words crossed out and rewritten and crossed out again. Type
+    'read notebook' to look more closely.
+  padding: >-
+    Acoustic foam panels cover every surface -- walls, ceiling, even portions
+    of the floor. They are off-white and slightly yellowed, the color of old
+    teeth. Their purpose is absolute: to kill every reflection, every echo,
+    every trace of the room itself, leaving nothing but the voice. In here,
+    there is nowhere for sound to hide.
+  bulb: >-
+    A single bare incandescent bulb hangs from the ceiling on a cloth-wrapped
+    cord. It casts a warm, slightly amber light that makes the padded walls
+    glow like the inside of something organic. There is no switch visible.
+    The light is simply on, the way the recording light in the control room
+    is always on.
+idlemessages:
+- The silence presses in from every padded surface. You can hear your own pulse.
+- A faint vibration passes through the floor -- the band playing in the live room, reduced to a phantom tremor by distance and insulation.
+- The microphone stands motionless in the center of the room, patient as a confessor.
+- The notebook pages stir slightly, though there is no draft. The air conditioning, maybe. Or something else.
+- 'The bare bulb flickers once, casting the room into darkness for a half-second, then steadies.'
+- You become aware of the sound of your own breathing, amplified by the dead acoustic of the padded walls.
