@@ -26,6 +26,19 @@
   Supported:
     "tony soprano": ["dr. jennifer melfi"]
   Conversation:
+    - ["#1 say I had this dream. I was a bird. A duck."]
+    - ["#2 emote sets down her pen carefully"]
+    - ["#2 say Tell me about the duck."]
+    - ["#1 say It's -- forget it. It sounds stupid."]
+    - ["#2 say Nothing you say here is stupid, Tony."]
+    - ["#1 emote is quiet for a long moment, working his jaw"]
+    - ["#1 say I was flying. And I was just... flying. That was it."]
+    - ["#2 say And how did that feel?"]
+    - ["#1 say Like I didn't owe anybody anything."]
+-
+  Supported:
+    "tony soprano": ["dr. jennifer melfi"]
+  Conversation:
     - ["#1 say You ever think about waste? Like wasted life?"]
     - ["#2 say Can you say more about that?"]
     - ["#1 say It's like I'm -- I built something. I built it with my hands, practically."]

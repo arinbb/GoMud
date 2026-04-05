@@ -40,6 +40,11 @@ spawninfo:
 - itemid: 56
   message: A heavy flashlight sits on the front steps, left by a previous visitor.
   respawnrate: 5 real minutes
+hints:
+- 'Head east into the hotel. Find Jack in the bar -- try ''ask jack about writing.'''
+- Room 237 is somewhere upstairs. You have been warned about it.
+- The hedge maze to the northwest holds its own secrets. Search carefully.
+- Type 'return' at any time to go back to the Grand Library.
 idlemessages:
 - The wind picks up, driving snow against your face in sharp little needles.
 - 'Somewhere inside the hotel, a door slams. The sound echoes across the empty parking lot.'

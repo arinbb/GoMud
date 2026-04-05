@@ -25,6 +25,17 @@
   Supported:
     "wayne campbell": ["garth algar"]
   Conversation:
+    - ["#1 say Garth. Are you worthy?"]
+    - ["#2 say I'm not worthy! I'm not worthy!"]
+    - ["#1 emote gestures for him to stand. 'Rise, noble Garth.'"]
+    - ["#2 emote straightens up, adjusting his glasses with dignity."]
+    - ["#1 say That's what the show is about, man. Worthiness. And rock."]
+    - ["#2 say Mainly rock."]
+    - ["#1 say Mainly rock."]
+-
+  Supported:
+    "wayne campbell": ["garth algar"]
+  Conversation:
     - ["#1 say You know what's excellent? THIS."]
     - ["#1 emote gestures broadly at everything."]
     - ["#2 say The basement?"]

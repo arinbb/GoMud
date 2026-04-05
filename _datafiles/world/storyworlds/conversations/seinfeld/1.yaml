@@ -26,6 +26,18 @@
   Supported:
     "jerry seinfeld": ["george costanza"]
   Conversation:
+    - ["#1 say What's the deal with the word 'actually'?"]
+    - ["#2 say What do you mean."]
+    - ["#1 say People say it to mean the opposite of what they expect. 'Actually, it was great.' Meaning they expected it to be not great."]
+    - ["#2 emote thinks about this, pulling at his collar"]
+    - ["#2 say So 'actually' is an admission that you were wrong about something."]
+    - ["#1 say Every 'actually' is a tiny confession."]
+    - ["#2 say I actually like this observation."]
+    - ["#1 emote points at him. That was a perfect use."]
+-
+  Supported:
+    "jerry seinfeld": ["george costanza"]
+  Conversation:
     - ["#1 say Here's something. The pre-apology. You apologize for something before it happens."]
     - ["#2 say Like 'sorry in advance'?"]
     - ["#1 say Right. 'Sorry in advance if this is weird.' And then you do the weird thing."]

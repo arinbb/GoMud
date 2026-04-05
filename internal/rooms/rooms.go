@@ -88,6 +88,7 @@ type Room struct {
 	Signs             []Sign                            `yaml:"sign,omitempty"`                      // list of scribbles in the room
 	IdleMessages      []string                          `yaml:"idlemessages,omitempty" `             // list of messages that can be displayed to players in the room
 	LastIdleMessage   uint8                             `yaml:"-"`                                   // index of the last idle message displayed
+	Hints             []string                          `yaml:"hints,omitempty"`                     // Hints shown when players type 'hint' in this room
 	LongTermDataStore map[string]any                    `yaml:"longtermdatastore,omitempty"`         // Long term data store for the room
 	Mutators          mutators.MutatorList              `yaml:"mutators,omitempty"`                  // mutators this room spawns with.
 	Pvp               bool                              `yaml:"pvp,omitempty"`                       // if config pvp is set to `limited`, uses this value

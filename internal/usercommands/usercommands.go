@@ -76,6 +76,8 @@ var (
 		`experience`:  {Experience, true, false},
 		`equip`:       {Equip, false, false},
 		`feedback`:    {Feedback, true, false},
+		`idea`:        {Feedback, true, false},
+		`suggest`:     {Feedback, true, false},
 		`flee`:        {Flee, false, false},
 		`gearup`:      {Gearup, false, false},
 		`get`:         {Get, false, false},
@@ -83,6 +85,7 @@ var (
 		`go`:          {Go, false, false},
 		`grant`:       {Grant, true, true}, // Admin only
 		`help`:        {Help, true, false},
+		`hint`:        {Hint, true, false},
 		`keyring`:     {KeyRing, true, false},
 		`killstats`:   {Killstats, true, false},
 		`history`:     {History, true, false},

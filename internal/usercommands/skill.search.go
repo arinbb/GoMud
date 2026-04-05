@@ -3,6 +3,7 @@ package usercommands
 import (
 	"fmt"
 	"math"
+	"strconv"
 
 	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/characters"
@@ -55,16 +56,23 @@ func Search(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 		user.UserId,
 	)
 
-	// Check room exists
-	for exit, exitInfo := range room.Exits {
+	// Check room for secret exits; remember discoveries persistently
+	for exitName, exitInfo := range room.Exits {
 		if exitInfo.Secret {
+			discKey := "disc_r" + strconv.Itoa(room.RoomId) + "_" + exitName
+			alreadyFound := user.Character.GetMiscData(discKey) != nil
+
+			if alreadyFound {
+				user.SendText(fmt.Sprintf(`You recall a secret exit you discovered here: <ansi fg="secret-exit">%s</ansi>`, exitName))
+				continue
+			}
 
 			roll := util.Rand(100)
-
 			util.LogRoll(`Secret Exit`, roll, searchOddsIn100)
 
 			if roll < searchOddsIn100 {
-				user.SendText(fmt.Sprintf(`You found a secret exit: <ansi fg="secret-exit">%s</ansi>`, exit))
+				user.SendText(fmt.Sprintf(`You found a secret exit: <ansi fg="secret-exit">%s</ansi>`, exitName))
+				user.Character.SetMiscData(discKey, true)
 			}
 		}
 	}

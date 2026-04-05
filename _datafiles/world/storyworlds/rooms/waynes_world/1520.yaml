@@ -48,6 +48,11 @@ spawninfo:
 - mobid: 241
   message: "<ansi fg=\"yellow\">Garth Algar emerges from behind the drum kit, adjusting his glasses.</ansi>"
   respawnrate: 5 real minutes
+hints:
+- 'Try ''ask wayne about the show'' or ''ask garth about drumming.'''
+- 'The Mirthmobile is parked outside to the east. Type ''sing'' inside it.'
+- Head up to the kitchen or south to Garth's workshop to explore the zone.
+- 'Type ''play guitar'' near the drum kit for a surprise.'
 idlemessages:
 - The recording light on the camera blinks red. Everything here is potentially being broadcast.
 - A guitar pick falls off the amp and skitters across the carpet.

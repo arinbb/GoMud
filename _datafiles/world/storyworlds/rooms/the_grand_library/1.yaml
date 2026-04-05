@@ -200,6 +200,11 @@ spawninfo:
 - itemid: 167
   container: console
   respawnrate: 1 real minutes
+hints:
+- Type 'browse' to explore the entire collection and enter a story world.
+- 'Ask the Librarian about books, films, art, or type ''ask librarian help'' for a tour.'
+- The staircase leads up to the Overlook Tower where your souvenir collection is kept.
+- Type 'sign' to leave your name in the guestbook. Type 'read guestbook' to see who has visited.
 idlemessages:
 - The brass lanterns flicker briefly, casting dancing shadows across the painted ceiling.
 - You hear the distant sound of pages turning, though no one else seems to be nearby.
