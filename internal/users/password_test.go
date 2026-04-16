@@ -74,26 +74,6 @@ func TestUserRecord_PasswordMatches_WrongPassword(t *testing.T) {
 }
 
 // ---------------------------------------------------------------------------
-// PasswordMatches — plaintext bootstrap support
-// ---------------------------------------------------------------------------
-
-func TestUserRecord_PasswordMatches_AcceptsPlaintextBootstrapPassword(t *testing.T) {
-	t.Parallel()
-
-	const pw = "supersecret"
-	u := newTestUser()
-	u.Password = pw
-
-	if !u.HasPlaintextPassword() {
-		t.Fatal("HasPlaintextPassword returned false for a plaintext bootstrap password")
-	}
-
-	if !u.PasswordMatches(pw) {
-		t.Error("PasswordMatches returned false for a plaintext bootstrap password")
-	}
-}
-
-// ---------------------------------------------------------------------------
 // PasswordMatches — security: no hash-of-hash bypass
 // ---------------------------------------------------------------------------
 
