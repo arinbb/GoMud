@@ -119,7 +119,7 @@ jobs:
           -o bin/gomud-linux_arm5 .
 
       - name: Upload bin
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: bin-artifact
           path: bin/
@@ -134,8 +134,12 @@ jobs:
       DATAFILES_ARCHIVE: ${{ needs.prep.outputs.datafiles_archive }}
       CHECKSUMS_FILE: ${{ needs.prep.outputs.checksums_file }}
     steps:
+      - uses: actions/checkout@v6.0.2
+        with:
+          persist-credentials: false
+
       - name: Download builds
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8.0.1
         with:
           name: bin-artifact
           path: bin/
