@@ -1,3 +1,4 @@
+---
 name: "Codegen and Test"
 description: "Run go generate and go test"
 runs:
@@ -5,5 +6,5 @@ runs:
   steps:
     - run: go generate ./...
       shell: bash
-    - run: go test ./...
+    - run: go test -race ./...
       shell: bash

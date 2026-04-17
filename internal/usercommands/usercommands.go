@@ -63,6 +63,7 @@ var (
 		`cast`:        {Cast, false, false},
 		`cooldowns`:   {Cooldowns, true, false},
 		`command`:     {Command, false, true}, // Admin only
+		`copyover`:    {Copyover, true, true}, // Admin only
 		`conditions`:  {Conditions, true, false},
 		`consider`:    {Consider, true, false},
 		`deafen`:      {Deafen, true, true}, // Admin only
@@ -356,6 +357,12 @@ func TryCommand(cmd string, rest string, userId int, flags events.EventFlag) (bo
 				break
 			}
 		}
+	}
+
+	if user.HasPlaintextPassword() && cmd != `password` {
+		user.SendText(`<ansi fg="alert-5">You must change your password before doing anything else.</ansi>`)
+		user.SendText(`<ansi fg="yellow">Type <ansi fg="yellow-bold">password</ansi> to set a new password.</ansi>`)
+		return true, nil
 	}
 
 	if cmdInfo, ok := userCommands[cmd]; ok {
