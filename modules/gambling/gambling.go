@@ -31,42 +31,42 @@ func init() {
 
 	// Read the die script from the embedded FS and register it so the
 	// scripting engine can find it without a corresponding file on disk.
-	scriptBytes, err := fs.ReadFile(files, `files/datafiles/items/other-0/1040000-6_sided_die.js`)
+	scriptBytes, err := fs.ReadFile(files, `files/datafiles/items/1040000-6_sided_die.js`)
 	if err != nil {
 		mudlog.Error("gambling: failed to read die script", "error", err)
 	} else {
 		items.RegisterItemScript(dieItemId, string(scriptBytes))
 	}
 
-	coinScript, err := fs.ReadFile(files, `files/datafiles/items/other-0/1040001-lucky_coin.js`)
+	coinScript, err := fs.ReadFile(files, `files/datafiles/items/1040001-lucky_coin.js`)
 	if err != nil {
 		mudlog.Error("gambling: failed to read coin script", "error", err)
 	} else {
 		items.RegisterItemScript(coinItemId, string(coinScript))
 	}
 
-	tarotScript, err := fs.ReadFile(files, `files/datafiles/items/other-0/1040002-tarot_deck.js`)
+	tarotScript, err := fs.ReadFile(files, `files/datafiles/items/1040002-tarot_deck.js`)
 	if err != nil {
 		mudlog.Error("gambling: failed to read tarot script", "error", err)
 	} else {
 		items.RegisterItemScript(tarotItemId, string(tarotScript))
 	}
 
-	eightScript, err := fs.ReadFile(files, `files/datafiles/items/other-0/1040003-magic_8_ball.js`)
+	eightScript, err := fs.ReadFile(files, `files/datafiles/items/1040003-magic_8_ball.js`)
 	if err != nil {
 		mudlog.Error("gambling: failed to read 8-ball script", "error", err)
 	} else {
 		items.RegisterItemScript(eightItemId, string(eightScript))
 	}
 
-	bottleScript, err := fs.ReadFile(files, `files/datafiles/items/other-0/1040004-empty_bottle.js`)
+	bottleScript, err := fs.ReadFile(files, `files/datafiles/items/1040004-empty_bottle.js`)
 	if err != nil {
 		mudlog.Error("gambling: failed to read bottle script", "error", err)
 	} else {
 		items.RegisterItemScript(bottleItemId, string(bottleScript))
 	}
 
-	cardsScript, err := fs.ReadFile(files, `files/datafiles/items/other-0/1040005-deck_of_cards.js`)
+	cardsScript, err := fs.ReadFile(files, `files/datafiles/items/1040005-deck_of_cards.js`)
 	if err != nil {
 		mudlog.Error("gambling: failed to read cards script", "error", err)
 	} else {
