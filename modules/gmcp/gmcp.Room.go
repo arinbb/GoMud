@@ -506,6 +506,10 @@ func (g *GMCPRoomModule) GetRoomNode(user *users.UserRecord, gmcpModule string) 
 			payload.Details = append(payload.Details, `pvp`)
 		}
 
+		for _, tag := range room.Tags {
+			payload.Details = append(payload.Details, tag)
+		}
+
 		// Indicate if this is an ephemeral room
 		if rooms.IsEphemeralRoomId(room.RoomId) {
 			payload.Details = append(payload.Details, `ephemeral`)
