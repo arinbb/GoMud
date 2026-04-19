@@ -377,7 +377,9 @@ func (i *ItemSpec) AutoCalculateValue() {
 
 func (i *ItemSpec) ItemFolder(baseonly ...bool) string {
 	folderName := ``
-	if i.ItemId >= 30000 {
+	if i.ItemId >= 40000 {
+		folderName = `other-0`
+	} else if i.ItemId >= 30000 {
 		folderName = `consumables-30000`
 	} else if i.ItemId >= 20000 {
 
@@ -438,6 +440,11 @@ func (i *ItemSpec) Filepath() string {
 
 func (i ItemSpec) GetScript() string {
 
+	// Check plugin-registered scripts first.
+	if script := getPluginScript(i.ItemId); script != `` {
+		return script
+	}
+
 	scriptPath := i.GetScriptPath()
 
 	// Load the script into a string
@@ -476,6 +483,9 @@ func LoadDataFiles() {
 	}
 
 	items = tmpItems
+
+	// Merge items from plugin file systems.
+	loadPluginItems(items)
 
 	tmpAttackMessages, err := fileloader.LoadAllFlatFiles[ItemSubType, *WeaponAttackMessageGroup](string(configs.GetFilePathsConfig().DataFiles) + `/combat-messages`)
 	if err != nil {
