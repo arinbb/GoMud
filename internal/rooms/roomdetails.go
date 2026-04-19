@@ -18,6 +18,18 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/util"
 )
 
+// OnRoomLook is fired at the end of GetDetails with the fully-populated
+// RoomTemplateDetails. Modules may register handlers to modify the details
+// before they are returned to the caller.
+//
+// Example registration from a module:
+//
+//	rooms.OnRoomLook.Register(func(d rooms.RoomTemplateDetails) rooms.RoomTemplateDetails {
+//	    d.RoomAlerts = append(d.RoomAlerts, "You can fish here!")
+//	    return d
+//	})
+var OnRoomLook util.Hook[RoomTemplateDetails]
+
 type RoomTemplateDetails struct {
 	VisiblePlayers []string
 	VisibleMobs    []string
@@ -455,6 +467,6 @@ func GetDetails(r *Room, user *users.UserRecord, tinymap ...[]string) RoomTempla
 		details.Description = colorpatterns.ApplyColorPattern(details.Description, "tripping")
 	}
 
-	return details
+	return OnRoomLook.Fire(details)
 
 }

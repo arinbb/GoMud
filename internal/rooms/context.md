@@ -25,6 +25,7 @@ The `internal/rooms` package is the core world management system for GoMud, hand
 - **Environmental context**: Day/night cycles, lighting, biome effects
 - **User-specific views**: Personalized room information based on character state
 - **Room alerts**: Special notifications for banks, training, storage, etc.
+- **OnGetDetails hook**: `util.Hook[RoomTemplateDetails]` fired at the end of `GetDetails`, allowing modules to modify the fully-populated details before they are returned to the caller (e.g. adding room alerts)
 
 ### Biome System (`biomes.go`)
 - **BiomeInfo**: Environmental definitions affecting room behavior
