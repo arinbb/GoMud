@@ -14,12 +14,12 @@ var (
 	files embed.FS
 )
 
-const dieItemId    = 1040000
-const coinItemId   = 1040001
-const tarotItemId  = 1040002
-const eightItemId  = 1040003
+const dieItemId = 1040000
+const coinItemId = 1040001
+const tarotItemId = 1040002
+const eightItemId = 1040003
 const bottleItemId = 1040004
-const cardsItemId  = 1040005
+const cardsItemId = 1040005
 
 func init() {
 
