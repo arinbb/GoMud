@@ -3,6 +3,8 @@ package zombiemode
 import (
 	"embed"
 	"fmt"
+	"sort"
+	"strings"
 
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
@@ -36,6 +38,12 @@ func init() {
 	events.RegisterListener(events.PlayerDrop{}, m.onPlayerDrop)
 	events.RegisterListener(events.AggroChanged{}, m.onAggroChanged)
 	events.RegisterListener(events.Input{}, m.onInput, events.First)
+	events.RegisterListener(events.MobDeath{}, m.onMobDeath)
+	events.RegisterListener(events.EquipmentChange{}, m.onEquipmentChange)
+	events.RegisterListener(events.ItemOwnership{}, m.onItemOwnership)
+	events.RegisterListener(events.GainExperience{}, m.onGainExperience)
+	events.RegisterListener(events.LevelUp{}, m.onLevelUp)
+	events.RegisterListener(zombieSummary{}, m.onZombieSummary)
 }
 
 // ZombieConfig holds per-user zombie behavior configuration.
@@ -48,10 +56,37 @@ type ZombieConfig struct {
 	Profiles      map[string]ZombieConfig `yaml:"profiles,omitempty"`
 }
 
+// zombieStats tracks activity counters for a single zombie session.
+type zombieStats struct {
+	MobKills         map[string]int
+	GoldGained       int
+	ItemsLooted      map[string]int
+	ExperienceGained int
+	LevelsGained     int
+}
+
+func newZombieStats() zombieStats {
+	return zombieStats{
+		MobKills:    make(map[string]int),
+		ItemsLooted: make(map[string]int),
+	}
+}
+
 // zombieRuntime holds transient state that is only valid while zombie mode is active.
 type zombieRuntime struct {
 	HomeRoom int
+	Stats    zombieStats
 }
+
+// zombieSummary is a module-local event that carries a completed session's stats
+// to be displayed to the player. Enqueuing it defers rendering until after the
+// current command has finished processing.
+type zombieSummary struct {
+	UserId int
+	Stats  zombieStats
+}
+
+func (z zombieSummary) Type() string { return `ZombieSummary` }
 
 // cmdZombieAI is an EventFlag bit used to tag input events issued by the zombie
 // AI itself, so that onInput can distinguish them from real player input.
@@ -130,11 +165,12 @@ func (m *ZombieModule) onPlayerDrop(e events.Event) events.ListenerReturn {
 		return events.Continue
 	}
 
-	if _, isActive := m.active[evt.UserId]; isActive {
-		m.exitZombieMode(evt.UserId)
+	if rt, isActive := m.active[evt.UserId]; isActive {
+		events.AddToQueue(zombieSummary{UserId: evt.UserId, Stats: rt.Stats})
 		if user := users.GetByUserId(evt.UserId); user != nil {
 			user.SendText(`Zombie mode deactivated.`)
 		}
+		m.exitZombieMode(evt.UserId)
 	}
 
 	return events.Continue
@@ -194,10 +230,186 @@ func (m *ZombieModule) onInput(e events.Event) events.ListenerReturn {
 		return events.Continue
 	}
 
+	rt := m.active[evt.UserId]
 	m.exitZombieMode(evt.UserId)
+	events.AddToQueue(zombieSummary{UserId: evt.UserId, Stats: rt.Stats})
 	if user := users.GetByUserId(evt.UserId); user != nil {
 		user.SendText(`You snap out of zombie mode.`)
 	}
 
 	return events.Continue
+}
+
+// onMobDeath records a mob kill for any zombie player who contributed damage.
+func (m *ZombieModule) onMobDeath(e events.Event) events.ListenerReturn {
+	evt, ok := e.(events.MobDeath)
+	if !ok {
+		return events.Continue
+	}
+
+	for _, userId := range evt.KilledByUsers {
+		rt, isActive := m.active[userId]
+		if !isActive {
+			continue
+		}
+		rt.Stats.MobKills[evt.CharacterName]++
+		m.active[userId] = rt
+	}
+
+	return events.Continue
+}
+
+// onEquipmentChange records gold gained by a zombie player.
+func (m *ZombieModule) onEquipmentChange(e events.Event) events.ListenerReturn {
+	evt, ok := e.(events.EquipmentChange)
+	if !ok {
+		return events.Continue
+	}
+
+	if evt.GoldChange <= 0 || evt.UserId == 0 {
+		return events.Continue
+	}
+
+	rt, isActive := m.active[evt.UserId]
+	if !isActive {
+		return events.Continue
+	}
+
+	rt.Stats.GoldGained += evt.GoldChange
+	m.active[evt.UserId] = rt
+
+	return events.Continue
+}
+
+// onItemOwnership records items picked up by a zombie player.
+func (m *ZombieModule) onItemOwnership(e events.Event) events.ListenerReturn {
+	evt, ok := e.(events.ItemOwnership)
+	if !ok {
+		return events.Continue
+	}
+
+	if !evt.Gained || evt.UserId == 0 {
+		return events.Continue
+	}
+
+	rt, isActive := m.active[evt.UserId]
+	if !isActive {
+		return events.Continue
+	}
+
+	rt.Stats.ItemsLooted[evt.Item.DisplayName()]++
+	m.active[evt.UserId] = rt
+
+	return events.Continue
+}
+
+// onZombieSummary handles the deferred summary event and sends the report to the player.
+func (m *ZombieModule) onZombieSummary(e events.Event) events.ListenerReturn {
+	evt, ok := e.(zombieSummary)
+	if !ok {
+		return events.Continue
+	}
+
+	if user := users.GetByUserId(evt.UserId); user != nil {
+		m.sendSummary(user, evt.Stats)
+	}
+
+	return events.Continue
+}
+
+// onGainExperience records experience gained by a zombie player.
+func (m *ZombieModule) onGainExperience(e events.Event) events.ListenerReturn {
+	evt, ok := e.(events.GainExperience)
+	if !ok {
+		return events.Continue
+	}
+
+	if evt.UserId == 0 {
+		return events.Continue
+	}
+
+	rt, isActive := m.active[evt.UserId]
+	if !isActive {
+		return events.Continue
+	}
+
+	rt.Stats.ExperienceGained += evt.Experience
+	m.active[evt.UserId] = rt
+
+	return events.Continue
+}
+
+// onLevelUp records levels gained by a zombie player.
+func (m *ZombieModule) onLevelUp(e events.Event) events.ListenerReturn {
+	evt, ok := e.(events.LevelUp)
+	if !ok {
+		return events.Continue
+	}
+
+	if evt.UserId == 0 {
+		return events.Continue
+	}
+
+	rt, isActive := m.active[evt.UserId]
+	if !isActive {
+		return events.Continue
+	}
+
+	rt.Stats.LevelsGained += evt.LevelsGained
+	m.active[evt.UserId] = rt
+
+	return events.Continue
+}
+
+// sendSummary sends the zombie session summary to the player.
+func (m *ZombieModule) sendSummary(user *users.UserRecord, stats zombieStats) {
+	border := `<ansi fg="black-bold">+--------------------------------------------------+</ansi>`
+
+	lines := []string{
+		``,
+		border,
+		`<ansi fg="black-bold">|</ansi>           <ansi fg="yellow">*** Zombie Mode Summary ***</ansi>            <ansi fg="black-bold">|</ansi>`,
+		border,
+		``,
+	}
+
+	lines = append(lines, `  <ansi fg="white">Mobs killed:</ansi>`)
+	if len(stats.MobKills) == 0 {
+		lines = append(lines, `    <ansi fg="black-bold">(none)</ansi>`)
+	} else {
+		names := make([]string, 0, len(stats.MobKills))
+		for name := range stats.MobKills {
+			names = append(names, name)
+		}
+		sort.Strings(names)
+		for _, name := range names {
+			lines = append(lines, fmt.Sprintf(`    <ansi fg="mobname">%s</ansi> x%d`, name, stats.MobKills[name]))
+		}
+	}
+
+	lines = append(lines, ``)
+	lines = append(lines, fmt.Sprintf(`  <ansi fg="white">Gold collected:</ansi>    <ansi fg="gold">%d</ansi>`, stats.GoldGained))
+	lines = append(lines, fmt.Sprintf(`  <ansi fg="white">Experience gained:</ansi> <ansi fg="experience">%d</ansi>`, stats.ExperienceGained))
+	lines = append(lines, fmt.Sprintf(`  <ansi fg="white">Levels gained:</ansi>     <ansi fg="stat">%d</ansi>`, stats.LevelsGained))
+
+	lines = append(lines, ``)
+	lines = append(lines, `  <ansi fg="white">Items looted:</ansi>`)
+	if len(stats.ItemsLooted) == 0 {
+		lines = append(lines, `    <ansi fg="black-bold">(none)</ansi>`)
+	} else {
+		names := make([]string, 0, len(stats.ItemsLooted))
+		for name := range stats.ItemsLooted {
+			names = append(names, name)
+		}
+		sort.Strings(names)
+		for _, name := range names {
+			lines = append(lines, fmt.Sprintf(`    <ansi fg="itemname">%s</ansi> x%d`, name, stats.ItemsLooted[name]))
+		}
+	}
+
+	lines = append(lines, ``)
+	lines = append(lines, border)
+	lines = append(lines, ``)
+
+	user.SendText(strings.Join(lines, "\n"))
 }
