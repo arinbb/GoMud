@@ -262,7 +262,6 @@ func (g *GamblingModule) slotMachineNounDesc(room *rooms.Room) string {
 	)
 }
 
-
 func (g *GamblingModule) lookSlotMachine(user *users.UserRecord, room *rooms.Room) {
 
 	cost := defaultCost

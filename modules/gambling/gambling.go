@@ -128,11 +128,10 @@ func (g *GamblingModule) onPlayerSpawn(e events.Event) events.ListenerReturn {
 	return events.Continue
 }
 
-
 // GamblingModule holds module-level state for the gambling plugin.
 type GamblingModule struct {
-	plug      *plugins.Plugin
-	state     SlotState
+	plug  *plugins.Plugin
+	state SlotState
 	// roomCache tracks room IDs whose gambling nouns have already been injected,
 	// so ensureRoomNouns skips work on every subsequent player movement through
 	// rooms that were already processed.

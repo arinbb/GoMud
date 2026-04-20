@@ -185,7 +185,6 @@ func (g *GamblingModule) clawMachineNounDesc(room *rooms.Room) string {
 	)
 }
 
-
 func (g *GamblingModule) lookClawMachine(user *users.UserRecord, room *rooms.Room) {
 
 	cost := defaultClawCost
