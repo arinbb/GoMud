@@ -179,62 +179,86 @@ make client               # Connect telnet client to Docker instance
 ## Code Context Documentation
 
 ### Web Client Frontend
-- **Web Client Code**: `_datafiles/html/public/context.md` - Web Client specific code that generates virtual windows that can accept/handle MCP and GMCP updates.
+- **Web Client Code**: `_datafiles/html/public/AGENTS.md` - Web Client specific code that generates virtual windows that can accept/handle MCP and GMCP updates.
 ### Core Engine Components
-- **Characters System**: `internal/characters/context.md` - Player/NPC character system with stats, equipment, combat mechanics, and character states
-- **Rooms System**: `internal/rooms/context.md` - World management system with dynamic loading, biomes, spawning, and ephemeral room creation
-- **User Commands System**: `internal/usercommands/context.md` - Complete player command system with 100+ commands for gameplay, combat, skills, and administration
-- **Mob AI Commands System**: `internal/mobcommands/context.md` - Sophisticated NPC AI system with autonomous behaviors, combat intelligence, and social interactions
-- **Combat System**: `internal/combat/context.md` - Turn-based combat engine with damage calculations, attack types, and battle mechanics
-- **Mobs System**: `internal/mobs/context.md` - NPC management with AI behaviors, spawning, pathfinding, and lifecycle management
-- **Items System**: `internal/items/context.md` - Game item system with equipment, consumables, containers, and item interactions
-- **Scripting System**: `internal/scripting/context.md` - JavaScript runtime integration for spells, mobs, rooms, and dynamic game content
-- **Events System**: `internal/events/context.md` - Event-driven architecture with typed events, listeners, and game state management
-- **Buffs System**: `internal/buffs/context.md` - Status effects system with JavaScript scripting, duration management, and effect stacking
-- **Spells System**: `internal/spells/context.md` - Magic system with spell casting, targeting, cooldowns, and JavaScript-based spell effects
-- **Skills System**: `internal/skills/context.md` - Player skill progression system with experience, ranks, and skill-based actions
-- **Quests System**: `internal/quests/context.md` - Quest management with progress tracking, completion validation, and reward distribution
-- **Stats System**: `internal/stats/context.md` - Character statistics system with primary stats, derived stats, and stat modifications
-- **Game Time System**: `internal/gametime/context.md` - In-game time management with calendar system, day/night cycles, and temporal events
+- **Characters System**: `internal/characters/AGENTS.md` - Player/NPC character system with stats, equipment, combat mechanics, and character states
+- **Rooms System**: `internal/rooms/AGENTS.md` - World management system with dynamic loading, biomes, spawning, and ephemeral room creation
+- **User Commands System**: `internal/usercommands/AGENTS.md` - Complete player command system with 100+ commands for gameplay, combat, skills, and administration
+- **Mob AI Commands System**: `internal/mobcommands/AGENTS.md` - Sophisticated NPC AI system with autonomous behaviors, combat intelligence, and social interactions
+- **Combat System**: `internal/combat/AGENTS.md` - Turn-based combat engine with damage calculations, attack types, and battle mechanics
+- **Mobs System**: `internal/mobs/AGENTS.md` - NPC management with AI behaviors, spawning, pathfinding, and lifecycle management
+- **Items System**: `internal/items/AGENTS.md` - Game item system with equipment, consumables, containers, and item interactions
+- **Scripting System**: `internal/scripting/AGENTS.md` - JavaScript runtime integration for spells, mobs, rooms, and dynamic game content
+- **Events System**: `internal/events/AGENTS.md` - Event-driven architecture with typed events, listeners, and game state management
+- **Buffs System**: `internal/buffs/AGENTS.md` - Status effects system with JavaScript scripting, duration management, and effect stacking
+- **Spells System**: `internal/spells/AGENTS.md` - Magic system with spell casting, targeting, cooldowns, and JavaScript-based spell effects
+- **Skills System**: `internal/skills/AGENTS.md` - Player skill progression system with experience, ranks, and skill-based actions
+- **Quests System**: `internal/quests/AGENTS.md` - Quest management with progress tracking, completion validation, and reward distribution
+- **Stats System**: `internal/stats/AGENTS.md` - Character statistics system with primary stats, derived stats, and stat modifications
+- **Game Time System**: `internal/gametime/AGENTS.md` - In-game time management with calendar system, day/night cycles, and temporal events
 
 ### Infrastructure and Utilities
-- **Configuration System**: `internal/configs/context.md` - Comprehensive configuration management with YAML loading, validation, and hot-reloading
-- **Web Interface**: `internal/web/context.md` - HTTP server with admin interface, WebSocket support, and HTMX-based dynamic content
-- **User Management**: `internal/users/context.md` - Player account system with authentication, character management, and user data persistence
-- **Connections System**: `internal/connections/context.md` - Network connection management for telnet, WebSocket, and client protocol handling
-- **Prompt System**: `internal/prompt/context.md` - Dynamic prompt generation with customizable formats, color support, and real-time updates
-- **Hooks System**: `internal/hooks/context.md` - Event hook system for game loop integration, automated processes, and system event handling
-- **Utility Functions**: `internal/util/context.md` - Core utility functions for string processing, data validation, formatting, and common operations
+- **Configuration System**: `internal/configs/AGENTS.md` - Comprehensive configuration management with YAML loading, validation, and hot-reloading
+- **Web Interface**: `internal/web/AGENTS.md` - HTTP server with admin interface, WebSocket support, and HTMX-based dynamic content
+- **User Management**: `internal/users/AGENTS.md` - Player account system with authentication, character management, and user data persistence
+- **Connections System**: `internal/connections/AGENTS.md` - Network connection management for telnet, WebSocket, and client protocol handling
+- **Prompt System**: `internal/prompt/AGENTS.md` - Dynamic prompt generation with customizable formats, color support, and real-time updates
+- **Hooks System**: `internal/hooks/AGENTS.md` - Event hook system for game loop integration, automated processes, and system event handling
+- **Utility Functions**: `internal/util/AGENTS.md` - Core utility functions for string processing, data validation, formatting, and common operations
 
 ### Supporting Systems
-- **Audio System**: `internal/audio/context.md` - Audio configuration management for sound effects and music file handling
-- **Bad Input Tracker**: `internal/badinputtracker/context.md` - Thread-safe tracking system for invalid user commands and usage analytics
-- **Clans System**: `internal/clans/context.md` - Guild/clan system with membership management, ranks, territory control, and financial systems
-- **Color Patterns**: `internal/colorpatterns/context.md` - Advanced text colorization system with pattern application and ANSI tag preservation
-- **Exit System**: `internal/exit/context.md` - Room exit management with locks, secret passages, temporary portals, and custom exit messages
-- **Command Flags**: `internal/flags/context.md` - Command-line argument processing for version display and port availability scanning
-- **Game Locks**: `internal/gamelock/context.md` - Locking mechanism with difficulty-based security, automatic relocking, and trap systems
-- **Keywords and Aliases**: `internal/keywords/context.md` - Comprehensive alias system for commands, help topics, directions, and map legends
-- **File Loader**: `internal/fileloader/context.md` - Comprehensive YAML file loading system with validation, batch operations, and concurrent processing
-- **Language System**: `internal/language/context.md` - Internationalization support with YAML-based translations and multi-language message handling
-- **Logging System**: `internal/mudlog/context.md` - Structured logging with colored output, file rotation, and in-game log display integration
-- **Version Management**: `internal/version/context.md` - Semantic version management with comparison, validation, and compatibility checking
-- **UUID System**: `internal/uuid/context.md` - Custom UUID generation with embedded timestamps, type classification, and high-performance ID creation
-- **Party System**: `internal/parties/context.md` - Group management system with leadership, tactical positioning, combat coordination, and invitation management
-- **Pet System**: `internal/pets/context.md` - Comprehensive companion system with feeding mechanics, combat abilities, inventory management, and stat modifications
-- **Race System**: `internal/races/context.md` - Character race system with racial characteristics, abilities, stat bonuses, size classifications, and behavioral traits
-- **Stat Modifications**: `internal/statmods/context.md` - Centralized system for managing character statistic modifications from items, buffs, racial bonuses, and skills
-- **Suggestions System**: `internal/suggestions/context.md` - Simple suggestion cycling system for command completion, auto-suggestions, and help hints
-- **Template System**: `internal/templates/context.md` - Comprehensive template processing with ANSI color support, markdown processing, and multi-source file integration
-- **Conversations System**: `internal/conversations/context.md` - Dynamic NPC conversation system with scripted dialogues, participant matching, and turn-based execution
-- **Input Handlers**: `internal/inputhandlers/context.md` - Comprehensive input processing system with authentication, login flows, system commands, and terminal protocol handling
-- **Mapping System**: `internal/mapper/context.md` - ASCII-based mapping and pathfinding system with navigation assistance, terrain support, and route optimization
-- **Plugin System**: `internal/plugins/context.md` - Comprehensive plugin architecture for extending the game with custom commands, events, web interfaces, and modular functionality
-- **Mutators System**: `internal/mutators/context.md` - Dynamic world modification system for temporary and permanent changes to game elements with time-based evolution
-- **Terminal System**: `internal/term/context.md` - Comprehensive terminal protocol handling with telnet negotiation, ANSI processing, and cross-platform compatibility
+- **Audio System**: `internal/audio/AGENTS.md` - Audio configuration management for sound effects and music file handling
+- **Bad Input Tracker**: `internal/badinputtracker/AGENTS.md` - Thread-safe tracking system for invalid user commands and usage analytics
+- **Clans System**: `internal/clans/AGENTS.md` - Guild/clan system with membership management, ranks, territory control, and financial systems
+- **Color Patterns**: `internal/colorpatterns/AGENTS.md` - Advanced text colorization system with pattern application and ANSI tag preservation
+- **Exit System**: `internal/exit/AGENTS.md` - Room exit management with locks, secret passages, temporary portals, and custom exit messages
+- **Command Flags**: `internal/flags/AGENTS.md` - Command-line argument processing for version display and port availability scanning
+- **Game Locks**: `internal/gamelock/AGENTS.md` - Locking mechanism with difficulty-based security, automatic relocking, and trap systems
+- **Keywords and Aliases**: `internal/keywords/AGENTS.md` - Comprehensive alias system for commands, help topics, directions, and map legends
+- **File Loader**: `internal/fileloader/AGENTS.md` - Comprehensive YAML file loading system with validation, batch operations, and concurrent processing
+- **Language System**: `internal/language/AGENTS.md` - Internationalization support with YAML-based translations and multi-language message handling
+- **Logging System**: `internal/mudlog/AGENTS.md` - Structured logging with colored output, file rotation, and in-game log display integration
+- **Version Management**: `internal/version/AGENTS.md` - Semantic version management with comparison, validation, and compatibility checking
+- **UUID System**: `internal/uuid/AGENTS.md` - Custom UUID generation with embedded timestamps, type classification, and high-performance ID creation
+- **Party System**: `internal/parties/AGENTS.md` - Group management system with leadership, tactical positioning, combat coordination, and invitation management
+- **Pet System**: `internal/pets/AGENTS.md` - Comprehensive companion system with feeding mechanics, combat abilities, inventory management, and stat modifications
+- **Race System**: `internal/races/AGENTS.md` - Character race system with racial characteristics, abilities, stat bonuses, size classifications, and behavioral traits
+- **Stat Modifications**: `internal/statmods/AGENTS.md` - Centralized system for managing character statistic modifications from items, buffs, racial bonuses, and skills
+- **Suggestions System**: `internal/suggestions/AGENTS.md` - Simple suggestion cycling system for command completion, auto-suggestions, and help hints
+- **Template System**: `internal/templates/AGENTS.md` - Comprehensive template processing with ANSI color support, markdown processing, and multi-source file integration
+- **Conversations System**: `internal/conversations/AGENTS.md` - Dynamic NPC conversation system with scripted dialogues, participant matching, and turn-based execution
+- **Input Handlers**: `internal/inputhandlers/AGENTS.md` - Comprehensive input processing system with authentication, login flows, system commands, and terminal protocol handling
+- **Mapping System**: `internal/mapper/AGENTS.md` - ASCII-based mapping and pathfinding system with navigation assistance, terrain support, and route optimization
+- **Plugin System**: `internal/plugins/AGENTS.md` - Comprehensive plugin architecture for extending the game with custom commands, events, web interfaces, and modular functionality
+- **Mutators System**: `internal/mutators/AGENTS.md` - Dynamic world modification system for temporary and permanent changes to game elements with time-based evolution
+- **Terminal System**: `internal/term/AGENTS.md` - Comprehensive terminal protocol handling with telnet negotiation, ANSI processing, and cross-platform compatibility
+
+### Procedural Generation and Content Tools
+- **Procedural System**: `internal/procedural/AGENTS.md` - Procedural maze generation with grid-based algorithms, critical path tracking, and ephemeral room instantiation
+- **Migration System**: `internal/migration/AGENTS.md` - Version-gated data file migration with backup/restore, run at startup when server version advances
+- **Markdown System**: `internal/markdown/AGENTS.md` - Custom lightweight Markdown parser with AST and multiple output formatters (ANSI tags, HTML, plain Markdown)
+
+### Integrations
+- **Discord Integration**: `internal/integrations/discord/AGENTS.md` - Outbound Discord webhook integration forwarding game events (logins, deaths, level-ups, broadcasts, auctions)
+- **Copyover System**: `internal/copyover/AGENTS.md` - Hot-restart (copyover) system for live server upgrades without disconnecting players
 
 ### Plugin Architecture
-- **Modules System**: `modules/context.md` - Comprehensive plugin architecture with event integration, web interfaces, scripting, and extensible functionality
+- **Modules System**: `modules/AGENTS.md` - Comprehensive plugin architecture with event integration, web interfaces, scripting, and extensible functionality
+- **Auctions Module**: `modules/auctions/AGENTS.md` - Global player-driven auction system with bidding, history, and Discord integration
+- **Cleanup Module**: `modules/cleanup/AGENTS.md` - trash and bury commands for permanently destroying items and removing corpses
+- **Follow Module**: `modules/follow/AGENTS.md` - Follow system allowing players and mobs to automatically follow entities between rooms
+- **Gambling Module**: `modules/gambling/AGENTS.md` - Slot machine and claw machine gambling fixtures activated via room tags
+- **GMCP Module**: `modules/gmcp/AGENTS.md` - Generic MUD Communication Protocol implementation for structured client/server data exchange
+- **Leaderboards Module**: `modules/leaderboards/AGENTS.md` - Server-wide leaderboards for gold, experience, and kills with web page and persistence
+- **Newbie Guide Module**: `modules/newbieguide/AGENTS.md` - Automatic guide mob companion for new players (levels 1-5)
+- **Time Module**: `modules/time/AGENTS.md` - time command displaying current in-game date, time, and zodiac
+- **WebHelp Module**: `modules/webhelp/AGENTS.md` - Web-based help browser exposing all in-game help topics as HTML pages
+- **Zombie Mode Module**: `modules/zombiemode/AGENTS.md` - AFK automation system with configurable combat, looting, roaming, and resting behaviors
 
 ## Important
-- Always update `context.md` in the folder of code that has been updated. If the context doesn't exist in this `AGENTS.md`, add a reference to it following the pattern that is established.
+- Always update `AGENTS.md` in the folder of code that has been updated. If the context doesn't exist in this `AGENTS.md`, add a reference to it following the pattern that is established.
+- The `internal/copyover_tokens` directory is an empty placeholder; it has no source files and no AGENTS.md is needed.
+- Module configuration keys live under `Modules.<modulename>.*` in `_datafiles/config.yaml`. Each module reads its own config via `plug.Config.Get(key)`.
+- New modules are auto-registered via Go `init()` functions; `go generate ./...` regenerates `cmd/generate/module-imports.go` to import all modules.
+- The `cmd/generate/` directory contains code generation tooling, not game logic.
+- Room tags (`Tags []string` on `rooms.Room`) are the primary extensibility mechanism for modules to add opt-in behavior to specific rooms without modifying core engine code.
