@@ -103,6 +103,16 @@ Default seeded credentials in the bundled world:
 - Username: `admin`
 - Password: `password`
 
+### HTTPS With Certificate Files
+
+GoMud can serve HTTPS when you provide a certificate and private key, or can be automated using LetsEncrypt provisioning.
+
+For a guided HTTPS setup process, run:
+
+```shell
+make https-setup
+```
+
 ---
 
 ## User Support
