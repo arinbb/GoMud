@@ -1,5 +1,3 @@
-/* global Client, VirtualWindow, VirtualWindows, injectStyles */
-
 /**
  * window-online.js
  *
@@ -23,7 +21,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            background: #161e1d;
+            background: var(--t-bg);
             overflow: hidden;
         }
 
@@ -32,13 +30,13 @@
             align-items: center;
             justify-content: space-between;
             padding: 6px 10px 5px;
-            background: #0d2e28;
-            border-bottom: 1px solid #0f3333;
+            background: var(--t-bg-surface);
+            border-bottom: 1px solid var(--t-border);
             flex-shrink: 0;
         }
 
         #online-header-label {
-            color: #7ab8a0;
+            color: var(--t-text-secondary);
             font-family: Arial, sans-serif;
             font-size: 10px;
             text-transform: uppercase;
@@ -46,8 +44,8 @@
         }
 
         #online-count-badge {
-            background: #1c6b60;
-            color: #dffbd1;
+            background: var(--t-accent-dim);
+            color: var(--t-text);
             font-family: Arial, sans-serif;
             font-size: 10px;
             font-weight: bold;
@@ -62,8 +60,8 @@
             display: flex;
             align-items: center;
             padding: 4px 10px 3px;
-            background: #111a19;
-            border-bottom: 1px solid #0f3333;
+            background: var(--t-bg-col-header);
+            border-bottom: 1px solid var(--t-border);
             flex-shrink: 0;
         }
 
@@ -79,14 +77,36 @@
             padding-left: 10px;
         }
 
-        .online-col-title {
+        .online-col-profession {
             flex: 1;
+            min-width: 0;
+            padding-left: 10px;
+            overflow: hidden;
+        }
+
+        .online-col-alignment {
+            width: 68px;
+            flex-shrink: 0;
+            padding-left: 10px;
+            overflow: hidden;
+        }
+
+        .online-col-time {
+            width: 44px;
+            flex-shrink: 0;
+            padding-left: 10px;
+            overflow: hidden;
+        }
+
+        .online-col-role {
+            width: 44px;
+            flex-shrink: 0;
             padding-left: 10px;
             overflow: hidden;
         }
 
         .online-col-header-text {
-            color: #3a6e5e;
+            color: var(--t-text-heading);
             font-family: Arial, sans-serif;
             font-size: 9px;
             text-transform: uppercase;
@@ -99,14 +119,14 @@
         }
 
         #online-list::-webkit-scrollbar       { width: 4px; }
-        #online-list::-webkit-scrollbar-track  { background: #111; }
-        #online-list::-webkit-scrollbar-thumb  { background: #1c6b60; border-radius: 2px; }
+        #online-list::-webkit-scrollbar-track  { background: var(--t-scrollbar-track); }
+        #online-list::-webkit-scrollbar-thumb  { background: var(--t-accent-dim); border-radius: 2px; }
 
         .online-player-row {
             display: flex;
             align-items: baseline;
             padding: 5px 10px;
-            border-bottom: 1px solid #1a2a27;
+            border-bottom: 1px solid var(--t-border-faint);
             transition: background 0.1s;
         }
 
@@ -115,11 +135,11 @@
         }
 
         .online-player-row:hover {
-            background: #0d2e28;
+            background: var(--t-bg-surface);
         }
 
         .online-player-level {
-            color: #3ad4b8;
+            color: var(--t-online-level);
             font-family: monospace;
             font-size: 0.75em;
             width: 32px;
@@ -128,7 +148,7 @@
         }
 
         .online-player-name {
-            color: #dffbd1;
+            color: var(--t-text);
             font-family: monospace;
             font-size: 0.82em;
             font-weight: bold;
@@ -140,11 +160,48 @@
             white-space: nowrap;
         }
 
-        .online-player-title {
-            color: #7ab8a0;
+        .online-player-profession {
+            color: var(--t-online-prof);
             font-family: Arial, sans-serif;
             font-size: 0.75em;
             flex: 1;
+            min-width: 0;
+            padding-left: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .online-player-alignment {
+            color: var(--t-text-secondary);
+            font-family: Arial, sans-serif;
+            font-size: 0.75em;
+            width: 68px;
+            flex-shrink: 0;
+            padding-left: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .online-player-time {
+            color: var(--t-online-time);
+            font-family: monospace;
+            font-size: 0.75em;
+            width: 44px;
+            flex-shrink: 0;
+            padding-left: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .online-player-role {
+            color: var(--t-online-role);
+            font-family: Arial, sans-serif;
+            font-size: 0.75em;
+            width: 44px;
+            flex-shrink: 0;
             padding-left: 10px;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -153,7 +210,7 @@
 
         #online-empty {
             padding: 14px 10px;
-            color: #3a5a50;
+            color: var(--t-text-dim);
             font-family: Arial, sans-serif;
             font-size: 0.75em;
             text-align: center;
@@ -185,7 +242,7 @@
         const colHeaders = document.createElement('div');
         colHeaders.id = 'online-col-headers';
 
-        [['online-col-lvl', 'Lvl'], ['online-col-name', 'Name'], ['online-col-title', 'Title']].forEach(function(col) {
+        [['online-col-lvl', 'Lvl'], ['online-col-name', 'Name'], ['online-col-profession', 'Profession'], ['online-col-alignment', 'Alignment'], ['online-col-time', 'Time'], ['online-col-role', 'Role']].forEach(function(col) {
             const cell = document.createElement('div');
             cell.className = col[0];
             const text = document.createElement('span');
@@ -224,11 +281,11 @@
             return {
                 title:      'Online',
                 mount:      el,
-                background: '#161e1d',
+                background: 'var(--t-bg)',
                 border:     1,
                 x:          'right',
                 y:          0,
-                width:      363,
+                width:      480,
                 height:     220,
                 header:     20,
                 bottom:     60,
@@ -267,13 +324,28 @@
             name.className = 'online-player-name';
             name.textContent = p.name || '';
 
-            const title = document.createElement('span');
-            title.className = 'online-player-title';
-            title.textContent = p.title || '';
+            const profession = document.createElement('span');
+            profession.className = 'online-player-profession';
+            profession.textContent = p.profession || '';
+
+            const alignment = document.createElement('span');
+            alignment.className = 'online-player-alignment';
+            alignment.textContent = p.alignment || '';
+
+            const time = document.createElement('span');
+            time.className = 'online-player-time';
+            time.textContent = p.time_online || '';
+
+            const role = document.createElement('span');
+            role.className = 'online-player-role';
+            role.textContent = p.role || '';
 
             row.appendChild(lvl);
             row.appendChild(name);
-            row.appendChild(title);
+            row.appendChild(profession);
+            row.appendChild(alignment);
+            row.appendChild(time);
+            row.appendChild(role);
             list.appendChild(row);
         });
     }

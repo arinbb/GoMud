@@ -38,9 +38,7 @@ type UserRecord struct {
 	Macros         map[string]string     `yaml:"macros,omitempty"`  // Up to 10 macros, just string commands.
 	Aliases        map[string]string     `yaml:"aliases,omitempty"` // string=>string remapping of commands
 	Character      *characters.Character `yaml:"character,omitempty"`
-	ItemStorage    Storage               `yaml:"itemstorage,omitempty"`
 	ConfigOptions  map[string]any        `yaml:"configoptions,omitempty"`
-	Inbox          Inbox                 `yaml:"inbox,omitempty"`
 	Muted          bool                  `yaml:"muted,omitempty"`        // Cannot SEND custom communications to anyone but admin/mods
 	Deafened       bool                  `yaml:"deafened,omitempty"`     // Cannot HEAR custom communications from anyone but admin/mods
 	ScreenReader   bool                  `yaml:"screenreader,omitempty"` // Are they using a screen reader? (We should remove excess symbols)
@@ -55,7 +53,7 @@ type UserRecord struct {
 	lastInputRound uint64
 	tempDataStore  map[string]any
 	activePrompt   *prompt.Prompt
-	isZombie       bool // are they a zombie currently?
+	isLinkDead     bool // are they a link-dead connection currently?
 	inputBlocked   bool // Whether input is currently intentionally turned off (for a certain category of commands)
 }
 
@@ -643,6 +641,15 @@ func (u *UserRecord) GetOnlineInfo() OnlineInfo {
 		isAfk = true
 	}
 
+	connType := `telnet`
+	if cd := connections.Get(u.connectionId); cd != nil {
+		if cd.IsWebSocket() {
+			connType = `websocket`
+		} else if cd.IsSSH() {
+			connType = `ssh`
+		}
+	}
+
 	return OnlineInfo{
 		u.Username,
 		u.Character.Name,
@@ -653,6 +660,7 @@ func (u *UserRecord) GetOnlineInfo() OnlineInfo {
 		timeStr,
 		isAfk,
 		u.Role,
+		connType,
 	}
 }
 
@@ -663,58 +671,4 @@ func (u *UserRecord) WimpyCheck() {
 			u.Command(`flee`, -1)
 		}
 	}
-}
-
-func (u *UserRecord) SwapToAlt(targetAltName string) bool {
-
-	altNames := []string{}
-	nameToAlt := map[string]characters.Character{}
-
-	for _, char := range characters.LoadAlts(u.UserId) {
-		altNames = append(altNames, char.Name)
-		nameToAlt[char.Name] = char
-	}
-
-	match, closeMatch := util.FindMatchIn(targetAltName, altNames...)
-	if match == `` {
-		match = closeMatch
-	}
-
-	if match == `` {
-		return false
-	}
-
-	selectedChar, ok := nameToAlt[match]
-	if !ok {
-		return false
-	}
-
-	retiredCharName := u.Character.Name
-
-	newAlts := []characters.Character{}
-	for _, altChar := range nameToAlt {
-		if altChar.Name != selectedChar.Name {
-			newAlts = append(newAlts, altChar)
-		}
-	}
-
-	// add current char to the alts
-	newAlts = append(newAlts, *u.Character)
-	// Write them to disc
-	characters.SaveAlts(u.UserId, newAlts)
-
-	// Run validation on the new character
-	selectedChar.Validate()
-
-	// Set userId
-	selectedChar.SetUserId(u.UserId)
-
-	// Replace the current character (has already been written to alts)
-	u.Character = &selectedChar
-
-	SaveUser(*u)
-
-	events.AddToQueue(events.CharacterChanged{UserId: u.UserId, LastCharacterName: retiredCharName, CharacterName: u.Character.Name})
-
-	return true
 }

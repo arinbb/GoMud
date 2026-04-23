@@ -10,7 +10,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/GoMudEngine/GoMud/internal/characters"
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/connections"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
@@ -26,50 +25,50 @@ var (
 )
 
 type ActiveUsers struct {
-	Users             map[int]*UserRecord                 // userId to UserRecord
-	Usernames         map[string]int                      // username to userId
-	Connections       map[connections.ConnectionId]int    // connectionId to userId
-	UserConnections   map[int]connections.ConnectionId    // userId to connectionId
-	ZombieConnections map[connections.ConnectionId]uint64 // connectionId to turn they became a zombie
+	Users               map[int]*UserRecord                 // userId to UserRecord
+	Usernames           map[string]int                      // username to userId
+	Connections         map[connections.ConnectionId]int    // connectionId to userId
+	UserConnections     map[int]connections.ConnectionId    // userId to connectionId
+	LinkDeadConnections map[connections.ConnectionId]uint64 // connectionId to turn they became link-dead
 }
 
 func newUserManager() *ActiveUsers {
 	return &ActiveUsers{
-		Users:             make(map[int]*UserRecord),
-		Usernames:         make(map[string]int),
-		Connections:       make(map[connections.ConnectionId]int),
-		UserConnections:   make(map[int]connections.ConnectionId),
-		ZombieConnections: make(map[connections.ConnectionId]uint64),
+		Users:               make(map[int]*UserRecord),
+		Usernames:           make(map[string]int),
+		Connections:         make(map[connections.ConnectionId]int),
+		UserConnections:     make(map[int]connections.ConnectionId),
+		LinkDeadConnections: make(map[connections.ConnectionId]uint64),
 	}
 }
 
-func RemoveZombieUser(userId int) {
+func RemoveLinkDeadUser(userId int) {
 
 	if u := userManager.Users[userId]; u != nil {
 		u.Character.SetAdjective(`zombie`, false)
 	}
 	if connId, ok := userManager.UserConnections[userId]; ok {
-		delete(userManager.ZombieConnections, connId)
+		delete(userManager.LinkDeadConnections, connId)
 	}
 }
 
-func IsZombieConnection(connectionId connections.ConnectionId) bool {
-	_, ok := userManager.ZombieConnections[connectionId]
+func IsLinkDeadConnection(connectionId connections.ConnectionId) bool {
+	_, ok := userManager.LinkDeadConnections[connectionId]
 	return ok
 }
 
-func RemoveZombieConnection(connectionId connections.ConnectionId) {
-	delete(userManager.ZombieConnections, connectionId)
+func RemoveLinkDeadConnection(connectionId connections.ConnectionId) {
+	delete(userManager.LinkDeadConnections, connectionId)
 }
 
 // Returns a slice of userId's
-// These userId's are zombies that have reached expiration
-func GetExpiredZombies(expirationTurn uint64) []int {
+// These userId's are link-dead players that have reached expiration
+func GetExpiredLinkDeadUsers(expirationTurn uint64) []int {
 
 	expiredUsers := make([]int, 0)
 
-	for connectionId, zombieTurn := range userManager.ZombieConnections {
-		if zombieTurn < expirationTurn {
+	for connectionId, linkDeadTurn := range userManager.LinkDeadConnections {
+		if linkDeadTurn < expirationTurn {
 			expiredUsers = append(expiredUsers, userManager.Connections[connectionId])
 		}
 	}
@@ -100,7 +99,7 @@ func GetAllActiveUsers() []*UserRecord {
 	ret := []*UserRecord{}
 
 	for _, userPtr := range userManager.Users {
-		if !userPtr.isZombie {
+		if !userPtr.isLinkDead {
 			ret = append(ret, userPtr)
 		}
 	}
@@ -171,7 +170,7 @@ func CopyoverReconnectUser(user *UserRecord, connectionId connections.Connection
 		}
 
 		if oldConnId, ok := userManager.UserConnections[userId]; ok {
-			delete(userManager.ZombieConnections, oldConnId)
+			delete(userManager.LinkDeadConnections, oldConnId)
 			delete(userManager.Connections, oldConnId)
 		}
 	}
@@ -210,16 +209,16 @@ func LoginUser(user *UserRecord, connectionId connections.ConnectionId) (*UserRe
 		// Do they have a connection tracked?
 		if otherConnId, ok := userManager.UserConnections[userId]; ok {
 
-			// Is it a zombie connection? If so, lets make this new connection the owner
-			if IsZombieConnection(otherConnId) {
+			// Is it a link-dead connection? If so, lets make this new connection the owner
+			if IsLinkDeadConnection(otherConnId) {
 
-				mudlog.Info("LoginUser()", "Zombie", true)
+				mudlog.Info("LoginUser()", "LinkDead", true)
 
-				if zombieUser, ok := userManager.Users[user.UserId]; ok {
-					user = zombieUser
+				if linkDeadUser, ok := userManager.Users[user.UserId]; ok {
+					user = linkDeadUser
 				}
 
-				RemoveZombieConnection(otherConnId)
+				RemoveLinkDeadConnection(otherConnId)
 
 				user.connectionId = connectionId
 
@@ -248,7 +247,7 @@ func LoginUser(user *UserRecord, connectionId connections.ConnectionId) (*UserRe
 		return nil, "That user is already logged in.", errors.New("user is already logged in")
 	}
 
-	mudlog.Info("LoginUser()", "Zombie", false)
+	mudlog.Info("LoginUser()", "LinkDead", false)
 
 	// Set their input round to current to track idle time fresh
 	user.SetLastInputRound(util.GetRoundCount())
@@ -273,7 +272,7 @@ func LoginUser(user *UserRecord, connectionId connections.ConnectionId) (*UserRe
 	return user, "", nil
 }
 
-func SetZombieUser(userId int) {
+func SetLinkDeadUser(userId int) {
 
 	if u, ok := userManager.Users[userId]; ok {
 
@@ -289,11 +288,11 @@ func SetZombieUser(userId int) {
 			}
 		}
 
-		if _, ok := userManager.ZombieConnections[u.connectionId]; ok {
+		if _, ok := userManager.LinkDeadConnections[u.connectionId]; ok {
 			return
 		}
 
-		userManager.ZombieConnections[u.connectionId] = util.GetTurnCount()
+		userManager.LinkDeadConnections[u.connectionId] = util.GetTurnCount()
 	}
 
 }
@@ -343,7 +342,7 @@ func CreateUser(u *UserRecord) error {
 	u.UserId = GetUniqueUserId()
 	u.Role = RoleUser
 
-	idx := NewUserIndex()
+	idx := GetUserIndex()
 	idx.AddUser(u.UserId, u.Username)
 
 	if err := SaveUser(*u); err != nil {
@@ -360,14 +359,14 @@ func CreateUser(u *UserRecord) error {
 
 func LoadUser(username string, skipValidation ...bool) (*UserRecord, error) {
 
-	idx := NewUserIndex()
+	idx := GetUserIndex()
 	userId, found := idx.FindByUsername(username)
 
 	if !found {
 		return nil, errors.New("user doesn't exist")
 	}
 
-	userFilePath := util.FilePath(string(configs.GetFilePathsConfig().DataFiles), `/`, `users`, `/`, strconv.Itoa(int(userId))+`.yaml`)
+	userFilePath := util.FilePath(string(configs.GetFilePathsConfig().DataFiles), `/`, `users`, `/`, strconv.Itoa(userId)+`.yaml`)
 
 	userFileTxt, err := os.ReadFile(userFilePath)
 	if err != nil {
@@ -501,13 +500,15 @@ func CharacterNameSearch(nameToFind string) (foundUserId int, foundUserName stri
 			return false
 		}
 
-		// Not found? Search alts...
+		// Not found? Search alts via exported function...
 
-		for _, char := range characters.LoadAlts(u.UserId) {
-			if strings.EqualFold(char.Name, nameToFind) {
-				foundUserId = u.UserId
-				foundUserName = u.Username
-				return false
+		if fn, ok := GetExportedFunction(`AltNameSearch`); ok {
+			if altSearchFn, ok := fn.(func(int, string, string) (int, string)); ok {
+				if uid, uname := altSearchFn(u.UserId, u.Username, nameToFind); uid != 0 {
+					foundUserId = uid
+					foundUserName = uname
+					return false
+				}
 			}
 		}
 
@@ -572,7 +573,7 @@ func GetUniqueUserId() int {
 
 	highestUserId := 0
 
-	idx := NewUserIndex()
+	idx := GetUserIndex()
 	if idx.Exists() {
 
 		highestUserId = idx.GetHighestUserId()
@@ -612,14 +613,14 @@ func Exists(name string) bool {
 		}
 	}
 
-	idx := NewUserIndex()
+	idx := GetUserIndex()
 	_, found := idx.FindByUsername(name)
 
 	return found
 }
 
 func FindUserId(username string) int {
-	idx := NewUserIndex()
+	idx := GetUserIndex()
 	userid, _ := idx.FindByUsername(username)
-	return int(userid)
+	return userid
 }

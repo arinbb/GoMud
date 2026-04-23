@@ -8,6 +8,9 @@ type FilePaths struct {
 	AdminHtml        ConfigString `yaml:"AdminHtml"`
 	HttpsCertFile    ConfigString `yaml:"HttpsCertFile"`
 	HttpsKeyFile     ConfigString `yaml:"HttpsKeyFile"`
+	SSHHostKeyFile   ConfigString `yaml:"SSHHostKeyFile"`
+	HttpsEmail       ConfigSecret `yaml:"HttpsEmail"`
+	HttpsCacheDir    ConfigString `yaml:"HttpsCacheDir"`
 	CarefulSaveFiles ConfigBool   `yaml:"CarefulSaveFiles"`
 }
 
@@ -21,6 +24,10 @@ func (f *FilePaths) Validate() {
 
 	if f.DataFiles == `` {
 		f.DataFiles = `_datafiles/world/default` // default
+	}
+
+	if f.HttpsCacheDir == `` {
+		f.HttpsCacheDir = `_datafiles/tls` // default
 	}
 
 }

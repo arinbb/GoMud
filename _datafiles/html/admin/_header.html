@@ -1,113 +1,99 @@
 {{define "header"}}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>GoMud Admin</title>
-        <link href="/admin/static/css/styles.css" rel="stylesheet" />
-        <script src="/admin/static/js/htmx.2.0.3.js"></script>
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-        <style>
-            .card {
-                margin: .5rem!important
-            }
-        </style>
-        <script>
-            function HideShowUpdate(fadeTime) {
-    
-                iType = $("#type").val();
-                iSubtype = $("#subtype").val();
-    
-                selectDataString = '[data-applies-to-types~="'+iType+'"], [data-applies-to-types~="'+iSubtype+'"]';
-    
-                // hide anything that has a type requirement that isn't this one, and is currently visible
-                $('[data-applies-to-types]:not('+selectDataString+'):visible').
-                                removeClass('crosshatch').
-                                addClass('crosshatch').
-                                fadeOut(fadeTime);
-    
-                // show anything that has a type requirement that is this one, and is currently hidden
-                $(selectDataString+':hidden').
-                                removeClass('crosshatch').
-                                hide().
-                                fadeIn(fadeTime);
-    
-            }
-    
-            document.addEventListener("htmx:afterOnLoad", function(event) {
-                if (event.detail.target.id === "itemdata-edit") { 
-                    HideShowUpdate(0);
-                    
-                    scriptStr = $("textarea#script").val()
-    
-                    if (scriptStr.length > 0 ) {
-                        rowCount = scriptStr.split('\n').length + 2
-                        if (rowCount > 25) {
-                            rowCount = 25
-                        }
-                        $('textarea#script').attr('rows', rowCount);
-                    } else {
-                        $('textarea#script').attr('rows', 1);
-                    }
-                }
-            });
-    
-            $(document).on('change', '#type', function(event) {
-                HideShowUpdate(500);
-            });
-    
-            $(document).on('change', '#subtype', function(event) {
-                HideShowUpdate(500);
-            });    
-        </script>
-    </head>
-    <body>
-        <div class="d-flex" id="wrapper">
-
-            <!-- Sidebar-->
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">GoMud Admin</div>
-                <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/admin/">Dashboard</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/admin/items/">Items</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/admin/races/">Races</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/admin/mobs/">Mobs</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/admin/mutators/">Mutators</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/admin/rooms/">Rooms</a>
-                </div>
-            </div>
-            <!-- Page content wrapper-->
-            <div id="page-content-wrapper">
-                <!-- Top navigation-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                    <div class="container-fluid">
-                        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                                <!--<li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>-->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump To</a>
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="/">Home</a>
-                                        <a class="dropdown-item" href="/webclient">WebClient</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="https://discord.com/channels/1297975621728600065/1297975621728600068">GoMud Discord</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GoMud Admin</title>
+    <link rel="stylesheet" href="/admin/static/css/highlight.css">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: system-ui, sans-serif; font-size: 1rem; line-height: 1.5; color: #1a1a1a; background: #f5f5f5; }
+        nav { background: #1a1a2e; color: #e0e0e0; padding: 0.75rem 1.5rem; display: flex; align-items: center; gap: 1.5rem; }
+        nav .brand { font-weight: 700; font-size: 1.1rem; color: #fff; text-decoration: none; }
+        nav a { color: #b0b8d0; text-decoration: none; font-size: 0.9rem; }
+        nav a:hover { color: #fff; }
+        .nav-dropdown { position: relative; display: inline-block; }
+        .nav-btn {
+            background: none; border: none; color: #b0b8d0; font-size: 0.9rem;
+            cursor: pointer; padding: 0;
+        }
+        .nav-btn:hover { color: #fff; }
+        .nav-dropdown-menu {
+            display: none; position: absolute; top: 100%; left: 0;
+            background: #1a1a2e; border: 1px solid #333; border-radius: 4px;
+            min-width: 140px; z-index: 100; padding: 0.25rem 0;
+        }
+        .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+        .nav-dropdown-menu a {
+            display: block; padding: 0.4rem 0.85rem;
+            color: #b0b8d0; font-size: 0.85rem; text-decoration: none;
+        }
+        .nav-dropdown-menu a:hover { background: #2d2d4e; color: #fff; }
+        .nav-submenu { position: relative; }
+        .nav-submenu-label {
+            display: block; padding: 0.4rem 0.85rem;
+            color: #b0b8d0; font-size: 0.85rem; cursor: default;
+            white-space: nowrap;
+        }
+        .nav-submenu-label:hover { background: #2d2d4e; color: #fff; }
+        .nav-submenu-menu {
+            display: none; position: absolute; left: 100%; top: 0;
+            background: #1a1a2e; border: 1px solid #333; border-radius: 4px;
+            min-width: 140px; z-index: 101; padding: 0.25rem 0;
+        }
+        .nav-submenu:hover .nav-submenu-menu { display: block; }
+        .nav-submenu-menu a {
+            display: block; padding: 0.4rem 0.85rem;
+            color: #b0b8d0; font-size: 0.85rem; text-decoration: none;
+        }
+        .nav-submenu-menu a:hover { background: #2d2d4e; color: #fff; }
+        main { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+    </style>
+    <script src="/admin/static/js/highlight.js"></script>
+    <script src="/admin/static/js/api.js"></script>
+    <script src="/admin/static/js/ansi-colors.js"></script>
+    <script src="/admin/static/js/select-dialog.js"></script>
+    <script src="/admin/static/js/script-editor.js"></script>
+    <script src="/admin/static/js/ansitags.js"></script>
+</head>
+<body>
+    <nav>
+        <a class="brand" href="/admin/">GoMud Admin</a>
+        {{range .NAV}}
+          {{if .SubMenus}}
+            <div class="nav-dropdown">
+              <button class="nav-btn">{{.Name}} &#9660;</button>
+              <div class="nav-dropdown-menu">
+                {{range .SubMenus}}
+                  {{if .SubItems}}
+                    <div class="nav-submenu">
+                      <span class="nav-submenu-label">{{.Name}} &#9658;</span>
+                      <div class="nav-submenu-menu">
+                        {{range .SubItems}}
+                          <a href="{{.Target}}">{{.Label}}</a>
+                        {{end}}
+                      </div>
                     </div>
-                </nav>
-                <!-- CONTENT -->
+                  {{else}}
+                    <a href="{{.Target}}">{{.Name}}</a>
+                  {{end}}
+                {{end}}
+              </div>
+            </div>
+          {{else if .SubItems}}
+            <div class="nav-dropdown">
+              <button class="nav-btn">{{.Name}} &#9660;</button>
+              <div class="nav-dropdown-menu">
+                {{range .SubItems}}
+                  <a href="{{.Target}}">{{.Label}}</a>
+                {{end}}
+              </div>
+            </div>
+          {{else}}
+            <a href="{{.Target}}">{{.Name}}</a>
+          {{end}}
+        {{end}}
+    </nav>
+    <main>
 {{end}}

@@ -1,2 +1,36 @@
 {{template "header" .}}
+
+<style>
+    h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+    .subtitle { color: #555; margin-bottom: 2rem; font-size: 0.9rem; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+    .card { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 1.25rem; }
+    .card h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: #666; margin-bottom: 0.5rem; }
+    .card .value { font-size: 1.75rem; font-weight: 700; color: #1a1a2e; }
+    .card .detail { font-size: 0.85rem; color: #555; margin-top: 0.25rem; }
+    .card a { display: inline-block; margin-top: 0.75rem; font-size: 0.85rem; color: #1a1a2e; text-decoration: underline; }
+    .card a:hover { color: #444; }
+</style>
+
+<h1>{{.CONFIG.Server.MudName}}</h1>
+<p class="subtitle">Version {{.CONFIG.Server.CurrentVersion}}</p>
+
+<div class="grid">
+    <div class="card">
+        <h2>Telnet Ports</h2>
+        <div class="value">{{range .STATS.TelnetPorts}}{{.}} {{end}}</div>
+        <div class="detail">{{.STATS.TelnetConnections}} connected</div>
+    </div>
+    <div class="card">
+        <h2>WebSocket Port</h2>
+        <div class="value">{{if .STATS.WebSocketPort}}{{.STATS.WebSocketPort}}{{else}}&mdash;{{end}}</div>
+        <div class="detail">{{.STATS.WebSocketConnections}} connected</div>
+    </div>
+    <div class="card">
+        <h2>SSH Port</h2>
+        <div class="value">{{if .STATS.SSHPort}}{{.STATS.SSHPort}}{{else}}&mdash;{{end}}</div>
+        <div class="detail">{{.STATS.SSHConnections}} connected</div>
+    </div>
+</div>
+
 {{template "footer" .}}

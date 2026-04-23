@@ -13,7 +13,10 @@ CI_LOCAL_GID ?= $(shell id -g)
 CI_LOCAL_DOCKER_SOCK_GID ?= $(shell stat -c '%g' /var/run/docker.sock 2>/dev/null || id -g)
 CI_LOCAL_HOME ?= /home/gomud
 CI_LOCAL_ACT_CACHE_DIR ?= $(PWD)/.git/.cache/act
+JSHINT_VERSION ?= 2.13.6
 JS_LINT_PATHS := $(shell find _datafiles -name '*.js' -print)
+WEBCLIENT_WINDOW_JS := $(shell find _datafiles/html/public/static/js/windows -name '*.js' -print)
+WEBCLIENT_BASE_JS := $(filter-out $(WEBCLIENT_WINDOW_JS),$(JS_LINT_PATHS))
 CI_LOCAL_RUN := docker run --rm \
 	--user "$(CI_LOCAL_UID):$(CI_LOCAL_GID)" \
 	--group-add "$(CI_LOCAL_DOCKER_SOCK_GID)" \
@@ -30,13 +33,20 @@ export GOFLAGS := -mod=mod
 
 ## Build Targets
 
+.PHONY: go-version
+go-version: ### Print the Go version pinned in go.mod.
+	@printf '%s\n' "$(GO_VERSION)"
+
 .PHONY: docker_build 
 docker_build: 
-	TAG=$(VERSION) $(DOCKER_COMPOSE) build server
+	GO_VERSION=$(GO_VERSION) TAG=$(VERSION) $(DOCKER_COMPOSE) build server
 
 .PHONY: ci-local-image
 ci-local-image: ### Build the local CI tool image.
-	docker build -f .github/Dockerfile.act -t $(CI_LOCAL_IMAGE) .
+	docker build \
+		--build-arg GO_VERSION=$(GO_VERSION) \
+		-f .github/Dockerfile.act \
+		-t $(CI_LOCAL_IMAGE) .
 
 .PHONY: ci-local
 ci-local: ci-local-image ### Run local CI validation in a container.
@@ -137,7 +147,15 @@ run-new: clean-instances generate run ### Deletes instance data and runs server
 
 .PHONY: run-docker
 run-docker: ### Build and run server in docker.
-	$(DOCKER_COMPOSE) up --build --remove-orphans server
+	GO_VERSION=$(GO_VERSION) $(DOCKER_COMPOSE) up --build --remove-orphans server
+
+.PHONY: https-setup
+https-setup: ### Interactive HTTPS certificate setup helper.
+	@sh ./scripts/https-setup.sh
+
+.PHONY: reset-admin-pw
+reset-admin-pw: ### Interactively reset the admin user's password.
+	@go run ./cmd/reset-admin-pw
 
 
 .PHONY: client
@@ -182,7 +200,9 @@ js-lint:  ### Run Javascript linter
 #   Grep filtering it to remove errors reported by docker image around npm packages
 #   if "### errors" is found in the output, exits with an error code of 1
 #   This should allow us to use it in CI/CD.
-	@docker run --rm -v "$(PWD)":/app -w /app node:22 npx jshint $(JS_LINT_PATHS) \
+	@docker run --rm -v "$(PWD)":/app -w /app node:22 sh -lc "\
+	  npx --yes jshint@$(JSHINT_VERSION) $(WEBCLIENT_BASE_JS) && \
+	  npx --yes jshint@$(JSHINT_VERSION) --config .jshintrc.webclient-windows $(WEBCLIENT_WINDOW_JS)" \
 	 2>&1 | grep -v "^npm " | tee /dev/stderr | grep -Eq "^[0-9]+ errors" && exit 1 || true
 
 #

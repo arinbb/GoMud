@@ -1,4 +1,4 @@
-/* global MP3Player, Triggers, WinBox */
+/* global Triggers */
 
 /**
  * webclient-core.js
@@ -64,8 +64,8 @@ function injectStyles(css) {
         menuEl.style.cssText = [
             'position:fixed',
             'z-index:2147483647',
-            'background:#0d2e28',
-            'border:1px solid #1c6b60',
+            'background:var(--t-bg-surface)',
+            'border:1px solid var(--t-btn-border)',
             'border-radius:4px',
             'box-shadow:0 4px 14px rgba(0,0,0,0.7)',
             'padding:3px 0',
@@ -79,18 +79,18 @@ function injectStyles(css) {
             entry.textContent = item.label;
             entry.style.cssText = [
                 'padding:5px 12px',
-                'color:#dffbd1',
+                'color:var(--t-text)',
                 'cursor:pointer',
                 'white-space:nowrap',
                 'letter-spacing:0.03em',
             ].join(';');
             entry.addEventListener('mouseenter', function() {
-                entry.style.background = '#1c6b60';
-                entry.style.color      = '#ffffff';
+                entry.style.background = 'var(--t-accent-dim)';
+                entry.style.color      = 'var(--t-text-white)';
             });
             entry.addEventListener('mouseleave', function() {
                 entry.style.background = '';
-                entry.style.color      = '#dffbd1';
+                entry.style.color      = 'var(--t-text)';
             });
             entry.addEventListener('mousedown', function(e) {
                 e.stopPropagation();
@@ -717,8 +717,7 @@ class VirtualWindow {
     // Open the window. On first call, honours defaultDocked and saved layout.
     // Subsequent calls are no-ops unless the window is not yet open.
     open() {
-        if (this._win === false)      { return; }  // user closed it
-        if (this._win !== undefined)  { return; }  // already open (float or docked)
+        if (this._win !== undefined && this._win !== false) { return; }  // already open (float or docked)
 
         // Check saved layout for this window
         const saved = LayoutStore.getWindow(this._id);
@@ -728,6 +727,14 @@ class VirtualWindow {
             this._win = false;
             return;
         }
+
+        // offOnLoad windows stay closed unless the user has explicitly enabled them.
+        if (this._win === false && !(saved && saved.enabled === true)) {
+            return;
+        }
+
+        // Reset to undefined so the rest of open() treats this as a first open.
+        this._win = undefined;
 
         // First open: run the factory to get opts + content element
         const opts = this._factory();
@@ -1301,7 +1308,8 @@ const Client = (() => {
         if (obj.V)                    { soundLevel = Number(obj.V) / 100; }
 
         if (!MusicPlayer.isPlaying(baseMp3Url + fileName)) {
-            MusicPlayer.play(baseMp3Url + fileName, loopMusic, soundLevel * (sliderValues['music'] / 100));
+            const mult = _recordSound('music', baseMp3Url + fileName);
+            MusicPlayer.play(baseMp3Url + fileName, loopMusic, soundLevel * (sliderValues['music'] / 100) * mult);
         }
     }
 
@@ -1329,7 +1337,8 @@ const Client = (() => {
         if (obj.V)                    { soundLevel = Number(obj.V) / 100; }
 
         const typeKey = ((obj.T || 'other').toLowerCase()) + ' sounds';
-        SoundPlayer.play(baseMp3Url + fileName, false, soundLevel * (sliderValues[typeKey] / 100));
+        const mult = _recordSound(typeKey, baseMp3Url + fileName);
+        SoundPlayer.play(baseMp3Url + fileName, false, soundLevel * (sliderValues[typeKey] / 100) * mult);
     }
 
     function _handleWebclientCommand(data) {
@@ -1461,6 +1470,85 @@ const Client = (() => {
     let sliderValues        = { ...defaultSliders };
     let unmutedSliderValues = null;
 
+    // Per-sound volume multipliers: { [categoryKey]: { [soundUrl]: 0-100 } }
+    // A value of 100 means full category volume; lower values reduce further.
+    let soundVolumeOverrides = {};
+
+    // Sounds that have been played, grouped by category key.
+    // { [categoryKey]: string[] }  — ordered by first-play time, deduplicated.
+    let soundHistory = {};
+
+    // Which category rows are expanded in the slider UI.
+    const _categoryExpanded = {};
+
+    function _loadSoundStorage() {
+        try {
+            const h = localStorage.getItem('soundHistory');
+            if (h) { soundHistory = JSON.parse(h) || {}; }
+        } catch (e) { soundHistory = {}; }
+        try {
+            const v = localStorage.getItem('soundVolumeOverrides');
+            if (v) { soundVolumeOverrides = JSON.parse(v) || {}; }
+        } catch (e) { soundVolumeOverrides = {}; }
+    }
+
+    function _saveSoundStorage() {
+        try {
+            localStorage.setItem('soundHistory',        JSON.stringify(soundHistory));
+            localStorage.setItem('soundVolumeOverrides', JSON.stringify(soundVolumeOverrides));
+        } catch (e) { /* ignore */ }
+    }
+
+    // Record that a sound URL was played under a given category key.
+    // Returns the effective per-sound volume multiplier (0-1).
+    function _recordSound(categoryKey, url) {
+        if (!soundHistory[categoryKey]) { soundHistory[categoryKey] = []; }
+        if (!soundHistory[categoryKey].includes(url)) {
+            soundHistory[categoryKey].push(url);
+            _saveSoundStorage();
+        }
+        const cat = soundVolumeOverrides[categoryKey];
+        if (cat && cat[url] !== undefined) {
+            return cat[url] / 100;
+        }
+        return 1.0;
+    }
+
+    // Apply a per-sound override value and immediately update the cached Audio element.
+    function _setSoundOverride(categoryKey, url, value) {
+        if (!soundVolumeOverrides[categoryKey]) { soundVolumeOverrides[categoryKey] = {}; }
+        soundVolumeOverrides[categoryKey][url] = value;
+        _saveSoundStorage();
+        // Update the live Audio element so the change is heard immediately.
+        const player = (categoryKey === 'music') ? MusicPlayer : SoundPlayer;
+        const finalVol = (sliderValues[categoryKey] / 100) * (value / 100);
+        player.setVolume(url, Math.min(1, Math.max(0, finalVol)));
+    }
+
+    // Returns a fingerprint of the current soundHistory (total count across all categories).
+    // Used by the Volume tab polling to detect new sounds without full rebuilds.
+    function _soundHistoryFingerprint() {
+        var total = 0;
+        Object.keys(soundHistory).forEach(function(k) { total += soundHistory[k].length; });
+        return total;
+    }
+
+    function resetVolumeControls() {
+        sliderValues        = { ...defaultSliders };
+        soundVolumeOverrides = {};
+        unmutedSliderValues  = null;
+        localStorage.setItem('sliderValues',         JSON.stringify(sliderValues));
+        localStorage.setItem('soundVolumeOverrides', JSON.stringify(soundVolumeOverrides));
+        localStorage.removeItem('unmutedSliderValues');
+        localStorage.setItem('muteAllSound', JSON.stringify(false));
+        const muteCheckbox = document.getElementById('mute-checkbox');
+        const muteIcon     = document.getElementById('mute-icon');
+        if (muteCheckbox) { muteCheckbox.checked = false; }
+        if (muteIcon)     { muteIcon.textContent = '🔊'; }
+        MusicPlayer.setGlobalVolume(sliderValues['music'] / 100);
+        buildSliders();
+    }
+
     function getSpeakerIcon(value) {
         value = Number(value);
         if (value === 0)       { return '🔇'; }
@@ -1469,15 +1557,35 @@ const Client = (() => {
         return '🔊';
     }
 
+    // Return a short display name for a sound URL (strip path prefix, extension).
+    function _soundDisplayName(url) {
+        const parts = url.split('/');
+        const file  = parts[parts.length - 1] || url;
+        return file.replace(/\.mp3$/i, '').replace(/[-_]/g, ' ');
+    }
+
     function buildSliders() {
         const container = document.getElementById('sliders-container');
         container.innerHTML = '';
 
         Object.keys(sliderValues).forEach(key => {
-            const wrapper = document.createElement('div');
-            wrapper.className = 'slider-container';
+            // --- Category row (header + category slider) ---
+            const categoryBlock = document.createElement('div');
+            categoryBlock.className = 'sound-category-block';
+
+            const headerRow = document.createElement('div');
+            headerRow.className = 'sound-category-header';
+
+            // Expand/collapse arrow
+            const sounds = soundHistory[key] || [];
+            const isExpanded = !!_categoryExpanded[key];
+
+            const arrow = document.createElement('span');
+            arrow.className   = 'sound-category-arrow';
+            arrow.textContent = isExpanded ? '\u25bc' : '\u25b6';
 
             const label = document.createElement('label');
+            label.className   = 'sound-category-label';
             label.textContent = key.toLowerCase().split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
             const slider = document.createElement('input');
@@ -1495,8 +1603,9 @@ const Client = (() => {
                 sliderValues[key] = val;
                 iconSpan.textContent = getSpeakerIcon(val);
                 localStorage.setItem('sliderValues', JSON.stringify(sliderValues));
-                MusicPlayer.setGlobalVolume(sliderValues['music'] / 100);
-
+                if (key === 'music') {
+                    MusicPlayer.setGlobalVolume(val / 100);
+                }
                 const muteCheckbox = document.getElementById('mute-checkbox');
                 if (muteCheckbox.checked && val > 0) {
                     muteCheckbox.checked = false;
@@ -1505,10 +1614,64 @@ const Client = (() => {
                 }
             });
 
-            wrapper.appendChild(label);
-            wrapper.appendChild(slider);
-            wrapper.appendChild(iconSpan);
-            container.appendChild(wrapper);
+            // Clicking the arrow or label toggles expansion
+            function toggleExpand() {
+                _categoryExpanded[key] = !_categoryExpanded[key];
+                buildSliders();
+            }
+            arrow.addEventListener('click', toggleExpand);
+            label.addEventListener('click', toggleExpand);
+            headerRow.style.cursor = 'default';
+
+            headerRow.appendChild(arrow);
+            headerRow.appendChild(label);
+            headerRow.appendChild(slider);
+            headerRow.appendChild(iconSpan);
+            categoryBlock.appendChild(headerRow);
+
+            // --- Per-sound sub-rows (only when expanded and sounds exist) ---
+            if (isExpanded && sounds.length > 0) {
+                const soundList = document.createElement('div');
+                soundList.className = 'sound-list';
+
+                sounds.forEach(url => {
+                    const override = soundVolumeOverrides[key] && soundVolumeOverrides[key][url] !== undefined
+                        ? soundVolumeOverrides[key][url]
+                        : 100;
+
+                    const row = document.createElement('div');
+                    row.className = 'slider-container sound-sub-row';
+
+                    const sLabel = document.createElement('label');
+                    sLabel.className   = 'sound-sub-label';
+                    sLabel.textContent = _soundDisplayName(url);
+                    sLabel.title       = url;
+
+                    const sSlider = document.createElement('input');
+                    sSlider.type  = 'range';
+                    sSlider.min   = 0;
+                    sSlider.max   = 100;
+                    sSlider.value = override;
+
+                    sSlider.addEventListener('input', e => {
+                        const val = Number(e.target.value);
+                        _setSoundOverride(key, url, val);
+                    });
+
+                    row.appendChild(sLabel);
+                    row.appendChild(sSlider);
+                    soundList.appendChild(row);
+                });
+
+                categoryBlock.appendChild(soundList);
+            } else if (isExpanded && sounds.length === 0) {
+                const empty = document.createElement('div');
+                empty.className   = 'sound-list-empty';
+                empty.textContent = 'No sounds played yet in this session.';
+                categoryBlock.appendChild(empty);
+            }
+
+            container.appendChild(categoryBlock);
         });
     }
 
@@ -1667,6 +1830,16 @@ const Client = (() => {
         };
     }
 
+    function resetNetStats() {
+        totalBytesReceived = 0;
+        totalBytesSent     = 0;
+        Object.keys(gmcpInBytes).forEach(k  => delete gmcpInBytes[k]);
+        Object.keys(gmcpInCount).forEach(k  => delete gmcpInCount[k]);
+        Object.keys(gmcpOutBytes).forEach(k => delete gmcpOutBytes[k]);
+        Object.keys(gmcpOutCount).forEach(k => delete gmcpOutCount[k]);
+        Object.keys(gmcpOutLast).forEach(k  => delete gmcpOutLast[k]);
+    }
+
     // -----------------------------------------------------------------------
     // Keyboard shortcuts
     //
@@ -1684,24 +1857,6 @@ const Client = (() => {
 
     function registerShortcut(code, command) {
         codeShortcuts[code] = command;
-    }
-
-    // -----------------------------------------------------------------------
-    // Terminal commands
-    //
-    // Window modules may call Client.registerCommand(name, description, fn)
-    // to add their own !commands processed before sending to the server.
-    // fn receives the full input string and returns true if it handled it.
-    // -----------------------------------------------------------------------
-    // -----------------------------------------------------------------------
-    // GMCP debug mode removed
-    // -----------------------------------------------------------------------
-
-    const specialCommands = {
-    };
-
-    function registerCommand(name, description, fn) {
-        specialCommands[name] = { description, fn };
     }
 
     // -----------------------------------------------------------------------
@@ -1862,14 +2017,6 @@ const Client = (() => {
                     }
                 }
 
-                const cmd = specialCommands[event.target.value];
-                if (cmd) {
-                    if (cmd.fn(event.target.value)) {
-                        event.target.value = '';
-                        return;
-                    }
-                }
-
                 if (sendData(event.target.value)) {
                     event.target.value = '';
                 } else {
@@ -1885,6 +2032,7 @@ const Client = (() => {
         });
 
         // Volume sliders: load from localStorage
+        _loadSoundStorage();
         const savedValues = localStorage.getItem('sliderValues');
         if (savedValues) {
             try {
@@ -1928,12 +2076,6 @@ const Client = (() => {
             MusicPlayer.setGlobalVolume(sliderValues['music'] / 100);
             muteIcon.textContent = '🔊';
         }
-
-        // Log available commands to console
-        console.log('%cterminal commands:', 'font-weight:bold;');
-        let longest = 0;
-        for (const k in specialCommands) { if (k.length > longest) { longest = k.length; } }
-        for (const k in specialCommands) { console.log('  ' + k.padEnd(longest) + ' - ' + specialCommands[k].description); }
 
         // Register GMCP handler for tab-completion responses
         VirtualWindows.register({
@@ -1981,7 +2123,6 @@ const Client = (() => {
         set debug(v)       { debugOutput = !!v; },
 
         // Extension points for window modules
-        registerCommand,
         registerShortcut,
 
         // Functions called from HTML event handlers
@@ -1989,6 +2130,9 @@ const Client = (() => {
         toggleMenu,
         toggleMuteAll,
         resetLayout,
+        resetVolumeControls,
+        buildSliders,
+        soundHistoryFingerprint: _soundHistoryFingerprint,
 
         // Utility
         sendData,
@@ -1997,5 +2141,6 @@ const Client = (() => {
         GMCPRequest,
         GetGMCP,
         getNetStats,
+        resetNetStats,
     };
 })();

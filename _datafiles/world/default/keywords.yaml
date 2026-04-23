@@ -24,7 +24,6 @@ help:
       - killstats
       - encumbrance
       - death
-      - character
       - pets
       - train
       - stat-train
@@ -35,7 +34,6 @@ help:
       - shout
       - broadcast
       - whisper
-      - inbox
     shops:
       - appraise
       - bank
@@ -132,7 +130,6 @@ help:
       - grant
       - locate
       - modify
-      - mudmail
       - mute
       - paz
       - prepare
@@ -156,7 +153,6 @@ help-aliases:
   skulduggery:      [sneak, bump, backstab, pickpocket]
   bank:             [deposit, withdraw]
   dual-wield:       [dualwield, dual]
-  storage:          [store, unstore]
   strength:         [str]
   vitality:         [vit]
   speed:            [spd, spe]

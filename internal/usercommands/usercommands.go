@@ -39,6 +39,15 @@ func AddFunctionExporter(f FunctionExporter) {
 	functionExporters = append(functionExporters, f)
 }
 
+// roomTagProvider is set by main at startup via SetRoomTagProvider.
+// It returns a map of plugin name to the room tags that plugin has reserved.
+var roomTagProvider func() map[string][]string = func() map[string][]string { return nil }
+
+// SetRoomTagProvider registers the function that returns registered room tags.
+func SetRoomTagProvider(f func() map[string][]string) {
+	roomTagProvider = f
+}
+
 var (
 	functionExporters = []FunctionExporter{}
 
@@ -52,7 +61,6 @@ var (
 		`badcommands`: {BadCommands, true, true}, // Admin only
 		`biome`:       {Biome, true, false},
 		`broadcast`:   {Broadcast, true, false},
-		`character`:   {Character, true, false},
 		`tackle`:      {Tackle, false, false},
 		`bank`:        {Bank, false, false},
 		`break`:       {Break, false, false},
@@ -90,7 +98,6 @@ var (
 		`keyring`:     {KeyRing, true, false},
 		`killstats`:   {Killstats, true, false},
 		`history`:     {History, true, false},
-		`inbox`:       {Inbox, true, false},
 		`inspect`:     {Inspect, false, false},
 		`inventory`:   {Inventory, true, false},
 		`item`:        {Item, true, true}, // Admin only
@@ -104,7 +111,6 @@ var (
 		`mob`:         {Mob, true, true},    // Admin only
 		`modify`:      {Modify, true, true}, // Admin only
 		`motd`:        {Motd, true, false},
-		`mudmail`:     {Mudmail, true, true}, // Admin only
 		`mute`:        {Mute, true, true},
 		`noop`:        {Noop, true, false},
 		`offer`:       {Offer, false, false},
@@ -153,27 +159,27 @@ var (
 		`spells`:      {Spells, true, false},
 		`stash`:       {Stash, false, false},
 		`status`:      {Status, true, false},
-		`storage`:     {Storage, false, false},
-		`suicide`:     {Suicide, true, false},
-		`syslogs`:     {SysLogs, true, true}, // Admin only
-		`tame`:        {Tame, false, false},
-		`teleport`:    {Teleport, true, true}, // Admin only
-		`throw`:       {Throw, false, false},
-		`track`:       {Track, false, false},
-		`train`:       {Train, false, false},
-		`unenchant`:   {Unenchant, false, false},
-		`uncurse`:     {Uncurse, false, false},
-		`unlock`:      {Unlock, false, false},
-		`undeafen`:    {UnDeafen, true, true}, // Admin only
-		`unmute`:      {UnMute, true, true},   // Admin only
-		`use`:         {Use, false, false},
-		`dual-wield`:  {DualWield, true, false},
-		`whisper`:     {Whisper, true, false},
-		`who`:         {Who, true, false},
-		`visit`:       {Visit, true, true}, // Admin only
-		`visited`:     {Visited, true, false},
-		`zap`:         {Zap, true, true},   // Admin only
-		`zone`:        {Zone, false, true}, // Admin only
+
+		`suicide`:    {Suicide, true, false},
+		`syslogs`:    {SysLogs, true, true}, // Admin only
+		`tame`:       {Tame, false, false},
+		`teleport`:   {Teleport, true, true}, // Admin only
+		`throw`:      {Throw, false, false},
+		`track`:      {Track, false, false},
+		`train`:      {Train, false, false},
+		`unenchant`:  {Unenchant, false, false},
+		`uncurse`:    {Uncurse, false, false},
+		`unlock`:     {Unlock, false, false},
+		`undeafen`:   {UnDeafen, true, true}, // Admin only
+		`unmute`:     {UnMute, true, true},   // Admin only
+		`use`:        {Use, false, false},
+		`dual-wield`: {DualWield, true, false},
+		`whisper`:    {Whisper, true, false},
+		`who`:        {Who, true, false},
+		`visit`:      {Visit, true, true}, // Admin only
+		`visited`:    {Visited, true, false},
+		`zap`:        {Zap, true, true},   // Admin only
+		`zone`:       {Zone, false, true}, // Admin only
 		// Special command only used upon creating a new account
 		`start`:     {Start, false, false},
 		`zombieact`: {ZombieAct, false, false},
