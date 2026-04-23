@@ -262,6 +262,14 @@ func buildAdminNav() []WebNavItem {
 					},
 				},
 				{
+					Name:   "Mobs",
+					Target: "/admin/mobs",
+					SubItems: []WebNavSub{
+						{Label: "View / Edit", Target: "/admin/mobs"},
+						{Label: "API Docs", Target: "/admin/mobs-api"},
+					},
+				},
+				{
 					Name:   "Races",
 					Target: "/admin/races",
 					SubItems: []WebNavSub{
@@ -348,6 +356,14 @@ func buildAdminNav() []WebNavItem {
 			SubItems: []WebNavSub{
 				{Label: "View / Edit", Target: "/admin/config"},
 				{Label: "API Docs", Target: "/admin/config-api"},
+			},
+		},
+		{
+			Name:   "Stats",
+			Target: "/admin/stats",
+			SubItems: []WebNavSub{
+				{Label: "View", Target: "/admin/stats"},
+				{Label: "API Docs", Target: "/admin/stats-api"},
 			},
 		},
 	}
