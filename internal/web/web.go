@@ -302,11 +302,27 @@ func buildAdminNav() []WebNavItem {
 			},
 		},
 		{
+			Name:   "Rooms",
+			Target: "/admin/rooms",
+			SubItems: []WebNavSub{
+				{Label: "View / Edit", Target: "/admin/rooms"},
+				{Label: "API Docs", Target: "/admin/rooms-api"},
+			},
+		},
+		{
 			Name:   "Buffs",
 			Target: "/admin/buffs",
 			SubItems: []WebNavSub{
 				{Label: "View / Edit", Target: "/admin/buffs"},
 				{Label: "API Docs", Target: "/admin/buffs-api"},
+			},
+		},
+		{
+			Name:   "Mutators",
+			Target: "/admin/mutators",
+			SubItems: []WebNavSub{
+				{Label: "View / Edit", Target: "/admin/mutators"},
+				{Label: "API Docs", Target: "/admin/mutators-api"},
 			},
 		},
 		{
@@ -367,6 +383,14 @@ func buildAdminNav() []WebNavItem {
 					SubItems: []WebNavSub{
 						{Label: "View", Target: "/admin/stats"},
 						{Label: "API Docs", Target: "/admin/stats-api"},
+					},
+				},
+				{
+					Name:   "Audio",
+					Target: "/admin/audio",
+					SubItems: []WebNavSub{
+						{Label: "View / Edit", Target: "/admin/audio"},
+						{Label: "API Docs", Target: "/admin/audio-api"},
 					},
 				},
 			},

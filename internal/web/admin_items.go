@@ -122,3 +122,19 @@ func adminMobs(w http.ResponseWriter, r *http.Request) {
 func adminMobsAPI(w http.ResponseWriter, r *http.Request) {
 	serveAdminTemplate(w, r, "mobs-api.html", nil)
 }
+
+func adminMutators(w http.ResponseWriter, r *http.Request) {
+	serveAdminTemplate(w, r, "mutators.html", nil)
+}
+
+func adminMutatorsAPI(w http.ResponseWriter, r *http.Request) {
+	serveAdminTemplate(w, r, "mutators-api.html", nil)
+}
+
+func adminRooms(w http.ResponseWriter, r *http.Request) {
+	serveAdminTemplate(w, r, "rooms.html", nil)
+}
+
+func adminRoomsAPI(w http.ResponseWriter, r *http.Request) {
+	serveAdminTemplate(w, r, "rooms-api.html", nil)
+}
