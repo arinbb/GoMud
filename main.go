@@ -1019,6 +1019,7 @@ func HandleWebSocketConnection(conn *websocket.Conn) {
 			}
 
 			mudlog.Warn("WS Read", "error", err)
+			connections.Remove(connDetails.ConnectionId())
 			break
 		}
 
