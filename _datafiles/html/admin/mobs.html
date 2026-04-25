@@ -137,6 +137,9 @@
     .shop-picker-wrap { display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; }
     .shop-picker-display { font-size: 0.82rem; color: #333; font-family: monospace; }
     .shop-picker-display.empty { color: #aaa; font-style: italic; font-family: inherit; }
+    .shop-picker-wrap.eq-disabled { background: #e8e8e8; border-radius: 4px; padding: 0.2rem 0.5rem; opacity: 0.6; cursor: not-allowed; }
+    .shop-picker-wrap.eq-disabled * { pointer-events: none; }
+    .shop-picker-wrap.eq-disabled .shop-picker-display { color: #888; font-style: normal; font-family: inherit; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
     .shop-entries { display: flex; flex-direction: column; gap: 0.75rem; }
     .shop-card {
         border: 1px solid #ddd; border-radius: 6px; padding: 0.75rem 0.9rem;
@@ -501,6 +504,7 @@
 
     let allMobs = [];
     let allItems = [];
+    let allRaces = {};
     let buffSpecs = {};
     let currentMobId = null;
     let isNew = false;
@@ -518,7 +522,10 @@
 
         allMobs = (mobsRes.data.data || []).sort((a, b) => a.MobId - b.MobId);
 
-        if (racesRes.ok) populateRaceSelect(racesRes.data.data || {});
+        if (racesRes.ok) {
+            allRaces = racesRes.data.data || {};
+            populateRaceSelect(allRaces);
+        }
         if (buffsRes.ok) {
             buffSpecs = (buffsRes.data.data && buffsRes.data.data.specs) || {};
         }
@@ -534,7 +541,9 @@
         if (hashId) loadMob(hashId);
     }
 
-    function populateRaceSelect(races) {        const sel = document.getElementById('f-raceid');
+    function populateRaceSelect(races) {
+        const sel = document.getElementById('f-raceid');
+        sel.addEventListener('change', () => applyRaceEquipDisabled(parseInt(sel.value, 10) || 0));
         const sorted = Object.values(races).sort((a, b) => a.RaceId - b.RaceId);
         for (const r of sorted) {
             const o = document.createElement('option');
@@ -546,6 +555,30 @@
 
     function populateEquipSelects(_items) {
         // Equipment slots now use the Picker — no pre-population needed.
+    }
+
+    const EQ_SLOTS = ['weapon','offhand','head','neck','body','belt','gloves','ring','legs','feet'];
+
+    function applyRaceEquipDisabled(raceId) {
+        const race = allRaces[String(raceId)];
+        const disabled = new Set((race && race.DisabledSlots || []).map(s => s.toLowerCase()));
+        for (const slot of EQ_SLOTS) {
+            const wrap = document.getElementById('f-eq-' + slot);
+            if (!wrap) continue;
+            const isDisabled = disabled.has(slot);
+            wrap.dataset.disabled = isDisabled ? '1' : '';
+            wrap.classList.toggle('eq-disabled', isDisabled);
+            wrap.title = isDisabled ? 'Disabled by Race' : '';
+            wrap.querySelectorAll('button').forEach(btn => { btn.disabled = isDisabled; });
+            const display = wrap.querySelector('.shop-picker-display');
+            if (display && isDisabled) {
+                display.textContent = 'DISABLED';
+                display.className = 'shop-picker-display';
+            } else if (display && !isDisabled && wrap.dataset.value === '0') {
+                display.textContent = 'nothing';
+                display.className = 'shop-picker-display empty';
+            }
+        }
     }
 
     function setEquipSlot(slotId, itemId) {
@@ -689,6 +722,7 @@
         setVal('f-zone', mob.Zone || '');
         setVal('f-description', ch.Description || '');
         setVal('f-raceid', ch.RaceId || 0);
+        applyRaceEquipDisabled(ch.RaceId || 0);
         setVal('f-level', ch.Level || 1);
         setVal('f-hostile', mob.Hostile ? 'true' : 'false');
 
@@ -756,7 +790,7 @@
 
     function eqItemId(slot) {
         if (!slot) return 0;
-        return slot.ItemId || 0;
+        return (slot.ItemId > 0) ? slot.ItemId : 0;
     }
 
     // -------------------------------------------------------------------------
