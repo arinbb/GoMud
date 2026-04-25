@@ -203,6 +203,63 @@
         </div>
     </details>
 
+    <details class="api-entry">
+        <summary>
+            <span class="method method-get">GET</span>
+            <span class="api-path">/admin/api/v1/connections</span>
+            <span class="api-desc">Return port and connection counts</span>
+        </summary>
+        <div class="api-body">
+            <p>
+                Returns the current listener ports and the number of active connections
+                for each protocol (Telnet, WebSocket, SSH). This is the same data shown
+                in the port cards on the admin dashboard.
+            </p>
+
+            <table class="schema-table">
+                <thead><tr><th>Field</th><th>Type</th><th>Description</th></tr></thead>
+                <tbody>
+                    <tr><td>telnet_ports</td><td>int[]</td><td>Listening Telnet port numbers.</td></tr>
+                    <tr><td>websocket_port</td><td>int</td><td>Listening WebSocket port, or <code>0</code> if disabled.</td></tr>
+                    <tr><td>ssh_port</td><td>int</td><td>Listening SSH port, or <code>0</code> if disabled.</td></tr>
+                    <tr><td>telnet_connections</td><td>int</td><td>Active Telnet connections.</td></tr>
+                    <tr><td>websocket_connections</td><td>int</td><td>Active WebSocket connections.</td></tr>
+                    <tr><td>ssh_connections</td><td>int</td><td>Active SSH connections.</td></tr>
+                </tbody>
+            </table>
+
+            <div class="curl-block"><span class="kw">curl</span> <span class="flag">-s</span> <span class="flag">-u</span> <span class="str">admin:password</span> \
+     <span class="str">http://{{.CONFIG.FilePaths.WebDomain}}/admin/api/v1/connections</span></div>
+
+            <div class="response-examples">
+                <details class="resp-entry" open>
+                    <summary><span class="method resp-label status-ok">200</span> <span class="resp-label">Success</span></summary>
+                    <div class="resp-body">
+                        <p>Port numbers and live connection counts for each protocol.</p>
+                        <div class="curl-block">{
+  "success": true,
+  "data": {
+    "telnet_ports": [33133],
+    "websocket_port": 33175,
+    "ssh_port": 33122,
+    "telnet_connections": 2,
+    "websocket_connections": 1,
+    "ssh_connections": 0
+  }
+}</div>
+                    </div>
+                </details>
+                <details class="resp-entry">
+                    <summary><span class="method resp-label status-err">401</span> <span class="resp-label">Unauthorized</span></summary>
+                    <div class="resp-body">
+                        <p>Invalid or missing credentials.</p>
+                        <div class="curl-block">{"success":false,"error":"unauthorized"}</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </details>
+
 </div>
 
 {{template "footer" .}}
