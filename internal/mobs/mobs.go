@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math"
 	"os"
+	"path/filepath"
 	"strings"
 	"time"
 
@@ -42,28 +43,30 @@ type MobId int // Creating a custom type to help prevent confusion over MobId an
 type Mob struct {
 	MobId           MobId
 	Zone            string   `yaml:"zone,omitempty"`
-	ItemDropChance  int      // chance in 100
-	ActivityLevel   int      `yaml:"activitylevel,omitempty"` // 1-100%
+	ItemDropChance  int      `yaml:"itemdropchance,omitempty"` // chance in 100
+	ActivityLevel   int      `yaml:"activitylevel,omitempty"`  // 1-100%
 	InstanceId      int      `yaml:"-"`
 	HomeRoomId      int      `yaml:"-"`
-	Hostile         bool     // whether they attack on sight
-	LastIdleCommand uint8    `yaml:"-"` // Track what hte last used idlecommand was
-	BoredomCounter  uint8    `yaml:"-"` // how many rounds have passed since this mob has seen a player
-	Groups          []string // What group do they identify with? Helps with teamwork
-	Hates           []string `yaml:"hates,omitempty"`        // What NPC groups or races do they hate and probably fight if encountered?
-	IdleCommands    []string `yaml:"idlecommands,omitempty"` // Commands they may do while idle (not in combat)
-	AngryCommands   []string // randomly chosen to queue when they are angry/entering combat.
+	Hostile         bool     `yaml:"hostile,omitempty"`        // whether they attack on sight
+	LastIdleCommand uint8    `yaml:"-"`                        // Track what hte last used idlecommand was
+	BoredomCounter  uint8    `yaml:"-"`                        // how many rounds have passed since this mob has seen a player
+	Groups          []string `yaml:"groups,omitempty"`         // What group do they identify with? Helps with teamwork
+	Hates           []string `yaml:"hates,omitempty"`          // What NPC groups or races do they hate and probably fight if encountered?
+	IdleCommands    []string `yaml:"idlecommands,omitempty"`   // Commands they may do while idle (not in combat)
+	AngryCommands   []string `yaml:"angrycommands,omitempty"`  // randomly chosen to queue when they are angry/entering combat.
 	CombatCommands  []string `yaml:"combatcommands,omitempty"` // Commands they may do while in combat
 	Character       characters.Character
-	MaxWander       int      `yaml:"maxwander,omitempty"`       // Max rooms to wander from home
-	WanderCount     int      `yaml:"-"`                         // How many times this mob has wandered
-	PreventIdle     bool     `yaml:"-"`                         // Whether they can't possibly be idle
-	ScriptTag       string   `yaml:"scripttag"`                 // Script for this mob: mobs/frostfang/scripts/{mobId}-{mobname}-{ScriptTag}.js
-	QuestFlags      []string `yaml:"questflags,omitempty,flow"` // What quest flags are set on this mob?
-	BuffIds         []int    `yaml:"buffids,omitempty"`         // Buff Id's this mob always has upon spawn
+	MaxWander       int       `yaml:"maxwander,omitempty"`       // Max rooms to wander from home
+	WanderCount     int       `yaml:"-"`                         // How many times this mob has wandered
+	PreventIdle     bool      `yaml:"-"`                         // Whether they can't possibly be idle
+	ScriptTag       string    `yaml:"scripttag,omitempty"`       // Script for this mob: mobs/frostfang/scripts/{mobId}-{mobname}-{ScriptTag}.js
+	QuestFlags      []string  `yaml:"questflags,omitempty,flow"` // What quest flags are set on this mob?
+	BuffIds         []int     `yaml:"buffids,omitempty"`         // Buff Id's this mob always has upon spawn
+	EliteChance     int       `yaml:"elitechance,omitempty"`     // Percent chance (0-100) this mob spawns as elite
+	IsElite         bool      `yaml:"-"`                         // Runtime flag: true if this instance is elite
+	Path            PathQueue `yaml:"-"`                         // a pre-calculated path the mob is following.
 	tempDataStore   map[string]any
 	conversationId  int              // Identifier of conversation currently involved in.
-	Path            PathQueue        `yaml:"-"` // a pre-calculated path the mob is following.
 	lastCommandTurn uint64           // The last turn a command was scheduled for
 	playersAttacked map[int]struct{} // all players this mob has attacked at some point
 }
@@ -155,7 +158,30 @@ func NewMobById(mobId MobId, homeRoomId int, forceLevel ...int) *Mob {
 		if len(forceLevel) > 0 && forceLevel[0] > 0 {
 			mob.Character.Level = forceLevel[0]
 		}
-		mob.Character.StatPoints = mob.Character.Level
+
+		// Elite spawn check
+		if mob.EliteChance > 0 && util.Rand(100) < mob.EliteChance {
+			mob.IsElite = true
+			cfg := configs.GetGamePlayConfig()
+			bonusPct := int(cfg.EliteLevelBonus)
+			if bonusPct <= 0 {
+				bonusPct = 20
+			}
+			mob.Character.Level = mob.Character.Level + int(math.Ceil(float64(mob.Character.Level)*float64(bonusPct)/100.0))
+			if mob.Character.Level < 1 {
+				mob.Character.Level = 1
+			}
+		}
+
+		mob.Character.StatPoints = 0
+		{
+			cfgProg := configs.GetProgressionConfig()
+			for lvl := 1; lvl <= mob.Character.Level; lvl++ {
+				if int(cfgProg.StatPointsEveryNLevels) <= 1 || lvl%int(cfgProg.StatPointsEveryNLevels) == 0 {
+					mob.Character.StatPoints += int(cfgProg.StatPointsPerLevel)
+				}
+			}
+		}
 		mob.Character.Level--
 		mob.Character.Experience = mob.Character.XPTNL()
 		mob.Character.Level++
@@ -164,6 +190,10 @@ func NewMobById(mobId MobId, homeRoomId int, forceLevel ...int) *Mob {
 		mob.Character.AutoTrain()
 		mob.Character.Health = mob.Character.HealthMax.Value
 		mob.Character.Mana = mob.Character.ManaMax.Value
+
+		if mob.IsElite {
+			mob.Character.SetAdjective(`elite`, true)
+		}
 
 		mob.Character.SetPermaBuffs(mob.BuffIds)
 
@@ -174,23 +204,16 @@ func NewMobById(mobId MobId, homeRoomId int, forceLevel ...int) *Mob {
 		}
 
 		if mob.Character.Alignment == 0 {
-			if raceInfo := races.GetRace(mob.Character.RaceId); raceInfo != nil {
+			if raceInfo := races.GetRace(mob.Character.GetRaceId()); raceInfo != nil {
 				if raceInfo.DefaultAlignment != 0 {
 					mob.Character.Alignment = raceInfo.DefaultAlignment
 				}
 			}
 		}
 
-		mob.Character.Equipment.Weapon.Validate()
-		mob.Character.Equipment.Offhand.Validate()
-		mob.Character.Equipment.Head.Validate()
-		mob.Character.Equipment.Neck.Validate()
-		mob.Character.Equipment.Body.Validate()
-		mob.Character.Equipment.Belt.Validate()
-		mob.Character.Equipment.Gloves.Validate()
-		mob.Character.Equipment.Ring.Validate()
-		mob.Character.Equipment.Legs.Validate()
-		mob.Character.Equipment.Feet.Validate()
+		for _, slot := range characters.AllSlots() {
+			mob.Character.Equipment.Get(slot).Validate()
+		}
 
 		mob.Validate()
 		mob.Character.Validate(true)
@@ -370,7 +393,7 @@ func (m *Mob) IsTameable() bool {
 	if len(m.ScriptTag) > 0 {
 		return false
 	}
-	if r := races.GetRace(m.Character.RaceId); r != nil {
+	if r := races.GetRace(m.Character.GetRaceId()); r != nil {
 		if !r.Tameable {
 			return false
 		}
@@ -514,7 +537,7 @@ func (r *Mob) HatesMob(m *Mob) bool {
 		return false // Can't hate exact same as self
 	}
 
-	mRace := races.GetRace(m.Character.RaceId)
+	mRace := races.GetRace(m.Character.GetRaceId())
 	raceName := strings.ToLower(mRace.Name)
 	for _, rGroup := range r.Groups {
 		if rGroup == raceName {
@@ -548,7 +571,7 @@ func (m *Mob) GetAngryCommand() string {
 	}
 
 	// default to race based actions
-	r := races.GetRace(m.Character.RaceId)
+	r := races.GetRace(m.Character.GetRaceId())
 	actionCt := len(r.AngryCommands)
 	if actionCt > 0 {
 		return r.AngryCommands[util.Rand(actionCt)]
@@ -619,6 +642,12 @@ func (r *Mob) Validate() error {
 		r.ItemDropChance = 100
 	}
 
+	if r.EliteChance < 0 {
+		r.EliteChance = 0
+	} else if r.EliteChance > 100 {
+		r.EliteChance = 100
+	}
+
 	r.Character.Validate()
 
 	return nil
@@ -649,7 +678,7 @@ func (r *Mob) Save() error {
 
 	saveFilePath := util.FilePath(configs.GetFilePathsConfig().DataFiles.String(), `/`, `mobs`, `/`, fmt.Sprintf("%s.yaml", fileName))
 
-	err = os.WriteFile(saveFilePath, bytes, 0644)
+	err = util.WriteFile(saveFilePath, bytes, 0644)
 	if err != nil {
 		return err
 	}
@@ -658,6 +687,10 @@ func (r *Mob) Save() error {
 }
 
 func (m *Mob) HasScript() bool {
+
+	if script := getPluginScript(int(m.MobId), m.ScriptTag); script != `` {
+		return true
+	}
 
 	scriptPath := m.GetScriptPath()
 	// Load the script into a string
@@ -668,12 +701,27 @@ func (m *Mob) HasScript() bool {
 	return false
 }
 
+// HasAnyScript reports whether this mob has any script on disk, including
+// instance (tagged) scripts. HasScript only checks the mob's current ScriptTag
+// (the base/untagged script for a spec), so listings that want to flag mobs
+// with only instance scripts should use this instead.
+func (m *Mob) HasAnyScript() bool {
+	if m.HasScript() {
+		return true
+	}
+	return len(m.GetAllScriptTags()) > 0
+}
+
 func (m *Mob) GetScript() string {
+
+	if script := getPluginScript(int(m.MobId), m.ScriptTag); script != `` {
+		return script
+	}
 
 	scriptPath := m.GetScriptPath()
 	// Load the script into a string
 	if _, err := os.Stat(scriptPath); err == nil {
-		if bytes, err := os.ReadFile(scriptPath); err == nil {
+		if bytes, err := util.ReadFile(scriptPath); err == nil {
 			return string(bytes)
 		}
 	}
@@ -682,23 +730,76 @@ func (m *Mob) GetScript() string {
 }
 
 func (m *Mob) GetScriptPath() string {
-	// Load any script for the room
+	return m.GetScriptPathForTag(m.ScriptTag)
+}
+
+func (m *Mob) GetScriptPathForTag(tag string) string {
+	// Load any script for the mob (prefers .js, falls back to .lua)
 
 	mobFilePath := m.Filename()
 
-	newExt := `.js`
-	if m.ScriptTag != `` {
-		newExt = fmt.Sprintf(`-%s.js`, m.ScriptTag)
+	newExt := `.yaml`
+	if tag != `` {
+		newExt = fmt.Sprintf(`-%s.yaml`, tag)
 	}
 
 	scriptFilePath := `scripts/` + strings.Replace(mobFilePath, `.yaml`, newExt, 1)
-	fullScriptPath := strings.Replace(configs.GetFilePathsConfig().DataFiles.String()+`/mobs/`+m.Filepath(),
+	yamlScriptPath := strings.Replace(configs.GetFilePathsConfig().DataFiles.String()+`/mobs/`+m.Filepath(),
 		mobFilePath,
 		scriptFilePath,
 		1)
 
-	//mudlog.Info("SCRIPT PATH", "path", util.FilePath(fullScriptPath))
-	return util.FilePath(fullScriptPath)
+	return util.ResolveScriptPath(yamlScriptPath)
+}
+
+// GetAllScriptTags returns the tag (empty string for the base script) of every
+// .js or .lua script file that exists for this mob. The base (untagged) script
+// is always first when present; tagged scripts follow in sorted order. When
+// both a .js and .lua exist for the same tag, the tag is reported once.
+func (m *Mob) GetAllScriptTags() []string {
+	mobFilePath := m.Filename()
+	baseName := strings.TrimSuffix(mobFilePath, `.yaml`)
+
+	// Derive the scripts directory from the canonical script path so the logic
+	// stays in sync with GetScriptPathForTag.
+	baseScriptPath := m.GetScriptPathForTag(``)
+	scriptDir := filepath.Dir(baseScriptPath)
+
+	entries, err := os.ReadDir(scriptDir)
+	if err != nil {
+		return nil
+	}
+
+	hasBase := false
+	seen := map[string]bool{}
+	var tags []string
+	for _, e := range entries {
+		if e.IsDir() {
+			continue
+		}
+		name := e.Name()
+		ext := filepath.Ext(name)
+		if ext != `.js` && ext != `.lua` {
+			continue
+		}
+		stem := strings.TrimSuffix(name, ext)
+		if stem == baseName {
+			hasBase = true
+			continue
+		}
+		prefix := baseName + `-`
+		if strings.HasPrefix(stem, prefix) {
+			tag := strings.TrimPrefix(stem, prefix)
+			if !seen[tag] {
+				seen[tag] = true
+				tags = append(tags, tag)
+			}
+		}
+	}
+	if hasBase {
+		tags = append([]string{``}, tags...)
+	}
+	return tags
 }
 
 func ReduceHostility() {
@@ -743,6 +844,14 @@ func MakeHostile(groupName string, userId int, rounds int) {
 	}
 }
 
+func GetAllMobInstances() []*Mob {
+	result := make([]*Mob, 0, len(mobInstances))
+	for _, m := range mobInstances {
+		result = append(result, m)
+	}
+	return result
+}
+
 func ZoneNameSanitize(zone string) string {
 	if zone == "" {
 		return ""
@@ -764,6 +873,10 @@ func LoadDataFiles() {
 	}
 
 	mobs = tmpMobs
+
+	// Merge mobs from plugin file systems before populating name caches so
+	// allMobNames and mobNameCache include plugin-provided mobs.
+	loadPluginMobs(mobs)
 
 	clear(mobNameCache)
 

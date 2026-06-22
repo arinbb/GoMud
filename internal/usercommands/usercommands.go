@@ -5,7 +5,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/keywords"
 	"github.com/GoMudEngine/GoMud/internal/mudlog"
@@ -69,6 +68,7 @@ var (
 		`bump`:        {Bump, false, false},
 		`buy`:         {Buy, false, false},
 		`cast`:        {Cast, false, false},
+		`changeform`:  {ChangeForm, false, false},
 		`cooldowns`:   {Cooldowns, true, false},
 		`command`:     {Command, false, true}, // Admin only
 		`copyover`:    {Copyover, true, true}, // Admin only
@@ -83,10 +83,12 @@ var (
 		`enchant`:     {Enchant, false, false},
 		`experience`:  {Experience, true, false},
 		`equip`:       {Equip, false, false},
+		`feed`:        {Feed, false, false},
 		`feedback`:    {Feedback, true, false},
 		`idea`:        {Feedback, true, false},
 		`suggest`:     {Feedback, true, false},
 		`flee`:        {Flee, false, false},
+		`formset`:     {FormSet, false, true}, // Admin only
 		`gearup`:      {Gearup, false, false},
 		`get`:         {Get, false, false},
 		`give`:        {Give, false, false},
@@ -132,6 +134,7 @@ var (
 		`quit`:        {Quit, true, false},
 		`questtoken`:  {QuestToken, false, true}, // Admin only
 		`rank`:        {Rank, false, false},
+		`rankings`:    {Rankings, false, true}, // Admin only
 		`read`:        {Read, false, false},
 		`recover`:     {Recover, false, false},
 		`reload`:      {Reload, true, true}, // Admin only
@@ -160,7 +163,8 @@ var (
 		`status`:      {Status, true, false},
 
 		`suicide`:    {Suicide, true, false},
-		`syslogs`:    {SysLogs, true, true}, // Admin only
+		`syslogs`:    {SysLogs, true, true},   // Admin only
+		`telemetry`:  {Telemetry, true, true}, // Admin only
 		`tame`:       {Tame, false, false},
 		`teleport`:   {Teleport, true, true}, // Admin only
 		`throw`:      {Throw, false, false},
@@ -260,6 +264,11 @@ func TryCommand(cmd string, rest string, userId int, flags events.EventFlag) (bo
 		}
 
 		if !skipScript {
+			// Global user script runs first and can halt all further processing.
+			if handled, _ := scripting.TryUserCommand(alias, rest, userId); handled {
+				return true, nil
+			}
+
 			// Instead of calling scripting.TryRoomCommand directly,
 			// use our new function that sends GMCP notifications for blocked directions
 			handled, err := TryRoomScripts(cmd+` `+rest, alias, rest, userId)
@@ -328,6 +337,20 @@ func TryCommand(cmd string, rest string, userId int, flags events.EventFlag) (bo
 
 		userDisabled = user.Character.IsDisabled()
 
+		for _, b := range user.Character.Buffs.List {
+			handled, err := scripting.TryBuffCommand(cmd, rest, user.UserId, 0, b.BuffId)
+			if handled { // For this event, handled represents whether to reject the move.
+				return handled, err
+			}
+		}
+
+		// Check if the pet script intercepts this command
+		if user.Character.Pet.Exists() && !user.Character.Pet.IsMissing() {
+			if handled, err := scripting.TryPetCommand(cmd, rest, user.UserId); err == nil && handled {
+				return true, nil
+			}
+		}
+
 		// Check if the "rest" is an item the character has
 		matchingItem, found := user.Character.FindInBackpack(rest)
 		if !found {
@@ -346,7 +369,7 @@ func TryCommand(cmd string, rest string, userId int, flags events.EventFlag) (bo
 	}
 
 	// Cancel any buffs they have that get cancelled based on them doing anything at all
-	user.Character.CancelBuffsWithFlag(buffs.CancelOnAction)
+	user.Character.CancelBuffsWithFlag("cancel-on-action")
 
 	// Experimental, not sure if will have unexpected consequences.
 	// Turn keywords for targetting self into actual string of self
@@ -400,6 +423,9 @@ func TryCommand(cmd string, rest string, userId int, flags events.EventFlag) (bo
 			handled, err := cmdInfo.Func(rest, user, room, flags)
 			return handled, err
 
+		} else if cmdInfo.AdminOnly {
+			user.SendText(fmt.Sprintf(`You don't have permission to use <ansi fg="command">%s</ansi>.`, cmd))
+			return true, nil
 		}
 	}
 

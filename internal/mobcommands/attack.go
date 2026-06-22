@@ -2,9 +2,7 @@ package mobcommands
 
 import (
 	"fmt"
-	"strings"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/characters"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
@@ -15,12 +13,6 @@ import (
 
 func Attack(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 
-	args := util.SplitButRespectQuotes(strings.ToLower(rest))
-
-	if len(args) < 1 {
-		return true, nil
-	}
-
 	attackPlayerId := 0
 	attackMobInstanceId := 0
 
@@ -28,7 +20,10 @@ func Attack(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 		// If no argument supplied, attack whoever is attacking the player currently.
 		for _, mId := range room.GetMobs(rooms.FindFightingMob) {
 			m := mobs.GetInstance(mId)
-			if m.Character.Aggro != nil && m.Character.Aggro.MobInstanceId == mob.InstanceId {
+			if m == nil || m.Character.Aggro == nil {
+				continue
+			}
+			if m.Character.Aggro.MobInstanceId == mob.InstanceId {
 				attackMobInstanceId = m.InstanceId
 				break
 			}
@@ -37,6 +32,9 @@ func Attack(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 		if attackMobInstanceId == 0 {
 			for _, uId := range room.GetPlayers(rooms.FindFightingMob) {
 				u := users.GetByUserId(uId)
+				if u == nil {
+					continue
+				}
 				if u.Character.Aggro != nil && u.Character.Aggro.MobInstanceId == mob.InstanceId {
 					attackPlayerId = u.UserId
 					break
@@ -100,7 +98,7 @@ func Attack(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 		attackMobInstanceId = 0
 	}
 
-	isSneaking := mob.Character.HasBuffFlag(buffs.Hidden)
+	isSneaking := mob.Character.HasBuffFlag("hidden")
 
 	/*
 		combatAddlWaitRounds := mob.Character.Equipment.Weapon.GetSpec().WaitRounds + mob.Character.Equipment.Weapon.GetSpec().WaitRounds

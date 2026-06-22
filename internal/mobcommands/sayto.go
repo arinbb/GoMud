@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
@@ -33,7 +32,7 @@ func SayTo(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 		}
 
 		rest = strings.TrimSpace(rest[len(args[0]):])
-		isSneaking := mob.Character.HasBuffFlag(buffs.Hidden)
+		isSneaking := mob.Character.HasBuffFlag("hidden")
 
 		if isSneaking {
 			toUser.SendText(fmt.Sprintf(`someone says to you, "<ansi fg="saytext-mob">%s</ansi>"`, rest))
@@ -60,9 +59,12 @@ func SayTo(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 	} else if mobInstanceId > 0 {
 
 		toMob := mobs.GetInstance(mobInstanceId)
+		if toMob == nil {
+			return true, nil
+		}
 
 		rest = strings.TrimSpace(rest[len(args[0]):])
-		isSneaking := mob.Character.HasBuffFlag(buffs.Hidden)
+		isSneaking := mob.Character.HasBuffFlag("hidden")
 
 		if !isSneaking {
 			room.SendText(fmt.Sprintf(`<ansi fg="mobname">%s</ansi> says to <ansi fg="mobname">%s</ansi>, "<ansi fg="saytext-mob">%s</ansi>"`, mob.Character.Name, toMob.Character.Name, rest))
@@ -101,7 +103,7 @@ func SayToOnly(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 		}
 
 		rest = strings.TrimSpace(rest[len(args[0]):])
-		isSneaking := mob.Character.HasBuffFlag(buffs.Hidden)
+		isSneaking := mob.Character.HasBuffFlag("hidden")
 
 		if isSneaking {
 			toUser.SendText(fmt.Sprintf(`someone says to you, "<ansi fg="saytext-mob">%s</ansi>"`, rest))
@@ -142,7 +144,7 @@ func ReplyTo(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 		}
 
 		rest = strings.TrimSpace(rest[len(args[0]):])
-		isSneaking := mob.Character.HasBuffFlag(buffs.Hidden)
+		isSneaking := mob.Character.HasBuffFlag("hidden")
 
 		if isSneaking {
 			toUser.SendText(fmt.Sprintf(`someone replies to you, "<ansi fg="saytext-mob">%s</ansi>"`, rest))
@@ -153,9 +155,12 @@ func ReplyTo(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 	} else if mobInstanceId > 0 {
 
 		toMob := mobs.GetInstance(mobInstanceId)
+		if toMob == nil {
+			return true, nil
+		}
 
 		rest = strings.TrimSpace(rest[len(args[0]):])
-		isSneaking := mob.Character.HasBuffFlag(buffs.Hidden)
+		isSneaking := mob.Character.HasBuffFlag("hidden")
 
 		if !isSneaking {
 			room.SendText(fmt.Sprintf(`<ansi fg="mobname">%s</ansi> replies to <ansi fg="mobname">%s</ansi>, "<ansi fg="saytext-mob">%s</ansi>"`, mob.Character.Name, toMob.Character.Name, rest))

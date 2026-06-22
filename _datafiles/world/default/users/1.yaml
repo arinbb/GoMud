@@ -18,12 +18,11 @@ character:
     dreams. Conversely, he can also mete out justice to those who would seek to disrupt
     the balance of the world, swiftly and decisively.
   roomid: 1
-  roomidonreset: 0
   zone: Frostfang
   raceid: 2
   stats:
     strength:
-      training: 6
+      training: 9
     speed:
       training: 28
       base: 1
@@ -37,47 +36,54 @@ character:
       base: 2
     perception:
       training: 2
-  level: 5
-  experience: 17682
-  trainingpoints: 44
-  statpoints: 6
-  health: 60
-  mana: 32
-  actionpoints: 202
-  alignment: -1
+  level: 7
+  experience: 37692
+  trainingpoints: 46
+  statpoints: 8
+  health: 40
+  mana: 44
+  actionpoints: 203
   gold: 9950
-  bank: 0
   spellbook:
     curepoison: 1
     heal: 1
     healall: 1
     illum: 1
     mm: 1
+    poly: 4
   items:
-  - itemid: 10006
-    uncursed: true
   - itemid: 30002
     uses: 1
   - itemid: 10012
   - itemid: 10001
+  - itemid: 30002
+    uses: 1
+  - itemid: 30004
+    uses: 3
+  - itemid: 10004
+  - itemid: 20004
   buffs:
     list:
-    - buffid: 28
-      permabuff: true
-      roundcounter: 18
-      triggersleft: 1000000000
     - buffid: 29
       permabuff: true
-      roundcounter: 41
+      roundcounter: 34
       triggersleft: 1000000000
-    - buffid: 39
+      triggersinitial: 1000000000
+    - buffid: 28
       permabuff: true
+      roundcounter: 5
       triggersleft: 1000000000
+      triggersinitial: 1000000000
+    - buffid: 1
+      permabuff: true
+      roundcounter: 27
+      triggersleft: 1000000000
+      triggersinitial: 1000000000
   equipment:
     weapon:
-      itemid: 10004
-    offhand:
-      itemid: 20004
+      itemid: 10006
+      uncursed: true
+    offhand: {}
     head:
       itemid: 20043
     neck: {}
@@ -123,6 +129,8 @@ character:
     playerkills: {}
     playerdeaths: {}
     totalpvpdeaths: 0
+    elitekills: {}
+    elitedeaths: {}
   extralives: 3
   mobmastery:
     tame:
@@ -132,17 +140,31 @@ character:
   pet:
     name: fisher
     type: mule
-    food: 4
-    damage:
-      attacks: 1
-      diceroll: 2d4
-      dicecount: 2
-      sidecount: 4
-    statmods:
-      strength: 5
-    buffids:
-    - 39
-    capacity: 5
+    roundactchance: 10
+    food: 1
+    level: 10
+    lastlevelcheck: "6.95"
+    abilities:
+    - levelgranted: 1
+      capacity: 1
+    - levelgranted: 2
+      capacity: 2
+    - levelgranted: 3
+      capacity: 3
+    - levelgranted: 4
+      capacity: 4
+    - levelgranted: 5
+      capacity: 5
+    - levelgranted: 6
+      capacity: 6
+    - levelgranted: 7
+      capacity: 7
+    - levelgranted: 8
+      capacity: 8
+    - levelgranted: 9
+      capacity: 9
+    - levelgranted: 10
+      capacity: 10
     items:
     - itemid: 30002
       uses: 1
@@ -169,6 +191,7 @@ character:
       "6": "0x0000000000000001"
       "11": "0xDFFFFFFFC0000000"
       "12": "0x12000000000000FF"
+      "16": "0x0001000000000000"
     Frostfang:
       "0": "0xFFFFFFFEFFFFFFFE"
       "1": "0x00000000000017FF"
@@ -181,13 +204,16 @@ character:
       "12": "0x2DFFFFF8FFBFFF00"
       "13": "0x0000800000000000"
       "15": "0x00000C0000000000"
+      "16": "0x0000FFFC00000000"
     Frostfang Slums:
       "6": "0xFFFC000000000000"
       "7": "0x00000FFFFFFFFFFF"
-      "15": "0x0000100000000000"
+      "15": "0x0000F00000000000"
     Mirror Caves:
       "3": "0xFFFFFFFFFC000000"
       "4": "0x0000000000000003"
+      "15": "0xFFC0000000000000"
+      "16": "0x00000001FFFFFFFF"
     Mystarion:
       "9": "0x0000027000000000"
       "10": "0xFFFFFFFFFFFFFFF8"
@@ -212,8 +238,7 @@ character:
       "2": "0xFFFFFF0000000000"
       "3": "0x0000000003FFFFFF"
       "13": "0x0000008000000000"
-itemstorage:
-  items:
-  - itemid: 20011
 configoptions:
   tinymap: true
+tipscomplete:
+  status train: true

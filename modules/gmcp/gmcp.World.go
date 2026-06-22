@@ -77,14 +77,17 @@ func (g *GMCPWorldModule) buildAndSendGMCPPayload(e events.Event) events.Listene
 	return events.Continue
 }
 
-// buildWorldMap assembles a Room.Info-shaped payload for every room the player
-// has visited, across all zones.
-func (g *GMCPWorldModule) buildWorldMap(user *users.UserRecord) []GMCPWorldMap_RoomEntry {
+// buildWorldMap assembles a payload containing every visited room the player
+// has seen, plus the full biome color lookup table.
+func (g *GMCPWorldModule) buildWorldMap(user *users.UserRecord) GMCPWorldMap_Payload {
 
 	entries := []GMCPWorldMap_RoomEntry{}
 
 	if user.Character.ZonesVisited == nil {
-		return entries
+		return GMCPWorldMap_Payload{
+			Rooms:  entries,
+			Biomes: buildBiomeTable(),
+		}
 	}
 
 	// Pre-build a set of zone root room IDs so we can tag them efficiently
@@ -108,7 +111,7 @@ func (g *GMCPWorldModule) buildWorldMap(user *users.UserRecord) []GMCPWorldMap_R
 				Id:          room.RoomId,
 				Name:        room.Title,
 				Area:        room.Zone,
-				Environment: room.GetBiome().Name,
+				Environment: room.GetBiome().BiomeId,
 				MapSymbol:   room.GetMapSymbol(),
 				MapLegend:   room.MapLegend,
 				Details:     []string{},
@@ -118,15 +121,19 @@ func (g *GMCPWorldModule) buildWorldMap(user *users.UserRecord) []GMCPWorldMap_R
 
 			// Coordinates
 			entry.Coordinates = room.Zone
-			m := mapper.GetMapper(room.RoomId)
-			x, y, z, err := m.GetCoordinates(room.RoomId)
-			if err != nil {
-				entry.Coordinates += `, 999999999999999999, 999999999999999999, 999999999999999999`
+			if room.HasCoordinates {
+				entry.Coordinates += `, ` + strconv.Itoa(room.MapX) + `, ` + strconv.Itoa(room.MapY) + `, ` + strconv.Itoa(room.MapZ)
 			} else {
-				entry.Coordinates += `, ` + strconv.Itoa(x) + `, ` + strconv.Itoa(y) + `, ` + strconv.Itoa(z)
+				m := mapper.GetMapper(room.RoomId)
+				x, y, z, err := m.GetCoordinates(room.RoomId)
+				if err != nil {
+					entry.Coordinates += `, 999999999999999999, 999999999999999999, 999999999999999999`
+				} else {
+					entry.Coordinates += `, ` + strconv.Itoa(x) + `, ` + strconv.Itoa(y) + `, ` + strconv.Itoa(z)
+				}
 			}
 
-			// Exits — only include exits to rooms the player has also visited,
+			// Exits - only include exits to rooms the player has also visited,
 			// and respect secret exits the player hasn't discovered.
 			for exitName, exitInfo := range room.Exits {
 
@@ -171,7 +178,7 @@ func (g *GMCPWorldModule) buildWorldMap(user *users.UserRecord) []GMCPWorldMap_R
 			if room.IsBank {
 				entry.Details = append(entry.Details, `bank`)
 			}
-			for _, tag := range room.Tags {
+			for _, tag := range room.GetTags() {
 				entry.Details = append(entry.Details, tag)
 			}
 			if room.IsPvp() {
@@ -188,7 +195,18 @@ func (g *GMCPWorldModule) buildWorldMap(user *users.UserRecord) []GMCPWorldMap_R
 		}
 	}
 
-	return entries
+	return GMCPWorldMap_Payload{
+		Rooms:  entries,
+		Biomes: buildBiomeTable(),
+	}
+}
+
+// GMCPWorldMap_Payload is the top-level object sent for World.Map. It bundles
+// the visited-room list with a full biome color lookup table so the client
+// can colorize rooms without any additional API calls.
+type GMCPWorldMap_Payload struct {
+	Rooms  []GMCPWorldMap_RoomEntry  `json:"rooms"`
+	Biomes map[string]GMCPBiomeEntry `json:"biomes"`
 }
 
 // GMCPWorldMap_RoomEntry mirrors the shape of GMCPRoomModule_Payload but

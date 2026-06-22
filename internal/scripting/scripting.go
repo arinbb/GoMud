@@ -5,7 +5,6 @@ import (
 	"time"
 
 	"github.com/GoMudEngine/GoMud/internal/colorpatterns"
-	"github.com/dop251/goja"
 )
 
 var (
@@ -79,6 +78,10 @@ var (
 	// If non empty, will wrap output to users or rooms in this style
 	userTextWrap = TextWrapperStyle{}
 	roomTextWrap = TextWrapperStyle{}
+
+	// scriptHotReload enables mtime-based cache invalidation on every VM
+	// lookup. Off by default; enable in development or admin environments.
+	scriptHotReload bool
 )
 
 func Setup(scriptLoadTimeoutMs int, scriptRoomTimeoutMs int) {
@@ -90,17 +93,51 @@ func Setup(scriptLoadTimeoutMs int, scriptRoomTimeoutMs int) {
 	scriptBuffTimeout = t
 	scriptItemTimeout = t
 	scriptMobTimeout = t
+	scriptPetTimeout = t
 	scriptSpellTimeout = t
+	scriptUserTimeout = t
 }
 
-func setAllScriptingFunctions(vm *goja.Runtime) {
+// SetHotReload enables or disables mtime-based script hot-reload.
+// When enabled, each VM lookup checks whether the script file on disk is newer
+// than the cached VM and reloads automatically if so.
+func SetHotReload(enabled bool) {
+	scriptHotReload = enabled
+}
+
+func setAllScriptingFunctions(vm registrar) {
 	setMessagingFunctions(vm)
 	setRoomFunctions(vm)
 	setActorFunctions(vm)
 	setSpellFunctions(vm)
 	setItemFunctions(vm)
+	setPetFunctions(vm)
 	setUtilFunctions(vm)
 	setModuleFunctions(vm)
+	setPanelFunctions(vm)
+}
+
+type ValidationResult struct {
+	Valid  bool   `json:"valid"`
+	Error  string `json:"error,omitempty"`
+	Line   int    `json:"line,omitempty"`
+	Column int    `json:"column,omitempty"`
+}
+
+// ValidateScript compiles the given script source without running it and
+// reports syntax errors. label is used in error messages. The optional lang
+// selects the engine; it defaults to JavaScript for backward compatibility.
+func ValidateScript(label string, script string, lang ...ScriptLang) ValidationResult {
+	l := LangJS
+	if len(lang) > 0 && lang[0] != LangNone {
+		l = lang[0]
+	}
+	switch l {
+	case LangLua:
+		return validateLuaScript(label, script)
+	default:
+		return validateGojaScript(label, script)
+	}
 }
 
 func PruneVMs(forceClear ...bool) {
@@ -110,7 +147,9 @@ func PruneVMs(forceClear ...bool) {
 		ClearMobVMs()
 		ClearBuffVMs()
 		ClearItemVMs()
+		ClearPetVMs()
 		ClearSpellVMs()
+		ClearUserVM()
 	} else {
 		PruneRoomVMs()
 		PruneMobVMs()

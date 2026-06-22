@@ -25,3 +25,12 @@ skilltraining:
   brawling:
     min: 1
     max: 4
+tags:
+- missionboard kill_mob
+- missionboard find_item
+- missionboard explore
+- missionboard escort
+mapx: 1
+mapy: -5
+mapz: 0
+hascoordinates: true

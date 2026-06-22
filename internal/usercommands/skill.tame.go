@@ -5,13 +5,11 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/characters"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
 	"github.com/GoMudEngine/GoMud/internal/scripting"
-	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/spells"
 	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/users"
@@ -26,7 +24,7 @@ Level 4 - Tame up to 5 creatures
 */
 func Tame(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
 
-	skillLevel := user.Character.GetSkillLevel(skills.Tame)
+	skillLevel := user.Character.GetSkillLevel(`tame`)
 	if skillLevel == 0 {
 		user.SendText("You don't know how to tame.")
 		return true, errors.New(`you don't know how to tame`)
@@ -70,7 +68,7 @@ func Tame(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 	if mobId > 0 {
 
 		// Fire an event that a skill has been used
-		events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: skills.Tame, Details: ``})
+		events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: `tame`, Details: ``})
 
 		if mob := mobs.GetInstance(mobId); mob != nil {
 
@@ -94,7 +92,7 @@ func Tame(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 
 			if continueCasting {
 				spellInfo := spells.GetSpell(`tameskill`)
-				user.Character.CancelBuffsWithFlag(buffs.Hidden)
+				user.Character.CancelBuffsWithFlag("hidden")
 				user.Character.SetCast(spellInfo.WaitRounds, spellAggro)
 			}
 

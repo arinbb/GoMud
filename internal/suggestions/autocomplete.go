@@ -5,9 +5,11 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/keywords"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
+	"github.com/GoMudEngine/GoMud/internal/races"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
 	"github.com/GoMudEngine/GoMud/internal/usercommands"
 	"github.com/GoMudEngine/GoMud/internal/users"
@@ -143,6 +145,16 @@ func GetAutoComplete(userId int, inputText string) []string {
 						result = append(result, containerName[targetNameLen:])
 					}
 				}
+
+				for _, corpse := range room.Corpses {
+					if corpse.Prunable {
+						continue
+					}
+					corpseName := corpse.Character.Name + ` corpse`
+					if strings.HasPrefix(strings.ToLower(corpseName), targetName) {
+						result = append(result, corpseName[targetNameLen:])
+					}
+				}
 			}
 
 		} else if cmd == `drop` || cmd == `trash` || cmd == `sell` || cmd == `store` || cmd == `inspect` || cmd == `enchant` || cmd == `appraise` || cmd == `give` || cmd == `stash` || cmd == `offer` {
@@ -196,6 +208,43 @@ func GetAutoComplete(userId int, inputText string) []string {
 						goldName := `gold from ` + containerName
 						if strings.HasPrefix(goldName, targetName) {
 							result = append(result, goldName[targetNameLen:])
+						}
+					}
+				}
+
+				if configs.GetGamePlayConfig().Death.CorpseItems {
+					for _, corpse := range room.Corpses {
+						if corpse.Prunable {
+							continue
+						}
+						corpseName := strings.ToLower(corpse.Character.Name + ` corpse`)
+
+						for _, item := range corpse.Items {
+							iSpec := item.GetSpec()
+							fullSuggestion := strings.ToLower(iSpec.Name) + ` from ` + corpseName
+							if strings.HasPrefix(fullSuggestion, targetName) {
+								result = append(result, fullSuggestion[targetNameLen:])
+							}
+						}
+
+						for _, item := range corpse.Character.GetAllWornItems() {
+							iSpec := item.GetSpec()
+							fullSuggestion := strings.ToLower(iSpec.Name) + ` from ` + corpseName
+							if strings.HasPrefix(fullSuggestion, targetName) {
+								result = append(result, fullSuggestion[targetNameLen:])
+							}
+						}
+
+						if corpse.Gold > 0 {
+							goldSuggestion := `gold from ` + corpseName
+							if strings.HasPrefix(goldSuggestion, targetName) {
+								result = append(result, goldSuggestion[targetNameLen:])
+							}
+						}
+
+						allSuggestion := `all ` + corpseName
+						if strings.HasPrefix(allSuggestion, targetName) {
+							result = append(result, allSuggestion[targetNameLen:])
 						}
 					}
 				}
@@ -419,6 +468,41 @@ func GetAutoComplete(userId int, inputText string) []string {
 						if strings.HasPrefix(strings.ToLower(u.Character.Name), targetName) {
 							result = append(result, u.Character.Name[targetNameLen:])
 						}
+					}
+				}
+			}
+
+		} else if cmd == `formset` {
+
+			if len(parts) == 2 {
+				if room := rooms.LoadRoom(user.Character.RoomId); room != nil {
+					for _, uid := range room.GetPlayers() {
+						if u := users.GetByUserId(uid); u != nil {
+							if strings.HasPrefix(strings.ToLower(u.Character.Name), targetName) {
+								result = append(result, u.Character.Name[targetNameLen:])
+							}
+						}
+					}
+					for _, mobInstId := range room.GetMobs() {
+						if mob := mobs.GetInstance(mobInstId); mob != nil {
+							if strings.HasPrefix(strings.ToLower(mob.Character.Name), targetName) {
+								result = append(result, mob.Character.Name[targetNameLen:])
+							}
+						}
+					}
+				}
+			} else if len(parts) >= 3 {
+				racePart := strings.ToLower(strings.Join(parts[2:], ` `))
+				racePartLen := len(racePart)
+				for _, r := range races.GetRaces() {
+					rName := strings.ToLower(r.Name)
+					if strings.HasPrefix(rName, racePart) {
+						result = append(result, r.Name[racePartLen:])
+					}
+				}
+				for _, opt := range []string{`revert`, `short`, `medium`, `long`} {
+					if strings.HasPrefix(opt, racePart) {
+						result = append(result, opt[racePartLen:])
 					}
 				}
 			}

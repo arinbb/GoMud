@@ -6,11 +6,12 @@ description: The cobblestone streets, worn smooth by a myriad of footsteps, weav
   on wrought-iron posts shed a soft, golden light, which dances across the uneven
   snow-covered ground, occasionally revealing patches of worn earth where diligent
   maintenance has lapsed.
-biome: city
 exits:
   east:
     roomid: 779
-  north:
-    roomid: 786
   west:
     roomid: 781
+mapx: -5
+mapy: -2
+mapz: 0
+hascoordinates: true

@@ -6,6 +6,7 @@ import (
 
 	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/characters"
+	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
@@ -13,7 +14,6 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/pets"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
 	"github.com/GoMudEngine/GoMud/internal/scripting"
-	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/users"
 	"github.com/GoMudEngine/GoMud/internal/util"
 )
@@ -119,9 +119,23 @@ func tryPurchase(request string, user *users.UserRecord, room *rooms.Room, shopM
 
 	var saleItems characters.Shop
 	if shopMob != nil {
-		saleItems = shopMob.Character.Shop.GetInstock()
+		shopReq := OnShopList.Fire(ShopListRequest{
+			Stock:     shopMob.Character.Shop.GetInstock(),
+			Buyer:     user,
+			SellerMob: shopMob,
+			Room:      room,
+			IsBuy:     true,
+		})
+		saleItems = shopReq.Stock
 	} else if shopUser != nil {
-		saleItems = shopUser.Character.Shop.GetInstock()
+		shopReq := OnShopList.Fire(ShopListRequest{
+			Stock:      shopUser.Character.Shop.GetInstock(),
+			Buyer:      user,
+			SellerUser: shopUser,
+			Room:       room,
+			IsBuy:      true,
+		})
+		saleItems = shopReq.Stock
 	}
 
 	for _, saleItem := range saleItems {
@@ -156,7 +170,7 @@ func tryPurchase(request string, user *users.UserRecord, room *rooms.Room, shopM
 
 			price := saleItem.Price
 			if price == 0 {
-				price = 250 * mobInfo.Character.Level
+				price = int(configs.GetGamePlayConfig().MercHirePricePerLevel) * mobInfo.Character.Level
 			} else if price < 0 {
 				price = 0
 			}
@@ -264,10 +278,20 @@ func tryPurchase(request string, user *users.UserRecord, room *rooms.Room, shopM
 	}
 
 	if user.Character.Gold < price {
-		if shopMob != nil {
-			shopMob.Command(`say You don't have enough gold for that.`)
-		} else if shopUser != nil {
-			user.SendText(`You don't have enough gold for that.`)
+		insuf := OnInsufficientFunds.Fire(InsufficientFundsRequest{
+			Buyer:      user,
+			SellerMob:  shopMob,
+			SellerUser: shopUser,
+			Room:       room,
+			Gold:       user.Character.Gold,
+			Price:      price,
+		})
+		if !insuf.Handled {
+			if shopMob != nil {
+				shopMob.Command(`say You don't have enough gold for that.`)
+			} else if shopUser != nil {
+				user.SendText(`You don't have enough gold for that.`)
+			}
 		}
 		return false
 	}
@@ -284,12 +308,18 @@ func tryPurchase(request string, user *users.UserRecord, room *rooms.Room, shopM
 
 	if matchedShopItem.MobId > 0 {
 
-		maxCharmed := user.Character.GetSkillLevel(skills.Tame) + 1
+		maxCharmed := user.Character.GetSkillLevel(`tame`) + 1
 		if len(user.Character.GetCharmIds()) >= maxCharmed {
 			user.SendText(fmt.Sprintf(`You can only have %d mobs following you at a time.`, maxCharmed))
 			return false
 		}
 
+	}
+
+	if matchedShopItem.ItemId > 0 {
+		if blocked, err := scripting.TryItemTryPurchaseEvent(items.New(matchedShopItem.ItemId), user.UserId); err == nil && blocked {
+			return false
+		}
 	}
 
 	if shopMob != nil {
@@ -399,6 +429,24 @@ func tryPurchase(request string, user *users.UserRecord, room *rooms.Room, shopM
 
 		user.Character.StoreItem(newItm)
 
+		if price > 0 {
+			sellerMobId := 0
+			sellerUserId := 0
+			if shopMob != nil {
+				sellerMobId = int(shopMob.MobId)
+			} else if shopUser != nil {
+				sellerUserId = shopUser.UserId
+			}
+			events.AddToQueue(events.Purchase{
+				UserId:       user.UserId,
+				RoomId:       room.RoomId,
+				Cost:         price,
+				SellerMobId:  sellerMobId,
+				SellerUserId: sellerUserId,
+				ItemId:       matchedShopItem.ItemId,
+			})
+		}
+
 		return true
 	}
 
@@ -441,6 +489,24 @@ func tryPurchase(request string, user *users.UserRecord, room *rooms.Room, shopM
 		}
 
 		newMob.Command(`emote is ready to serve.`)
+
+		if price > 0 {
+			sellerMobId := 0
+			sellerUserId := 0
+			if shopMob != nil {
+				sellerMobId = int(shopMob.MobId)
+			} else if shopUser != nil {
+				sellerUserId = shopUser.UserId
+			}
+			events.AddToQueue(events.Purchase{
+				UserId:       user.UserId,
+				RoomId:       room.RoomId,
+				Cost:         price,
+				SellerMobId:  sellerMobId,
+				SellerUserId: sellerUserId,
+				MobId:        matchedShopItem.MobId,
+			})
+		}
 
 		return true
 	}
@@ -489,6 +555,24 @@ func tryPurchase(request string, user *users.UserRecord, room *rooms.Room, shopM
 
 		if shopMob != nil {
 			shopMob.Command(`say I've done what I can.`, 1)
+		}
+
+		if price > 0 {
+			sellerMobId := 0
+			sellerUserId := 0
+			if shopMob != nil {
+				sellerMobId = int(shopMob.MobId)
+			} else if shopUser != nil {
+				sellerUserId = shopUser.UserId
+			}
+			events.AddToQueue(events.Purchase{
+				UserId:       user.UserId,
+				RoomId:       room.RoomId,
+				Cost:         price,
+				SellerMobId:  sellerMobId,
+				SellerUserId: sellerUserId,
+				BuffId:       matchedShopItem.BuffId,
+			})
 		}
 
 		return true
@@ -547,14 +631,31 @@ func tryPurchase(request string, user *users.UserRecord, room *rooms.Room, shopM
 			room.SendText(fmt.Sprintf(`%s sadly slinks away into the shadows. Never to be seen again.`, user.Character.Pet.DisplayName()))
 		}
 
-		for i := 0; i < 5; i++ {
-			petInfo.Food.Add()
-		}
+		petInfo.Food = 3
+		petInfo.Level = 1
 
 		petInfo.Name = petInfo.Type
 		user.Character.Pet = petInfo
 		// make sure new pet buffs get applied
 		user.Character.Validate(true)
+
+		if price > 0 {
+			sellerMobId := 0
+			sellerUserId := 0
+			if shopMob != nil {
+				sellerMobId = int(shopMob.MobId)
+			} else if shopUser != nil {
+				sellerUserId = shopUser.UserId
+			}
+			events.AddToQueue(events.Purchase{
+				UserId:       user.UserId,
+				RoomId:       room.RoomId,
+				Cost:         price,
+				SellerMobId:  sellerMobId,
+				SellerUserId: sellerUserId,
+				PetName:      matchedShopItem.PetType,
+			})
+		}
 
 		return true
 	}

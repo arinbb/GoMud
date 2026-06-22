@@ -3,7 +3,6 @@ package colorpatterns
 import (
 	"fmt"
 	"math"
-	"os"
 	"regexp"
 	"sort"
 	"strconv"
@@ -15,7 +14,6 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/mudlog"
 	"github.com/GoMudEngine/GoMud/internal/util"
-	"github.com/GoMudEngine/ansitags"
 	"github.com/mattn/go-runewidth"
 	"github.com/pkg/errors"
 	"gopkg.in/yaml.v2"
@@ -345,7 +343,7 @@ func LoadColorPatterns() {
 
 	path := string(configs.GetFilePathsConfig().DataFiles) + `/color-patterns.yaml`
 
-	bytes, err := os.ReadFile(path)
+	bytes, err := util.ReadFile(path)
 	if err != nil {
 		panic(errors.Wrap(err, `filepath: `+path))
 	}
@@ -363,11 +361,13 @@ func LoadColorPatterns() {
 
 	mudlog.Info("...LoadColorPatterns()", "loadedCount", len(numericPatterns), "Time Taken", time.Since(start))
 
-	for _, name := range GetColorPatternNames() {
-		mudlog.Info("Color Test (Patterns)", "name", name,
-			"(default)", ansitags.Parse(ApplyColorPattern(`Color test pattern`, name)),
-			"Stretch", ansitags.Parse(ApplyColorPattern(`Color test pattern`, name, Stretch)),
-			"Words", ansitags.Parse(ApplyColorPattern(`Color test pattern color test pattern`, name, Words)),
-		)
-	}
+	/*
+		for _, name := range GetColorPatternNames() {
+			mudlog.Info("Color Test (Patterns)", "name", name,
+				"(default)", ansitags.Parse(ApplyColorPattern(`Color test pattern`, name)),
+				"Stretch", ansitags.Parse(ApplyColorPattern(`Color test pattern`, name, Stretch)),
+				"Words", ansitags.Parse(ApplyColorPattern(`Color test pattern color test pattern`, name, Words)),
+			)
+		}
+	*/
 }

@@ -3,22 +3,21 @@ package scripting
 import (
 	"strings"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/characters"
 	"github.com/GoMudEngine/GoMud/internal/combat"
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/events"
+	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
-	"github.com/GoMudEngine/GoMud/internal/pets"
 	"github.com/GoMudEngine/GoMud/internal/races"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
 	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/users"
-	"github.com/dop251/goja"
+	"github.com/GoMudEngine/GoMud/internal/util"
 )
 
-func setActorFunctions(vm *goja.Runtime) {
+func setActorFunctions(vm registrar) {
 	vm.Set(`GetUser`, GetUser)
 	vm.Set(`GetMob`, GetMob)
 	vm.Set(`ActorNames`, ActorNames)
@@ -51,8 +50,35 @@ func (a ScriptActor) GetRace() string {
 	return a.characterRecord.Race()
 }
 
-func (a ScriptActor) GetSize() string {
+func (a ScriptActor) GetTrueRace() string {
 	if r := races.GetRace(a.characterRecord.RaceId); r != nil {
+		return r.Name
+	}
+	return `Ghostly Spirit`
+}
+
+func (a ScriptActor) IsFormChanged() bool {
+	return a.characterRecord.IsFormChanged()
+}
+
+func (a ScriptActor) ApplyFormChange(raceId int) bool {
+	if races.GetRace(raceId) == nil {
+		return false
+	}
+	a.characterRecord.ApplyFormChange(raceId)
+	return true
+}
+
+func (a ScriptActor) RevertFormChange() bool {
+	if !a.characterRecord.IsFormChanged() {
+		return false
+	}
+	a.characterRecord.RevertFormChange()
+	return true
+}
+
+func (a ScriptActor) GetSize() string {
+	if r := races.GetRace(a.characterRecord.GetRaceId()); r != nil {
 		return string(r.Size)
 	}
 	return string(races.Medium)
@@ -314,7 +340,12 @@ func (a ScriptActor) TrainSkill(skillName string, skillLevel int) bool {
 	}
 
 	skillName = strings.ToLower(skillName)
-	currentLevel := a.characterRecord.GetSkillLevel(skills.SkillTag(skillName))
+
+	if !skills.SkillExists(skillName) {
+		return false
+	}
+
+	currentLevel := a.characterRecord.GetSkillLevel(skillName)
 
 	if currentLevel < skillLevel {
 		newLevel := a.characterRecord.TrainSkill(skillName, skillLevel)
@@ -336,7 +367,7 @@ func (a ScriptActor) TrainSkill(skillName string, skillLevel int) bool {
 }
 
 func (a ScriptActor) GetSkillLevel(skillName string) int {
-	return a.characterRecord.GetSkillLevel(skills.SkillTag(skillName))
+	return a.characterRecord.GetSkillLevel(skillName)
 }
 
 func (a ScriptActor) MoveRoom(destRoomId int) {
@@ -496,14 +527,14 @@ func (a ScriptActor) GetStatMod(statModName string) int {
 }
 
 func (a ScriptActor) HasBuffFlag(buffFlag string) bool {
-	return a.characterRecord.HasBuffFlag(buffs.Flag(buffFlag))
+	return a.characterRecord.HasBuffFlag(buffFlag)
 }
 
 func (a ScriptActor) CancelBuffWithFlag(buffFlag string) bool {
 
 	found := false
 
-	for _, buffId := range a.characterRecord.Buffs.GetBuffIdsWithFlag(buffs.Flag(strings.ToLower(buffFlag))) {
+	for _, buffId := range a.characterRecord.Buffs.GetBuffIdsWithFlag(strings.ToLower(buffFlag)) {
 		found = found || a.RemoveBuff(buffId)
 	}
 
@@ -684,12 +715,11 @@ func (a ScriptActor) Uncurse() []*ScriptItem {
 	return retList
 }
 
-func (a ScriptActor) GetPet() *pets.Pet {
-
-	if a.characterRecord.Pet.Exists() {
-		return &a.characterRecord.Pet
+func (a ScriptActor) GetPet() *ScriptPet {
+	if !a.characterRecord.Pet.Exists() {
+		return nil
 	}
-	return nil
+	return GetPet(&a.characterRecord.Pet, a.userId)
 }
 
 func (a ScriptActor) GrantXP(xpAmt int, reason string) {
@@ -799,6 +829,27 @@ func (a ScriptActor) GetLastInputRound() uint64 {
 	return 0
 }
 
+// PlaySound sends a sound event to this actor. Only affects user actors.
+// soundId is the identifier defined in audio.yaml (e.g. "levelup").
+// category groups related sounds for client-side volume control (e.g. "combat", "other").
+func (a ScriptActor) PlaySound(soundId string, category string) {
+	if a.userRecord == nil {
+		return
+	}
+	a.userRecord.PlaySound(soundId, category)
+}
+
+// PlayMusic sends a music-change event to this actor. Only affects user actors.
+// musicFileOrId may be a filepath (e.g. "static/audio/music/intro.mp3") or a sound
+// identifier from audio.yaml whose filepath resolves to a music file.
+// Pass "Off" to stop music.
+func (a ScriptActor) PlayMusic(musicFileOrId string) {
+	if a.userRecord == nil {
+		return
+	}
+	a.userRecord.PlayMusic(musicFileOrId)
+}
+
 func (a ScriptActor) Pathing() bool {
 	if a.mobRecord == nil {
 		return false
@@ -867,4 +918,187 @@ func ActorNames(actorList []*ScriptActor) string {
 	}
 
 	return sBuilder.String()
+}
+
+// ////////////////////////////////////////////////////////
+//
+// New ScriptActor methods
+//
+// ////////////////////////////////////////////////////////
+
+func (a ScriptActor) GetDescription() string {
+	return a.characterRecord.GetDescription()
+}
+
+func (a ScriptActor) GetGold() int {
+	return a.characterRecord.Gold
+}
+
+func (a ScriptActor) GetBank() int {
+	return a.characterRecord.Bank
+}
+
+func (a ScriptActor) GetWornItems() []ScriptItem {
+	itms := make([]ScriptItem, 0)
+	for _, itm := range a.characterRecord.GetAllWornItems() {
+		itms = append(itms, newScriptItem(itm))
+	}
+	return itms
+}
+
+func (a ScriptActor) GetWornItem(slot string) *ScriptItem {
+	itm := a.characterRecord.Equipment.Get(items.ItemType(slot))
+	if itm == nil || itm.ItemId <= 0 || itm.IsDisabled() {
+		return nil
+	}
+	si := newScriptItem(*itm)
+	return &si
+}
+
+func (a ScriptActor) FindInBackpack(itemName string) *ScriptItem {
+	itm, found := a.characterRecord.FindInBackpack(itemName)
+	if !found {
+		return nil
+	}
+	si := newScriptItem(itm)
+	return &si
+}
+
+func (a ScriptActor) FindOnBody(itemName string) *ScriptItem {
+	itm, found := a.characterRecord.FindOnBody(itemName)
+	if !found {
+		return nil
+	}
+	si := newScriptItem(itm)
+	return &si
+}
+
+func (a ScriptActor) IsQuestDone(questToken string) bool {
+	return a.characterRecord.IsQuestDone(questToken)
+}
+
+func (a ScriptActor) ClearQuestToken(questToken string) {
+	a.characterRecord.ClearQuestToken(questToken)
+}
+
+func (a ScriptActor) GetAllSkills() map[string]int {
+	return a.characterRecord.GetAllSkillRanks()
+}
+
+func (a ScriptActor) GetSpells() map[string]int {
+	return a.characterRecord.GetSpells()
+}
+
+func (a ScriptActor) UnLearnSpell(spellId string) bool {
+	return a.characterRecord.UnLearnSpell(spellId)
+}
+
+func (a ScriptActor) DisableSpell(spellId string) bool {
+	return a.characterRecord.DisableSpell(spellId)
+}
+
+func (a ScriptActor) EnableSpell(spellId string) bool {
+	return a.characterRecord.EnableSpell(spellId)
+}
+
+func (a ScriptActor) GetCooldown(tag string) int {
+	return a.characterRecord.GetCooldown(tag)
+}
+
+func (a ScriptActor) TryCooldown(tag string, period string) bool {
+	return a.characterRecord.TryCooldown(tag, period)
+}
+
+func (a ScriptActor) GetSetting(name string) string {
+	return a.characterRecord.GetSetting(name)
+}
+
+func (a ScriptActor) SetSetting(name string, value string) {
+	a.characterRecord.SetSetting(name, value)
+}
+
+func (a ScriptActor) GetExperience() int {
+	return a.characterRecord.Experience
+}
+
+func (a ScriptActor) GetExtraLives() int {
+	return a.characterRecord.ExtraLives
+}
+
+func (a ScriptActor) IsInCombat() bool {
+	return a.characterRecord.Aggro != nil
+}
+
+func (a ScriptActor) IsDowned() bool {
+	return a.characterRecord.Health < 1
+}
+
+func (a ScriptActor) GetDefense() int {
+	return a.characterRecord.GetDefense()
+}
+
+func (a ScriptActor) GetGearValue() int {
+	return a.characterRecord.GetGearValue()
+}
+
+func (a ScriptActor) GetCarryCapacity() int {
+	return a.characterRecord.CarryCapacity()
+}
+
+func (a ScriptActor) GetZoneVisitProgress(zoneName string) map[string]any {
+	resolvedZone := rooms.FindZoneName(zoneName)
+	if resolvedZone == `` {
+		return map[string]any{`visited`: 0, `total`: 0, `percent`: 0}
+	}
+	zCfg := rooms.GetZoneConfig(resolvedZone)
+	var validRoomIds map[int]struct{}
+	if zCfg != nil {
+		validRoomIds = zCfg.RoomIds
+	}
+	visited, total := a.characterRecord.ZoneVisitProgress(resolvedZone, validRoomIds)
+	percent := 0
+	if total > 0 {
+		percent = int(float64(visited) / float64(total) * 100)
+	}
+	return map[string]any{`visited`: visited, `total`: total, `percent`: percent}
+}
+
+func (a ScriptActor) GetAdjectives() []string {
+	return a.characterRecord.GetAdjectives()
+}
+
+func (a ScriptActor) HasAdjective(adj string) bool {
+	return a.characterRecord.HasAdjective(adj)
+}
+
+func (a ScriptActor) GetActionPoints() int {
+	return a.characterRecord.ActionPoints
+}
+
+func (a ScriptActor) GetActionPointsMax() int {
+	return a.characterRecord.ActionPointsMax.Value
+}
+
+func (a ScriptActor) GetHealthAppearance() string {
+	if a.characterRecord.HealthMax.Value < 1 {
+		return a.GetCharacterName(true) + ` is in perfect health.`
+	}
+	nameTag := `username`
+	if a.mobRecord != nil {
+		nameTag = `mobname`
+	}
+	pct := int(float64(a.characterRecord.Health) / float64(a.characterRecord.HealthMax.Value) * 100)
+	className := util.HealthClass(a.characterRecord.Health, a.characterRecord.HealthMax.Value)
+	name := `<ansi fg="` + nameTag + `">` + a.characterRecord.Name + `</ansi>`
+	switch {
+	case pct < 15:
+		return name + ` looks like they're <ansi fg="` + className + `">about to die!</ansi>`
+	case pct < 50:
+		return name + ` looks to be in <ansi fg="` + className + `">pretty bad shape.</ansi>`
+	case pct < 80:
+		return name + ` has some <ansi fg="` + className + `">cuts and bruises.</ansi>`
+	case pct < 100:
+		return name + ` has <ansi fg="` + className + `">a few scratches.</ansi>`
+	}
+	return name + ` is in <ansi fg="` + className + `">perfect health.</ansi>`
 }

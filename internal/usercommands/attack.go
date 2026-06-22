@@ -3,7 +3,6 @@ package usercommands
 import (
 	"fmt"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/characters"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
@@ -44,7 +43,7 @@ func Attack(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 		if attackMobInstanceId == 0 {
 			for _, uId := range room.GetPlayers(rooms.FindFightingPlayer) {
 				u := users.GetByUserId(uId)
-				if u.Character.Aggro == nil {
+				if u == nil || u.Character.Aggro == nil {
 					continue
 				}
 
@@ -99,7 +98,12 @@ func Attack(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 				allPlayers = append(allPlayers, userId)
 			}
 
-			randomSelection := util.Rand(len(allMobs) + len(allPlayers))
+			totalTargets := len(allMobs) + len(allPlayers)
+			if totalTargets == 0 {
+				return true, nil
+			}
+
+			randomSelection := util.Rand(totalTargets)
 
 			if randomSelection < len(allMobs) {
 				attackMobInstanceId = allMobs[randomSelection]
@@ -143,7 +147,7 @@ func Attack(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 		return true, nil
 	}
 
-	isSneaking := user.Character.HasBuffFlag(buffs.Hidden)
+	isSneaking := user.Character.HasBuffFlag("hidden")
 
 	/*
 		combatAddlWaitRounds := user.Character.Equipment.Weapon.GetSpec().WaitRounds + user.Character.Equipment.Weapon.GetSpec().WaitRounds
@@ -250,7 +254,7 @@ func Attack(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 				)
 
 				room.SendText(
-					fmt.Sprintf(`<ansi fg="username">%s</ansi> prepares to fight <ansi fg="username">%s</ansi>.`, p.Character.Name, p.Character.Name),
+					fmt.Sprintf(`<ansi fg="username">%s</ansi> prepares to fight <ansi fg="username">%s</ansi>.`, user.Character.Name, p.Character.Name),
 					user.UserId, attackPlayerId)
 			}
 

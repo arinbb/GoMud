@@ -2,53 +2,54 @@
 
 <style>
     h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
-    .subtitle { color: #555; margin-bottom: 1.5rem; font-size: 0.9rem; }
+    .subtitle { color: var(--color-text-muted); margin-bottom: 1.5rem; font-size: 0.9rem; }
 
     /* toolbar */
     .toolbar { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap; }
     .toolbar input[type="search"] {
         flex: 1; min-width: 180px; padding: 0.4rem 0.7rem;
-        border: 1px solid #ccc; border-radius: 4px; font-size: 0.9rem;
+        border: 1px solid var(--color-border-medium); border-radius: 4px; font-size: 0.9rem;
     }
     .toolbar select {
-        padding: 0.4rem 0.6rem; border: 1px solid #ccc; border-radius: 4px;
-        font-size: 0.9rem; background: #fff;
+        padding: 0.4rem 0.6rem; border: 1px solid var(--color-border-medium); border-radius: 4px;
+        font-size: 0.9rem; background: var(--color-surface-white);
     }
     .btn {
         padding: 0.4rem 1rem; border: none; border-radius: 4px; cursor: pointer;
         font-size: 0.875rem; font-weight: 600;
     }
-    .btn-primary { background: #1a1a2e; color: #fff; }
-    .btn-primary:hover { background: #2d2d4e; }
-    .btn-primary:disabled { background: #999; cursor: default; }
+    .btn-primary { background: var(--color-primary); color: var(--color-surface-white); }
+    .btn-primary:hover { background: var(--color-primary-hover); }
+    .btn-primary:disabled { background: var(--color-text-secondary); cursor: default; }
 
     /* status banner */
     #status-bar {
         display: none; padding: 0.6rem 1rem; border-radius: 4px;
         font-size: 0.875rem; margin-bottom: 1rem;
     }
-    #status-bar.success { background: #e6f4ea; color: #1e6e34; display: block; }
-    #status-bar.error   { background: #fde8e8; color: #8a0000; display: block; }
+    #status-bar.success { background: var(--color-success-bg); color: var(--color-success-text); display: block; }
+    #status-bar.error   { background: var(--color-error-bg); color: var(--color-error-text); display: block; }
 
     /* config table */
-    .config-table-wrap { background: #fff; border: 1px solid #ddd; border-radius: 6px; overflow: hidden; }
+    .config-table-wrap { background: var(--color-surface-white); border: 1px solid var(--color-border); border-radius: 6px; overflow: hidden; }
     table { width: 100%; border-collapse: collapse; table-layout: fixed; }
     col.col-key   { width: 38%; }
     col.col-value { width: 62%; }
     thead th {
-        background: #f0f0f0; text-align: left; padding: 0.6rem 0.9rem;
+        background: var(--color-border-faint); text-align: left; padding: 0.6rem 0.9rem;
         font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;
-        color: #555; border-bottom: 1px solid #ddd;
+        color: var(--color-text-muted); border-bottom: 1px solid var(--color-border);
     }
-    tbody tr { border-bottom: 1px solid #eee; }
+    tbody tr { border-bottom: 1px solid var(--color-border-light); }
     tbody tr:last-child { border-bottom: none; }
     tbody tr.hidden-row { display: none; }
-    tbody tr:hover { background: #fafafa; }
+    tbody tr:hover { background: var(--color-surface-alt); }
     td { padding: 0.55rem 0.9rem; font-size: 0.875rem; vertical-align: middle; overflow: hidden; }
     td.key-cell {
-        font-family: monospace; font-size: 0.82rem; color: #1a1a2e;
+        font-family: monospace; font-size: 0.82rem; color: var(--color-primary);
         white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
+    tr[data-subsection] td.key-cell { padding-left: 3.2rem; }
     td.value-cell {
         max-width: 0; overflow: hidden;
     }
@@ -59,68 +60,84 @@
         cursor: pointer; display: block;
         white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
-    .value-display:hover { text-decoration: underline dotted #888; }
-    .value-redacted { color: #888; font-style: italic; cursor: default; }
+    .value-display:hover { text-decoration: underline dotted var(--color-text-faint); }
+    .value-redacted { color: var(--color-text-faint); font-style: italic; cursor: default; }
     .value-redacted:hover { text-decoration: none; }
+    .value-empty { color: var(--color-text-placeholder); font-style: italic; }
     .edit-form { display: none; align-items: center; gap: 0.4rem; width: 100%; }
     .edit-form.active { display: flex; }
     .edit-form input[type="text"] {
-        flex: 1; padding: 0.3rem 0.5rem; border: 1px solid #aaa;
+        flex: 1; padding: 0.3rem 0.5rem; border: 1px solid var(--color-text-placeholder);
         border-radius: 3px; font-size: 0.875rem; font-family: inherit;
     }
     .btn-save {
         padding: 0.25rem 0.6rem; font-size: 0.8rem; border-radius: 3px;
-        border: none; cursor: pointer; background: #1a6e34; color: #fff;
+        border: none; cursor: pointer; background: var(--color-btn-save-bg); color: var(--color-surface-white);
     }
-    .btn-save:hover { background: #145728; }
+    .btn-save:hover { background: var(--color-btn-new-hover); }
     .btn-cancel {
         padding: 0.25rem 0.6rem; font-size: 0.8rem; border-radius: 3px;
-        border: none; cursor: pointer; background: #ccc; color: #333;
+        border: none; cursor: pointer; background: var(--color-border-medium); color: var(--color-text-strong);
     }
-    .btn-cancel:hover { background: #bbb; }
+    .btn-cancel:hover { background: var(--color-btn-cancel-hover); }
 
     /* locked badge */
     .badge-locked {
         display: inline-block; font-size: 0.7rem; padding: 0.1rem 0.4rem;
-        background: #fff3e0; color: #8a4a00; border-radius: 3px;
-        border: 1px solid #f0c070; vertical-align: middle; margin-left: 0.4rem;
+        background: var(--color-warning-bg); color: var(--color-warning-text); border-radius: 3px;
+        border: 1px solid var(--color-warning-text); vertical-align: middle; margin-left: 0.4rem;
     }
 
     /* pending changes panel */
     #pending-panel {
-        display: none; background: #fff; border: 1px solid #ddd; border-radius: 6px;
+        display: none; background: var(--color-surface-white); border: 1px solid var(--color-border); border-radius: 6px;
         padding: 1rem; margin-bottom: 1.25rem;
     }
     #pending-panel h3 { font-size: 1rem; margin-bottom: 0.75rem; }
     #pending-list { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 0.75rem; }
     .pending-item {
         display: flex; align-items: baseline; gap: 0.5rem;
-        font-size: 0.875rem; background: #f9f9f9;
-        border: 1px solid #eee; border-radius: 4px; padding: 0.35rem 0.65rem;
+        font-size: 0.875rem; background: var(--color-surface-alt);
+        border: 1px solid var(--color-border-light); border-radius: 4px; padding: 0.35rem 0.65rem;
     }
-    .pending-key { font-family: monospace; font-size: 0.82rem; color: #1a1a2e; flex: 1; }
-    .pending-arrow { color: #888; }
-    .pending-val { color: #1e6e34; font-weight: 600; }
+    .pending-key { font-family: monospace; font-size: 0.82rem; color: var(--color-primary); flex: 1; }
+    .pending-arrow { color: var(--color-text-faint); }
+    .pending-val { color: var(--color-success-text); font-weight: 600; }
     .pending-remove {
-        background: none; border: none; cursor: pointer; color: #888;
+        background: none; border: none; cursor: pointer; color: var(--color-text-faint);
         font-size: 1rem; line-height: 1; padding: 0 0.2rem;
     }
-    .pending-remove:hover { color: #c00; }
+    .pending-remove:hover { color: var(--color-danger); }
     .pending-actions { display: flex; gap: 0.5rem; }
-    .btn-discard { background: #eee; color: #333; }
-    .btn-discard:hover { background: #ddd; }
+    .btn-discard { background: var(--color-border-light); color: var(--color-text-strong); }
+    .btn-discard:hover { background: var(--color-border); }
 
     /* section header rows */
     tr.section-header td {
-        background: #f5f5f5; font-size: 0.78rem; font-weight: 700;
-        text-transform: uppercase; letter-spacing: 0.06em; color: #666;
-        padding: 0.4rem 0.9rem; border-bottom: 1px solid #e0e0e0;
+        background: var(--color-primary); color: var(--color-code-text);
+        font-size: 0.78rem; font-weight: 700;
+        text-transform: uppercase; letter-spacing: 0.06em;
+        padding: 0.45rem 0.9rem; border-bottom: 1px solid var(--color-primary-hover);
     }
 
-    .no-results { padding: 1.5rem; text-align: center; color: #888; font-size: 0.9rem; display: none; }
+    /* subsection header rows */
+    tr.subsection-header td {
+        background: var(--color-surface-raised); color: var(--color-text-tertiary);
+        font-size: 0.72rem; font-weight: 700;
+        text-transform: uppercase; letter-spacing: 0.05em;
+        padding: 0.3rem 0.9rem 0.3rem 3.2rem;
+        border-bottom: 1px solid var(--color-border-strong);
+        border-top: 1px solid var(--color-border-strong);
+    }
+    tr.subsection-header td::before {
+        content: '\203A\00A0';
+        color: var(--color-text-placeholder);
+    }
+
+    .no-results { padding: 1.5rem; text-align: center; color: var(--color-text-faint); font-size: 0.9rem; display: none; }
 
     /* description rows */
-    tr.desc-row td { padding: 0.1rem 0.9rem 0.5rem; font-size: 0.78rem; color: #777; font-style: italic; border-bottom: 1px solid #eee; }
+    tr.desc-row td { padding: 0.1rem 0.9rem 0.5rem; font-size: 0.78rem; color: var(--color-text-faint); font-style: italic; border-bottom: 1px solid var(--color-border-light); }
     tr.desc-row.hidden-row { display: none; }
 </style>
 
@@ -158,7 +175,7 @@
             </tr>
         </thead>
         <tbody id="config-body">
-            <tr><td colspan="2" style="padding:1.5rem;text-align:center;color:#888;">Loading...</td></tr>
+            <tr><td colspan="2" style="padding:1.5rem;text-align:center;color:var(--color-text-faint);">Loading...</td></tr>
         </tbody>
     </table>
     <div class="no-results" id="no-results">No matching configuration keys.</div>
@@ -183,8 +200,9 @@
     // Descriptions sourced from config.yaml comments
     // -------------------------------------------------------------------------
     const DESCRIPTIONS = {
+        'Server.CurrentVersion': 'Tracks the version the server data files have been migrated to. Managed automatically - do not edit unless you know what you are doing.',
         'Server.MudName': 'Display name of the MUD, used in web pages and other places.',
-        'Server.Seed': 'Seed for certain content generation. Only set before first run — changing it later can break saved data like user KeyRings.',
+        'Server.Seed': 'Seed for certain content generation. Only set before first run - changing it later can break saved data like user KeyRings.',
         'Server.MaxCPUCores': 'Maximum CPU cores to use. 0 means all available cores.',
         'Server.OnLoginCommands': 'Commands run automatically when a user logs in.',
         'Server.Motd': 'Message of the day, displayed when the motd command is run.',
@@ -200,10 +218,8 @@
         'LootGoblin.MinimumGold': 'Minimum gold on the floor to attract the loot goblin.',
         'LootGoblin.IncludeRecentRooms': 'If true, the loot goblin also cleans recently player-visited rooms.',
         'Timing.TurnMs': 'Milliseconds per turn. Lower is more responsive but increases server overhead. 50 is a good balance.',
-        'Timing.RoundSeconds': 'Seconds per round. Controls the pace of the game — combat, buffs, and mob actions are all gated by rounds.',
+        'Timing.RoundSeconds': 'Seconds per round. Controls the pace of the game - combat, buffs, and mob actions are all gated by rounds.',
         'Timing.RoundsPerAutoSave': 'How often the server auto-saves game state (in rounds).',
-        'Timing.RoundsPerDay': 'Rounds in one in-game day. Controls the day/night cycle speed.',
-        'Timing.NightHours': 'Hours of each 24-hour in-game day that are nighttime.',
         'FilePaths.WebDomain': 'Domain name for the web server, e.g. mysite.com. Do not include the protocol.',
         'FilePaths.WebCDNLocation': 'Optional CDN URL for static files. Leave blank if not using a CDN.',
         'FilePaths.DataFiles': 'Folder where all game data files reside.',
@@ -218,22 +234,63 @@
         'GamePlay.AllowItemBuffRemoval': 'Allow players to remove item-granted buffs via spells. By default, item buffs can only be removed by unequipping the item.',
         'GamePlay.Death.EquipmentDropChance': 'Chance (0.0\u20131.0) that a player drops a worn or backpack item on death.',
         'GamePlay.Death.AlwaysDropBackpack': 'If true, players always drop all backpack contents on death.',
-        'GamePlay.Death.XPPenalty': 'XP penalty on death. Options: none, level (lose XP above current level), 10%, 50%.',
+        'GamePlay.Death.XPPenalty': 'XP penalty on death. Options: none, level (lose all XP above the current level floor), or a percentage: 10%, 25%, 50%, 75%, 90%, 100%.',
         'GamePlay.Death.ProtectionLevels': 'Players at or below this level do not incur death penalties.',
         'GamePlay.Death.PermaDeath': 'If true, players lose their character when they die with zero lives remaining.',
         'GamePlay.Death.CorpsesEnabled': 'If true, corpses are left behind when players or mobs are killed.',
+        'GamePlay.Death.CorpseItems': 'If true, items and gold go onto the corpse instead of dropping to the floor.',
         'GamePlay.Death.CorpseDecayTime': 'How long before corpses disappear.',
         'GamePlay.LivesStart': '(PermaDeath) How many lives players start with.',
         'GamePlay.LivesMax': '(PermaDeath) Maximum lives a player can have.',
         'GamePlay.LivesOnLevelUp': '(PermaDeath) Lives gained per level-up. 0 disables.',
         'GamePlay.PricePerLife': '(PermaDeath) Gold cost to purchase an extra life. 0 disables purchasing.',
         'GamePlay.ShopRestockRate': 'Default time for shops to restock one item. Format: {num} {unit}, e.g. "6 hours". Prefix with "real" for real-world time.',
+        'GamePlay.MercHirePricePerLevel': 'Gold cost per mob level used to auto-calculate a mercenary hire price when no explicit price is set in the shop definition. Example: a level 5 mob at the default of 250 costs 1250 gold.',
         'GamePlay.ContainerSizeMax': 'Maximum number of items a container can hold before it overflows.',
-        'GamePlay.ConsistentAttackMessages': 'If true, each weapon ID always uses the same attack message. If false, messages are randomised.',
-        'GamePlay.PVP': 'PVP mode. Options: enabled (everywhere), disabled (nowhere), limited (PVP-flagged rooms only).',
-        'GamePlay.PVPMinimumLevel': 'Minimum level required to participate in PVP.',
+        'GamePlay.FloorItemCountMax': 'Maximum number of items allowed on the floor of a room. When a drop would exceed this limit, the item returns to the dropper\'s inventory. Set to 0 for no limit.',
+        'GamePlay.Combat.ConsistentAttackMessages': 'If true, each weapon ID consistently uses the same attack message for each attack type. If false, messages are randomised. See _datafiles/combat-messages/ for message definitions.',
+        'GamePlay.Combat.DamageBonusMin': 'Minimum flat damage bonus added to attacks. Scales up toward DamageBonusMax based on the attacker\'s Strength advantage over the defender.',
+        'GamePlay.Combat.DamageBonusMax': 'Maximum flat damage bonus added to attacks when the attacker has full Strength advantage over the defender.',
+        'GamePlay.Combat.ToHitMin': 'Minimum chance to hit (percent). Applied when attacker has no Speed advantage. Must be between 0 and 100.',
+        'GamePlay.Combat.ToHitMax': 'Maximum chance to hit (percent). Applied when attacker has full Speed advantage over the defender.',
+        'GamePlay.Combat.ExtraAttacksMin': 'Minimum number of extra attacks granted for weaponless or claws combat. Applied when attacker has no Speed advantage.',
+        'GamePlay.Combat.ExtraAttacksMax': 'Maximum extra attacks for weaponless or claws combat when attacker has full Speed advantage over the defender.',
+        'GamePlay.Combat.CritChanceMin': 'Minimum critical hit chance (percent). Applied when attacker has no Smarts advantage.',
+        'GamePlay.Combat.CritChanceMax': 'Maximum critical hit chance (percent) when attacker has full Smarts advantage over the defender.',
+        'GamePlay.Combat.CritMultMin': 'Minimum critical hit damage multiplier. Applied when attacker has no Perception advantage.',
+        'GamePlay.Combat.CritMultMax': 'Maximum critical hit damage multiplier when attacker has full Perception advantage over the defender.',
+        'GamePlay.Combat.DodgeChanceMin': 'Minimum chance to dodge an incoming hit (percent). Applied when defender has no Perception advantage over the attacker.',
+        'GamePlay.Combat.DodgeChanceMax': 'Maximum chance to dodge an incoming hit (percent) when defender has full Perception advantage over the attacker.',
+        'GamePlay.Progression.BaseModFactor': 'Scales how much a racial base stat contributes to growth per level. Higher values cause strong-base races to diverge more from weak-base races.',
+        'GamePlay.Progression.BaseModExponent': 'Curve shape for the racial component. 1.0 = linear. Less than 1.0 = diminishing returns at high levels. Greater than 1.0 = accelerating. Valid range: 0.1 to 5.0.',
+        'GamePlay.Progression.NaturalGainsModFactor': 'Flat stat gains every character receives per level regardless of race. Higher values raise the floor for weak-base races.',
+        'GamePlay.Progression.NaturalGainsExponent': 'Curve shape for the flat gains component. 1.0 = linear. Less than 1.0 = diminishing returns. Valid range: 0.1 to 5.0.',
+        'GamePlay.Progression.HPBase': 'Flat HP added to every character independent of level or stats.',
+        'GamePlay.Progression.HPPerLevel': 'HP gained per character level.',
+        'GamePlay.Progression.HPPerVitality': 'HP gained per point of adjusted Vitality.',
+        'GamePlay.Progression.ManaBase': 'Flat mana added to every character independent of level or stats.',
+        'GamePlay.Progression.ManaPerLevel': 'Mana gained per character level.',
+        'GamePlay.Progression.ManaPerMysticism': 'Mana gained per point of adjusted Mysticism.',
+        'GamePlay.Progression.TrainingPointsPerLevel': 'Training points awarded on each qualifying level-up.',
+        'GamePlay.Progression.TrainingPointsEveryNLevels': 'How often a training point qualifying level occurs. 1 = every level, 2 = every other level, 3 = every 3rd level, etc.',
+        'GamePlay.Progression.StatPointsPerLevel': 'Stat points awarded on each qualifying level-up.',
+        'GamePlay.Progression.StatPointsEveryNLevels': 'How often a stat point qualifying level occurs. 1 = every level, 2 = every other level, 3 = every 3rd level, etc.',
+        'GamePlay.Progression.XPBase': 'Flat XP component. Scales the entire XP curve up or down.',
+        'GamePlay.Progression.XPLevelFactor': 'Multiplier on the level-based XP component. Higher = more XP required per level.',
+        'GamePlay.Progression.XPLevelPower': 'Exponent controlling XP curve steepness. 2.0 = quadratic, 1.5 = gentler, 3.0 = steeper. Valid range: 0.1 to 5.0.',
+        'GamePlay.Progression.MaxLevel': 'Soft display cap used in admin charts. Does not enforce a hard level cap.',
+        'GamePlay.Progression.StatCapThreshold': 'The stat Value at which compression begins. Below this, ValueAdj equals Value.',
+        'GamePlay.Progression.StatCapAnchor': 'The value the compression formula is anchored to. Overage = Value minus Anchor.',
+        'GamePlay.Progression.StatCapExponent': 'Compression curve shape above the cap. 0.5 = sqrt (strong compression, default). 1.0 = no compression. Above 1.0 = reduced compression (1.5 = gentle, 2.0 = very gentle). Valid range: 0.01 to 4.0.',
+        'GamePlay.Progression.StatCapScale': 'Multiplier applied after the exponent in the compression formula. Default 2.0.',
+        'GamePlay.Progression.StatCapExemptBonus': 'When true, only the racial portion of a stat is compressed. Training points and equipment or buff mods are added on top at full value, ensuring deliberate investment always pays off.',
+        'GamePlay.PVP.Enabled': 'PVP mode. Options: enabled (everywhere), disabled (nowhere), limited (PVP-flagged rooms only).',
+        'GamePlay.PVP.MinimumLevel': 'Minimum level required to participate in PVP. Only applies when PVP is enabled or limited.',
         'GamePlay.XPScale': 'Global XP multiplier as a percentage. 100 = normal.',
         'GamePlay.MobConverseChance': 'Chance in 100 that an idle mob will attempt to start a conversation.',
+        'GamePlay.AlignmentDecayRounds': 'Rounds between each alignment decay step toward neutral. 0 disables alignment decay.',
+        'GamePlay.EliteLevelBonus': 'Percent level increase applied to elite mob spawns. Example: 20 = 20% higher level than base.',
+        'GamePlay.EliteXPBonus': 'Percent XP bonus awarded to players when killing an elite mob. Example: 10 = 10% more XP than normal.',
         'GamePlay.Party.MaxPlayerCount': 'Maximum players in a party. 0 = unlimited.',
         'GamePlay.Party.SameRoomOnly': 'If true, players must be in the same room to form or join a party.',
         'Integrations.Discord.WebhookUrl': 'Discord webhook URL for mud event notifications (joins, disconnects, etc.). Can also be set via DISCORD_WEBHOOK_URL environment variable.',
@@ -272,16 +329,23 @@
         'Validation.NameRejectReason': 'Message shown when a username is rejected by NameRejectRegex.',
         'Validation.BannedNames': 'Names that cannot be used by players. Supports * wildcards.',
         'Roles': 'Custom role definitions mapping role names to permitted admin command prefixes.',
+        'Backup.Schedule': 'Automatic backup frequency. Options: nightly, weekly, monthly, never, or empty to disable.',
+        'Backup.S3.Enabled': 'If true, backups are uploaded to the configured Amazon S3 bucket after creation.',
+        'Backup.S3.Bucket': 'Amazon S3 bucket name for storing backups.',
+        'Backup.S3.Region': 'AWS region of the S3 bucket (e.g. us-east-1).',
+        'Backup.S3.Prefix': 'Key prefix (folder) within the S3 bucket. Backups are stored as prefix/filename.',
+        'Backup.S3.AccessKey': 'AWS access key ID for S3 authentication. Can also be set via BACKUP_S3_ACCESS_KEY environment variable.',
+        'Backup.S3.SecretKey': 'AWS secret access key for S3 authentication. Can also be set via BACKUP_S3_SECRET_KEY environment variable.',
     };
 
     async function init() {
-        const res = await AdminAPI.get('/admin/api/v1/config');
+        const res = await AdminAPI.get('/admin/api/v1/config', true);
         if (!res.ok) {
             showStatus('Failed to load configuration: ' + res.error, false);
             return;
         }
-        // Filter out Modules.* — those are managed by module-specific config pages
-        const raw = res.data.data || {};
+        // Filter out Modules.* - those are managed by module-specific config pages
+        const raw = (res.data && res.data.data) || {};
         configData = {};
         for (const [k, v] of Object.entries(raw)) {
             if (!k.startsWith('Modules.') && k !== 'Modules') configData[k] = v;
@@ -297,13 +361,31 @@
         const tbody = document.getElementById('config-body');
         tbody.innerHTML = '';
 
-        const keys = Object.keys(data).sort();
-        let lastSection = null;
+        const keys = Object.keys(data).sort((a, b) => {
+            const aParts = a.split('.');
+            const bParts = b.split('.');
+            // Primary: section name
+            if (aParts[0] < bParts[0]) return -1;
+            if (aParts[0] > bParts[0]) return  1;
+            // Same section: flat keys (2 parts) sort before subsection keys (3+ parts)
+            const aFlat = aParts.length === 2;
+            const bFlat = bParts.length === 2;
+            if (aFlat && !bFlat) return -1;
+            if (!aFlat && bFlat) return  1;
+            // Both flat or both in subsections: alphabetical
+            return a < b ? -1 : a > b ? 1 : 0;
+        });
+        let lastSection    = null;
+        let lastSubsection = null;
 
         for (const key of keys) {
-            const section = key.split('.')[0];
+            const parts      = key.split('.');
+            const section    = parts[0];
+            const subsection = parts.length >= 3 ? parts[0] + '.' + parts[1] : null;
+
             if (section !== lastSection) {
-                lastSection = section;
+                lastSection    = section;
+                lastSubsection = null;
                 const hdr = document.createElement('tr');
                 hdr.className = 'section-header';
                 hdr.dataset.section = section;
@@ -311,21 +393,36 @@
                 tbody.appendChild(hdr);
             }
 
+            if (subsection !== lastSubsection) {
+                lastSubsection = subsection;
+                if (subsection !== null) {
+                    const sub = document.createElement('tr');
+                    sub.className = 'subsection-header';
+                    sub.dataset.section = section;
+                    sub.dataset.subsection = subsection;
+                    sub.innerHTML = `<td colspan="2">${escHtml(subsection.toUpperCase())}</td>`;
+                    tbody.appendChild(sub);
+                }
+            }
+
             const value = String(data[key]);
             const isRedacted = value === REDACTED;
+            const isEmpty = value === '';
+            const displayValue = isEmpty ? '(empty)' : value;
             const desc = DESCRIPTIONS[key] || '';
             const tr = document.createElement('tr');
             tr.dataset.key = key;
             tr.dataset.section = section;
+            if (subsection) tr.dataset.subsection = subsection;
             tr.dataset.value = value.toLowerCase();
 
             tr.innerHTML = `
                 <td class="key-cell" title="${escAttr(key)}">${escHtml(key)}</td>
                 <td class="value-cell">
-                    <span class="value-display${isRedacted ? ' value-redacted' : ''}"
+                    <span class="value-display${isRedacted ? ' value-redacted' : ''}${isEmpty ? ' value-empty' : ''}"
                           title="${escAttr(value)}"
                           ${isRedacted ? '' : `onclick="startEdit('${escAttr(key)}')" `}>
-                        ${escHtml(value)}
+                        ${escHtml(displayValue)}
                     </span>
                     <span class="edit-form" id="edit-${cssId(key)}">
                         <input type="text" id="input-${cssId(key)}" value="${escAttr(value)}"
@@ -340,6 +437,7 @@
                 const dr = document.createElement('tr');
                 dr.className = 'desc-row';
                 dr.dataset.section = section;
+                if (subsection) dr.dataset.subsection = subsection;
                 dr.dataset.descFor = key;
                 dr.innerHTML = `<td colspan="2">${escHtml(desc)}</td>`;
                 tbody.appendChild(dr);
@@ -364,10 +462,12 @@
     window.filterTable = function () {
         const query = document.getElementById('search-input').value.toLowerCase();
         const section = document.getElementById('section-filter').value;
-        const rows = document.querySelectorAll('#config-body tr[data-key]');
-        const headers = document.querySelectorAll('#config-body tr.section-header');
-        const descRows = document.querySelectorAll('#config-body tr.desc-row');
-        const visibleSections = new Set();
+        const rows        = document.querySelectorAll('#config-body tr[data-key]');
+        const headers     = document.querySelectorAll('#config-body tr.section-header');
+        const subHeaders  = document.querySelectorAll('#config-body tr.subsection-header');
+        const descRows    = document.querySelectorAll('#config-body tr.desc-row');
+        const visibleSections    = new Set();
+        const visibleSubsections = new Set();
         let anyVisible = false;
 
         for (const row of rows) {
@@ -378,6 +478,7 @@
             row.classList.toggle('hidden-row', !show);
             if (show) {
                 visibleSections.add(row.dataset.section);
+                if (row.dataset.subsection) visibleSubsections.add(row.dataset.subsection);
                 anyVisible = true;
             }
         }
@@ -389,6 +490,10 @@
 
         for (const hdr of headers) {
             hdr.classList.toggle('hidden-row', !visibleSections.has(hdr.dataset.section));
+        }
+
+        for (const sub of subHeaders) {
+            sub.classList.toggle('hidden-row', !visibleSubsections.has(sub.dataset.subsection));
         }
 
         document.getElementById('no-results').style.display = anyVisible ? 'none' : 'block';
@@ -429,11 +534,16 @@
         const newVal = input.value;
         const currentVal = String(configData[key]);
 
+        if (newVal === REDACTED) {
+            showStatus('Cannot save a redacted placeholder as a value. Enter the actual value or cancel.', false);
+            return;
+        }
+
         cancelEdit(key);
 
         if (newVal === currentVal && pending[key] === undefined) return;
         if (newVal === currentVal) {
-            // reverting to original — remove from pending
+            // reverting to original - remove from pending
             delete pending[key];
         } else {
             pending[key] = newVal;
@@ -445,7 +555,7 @@
             const display = tr.querySelector('.value-display');
             display.textContent = newVal;
             tr.dataset.value = newVal.toLowerCase();
-            tr.style.background = pending[key] !== undefined ? '#fffbe6' : '';
+            tr.style.background = pending[key] !== undefined ? 'var(--color-warning-bg)' : '';
         }
 
         renderPendingPanel();
@@ -577,7 +687,7 @@
     }
 
     function escAttr(s) {
-        return String(s).replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        return String(s).replace(/&/g, '&amp;').replace(/'/g, '&#39;').replace(/"/g, '&quot;');
     }
 
     // Convert a config key like "Server.MudName" to a safe CSS id fragment.

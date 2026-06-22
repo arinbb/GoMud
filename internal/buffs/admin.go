@@ -6,6 +6,7 @@ import (
 
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/fileloader"
+	"github.com/GoMudEngine/GoMud/internal/util"
 )
 
 // GetAllBuffSpecs returns a copy of all loaded buff specs keyed by buffId.
@@ -49,7 +50,7 @@ func DeleteBuffSpec(buffId int) error {
 		return fmt.Errorf("buff %d not found", buffId)
 	}
 
-	basePath := configs.GetFilePathsConfig().DataFiles.String() + `/buffs/`
+	basePath := util.FilePath(configs.GetFilePathsConfig().DataFiles.String() + `/buffs/`)
 
 	yamlPath := basePath + spec.Filepath()
 	if err := os.Remove(yamlPath); err != nil && !os.IsNotExist(err) {
@@ -67,7 +68,7 @@ func DeleteBuffSpec(buffId int) error {
 
 // SaveBuffScript writes (or overwrites) the JavaScript file for a buff.  If
 // content is empty the script file is deleted instead.
-func SaveBuffScript(buffId int, content string) error {
+func SaveBuffScript(buffId int, content string, lang string) error {
 	spec := GetBuffSpec(buffId)
 	if spec == nil {
 		return fmt.Errorf("buff %d not found", buffId)
@@ -82,5 +83,6 @@ func SaveBuffScript(buffId int, content string) error {
 		return nil
 	}
 
-	return os.WriteFile(scriptPath, []byte(content), 0644)
+	scriptPath = util.ApplyScriptLang(scriptPath, lang)
+	return util.WriteFile(scriptPath, []byte(content), 0644)
 }

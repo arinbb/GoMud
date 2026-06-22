@@ -7,9 +7,13 @@
     "MP3Player": false,
     "Terminal": false,
     "FitAddon": false,
-    "WinBox": false
+    "WinBox": false,
+    "VWin": false
   },
+  "-W004": true,
+  "-W008": true,
   "-W014": true,
+  "-W030": true,
   "-W083": true,
   "-W097": true
 }

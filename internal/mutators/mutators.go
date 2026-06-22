@@ -2,7 +2,6 @@ package mutators
 
 import (
 	"fmt"
-	"os"
 	"strings"
 	"time"
 
@@ -70,6 +69,7 @@ type MutatorSpec struct {
 	LightMod      int                      `yaml:"lightmod,omitempty"`      //  -2 to 2 (change). If result is 0 = none. 1 = can see this room. 2 = can see this room and all exits
 	Exits         map[string]exit.RoomExit `yaml:"exits,omitempty"`         // name/roomId pairs of exits only available while mutator is live.
 	Pvp           PvpOverride              `yaml:"pvp,omitempty"`           // optionally force room pvp attributes.
+	Tags          []string                 `yaml:"tags,omitempty"`          // tags applied to the room while this mutator is active.
 }
 
 func GetAllMutatorSpecs() []MutatorSpec {
@@ -289,7 +289,7 @@ func (m *MutatorSpec) Save() error {
 
 	saveFilePath := util.FilePath(configs.GetFilePathsConfig().DataFiles.String(), `/`, `mutators`, `/`, fmt.Sprintf("%s.yaml", fileName))
 
-	err = os.WriteFile(saveFilePath, bytes, 0644)
+	err = util.WriteFile(saveFilePath, bytes, 0644)
 	if err != nil {
 		return err
 	}
@@ -329,6 +329,8 @@ func LoadDataFiles() {
 	}
 
 	allMutators = tmpMutators
+
+	loadPluginMutators(allMutators)
 
 	mudlog.Info("mutators.LoadDataFiles()", "loadedCount", len(allMutators), "Time Taken", time.Since(start))
 }

@@ -31,8 +31,18 @@ import (
 // ModuleAdminRegistrar is implemented by internal/web and provided to plugins
 // via SetAdminRegistrar. This breaks the import cycle between web and plugins.
 type ModuleAdminRegistrar interface {
-	RegisterAdminPage(name, slug, htmlContent string, addToNav bool, navGroup, navParent string, dataFunc func(*http.Request) map[string]any)
-	RegisterAdminAPIEndpoint(method, slug string, handler func(*http.Request) (int, bool, any))
+	RegisterAdminPage(name, slug, htmlContent string, addToNav bool, navGroup, navParent, description, navParentDescription string, dataFunc func(*http.Request) map[string]any)
+	RegisterAdminAPIEndpoint(method, slug, permissionKey string, handler func(*http.Request) (int, bool, any))
+	// RegisterPermission adds a single module-contributed permission key to the
+	// catalog so it appears in the admin permission picker.
+	RegisterPermission(key, description, category string)
+}
+
+// ModulePermission describes a permission key contributed by a module.
+type ModulePermission struct {
+	Key         string
+	Description string
+	Category    string
 }
 
 var (
@@ -50,8 +60,8 @@ func SetAdminRegistrar(r ModuleAdminRegistrar) {
 }
 
 const (
-	dataFilesFolder         = `datafiles` + string(filepath.Separator)
-	dataOverlaysFilesFolder = `data-overlays` + string(filepath.Separator)
+	dataFilesFolder         = `datafiles/`
+	dataOverlaysFilesFolder = `data-overlays/`
 )
 
 type pluginRegistry []*Plugin
@@ -395,7 +405,7 @@ func (p *Plugin) WriteBytes(identifier string, bytes []byte) error {
 		}
 	}
 
-	if err := os.WriteFile(fullPath, bytes, 0777); err != nil {
+	if err := util.WriteFile(fullPath, bytes, 0777); err != nil {
 		mudlog.Error(`plugin.WriteBytes`, `name`, p.name, `path`, fullPath, `error`, err)
 		return err
 	}
@@ -414,7 +424,7 @@ func (p *Plugin) ReadBytes(identifier string) ([]byte, error) {
 	// Create full path
 	fullPath := util.FilePath(folderPath, `/`, fileName)
 
-	bytes, err := os.ReadFile(fullPath)
+	bytes, err := util.ReadFile(fullPath)
 	if err != nil && !os.IsNotExist(err) {
 		mudlog.Warn(`plugin.ReadBytes`, `name`, p.name, `path`, fullPath, `error`, err)
 	}
@@ -519,20 +529,26 @@ func Load(dataFilesPath string) {
 
 		// Register module admin pages and API endpoints.
 		if moduleAdminRegistrar != nil {
+
 			for _, page := range p.Web.adminPages {
 				htmlContent := ""
-				if b, err := p.files.ReadFile(page.HTMLFile); err == nil {
+				if b, err := p.files.ReadFile(util.FilePath(page.HTMLFile)); err == nil {
 					htmlContent = string(b)
 				} else {
 					mudlog.Error("plugins", "admin page html not found", page.HTMLFile, "plugin", p.name)
 				}
-				moduleAdminRegistrar.RegisterAdminPage(page.Name, page.Slug, htmlContent, page.AddToNav, page.NavGroup, page.NavParent, page.DataFunction)
+				moduleAdminRegistrar.RegisterAdminPage(page.Name, page.Slug, htmlContent, page.AddToNav, page.NavGroup, page.NavParent, page.Description, page.NavParentDescription, page.DataFunction)
 			}
 			for _, route := range p.Web.adminAPIRoutes {
 				route := route // capture
-				moduleAdminRegistrar.RegisterAdminAPIEndpoint(route.Method, route.Slug, func(r *http.Request) (int, bool, any) {
+				moduleAdminRegistrar.RegisterAdminAPIEndpoint(route.Method, route.Slug, route.PermissionKey, func(r *http.Request) (int, bool, any) {
 					return route.Handler(r)
 				})
+			}
+			if len(p.Web.permissions) > 0 {
+				for _, perm := range p.Web.permissions {
+					moduleAdminRegistrar.RegisterPermission(perm.Key, perm.Description, perm.Category)
+				}
 			}
 		}
 

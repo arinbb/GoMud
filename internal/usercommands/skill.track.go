@@ -9,8 +9,6 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
-	"github.com/GoMudEngine/GoMud/internal/skills"
-	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/users"
 	"github.com/GoMudEngine/GoMud/internal/util"
 )
@@ -32,7 +30,7 @@ Level 4 - Specify a mob or username and every room you enter will tell you what 
 */
 func Track(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
 
-	skillLevel := user.Character.GetSkillLevel(skills.Track)
+	skillLevel := user.Character.GetSkillLevel(`track`)
 
 	if skillLevel == 0 {
 		user.SendText("You don't know how to track.")
@@ -48,14 +46,14 @@ func Track(rest string, user *users.UserRecord, room *rooms.Room, flags events.E
 	//
 	if rest == `` {
 
-		if !user.Character.TryCooldown(skills.Track.String(), "1 round") {
+		if !user.Character.TryCooldown(`track`, "1 round") {
 			user.SendText(
-				fmt.Sprintf("You need to wait %d more rounds to use that skill again.", user.Character.GetCooldown(skills.Track.String())))
+				fmt.Sprintf("You need to wait %d more rounds to use that skill again.", user.Character.GetCooldown(`track`)))
 			return true, errors.New(`you're doing that too often`)
 		}
 
 		// Fire an event that a skill has been used
-		events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: skills.Track, Details: ``})
+		events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: `track`, Details: ``})
 
 		visitorData := make([]trackingInfo, 0)
 
@@ -155,8 +153,7 @@ func Track(rest string, user *users.UserRecord, room *rooms.Room, flags events.E
 		// If a any visitors are revealed...
 		//
 		if len(visitorData) > 0 {
-			trackTxt, _ := templates.Process("descriptions/track", visitorData, user.UserId)
-			user.SendText(trackTxt)
+			user.SendText(buildTrackPanel(visitorData))
 		} else {
 			user.SendText("You don't see any tracks.")
 		}
@@ -173,17 +170,17 @@ func Track(rest string, user *users.UserRecord, room *rooms.Room, flags events.E
 
 	}
 
-	if !user.Character.TryCooldown(skills.Track.String(), "1 round") {
+	if !user.Character.TryCooldown(`track`, "1 round") {
 
 		user.SendText(
-			fmt.Sprintf("You need to wait %d more rounds to use that skill again.", user.Character.GetCooldown(skills.Track.String())))
+			fmt.Sprintf("You need to wait %d more rounds to use that skill again.", user.Character.GetCooldown(`track`)))
 
 		return true, errors.New(`you're doing that too often`)
 
 	}
 
 	// Fire an event that a skill has been used
-	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: skills.Track, Details: ``})
+	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: `track`, Details: ``})
 
 	//
 	// At skill level 3, search the room and adjacent rooms for quarry
@@ -388,7 +385,7 @@ func Track(rest string, user *users.UserRecord, room *rooms.Room, flags events.E
 
 		}
 
-		visitorData := make([]trackingInfo, len(allUsersAndMobs))
+		visitorData := make([]trackingInfo, 0, len(allUsersAndMobs))
 		for _, vInfo := range allUsersAndMobs {
 			visitorData = append(visitorData, vInfo)
 		}
@@ -397,8 +394,7 @@ func Track(rest string, user *users.UserRecord, room *rooms.Room, flags events.E
 		// If a any visitors are revealed...
 		//
 		if len(visitorData) > 0 {
-			trackTxt, _ := templates.Process("descriptions/track", visitorData, user.UserId)
-			user.SendText(trackTxt)
+			user.SendText(buildTrackPanel(visitorData))
 		} else {
 			user.SendText("You don't see any tracks.")
 		}

@@ -2,11 +2,9 @@ package usercommands
 
 import (
 	"fmt"
-	"strings"
 
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
-	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/term"
 	"github.com/GoMudEngine/GoMud/internal/users"
 	"github.com/GoMudEngine/GoMud/internal/util"
@@ -14,9 +12,11 @@ import (
 
 func Status(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
 
-	//possibleStatuses := []string{`strength`, `speed`, `smarts`, `vitality`, `mysticism`, `perception`}
-
 	if rest != `` {
+
+		if rest == `bonuses` {
+			return statusBonuses(user)
+		}
 
 		if rest != `train` {
 			user.SendText("status WHAT???")
@@ -28,8 +28,7 @@ func Status(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 		cmdPrompt, isNew := user.StartPrompt(`status`, rest)
 
 		if isNew {
-			tplTxt, _ := templates.Process("character/status-train", user, user.UserId)
-			user.SendText(tplTxt)
+			user.SendText(buildStatusTrainPanel(user, ``))
 		}
 
 		question := cmdPrompt.Ask(`Increase which?`, []string{`strength`, `speed`, `smarts`, `vitality`, `mysticism`, `perception`, `quit`}, `quit`)
@@ -44,7 +43,7 @@ func Status(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 
 		match, closeMatch := util.FindMatchIn(question.Response, []string{`strength`, `speed`, `smarts`, `vitality`, `mysticism`, `perception`}...)
 
-		question.RejectResponse() // Always reset this question, since we want to keep reusing it.
+		question.RejectResponse()
 
 		if user.Character.StatPoints < 1 {
 			user.SendText(`Oops! You have no stat points to spend!`)
@@ -98,21 +97,14 @@ func Status(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 			events.AddToQueue(events.CharacterTrained{UserId: user.UserId})
 		}
 
-		tplTxt, _ := templates.Process("character/status-train", user, user.UserId)
-
-		if spent > 0 {
-			tplTxt = strings.Replace(tplTxt, `fakeprop="`+selection+`"`, `bg="highlight"`, 1)
-		}
-
-		user.SendText(tplTxt)
+		user.SendText(buildStatusTrainPanel(user, selection))
 
 		return true, nil
 	}
 
-	tplTxt, _ := templates.Process("character/status", user, user.UserId)
-	user.SendText(tplTxt)
+	user.SendText(buildStatusPanel(user))
 
-	Inventory(``, user, room, flags)
+	//Inventory(``, user, room, flags)
 
 	return true, nil
 }

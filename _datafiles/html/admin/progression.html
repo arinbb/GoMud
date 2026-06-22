@@ -1,0 +1,1350 @@
+{{template "header" .}}
+
+<style>
+    h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+    .subtitle { color: var(--color-text-muted); margin-bottom: 1rem; font-size: 0.9rem; }
+
+    .warning-banner {
+        display: flex; gap: 0.75rem; align-items: flex-start;
+        background: #fff8e6; border: 1px solid #f0c040; border-left: 4px solid #e0a000;
+        border-radius: 5px; padding: 0.75rem 1rem;
+        font-size: 0.85rem; color: #5a4000;
+        margin-bottom: 1.5rem;
+    }
+    .warning-icon {
+        font-size: 1.2rem; line-height: 1.4; flex-shrink: 0; color: #c07800;
+    }
+
+    .page-layout {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 1.25rem;
+        align-items: start;
+    }
+    @media (max-width: 900px) { .page-layout { grid-template-columns: 1fr; } }
+
+    /* --- control panel --- */
+    .control-panel {
+        background: var(--color-surface-white);
+        border: 1px solid var(--color-border);
+        border-radius: 6px;
+        position: sticky;
+        top: 1rem;
+    }
+    .panel-section:first-child {
+        border-radius: 6px 6px 0 0;
+    }
+    .panel-section {
+        border-bottom: 1px solid var(--color-border-light);
+        padding: 0.85rem 1rem;
+    }
+    .panel-section:last-of-type { border-bottom: none; }
+    .section-label {
+        font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+        letter-spacing: 0.06em; color: var(--color-text-subtle);
+        margin-bottom: 0.65rem;
+    }
+
+    .ctrl-row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0.3rem 0.5rem;
+        align-items: center;
+        margin-bottom: 0.55rem;
+    }
+    .ctrl-row:last-child { margin-bottom: 0; }
+    .ctrl-label {
+        font-size: 0.8rem; color: var(--color-text-muted);
+        grid-column: 1 / -1;
+        margin-bottom: 0.1rem;
+    }
+    .ctrl-row input[type="range"] {
+        width: 100%; accent-color: var(--color-primary); cursor: pointer;
+        grid-column: 1;
+    }
+    .ctrl-value {
+        font-size: 0.8rem; font-weight: 600; color: var(--color-primary);
+        min-width: 3.5rem; text-align: right; font-family: monospace;
+        grid-column: 2;
+    }
+    .ctrl-row input[type="number"] {
+        width: 100%; padding: 0.3rem 0.5rem;
+        border: 1px solid var(--color-border-medium); border-radius: 3px;
+        font-size: 0.82rem; font-family: monospace;
+        grid-column: 1 / -1;
+    }
+
+    /* tooltip badge */
+    .tip-icon {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 1rem; height: 1rem; border-radius: 50%;
+        background: var(--color-border-medium); color: var(--color-text-muted);
+        font-size: 0.62rem; font-weight: 700; font-style: normal;
+        cursor: default; vertical-align: middle; margin-left: 0.25rem;
+        flex-shrink: 0; line-height: 1; position: relative;
+        user-select: none;
+    }
+    .tip-icon::after {
+        content: attr(data-tip);
+        position: absolute;
+        bottom: calc(100% + 6px);
+        left: 50%; transform: translateX(-50%);
+        background: #1a1a2e; color: #e8e8f0;
+        font-size: 0.75rem; font-weight: 400; font-family: system-ui, sans-serif;
+        line-height: 1.45; white-space: normal; width: 220px;
+        padding: 0.5rem 0.65rem; border-radius: 5px;
+        box-shadow: 0 3px 12px rgba(0,0,0,0.35);
+        pointer-events: none;
+        opacity: 0; visibility: hidden;
+        transition: opacity 0.12s ease, visibility 0.12s ease;
+        z-index: 100;
+    }
+    .tip-icon:hover::after, .tip-icon:focus::after {
+        opacity: 1; visibility: visible;
+    }
+    /* flip tooltip to the right on left-edge items */
+    .tip-icon.tip-right::after {
+        left: 0; transform: none;
+    }
+
+    /* chart tooltip */
+    #chart-tooltip {
+        position: fixed;
+        pointer-events: none;
+        background: #1a1a2e;
+        color: #e8e8f0;
+        font-size: 0.78rem;
+        font-family: system-ui, sans-serif;
+        line-height: 1.6;
+        padding: 0.45rem 0.7rem;
+        border-radius: 5px;
+        box-shadow: 0 3px 12px rgba(0,0,0,0.4);
+        white-space: nowrap;
+        z-index: 500;
+        display: none;
+    }
+    #chart-tooltip .tt-level {
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #8899bb;
+        margin-bottom: 0.2rem;
+    }
+    #chart-tooltip .tt-row {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+    #chart-tooltip .tt-swatch {
+        width: 8px; height: 8px;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+    #chart-tooltip .tt-dashed .tt-swatch {
+        background: transparent !important;
+        border: 2px dashed currentColor;
+    }
+    .reward-cards { display: flex; flex-direction: column; gap: 0.55rem; }
+    .reward-card {
+        border: 1px solid var(--color-border-light);
+        border-radius: 5px;
+        padding: 0.6rem 0.75rem;
+        background: var(--color-border-faint);
+    }
+    .reward-card-title {
+        font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+        letter-spacing: 0.05em; color: var(--color-text-subtle);
+        margin-bottom: 0.45rem;
+    }
+    .reward-sentence {
+        display: flex; align-items: center; flex-wrap: wrap;
+        gap: 0.3rem; font-size: 0.85rem; color: var(--color-text-muted);
+        line-height: 1.6;
+    }
+    .reward-sentence input[type="number"] {
+        width: 3.2rem; padding: 0.2rem 0.35rem;
+        border: 1px solid var(--color-border-medium); border-radius: 3px;
+        font-size: 0.85rem; font-family: monospace; font-weight: 600;
+        color: var(--color-primary); text-align: center;
+        background: var(--color-surface-white);
+    }
+    .reward-sentence input[type="number"]:focus {
+        outline: 2px solid var(--color-primary); outline-offset: 1px; border-color: transparent;
+    }
+    .reward-summary {
+        margin-top: 0.4rem; font-size: 0.75rem;
+        color: var(--color-text-faint); font-style: italic;
+    }
+    .panel-footer {
+        padding: 0.75rem 1rem;
+        display: flex; gap: 0.6rem; align-items: center;
+        border-top: 1px solid var(--color-border-light);
+        background: var(--color-border-faint);
+        border-radius: 0 0 6px 6px;
+    }
+    .btn { padding: 0.4rem 1rem; border: none; border-radius: 4px; cursor: pointer; font-size: 0.875rem; font-weight: 600; }
+    .btn-primary { background: var(--color-primary); color: var(--color-surface-white); }
+    .btn-primary:hover { background: var(--color-primary-hover); }
+    .btn-primary:disabled { background: var(--color-text-secondary); cursor: default; }
+    .btn-danger { background: var(--color-error-bg, #fde8e8); color: var(--color-error-text, #9b1c1c); border: 1px solid #f5c6c6; }
+    .btn-danger:hover { background: #f5c6c6; }
+
+    /* confirm modal */
+    .modal-backdrop {
+        display: none; position: fixed; inset: 0;
+        background: rgba(0,0,0,0.45); z-index: 600;
+        align-items: center; justify-content: center;
+    }
+    .modal-backdrop.open { display: flex; }
+    .modal {
+        background: var(--color-surface-white);
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+        padding: 1.5rem 1.75rem;
+        max-width: 420px; width: 90%;
+    }
+    .modal h3 { margin: 0 0 0.5rem; font-size: 1rem; color: var(--color-text-strong); }
+    .modal p  { margin: 0 0 1.25rem; font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.5; }
+    .modal-actions { display: flex; gap: 0.6rem; justify-content: flex-end; }
+
+    /* --- charts column --- */
+    .charts-col { display: flex; flex-direction: column; gap: 1.25rem; }
+
+    .chart-card {
+        background: var(--color-surface-white);
+        border: 1px solid var(--color-border);
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    .chart-head {
+        padding: 0.6rem 1rem;
+        background: var(--color-border-faint);
+        border-bottom: 1px solid var(--color-border-light);
+        display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.5rem;
+    }
+    .chart-head .ch-title { font-size: 0.85rem; font-weight: 700; color: var(--color-text-strong); white-space: nowrap; }
+    .chart-head .ch-sub { font-size: 0.75rem; color: var(--color-text-muted); }
+    .chart-body { padding: 0.75rem 1rem 0.85rem; }
+    .chart-body canvas {
+        display: block;
+        width: 100%;
+        height: 200px;
+        max-height: 200px;
+    }
+
+    /* legend */
+    .legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-top: 0.5rem; }
+    .legend-item { display: flex; align-items: center; gap: 0.35rem; font-size: 0.78rem; color: var(--color-text-muted); }
+    .legend-swatch { width: 22px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+
+    /* status */
+    #status-bar {
+        display: none; padding: 0.55rem 1rem; border-radius: 4px;
+        font-size: 0.85rem; margin-bottom: 1rem;
+    }
+    #status-bar.success { background: var(--color-success-bg); color: var(--color-success-text); display: block; }
+    #status-bar.error   { background: var(--color-error-bg); color: var(--color-error-text); display: block; }
+</style>
+
+<h1>Character Progression</h1>
+<p class="subtitle">Adjust progression formulas and see live charts. Click <strong>Save</strong> to apply changes to the server.</p>
+
+<div class="warning-banner">
+    <span class="warning-icon">&#9888;</span>
+    <div>
+        <strong>These settings affect all characters on the server, including existing ones.</strong>
+        Changes take effect immediately on the next stat recalculation and cannot be automatically reversed.
+        Raising values mid-game will make existing characters stronger than intended; lowering them may make
+        high-level characters feel weaker overnight. Test changes on a development server before applying
+        them to a live world.
+    </div>
+</div>
+
+<div id="status-bar"></div>
+
+<div class="page-layout">
+
+    <!-- ===== CONTROL PANEL ===== -->
+    <div class="control-panel">
+
+        <div class="panel-section">
+            <div class="section-label">Stat Gains</div>
+
+            <div class="ctrl-row">
+                <span class="ctrl-label">Base Mod Factor <span class="tip-icon" data-tip="Scales how much a character&#39;s racial base stat contributes to growth per level. Higher values cause strong-base races to pull further ahead of weak-base races over time. Use this to control how much race choice matters at high levels.">?</span></span>
+                <input type="range" id="BaseModFactor" min="0.05" max="1.5" step="0.01" value="0.3333"
+                       oninput="syncValue(this,'BaseModFactor_v'); schedulePreview()">
+                <span class="ctrl-value" id="BaseModFactor_v">0.3333</span>
+            </div>
+
+            <div class="ctrl-row">
+                <span class="ctrl-label">Base Mod Exponent <span class="tip-icon" data-tip="Controls the curve shape of racial stat growth. 1.0 = linear (steady gains each level). Less than 1.0 = diminishing returns (gains slow at high levels). Greater than 1.0 = accelerating (gains speed up). Try 0.7 for a soft cap feel without a hard threshold.">?</span></span>
+                <input type="range" id="BaseModExponent" min="0.1" max="3.0" step="0.05" value="1.0"
+                       oninput="syncValue(this,'BaseModExponent_v'); schedulePreview()">
+                <span class="ctrl-value" id="BaseModExponent_v">1.00</span>
+            </div>
+
+            <div class="ctrl-row">
+                <span class="ctrl-label">Natural Gains Factor <span class="tip-icon" data-tip="A flat stat bonus every character receives each level, regardless of race. Acts as a floor that keeps weak-base races competitive. Raise this to reduce the power gap between races at high levels.">?</span></span>
+                <input type="range" id="NaturalGainsModFactor" min="0.05" max="2.0" step="0.05" value="0.5"
+                       oninput="syncValue(this,'NaturalGainsModFactor_v'); schedulePreview()">
+                <span class="ctrl-value" id="NaturalGainsModFactor_v">0.50</span>
+            </div>
+
+            <div class="ctrl-row">
+                <span class="ctrl-label">Natural Gains Exponent <span class="tip-icon" data-tip="Controls the curve shape of the flat (race-independent) gains. 1.0 = steady gains each level. Less than 1.0 = gains slow down at high levels, giving a natural soft cap to everyone. Greater than 1.0 = gains accelerate, rewarding long-term play.">?</span></span>
+                <input type="range" id="NaturalGainsExponent" min="0.1" max="3.0" step="0.05" value="1.0"
+                       oninput="syncValue(this,'NaturalGainsExponent_v'); schedulePreview()">
+                <span class="ctrl-value" id="NaturalGainsExponent_v">1.00</span>
+            </div>
+
+            <div class="ctrl-row" style="margin-top:0.6rem">
+                <span class="ctrl-label">Cap Threshold <span class="tip-icon" data-tip="The raw stat Value at which compression kicks in. Below this number, a character&#39;s effective stat (ValueAdj) equals their raw Value exactly. Above it, gains are compressed by the formula. Default 105. Raise it to allow more uncompressed growth; lower it to apply compression earlier.">?</span></span>
+                <input type="number" id="StatCapThreshold" min="1" max="500" step="1" value="105"
+                       oninput="schedulePreview()">
+            </div>
+            <div class="ctrl-row">
+                <span class="ctrl-label">Cap Anchor <span class="tip-icon" data-tip="The baseline the compression formula is measured from. Overage = raw Value minus Anchor, and the compressed result is added back on top of the Anchor. Default 100. Should be set below the Threshold. Lowering the Anchor makes the compression start more gradually; raising it toward the Threshold makes it sharper.">?</span></span>
+                <input type="number" id="StatCapAnchor" min="0" max="499" step="1" value="100"
+                       oninput="schedulePreview()">
+            </div>
+            <div class="ctrl-row">
+                <span class="ctrl-label">Cap Exponent <span class="tip-icon" data-tip="Controls how aggressively gains are compressed above the threshold. 0.5 (default) = square root, strong compression. 1.0 = linear pass-through, no compression at all. 0.25 = very aggressive, nearly flat after the threshold. Watch the dashed lines on the chart diverge from the solid lines as you adjust this.">?</span></span>
+                <input type="range" id="StatCapExponent" min="0.1" max="1.0" step="0.05" value="0.5"
+                       oninput="syncValue(this,'StatCapExponent_v'); schedulePreview()">
+                <span class="ctrl-value" id="StatCapExponent_v">0.50</span>
+            </div>
+            <div class="ctrl-row">
+                <span class="ctrl-label">Cap Scale <span class="tip-icon" data-tip="A multiplier applied to the compressed overage before adding it back to the Anchor. Default 2.0. Higher values give more room to grow above the cap; lower values flatten the curve further. Works in combination with Cap Exponent: scale up if you want a gentler exponent but still meaningful gains.">?</span></span>
+                <input type="range" id="StatCapScale" min="0.1" max="5.0" step="0.1" value="2.0"
+                       oninput="syncValue(this,'StatCapScale_v'); schedulePreview()">
+                <span class="ctrl-value" id="StatCapScale_v">2.00</span>
+            </div>
+            <div class="ctrl-row">
+                <span class="ctrl-label">Exempt Training &amp; Mods <span class="tip-icon" data-tip="When enabled, only the racial portion of a stat is compressed by the cap formula. Training points and equipment/buff bonuses are added on top of the compressed racial value at full strength. This ensures deliberate investment always pays off, preventing the cap from punishing players who spend stat points.">?</span></span>
+                <label style="display:flex; align-items:center; gap:0.4rem; cursor:pointer; grid-column:1/-1">
+                    <input type="checkbox" id="StatCapExemptBonus" onchange="schedulePreview()" style="width:auto; cursor:pointer">
+                    <span style="font-size:0.8rem; color:var(--color-text-muted)">Only compress racial gains</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="panel-section">
+            <div class="section-label">HP &amp; Mana</div>
+
+            <div class="ctrl-row">
+                <span class="ctrl-label">HP Base <span class="tip-icon" data-tip="Flat HP every character starts with at level 1, before level or stat bonuses. Acts as a minimum floor. Raise this if you want all characters to feel more durable from the start.">?</span></span>
+                <input type="number" id="HPBase" min="0" max="200" step="1" value="5"
+                       oninput="schedulePreview()">
+            </div>
+            <div class="ctrl-row">
+                <span class="ctrl-label">HP per Level <span class="tip-icon" data-tip="HP added for each level gained, regardless of stats. Raise this to make leveling feel impactful for all characters even if their Vitality is low.">?</span></span>
+                <input type="range" id="HPPerLevel" min="0" max="10" step="0.25" value="1.0"
+                       oninput="syncValue(this,'HPPerLevel_v'); schedulePreview()">
+                <span class="ctrl-value" id="HPPerLevel_v">1.00</span>
+            </div>
+            <div class="ctrl-row">
+                <span class="ctrl-label">HP per Vitality <span class="tip-icon" data-tip="HP added per point of adjusted Vitality (ValueAdj). This is the main lever for making Vitality matter. Default 4 means a character with 50 Vitality has 200 HP from stats alone. Raise this to make tanky builds much tankier.">?</span></span>
+                <input type="range" id="HPPerVitality" min="0" max="20" step="0.25" value="4.0"
+                       oninput="syncValue(this,'HPPerVitality_v'); schedulePreview()">
+                <span class="ctrl-value" id="HPPerVitality_v">4.00</span>
+            </div>
+
+            <div class="ctrl-row">
+                <span class="ctrl-label">Mana Base <span class="tip-icon" data-tip="Flat mana every character starts with at level 1. Even non-magical characters will have at least this much mana. Raise it if you want mana to be universally available.">?</span></span>
+                <input type="number" id="ManaBase" min="0" max="200" step="1" value="4"
+                       oninput="schedulePreview()">
+            </div>
+            <div class="ctrl-row">
+                <span class="ctrl-label">Mana per Level <span class="tip-icon" data-tip="Mana added for each level gained. Gives all characters a baseline mana pool that grows with level, independent of Mysticism investment.">?</span></span>
+                <input type="range" id="ManaPerLevel" min="0" max="10" step="0.25" value="1.0"
+                       oninput="syncValue(this,'ManaPerLevel_v'); schedulePreview()">
+                <span class="ctrl-value" id="ManaPerLevel_v">1.00</span>
+            </div>
+            <div class="ctrl-row">
+                <span class="ctrl-label">Mana per Mysticism <span class="tip-icon" data-tip="Mana added per point of adjusted Mysticism (ValueAdj). The main lever for making caster builds feel powerful. Default 3 means a character with 50 Mysticism has 150 mana from stats alone.">?</span></span>
+                <input type="range" id="ManaPerMysticism" min="0" max="20" step="0.25" value="3.0"
+                       oninput="syncValue(this,'ManaPerMysticism_v'); schedulePreview()">
+                <span class="ctrl-value" id="ManaPerMysticism_v">3.00</span>
+            </div>
+        </div>
+
+        <div class="panel-section">
+            <div class="section-label">XP Curve</div>
+            <div class="ctrl-row">
+                <span class="ctrl-label">XP Base <span class="tip-icon" data-tip="The flat XP component at the base of the curve. Raising this scales the entire XP requirement up proportionally at all levels. Think of it as the difficulty multiplier for the whole progression arc.">?</span></span>
+                <input type="number" id="XPBase" min="100" max="100000" step="100" value="1000"
+                       oninput="schedulePreview()">
+            </div>
+            <div class="ctrl-row">
+                <span class="ctrl-label">XP Level Factor <span class="tip-icon" data-tip="Multiplier on the level-dependent part of the XP formula. Higher values make the curve rise faster, so high levels require disproportionately more XP. Lower values flatten the curve, making high levels more reachable.">?</span></span>
+                <input type="range" id="XPLevelFactor" min="0.1" max="5.0" step="0.05" value="0.75"
+                       oninput="syncValue(this,'XPLevelFactor_v'); schedulePreview()">
+                <span class="ctrl-value" id="XPLevelFactor_v">0.75</span>
+            </div>
+            <div class="ctrl-row">
+                <span class="ctrl-label">XP Level Power <span class="tip-icon" data-tip="The exponent applied to level in the XP formula. 2.0 = quadratic (default, each level costs noticeably more than the last). 1.5 = gentler curve. 3.0 = steep, exponential feel. Watch the XP Required chart to see the shape change in real time.">?</span></span>
+                <input type="range" id="XPLevelPower" min="0.5" max="5.0" step="0.1" value="2.0"
+                       oninput="syncValue(this,'XPLevelPower_v'); schedulePreview()">
+                <span class="ctrl-value" id="XPLevelPower_v">2.00</span>
+            </div>
+        </div>
+
+        <div class="panel-section">
+            <div class="section-label">Level-Up Rewards</div>
+            <div class="reward-cards">
+
+                <div class="reward-card">
+                    <div class="reward-card-title">Training Points <span class="tip-icon" data-tip="Spending a training point permanently raises one skill rank. These are the main way characters improve their combat and utility skills. Give more per level for faster skill progression, or reduce the cadence to make skill choices feel more meaningful.">?</span></div>
+                    <div class="reward-sentence">
+                        Give
+                        <input type="number" id="TrainingPointsPerLevel" min="0" max="10" step="1" value="1"
+                               oninput="updateRewardSummary(); schedulePreview()">
+                        point(s) every
+                        <input type="number" id="TrainingPointsEveryNLevels" min="1" max="20" step="1" value="1"
+                               oninput="updateRewardSummary(); schedulePreview()">
+                        level(s)
+                    </div>
+                    <div class="reward-summary" id="training-summary"></div>
+                </div>
+
+                <div class="reward-card">
+                    <div class="reward-card-title">Stat Points <span class="tip-icon" data-tip="Spending a stat point permanently raises one core stat (Strength, Speed, etc.) by one. These let players customize their character beyond racial defaults. Give more per level for faster customization, or space them out to make each allocation feel weighty.">?</span></div>
+                    <div class="reward-sentence">
+                        Give
+                        <input type="number" id="StatPointsPerLevel" min="0" max="10" step="1" value="1"
+                               oninput="updateRewardSummary(); schedulePreview()">
+                        point(s) every
+                        <input type="number" id="StatPointsEveryNLevels" min="1" max="20" step="1" value="1"
+                               oninput="updateRewardSummary(); schedulePreview()">
+                        level(s)
+                    </div>
+                    <div class="reward-summary" id="stat-summary"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-footer">
+            <button class="btn btn-primary" id="save-btn" onclick="saveConfig()">Save</button>
+            <button class="btn btn-secondary" onclick="resetToServer()">Reset</button>
+            <button class="btn btn-danger" onclick="openRestoreModal()" style="margin-left:auto">Restore Defaults</button>
+        </div>
+    </div>
+
+    <!-- ===== CHARTS ===== -->
+    <div class="charts-col">
+
+        <div style="display:flex; align-items:center; gap:0.75rem; background:var(--color-surface-white); border:1px solid var(--color-border); border-radius:6px; padding:0.6rem 1rem;">
+            <label for="MaxLevel" style="font-size:0.8rem; color:var(--color-text-muted); white-space:nowrap; flex-shrink:0;">Chart range: level 1 &ndash; <span id="MaxLevel_v" style="font-weight:600; color:var(--color-primary); font-family:monospace;">100</span></label>
+            <input type="range" id="MaxLevel" min="10" max="1000" step="5" value="100"
+                   oninput="syncValue(this,'MaxLevel_v'); schedulePreview()"
+                   style="flex:1; accent-color:var(--color-primary); cursor:pointer;">
+        </div>
+
+        <div class="chart-card">
+            <div class="chart-head">
+                <span class="ch-title">Cumulative Stat Value per Level</span>
+                <span class="ch-sub">Shows the total stat value a character accumulates by each level from two sources: natural gains (a flat bonus every character receives regardless of race) plus racial gains (scaled by the race's base stat). The three lines represent example racial base intensities &mdash; a race with base 1 in a stat grows mostly from natural gains; base 5 pulls further ahead as racial scaling compounds. Solid lines = ValueAdj (effective compressed value). Dashed = raw Value before cap compression. When &ldquo;Exempt Training &amp; Mods&rdquo; is on, solid shows the compressed racial floor &mdash; training points land on top of it uncapped.</span>
+            </div>
+            <div class="chart-body">
+                <canvas id="chart-stats"></canvas>
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-swatch" style="background:#e05c5c"></div>Base 5 (adj)</div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:#4a9eff"></div>Base 3 (adj)</div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:#6ecb6e"></div>Base 1 (adj)</div>
+                    <div class="legend-item" style="margin-left:0.5rem; padding-left:0.5rem; border-left:1px solid var(--color-border-light)">
+                        <svg width="22" height="10" style="flex-shrink:0"><line x1="0" y1="5" x2="22" y2="5" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3"/></svg>
+                        &nbsp;Dashed = raw (Value)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <div class="chart-head">
+                <span class="ch-title">HP at Level</span>
+                <span class="ch-sub">Max HP for characters with Vitality racial base 1, 3, and 5. Solid = effective ValueAdj (compressed). Dashed = raw Value before cap. No training or equipment.</span>
+            </div>
+            <div class="chart-body">
+                <canvas id="chart-hp"></canvas>
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-swatch" style="background:#e05c5c"></div>Vit base 5 (adj)</div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:#4a9eff"></div>Vit base 3 (adj)</div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:#6ecb6e"></div>Vit base 1 (adj)</div>
+                    <div class="legend-item" style="margin-left:0.5rem; padding-left:0.5rem; border-left:1px solid var(--color-border-light)">
+                        <svg width="22" height="10" style="flex-shrink:0"><line x1="0" y1="5" x2="22" y2="5" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3"/></svg>
+                        &nbsp;Dashed = raw (Value)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <div class="chart-head">
+                <span class="ch-title">Mana at Level</span>
+                <span class="ch-sub">Max Mana for characters with Mysticism racial base 1, 3, and 5. Solid = effective ValueAdj (compressed). Dashed = raw Value before cap. No training or equipment.</span>
+            </div>
+            <div class="chart-body">
+                <canvas id="chart-mana"></canvas>
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-swatch" style="background:#e05c5c"></div>Mys base 5 (adj)</div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:#4a9eff"></div>Mys base 3 (adj)</div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:#6ecb6e"></div>Mys base 1 (adj)</div>
+                    <div class="legend-item" style="margin-left:0.5rem; padding-left:0.5rem; border-left:1px solid var(--color-border-light)">
+                        <svg width="22" height="10" style="flex-shrink:0"><line x1="0" y1="5" x2="22" y2="5" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3"/></svg>
+                        &nbsp;Dashed = raw (Value)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <div class="chart-head">
+                <span class="ch-title">XP per Level &amp; Cumulative XP</span>
+                <span class="ch-sub">XP required to gain each level (left axis, orange) and total XP to reach each level (right axis, purple). TNLScale 1.0.</span>
+            </div>
+            <div class="chart-body">
+                <canvas id="chart-xp"></canvas>
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-swatch" style="background:#f0a840"></div>XP per level (left)</div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:#a06ee0"></div>Cumulative XP (right)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <div class="chart-head">
+                <span class="ch-title">Points Awarded per Level</span>
+                <span class="ch-sub">Cumulative stat points (green) and training points (blue) earned by each level. Flat steps reflect the EveryNLevels cadence &mdash; gaps between steps are levels where no points are awarded.</span>
+            </div>
+            <div class="chart-body">
+                <canvas id="chart-points"></canvas>
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-swatch" style="background:#4ecb8a"></div>Stat points (cumulative)</div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:#4a9eff"></div>Training points (cumulative)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <div class="chart-head">
+                <span class="ch-title">Stat Cap Compression Curve</span>
+                <span class="ch-sub">Shows how raw stat value (x) maps to the effective ValueAdj (y) that the game actually uses. Below the threshold the curve is 1:1 &mdash; every point gained is a point earned. Above it, gains are compressed so stats can keep growing through training and racial scaling without becoming uncontrollably large. This lets high-level characters still feel progression while keeping combat math predictable: a character who invests heavily in a stat will always improve, but the returns diminish rather than exploding. The kink marks where compression begins; the exponent and scale sliders control how steeply the curve flattens after that point.</span>
+            </div>
+            <div class="chart-body">
+                <canvas id="chart-cap"></canvas>
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-swatch" style="background:#f06090"></div>ValueAdj</div>
+                    <div class="legend-item" style="margin-left:0.5rem; padding-left:0.5rem; border-left:1px solid var(--color-border-light)">
+                        <svg width="22" height="10" style="flex-shrink:0"><line x1="0" y1="5" x2="22" y2="5" stroke="#aaa" stroke-width="1.5" stroke-dasharray="4,3"/></svg>
+                        &nbsp;1:1 reference
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal-backdrop" id="restore-modal">
+    <div class="modal">
+        <h3>Restore all defaults?</h3>
+        <p>This will reset every progression setting to its original default value and save immediately to the server. All custom values will be lost and the change will affect all characters at once.</p>
+        <div class="modal-actions">
+            <button class="btn btn-secondary" onclick="closeRestoreModal()">Cancel</button>
+            <button class="btn btn-danger" id="restore-confirm-btn" onclick="restoreDefaults()">Yes, restore defaults</button>
+        </div>
+    </div>
+</div>
+
+<div id="chart-tooltip"></div>
+
+<script>
+// ─── server state loaded on page init ───────────────────────────────────────
+let serverValues = {};
+let previewTimer = null;
+
+// ─── helpers ─────────────────────────────────────────────────────────────────
+function syncValue(slider, labelId) {
+    const v = parseFloat(slider.value);
+    document.getElementById(labelId).textContent = v.toFixed(2);
+}
+
+function getParams() {
+    const ids = [
+        'BaseModFactor','BaseModExponent',
+        'NaturalGainsModFactor','NaturalGainsExponent',
+        'StatCapThreshold','StatCapAnchor','StatCapExponent','StatCapScale','StatCapExemptBonus',
+        'HPBase','HPPerLevel','HPPerVitality',
+        'ManaBase','ManaPerLevel','ManaPerMysticism',
+        'TrainingPointsPerLevel','TrainingPointsEveryNLevels',
+        'StatPointsPerLevel','StatPointsEveryNLevels',
+        'XPBase','XPLevelFactor','XPLevelPower'
+    ];
+    const p = new URLSearchParams();
+    // MaxLevel is a chart-only control, not a saved config value — add it separately.
+    const maxLevelEl = document.getElementById('MaxLevel');
+    if (maxLevelEl) p.set('MaxLevel', maxLevelEl.value);
+    ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        p.set(id, el.type === 'checkbox' ? (el.checked ? 'true' : 'false') : el.value);
+    });
+    return p;
+}
+
+function updateRewardSummary() {
+    const trAmt = parseInt(document.getElementById('TrainingPointsPerLevel').value) || 0;
+    const trN   = parseInt(document.getElementById('TrainingPointsEveryNLevels').value) || 1;
+    const stAmt = parseInt(document.getElementById('StatPointsPerLevel').value) || 0;
+    const stN   = parseInt(document.getElementById('StatPointsEveryNLevels').value) || 1;
+
+    document.getElementById('training-summary').textContent = rewardSummaryText(trAmt, trN, 'training point');
+    document.getElementById('stat-summary').textContent     = rewardSummaryText(stAmt, stN, 'stat point');
+}
+
+function rewardSummaryText(amt, n, label) {
+    if (amt === 0) return 'Disabled — no ' + label + 's awarded.';
+    const pts  = amt === 1 ? '1 ' + label : amt + ' ' + label + 's';
+    if (n === 1) return pts + ' awarded every level.';
+    if (n === 2) return pts + ' awarded every other level.';
+    return pts + ' awarded every ' + n + ' levels (levels ' + n + ', ' + (n*2) + ', ' + (n*3) + '…)';
+}
+
+function schedulePreview() {
+    clearTimeout(previewTimer);
+    previewTimer = setTimeout(loadPreview, 150);
+}
+
+function showStatus(msg, type) {
+    const bar = document.getElementById('status-bar');
+    bar.textContent = msg;
+    bar.className = type;
+    if (type === 'success') setTimeout(() => { bar.style.display = 'none'; bar.className = ''; }, 3000);
+}
+
+// ─── load current config from server ─────────────────────────────────────────
+async function loadServerConfig() {
+    try {
+        const res = await fetch('/admin/api/v1/config');
+        const json = await res.json();
+        if (!json.success) return;
+        const d = json.data;
+        const prog = (d['GamePlay'] || {})['Progression'] || {};
+
+        const defaults = {
+            BaseModFactor: '0.3333333334', BaseModExponent: '1.0',
+            NaturalGainsModFactor: '0.5', NaturalGainsExponent: '1.0',
+            StatCapThreshold: '105', StatCapAnchor: '100',
+            StatCapExponent: '0.5', StatCapScale: '2.0', StatCapExemptBonus: 'false',
+            HPBase: '5', HPPerLevel: '1.0', HPPerVitality: '4.0',
+            ManaBase: '4', ManaPerLevel: '1.0', ManaPerMysticism: '3.0',
+            TrainingPointsPerLevel: '1', TrainingPointsEveryNLevels: '1',
+            StatPointsPerLevel: '1', StatPointsEveryNLevels: '1',
+            XPBase: '1000', XPLevelFactor: '0.75', XPLevelPower: '2.0'
+        };
+
+        serverValues = {};
+        Object.keys(defaults).forEach(k => {
+            serverValues[k] = prog[k] !== undefined ? String(prog[k]) : defaults[k];
+        });
+
+        applyValues(serverValues);
+        loadPreview();
+    } catch(e) {
+        showStatus('Failed to load config: ' + e, 'error');
+    }
+}
+
+function applyValues(vals) {
+    Object.entries(vals).forEach(([k, v]) => {
+        const el = document.getElementById(k);
+        if (!el) return;
+        if (el.type === 'checkbox') {
+            el.checked = (v === 'true' || v === true || v === '1');
+        } else {
+            el.value = v;
+        }
+        const lbl = document.getElementById(k + '_v');
+        if (lbl) lbl.textContent = parseFloat(v).toFixed(2);
+    });
+    updateRewardSummary();
+}
+
+function resetToServer() {
+    applyValues(serverValues);
+    schedulePreview();
+}
+
+function openRestoreModal() {
+    document.getElementById('restore-modal').classList.add('open');
+}
+
+function closeRestoreModal() {
+    document.getElementById('restore-modal').classList.remove('open');
+}
+
+async function restoreDefaults() {
+    const btn = document.getElementById('restore-confirm-btn');
+    btn.disabled = true;
+
+    const defaults = {
+        BaseModFactor: '0.3333333334', BaseModExponent: '1.0',
+        NaturalGainsModFactor: '0.5', NaturalGainsExponent: '1.0',
+        StatCapThreshold: '105', StatCapAnchor: '100',
+        StatCapExponent: '0.5', StatCapScale: '2.0', StatCapExemptBonus: 'false',
+        HPBase: '5', HPPerLevel: '1.0', HPPerVitality: '4.0',
+        ManaBase: '4', ManaPerLevel: '1.0', ManaPerMysticism: '3.0',
+        TrainingPointsPerLevel: '1', TrainingPointsEveryNLevels: '1',
+        StatPointsPerLevel: '1', StatPointsEveryNLevels: '1',
+        XPBase: '1000', XPLevelFactor: '0.75', XPLevelPower: '2.0'
+    };
+
+    const patch = {};
+    Object.entries(defaults).forEach(([k, v]) => {
+        patch['GamePlay.Progression.' + k] = v;
+    });
+
+    try {
+        const res = await fetch('/admin/api/v1/config', {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(patch)
+        });
+        const json = await res.json();
+        closeRestoreModal();
+        if (json.success) {
+            applyValues(defaults);
+            serverValues = Object.assign({}, defaults);
+            schedulePreview();
+            showStatus('All progression settings restored to defaults.', 'success');
+        } else {
+            showStatus('Restore failed: ' + (json.error || 'unknown error'), 'error');
+        }
+    } catch(e) {
+        closeRestoreModal();
+        showStatus('Restore failed: ' + e, 'error');
+    } finally {
+        btn.disabled = false;
+    }
+}
+
+// ─── save config ─────────────────────────────────────────────────────────────
+async function saveConfig() {
+    const btn = document.getElementById('save-btn');
+    btn.disabled = true;
+    const patch = {};
+    const ids = [
+        'BaseModFactor','BaseModExponent',
+        'NaturalGainsModFactor','NaturalGainsExponent',
+        'StatCapThreshold','StatCapAnchor','StatCapExponent','StatCapScale','StatCapExemptBonus',
+        'HPBase','HPPerLevel','HPPerVitality',
+        'ManaBase','ManaPerLevel','ManaPerMysticism',
+        'TrainingPointsPerLevel','TrainingPointsEveryNLevels',
+        'StatPointsPerLevel','StatPointsEveryNLevels',
+        'XPBase','XPLevelFactor','XPLevelPower'
+    ];
+    ids.forEach(k => {
+        const el = document.getElementById(k);
+        if (!el) return;
+        patch['GamePlay.Progression.' + k] = el.type === 'checkbox' ? (el.checked ? 'true' : 'false') : el.value;
+    });
+    try {
+        const res = await fetch('/admin/api/v1/config', {
+            method: 'PATCH',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(patch)
+        });
+        const json = await res.json();
+        if (json.success) {
+            showStatus('Saved successfully.', 'success');
+            serverValues = {};
+            ids.forEach(k => {
+                const el = document.getElementById(k);
+                if (el) serverValues[k] = el.value;
+            });        } else {
+            showStatus('Save failed: ' + (json.error || 'unknown error'), 'error');
+        }
+    } catch(e) {
+        showStatus('Save failed: ' + e, 'error');
+    } finally {
+        btn.disabled = false;
+    }
+}
+
+// ─── chart registry: stores last-drawn data per canvas id ───────────────────
+const chartRegistry = {};
+// Offscreen cache: canvasId -> { canvas: OffscreenCanvas|HTMLCanvasElement, valid: bool }
+const bgCache = {};
+
+function getBgCanvas(canvasId, W, H) {
+    const dpr = window.devicePixelRatio || 1;
+    const pw = Math.floor(W * dpr);
+    const ph = Math.floor(H * dpr);
+    let entry = bgCache[canvasId];
+    if (!entry || entry.canvas.width !== pw || entry.canvas.height !== ph) {
+        let bg;
+        try { bg = new OffscreenCanvas(pw, ph); } catch(_) {
+            bg = document.createElement('canvas');
+            bg.width = pw; bg.height = ph;
+        }
+        entry = { canvas: bg, valid: false };
+        bgCache[canvasId] = entry;
+    }
+    return entry;
+}
+
+function invalidateBg(canvasId) {
+    if (bgCache[canvasId]) bgCache[canvasId].valid = false;
+}
+
+// ─── chart rendering ──────────────────────────────────────────────────────────
+const COLORS = {
+    base5: '#e05c5c',
+    base3: '#4a9eff',
+    base1: '#6ecb6e',
+    hp:     '#e05c5c',
+    mana:   '#4a9eff',
+    xpDelta:'#f0a840',
+    xpTotal:'#a06ee0',
+    statPts:'#4ecb8a',
+    trainPts:'#4a9eff',
+    capCurve:'#f06090',
+    grid:   '#e0e0e0',
+    axis:   '#888',
+    text:   '#555'
+};
+
+function drawLineChart(canvasId, datasets, labels) {
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+    const dpr = window.devicePixelRatio || 1;
+    const parent = canvas.parentElement;
+    const W = Math.max(parent ? parent.clientWidth - 32 : 600, 100);
+    const H = 200;
+    canvas.width  = Math.floor(W * dpr);
+    canvas.height = Math.floor(H * dpr);
+    const ctx = canvas.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    const pad = { top: 12, right: 16, bottom: 36, left: 56 };
+    const cw = W - pad.left - pad.right;
+    const ch = H - pad.top - pad.bottom;
+    const n = labels.length;
+
+    let yMin = Infinity, yMax = -Infinity;
+    datasets.forEach(ds => ds.data.forEach(v => {
+        if (v < yMin) yMin = v;
+        if (v > yMax) yMax = v;
+    }));
+    if (yMin === yMax) { yMin = 0; yMax = yMax || 1; }
+    if (yMin > 0) yMin = 0;
+
+    function xPos(i) { return pad.left + (i / (n - 1)) * cw; }
+    function yPos(v) { return pad.top + ch - ((v - yMin) / (yMax - yMin)) * ch; }
+
+    // Store in registry for hover lookups.
+    invalidateBg(canvasId);
+    const reg = { canvasId, datasets, labels, pad, W, H, cw, ch, n, yMin, yMax, xPos, yPos };
+    chartRegistry[canvasId] = reg;
+
+    renderChartContent(ctx, reg);
+
+    // Wire mouse events once.
+    if (!canvas._hoverBound) {
+        canvas._hoverBound = true;
+        canvas.addEventListener('mousemove', e => onChartMouseMove(canvasId, e));
+        canvas.addEventListener('mouseleave', () => onChartMouseLeave(canvasId));
+    }
+}
+
+function drawDualAxisChart(canvasId, leftDs, rightDs, labels) {
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+    const dpr = window.devicePixelRatio || 1;
+    const parent = canvas.parentElement;
+    const W = Math.max(parent ? parent.clientWidth - 32 : 600, 100);
+    const H = 200;
+    canvas.width  = Math.floor(W * dpr);
+    canvas.height = Math.floor(H * dpr);
+    const ctx = canvas.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    const pad = { top: 12, right: 56, bottom: 36, left: 56 };
+    const cw = W - pad.left - pad.right;
+    const ch = H - pad.top - pad.bottom;
+    const n = labels.length;
+
+    function axisRange(data) {
+        let mn = Infinity, mx = -Infinity;
+        data.forEach(v => { if (v < mn) mn = v; if (v > mx) mx = v; });
+        if (mn === mx) { mn = 0; mx = mx || 1; }
+        if (mn > 0) mn = 0;
+        return { mn, mx };
+    }
+
+    const L = axisRange(leftDs.data);
+    const R = axisRange(rightDs.data);
+    const yTicks = 5;
+
+    function xPos(i)  { return pad.left + (i / (n - 1)) * cw; }
+    function yPosL(v) { return pad.top + ch - ((v - L.mn) / (L.mx - L.mn)) * ch; }
+    function yPosR(v) { return pad.top + ch - ((v - R.mn) / (R.mx - R.mn)) * ch; }
+
+    // Store in registry for hover.
+    function redrawDual(crosshairIdx) {
+        const canvas2 = document.getElementById(canvasId);
+        if (!canvas2) return;
+        const dpr2 = window.devicePixelRatio || 1;
+        const ctx2 = canvas2.getContext('2d');
+        ctx2.setTransform(dpr2, 0, 0, dpr2, 0, 0);
+
+        // ─ background layer ───────────────────────────────────────
+        const bgEntry2 = getBgCanvas(canvasId, W, H);
+        if (!bgEntry2.valid) {
+            const bgCtx2 = bgEntry2.canvas.getContext('2d');
+            bgCtx2.setTransform(dpr2, 0, 0, dpr2, 0, 0);
+            bgCtx2.clearRect(0, 0, W, H);
+            bgCtx2.strokeStyle = COLORS.grid; bgCtx2.lineWidth = 0.5;
+            bgCtx2.font = '10px system-ui, sans-serif';
+            for (let t = 0; t <= yTicks; t++) {
+                const vL2 = L.mn + (L.mx - L.mn) * (t / yTicks);
+                const vR2 = R.mn + (R.mx - R.mn) * (t / yTicks);
+                const y2  = yPosL(vL2);
+                bgCtx2.beginPath(); bgCtx2.moveTo(pad.left, y2); bgCtx2.lineTo(pad.left + cw, y2); bgCtx2.stroke();
+                bgCtx2.textAlign = 'right'; bgCtx2.fillStyle = leftDs.color;
+                bgCtx2.fillText(formatNum(vL2), pad.left - 4, y2 + 3.5);
+                bgCtx2.textAlign = 'left'; bgCtx2.fillStyle = rightDs.color;
+                bgCtx2.fillText(formatNum(vR2), pad.left + cw + 4, y2 + 3.5);
+            }
+            bgCtx2.fillStyle = COLORS.text; bgCtx2.textAlign = 'center';
+            const xStep2 = Math.max(1, Math.floor(n / 10));
+            for (let i = 0; i < n; i += xStep2) bgCtx2.fillText(labels[i], xPos(i), H - pad.bottom + 14);
+            bgCtx2.strokeStyle = COLORS.axis; bgCtx2.lineWidth = 1; bgCtx2.setLineDash([]);
+            bgCtx2.beginPath();
+            bgCtx2.moveTo(pad.left, pad.top); bgCtx2.lineTo(pad.left, pad.top + ch);
+            bgCtx2.lineTo(pad.left + cw, pad.top + ch); bgCtx2.lineTo(pad.left + cw, pad.top);
+            bgCtx2.stroke();
+            bgCtx2.strokeStyle = leftDs.color; bgCtx2.lineWidth = 2; bgCtx2.lineJoin = 'round'; bgCtx2.setLineDash([]);
+            bgCtx2.beginPath();
+            leftDs.data.forEach((v, i) => { i === 0 ? bgCtx2.moveTo(xPos(i), yPosL(v)) : bgCtx2.lineTo(xPos(i), yPosL(v)); });
+            bgCtx2.stroke();
+            bgCtx2.strokeStyle = rightDs.color; bgCtx2.lineWidth = 2; bgCtx2.setLineDash([5, 3]);
+            bgCtx2.beginPath();
+            rightDs.data.forEach((v, i) => { i === 0 ? bgCtx2.moveTo(xPos(i), yPosR(v)) : bgCtx2.lineTo(xPos(i), yPosR(v)); });
+            bgCtx2.stroke();
+            bgCtx2.setLineDash([]);
+            bgEntry2.valid = true;
+        }
+
+        // ─ composite + crosshair ──────────────────────────────────
+        ctx2.clearRect(0, 0, W, H);
+        ctx2.drawImage(bgEntry2.canvas, 0, 0, Math.floor(W * dpr2), Math.floor(H * dpr2), 0, 0, W, H);
+
+        if (crosshairIdx !== undefined && crosshairIdx >= 0 && crosshairIdx < n) {
+            const cx2 = xPos(crosshairIdx);
+            ctx2.strokeStyle = 'rgba(100,120,160,0.35)'; ctx2.lineWidth = 1; ctx2.setLineDash([3, 3]);
+            ctx2.beginPath(); ctx2.moveTo(cx2, pad.top); ctx2.lineTo(cx2, pad.top + ch); ctx2.stroke();
+            ctx2.setLineDash([]);
+            [[leftDs, yPosL], [rightDs, yPosR]].forEach(([ds, yFn]) => {
+                const v = ds.data[crosshairIdx];
+                if (v === undefined) return;
+                ctx2.beginPath(); ctx2.arc(cx2, yFn(v), 4, 0, Math.PI * 2);
+                ctx2.fillStyle = ds.color; ctx2.fill();
+                ctx2.strokeStyle = '#fff'; ctx2.lineWidth = 1.5; ctx2.stroke();
+            });
+        }
+    }
+
+    redrawDual();
+
+    invalidateBg(canvasId);
+    chartRegistry[canvasId] = {
+        dual: true, redraw: redrawDual, leftDs, rightDs,
+        labels, pad, W, H, cw, ch, n,
+        yMin: L.mn, yMax: L.mx, xPos,
+        yPos: yPosL,
+        datasets: [
+            { data: leftDs.data,  color: leftDs.color,  label: leftDs.label  },
+            { data: rightDs.data, color: rightDs.color, label: rightDs.label, dashed: true }
+        ]
+    };
+
+    if (!canvas._hoverBound) {
+        canvas._hoverBound = true;
+        canvas.addEventListener('mousemove', e => onChartMouseMove(canvasId, e));
+        canvas.addEventListener('mouseleave', () => onChartMouseLeave(canvasId));
+    }
+}
+
+function renderChartContent(ctx, reg, crosshairIdx) {
+    const { canvasId, datasets, labels, pad, W, H, cw, ch, n, yMin, yMax, xPos, yPos } = reg;
+    const dpr = window.devicePixelRatio || 1;
+
+    // ─ background layer ─────────────────────────────────────────────
+    const bgEntry = canvasId ? getBgCanvas(canvasId, W, H) : null;
+    if (bgEntry && !bgEntry.valid) {
+        const bgCtx = bgEntry.canvas.getContext('2d');
+        bgCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        bgCtx.clearRect(0, 0, W, H);
+
+        // Gridlines + Y axis labels.
+        bgCtx.strokeStyle = COLORS.grid; bgCtx.lineWidth = 0.5;
+        bgCtx.fillStyle = COLORS.text; bgCtx.font = '10px system-ui, sans-serif';
+        bgCtx.textAlign = 'right';
+        const yTicks = 5;
+        for (let t = 0; t <= yTicks; t++) {
+            const v = yMin + (yMax - yMin) * (t / yTicks);
+            const y = yPos(v);
+            bgCtx.beginPath(); bgCtx.moveTo(pad.left, y); bgCtx.lineTo(pad.left + cw, y); bgCtx.stroke();
+            bgCtx.fillText(formatNum(v), pad.left - 4, y + 3.5);
+        }
+        // X axis labels.
+        bgCtx.textAlign = 'center';
+        const xStep = Math.max(1, Math.floor(n / 10));
+        for (let i = 0; i < n; i += xStep) bgCtx.fillText(labels[i], xPos(i), H - pad.bottom + 14);
+        // Axis lines.
+        bgCtx.strokeStyle = COLORS.axis; bgCtx.lineWidth = 1;
+        bgCtx.beginPath();
+        bgCtx.moveTo(pad.left, pad.top); bgCtx.lineTo(pad.left, pad.top + ch); bgCtx.lineTo(pad.left + cw, pad.top + ch);
+        bgCtx.stroke();
+        // Series lines.
+        datasets.forEach(ds => {
+            bgCtx.strokeStyle = ds.color;
+            bgCtx.lineWidth = ds.dashed ? 1.5 : 2;
+            bgCtx.lineJoin = 'round';
+            bgCtx.setLineDash(ds.dashed ? [4, 3] : []);
+            bgCtx.beginPath();
+            ds.data.forEach((v, i) => { i === 0 ? bgCtx.moveTo(xPos(i), yPos(v)) : bgCtx.lineTo(xPos(i), yPos(v)); });
+            bgCtx.stroke();
+        });
+        bgCtx.setLineDash([]);
+        bgEntry.valid = true;
+    }
+
+    // ─ composite onto visible canvas ──────────────────────────────
+    ctx.clearRect(0, 0, W, H);
+    if (bgEntry) ctx.drawImage(bgEntry.canvas, 0, 0, Math.floor(W * dpr), Math.floor(H * dpr), 0, 0, W, H);
+
+    // ─ crosshair overlay ────────────────────────────────────────
+    if (crosshairIdx !== undefined && crosshairIdx >= 0 && crosshairIdx < n) {
+        const cx = xPos(crosshairIdx);
+        ctx.strokeStyle = 'rgba(100,120,160,0.35)'; ctx.lineWidth = 1; ctx.setLineDash([3, 3]);
+        ctx.beginPath(); ctx.moveTo(cx, pad.top); ctx.lineTo(cx, pad.top + ch); ctx.stroke();
+        ctx.setLineDash([]);
+        datasets.forEach(ds => {
+            if (ds.dashed) return;
+            const v = ds.data[crosshairIdx];
+            if (v === undefined) return;
+            ctx.beginPath(); ctx.arc(cx, yPos(v), 4, 0, Math.PI * 2);
+            ctx.fillStyle = ds.color; ctx.fill();
+            ctx.strokeStyle = '#fff'; ctx.lineWidth = 1.5; ctx.stroke();
+        });
+    }
+}
+
+// ─── per-canvas rAF handles for throttled hover redraws ─────────────────────
+const hoverRaf = {};
+
+function onChartMouseMove(canvasId, e) {
+    const reg = chartRegistry[canvasId];
+    if (!reg) return;
+    const canvas = document.getElementById(canvasId);
+    const rect = canvas.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left;
+
+    // Find the nearest data index.
+    const { pad, cw, n, labels, datasets, xPos, yPos } = reg;
+    const relX = mouseX - pad.left;
+    let idx = Math.round(relX / cw * (n - 1));
+    idx = Math.max(0, Math.min(n - 1, idx));
+
+    // Throttle canvas redraw to one per animation frame.
+    if (hoverRaf[canvasId]) cancelAnimationFrame(hoverRaf[canvasId]);
+    hoverRaf[canvasId] = requestAnimationFrame(() => {
+        hoverRaf[canvasId] = null;
+        const ctx = canvas.getContext('2d');
+        const dpr = window.devicePixelRatio || 1;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        if (reg.dual) {
+            reg.redraw(idx);
+        } else {
+            renderChartContent(ctx, reg, idx);
+        }
+    });
+
+    // Build tooltip.
+    const tt = document.getElementById('chart-tooltip');
+    const hdrLabel = reg.headerLabel || 'Level';
+    let html = '<div class="tt-level">' + hdrLabel + ' ' + labels[idx] + '</div>';
+    datasets.forEach(ds => {
+        if (ds.label === undefined) return;
+        const v = ds.data[idx];
+        if (v === undefined) return;
+        const cls = ds.dashed ? ' tt-dashed' : '';
+        const suffix = ds.unit ? ' ' + ds.unit : '';
+        html += '<div class="tt-row' + cls + '">';
+        html += '<span class="tt-swatch" style="background:' + ds.color + '; color:' + ds.color + '"></span>';
+        html += '<span>' + ds.label + ': <strong>' + formatNum(v) + suffix + '</strong></span>';
+        html += '</div>';
+    });
+    tt.innerHTML = html;
+    tt.style.display = 'block';
+
+    // Position tooltip near cursor, keeping it on screen.
+    const ttW = 180, ttH = 20 + datasets.filter(d => d.label).length * 22;
+    let tx = e.clientX + 14;
+    let ty = e.clientY - 10;
+    if (tx + ttW > window.innerWidth - 8) tx = e.clientX - ttW - 14;
+    if (ty + ttH > window.innerHeight - 8) ty = window.innerHeight - ttH - 8;
+    tt.style.left = tx + 'px';
+    tt.style.top  = ty + 'px';
+}
+
+function onChartMouseLeave(canvasId) {
+    if (hoverRaf[canvasId]) { cancelAnimationFrame(hoverRaf[canvasId]); hoverRaf[canvasId] = null; }
+    const reg = chartRegistry[canvasId];
+    if (!reg) return;
+    const canvas = document.getElementById(canvasId);
+    if (reg.dual) {
+        reg.redraw();
+    } else {
+        const ctx = canvas.getContext('2d');
+        const dpr = window.devicePixelRatio || 1;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        renderChartContent(ctx, reg);
+    }
+    document.getElementById('chart-tooltip').style.display = 'none';
+}
+
+function formatNum(v) {
+    if (Math.abs(v) >= 1000000) return (v/1000000).toFixed(1) + 'M';
+    if (Math.abs(v) >= 1000)    return (v/1000).toFixed(1) + 'K';
+    return Math.round(v).toString();
+}
+
+// ─── stat cap compression curve (client-side, no API needed) ────────────────
+function drawCapCurve(canvasId) {
+    const threshold = parseFloat(document.getElementById('StatCapThreshold').value) || 105;
+    const anchor    = parseFloat(document.getElementById('StatCapAnchor').value)    || 100;
+    const exponent  = parseFloat(document.getElementById('StatCapExponent').value)  || 0.5;
+    const scale     = parseFloat(document.getElementById('StatCapScale').value)     || 2.0;
+
+    const maxRaw = Math.max(200, threshold * 2);
+    const points = 200;
+    const rawVals = [], adjVals = [];
+    for (let i = 0; i <= points; i++) {
+        const raw = Math.round(i / points * maxRaw);
+        rawVals.push(raw);
+        if (raw < threshold) {
+            adjVals.push(raw);
+        } else {
+            const overage = Math.max(0, raw - anchor);
+            adjVals.push(anchor + Math.round(Math.pow(overage, exponent) * scale));
+        }
+    }
+
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+    const dpr = window.devicePixelRatio || 1;
+    const parent = canvas.parentElement;
+    const W = Math.max(parent ? parent.clientWidth - 32 : 600, 100);
+    const H = 200;
+    canvas.width  = Math.floor(W * dpr);
+    canvas.height = Math.floor(H * dpr);
+    const ctx = canvas.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    const pad = { top: 12, right: 16, bottom: 36, left: 56 };
+    const cw = W - pad.left - pad.right;
+    const ch = H - pad.top - pad.bottom;
+    const n = rawVals.length;
+    const yMax = Math.max(...adjVals, maxRaw);
+    const yMin = 0;
+    const yTicks = 5;
+
+    function xPos(i) { return pad.left + (i / (n - 1)) * cw; }
+    function yPos(v) { return pad.top + ch - (v / yMax) * ch; }
+
+    ctx.clearRect(0, 0, W, H);
+
+    function redrawCap(crosshairIdx) {
+        const canvas2 = document.getElementById(canvasId);
+        if (!canvas2) return;
+        const dpr2 = window.devicePixelRatio || 1;
+        const ctx2 = canvas2.getContext('2d');
+        ctx2.setTransform(dpr2, 0, 0, dpr2, 0, 0);
+
+        // ─ background layer ───────────────────────────────────────
+        const bgEntryCap = getBgCanvas(canvasId, W, H);
+        if (!bgEntryCap.valid) {
+            const bgCtxCap = bgEntryCap.canvas.getContext('2d');
+            bgCtxCap.setTransform(dpr2, 0, 0, dpr2, 0, 0);
+            bgCtxCap.clearRect(0, 0, W, H);
+            bgCtxCap.strokeStyle = COLORS.grid; bgCtxCap.lineWidth = 0.5;
+            bgCtxCap.fillStyle = COLORS.text; bgCtxCap.font = '10px system-ui, sans-serif';
+            for (let t = 0; t <= yTicks; t++) {
+                const v = yMax * t / yTicks;
+                const y = yPos(v);
+                bgCtxCap.textAlign = 'right';
+                bgCtxCap.beginPath(); bgCtxCap.moveTo(pad.left, y); bgCtxCap.lineTo(pad.left + cw, y); bgCtxCap.stroke();
+                bgCtxCap.fillText(formatNum(v), pad.left - 4, y + 3.5);
+            }
+            bgCtxCap.fillStyle = COLORS.text; bgCtxCap.textAlign = 'center';
+            const xStep2 = Math.max(1, Math.floor(n / 8));
+            for (let i = 0; i < n; i += xStep2) bgCtxCap.fillText(String(rawVals[i]), xPos(i), H - pad.bottom + 14);
+            bgCtxCap.strokeStyle = COLORS.axis; bgCtxCap.lineWidth = 1; bgCtxCap.setLineDash([]);
+            bgCtxCap.beginPath();
+            bgCtxCap.moveTo(pad.left, pad.top); bgCtxCap.lineTo(pad.left, pad.top + ch); bgCtxCap.lineTo(pad.left + cw, pad.top + ch);
+            bgCtxCap.stroke();
+            bgCtxCap.strokeStyle = '#bbb'; bgCtxCap.lineWidth = 1; bgCtxCap.setLineDash([4, 3]);
+            bgCtxCap.beginPath();
+            bgCtxCap.moveTo(xPos(0), yPos(rawVals[0]));
+            for (let i = 1; i < n; i++) bgCtxCap.lineTo(xPos(i), yPos(rawVals[i]));
+            bgCtxCap.stroke();
+            bgCtxCap.setLineDash([]);
+            const threshIdx2 = rawVals.findIndex(v => v >= threshold);
+            if (threshIdx2 >= 0) {
+                const tx2 = xPos(threshIdx2);
+                bgCtxCap.strokeStyle = 'rgba(180,100,100,0.4)'; bgCtxCap.lineWidth = 1; bgCtxCap.setLineDash([3, 3]);
+                bgCtxCap.beginPath(); bgCtxCap.moveTo(tx2, pad.top); bgCtxCap.lineTo(tx2, pad.top + ch); bgCtxCap.stroke();
+                bgCtxCap.setLineDash([]);
+                bgCtxCap.fillStyle = 'rgba(180,100,100,0.7)'; bgCtxCap.textAlign = 'left'; bgCtxCap.font = '9px system-ui, sans-serif';
+                bgCtxCap.fillText('threshold', tx2 + 3, pad.top + 10);
+            }
+            bgCtxCap.strokeStyle = COLORS.capCurve; bgCtxCap.lineWidth = 2; bgCtxCap.lineJoin = 'round'; bgCtxCap.setLineDash([]);
+            bgCtxCap.beginPath();
+            adjVals.forEach((v, i) => { i === 0 ? bgCtxCap.moveTo(xPos(i), yPos(v)) : bgCtxCap.lineTo(xPos(i), yPos(v)); });
+            bgCtxCap.stroke();
+            bgEntryCap.valid = true;
+        }
+
+        // ─ composite + crosshair ──────────────────────────────────
+        ctx2.clearRect(0, 0, W, H);
+        ctx2.drawImage(bgEntryCap.canvas, 0, 0, Math.floor(W * dpr2), Math.floor(H * dpr2), 0, 0, W, H);
+
+        if (crosshairIdx !== undefined && crosshairIdx >= 0 && crosshairIdx < n) {
+            const cx2 = xPos(crosshairIdx);
+            ctx2.strokeStyle = 'rgba(100,120,160,0.35)'; ctx2.lineWidth = 1; ctx2.setLineDash([3, 3]);
+            ctx2.beginPath(); ctx2.moveTo(cx2, pad.top); ctx2.lineTo(cx2, pad.top + ch); ctx2.stroke();
+            ctx2.setLineDash([]);
+            const cv = adjVals[crosshairIdx];
+            if (cv !== undefined) {
+                ctx2.beginPath(); ctx2.arc(cx2, yPos(cv), 4, 0, Math.PI * 2);
+                ctx2.fillStyle = COLORS.capCurve; ctx2.fill();
+                ctx2.strokeStyle = '#fff'; ctx2.lineWidth = 1.5; ctx2.stroke();
+            }
+        }
+    }
+
+    redrawCap();
+
+    // Store for hover.
+    const labels = rawVals.map(String);
+    invalidateBg(canvasId);
+    chartRegistry[canvasId] = {
+        dual: true, redraw: redrawCap,
+        headerLabel: 'Raw',
+        datasets: [
+            { data: adjVals, color: COLORS.capCurve, label: 'ValueAdj' },
+            { data: rawVals, color: '#bbb', label: '1:1 ref', dashed: true }
+        ],
+        labels, pad, W, H, cw, ch, n,
+        yMin, yMax,
+        xPos, yPos
+    };
+
+    if (!canvas._hoverBound) {
+        canvas._hoverBound = true;
+        canvas.addEventListener('mousemove', e => onChartMouseMove(canvasId, e));
+        canvas.addEventListener('mouseleave', () => onChartMouseLeave(canvasId));
+    }
+}
+
+// ─── preview API call ─────────────────────────────────────────────────────────
+async function loadPreview() {
+    const params = getParams();
+    try {
+        const res = await fetch('/admin/api/v1/progression/preview?' + params.toString());
+        const json = await res.json();
+        if (!json.success) return;
+        const d = json.data;
+        const labels = d.levels.map(String);
+
+        drawLineChart('chart-stats', [
+            { data: d.stat_gains_adj.base5, color: COLORS.base5, label: 'Base 5 (adj)' },
+            { data: d.stat_gains_adj.base3, color: COLORS.base3, label: 'Base 3 (adj)' },
+            { data: d.stat_gains_adj.base1, color: COLORS.base1, label: 'Base 1 (adj)' },
+            { data: d.stat_gains.base5,     color: COLORS.base5, label: 'Base 5 (raw)', dashed: true },
+            { data: d.stat_gains.base3,     color: COLORS.base3, label: 'Base 3 (raw)', dashed: true },
+            { data: d.stat_gains.base1,     color: COLORS.base1, label: 'Base 1 (raw)', dashed: true },
+        ], labels);
+
+        drawLineChart('chart-hp', [
+            { data: d.hp.base5,     color: COLORS.base5, label: 'Vit base 5 (adj)', unit: 'HP' },
+            { data: d.hp.base3,     color: COLORS.base3, label: 'Vit base 3 (adj)', unit: 'HP' },
+            { data: d.hp.base1,     color: COLORS.base1, label: 'Vit base 1 (adj)', unit: 'HP' },
+            { data: d.hp_raw.base5, color: COLORS.base5, label: 'Vit base 5 (raw)', unit: 'HP', dashed: true },
+            { data: d.hp_raw.base3, color: COLORS.base3, label: 'Vit base 3 (raw)', unit: 'HP', dashed: true },
+            { data: d.hp_raw.base1, color: COLORS.base1, label: 'Vit base 1 (raw)', unit: 'HP', dashed: true },
+        ], labels);
+
+        drawLineChart('chart-mana', [
+            { data: d.mana.base5,     color: COLORS.base5, label: 'Mys base 5 (adj)', unit: 'MP' },
+            { data: d.mana.base3,     color: COLORS.base3, label: 'Mys base 3 (adj)', unit: 'MP' },
+            { data: d.mana.base1,     color: COLORS.base1, label: 'Mys base 1 (adj)', unit: 'MP' },
+            { data: d.mana_raw.base5, color: COLORS.base5, label: 'Mys base 5 (raw)', unit: 'MP', dashed: true },
+            { data: d.mana_raw.base3, color: COLORS.base3, label: 'Mys base 3 (raw)', unit: 'MP', dashed: true },
+            { data: d.mana_raw.base1, color: COLORS.base1, label: 'Mys base 1 (raw)', unit: 'MP', dashed: true },
+        ], labels);
+
+        drawDualAxisChart('chart-xp',
+            { data: d.xp_per_level,  color: COLORS.xpDelta, label: 'XP per level', unit: 'XP' },
+            { data: d.xp_cumulative, color: COLORS.xpTotal, label: 'Cumulative XP', unit: 'XP' },
+            labels
+        );
+
+        // Points awarded per level — computed client-side from form values.
+        const tpPerLevel  = parseInt(document.getElementById('TrainingPointsPerLevel').value)  || 0;
+        const tpEveryN    = parseInt(document.getElementById('TrainingPointsEveryNLevels').value) || 1;
+        const spPerLevel  = parseInt(document.getElementById('StatPointsPerLevel').value)      || 0;
+        const spEveryN    = parseInt(document.getElementById('StatPointsEveryNLevels').value)  || 1;
+        let tpCum = 0, spCum = 0;
+        const tpData = [], spData = [];
+        d.levels.forEach(lvl => {
+            if (tpEveryN <= 1 || lvl % tpEveryN === 0) tpCum += tpPerLevel;
+            if (spEveryN <= 1 || lvl % spEveryN === 0) spCum += spPerLevel;
+            tpData.push(tpCum);
+            spData.push(spCum);
+        });
+        drawLineChart('chart-points', [
+            { data: spData, color: COLORS.statPts,  label: 'Stat points',     unit: 'pts' },
+            { data: tpData, color: COLORS.trainPts, label: 'Training points', unit: 'pts' }
+        ], labels);
+
+        drawCapCurve('chart-cap');
+
+    } catch(e) {
+        // Silently ignore preview errors to not spam the status bar while dragging.
+    }
+}
+
+// ─── resize observer: redraw charts when panel width changes ─────────────────
+let resizeTimer = null;
+const ro = new ResizeObserver(() => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(loadPreview, 100);
+});
+document.querySelectorAll('.chart-body').forEach(el => ro.observe(el));
+
+// ─── init ─────────────────────────────────────────────────────────────────────
+document.getElementById('restore-modal').addEventListener('click', e => {
+    if (e.target === e.currentTarget) closeRestoreModal();
+});
+loadServerConfig();
+</script>
+
+{{template "footer" .}}

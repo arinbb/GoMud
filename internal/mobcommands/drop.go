@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
+	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
@@ -16,6 +16,10 @@ import (
 func Drop(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 
 	args := util.SplitButRespectQuotes(strings.ToLower(rest))
+
+	if len(args) == 0 {
+		return true, nil
+	}
 
 	if args[0] == "all" {
 
@@ -56,7 +60,7 @@ func Drop(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 		}
 	}
 
-	if mob.Character.HasBuffFlag(buffs.PermaGear) {
+	if mob.Character.HasBuffFlag("perma-gear") {
 		return true, nil
 	}
 
@@ -64,6 +68,15 @@ func Drop(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 	matchItem, found := mob.Character.FindInBackpack(rest)
 
 	if found {
+
+		// Check floor item limit before dropping
+		floorLimit := int(configs.GetGamePlayConfig().FloorItemCountMax)
+		if floorLimit > 0 && len(room.Items) >= floorLimit {
+			room.SendText(
+				fmt.Sprintf(`There are too many items on the floor! The <ansi fg="item">%s</ansi> re-appears in <ansi fg="mobname">%s</ansi>'s hands!`, matchItem.DisplayName(), mob.Character.Name),
+			)
+			return true, nil
+		}
 
 		// Swap the item location
 		room.AddItem(matchItem, false)

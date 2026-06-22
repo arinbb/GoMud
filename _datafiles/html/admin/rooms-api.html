@@ -2,40 +2,41 @@
 
 <style>
     h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
-    .subtitle { color: #555; margin-bottom: 2rem; font-size: 0.9rem; }
+    .subtitle { color: var(--color-text-muted); margin-bottom: 2rem; font-size: 0.9rem; }
     .api-list { display: flex; flex-direction: column; gap: 0.5rem; }
-    .api-entry { background: #fff; border: 1px solid #ddd; border-radius: 6px; overflow: hidden; }
+    .api-entry { background: var(--color-surface-white); border: 1px solid var(--color-border); border-radius: 6px; overflow: hidden; }
     .api-entry summary { display: flex; align-items: baseline; gap: 0.75rem; padding: 0.65rem 1rem; cursor: pointer; user-select: none; list-style: none; }
     .api-entry summary::-webkit-details-marker { display: none; }
-    .api-entry summary::before { content: "\25B6"; font-size: 0.65rem; color: #888; transition: transform 0.15s; flex-shrink: 0; }
+    .api-entry summary::before { content: "\25B6"; font-size: 0.65rem; color: var(--color-text-faint); transition: transform 0.15s; flex-shrink: 0; }
     .api-entry[open] summary::before { transform: rotate(90deg); }
-    .api-entry summary:hover { background: #fafafa; }
+    .api-entry summary:hover { background: var(--color-surface-alt); }
     .method { font-family: monospace; font-size: 0.8rem; font-weight: 700; padding: 0.15rem 0.45rem; border-radius: 3px; flex-shrink: 0; }
-    .method-get    { background: #e6f4ea; color: #1e6e34; }
-    .method-post   { background: #e3f2fd; color: #0d47a1; }
-    .method-patch  { background: #fff3e0; color: #8a4a00; }
-    .method-delete { background: #fde8e8; color: #8a0000; }
-    .api-path { font-family: monospace; font-size: 0.9rem; color: #1a1a2e; }
-    .api-desc { font-size: 0.85rem; color: #555; margin-left: auto; text-align: right; }
-    .api-body { padding: 0.75rem 1rem 1rem; border-top: 1px solid #eee; background: #fafafa; }
-    .api-body p { font-size: 0.85rem; color: #444; margin-bottom: 0.5rem; }
-    .curl-block { background: #1a1a2e; color: #c9d1d9; font-family: monospace; font-size: 0.82rem; padding: 0.85rem 1rem; border-radius: 5px; white-space: pre; overflow-x: auto; line-height: 1.6; margin-bottom: 0.5rem; }
-    .curl-block .kw   { color: #79c0ff; }
-    .curl-block .str  { color: #a5d6ff; }
-    .curl-block .flag { color: #d2a8ff; }
+    .method-get    { background: var(--color-success-bg); color: var(--color-success-text); }
+    .method-post   { background: var(--color-info-bg); color: var(--color-info-text); }
+    .method-patch  { background: var(--color-warning-bg); color: var(--color-warning-text); }
+    .method-delete { background: var(--color-error-bg); color: var(--color-error-text); }
+    .api-path { font-family: monospace; font-size: 0.9rem; color: var(--color-primary); }
+    .api-desc { font-size: 0.85rem; color: var(--color-text-muted); margin-left: auto; text-align: right; }
+    .api-body { padding: 0.75rem 1rem 1rem; border-top: 1px solid var(--color-border-light); background: var(--color-surface-alt); }
+    .api-body p { font-size: 0.85rem; color: var(--color-text-tertiary); margin-bottom: 0.5rem; }
+    .curl-block { background: var(--color-code-bg); color: var(--color-code-text); font-family: monospace; font-size: 0.82rem; padding: 0.85rem 1rem; border-radius: 5px; white-space: pre; overflow-x: auto; line-height: 1.6; margin-bottom: 0.5rem; }
+    .curl-block .kw   { color: var(--color-api-kw); }
+    .curl-block .str  { color: var(--color-api-str); }
+    .curl-block .flag { color: var(--color-api-flag); }
     .response-examples { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.4rem; }
-    .resp-entry { border: 1px solid #ddd; border-radius: 4px; overflow: hidden; }
-    .resp-entry summary { display: flex; align-items: baseline; gap: 0.6rem; padding: 0.45rem 0.75rem; cursor: pointer; user-select: none; list-style: none; background: #f5f5f5; font-size: 0.82rem; }
+    .resp-entry { border: 1px solid var(--color-border); border-radius: 4px; overflow: hidden; }
+    .resp-entry summary { display: flex; align-items: baseline; gap: 0.6rem; padding: 0.45rem 0.75rem; cursor: pointer; user-select: none; list-style: none; background: var(--color-page-bg); font-size: 0.82rem; }
     .resp-entry summary::-webkit-details-marker { display: none; }
-    .resp-entry summary::before { content: "\25B6"; font-size: 0.6rem; color: #888; transition: transform 0.15s; flex-shrink: 0; }
+    .resp-entry summary::before { content: "\25B6"; font-size: 0.6rem; color: var(--color-text-faint); transition: transform 0.15s; flex-shrink: 0; }
     .resp-entry[open] summary::before { transform: rotate(90deg); }
-    .resp-entry summary:hover { background: #efefef; }
-    .resp-body { padding: 0.6rem 0.75rem 0.75rem; border-top: 1px solid #eee; background: #fafafa; }
-    .status-ok  { background: #e6f4ea; color: #1e6e34; }
-    .status-err { background: #fde8e8; color: #8a0000; }
-    .resp-label { font-size: 0.8rem; color: #444; }
-    .api-group-title { font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; color: #1a1a2e; }
+    .resp-entry summary:hover { background: var(--color-api-summary-hover); }
+    .resp-body { padding: 0.6rem 0.75rem 0.75rem; border-top: 1px solid var(--color-border-light); background: var(--color-surface-alt); }
+    .status-ok  { background: var(--color-success-bg); color: var(--color-success-text); }
+    .status-err { background: var(--color-error-bg); color: var(--color-error-text); }
+    .resp-label { font-size: 0.8rem; color: var(--color-text-tertiary); }
+    .api-group-title { font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; color: var(--color-primary); }
     .api-group-title:first-child { margin-top: 0; }
+    .perm-badge { font-size: 0.72rem; font-family: monospace; padding: 0.1rem 0.4rem; border-radius: 3px; font-weight: 600; background: var(--color-border-faint); color: var(--color-text-tertiary); margin-left: 0.5rem; }
 </style>
 
 <h1>Rooms &amp; Zones API Reference</h1>
@@ -49,6 +50,7 @@
             <span class="method method-get">GET</span>
             <span class="api-path">/admin/api/v1/tags</span>
             <span class="api-desc">List all registered room tags</span>
+            <span class="perm-badge">server.read</span>
         </summary>
         <div class="api-body">
             <p>Returns every room tag registered by loaded modules, each with its module name. Tags are sorted by module then by registration order.</p>
@@ -73,6 +75,7 @@
             <span class="method method-get">GET</span>
             <span class="api-path">/admin/api/v1/zones</span>
             <span class="api-desc">List all zones with room counts</span>
+            <span class="perm-badge">rooms.read</span>
         </summary>
         <div class="api-body">
             <p>Returns an array of zone summaries sorted by name.</p>
@@ -86,6 +89,7 @@
             <span class="method method-post">POST</span>
             <span class="api-path">/admin/api/v1/zones</span>
             <span class="api-desc">Create a new zone</span>
+            <span class="perm-badge">zones.write</span>
         </summary>
         <div class="api-body">
             <p>Creates a new zone with a root room. <code>Name</code> must be at least 2 characters (letters, numbers, spaces, underscores).</p>
@@ -101,6 +105,7 @@
             <span class="method method-patch">PATCH</span>
             <span class="api-path">/admin/api/v1/zones/{zonename}</span>
             <span class="api-desc">Update zone configuration</span>
+            <span class="perm-badge">zones.write</span>
         </summary>
         <div class="api-body">
             <p>Merges supplied fields into the zone config. <code>Name</code> and <code>RoomId</code> cannot be changed.</p>
@@ -116,12 +121,29 @@
             <span class="method method-delete">DELETE</span>
             <span class="api-path">/admin/api/v1/zones/{zonename}</span>
             <span class="api-desc">Delete a zone and all its rooms</span>
+            <span class="perm-badge">zones.write</span>
         </summary>
         <div class="api-body">
             <p>Permanently deletes the zone, its configuration, and <strong>all rooms</strong> in the zone. Fails if any room in the zone has players present.</p>
             <div class="curl-block"><span class="kw">curl</span> <span class="flag">-s</span> <span class="flag">-u</span> <span class="str">admin:password</span> \
      <span class="flag">-X</span> DELETE \
      <span class="str">http://{{.CONFIG.FilePaths.WebDomain}}/admin/api/v1/zones/The%20Arctic</span></div>
+        </div>
+    </details>
+
+    <details class="api-entry">
+        <summary>
+            <span class="method method-post">POST</span>
+            <span class="api-path">/admin/api/v1/zones/{zonename}/rename</span>
+            <span class="api-desc">Rename a zone</span>
+            <span class="perm-badge">zones.write</span>
+        </summary>
+        <div class="api-body">
+            <p>Renames a zone. Updates all room and mob YAML files on disk, renames the zone folders, and applies the new name to all in-memory state immediately. Fails if any room in the zone has players present or if <code>NewName</code> already exists.</p>
+            <div class="curl-block"><span class="kw">curl</span> <span class="flag">-s</span> <span class="flag">-u</span> <span class="str">admin:password</span> \
+     <span class="flag">-X</span> POST <span class="flag">-H</span> <span class="str">"Content-Type: application/json"</span> \
+     <span class="flag">-d</span> <span class="str">'{"NewName":"The New Arctic"}'</span> \
+     <span class="str">http://{{.CONFIG.FilePaths.WebDomain}}/admin/api/v1/zones/The%20Arctic/rename</span></div>
         </div>
     </details>
 
@@ -135,6 +157,7 @@
             <span class="method method-get">GET</span>
             <span class="api-path">/admin/api/v1/rooms</span>
             <span class="api-desc">List rooms (paginated)</span>
+            <span class="perm-badge">rooms.read</span>
         </summary>
         <div class="api-body">
             <p>Returns a paginated list of room summaries. Query params: <code>zone</code> (filter by zone), <code>search</code> (filter by ID or title), <code>page</code> (default 1), <code>perPage</code> (default 50, max 200).</p>
@@ -143,7 +166,7 @@
             <div class="response-examples">
                 <details class="resp-entry">
                     <summary><span class="method resp-label status-ok">200</span> <span class="resp-label">Success</span></summary>
-                    <div class="resp-body"><div class="curl-block">{"success":true,"data":{"rooms":[{"RoomId":1,"Zone":"Frostfang","Title":"Town Square","Biome":"city","ExitCount":4}],"total":150,"page":1,"perPage":50}}</div></div>
+                    <div class="resp-body"><div class="curl-block">{"success":true,"data":{"rooms":[{"RoomId":1,"Zone":"Frostfang","Title":"Town Square","Biome":"city","ExitCount":4},{"RoomId":2,"Zone":"Frostfang","Title":"North Gate","Biome":"city","ExitCount":2}],"total":150,"page":1,"perPage":50}}</div></div>
                 </details>
             </div>
         </div>
@@ -154,6 +177,7 @@
             <span class="method method-get">GET</span>
             <span class="api-path">/admin/api/v1/rooms/biomes</span>
             <span class="api-desc">List all biome definitions</span>
+            <span class="perm-badge">rooms.read</span>
         </summary>
         <div class="api-body">
             <p>Returns all loaded biome definitions for use in dropdowns.</p>
@@ -167,6 +191,7 @@
             <span class="method method-post">POST</span>
             <span class="api-path">/admin/api/v1/rooms</span>
             <span class="api-desc">Create a new room</span>
+            <span class="perm-badge">rooms.write</span>
         </summary>
         <div class="api-body">
             <p>Creates a new room in the specified zone with an auto-assigned ID and default title/description.</p>
@@ -182,6 +207,7 @@
             <span class="method method-get">GET</span>
             <span class="api-path">/admin/api/v1/rooms/{roomId}</span>
             <span class="api-desc">Get full room template</span>
+            <span class="perm-badge">rooms.read</span>
         </summary>
         <div class="api-body">
             <p>Returns the complete room template data for editing. <code>{roomId}</code> must be a numeric ID.</p>
@@ -195,6 +221,7 @@
             <span class="method method-patch">PATCH</span>
             <span class="api-path">/admin/api/v1/rooms/{roomId}</span>
             <span class="api-desc">Update room properties</span>
+            <span class="perm-badge">rooms.write</span>
         </summary>
         <div class="api-body">
             <p>Merges supplied fields into the room template. <code>RoomId</code> in the body is ignored. Title and Description are required.</p>
@@ -210,6 +237,7 @@
             <span class="method method-get">GET</span>
             <span class="api-path">/admin/api/v1/rooms/{roomId}/script</span>
             <span class="api-desc">Get room script</span>
+            <span class="perm-badge">rooms.read</span>
         </summary>
         <div class="api-body">
             <p>Returns the JavaScript source for the room's script file. <code>script</code> is an empty string if no script file exists.</p>
@@ -226,9 +254,10 @@
 
     <details class="api-entry">
         <summary>
-            <span class="method method-patch">PUT</span>
+            <span class="method method-put">PUT</span>
             <span class="api-path">/admin/api/v1/rooms/{roomId}/script</span>
             <span class="api-desc">Replace or delete room script</span>
+            <span class="perm-badge">rooms.write</span>
         </summary>
         <div class="api-body">
             <p>Writes the supplied JavaScript to the room's <code>.js</code> script file. Send an empty <code>script</code> string to delete the script file.</p>
@@ -244,12 +273,73 @@
             <span class="method method-delete">DELETE</span>
             <span class="api-path">/admin/api/v1/rooms/{roomId}</span>
             <span class="api-desc">Delete a room</span>
+            <span class="perm-badge">rooms.write</span>
         </summary>
         <div class="api-body">
             <p>Permanently removes a room's template and instance files. Cannot delete a zone's root room or a room with players present.</p>
             <div class="curl-block"><span class="kw">curl</span> <span class="flag">-s</span> <span class="flag">-u</span> <span class="str">admin:password</span> \
      <span class="flag">-X</span> DELETE \
      <span class="str">http://{{.CONFIG.FilePaths.WebDomain}}/admin/api/v1/rooms/42</span></div>
+        </div>
+    </details>
+
+</div>
+
+<div class="api-group-title">Room Instance</div>
+<div class="api-list">
+
+    <details class="api-entry">
+        <summary>
+            <span class="method method-get">GET</span>
+            <span class="api-path">/admin/api/v1/rooms/{roomId}/instance</span>
+            <span class="api-desc">Get raw instance YAML</span>
+            <span class="perm-badge">rooms.read</span>
+        </summary>
+        <div class="api-body">
+            <p>Returns the raw YAML content of the instance file for the room. The <code>instance</code> field is an empty string when no instance file exists &mdash; this is normal for most rooms and is not an error.</p>
+            <div class="curl-block"><span class="kw">curl</span> <span class="flag">-s</span> <span class="flag">-u</span> <span class="str">admin:password</span> \
+     <span class="str">http://{{.CONFIG.FilePaths.WebDomain}}/admin/api/v1/rooms/1/instance</span></div>
+            <div class="response-examples">
+                <details class="resp-entry">
+                    <summary><span class="method resp-label status-ok">200</span> <span class="resp-label">Success (file exists)</span></summary>
+                    <div class="resp-body"><div class="curl-block">{"success":true,"data":{"instance":"gold: 42\nstash:\n  - itemid: 5\n"}}</div></div>
+                </details>
+                <details class="resp-entry">
+                    <summary><span class="method resp-label status-ok">200</span> <span class="resp-label">Success (no instance file)</span></summary>
+                    <div class="resp-body"><div class="curl-block">{"success":true,"data":{"instance":""}}</div></div>
+                </details>
+            </div>
+        </div>
+    </details>
+
+    <details class="api-entry">
+        <summary>
+            <span class="method method-put">PUT</span>
+            <span class="api-path">/admin/api/v1/rooms/{roomId}/instance</span>
+            <span class="api-desc">Replace or delete instance file</span>
+            <span class="perm-badge">rooms.write</span>
+        </summary>
+        <div class="api-body">
+            <p>Writes the supplied YAML string to the room's instance file under <code>rooms.instances/</code>. Send an empty <code>instance</code> string to delete the instance file.</p>
+            <div class="curl-block"><span class="kw">curl</span> <span class="flag">-s</span> <span class="flag">-u</span> <span class="str">admin:password</span> \
+     <span class="flag">-X</span> PUT <span class="flag">-H</span> <span class="str">"Content-Type: application/json"</span> \
+     <span class="flag">-d</span> <span class="str">'{{`{"instance":"gold: 100\n"}`}}'</span> \
+     <span class="str">http://{{.CONFIG.FilePaths.WebDomain}}/admin/api/v1/rooms/1/instance</span></div>
+        </div>
+    </details>
+
+    <details class="api-entry">
+        <summary>
+            <span class="method method-delete">DELETE</span>
+            <span class="api-path">/admin/api/v1/rooms/{roomId}/instance</span>
+            <span class="api-desc">Delete instance file</span>
+            <span class="perm-badge">rooms.write</span>
+        </summary>
+        <div class="api-body">
+            <p>Removes the instance file for the room. Returns success even if no instance file existed.</p>
+            <div class="curl-block"><span class="kw">curl</span> <span class="flag">-s</span> <span class="flag">-u</span> <span class="str">admin:password</span> \
+     <span class="flag">-X</span> DELETE \
+     <span class="str">http://{{.CONFIG.FilePaths.WebDomain}}/admin/api/v1/rooms/1/instance</span></div>
         </div>
     </details>
 

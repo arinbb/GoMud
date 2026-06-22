@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/characters"
 	"github.com/GoMudEngine/GoMud/internal/colorpatterns"
 	"github.com/GoMudEngine/GoMud/internal/configs"
@@ -12,7 +11,6 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/gametime"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
 	"github.com/GoMudEngine/GoMud/internal/mutators"
-	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/term"
 	"github.com/GoMudEngine/GoMud/internal/users"
 	"github.com/GoMudEngine/GoMud/internal/util"
@@ -25,7 +23,7 @@ import (
 // Example registration from a module:
 //
 //	rooms.OnRoomLook.Register(func(d rooms.RoomTemplateDetails) rooms.RoomTemplateDetails {
-//	    d.RoomAlerts = append(d.RoomAlerts, "You can fish here!")
+//	    d.Alert("You can fish here!")
 //	    return d
 //	})
 var OnRoomLook util.Hook[RoomTemplateDetails]
@@ -47,14 +45,25 @@ type RoomTemplateDetails struct {
 	IsDark         bool
 	IsNight        bool
 	TrackingString string
-	RoomAlerts     []string // Messages to show below room description as a special alert
-	ShowPvp        bool     // Whether to display that the room is PVP
-	Tags           []string // Tags applied to the room
+	RoomAlerts     [][]string // Messages to show below room description as a special alert
+	ShowPvp        bool       // Whether to display that the room is PVP
+	Tags           []string   // Tags applied to the room
+}
+
+// Alert appends one alert group to RoomAlerts. Each argument becomes one line
+// within the same header/footer bracket when rendered. A single string
+// containing "\n" is automatically split into multiple lines of the same group.
+func (d *RoomTemplateDetails) Alert(lines ...string) {
+	var group []string
+	for _, line := range lines {
+		group = append(group, strings.Split(line, "\n")...)
+	}
+	d.RoomAlerts = append(d.RoomAlerts, group)
 }
 
 func GetDetails(r *Room, user *users.UserRecord, tinymap ...[]string) RoomTemplateDetails {
 
-	c := configs.GetGamePlayConfig()
+	c := configs.GetPVPConfig()
 
 	var roomSymbol string = r.MapSymbol
 	var roomLegend string = r.MapLegend
@@ -70,7 +79,7 @@ func GetDetails(r *Room, user *users.UserRecord, tinymap ...[]string) RoomTempla
 
 	showPvp := false
 	// Don't need to show the PVP flag if Pvp is globally enabled or globally disabled
-	if c.PVP == configs.PVPLimited {
+	if c.Enabled == configs.PVPLimited {
 		showPvp = r.IsPvp()
 	}
 
@@ -91,7 +100,7 @@ func GetDetails(r *Room, user *users.UserRecord, tinymap ...[]string) RoomTempla
 		IsNight:        gametime.IsNight(),
 		TrackingString: ``,
 		ShowPvp:        showPvp,
-		Tags:           append([]string{}, r.Tags...),
+		Tags:           r.GetTags(),
 	}
 
 	//
@@ -99,22 +108,22 @@ func GetDetails(r *Room, user *users.UserRecord, tinymap ...[]string) RoomTempla
 	//
 
 	if len(r.SkillTraining) > 0 {
-		details.RoomAlerts = append(details.RoomAlerts, `<ansi fg="yellow-bold">You can train here!</ansi> Type <ansi fg="command">train</ansi> to see what training is available.`)
+		details.Alert(`<ansi fg="yellow-bold">You can train here!</ansi> Type <ansi fg="command">train</ansi> to see what training is available.`)
 	}
 
 	if r.IsBank {
-		details.RoomAlerts = append(details.RoomAlerts, `          <ansi fg="yellow-bold">This is a bank!</ansi> Type <ansi fg="command">bank</ansi> to deposit/withdraw.`)
+		details.Alert(`<ansi fg="yellow-bold">This is a bank!</ansi> Type <ansi fg="command">bank</ansi> to deposit/withdraw.`)
 	}
 
 	if r.RoomId == -1 {
-		details.RoomAlerts = append(details.RoomAlerts, `      <ansi fg="yellow-bold">Type <ansi fg="command">start</ansi> to begin playing.</ansi>`)
+		details.Alert(`<ansi fg="yellow-bold">Type <ansi fg="command">start</ansi> to begin playing.</ansi>`)
 	}
 
 	//
 	// End Room Alerts
 	//
 	renderNouns := user.HasRolePermission(`room.nouns`)
-	if user.Character.Pet.Exists() && user.Character.HasBuffFlag(buffs.SeeNouns) {
+	if user.Character.Pet.Exists() && user.Character.HasBuffFlag("see-nouns") {
 		renderNouns = true
 	}
 
@@ -217,21 +226,13 @@ func GetDetails(r *Room, user *users.UserRecord, tinymap ...[]string) RoomTempla
 		// No current plans to allow them to overwrite existing alerts.
 		if mutSpec.AlertModifier != nil {
 
-			alertText := mutSpec.AlertModifier.Text
-
-			// center the text
-			if len(mutSpec.AlertModifier.Text) < 65 {
-				padding := (65 - len(mutSpec.AlertModifier.Text)) >> 1
-				alertText = strings.Repeat(` `, padding) + alertText
-			}
-
-			details.RoomAlerts = append(details.RoomAlerts, colorpatterns.ApplyColorPattern(alertText, mutSpec.AlertModifier.ColorPattern))
+			details.Alert(colorpatterns.ApplyColorPattern(mutSpec.AlertModifier.Text, mutSpec.AlertModifier.ColorPattern))
 
 		}
 	}
 
 	nameFlags := []characters.NameRenderFlag{}
-	if user.Character.GetSkillLevel(skills.Peep) > 0 {
+	if user.Character.GetSkillLevel(`peep`) > 0 {
 		nameFlags = append(nameFlags, characters.RenderHealth)
 	}
 
@@ -247,8 +248,8 @@ func GetDetails(r *Room, user *users.UserRecord, tinymap ...[]string) RoomTempla
 			player := users.GetByUserId(playerId)
 			if player != nil {
 
-				if player.Character.HasBuffFlag(buffs.Hidden) { // Don't show them if they are sneaking
-					if !user.Character.Pet.Exists() || !user.Character.HasBuffFlag(buffs.SeeHidden) {
+				if player.Character.HasBuffFlag("hidden") { // Don't show them if they are sneaking
+					if !user.Character.Pet.Exists() || !user.Character.HasBuffFlag("see-hidden") {
 						continue
 					}
 				}
@@ -259,7 +260,7 @@ func GetDetails(r *Room, user *users.UserRecord, tinymap ...[]string) RoomTempla
 		}
 	}
 
-	if user.Character.Pet.Exists() && r.RoomId == user.Character.RoomId {
+	if user.Character.Pet.Exists() && !user.Character.Pet.IsMissing() && r.RoomId == user.Character.RoomId {
 		details.VisiblePlayers = append(details.VisiblePlayers, fmt.Sprintf(`%s (your pet)`, user.Character.Pet.DisplayName()))
 	}
 
@@ -268,8 +269,8 @@ func GetDetails(r *Room, user *users.UserRecord, tinymap ...[]string) RoomTempla
 	for idx, mobInstanceId := range r.mobs {
 		if mob := mobs.GetInstance(mobInstanceId); mob != nil {
 
-			if mob.Character.HasBuffFlag(buffs.Hidden) { // Don't show them if they are sneaking
-				if !user.Character.Pet.Exists() || !user.Character.HasBuffFlag(buffs.SeeHidden) {
+			if mob.Character.HasBuffFlag("hidden") { // Don't show them if they are sneaking
+				if !user.Character.Pet.Exists() || !user.Character.HasBuffFlag("see-hidden") {
 					continue
 				}
 			}
@@ -448,7 +449,7 @@ func GetDetails(r *Room, user *users.UserRecord, tinymap ...[]string) RoomTempla
 		}
 	}
 
-	if user.Character.HasBuffFlag(buffs.Tripping) {
+	if user.Character.HasBuffFlag("tripping") {
 		details.Title = colorpatterns.ApplyCharacterWarping(details.Title)
 		details.Description = colorpatterns.ApplyCharacterWarping(details.Description)
 

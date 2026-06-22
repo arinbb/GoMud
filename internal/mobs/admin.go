@@ -8,6 +8,7 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/characters"
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/fileloader"
+	"github.com/GoMudEngine/GoMud/internal/util"
 )
 
 func GetAllMobSpecs() []Mob {
@@ -61,7 +62,7 @@ func DeleteMobSpec(mobId MobId) error {
 		return fmt.Errorf("mob %d not found", mobId)
 	}
 
-	basePath := configs.GetFilePathsConfig().DataFiles.String() + `/mobs/`
+	basePath := util.FilePath(configs.GetFilePathsConfig().DataFiles.String() + `/mobs/`)
 
 	yamlPath := basePath + spec.Filepath()
 	if err := os.Remove(yamlPath); err != nil && !os.IsNotExist(err) {
@@ -86,13 +87,17 @@ func DeleteMobSpec(mobId MobId) error {
 	return nil
 }
 
-func SaveMobScript(mobId MobId, content string) error {
+func SaveMobScript(mobId MobId, content string, lang string) error {
+	return SaveMobScriptForTag(mobId, "", content, lang)
+}
+
+func SaveMobScriptForTag(mobId MobId, tag string, content string, lang string) error {
 	spec := GetMobSpec(mobId)
 	if spec == nil {
 		return fmt.Errorf("mob %d not found", mobId)
 	}
 
-	scriptPath := spec.GetScriptPath()
+	scriptPath := spec.GetScriptPathForTag(tag)
 
 	if content == "" {
 		if err := os.Remove(scriptPath); err != nil && !os.IsNotExist(err) {
@@ -101,8 +106,26 @@ func SaveMobScript(mobId MobId, content string) error {
 		return nil
 	}
 
+	scriptPath = util.ApplyScriptLang(scriptPath, lang)
 	os.MkdirAll(filepath.Dir(scriptPath), os.ModePerm)
-	return os.WriteFile(scriptPath, []byte(content), 0644)
+	return util.WriteFile(scriptPath, []byte(content), 0644)
+}
+
+func GetMobScriptForTag(mobId MobId, tag string) (string, error) {
+	spec := GetMobSpec(mobId)
+	if spec == nil {
+		return "", fmt.Errorf("mob %d not found", mobId)
+	}
+
+	scriptPath := spec.GetScriptPathForTag(tag)
+	if _, err := os.Stat(scriptPath); err != nil {
+		return "", nil
+	}
+	bytes, err := util.ReadFile(scriptPath)
+	if err != nil {
+		return "", err
+	}
+	return string(bytes), nil
 }
 
 func StockMobShop(mobId MobId, entry characters.ShopItem) error {

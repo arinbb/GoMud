@@ -9,7 +9,6 @@ import (
 	"time"
 
 	"github.com/GoMudEngine/GoMud/internal/audio"
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/exit"
@@ -72,7 +71,7 @@ type Room struct {
 	Description       string                            `yaml:"description"`                         // Description shown to the user
 	MapSymbol         string                            `yaml:"mapsymbol,omitempty"`                 // The symbol to use when generating a map of the zone
 	MapLegend         string                            `yaml:"maplegend,omitempty"`                 // The text to display in the legend for this room. Should be one word.
-	Biome             string                            `yaml:"biome,omitempty"`                     // The biome of the room. Used for weather generation.
+	Biome             string                            `yaml:"biome,omitempty" instance:"skip"`     // The biome of the room. Used for weather generation.
 	Containers        map[string]Container              `yaml:"containers,omitempty"`                // If this room has a chest, what is in it?
 	Exits             map[string]exit.RoomExit          `yaml:"exits"`                               // Exits to other rooms
 	ExitsTemp         map[string]exit.TemporaryRoomExit `yaml:"-"`                                   // Temporary exits that will be removed after a certain time. Don't bother saving on sever shutting down.
@@ -91,6 +90,10 @@ type Room struct {
 	Mutators          mutators.MutatorList              `yaml:"mutators,omitempty"`                  // mutators this room spawns with.
 	Pvp               bool                              `yaml:"pvp,omitempty"`                       // if config pvp is set to `limited`, uses this value
 	Tags              []string                          `yaml:"tags,omitempty"`                      // short tags that can be added to rooms for any purpose (modules, scripting, etc)
+	MapX              int                               `yaml:"mapx"`
+	MapY              int                               `yaml:"mapy"`
+	MapZ              int                               `yaml:"mapz"`
+	HasCoordinates    bool                              `yaml:"hascoordinates,omitempty"`
 	// Unexported/private
 	players       []int                          // list of user IDs currently in the room
 	mobs          []int                          // list of mob instance IDs currently in the room. Does not get saved.
@@ -133,6 +136,20 @@ func NewEmptyRoom() *Room {
 		tempDataStore: make(map[string]any),
 	}
 	return r
+}
+
+func (r *Room) SetCoordinates(x, y, z int) {
+	r.MapX = x
+	r.MapY = y
+	r.MapZ = z
+	r.HasCoordinates = true
+}
+
+func (r *Room) ClearCoordinates() {
+	r.MapX = 0
+	r.MapY = 0
+	r.MapZ = 0
+	r.HasCoordinates = false
 }
 
 func (r *Room) IsEphemeral() bool {
@@ -396,7 +413,7 @@ func (r *Room) GetScript() string {
 
 	// Load the script into a string
 	if _, err := os.Stat(scriptPath); err == nil {
-		if bytes, err := os.ReadFile(scriptPath); err == nil {
+		if bytes, err := util.ReadFile(scriptPath); err == nil {
 			return string(bytes)
 		}
 	}
@@ -404,9 +421,21 @@ func (r *Room) GetScript() string {
 	return ``
 }
 
+func (r *Room) HasScript() bool {
+
+	scriptPath := r.GetScriptPath()
+
+	// Load the script into a string
+	if _, err := os.Stat(scriptPath); err == nil {
+		return true
+	}
+
+	return false
+}
+
 func (r *Room) GetScriptPath() string {
-	// Load any script for the room
-	return strings.Replace(configs.GetFilePathsConfig().DataFiles.String()+`/rooms/`+r.Filepath(), `.yaml`, `.js`, 1)
+	// Load any script for the room (prefers .js, falls back to .lua)
+	return util.ResolveScriptPath(configs.GetFilePathsConfig().DataFiles.String() + `/rooms/` + r.Filepath())
 }
 
 func (r *Room) FindTemporaryExitByUserId(userId int) (exit.TemporaryRoomExit, bool) {
@@ -801,7 +830,7 @@ func (r *Room) AddMob(mobInstanceId int) {
 		MobInstanceId: mobInstanceId,
 		FromRoomId:    mob.Character.RoomId,
 		ToRoomId:      r.RoomId,
-		Unseen:        mob.Character.HasBuffFlag(buffs.Hidden),
+		Unseen:        mob.Character.HasBuffFlag("hidden"),
 	})
 
 	mob.Character.RoomId = r.RoomId
@@ -1015,6 +1044,56 @@ func (r *Room) FindCorpse(searchName string) (Corpse, bool) {
 	return Corpse{}, false
 }
 
+func (r *Room) FindCorpseByRef(searchName string) (*Corpse, bool) {
+
+	playerCorpseLookup := map[string]int{}
+	playerCorpses := []string{}
+
+	mobCorpseLookup := map[string]int{}
+	mobCorpses := []string{}
+
+	for idx, c := range r.Corpses {
+
+		if c.Prunable {
+			continue
+		}
+
+		if c.UserId > 0 {
+			name := c.Character.Name + ` corpse`
+			if _, ok := playerCorpseLookup[name]; !ok {
+				playerCorpseLookup[name] = idx
+				playerCorpses = append(playerCorpses, name)
+			}
+		}
+
+		if c.MobId > 0 {
+			name := c.Character.Name + ` corpse`
+			if _, ok := mobCorpseLookup[name]; !ok {
+				mobCorpseLookup[name] = idx
+				mobCorpses = append(mobCorpses, name)
+			}
+		}
+	}
+
+	userMatch, closeUserMatch := util.FindMatchIn(searchName, playerCorpses...)
+	if userMatch != `` {
+		return &r.Corpses[playerCorpseLookup[userMatch]], true
+	}
+
+	mobMatch, closeMobMatch := util.FindMatchIn(searchName, mobCorpses...)
+	if mobMatch != `` {
+		return &r.Corpses[mobCorpseLookup[mobMatch]], true
+	}
+
+	if closeUserMatch != `` {
+		return &r.Corpses[playerCorpseLookup[closeUserMatch]], true
+	} else if closeMobMatch != `` {
+		return &r.Corpses[mobCorpseLookup[closeMobMatch]], true
+	}
+
+	return nil, false
+}
+
 func (r *Room) FindOnFloor(itemName string, stash bool) (items.Item, bool) {
 
 	if stash {
@@ -1137,7 +1216,7 @@ func (r *Room) GetMobs(findTypes ...FindFlag) []int {
 			}
 		}
 
-		if typeFlag&FindHasLight == FindHasLight && mob.Character.HasBuffFlag(buffs.EmitsLight) {
+		if typeFlag&FindHasLight == FindHasLight && mob.Character.HasBuffFlag("lightsource") {
 			mobMatches = append(mobMatches, mobId)
 			continue
 		}
@@ -1178,7 +1257,7 @@ func (r *Room) GetMobs(findTypes ...FindFlag) []int {
 			continue
 		}
 
-		if typeFlag&FindHasPet == FindHasPet && mob.Character.Pet.Exists() {
+		if typeFlag&FindHasPet == FindHasPet && mob.Character.Pet.Exists() && !mob.Character.Pet.IsMissing() {
 			mobMatches = append(mobMatches, mobId)
 			continue
 		}
@@ -1233,7 +1312,7 @@ func (r *Room) GetPlayers(findTypes ...FindFlag) []int {
 			}
 		}
 
-		if typeFlag&FindHasLight == FindHasLight && user.Character.HasBuffFlag(buffs.EmitsLight) {
+		if typeFlag&FindHasLight == FindHasLight && user.Character.HasBuffFlag("lightsource") {
 			playerMatches = append(playerMatches, userId)
 			continue
 		}
@@ -1268,7 +1347,7 @@ func (r *Room) GetPlayers(findTypes ...FindFlag) []int {
 			continue
 		}
 
-		if typeFlag&FindHasPet == FindHasPet && user.Character.Pet.Exists() {
+		if typeFlag&FindHasPet == FindHasPet && user.Character.Pet.Exists() && !user.Character.Pet.IsMissing() {
 			playerMatches = append(playerMatches, userId)
 			continue
 		}
@@ -2277,6 +2356,34 @@ func (r *Room) ActiveMutators(yield func(mutators.Mutator) bool) {
 	}
 }
 
+func (r *Room) HasTag(tag string) bool {
+	for _, t := range r.Tags {
+		if strings.EqualFold(t, tag) {
+			return true
+		}
+	}
+	for mut := range r.ActiveMutators {
+		if spec := mut.GetSpec(); spec != nil {
+			for _, t := range spec.Tags {
+				if strings.EqualFold(t, tag) {
+					return true
+				}
+			}
+		}
+	}
+	return false
+}
+
+func (r *Room) GetTags() []string {
+	tags := append([]string{}, r.Tags...)
+	for mut := range r.ActiveMutators {
+		if spec := mut.GetSpec(); spec != nil {
+			tags = append(tags, spec.Tags...)
+		}
+	}
+	return tags
+}
+
 // Returns true if Pvp is allowed in this room
 func (r *Room) IsPvp() bool {
 	roomPvp := r.Pvp
@@ -2298,11 +2405,11 @@ func (r *Room) CanPvp(attUser *users.UserRecord, defUser *users.UserRecord) erro
 		return errors.New(`Fighting is not allowed here.`)
 	}
 
-	c := configs.GetGamePlayConfig()
+	c := configs.GetPVPConfig()
 
 	// Possible settings are `enabled`, `disabled`, `limited`
-	pvpSetting := string(c.PVP)
-	minLevel := int(c.PVPMinimumLevel)
+	pvpSetting := string(c.Enabled)
+	minLevel := int(c.MinimumLevel)
 
 	if pvpSetting == configs.PVPDisabled {
 		return errors.New(`PVP is disabled.`)

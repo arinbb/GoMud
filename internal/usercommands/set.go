@@ -23,12 +23,11 @@ func Set(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 		user.SendText(`<ansi fg="yellow">` + util.SplitStringNL(user.Character.Description, 80) + `</ansi>`)
 		user.SendText(``)
 
-		user.SendText(`<ansi fg="yellow-bold">ScreenReader:</ansi> `)
+		screenReaderTxt := `<ansi fg="red">OFF</ansi>`
 		if user.ScreenReader {
-			user.SendText(`<ansi fg="green">ON</ansi>`)
-		} else {
-			user.SendText(`<ansi fg="red">OFF</ansi>`)
+			screenReaderTxt = `<ansi fg="green">ON</ansi>`
 		}
+		user.SendText(`<ansi fg="yellow-bold">ScreenReader:</ansi> ` + screenReaderTxt)
 		user.SendText(``)
 
 		on := user.GetConfigOption(`auction`)
@@ -36,8 +35,7 @@ func Set(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 		if on == nil || on.(bool) {
 			onTxt = `<ansi fg="green">ON</ansi>`
 		}
-		user.SendText(`<ansi fg="yellow-bold">auction:</ansi> `)
-		user.SendText(onTxt)
+		user.SendText(`<ansi fg="yellow-bold">auction:</ansi> ` + onTxt)
 		user.SendText(``)
 
 		on = user.GetConfigOption(`shortadjectives`)
@@ -45,8 +43,7 @@ func Set(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 		if on == nil || on.(bool) {
 			onTxt = `<ansi fg="green">ON</ansi>`
 		}
-		user.SendText(`<ansi fg="yellow-bold">shortadjectives:</ansi> `)
-		user.SendText(onTxt)
+		user.SendText(`<ansi fg="yellow-bold">shortadjectives:</ansi> ` + onTxt)
 		user.SendText(``)
 
 		on = user.GetConfigOption(`tinymap`)
@@ -54,32 +51,35 @@ func Set(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 		if on == nil || on.(bool) {
 			onTxt = `<ansi fg="green">ON</ansi>`
 		}
-		user.SendText(`<ansi fg="yellow-bold">tinymap:</ansi> `)
-		user.SendText(onTxt)
+		user.SendText(`<ansi fg="yellow-bold">tinymap:</ansi> ` + onTxt)
 		user.SendText(``)
 
 		currentPrompt := user.GetConfigOption(`prompt`)
 		if currentPrompt == nil {
 			currentPrompt = c.Prompt.String()
 		}
-		user.SendText(`<ansi fg="yellow-bold">prompt: </ansi> `)
-		user.SendText(currentPrompt.(string))
+		user.SendText(`<ansi fg="yellow-bold">prompt:</ansi> ` + currentPrompt.(string))
 		user.SendText(``)
 
 		currentPrompt = user.GetConfigOption(`fprompt`)
 		if currentPrompt == nil {
 			currentPrompt = c.Prompt.String()
 		}
-		user.SendText(`<ansi fg="yellow-bold">fprompt:</ansi> `)
-		user.SendText(currentPrompt.(string))
+		user.SendText(`<ansi fg="yellow-bold">fprompt:</ansi> ` + currentPrompt.(string))
 		user.SendText(``)
 
 		currentWimpy := user.GetConfigOption(`wimpy`)
 		if currentWimpy == nil {
 			currentWimpy = 0
 		}
-		user.SendText(`<ansi fg="yellow-bold">wimpy:</ansi> `)
-		user.SendText(fmt.Sprintf(`%d%%`, currentWimpy.(int)))
+		user.SendText(fmt.Sprintf(`<ansi fg="yellow-bold">wimpy:</ansi> %d%%`, currentWimpy.(int)))
+		user.SendText(``)
+
+		currentStyle := user.GetConfigOption(`shopstyle`)
+		if currentStyle == nil {
+			currentStyle = "default"
+		}
+		user.SendText(`<ansi fg="yellow-bold">shopstyle:</ansi> ` + currentStyle.(string))
 		user.SendText(``)
 
 		user.SendText(`See: <ansi fg="command">help set</ansi>`)
@@ -115,7 +115,7 @@ func Set(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 		}
 		if !on.(bool) {
 			on = true
-			user.SendText(`Auctions toggled <ansi fg="red">ON</ansi>.`)
+			user.SendText(`Auctions toggled <ansi fg="green">ON</ansi>.`)
 		} else {
 			on = false
 			user.SendText(`Auctions toggled <ansi fg="red">OFF</ansi>.`)
@@ -139,7 +139,7 @@ func Set(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 		}
 		if !on.(bool) {
 			on = true
-			user.SendText(`Short Adjectives toggled <ansi fg="red">ON</ansi>.`)
+			user.SendText(`Short Adjectives toggled <ansi fg="green">ON</ansi>.`)
 		} else {
 			on = false
 			user.SendText(`Short Adjectives toggled <ansi fg="red">OFF</ansi>.`)
@@ -163,7 +163,7 @@ func Set(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 		}
 		if !on.(bool) {
 			on = true
-			user.SendText(`Tinymap toggled <ansi fg="red">ON</ansi>.`)
+			user.SendText(`Tinymap toggled <ansi fg="green">ON</ansi>.`)
 		} else {
 			on = false
 			user.SendText(`Tinymap toggled <ansi fg="red">OFF</ansi>.`)
@@ -196,8 +196,6 @@ func Set(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 		promptStr := rest[len(setTarget)+1:]
 
 		if promptStr == `default` {
-			user.SetConfigOption(`prompt`, nil)
-			user.SetConfigOption(`prompt-compiled`, nil)
 			user.SetConfigOption(`prompt`, c.Prompt.String())
 			user.SetConfigOption(`prompt-compiled`, util.ConvertColorShortTags(c.Prompt.String()))
 		} else if promptStr == `none` {
@@ -269,13 +267,16 @@ func Set(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 			return true, nil
 		}
 
-		wimpyStr := rest[len(setTarget)+1:]
-		wimipyInt, _ := strconv.Atoi(wimpyStr)
+		wimpyStr := args[0]
+		wimpyInt, _ := strconv.Atoi(wimpyStr)
 
-		if wimipyInt == 0 {
+		if wimpyInt <= 0 {
 			user.SetConfigOption(`wimpy`, nil)
 		} else {
-			user.SetConfigOption(`wimpy`, wimipyInt)
+			if wimpyInt > 99 {
+				wimpyInt = 99
+			}
+			user.SetConfigOption(`wimpy`, wimpyInt)
 		}
 
 		user.SendText("wimpy set.")
@@ -289,11 +290,47 @@ func Set(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 
 	}
 
+	if setTarget == `shopstyle` {
+
+		validStyles := map[string]bool{"default": true, "fancy": true, "minimal": true, "grid": true, "arcane": true, "rugged": true}
+
+		if len(args) < 1 {
+			currentStyle := user.GetConfigOption(`shopstyle`)
+			if currentStyle == nil {
+				currentStyle = "default"
+			}
+			user.SendText(fmt.Sprintf("Current shop style: %s", currentStyle))
+			user.SendText(`Available styles: <ansi fg="command">default</ansi>, <ansi fg="command">fancy</ansi>, <ansi fg="command">minimal</ansi>, <ansi fg="command">grid</ansi>, <ansi fg="command">arcane</ansi>, <ansi fg="command">rugged</ansi>`)
+			return true, nil
+		}
+
+		style := args[0]
+		if !validStyles[style] {
+			user.SendText(`Invalid style. Available: <ansi fg="command">default</ansi>, <ansi fg="command">fancy</ansi>, <ansi fg="command">minimal</ansi>, <ansi fg="command">grid</ansi>, <ansi fg="command">arcane</ansi>, <ansi fg="command">rugged</ansi>`)
+			return true, nil
+		}
+
+		if style == "default" {
+			user.SetConfigOption(`shopstyle`, nil)
+		} else {
+			user.SetConfigOption(`shopstyle`, style)
+		}
+
+		user.SendText(fmt.Sprintf(`Shop list style set to: <ansi fg="command">%s</ansi>`, style))
+
+		events.AddToQueue(events.UserSettingChanged{
+			UserId: user.UserId,
+			Name:   `shopstyle`,
+		})
+
+		return true, nil
+	}
+
 	if setTarget == `screenreader` {
 		if user.ScreenReader {
 			user.SendText(`ScreenReader mode toggled <ansi fg="red">OFF</ansi>.`)
 		} else {
-			user.SendText(`ScreenReader mode toggled <ansi fg="red">ON</ansi>.`)
+			user.SendText(`ScreenReader mode toggled <ansi fg="green">ON</ansi>.`)
 		}
 		user.ScreenReader = !user.ScreenReader
 
@@ -340,6 +377,7 @@ func Set(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 
 			for _, cmd := range allComands {
 
+				cmd = strings.TrimSpace(cmd)
 				if len(cmd) > 0 {
 					if cmd[0] == '=' {
 						user.SendText(`You cannot reference macros inside of a macro`)

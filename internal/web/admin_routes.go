@@ -5,124 +5,84 @@ import (
 )
 
 func registerAdminRoutes(mux *http.ServeMux) {
-	// Static assets (non-HTML files) under /admin/ require authentication.
+	// Static assets under /admin/ require authentication but no specific permission.
 	mux.HandleFunc("GET /admin/{file}", doBasicAuth(serveAdminStaticFile))
 	mux.HandleFunc("GET /admin/static/{path...}", doBasicAuth(serveAdminStaticFile))
 
-	mux.HandleFunc("GET /admin/", RunWithMUDLocked(
-		doBasicAuth(adminIndex),
-	))
-	mux.HandleFunc("GET /admin/https/", RunWithMUDLocked(
-		doBasicAuth(httpsIndex),
-	))
-
-	mux.HandleFunc("GET /admin/config", RunWithMUDLocked(
-		doBasicAuth(adminConfig),
-	))
-	mux.HandleFunc("GET /admin/config-api", RunWithMUDLocked(
-		doBasicAuth(adminConfigAPI),
-	))
-
-	mux.HandleFunc("GET /admin/items", RunWithMUDLocked(
-		doBasicAuth(adminItems),
-	))
-	mux.HandleFunc("GET /admin/items-api", RunWithMUDLocked(
-		doBasicAuth(adminItemsAPI),
-	))
-	mux.HandleFunc("GET /admin/items-attack-messages", RunWithMUDLocked(
-		doBasicAuth(adminItemsAttackMessages),
-	))
-	mux.HandleFunc("GET /admin/items-attack-messages-api", RunWithMUDLocked(
-		doBasicAuth(adminItemsAttackMessagesAPI),
-	))
-
-	mux.HandleFunc("GET /admin/buffs", RunWithMUDLocked(
-		doBasicAuth(adminBuffs),
-	))
-	mux.HandleFunc("GET /admin/buffs-api", RunWithMUDLocked(
-		doBasicAuth(adminBuffsAPI),
-	))
-
-	mux.HandleFunc("GET /admin/quests", RunWithMUDLocked(
-		doBasicAuth(adminQuests),
-	))
-	mux.HandleFunc("GET /admin/quests-api", RunWithMUDLocked(
-		doBasicAuth(adminQuestsAPI),
-	))
-
-	mux.HandleFunc("GET /admin/users", RunWithMUDLocked(
-		doBasicAuth(adminUsers),
-	))
-	mux.HandleFunc("GET /admin/users-api", RunWithMUDLocked(
-		doBasicAuth(adminUsersAPI),
-	))
-
-	mux.HandleFunc("GET /admin/color-tester", RunWithMUDLocked(
-		doBasicAuth(adminColorTester),
-	))
-
-	mux.HandleFunc("GET /admin/color-aliases", RunWithMUDLocked(
-		doBasicAuth(adminColorAliases),
-	))
-	mux.HandleFunc("GET /admin/color-aliases-api", RunWithMUDLocked(
-		doBasicAuth(adminColorAliasesAPI),
-	))
-
-	mux.HandleFunc("GET /admin/colorpatterns", RunWithMUDLocked(
-		doBasicAuth(adminColorPatterns),
-	))
-	mux.HandleFunc("GET /admin/colorpatterns-api", RunWithMUDLocked(
-		doBasicAuth(adminColorPatternsAPI),
-	))
-
-	mux.HandleFunc("GET /admin/races", RunWithMUDLocked(
-		doBasicAuth(adminRaces),
-	))
-	mux.HandleFunc("GET /admin/races-api", RunWithMUDLocked(
-		doBasicAuth(adminRacesAPI),
-	))
-
-	mux.HandleFunc("GET /admin/keywords", RunWithMUDLocked(
-		doBasicAuth(adminKeywords),
-	))
-	mux.HandleFunc("GET /admin/keywords-api", RunWithMUDLocked(
-		doBasicAuth(adminKeywordsAPI),
-	))
-
-	mux.HandleFunc("GET /admin/mobs", RunWithMUDLocked(
-		doBasicAuth(adminMobs),
-	))
-	mux.HandleFunc("GET /admin/mobs-api", RunWithMUDLocked(
-		doBasicAuth(adminMobsAPI),
-	))
-
-	mux.HandleFunc("GET /admin/mutators", RunWithMUDLocked(
-		doBasicAuth(adminMutators),
-	))
-	mux.HandleFunc("GET /admin/mutators-api", RunWithMUDLocked(
-		doBasicAuth(adminMutatorsAPI),
-	))
-
-	mux.HandleFunc("GET /admin/rooms", RunWithMUDLocked(
-		doBasicAuth(adminRooms),
-	))
-	mux.HandleFunc("GET /admin/rooms-api", RunWithMUDLocked(
-		doBasicAuth(adminRoomsAPI),
-	))
-
-	mux.HandleFunc("GET /admin/stats", RunWithMUDLocked(
-		doBasicAuth(adminStats),
-	))
-	mux.HandleFunc("GET /admin/stats-api", RunWithMUDLocked(
-		doBasicAuth(adminStatsAPI),
-	))
-
-	mux.HandleFunc("GET /admin/audio", RunWithMUDLocked(
-		doBasicAuth(adminAudio),
-	))
-	mux.HandleFunc("GET /admin/audio-api", RunWithMUDLocked(
-		doBasicAuth(adminAudioAPI),
-	))
+	// All admin pages are readable by any authenticated mod/admin.
+	mux.HandleFunc("GET /admin/", doBasicAuth(RunWithMUDLocked(adminIndex)))
+	mux.HandleFunc("GET /admin/https/", doBasicAuth(RunWithMUDLocked(httpsIndex)))
+	mux.HandleFunc("GET /admin/config", doBasicAuth(RunWithMUDLocked(adminConfig)))
+	mux.HandleFunc("GET /admin/config-api", doBasicAuth(RunWithMUDLocked(adminConfigAPI)))
+	mux.HandleFunc("GET /admin/config-wizard", doBasicAuth(RunWithMUDLocked(adminConfigWizard)))
+	mux.HandleFunc("GET /admin/progression", doBasicAuth(RunWithMUDLocked(adminProgression)))
+	mux.HandleFunc("GET /admin/items", doBasicAuth(RunWithMUDLocked(adminItems)))
+	mux.HandleFunc("GET /admin/items-rank-weapons", doBasicAuth(RunWithMUDLocked(adminItemsRankWeapons)))
+	mux.HandleFunc("GET /admin/items-rank-armor", doBasicAuth(RunWithMUDLocked(adminItemsRankArmor)))
+	mux.HandleFunc("GET /admin/items-api", doBasicAuth(RunWithMUDLocked(adminItemsAPI)))
+	mux.HandleFunc("GET /admin/items-attack-messages", doBasicAuth(RunWithMUDLocked(adminItemsAttackMessages)))
+	mux.HandleFunc("GET /admin/items-attack-messages-api", doBasicAuth(RunWithMUDLocked(adminItemsAttackMessagesAPI)))
+	mux.HandleFunc("GET /admin/buffs", doBasicAuth(RunWithMUDLocked(adminBuffs)))
+	mux.HandleFunc("GET /admin/buffs-flags", doBasicAuth(RunWithMUDLocked(adminBuffsFlags)))
+	mux.HandleFunc("GET /admin/buffs-api", doBasicAuth(RunWithMUDLocked(adminBuffsAPI)))
+	mux.HandleFunc("GET /admin/quests", doBasicAuth(RunWithMUDLocked(adminQuests)))
+	mux.HandleFunc("GET /admin/quests-api", doBasicAuth(RunWithMUDLocked(adminQuestsAPI)))
+	mux.HandleFunc("GET /admin/users", doBasicAuth(RunWithMUDLocked(adminUsers)))
+	mux.HandleFunc("GET /admin/users-script", doBasicAuth(RunWithMUDLocked(adminUsersScript)))
+	mux.HandleFunc("GET /admin/users-api", doBasicAuth(RunWithMUDLocked(adminUsersAPI)))
+	mux.HandleFunc("GET /admin/color-tester", doBasicAuth(RunWithMUDLocked(adminColorTester)))
+	mux.HandleFunc("GET /admin/color-aliases", doBasicAuth(RunWithMUDLocked(adminColorAliases)))
+	mux.HandleFunc("GET /admin/color-aliases-api", doBasicAuth(RunWithMUDLocked(adminColorAliasesAPI)))
+	mux.HandleFunc("GET /admin/colorpatterns", doBasicAuth(RunWithMUDLocked(adminColorPatterns)))
+	mux.HandleFunc("GET /admin/colorpatterns-api", doBasicAuth(RunWithMUDLocked(adminColorPatternsAPI)))
+	mux.HandleFunc("GET /admin/races", doBasicAuth(RunWithMUDLocked(adminRaces)))
+	mux.HandleFunc("GET /admin/races-api", doBasicAuth(RunWithMUDLocked(adminRacesAPI)))
+	mux.HandleFunc("GET /admin/skills", doBasicAuth(RunWithMUDLocked(adminSkills)))
+	mux.HandleFunc("GET /admin/skills-professions", doBasicAuth(RunWithMUDLocked(adminSkillsProfessions)))
+	mux.HandleFunc("GET /admin/skills-api", doBasicAuth(RunWithMUDLocked(adminSkillsAPI)))
+	mux.HandleFunc("GET /admin/keywords", doBasicAuth(RunWithMUDLocked(adminKeywords)))
+	mux.HandleFunc("GET /admin/keywords-api", doBasicAuth(RunWithMUDLocked(adminKeywordsAPI)))
+	mux.HandleFunc("GET /admin/mobs", doBasicAuth(RunWithMUDLocked(adminMobs)))
+	mux.HandleFunc("GET /admin/mobs-api", doBasicAuth(RunWithMUDLocked(adminMobsAPI)))
+	mux.HandleFunc("GET /admin/pets", doBasicAuth(RunWithMUDLocked(adminPets)))
+	mux.HandleFunc("GET /admin/pets-api", doBasicAuth(RunWithMUDLocked(adminPetsAPI)))
+	mux.HandleFunc("GET /admin/pets-ranks", doBasicAuth(RunWithMUDLocked(adminPetsRanks)))
+	mux.HandleFunc("GET /admin/mob-rankings", doBasicAuth(RunWithMUDLocked(adminMobRankings)))
+	mux.HandleFunc("GET /admin/mutators", doBasicAuth(RunWithMUDLocked(adminMutators)))
+	mux.HandleFunc("GET /admin/mutators-api", doBasicAuth(RunWithMUDLocked(adminMutatorsAPI)))
+	mux.HandleFunc("GET /admin/mapper", doBasicAuth(RunWithMUDLocked(adminMapper)))
+	mux.HandleFunc("GET /admin/rooms", doBasicAuth(RunWithMUDLocked(adminRooms)))
+	mux.HandleFunc("GET /admin/rooms-api", doBasicAuth(RunWithMUDLocked(adminRoomsAPI)))
+	mux.HandleFunc("GET /admin/biomes", doBasicAuth(RunWithMUDLocked(adminBiomes)))
+	mux.HandleFunc("GET /admin/biomes-api", doBasicAuth(RunWithMUDLocked(adminBiomesAPI)))
+	mux.HandleFunc("GET /admin/conversations", doBasicAuth(RunWithMUDLocked(adminConversations)))
+	mux.HandleFunc("GET /admin/conversations-api", doBasicAuth(RunWithMUDLocked(adminConversationsAPI)))
+	mux.HandleFunc("GET /admin/gametime", doBasicAuth(RunWithMUDLocked(adminGameTime)))
+	mux.HandleFunc("GET /admin/gametime-api", doBasicAuth(RunWithMUDLocked(adminGameTimeAPI)))
+	mux.HandleFunc("GET /admin/stats", doBasicAuth(RunWithMUDLocked(adminStats)))
+	mux.HandleFunc("GET /admin/stats-api", doBasicAuth(RunWithMUDLocked(adminStatsAPI)))
+	mux.HandleFunc("GET /admin/telemetry", doBasicAuth(RunWithMUDLocked(adminTelemetry)))
+	mux.HandleFunc("GET /admin/telemetry-api", doBasicAuth(RunWithMUDLocked(adminTelemetryAPI)))
+	mux.HandleFunc("GET /admin/spells", doBasicAuth(RunWithMUDLocked(adminSpells)))
+	mux.HandleFunc("GET /admin/spells-api", doBasicAuth(RunWithMUDLocked(adminSpellsAPI)))
+	mux.HandleFunc("GET /admin/audio", doBasicAuth(RunWithMUDLocked(adminAudio)))
+	mux.HandleFunc("GET /admin/audio-api", doBasicAuth(RunWithMUDLocked(adminAudioAPI)))
+	mux.HandleFunc("GET /admin/scripting", doBasicAuth(RunWithMUDLocked(adminScripting)))
+	mux.HandleFunc("GET /admin/scripting-rooms", doBasicAuth(RunWithMUDLocked(adminScriptingRooms)))
+	mux.HandleFunc("GET /admin/scripting-mobs", doBasicAuth(RunWithMUDLocked(adminScriptingMobs)))
+	mux.HandleFunc("GET /admin/scripting-items", doBasicAuth(RunWithMUDLocked(adminScriptingItems)))
+	mux.HandleFunc("GET /admin/scripting-buffs", doBasicAuth(RunWithMUDLocked(adminScriptingBuffs)))
+	mux.HandleFunc("GET /admin/scripting-spells", doBasicAuth(RunWithMUDLocked(adminScriptingSpells)))
+	mux.HandleFunc("GET /admin/scripting-pets", doBasicAuth(RunWithMUDLocked(adminScriptingPets)))
+	mux.HandleFunc("GET /admin/scripting-users", doBasicAuth(RunWithMUDLocked(adminScriptingUsers)))
+	mux.HandleFunc("GET /admin/scripting-functions", doBasicAuth(RunWithMUDLocked(adminScriptingFunctions)))
+	mux.HandleFunc("GET /admin/scripting-objects", doBasicAuth(RunWithMUDLocked(adminScriptingObjects)))
+	mux.HandleFunc("GET /admin/scripting-api", doBasicAuth(RunWithMUDLocked(adminScriptingAPI)))
+	mux.HandleFunc("GET /admin/docs-coding", doBasicAuth(RunWithMUDLocked(adminDocsCoding)))
+	mux.HandleFunc("GET /admin/docs-modules", doBasicAuth(RunWithMUDLocked(adminDocsModules)))
+	mux.HandleFunc("GET /admin/docs-aws", doBasicAuth(RunWithMUDLocked(adminDocsAWS)))
+	mux.HandleFunc("GET /admin/panels", doBasicAuth(RunWithMUDLocked(adminPanels)))
+	mux.HandleFunc("GET /admin/panels-api", doBasicAuth(RunWithMUDLocked(adminPanelsAPI)))
 
 	registerAdminAPIRoutes(mux)
 }

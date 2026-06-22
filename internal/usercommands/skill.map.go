@@ -12,10 +12,8 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/mudlog"
 	"github.com/GoMudEngine/GoMud/internal/parties"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
-	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/users"
-	"github.com/mattn/go-runewidth"
 )
 
 /*
@@ -27,7 +25,7 @@ Level 4 - Map a 17x9 area, and enables the "wide" version.
 */
 func Map(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
 
-	skillLevel := user.Character.GetSkillLevel(skills.Map)
+	skillLevel := user.Character.GetSkillLevel(`map`)
 
 	if skillLevel == 0 {
 		user.SendText("You don't know how to map.")
@@ -44,7 +42,7 @@ func Map(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 		return true, errors.New(`you don't know how to create a wide map`)
 	}
 
-	if !user.Character.TryCooldown(skills.Map.String(), "1 round") {
+	if !user.Character.TryCooldown(`map`, "1 round") {
 		user.SendText(
 			`You can only create 1 map per round.`,
 		)
@@ -52,7 +50,7 @@ func Map(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 	}
 
 	// Fire an event that a skill has been used
-	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: skills.Map, Details: ``})
+	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: `map`, Details: ``})
 
 	// replace any non alpha/numeric characters in "rest"
 	zone := rest
@@ -182,15 +180,33 @@ func Map(rest string, user *users.UserRecord, room *rooms.Room, flags events.Eve
 	width := 0
 
 	displayLines := []string{}
-	for i, line := range mapOutput.Render {
-		displayLines = append(displayLines, string(line))
-		if width == 0 {
-			width = runewidth.StringWidth(displayLines[0])
+	for _, row := range mapOutput.Render {
+		if len(row) > width {
+			width = len(row)
 		}
-		for sym, txtLegend := range legend {
-			txtLc := strings.ToLower(txtLegend)
-			displayLines[i] = strings.Replace(displayLines[i], string(sym), fmt.Sprintf(`<ansi fg="map-room"><ansi fg="map-%s" bg="mapbg-%s">%c</ansi></ansi>`, txtLc, txtLc, sym), -1)
+		var sb strings.Builder
+		for _, cell := range row {
+			if cell.Symbol == ' ' {
+				sb.WriteRune(' ')
+				continue
+			}
+			if cell.FGColor > 0 || cell.BGColor > 0 {
+				if cell.FGColor > 0 && cell.BGColor > 0 {
+					fmt.Fprintf(&sb, `<ansi fg="%d" bg="%d">%c</ansi>`, cell.FGColor, cell.BGColor, cell.Symbol)
+				} else if cell.BGColor > 0 {
+					fmt.Fprintf(&sb, `<ansi fg="map-room" bg="%d">%c</ansi>`, cell.BGColor, cell.Symbol)
+				} else {
+					fmt.Fprintf(&sb, `<ansi fg="%d">%c</ansi>`, cell.FGColor, cell.Symbol)
+				}
+			} else if _, ok := legend[cell.Symbol]; ok {
+				//txtLc := strings.ToLower(name)
+				fmt.Fprintf(&sb, `<ansi fg="map-room">%c</ansi>`, cell.Symbol)
+			} else {
+				sb.WriteRune(cell.Symbol)
+			}
 		}
+		line := sb.String()
+		displayLines = append(displayLines, line)
 	}
 
 	zoneCompletePct := 0

@@ -45,54 +45,58 @@ const (
 )
 
 type Character struct {
-	Name             string                         // The name of the character
-	Description      string                         // A description of the character.
-	Adjectives       []string                       `yaml:"adjectives,omitempty"` // Decorative text for the name of the character (e.g. "sleeping", "dead", "wounded")
-	RoomId           int                            // The room id the character is in.
-	RoomIdOnReset    int                            // The room they are sent to if their RoomId isn't found.
-	Zone             string                         // The zone the character is in. The folder the room can be located in too.
-	RaceId           int                            // Character race
-	Stats            stats.Statistics               // Character stats
-	Level            int                            // The level of the character
-	Experience       int                            // The experience of the character
-	TrainingPoints   int                            // The number of training points the character has
-	StatPoints       int                            // The number of skill points the character has
-	Health           int                            // The health of the character
-	Mana             int                            // The mana of the character
-	ActionPoints     int                            // The resevoir of action points the character has to spend on movement etc.
-	Alignment        int8                           // The alignment of the character
-	Gold             int                            // The gold the character is holding
-	Bank             int                            // The gold the character has in the bank
-	Shop             Shop                           `yaml:"shop,omitempty"`          // Definition of shop services/items this character stocks (or just has at the moment)
-	SpellBook        map[string]int                 `yaml:"spellbook,omitempty"`     // The spells the character has learned
-	Charmed          *CharmInfo                     `yaml:"-"`                       // If they are charmed, this is the info
-	CharmedMobs      []int                          `yaml:"-"`                       // If they have charmed anyone, this is the list of mob instance ids
-	Items            []items.Item                   `yaml:"items,omitempty"`         // The items the character is holding
-	Buffs            buffs.Buffs                    `yaml:"buffs,omitempty"`         // The buffs the character has active
-	Equipment        Worn                           `yaml:"equipment,omitempty"`     // The equipment the character is wearing
-	TNLScale         float32                        `yaml:"-"`                       // The experience scale of the character. Don't write to yaml since is dynamically calculated.
-	HealthMax        stats.StatInfo                 `yaml:"-"`                       // The maximum health of the character. Don't write to yaml since is dynamically calculated.
-	ManaMax          stats.StatInfo                 `yaml:"-"`                       // The maximum mana of the character. Don't write to yaml since is dynamically calculated.
-	ActionPointsMax  stats.StatInfo                 `yaml:"-"`                       // The maximum actions of character. Don't write to yaml since is dynamically calculated.
-	Aggro            *Aggro                         `yaml:"-"`                       // Dont' store this. If they leave they break their aggro
-	Skills           map[string]int                 `yaml:"skills,omitempty"`        // The skills the character has, and what level they are at
-	Cooldowns        Cooldowns                      `yaml:"cooldowns,omitempty"`     // How many rounds until it is cooled down
-	Settings         map[string]string              `yaml:"settings,omitempty"`      // custom setting tracking, used for anything.
-	QuestProgress    map[int]string                 `yaml:"questprogress,omitempty"` // quest progress tracking
-	KeyRing          map[string]string              `yaml:"keyring,omitempty"`       // key is the lock id, value is the sequence
-	KD               KDStats                        `yaml:"kd,omitempty"`            // Kill/Death stats
-	MiscData         map[string]any                 `yaml:"miscdata,omitempty"`      // Any random other data that needs to be stored
-	ExtraLives       int                            `yaml:"extralives,omitempty"`    // How many lives remain. If enabled, players can perma-die if they die at zero
-	MobMastery       MobMasteries                   `yaml:"mobmastery,omitempty"`    // Tracks particular masteries around a given mob
-	Pet              pets.Pet                       `yaml:"pet,omitempty"`           // Do they have a pet?
-	Created          time.Time                      `yaml:"created"`                 // When this character was created
-	Timers           map[string]gametime.RoundTimer `yaml:"timers,omitempty"`        // any special timers added to this character
-	ZonesVisited     map[string]RoomBitset          `yaml:"zonesvisited,omitempty"`  // permanent record of every room visited, keyed by zone name
-	roomHistory      []int                          // A stack FILO of the last X rooms the character has been in
-	PlayerDamage     map[int]int                    `yaml:"-"` // key = who, value = how much
-	LastPlayerDamage uint64                         `yaml:"-"` // last round a player damaged this character
-	permaBuffIds     []int                          // Buff Id's that are always present for this character
-	userId           int                            // User ID of the character if any
+	Name                string                         // The name of the character
+	Description         string                         // A description of the character.
+	Adjectives          []string                       `yaml:"adjectives,omitempty"`    // Decorative text for the name of the character (e.g. "sleeping", "dead", "wounded")
+	RoomId              int                            `yaml:"roomid,omitempty"`        // The room id the character is in.
+	RoomIdOnReset       int                            `yaml:"roomidonreset,omitempty"` // The room they are sent to if their RoomId isn't found.
+	Zone                string                         `yaml:"zone,omitempty"`          // The zone the character is in. The folder the room can be located in too.
+	RaceId              int                            `yaml:"raceid,omitempty"`        // Character race
+	FormRaceId          int                            `yaml:"formraceid,omitempty"`    // Temporary race override (0 = not transformed)
+	Stats               stats.Statistics               // Character stats
+	Level               int                            `yaml:"level,omitempty"`          // The level of the character
+	Experience          int                            `yaml:"experience,omitempty"`     // The experience of the character
+	TrainingPoints      int                            `yaml:"trainingpoints,omitempty"` // The number of training points the character has
+	StatPoints          int                            `yaml:"statpoints,omitempty"`     // The number of skill points the character has
+	Health              int                            `yaml:"health,omitempty"`         // The health of the character
+	Mana                int                            `yaml:"mana,omitempty"`           // The mana of the character
+	ActionPoints        int                            `yaml:"actionpoints,omitempty"`   // The resevoir of action points the character has to spend on movement etc.
+	Alignment           int8                           `yaml:"alignment,omitempty"`      // The alignment of the character
+	Gold                int                            `yaml:"gold,omitempty"`           // The gold the character is holding
+	Bank                int                            `yaml:"bank,omitempty"`           // The gold the character has in the bank
+	Shop                Shop                           `yaml:"shop,omitempty"`           // Definition of shop services/items this character stocks (or just has at the moment)
+	SpellBook           map[string]int                 `yaml:"spellbook,omitempty"`      // The spells the character has learned
+	Charmed             *CharmInfo                     `yaml:"-"`                        // If they are charmed, this is the info
+	CharmedMobs         []int                          `yaml:"-"`                        // If they have charmed anyone, this is the list of mob instance ids
+	Items               []items.Item                   `yaml:"items,omitempty"`          // The items the character is holding
+	Buffs               buffs.Buffs                    `yaml:"buffs,omitempty"`          // The buffs the character has active
+	Equipment           Worn                           `yaml:"equipment,omitempty"`      // The equipment the character is wearing
+	TNLScale            float32                        `yaml:"-"`                        // The experience scale of the character. Don't write to yaml since is dynamically calculated.
+	HealthMax           stats.StatInfo                 `yaml:"-"`                        // The maximum health of the character. Don't write to yaml since is dynamically calculated.
+	ManaMax             stats.StatInfo                 `yaml:"-"`                        // The maximum mana of the character. Don't write to yaml since is dynamically calculated.
+	ActionPointsMax     stats.StatInfo                 `yaml:"-"`                        // The maximum actions of character. Don't write to yaml since is dynamically calculated.
+	Aggro               *Aggro                         `yaml:"-"`                        // Dont' store this. If they leave they break their aggro
+	Skills              map[string]int                 `yaml:"skills,omitempty"`         // The skills the character has, and what level they are at
+	Cooldowns           Cooldowns                      `yaml:"cooldowns,omitempty"`      // How many rounds until it is cooled down
+	Settings            map[string]string              `yaml:"settings,omitempty"`       // custom setting tracking, used for anything.
+	QuestProgress       map[int]string                 `yaml:"questprogress,omitempty"`  // quest progress tracking
+	KeyRing             map[string]string              `yaml:"keyring,omitempty"`        // key is the lock id, value is the sequence
+	KD                  KDStats                        `yaml:"kd,omitempty"`             // Kill/Death stats
+	MiscData            map[string]any                 `yaml:"miscdata,omitempty"`       // Any random other data that needs to be stored
+	ExtraLives          int                            `yaml:"extralives,omitempty"`     // How many lives remain. If enabled, players can perma-die if they die at zero
+	MobMastery          MobMasteries                   `yaml:"mobmastery,omitempty"`     // Tracks particular masteries around a given mob
+	Pet                 pets.Pet                       `yaml:"pet,omitempty"`            // Do they have a pet?
+	Created             time.Time                      `yaml:"created"`                  // When this character was created
+	Timers              map[string]gametime.RoundTimer `yaml:"timers,omitempty"`         // any special timers added to this character
+	ZonesVisited        map[string]RoomBitset          `yaml:"zonesvisited,omitempty"`   // permanent record of every room visited, keyed by zone name
+	roomHistory         []int                          // A stack FILO of the last X rooms the character has been in
+	PlayerDamage        map[int]int                    `yaml:"-"` // key = who, value = how much
+	LastPlayerDamage    uint64                         `yaml:"-"` // last round a player damaged this character
+	KillerMobInstanceId int                            `yaml:"-"` // transient: mob instance that delivered the killing blow
+	KillerMobIsElite    bool                           `yaml:"-"` // transient: true if the killing mob was elite
+	KillerMobName       string                         `yaml:"-"` // transient: name of the mob that delivered the killing blow
+	permaBuffIds        []int                          // Buff Id's that are always present for this character
+	userId              int                            // User ID of the character if any
 }
 
 func New() *Character {
@@ -139,6 +143,16 @@ func New() *Character {
 // returns description unless description is a hash
 // which points to another description location.
 func (c *Character) GetDescription() string {
+	if c.FormRaceId > 0 {
+		trueRace := races.GetRace(c.RaceId)
+		formRace := races.GetRace(c.FormRaceId)
+		if trueRace != nil && formRace != nil {
+			return strings.ReplaceAll(
+				strings.ReplaceAll(c.Description, trueRace.Name, formRace.Name),
+				strings.ToLower(trueRace.Name), strings.ToLower(formRace.Name),
+			)
+		}
+	}
 	return c.Description
 }
 
@@ -179,7 +193,7 @@ func (c *Character) GetBaseCastSuccessChance(spellId string) int {
 
 	// add spell level bonus
 	// 10-30
-	skillLevel := c.GetSkillLevel(skills.Cast)
+	skillLevel := c.GetSkillLevel(`cast`)
 	//targetNumber += (skillLevel * 5)
 	//targetNumber -= 5 // cancel out the first level
 
@@ -343,7 +357,7 @@ func (c *Character) SetKey(lockId string, sequence string) {
 
 func (c *Character) GetDefaultDiceRoll() (attacks int, dCount int, dSides int, bonus int, buffOnCrit []int) {
 	// default racial
-	raceInfo := races.GetRace(c.RaceId)
+	raceInfo := races.GetRace(c.GetRaceId())
 
 	attacks = raceInfo.Damage.Attacks
 	dCount = raceInfo.Damage.DiceCount
@@ -414,6 +428,14 @@ func (c *Character) LearnSpell(spellName string) bool {
 	return false
 }
 
+func (c *Character) UnLearnSpell(spellName string) bool {
+	if _, ok := c.SpellBook[spellName]; !ok {
+		return false
+	}
+	delete(c.SpellBook, spellName)
+	return true
+}
+
 func (c *Character) GrantXP(xp int) (actualXP int, xpScale int) {
 
 	if xp == 0 {
@@ -466,7 +488,7 @@ func (c *Character) Charm(userId int, rounds int, expireCommand string) {
 }
 
 func (c *Character) KnowsFirstAid() bool {
-	if r := races.GetRace(c.RaceId); r != nil {
+	if r := races.GetRace(c.GetRaceId()); r != nil {
 		return r.KnowsFirstAid
 	}
 	return false
@@ -547,16 +569,10 @@ func (c *Character) GetAllSkillRanks() map[string]int {
 // Returns an integer representing a % damage reduction
 func (c *Character) GetDefense() int {
 
-	reduction := c.Equipment.Weapon.GetDefense() +
-		c.Equipment.Offhand.GetDefense() +
-		c.Equipment.Head.GetDefense() +
-		c.Equipment.Neck.GetDefense() +
-		c.Equipment.Body.GetDefense() +
-		c.Equipment.Belt.GetDefense() +
-		c.Equipment.Gloves.GetDefense() +
-		c.Equipment.Ring.GetDefense() +
-		c.Equipment.Legs.GetDefense() +
-		c.Equipment.Feet.GetDefense()
+	reduction := 0
+	for _, slot := range AllSlots() {
+		reduction += c.Equipment.Get(slot).GetDefense()
+	}
 
 	//reduction = int(float64(reduction) / 9)
 
@@ -618,16 +634,22 @@ func (c *Character) GetAdjectives() []string {
 		retAdjectives = append(retAdjectives, `shop`)
 	}
 
-	if c.HasBuffFlag(buffs.EmitsLight) {
+	if c.HasBuffFlag("lightsource") {
 		retAdjectives = append(retAdjectives, `lit`)
 	}
 
-	if c.HasBuffFlag(buffs.Hidden) {
+	if c.HasBuffFlag("hidden") {
 		retAdjectives = append(retAdjectives, `hidden`)
 	}
 
-	if c.HasBuffFlag(buffs.Poison) {
+	if c.HasBuffFlag("poison") {
 		retAdjectives = append(retAdjectives, `poisoned`)
+	}
+
+	if c.FormRaceId > 0 {
+		if r := races.GetRace(c.FormRaceId); r != nil {
+			retAdjectives = append(retAdjectives, strings.ToLower(r.Name)+` form`)
+		}
 	}
 	// End dynamic adjectives
 
@@ -671,7 +693,7 @@ func (c *Character) getFormattedName(viewingUserId int, uType string, renderFlag
 		f.PetName = c.Pet.DisplayName()
 	}
 
-	return f
+	return OnGetFormattedName.Fire(f)
 }
 
 func (c *Character) PruneCooldowns() {
@@ -768,7 +790,7 @@ func (c *Character) HandsRequired(i items.Item) int {
 		return iSpec.Hands
 	}
 
-	raceInfo := races.GetRace(c.RaceId)
+	raceInfo := races.GetRace(c.GetRaceId())
 	if raceInfo.Size == races.Large {
 		return 1
 	}
@@ -844,17 +866,7 @@ func (c *Character) FindOnBody(itemName string) (items.Item, bool) {
 		return items.Item{}, false
 	}
 
-	partialMatch, fullMatch := items.FindMatchIn(itemName,
-		c.Equipment.Weapon,
-		c.Equipment.Offhand,
-		c.Equipment.Head,
-		c.Equipment.Neck,
-		c.Equipment.Body,
-		c.Equipment.Belt,
-		c.Equipment.Gloves,
-		c.Equipment.Ring,
-		c.Equipment.Legs,
-		c.Equipment.Feet)
+	partialMatch, fullMatch := items.FindMatchIn(itemName, c.Equipment.GetAllItems()...)
 
 	if fullMatch.ItemId != 0 {
 		return fullMatch, true
@@ -875,18 +887,31 @@ func (c *Character) GetSkills() map[string]int {
 	return skillResults
 }
 
-func (c *Character) SetSkill(skillName string, level int) {
+// SetSkill sets a skill to an explicit level. Returns false (with a mudlog warning)
+// for unknown skills. Level 0 deletes the skill; otherwise the level is clamped to
+// the skill's configured maxlevel.
+func (c *Character) SetSkill(skillName string, level int) bool {
 	if c.Skills == nil {
 		c.Skills = make(map[string]int)
 	}
 	skillName = strings.ToLower(skillName)
 
-	if level == 0 {
+	if level <= 0 {
 		delete(c.Skills, skillName)
-		return
+		return true
+	}
+
+	if !skills.SkillExists(skillName) {
+		mudlog.Warn("SetSkill", "error", "unknown skill", "skill", skillName)
+		return false
+	}
+
+	if max := skills.MaxSkillLevel(skillName); level > max {
+		level = max
 	}
 
 	c.Skills[skillName] = level
+	return true
 }
 
 // Increases the skill training counter and returns the new value
@@ -896,6 +921,13 @@ func (c *Character) TrainSkill(skillName string, targetLevel ...int) int {
 	}
 
 	skillName = strings.ToLower(skillName)
+
+	if !skills.SkillExists(skillName) {
+		mudlog.Warn("TrainSkill", "error", "unknown skill", "skill", skillName)
+		return 0
+	}
+
+	max := skills.MaxSkillLevel(skillName)
 
 	skillLevel := 0
 
@@ -908,8 +940,11 @@ func (c *Character) TrainSkill(skillName string, targetLevel ...int) int {
 		if skillLevel < targetLevel[0] {
 			skillLevel = targetLevel[0]
 		}
+		if skillLevel > max {
+			skillLevel = max
+		}
 
-	} else if skillLevel < 4 {
+	} else if skillLevel < max {
 
 		skillLevel++
 
@@ -921,12 +956,19 @@ func (c *Character) TrainSkill(skillName string, targetLevel ...int) int {
 }
 
 // Gets the current value of the skillname provided
-func (c *Character) GetSkillLevel(skillName skills.SkillTag) int {
+func (c *Character) GetSkillLevel(skillName string) int {
 	if c.Skills == nil {
 		c.Skills = make(map[string]int)
 	}
 
-	if level, ok := c.Skills[string(skillName)]; ok {
+	skillName = strings.ToLower(skillName)
+
+	// zero reads: unknown skills (incl. orphaned save entries) report 0 and stay inert.
+	if !skills.SkillExists(skillName) {
+		return 0
+	}
+
+	if level, ok := c.Skills[skillName]; ok {
 		return level
 	}
 	return 0
@@ -937,12 +979,12 @@ func (c *Character) GetSkillLevelCost(currentLevel int) int {
 }
 
 func (c *Character) GetMaxCharmedCreatures() int {
-	lvl := c.GetSkillLevel(skills.Tame)
+	lvl := c.GetSkillLevel(`tame`)
 	return lvl + 1
 }
 
 func (c *Character) GetMemoryCapacity() int {
-	memCap := c.GetSkillLevel(skills.Map) * c.Stats.Smarts.ValueAdj
+	memCap := c.GetSkillLevel(`map`) * c.Stats.Smarts.ValueAdj
 	if memCap < 0 {
 		memCap = 0
 	}
@@ -950,7 +992,7 @@ func (c *Character) GetMemoryCapacity() int {
 }
 
 func (c *Character) GetMapSprawlCapacity() int {
-	sprawlCap := c.GetSkillLevel(skills.Map) + (c.Stats.Smarts.ValueAdj >> 2)
+	sprawlCap := c.GetSkillLevel(`map`) + (c.Stats.Smarts.ValueAdj >> 2)
 	if sprawlCap < 0 {
 		sprawlCap = 0
 	}
@@ -1193,11 +1235,11 @@ func (c *Character) IsDisabled() bool {
 	return c.Health <= 0
 }
 
-func (c *Character) HasBuffFlag(buffFlag buffs.Flag) bool {
+func (c *Character) HasBuffFlag(buffFlag string) bool {
 	return c.Buffs.HasFlag(buffFlag, false)
 }
 
-func (c *Character) CancelBuffsWithFlag(buffFlag buffs.Flag) bool {
+func (c *Character) CancelBuffsWithFlag(buffFlag string) bool {
 	if c.Buffs.HasFlag(buffFlag, true) {
 		c.Validate(true)
 		return true
@@ -1209,9 +1251,9 @@ func (c *Character) HasBuff(buffId int) bool {
 	return c.Buffs.HasBuff(buffId)
 }
 
-func (c *Character) AddBuff(buffId int, isPermanent bool) error {
+func (c *Character) AddBuff(buffId int, isPermanent bool, triggerCountOverride ...int) error {
 	buffId = int(math.Abs(float64(buffId)))
-	if !c.Buffs.AddBuff(buffId, isPermanent) {
+	if !c.Buffs.AddBuff(buffId, isPermanent, triggerCountOverride...) {
 		return fmt.Errorf(`failed to add buff. target: "%s" buffId: %d`, c.Name, buffId)
 	}
 	c.Validate()
@@ -1274,7 +1316,7 @@ func (c *Character) ApplyHealthChange(healthChange int) int {
 	oldHealth := c.Health
 	newHealth := c.Health + healthChange
 	if newHealth < 0 {
-		c.CancelBuffsWithFlag(buffs.CancelIfCombat)
+		c.CancelBuffsWithFlag("cancel-on-combat")
 
 		// If they haven't dropped yet, require a drop before going straight to death.
 		// Don't allow players to drop under -5 in a single hit.
@@ -1320,8 +1362,13 @@ func (c *Character) XPTL(lvl int) int {
 	if lvl < 1 {
 		lvl = 1
 	}
-	fLvl := float64(lvl)
-	return int(float32(1000+(fLvl*(fLvl*.75)*1000)) * c.TNLScale)
+	cfg := configs.GetProgressionConfig()
+	base := float64(cfg.XPBase)
+	xp := (base + math.Pow(float64(lvl), float64(cfg.XPLevelPower))*float64(cfg.XPLevelFactor)*base) * float64(c.TNLScale)
+	if xp > math.MaxInt {
+		return math.MaxInt
+	}
+	return int(xp)
 }
 
 // Returns the actual xp in regards to the current level/next level
@@ -1349,8 +1396,14 @@ func (c *Character) LevelUp() (bool, stats.Statistics) {
 	var statsBefore stats.Statistics = c.Stats
 
 	c.Level++
-	c.TrainingPoints++
-	c.StatPoints++
+
+	cfgProg := configs.GetProgressionConfig()
+	if int(cfgProg.TrainingPointsEveryNLevels) <= 1 || c.Level%int(cfgProg.TrainingPointsEveryNLevels) == 0 {
+		c.TrainingPoints += int(cfgProg.TrainingPointsPerLevel)
+	}
+	if int(cfgProg.StatPointsEveryNLevels) <= 1 || c.Level%int(cfgProg.StatPointsEveryNLevels) == 0 {
+		c.StatPoints += int(cfgProg.StatPointsPerLevel)
+	}
 
 	c.Validate()
 
@@ -1416,7 +1469,11 @@ func (c *Character) MovementCost() int {
 }
 
 func (c *Character) StatMod(statName string) int {
-	return c.Equipment.StatMod(statName) + c.Buffs.StatMod(statName) + c.Pet.StatMod(statName)
+	petMod := 0
+	if !c.Pet.IsMissing() {
+		petMod = c.Pet.StatMod(statName)
+	}
+	return c.Equipment.StatMod(statName) + c.Buffs.StatMod(statName) + petMod
 }
 
 // returns true if something has changed.
@@ -1427,12 +1484,13 @@ func (c *Character) RecalculateStats() {
 	beforeManaMax := c.ManaMax
 	beforeStats := c.Stats
 
-	if raceInfo := races.GetRace(c.RaceId); raceInfo != nil {
-		c.TNLScale = raceInfo.TNLScale
-		// Safety check: ensure TNLScale is never 0
+	if trueRaceInfo := races.GetRace(c.RaceId); trueRaceInfo != nil {
+		c.TNLScale = trueRaceInfo.TNLScale
 		if c.TNLScale == 0 {
 			c.TNLScale = 1.0
 		}
+	}
+	if raceInfo := races.GetRace(c.GetRaceId()); raceInfo != nil {
 		c.Stats.Strength.Base = raceInfo.Stats.Strength.Base
 		c.Stats.Speed.Base = raceInfo.Stats.Speed.Base
 		c.Stats.Smarts.Base = raceInfo.Stats.Smarts.Base
@@ -1461,15 +1519,18 @@ func (c *Character) RecalculateStats() {
 
 	// Set HP/MP maxes
 	// This relies on the above stats so has to be calculated afterwards
-	c.HealthMax.Mods = 5 +
-		c.StatMod(string(statmods.HealthMax)) + // Any sort of spell buffs etc. are just direct modifiers
-		c.Level + // For every level you get 1 hp
-		c.Stats.Vitality.ValueAdj*4 // for every vitality you get 3hp
+	cfgProg := configs.GetProgressionConfig()
+	c.HealthMax.NoCap = true
+	c.HealthMax.Mods = int(cfgProg.HPBase) +
+		c.StatMod(string(statmods.HealthMax)) +
+		int(float64(c.Level)*float64(cfgProg.HPPerLevel)) +
+		int(float64(c.Stats.Vitality.ValueAdj)*float64(cfgProg.HPPerVitality))
 
-	c.ManaMax.Mods = 4 +
-		c.StatMod(string(statmods.ManaMax)) + // Any sort of spell buffs etc. are just direct modifiers
-		c.Level + // For every level you get 1 mp
-		c.Stats.Mysticism.ValueAdj*3 // for every Mysticism you get 2mp
+	c.ManaMax.NoCap = true
+	c.ManaMax.Mods = int(cfgProg.ManaBase) +
+		c.StatMod(string(statmods.ManaMax)) +
+		int(float64(c.Level)*float64(cfgProg.ManaPerLevel)) +
+		int(float64(c.Stats.Mysticism.ValueAdj)*float64(cfgProg.ManaPerMysticism))
 
 	// Set max action points
 	c.ActionPointsMax.Mods = 200 // hard coded for now
@@ -1525,23 +1586,17 @@ func (c *Character) AutoTrain() {
 		return
 	}
 
-	for c.StatPoints > 0 {
+	statPtrs := [...]*int{
+		&c.Stats.Strength.Training,
+		&c.Stats.Speed.Training,
+		&c.Stats.Smarts.Training,
+		&c.Stats.Vitality.Training,
+		&c.Stats.Mysticism.Training,
+		&c.Stats.Perception.Training,
+	}
 
-		switch util.Rand(6) {
-		case 0:
-			c.Stats.Strength.Training++
-		case 1:
-			c.Stats.Speed.Training++
-		case 2:
-			c.Stats.Smarts.Training++
-		case 3:
-			c.Stats.Vitality.Training++
-		case 4:
-			c.Stats.Mysticism.Training++
-		case 5:
-			c.Stats.Perception.Training++
-		}
-
+	for i := 0; c.StatPoints > 0; i++ {
+		*statPtrs[i%len(statPtrs)]++
 		c.StatPoints--
 	}
 
@@ -1550,7 +1605,7 @@ func (c *Character) AutoTrain() {
 }
 
 func (c *Character) CanDualWield() bool {
-	return c.GetSkillLevel(skills.DualWield) > 0
+	return c.GetSkillLevel(`dual-wield`) > 0
 }
 
 // Returns whether a correction was in order
@@ -1627,19 +1682,12 @@ func (c *Character) Validate(recalcPermaBuffs ...bool) error {
 	for i := range c.Items {
 		c.Items[i].Validate()
 	}
-	c.Equipment.Weapon.Validate()
-	c.Equipment.Offhand.Validate()
-	c.Equipment.Head.Validate()
-	c.Equipment.Neck.Validate()
-	c.Equipment.Body.Validate()
-	c.Equipment.Belt.Validate()
-	c.Equipment.Gloves.Validate()
-	c.Equipment.Ring.Validate()
-	c.Equipment.Legs.Validate()
-	c.Equipment.Feet.Validate()
+	for _, slot := range AllSlots() {
+		c.Equipment.Get(slot).Validate()
+	}
 	// Done with validation
 
-	if raceInfo := races.GetRace(c.RaceId); raceInfo != nil {
+	if raceInfo := races.GetRace(c.GetRaceId()); raceInfo != nil {
 
 		c.Equipment.EnableAll()
 
@@ -1648,60 +1696,17 @@ func (c *Character) Validate(recalcPermaBuffs ...bool) error {
 
 			for _, disabledSlot := range raceInfo.DisabledSlots {
 
-				var itemFoundInDisabledSlot items.Item = items.ItemDisabledSlot
-
-				switch items.ItemType(disabledSlot) {
-				case items.Weapon:
-					if c.Equipment.Weapon.ItemId > 0 { // Did we find somethign in a disabled slot?
-						itemFoundInDisabledSlot = c.Equipment.Weapon
-					}
-					c.Equipment.Weapon = items.ItemDisabledSlot
-				case items.Offhand:
-					if c.Equipment.Offhand.ItemId > 0 { // Did we find somethign in a disabled slot?
-						itemFoundInDisabledSlot = c.Equipment.Offhand
-					}
-					c.Equipment.Offhand = items.ItemDisabledSlot
-				case items.Head:
-					if c.Equipment.Head.ItemId > 0 { // Did we find somethign in a disabled slot?
-						itemFoundInDisabledSlot = c.Equipment.Head
-					}
-					c.Equipment.Head = items.ItemDisabledSlot
-				case items.Neck:
-					if c.Equipment.Neck.ItemId > 0 { // Did we find somethign in a disabled slot?
-						itemFoundInDisabledSlot = c.Equipment.Neck
-					}
-					c.Equipment.Neck = items.ItemDisabledSlot
-				case items.Body:
-					if c.Equipment.Body.ItemId > 0 { // Did we find somethign in a disabled slot?
-						itemFoundInDisabledSlot = c.Equipment.Body
-					}
-					c.Equipment.Body = items.ItemDisabledSlot
-				case items.Belt:
-					if c.Equipment.Belt.ItemId > 0 { // Did we find somethign in a disabled slot?
-						itemFoundInDisabledSlot = c.Equipment.Belt
-					}
-					c.Equipment.Belt = items.ItemDisabledSlot
-				case items.Gloves:
-					if c.Equipment.Gloves.ItemId > 0 { // Did we find somethign in a disabled slot?
-						itemFoundInDisabledSlot = c.Equipment.Gloves
-					}
-					c.Equipment.Gloves = items.ItemDisabledSlot
-				case items.Ring:
-					if c.Equipment.Ring.ItemId > 0 { // Did we find somethign in a disabled slot?
-						itemFoundInDisabledSlot = c.Equipment.Ring
-					}
-					c.Equipment.Ring = items.ItemDisabledSlot
-				case items.Legs:
-					if c.Equipment.Legs.ItemId > 0 { // Did we find somethign in a disabled slot?
-						itemFoundInDisabledSlot = c.Equipment.Legs
-					}
-					c.Equipment.Legs = items.ItemDisabledSlot
-				case items.Feet:
-					if c.Equipment.Feet.ItemId > 0 { // Did we find somethign in a disabled slot?
-						itemFoundInDisabledSlot = c.Equipment.Feet
-					}
-					c.Equipment.Feet = items.ItemDisabledSlot
+				slotType := items.ItemType(disabledSlot)
+				slotItem := c.Equipment.Get(slotType)
+				if slotItem == nil {
+					continue
 				}
+
+				var itemFoundInDisabledSlot items.Item = items.ItemDisabledSlot
+				if slotItem.ItemId > 0 {
+					itemFoundInDisabledSlot = *slotItem
+				}
+				c.Equipment.Set(slotType, items.ItemDisabledSlot)
 
 				if !itemFoundInDisabledSlot.IsDisabled() {
 					c.StoreItem(itemFoundInDisabledSlot)
@@ -1713,6 +1718,27 @@ func (c *Character) Validate(recalcPermaBuffs ...bool) error {
 
 	}
 
+	if !c.Equipment.Weapon.IsDisabled() && c.Equipment.Weapon.ItemId > 0 {
+		weaponHands := c.HandsRequired(c.Equipment.Weapon)
+		offhandHands := 0
+		if !c.Equipment.Offhand.IsDisabled() && c.Equipment.Offhand.ItemId > 0 {
+			offhandHands = c.HandsRequired(c.Equipment.Offhand)
+			if offhandHands < 1 {
+				offhandHands = 1
+			}
+		}
+		if weaponHands+offhandHands > 2 {
+			if offhandHands > 0 {
+				c.StoreItem(c.Equipment.Offhand)
+				c.Equipment.Offhand = items.Item{}
+			}
+			if weaponHands > 2 {
+				c.StoreItem(c.Equipment.Weapon)
+				c.Equipment.Weapon = items.Item{}
+			}
+		}
+	}
+
 	if len(recalcPermaBuffs) > 0 && recalcPermaBuffs[0] {
 		c.reapplyPermabuffs()
 	}
@@ -1720,14 +1746,74 @@ func (c *Character) Validate(recalcPermaBuffs ...bool) error {
 	return nil
 }
 
+func (c *Character) GetRaceId() int {
+	if c.FormRaceId > 0 {
+		return c.FormRaceId
+	}
+	return c.RaceId
+}
+
 func (c *Character) Race() string {
-	if r := races.GetRace(c.RaceId); r != nil {
+	if r := races.GetRace(c.GetRaceId()); r != nil {
 		return r.Name
 	}
 	return `Ghostly Spirit`
 }
 
+func (c *Character) RaceSize() string {
+	if r := races.GetRace(c.GetRaceId()); r != nil {
+		return string(r.Size)
+	}
+	return string(races.Medium)
+}
+
+func (c *Character) IsFormChanged() bool {
+	return c.FormRaceId > 0
+}
+
+func (c *Character) ApplyFormChange(newRaceId int) []items.Item {
+	if races.GetRace(newRaceId) == nil {
+		return nil
+	}
+
+	if c.IsFormChanged() {
+		c.RevertFormChange()
+	}
+
+	c.FormRaceId = newRaceId
+	c.Validate(true)
+
+	return nil
+}
+
+func (c *Character) RevertFormChange() []items.Item {
+	c.FormRaceId = 0
+	c.Validate(true)
+
+	return nil
+}
+
 func (c *Character) UpdateAlignment(amt int) {
+	if amt == 0 {
+		return
+	}
+	// Resist movement that pushes further from neutral. Movement toward neutral
+	// is always unresisted so redemption is never harder than corruption.
+	movingAwayFromNeutral := (amt < 0 && c.Alignment < 0) || (amt > 0 && c.Alignment > 0)
+	if movingAwayFromNeutral {
+		resistance := math.Abs(float64(c.Alignment)) / 100.0
+		scaled := float64(amt) * (1.0 - resistance*0.75)
+		if math.Abs(scaled) < 1.0 {
+			// Probabilistic floor: even at maximum resistance there is a small
+			// chance the tick still lands.
+			if util.Rand(100) >= int(math.Abs(scaled)*100) {
+				return
+			}
+			amt = int(math.Copysign(1, float64(amt)))
+		} else {
+			amt = int(math.Round(scaled))
+		}
+	}
 	newAlignment := int(c.Alignment) + amt
 	if newAlignment < int(AlignmentMinimum) {
 		newAlignment = int(AlignmentMinimum)
@@ -1735,6 +1821,28 @@ func (c *Character) UpdateAlignment(amt int) {
 		newAlignment = int(AlignmentMaximum)
 	}
 	c.Alignment = int8(newAlignment)
+}
+
+// DecayAlignment drifts alignment one step toward neutral. The amount decayed
+// per call scales quadratically with distance from neutral so extreme alignments
+// decay faster and are harder to maintain.
+func (c *Character) DecayAlignment() {
+	if c.Alignment == 0 {
+		return
+	}
+	norm := math.Abs(float64(c.Alignment)) / 100.0
+	decay := int(math.Floor(norm*norm*4)) + 1
+	if c.Alignment > 0 {
+		c.Alignment -= int8(decay)
+		if c.Alignment < 0 {
+			c.Alignment = 0
+		}
+	} else {
+		c.Alignment += int8(decay)
+		if c.Alignment > 0 {
+			c.Alignment = 0
+		}
+	}
 }
 
 func (c *Character) AlignmentName() string {
@@ -1745,72 +1853,104 @@ func (c *Character) GetAllBackpackItems() []items.Item {
 	return append([]items.Item{}, c.Items...)
 }
 
+// BestUpgrades returns a map of equipment slot -> best backpack item that
+// beats whatever is currently worn in that slot (or fills an empty slot).
+// The caller receives only slots where an upgrade exists; worn items that
+// already beat every backpack alternative are omitted.
+//
+// Two-handed weapon / offhand mutual-exclusion is respected: a two-handed
+// weapon candidate is skipped when an offhand item is already worn (or
+// already chosen as an upgrade), and an offhand candidate is skipped when a
+// two-handed weapon is already worn (or already chosen).
+func (c *Character) BestUpgrades() map[items.ItemType]items.Item {
+
+	wornItems := map[items.ItemType]items.Item{}
+	for _, itm := range c.Equipment.GetAllItems() {
+		wornItems[itm.GetSpec().Type] = itm
+	}
+
+	// Pass 1: find the highest-Value backpack item for each slot.
+	bestBySlot := map[items.ItemType]items.Item{}
+	for _, itm := range c.Items {
+		itmSpec := itm.GetSpec()
+		if itmSpec.Type != items.Weapon && itmSpec.Subtype != items.Wearable {
+			continue
+		}
+		if prev, ok := bestBySlot[itmSpec.Type]; !ok || itmSpec.Value > prev.GetSpec().Value {
+			bestBySlot[itmSpec.Type] = itm
+		}
+	}
+
+	// Pass 2: keep only slots where the best backpack item beats what is worn
+	// (or fills an empty, non-disabled slot), then enforce the two-handed /
+	// offhand mutual exclusion.
+	upgrades := map[items.ItemType]items.Item{}
+	for slotType, candidate := range bestBySlot {
+		worn, isWorn := wornItems[slotType]
+		if isWorn && candidate.GetSpec().Value <= worn.GetSpec().Value {
+			continue
+		}
+		// Skip disabled slots (ItemId == -1 means the race cannot use this slot).
+		if slotItem := c.Equipment.Get(slotType); slotItem != nil && slotItem.IsDisabled() {
+			continue
+		}
+		upgrades[slotType] = candidate
+	}
+
+	// Resolve two-handed weapon vs offhand conflict.
+	// "Effective offhand" = currently worn offhand that is NOT being replaced.
+	effectiveOffhand := false
+	if _, upgrading := upgrades[items.Offhand]; !upgrading {
+		if _, worn := wornItems[items.Offhand]; worn {
+			effectiveOffhand = true
+		}
+	} else {
+		effectiveOffhand = true
+	}
+
+	if weaponUpgrade, ok := upgrades[items.Weapon]; ok {
+		if c.HandsRequired(weaponUpgrade) == 2 && effectiveOffhand {
+			delete(upgrades, items.Weapon)
+		}
+	}
+
+	// "Effective weapon" = currently worn weapon that is NOT being replaced.
+	effectiveTwoHanded := false
+	if _, upgrading := upgrades[items.Weapon]; !upgrading {
+		if wornWeapon, worn := wornItems[items.Weapon]; worn {
+			if c.HandsRequired(wornWeapon) == 2 {
+				effectiveTwoHanded = true
+			}
+		}
+	} else {
+		if c.HandsRequired(upgrades[items.Weapon]) == 2 {
+			effectiveTwoHanded = true
+		}
+	}
+
+	if effectiveTwoHanded {
+		delete(upgrades, items.Offhand)
+	}
+
+	return upgrades
+}
+
 func (c *Character) GetAllWornItems() []items.Item {
 	wornItems := []items.Item{}
-	if c.Equipment.Weapon.ItemId > 0 {
-		wornItems = append(wornItems, c.Equipment.Weapon)
-	}
-	if c.Equipment.Offhand.ItemId > 0 {
-		wornItems = append(wornItems, c.Equipment.Offhand)
-	}
-	if c.Equipment.Head.ItemId > 0 {
-		wornItems = append(wornItems, c.Equipment.Head)
-	}
-	if c.Equipment.Neck.ItemId > 0 {
-		wornItems = append(wornItems, c.Equipment.Neck)
-	}
-	if c.Equipment.Body.ItemId > 0 {
-		wornItems = append(wornItems, c.Equipment.Body)
-	}
-	if c.Equipment.Belt.ItemId > 0 {
-		wornItems = append(wornItems, c.Equipment.Belt)
-	}
-	if c.Equipment.Gloves.ItemId > 0 {
-		wornItems = append(wornItems, c.Equipment.Gloves)
-	}
-	if c.Equipment.Ring.ItemId > 0 {
-		wornItems = append(wornItems, c.Equipment.Ring)
-	}
-	if c.Equipment.Legs.ItemId > 0 {
-		wornItems = append(wornItems, c.Equipment.Legs)
-	}
-	if c.Equipment.Feet.ItemId > 0 {
-		wornItems = append(wornItems, c.Equipment.Feet)
+	for _, slot := range AllSlots() {
+		if itm := c.Equipment.Get(slot); itm.ItemId > 0 {
+			wornItems = append(wornItems, *itm)
+		}
 	}
 	return wornItems
 }
 
 func (c *Character) GetGearValue() int {
 	value := 0
-	if c.Equipment.Weapon.ItemId > 0 {
-		value += c.Equipment.Weapon.GetSpec().Value
-	}
-	if c.Equipment.Offhand.ItemId > 0 {
-		value += c.Equipment.Offhand.GetSpec().Value
-	}
-	if c.Equipment.Head.ItemId > 0 {
-		value += c.Equipment.Head.GetSpec().Value
-	}
-	if c.Equipment.Neck.ItemId > 0 {
-		value += c.Equipment.Neck.GetSpec().Value
-	}
-	if c.Equipment.Body.ItemId > 0 {
-		value += c.Equipment.Body.GetSpec().Value
-	}
-	if c.Equipment.Belt.ItemId > 0 {
-		value += c.Equipment.Belt.GetSpec().Value
-	}
-	if c.Equipment.Gloves.ItemId > 0 {
-		value += c.Equipment.Gloves.GetSpec().Value
-	}
-	if c.Equipment.Ring.ItemId > 0 {
-		value += c.Equipment.Ring.GetSpec().Value
-	}
-	if c.Equipment.Legs.ItemId > 0 {
-		value += c.Equipment.Legs.GetSpec().Value
-	}
-	if c.Equipment.Feet.ItemId > 0 {
-		value += c.Equipment.Feet.GetSpec().Value
+	for _, slot := range AllSlots() {
+		if itm := c.Equipment.Get(slot); itm.ItemId > 0 {
+			value += itm.GetSpec().Value
+		}
 	}
 	return value
 }
@@ -1873,6 +2013,9 @@ func (c *Character) Wear(i items.Item) (returnItems []items.Item, newItemWorn bo
 		if !c.Equipment.Offhand.IsDisabled() { // Don't allow equipping on a disabled slot
 			// If it's a 2 handed weapon, remove whatever is in the offhand
 			if iHandsRequired == 2 || !canDualWield && c.Equipment.Offhand.GetSpec().Type == items.Weapon {
+				if c.Equipment.Offhand.IsRemoveLocked() && c.Health > 0 {
+					return returnItems, false, `Your ` + c.Equipment.Offhand.DisplayName() + ` is bound to you and cannot be removed.`
+				}
 				returnItems = append(returnItems, c.Equipment.Offhand)
 				c.Equipment.Offhand = items.Item{}
 			}
@@ -1880,6 +2023,9 @@ func (c *Character) Wear(i items.Item) (returnItems []items.Item, newItemWorn bo
 
 		if c.Equipment.Weapon.IsCursed() {
 			return returnItems, false, `Your ` + c.Equipment.Weapon.DisplayName() + ` is cursed and prevents you from removing it.`
+		}
+		if c.Equipment.Weapon.IsRemoveLocked() && c.Health > 0 {
+			return returnItems, false, `Your ` + c.Equipment.Weapon.DisplayName() + ` is bound to you and cannot be removed.`
 		}
 
 		returnItems = append(returnItems, c.Equipment.Weapon)
@@ -1896,9 +2042,15 @@ func (c *Character) Wear(i items.Item) (returnItems []items.Item, newItemWorn bo
 				if c.Equipment.Weapon.IsCursed() {
 					return returnItems, false, `Your ` + c.Equipment.Weapon.DisplayName() + ` is cursed and prevents you from removing it.`
 				}
+				if c.Equipment.Weapon.IsRemoveLocked() && c.Health > 0 {
+					return returnItems, false, `Your ` + c.Equipment.Weapon.DisplayName() + ` is bound to you and cannot be removed.`
+				}
 				returnItems = append(returnItems, c.Equipment.Weapon)
 				c.Equipment.Weapon = items.Item{}
 			}
+		}
+		if c.Equipment.Offhand.IsRemoveLocked() && c.Health > 0 {
+			return returnItems, false, `Your ` + c.Equipment.Offhand.DisplayName() + ` is bound to you and cannot be removed.`
 		}
 		returnItems = append(returnItems, c.Equipment.Offhand)
 		c.Equipment.Offhand = i
@@ -1906,11 +2058,17 @@ func (c *Character) Wear(i items.Item) (returnItems []items.Item, newItemWorn bo
 		if c.Equipment.Head.IsDisabled() { // Don't allow equipping on a disabled slot
 			return returnItems, false, `You can't wear things on your head.`
 		}
+		if c.Equipment.Head.IsRemoveLocked() && c.Health > 0 {
+			return returnItems, false, `Your ` + c.Equipment.Head.DisplayName() + ` is bound to you and cannot be removed.`
+		}
 		returnItems = append(returnItems, c.Equipment.Head)
 		c.Equipment.Head = i
 	case items.Neck:
 		if c.Equipment.Neck.IsDisabled() { // Don't allow equipping on a disabled slot
 			return returnItems, false, `You can't wear things on your neck.`
+		}
+		if c.Equipment.Neck.IsRemoveLocked() && c.Health > 0 {
+			return returnItems, false, `Your ` + c.Equipment.Neck.DisplayName() + ` is bound to you and cannot be removed.`
 		}
 		returnItems = append(returnItems, c.Equipment.Neck)
 		c.Equipment.Neck = i
@@ -1918,11 +2076,17 @@ func (c *Character) Wear(i items.Item) (returnItems []items.Item, newItemWorn bo
 		if c.Equipment.Body.IsDisabled() { // Don't allow equipping on a disabled slot
 			return returnItems, false, `You can't wear things on your body.`
 		}
+		if c.Equipment.Body.IsRemoveLocked() && c.Health > 0 {
+			return returnItems, false, `Your ` + c.Equipment.Body.DisplayName() + ` is bound to you and cannot be removed.`
+		}
 		returnItems = append(returnItems, c.Equipment.Body)
 		c.Equipment.Body = i
 	case items.Belt:
 		if c.Equipment.Belt.IsDisabled() { // Don't allow equipping on a disabled slot
 			return returnItems, false, `You can't wear things on your head.`
+		}
+		if c.Equipment.Belt.IsRemoveLocked() && c.Health > 0 {
+			return returnItems, false, `Your ` + c.Equipment.Belt.DisplayName() + ` is bound to you and cannot be removed.`
 		}
 		returnItems = append(returnItems, c.Equipment.Belt)
 		c.Equipment.Belt = i
@@ -1930,11 +2094,17 @@ func (c *Character) Wear(i items.Item) (returnItems []items.Item, newItemWorn bo
 		if c.Equipment.Gloves.IsDisabled() { // Don't allow equipping on a disabled slot
 			return returnItems, false, `You can't wear things as gloves.`
 		}
+		if c.Equipment.Gloves.IsRemoveLocked() && c.Health > 0 {
+			return returnItems, false, `Your ` + c.Equipment.Gloves.DisplayName() + ` is bound to you and cannot be removed.`
+		}
 		returnItems = append(returnItems, c.Equipment.Gloves)
 		c.Equipment.Gloves = i
 	case items.Ring:
 		if c.Equipment.Ring.IsDisabled() { // Don't allow equipping on a disabled slot
 			return returnItems, false, `You can't wear rings.`
+		}
+		if c.Equipment.Ring.IsRemoveLocked() && c.Health > 0 {
+			return returnItems, false, `Your ` + c.Equipment.Ring.DisplayName() + ` is bound to you and cannot be removed.`
 		}
 		returnItems = append(returnItems, c.Equipment.Ring)
 		c.Equipment.Ring = i
@@ -1942,11 +2112,17 @@ func (c *Character) Wear(i items.Item) (returnItems []items.Item, newItemWorn bo
 		if c.Equipment.Legs.IsDisabled() { // Don't allow equipping on a disabled slot
 			return returnItems, false, `You can't wear things on your legs.`
 		}
+		if c.Equipment.Legs.IsRemoveLocked() && c.Health > 0 {
+			return returnItems, false, `Your ` + c.Equipment.Legs.DisplayName() + ` is bound to you and cannot be removed.`
+		}
 		returnItems = append(returnItems, c.Equipment.Legs)
 		c.Equipment.Legs = i
 	case items.Feet:
 		if c.Equipment.Feet.IsDisabled() { // Don't allow equipping on a disabled slot
 			return returnItems, false, `You can't wear things on your feet.`
+		}
+		if c.Equipment.Feet.IsRemoveLocked() && c.Health > 0 {
+			return returnItems, false, `Your ` + c.Equipment.Feet.DisplayName() + ` is bound to you and cannot be removed.`
 		}
 		returnItems = append(returnItems, c.Equipment.Feet)
 		c.Equipment.Feet = i
@@ -1961,33 +2137,18 @@ func (c *Character) Wear(i items.Item) (returnItems []items.Item, newItemWorn bo
 
 func (c *Character) RemoveFromBody(i items.Item) bool {
 
-	if i.Equals(c.Equipment.Weapon) {
-		c.Equipment.Weapon = items.Item{}
-	} else if i.Equals(c.Equipment.Offhand) {
-		c.Equipment.Offhand = items.Item{}
-	} else if i.Equals(c.Equipment.Head) {
-		c.Equipment.Head = items.Item{}
-	} else if i.Equals(c.Equipment.Neck) {
-		c.Equipment.Neck = items.Item{}
-	} else if i.Equals(c.Equipment.Body) {
-		c.Equipment.Body = items.Item{}
-	} else if i.Equals(c.Equipment.Belt) {
-		c.Equipment.Belt = items.Item{}
-	} else if i.Equals(c.Equipment.Gloves) {
-		c.Equipment.Gloves = items.Item{}
-	} else if i.Equals(c.Equipment.Ring) {
-		c.Equipment.Ring = items.Item{}
-	} else if i.Equals(c.Equipment.Legs) {
-		c.Equipment.Legs = items.Item{}
-	} else if i.Equals(c.Equipment.Feet) {
-		c.Equipment.Feet = items.Item{}
-	} else {
-		return false
+	for _, slot := range AllSlots() {
+		if i.Equals(*c.Equipment.Get(slot)) {
+			if i.IsRemoveLocked() && c.Health > 0 {
+				return false
+			}
+			c.Equipment.Set(slot, items.Item{})
+			c.reapplyPermabuffs(i)
+			return true
+		}
 	}
 
-	c.reapplyPermabuffs(i)
-
-	return true
+	return false
 }
 
 // Used with SpawnInfo to gift spawning mobs with permabuffs
@@ -2004,14 +2165,14 @@ func (c *Character) reapplyPermabuffs(removedItems ...items.Item) {
 	}
 
 	// Apply any buffs that come from a race
-	if rInfo := races.GetRace(c.RaceId); rInfo != nil {
+	if rInfo := races.GetRace(c.GetRaceId()); rInfo != nil {
 		for _, buffId := range rInfo.BuffIds {
 			buffIdCount[buffId] = 100 // Don't allow racial buffs to be removed, keep this number high
 		}
 	}
 
 	// Apply any buffs from pet
-	if c.Pet.Exists() {
+	if c.Pet.Exists() && !c.Pet.IsMissing() {
 		for _, buffId := range c.Pet.GetBuffs() {
 			buffIdCount[buffId] = 100 // Don't allow pet buffs to be removed, keep this number high
 		}
@@ -2059,54 +2220,12 @@ func (c *Character) Uncurse() []items.Item {
 
 	uncursedList := []items.Item{}
 
-	if c.Equipment.Weapon.IsCursed() {
-		c.Equipment.Weapon.Uncursed = true
-		uncursedList = append(uncursedList, c.Equipment.Weapon)
-	}
-
-	if c.Equipment.Offhand.IsCursed() {
-		c.Equipment.Offhand.Uncursed = true
-		uncursedList = append(uncursedList, c.Equipment.Offhand)
-	}
-
-	if c.Equipment.Head.IsCursed() {
-		c.Equipment.Head.Uncursed = true
-		uncursedList = append(uncursedList, c.Equipment.Head)
-	}
-
-	if c.Equipment.Neck.IsCursed() {
-		c.Equipment.Neck.Uncursed = true
-		uncursedList = append(uncursedList, c.Equipment.Neck)
-	}
-
-	if c.Equipment.Body.IsCursed() {
-		c.Equipment.Body.Uncursed = true
-		uncursedList = append(uncursedList, c.Equipment.Body)
-	}
-
-	if c.Equipment.Belt.IsCursed() {
-		c.Equipment.Belt.Uncursed = true
-		uncursedList = append(uncursedList, c.Equipment.Belt)
-	}
-
-	if c.Equipment.Gloves.IsCursed() {
-		c.Equipment.Gloves.Uncursed = true
-		uncursedList = append(uncursedList, c.Equipment.Gloves)
-	}
-
-	if c.Equipment.Ring.IsCursed() {
-		c.Equipment.Ring.Uncursed = true
-		uncursedList = append(uncursedList, c.Equipment.Ring)
-	}
-
-	if c.Equipment.Legs.IsCursed() {
-		c.Equipment.Legs.Uncursed = true
-		uncursedList = append(uncursedList, c.Equipment.Legs)
-	}
-
-	if c.Equipment.Feet.IsCursed() {
-		c.Equipment.Feet.Uncursed = true
-		uncursedList = append(uncursedList, c.Equipment.Feet)
+	for _, slot := range AllSlots() {
+		itm := c.Equipment.Get(slot)
+		if itm.IsCursed() {
+			itm.Uncursed = true
+			uncursedList = append(uncursedList, *itm)
+		}
 	}
 
 	return uncursedList

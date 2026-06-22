@@ -5,7 +5,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/characters"
 	"github.com/GoMudEngine/GoMud/internal/combat"
 	"github.com/GoMudEngine/GoMud/internal/configs"
@@ -49,7 +48,7 @@ func handlePlayerCombat(evt events.NewRound) (affectedPlayerIds []int, affectedM
 		user := users.GetByUserId(userId)
 
 		// If has a buff that prevents combat, skip the player
-		if user.Character.HasBuffFlag(buffs.NoCombat) {
+		if user.Character.HasBuffFlag("no-combat") {
 			continue
 		}
 
@@ -58,7 +57,7 @@ func handlePlayerCombat(evt events.NewRound) (affectedPlayerIds []int, affectedM
 		}
 
 		// Disable any buffs that are cancelled by combat
-		user.Character.CancelBuffsWithFlag(buffs.CancelIfCombat)
+		user.Character.CancelBuffsWithFlag("cancel-on-combat")
 
 		roomId := user.Character.RoomId
 
@@ -110,7 +109,7 @@ func handlePlayerCombat(evt events.NewRound) (affectedPlayerIds []int, affectedM
 
 					util.LogRoll(`Flee`, roll, chanceIn100)
 
-					if roll < chanceIn100 {
+					if roll >= chanceIn100 {
 						blockedByPlayer = u.Character.Name
 						blockedByPlayerId = u.UserId
 						break
@@ -135,6 +134,16 @@ func handlePlayerCombat(evt events.NewRound) (affectedPlayerIds []int, affectedM
 
 			if exitName == `` {
 				user.SendText(`You can't find an exit!`)
+				continue
+			}
+
+			if blocked, err := scripting.TryRoomTryExitEvent(exitName, user.UserId, user.Character.RoomId); err == nil && blocked {
+				user.SendText(`Something prevents you from fleeing!`)
+				continue
+			}
+
+			if blocked, err := scripting.TryRoomTryEnterEvent(user.UserId, exitRoomId); err == nil && blocked {
+				user.SendText(`Something prevents you from fleeing!`)
 				continue
 			}
 
@@ -240,7 +249,7 @@ func handlePlayerCombat(evt events.NewRound) (affectedPlayerIds []int, affectedM
 									}
 								}
 
-								defMob.Character.CancelBuffsWithFlag(buffs.CancelIfCombat)
+								defMob.Character.CancelBuffsWithFlag("cancel-on-combat")
 
 								if defMob.Character.Health <= 0 {
 									defMob.Character.EndAggro()
@@ -317,7 +326,7 @@ func handlePlayerCombat(evt events.NewRound) (affectedPlayerIds []int, affectedM
 				continue
 			}
 
-			defUser.Character.CancelBuffsWithFlag(buffs.CancelIfCombat)
+			defUser.Character.CancelBuffsWithFlag("cancel-on-combat")
 
 			if defUser.Character.Health < 1 {
 				user.SendText(`Your rage subsides.`)
@@ -357,7 +366,7 @@ func handlePlayerCombat(evt events.NewRound) (affectedPlayerIds []int, affectedM
 			}
 
 			// Can't see them, can't fight them.
-			if defUser.Character.HasBuffFlag(buffs.Hidden) {
+			if defUser.Character.HasBuffFlag("hidden") {
 				user.SendText("You can't seem to find your target.")
 				continue
 			}
@@ -451,6 +460,13 @@ func handlePlayerCombat(evt events.NewRound) (affectedPlayerIds []int, affectedM
 				}
 			}
 
+			if roundResult.DamageToSource != 0 {
+				events.AddToQueue(events.CharacterVitalsChanged{UserId: user.UserId})
+			}
+			if roundResult.DamageToTarget != 0 {
+				events.AddToQueue(events.CharacterVitalsChanged{UserId: defUser.UserId})
+			}
+
 			if user.Character.Health <= 0 || defUser.Character.Health <= 0 {
 				defUser.Character.EndAggro()
 				user.Character.EndAggro()
@@ -500,7 +516,7 @@ func handlePlayerCombat(evt events.NewRound) (affectedPlayerIds []int, affectedM
 
 			defRoom := rooms.LoadRoom(defMob.Character.RoomId)
 
-			defMob.Character.CancelBuffsWithFlag(buffs.CancelIfCombat)
+			defMob.Character.CancelBuffsWithFlag("cancel-on-combat")
 
 			if defMob.Character.Health < 1 {
 				user.SendText("Your rage subsides.")
@@ -532,7 +548,7 @@ func handlePlayerCombat(evt events.NewRound) (affectedPlayerIds []int, affectedM
 			}
 
 			// Can't see them, can't fight them.
-			if defMob.Character.HasBuffFlag(buffs.Hidden) {
+			if defMob.Character.HasBuffFlag("hidden") {
 				user.SendText("You can't seem to find your target.")
 				continue
 			}
@@ -598,6 +614,10 @@ func handlePlayerCombat(evt events.NewRound) (affectedPlayerIds []int, affectedM
 				defMob.Command(fmt.Sprintf("attack @%d", user.UserId)) // @ means player
 			}
 
+			if roundResult.DamageToSource != 0 {
+				events.AddToQueue(events.CharacterVitalsChanged{UserId: user.UserId})
+			}
+
 			if user.Character.Health <= 0 || defMob.Character.Health <= 0 {
 				defMob.Character.EndAggro()
 				events.AddToQueue(events.AggroChanged{MobInstanceId: defMob.InstanceId, RoomId: defMob.Character.RoomId})
@@ -638,7 +658,7 @@ func handleMobCombat(evt events.NewRound) (affectedPlayerIds []int, affectedMobI
 		}
 
 		// If has a buff that prevents combat, skip the player
-		if mob.Character.HasBuffFlag(buffs.NoCombat) {
+		if mob.Character.HasBuffFlag("no-combat") {
 			continue
 		}
 
@@ -651,7 +671,7 @@ func handleMobCombat(evt events.NewRound) (affectedPlayerIds []int, affectedMobI
 		}
 
 		// Disable any buffs that are cancelled by combat
-		mob.Character.CancelBuffsWithFlag(buffs.CancelIfCombat)
+		mob.Character.CancelBuffsWithFlag("cancel-on-combat")
 
 		/**************************
 		*
@@ -698,7 +718,7 @@ func handleMobCombat(evt events.NewRound) (affectedPlayerIds []int, affectedMobI
 
 							if defMob := mobs.GetInstance(mobId); defMob != nil {
 
-								defMob.Character.CancelBuffsWithFlag(buffs.CancelIfCombat)
+								defMob.Character.CancelBuffsWithFlag("cancel-on-combat")
 
 								if defMob.Character.Health <= 0 {
 									defMob.Character.EndAggro()
@@ -785,14 +805,14 @@ func handleMobCombat(evt events.NewRound) (affectedPlayerIds []int, affectedMobI
 				continue
 			}
 
-			defUser.Character.CancelBuffsWithFlag(buffs.CancelIfCombat)
+			defUser.Character.CancelBuffsWithFlag("cancel-on-combat")
 
 			if defUser.Character.Health < 1 {
 				mob.Character.Aggro = nil
 				events.AddToQueue(events.AggroChanged{MobInstanceId: mob.InstanceId, RoomId: mob.Character.RoomId})
 				continue
 			}
-			if defUser.Character.HasBuffFlag(buffs.Hidden) {
+			if defUser.Character.HasBuffFlag("hidden") {
 				continue
 			}
 
@@ -927,6 +947,10 @@ func handleMobCombat(evt events.NewRound) (affectedPlayerIds []int, affectedMobI
 				}
 			}
 
+			if roundResult.DamageToTarget != 0 {
+				events.AddToQueue(events.CharacterVitalsChanged{UserId: defUser.UserId})
+			}
+
 			if mob.Character.Health <= 0 || defUser.Character.Health <= 0 {
 				mob.Character.EndAggro()
 				events.AddToQueue(events.AggroChanged{MobInstanceId: mob.InstanceId, RoomId: mob.Character.RoomId})
@@ -953,7 +977,7 @@ func handleMobCombat(evt events.NewRound) (affectedPlayerIds []int, affectedMobI
 
 			defRoom := rooms.LoadRoom(defMob.Character.RoomId)
 
-			defMob.Character.CancelBuffsWithFlag(buffs.CancelIfCombat)
+			defMob.Character.CancelBuffsWithFlag("cancel-on-combat")
 
 			if defMob.Character.Health < 1 {
 				mob.Character.Aggro = nil
@@ -980,7 +1004,7 @@ func handleMobCombat(evt events.NewRound) (affectedPlayerIds []int, affectedMobI
 			}
 
 			// Can't see them, can't fight them.
-			if defMob.Character.HasBuffFlag(buffs.Hidden) {
+			if defMob.Character.HasBuffFlag("hidden") {
 				continue
 			}
 
@@ -1095,6 +1119,13 @@ func handleAffected(affectedPlayerIds []int, affectedMobInstanceIds []int) {
 
 			if user.Character.Health <= -10 {
 
+				if user.Character.Aggro != nil && user.Character.Aggro.MobInstanceId > 0 {
+					user.Character.KillerMobInstanceId = user.Character.Aggro.MobInstanceId
+					if killerMob := mobs.GetInstance(user.Character.Aggro.MobInstanceId); killerMob != nil {
+						user.Character.KillerMobIsElite = killerMob.IsElite
+						user.Character.KillerMobName = killerMob.Character.Name
+					}
+				}
 				user.Command(`suicide`) // suicide drops all money/items and transports to land of the dead.
 
 			} else if user.Character.Health < 1 {

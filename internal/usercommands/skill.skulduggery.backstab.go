@@ -3,14 +3,12 @@ package usercommands
 import (
 	"fmt"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/characters"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
 	"github.com/GoMudEngine/GoMud/internal/parties"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
-	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/users"
 )
 
@@ -20,7 +18,7 @@ Level 2 - Backstab
 */
 func Backstab(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
 
-	skillLevel := user.Character.GetSkillLevel(skills.Skulduggery)
+	skillLevel := user.Character.GetSkillLevel(`skulduggery`)
 
 	// If they don't have a skill, act like it's not a valid command
 	if skillLevel < 2 {
@@ -28,7 +26,7 @@ func Backstab(rest string, user *users.UserRecord, room *rooms.Room, flags event
 	}
 
 	// Must be sneaking
-	isSneaking := user.Character.HasBuffFlag(buffs.Hidden)
+	isSneaking := user.Character.HasBuffFlag("hidden")
 	if !isSneaking {
 		user.SendText("You can't backstab unless you're hidden!")
 		return true, nil
@@ -43,7 +41,7 @@ func Backstab(rest string, user *users.UserRecord, room *rooms.Room, flags event
 	}
 
 	if user.Character.Equipment.Offhand.ItemId != 0 {
-		wpn := user.Character.Equipment.Weapon.GetSpec()
+		wpn := user.Character.Equipment.Offhand.GetSpec()
 		if wpn.Type == items.Weapon {
 			wpnSubtypeChecks = append(wpnSubtypeChecks, wpn.Subtype)
 		}
@@ -92,7 +90,7 @@ func Backstab(rest string, user *users.UserRecord, room *rooms.Room, flags event
 	}
 
 	// Fire an event that a skill has been used
-	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: skills.Skulduggery, Details: `backstab`})
+	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: `skulduggery`, Details: `backstab`})
 
 	if attackMobInstanceId > 0 {
 

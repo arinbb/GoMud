@@ -6,19 +6,20 @@ import (
 	"strconv"
 
 	"github.com/GoMudEngine/GoMud/internal/buffs"
+	"github.com/GoMudEngine/GoMud/internal/scripting"
 )
 
 // GET /admin/api/v1/buffs
-// Returns all buff flags (flag -> description map) AND all buff specs.
+// Returns all buff flags (flag specs) AND all buff specs.
 func apiV1GetBuffs(w http.ResponseWriter, r *http.Request) {
 	type buffsResponse struct {
-		Flags map[buffs.Flag]string   `json:"flags"`
+		Flags []buffs.FlagSpec        `json:"flags"`
 		Specs map[int]*buffs.BuffSpec `json:"specs"`
 	}
 	writeJSON(w, http.StatusOK, APIResponse[buffsResponse]{
 		Success: true,
 		Data: buffsResponse{
-			Flags: buffs.GetAllFlags(),
+			Flags: buffs.GetAllFlagSpecsSorted(),
 			Specs: buffs.GetAllBuffSpecs(),
 		},
 	})
@@ -63,6 +64,11 @@ func apiV1PatchBuff(w http.ResponseWriter, r *http.Request) {
 
 	// Decode into a copy so only supplied fields are changed.
 	updated := *existing
+	// Nil out map fields that must be fully replaced (not merged) by the JSON
+	// decode. Go's json.Decoder merges into existing maps, so without this a
+	// stat mod removed in the editor (zeroed/deleted, hence omitted from the
+	// payload) would keep its old value and reappear on reload.
+	updated.StatMods = nil
 	if err := json.NewDecoder(r.Body).Decode(&updated); err != nil {
 		writeAPIError(w, http.StatusBadRequest, "malformed request body: "+err.Error())
 		return
@@ -107,7 +113,7 @@ func apiV1GetBuffScript(w http.ResponseWriter, r *http.Request) {
 	spec := buffs.GetBuffSpec(buffId)
 	writeJSON(w, http.StatusOK, APIResponse[map[string]string]{
 		Success: true,
-		Data:    map[string]string{"script": spec.GetScript()},
+		Data:    map[string]string{"script": spec.GetScript(), "lang": scriptLangString(spec.GetScriptPath())},
 	})
 }
 
@@ -120,16 +126,19 @@ func apiV1PutBuffScript(w http.ResponseWriter, r *http.Request) {
 
 	var body struct {
 		Script string `json:"script"`
+		Lang   string `json:"lang"`
 	}
 	if err := json.NewDecoder(r.Body).Decode(&body); err != nil {
 		writeAPIError(w, http.StatusBadRequest, "malformed request body: "+err.Error())
 		return
 	}
 
-	if err := buffs.SaveBuffScript(buffId, body.Script); err != nil {
+	if err := buffs.SaveBuffScript(buffId, body.Script, body.Lang); err != nil {
 		writeAPIError(w, http.StatusInternalServerError, err.Error())
 		return
 	}
+
+	scripting.InvalidateBuffVM(buffId)
 
 	writeJSON(w, http.StatusOK, APIResponse[struct{}]{Success: true})
 }

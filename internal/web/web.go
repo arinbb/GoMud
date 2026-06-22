@@ -1,6 +1,7 @@
 package web
 
 import (
+	"bytes"
 	"context"
 	"crypto/tls"
 	"fmt"
@@ -10,6 +11,7 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 	"sync"
 	"sync/atomic"
@@ -54,19 +56,14 @@ type WebNav struct {
 	Target string
 }
 
-// WebNavItem represents a top-level admin nav entry, optionally with sub-items
-// or nested sub-menus (groups).
+// WebNavItem represents an admin nav entry. Children may contain further
+// WebNavItems at any depth, enabling unlimited nesting.
 type WebNavItem struct {
-	Name     string
-	Target   string // primary href; empty if dropdown-only
-	SubItems []WebNavSub
-	SubMenus []WebNavItem // nested groups, each with their own SubItems
-}
-
-// WebNavSub is a single item inside a dropdown.
-type WebNavSub struct {
-	Label  string
-	Target string
+	Name        string
+	Label       string       // display label when used as a leaf link; falls back to Name if empty
+	Target      string       // primary href; empty if this node is a group/dropdown only
+	Description string       // short one-sentence description shown on the landing page
+	Children    []WebNavItem // nested items at any depth
 }
 
 // ModuleAdminRegistrar is implemented by internal/web and provided to plugins
@@ -76,10 +73,16 @@ type ModuleAdminRegistrar interface {
 	// htmlContent is the raw HTML read from the plugin's embedded FS.
 	// navGroup, if non-empty, places the page's nav entry inside a group dropdown.
 	// navParent, if non-empty, nests the page as a sub-item under that parent within the group.
-	RegisterAdminPage(name, slug, htmlContent string, addToNav bool, navGroup, navParent string, dataFunc func(*http.Request) map[string]any)
+	// description is a short one-sentence description for this leaf entry shown on the admin landing page.
+	// navParentDescription is a short one-sentence description for the parent nav group entry (applied on first registration).
+	RegisterAdminPage(name, slug, htmlContent string, addToNav bool, navGroup, navParent, description, navParentDescription string, dataFunc func(*http.Request) map[string]any)
 	// RegisterAdminAPIEndpoint registers a module API handler.
+	// permissionKey, if non-empty, is required to call this endpoint.
 	// handler receives the request and returns (statusCode, success, data).
-	RegisterAdminAPIEndpoint(method, slug string, handler func(*http.Request) (int, bool, any))
+	RegisterAdminAPIEndpoint(method, slug, permissionKey string, handler func(*http.Request) (int, bool, any))
+	// RegisterPermission adds a single module-contributed permission key to the
+	// catalog so it appears in the admin permission picker.
+	RegisterPermission(key, description, category string)
 }
 
 // moduleAdminRegistrarImpl holds module-contributed nav and API routes.
@@ -98,7 +101,7 @@ func GetAdminRegistrar() ModuleAdminRegistrar {
 func (reg *moduleAdminRegistrarImpl) RegisterAdminPage(
 	name, slug, htmlContent string,
 	addToNav bool,
-	navGroup, navParent string,
+	navGroup, navParent, description, navParentDescription string,
 	dataFunc func(*http.Request) map[string]any,
 ) {
 	path := "/admin/" + slug
@@ -108,6 +111,7 @@ func (reg *moduleAdminRegistrarImpl) RegisterAdminPage(
 
 		tmpl, err := template.New(slug+".html").Funcs(funcMap).ParseFiles(
 			adminHtml+"/_header.html",
+			adminHtml+"/_nav.html",
 			adminHtml+"/_footer.html",
 		)
 		if err != nil {
@@ -123,9 +127,12 @@ func (reg *moduleAdminRegistrarImpl) RegisterAdminPage(
 		}
 
 		templateData := map[string]any{
-			"CONFIG": configs.GetConfig(),
-			"STATS":  GetStats(),
-			"NAV":    buildAdminNav(),
+			"CONFIG":           configs.GetConfig(),
+			"STATS":            GetStats(),
+			"NAV":              buildAdminNav(),
+			"AUTHED_USER":      GetAuthedUser(r),
+			"WRITE_PERMISSION": pageWritePermissions[strings.TrimRight(r.URL.Path, "/")],
+			"READ_ONLY":        pageReadOnly(r),
 		}
 		if dataFunc != nil {
 			for k, v := range dataFunc(r) {
@@ -141,7 +148,7 @@ func (reg *moduleAdminRegistrarImpl) RegisterAdminPage(
 		}
 	}
 
-	internalMux.HandleFunc("GET "+path, RunWithMUDLocked(doBasicAuth(handler)))
+	internalMux.HandleFunc("GET "+path, doBasicAuth(RunWithMUDLocked(handler)))
 
 	if !addToNav {
 		return
@@ -150,39 +157,40 @@ func (reg *moduleAdminRegistrarImpl) RegisterAdminPage(
 	if navGroup == "" {
 		// No group: place directly in the top-level nav.
 		if navParent == "" {
-			// Top-level nav item with a single sub-item pointing to itself.
+			// Top-level nav item with a single child leaf pointing to itself.
 			reg.navItems = append(reg.navItems, WebNavItem{
-				Name:   name,
-				Target: path,
-				SubItems: []WebNavSub{
-					{Label: "View", Target: path},
+				Name:        name,
+				Target:      path,
+				Description: description,
+				Children: []WebNavItem{
+					{Label: "View", Target: path, Description: description},
 				},
 			})
 			return
 		}
-		// Attach as sub-item to an existing top-level nav entry.
+		// Attach as a child leaf to an existing top-level nav entry.
 		for i, item := range reg.navItems {
 			if item.Name == navParent {
-				reg.navItems[i].SubItems = append(reg.navItems[i].SubItems, WebNavSub{
-					Label:  name,
-					Target: path,
+				reg.navItems[i].Children = append(reg.navItems[i].Children, WebNavItem{
+					Label:       name,
+					Target:      path,
+					Description: description,
 				})
 				return
 			}
 		}
-		// Parent not found yet — add as top-level with the sub-item.
+		// Parent not found yet - add as top-level with the child leaf.
 		reg.navItems = append(reg.navItems, WebNavItem{
-			Name:   navParent,
-			Target: "",
-			SubItems: []WebNavSub{
-				{Label: name, Target: path},
+			Name: navParent,
+			Children: []WebNavItem{
+				{Label: name, Target: path, Description: description},
 			},
 		})
 		return
 	}
 
 	// navGroup is set: find or create the group, then find or create the parent
-	// sub-menu within it, then append the sub-item.
+	// child within it, then append the leaf.
 	groupIdx := -1
 	for i, item := range reg.navItems {
 		if item.Name == navGroup {
@@ -196,39 +204,45 @@ func (reg *moduleAdminRegistrarImpl) RegisterAdminPage(
 	}
 
 	if navParent == "" {
-		// No parent within the group: add a sub-menu entry for this page directly.
-		reg.navItems[groupIdx].SubMenus = append(reg.navItems[groupIdx].SubMenus, WebNavItem{
-			Name:   name,
-			Target: path,
-			SubItems: []WebNavSub{
-				{Label: "View", Target: path},
+		// No parent within the group: add a child entry for this page directly.
+		reg.navItems[groupIdx].Children = append(reg.navItems[groupIdx].Children, WebNavItem{
+			Name:        name,
+			Target:      path,
+			Description: description,
+			Children: []WebNavItem{
+				{Label: "View", Target: path, Description: description},
 			},
 		})
 		return
 	}
 
-	// navParent is set within the group: find or create the sub-menu for navParent.
-	for i, sm := range reg.navItems[groupIdx].SubMenus {
+	// navParent is set within the group: find or create the child for navParent.
+	for i, sm := range reg.navItems[groupIdx].Children {
 		if sm.Name == navParent {
-			reg.navItems[groupIdx].SubMenus[i].SubItems = append(
-				reg.navItems[groupIdx].SubMenus[i].SubItems,
-				WebNavSub{Label: name, Target: path},
+			reg.navItems[groupIdx].Children[i].Children = append(
+				reg.navItems[groupIdx].Children[i].Children,
+				WebNavItem{Label: name, Target: path, Description: description},
 			)
+			// Backfill parent description if it hasn't been set yet.
+			if reg.navItems[groupIdx].Children[i].Description == "" && navParentDescription != "" {
+				reg.navItems[groupIdx].Children[i].Description = navParentDescription
+			}
 			return
 		}
 	}
-	// Sub-menu for navParent not found yet — create it.
-	reg.navItems[groupIdx].SubMenus = append(reg.navItems[groupIdx].SubMenus, WebNavItem{
-		Name: navParent,
-		SubItems: []WebNavSub{
-			{Label: name, Target: path},
+	// Child for navParent not found yet - create it.
+	reg.navItems[groupIdx].Children = append(reg.navItems[groupIdx].Children, WebNavItem{
+		Name:        navParent,
+		Description: navParentDescription,
+		Children: []WebNavItem{
+			{Label: name, Target: path, Description: description},
 		},
 	})
 }
 
 // RegisterAdminAPIEndpoint registers a module API endpoint on internalMux.
 func (reg *moduleAdminRegistrarImpl) RegisterAdminAPIEndpoint(
-	method, slug string,
+	method, slug, permissionKey string,
 	handler func(*http.Request) (int, bool, any),
 ) {
 	path := "/admin/api/v1/" + slug
@@ -238,7 +252,19 @@ func (reg *moduleAdminRegistrarImpl) RegisterAdminAPIEndpoint(
 		writeJSON(w, status, APIResponse[any]{Success: success, Data: data})
 	}
 
-	internalMux.HandleFunc(method+" "+path, RunWithMUDLocked(doBasicAuth(h)))
+	var wrapped http.HandlerFunc
+	if permissionKey != "" {
+		wrapped = doBasicAuth(RequirePermission(permissionKey, RunWithMUDLocked(h)))
+	} else {
+		wrapped = doBasicAuth(RunWithMUDLocked(h))
+	}
+
+	internalMux.HandleFunc(method+" "+path, wrapped)
+}
+
+// RegisterPermission adds a module-contributed permission key to the catalog.
+func (reg *moduleAdminRegistrarImpl) RegisterPermission(key, description, category string) {
+	registerModulePermission(key, description, category)
 }
 
 type WebPlugin interface {
@@ -264,6 +290,16 @@ func serveTemplate(w http.ResponseWriter, r *http.Request) {
 	// Build the full file path.
 	fullPath := filepath.Join(httpRoot, reqPath)
 
+	fileExt := filepath.Ext(fullPath)
+	fileBase := filepath.Base(fullPath)
+
+	// Limit files for now
+	if fileBase == "_all.css" || fileBase == "_all.js" {
+		if serveConcatenated(w, r, filepath.Dir(fullPath), fileExt) {
+			return
+		}
+	}
+
 	// If the path is a directory, look for an index.html.
 	info, err := os.Stat(fullPath)
 	if err != nil {
@@ -274,8 +310,8 @@ func serveTemplate(w http.ResponseWriter, r *http.Request) {
 		fullPath = filepath.Join(fullPath, "index.html")
 	}
 
-	fileExt := filepath.Ext(fullPath)
-	fileBase := filepath.Base(fullPath)
+	fileExt = filepath.Ext(fullPath)
+	fileBase = filepath.Base(fullPath)
 
 	// All template files to load from the filesystem
 	templateFiles := []string{}
@@ -338,7 +374,7 @@ func serveTemplate(w http.ResponseWriter, r *http.Request) {
 		"NAV": []WebNav{
 			{`Home`, `/`},
 			{`Who's Online`, `/online`},
-			{`Web Client`, `/webclient`},
+			{`Web Client`, `/webclient-pure`},
 			{`See Configuration`, `/viewconfig`},
 		},
 	}
@@ -729,6 +765,14 @@ func RunWithMUDLocked(next http.HandlerFunc) http.HandlerFunc {
 	})
 }
 
+// RunWithoutMUDLock wraps a handler that manages its own synchronization
+// and does not require the global MUD lock.
+func RunWithoutMUDLock(next http.HandlerFunc) http.HandlerFunc {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		next.ServeHTTP(w, r)
+	})
+}
+
 func Shutdown() {
 	httpsRedirectReady.Store(false)
 
@@ -752,12 +796,112 @@ func Shutdown() {
 	}
 }
 
+func serveConcatenated(w http.ResponseWriter, r *http.Request, dir string, suffix string) bool {
+	var names []string
+
+	if raw := r.URL.RawQuery; raw != "" {
+		seen := map[string]bool{}
+		for _, name := range strings.Split(raw, ",") {
+
+			if strings.ContainsAny(name, `/\`) || name != filepath.Base(name) {
+				continue
+			}
+
+			if name == "" || name == "." || strings.HasPrefix(name, "_all.") || !strings.HasSuffix(name, suffix) {
+				continue
+			}
+			if seen[name] {
+				continue
+			}
+			if _, err := os.Stat(filepath.Join(dir, name)); err != nil {
+				continue
+			}
+			seen[name] = true
+			names = append(names, name)
+		}
+	} else {
+		entries, err := os.ReadDir(dir)
+		if err != nil {
+			return false
+		}
+		for _, e := range entries {
+			if !e.IsDir() && strings.HasSuffix(e.Name(), suffix) && !strings.HasPrefix(e.Name(), "_all.") {
+				names = append(names, e.Name())
+			}
+		}
+		sort.Strings(names)
+	}
+
+	if len(names) == 0 {
+		return false
+	}
+
+	var buf bytes.Buffer
+	for _, name := range names {
+		data, err := os.ReadFile(filepath.Join(dir, name))
+		if err != nil {
+			continue
+		}
+		buf.Write(data)
+		buf.WriteByte('\n')
+	}
+
+	if suffix == ".js" {
+		w.Header().Set("Content-Type", "application/javascript")
+	} else if suffix == ".css" {
+		w.Header().Set("Content-Type", "text/css")
+	}
+
+	w.Write(buf.Bytes())
+	return true
+}
+
 // serveAdminStaticFile serves static assets from the admin HTML directory.
 // The full URL path relative to /admin/ is preserved so subdirectories work.
 func serveAdminStaticFile(w http.ResponseWriter, r *http.Request) {
 	adminRoot := filepath.Clean(configs.GetFilePathsConfig().AdminHtml.String())
 	rel := strings.TrimPrefix(r.URL.Path, "/admin")
 	fullPath := filepath.Join(adminRoot, filepath.Clean(rel))
+
+	fileExt := filepath.Ext(fullPath)
+	fileBase := filepath.Base(fullPath)
+
+	if fileBase == "_all.css" || fileBase == "_all.js" {
+		if serveConcatenated(w, r, filepath.Dir(fullPath), fileExt) {
+			return
+		}
+	}
+
+	// For known text types, open the file ourselves and serve with an explicit
+	// Content-Type so that http.ServeFile's content-type sniffing cannot
+	// override it with "text/plain".
+	switch fileExt {
+	case ".js", ".css", ".html":
+		f, err := os.Open(fullPath)
+		if err != nil {
+			http.NotFound(w, r)
+			return
+		}
+		defer f.Close()
+		stat, err := f.Stat()
+		if err != nil {
+			http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+			return
+		}
+		var contentType string
+		switch fileExt {
+		case ".js":
+			contentType = "application/javascript"
+		case ".css":
+			contentType = "text/css; charset=utf-8"
+		case ".html":
+			contentType = "text/html; charset=utf-8"
+		}
+		w.Header().Set("Content-Type", contentType)
+		http.ServeContent(w, r, stat.Name(), stat.ModTime(), f)
+		return
+	}
+
 	http.ServeFile(w, r, fullPath)
 }
 

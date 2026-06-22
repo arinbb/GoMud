@@ -11,7 +11,7 @@ require (
 )
 
 require (
-	github.com/GoMudEngine/ansitags v1.3.0
+	github.com/GoMudEngine/ansitags v1.3.2
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/dlclark/regexp2 v1.7.0 // indirect
 	github.com/go-sourcemap/sourcemap v2.1.3+incompatible // indirect
@@ -26,13 +26,15 @@ require (
 	github.com/mattn/go-runewidth v0.0.19
 	github.com/nicksnyder/go-i18n/v2 v2.6.0
 	github.com/pkg/errors v0.9.1
+	github.com/yuin/gopher-lua v1.1.2
 	golang.org/x/crypto v0.45.0
+	golang.org/x/term v0.37.0
 	gopkg.in/yaml.v2 v2.4.0
+	layeh.com/gopher-luar v1.0.11
 )
 
 require (
 	github.com/clipperhouse/uax29/v2 v2.2.0 // indirect
 	golang.org/x/net v0.47.0 // indirect
 	golang.org/x/sys v0.38.0 // indirect
-	golang.org/x/term v0.37.0 // indirect
 )

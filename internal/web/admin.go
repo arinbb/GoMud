@@ -2,6 +2,7 @@ package web
 
 import (
 	"net/http"
+	"strings"
 	"text/template"
 
 	"github.com/GoMudEngine/GoMud/internal/configs"
@@ -14,6 +15,7 @@ func adminIndex(w http.ResponseWriter, r *http.Request) {
 
 	tmpl, err := template.New("index.html").Funcs(funcMap).ParseFiles(
 		adminHtml+"/_header.html",
+		adminHtml+"/_nav.html",
 		adminHtml+"/index.html",
 		adminHtml+"/_footer.html",
 	)
@@ -23,10 +25,23 @@ func adminIndex(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	writeKey := pageWritePermissions[strings.TrimRight(r.URL.Path, "/")]
 	templateData := map[string]any{
-		"CONFIG": configs.GetConfig(),
-		"STATS":  GetStats(),
-		"NAV":    buildAdminNav(),
+		"CONFIG":           configs.GetConfig(),
+		"STATS":            GetStats(),
+		"NAV":              buildAdminNav(),
+		"AUTHED_USER":      GetAuthedUser(r),
+		"WRITE_PERMISSION": writeKey,
+		"READ_ONLY":        pageReadOnly(r),
+	}
+
+	if r.URL.Query().Get(`login`) != `` {
+		scheme := "http"
+		if r.TLS != nil {
+			scheme = "https"
+		}
+		http.Redirect(w, r, scheme+"://"+r.Host+"/admin/", http.StatusTemporaryRedirect)
+		return
 	}
 
 	w.Header().Set("Cache-Control", "no-store")

@@ -7,8 +7,10 @@ import (
 
 	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/characters"
+	"github.com/GoMudEngine/GoMud/internal/combat"
 	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
+	"github.com/GoMudEngine/GoMud/internal/scripting"
 )
 
 type mobListEntry struct {
@@ -23,12 +25,25 @@ func apiV1GetMobs(w http.ResponseWriter, r *http.Request) {
 	for i, s := range specs {
 		result[i] = mobListEntry{
 			Mob:       s,
-			HasScript: s.GetScript() != "",
+			HasScript: s.HasAnyScript(),
 		}
 	}
 	writeJSON(w, http.StatusOK, APIResponse[[]mobListEntry]{
 		Success: true,
 		Data:    result,
+	})
+}
+
+// GET /admin/api/v1/mobs/ranks
+func apiV1GetMobRanks(w http.ResponseWriter, r *http.Request) {
+	byThreat, byLoot, byDefense := combat.RankMobs()
+	writeJSON(w, http.StatusOK, APIResponse[map[string]any]{
+		Success: true,
+		Data: map[string]any{
+			"by_threat":  byThreat,
+			"by_loot":    byLoot,
+			"by_defense": byDefense,
+		},
 	})
 }
 
@@ -101,6 +116,16 @@ func apiV1PatchMob(w http.ResponseWriter, r *http.Request) {
 	}
 
 	updated := *existing
+
+	// Clear the map-typed character collections the editor fully manages before
+	// decoding. json.Unmarshal MERGES into existing maps rather than replacing
+	// them, so a removed spell would otherwise persist. Resetting on the copy
+	// gives the payload full replace semantics. (Character is a value on the
+	// Mob, so this does not disturb the live spec's map.) Only SpellBook is
+	// reset because that is the only map the mob editor submits — clearing
+	// Skills here would drop skills the editor never sends.
+	updated.Character.SpellBook = nil
+
 	if err := json.NewDecoder(r.Body).Decode(&updated); err != nil {
 		writeAPIError(w, http.StatusBadRequest, "malformed request body: "+err.Error())
 		return
@@ -151,7 +176,7 @@ func apiV1GetMobScript(w http.ResponseWriter, r *http.Request) {
 
 	writeJSON(w, http.StatusOK, APIResponse[map[string]string]{
 		Success: true,
-		Data:    map[string]string{"script": spec.GetScript()},
+		Data:    map[string]string{"script": spec.GetScript(), "lang": scriptLangString(spec.GetScriptPath())},
 	})
 }
 
@@ -165,16 +190,100 @@ func apiV1PutMobScript(w http.ResponseWriter, r *http.Request) {
 
 	var body struct {
 		Script string `json:"script"`
+		Lang   string `json:"lang"`
 	}
 	if err := json.NewDecoder(r.Body).Decode(&body); err != nil {
 		writeAPIError(w, http.StatusBadRequest, "malformed request body: "+err.Error())
 		return
 	}
 
-	if err := mobs.SaveMobScript(mobId, body.Script); err != nil {
+	if err := mobs.SaveMobScript(mobId, body.Script, body.Lang); err != nil {
 		writeAPIError(w, http.StatusInternalServerError, err.Error())
 		return
 	}
+
+	scripting.InvalidateMobVMById(int(mobId))
+
+	writeJSON(w, http.StatusOK, APIResponse[struct{}]{Success: true})
+}
+
+// GET /admin/api/v1/mobs/{mobId}/scripts
+func apiV1GetMobScripts(w http.ResponseWriter, r *http.Request) {
+	idOrName := r.PathValue("mobId")
+	mobId := resolveMobId(w, idOrName)
+	if mobId == 0 {
+		return
+	}
+
+	spec := mobs.GetMobSpec(mobId)
+	if spec == nil {
+		writeAPIError(w, http.StatusNotFound, "mob not found")
+		return
+	}
+
+	tags := spec.GetAllScriptTags()
+	if tags == nil {
+		tags = []string{}
+	}
+
+	writeJSON(w, http.StatusOK, APIResponse[[]string]{
+		Success: true,
+		Data:    tags,
+	})
+}
+
+// GET /admin/api/v1/mobs/{mobId}/scripts/{tag}
+func apiV1GetMobScriptByTag(w http.ResponseWriter, r *http.Request) {
+	idOrName := r.PathValue("mobId")
+	mobId := resolveMobId(w, idOrName)
+	if mobId == 0 {
+		return
+	}
+
+	tag := r.PathValue("tag")
+
+	script, err := mobs.GetMobScriptForTag(mobId, tag)
+	if err != nil {
+		writeAPIError(w, http.StatusInternalServerError, err.Error())
+		return
+	}
+
+	lang := "js"
+	if spec := mobs.GetMobSpec(mobId); spec != nil {
+		lang = scriptLangString(spec.GetScriptPathForTag(tag))
+	}
+
+	writeJSON(w, http.StatusOK, APIResponse[map[string]string]{
+		Success: true,
+		Data:    map[string]string{"script": script, "tag": tag, "lang": lang},
+	})
+}
+
+// PUT /admin/api/v1/mobs/{mobId}/scripts/{tag}
+func apiV1PutMobScriptByTag(w http.ResponseWriter, r *http.Request) {
+	idOrName := r.PathValue("mobId")
+	mobId := resolveMobId(w, idOrName)
+	if mobId == 0 {
+		return
+	}
+
+	tag := r.PathValue("tag")
+
+	var body struct {
+		Script string `json:"script"`
+		Lang   string `json:"lang"`
+	}
+	if err := json.NewDecoder(r.Body).Decode(&body); err != nil {
+		writeAPIError(w, http.StatusBadRequest, "malformed request body: "+err.Error())
+		return
+	}
+
+	if err := mobs.SaveMobScriptForTag(mobId, tag, body.Script, body.Lang); err != nil {
+		writeAPIError(w, http.StatusInternalServerError, err.Error())
+		return
+	}
+
+	scripting.InvalidateMobVMById(int(mobId))
 
 	writeJSON(w, http.StatusOK, APIResponse[struct{}]{Success: true})
 }

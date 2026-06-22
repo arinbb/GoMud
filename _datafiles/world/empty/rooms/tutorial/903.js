@@ -4,21 +4,28 @@ const teach_commands = ["get cap", "equip cap", "portal"];
 const teacherMobId = 57;
 const teacherName = "Orb of Graduation";
 const capItemId = 20043;
+const newbieKitItemId = 100;
 
 var commandNow = 0; // Which command they are on
 
 
 
+/**
+ * Called when a user issues a command in the room.
+ * @param {string} cmd - The command issued.
+ * @param {string} rest - The arguments following the command.
+ * @param {ActorObject} user - The user issuing the command.
+ * @param {RoomObject} room - The room where the command was issued.
+ * @returns {boolean} Return true if the command was handled.
+ */
 // Generic Command Handler
 function onCommand(cmd, rest, user, room) {
-    
+
     ignoreCommand = false;
 
     teacherMob = getTeacher(room);
 
-    var extraDelay = 0;
-
-    fullCommand = cmd;
+    fullCommand = ExpandCommand(cmd);
     if ( rest.length > 0 ) {
         fullCommand = cmd + ' ' + rest;
     }
@@ -35,8 +42,6 @@ function onCommand(cmd, rest, user, room) {
             teacherMob.Command("say Good job! You earned it!", 1.0);
         }
 
-        extraDelay = 1.0;
-
         commandNow++;
 
     } else {
@@ -50,24 +55,24 @@ function onCommand(cmd, rest, user, room) {
 
     switch (commandNow) {
         case 0:
-            teacherMob.Command('emote gestures to the <ansi fg="item">graduation cap</ansi> on the ground.', extraDelay+2.0);
-            teacherMob.Command('say type <ansi fg="command">get cap</ansi> to pick up the <ansi fg="item">graduation cap</ansi>.', extraDelay+3.0);
+            teacherMob.Command('emote gestures to the <ansi fg="item">graduation cap</ansi> on the ground.', 1.0);
+            teacherMob.Command('say type <ansi fg="command">get cap</ansi> to pick up the <ansi fg="item">graduation cap</ansi>.', 1.0);
             break;
         case 1:
-            teacherMob.Command('say Go ahead and wear the <ansi fg="item">graduation cap</ansi> by typing <ansi fg="command">equip cap</ansi>.', extraDelay+2.0);
+            teacherMob.Command('say Go ahead and wear the <ansi fg="item">graduation cap</ansi> by typing <ansi fg="command">equip cap</ansi>.', 1.0);
             break;
         case 2:
 
-            teacherMob.Command('say It\'s time to say goodbye', extraDelay+1.0);
-            teacherMob.Command('say I\ll summon a portal to send you to where your adventure begins.', extraDelay+2.0);
+            teacherMob.Command('say It\'s time to say goodbye', 1.0);
+            teacherMob.Command('say I\'ll summon a portal to send you to the heart of <ansi fg="zone">Frostfang city</ansi>, where your adventure begins.', 1.0);
 
             exits = room.GetExits();
             if ( !exits.portal ) {
-                teacherMob.Command('emote glows intensely, and a ' + UtilApplyColorPattern('swirling portal', 'pink') + ' appears!', extraDelay+3.0);
-                room.AddTemporaryExit('swirling portal', ':pink', 0, 9000); // RoomId 0 is an alias for start room
+                teacherMob.Command('emote glows intensely, and a ' + UtilApplyColorPattern('swirling portal', 'pink') + ' appears!', 1.0);
+                room.AddTemporaryExit('swirling portal', ':pink', 0, "1 real day"); // RoomId 0 is an alias for start room. Portal can live a long time since the room is ephemeral.
             }
 
-            teacherMob.Command('say Enter the portal by typing <ansi fg="command">swirling portal</ansi> (or just <ansi fg="command">portal</ansi>) when you are ready.', extraDelay+4.0);
+            teacherMob.Command('say Enter the portal by typing <ansi fg="command">swirling portal</ansi> (or just <ansi fg="command">portal</ansi>) when you are ready.', 1.0);
             
             break;
         default:
@@ -80,6 +85,12 @@ function onCommand(cmd, rest, user, room) {
 
 
 
+/**
+ * Called when a user enters the room.
+ * @param {ActorObject} user - The user entering the room.
+ * @param {RoomObject} room - The room being entered.
+ * @returns {boolean} Return false to suppress the automatic look.
+ */
 // If there is no book here, add the book item
 function onEnter(user, room) {
     
@@ -91,16 +102,25 @@ function onEnter(user, room) {
     itm = CreateItem(capItemId);
     teacherMob.GiveItem(itm);
 
+    itm2 = CreateItem(newbieKitItemId);
+    user.GiveItem(itm2);
+
     teacherMob.Command('emote appears in a ' + UtilApplyColorPattern("flash of light!", "glowing"));
 
-    teacherMob.Command('say Congratulation on getting to the end of the training course!', 1.0);
-    teacherMob.Command('drop cap', 2.0);
+    teacherMob.Command('say Congratulations on getting to the end of the training course!', 1.0);
+    teacherMob.Command('drop cap', 1.0);
     teacherMob.Command('emote gestures to the <ansi fg="item">graduation cap</ansi> on the ground.', 3.0);
-    teacherMob.Command('say type <ansi fg="command">get cap</ansi> to pick up the <ansi fg="item">graduation cap</ansi>.', 4.0);
+    teacherMob.Command('say type <ansi fg="command">get cap</ansi> to pick up the <ansi fg="item">graduation cap</ansi>.', 1.0);
 
     return true;
 }
 
+/**
+ * Called when a user exits the room.
+ * @param {ActorObject} user - The user exiting the room.
+ * @param {RoomObject} room - The room being exited.
+ * @returns {boolean} Return true if the event was handled.
+ */
 function onExit(user , room) {
     // Destroy the guide (cleanup)
     destroyTeacher(room);
@@ -109,6 +129,11 @@ function onExit(user , room) {
     commandNow = 0;
 }
 
+/**
+ * Called when the room first loads.
+ * @param {RoomObject} room - The room that loaded.
+ * @returns {void}
+ */
 function onLoad(room) {
     canGoSouth = false;
     commandNow = 0;

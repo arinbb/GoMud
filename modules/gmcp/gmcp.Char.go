@@ -6,6 +6,7 @@ import (
 	"strings"
 
 	"github.com/GoMudEngine/GoMud/internal/buffs"
+	"github.com/GoMudEngine/GoMud/internal/characters"
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/items"
@@ -48,8 +49,15 @@ func init() {
 	events.RegisterListener(events.CharacterStatsChanged{}, g.statsChangeHandler)
 	events.RegisterListener(events.CharacterChanged{}, g.charChangeHandler)
 	events.RegisterListener(events.BuffsTriggered{}, g.buffTriggeredHandler)
+	events.RegisterListener(events.BuffsAdded{}, g.buffsAddedHandler)
+	events.RegisterListener(events.BuffsRemoved{}, g.buffsRemovedHandler)
+	events.RegisterListener(events.AlignmentChanged{}, g.alignmentChangedHandler)
 
 	events.RegisterListener(events.Quest{}, g.questProgressHandler, events.Last)
+
+	events.RegisterListener(events.PetLevelChange{}, g.petLevelChangeHandler)
+	events.RegisterListener(events.PetFed{}, g.petFedHandler)
+	events.RegisterListener(events.PetItemChange{}, g.petItemChangeHandler)
 
 	events.RegisterListener(events.MobDeath{}, g.killsChangedHandler)
 	events.RegisterListener(events.PlayerDeath{}, g.killsChangedHandler)
@@ -128,6 +136,120 @@ func (g *GMCPCharModule) buffTriggeredHandler(e events.Event) events.ListenerRet
 	events.AddToQueue(GMCPCharUpdate{
 		UserId:     evt.UserId,
 		Identifier: `Char.Affects`,
+	})
+
+	return events.Continue
+}
+
+func (g *GMCPCharModule) alignmentChangedHandler(e events.Event) events.ListenerReturn {
+
+	evt, typeOk := e.(events.AlignmentChanged)
+	if !typeOk {
+		return events.Continue
+	}
+
+	if evt.UserId == 0 {
+		return events.Continue
+	}
+
+	events.AddToQueue(GMCPCharUpdate{
+		UserId:     evt.UserId,
+		Identifier: `Char.Info`,
+	})
+
+	return events.Continue
+}
+
+func (g *GMCPCharModule) buffsAddedHandler(e events.Event) events.ListenerReturn {
+
+	evt, typeOk := e.(events.BuffsAdded)
+	if !typeOk {
+		return events.Continue
+	}
+
+	if evt.UserId == 0 {
+		return events.Continue
+	}
+
+	events.AddToQueue(GMCPCharUpdate{
+		UserId:     evt.UserId,
+		Identifier: `Char`,
+	})
+
+	return events.Continue
+}
+
+func (g *GMCPCharModule) buffsRemovedHandler(e events.Event) events.ListenerReturn {
+
+	evt, typeOk := e.(events.BuffsRemoved)
+	if !typeOk {
+		return events.Continue
+	}
+
+	if evt.UserId == 0 {
+		return events.Continue
+	}
+
+	events.AddToQueue(GMCPCharUpdate{
+		UserId:     evt.UserId,
+		Identifier: `Char`,
+	})
+
+	return events.Continue
+}
+
+func (g *GMCPCharModule) petLevelChangeHandler(e events.Event) events.ListenerReturn {
+
+	evt, typeOk := e.(events.PetLevelChange)
+	if !typeOk {
+		return events.Continue
+	}
+
+	if evt.UserId == 0 {
+		return events.Continue
+	}
+
+	events.AddToQueue(GMCPCharUpdate{
+		UserId:     evt.UserId,
+		Identifier: `Char.Pets`,
+	})
+
+	return events.Continue
+}
+
+func (g *GMCPCharModule) petItemChangeHandler(e events.Event) events.ListenerReturn {
+
+	evt, typeOk := e.(events.PetItemChange)
+	if !typeOk {
+		return events.Continue
+	}
+
+	if evt.UserId == 0 {
+		return events.Continue
+	}
+
+	events.AddToQueue(GMCPCharUpdate{
+		UserId:     evt.UserId,
+		Identifier: `Char.Pets`,
+	})
+
+	return events.Continue
+}
+
+func (g *GMCPCharModule) petFedHandler(e events.Event) events.ListenerReturn {
+
+	evt, typeOk := e.(events.PetFed)
+	if !typeOk {
+		return events.Continue
+	}
+
+	if evt.UserId == 0 {
+		return events.Continue
+	}
+
+	events.AddToQueue(GMCPCharUpdate{
+		UserId:     evt.UserId,
+		Identifier: `Char.Pets`,
 	})
 
 	return events.Continue
@@ -394,12 +516,32 @@ func (g *GMCPCharModule) GetCharNode(user *users.UserRecord, gmcpModule string) 
 
 		payload.Pets = []GMCPCharModule_Payload_Pet{}
 
-		if user.Character.Pet.Exists() {
+		if user.Character.Pet.Exists() && !user.Character.Pet.IsMissing() {
 
 			p := GMCPCharModule_Payload_Pet{
-				Name:   user.Character.Pet.Name,
-				Type:   user.Character.Pet.Type,
-				Hunger: `full`,
+				Name:     user.Character.Pet.Name,
+				Type:     user.Character.Pet.Type,
+				Level:    user.Character.Pet.Level,
+				Hunger:   user.Character.Pet.Food.String(),
+				Capacity: user.Character.Pet.GetEffectiveCapacity(),
+				Buffs:    []string{},
+				Items:    []GMCPCharModule_Payload_Inventory_Item{},
+			}
+
+			if abDisplay := user.Character.Pet.GetCurrentAbilityDisplay(); abDisplay != nil {
+				p.Ability = &GMCPCharModule_Payload_Pet_Ability{
+					LevelGranted: abDisplay.LevelGranted,
+					CombatChance: abDisplay.CombatChance,
+					DiceRoll:     abDisplay.DiceRoll,
+					StatMods:     abDisplay.StatMods,
+				}
+				if len(abDisplay.BuffNames) > 0 {
+					p.Buffs = abDisplay.BuffNames
+				}
+			}
+
+			for _, itm := range user.Character.Pet.Items {
+				p.Items = append(p.Items, newInventory_Item(itm))
 			}
 
 			payload.Pets = append(payload.Pets, p)
@@ -476,18 +618,7 @@ func (g *GMCPCharModule) GetCharNode(user *users.UserRecord, gmcpModule string) 
 				},
 			},
 
-			Worn: &GMCPCharModule_Payload_Inventory_Worn{
-				Weapon:  newInventory_Item(user.Character.Equipment.Weapon),
-				Offhand: newInventory_Item(user.Character.Equipment.Offhand),
-				Head:    newInventory_Item(user.Character.Equipment.Head),
-				Neck:    newInventory_Item(user.Character.Equipment.Neck),
-				Body:    newInventory_Item(user.Character.Equipment.Body),
-				Belt:    newInventory_Item(user.Character.Equipment.Belt),
-				Gloves:  newInventory_Item(user.Character.Equipment.Gloves),
-				Ring:    newInventory_Item(user.Character.Equipment.Ring),
-				Legs:    newInventory_Item(user.Character.Equipment.Legs),
-				Feet:    newInventory_Item(user.Character.Equipment.Feet),
-			},
+			Worn: buildWornPayload(user.Character.Equipment),
 		}
 
 		// Fill the items list
@@ -569,14 +700,14 @@ func (g *GMCPCharModule) GetCharNode(user *users.UserRecord, gmcpModule string) 
 				continue
 			}
 
-			timeLeft, timeMax := -1, -1
+			timeCur, timeMax := -1, -1
 
 			if !buff.PermaBuff {
 				roundsLeft, totalRounds := buffs.GetDurations(buff, buffSpec)
 				timeMax = c.RoundsToSeconds(totalRounds)
-				timeLeft = c.RoundsToSeconds(roundsLeft)
-				if timeLeft < 0 {
-					timeLeft = 0
+				timeCur = c.RoundsToSeconds(roundsLeft)
+				if timeCur < 0 {
+					timeCur = 0
 				}
 			}
 
@@ -590,7 +721,7 @@ func (g *GMCPCharModule) GetCharNode(user *users.UserRecord, gmcpModule string) 
 				Name:         name,
 				Description:  desc,
 				DurationMax:  timeMax,
-				DurationLeft: timeLeft,
+				DurationLeft: timeCur,
 				Type:         buffSource,
 			}
 
@@ -666,7 +797,7 @@ func (g *GMCPCharModule) GetCharNode(user *users.UserRecord, gmcpModule string) 
 			payload.Skills = append(payload.Skills, GMCPCharModule_Payload_Skill{
 				Name:    skillName,
 				Level:   skillLevel,
-				Maximum: skillLevel >= 4,
+				Maximum: skillLevel >= skills.MaxSkillLevel(skillName),
 			})
 		}
 
@@ -698,6 +829,7 @@ func (g *GMCPCharModule) GetCharNode(user *users.UserRecord, gmcpModule string) 
 		mobKills := map[string]int{}
 		raceKills := map[string]int{}
 		areaKills := map[string]int{}
+		eliteKills := map[string]int{}
 		charKills := map[string]GMCPCharModule_Payload_Kills_PvpEntry{}
 
 		totalMobKills := 0
@@ -714,6 +846,14 @@ func (g *GMCPCharModule) GetCharNode(user *users.UserRecord, gmcpModule string) 
 			}
 		}
 
+		// Build elite kills by mob name from the "mobId:mobName" keyed map.
+		for key, eCt := range user.Character.KD.EliteKills {
+			parts := strings.SplitN(key, ":", 2)
+			if len(parts) == 2 {
+				eliteKills[parts[1]] = eliteKills[parts[1]] + eCt
+			}
+		}
+
 		for userIdNameStr, killCount := range user.Character.KD.PlayerKills {
 			parts := strings.Split(userIdNameStr, `:`)
 			if len(parts) == 2 {
@@ -727,12 +867,14 @@ func (g *GMCPCharModule) GetCharNode(user *users.UserRecord, gmcpModule string) 
 
 		payload.Kills = &GMCPCharModule_Payload_Kills{
 			Mob: GMCPCharModule_Payload_Kills_Section{
-				Total:   totalMobKills,
-				Deaths:  user.Character.KD.GetMobDeaths(),
-				KDRatio: mobKDRatio,
-				ByName:  mobKills,
-				ByRace:  raceKills,
-				ByArea:  areaKills,
+				Total:      totalMobKills,
+				Deaths:     user.Character.KD.GetMobDeaths(),
+				KDRatio:    mobKDRatio,
+				EliteKills: user.Character.KD.GetEliteKills(),
+				ByName:     mobKills,
+				ByElite:    eliteKills,
+				ByRace:     raceKills,
+				ByArea:     areaKills,
 			},
 			Pvp: GMCPCharModule_Payload_Kills_PvpSection{
 				Total:   totalPvpKills,
@@ -820,7 +962,7 @@ type GMCPCharModule_Enemy struct {
 // /////////////////
 type GMCPCharModule_Payload_Inventory struct {
 	Backpack *GMCPCharModule_Payload_Inventory_Backpack `json:"Backpack,omitempty"`
-	Worn     *GMCPCharModule_Payload_Inventory_Worn     `json:"Worn"`
+	Worn     GMCPCharModule_Payload_Inventory_Worn      `json:"Worn"`
 }
 
 type GMCPCharModule_Payload_Inventory_Backpack struct {
@@ -833,17 +975,22 @@ type GMCPCharModule_Payload_Inventory_Backpack_Summary struct {
 	Max   int `json:"max,omitempty"`
 }
 
-type GMCPCharModule_Payload_Inventory_Worn struct {
-	Weapon  GMCPCharModule_Payload_Inventory_Item `json:"weapon,omitempty"`
-	Offhand GMCPCharModule_Payload_Inventory_Item `json:"offhand,omitempty"`
-	Head    GMCPCharModule_Payload_Inventory_Item `json:"head,omitempty"`
-	Neck    GMCPCharModule_Payload_Inventory_Item `json:"neck,omitempty"`
-	Body    GMCPCharModule_Payload_Inventory_Item `json:"body,omitempty"`
-	Belt    GMCPCharModule_Payload_Inventory_Item `json:"belt,omitempty"`
-	Gloves  GMCPCharModule_Payload_Inventory_Item `json:"gloves,omitempty"`
-	Ring    GMCPCharModule_Payload_Inventory_Item `json:"ring,omitempty"`
-	Legs    GMCPCharModule_Payload_Inventory_Item `json:"legs,omitempty"`
-	Feet    GMCPCharModule_Payload_Inventory_Item `json:"feet,omitempty"`
+// GMCPCharModule_Payload_Inventory_Worn is keyed by slot name (e.g. "weapon",
+// "head") and serialises to the same JSON object shape that the named-struct
+// version produced. Using a map means the field set tracks items.AllEquipSlots()
+// automatically; no manual update is needed when slots are added or removed.
+type GMCPCharModule_Payload_Inventory_Worn map[string]GMCPCharModule_Payload_Inventory_Item
+
+func buildWornPayload(eq characters.Worn) GMCPCharModule_Payload_Inventory_Worn {
+	worn := make(GMCPCharModule_Payload_Inventory_Worn)
+	for _, slot := range items.AllEquipSlots() {
+		itm := eq.Get(slot)
+		if itm.IsDisabled() {
+			continue
+		}
+		worn[string(slot)] = newInventory_Item(*itm)
+	}
+	return worn
 }
 
 type GMCPCharModule_Payload_Inventory_Item struct {
@@ -856,6 +1003,13 @@ type GMCPCharModule_Payload_Inventory_Item struct {
 }
 
 func newInventory_Item(itm items.Item) GMCPCharModule_Payload_Inventory_Item {
+
+	if itm.IsDisabled() {
+		return GMCPCharModule_Payload_Inventory_Item{
+			Name:    `-disabled-`,
+			Details: []string{},
+		}
+	}
 
 	itmSpec := itm.GetSpec()
 	d := GMCPCharModule_Payload_Inventory_Item{
@@ -927,7 +1081,7 @@ type GMCPCharModule_Payload_Affect struct {
 	Name         string         `json:"name"`
 	Description  string         `json:"description"`
 	DurationMax  int            `json:"duration_max"`
-	DurationLeft int            `json:"duration_cur"`
+	DurationLeft int            `json:"duration_left"`
 	Type         string         `json:"type"`
 	Mods         map[string]int `json:"affects"`
 }
@@ -945,9 +1099,21 @@ type GMCPCharModule_Payload_Quest struct {
 // Char.Pets
 // /////////////////
 type GMCPCharModule_Payload_Pet struct {
-	Name   string `json:"name"`
-	Type   string `json:"type"`
-	Hunger string `json:"hunger"`
+	Name     string                                  `json:"name"`
+	Type     string                                  `json:"type"`
+	Level    int                                     `json:"level"`
+	Hunger   string                                  `json:"hunger"`
+	Ability  *GMCPCharModule_Payload_Pet_Ability     `json:"ability,omitempty"`
+	Buffs    []string                                `json:"buffs"`
+	Items    []GMCPCharModule_Payload_Inventory_Item `json:"items"`
+	Capacity int                                     `json:"capacity"`
+}
+
+type GMCPCharModule_Payload_Pet_Ability struct {
+	LevelGranted int            `json:"level_granted"`
+	CombatChance int            `json:"combat_chance"`
+	DiceRoll     string         `json:"dice_roll"`
+	StatMods     map[string]int `json:"stat_mods,omitempty"`
 }
 
 // /////////////////
@@ -977,12 +1143,14 @@ type GMCPCharModule_Payload_Kills struct {
 }
 
 type GMCPCharModule_Payload_Kills_Section struct {
-	Total   int            `json:"total"`
-	Deaths  int            `json:"deaths"`
-	KDRatio float64        `json:"kd_ratio"`
-	ByName  map[string]int `json:"by_name"`
-	ByRace  map[string]int `json:"by_race"`
-	ByArea  map[string]int `json:"by_area"`
+	Total      int            `json:"total"`
+	Deaths     int            `json:"deaths"`
+	KDRatio    float64        `json:"kd_ratio"`
+	EliteKills int            `json:"elite_kills"`
+	ByName     map[string]int `json:"by_name"`
+	ByElite    map[string]int `json:"by_elite"`
+	ByRace     map[string]int `json:"by_race"`
+	ByArea     map[string]int `json:"by_area"`
 }
 
 type GMCPCharModule_Payload_Kills_PvpSection struct {

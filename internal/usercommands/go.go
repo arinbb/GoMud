@@ -3,7 +3,6 @@ package usercommands
 import (
 	"fmt"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/items"
@@ -24,14 +23,14 @@ func Go(rest string, user *users.UserRecord, room *rooms.Room, flags events.Even
 	}
 
 	// If has a buff that prevents combat, skip the player
-	if user.Character.HasBuffFlag(buffs.NoMovement) {
+	if user.Character.HasBuffFlag("no-go") {
 		user.SendText("You can't do that!")
 		return true, nil
 	}
 
 	c := configs.GetTextFormatsConfig()
 
-	isSneaking := user.Character.HasBuffFlag(buffs.Hidden)
+	isSneaking := user.Character.HasBuffFlag("hidden")
 
 	handled := false
 
@@ -180,6 +179,14 @@ func Go(rest string, user *users.UserRecord, room *rooms.Room, flags events.Even
 			enterFromExit = fmt.Sprintf(`the <ansi fg="exit">%s</ansi>`, enterFromExit)
 		}
 
+		if blocked, err := scripting.TryRoomTryExitEvent(exitName, user.UserId, room.RoomId); err == nil && blocked {
+			return true, nil
+		}
+
+		if blocked, err := scripting.TryRoomTryEnterEvent(user.UserId, destRoom.RoomId); err == nil && blocked {
+			return true, nil
+		}
+
 		if err := rooms.MoveToRoom(user.UserId, destRoom.RoomId); err != nil {
 			user.SendText("Oops, couldn't move there!")
 		} else {
@@ -199,7 +206,7 @@ func Go(rest string, user *users.UserRecord, room *rooms.Room, flags events.Even
 					))
 
 				// Tell the old room they are leaving
-				if user.Character.Pet.Exists() {
+				if user.Character.Pet.Exists() && !user.Character.Pet.IsMissing() {
 
 					room.SendText(
 						fmt.Sprintf(string(c.ExitRoomMessageWrapper),
@@ -216,7 +223,7 @@ func Go(rest string, user *users.UserRecord, room *rooms.Room, flags events.Even
 				}
 
 				// Tell everyone if the pet is following
-				if user.Character.Pet.Exists() {
+				if user.Character.Pet.Exists() && !user.Character.Pet.IsMissing() {
 
 					user.SendText(fmt.Sprintf(`%s follows you.`, user.Character.Pet.DisplayName()))
 
@@ -370,7 +377,7 @@ func Go(rest string, user *users.UserRecord, room *rooms.Room, flags events.Even
 				}
 			}
 
-			if !user.Character.HasBuffFlag(buffs.Hidden) {
+			if !user.Character.HasBuffFlag("hidden") {
 
 				room.SendText(
 					fmt.Sprintf(string(c.ExitRoomMessageWrapper),

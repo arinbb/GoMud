@@ -2,54 +2,75 @@
 
 <style>
     h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
-    .subtitle { color: #555; margin-bottom: 1.5rem; font-size: 0.9rem; }
+    .subtitle { color: var(--color-text-muted); margin-bottom: 1.5rem; font-size: 0.9rem; }
 
     .page-layout { display: grid; grid-template-columns: 280px 1fr; gap: 1.25rem; align-items: start; }
     @media (max-width: 800px) { .page-layout { grid-template-columns: 1fr; } }
 
-    .sidebar { background: #fff; border: 1px solid #ddd; border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; }
-    .sidebar-header { padding: 0.75rem 0.9rem; border-bottom: 1px solid #eee; }
-    .sidebar-header input[type="search"] { width: 100%; padding: 0.35rem 0.6rem; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem; }
+    .sidebar { background: var(--color-surface-white); border: 1px solid var(--color-border); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; }
+    .sidebar-header { padding: 0.75rem 0.9rem; border-bottom: 1px solid var(--color-border-light); }
+    .sidebar-header input[type="search"] { width: 100%; padding: 0.35rem 0.6rem; border: 1px solid var(--color-border-medium); border-radius: 4px; font-size: 0.85rem; }
     .buff-list { overflow-y: auto; max-height: 72vh; }
     .buff-row {
-        padding: 0.55rem 0.9rem; cursor: pointer; border-bottom: 1px solid #f0f0f0;
+        padding: 0.55rem 0.9rem; cursor: pointer; border-bottom: 1px solid var(--color-border-faint);
         display: flex; align-items: baseline; gap: 0.5rem; font-size: 0.875rem;
     }
     .buff-row:last-child { border-bottom: none; }
-    .buff-row:hover { background: #f5f7ff; }
-    .buff-row.active { background: #1a1a2e; color: #fff; }
-    .buff-id { font-size: 0.75rem; color: #999; font-family: monospace; flex-shrink: 0; }
-    .buff-row.active .buff-id { color: #8899cc; }
-    .no-buffs { padding: 1.5rem; text-align: center; color: #888; font-size: 0.85rem; }
+    .buff-row:hover { background: var(--color-row-hover); }
+    .buff-row.active { background: var(--color-primary); color: var(--color-surface-white); }
+    .buff-id { font-size: 0.75rem; color: var(--color-text-secondary); font-family: monospace; flex-shrink: 0; }
+    .buff-row.active .buff-id { color: var(--color-active-id); }
+    .no-buffs { padding: 1.5rem; text-align: center; color: var(--color-text-faint); font-size: 0.85rem; }
 
-    .btn-new { margin: 0.6rem 0.9rem; padding: 0.4rem 0.9rem; border: none; border-radius: 4px; background: #1e6e34; color: #fff; font-size: 0.85rem; font-weight: 600; cursor: pointer; text-align: center; }
-    .btn-new:hover { background: #145728; }
+    .btn-new { margin: 0.6rem 0.9rem; padding: 0.4rem 0.9rem; border: none; border-radius: 4px; background: var(--color-success-text); color: var(--color-surface-white); font-size: 0.85rem; font-weight: 600; cursor: pointer; text-align: center; }
+    .btn-new:hover { background: var(--color-btn-new-hover); }
 
-    .editor-panel { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 1.25rem; }
-    .editor-placeholder { color: #aaa; text-align: center; padding: 4rem 1rem; font-size: 0.9rem; }
+    .editor-panel { background: var(--color-surface-white); border: 1px solid var(--color-border); border-radius: 6px; padding: 1.25rem; }
+    .editor-placeholder { color: var(--color-text-placeholder); text-align: center; padding: 4rem 1rem; font-size: 0.9rem; }
 
     .status-bar { display: none; padding: 0.55rem 0.9rem; border-radius: 4px; font-size: 0.85rem; margin-bottom: 1rem; }
-    .status-bar.success { background: #e6f4ea; color: #1e6e34; display: block; }
-    .status-bar.error   { background: #fde8e8; color: #8a0000; display: block; }
+    .status-bar.success { background: var(--color-success-bg); color: var(--color-success-text); display: block; }
+    .status-bar.error   { background: var(--color-error-bg); color: var(--color-error-text); display: block; }
 
     .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem 1.25rem; }
     .form-grid .span2 { grid-column: 1 / -1; }
-    .field label { display: block; font-size: 0.78rem; font-weight: 600; color: #555; margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 0.03em; }
+    .field label { display: block; font-size: 0.78rem; font-weight: 600; color: var(--color-text-muted); margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 0.03em; }
     .field input[type="text"], .field input[type="number"], .field select, .field textarea {
-        width: 100%; padding: 0.4rem 0.6rem; border: 1px solid #ccc; border-radius: 4px;
-        font-size: 0.875rem; font-family: inherit; background: #fff;
+        width: 100%; padding: 0.4rem 0.6rem; border: 1px solid var(--color-border-medium); border-radius: 4px;
+        font-size: 0.875rem; font-family: inherit; background: var(--color-surface-white);
     }
-    .field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid #1a1a2e; outline-offset: 1px; border-color: transparent; }
+    .field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--color-primary); outline-offset: 1px; border-color: transparent; }
     .field textarea { resize: vertical; min-height: 80px; }
-    .field-hint { font-size: 0.75rem; color: #888; margin-top: 0.2rem; }
+    .field-hint { font-size: 0.75rem; color: var(--color-text-faint); margin-top: 0.2rem; }
 
-    .section-title { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #666; padding: 0.5rem 0 0.4rem; border-bottom: 1px solid #eee; margin-bottom: 0.75rem; grid-column: 1 / -1; }
+    /* toggle switch */
+    .toggle-wrap { display: flex; align-items: center; gap: 0.55rem; padding: 0.3rem 0; }
+    .toggle-wrap input[type="checkbox"] { position: absolute; opacity: 0; width: 0; height: 0; }
+    .toggle-switch {
+        position: relative; display: inline-block;
+        width: 2.4rem; height: 1.3rem; flex-shrink: 0; cursor: pointer;
+    }
+    .toggle-switch::before {
+        content: ''; position: absolute; inset: 0;
+        background: var(--color-border-medium); border-radius: 1rem; transition: background 0.18s;
+    }
+    .toggle-switch::after {
+        content: ''; position: absolute; top: 0.15rem; left: 0.15rem;
+        width: 1rem; height: 1rem; background: var(--color-surface-white);
+        border-radius: 50%; transition: transform 0.18s; box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    input[type="checkbox"]:checked + .toggle-switch::before { background: var(--color-primary); }
+    input[type="checkbox"]:checked + .toggle-switch::after { transform: translateX(1.1rem); }
+    input[type="checkbox"]:focus-visible + .toggle-switch { outline: 2px solid var(--color-focus); outline-offset: 2px; border-radius: 1rem; }
+    .toggle-label-text { font-size: 0.85rem; color: var(--color-text-muted); }
+
+    .section-title { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-subtle); padding: 0.5rem 0 0.4rem; border-bottom: 1px solid var(--color-border-light); margin-bottom: 0.75rem; grid-column: 1 / -1; }
 
     /* ---- stat mods ---- */
     .statmod-group { margin-bottom: 0.9rem; }
     .statmod-group-label {
         font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
-        color: #999; margin-bottom: 0.4rem;
+        color: var(--color-text-secondary); margin-bottom: 0.4rem;
     }
     .statmod-known-grid {
         display: grid;
@@ -57,30 +78,30 @@
         gap: 0.4rem;
     }
     .statmod-known-item {
-        border: 1px solid #e0e0e0; border-radius: 5px; padding: 0.45rem 0.55rem;
-        background: #fafafa; transition: border-color 0.12s, background 0.12s;
+        border: 1px solid var(--color-border-strong); border-radius: 5px; padding: 0.45rem 0.55rem;
+        background: var(--color-surface-alt); transition: border-color 0.12s, background 0.12s;
         position: relative;
     }
     .statmod-known-item.has-value {
-        border-color: #7986cb; background: #f0f1ff;
+        border-color: var(--color-hover-tint-border); background: var(--color-row-hover);
     }
     .statmod-known-item.negative-value {
-        border-color: #e57373; background: #fff5f5;
+        border-color: var(--color-danger); background: var(--color-error-bg);
     }
     .statmod-known-item label {
-        display: block; font-size: 0.75rem; font-weight: 600; color: #444;
+        display: block; font-size: 0.75rem; font-weight: 600; color: var(--color-text-tertiary);
         margin-bottom: 0.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
         cursor: help;
     }
-    .statmod-known-item.has-value label { color: #3949ab; }
-    .statmod-known-item.negative-value label { color: #c62828; }
+    .statmod-known-item.has-value label { color: var(--color-chip-text); }
+    .statmod-known-item.negative-value label { color: var(--color-error-text); }
     .statmod-known-item input[type="number"] {
-        width: 100%; padding: 0.25rem 0.4rem; border: 1px solid #ccc; border-radius: 3px;
-        font-size: 0.85rem; font-family: monospace; background: #fff; text-align: center;
+        width: 100%; padding: 0.25rem 0.4rem; border: 1px solid var(--color-border-medium); border-radius: 3px;
+        font-size: 0.85rem; font-family: monospace; background: var(--color-surface-white); text-align: center;
     }
-    .statmod-known-item input[type="number"]:focus { outline: 2px solid #1a1a2e; outline-offset: 1px; }
+    .statmod-known-item input[type="number"]:focus { outline: 2px solid var(--color-primary); outline-offset: 1px; }
     .statmod-zero-hint {
-        font-size: 0.68rem; color: #bbb; text-align: center; margin-top: 0.15rem;
+        font-size: 0.68rem; color: var(--color-btn-cancel-hover); text-align: center; margin-top: 0.15rem;
         pointer-events: none;
     }
 
@@ -89,47 +110,47 @@
     .statmod-custom-row { display: flex; gap: 0.45rem; align-items: center; }
     .statmod-custom-row input[type="text"] { flex: 1; font-family: monospace; font-size: 0.82rem; }
     .statmod-custom-row input[type="number"] { width: 80px; font-family: monospace; font-size: 0.82rem; text-align: center; }
-    .btn-icon { background: none; border: none; cursor: pointer; font-size: 1rem; color: #aaa; padding: 0 0.15rem; line-height: 1; }
-    .btn-icon:hover { color: #c00; }
-    .btn-add-sm { font-size: 0.8rem; padding: 0.3rem 0.7rem; border: 1px dashed #aaa; background: none; border-radius: 4px; cursor: pointer; color: #555; }
-    .btn-add-sm:hover { border-color: #1a1a2e; color: #1a1a2e; }
+    .btn-icon { background: none; border: none; cursor: pointer; font-size: 1rem; color: var(--color-text-placeholder); padding: 0 0.15rem; line-height: 1; }
+    .btn-icon:hover { color: var(--color-danger); }
+    .btn-add-sm { font-size: 0.8rem; padding: 0.3rem 0.7rem; border: 1px dashed var(--color-text-placeholder); background: none; border-radius: 4px; cursor: pointer; color: var(--color-text-muted); }
+    .btn-add-sm:hover { border-color: var(--color-primary); color: var(--color-primary); }
 
     /* prefix hint */
     .prefix-hint {
-        font-size: 0.75rem; color: #888; margin-top: 0.5rem; padding: 0.4rem 0.6rem;
-        background: #f5f5f5; border-radius: 4px; border-left: 3px solid #ccc;
+        font-size: 0.75rem; color: var(--color-text-faint); margin-top: 0.5rem; padding: 0.4rem 0.6rem;
+        background: var(--color-page-bg); border-radius: 4px; border-left: 3px solid var(--color-border-medium);
     }
-    .prefix-hint code { font-size: 0.82em; background: #e8e8e8; padding: 0.05rem 0.3rem; border-radius: 3px; }
+    .prefix-hint code { font-size: 0.82em; background: var(--color-border-strong); padding: 0.05rem 0.3rem; border-radius: 3px; }
 
     /* flags */
     .flags-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.4rem; }
-    .flag-item { display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.4rem 0.5rem; border: 1px solid #eee; border-radius: 4px; cursor: pointer; }
-    .flag-item:hover { background: #f5f7ff; border-color: #c5cae9; }
-    .flag-item input[type="checkbox"] { margin-top: 0.15rem; flex-shrink: 0; accent-color: #1a1a2e; }
+    .flag-item { display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.4rem 0.5rem; border: 1px solid var(--color-border-light); border-radius: 4px; cursor: pointer; }
+    .flag-item:hover { background: var(--color-row-hover); border-color: var(--color-hover-tint-border); }
+    .flag-item input[type="checkbox"] { margin-top: 0.15rem; flex-shrink: 0; accent-color: var(--color-primary); }
     .flag-label { font-size: 0.82rem; }
-    .flag-name { font-weight: 600; color: #1a1a2e; display: block; }
-    .flag-desc { font-size: 0.75rem; color: #777; display: block; margin-top: 0.1rem; }
+    .flag-name { font-weight: 600; color: var(--color-primary); display: block; }
+    .flag-desc { font-size: 0.75rem; color: var(--color-text-faint); display: block; margin-top: 0.1rem; }
 
     /* script */
-    .script-toggle { display: flex; align-items: center; gap: 0.6rem; cursor: pointer; font-size: 0.85rem; color: #1a1a2e; font-weight: 600; padding: 0.5rem 0; user-select: none; }
-    .script-toggle::before { content: "\25B6"; font-size: 0.65rem; transition: transform 0.15s; }
-    .script-toggle.open::before { transform: rotate(90deg); }
-    .script-area { display: none; margin-top: 0.5rem; }
-    .script-area.open { display: block; }
-    .script-area textarea { width: 100%; min-height: 660px; font-family: monospace; font-size: 0.82rem; padding: 0.6rem 0.75rem; border: 1px solid #ccc; border-radius: 4px; resize: vertical; background: #1a1a2e; color: #c9d1d9; line-height: 1.55; }
-    .script-area textarea:focus { outline: 2px solid #4a6fa5; outline-offset: 1px; }
-    .script-hint { font-size: 0.75rem; color: #888; margin-top: 0.3rem; }
+    .script-section {
+        margin-top: 1.25rem; border-top: 1px solid var(--color-border-light); padding-top: 1rem;
+        display: flex; flex-direction: column; gap: 0.5rem;
+    }
+    .script-section-toolbar {
+        display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;
+    }
+    .script-section-label { font-size: 0.85rem; font-weight: 600; color: var(--color-text-muted); flex: 1; }
 
     .action-bar { display: flex; gap: 0.6rem; margin-top: 1.25rem; align-items: center; flex-wrap: wrap; }
     .btn { padding: 0.45rem 1.1rem; border: none; border-radius: 4px; cursor: pointer; font-size: 0.875rem; font-weight: 600; }
-    .btn-primary { background: #1a1a2e; color: #fff; }
-    .btn-primary:hover { background: #2d2d4e; }
-    .btn-primary:disabled { background: #999; cursor: default; }
-    .btn-danger { background: #c0392b; color: #fff; }
-    .btn-danger:hover { background: #a93226; }
-    .btn-secondary { background: #eee; color: #333; }
-    .btn-secondary:hover { background: #ddd; }
-    .buff-id-display { font-family: monospace; font-size: 0.82rem; color: #888; margin-left: auto; }
+    .btn-primary { background: var(--color-primary); color: var(--color-surface-white); }
+    .btn-primary:hover { background: var(--color-primary-hover); }
+    .btn-primary:disabled { background: var(--color-text-secondary); cursor: default; }
+    .btn-danger { background: var(--color-btn-danger-bg); color: var(--color-surface-white); }
+    .btn-danger:hover { background: var(--color-btn-danger-hover); }
+    .btn-secondary { background: var(--color-border-light); color: var(--color-text-strong); }
+    .btn-secondary:hover { background: var(--color-border); }
+    .buff-id-display { font-family: monospace; font-size: 0.82rem; color: var(--color-text-faint); margin-left: auto; }
 
     .editor-header { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 1rem; }
     .editor-header h2 { font-size: 1.1rem; flex: 1; }
@@ -158,6 +179,7 @@
         <div id="editor-form" style="display:none;">
             <div class="editor-header">
                 <h2 id="editor-title">Buff Editor</h2>
+                <button class="yaml-badge" id="yaml-view-btn" style="display:none" onclick="showYamlModal(this.dataset.url,'Buff YAML')">YAML</button>
             </div>
 
             <div class="form-grid">
@@ -169,10 +191,11 @@
                 </div>
                 <div class="field">
                     <label>Secret</label>
-                    <select id="f-secret">
-                        <option value="false">No — visible to player</option>
-                        <option value="true">Yes — hidden from player</option>
-                    </select>
+                    <div class="toggle-wrap">
+                        <input type="checkbox" id="f-secret" />
+                        <label class="toggle-switch" for="f-secret"></label>
+                        <span class="toggle-label-text">Hidden from player</span>
+                    </div>
                 </div>
                 <div class="field span2">
                     <label>Description</label>
@@ -193,10 +216,11 @@
                 </div>
                 <div class="field">
                     <label>Trigger Now</label>
-                    <select id="f-triggernow">
-                        <option value="false">No</option>
-                        <option value="true">Yes — fires immediately on application</option>
-                    </select>
+                    <div class="toggle-wrap">
+                        <input type="checkbox" id="f-triggernow" />
+                        <label class="toggle-switch" for="f-triggernow"></label>
+                        <span class="toggle-label-text">Fires immediately on application</span>
+                    </div>
                 </div>
 
                 <div class="section-title">Stat Modifications</div>
@@ -213,11 +237,16 @@
             </div>
 
             <!-- Script editor -->
-            <div style="margin-top:1.25rem; border-top: 1px solid #eee; padding-top: 1rem;">
-                <div class="script-toggle" id="script-toggle" onclick="toggleScript()">Script</div>
-                <div class="script-area" id="script-area">
-                    <textarea id="f-script" spellcheck="false" placeholder="// JavaScript for buff events&#10;// Leave blank to delete the script file."></textarea>
-                    <div class="script-hint">Saved as a .js file alongside the buff's YAML. Clear the field and save to delete the script.</div>
+            <div class="script-section">
+                <div class="script-section-toolbar">
+                    <span class="script-section-label">Script</span>
+                    <span class="script-lang-mount"></span>
+                    <button class="btn btn-secondary" style="font-size:0.78rem;padding:0.25rem 0.7rem;" onclick="openScriptWizard()">+ Add Event Handler</button>
+                    <button class="btn btn-secondary" style="font-size:0.78rem;padding:0.25rem 0.7rem;" onclick="ScriptEditor.open('f-script')">&#x26F6; Pop Out</button>
+                </div>
+                <textarea id="f-script" spellcheck="false" style="display:none"></textarea>
+                <div style="display:flex;justify-content:flex-end;margin-top:0.5rem;">
+                    <button class="btn btn-danger" style="font-size:0.78rem;padding:0.25rem 0.7rem;" onclick="deleteScript()">&#x1F5D1; Delete Script</button>
                 </div>
             </div>
 
@@ -236,7 +265,7 @@
     'use strict';
 
     let allBuffs    = {};  // buffId -> spec
-    let allFlags    = {};  // flag   -> description
+    let allFlags    = [];  // array of FlagSpec {Flag, Name, Description, Locked}
     let allStatMods = {};  // statName -> description  (from /admin/api/v1/statmods)
     let currentBuffId = null;
     let isNew = false;
@@ -264,7 +293,7 @@
         },
     ];
 
-    // Keys that are prefixes rather than exact names — handled in the custom section.
+    // Keys that are prefixes rather than exact names - handled in the custom section.
     const PREFIX_KEYS = new Set(['racial-bonus-', 'casting-']);
 
     // All exact known keys (non-prefix).
@@ -273,7 +302,7 @@
     );
 
     // -------------------------------------------------------------------------
-    // Init — load buffs, flags, and statmod definitions in parallel
+    // Init - load buffs, flags, and statmod definitions in parallel
     // -------------------------------------------------------------------------
     async function init() {
         const [buffsRes, statmodsRes] = await AdminAPI.all([
@@ -285,12 +314,13 @@
         if (!statmodsRes.ok) { showStatus('Failed to load statmods: ' + statmodsRes.error, false); return; }
 
         const buffsData = buffsRes.data.data || {};
-        allFlags    = buffsData.flags || {};
+        allFlags    = buffsData.flags || [];
         allBuffs    = buffsData.specs || {};
         allStatMods = statmodsRes.data.data || {};
 
         renderList(Object.values(allBuffs).sort((a, b) => a.BuffId - b.BuffId));
-        scriptSync = ScriptEditor.init('f-script');
+        scriptSync = ScriptEditor.init('f-script', 'buff');
+        ScriptEditor.setDeleteHandler('f-script', deleteScript);
         const hashId = parseInt(location.hash.slice(1), 10);
         if (hashId) loadBuff(hashId);
     }
@@ -335,6 +365,7 @@
 
         const spec   = specRes.data.data;
         const script = scriptRes.ok ? (scriptRes.data.data.script || '') : '';
+        const lang   = scriptRes.ok ? (scriptRes.data.data.lang || 'js') : 'js';
 
         allBuffs[spec.BuffId] = spec;
         currentBuffId = buffId;
@@ -342,7 +373,7 @@
         location.hash = buffId;
         setActiveRow(buffId);
         showEditor();
-        fillForm(spec, script);
+        fillForm(spec, script, lang);
     }
 
     function setActiveRow(id) {
@@ -357,24 +388,33 @@
         document.getElementById('delete-btn').style.display = isNew ? 'none' : '';
     }
 
-    function fillForm(spec, script) {
+    function fillForm(spec, script, lang) {
+        lang = lang || 'js';
         document.getElementById('editor-title').textContent = isNew ? 'New Buff' : spec.Name;
         document.getElementById('buff-id-display').textContent = isNew ? '' : 'ID: ' + spec.BuffId;
+        var yamlBtn = document.getElementById('yaml-view-btn');
+        if (!isNew && spec.BuffId != null) {
+            yamlBtn.dataset.url = '/admin/api/v1/buffs/' + spec.BuffId + '/yaml';
+            yamlBtn.style.display = '';
+        } else {
+            yamlBtn.style.display = 'none';
+        }
 
         setVal('f-name',         spec.Name        || '');
         setVal('f-description',  spec.Description || '');
-        setVal('f-secret',       spec.Secret      ? 'true' : 'false');
+        setVal('f-secret',       spec.Secret);
         setVal('f-triggerrate',  spec.TriggerRate  || '');
         setVal('f-triggercount', spec.TriggerCount || 1);
-        setVal('f-triggernow',   spec.TriggerNow   ? 'true' : 'false');
+        setVal('f-triggernow',   spec.TriggerNow);
 
         buildStatModsUI(spec.StatMods || {});
         buildFlagsGrid(spec.Flags || []);
 
         setVal('f-script', script);
-        if (scriptSync) scriptSync();
-        document.getElementById('script-toggle').classList.toggle('open', script.length > 0);
-        document.getElementById('script-area').classList.toggle('open', script.length > 0);
+        if (scriptSync) scriptSync(undefined, lang);
+        // Lock the language to the existing file's type; a new (empty) script
+        // stays selectable until it is saved.
+        ScriptEditor.lockLang('f-script', script !== '');
     }
 
     // -------------------------------------------------------------------------
@@ -523,14 +563,14 @@
     function collectStatMods() {
         const mods = {};
 
-        // Known grid — only include non-zero values
+        // Known grid - only include non-zero values
         document.querySelectorAll('.statmod-known-item input[type="number"]').forEach(inp => {
             const k = inp.dataset.statkey;
             const v = parseInt(inp.value, 10);
             if (k && !isNaN(v) && v !== 0) mods[k] = v;
         });
 
-        // Custom rows — include any with a non-empty key
+        // Custom rows - include any with a non-empty key
         document.querySelectorAll('#statmods-custom-list .statmod-custom-row').forEach(row => {
             const inputs = row.querySelectorAll('input');
             const k = inputs[0].value.trim();
@@ -548,14 +588,15 @@
         const grid = document.getElementById('flags-grid');
         grid.innerHTML = '';
         const active = new Set(activeFlags || []);
-        for (const [flag, desc] of Object.entries(allFlags)) {
+        for (const fSpec of allFlags) {
+            const flag = fSpec.Flag;
             const label = document.createElement('label');
             label.className = 'flag-item';
             label.innerHTML = `
                 <input type="checkbox" value="${esc(flag)}" ${active.has(flag) ? 'checked' : ''} />
                 <span class="flag-label">
-                    <span class="flag-name">${esc(flag)}</span>
-                    <span class="flag-desc">${esc(desc)}</span>
+                    <span class="flag-name">${esc(fSpec.Name || flag)}</span>
+                    <span class="flag-desc">${esc(fSpec.Description || '')}</span>
                 </span>`;
             grid.appendChild(label);
         }
@@ -577,10 +618,10 @@
         const payload = {
             Name:         document.getElementById('f-name').value.trim(),
             Description:  document.getElementById('f-description').value.trim(),
-            Secret:       document.getElementById('f-secret').value === 'true',
+            Secret:       document.getElementById('f-secret').checked,
             TriggerRate:  document.getElementById('f-triggerrate').value.trim(),
             TriggerCount: parseInt(document.getElementById('f-triggercount').value, 10) || 1,
-            TriggerNow:   document.getElementById('f-triggernow').value === 'true',
+            TriggerNow:   document.getElementById('f-triggernow').checked,
             StatMods:     collectStatMods(),
             Flags:        collectFlags(),
         };
@@ -601,11 +642,12 @@
         const saved = res.data.data;
         allBuffs[saved.BuffId] = saved;
 
-        const scriptRes = await AdminAPI.put('/admin/api/v1/buffs/' + saved.BuffId + '/script', { script: scriptContent });
+        const scriptRes = await AdminAPI.put('/admin/api/v1/buffs/' + saved.BuffId + '/script', { script: scriptContent, lang: ScriptEditor.getLang('f-script') });
         showStatus(
             scriptRes.ok ? 'Buff saved successfully.' : 'Buff saved but script update failed: ' + scriptRes.error,
             scriptRes.ok
         );
+        ScriptEditor.lockLang('f-script', scriptContent.trim().length > 0);
 
         document.getElementById('editor-title').textContent = saved.Name;
         document.getElementById('buff-id-display').textContent = 'ID: ' + saved.BuffId;
@@ -630,9 +672,26 @@
     // -------------------------------------------------------------------------
     // Script toggle
     // -------------------------------------------------------------------------
-    window.toggleScript = function () {
-        document.getElementById('script-toggle').classList.toggle('open');
-        document.getElementById('script-area').classList.toggle('open');
+    window.openScriptWizard = function () {
+        ScriptWizard.open({ scriptType: 'buff', textareaId: 'f-script' });
+    };
+
+    // Blank the current script and save it. The backend deletes the script
+    // file when an empty script is saved.
+    window.deleteScript = async function () {
+        if (isNew || currentBuffId === null) {
+            if (scriptSync) scriptSync('');
+            ScriptEditor.lockLang('f-script', false);
+            return;
+        }
+        if (!confirm('Delete this script? This cannot be undone.')) return;
+
+        const res = await AdminAPI.put('/admin/api/v1/buffs/' + currentBuffId + '/script', { script: '', lang: ScriptEditor.getLang('f-script') });
+        if (!res.ok) { showStatus('Script delete failed: ' + res.error, false); return; }
+
+        if (scriptSync) scriptSync('');
+        ScriptEditor.lockLang('f-script', false);
+        showStatus('Script deleted.', true);
     };
 
     // -------------------------------------------------------------------------
@@ -648,7 +707,12 @@
 
     function setVal(id, val) {
         const el = document.getElementById(id);
-        if (el) el.value = val;
+        if (!el) return;
+        if (el.type === 'checkbox') {
+            el.checked = (val === true || val === 'true');
+        } else {
+            el.value = val;
+        }
     }
 
     function esc(s) {

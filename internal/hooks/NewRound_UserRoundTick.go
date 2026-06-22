@@ -2,9 +2,11 @@
 package hooks
 
 import (
+	"fmt"
 	"strconv"
 
 	"github.com/GoMudEngine/GoMud/internal/buffs"
+	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
 	"github.com/GoMudEngine/GoMud/internal/scripting"
@@ -95,8 +97,39 @@ func UserRoundTick(e events.Event) events.ListenerReturn {
 					user.Command(`zombieact`)
 				}
 
+				// Decrement pet missing countdown each round.
+				petJustReturned := false
+				if user.Character.Pet.Exists() && user.Character.Pet.IsMissing() {
+					if user.Character.Pet.DecrementMissing() {
+						petJustReturned = true
+						scripting.TryPetScriptEvent(`PetReturn`, uId)
+					}
+				}
+
+				// Fire PetAct script using the pet type's configured RoundActChance.
+				// Not called while the owner is in combat, or on the same round the pet returns.
+				if !petJustReturned && user.Character.Pet.Exists() && !user.Character.Pet.IsMissing() && user.Character.Aggro == nil && user.Character.Pet.RoundActChance > 0 && util.Rand(100) < user.Character.Pet.RoundActChance {
+					scripting.TryPetScriptEvent(`PetAct`, uId)
+				}
+
 				// Roundtick any cooldowns
 				user.Character.Cooldowns.RoundTick()
+
+				// Decay alignment toward neutral at the configured interval
+				if decayRounds := int(configs.GetGamePlayConfig().AlignmentDecayRounds); decayRounds > 0 && evt.RoundNumber%uint64(decayRounds) == 0 {
+					alignmentBefore := user.Character.AlignmentName()
+					user.Character.DecayAlignment()
+					if alignmentAfter := user.Character.AlignmentName(); alignmentAfter != alignmentBefore {
+						before := fmt.Sprintf(`<ansi fg="%s">%s</ansi>`, alignmentBefore, alignmentBefore)
+						after := fmt.Sprintf(`<ansi fg="%s">%s</ansi>`, alignmentAfter, alignmentAfter)
+						user.SendText(fmt.Sprintf(`<ansi fg="231">Your alignment has shifted from %s to %s!</ansi>`, before, after))
+						events.AddToQueue(events.AlignmentChanged{
+							UserId:       uId,
+							AlignmentOld: alignmentBefore,
+							AlignmentNew: alignmentAfter,
+						})
+					}
+				}
 
 				if user.Character.Charmed != nil && user.Character.Charmed.RoundsRemaining > 0 {
 					user.Character.Charmed.RoundsRemaining--
@@ -127,7 +160,12 @@ func UserRoundTick(e events.Event) events.ListenerReturn {
 				}
 
 				// Recalculate all stats at the end of the round tick
+				hBefore := user.Character.Health
+				mBefore := user.Character.Mana
 				user.Character.Validate()
+				if user.Character.Health != hBefore || user.Character.Mana != mBefore {
+					events.AddToQueue(events.CharacterVitalsChanged{UserId: user.UserId})
+				}
 
 				// Only do this every 15 rounds to keep spam down.
 				if evt.RoundNumber%15 == 0 {

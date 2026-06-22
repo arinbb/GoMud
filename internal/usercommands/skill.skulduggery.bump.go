@@ -4,11 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
-	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/users"
 	"github.com/GoMudEngine/GoMud/internal/util"
 )
@@ -19,7 +17,7 @@ Level 3 - Backstab
 */
 func Bump(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
 
-	skillLevel := user.Character.GetSkillLevel(skills.Skulduggery)
+	skillLevel := user.Character.GetSkillLevel(`skulduggery`)
 
 	// If they don't have a skill, act like it's not a valid command
 	if skillLevel < 2 {
@@ -47,16 +45,16 @@ func Bump(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 
 	if pickPlayerId > 0 || pickMobInstanceId > 0 {
 
-		if !user.Character.TryCooldown(skills.Brawling.String(`bump`), "1 real minute") {
-			user.SendText(fmt.Sprintf("You need to wait %d rounds before you can do that again!", user.Character.GetCooldown(skills.Brawling.String(`bump`))))
+		if !user.Character.TryCooldown(`skulduggery:bump`, "1 real minute") {
+			user.SendText(fmt.Sprintf("You need to wait %d rounds before you can do that again!", user.Character.GetCooldown(`skulduggery:bump`)))
 			return true, nil
 		}
 
-		user.Character.CancelBuffsWithFlag(buffs.Hidden)
+		user.Character.CancelBuffsWithFlag("hidden")
 	}
 
 	// Fire an event that a skill has been used
-	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: skills.Skulduggery, Details: `bump`})
+	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: `skulduggery`, Details: `bump`})
 
 	goldDropped := 0
 
@@ -66,14 +64,13 @@ func Bump(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 
 		if m != nil {
 
-			levelDelta := user.Character.Level - m.Character.Level
-			if levelDelta < 1 {
-				levelDelta = 1
+			levelDelta := m.Character.Level - user.Character.Level
+			if levelDelta < 0 {
+				levelDelta = 0
 			}
 
-			chanceIn100 := user.Character.Stats.Strength.ValueAdj / 2
-			chanceIn100 /= levelDelta
-			if chanceIn100 < 0 {
+			chanceIn100 := user.Character.Stats.Strength.ValueAdj/2 - levelDelta
+			if chanceIn100 < 1 {
 				chanceIn100 = 1
 			}
 
@@ -112,13 +109,12 @@ func Bump(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 				return true, nil
 			}
 
-			levelDelta := user.Character.Level - p.Character.Level
-			if levelDelta < 1 {
-				levelDelta = 1
+			levelDelta := p.Character.Level - user.Character.Level
+			if levelDelta < 0 {
+				levelDelta = 0
 			}
-			chanceIn100 := user.Character.Stats.Strength.ValueAdj / 2
-			chanceIn100 /= levelDelta
-			if chanceIn100 < 0 {
+			chanceIn100 := user.Character.Stats.Strength.ValueAdj/2 - levelDelta
+			if chanceIn100 < 1 {
 				chanceIn100 = 1
 			}
 

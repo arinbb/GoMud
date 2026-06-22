@@ -8,6 +8,7 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/GoMudEngine/GoMud/internal/configs"
@@ -21,7 +22,8 @@ import (
 )
 
 var (
-	userManager *ActiveUsers = newUserManager()
+	userManager   *ActiveUsers = newUserManager()
+	userManagerMu sync.RWMutex
 )
 
 type ActiveUsers struct {
@@ -43,6 +45,8 @@ func newUserManager() *ActiveUsers {
 }
 
 func RemoveLinkDeadUser(userId int) {
+	userManagerMu.Lock()
+	defer userManagerMu.Unlock()
 
 	if u := userManager.Users[userId]; u != nil {
 		u.Character.SetAdjective(`zombie`, false)
@@ -54,17 +58,34 @@ func RemoveLinkDeadUser(userId int) {
 }
 
 func IsLinkDeadConnection(connectionId connections.ConnectionId) bool {
+	userManagerMu.RLock()
+	defer userManagerMu.RUnlock()
+
+	_, ok := userManager.LinkDeadConnections[connectionId]
+	return ok
+}
+
+func isLinkDeadConnectionLocked(connectionId connections.ConnectionId) bool {
 	_, ok := userManager.LinkDeadConnections[connectionId]
 	return ok
 }
 
 func RemoveLinkDeadConnection(connectionId connections.ConnectionId) {
+	userManagerMu.Lock()
+	defer userManagerMu.Unlock()
+
+	delete(userManager.LinkDeadConnections, connectionId)
+}
+
+func removeLinkDeadConnectionLocked(connectionId connections.ConnectionId) {
 	delete(userManager.LinkDeadConnections, connectionId)
 }
 
 // Returns a slice of userId's
 // These userId's are link-dead players that have reached expiration
 func GetExpiredLinkDeadUsers(expirationTurn uint64) []int {
+	userManagerMu.RLock()
+	defer userManagerMu.RUnlock()
 
 	expiredUsers := make([]int, 0)
 
@@ -78,6 +99,9 @@ func GetExpiredLinkDeadUsers(expirationTurn uint64) []int {
 }
 
 func GetConnectionId(userId int) connections.ConnectionId {
+	userManagerMu.RLock()
+	defer userManagerMu.RUnlock()
+
 	if user, ok := userManager.Users[userId]; ok {
 		return user.connectionId
 	}
@@ -85,6 +109,8 @@ func GetConnectionId(userId int) connections.ConnectionId {
 }
 
 func GetConnectionIds(userIds []int) []connections.ConnectionId {
+	userManagerMu.RLock()
+	defer userManagerMu.RUnlock()
 
 	connectionIds := make([]connections.ConnectionId, 0, len(userIds))
 	for _, userId := range userIds {
@@ -97,8 +123,10 @@ func GetConnectionIds(userIds []int) []connections.ConnectionId {
 }
 
 func GetAllActiveUsers() []*UserRecord {
-	ret := []*UserRecord{}
+	userManagerMu.RLock()
+	defer userManagerMu.RUnlock()
 
+	ret := []*UserRecord{}
 	for _, userPtr := range userManager.Users {
 		if !userPtr.isLinkDead {
 			ret = append(ret, userPtr)
@@ -109,6 +137,8 @@ func GetAllActiveUsers() []*UserRecord {
 }
 
 func GetOnlineUserIds() []int {
+	userManagerMu.RLock()
+	defer userManagerMu.RUnlock()
 
 	onlineList := make([]int, 0, len(userManager.Users))
 	for _, user := range userManager.Users {
@@ -118,6 +148,8 @@ func GetOnlineUserIds() []int {
 }
 
 func GetByCharacterName(name string) *UserRecord {
+	userManagerMu.RLock()
+	defer userManagerMu.RUnlock()
 
 	var closeMatch *UserRecord = nil
 
@@ -136,6 +168,8 @@ func GetByCharacterName(name string) *UserRecord {
 }
 
 func GetByUserId(userId int) *UserRecord {
+	userManagerMu.RLock()
+	defer userManagerMu.RUnlock()
 
 	if user, ok := userManager.Users[userId]; ok {
 		return user
@@ -145,6 +179,8 @@ func GetByUserId(userId int) *UserRecord {
 }
 
 func GetByConnectionId(connectionId connections.ConnectionId) *UserRecord {
+	userManagerMu.RLock()
+	defer userManagerMu.RUnlock()
 
 	if userId, ok := userManager.Connections[connectionId]; ok {
 		return userManager.Users[userId]
@@ -165,6 +201,7 @@ func CopyoverReconnectUser(user *UserRecord, connectionId connections.Connection
 
 	user.Character.SetAdjective(`zombie`, false)
 
+	userManagerMu.Lock()
 	if userId, ok := userManager.Usernames[user.Username]; ok {
 		if existingUser, ok := userManager.Users[userId]; ok {
 			user = existingUser
@@ -185,6 +222,7 @@ func CopyoverReconnectUser(user *UserRecord, connectionId connections.Connection
 	userManager.Usernames[user.Username] = user.UserId
 	userManager.Connections[user.connectionId] = user.UserId
 	userManager.UserConnections[user.UserId] = user.connectionId
+	userManagerMu.Unlock()
 
 	for _, mobInstId := range user.Character.GetCharmIds() {
 		if !mobs.MobInstanceExists(mobInstId) {
@@ -204,6 +242,8 @@ func LoginUser(user *UserRecord, connectionId connections.ConnectionId) (*UserRe
 
 	user.Character.SetAdjective(`zombie`, false)
 
+	userManagerMu.Lock()
+
 	// If they're already logged in
 	if userId, ok := userManager.Usernames[user.Username]; ok {
 
@@ -211,7 +251,7 @@ func LoginUser(user *UserRecord, connectionId connections.ConnectionId) (*UserRe
 		if otherConnId, ok := userManager.UserConnections[userId]; ok {
 
 			// Is it a link-dead connection? If so, lets make this new connection the owner
-			if IsLinkDeadConnection(otherConnId) {
+			if isLinkDeadConnectionLocked(otherConnId) {
 
 				mudlog.Info("LoginUser()", "LinkDead", true)
 
@@ -219,7 +259,7 @@ func LoginUser(user *UserRecord, connectionId connections.ConnectionId) (*UserRe
 					user = linkDeadUser
 				}
 
-				RemoveLinkDeadConnection(otherConnId)
+				removeLinkDeadConnectionLocked(otherConnId)
 
 				user.connectionId = connectionId
 
@@ -227,6 +267,8 @@ func LoginUser(user *UserRecord, connectionId connections.ConnectionId) (*UserRe
 				userManager.Usernames[user.Username] = user.UserId
 				userManager.Connections[user.connectionId] = user.UserId
 				userManager.UserConnections[user.UserId] = user.connectionId
+
+				userManagerMu.Unlock()
 
 				for _, mobInstId := range user.Character.GetCharmIds() {
 					if !mobs.MobInstanceExists(mobInstId) {
@@ -244,6 +286,7 @@ func LoginUser(user *UserRecord, connectionId connections.ConnectionId) (*UserRe
 
 		}
 
+		userManagerMu.Unlock()
 		// Otherwise, someone else is logged in, can't double-login!
 		return nil, "That user is already logged in.", errors.New("user is already logged in")
 	}
@@ -260,6 +303,8 @@ func LoginUser(user *UserRecord, connectionId connections.ConnectionId) (*UserRe
 	userManager.Connections[user.connectionId] = user.UserId
 	userManager.UserConnections[user.UserId] = user.connectionId
 
+	userManagerMu.Unlock()
+
 	mudlog.Info("LOGIN", "userId", user.UserId)
 
 	user.EventLog.Add(`conn`, `Connected`)
@@ -274,34 +319,52 @@ func LoginUser(user *UserRecord, connectionId connections.ConnectionId) (*UserRe
 }
 
 func SetLinkDeadUser(userId int) {
+	userManagerMu.Lock()
+	u, ok := userManager.Users[userId]
+	userManagerMu.Unlock()
 
-	if u, ok := userManager.Users[userId]; ok {
+	if !ok {
+		return
+	}
 
-		u.Character.RemoveBuff(0)
-		u.Character.SetAdjective(`zombie`, true)
+	u.Character.RemoveBuff(0)
+	u.Character.SetAdjective(`zombie`, true)
+
+	// Special case for `newbieguide` module exported function check
+	// If module was loaded, this function should exist.
+	if fn, ok := GetExportedFunction(`PlayerGuideMobId`); ok {
+		guideMobId := 0
+		if guideMobIdFn, ok := fn.(func() int); ok {
+			guideMobId = guideMobIdFn()
+		}
 
 		// Prevent guide mob dupes
 		for _, miid := range u.Character.CharmedMobs {
 			if m := mobs.GetInstance(miid); m != nil {
-				if m.MobId == 38 {
+				if m.MobId == mobs.MobId(guideMobId) && m.Character.Charmed != nil {
 					m.Character.Charmed.RoundsRemaining = 0
 				}
 			}
 		}
+	}
 
-		if _, ok := userManager.LinkDeadConnections[u.connectionId]; ok {
-			return
-		}
-
+	userManagerMu.Lock()
+	if _, ok := userManager.LinkDeadConnections[u.connectionId]; !ok {
 		u.isLinkDead = true
 		userManager.LinkDeadConnections[u.connectionId] = util.GetTurnCount()
 	}
-
+	userManagerMu.Unlock()
 }
 
 func SaveAllUsers(isAutoSave ...bool) {
-
+	userManagerMu.RLock()
+	users := make([]*UserRecord, 0, len(userManager.Users))
 	for _, u := range userManager.Users {
+		users = append(users, u)
+	}
+	userManagerMu.RUnlock()
+
+	for _, u := range users {
 		if err := SaveUser(*u, isAutoSave...); err != nil {
 			mudlog.Error("SaveAllUsers()", "error", err.Error())
 		}
@@ -312,6 +375,9 @@ func SaveAllUsers(isAutoSave ...bool) {
 func LogOutUserByConnectionId(connectionId connections.ConnectionId) error {
 
 	u := GetByConnectionId(connectionId)
+
+	userManagerMu.Lock()
+	defer userManagerMu.Unlock()
 
 	if _, ok := userManager.Connections[connectionId]; ok {
 
@@ -325,7 +391,7 @@ func LogOutUserByConnectionId(connectionId connections.ConnectionId) error {
 			delete(userManager.Connections, u.connectionId)
 			delete(userManager.UserConnections, u.UserId)
 		} else {
-			// Connection exists but user record is missing — clean up the connection entry
+			// Connection exists but user record is missing - clean up the connection entry
 			delete(userManager.Connections, connectionId)
 		}
 
@@ -351,10 +417,12 @@ func CreateUser(u *UserRecord) error {
 		return err
 	}
 
+	userManagerMu.Lock()
 	userManager.Users[u.UserId] = u
 	userManager.Usernames[u.Username] = u.UserId
 	userManager.Connections[u.connectionId] = u.UserId
 	userManager.UserConnections[u.UserId] = u.connectionId
+	userManagerMu.Unlock()
 
 	return nil
 }
@@ -381,7 +449,7 @@ func LoadUser(username string, skipValidation ...bool) (*UserRecord, error) {
 
 	userFilePath := util.FilePath(string(configs.GetFilePathsConfig().DataFiles), `/`, `users`, `/`, strconv.Itoa(userId)+`.yaml`)
 
-	userFileTxt, err := os.ReadFile(userFilePath)
+	userFileTxt, err := util.ReadFile(userFilePath)
 	if err != nil {
 		return nil, err
 	}
@@ -443,7 +511,10 @@ func SearchOfflineUsers(searchFunc func(u *UserRecord) bool) {
 			}
 
 			// If this is an online user, skip it
-			if _, ok := userManager.Usernames[uRecord.Username]; ok {
+			userManagerMu.RLock()
+			_, isOnline := userManager.Usernames[uRecord.Username]
+			userManagerMu.RUnlock()
+			if isOnline {
 				return nil
 			}
 
@@ -498,37 +569,44 @@ func ValidatePassword(pw string) error {
 	return nil
 }
 
-// searches for a character name and returns the user that owns it
-// Slow and possibly memory intensive - use strategically
+// CharacterNameSearch returns the userId and username for the given character
+// name. It consults the in-memory CharacterIndex, which is populated at startup
+// with every active character name and, when the alt-characters module is
+// loaded, with all stored alt names as well.
 func CharacterNameSearch(nameToFind string) (foundUserId int, foundUserName string) {
+	userId, found := GetCharacterIndex().Find(nameToFind)
+	if !found {
+		return 0, ``
+	}
+	foundUserName, _ = GetUserIndex().FindByUserId(userId)
+	return userId, foundUserName
+}
 
-	foundUserId = 0
-	foundUserName = ``
+// UpdateOnlineUser applies updated exported fields to the in-memory user
+// record if the user is currently online. Connection state and other
+// runtime-only fields are preserved from the live record.
+func UpdateOnlineUser(updated UserRecord) {
+	userManagerMu.Lock()
+	defer userManagerMu.Unlock()
 
-	SearchOfflineUsers(func(u *UserRecord) bool {
+	u, ok := userManager.Users[updated.UserId]
+	if !ok {
+		return
+	}
 
-		if strings.EqualFold(u.Character.Name, nameToFind) {
-			foundUserId = u.UserId
-			foundUserName = u.Username
-			return false
-		}
+	updated.connectionId = u.connectionId
+	updated.unsentText = u.unsentText
+	updated.suggestText = u.suggestText
+	updated.connectionTime = u.connectionTime
+	updated.lastInputRound = u.lastInputRound
+	updated.tempDataStore = u.tempDataStore
+	updated.activePrompt = u.activePrompt
+	updated.isLinkDead = u.isLinkDead
+	updated.inputBlocked = u.inputBlocked
+	updated.EventLog = u.EventLog
+	updated.LastMusic = u.LastMusic
 
-		// Not found? Search alts via exported function...
-
-		if fn, ok := GetExportedFunction(`AltNameSearch`); ok {
-			if altSearchFn, ok := fn.(func(int, string, string) (int, string)); ok {
-				if uid, uname := altSearchFn(u.UserId, u.Username, nameToFind); uid != 0 {
-					foundUserId = uid
-					foundUserName = uname
-					return false
-				}
-			}
-		}
-
-		return true
-	})
-
-	return foundUserId, foundUserName
+	*u = updated
 }
 
 func SaveUser(u UserRecord, isAutoSave ...bool) error {
@@ -556,7 +634,7 @@ func SaveUser(u UserRecord, isAutoSave ...bool) error {
 		saveFilePath += `.new`
 	}
 
-	err = os.WriteFile(saveFilePath, data, 0600)
+	err = util.WriteFile(saveFilePath, data, 0600)
 	if err != nil {
 		return err
 	}
@@ -616,6 +694,42 @@ func GetUniqueUserId() int {
 	highestUserId += 1
 
 	return highestUserId
+}
+
+// DeleteUser permanently removes a user record, their YAML file, and all index
+// entries. It refuses to delete a user that is currently online.
+func DeleteUser(userId int) error {
+	u, err := LoadUserById(userId)
+	if err != nil {
+		return fmt.Errorf("user %d not found: %w", userId, err)
+	}
+
+	userManagerMu.Lock()
+	defer userManagerMu.Unlock()
+
+	if _, online := userManager.Users[userId]; online {
+		return fmt.Errorf("user %d is currently online and cannot be deleted", userId)
+	}
+
+	filePath := util.FilePath(string(configs.GetFilePathsConfig().DataFiles), `/`, `users`, `/`, strconv.Itoa(userId)+`.yaml`)
+	if err := os.Remove(filePath); err != nil && !os.IsNotExist(err) {
+		return fmt.Errorf("failed to remove user file: %w", err)
+	}
+
+	idx := GetUserIndex()
+	_ = idx.RemoveByUsername(u.Username)
+
+	GetCharacterIndex().Remove(u.Character.Name)
+
+	delete(userManager.Users, userId)
+	delete(userManager.Usernames, u.Username)
+	if connId, ok := userManager.UserConnections[userId]; ok {
+		delete(userManager.Connections, connId)
+		delete(userManager.LinkDeadConnections, connId)
+	}
+	delete(userManager.UserConnections, userId)
+
+	return nil
 }
 
 func Exists(name string) bool {

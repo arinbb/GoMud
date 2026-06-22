@@ -5,12 +5,10 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/characters"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/gametime"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
-	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/users"
 	"github.com/GoMudEngine/GoMud/internal/util"
@@ -30,25 +28,28 @@ Level 4 - You are always aware of hidden players/mobs in the area
 */
 func Search(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
 
-	skillLevel := user.Character.GetSkillLevel(skills.Search)
+	skillLevel := user.Character.GetSkillLevel(`search`)
 
 	if skillLevel == 0 {
 		user.SendText("You don't know how to search.")
 		return true, fmt.Errorf("you don't know how to search")
 	}
 
-	if !user.Character.TryCooldown(skills.Search.String(), "2 rounds") {
+	if !user.Character.TryCooldown(`search`, "2 rounds") {
 		user.SendText(
-			fmt.Sprintf("You need to wait %d more rounds to use that skill again.", user.Character.GetCooldown(skills.Search.String())),
+			fmt.Sprintf("You need to wait %d more rounds to use that skill again.", user.Character.GetCooldown(`search`)),
 		)
 		return true, fmt.Errorf("you're doing that too often")
 	}
 
 	// Fire an event that a skill has been used
-	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: skills.Search, Details: ``})
+	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: `search`, Details: ``})
 
-	// 10% + 1% for every 2 smarts
+	// 10% + 1% for every 2 perception
 	searchOddsIn100 := 10 + int(math.Ceil(float64(user.Character.Stats.Perception.ValueAdj)/2))
+	if skillLevel >= 4 {
+		searchOddsIn100 *= 2
+	}
 
 	user.SendText("You snoop around for a bit...\n")
 	room.SendText(
@@ -101,7 +102,7 @@ func Search(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 				util.LogRoll(`Hidden Player`, roll, searchOddsIn100)
 
 				if roll < searchOddsIn100 {
-					if p.Character.HasBuffFlag(buffs.Hidden) {
+					if p.Character.HasBuffFlag("hidden") {
 						hiddenPlayers = append(hiddenPlayers, p.Character.Name+` <ansi fg="black-bold">(hiding)</ansi>`)
 					}
 				}
@@ -138,7 +139,7 @@ func Search(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 				util.LogRoll(`Hidden Mob`, roll, searchOddsIn100)
 
 				if roll < searchOddsIn100 {
-					if m.Character.HasBuffFlag(buffs.Hidden) {
+					if m.Character.HasBuffFlag("hidden") {
 						hiddenMobs = append(hiddenPlayers, m.Character.Name+` <ansi fg="black-bold">(hiding)</ansi>`)
 					}
 				}

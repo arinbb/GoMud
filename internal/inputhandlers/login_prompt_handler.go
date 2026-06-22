@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/connections"
-	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/mudlog"
 	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/term"
@@ -205,31 +204,41 @@ func CreatePromptHandler(steps []*PromptStep, onComplete CompletionFunc) connect
 				// Handle printable characters
 				//clientInput.Buffer = append(clientInput.Buffer, clientInput.DataIn...)
 
-				// Echo or Mask
-				if currentStep.MaskInput {
+				// Local-echo clients (Mudlet, web client) echo input themselves,
+				// so the server must not echo or emit mask characters per byte -
+				// doing so would double every character. Their masking is handled
+				// out-of-band (telnet ECHO toggling for Mudlet, TEXTMASK for the
+				// web client). Only raw telnet relies on this server-side echo.
+				cs := connections.GetClientSettings(clientInput.ConnectionId)
+				isLocalEcho := cs.IsMudlet || connections.IsWebsocket(clientInput.ConnectionId)
 
-					// Cache the mask template string if needed
-					if state.maskTemplate == "" && currentStep.MaskTemplate != "" {
+				if !isLocalEcho {
+					// Echo or Mask
+					if currentStep.MaskInput {
 
-						if maskStr, err := templates.Process(currentStep.MaskTemplate, nil); err != nil {
-							mudlog.Error("Mask template error", "template", currentStep.MaskTemplate, "error", err)
-							state.maskTemplate = "*" // Fallback mask
-						} else {
-							state.maskTemplate = templates.AnsiParse(maskStr)
+						// Cache the mask template string if needed
+						if state.maskTemplate == "" && currentStep.MaskTemplate != "" {
+
+							if maskStr, err := templates.Process(currentStep.MaskTemplate, nil); err != nil {
+								mudlog.Error("Mask template error", "template", currentStep.MaskTemplate, "error", err)
+								state.maskTemplate = "*" // Fallback mask
+							} else {
+								state.maskTemplate = templates.AnsiParse(maskStr)
+							}
+
+						} else if state.maskTemplate == "" {
+							state.maskTemplate = "*" // Default fallback if no template specified
 						}
 
-					} else if state.maskTemplate == "" {
-						state.maskTemplate = "*" // Default fallback if no template specified
-					}
+						// Send mask character(s)
+						for i := 0; i < len(clientInput.DataIn); i++ {
+							connections.SendTo([]byte(state.maskTemplate), clientInput.ConnectionId)
+						}
 
-					// Send mask character(s)
-					for i := 0; i < len(clientInput.DataIn); i++ {
-						connections.SendTo([]byte(state.maskTemplate), clientInput.ConnectionId)
+					} else {
+						// Echo input directly
+						connections.SendTo(clientInput.DataIn, clientInput.ConnectionId)
 					}
-
-				} else {
-					// Echo input directly
-					connections.SendTo(clientInput.DataIn, clientInput.ConnectionId)
 				}
 
 			}
@@ -238,12 +247,33 @@ func CreatePromptHandler(steps []*PromptStep, onComplete CompletionFunc) connect
 			return false
 		}
 
+		// Websocket clients don't get per-character echo during typing (the
+		// client only sends data on Enter), so we render the submitted input
+		// here once for visual feedback in the scrollback. For masked steps
+		// (passwords), render the mask template once per byte instead of the
+		// raw buffer — otherwise the password ends up in the main scrollback
+		// in cleartext even though the input field obscured it. (The TEXTMASK
+		// protocol only switches the input field's type, not the output stream.)
 		if connections.IsWebsocket(clientInput.ConnectionId) {
-			connections.SendTo(clientInput.Buffer, clientInput.ConnectionId) // Echo newline
+			if currentStep.MaskInput {
+				if state.maskTemplate == "" {
+					state.maskTemplate = "*"
+				}
+				for range clientInput.Buffer {
+					connections.SendTo([]byte(state.maskTemplate), clientInput.ConnectionId)
+				}
+			} else {
+				connections.SendTo(clientInput.Buffer, clientInput.ConnectionId)
+			}
 		}
 
 		// Enter Pressed: Process Input
-		connections.SendTo(term.CRLF, clientInput.ConnectionId) // Echo newline
+		// Mudlet echoes the submitted line (and its newline) locally, so a
+		// server-sent CRLF here would produce a blank line. Raw telnet
+		// (server-side echo) and the web client still need it.
+		if !connections.GetClientSettings(clientInput.ConnectionId).IsMudlet {
+			connections.SendTo(term.CRLF, clientInput.ConnectionId) // Echo newline
+		}
 		submittedInput := strings.TrimSpace(string(clientInput.Buffer))
 		clientInput.Buffer = clientInput.Buffer[:0] // Clear buffer for next input
 		state.maskTemplate = ""                     // Clear cached mask template
@@ -294,6 +324,14 @@ func CreatePromptHandler(steps []*PromptStep, onComplete CompletionFunc) connect
 			mudlog.Debug("Prompt Step Success", "step", currentStep.ID, "value", validatedValue, "connectionId", clientInput.ConnectionId)
 		}
 
+		// A masked Mudlet step just passed: withdraw the telnet ECHO mask so
+		// input is visible again. If the next step is also masked, sendPrompt
+		// re-asserts WILL ECHO; if this was the last step, this restores normal
+		// echo before gameplay begins.
+		if currentStep.MaskInput && connections.GetClientSettings(clientInput.ConnectionId).IsMudlet {
+			connections.SendTo(term.TelnetWONT(term.TELNET_OPT_ECHO), clientInput.ConnectionId)
+		}
+
 		// Advance to Next Step or Complete
 		if advanceAndSendPrompt(state, clientInput) {
 
@@ -337,19 +375,30 @@ func sendPrompt(step *PromptStep, clientInput *connections.ClientInput, results 
 	}
 
 	parsedPrompt := templates.AnsiParse(promptTxt)
-	connections.SendTo([]byte(parsedPrompt), clientInput.ConnectionId)
 
-	// Handle websocket masking command
+	// Send TEXTMASK FIRST (synchronously) so the websocket input field
+	// switches to type="password" BEFORE the prompt arrives. Previously
+	// TEXTMASK was queued via events.AddToQueue, which dispatched
+	// asynchronously after the prompt — leaving a race window where the user
+	// could type into a plaintext input field and see their password echoed
+	// on screen.
 	if connections.IsWebsocket(clientInput.ConnectionId) {
 		maskCmd := "TEXTMASK:false"
 		if step.MaskInput {
 			maskCmd = "TEXTMASK:true"
 		}
-		events.AddToQueue(events.WebClientCommand{
-			ConnectionId: clientInput.ConnectionId,
-			Text:         maskCmd,
-		})
+		connections.SendTo([]byte(maskCmd), clientInput.ConnectionId)
 	}
+
+	// Mudlet reads telnet WILL ECHO as "mask this field". Assert it for masked
+	// steps (passwords) so Mudlet hides the input; it is withdrawn (WONT ECHO)
+	// once the step validates. Sent before the prompt text so masking is active
+	// the moment the prompt appears.
+	if step.MaskInput && connections.GetClientSettings(clientInput.ConnectionId).IsMudlet {
+		connections.SendTo(term.TelnetWILL(term.TELNET_OPT_ECHO), clientInput.ConnectionId)
+	}
+
+	connections.SendTo([]byte(parsedPrompt), clientInput.ConnectionId)
 }
 
 // advanceAndSendPrompt finds the next valid step and sends its prompt.

@@ -10,6 +10,14 @@ var commandNow = 0; // Which command they are on
 
 
 
+/**
+ * Called when a user issues a command in the room.
+ * @param {string} cmd - The command issued.
+ * @param {string} rest - The arguments following the command.
+ * @param {ActorObject} user - The user issuing the command.
+ * @param {RoomObject} room - The room where the command was issued.
+ * @returns {boolean} Return true if the command was handled.
+ */
 // Generic Command Handler
 function onCommand(cmd, rest, user, room) {
 
@@ -17,7 +25,6 @@ function onCommand(cmd, rest, user, room) {
 
     teacherMob = getTeacher(room);
 
-    var extraDelay = 0;
     // Make sure they are only doing stuff that's allowed.
 
     if ( cmd == "south" && !canGoSouth ) {
@@ -25,7 +32,7 @@ function onCommand(cmd, rest, user, room) {
         ignoreCommand = true;
     }
 
-    fullCommand = cmd;
+    fullCommand = ExpandCommand(cmd);
     if ( rest.length > 0 ) {
         fullCommand = cmd + ' ' + rest;
     }
@@ -34,17 +41,13 @@ function onCommand(cmd, rest, user, room) {
         
         teacherMob.Command("say Good job!", 1.0);
 
-        extraDelay = 1.0;
-
         if ( cmd == "equip stick" ) {
-            teacherMob.Command('say Check it out! If you type <ansi fg="command">status</ansi> you\'ll see the stick is equipped!', 2.0);
-            extraDelay = 2.0;
+            teacherMob.Command('say Check it out! If you type <ansi fg="command">status</ansi> you\'ll see the stick is equipped!', 1.0);
         }
 
         if ( cmd == "inventory" ) {
-            teacherMob.Command('say Hmm, it doesn\'t look like you\'re carrying much other than that sharp stick.', 2.0);
-            teacherMob.Command('say Remember, you can <ansi fg="command">look</ansi> at stuff you\'re carrying any time you want.', 3.0);
-            extraDelay = 3.0;
+            teacherMob.Command('say Hmm, it doesn\'t look like you\'re carrying much other than that sharp stick.', 1.0);
+            teacherMob.Command('say Remember, you can <ansi fg="command">look</ansi> at stuff you\'re carrying any time you want.', 1.0);
         }
 
         commandNow++;
@@ -70,14 +73,14 @@ function onCommand(cmd, rest, user, room) {
                 user.GiveItem(itm);
             }
             
-            teacherMob.Command('say Go ahead and equip that sharp stick you\'ve got. Type <ansi fg="command">equip stick</ansi>.', extraDelay+1.0);
+            teacherMob.Command('say Go ahead and equip that sharp stick you\'ve got. Type <ansi fg="command">equip stick</ansi>.', 1.0);
             break;
         case 1:
 
             getDummy(room);
 
-            teacherMob.Command('say You may have noticed the <ansi fg="mobname">training dummy</ansi> here.', extraDelay+1.0);
-            teacherMob.Command('say Go ahead and engage in combat by typing <ansi fg="command">attack dummy</ansi>.', extraDelay+2.0);
+            teacherMob.Command('say You may have noticed the <ansi fg="mobname">training dummy</ansi> here.', 1.0);
+            teacherMob.Command('say Go ahead and engage in combat by typing <ansi fg="command">attack dummy</ansi>. Don\'t worry, it can\'t hurt you.', 1.0);
             break;
         case 2:
             // teacherMob.Command('say Head <ansi fg="exit">west</ansi> to complete your training.');
@@ -92,6 +95,12 @@ function onCommand(cmd, rest, user, room) {
 
 
 
+/**
+ * Called when a user enters the room.
+ * @param {ActorObject} user - The user entering the room.
+ * @param {RoomObject} room - The room being entered.
+ * @returns {boolean} Return false to suppress the automatic look.
+ */
 // If there is no book here, add the book item
 function onEnter(user, room) {
     room.SetLocked("north", true);
@@ -110,11 +119,17 @@ function onEnter(user, room) {
         user.GiveItem(itm);
     }
 
-    teacherMob.Command('say Go ahead and equip that sharp stick you\'ve got. Type <ansi fg="command">equip stick</ansi>.', 2.0);
+    teacherMob.Command('say Go ahead and equip that sharp stick you\'ve got. Type <ansi fg="command">equip stick</ansi>.', 1.0);
 
     return true;
 }
 
+/**
+ * Called when a user exits the room.
+ * @param {ActorObject} user - The user exiting the room.
+ * @param {RoomObject} room - The room being exited.
+ * @returns {boolean} Return true if the event was handled.
+ */
 function onExit(user , room) {
     // Destroy the guide (cleanup)
     destroyTeacher(room);
@@ -123,6 +138,11 @@ function onExit(user , room) {
     commandNow = 0;
 }
 
+/**
+ * Called when the room first loads.
+ * @param {RoomObject} room - The room that loaded.
+ * @returns {void}
+ */
 function onLoad(room) {
     canGoSouth = false;
     commandNow = 0;

@@ -30,6 +30,9 @@ var (
 	configDataLock       sync.RWMutex
 	ErrInvalidConfigName = errors.New("invalid config name")
 	ErrLockedConfig      = errors.New("config name is locked")
+	ErrRedactedValue     = errors.New("cannot save a redacted placeholder as a config value")
+
+	onChangedCallbacks []func(key string)
 )
 
 type Config struct {
@@ -47,7 +50,6 @@ type Config struct {
 	Scripting    Scripting    `yaml:"Scripting"`
 	SpecialRooms SpecialRooms `yaml:"SpecialRooms"`
 	Validation   Validation   `yaml:"Validation"`
-	Roles        Roles        `yaml:"Roles"`
 	// Plugins is a special case
 	Modules Modules `yaml:"Modules"`
 
@@ -62,13 +64,25 @@ func AddOverlayOverrides(dotMap map[string]any) error {
 	configDataLock.Lock()
 	defer configDataLock.Unlock()
 
+	// Only register type/key lookups for every key in the overlay, but only
+	// write values for keys that have not already been set by a user override
+	// (e.g. config-overrides.yaml). This ensures module defaults never clobber
+	// operator-supplied values.
+	newKeys := map[string]any{}
+	flatOverrides := Flatten(overrides)
 	for k, v := range dotMap {
 		addKeyLookups(keyLookups, k)
 		typeLookups[k] = reflect.TypeOf(v).String()
-		overrides[k] = v
+		if _, alreadySet := flatOverrides[k]; !alreadySet {
+			overrides[k] = v
+			newKeys[k] = v
+		}
 	}
 
-	return configData.OverlayOverrides(dotMap)
+	if len(newKeys) == 0 {
+		return nil
+	}
+	return configData.OverlayOverrides(newKeys)
 }
 
 // OverlayDotMap overlays values from a dot-syntax map onto the Config.
@@ -143,11 +157,34 @@ func (c *Config) buildDotPaths(v reflect.Value, prefix string, result map[string
 			if prefix != "" {
 				newPrefix = prefix + "." + keyStr
 			}
-			c.buildDotPaths(v.MapIndex(key), newPrefix, result)
+			mapVal := v.MapIndex(key)
+			// Unwrap interface values so the underlying kind is visible.
+			if mapVal.Kind() == reflect.Interface {
+				mapVal = mapVal.Elem()
+			}
+			// YAML unmarshaling produces map[interface{}]interface{} for nested
+			// maps. Convert those to map[string]any so they are JSON-encodable.
+			if mapVal.IsValid() && mapVal.Kind() == reflect.Map && mapVal.Type().Key().Kind() == reflect.Interface {
+				converted := make(map[string]any)
+				for _, mk := range mapVal.MapKeys() {
+					converted[fmt.Sprintf("%v", mk.Interface())] = mapVal.MapIndex(mk).Interface()
+				}
+				mapVal = reflect.ValueOf(converted)
+			}
+			c.buildDotPaths(mapVal, newPrefix, result)
 		}
 	default:
 		// For non-struct fields, store the value using the accumulated prefix.
-		result[prefix] = v.Interface()
+		// Preserve typed config values so that typeLookups records the correct
+		// type name (e.g. "configs.ConfigSliceString") and SetVal can round-trip
+		// them. Only sanitize values that are not already a known config type.
+		if cs, ok := v.Interface().(ConfigSliceString); ok {
+			result[prefix] = cs
+		} else {
+			// Sanitize to ensure all values are JSON-encodable (YAML unmarshaling
+			// can produce map[interface{}]interface{} inside slices and nested maps).
+			result[prefix] = sanitizeForJSON(v.Interface())
+		}
 	}
 }
 
@@ -195,7 +232,6 @@ func (c *Config) Validate() {
 	c.SpecialRooms.Validate()
 	c.Validation.Validate()
 	c.Modules.Validate()
-	c.Roles.Validate()
 
 	// nothing to do with LootGoblinIncludeRecentRooms
 
@@ -294,7 +330,17 @@ func (c Config) AllConfigData(excludeStrings ...string) map[string]any {
 	return finalOutput
 }
 
+// OnChanged registers a callback that is invoked after SetVal successfully
+// applies a config change. The callback receives the full dot-path key.
+func OnChanged(fn func(key string)) {
+	onChangedCallbacks = append(onChangedCallbacks, fn)
+}
+
 func SetVal(propertyPath string, newVal string) error {
+
+	if newVal == RedactedValue {
+		return ErrRedactedValue
+	}
 
 	configDataLock.Lock()
 	defer configDataLock.Unlock()
@@ -331,6 +377,11 @@ func SetVal(propertyPath string, newVal string) error {
 	}
 
 	configData.Validate()
+
+	for _, fn := range onChangedCallbacks {
+		fn(propertyPath)
+	}
+
 	return nil
 }
 
@@ -355,9 +406,9 @@ func overridePathNoLock() string {
 
 func ReloadConfig() error {
 
-	configPath := util.FilePath(`_datafiles/config.yaml`)
+	configPath := `_datafiles/config.yaml`
 
-	bytes, err := os.ReadFile(configPath)
+	bytes, err := util.ReadFile(configPath)
 	if err != nil {
 		return err
 	}
@@ -389,7 +440,7 @@ func ReloadConfig() error {
 
 			mudlog.Info("ReloadConfig()", "Loading overrides", true)
 
-			overrideBytes, err := os.ReadFile(util.FilePath(ovrPath))
+			overrideBytes, err := util.ReadFile(ovrPath)
 			if err != nil {
 				return err
 			}
@@ -457,6 +508,33 @@ func FindFullPath(inputKey string) (properKey string, typeName string) {
 // Usage: configs.GetSecret(c.DiscordWebhookUrl)
 func GetSecret(v ConfigSecret) string {
 	return string(v)
+}
+
+// sanitizeForJSON recursively converts map[interface{}]interface{} (produced
+// by YAML unmarshaling) to map[string]any so that values stored in AllConfigData
+// are always JSON-encodable.
+func sanitizeForJSON(v any) any {
+	switch val := v.(type) {
+	case map[interface{}]interface{}:
+		out := make(map[string]any, len(val))
+		for k, mv := range val {
+			out[fmt.Sprintf("%v", k)] = sanitizeForJSON(mv)
+		}
+		return out
+	case map[string]any:
+		out := make(map[string]any, len(val))
+		for k, mv := range val {
+			out[k] = sanitizeForJSON(mv)
+		}
+		return out
+	case []any:
+		out := make([]any, len(val))
+		for i, elem := range val {
+			out[i] = sanitizeForJSON(elem)
+		}
+		return out
+	}
+	return v
 }
 
 // flatten recursively flattens a map[string]any.

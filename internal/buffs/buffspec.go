@@ -23,7 +23,7 @@ const (
 var (
 	buffs map[int]*BuffSpec = make(map[int]*BuffSpec)
 
-	validationCalculator = gametime.GetDate(validationRound)
+	validationCalculator gametime.GameDate
 )
 
 type BuffSpec struct {
@@ -36,7 +36,7 @@ type BuffSpec struct {
 	RoundInterval int               `yaml:"roundinterval,omitempty"` // triggers every x rounds
 	TriggerCount  int               `yaml:"triggercount,omitempty"`  // How many times it triggers before it is removed
 	StatMods      statmods.StatMods `yaml:"statmods,omitempty"`      // stat mods for the duration of the buff
-	Flags         []Flag            `yaml:"flags,omitempty"`         // A list of actions and such that this buff prevents or enables
+	Flags         []string          `yaml:"flags,omitempty"`         // A list of actions and such that this buff prevents or enables
 }
 
 // Calculates the value of this buff
@@ -129,6 +129,10 @@ func (b *BuffSpec) Validate() error {
 		b.TriggerCount = int(configs.GetNetworkConfig().LogoutRounds)
 	}
 
+	if validationCalculator.RoundNumber == 0 {
+		validationCalculator = gametime.GetDate(validationRound)
+	}
+
 	b.RoundInterval = int(validationCalculator.AddPeriod(b.TriggerRate) - validationRound)
 
 	if b.TriggerCount < 1 {
@@ -137,6 +141,14 @@ func (b *BuffSpec) Validate() error {
 	if b.RoundInterval < 1 {
 		return fmt.Errorf("buffId %d (%s) has a RoundInterval of < 1, must be at least 1. Is %s a valid time string?", b.BuffId, b.Name, b.TriggerRate)
 	}
+
+	// Lenient: warn on unknown flags but do not reject the buff.
+	for _, flag := range b.Flags {
+		if !IsValidFlag(flag) {
+			mudlog.Warn("buffSpec.Validate()", "buffId", b.BuffId, "flag", flag, "error", "unknown buff flag")
+		}
+	}
+
 	return nil
 }
 
@@ -151,10 +163,15 @@ func (b *BuffSpec) Filepath() string {
 
 func (b *BuffSpec) GetScript() string {
 
+	// Check plugin-registered scripts first.
+	if script := getPluginScript(b.BuffId); script != `` {
+		return script
+	}
+
 	scriptPath := b.GetScriptPath()
 	// Load the script into a string
 	if _, err := os.Stat(scriptPath); err == nil {
-		if bytes, err := os.ReadFile(scriptPath); err == nil {
+		if bytes, err := util.ReadFile(scriptPath); err == nil {
 			return string(bytes)
 		}
 	}
@@ -163,17 +180,8 @@ func (b *BuffSpec) GetScript() string {
 }
 
 func (b *BuffSpec) GetScriptPath() string {
-	// Load any script for the buff
-
-	buffFilePath := b.Filename()
-	scriptFilePath := strings.Replace(buffFilePath, `.yaml`, `.js`, 1)
-
-	fullScriptPath := strings.Replace(string(configs.GetFilePathsConfig().DataFiles)+`/buffs/`+b.Filepath(),
-		buffFilePath,
-		scriptFilePath,
-		1)
-
-	return util.FilePath(fullScriptPath)
+	// Load any script for the buff (prefers .js, falls back to .lua)
+	return util.ResolveScriptPath(string(configs.GetFilePathsConfig().DataFiles) + `/buffs/` + b.Filepath())
 }
 
 // file self loads due to init()
@@ -187,6 +195,10 @@ func LoadDataFiles() {
 	}
 
 	buffs = tmpBuffs
+
+	// Merge buffs from plugin file systems. Must happen here (not deferred)
+	// so plugin buffs are present before items load and compute their values.
+	loadPluginBuffs(buffs)
 
 	mudlog.Info("buffSpec.LoadDataFiles()", "loadedCount", len(buffs), "Time Taken", time.Since(start))
 }

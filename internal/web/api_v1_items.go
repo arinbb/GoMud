@@ -5,8 +5,59 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/GoMudEngine/GoMud/internal/combat"
 	"github.com/GoMudEngine/GoMud/internal/items"
+	"github.com/GoMudEngine/GoMud/internal/scripting"
 )
+
+// GET /admin/api/v1/items/ranks/weapons
+// Returns weapon rankings computed by the combat engine against a neutral
+// equal-stat opponent. Three sorted views are returned: by raw DPS, by
+// adjusted DPS (two-handed and wait-round penalties applied), and by max
+// single-hit damage.
+func apiV1GetItemRanksWeapons(w http.ResponseWriter, r *http.Request) {
+	byDPS, byAdjDPS, byMaxDmg := combat.RankWeapons()
+	writeJSON(w, http.StatusOK, APIResponse[map[string]any]{
+		Success: true,
+		Data: map[string]any{
+			"by_dps":     byDPS,
+			"by_adj_dps": byAdjDPS,
+			"by_max_dmg": byMaxDmg,
+		},
+	})
+}
+
+// GET /admin/api/v1/items/ranks/armor
+// Returns armor rankings. Three sorted views are returned: by defense rating,
+// by adjusted defense (accounting for shield multiplier), and by unified
+// eHP-equivalent score (defense + stat weights + buffs).
+func apiV1GetItemRanksArmor(w http.ResponseWriter, r *http.Request) {
+	byDefense, byAdjDefense, byScore := combat.RankArmor()
+	writeJSON(w, http.StatusOK, APIResponse[map[string]any]{
+		Success: true,
+		Data: map[string]any{
+			"by_defense":     byDefense,
+			"by_adj_defense": byAdjDefense,
+			"by_score":       byScore,
+		},
+	})
+}
+
+// GET /admin/api/v1/items/equip-slots
+// Returns the ordered list of equipment slot names as strings, sourced from
+// items.AllEquipSlots(). Admin pages use this to build slot UIs dynamically
+// so they do not need to hard-code the slot list.
+func apiV1GetEquipSlots(w http.ResponseWriter, r *http.Request) {
+	slots := items.AllEquipSlots()
+	names := make([]string, len(slots))
+	for i, s := range slots {
+		names[i] = string(s)
+	}
+	writeJSON(w, http.StatusOK, APIResponse[[]string]{
+		Success: true,
+		Data:    names,
+	})
+}
 
 // GET /admin/api/v1/items/types
 func apiV1GetItemTypes(w http.ResponseWriter, r *http.Request) {
@@ -30,6 +81,8 @@ func apiV1GetItemAttackMessages(w http.ResponseWriter, r *http.Request) {
 type itemListEntry struct {
 	items.ItemSpec
 	HasScript bool `json:"HasScript"`
+	BuffCount int  `json:"BuffCount"`
+	BuffValue int  `json:"BuffValue"`
 }
 
 // GET /admin/api/v1/items
@@ -37,9 +90,12 @@ func apiV1GetItems(w http.ResponseWriter, r *http.Request) {
 	specs := items.GetAllItemSpecs()
 	result := make([]itemListEntry, len(specs))
 	for i, s := range specs {
+		buffCount, buffValue := items.GetBuffSummary(s.ItemId)
 		result[i] = itemListEntry{
 			ItemSpec:  s,
 			HasScript: s.GetScript() != "",
+			BuffCount: buffCount,
+			BuffValue: buffValue,
 		}
 	}
 	writeJSON(w, http.StatusOK, APIResponse[[]itemListEntry]{
@@ -110,6 +166,11 @@ func apiV1PatchItem(w http.ResponseWriter, r *http.Request) {
 
 	// Decode into a copy so we only apply supplied fields.
 	updated := *existing
+	// Nil out map fields that must be fully replaced (not merged) by the JSON
+	// decode. Go's json.Decoder merges into existing maps, so without this a
+	// stat mod removed in the editor (omitted from the payload) would keep its
+	// old value and reappear on reload.
+	updated.StatMods = nil
 	if err := json.NewDecoder(r.Body).Decode(&updated); err != nil {
 		writeAPIError(w, http.StatusBadRequest, "malformed request body: "+err.Error())
 		return
@@ -161,7 +222,7 @@ func apiV1GetItemScript(w http.ResponseWriter, r *http.Request) {
 
 	writeJSON(w, http.StatusOK, APIResponse[map[string]string]{
 		Success: true,
-		Data:    map[string]string{"script": spec.GetScript()},
+		Data:    map[string]string{"script": spec.GetScript(), "lang": scriptLangString(spec.GetScriptPath())},
 	})
 }
 
@@ -185,6 +246,39 @@ func apiV1PutItemAttackMessage(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if err := items.AddAttackMessage(subtype, intensity, proximity, target, body.Message); err != nil {
+		writeAPIError(w, http.StatusBadRequest, err.Error())
+		return
+	}
+
+	writeJSON(w, http.StatusOK, APIResponse[struct{}]{Success: true})
+}
+
+// PATCH /admin/api/v1/items/attack-messages/{subtype}/{intensity}/{proximity}/{target}/{index}
+func apiV1PatchItemAttackMessage(w http.ResponseWriter, r *http.Request) {
+	subtype := items.ItemSubType(r.PathValue("subtype"))
+	intensity := items.Intensity(r.PathValue("intensity"))
+	proximity := r.PathValue("proximity")
+	target := r.PathValue("target")
+
+	index, err := strconv.Atoi(r.PathValue("index"))
+	if err != nil {
+		writeAPIError(w, http.StatusBadRequest, "invalid index: "+r.PathValue("index"))
+		return
+	}
+
+	var body struct {
+		Message string `json:"message"`
+	}
+	if err := json.NewDecoder(r.Body).Decode(&body); err != nil {
+		writeAPIError(w, http.StatusBadRequest, "malformed request body: "+err.Error())
+		return
+	}
+	if body.Message == "" {
+		writeAPIError(w, http.StatusBadRequest, "message is required")
+		return
+	}
+
+	if err := items.UpdateAttackMessage(subtype, intensity, proximity, target, index, body.Message); err != nil {
 		writeAPIError(w, http.StatusBadRequest, err.Error())
 		return
 	}
@@ -223,16 +317,19 @@ func apiV1PutItemScript(w http.ResponseWriter, r *http.Request) {
 
 	var body struct {
 		Script string `json:"script"`
+		Lang   string `json:"lang"`
 	}
 	if err := json.NewDecoder(r.Body).Decode(&body); err != nil {
 		writeAPIError(w, http.StatusBadRequest, "malformed request body: "+err.Error())
 		return
 	}
 
-	if err := items.SaveItemScript(itemId, body.Script); err != nil {
+	if err := items.SaveItemScript(itemId, body.Script, body.Lang); err != nil {
 		writeAPIError(w, http.StatusInternalServerError, err.Error())
 		return
 	}
+
+	scripting.InvalidateItemVM(itemId)
 
 	writeJSON(w, http.StatusOK, APIResponse[struct{}]{Success: true})
 }

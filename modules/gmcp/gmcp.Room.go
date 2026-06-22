@@ -5,7 +5,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/mapper"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
@@ -61,7 +60,7 @@ func (g *GMCPRoomModule) itemOwnershipHandler(e events.Event) events.ListenerRet
 		return events.Continue
 	}
 
-	// Only care about player ownership changes — look up their room
+	// Only care about player ownership changes - look up their room
 	if evt.UserId == 0 {
 		return events.Continue
 	}
@@ -342,7 +341,7 @@ func (g *GMCPRoomModule) GetRoomNode(user *users.UserRecord, gmcpModule string) 
 				continue
 			}
 
-			if u.Character.HasBuffFlag(buffs.Hidden) {
+			if u.Character.HasBuffFlag("hidden") {
 				continue
 			}
 
@@ -370,7 +369,7 @@ func (g *GMCPRoomModule) GetRoomNode(user *users.UserRecord, gmcpModule string) 
 				continue
 			}
 
-			if mob.Character.HasBuffFlag(buffs.Hidden) {
+			if mob.Character.HasBuffFlag("hidden") {
 				continue
 			}
 
@@ -413,19 +412,23 @@ func (g *GMCPRoomModule) GetRoomNode(user *users.UserRecord, gmcpModule string) 
 		payload.Id = room.RoomId
 		payload.Name = room.Title
 		payload.Area = room.Zone
-		payload.Environment = room.GetBiome().Name
+		payload.Environment = room.GetBiome().BiomeId
 		payload.MapSymbol = room.GetMapSymbol()
 		payload.MapLegend = room.MapLegend
 		payload.Details = []string{}
 
 		// Coordinates
 		payload.Coordinates = room.Zone
-		m := mapper.GetMapper(room.RoomId)
-		x, y, z, err := m.GetCoordinates(room.RoomId)
-		if err != nil {
-			payload.Coordinates += `, 999999999999999999, 999999999999999999, 999999999999999999`
+		if room.HasCoordinates {
+			payload.Coordinates += `, ` + strconv.Itoa(room.MapX) + `, ` + strconv.Itoa(room.MapY) + `, ` + strconv.Itoa(room.MapZ)
 		} else {
-			payload.Coordinates += `, ` + strconv.Itoa(x) + `, ` + strconv.Itoa(y) + `, ` + strconv.Itoa(z)
+			m := mapper.GetMapper(room.RoomId)
+			x, y, z, err := m.GetCoordinates(room.RoomId)
+			if err != nil {
+				payload.Coordinates += `, 999999999999999999, 999999999999999999, 999999999999999999`
+			} else {
+				payload.Coordinates += `, ` + strconv.Itoa(x) + `, ` + strconv.Itoa(y) + `, ` + strconv.Itoa(z)
+			}
 		}
 
 		// set exits
@@ -500,7 +503,7 @@ func (g *GMCPRoomModule) GetRoomNode(user *users.UserRecord, gmcpModule string) 
 			payload.Details = append(payload.Details, `pvp`)
 		}
 
-		for _, tag := range room.Tags {
+		for _, tag := range room.GetTags() {
 			payload.Details = append(payload.Details, tag)
 		}
 

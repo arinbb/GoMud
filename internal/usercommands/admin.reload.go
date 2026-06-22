@@ -3,10 +3,12 @@ package usercommands
 import (
 	"strings"
 
+	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/language"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
+	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/users"
 )
@@ -30,6 +32,13 @@ func Reload(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 	case `biomes`:
 		rooms.LoadBiomeDataFiles()
 		user.SendText(`Biomes reloaded.`)
+	case `buffs-flags`:
+		buffs.LoadFlagDataFiles()
+		user.SendText(`Buff flags reloaded.`)
+	case `skills`:
+		skills.LoadDataFiles()
+		skills.LoadProfessionDataFiles()
+		user.SendText(`Skills and professions reloaded.`)
 	case `translations`:
 		ok := language.ReloadTranslation()
 		if !ok {

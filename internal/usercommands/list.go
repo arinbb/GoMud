@@ -8,6 +8,7 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/characters"
 	"github.com/GoMudEngine/GoMud/internal/colorpatterns"
+	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
@@ -20,6 +21,24 @@ import (
 )
 
 func List(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
+
+	shopTemplate := "tables/shoplist"
+	if opt := user.GetConfigOption(`shopstyle`); opt != nil {
+		if style, ok := opt.(string); ok {
+			switch style {
+			case "fancy":
+				shopTemplate = "tables/shoplist-fancy"
+			case "minimal":
+				shopTemplate = "tables/shoplist-minimal"
+			case "grid":
+				shopTemplate = "tables/shoplist-grid"
+			case "arcane":
+				shopTemplate = "tables/shoplist-arcane"
+			case "rugged":
+				shopTemplate = "tables/shoplist-rugged"
+			}
+		}
+	}
 
 	listedSomething := false
 
@@ -51,12 +70,19 @@ func List(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 
 		listedSomething = true
 
+		shopReq := OnShopList.Fire(ShopListRequest{
+			Stock:     mob.Character.Shop.GetInstock(),
+			Buyer:     user,
+			SellerMob: mob,
+			Room:      room,
+		})
+
 		itemsAvailable := characters.Shop{}
 		mercsAvailable := characters.Shop{}
 		buffsAvailable := characters.Shop{}
 		petsAvailable := characters.Shop{}
 
-		for _, saleItem := range mob.Character.Shop.GetInstock() {
+		for _, saleItem := range shopReq.Stock {
 
 			if saleItem.ItemId > 0 {
 				itemsAvailable = append(itemsAvailable, saleItem)
@@ -152,7 +178,7 @@ func List(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 			})
 
 			saleItemsData := templates.GetTable(fmt.Sprintf(`%s by <ansi fg="mobname">%s</ansi>`, colorpatterns.ApplyColorPattern(`Items available`, `cyan`), mob.Character.Name), headers, rows)
-			tplTxt, _ := templates.Process("tables/shoplist", saleItemsData, user.UserId, user.UserId)
+			tplTxt, _ := templates.Process(shopTemplate, saleItemsData, user.UserId, user.UserId)
 			user.SendText(tplTxt)
 			user.SendText(fmt.Sprintf(`To buy something, type: <ansi fg="command">buy [name]</ansi>%s`, term.CRLFStr))
 		}
@@ -198,7 +224,7 @@ func List(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 
 				price := stockMerc.Price
 				if price == 0 {
-					price = 250 * mobInfo.Character.Level
+					price = int(configs.GetGamePlayConfig().MercHirePricePerLevel) * mobInfo.Character.Level
 				} else if price < 0 {
 					price = 0
 				}
@@ -238,7 +264,7 @@ func List(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 			})
 
 			saleItemsData := templates.GetTable(fmt.Sprintf(`%s by <ansi fg="mobname">%s</ansi>`, colorpatterns.ApplyColorPattern(`Mercenaries for hire`, `flame`), mob.Character.Name), headers, rows)
-			tplTxt, _ := templates.Process("tables/shoplist", saleItemsData, user.UserId, user.UserId)
+			tplTxt, _ := templates.Process(shopTemplate, saleItemsData, user.UserId, user.UserId)
 			user.SendText(tplTxt)
 			user.SendText(fmt.Sprintf(`To Hire a merc, type: <ansi fg="command">hire [name]</ansi>%s`, term.CRLFStr))
 		}
@@ -311,7 +337,7 @@ func List(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 			})
 
 			saleItemsData := templates.GetTable(fmt.Sprintf(`%s by <ansi fg="mobname">%s</ansi>`, colorpatterns.ApplyColorPattern(`Enchantments`, `rainbow`), mob.Character.Name), headers, rows)
-			tplTxt, _ := templates.Process("tables/shoplist", saleItemsData, user.UserId, user.UserId)
+			tplTxt, _ := templates.Process(shopTemplate, saleItemsData, user.UserId, user.UserId)
 			user.SendText(tplTxt)
 			user.SendText(fmt.Sprintf(`To buy an enchantment, type: <ansi fg="command">buy [name]</ansi>%s`, term.CRLFStr))
 		}
@@ -390,10 +416,12 @@ func List(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 			})
 
 			saleItemsData := templates.GetTable(fmt.Sprintf(`%s by <ansi fg="mobname">%s</ansi>`, colorpatterns.ApplyColorPattern(`Pets`, `turquoise`), mob.Character.Name), headers, rows)
-			tplTxt, _ := templates.Process("tables/shoplist", saleItemsData, user.UserId, user.UserId)
+			tplTxt, _ := templates.Process(shopTemplate, saleItemsData, user.UserId, user.UserId)
 			user.SendText(tplTxt)
 			user.SendText(fmt.Sprintf(`To buy a pet, type: <ansi fg="command">buy [name]</ansi>%s`, term.CRLFStr))
 		}
+
+		OnShopListRendered.Fire(shopReq)
 	}
 
 	for _, uid := range room.GetPlayers(rooms.FindMerchant) {
@@ -413,12 +441,19 @@ func List(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 
 		listedSomething = true
 
+		shopReq := OnShopList.Fire(ShopListRequest{
+			Stock:      shopUser.Character.Shop.GetInstock(),
+			Buyer:      user,
+			SellerUser: shopUser,
+			Room:       room,
+		})
+
 		itemsAvailable := characters.Shop{}
 		mercsAvailable := characters.Shop{}
 		buffsAvailable := characters.Shop{}
 		petsAvailable := characters.Shop{}
 
-		for _, saleItem := range shopUser.Character.Shop.GetInstock() {
+		for _, saleItem := range shopReq.Stock {
 
 			if saleItem.ItemId > 0 {
 				itemsAvailable = append(itemsAvailable, saleItem)
@@ -516,7 +551,7 @@ func List(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 			})
 
 			saleItemsData := templates.GetTable(fmt.Sprintf(`%s by <ansi fg="username">%s</ansi>`, colorpatterns.ApplyColorPattern(`Items available`, `cyan`), shopUser.Character.Name), headers, rows)
-			tplTxt, _ := templates.Process("tables/shoplist", saleItemsData, user.UserId, user.UserId)
+			tplTxt, _ := templates.Process(shopTemplate, saleItemsData, user.UserId, user.UserId)
 			user.SendText(tplTxt)
 			user.SendText(fmt.Sprintf(`To buy something, type: <ansi fg="command">buy [name]</ansi>%s`, term.CRLFStr))
 		}
@@ -563,7 +598,7 @@ func List(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 
 				price := stockMerc.Price
 				if price == 0 {
-					price = 250 * mobInfo.Character.Level
+					price = int(configs.GetGamePlayConfig().MercHirePricePerLevel) * mobInfo.Character.Level
 				} else if price < 0 {
 					price = 0
 				}
@@ -603,7 +638,7 @@ func List(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 			})
 
 			saleItemsData := templates.GetTable(fmt.Sprintf(`%s by <ansi fg="username">%s</ansi>`, colorpatterns.ApplyColorPattern(`Mercenaries for hire`, `flame`), shopUser.Character.Name), headers, rows)
-			tplTxt, _ := templates.Process("tables/shoplist", saleItemsData, user.UserId, user.UserId)
+			tplTxt, _ := templates.Process(shopTemplate, saleItemsData, user.UserId, user.UserId)
 			user.SendText(tplTxt)
 			user.SendText(fmt.Sprintf(`To Hire a merc, type: <ansi fg="command">hire [name]</ansi>%s`, term.CRLFStr))
 		}
@@ -676,7 +711,7 @@ func List(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 			})
 
 			saleItemsData := templates.GetTable(fmt.Sprintf(`%s by <ansi fg="username">%s</ansi>`, colorpatterns.ApplyColorPattern(`Enchantments`, `rainbow`), shopUser.Character.Name), headers, rows)
-			tplTxt, _ := templates.Process("tables/shoplist", saleItemsData, user.UserId, user.UserId)
+			tplTxt, _ := templates.Process(shopTemplate, saleItemsData, user.UserId, user.UserId)
 			user.SendText(tplTxt)
 			user.SendText(fmt.Sprintf(`To buy an enchantment, type: <ansi fg="command">buy [name]</ansi>%s`, term.CRLFStr))
 		}
@@ -756,11 +791,12 @@ func List(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 			})
 
 			saleItemsData := templates.GetTable(fmt.Sprintf(`%s by <ansi fg="username">%s</ansi>`, colorpatterns.ApplyColorPattern(`Pets`, `turquoise`), user.Character.Name), headers, rows)
-			tplTxt, _ := templates.Process("tables/shoplist", saleItemsData, user.UserId, user.UserId)
+			tplTxt, _ := templates.Process(shopTemplate, saleItemsData, user.UserId, user.UserId)
 			user.SendText(tplTxt)
 			user.SendText(fmt.Sprintf(`To buy a pet, type: <ansi fg="command">buy [name]</ansi>%s`, term.CRLFStr))
 		}
 
+		OnShopListRendered.Fire(shopReq)
 	}
 
 	if !listedSomething {

@@ -1,18 +1,17 @@
 package scripting
 
 import (
-	"errors"
 	"fmt"
+	"os"
 	"time"
 
 	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/colorpatterns"
 	"github.com/GoMudEngine/GoMud/internal/mudlog"
-	"github.com/dop251/goja"
 )
 
 var (
-	buffVMCache       = make(map[int]*VMWrapper)
+	buffVMCache       = make(map[int]scriptVM)
 	scriptBuffTimeout = 50 * time.Millisecond
 )
 
@@ -20,8 +19,16 @@ func ClearBuffVMs() {
 	clear(buffVMCache)
 }
 
+// PruneBuffVMs is intentionally a no-op. Buff VMs are keyed by buff spec ID
+// and are not tied to any instance lifecycle.
 func PruneBuffVMs(instanceIds ...int) {
-	// Do not prune, they dont' get a VM per buff instance.
+}
+
+// InvalidateBuffVM removes the cached VM for a buff spec so the next call
+// reloads the script from disk. Call this after saving a buff script via the
+// admin API.
+func InvalidateBuffVM(buffId int) {
+	delete(buffVMCache, buffId)
 }
 
 func TryBuffScriptEvent(eventName string, userId int, mobInstanceId int, buffId int) (bool, error) {
@@ -44,36 +51,17 @@ func TryBuffScriptEvent(eventName string, userId int, mobInstanceId int, buffId 
 		userTextWrap.Set(`buff-text`, ``, `cyan`, colorpatterns.Stretch)
 		roomTextWrap.Set(`buff-text`, ``, `cyan`, colorpatterns.Stretch)
 
-		tmr := time.AfterFunc(scriptRoomTimeout, func() {
-			vmw.VM.Interrupt(errTimeout)
-		})
-
-		res, err := onCommandFunc(goja.Undefined(),
-			vmw.VM.ToValue(actorInfo),
-			vmw.VM.ToValue(buffTriggersLeft),
+		res, err := runCallable(vmw, scriptBuffTimeout, onCommandFunc,
+			vmw.ToValue(actorInfo),
+			vmw.ToValue(buffTriggersLeft),
 		)
-		vmw.VM.ClearInterrupt()
-		tmr.Stop()
 
 		// Reset forced ansi tag wrappers
 		userTextWrap.Reset()
 		roomTextWrap.Reset()
 
 		if err != nil {
-
-			// Wrap the error
-			finalErr := fmt.Errorf("%s(): %w", eventName, err)
-
-			if _, ok := finalErr.(*goja.Exception); ok {
-				mudlog.Error("JSVM", "exception", finalErr)
-				return false, finalErr
-			} else if errors.Is(finalErr, errTimeout) {
-				mudlog.Error("JSVM", "interrupted", finalErr)
-				return false, finalErr
-			}
-
-			mudlog.Error("JSVM", "error", finalErr)
-			return false, finalErr
+			return false, fmt.Errorf("%s(): %w", eventName, err)
 		}
 
 		if boolVal, ok := res.Export().(bool); ok {
@@ -101,32 +89,13 @@ func TryBuffCommand(cmd string, rest string, userId int, mobInstanceId int, buff
 
 	if onCommandFunc, ok := vmw.GetFunction(`onCommand_` + cmd); ok {
 
-		tmr := time.AfterFunc(scriptRoomTimeout, func() {
-			vmw.VM.Interrupt(errTimeout)
-		})
-		res, err := onCommandFunc(goja.Undefined(),
-			vmw.VM.ToValue(rest),
-			vmw.VM.ToValue(sActor),
-			vmw.VM.ToValue(sRoom),
+		res, err := runCallable(vmw, scriptBuffTimeout, onCommandFunc,
+			vmw.ToValue(rest),
+			vmw.ToValue(sActor),
+			vmw.ToValue(sRoom),
 		)
-		vmw.VM.ClearInterrupt()
-		tmr.Stop()
-
 		if err != nil {
-
-			// Wrap the error
-			finalErr := fmt.Errorf("onCommand_%s(): %w", cmd, err)
-
-			if _, ok := finalErr.(*goja.Exception); ok {
-				mudlog.Error("JSVM", "exception", finalErr)
-				return false, finalErr
-			} else if errors.Is(finalErr, errTimeout) {
-				mudlog.Error("JSVM", "interrupted", finalErr)
-				return false, finalErr
-			}
-
-			mudlog.Error("JSVM", "error", finalErr)
-			return false, finalErr
+			return false, fmt.Errorf("onCommand_%s(): %w", cmd, err)
 		}
 
 		if boolVal, ok := res.Export().(bool); ok {
@@ -135,36 +104,14 @@ func TryBuffCommand(cmd string, rest string, userId int, mobInstanceId int, buff
 
 	} else if onCommandFunc, ok := vmw.GetFunction(`onCommand`); ok {
 
-		sActor := GetActor(userId, mobInstanceId)
-		sRoom := GetRoom(sActor.GetRoomId())
-
-		tmr := time.AfterFunc(scriptRoomTimeout, func() {
-			vmw.VM.Interrupt(errTimeout)
-		})
-		res, err := onCommandFunc(goja.Undefined(),
-			vmw.VM.ToValue(cmd),
-			vmw.VM.ToValue(rest),
-			vmw.VM.ToValue(sActor),
-			vmw.VM.ToValue(sRoom),
+		res, err := runCallable(vmw, scriptBuffTimeout, onCommandFunc,
+			vmw.ToValue(cmd),
+			vmw.ToValue(rest),
+			vmw.ToValue(sActor),
+			vmw.ToValue(sRoom),
 		)
-		vmw.VM.ClearInterrupt()
-		tmr.Stop()
-
 		if err != nil {
-
-			// Wrap the error
-			finalErr := fmt.Errorf("onCommand(): %w", err)
-
-			if _, ok := finalErr.(*goja.Exception); ok {
-				mudlog.Error("JSVM", "exception", finalErr)
-				return false, finalErr
-			} else if errors.Is(finalErr, errTimeout) {
-				mudlog.Error("JSVM", "interrupted", finalErr)
-				return false, finalErr
-			}
-
-			mudlog.Error("JSVM", "error", finalErr)
-			return false, finalErr
+			return false, fmt.Errorf("onCommand(): %w", err)
 		}
 
 		if boolVal, ok := res.Export().(bool); ok {
@@ -175,13 +122,31 @@ func TryBuffCommand(cmd string, rest string, userId int, mobInstanceId int, buff
 	return false, ErrEventNotFound
 }
 
-func getBuffVM(buffId int) (*VMWrapper, error) {
+func getBuffVM(buffId int) (scriptVM, error) {
 
-	if vm, ok := buffVMCache[buffId]; ok {
-		if vm == nil {
+	if vmw, ok := buffVMCache[buffId]; ok {
+		if vmw == nil {
 			return nil, errNoScript
 		}
-		return vm, nil
+		if scriptHotReload {
+			bSpec := buffs.GetBuffSpec(buffId)
+			if bSpec != nil {
+				if info, err := os.Stat(bSpec.GetScriptPath()); err == nil {
+					if info.ModTime().After(vmw.LoadedAt()) {
+						delete(buffVMCache, buffId)
+						// fall through to reload
+					} else {
+						return vmw, nil
+					}
+				} else {
+					return vmw, nil
+				}
+			} else {
+				return vmw, nil
+			}
+		} else {
+			return vmw, nil
+		}
 	}
 
 	bSpec := buffs.GetBuffSpec(buffId)
@@ -195,43 +160,12 @@ func getBuffVM(buffId int) (*VMWrapper, error) {
 		return nil, errNoScript
 	}
 
-	vm := goja.New()
-	setAllScriptingFunctions(vm)
-
-	prg, err := goja.Compile(fmt.Sprintf(`buff-%d`, buffId), script, false)
+	src := sourceFromPath(bSpec.GetScriptPath(), script)
+	vmw, err := loadVM(fmt.Sprintf(`buff-%d`, buffId), src, nil)
 	if err != nil {
-		finalErr := fmt.Errorf("Compile: %w", err)
-		return nil, finalErr
+		return nil, err
 	}
-
-	//
-	// Run the program
-	//
-	tmr := time.AfterFunc(scriptLoadTimeout, func() {
-		vm.Interrupt(errTimeout)
-	})
-	if _, err = vm.RunProgram(prg); err != nil {
-
-		// Wrap the error
-		finalErr := fmt.Errorf("RunProgram: %w", err)
-
-		if _, ok := finalErr.(*goja.Exception); ok {
-			mudlog.Error("JSVM", "exception", finalErr)
-			return nil, finalErr
-		} else if errors.Is(finalErr, errTimeout) {
-			mudlog.Error("JSVM", "interrupted", finalErr)
-			return nil, finalErr
-		}
-
-		mudlog.Error("JSVM", "error", finalErr)
-		return nil, finalErr
-	}
-	vm.ClearInterrupt()
-	tmr.Stop()
-
-	vmw := newVMWrapper(vm, 0)
 
 	buffVMCache[buffId] = vmw
-
 	return vmw, nil
 }

@@ -4,9 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
+	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/events"
-	"github.com/GoMudEngine/GoMud/internal/util"
 	"github.com/GoMudEngine/GoMud/internal/gametime"
 	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/keywords"
@@ -16,6 +15,7 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/rooms"
 	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/users"
+	"github.com/GoMudEngine/GoMud/internal/util"
 )
 
 func Look(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
@@ -25,13 +25,13 @@ func Look(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 	visibility := room.GetVisibility()
 
 	if visibility < 1 {
-		if !user.Character.HasBuffFlag(buffs.NightVision) {
+		if !user.Character.HasBuffFlag("nightvision") {
 			user.SendText(`You can't see anything!`)
 			return true, nil
 		}
 	}
 
-	isSneaking := user.Character.HasBuffFlag(buffs.Hidden)
+	isSneaking := user.Character.HasBuffFlag("hidden")
 
 	// trim off some fluff
 	if len(rest) > 2 {
@@ -83,7 +83,11 @@ func Look(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 
 		if playerId > 0 {
 
-			u := *users.GetByUserId(playerId)
+			uPtr := users.GetByUserId(playerId)
+			if uPtr == nil {
+				return true, nil
+			}
+			u := *uPtr
 
 			if !isSneaking {
 				u.SendText(
@@ -95,25 +99,21 @@ func Look(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 					u.UserId)
 			}
 
-			descTxt, _ := templates.Process("character/description", u.Character, user.UserId)
-			user.SendText(descTxt)
+			user.SendText(buildDescriptionPanel(u.Character))
 
 			itemNames := []string{}
 			for _, item := range u.Character.Items {
 				itemNames = append(itemNames, item.DisplayName())
 			}
 
-			invData := map[string]any{
-				`Equipment`: &u.Character.Equipment,
-				`ItemNames`: itemNames,
-			}
-
-			inventoryTxt, _ := templates.Process("character/inventory-look", invData, user.UserId)
-			user.SendText(inventoryTxt)
+			user.SendText(buildInventoryLookPanel(&u.Character.Equipment, itemNames))
 
 		} else if mobId > 0 {
 
 			m := mobs.GetInstance(mobId)
+			if m == nil {
+				return true, nil
+			}
 
 			if !isSneaking {
 				targetName := m.Character.GetMobName(0).String()
@@ -123,21 +123,14 @@ func Look(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 				)
 			}
 
-			descTxt, _ := templates.Process("character/description", &m.Character, user.UserId)
-			user.SendText(descTxt)
+			user.SendText(buildDescriptionPanel(&m.Character))
 
 			itemNames := []string{}
 			for _, item := range m.Character.Items {
 				itemNames = append(itemNames, item.DisplayName())
 			}
 
-			invData := map[string]any{
-				`Equipment`: &m.Character.Equipment,
-				`ItemNames`: itemNames,
-			}
-
-			inventoryTxt, _ := templates.Process("character/inventory-look", invData, user.UserId)
-			user.SendText(inventoryTxt)
+			user.SendText(buildInventoryLookPanel(&m.Character.Equipment, itemNames))
 		}
 
 		user.SendText(statusTxt)
@@ -211,15 +204,8 @@ func Look(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 
 		}
 
-		chestStuff := map[string]any{
-			`ItemNames`:          itemNames,
-			`ItemNamesFormatted`: itemNamesFormatted,
-		}
-
-		textOut, _ := templates.Process("descriptions/insidecontainer", chestStuff, user.UserId)
-
 		user.SendText(``)
-		user.SendText(textOut)
+		user.SendText(buildInsideContainerPanel(itemNames, itemNamesFormatted))
 		user.SendText(``)
 
 		return true, nil
@@ -244,7 +230,7 @@ func Look(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 
 		if visibility < 2 {
 
-			if !user.Character.HasBuffFlag(buffs.NightVision) {
+			if !user.Character.HasBuffFlag("nightvision") {
 				biome := room.GetBiome()
 				if !biome.IsLit() {
 					user.SendText(`It's too dark to see anything in that direction.`)
@@ -331,7 +317,7 @@ func Look(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 		if !isSneaking {
 
 			renderNouns := user.HasRolePermission(`room.nouns`)
-			if user.Character.Pet.Exists() && user.Character.HasBuffFlag(buffs.SeeNouns) {
+			if user.Character.Pet.Exists() && user.Character.HasBuffFlag("see-nouns") {
 				renderNouns = true
 			}
 
@@ -362,9 +348,23 @@ func Look(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 	// Look for any pets in the room
 	//
 	petUserId := room.FindByPetName(rest)
-	if petUserId == 0 && rest == `pet` && user.Character.Pet.Exists() {
+	if petUserId == 0 && rest == `pet` && user.Character.Pet.Exists() && !user.Character.Pet.IsMissing() {
 		petUserId = user.UserId
 	}
+	// If the user typed "pet" or the pet's name but their own pet is missing, tell them.
+	if petUserId == 0 && user.Character.Pet.Exists() && user.Character.Pet.IsMissing() {
+		if rest == `pet` {
+			user.SendText(fmt.Sprintf(`%s is not here right now.`, user.Character.Pet.DisplayName()))
+			return true, nil
+		}
+		if petName := user.Character.Pet.Name; petName != `` {
+			if match, _ := util.FindMatchIn(rest, petName); match != `` {
+				user.SendText(fmt.Sprintf(`%s is not here right now.`, user.Character.Pet.DisplayName()))
+				return true, nil
+			}
+		}
+	}
+
 	if petUserId > 0 {
 		if petUser := users.GetByUserId(petUserId); petUser != nil {
 
@@ -372,8 +372,7 @@ func Look(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 
 			room.SendText(fmt.Sprintf(`<ansi fg="username">%s</ansi> is looking at %s.`, user.Character.Name, petUser.Character.Pet.DisplayName()), user.UserId)
 
-			textOut, _ := templates.Process("character/pet", petUser, user.UserId)
-			user.SendText(textOut)
+			user.SendText(buildPetPanel(petUser.Character, petUser.UserId == user.UserId))
 
 			return true, nil
 		}
@@ -418,8 +417,11 @@ func Look(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 			user.SendText(fmt.Sprintf(`You look at the <ansi fg="%s">%s corpse</ansi>.`, corpseColor, corpse.Character.Name))
 			room.SendText(fmt.Sprintf(`<ansi fg="username">%s</ansi> is looking at the <ansi fg="%s">%s corpse</ansi>.`, user.Character.Name, corpseColor, corpse.Character.Name), user.UserId)
 
-			descTxt, _ := templates.Process("character/description-corpse", &corpse.Character, user.UserId)
-			user.SendText(descTxt)
+			user.SendText(buildCorpseDescriptionPanel(&corpse.Character))
+
+			if configs.GetGamePlayConfig().Death.CorpseItems {
+				user.SendText(buildCorpseInventoryPanel(&corpse))
+			}
 
 			return true, nil
 
@@ -497,25 +499,42 @@ func lookRoom(user *users.UserRecord, roomId int, secretLook bool) {
 			output := zMapper.GetLimitedMap(room.RoomId, c)
 			tinyMap := []string{}
 			tinyMap = append(tinyMap, `╔═════╗`)
-			for _, mapLine := range output.Render {
-				tinyMap = append(tinyMap, `║`+string(mapLine)+`║`)
+			// placeholder rows filled by the render loop below
+			for range output.Render {
+				tinyMap = append(tinyMap, ``)
 			}
 			tinyMap = append(tinyMap, `╚═════╝`)
 			// This additional check is for ephemeral room copies,
 			// which can slightly mess with the map render of the @
-			if tinyMap[3][3] != '@' {
-				youLine := []rune(tinyMap[3])
-				youLine[3] = '@'
-				tinyMap[3] = string(youLine)
+			if len(output.Render) > 2 && output.Render[2][2].Symbol != '@' {
+				output.Render[2][2] = mapper.MapCell{Symbol: '@'}
 			}
 
 			legend := output.GetLegend(keywords.GetAllLegendAliases(room.Zone))
 
-			for i := 1; i <= c.Height; i++ {
-				for sym, txtLegend := range legend {
-					txtLc := strings.ToLower(txtLegend)
-					tinyMap[i] = strings.Replace(tinyMap[i], string(sym), fmt.Sprintf(`<ansi fg="map-room"><ansi fg="map-%s" bg="mapbg-%s">%c</ansi></ansi>`, txtLc, txtLc, sym), -1)
+			for i, row := range output.Render {
+				var sb strings.Builder
+				for _, cell := range row {
+					if cell.Symbol == ' ' {
+						sb.WriteRune(' ')
+						continue
+					}
+
+					if cell.FGColor > 0 || cell.BGColor > 0 {
+						if cell.FGColor > 0 && cell.BGColor > 0 {
+							fmt.Fprintf(&sb, `<ansi fg="%d" bg="%d">%c</ansi>`, cell.FGColor, cell.BGColor, cell.Symbol)
+						} else if cell.BGColor > 0 {
+							fmt.Fprintf(&sb, `<ansi fg="map-room" bg="%d">%c</ansi>`, cell.BGColor, cell.Symbol)
+						} else {
+							fmt.Fprintf(&sb, `<ansi fg="%d">%c</ansi>`, cell.FGColor, cell.Symbol)
+						}
+					} else if _, ok := legend[cell.Symbol]; ok {
+						fmt.Fprintf(&sb, `<ansi fg="map-room">%c</ansi>`, cell.Symbol)
+					} else {
+						sb.WriteRune(cell.Symbol)
+					}
 				}
+				tinyMap[i+1] = `║` + sb.String() + `║`
 			}
 
 			details = rooms.GetDetails(room, user, tinyMap)
@@ -529,8 +548,7 @@ func lookRoom(user *users.UserRecord, roomId int, secretLook bool) {
 	textOut, _ := templates.Process("descriptions/room-title", details, user.UserId)
 	user.SendText(textOut)
 
-	textOut, _ = templates.Process("descriptions/room", details, user.UserId)
-	user.SendText(textOut)
+	user.SendText(buildRoomDescPanel(details))
 
 	signCt := 0
 	privateSigns := room.GetPrivateSigns()

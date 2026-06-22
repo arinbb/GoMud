@@ -6,7 +6,6 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
-	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/users"
 	"github.com/GoMudEngine/GoMud/internal/util"
 )
@@ -17,7 +16,7 @@ Level 3 - Attempt to tackle an opponent, making them miss a round.
 */
 func Tackle(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
 
-	skillLevel := user.Character.GetSkillLevel(skills.Brawling)
+	skillLevel := user.Character.GetSkillLevel(`brawling`)
 
 	// If they don't have a skill, act like it's not a valid command
 	if skillLevel < 3 {
@@ -29,13 +28,13 @@ func Tackle(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 		return true, nil
 	}
 
-	if !user.Character.TryCooldown(skills.Brawling.String(`tackle`), "5 rounds") {
+	if !user.Character.TryCooldown(`brawling:tackle`, "5 rounds") {
 		user.SendText("You are too tired to tackle again so soon!")
 		return true, nil
 	}
 
 	// Fire an event that a skill has been used
-	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: skills.Brawling, Details: `tackle`})
+	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: `brawling`, Details: `tackle`})
 
 	attackMobInstanceId := user.Character.Aggro.MobInstanceId
 	attackPlayerId := user.Character.Aggro.UserId
@@ -46,11 +45,12 @@ func Tackle(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 
 		if m != nil {
 
-			chanceIn100 := user.Character.Stats.Speed.ValueAdj - m.Character.Stats.Perception.ValueAdj
-			if chanceIn100 < 0 {
-				chanceIn100 = 0
+			chanceIn100 := user.Character.Stats.Speed.ValueAdj - m.Character.Stats.Perception.ValueAdj + 20
+			if chanceIn100 < 20 {
+				chanceIn100 = 20
+			} else if chanceIn100 > 80 {
+				chanceIn100 = 80
 			}
-			chanceIn100 += 10
 			roll := util.Rand(100)
 
 			util.LogRoll(`Tackle`, roll, chanceIn100)
@@ -93,11 +93,12 @@ func Tackle(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 
 		if u != nil {
 
-			chanceIn100 := user.Character.Stats.Speed.ValueAdj - u.Character.Stats.Perception.ValueAdj
-			if chanceIn100 < 0 {
-				chanceIn100 = 0
+			chanceIn100 := user.Character.Stats.Speed.ValueAdj - u.Character.Stats.Perception.ValueAdj + 20
+			if chanceIn100 < 20 {
+				chanceIn100 = 20
+			} else if chanceIn100 > 80 {
+				chanceIn100 = 80
 			}
-			chanceIn100 += 10
 			roll := util.Rand(100)
 
 			util.LogRoll(`Tackle`, roll, chanceIn100)
@@ -134,7 +135,7 @@ func Tackle(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 
 				if atkUser := users.GetByUserId(attackPlayerId); atkUser != nil {
 					atkUser.SendText(
-						fmt.Sprintf(`<ansi fg="username">%s</ansi> lunges to tackles you and misses!`, user.Character.Name),
+						fmt.Sprintf(`<ansi fg="username">%s</ansi> lunges to tackle you and misses!`, user.Character.Name),
 					)
 				}
 

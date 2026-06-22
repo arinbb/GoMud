@@ -5,7 +5,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
@@ -66,7 +65,7 @@ func Give(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 
 	if playerId > 0 {
 
-		user.Character.CancelBuffsWithFlag(buffs.Hidden)
+		user.Character.CancelBuffsWithFlag("hidden")
 
 		targetUser := users.GetByUserId(playerId)
 
@@ -147,7 +146,7 @@ func Give(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 	//
 	if mobId > 0 {
 
-		user.Character.CancelBuffsWithFlag(buffs.Hidden)
+		user.Character.CancelBuffsWithFlag("hidden")
 
 		m := mobs.GetInstance(mobId)
 
@@ -224,7 +223,7 @@ func Give(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 	// Look for any pets in the room
 	//
 	petUserId := room.FindByPetName(giveWho)
-	if petUserId == 0 && giveWho == `pet` && user.Character.Pet.Exists() {
+	if petUserId == 0 && giveWho == `pet` && user.Character.Pet.Exists() && !user.Character.Pet.IsMissing() {
 		petUserId = user.UserId
 	}
 	if petUserId > 0 {
@@ -251,9 +250,13 @@ func Give(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 			Gained: false,
 		})
 
-		if len(petUser.Character.Pet.Items) >= petUser.Character.Pet.Capacity || !petUser.Character.Pet.StoreItem(giveItem) {
+		if len(petUser.Character.Pet.Items) >= petUser.Character.Pet.GetEffectiveCapacity() || !petUser.Character.Pet.StoreItem(giveItem) {
 			room.SendText(fmt.Sprintf(`%s throws the <ansi fg="itemname">%s</ansi> onto the ground.`, petUser.Character.Pet.DisplayName(), giveItem.DisplayName()))
 			room.AddItem(giveItem, false)
+		} else {
+			events.AddToQueue(events.PetItemChange{
+				UserId: petUser.UserId,
+			})
 		}
 
 		return true, nil

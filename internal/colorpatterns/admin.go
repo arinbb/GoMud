@@ -2,9 +2,9 @@ package colorpatterns
 
 import (
 	"fmt"
-	"os"
 
 	"github.com/GoMudEngine/GoMud/internal/configs"
+	"github.com/GoMudEngine/GoMud/internal/util"
 	"gopkg.in/yaml.v2"
 )
 
@@ -51,5 +51,5 @@ func saveColorPatternsFile() error {
 	if err != nil {
 		return fmt.Errorf("marshaling color patterns: %w", err)
 	}
-	return os.WriteFile(path, bytes, 0644)
+	return util.WriteFile(path, bytes, 0644)
 }

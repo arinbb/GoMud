@@ -11,7 +11,10 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/colorpatterns"
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/events"
+	"github.com/GoMudEngine/GoMud/internal/items"
+	"github.com/GoMudEngine/GoMud/internal/mobs"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
+	"github.com/GoMudEngine/GoMud/internal/scripting"
 	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/term"
 	"github.com/GoMudEngine/GoMud/internal/users"
@@ -28,15 +31,10 @@ func Suicide(rest string, user *users.UserRecord, room *rooms.Room, flags events
 		return true, errors.New(`already dead`)
 	}
 
-	if user.Character.HasBuffFlag(buffs.ReviveOnDeath) {
-
-		user.Character.Health = user.Character.HealthMax.Value
-
-		user.SendText(`You are revived in a shower of magical sparks!`)
-		room.SendText(`<ansi fg="username">`+user.Character.Name+`</ansi> is suddenly revived in a shower of sparks!`, user.UserId)
-
-		user.Character.CancelBuffsWithFlag(buffs.ReviveOnDeath)
-
+	// Give the global user script a chance to override death entirely (e.g. a
+	// phoenix-style revival). If it returns true, the death is aborted and the
+	// script is responsible for whatever happens instead.
+	if handled, _ := scripting.TryUserDieEvent(user.UserId); handled {
 		return true, nil
 	}
 
@@ -67,9 +65,9 @@ func Suicide(rest string, user *users.UserRecord, room *rooms.Room, flags events
 
 			if i > 0 {
 				if i < dmgCt-1 {
-					killedBy += ` and `
-				} else {
 					killedBy += `, `
+				} else {
+					killedBy += ` and `
 				}
 			}
 			killedBy += `<ansi fg="username">` + u.Character.Name + `</ansi>`
@@ -90,6 +88,19 @@ func Suicide(rest string, user *users.UserRecord, room *rooms.Room, flags events
 
 	allowPenalties := user.Character.Level > int(config.Death.ProtectionLevels)
 
+	killerMobId := 0
+	if user.Character.KillerMobInstanceId > 0 {
+		if killerMob := mobs.GetInstance(user.Character.KillerMobInstanceId); killerMob != nil {
+			killerMobId = int(killerMob.MobId)
+		}
+		if user.Character.KillerMobIsElite {
+			user.Character.KD.AddEliteDeath(killerMobId, user.Character.KillerMobName)
+		}
+		user.Character.KillerMobInstanceId = 0
+		user.Character.KillerMobIsElite = false
+		user.Character.KillerMobName = ``
+	}
+
 	events.AddToQueue(events.PlayerDeath{
 		UserId:        user.UserId,
 		RoomId:        user.Character.RoomId,
@@ -97,6 +108,7 @@ func Suicide(rest string, user *users.UserRecord, room *rooms.Room, flags events
 		CharacterName: user.Character.Name,
 		Permanent:     allowPenalties && bool(config.Death.PermaDeath) && user.Character.ExtraLives == 0,
 		KilledByUsers: killedByUserIds,
+		KillerMobId:   killerMobId,
 	})
 
 	// If permadeath is enabled, do some extra bookkeeping
@@ -116,6 +128,9 @@ func Suicide(rest string, user *users.UserRecord, room *rooms.Room, flags events
 
 			// Unequip everything
 			for _, itm := range user.Character.GetAllWornItems() {
+				if itm.IsRemoveLocked() {
+					continue
+				}
 				Remove(itm.Name(), user, room, flags)
 			}
 			// drop all items / gold
@@ -133,37 +148,66 @@ func Suicide(rest string, user *users.UserRecord, room *rooms.Room, flags events
 	user.EventLog.Add(`death`, fmt.Sprintf(`<ansi fg="username">%s</ansi> has <ansi fg="red-bold">DIED</ansi>`, user.Character.Name))
 
 	// Only apply penalties if they were above the threshold
-	if allowPenalties {
+	if allowPenalties && !user.Character.HasBuffFlag("perma-gear") {
+
+		corpseItems := []items.Item{}
+		corpseGold := 0
 
 		if config.Death.EquipmentDropChance >= 0 {
 			chanceInt := int(config.Death.EquipmentDropChance * 100)
 			for _, itm := range user.Character.GetAllWornItems() {
+				if itm.IsRemoveLocked() {
+					continue
+				}
 				if util.Rand(100) < chanceInt {
 
 					Remove(itm.Name(), user, room, flags)
 
-					Drop(itm.Name(), user, room, flags)
+					if config.Death.CorpseItems && config.Death.CorpsesEnabled {
+						// Item was removed from equipment slot; grab it from backpack and hold for corpse
+						if held, found := user.Character.FindInBackpack(itm.Name()); found {
+							user.Character.RemoveItem(held)
+							corpseItems = append(corpseItems, held)
+						}
+					} else {
+						Drop(itm.Name(), user, room, flags)
+					}
 
 				}
 			}
 		}
 
 		if user.Character.Gold > 0 {
-			user.EventLog.Add(`death`, fmt.Sprintf(`Dropped <ansi fg="gold">%d gold</ansi> on death`, user.Character.Gold))
-			Drop(fmt.Sprintf(`%d gold`, user.Character.Gold), user, room, flags)
+			if config.Death.CorpseItems && config.Death.CorpsesEnabled {
+				corpseGold = user.Character.Gold
+				user.Character.Gold = 0
+			} else {
+				user.EventLog.Add(`death`, fmt.Sprintf(`Dropped <ansi fg="gold">%d gold</ansi> on death`, user.Character.Gold))
+				Drop(fmt.Sprintf(`%d gold`, user.Character.Gold), user, room, flags)
+			}
 		}
 
 		if config.Death.AlwaysDropBackpack {
-			Drop("all", user, room, flags)
-
-			user.EventLog.Add(`death`, `Dropped <ansi fg="alert-3">everthing in your backpack</ansi> on death`)
-
+			if config.Death.CorpseItems && config.Death.CorpsesEnabled {
+				for _, itm := range user.Character.GetAllBackpackItems() {
+					user.Character.RemoveItem(itm)
+					corpseItems = append(corpseItems, itm)
+				}
+			} else {
+				Drop("all", user, room, flags)
+				user.EventLog.Add(`death`, `Dropped <ansi fg="alert-3">everthing in your backpack</ansi> on death`)
+			}
 		} else if config.Death.EquipmentDropChance >= 0 {
 			chanceInt := int(config.Death.EquipmentDropChance * 100)
 			for _, itm := range user.Character.GetAllBackpackItems() {
 				if util.Rand(100) < chanceInt {
-					Drop(itm.Name(), user, room, flags)
-					user.EventLog.Add(`death`, fmt.Sprintf(`Dropped your <ansi fg="itemname">%s</ansi> on death`, itm.Name()))
+					if config.Death.CorpseItems && config.Death.CorpsesEnabled {
+						user.Character.RemoveItem(itm)
+						corpseItems = append(corpseItems, itm)
+					} else {
+						Drop(itm.Name(), user, room, flags)
+						user.EventLog.Add(`death`, fmt.Sprintf(`Dropped your <ansi fg="itemname">%s</ansi> on death`, itm.Name()))
+					}
 				}
 			}
 		}
@@ -187,11 +231,9 @@ func Suicide(rest string, user *users.UserRecord, room *rooms.Room, flags events
 					var pct float64 = 0.0
 
 					percent, err := strconv.ParseInt(string(config.Death.XPPenalty)[0:len(config.Death.XPPenalty)-1], 10, 64)
-					if err != nil || percent < 0 || percent > 100 {
-						pct = 0.0
+					if err == nil && percent >= 0 && percent <= 100 {
+						pct = float64(percent) / 100.0
 					}
-
-					pct = float64(percent) / 100.0
 
 					loss := int(math.Floor(float64(user.Character.Experience) * pct))
 					user.Character.Experience -= loss
@@ -202,6 +244,29 @@ func Suicide(rest string, user *users.UserRecord, room *rooms.Room, flags events
 				}
 			}
 
+		}
+
+		if config.Death.CorpsesEnabled {
+			c := rooms.Corpse{
+				UserId:       user.UserId,
+				Character:    *user.Character,
+				RoundCreated: currentRound,
+			}
+			if config.Death.CorpseItems {
+				c.Items = corpseItems
+				c.Gold = corpseGold
+			}
+			room.AddCorpse(c)
+		}
+
+	} else {
+
+		if config.Death.CorpsesEnabled {
+			room.AddCorpse(rooms.Corpse{
+				UserId:       user.UserId,
+				Character:    *user.Character,
+				RoundCreated: currentRound,
+			})
 		}
 
 	}
@@ -215,14 +280,6 @@ func Suicide(rest string, user *users.UserRecord, room *rooms.Room, flags events
 	clear(user.Character.PlayerDamage)
 
 	rooms.MoveToRoom(user.UserId, int(configs.GetSpecialRoomsConfig().DeathRecoveryRoom))
-
-	if config.Death.CorpsesEnabled {
-		room.AddCorpse(rooms.Corpse{
-			UserId:       user.UserId,
-			Character:    *user.Character,
-			RoundCreated: currentRound,
-		})
-	}
 
 	return true, nil
 }

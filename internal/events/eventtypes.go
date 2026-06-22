@@ -6,7 +6,6 @@ import (
 
 	"github.com/GoMudEngine/GoMud/internal/connections"
 	"github.com/GoMudEngine/GoMud/internal/items"
-	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/stats"
 )
 
@@ -34,6 +33,22 @@ type BuffsTriggered struct {
 }
 
 func (b BuffsTriggered) Type() string { return `BuffsTriggered` }
+
+type BuffsAdded struct {
+	UserId        int
+	MobInstanceId int
+	BuffIds       []int
+}
+
+func (b BuffsAdded) Type() string { return `BuffsAdded` }
+
+type BuffsRemoved struct {
+	UserId        int
+	MobInstanceId int
+	BuffIds       []int
+}
+
+func (b BuffsRemoved) Type() string { return `BuffsRemoved` }
 
 // Used for giving/taking quest progress
 type Quest struct {
@@ -69,7 +84,7 @@ func (i Input) Type() string { return `Input` }
 // When a skill is used by a player
 type SkillUsed struct {
 	UserId  int
-	Skill   skills.SkillTag
+	Skill   string
 	Details string // usually the specific sub-command of the skill
 }
 
@@ -261,6 +276,31 @@ type LevelUp struct {
 
 func (l LevelUp) Type() string { return `LevelUp` }
 
+type PetLevelChange struct {
+	UserId     int
+	PetName    string
+	OldLevel   int
+	NewLevel   int
+	OldAbility any
+	NewAbility any
+}
+
+func (p PetLevelChange) Type() string { return `PetLevelChange` }
+
+// Fired when a player feeds their pet
+type PetFed struct {
+	UserId int
+}
+
+func (p PetFed) Type() string { return `PetFed` }
+
+// Fired when an item is given to or removed from a pet
+type PetItemChange struct {
+	UserId int
+}
+
+func (p PetItemChange) Type() string { return `PetItemChange` }
+
 type PlayerDrop struct {
 	UserId int
 	RoomId int
@@ -275,6 +315,7 @@ type PlayerDeath struct {
 	CharacterName string
 	Permanent     bool
 	KilledByUsers []int
+	KillerMobId   int // mob spec ID of the killing mob; 0 if killed by a player or unknown
 }
 
 func (l PlayerDeath) Type() string { return `PlayerDeath` }
@@ -401,3 +442,53 @@ type AggroChanged struct {
 }
 
 func (a AggroChanged) Type() string { return `AggroChanged` }
+
+type CLIRequest struct {
+	UserId       int
+	ConnectionId uint64
+	Command      string
+	Args         []string
+}
+
+func (c CLIRequest) Type() string { return `CLIRequest` }
+
+// Fired when a player's alignment name changes (e.g. from decay or combat)
+type AlignmentChanged struct {
+	UserId       int
+	AlignmentOld string
+	AlignmentNew string
+}
+
+func (a AlignmentChanged) Type() string { return `AlignmentChanged` }
+
+// Fired when a player successfully purchases something from a shop.
+type Purchase struct {
+	UserId       int
+	RoomId       int
+	Cost         int
+	SellerMobId  int    // mob spec ID of the seller; 0 if seller is a player or unknown
+	SellerUserId int    // user ID of the seller; 0 if seller is a mob or unknown
+	ItemId       int    // item spec ID when an item was purchased; 0 otherwise
+	MobId        int    // mob spec ID when a mercenary was purchased; 0 otherwise
+	BuffId       int    // buff ID when a buff/enchantment was purchased; 0 otherwise
+	PetName      string // pet type name when a pet was purchased; empty otherwise
+}
+
+func (p Purchase) Type() string { return `Purchase` }
+
+// Fired for each item that actually drops from a mob on death.
+type MobItemDrop struct {
+	MobId  int
+	RoomId int
+	Zone   string
+	ItemId int
+}
+
+func (m MobItemDrop) Type() string { return `MobItemDrop` }
+
+// If a potentially fire-starting event occured in this room
+type FireBlaze struct {
+	RoomId int
+}
+
+func (c FireBlaze) Type() string { return `FireBlaze` }

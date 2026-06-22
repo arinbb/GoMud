@@ -2,6 +2,10 @@
 <html>
 <head>
     <title>{{ .CONFIG.Server.MudName }} Web Terminal</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ .ASSET_BASE_URL }}/static/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ .ASSET_BASE_URL }}/static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ .ASSET_BASE_URL }}/static/images/favicon-16x16.png">
+    <link rel="manifest" href="{{ .ASSET_BASE_URL }}/static/images/site.webmanifest">
     <link id="theme-css" rel="stylesheet" href="{{ .ASSET_BASE_URL }}/static/css/theme-brooding.css" />
     <script>
     (function() {
@@ -36,13 +40,14 @@
             display: flex;
             flex-direction: row;
             overflow: hidden;
-            background-color: var(--t-bg-deep);
+            background-color: #000000;
         }
 
         #terminal {
             flex: 1;
             min-width: 0;
             position: relative;
+            padding-left: 20px;
         }
 
         #input-area {
@@ -1160,33 +1165,104 @@
         .theme-badge-neon    { color: #00f0f8; }
         .theme-badge-nature  { color: #60c860; }
         .theme-badge-gothic  { color: #c04060; }
+
+        /* Settings header actions (export/import buttons) */
+        #settings-header-actions {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-left: auto;
+            margin-right: 10px;
+        }
+
+        #settings-backup-btn,
+        #settings-restore-btn {
+            padding: 4px 10px;
+            background: var(--t-bg-surface);
+            border: 1px solid var(--t-btn-border);
+            border-radius: 4px;
+            color: var(--t-text-secondary);
+            font-size: 11px;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        #settings-backup-btn:hover,
+        #settings-restore-btn:hover {
+            background: var(--t-accent-dim);
+            color: var(--t-text);
+        }
+
+        /* Settings IO bar (shown when export/import is active) */
+        #settings-io-bar {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            padding: 0 16px 10px;
+            flex-shrink: 0;
+        }
+
+        #settings-io-bar.visible {
+            display: flex;
+        }
+
+        #settings-io-area {
+            width: 100%;
+            min-height: 80px;
+            padding: 6px 7px;
+            background: var(--t-input-bg);
+            border: 1px solid var(--t-btn-border);
+            border-radius: 3px;
+            color: var(--t-text);
+            font-family: monospace;
+            font-size: 11px;
+            resize: vertical;
+            outline: none;
+            line-height: 1.4;
+        }
+
+        #settings-io-area:focus {
+            border-color: var(--t-accent);
+        }
+
+        #settings-io-error {
+            color: var(--t-error);
+            font-size: 11px;
+            font-family: monospace;
+            display: none;
+        }
+
+        #settings-io-error.visible {
+            display: block;
+        }
     </style>
 
     <link rel="stylesheet" href="{{ .ASSET_BASE_URL }}/static/css/xterm.css" />
     <link rel="stylesheet" href="{{ .ASSET_BASE_URL }}/static/css/windows.css" />
 
-    <script src="{{ .ASSET_BASE_URL }}/static/js/xterm.4.19.0.js"></script>
-    <script src="{{ .ASSET_BASE_URL }}/static/js/xterm-addon-fit.js"></script>
+    <script src="{{ .ASSET_BASE_URL }}/static/js/xterm/xterm.4.19.0.js"></script>
+    <script src="{{ .ASSET_BASE_URL }}/static/js/xterm/xterm-addon-fit.js"></script>
     <script src="{{ .ASSET_BASE_URL }}/static/js/mp3.js"></script>
     <script src="{{ .ASSET_BASE_URL }}/static/js/fx.js"></script>
-    <script src="{{ .ASSET_BASE_URL }}/static/js/winbox.bundle.min.js"></script>
+    <script src="{{ .ASSET_BASE_URL }}/static/js/vwin.js"></script>
     <script src="{{ .ASSET_BASE_URL }}/static/js/webclient-core.js"></script>
     <script src="{{ .ASSET_BASE_URL }}/static/js/triggers.js"></script>
-    <!-- Left dock -->
-     <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-gametime.js"></script>
     <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-character.js"></script>
-    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-gear.js"></script>
-    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-vitals.js"></script>
-    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-status.js"></script>
-    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-party.js"></script>
-    <!-- Right dock -->
-    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-map.js"></script>
-    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-room.js"></script>
-    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-online.js"></script>
-    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-killstats.js"></script>
     <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-comm.js"></script>
+    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-gametime.js"></script>
+    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-gear.js"></script>
+    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-killstats.js"></script>
+    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-map.js"></script>
     <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-modal.js"></script>
-
+    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-online.js"></script>
+    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-party.js"></script>
+    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-pet.js"></script>
+    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-room.js"></script>
+    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-status.js"></script>
+    <script src="{{ .ASSET_BASE_URL }}/static/js/windows/window-vitals.js"></script>
 
 </head>
 <body onload="init()">
@@ -1203,7 +1279,15 @@
         <div id="floating-menu">
             <div id="settings-header">
                 <span id="settings-title">Settings</span>
+                <div id="settings-header-actions">
+                    <button id="settings-backup-btn">Export JSON</button>
+                    <button id="settings-restore-btn">Import JSON</button>
+                </div>
                 <span id="settings-close" onclick="toggleMenu()">&#x2715;</span>
+            </div>
+            <div id="settings-io-bar">
+                <textarea id="settings-io-area" spellcheck="false" placeholder="Paste exported JSON here to import..."></textarea>
+                <div id="settings-io-error"></div>
             </div>
             <div id="settings-tab-bar">
                 <button class="settings-tab-btn active" data-tab="tab-volume">Volume</button>
@@ -1233,9 +1317,16 @@
                     <div class="settings-section">
                         <div class="settings-section-title">Layout</div>
                         <div class="win-toggle-row">
-                            <span>Auto-hide window docks</span>
+                            <span>Auto-hide left window dock</span>
                             <label class="toggle-switch">
-                                <input type="checkbox" id="dock-autohide-checkbox" onchange="toggleDockAutoHide(this.checked)">
+                                <input type="checkbox" id="dock-autohide-left-checkbox" onchange="toggleDockAutoHide('left', this.checked)">
+                                <span class="toggle-track"></span>
+                            </label>
+                        </div>
+                        <div class="win-toggle-row">
+                            <span>Auto-hide right window dock</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="dock-autohide-right-checkbox" onchange="toggleDockAutoHide('right', this.checked)">
                                 <span class="toggle-track"></span>
                             </label>
                         </div>
@@ -1617,7 +1708,7 @@
         function toggleMenu()            { Client.toggleMenu(); }
         function toggleMuteAll()         { Client.toggleMuteAll(); }
         function resetLayout()           { Client.resetLayout(); }
-        function toggleDockAutoHide(v)   { Client.toggleDockAutoHide(v); }
+        function toggleDockAutoHide(s,v)  { Client.toggleDockAutoHide(s,v); }
         function resetVolumeControls()   { Client.resetVolumeControls(); }
 
         // ---------------------------------------------------------------
@@ -2087,6 +2178,93 @@
             // Hide IO area when switching away from Triggers tab
             // (handled in the tab-click listener below)
 
+            // ---------------------------------------------------------------
+            // Settings backup / restore
+            // ---------------------------------------------------------------
+            var _BACKUP_KEYS_JSON = [
+                'windowLayout', 'sliderValues', 'muteAllSound',
+                'unmutedSliderValues', 'soundHistory', 'soundVolumeOverrides',
+                'dockAutoHide', 'triggers', 'gomud_map_settings',
+            ];
+
+            function _settingsIoHide() {
+                var bar   = document.getElementById('settings-io-bar');
+                var errEl = document.getElementById('settings-io-error');
+                if (bar)   { bar.classList.remove('visible'); }
+                if (errEl) { errEl.classList.remove('visible'); }
+                document.getElementById('settings-restore-btn').textContent = 'Import JSON';
+            }
+
+            document.getElementById('settings-backup-btn').addEventListener('click', function() {
+                var payload = {};
+                var themeVal = localStorage.getItem('gomud-theme');
+                payload['gomud-theme'] = themeVal || 'brooding';
+                _BACKUP_KEYS_JSON.forEach(function(key) {
+                    var raw = localStorage.getItem(key);
+                    if (raw === null) { return; }
+                    try { payload[key] = JSON.parse(raw); } catch (e) { payload[key] = raw; }
+                });
+
+                var area  = document.getElementById('settings-io-area');
+                var bar   = document.getElementById('settings-io-bar');
+                var errEl = document.getElementById('settings-io-error');
+                area.value = JSON.stringify(payload, null, 2);
+                bar.classList.add('visible');
+                errEl.classList.remove('visible');
+                area.select();
+                document.getElementById('settings-restore-btn').textContent = 'Import JSON';
+            });
+
+            document.getElementById('settings-restore-btn').addEventListener('click', function() {
+                var area    = document.getElementById('settings-io-area');
+                var bar     = document.getElementById('settings-io-bar');
+                var errEl   = document.getElementById('settings-io-error');
+                var btn     = document.getElementById('settings-restore-btn');
+                var isVisible = bar.classList.contains('visible');
+
+                if (!isVisible) {
+                    area.value = '';
+                    bar.classList.add('visible');
+                    errEl.classList.remove('visible');
+                    btn.textContent = 'Apply Import';
+                    area.focus();
+                    return;
+                }
+
+                var json = area.value.trim();
+                if (!json) {
+                    _settingsIoHide();
+                    return;
+                }
+
+                var parsed;
+                try {
+                    parsed = JSON.parse(json);
+                } catch (e) {
+                    errEl.textContent = 'Invalid JSON: ' + e.message;
+                    errEl.classList.add('visible');
+                    return;
+                }
+
+                if (typeof parsed !== 'object' || parsed === null || Array.isArray(parsed)) {
+                    errEl.textContent = 'Expected a JSON object.';
+                    errEl.classList.add('visible');
+                    return;
+                }
+
+                if (!confirm('Importing settings will reload the page. Continue?')) { return; }
+
+                if (typeof parsed['gomud-theme'] === 'string') {
+                    localStorage.setItem('gomud-theme', parsed['gomud-theme']);
+                }
+                _BACKUP_KEYS_JSON.forEach(function(key) {
+                    if (!(key in parsed)) { return; }
+                    localStorage.setItem(key, JSON.stringify(parsed[key]));
+                });
+
+                location.reload();
+            });
+
             // Restart the stats interval if the modal is reopened with Stats already active.
             // Also restart the volume interval if Volume tab is active.
             var observer = new MutationObserver(function() {
@@ -2117,6 +2295,7 @@
             tabBar.addEventListener('click', function(e) {
                 var btn = e.target.closest('.settings-tab-btn');
                 if (!btn) { return; }
+                _settingsIoHide();
                 if (btn.dataset.tab === 'tab-triggers') {
                     closeEditor();
                     renderTriggerList();
@@ -2160,11 +2339,13 @@
                 if (e.target === this) {
                     if (_statsInterval)  { clearInterval(_statsInterval);  _statsInterval  = null; }
                     if (_volumeInterval) { clearInterval(_volumeInterval); _volumeInterval = null; }
+                    _settingsIoHide();
                 }
             });
             document.getElementById('settings-close').addEventListener('click', function() {
                 if (_statsInterval)  { clearInterval(_statsInterval);  _statsInterval  = null; }
                 if (_volumeInterval) { clearInterval(_volumeInterval); _volumeInterval = null; }
+                _settingsIoHide();
             });
         });
 
@@ -2199,7 +2380,7 @@
         }
 
         function _fmtRate(b, sec) {
-            return sec > 0 ? _fmtBytes(b / sec) + '/s' : '—';
+            return sec > 0 ? _fmtBytes(b / sec) + '/s' : '-';
         }
 
         function _fmtUptime(ms) {
@@ -2264,7 +2445,7 @@
             var nsList  = Object.keys(st.gmcpInBytes).sort();
             var total   = nsList.reduce(function(s, k) { return s + st.gmcpInBytes[k]; }, 0);
 
-            // Build the whole section as a plain string — no grid, no display:contents.
+            // Build the whole section as a plain string - no grid, no display:contents.
             // Each row is a simple flex div. Namespace rows get onclick attributes so
             // there is zero ambiguity about what receives the click.
             var h = '';

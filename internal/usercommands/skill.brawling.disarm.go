@@ -3,11 +3,9 @@ package usercommands
 import (
 	"fmt"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
-	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/users"
 	"github.com/GoMudEngine/GoMud/internal/util"
 )
@@ -18,7 +16,7 @@ Level 4 - Attempt to disarm an opponent.
 */
 func Disarm(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
 
-	skillLevel := user.Character.GetSkillLevel(skills.Brawling)
+	skillLevel := user.Character.GetSkillLevel(`brawling`)
 
 	// If they don't have a skill, act like it's not a valid command
 	if skillLevel < 4 {
@@ -34,14 +32,14 @@ func Disarm(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 	attackPlayerId := user.Character.Aggro.UserId
 
 	if attackMobInstanceId > 0 || attackPlayerId > 0 {
-		if !user.Character.TryCooldown(skills.Brawling.String(`disarm`), "1 real minute") {
-			user.SendText(fmt.Sprintf("You can try disarming again in %d rounds.", user.Character.GetCooldown(skills.Brawling.String(`disarm`))))
+		if !user.Character.TryCooldown(`brawling:disarm`, "1 real minute") {
+			user.SendText(fmt.Sprintf("You can try disarming again in %d rounds.", user.Character.GetCooldown(`brawling:disarm`)))
 			return true, nil
 		}
 	}
 
 	// Fire an event that a skill has been used
-	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: skills.Brawling, Details: `disarm`})
+	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: `brawling`, Details: `disarm`})
 
 	if attackMobInstanceId > 0 {
 
@@ -49,13 +47,18 @@ func Disarm(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 
 		if m != nil {
 
-			if m.Character.HasBuffFlag(buffs.PermaGear) {
+			if m.Character.HasBuffFlag("perma-gear") {
 				user.SendText(fmt.Sprintf(`Some force prevents you from disarming <ansi fg="mobname">%s</ansi>!`, m.Character.Name))
 				return true, nil
 			}
 
 			if m.Character.Equipment.Weapon.ItemId == 0 {
 				user.SendText(fmt.Sprintf(`<ansi fg="mobname">%s</ansi> has no weapon to disarm!`, m.Character.Name))
+				return true, nil
+			}
+
+			if m.Character.Equipment.Weapon.IsRemoveLocked() {
+				user.SendText(fmt.Sprintf(`<ansi fg="mobname">%s</ansi>'s weapon is bound to them and cannot be disarmed!`, m.Character.Name))
 				return true, nil
 			}
 
@@ -101,8 +104,18 @@ func Disarm(rest string, user *users.UserRecord, room *rooms.Room, flags events.
 
 		if u != nil {
 
-			if u.Character.HasBuffFlag(buffs.PermaGear) {
+			if u.Character.HasBuffFlag("perma-gear") {
 				user.SendText(fmt.Sprintf(`Some force prevents you from disarming <ansi fg="username">%s</ansi>!`, u.Character.Name))
+				return true, nil
+			}
+
+			if u.Character.Equipment.Weapon.ItemId == 0 {
+				user.SendText(fmt.Sprintf(`<ansi fg="username">%s</ansi> has no weapon to disarm!`, u.Character.Name))
+				return true, nil
+			}
+
+			if u.Character.Equipment.Weapon.IsRemoveLocked() {
+				user.SendText(fmt.Sprintf(`<ansi fg="username">%s</ansi>'s weapon is bound to them and cannot be disarmed!`, u.Character.Name))
 				return true, nil
 			}
 

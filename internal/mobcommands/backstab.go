@@ -1,7 +1,6 @@
 package mobcommands
 
 import (
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/characters"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
@@ -11,7 +10,7 @@ import (
 func Backstab(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 
 	// Must be sneaking
-	isSneaking := mob.Character.HasBuffFlag(buffs.Hidden)
+	isSneaking := mob.Character.HasBuffFlag("hidden")
 	if !isSneaking {
 		return true, nil
 	}
@@ -37,6 +36,9 @@ func Backstab(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 			if attackMobInstanceId == 0 {
 				for _, uId := range room.GetPlayers(rooms.FindFightingMob) {
 					u := users.GetByUserId(uId)
+					if u == nil {
+						continue
+					}
 					if u.Character.Aggro != nil && u.Character.Aggro.MobInstanceId == mob.InstanceId {
 						attackPlayerId = u.UserId
 						break

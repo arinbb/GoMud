@@ -13,9 +13,15 @@ maplegend: Shore
 exits:
   east:
     roomid: 352
+  north:
+    roomid: 1072
   west:
     roomid: 354
 idlemessages:
 - "304"
 tags:
 - fishing
+mapx: 23
+mapy: 4
+mapz: 0
+hascoordinates: true

@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
+	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
@@ -54,7 +54,7 @@ func Drop(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 			return true, nil
 		}
 
-		user.Character.CancelBuffsWithFlag(buffs.Hidden)
+		user.Character.CancelBuffsWithFlag("hidden")
 
 		room.Gold += dropAmt
 		user.Character.Gold -= dropAmt
@@ -82,9 +82,22 @@ func Drop(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 		user.SendText(fmt.Sprintf("You don't have a %s to drop.", rest))
 	} else {
 
-		user.Character.CancelBuffsWithFlag(buffs.Hidden)
+		user.Character.CancelBuffsWithFlag("hidden")
 
 		iSpec := matchItem.GetSpec()
+
+		// Check floor item limit before dropping
+		floorLimit := int(configs.GetGamePlayConfig().FloorItemCountMax)
+		if floorLimit > 0 && len(room.Items) >= floorLimit {
+			user.SendText(
+				fmt.Sprintf(`There are too many items on the floor! The <ansi fg="item">%s</ansi> re-appears in your hands!`, matchItem.DisplayName()),
+			)
+			room.SendText(
+				fmt.Sprintf(`There are too many items on the floor! The <ansi fg="item">%s</ansi> re-appears in <ansi fg="username">%s</ansi>'s hands!`, matchItem.DisplayName(), user.Character.Name),
+				user.UserId,
+			)
+			return true, nil
+		}
 
 		// Swap the item location
 		user.Character.RemoveItem(matchItem)

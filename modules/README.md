@@ -40,3 +40,155 @@ Extract any modules into this folder.
 
 * leaderboards/leaderboards.go
 * leaderboards/files/*
+
+---
+
+# Community Module Manager
+
+The module manager is built into the server binary. Run it via the `module`
+subcommand:
+
+## Commands
+
+```sh
+# Run the module manager interactively
+go run . module 
+```
+
+Or run commands individually:
+
+```sh
+
+# List all available modules (fetched live from the registry)
+go run . module list
+
+# Show full details for a module
+go run . module info <name>
+
+# Install a module
+go run . module install <name>
+
+# Remove an installed module
+go run . module remove <name>
+
+# Check for updates (all installed modules)
+go run . module update
+
+# Update a specific module
+go run . module update <name>
+```
+
+With a built binary:
+
+```sh
+./go-mud-server module list
+./go-mud-server module install <name>
+```
+
+A `make module` shortcut is also available.
+
+## Using a custom manifest (local testing)
+
+By default the manager loads the manifest from the official registry URL. For
+local testing you can temporarily point it at a different manifest with the
+global `--manifest` flag, which accepts either an http(s) URL or a local
+filesystem path (a `file://` prefix is also accepted):
+
+```sh
+# Local file
+go run . module --manifest ./my-registry.yaml list
+go run . module --manifest /abs/path/registry.yaml install <name>
+
+# Alternate URL
+go run . module --manifest https://example.com/registry.yaml list
+```
+
+The flag may appear anywhere in the command. The manifest location must end in
+`.yaml` (or `.yml`), and the manager prints a warning whenever a non-default
+manifest is in use. Module archives referenced by the manifest `url` may also be
+local paths (or `file://` URLs), so a module can be installed entirely from
+local files. Downloads are still SHA256-verified against the manifest in all
+cases.
+
+In interactive mode (where the `--manifest` switch can't be passed) use the
+`manifest-source` command to change the source for the rest of the session:
+
+```sh
+> manifest-source                  # show the current source
+> manifest-source ./my-registry.yaml   # set it for this session
+> manifest-source default          # reset to the default registry
+```
+
+## After installing or removing a module
+
+Modules are compiled into the server binary, so a rebuild is required for
+any change to take effect:
+
+```sh
+make build
+# or: go generate && go build -o go-mud-server
+```
+
+If a newly installed module imports a Go package not already in `go.mod`,
+run `go mod tidy` before building.
+
+## modules.lock.yaml
+
+When a community module is installed, the manager writes
+`modules/modules.lock.yaml` to record what is installed, at what version,
+and from where. This file is managed automatically - do not edit it by hand.
+
+You can commit `modules.lock.yaml` to source control if you want to track
+which community modules your server uses. It is not required.
+
+## Registry
+
+The registry is defined in `module-registry.yaml` at the repo root and is
+fetched from:
+
+    https://raw.githubusercontent.com/GoMudEngine/GoMud-Modules/refs/heads/master/module-registry.yaml
+
+To submit a new community module, open a pull request that adds an entry to
+`module-registry.yaml`. Each entry requires:
+
+- `name` - the directory name that will be created under `modules/`
+- `description` - a one-line description
+- `version` - semver string
+- `author` - your name or organisation
+- `url` - direct download link to a `.tar.gz` or `.zip` source archive
+- `sha256` - SHA256 hex digest of the archive (used for integrity verification)
+
+To generate the SHA256 of your archive:
+
+```sh
+# Linux / macOS
+sha256sum your-module-1.0.0.tar.gz
+
+# Windows (PowerShell)
+Get-FileHash your-module-1.0.0.zip -Algorithm SHA256
+```
+
+## Authoring a community module
+
+A community module is a directory of Go source files. The archive you publish
+must extract to the following layout (flat or inside a single top-level
+wrapper directory, which is stripped automatically):
+
+```
+<module-name>.go          <- at least one .go file; registers via init()
+files/                    <- optional: embedded data files
+  datafiles/
+    templates/...
+    html/...
+  data-overlays/
+    config.yaml
+    keywords.yaml
+```
+
+The Go files import GoMud internals using the standard module path:
+
+```go
+import "github.com/GoMudEngine/GoMud/internal/plugins"
+```
+
+See the existing modules in this directory for complete examples.

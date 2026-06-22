@@ -8,7 +8,6 @@ import (
 	"path"
 	"runtime"
 	"runtime/debug"
-	"slices"
 	"strconv"
 	"strings"
 	"sync"
@@ -21,6 +20,7 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/colorpatterns"
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/connections"
+	"github.com/GoMudEngine/GoMud/internal/conversations"
 	"github.com/GoMudEngine/GoMud/internal/copyover"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/flags"
@@ -33,6 +33,7 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/keywords"
 	"github.com/GoMudEngine/GoMud/internal/language"
 	"github.com/GoMudEngine/GoMud/internal/migration"
+	"github.com/GoMudEngine/GoMud/internal/modmanager"
 	"github.com/GoMudEngine/GoMud/internal/usercommands"
 	"github.com/GoMudEngine/GoMud/internal/version"
 	"github.com/gorilla/websocket"
@@ -48,8 +49,10 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/races"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
 	"github.com/GoMudEngine/GoMud/internal/scripting"
+	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/spells"
 	"github.com/GoMudEngine/GoMud/internal/suggestions"
+	"github.com/GoMudEngine/GoMud/internal/telemetry"
 	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/term"
 	"github.com/GoMudEngine/GoMud/internal/users"
@@ -64,7 +67,7 @@ import (
 // When updating this version:
 // 1. Expect to update the github release version
 // 2. Consider whether any migration code is needed for breaking changes, particularly in datafiles (see internal/migration)
-const VERSION = "0.9.2"
+const VERSION = "0.9.10"
 
 var (
 	sigChan            = make(chan os.Signal, 1)
@@ -79,6 +82,12 @@ var (
 )
 
 func main() {
+
+	// Dispatch the module manager subcommand before any server initialisation.
+	if len(os.Args) >= 2 && os.Args[1] == "module" {
+		modmanager.Run(os.Args[2:])
+		return
+	}
 
 	serverStartTime := time.Now()
 
@@ -165,19 +174,21 @@ func main() {
 	//
 	mudlog.Info(`========================`)
 	//
-	cfgData := c.AllConfigData()
-	cfgKeys := make([]string, 0, len(cfgData))
-	for k := range cfgData {
-		cfgKeys = append(cfgKeys, k)
-	}
+	/*
+		cfgData := c.AllConfigData()
+		cfgKeys := make([]string, 0, len(cfgData))
+		for k := range cfgData {
+			cfgKeys = append(cfgKeys, k)
+		}
 
-	// sort the keys
-	slices.Sort(cfgKeys)
-	for _, k := range cfgKeys {
-		mudlog.Info("Config", "name", k, "value", cfgData[k])
-	}
-	//
-	mudlog.Info(`========================`)
+		// sort the keys
+		slices.Sort(cfgKeys)
+		for _, k := range cfgKeys {
+			mudlog.Info("Config", "name", k, "value", cfgData[k])
+		}
+		//
+		mudlog.Info(`========================`)
+	*/
 
 	// Older versions of GoMud may not have this folder present.
 	// Also deleting the folder is a quick way to reset instance state, so this corrects that if it happens.
@@ -186,6 +197,13 @@ func main() {
 	// Register the plugin filesystem with the template system
 	templates.RegisterFS(plugins.GetPluginRegistry())
 	items.RegisterFS(plugins.GetPluginRegistry())
+	mutators.RegisterFS(plugins.GetPluginRegistry())
+	buffs.RegisterFS(plugins.GetPluginRegistry())
+	buffs.RegisterFlagFS(plugins.GetPluginRegistry())
+	pets.RegisterFS(plugins.GetPluginRegistry())
+	quests.RegisterFS(plugins.GetPluginRegistry())
+	mobs.RegisterFS(plugins.GetPluginRegistry())
+	conversations.RegisterFS(plugins.GetPluginRegistry())
 	usercommands.AddFunctionExporter(plugins.GetPluginRegistry())
 	users.AddFunctionExporter(plugins.GetPluginRegistry())
 	usercommands.SetRoomTagProvider(plugins.GetRegisteredRoomTags)
@@ -210,6 +228,9 @@ func main() {
 	})
 
 	hooks.RegisterListeners()
+
+	telemetry.Load(configs.GetFilePathsConfig().DataFiles.String())
+	telemetry.RegisterListeners()
 
 	// Discord integration
 	if webhookUrl := string(c.Integrations.Discord.WebhookUrl); webhookUrl != "" {
@@ -250,19 +271,27 @@ func main() {
 	isCopyover := flags.CopyoverFd() >= 0
 
 	if !isCopyover {
+		timeStart := time.Now()
 		idx := users.InitUserIndex()
 		if !idx.Exists() {
 			// Since it doesn't exist yet, that's a good indication we should do a quick format migration check
 			users.DoUserMigrations()
 		}
-		idx.Create()
-		idx.Rebuild()
-		mudlog.Info("UserIndex", "info", "User index recreated.")
+		if idx.IsUpToDate() {
+			mudlog.Info("UserIndex", "info", "User index up to date.", "users", idx.GetMetaData().RecordCount, "time taken", time.Since(timeStart))
+		} else {
+			idx.Create()
+			idx.Rebuild()
+			mudlog.Info("UserIndex", "info", "User index recreated.", "users", idx.GetMetaData().RecordCount, "time taken", time.Since(timeStart))
+		}
 	}
+
+	users.GetCharacterIndex().Rebuild()
+	mudlog.Info("CharacterIndex", "info", "Active character names indexed.", "characters", users.GetCharacterIndex().Len())
 
 	// Load the round count from the file
 	if !isCopyover {
-		if util.LoadRoundCount(c.FilePaths.DataFiles.String()+`/`+util.RoundCountFilename) == util.RoundCountMinimum {
+		if util.LoadRoundCount(util.FilePath(c.FilePaths.DataFiles.String()+`/`+util.RoundCountFilename)) == util.RoundCountMinimum {
 			gametime.SetToDay(-3)
 		}
 	}
@@ -290,6 +319,8 @@ func main() {
 		configs.GetFilePathsConfig().DataFiles.String(),
 	)
 
+	mudlog.Info("CharacterIndex", "info", "Character name index complete.", "characters", users.GetCharacterIndex().Len())
+
 	web.SetWebPlugin(plugins.GetPluginRegistry())
 
 	//
@@ -312,14 +343,20 @@ func main() {
 	allServerListeners := make([]net.Listener, 0, len(c.Network.TelnetPort))
 	for _, port := range c.Network.TelnetPort {
 		if p, err := strconv.Atoi(port); err == nil && p > 0 {
-			if s := TelnetListenOnPort(``, p, &wg, int(c.Network.MaxTelnetConnections)); s != nil {
+			if s := TelnetListenOnPort(``, p, &wg, int(c.Network.MaxTelnetConnections), connections.ConnHuman); s != nil {
 				allServerListeners = append(allServerListeners, s)
 			}
 		}
 	}
 
 	if c.Network.LocalPort > 0 {
-		TelnetListenOnPort(`127.0.0.1`, int(c.Network.LocalPort), &wg, 0)
+		TelnetListenOnPort(`127.0.0.1`, int(c.Network.LocalPort), &wg, 0, connections.ConnHuman)
+	}
+
+	if c.Network.AI.Port > 0 {
+		if s := TelnetListenOnPort(``, int(c.Network.AI.Port), &wg, int(c.Network.AI.MaxConnections), connections.ConnAI); s != nil {
+			allServerListeners = append(allServerListeners, s)
+		}
 	}
 
 	if sshPort := int(c.Network.SSHPort); sshPort > 0 {
@@ -327,7 +364,7 @@ func main() {
 		if hostKeyPath == `` {
 			mudlog.Error("SSH", "error", "SSHPort is set but SSHHostKeyFile is not configured; SSH disabled")
 		} else {
-			hostKeyBytes, err := os.ReadFile(hostKeyPath)
+			hostKeyBytes, err := util.ReadFile(hostKeyPath)
 			if err != nil {
 				mudlog.Error("SSH", "error", "failed to read SSH host key", "path", hostKeyPath, "details", err)
 			} else {
@@ -386,7 +423,7 @@ func main() {
 
 	serverAlive.Store(false) // immediately stop processing incoming connections
 
-	util.SaveRoundCount(c.FilePaths.DataFiles.String() + `/` + util.RoundCountFilename)
+	util.SaveRoundCount(util.FilePath(c.FilePaths.DataFiles.String() + `/` + util.RoundCountFilename))
 
 	// some last minute stats reporting
 	totalConnections, totalDisconnections := connections.Stats()
@@ -576,6 +613,81 @@ func resumeRestoredConnection(connDetails *connections.ConnectionDetails, userOb
 	}
 }
 
+// Bounds for the connect-time client-type detection probe.
+const (
+	clientDetectTimeout      = 2 * time.Second        // overall budget before defaulting to non-Mudlet
+	clientDetectReadDeadline = 200 * time.Millisecond // per-read slice so we can re-check the budget
+)
+
+// detectClientType probes a raw telnet client with an MNES NEW-ENVIRON request
+// and synchronously waits (with a bounded timeout) for the reply so the caller
+// can choose the correct echo baseline before the first prompt is shown.
+//
+// Replies are fed through the normal input handler chain, where TelnetIACHandler
+// performs the NEW-ENVIRON negotiation and records IsMudlet/DetectionComplete on
+// the connection's client settings. The login handler is intentionally not in
+// the chain yet, so stray pre-login input is simply buffered (not echoed) and is
+// preserved for the main loop. On timeout the client defaults to non-Mudlet.
+//
+// AI connections skip the probe entirely and keep the historical raw-telnet
+// baseline, so automated clients are not delayed by the detection window.
+func detectClientType(connDetails *connections.ConnectionDetails, clientInput *connections.ClientInput, sharedState map[string]any) {
+
+	connId := connDetails.ConnectionId()
+
+	if connDetails.ConnType() == connections.ConnAI {
+		cs := connections.GetClientSettings(connId)
+		cs.DetectionComplete = true
+		connections.OverwriteClientSettings(connId, cs)
+		return
+	}
+
+	// Ask the client to enable NEW-ENVIRON. A Mudlet client replies WILL, which
+	// TelnetIACHandler answers with the MNES SEND request; Mudlet then returns
+	// its CLIENT_NAME. Non-Mudlet clients reply WONT (or never reply -> timeout).
+	connections.SendTo(term.TelnetRequestNewEnviron.BytesWithPayload(nil), connId)
+
+	buf := make([]byte, connections.ReadBufferSize)
+	deadline := time.Now().Add(clientDetectTimeout)
+
+	for {
+		if connections.GetClientSettings(connId).DetectionComplete {
+			break
+		}
+		if !time.Now().Before(deadline) {
+			break
+		}
+
+		_ = connDetails.SetReadDeadline(time.Now().Add(clientDetectReadDeadline))
+
+		n, err := connDetails.Read(buf)
+		if err != nil {
+			if ne, ok := err.(net.Error); ok && ne.Timeout() {
+				continue // no data this slice; re-check the overall budget
+			}
+			break // a real read error; let the main loop surface it
+		}
+		if n == 0 {
+			continue
+		}
+
+		clientInput.DataIn = buf[:n]
+		if _, lastHandler, herr := connDetails.HandleInput(clientInput, sharedState); herr != nil {
+			mudlog.Warn("Client detection input", "handler", lastHandler, "connectionId", connId, "error", herr)
+		}
+	}
+
+	// Restore blocking reads for the main loop.
+	_ = connDetails.SetReadDeadline(time.Time{})
+
+	// Ensure detection is flagged complete even if we timed out.
+	cs := connections.GetClientSettings(connId)
+	if !cs.DetectionComplete {
+		cs.DetectionComplete = true
+		connections.OverwriteClientSettings(connId, cs)
+	}
+}
+
 func handleTelnetConnection(connDetails *connections.ConnectionDetails, wg *sync.WaitGroup) {
 	defer func() {
 		wg.Done()
@@ -597,8 +709,10 @@ func handleTelnetConnection(connDetails *connections.ConnectionDetails, wg *sync
 	connDetails.AddInputHandler("CleanserInputHandler", inputhandlers.CleanserInputHandler)
 	connDetails.AddInputHandler("TextPrefixHandler", inputhandlers.TextPrefixHandler)
 
-	loginHandler := inputhandlers.GetLoginPromptHandler()           // Get the configured handler func
-	connDetails.AddInputHandler("LoginPromptHandler", loginHandler) // Add it with a unique name
+	// Get the configured login handler func. It is added to the input handler
+	// chain further down, AFTER client-type detection, so that the connect-time
+	// echo baseline is correct before the very first (username) prompt is shown.
+	loginHandler := inputhandlers.GetLoginPromptHandler()
 
 	// Turn off "line at a time", send chars as typed
 	connections.SendTo(
@@ -611,13 +725,12 @@ func handleTelnetConnection(connDetails *connections.ConnectionDetails, wg *sync
 		connDetails.ConnectionId(),
 	)
 
-	// Tell the client we intend to echo back what they type
-	// So they shouldn't locally echo it
+	// NOTE: The echo negotiation (WILL/WONT ECHO) is deliberately NOT sent here.
+	// It depends on the client type, which we detect below before showing the
+	// first prompt. Raw telnet clients rely on server-side echo (WILL ECHO),
+	// while local-echo clients such as Mudlet must start at WONT ECHO. See the
+	// detection block further down.
 
-	connections.SendTo(
-		term.TelnetWILL(term.TELNET_OPT_ECHO),
-		connDetails.ConnectionId(),
-	)
 	// Request that the client report window size changes as they happen
 	connections.SendTo(
 		term.TelnetDO(term.TELNET_OPT_NAWS),
@@ -638,6 +751,15 @@ func handleTelnetConnection(connDetails *connections.ConnectionDetails, wg *sync
 
 	connections.SendTo(
 		term.TelnetSuppressGoAhead.BytesWithPayload(nil),
+		connDetails.ConnectionId(),
+	)
+
+	// Offer EOR (End Of Record) support. Mudlet prefers EOR over GA and uses it
+	// to delimit prompts; without it (and with SUPPRESS-GO-AHEAD set) Mudlet has
+	// no prompt anchor, which can prevent its input-line password masking from
+	// engaging even though it honors the ECHO option.
+	connections.SendTo(
+		term.TelnetWILL(term.TELNET_OPT_EOR),
 		connDetails.ConnectionId(),
 	)
 
@@ -683,6 +805,30 @@ func handleTelnetConnection(connDetails *connections.ConnectionDetails, wg *sync
 	// (This part was mostly correct before)
 	splashTxt, _ := templates.Process("login/connect-splash", nil)
 	connections.SendTo([]byte(templates.AnsiParse(splashTxt)), connDetails.ConnectionId())
+
+	if connDetails.ConnType() == connections.ConnAI {
+		connections.SendTo([]byte("\r\nThis port is for AI clients. Human players, please use the standard telnet port.\r\n\r\n"), connDetails.ConnectionId())
+	}
+
+	// --- Detect the client type and pick the connect-time echo baseline ---
+	// Local-echo clients such as Mudlet echo input themselves and read telnet
+	// ECHO purely as a "mask this field" hint, so they must start at WONT ECHO
+	// (and only see WILL ECHO transiently around password prompts). Raw telnet
+	// clients rely on server-side echo, so they keep the historical WILL ECHO.
+	detectClientType(connDetails, clientInput, sharedState)
+
+	clientCS := connections.GetClientSettings(connDetails.ConnectionId())
+	if clientCS.IsMudlet {
+		// Mudlet does its own local echo -> baseline is WONT ECHO.
+		connections.SendTo(term.TelnetWONT(term.TELNET_OPT_ECHO), connDetails.ConnectionId())
+	} else {
+		// Raw telnet keeps server-side echo (unchanged behavior).
+		connections.SendTo(term.TelnetWILL(term.TELNET_OPT_ECHO), connDetails.ConnectionId())
+	}
+
+	// Now that the echo baseline is correct, add the login handler so the first
+	// prompt is rendered with the right masking behavior.
+	connDetails.AddInputHandler("LoginPromptHandler", loginHandler)
 
 	// --- Trigger the Prompt Handler to initialize state and send the FIRST prompt ---
 	// Create a dummy input that signifies "start the process" but has no actual user data/control codes.
@@ -871,6 +1017,12 @@ func handleTelnetConnection(connDetails *connections.ConnectionDetails, wg *sync
 
 			worldManager.SendEnterWorld(userObject.UserId, userObject.Character.RoomId)
 
+			if connDetails.ConnType() == connections.ConnAI && !userObject.IsAI {
+				connections.SendTo([]byte("\r\nWarning: this account is not flagged as AI but connected on the AI port.\r\n"), connDetails.ConnectionId())
+			} else if connDetails.ConnType() == connections.ConnHuman && userObject.IsAI {
+				connections.SendTo([]byte("\r\nWarning: this AI account is connected on a human port. Please use the AI port.\r\n"), connDetails.ConnectionId())
+			}
+
 			clientInput.Reset()
 			continue
 		}
@@ -926,6 +1078,19 @@ func handleTelnetConnection(connDetails *connections.ConnectionDetails, wg *sync
 						connections.SendTo([]byte(templates.AnsiParse(userObject.GetCommandPrompt())), clientInput.ConnectionId)
 					}
 
+				}
+
+				if connDetails.ConnType() == connections.ConnAI {
+					if !connDetails.AICommandAllowed(int64(util.GetRoundCount()), int(c.Network.AI.CommandsPerRound)) {
+						connections.SendTo(
+							[]byte(fmt.Sprintf("Command dropped — AI rate limit (%d/round). Wait for the next round.\r\n", int(c.Network.AI.CommandsPerRound))),
+							connDetails.ConnectionId(),
+						)
+						clientInput.Reset()
+						userObject.SetUnsentText(``, ``)
+						time.Sleep(time.Duration(10) * time.Millisecond)
+						continue
+					}
 				}
 
 				wi := WorldInput{
@@ -1168,7 +1333,7 @@ func HandleWebSocketConnection(conn *websocket.Conn) {
 	}
 }
 
-func TelnetListenOnPort(hostname string, portNum int, wg *sync.WaitGroup, maxConnections int) net.Listener {
+func TelnetListenOnPort(hostname string, portNum int, wg *sync.WaitGroup, maxConnections int, connType connections.ConnType) net.Listener {
 
 	server, err := net.Listen("tcp", fmt.Sprintf("%s:%d", hostname, portNum))
 	if err != nil {
@@ -1194,19 +1359,28 @@ func TelnetListenOnPort(hostname string, portNum int, wg *sync.WaitGroup, maxCon
 			}
 
 			if maxConnections > 0 {
-				if connections.ActiveConnectionCount() >= maxConnections {
-					conn.Write([]byte(fmt.Sprintf("\n\n\n!!! Server is full (%d connections). Try again later. !!!\n\n\n", connections.ActiveConnectionCount())))
+				activeCount := connections.ActiveConnectionCount()
+				if connType == connections.ConnAI {
+					activeCount = connections.ActiveAIConnectionCount()
+				}
+				if activeCount >= maxConnections {
+					if connType == connections.ConnAI {
+						conn.Write([]byte("\n\n\n!!! AI connection pool is full. Try again later. !!!\n\n\n"))
+					} else {
+						conn.Write([]byte(fmt.Sprintf("\n\n\n!!! Server is full (%d connections). Try again later. !!!\n\n\n", activeCount)))
+					}
 					conn.Close()
 					continue
 				}
 			}
 
 			wg.Add(1)
+			connDetails := connections.Add(conn, nil, connType)
+			if connType == connections.ConnAI {
+				connDetails.SetStripAnsi(true)
+			}
 			// hand off the connection to a handler goroutine so that we can continue handling new connections
-			go handleTelnetConnection(
-				connections.Add(conn, nil),
-				wg,
-			)
+			go handleTelnetConnection(connDetails, wg)
 
 		}
 	}()
@@ -1325,6 +1499,7 @@ func handleSSHConnection(connDetails *connections.ConnectionDetails, reqs <-chan
 						cs.Display.ScreenWidth = cols
 						cs.Display.ScreenHeight = rows
 						connections.OverwriteClientSettings(connDetails.ConnectionId(), cs)
+						connections.NotifyWindowChange(connDetails.ConnectionId(), cols, rows)
 					}
 				}
 				if req.WantReply {
@@ -1556,13 +1731,17 @@ func loadAllDataFiles(isReload bool) {
 	// Force clear all cached VM's
 	scripting.PruneVMs(true)
 
+	gametime.LoadGameTimeConfigs()
 	// Load biomes before rooms since rooms reference biomes
 	rooms.LoadBiomeDataFiles()
 	spells.LoadSpellFiles()
 	rooms.LoadDataFiles()
-	buffs.LoadDataFiles() // Load buffs before items for cost calculation reasons
+	buffs.LoadFlagDataFiles() // Load buff flags before buffs so buff validation can check flags
+	buffs.LoadDataFiles()     // Load buffs before items for cost calculation reasons
 	items.LoadDataFiles()
 	races.LoadDataFiles()
+	skills.LoadDataFiles()           // skills before professions for cross-ref warnings
+	skills.LoadProfessionDataFiles() // professions reference skills
 	mobs.LoadDataFiles()
 	pets.LoadDataFiles()
 	quests.LoadDataFiles()

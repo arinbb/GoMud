@@ -5,9 +5,13 @@ import (
 	"sort"
 
 	"github.com/GoMudEngine/GoMud/internal/colorpatterns"
-	"github.com/GoMudEngine/GoMud/internal/mudlog"
-	"github.com/GoMudEngine/ansitags"
+	"github.com/GoMudEngine/GoMud/internal/util"
 )
+
+// OnGetFormattedName is fired at the end of getFormattedName with the
+// fully-populated FormattedName. Modules may register handlers to modify the
+// name before it is returned to the caller (e.g. to append a title).
+var OnGetFormattedName util.Hook[FormattedName]
 
 type adjectiveStyle struct {
 	LongForm     string
@@ -21,6 +25,7 @@ var (
 	adjectiveStyles = map[string]adjectiveStyle{
 		`charmed`:  {`♥friend`, `♥`, `pink`},     // Are they charmed/friendly?
 		`downed`:   {`☠downed`, `☠`, `red`},      // Are they downed?
+		`elite`:    {`elite`, `◆`, `elite`},      // Are they an elite mob?
 		`hidden`:   {`hidden`, `?`, `gray`},      // Are they hiding?
 		`lit`:      {`☀️Lit`, `☀️`, `lit`},       // Does light come from this character?
 		`sleeping`: {`asleep`, `zZz`, `gray`},    // Are they hiding?
@@ -36,6 +41,7 @@ type FormattedName struct {
 	Name               string
 	Type               string // mob/user
 	Suffix             string // What ansi alias suffix to use (if any)
+	Title              string // Optional title appended after name (e.g. "Mayor of Frostfang")
 	Adjectives         []string
 	UseShortAdjectives bool   // Whether to failover to short adjectives
 	QuestAlert         bool   // Whether this mob is relevant to a current quest
@@ -50,6 +56,10 @@ func (f FormattedName) String() string {
 	}
 
 	output := fmt.Sprintf(`<ansi fg="%s">%s</ansi>`, ansiAlias, f.Name)
+
+	if f.Title != `` {
+		output += `, ` + f.Title
+	}
 
 	adjectives := f.Adjectives
 
@@ -116,7 +126,9 @@ func CompileAdjectiveSwaps() {
 		adjectiveSwaps[adjName+`-short`] = colorpatterns.ApplyColorPattern(styleDefinition.ShortForm, styleDefinition.ColorPattern)
 	}
 
-	for _, name := range GetFormattedAdjectives(true) {
-		mudlog.Info("Color Test (Adjectives)", "name", name, "short", ansitags.Parse(GetFormattedAdjective(name+`-short`)), "full", ansitags.Parse(GetFormattedAdjective(name)))
-	}
+	/*
+		for _, name := range GetFormattedAdjectives(true) {
+			mudlog.Info("Color Test (Adjectives)", "name", name, "short", ansitags.Parse(GetFormattedAdjective(name+`-short`)), "full", ansitags.Parse(GetFormattedAdjective(name)))
+		}
+	*/
 }

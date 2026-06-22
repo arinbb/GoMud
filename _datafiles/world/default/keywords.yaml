@@ -27,6 +27,7 @@ help:
       - pets
       - train
       - stat-train
+      - stats
       - bury
     communication:
       - emote
@@ -72,6 +73,7 @@ help:
       - drink
       - eat
       - equip
+      - feed
       - get
       - give
       - remove
@@ -98,6 +100,7 @@ help:
       - backstab
       - brawling
       - bump
+      - changeform
       - dual-wield
       - tackle
       - disarm
@@ -125,9 +128,11 @@ help:
       - build
       - command
       - copyover
+      - formset
       - item
       - grant
       - locate
+      - mob
       - modify
       - mute
       - paz
@@ -140,7 +145,10 @@ help:
       - server
       - skillset
       - spawn
+      - spell
       - syslogs
+      - teleport
+      - unmute
       - zap
       - zone
       - visit
@@ -173,10 +181,12 @@ help-aliases:
   killstats:        [kills, kd]
   trading:          [haggle]
   pets:             [pet]
+  feed:             [feed]
   macros:           [macro]
   history:          ['log']
   pvp:              ['pk']
   about:            ['gomud']
+  stats:            [stat, attributes, attrs]
   stat-train:       ['stat train', 'status train', 'stat points']
   train:            ['trainer']
 # Default aliases for commands

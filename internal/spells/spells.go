@@ -170,7 +170,7 @@ func (s *SpellData) GetScript() string {
 
 	// Load the script into a string
 	if _, err := os.Stat(scriptPath); err == nil {
-		if bytes, err := os.ReadFile(scriptPath); err == nil {
+		if bytes, err := util.ReadFile(scriptPath); err == nil {
 			return string(bytes)
 		}
 	}
@@ -179,8 +179,8 @@ func (s *SpellData) GetScript() string {
 }
 
 func (s *SpellData) GetScriptPath() string {
-	// Load any script for the room
-	return strings.Replace(string(configs.GetFilePathsConfig().DataFiles)+`/spells/`+s.Filepath(), `.yaml`, `.js`, 1)
+	// Load any script for the spell (prefers .js, falls back to .lua)
+	return util.ResolveScriptPath(string(configs.GetFilePathsConfig().DataFiles) + `/spells/` + s.Filepath())
 }
 
 func LoadSpellFiles() {

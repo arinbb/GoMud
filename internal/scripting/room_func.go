@@ -18,11 +18,10 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/users"
 	"github.com/GoMudEngine/GoMud/internal/util"
-	"github.com/dop251/goja"
 	"github.com/mattn/go-runewidth"
 )
 
-func setRoomFunctions(vm *goja.Runtime) {
+func setRoomFunctions(vm registrar) {
 	vm.Set(`GetRoom`, GetRoom)
 	vm.Set(`GetMap`, GetMap)
 	vm.Set(`CreateEmptyRoomInstances`, CreateEmptyRoomInstances)
@@ -62,6 +61,14 @@ func (r ScriptRoom) GetPermData(key string) any {
 func (r ScriptRoom) GetItems() []ScriptItem {
 	itms := make([]ScriptItem, 0, 5)
 	for _, item := range r.roomRecord.GetAllFloorItems(false) {
+		itms = append(itms, newScriptItem(item))
+	}
+	return itms
+}
+
+func (r ScriptRoom) GetStashItems() []ScriptItem {
+	itms := make([]ScriptItem, 0, 5)
+	for _, item := range r.roomRecord.Stash {
 		itms = append(itms, newScriptItem(item))
 	}
 	return itms
@@ -143,12 +150,143 @@ func (r ScriptRoom) GetAllActors() []*ScriptActor {
 	return actorList
 }
 
-func (r ScriptRoom) GetContainers() []string {
-	keys := []string{}
-	for key, _ := range r.roomRecord.Containers {
-		keys = append(keys, key)
+func (r ScriptRoom) GetContainers() []ScriptContainer {
+	containers := make([]ScriptContainer, 0, len(r.roomRecord.Containers))
+	for key := range r.roomRecord.Containers {
+		containers = append(containers, ScriptContainer{name: key, roomRecord: r.roomRecord})
 	}
-	return keys
+	return containers
+}
+
+// ScriptContainer wraps a named container in a room, providing scripting
+// access to its contents, lock state, and gold.
+type ScriptContainer struct {
+	name       string
+	roomRecord *rooms.Room
+}
+
+func (c ScriptContainer) Name() string {
+	return c.name
+}
+
+func (c ScriptContainer) IsLocked() bool {
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		return container.Lock.IsLocked()
+	}
+	return false
+}
+
+func (c ScriptContainer) HasLock() bool {
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		return container.HasLock()
+	}
+	return false
+}
+
+func (c ScriptContainer) Lock() {
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		container.Lock.SetLocked()
+		c.roomRecord.Containers[c.name] = container
+	}
+}
+
+func (c ScriptContainer) Unlock() {
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		container.Lock.SetUnlocked()
+		c.roomRecord.Containers[c.name] = container
+	}
+}
+
+func (c ScriptContainer) GetItems() []ScriptItem {
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		itms := make([]ScriptItem, 0, len(container.Items))
+		for _, item := range container.Items {
+			itms = append(itms, newScriptItem(item))
+		}
+		return itms
+	}
+	return []ScriptItem{}
+}
+
+func (c ScriptContainer) FindItem(itemName string) *ScriptItem {
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		if item, found := container.FindItem(itemName); found {
+			si := newScriptItem(item)
+			return &si
+		}
+	}
+	return nil
+}
+
+func (c ScriptContainer) AddItem(itm ScriptItem) bool {
+	if itm.itemRecord == nil || itm.itemRecord.ItemId == 0 {
+		return false
+	}
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		container.AddItem(*itm.itemRecord)
+		c.roomRecord.Containers[c.name] = container
+		return true
+	}
+	return false
+}
+
+func (c ScriptContainer) RemoveItem(itm ScriptItem) bool {
+	if itm.itemRecord == nil || itm.itemRecord.ItemId == 0 {
+		return false
+	}
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		before := len(container.Items)
+		container.RemoveItem(*itm.itemRecord)
+		c.roomRecord.Containers[c.name] = container
+		return len(container.Items) < before
+	}
+	return false
+}
+
+func (c ScriptContainer) GetGold() int {
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		return container.Gold
+	}
+	return 0
+}
+
+func (c ScriptContainer) AddGold(amount int) {
+	if amount <= 0 {
+		return
+	}
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		container.Gold += amount
+		c.roomRecord.Containers[c.name] = container
+	}
+}
+
+func (c ScriptContainer) RemoveGold(amount int) int {
+	if amount <= 0 {
+		return 0
+	}
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		if amount > container.Gold {
+			amount = container.Gold
+		}
+		container.Gold -= amount
+		c.roomRecord.Containers[c.name] = container
+		return amount
+	}
+	return 0
+}
+
+func (c ScriptContainer) Count(itemId int) int {
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		return container.Count(itemId)
+	}
+	return 0
+}
+
+func (c ScriptContainer) IsTemporary() bool {
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		return container.DespawnRound > 0
+	}
+	return false
 }
 
 func (r ScriptRoom) GetExits() []map[string]any {
@@ -363,12 +501,7 @@ func (r ScriptRoom) RemoveTemporaryExit(exitNameSimple string, exitNameFancy str
 }
 
 func (r ScriptRoom) HasTag(tag string) bool {
-	for _, t := range r.roomRecord.Tags {
-		if t == tag {
-			return true
-		}
-	}
-	return false
+	return r.roomRecord.HasTag(tag)
 }
 
 func (r ScriptRoom) SetTag(tag string) {
@@ -407,6 +540,14 @@ func (r ScriptRoom) RemoveMutator(mutName string) {
 
 func (r ScriptRoom) IsEphemeral() bool {
 	return rooms.IsEphemeralRoomId(r.roomRecord.RoomId)
+}
+
+// PlaySound plays a sound for all players currently in the room.
+// soundId is the identifier defined in audio.yaml (e.g. "room-enter").
+// category groups related sounds for client-side volume control (e.g. "combat", "movement").
+// Optional excludeUserIds are user IDs that should NOT receive the sound.
+func (r ScriptRoom) PlaySound(soundId string, category string, excludeUserIds ...int) {
+	r.roomRecord.PlaySound(soundId, category, excludeUserIds...)
 }
 
 // ////////////////////////////////////////////////////////
@@ -498,21 +639,42 @@ func GetMap(mapRoomId int, zoomLevel int, mapHeight int, mapWidth int, mapName s
 	legend := mapOutput.GetLegend(keywords.GetAllLegendAliases(room.Zone))
 
 	displayLines := []string{}
-	for i, line := range mapOutput.Render {
-		displayLines = append(displayLines, string(line))
-		for sym, txtLegend := range legend {
-			txtLc := strings.ToLower(txtLegend)
-			displayLines[i] = strings.Replace(displayLines[i], string(sym), fmt.Sprintf(`<ansi fg="map-room"><ansi fg="map-%s" bg="mapbg-%s">%c</ansi></ansi>`, txtLc, txtLc, sym), -1)
+	for _, row := range mapOutput.Render {
+		var sb strings.Builder
+		for _, cell := range row {
+			if cell.Symbol == ' ' {
+				sb.WriteRune(' ')
+				continue
+			}
+			if cell.FGColor > 0 {
+				if cell.BGColor > 0 {
+					fmt.Fprintf(&sb, `<ansi fg="map-room"><ansi fg="%d" bg="%d">%c</ansi></ansi>`, cell.FGColor, cell.BGColor, cell.Symbol)
+				} else {
+					fmt.Fprintf(&sb, `<ansi fg="map-room"><ansi fg="%d">%c</ansi></ansi>`, cell.FGColor, cell.Symbol)
+				}
+			} else if name, ok := legend[cell.Symbol]; ok {
+				txtLc := strings.ToLower(name)
+				fmt.Fprintf(&sb, `<ansi fg="map-room"><ansi fg="map-%s" bg="mapbg-%s">%c</ansi></ansi>`, txtLc, txtLc, cell.Symbol)
+			} else {
+				sb.WriteRune(cell.Symbol)
+			}
 		}
+		displayLines = append(displayLines, sb.String())
 	}
 
 	mapData := map[string]any{
-		"Title":        mapName,
-		"DisplayLines": displayLines,
-		"Height":       len(displayLines),
-		"Width":        runewidth.StringWidth(string(displayLines[0])),
-		"Legend":       legend,
-		"LegendWidth":  runewidth.StringWidth(string(displayLines[0])),
+		"Title": mapName,
+		// The maps/map template renders the title with a zone-completion percent.
+		// Script-rendered maps (e.g. a map sign) have no viewing user to measure
+		// against, so default to 0 — matching the `map` command's own fallback
+		// (internal/usercommands/skill.map.go). Without this the template formats
+		// a nil with %d and leaks "%!d(<nil>)" into the title.
+		"ZoneCompletePct": 0,
+		"DisplayLines":    displayLines,
+		"Height":          len(displayLines),
+		"Width":           runewidth.StringWidth(displayLines[0]),
+		"Legend":          legend,
+		"LegendWidth":     runewidth.StringWidth(displayLines[0]),
 		"LeftBorder": map[string]any{
 			"Top":    ".-=~=-.",
 			"Mid":    []string{"( _ __)", "(__  _)"},
@@ -536,4 +698,170 @@ func GetMap(mapRoomId int, zoomLevel int, mapHeight int, mapWidth int, mapName s
 	}
 
 	return mapTxt
+}
+
+// ////////////////////////////////////////////////////////
+//
+// New ScriptRoom methods
+//
+// ////////////////////////////////////////////////////////
+
+func (r ScriptRoom) GetTitle() string {
+	return r.roomRecord.Title
+}
+
+func (r ScriptRoom) SetTitle(title string) {
+	r.roomRecord.Title = title
+}
+
+func (r ScriptRoom) GetDescription() string {
+	return r.roomRecord.GetDescription()
+}
+
+func (r ScriptRoom) SetDescription(desc string) {
+	r.roomRecord.Description = desc
+}
+
+func (r ScriptRoom) GetGold() int {
+	return r.roomRecord.Gold
+}
+
+func (r ScriptRoom) AddGold(amount int) {
+	if amount <= 0 {
+		return
+	}
+	r.roomRecord.Gold += amount
+}
+
+func (r ScriptRoom) RemoveGold(amount int) int {
+	if amount <= 0 {
+		return 0
+	}
+	if amount > r.roomRecord.Gold {
+		amount = r.roomRecord.Gold
+	}
+	r.roomRecord.Gold -= amount
+	return amount
+}
+
+func (r ScriptRoom) GetZone() string {
+	return r.roomRecord.Zone
+}
+
+func (r ScriptRoom) IsPvp() bool {
+	return r.roomRecord.Pvp
+}
+
+func (r ScriptRoom) IsBank() bool {
+	return r.roomRecord.IsBank
+}
+
+func (r ScriptRoom) GetContainer(name string) *ScriptContainer {
+	if r.roomRecord.Containers == nil {
+		return nil
+	}
+	if _, ok := r.roomRecord.Containers[name]; !ok {
+		return nil
+	}
+	return &ScriptContainer{name: name, roomRecord: r.roomRecord}
+}
+
+func (r ScriptRoom) SpawnTempContainer(name string, duration string, lockDifficulty int, trapBuffIds ...int) string {
+	return r.roomRecord.SpawnTempContainer(name, duration, lockDifficulty, trapBuffIds...)
+}
+
+func (r ScriptRoom) IsCalm() bool {
+	return r.roomRecord.IsCalm()
+}
+
+func (r ScriptRoom) AreMobsAttacking(userId int) bool {
+	return r.roomRecord.AreMobsAttacking(userId)
+}
+
+func (r ScriptRoom) ArePlayersAttacking(userId int) bool {
+	return r.roomRecord.ArePlayersAttacking(userId)
+}
+
+func (r ScriptRoom) MobCount() int {
+	return r.roomRecord.MobCt()
+}
+
+func (r ScriptRoom) PlayerCount() int {
+	return r.roomRecord.PlayerCt()
+}
+
+func (r ScriptRoom) GetVisibility() int {
+	return r.roomRecord.GetVisibility()
+}
+
+func (r ScriptRoom) GetNouns() map[string]string {
+	result := make(map[string]string, len(r.roomRecord.Nouns))
+	for k, v := range r.roomRecord.Nouns {
+		result[k] = v
+	}
+	return result
+}
+
+func (r ScriptRoom) AddNoun(noun string, description string) {
+	if r.roomRecord.Nouns == nil {
+		r.roomRecord.Nouns = make(map[string]string)
+	}
+	r.roomRecord.Nouns[noun] = description
+}
+
+func (r ScriptRoom) RemoveNoun(noun string) {
+	if r.roomRecord.Nouns != nil {
+		delete(r.roomRecord.Nouns, noun)
+	}
+}
+
+func (r ScriptRoom) GetSigns() []string {
+	signs := r.roomRecord.GetPublicSigns()
+	texts := make([]string, 0, len(signs))
+	for _, s := range signs {
+		texts = append(texts, s.DisplayText)
+	}
+	return texts
+}
+
+func (r ScriptRoom) AddSign(text string, userId int, days int) bool {
+	return r.roomRecord.AddSign(text, userId, days)
+}
+
+func (r ScriptRoom) HasRecentVisitors() bool {
+	return r.roomRecord.HasRecentVisitors()
+}
+
+// ////////////////////////////////////////////////////////
+//
+// New ScriptContainer methods
+//
+// ////////////////////////////////////////////////////////
+
+func (c ScriptContainer) GetLockDifficulty() int {
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		return int(container.Lock.Difficulty)
+	}
+	return 0
+}
+
+func (c ScriptContainer) GetTrapBuffIds() []int {
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		result := make([]int, len(container.Lock.TrapBuffIds))
+		copy(result, container.Lock.TrapBuffIds)
+		return result
+	}
+	return []int{}
+}
+
+func (c ScriptContainer) GetDespawnRound() uint64 {
+	if container, ok := c.roomRecord.Containers[c.name]; ok {
+		return container.DespawnRound
+	}
+	return 0
+}
+
+func (c ScriptContainer) Exists() bool {
+	_, ok := c.roomRecord.Containers[c.name]
+	return ok
 }

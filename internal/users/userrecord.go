@@ -13,7 +13,6 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/connections"
 	"github.com/GoMudEngine/GoMud/internal/events"
-	"github.com/GoMudEngine/GoMud/internal/mudlog"
 	"github.com/GoMudEngine/GoMud/internal/prompt"
 	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/stats"
@@ -26,12 +25,14 @@ var (
 	// immutable roles
 	RoleGuest string = "guest"
 	RoleUser  string = "user"
+	RoleMod   string = "mod"
 	RoleAdmin string = "admin"
 )
 
 type UserRecord struct {
 	UserId         int                   `yaml:"userid"`
-	Role           string                `yaml:"role"` // Roles group one or more admin commands
+	Role           string                `yaml:"role"`                  // user, mod, or admin
+	Permissions    []string              `yaml:"permissions,omitempty"` // Discrete permissions for mod role
 	Username       string                `yaml:"username"`
 	Password       string                `yaml:"password"`
 	Joined         time.Time             `yaml:"joined"`
@@ -41,6 +42,7 @@ type UserRecord struct {
 	ConfigOptions  map[string]any        `yaml:"configoptions,omitempty"`
 	Muted          bool                  `yaml:"muted,omitempty"`        // Cannot SEND custom communications to anyone but admin/mods
 	ScreenReader   bool                  `yaml:"screenreader,omitempty"` // Are they using a screen reader? (We should remove excess symbols)
+	IsAI           bool                  `yaml:"isai,omitempty"`         // Flagged as an AI/test account
 	EmailAddress   string                `yaml:"emailaddress,omitempty"` // Email address (if provided)
 	TipsComplete   map[string]bool       `yaml:"tipscomplete,omitempty"` // Tips the user has followed/completed so they can be quiet
 	EventLog       UserLog               `yaml:"-"`                      // Do not retain in user file (for now)
@@ -207,6 +209,9 @@ func (u *UserRecord) GrantXP(amt int, source string) {
 		Scale:      xpScale,
 	})
 
+	tpBefore := u.Character.TrainingPoints
+	spBefore := u.Character.StatPoints
+
 	if newLevel, statsDelta := u.Character.LevelUp(); newLevel {
 
 		c := configs.GetGamePlayConfig()
@@ -242,10 +247,14 @@ func (u *UserRecord) GrantXP(amt int, source string) {
 			levelUpEvent.StatsDelta.Mysticism.Value += statsDelta.Mysticism.Value
 			levelUpEvent.StatsDelta.Perception.Value += statsDelta.Perception.Value
 
-			levelUpEvent.TrainingPoints += 1
-			levelUpEvent.StatPoints += 1
+			// Snapshot before the next LevelUp call so we can measure what was actually granted.
+			tpBefore = u.Character.TrainingPoints
+			spBefore = u.Character.StatPoints
 
 			newLevel, statsDelta = u.Character.LevelUp()
+
+			levelUpEvent.TrainingPoints += u.Character.TrainingPoints - tpBefore
+			levelUpEvent.StatPoints += u.Character.StatPoints - spBefore
 		}
 
 		if u.Character.ExtraLives > int(c.LivesMax) {
@@ -418,63 +427,63 @@ func (u *UserRecord) GetTempData(key string) any {
 	return nil
 }
 
+// HasRolePermission returns true when the user has the given permission.
+// Admins always pass. Mods are checked against their Permissions slice using
+// prefix-match semantics: a granted key of "room" also satisfies "room.edit",
+// "room.edit.exits", etc. The optional simpleMatch parameter additionally
+// allows the inverse direction (requested "room" matches granted "room.edit").
 func (u *UserRecord) HasRolePermission(permissionId string, simpleMatch ...bool) bool {
-
 	if u.Role == RoleAdmin {
 		return true
 	}
 
-	if len(simpleMatch) == 0 {
-		mudlog.Info("RoleCheck", "permissionId", permissionId, "userId", u.UserId, "username", u.Username, "characterName", u.Character.Name)
-	}
-
-	if u.Role == RoleUser {
+	if u.Role != RoleMod {
 		return false
 	}
 
-	roles := configs.GetRolesConfig()
-	commandList, ok := roles[u.Role]
-	if !ok {
-		return false
-	}
+	return u.hasPermission(permissionId, len(simpleMatch) > 0 && simpleMatch[0])
+}
 
+// HasPermission is a convenience wrapper around HasRolePermission without the
+// simpleMatch parameter — used by web middleware where prefix-only matching is
+// always desired.
+func (u *UserRecord) HasPermission(permissionId string) bool {
+	return u.HasRolePermission(permissionId)
+}
+
+// hasPermission is the internal implementation. It checks u.Permissions for a
+// match using prefix semantics:
+//   - An exact match always passes.
+//   - A granted key that is a prefix of the requested key passes
+//     (e.g. granted "room" satisfies requested "room.edit.exits").
+//   - When simpleMatch is true, the inverse also passes: a granted key that
+//     starts with the requested key (e.g. requested "room" matches granted
+//     "room.edit").
+func (u *UserRecord) hasPermission(permissionId string, simpleMatch bool) bool {
 	permissionIdLen := len(permissionId)
-	cmdLen := 0
-	for _, cmdAccessId := range commandList {
-
-		mudlog.Info("RoleCheck", "comparing", cmdAccessId, "to", permissionId)
-		// room.info vs room
-		if permissionId == cmdAccessId {
+	for _, granted := range u.Permissions {
+		if permissionId == granted {
 			return true
 		}
+		grantedLen := len(granted)
 
-		cmdLen = len(cmdAccessId)
-
-		// For helpfiles we match any portion
-		if len(simpleMatch) > 0 && simpleMatch[0] {
-
-			// room vs room.info
-			if permissionIdLen < cmdLen {
-				if cmdAccessId[0:permissionIdLen] == permissionId {
-					return true
-				}
-			} else if permissionIdLen > cmdLen {
-				if permissionId[0:permissionIdLen] == cmdAccessId {
+		if simpleMatch {
+			// requested key is shorter than granted — check if granted starts with requested
+			if permissionIdLen < grantedLen {
+				if granted[:permissionIdLen] == permissionId {
 					return true
 				}
 			}
 		}
 
-		// If the permissionId is shorter than their permission on this, skip it
-		if permissionIdLen < cmdLen {
-			continue
-		}
-
-		if permissionId[0:cmdLen] == cmdAccessId {
-			return true
+		// granted key is a prefix of the requested key
+		if permissionIdLen >= grantedLen && permissionId[:grantedLen] == granted {
+			// ensure it's a proper prefix boundary (dot or exact)
+			if permissionIdLen == grantedLen || permissionId[grantedLen] == '.' {
+				return true
+			}
 		}
 	}
-
 	return false
 }
 
@@ -563,6 +572,7 @@ func (u *UserRecord) SetCharacterName(cn string) error {
 		return err
 	}
 
+	GetCharacterIndex().Add(cn, u.UserId)
 	u.Character.Name = cn
 
 	return nil

@@ -11,6 +11,7 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/races"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
 	"github.com/GoMudEngine/GoMud/internal/spells"
+	"github.com/GoMudEngine/GoMud/internal/telemetry"
 	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/users"
 	"github.com/GoMudEngine/GoMud/internal/util"
@@ -84,6 +85,8 @@ func Help(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 			user.SendText(fmt.Sprintf(`No help found for "%s"`, rest))
 			return true, err
 		}
+
+		telemetry.TrackFull(telemetry.CatHelpTopic, "", 0, 0, 0, 0, resolveHelpTopic(rest))
 
 	}
 
@@ -175,5 +178,41 @@ func GetHelpContents(input string) (string, error) {
 		}
 	}
 
-	return templates.Process("help/"+helpName, helpVars, 0)
+	returnText, err := templates.Process("help/"+helpName, helpVars, 0)
+
+	result := OnGetHelpContents.Fire(HelpContentsResult{Text: returnText, Err: err})
+	return result.Text, result.Err
+}
+
+// HelpContentsResult is the value threaded through OnGetHelpContents handlers.
+// Text is the fully rendered help content. Err is the error from template
+// processing, or nil on success. Handlers may replace Text, clear Err to
+// suppress a template error and supply fallback content, or set Err to
+// signal a failure.
+type HelpContentsResult struct {
+	Text string
+	Err  error
+}
+
+// OnGetHelpContents is fired at the end of GetHelpContents with the fully
+// rendered help text and any template error. Modules register handlers here
+// to modify or augment help content before it is returned to the caller.
+//
+// Example registration from a module:
+//
+//	usercommands.OnGetHelpContents.Register(func(r usercommands.HelpContentsResult) usercommands.HelpContentsResult {
+//	    r.Text += "\nSee also: mycustomtopic"
+//	    return r
+//	})
+var OnGetHelpContents util.Hook[HelpContentsResult]
+
+// resolveHelpTopic returns the canonical help topic name for a raw input string,
+// applying the same alias resolution used by GetHelpContents.
+func resolveHelpTopic(input string) string {
+	if fullSearchAlias := keywords.TryHelpAlias(input); fullSearchAlias != input {
+		return fullSearchAlias
+	}
+	helpName := util.SplitButRespectQuotes(input)[0]
+	helpName = regexp.MustCompile(`[^a-zA-Z0-9\\-]+`).ReplaceAllString(helpName, ``)
+	return keywords.TryHelpAlias(helpName)
 }

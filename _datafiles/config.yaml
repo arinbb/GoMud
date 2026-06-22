@@ -82,7 +82,7 @@ Server:
   - Server.NextRoomId
   - Server.Seed
   - Server.OnLoginCommands
-  - Server.BannedNames
+  - Validation.BannedNames
 
 ################################################################################
 #
@@ -167,14 +167,6 @@ Timing:
   #   backup feature in case the server crashes. The game state is also saved
   #   whenever the server is shut down.
   RoundsPerAutoSave: 225
-  # - RoundsPerDay -
-  #   How many rounds are in a day? This is used to calculate the time of day.
-  #   The lower this number, the faster the day/night cycle will be.
-  #   A 4 second round and a 900 round day means the day/night cycle is 1 hour.
-  RoundsPerDay: 900
-  # - NightHours -
-  #   How many hours of each 24 hour day will be nighttime?
-  NightHours: 8
 
 ################################################################################
 #
@@ -200,7 +192,7 @@ FilePaths:
   # - PublicHtml -
   #   The folder where all web html files/templates reside.
   PublicHtml: _datafiles/html/public
-  # - PublicHtml -
+  # - AdminHtml -
   #   The folder where all web ADMIN files/templates reside.
   AdminHtml: _datafiles/html/admin
   # - CarefulSaveFiles -
@@ -255,8 +247,7 @@ GamePlay:
     #   What penalty is applies to a players XP when they die.
     #   none - no penalty
     #   level - lose all XP gained over their current level.
-    #   10% - lose 10% of XP
-    #   50% - lose 50% of XP
+    #   10%, 25%, 50%, 75%, 90%, 100% - lose that percentage of total XP
     XPPenalty: none
     # - ProtectionLevels -
     #   Players do not incur death penalties up to and including this level.
@@ -271,6 +262,12 @@ GamePlay:
     #   How long until corpses crumble to dust (Go away).
     #   See ShopRestockRate comments for time format.
     CorpseDecayTime: 1 hour
+    # - CorpseItems -
+    #   If true, items and gold that would drop from mobs or players on death
+    #   are instead placed on the corpse. Players can loot corpses with
+    #   "get <item> <corpse>" or "get all <corpse>".
+    #   Corpse decay destroys all held items. Requires CorpsesEnabled: true.
+    CorpseItems: false
   # - LivesStart -
   #   (Req: PermaDeath) How many lives players start with before being reset.
   LivesStart: 3
@@ -291,25 +288,61 @@ GamePlay:
   #   Default is in-game time, not real time. To use real time, use the following
   #   format: {num} real {unit} - Example: 1 real day
   ShopRestockRate: 6 hours
+  # - MercHirePricePerLevel -
+  #   Gold cost multiplied by mob level when auto-calculating the hire price of
+  #   a mercenary that has no explicit price set in the shop definition.
+  #   Example: a level 5 mob with the default of 250 costs 1250 gold to hire.
+  MercHirePricePerLevel: 250
   # - ContainerSizeMax -
   #   Maximum number of objects a container can hold before stuff overflows
   ContainerSizeMax: 10
-  # - ConsistentAttackMessages -
-  #   If true, each weapon ID will consistently use the same message for each type
-  #   of attack. If false, it will randomize messages. Setting this to true gives
-  #   each weapon a more consistent feel in battle, though combat may feel less
-  #   varied.
-  #   Note: see _datafiles/combat-messages/*
-  ConsistentAttackMessages: true
-  # - PVP -
-  #   Possible Values:
-  #     enabled   - PVP is enabled everywhere
-  #     disabled  - PVP is disabled eveywhere
-  #     limited   - PVP is enabled for all players but only in PVP enabled rooms
-  PVP: limited
-  # - PVPMinimumLevel -
-  #   Minimum level one must be to be targetted or to target other players in PVP
-  PVPMinimumLevel: 15
+  # - FloorItemCountMax -
+  #   Maximum number of items allowed on the floor of a room at one time.
+  #   When a player or mob drops an item that would exceed this limit, the item
+  #   teleports back into their hands instead.
+  #   Set to 0 for no limit.
+  FloorItemCountMax: 10
+  # Combat calculation bounds
+  # Each value controls the minimum or maximum output of a particular combat
+  # formula. The actual result scales between min and max based on the stat
+  # delta between attacker and defender divided by 100.
+  Combat:
+    # - ConsistentAttackMessages -
+    #   If true, each weapon ID will consistently use the same message for each type
+    #   of attack. If false, it will randomize messages. Setting this to true gives
+    #   each weapon a more consistent feel in battle, though combat may feel less
+    #   varied.
+    #   Note: see _datafiles/combat-messages/*
+    ConsistentAttackMessages: true
+    # Flat damage bonus driven by Strength delta
+    DamageBonusMin: 0
+    DamageBonusMax: 10
+    # Chance to hit (percent) driven by Speed delta
+    ToHitMin: 25
+    ToHitMax: 100
+    # Extra attacks for weaponless/claws combat driven by Speed delta
+    ExtraAttacksMin: 0
+    ExtraAttacksMax: 3
+    # Critical hit chance (percent) driven by Smarts delta
+    CritChanceMin: 5
+    CritChanceMax: 30
+    # Critical hit damage multiplier driven by Perception delta
+    CritMultMin: 1.5
+    CritMultMax: 3.0
+    # Chance to dodge (percent) driven by Perception delta
+    DodgeChanceMin: 5
+    DodgeChanceMax: 30
+  # PVP Restrictions
+  PVP:
+    # - Enabled -
+    #   Possible Values:
+    #     enabled   - PVP is enabled everywhere
+    #     disabled  - PVP is disabled eveywhere
+    #     limited   - PVP is enabled for all players but only in PVP enabled rooms
+    Enabled: limited
+    # - MinimumLevel -
+    #   Minimum level one must be to be targetted or to target other players in PVP
+    MinimumLevel: 15
   # - XPScale -
   #   Scales how much XP is gained when characters gain XP. Number is a percentage
   #   Example: 100 = 100%
@@ -317,6 +350,18 @@ GamePlay:
   # - MobConverseChance -
   #   Chance in 100 that the mob will attempt to converse when idle.
   MobConverseChance: 3
+  # - AlignmentDecayRounds -
+  #   How many rounds between each alignment decay step toward neutral.
+  #   Set to 0 to disable alignment decay entirely.
+  AlignmentDecayRounds: 100
+  # - EliteLevelBonus -
+  #   Percent level increase applied to elite mob spawns.
+  #   Example: 20 = 20% higher level than base.
+  EliteLevelBonus: 20
+  # - EliteXPBonus -
+  #   Percent XP bonus awarded to players when killing an elite mob.
+  #   Example: 10 = 10% more XP than normal.
+  EliteXPBonus: 10
   # Party settings
   Party:
     # - MaxPlayerCount -
@@ -327,6 +372,85 @@ GamePlay:
     #   If true, players must be in the same room to create, invite, or join a party.
     #   If false, players can form and join parties from anywhere in the world.
     SameRoomOnly: false
+
+  # Progression settings
+  # Controls all character progression formulas: stat gains, HP/Mana, XP curve, and level-up rewards.
+  # It is NOT recommended to attempt to adjust these values manually, since they have complex relationships
+  # Instead, visit /admin/progression for a live visual editor with charts.
+  Progression:
+    # --- Stat gain formula ---
+    # racial_value(level) = floor(base * BaseModFactor * (level-1)^BaseModExponent)
+    #                     + floor(NaturalGainsModFactor * level^NaturalGainsExponent)
+    #
+    # - BaseModFactor -
+    #   Scales how much a racial base stat contributes to growth per level.
+    #   Higher values cause strong-base races to pull further ahead of weak-base races.
+    BaseModFactor: 0.3333333334
+    # - BaseModExponent -
+    #   Shape of the base-scaled component. 1.0 = linear. <1.0 = diminishing returns.
+    #   >1.0 = accelerating returns. Valid range: 0.1 to 5.0.
+    BaseModExponent: 1.0
+    # - NaturalGainsModFactor -
+    #   Flat gains every character receives per level regardless of race.
+    #   Higher values raise the floor for weak-base races.
+    NaturalGainsModFactor: 0.5
+    # - NaturalGainsExponent -
+    #   Shape of the flat gains component. 1.0 = linear. <1.0 = diminishing returns.
+    #   >1.0 = accelerating. Valid range: 0.1 to 5.0.
+    NaturalGainsExponent: 1.0
+    # --- HP formula: HealthMax = HPBase + level*HPPerLevel + Vitality_adj*HPPerVitality + mods ---
+    HPBase: 5
+    HPPerLevel: 1.0
+    HPPerVitality: 4.0
+    # --- Mana formula: ManaMax = ManaBase + level*ManaPerLevel + Mysticism_adj*ManaPerMysticism + mods ---
+    ManaBase: 4
+    ManaPerLevel: 1.0
+    ManaPerMysticism: 3.0
+    # --- Level-up rewards ---
+    # Points awarded to the player on each qualifying level.
+    # EveryNLevels controls how often a qualifying level occurs:
+    #   1 = every level, 2 = every other level, 3 = every 3rd level, etc.
+    TrainingPointsPerLevel: 1
+    TrainingPointsEveryNLevels: 1
+    StatPointsPerLevel: 1
+    StatPointsEveryNLevels: 1
+    # --- XP curve ---
+    # XP_to_level(L) = (XPBase + L^XPLevelPower * XPLevelFactor * XPBase) * TNLScale
+    # - XPBase -
+    #   Flat XP cost component. Scales the entire curve up or down.
+    XPBase: 1000
+    # - XPLevelFactor -
+    #   Multiplier on the level-based component. Higher = more XP required per level.
+    XPLevelFactor: 0.75
+    # - XPLevelPower -
+    #   Exponent controlling curve steepness. 2.0 = quadratic. 1.5 = gentler. 3.0 = steeper.
+    #   Valid range: 0.1 to 5.0.
+    XPLevelPower: 2.0
+    # - MaxLevel -
+    #   Soft display cap for admin charts. Does not enforce a hard level cap.
+    MaxLevel: 100
+    # --- Stat value compression ---
+    # Once a stat's Value reaches StatCapThreshold, further gains are compressed:
+    #   ValueAdj = StatCapAnchor + round((Value - StatCapAnchor)^StatCapExponent * StatCapScale)
+    # - StatCapThreshold -
+    #   The Value at which compression begins. Default 105.
+    StatCapThreshold: 105
+    # - StatCapAnchor -
+    #   The value the compression is anchored to. Overage = Value - StatCapAnchor. Default 100.
+    StatCapAnchor: 100
+    # - StatCapExponent -
+    #   Curve shape above the cap. 0.5 = sqrt (strong compression, default).
+    #   1.0 = no compression (linear). Above 1.0 = reduced compression (1.5 = gentle, 2.0 = very gentle).
+    #   0.25 = very aggressive compression. Valid range: 0.01 to 4.0.
+    StatCapExponent: 0.5
+    # - StatCapScale -
+    #   Multiplier applied after the exponent. Default 2.0.
+    StatCapScale: 2.0
+    # - StatCapExemptBonus -
+    #   When true, only the racial portion of a stat is compressed. Training points and
+    #   equipment/buff mods are added on top of the compressed racial value at full value.
+    #   Default false (original behaviour: all sources compressed together).
+    StatCapExemptBonus: false
 
 ################################################################################
 #
@@ -353,13 +477,13 @@ TextFormats:
   #   Default prompt formatting.
   #   See: "help prompt" in game to learn more about this.
   Prompt: '{8}[{t} {T} {255}HP:{hp}{8}/{HP} {255}MP:{13}{mp}{8}/{13}{MP}{8}]{239}{h}{8}:'
-  # - TimeFormat -
+  # - Time -
   #   When real world time is shown, what format should be used?
   #   This uses a Go time format string, which is kinda weird.
   #   See: https://go.dev/src/time/format.go
   Time: 'Monday, 02-Jan-2006 3:04:05PM'
-  # - TimeFormatShort -
-  #   Same as TimeFormat, but shorter form
+  # - TimeShort -
+  #   Same as Time, but shorter form
   TimeShort: 'Jan 2 ''06 3:04PM'
   # - EnterRoomMessageWrapper -
   #   Decorate entrance text with this. Put a %s where the message should be.
@@ -429,6 +553,19 @@ Network:
   # - MaxSSHConnections -
   #   The maximum number of SSH connections the server will accept.
   MaxSSHConnections: 100
+  # - AI -
+  #   Dedicated AI-client connection settings (grouped under Network.AI).
+  AI:
+    # - Port -
+    #   Dedicated telnet port for AI playtest clients.
+    #   0 (zero) means disabled. Set e.g. 55555 to enable.
+    Port: 0
+    # - MaxConnections -
+    #   The maximum number of concurrent AI connections the server will accept.
+    MaxConnections: 20
+    # - CommandsPerRound -
+    #   Maximum number of commands an AI connection may submit per round.
+    CommandsPerRound: 2
   # - AfkSeconds -
   #   If this many seconds pass without player input, they are flagged as afk
   #   Set to zero to never mark anyone as AFK
@@ -565,25 +702,6 @@ Validation:
   - "new"
   - "join"
   - "register"
-
-################################################################################
-#
-#   Roles
-#   Roles are string identifiers that map to a number of command names.
-#   They are used to determine what admin commands a player has access to.
-#   Two roles are build in and cannot be changed:
-#     - "user" - Has no admin commands
-#     - "admin" - Has all admin commands
-#   Role sub-commands should be separated by a dot: room.info
-#   Roles are more permissive the more they prefix.
-#   Example: room prefixes room.info so would permit that action as well.
-#   Role checks must be implemented wherever role-based restriction is desired:
-#   if user.HasRolePermission(`room`) { /* Do something */ }
-#
-################################################################################
-Roles:
-  builder: ["room.info", "build"]
-  helper: ["paz", "teleport.playername", "locate"]
 
 
 ################################################################################

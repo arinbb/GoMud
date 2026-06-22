@@ -7,10 +7,7 @@ import (
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
-	"github.com/GoMudEngine/GoMud/internal/races"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
-	"github.com/GoMudEngine/GoMud/internal/skills"
-	"github.com/GoMudEngine/GoMud/internal/templates"
 	"github.com/GoMudEngine/GoMud/internal/term"
 	"github.com/GoMudEngine/GoMud/internal/users"
 )
@@ -20,11 +17,11 @@ Peep Skill
 Level 1 - Always visibly see the health % of an NPC
 Level 2 - Reveals detailed stats of a player or mob.
 Level 3 - Reveals detailed stats of the player or mob, plus equipment and items
-Level 4 - eveals detailed stats of the player or mob, plus equipment and items, and tells you the % chance of dropping items.
+Level 4 - Reveals detailed stats of the player or mob, plus equipment and items, and tells you the % chance of dropping items.
 */
 func Peep(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
 
-	skillLevel := user.Character.GetSkillLevel(skills.Peep)
+	skillLevel := user.Character.GetSkillLevel(`peep`)
 
 	if skillLevel == 0 {
 		user.SendText("You don't know how to peep.")
@@ -42,20 +39,18 @@ func Peep(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 		return true, errors.New(`at level 1, peep is a passive skill`)
 	}
 
-	if !user.Character.TryCooldown(skills.Peep.String(), "1 round") {
+	if !user.Character.TryCooldown(`peep`, "1 round") {
 		user.SendText(
 			`You're using that skill just a little too fast.`,
 		)
 		return true, errors.New(`you're doing that too often`)
 	}
 
-	// valid peep targets are: mobs, players
 	playerId, mobId := room.FindByName(rest)
 
 	if playerId > 0 || mobId > 0 {
 
-		// Fire an event that a skill has been used
-		events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: skills.Peep, Details: ``})
+		events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: `peep`, Details: ``})
 
 		statusTxt := ""
 		invTxt := ""
@@ -63,52 +58,35 @@ func Peep(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 
 		if playerId > 0 {
 
-			u := *users.GetByUserId(playerId)
+			uPtr := users.GetByUserId(playerId)
+			if uPtr == nil {
+				return true, nil
+			}
+			u := *uPtr
 			targetName := u.Character.GetPlayerName(user.UserId).String()
 
 			if skillLevel >= 2 {
-				statusTxt, _ = templates.Process("character/status-lite", u.Character, user.UserId)
+				statusTxt = buildPeepPanel(u.Character)
 			}
 
 			if skillLevel >= 3 {
 
-				itemNames := []string{}
 				itemNamesFormatted := []string{}
 
 				for _, item := range u.Character.Items {
 
-					iName := item.DisplayName()
-					iNameFormatted := fmt.Sprintf(`<ansi fg="itemname">%s</ansi>`, iName)
+					iNameFormatted := fmt.Sprintf(`<ansi fg="itemname">%s</ansi>`, item.DisplayName())
 
 					iSpec := item.GetSpec()
 					if iSpec.Subtype == items.Drinkable || iSpec.Subtype == items.Edible {
-						if iSpec.Uses > 0 { // Does the spec indicate a number of uses?
-							iName = fmt.Sprintf(`%s (%d)`, iName, item.Uses)                                               // Display uses left
-							iNameFormatted = fmt.Sprintf(`%s <ansi fg="uses-left">(%d)</ansi>`, iNameFormatted, item.Uses) // Display uses left
+						if iSpec.Uses > 0 {
+							iNameFormatted = fmt.Sprintf(`%s <ansi fg="uses-left">(%d)</ansi>`, iNameFormatted, item.Uses)
 						}
 					}
-					itemNames = append(itemNames, iName)
 					itemNamesFormatted = append(itemNamesFormatted, iNameFormatted)
 				}
 
-				raceInfo := races.GetRace(u.Character.RaceId)
-
-				diceRoll := raceInfo.Damage.DiceRoll
-				if u.Character.Equipment.Weapon.ItemId != 0 {
-					iSpec := u.Character.Equipment.Weapon.GetSpec()
-					diceRoll = iSpec.Damage.DiceRoll
-				}
-
-				invData := map[string]any{
-					`Equipment`:          &u.Character.Equipment,
-					`ItemNames`:          itemNames,
-					`ItemNamesFormatted`: itemNamesFormatted,
-					`AttackDamage`:       diceRoll,
-					`RaceInfo`:           raceInfo,
-					`Count`:              fmt.Sprintf(`(%d/%d)`, len(u.Character.Items), u.Character.CarryCapacity()),
-				}
-
-				invTxt, _ = templates.Process("character/inventory", invData, user.UserId)
+				invTxt = buildPeepInventoryPanel(u.Character, itemNamesFormatted)
 			}
 
 			if skillLevel >= 4 {
@@ -132,48 +110,27 @@ func Peep(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 			targetName := m.Character.GetMobName(user.UserId).String()
 
 			if skillLevel >= 2 {
-				statusTxt, _ = templates.Process("character/status-lite", &m.Character, user.UserId)
+				statusTxt = buildPeepPanel(&m.Character)
 			}
 
 			if skillLevel >= 3 {
 
-				itemNames := []string{}
 				itemNamesFormatted := []string{}
 
 				for _, item := range m.Character.Items {
 
-					iName := item.DisplayName()
-					iNameFormatted := fmt.Sprintf(`<ansi fg="itemname">%s</ansi>`, iName)
+					iNameFormatted := fmt.Sprintf(`<ansi fg="itemname">%s</ansi>`, item.DisplayName())
 
 					iSpec := item.GetSpec()
 					if iSpec.Subtype == items.Drinkable || iSpec.Subtype == items.Edible {
-						if iSpec.Uses > 0 { // Does the spec indicate a number of uses?
-							iName = fmt.Sprintf(`%s (%d)`, iName, item.Uses)                                               // Display uses left
-							iNameFormatted = fmt.Sprintf(`%s <ansi fg="uses-left">(%d)</ansi>`, iNameFormatted, item.Uses) // Display uses left
+						if iSpec.Uses > 0 {
+							iNameFormatted = fmt.Sprintf(`%s <ansi fg="uses-left">(%d)</ansi>`, iNameFormatted, item.Uses)
 						}
 					}
-					itemNames = append(itemNames, iName)
 					itemNamesFormatted = append(itemNamesFormatted, iNameFormatted)
 				}
 
-				raceInfo := races.GetRace(m.Character.RaceId)
-
-				diceRoll := raceInfo.Damage.DiceRoll
-				if m.Character.Equipment.Weapon.ItemId != 0 {
-					iSpec := m.Character.Equipment.Weapon.GetSpec()
-					diceRoll = iSpec.Damage.DiceRoll
-				}
-
-				invData := map[string]any{
-					`Equipment`:          &m.Character.Equipment,
-					`ItemNames`:          itemNames,
-					`ItemNamesFormatted`: itemNamesFormatted,
-					`AttackDamage`:       diceRoll,
-					`RaceInfo`:           raceInfo,
-				}
-
-				invTxt, _ = templates.Process("character/inventory", invData, user.UserId)
-
+				invTxt = buildPeepInventoryPanel(&m.Character, itemNamesFormatted)
 			}
 
 			if skillLevel >= 4 {
@@ -184,7 +141,6 @@ func Peep(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 				fmt.Sprintf(`<ansi fg="username">%s</ansi> is peeping at %s.`, user.Character.Name, targetName),
 				user.UserId,
 			)
-
 		}
 
 		if statusTxt != `` {
@@ -198,11 +154,9 @@ func Peep(rest string, user *users.UserRecord, room *rooms.Room, flags events.Ev
 		}
 
 		return true, nil
-
 	}
 
 	user.SendText("You don't see that here.")
 
 	return true, errors.New(`you don't see that here`)
-
 }

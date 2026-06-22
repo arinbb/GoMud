@@ -49,13 +49,22 @@ func RegisterListeners() {
 	events.RegisterListener(events.Quest{}, HandleQuestUpdate)
 	// Spawn events
 	events.RegisterListener(events.PlayerSpawn{}, HandleJoin)
+	events.RegisterListener(events.PlayerSpawn{}, UserScriptLogin)
+	events.RegisterListener(events.PlayerDespawn{}, UserScriptLogout)         // Must run before the final HandleLeave cleanup
 	events.RegisterListener(events.PlayerDespawn{}, HandleLeave, events.Last) // This is a final listener, has to happen last
 
 	// Levelup Notifications
 	events.RegisterListener(events.LevelUp{}, SendLevelNotifications)
+	events.RegisterListener(events.LevelUp{}, UserScriptLevelUp)
+
+	// Pet level change notifications
+	events.RegisterListener(events.PetLevelChange{}, SendPetLevelNotifications)
 
 	// Day/Night cycle
 	events.RegisterListener(events.DayNightCycle{}, NotifySunriseSunset)
+
+	// Pet daily tick (round-based, checks game day change per-pet)
+	events.RegisterListener(events.NewRound{}, PetDailyTick)
 
 	// Looking
 	events.RegisterListener(events.Looking{}, HandleLookHints)

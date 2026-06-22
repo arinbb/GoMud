@@ -3,6 +3,7 @@ package connections
 import (
 	"errors"
 	"net"
+	"regexp"
 	"strings"
 	"sync"
 	"sync/atomic"
@@ -22,6 +23,22 @@ const (
 	LinkDead
 	MaxHistory = 10
 )
+
+// ConnType distinguishes human telnet/web connections from AI client connections.
+type ConnType uint32
+
+const (
+	ConnHuman ConnType = 0
+	ConnAI    ConnType = 1
+)
+
+// ansiStripRegexp matches SGR (color/style) escape sequences.
+var ansiStripRegexp = regexp.MustCompile("\x1b\\[[0-9;]*m")
+
+// StripAnsi removes ANSI SGR escape sequences from p, returning clean text.
+func StripAnsi(p []byte) []byte {
+	return ansiStripRegexp.ReplaceAll(p, nil)
+}
 
 type InputHistory struct {
 	inhistory bool
@@ -125,8 +142,13 @@ type ConnectionDetails struct {
 	inputHandlerNames []string
 	inputHandlers     []InputHandler
 	inputDisabled     bool
+	outputSuppressed  bool
 	clientSettings    ClientSettings
 	heartbeat         *heartbeatManager
+	connType          ConnType
+	stripAnsi         bool
+	aiCommandRound    int64
+	aiCommandCount    int
 }
 
 func (cd *ConnectionDetails) IsLocal() bool {
@@ -199,6 +221,14 @@ func (cd *ConnectionDetails) RemoveInputHandler(name string) {
 
 }
 
+func (cd *ConnectionDetails) PrependInputHandler(name string, newInputHandler InputHandler) {
+	cd.handlerMutex.Lock()
+	defer cd.handlerMutex.Unlock()
+
+	cd.inputHandlerNames = append([]string{name}, cd.inputHandlerNames...)
+	cd.inputHandlers = append([]InputHandler{newInputHandler}, cd.inputHandlers...)
+}
+
 func (cd *ConnectionDetails) AddInputHandler(name string, newInputHandler InputHandler, after ...string) {
 	cd.handlerMutex.Lock()
 	defer cd.handlerMutex.Unlock()
@@ -217,12 +247,36 @@ func (cd *ConnectionDetails) AddInputHandler(name string, newInputHandler InputH
 	cd.inputHandlers = append(cd.inputHandlers, newInputHandler)
 }
 
+func (cd *ConnectionDetails) WriteRaw(p []byte) (n int, err error) {
+	if len(p) == 0 {
+		return 0, nil
+	}
+	if cd.sshChannel != nil {
+		return cd.sshChannel.Write(p)
+	}
+	if cd.wsConn != nil {
+		return 0, errors.New("raw write not supported on WebSocket")
+	}
+	return cd.conn.Write(p)
+}
+
 func (cd *ConnectionDetails) Write(p []byte) (n int, err error) {
+
+	if cd.outputSuppressed {
+		return len(p), nil
+	}
 
 	p = []byte(strings.ReplaceAll(string(p), "\n", "\r\n"))
 
 	if len(p) == 0 {
 		return 0, nil
+	}
+
+	if cd.stripAnsi && p[0] != byte(term.TELNET_IAC) {
+		p = StripAnsi(p)
+		if len(p) == 0 {
+			return 0, nil
+		}
 	}
 
 	if cd.sshChannel != nil {
@@ -270,6 +324,17 @@ func (cd *ConnectionDetails) Read(p []byte) (n int, err error) {
 	return cd.conn.Read(p)
 }
 
+// SetReadDeadline bounds how long the next Read may block. It only applies to
+// the raw telnet path (net.Conn); SSH and WebSocket connections do not use the
+// connect-time detection probe, so this is a no-op for them. Pass the zero time
+// to clear a previously-set deadline.
+func (cd *ConnectionDetails) SetReadDeadline(t time.Time) error {
+	if cd.conn != nil {
+		return cd.conn.SetReadDeadline(t)
+	}
+	return nil
+}
+
 func (cd *ConnectionDetails) Close() {
 	if cd.heartbeat != nil {
 		cd.heartbeat.stop()
@@ -311,11 +376,44 @@ func (cd *ConnectionDetails) SetState(state ConnectState) {
 	atomic.StoreUint32((*uint32)(&cd.state), uint32(state))
 }
 
+// ConnType returns the connection type (human or AI). Safe for concurrent reads.
+func (cd *ConnectionDetails) ConnType() ConnType {
+	return ConnType(atomic.LoadUint32((*uint32)(&cd.connType)))
+}
+
+// SetConnType sets the connection type. Set once at accept time.
+func (cd *ConnectionDetails) SetConnType(t ConnType) {
+	atomic.StoreUint32((*uint32)(&cd.connType), uint32(t))
+}
+
+// SetStripAnsi enables ANSI escape stripping on output (for AI clients).
+func (cd *ConnectionDetails) SetStripAnsi(on bool) {
+	cd.stripAnsi = on
+}
+
+// AICommandAllowed enforces a per-round command budget for AI connections.
+// It is called only from the connection's own input goroutine, so it needs no lock.
+func (cd *ConnectionDetails) AICommandAllowed(currentRound int64, maxPerRound int) bool {
+	if currentRound != cd.aiCommandRound {
+		cd.aiCommandRound = currentRound
+		cd.aiCommandCount = 0
+	}
+	cd.aiCommandCount++
+	return cd.aiCommandCount <= maxPerRound
+}
+
 func (cd *ConnectionDetails) InputDisabled(setTo ...bool) bool {
 	if len(setTo) > 0 {
 		cd.inputDisabled = setTo[0]
 	}
 	return cd.inputDisabled
+}
+
+func (cd *ConnectionDetails) OutputSuppressed(setTo ...bool) bool {
+	if len(setTo) > 0 {
+		cd.outputSuppressed = setTo[0]
+	}
+	return cd.outputSuppressed
 }
 
 func NewConnectionDetails(connId ConnectionId, c net.Conn, wsC *websocket.Conn, config *HeartbeatConfig) *ConnectionDetails {

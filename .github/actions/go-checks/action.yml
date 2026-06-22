@@ -1,0 +1,15 @@
+---
+name: "Go Checks"
+description: "Refresh generated code and run the race-enabled Go test suite"
+runs:
+  using: "composite"
+  steps:
+    - name: Generate code
+      run: go generate ./...
+      shell: bash
+    - name: Verify generated output is clean
+      run: git diff --exit-code
+      shell: bash
+    - name: Run Go tests
+      run: go test -race ./...
+      shell: bash

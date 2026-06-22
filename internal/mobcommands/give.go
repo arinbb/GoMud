@@ -5,7 +5,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
@@ -31,7 +30,7 @@ func Give(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 	var giveItem items.Item = items.Item{}
 	var giveGoldAmount int = 0
 
-	if len(giveWhat) > 4 && giveWhat[len(giveWhat)-4:] == "gold" {
+	if len(giveWhat) >= 5 && giveWhat[len(giveWhat)-4:] == "gold" && giveWhat[len(giveWhat)-5] == ' ' {
 
 		g, _ := strconv.ParseInt(giveWhat[0:len(giveWhat)-5], 10, 32)
 		giveGoldAmount = int(g)
@@ -57,7 +56,7 @@ func Give(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 
 	if playerId > 0 {
 
-		mob.Character.CancelBuffsWithFlag(buffs.Hidden)
+		mob.Character.CancelBuffsWithFlag("hidden")
 
 		targetUser := users.GetByUserId(playerId)
 		if targetUser == nil {
@@ -105,7 +104,7 @@ func Give(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 	//
 	if mobId > 0 {
 
-		mob.Character.CancelBuffsWithFlag(buffs.Hidden)
+		mob.Character.CancelBuffsWithFlag("hidden")
 
 		m := mobs.GetInstance(mobId)
 

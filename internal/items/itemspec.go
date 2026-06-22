@@ -220,6 +220,45 @@ type ItemSpec struct {
 	KeyLockId       string            `yaml:"keylockid,omitempty"`   // Example: `778-north` - If it's a key, what lock does it open? roomid-exitname etc.
 }
 
+// AllEquipSlots returns every equipment slot ItemType in canonical display order.
+// This is the single authoritative definition used by the characters, races,
+// and combat packages to avoid per-package slot-list duplication.
+func AllEquipSlots() []ItemType {
+	return []ItemType{
+		Weapon,
+		Offhand,
+		Head,
+		Neck,
+		Body,
+		Belt,
+		Gloves,
+		Ring,
+		Legs,
+		Feet,
+	}
+}
+
+// WeaponSlots returns the slots that hold weapons.
+func WeaponSlots() []ItemType {
+	return []ItemType{Weapon, Offhand}
+}
+
+// ArmorSlots returns every equipment slot except Weapon — the slots that hold
+// armor and wearable items providing passive protection or stat benefits.
+func ArmorSlots() []ItemType {
+	return []ItemType{
+		Offhand,
+		Head,
+		Neck,
+		Body,
+		Belt,
+		Gloves,
+		Ring,
+		Legs,
+		Feet,
+	}
+}
+
 func (i Element) String() string {
 	return string(i)
 }
@@ -242,7 +281,9 @@ func (d *Damage) String() string {
 func (d *Damage) FormatDiceRoll() string {
 
 	d.DiceRoll = util.FormatDiceRoll(d.Attacks, d.DiceCount, d.SideCount, d.BonusDamage, d.CritBuffIds)
-
+	if d.DiceRoll == "0@0d0" {
+		d.DiceRoll = ""
+	}
 	return d.DiceRoll
 }
 
@@ -333,18 +374,44 @@ func CanBackstab(iSubType ItemSubType) bool {
 	return false
 }
 
+// GetBuffSummary returns the count and aggregate GetValue() of all WornBuffIds
+// on the item spec. It is used by the admin API to surface passive buff info
+// in the item list without requiring callers to load each buff separately.
+func GetBuffSummary(itemId int) (count int, value int) {
+	spec, ok := items[itemId]
+	if !ok || spec == nil {
+		return 0, 0
+	}
+	for _, bId := range spec.WornBuffIds {
+		if bs := buffs.GetBuffSpec(bId); bs != nil {
+			count++
+			value += bs.GetValue()
+		}
+	}
+	return count, value
+}
+
 func (i *ItemSpec) AutoCalculateValue() {
 
 	val := 5 // base value of 5
 
-	// Weapon based damage valuation
-	val += (i.Damage.DiceCount * i.Damage.DiceCount) * (i.Damage.SideCount * i.Damage.SideCount * 2)
-	val += i.Damage.BonusDamage * 25
-	// Armor based damage valuation
-	val += (i.DamageReduction * i.DamageReduction) * 17
+	// Weapon damage valuation: expected damage per attack = DiceCount*(SideCount+1)/2 + BonusDamage
+	if i.Damage.DiceCount > 0 && i.Damage.SideCount > 0 {
+		expectedDmg := i.Damage.DiceCount*(i.Damage.SideCount+1)/2 + i.Damage.BonusDamage
+		val += expectedDmg * i.Damage.Attacks * 15
+	}
+	// Armor damage reduction valuation
+	val += i.DamageReduction * 17
 
-	// Get the value of any buff it applies
+	// Get the value of any buff it applies on use
 	for _, buffId := range i.BuffIds {
+		if buffSpec := buffs.GetBuffSpec(buffId); buffSpec != nil {
+			val += buffSpec.GetValue()
+		}
+	}
+
+	// Get the value of any buff applied while worn
+	for _, buffId := range i.WornBuffIds {
 		if buffSpec := buffs.GetBuffSpec(buffId); buffSpec != nil {
 			val += buffSpec.GetValue()
 		}
@@ -354,7 +421,7 @@ func (i *ItemSpec) AutoCalculateValue() {
 		val += statMod * 11
 	}
 
-	// Special considerations
+	// Consumables scale with number of uses
 	if i.Uses > 1 {
 		val *= i.Uses
 	}
@@ -368,7 +435,7 @@ func (i *ItemSpec) AutoCalculateValue() {
 	}
 
 	if i.Type == Ring {
-		// rings are atomatically worth more, since they are jewelry
+		// rings are automatically worth more, since they are jewelry
 		val *= 2
 	}
 
@@ -462,7 +529,7 @@ func (i ItemSpec) GetScript() string {
 
 	// Load the script into a string
 	if _, err := os.Stat(scriptPath); err == nil {
-		if bytes, err := os.ReadFile(scriptPath); err == nil {
+		if bytes, err := util.ReadFile(scriptPath); err == nil {
 			return string(bytes)
 		}
 	}
@@ -471,8 +538,8 @@ func (i ItemSpec) GetScript() string {
 }
 
 func (i *ItemSpec) GetScriptPath() string {
-	// Load any script for the room
-	return strings.Replace(string(configs.GetFilePathsConfig().DataFiles)+`/items/`+i.Filepath(), `.yaml`, `.js`, 1)
+	// Load any script for the item (prefers .js, falls back to .lua)
+	return util.ResolveScriptPath(string(configs.GetFilePathsConfig().DataFiles) + `/items/` + i.Filepath())
 }
 
 func GetItemSpec(itemId int) *ItemSpec {

@@ -4,11 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
-	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/users"
 	"github.com/GoMudEngine/GoMud/internal/util"
 )
@@ -19,7 +17,7 @@ Level 4 - Pickpocket
 */
 func Pickpocket(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
 
-	skillLevel := user.Character.GetSkillLevel(skills.Skulduggery)
+	skillLevel := user.Character.GetSkillLevel(`skulduggery`)
 
 	// If they don't have a skill, act like it's not a valid command
 	if skillLevel < 4 {
@@ -27,7 +25,7 @@ func Pickpocket(rest string, user *users.UserRecord, room *rooms.Room, flags eve
 	}
 
 	// Must be sneaking
-	isSneaking := user.Character.HasBuffFlag(buffs.Hidden)
+	isSneaking := user.Character.HasBuffFlag("hidden")
 
 	if user.Character.Aggro != nil {
 		user.SendText("You can't do that while in combat!")
@@ -41,12 +39,17 @@ func Pickpocket(rest string, user *users.UserRecord, room *rooms.Room, flags eve
 
 	args := util.SplitButRespectQuotes(strings.ToLower(rest))
 
+	if len(args) < 1 {
+		user.SendText("Pickpocket who?")
+		return true, nil
+	}
+
 	pickPlayerId, pickMobInstanceId := room.FindByName(args[0])
 
 	if pickPlayerId > 0 || pickMobInstanceId > 0 {
 
-		if !user.Character.TryCooldown(skills.Skulduggery.String(`pickpocket`), "1 real minute") {
-			user.SendText(fmt.Sprintf("You need to wait %d rounds before you can do that again!", user.Character.GetCooldown(skills.Skulduggery.String(`pickpocket`))))
+		if !user.Character.TryCooldown(`skulduggery:pickpocket`, "1 real minute") {
+			user.SendText(fmt.Sprintf("You need to wait %d rounds before you can do that again!", user.Character.GetCooldown(`skulduggery:pickpocket`)))
 			return true, nil
 		}
 
@@ -55,20 +58,20 @@ func Pickpocket(rest string, user *users.UserRecord, room *rooms.Room, flags eve
 	if pickMobInstanceId > 0 {
 
 		// Fire an event that a skill has been used
-		events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: skills.Skulduggery, Details: `pickpocket`})
+		events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: `skulduggery`, Details: `pickpocket`})
 
 		m := mobs.GetInstance(pickMobInstanceId)
 
 		if m != nil {
 
-			levelDelta := user.Character.Level - m.Character.Level
-			if levelDelta < 1 {
-				levelDelta = 1
+			levelDelta := m.Character.Level - user.Character.Level
+			if levelDelta < 0 {
+				levelDelta = 0
 			}
 
 			chanceIn100 := (user.Character.Stats.Speed.ValueAdj+user.Character.Stats.Smarts.ValueAdj+user.Character.Stats.Perception.ValueAdj)/3 - m.Character.Stats.Perception.ValueAdj
-			chanceIn100 /= levelDelta
-			if chanceIn100 < 0 {
+			chanceIn100 -= levelDelta
+			if chanceIn100 < 1 {
 				chanceIn100 = 1
 			}
 			if isSneaking {
@@ -141,7 +144,7 @@ func Pickpocket(rest string, user *users.UserRecord, room *rooms.Room, flags eve
 					user.UserId,
 				)
 
-				user.Character.CancelBuffsWithFlag(buffs.Hidden)
+				user.Character.CancelBuffsWithFlag("hidden")
 
 				m.Command(fmt.Sprintf(`attack @%d`, user.UserId))
 
@@ -152,7 +155,7 @@ func Pickpocket(rest string, user *users.UserRecord, room *rooms.Room, flags eve
 	} else if pickPlayerId > 0 {
 
 		// Fire an event that a skill has been used
-		events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: skills.Skulduggery, Details: `pickpocket`})
+		events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: `skulduggery`, Details: `pickpocket`})
 
 		if p := users.GetByUserId(pickPlayerId); p != nil {
 
@@ -161,14 +164,14 @@ func Pickpocket(rest string, user *users.UserRecord, room *rooms.Room, flags eve
 				return true, nil
 			}
 
-			levelDelta := user.Character.Level - p.Character.Level
-			if levelDelta < 1 {
-				levelDelta = 1
+			levelDelta := p.Character.Level - user.Character.Level
+			if levelDelta < 0 {
+				levelDelta = 0
 			}
 
 			chanceIn100 := (user.Character.Stats.Speed.ValueAdj+user.Character.Stats.Smarts.ValueAdj+user.Character.Stats.Perception.ValueAdj)/3 - p.Character.Stats.Perception.ValueAdj
-			chanceIn100 /= levelDelta
-			if chanceIn100 < 0 {
+			chanceIn100 -= levelDelta
+			if chanceIn100 < 1 {
 				chanceIn100 = 1
 			}
 			if isSneaking {
@@ -249,7 +252,7 @@ func Pickpocket(rest string, user *users.UserRecord, room *rooms.Room, flags eve
 					user.UserId,
 				)
 
-				user.Character.CancelBuffsWithFlag(buffs.Hidden)
+				user.Character.CancelBuffsWithFlag("hidden")
 
 			}
 		}

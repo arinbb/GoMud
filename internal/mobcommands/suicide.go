@@ -4,16 +4,15 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/combat"
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/events"
+	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
 	"github.com/GoMudEngine/GoMud/internal/mudlog"
 	"github.com/GoMudEngine/GoMud/internal/parties"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
 	"github.com/GoMudEngine/GoMud/internal/scripting"
-	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/users"
 	"github.com/GoMudEngine/GoMud/internal/util"
 )
@@ -21,14 +20,15 @@ import (
 func Suicide(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 
 	currentRound := util.GetRoundCount()
+	config := configs.GetGamePlayConfig()
 
-	if rest != `vanish` && mob.Character.HasBuffFlag(buffs.ReviveOnDeath) {
+	if rest != `vanish` && mob.Character.HasBuffFlag("revive-on-death") {
 
 		mob.Character.Health = mob.Character.HealthMax.Value
 
 		room.SendText(`<ansi fg="mobname">` + mob.Character.Name + `</ansi> is suddenly revived in a shower of sparks!`)
 
-		mob.Character.CancelBuffsWithFlag(buffs.ReviveOnDeath)
+		mob.Character.CancelBuffsWithFlag("revive-on-death")
 
 		return true, nil
 	}
@@ -136,6 +136,9 @@ func Suicide(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 
 					if mob.Character.Zone != `Training` { // Don't track any kills in the training zone
 						user.Character.KD.AddMobKill(int(mob.MobId))
+						if mob.IsElite {
+							user.Character.KD.AddEliteKill(int(mob.MobId), mob.Character.Name)
+						}
 					}
 
 					xpScaler := 1.0
@@ -154,6 +157,14 @@ func Suicide(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 
 					finalXPVal := int(math.Ceil(float64(xpVal) * xpScaler))
 
+					if mob.IsElite {
+						eliteBonus := int(configs.GetGamePlayConfig().EliteXPBonus)
+						if eliteBonus <= 0 {
+							eliteBonus = 10
+						}
+						finalXPVal = finalXPVal + int(math.Ceil(float64(finalXPVal)*float64(eliteBonus)/100.0))
+					}
+
 					mudlog.Debug("XP Calculation", "MobLevel", mob.Character.Level, "XPBase", mobXP, "xpVal", xpVal, "xpVariation", xpVariation, "xpScaler", xpScaler, "finalXPVal", finalXPVal)
 
 					user.GrantXP(finalXPVal, `combat`)
@@ -167,10 +178,15 @@ func Suicide(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 					mudlog.Debug("Alignment", "user Alignment", user.Character.Alignment, "mob Alignment", mob.Character.Alignment, `alignmentAdj`, alignmentAdj, `alignmentBefore`, alignmentBefore, `alignmentAfter`, alignmentAfter)
 
 					if alignmentBefore != alignmentAfter {
-						alignmentBefore = fmt.Sprintf(`<ansi fg="%s">%s</ansi>`, alignmentBefore, alignmentBefore)
-						alignmentAfter = fmt.Sprintf(`<ansi fg="%s">%s</ansi>`, alignmentAfter, alignmentAfter)
-						updateTxt := fmt.Sprintf(`<ansi fg="231">Your alignment has shifted from %s to %s!</ansi>`, alignmentBefore, alignmentAfter)
+						before := fmt.Sprintf(`<ansi fg="%s">%s</ansi>`, alignmentBefore, alignmentBefore)
+						after := fmt.Sprintf(`<ansi fg="%s">%s</ansi>`, alignmentAfter, alignmentAfter)
+						updateTxt := fmt.Sprintf(`<ansi fg="231">Your alignment has shifted from %s to %s!</ansi>`, before, after)
 						user.SendText(updateTxt)
+						events.AddToQueue(events.AlignmentChanged{
+							UserId:       user.UserId,
+							AlignmentOld: alignmentBefore,
+							AlignmentNew: alignmentAfter,
+						})
 					}
 
 					// Chance to learn to tame the creature.
@@ -190,7 +206,7 @@ func Suicide(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 					mudlog.Debug("Tame Chance", "levelDelta", levelDelta, "skillsDelta", skillsDelta, "targetNumber", targetNumber)
 
 					if util.Rand(1000) < targetNumber {
-						if mob.IsTameable() && user.Character.GetSkillLevel(skills.Tame) > 0 {
+						if mob.IsTameable() && user.Character.GetSkillLevel(`tame`) > 0 {
 
 							currentSkill := user.Character.MobMastery.GetTame(int(mob.MobId))
 							if currentSkill < 50 {
@@ -226,6 +242,14 @@ func Suicide(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 				allMembers := p.GetMembers()
 				xpSplit := xp / len(allMembers)
 
+				if mob.IsElite {
+					eliteBonus := int(configs.GetGamePlayConfig().EliteXPBonus)
+					if eliteBonus <= 0 {
+						eliteBonus = 10
+					}
+					xpSplit = xpSplit + int(math.Ceil(float64(xpSplit)*float64(eliteBonus)/100.0))
+				}
+
 				mudlog.Info(`Party XP`, `totalXP`, xp, `splitXP`, xpSplit, `memberCt`, len(allMembers))
 
 				for _, memberId := range allMembers {
@@ -234,6 +258,9 @@ func Suicide(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 
 						if mob.Character.Zone != `Training` { // Don't track any kills in the training zone
 							user.Character.KD.AddMobKill(int(mob.MobId))
+							if mob.IsElite {
+								user.Character.KD.AddEliteKill(int(mob.MobId), mob.Character.Name)
+							}
 						}
 
 						user.GrantXP(xpSplit, `combat`)
@@ -247,10 +274,15 @@ func Suicide(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 						mudlog.Debug("Alignment", "user Alignment", user.Character.Alignment, "mob Alignment", mob.Character.Alignment, `alignmentAdj`, alignmentAdj, `alignmentBefore`, alignmentBefore, `alignmentAfter`, alignmentAfter)
 
 						if alignmentBefore != alignmentAfter {
-							alignmentBefore = fmt.Sprintf(`<ansi fg="%s">%s</ansi>`, alignmentBefore, alignmentBefore)
-							alignmentAfter = fmt.Sprintf(`<ansi fg="%s">%s</ansi>`, alignmentAfter, alignmentAfter)
-							updateTxt := fmt.Sprintf(`<ansi fg="231">Your alignment has shifted from %s to %s!</ansi>`, alignmentBefore, alignmentAfter)
+							before := fmt.Sprintf(`<ansi fg="%s">%s</ansi>`, alignmentBefore, alignmentBefore)
+							after := fmt.Sprintf(`<ansi fg="%s">%s</ansi>`, alignmentAfter, alignmentAfter)
+							updateTxt := fmt.Sprintf(`<ansi fg="231">Your alignment has shifted from %s to %s!</ansi>`, before, after)
 							user.SendText(updateTxt)
+							events.AddToQueue(events.AlignmentChanged{
+								UserId:       user.UserId,
+								AlignmentOld: alignmentBefore,
+								AlignmentNew: alignmentAfter,
+							})
 						}
 
 						// Chance to learn to tame the creature.
@@ -270,7 +302,7 @@ func Suicide(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 						mudlog.Debug("Tame Chance", "levelDelta", levelDelta, "skillsDelta", skillsDelta, "targetNumber", targetNumber)
 
 						if util.Rand(1000) < targetNumber {
-							if mob.IsTameable() && user.Character.GetSkillLevel(skills.Tame) > 0 {
+							if mob.IsTameable() && user.Character.GetSkillLevel(`tame`) > 0 {
 
 								currentSkill := user.Character.MobMastery.GetTame(int(mob.MobId))
 								if currentSkill < 50 {
@@ -294,18 +326,35 @@ func Suicide(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 
 	}
 
-	if !mob.Character.HasBuffFlag(buffs.PermaGear) {
+	if !mob.Character.HasBuffFlag("perma-gear") {
+
+		corpseItems := []items.Item{}
+		corpseGold := 0
 
 		// Check for any dropped loot...
 		for _, item := range mob.Character.Items {
-			msg := fmt.Sprintf(`<ansi fg="item">%s</ansi> drops to the ground.`, item.DisplayName())
-			room.SendText(msg)
-			room.AddItem(item, false)
+			if config.Death.CorpseItems && config.Death.CorpsesEnabled {
+				corpseItems = append(corpseItems, item)
+			} else {
+				msg := fmt.Sprintf(`<ansi fg="item">%s</ansi> drops to the ground.`, item.DisplayName())
+				room.SendText(msg)
+				events.AddToQueue(events.MobItemDrop{
+					MobId:  int(mob.MobId),
+					RoomId: room.RoomId,
+					Zone:   mob.Character.Zone,
+					ItemId: item.ItemId,
+				})
+				room.AddItem(item, false)
+			}
 		}
 
 		allWornItems := mob.Character.Equipment.GetAllItems()
 
 		for _, item := range allWornItems {
+
+			if item.IsRemoveLocked() {
+				continue
+			}
 
 			roll := util.Rand(100)
 
@@ -315,17 +364,56 @@ func Suicide(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 				continue
 			}
 
-			msg := fmt.Sprintf(`<ansi fg="item">%s</ansi> drops to the ground.`, item.DisplayName())
-			room.SendText(msg)
-			room.AddItem(item, false)
+			if config.Death.CorpseItems && config.Death.CorpsesEnabled {
+				corpseItems = append(corpseItems, item)
+			} else {
+				msg := fmt.Sprintf(`<ansi fg="item">%s</ansi> drops to the ground.`, item.DisplayName())
+				room.SendText(msg)
+				events.AddToQueue(events.MobItemDrop{
+					MobId:  int(mob.MobId),
+					RoomId: room.RoomId,
+					Zone:   mob.Character.Zone,
+					ItemId: item.ItemId,
+				})
+				room.AddItem(item, false)
+			}
 		}
 
 		if mob.Character.Gold > 0 {
-			msg := fmt.Sprintf(`<ansi fg="yellow-bold">%d gold</ansi> drops to the ground.`, mob.Character.Gold)
-			room.SendText(msg)
-			room.Gold += mob.Character.Gold
+			if config.Death.CorpseItems && config.Death.CorpsesEnabled {
+				corpseGold = mob.Character.Gold
+			} else {
+				msg := fmt.Sprintf(`<ansi fg="yellow-bold">%d gold</ansi> drops to the ground.`, mob.Character.Gold)
+				room.SendText(msg)
+				room.Gold += mob.Character.Gold
+			}
 		}
 
+		// Destroy any record of this mob.
+		mobs.DestroyInstance(mob.InstanceId)
+
+		// Clean up mob from room...
+		if r := rooms.LoadRoom(mob.HomeRoomId); r != nil {
+			r.CleanupMobSpawns(false)
+		}
+
+		// Remove from current room
+		room.RemoveMob(mob.InstanceId)
+
+		if config.Death.CorpsesEnabled {
+			c := rooms.Corpse{
+				MobId:        int(mob.MobId),
+				Character:    mob.Character,
+				RoundCreated: currentRound,
+			}
+			if config.Death.CorpseItems {
+				c.Items = corpseItems
+				c.Gold = corpseGold
+			}
+			room.AddCorpse(c)
+		}
+
+		return true, nil
 	}
 
 	// Destroy any record of this mob.
@@ -338,8 +426,6 @@ func Suicide(rest string, mob *mobs.Mob, room *rooms.Room) (bool, error) {
 
 	// Remove from current room
 	room.RemoveMob(mob.InstanceId)
-
-	config := configs.GetGamePlayConfig()
 
 	if config.Death.CorpsesEnabled {
 		room.AddCorpse(rooms.Corpse{

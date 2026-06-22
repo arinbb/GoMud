@@ -2,93 +2,114 @@
 
 <style>
     h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
-    .subtitle { color: #555; margin-bottom: 1.5rem; font-size: 0.9rem; }
+    .subtitle { color: var(--color-text-muted); margin-bottom: 1.5rem; font-size: 0.9rem; }
 
     /* layout */
     .page-layout { display: grid; grid-template-columns: 300px 1fr; gap: 1.25rem; align-items: start; }
     @media (max-width: 860px) { .page-layout { grid-template-columns: 1fr; } }
 
     /* sidebar */
-    .sidebar { background: #fff; border: 1px solid #ddd; border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; }
-    .sidebar-header { padding: 0.75rem 0.9rem; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 0.5rem; }
-    .sidebar-header input[type="search"] { flex: 1; padding: 0.35rem 0.6rem; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem; }
-    .sidebar-header select { padding: 0.35rem 0.5rem; border: 1px solid #ccc; border-radius: 4px; font-size: 0.82rem; background: #fff; max-width: 110px; }
+    .sidebar { background: var(--color-surface-white); border: 1px solid var(--color-border); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; }
+    .sidebar-header { padding: 0.75rem 0.9rem; border-bottom: 1px solid var(--color-border-light); display: flex; align-items: center; gap: 0.5rem; }
+    .sidebar-header input[type="search"] { flex: 1; padding: 0.35rem 0.6rem; border: 1px solid var(--color-border-medium); border-radius: 4px; font-size: 0.85rem; }
+    .sidebar-header select { padding: 0.35rem 0.5rem; border: 1px solid var(--color-border-medium); border-radius: 4px; font-size: 0.82rem; background: var(--color-surface-white); max-width: 110px; }
     .mob-list { overflow-y: auto; max-height: 72vh; }
     .mob-row {
-        padding: 0.55rem 0.9rem; cursor: pointer; border-bottom: 1px solid #f0f0f0;
+        padding: 0.55rem 0.9rem; cursor: pointer; border-bottom: 1px solid var(--color-border-faint);
         display: flex; align-items: baseline; gap: 0.5rem; font-size: 0.875rem;
     }
     .mob-row:last-child { border-bottom: none; }
-    .mob-row:hover { background: #f5f7ff; }
-    .mob-row.active { background: #1a1a2e; color: #fff; }
-    .mob-row.active .mob-id { color: #8899cc; }
-    .mob-id { font-size: 0.75rem; color: #999; font-family: monospace; flex-shrink: 0; }
+    .mob-row:hover { background: var(--color-row-hover); }
+    .mob-row.active { background: var(--color-primary); color: var(--color-surface-white); }
+    .mob-row.active .mob-id { color: var(--color-active-id); }
+    .mob-id { font-size: 0.75rem; color: var(--color-text-secondary); font-family: monospace; flex-shrink: 0; }
     .mob-zone-badge {
         font-size: 0.68rem; padding: 0.1rem 0.35rem; border-radius: 3px;
-        background: #e8eaf6; color: #3949ab; flex-shrink: 0; margin-left: auto;
+        background: var(--color-chip-bg); color: var(--color-chip-text); flex-shrink: 0; margin-left: auto;
     }
-    .mob-row.active .mob-zone-badge { background: #3949ab; color: #fff; }
+    .mob-row.active .mob-zone-badge { background: var(--color-chip-text); color: var(--color-surface-white); }
     .mob-script-badge {
         font-size: 0.65rem; padding: 0.1rem 0.35rem; border-radius: 3px;
-        background: #fff3e0; color: #8a4a00; flex-shrink: 0;
+        background: var(--color-warning-bg); color: var(--color-warning-text); flex-shrink: 0;
     }
-    .mob-row.active .mob-script-badge { background: #8a4a00; color: #fff; }
+    .mob-row.active .mob-script-badge { background: var(--color-warning-text); color: var(--color-surface-white); }
     .mob-hostile-badge {
         font-size: 0.65rem; padding: 0.1rem 0.35rem; border-radius: 3px;
-        background: #fde8e8; color: #8a0000; flex-shrink: 0;
+        background: var(--color-error-bg); color: var(--color-error-text); flex-shrink: 0;
     }
-    .mob-row.active .mob-hostile-badge { background: #8a0000; color: #fff; }
-    .no-mobs { padding: 1.5rem; text-align: center; color: #888; font-size: 0.85rem; }
+    .mob-row.active .mob-hostile-badge { background: var(--color-error-text); color: var(--color-surface-white); }
+    .no-mobs { padding: 1.5rem; text-align: center; color: var(--color-text-faint); font-size: 0.85rem; }
 
     /* new mob btn */
     .btn-new {
         margin: 0.6rem 0.9rem; padding: 0.4rem 0.9rem; border: none; border-radius: 4px;
-        background: #1e6e34; color: #fff; font-size: 0.85rem; font-weight: 600;
+        background: var(--color-success-text); color: var(--color-surface-white); font-size: 0.85rem; font-weight: 600;
         cursor: pointer; text-align: center;
     }
-    .btn-new:hover { background: #145728; }
+    .btn-new:hover { background: var(--color-btn-new-hover); }
 
     /* editor panel */
-    .editor-panel { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 1.25rem; }
-    .editor-placeholder { color: #aaa; text-align: center; padding: 4rem 1rem; font-size: 0.9rem; }
+    .editor-panel { background: var(--color-surface-white); border: 1px solid var(--color-border); border-radius: 6px; padding: 1.25rem; }
+    .editor-placeholder { color: var(--color-text-placeholder); text-align: center; padding: 4rem 1rem; font-size: 0.9rem; }
 
     /* status */
     .status-bar {
         display: none; padding: 0.55rem 0.9rem; border-radius: 4px;
         font-size: 0.85rem; margin-bottom: 1rem;
     }
-    .status-bar.success { background: #e6f4ea; color: #1e6e34; display: block; }
-    .status-bar.error   { background: #fde8e8; color: #8a0000; display: block; }
+    .status-bar.success { background: var(--color-success-bg); color: var(--color-success-text); display: block; }
+    .status-bar.error   { background: var(--color-error-bg); color: var(--color-error-text); display: block; }
 
     /* form */
     .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem 1.25rem; }
     .form-grid .span2 { grid-column: 1 / -1; }
-    .field label { display: block; font-size: 0.78rem; font-weight: 600; color: #555; margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 0.03em; }
+    .field label { display: block; font-size: 0.78rem; font-weight: 600; color: var(--color-text-muted); margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 0.03em; }
     .field input[type="text"],
     .field input[type="number"],
     .field select,
     .field textarea {
-        width: 100%; padding: 0.4rem 0.6rem; border: 1px solid #ccc; border-radius: 4px;
-        font-size: 0.875rem; font-family: inherit; background: #fff;
+        width: 100%; padding: 0.4rem 0.6rem; border: 1px solid var(--color-border-medium); border-radius: 4px;
+        font-size: 0.875rem; font-family: inherit; background: var(--color-surface-white);
     }
-    .field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid #1a1a2e; outline-offset: 1px; border-color: transparent; }
+    .field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--color-primary); outline-offset: 1px; border-color: transparent; }
     .field textarea { resize: vertical; min-height: 80px; }
-    .field-hint { font-size: 0.75rem; color: #888; margin-top: 0.2rem; }
+    .field-hint { font-size: 0.75rem; color: var(--color-text-faint); margin-top: 0.2rem; }
+
+    /* toggle switch */
+    .toggle-wrap { display: flex; align-items: center; gap: 0.55rem; padding: 0.3rem 0; }
+    .toggle-wrap input[type="checkbox"] { position: absolute; opacity: 0; width: 0; height: 0; }
+    .toggle-switch {
+        position: relative; display: inline-block;
+        width: 2.4rem; height: 1.3rem; flex-shrink: 0; cursor: pointer;
+    }
+    .toggle-switch::before {
+        content: ''; position: absolute; inset: 0;
+        background: var(--color-border-medium); border-radius: 1rem; transition: background 0.18s;
+    }
+    .toggle-switch::after {
+        content: ''; position: absolute; top: 0.15rem; left: 0.15rem;
+        width: 1rem; height: 1rem; background: var(--color-surface-white);
+        border-radius: 50%; transition: transform 0.18s; box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    input[type="checkbox"]:checked + .toggle-switch::before { background: var(--color-primary); }
+    input[type="checkbox"]:checked + .toggle-switch::after { transform: translateX(1.1rem); }
+    input[type="checkbox"]:focus-visible + .toggle-switch { outline: 2px solid var(--color-focus); outline-offset: 2px; border-radius: 1rem; }
+    .toggle-label-text { font-size: 0.85rem; color: var(--color-text-muted); }
 
     /* range sliders */
-    .range-wrap { display: flex; align-items: center; gap: 0.6rem; }
-    .range-wrap input[type="range"] { flex: 1; accent-color: #1a1a2e; }
+    .range-wrap { display: flex; flex-direction: column; gap: 0.2rem; }
+    .range-wrap input[type="range"] { width: 100%; accent-color: var(--color-primary); }
     .range-val {
-        font-family: monospace; font-size: 0.85rem; font-weight: 600;
-        min-width: 2.5rem; text-align: center; color: #1a1a2e;
+        font-family: monospace; font-size: 0.82rem; font-weight: 600;
+        text-align: center; color: var(--color-primary);
     }
 
     /* section cards */
     .section-card {
         grid-column: 1 / -1;
-        border: 1px solid #e0e0e0; border-radius: 6px;
+        border: 1px solid var(--color-border-strong); border-radius: 6px;
         padding: 1rem 1.1rem 0.75rem;
-        background: #fafafa;
+        background: var(--color-surface-alt);
         display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem 1.25rem;
     }
     .section-card + .section-card { margin-top: 0.25rem; }
@@ -97,123 +118,145 @@
     /* section headings inside editor */
     .section-title {
         font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
-        letter-spacing: 0.06em; color: #444; padding: 0 0 0.5rem;
-        border-bottom: 2px solid #1a1a2e; margin-bottom: 0.25rem; grid-column: 1 / -1;
+        letter-spacing: 0.06em; color: var(--color-text-tertiary); padding: 0 0 0.5rem;
+        border-bottom: 2px solid var(--color-primary); margin-bottom: 0.25rem; grid-column: 1 / -1;
     }
 
     /* tags editor */
     .tags-wrap { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
     .tag-chip {
         display: inline-flex; align-items: center; gap: 0.3rem;
-        background: #e8eaf6; color: #3949ab; border-radius: 12px;
+        background: var(--color-chip-bg); color: var(--color-chip-text); border-radius: 12px;
         padding: 0.2rem 0.6rem; font-size: 0.8rem;
     }
-    .tag-chip button { background: none; border: none; cursor: pointer; color: #3949ab; font-size: 0.85rem; line-height: 1; padding: 0; }
-    .tag-chip button:hover { color: #c00; }
-    .tag-add-input { width: 140px; padding: 0.25rem 0.5rem; border: 1px solid #ccc; border-radius: 4px; font-size: 0.82rem; }
+    .tag-chip button { background: none; border: none; cursor: pointer; color: var(--color-chip-text); font-size: 0.85rem; line-height: 1; padding: 0; }
+    .tag-chip button:hover { color: var(--color-danger); }
+    .tag-add-input { width: 140px; padding: 0.25rem 0.5rem; border: 1px solid var(--color-border-medium); border-radius: 4px; font-size: 0.82rem; }
     .btn-add-sm {
-        font-size: 0.8rem; padding: 0.3rem 0.7rem; border: 1px dashed #aaa;
-        background: none; border-radius: 4px; cursor: pointer; color: #555; margin-top: 0.25rem;
+        font-size: 0.8rem; padding: 0.3rem 0.7rem; border: 1px dashed var(--color-text-placeholder);
+        background: none; border-radius: 4px; cursor: pointer; color: var(--color-text-muted); margin-top: 0.25rem;
     }
-    .btn-add-sm:hover { border-color: #1a1a2e; color: #1a1a2e; }
+    .btn-add-sm:hover { border-color: var(--color-primary); color: var(--color-primary); }
 
     /* buff ids */
     .buff-ids-wrap { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
     .buff-chip {
         display: inline-flex; align-items: center; gap: 0.3rem;
-        background: #e8eaf6; color: #3949ab; border-radius: 12px;
+        background: var(--color-chip-bg); color: var(--color-chip-text); border-radius: 12px;
         padding: 0.2rem 0.6rem; font-size: 0.8rem;
     }
-    .buff-chip button { background: none; border: none; cursor: pointer; color: #3949ab; font-size: 0.85rem; line-height: 1; padding: 0; }
-    .buff-chip button:hover { color: #c00; }
+    .buff-chip button { background: none; border: none; cursor: pointer; color: var(--color-chip-text); font-size: 0.85rem; line-height: 1; padding: 0; }
+    .buff-chip button:hover { color: var(--color-danger); }
 
     .btn-icon {
         background: none; border: none; cursor: pointer; font-size: 1rem;
-        color: #888; padding: 0 0.2rem; line-height: 1;
+        color: var(--color-text-faint); padding: 0 0.2rem; line-height: 1;
     }
-    .btn-icon:hover { color: #c00; }
+    .btn-icon:hover { color: var(--color-danger); }
+
+    /* equipment lock button */
+    .eq-lock-btn {
+        background: none; border: none; cursor: pointer; font-size: 1rem;
+        line-height: 1; padding: 0 0.15rem; transition: color 0.15s;
+        flex-shrink: 0;
+    }
+    .eq-lock-btn[data-locked="true"]  { color: #e53e3e; }
+    .eq-lock-btn[data-locked="false"] { color: var(--color-text-faint); }
+    .eq-lock-btn[data-locked="true"]:hover  { color: #c53030; }
+    .eq-lock-btn[data-locked="false"]:hover { color: #e53e3e; }
+    .shop-picker-wrap.item-locked {
+        border-color: #e53e3e;
+        background: #fff5f5;
+    }
 
     /* shop picker display */
-    .shop-picker-wrap { display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; }
-    .shop-picker-display { font-size: 0.82rem; color: #333; font-family: monospace; }
-    .shop-picker-display.empty { color: #aaa; font-style: italic; font-family: inherit; }
-    .shop-picker-wrap.eq-disabled { background: #e8e8e8; border-radius: 4px; padding: 0.2rem 0.5rem; opacity: 0.6; cursor: not-allowed; }
+    .shop-picker-wrap {
+        display: flex; gap: 0.4rem; align-items: center;
+        border: 1px solid transparent; border-radius: 4px; padding: 0.2rem 0.4rem;
+    }
+    .shop-picker-display {
+        font-size: 0.82rem; color: var(--color-text-strong); font-family: monospace;
+        flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .shop-picker-display.empty { color: var(--color-text-placeholder); font-style: italic; font-family: inherit; }
+    .shop-picker-btns { display: flex; gap: 0.25rem; align-items: center; flex-shrink: 0; }
+    .shop-picker-wrap.eq-disabled { background: var(--color-border-strong); opacity: 0.6; cursor: not-allowed; }
     .shop-picker-wrap.eq-disabled * { pointer-events: none; }
-    .shop-picker-wrap.eq-disabled .shop-picker-display { color: #888; font-style: normal; font-family: inherit; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+    .shop-picker-wrap.eq-disabled .shop-picker-display { color: var(--color-text-faint); font-style: normal; font-family: inherit; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
     .shop-entries { display: flex; flex-direction: column; gap: 0.75rem; }
     .shop-card {
-        border: 1px solid #ddd; border-radius: 6px; padding: 0.75rem 0.9rem;
-        background: #fafafa; position: relative;
+        border: 1px solid var(--color-border); border-radius: 6px; padding: 0.75rem 0.9rem;
+        background: var(--color-surface-alt); position: relative;
     }
     .shop-card-header {
         display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.6rem;
     }
     .shop-card-header select {
-        padding: 0.3rem 0.5rem; border: 1px solid #ccc; border-radius: 4px;
-        font-size: 0.82rem; background: #fff; font-weight: 600;
+        padding: 0.3rem 0.5rem; border: 1px solid var(--color-border-medium); border-radius: 4px;
+        font-size: 0.82rem; background: var(--color-surface-white); font-weight: 600;
     }
     .shop-card-type-badge {
         font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 3px;
         font-weight: 600; text-transform: uppercase;
     }
-    .shop-type-item   { background: #e6f4ea; color: #1e6e34; }
-    .shop-type-mob    { background: #e3f2fd; color: #0d47a1; }
-    .shop-type-buff   { background: #f3e5f5; color: #6a1b9a; }
-    .shop-type-pet    { background: #fff3e0; color: #8a4a00; }
+    .shop-type-item   { background: var(--color-success-bg); color: var(--color-success-text); }
+    .shop-type-mob    { background: var(--color-info-bg); color: var(--color-info-text); }
+    .shop-type-buff   { background: var(--color-method-put-bg); color: var(--color-method-put-text); }
+    .shop-type-pet    { background: var(--color-warning-bg); color: var(--color-warning-text); }
     .shop-card-remove {
         position: absolute; top: 0.5rem; right: 0.6rem;
         background: none; border: none; cursor: pointer; font-size: 1.1rem;
-        color: #999; line-height: 1;
+        color: var(--color-text-secondary); line-height: 1;
     }
-    .shop-card-remove:hover { color: #c00; }
+    .shop-card-remove:hover { color: var(--color-danger); }
     .shop-card-fields {
-        display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-        gap: 0.5rem 0.75rem;
+        display: grid; grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 0.5rem 0.75rem; align-items: start;
+    }
+    /* Item & Trade Item get the room they need for full names; Price / Quantity
+       Max stay compact. */
+    .shop-field { grid-column: span 6; min-width: 0; }
+    .shop-field--sm { grid-column: span 3; }
+    @media (max-width: 640px) {
+        .shop-field { grid-column: span 12; }
+        .shop-field--sm { grid-column: span 6; }
     }
     .shop-field label {
-        display: block; font-size: 0.72rem; font-weight: 600; color: #666;
+        display: block; font-size: 0.72rem; font-weight: 600; color: var(--color-text-subtle);
         margin-bottom: 0.15rem; text-transform: uppercase; letter-spacing: 0.02em;
     }
     .shop-field input, .shop-field select {
-        width: 100%; padding: 0.3rem 0.5rem; border: 1px solid #ccc;
-        border-radius: 4px; font-size: 0.82rem; background: #fff;
+        width: 100%; padding: 0.3rem 0.5rem; border: 1px solid var(--color-border-medium);
+        border-radius: 4px; font-size: 0.82rem; background: var(--color-surface-white);
     }
-    .shop-field .field-hint { font-size: 0.7rem; color: #999; margin-top: 0.1rem; }
+    .shop-field .field-hint { font-size: 0.7rem; color: var(--color-text-secondary); margin-top: 0.1rem; }
 
     /* script editor */
-    .script-toggle {
-        display: flex; align-items: center; gap: 0.6rem; cursor: pointer;
-        font-size: 0.85rem; color: #1a1a2e; font-weight: 600; padding: 0.5rem 0;
-        user-select: none;
+    .script-section {
+        margin-top: 1.25rem; border-top: 1px solid var(--color-border-light); padding-top: 1rem;
+        display: flex; flex-direction: column; gap: 0.5rem;
     }
-    .script-toggle::before { content: "\25B6"; font-size: 0.65rem; transition: transform 0.15s; }
-    .script-toggle.open::before { transform: rotate(90deg); }
-    .script-area { display: none; margin-top: 0.5rem; }
-    .script-area.open { display: block; }
-    .script-area textarea {
-        width: 100%; min-height: 660px; font-family: monospace; font-size: 0.82rem;
-        padding: 0.6rem 0.75rem; border: 1px solid #ccc; border-radius: 4px;
-        resize: vertical; background: #1a1a2e; color: #c9d1d9; line-height: 1.55;
+    .script-section-toolbar {
+        display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;
     }
-    .script-area textarea:focus { outline: 2px solid #4a6fa5; outline-offset: 1px; }
-    .script-hint { font-size: 0.75rem; color: #888; margin-top: 0.3rem; }
+    .script-section-label { font-size: 0.85rem; font-weight: 600; color: var(--color-text-muted); flex: 1; }
 
     /* action bar */
     .action-bar { display: flex; gap: 0.6rem; margin-top: 1.25rem; align-items: center; flex-wrap: wrap; }
     .btn { padding: 0.45rem 1.1rem; border: none; border-radius: 4px; cursor: pointer; font-size: 0.875rem; font-weight: 600; }
-    .btn-primary { background: #1a1a2e; color: #fff; }
-    .btn-primary:hover { background: #2d2d4e; }
-    .btn-primary:disabled { background: #999; cursor: default; }
-    .btn-danger { background: #c0392b; color: #fff; }
-    .btn-danger:hover { background: #a93226; }
-    .btn-secondary { background: #eee; color: #333; }
-    .btn-secondary:hover { background: #ddd; }
-    .mob-id-display { font-family: monospace; font-size: 0.82rem; color: #888; margin-left: auto; }
+    .btn-primary { background: var(--color-primary); color: var(--color-surface-white); }
+    .btn-primary:hover { background: var(--color-primary-hover); }
+    .btn-primary:disabled { background: var(--color-text-secondary); cursor: default; }
+    .btn-danger { background: var(--color-btn-danger-bg); color: var(--color-surface-white); }
+    .btn-danger:hover { background: var(--color-btn-danger-hover); }
+    .btn-secondary { background: var(--color-border-light); color: var(--color-text-strong); }
+    .btn-secondary:hover { background: var(--color-border); }
+    .mob-id-display { font-family: monospace; font-size: 0.82rem; color: var(--color-text-faint); margin-left: auto; }
 
     /* editor header */
     .editor-header { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 1rem; }
     .editor-header h2 { font-size: 1.1rem; flex: 1; }
-    .editor-header .badge { font-size: 0.75rem; padding: 0.2rem 0.5rem; border-radius: 3px; background: #e8eaf6; color: #3949ab; }
+    .editor-header .badge { font-size: 0.75rem; padding: 0.2rem 0.5rem; border-radius: 3px; background: var(--color-chip-bg); color: var(--color-chip-text); }
 </style>
 
 <h1>Mobs</h1>
@@ -245,6 +288,7 @@
             <div class="editor-header">
                 <h2 id="editor-title">Mob Editor</h2>
                 <span class="badge" id="editor-zone-badge"></span>
+                <button class="yaml-badge" id="yaml-view-btn" style="display:none" onclick="showYamlModal(this.dataset.url,'Mob YAML')">YAML</button>
             </div>
 
             <div class="form-grid">
@@ -258,17 +302,12 @@
                         <div class="field-hint">Zone folder for file storage</div>
                     </div>
                     <div class="field">
-                        <label>Script Tag</label>
-                        <input type="text" id="f-scripttag" placeholder="e.g. winterfire" />
-                        <div class="field-hint">Identifier used in the script filename</div>
-                    </div>
-
-                    <div class="field">
                         <label>Hostile</label>
-                        <select id="f-hostile">
-                            <option value="false">No</option>
-                            <option value="true">Yes - attacks on sight</option>
-                        </select>
+                        <div class="toggle-wrap">
+                            <input type="checkbox" id="f-hostile" />
+                            <label class="toggle-switch" for="f-hostile"></label>
+                            <span class="toggle-label-text">Attacks on sight</span>
+                        </div>
                     </div>
                     <div class="field">
                         <label>Activity Level</label>
@@ -277,17 +316,30 @@
                                    oninput="document.getElementById('f-activitylevel-val').textContent=this.value" />
                             <span class="range-val" id="f-activitylevel-val">10</span>
                         </div>
-                        <div class="field-hint">1-100% chance of acting each round</div>
                     </div>
                     <div class="field">
                         <label>Max Wander</label>
-                        <input type="number" id="f-maxwander" min="0" placeholder="0" />
-                        <div class="field-hint">Max rooms to wander from home (0 = stationary)</div>
+                        <div class="range-wrap">
+                            <input type="range" id="f-maxwander" min="-1" max="30" value="0"
+                                   oninput="updateWanderLabel(this.value)" />
+                            <span class="range-val" id="f-maxwander-val">stationary</span>
+                        </div>
                     </div>
                     <div class="field">
                         <label>Item Drop Chance</label>
-                        <input type="number" id="f-itemdropchance" min="0" max="100" placeholder="0" />
-                        <div class="field-hint">% chance of dropping items on death</div>
+                        <div class="range-wrap">
+                            <input type="range" id="f-itemdropchance" min="0" max="100" value="0"
+                                   oninput="document.getElementById('f-itemdropchance-val').textContent=this.value+'%'" />
+                            <span class="range-val" id="f-itemdropchance-val">0%</span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Elite Chance</label>
+                        <div class="range-wrap">
+                            <input type="range" id="f-elitechance" min="0" max="100" value="0"
+                                   oninput="document.getElementById('f-elitechance-val').textContent=this.value+'%'" />
+                            <span class="range-val" id="f-elitechance-val">0%</span>
+                        </div>
                     </div>
 
                     <div class="section-title" style="margin-top:0.5rem;">Groups</div>
@@ -346,6 +398,7 @@
                         <div class="buff-ids-wrap" id="buffids-list"></div>
                         <button class="btn-add-sm" style="margin-top:0.4rem;" onclick="pickBuffId('buffids-list')">+ Add Buff</button>
                     </div>
+
                 </div>
 
                 <div class="section-card">
@@ -358,8 +411,13 @@
                     <div class="field">
                         <label>Race</label>
                         <select id="f-raceid">
-                            <option value="0">&mdash; none &mdash;</option>
+                            <option value="0">- none -</option>
                         </select>
+                    </div>
+                    <div class="field" id="f-formrace-wrap" style="display:none;">
+                        <label>Current Form</label>
+                        <input type="text" id="f-formrace" readonly
+                               style="background:var(--color-border-faint); cursor:default;" />
                     </div>
 
                     <div class="field span2">
@@ -383,7 +441,6 @@
                                    oninput="document.getElementById('f-alignment-val').textContent=this.value" />
                             <span class="range-val" id="f-alignment-val">0</span>
                         </div>
-                        <div class="field-hint">-100 (evil) to 100 (good), 0 = default from race</div>
                     </div>
 
                     <div class="section-title" style="margin-top:0.5rem;">Stats (Training Bonuses)</div>
@@ -415,46 +472,7 @@
 
                     <div class="section-title" style="margin-top:0.5rem;">Equipment</div>
 
-                    <div class="field">
-                        <label>Weapon</label>
-                        <div class="shop-picker-wrap" id="f-eq-weapon" data-value="0"><span class="shop-picker-display empty">nothing</span><button type="button" class="btn-add-sm" style="margin-top:0" onclick="pickEquip('f-eq-weapon')">Pick&hellip;</button><button type="button" class="btn-icon" title="Clear" onclick="clearEquip('f-eq-weapon')">&times;</button></div>
-                    </div>
-                    <div class="field">
-                        <label>Offhand</label>
-                        <div class="shop-picker-wrap" id="f-eq-offhand" data-value="0"><span class="shop-picker-display empty">nothing</span><button type="button" class="btn-add-sm" style="margin-top:0" onclick="pickEquip('f-eq-offhand')">Pick&hellip;</button><button type="button" class="btn-icon" title="Clear" onclick="clearEquip('f-eq-offhand')">&times;</button></div>
-                    </div>
-                    <div class="field">
-                        <label>Head</label>
-                        <div class="shop-picker-wrap" id="f-eq-head" data-value="0"><span class="shop-picker-display empty">nothing</span><button type="button" class="btn-add-sm" style="margin-top:0" onclick="pickEquip('f-eq-head')">Pick&hellip;</button><button type="button" class="btn-icon" title="Clear" onclick="clearEquip('f-eq-head')">&times;</button></div>
-                    </div>
-                    <div class="field">
-                        <label>Neck</label>
-                        <div class="shop-picker-wrap" id="f-eq-neck" data-value="0"><span class="shop-picker-display empty">nothing</span><button type="button" class="btn-add-sm" style="margin-top:0" onclick="pickEquip('f-eq-neck')">Pick&hellip;</button><button type="button" class="btn-icon" title="Clear" onclick="clearEquip('f-eq-neck')">&times;</button></div>
-                    </div>
-                    <div class="field">
-                        <label>Body</label>
-                        <div class="shop-picker-wrap" id="f-eq-body" data-value="0"><span class="shop-picker-display empty">nothing</span><button type="button" class="btn-add-sm" style="margin-top:0" onclick="pickEquip('f-eq-body')">Pick&hellip;</button><button type="button" class="btn-icon" title="Clear" onclick="clearEquip('f-eq-body')">&times;</button></div>
-                    </div>
-                    <div class="field">
-                        <label>Belt</label>
-                        <div class="shop-picker-wrap" id="f-eq-belt" data-value="0"><span class="shop-picker-display empty">nothing</span><button type="button" class="btn-add-sm" style="margin-top:0" onclick="pickEquip('f-eq-belt')">Pick&hellip;</button><button type="button" class="btn-icon" title="Clear" onclick="clearEquip('f-eq-belt')">&times;</button></div>
-                    </div>
-                    <div class="field">
-                        <label>Gloves</label>
-                        <div class="shop-picker-wrap" id="f-eq-gloves" data-value="0"><span class="shop-picker-display empty">nothing</span><button type="button" class="btn-add-sm" style="margin-top:0" onclick="pickEquip('f-eq-gloves')">Pick&hellip;</button><button type="button" class="btn-icon" title="Clear" onclick="clearEquip('f-eq-gloves')">&times;</button></div>
-                    </div>
-                    <div class="field">
-                        <label>Ring</label>
-                        <div class="shop-picker-wrap" id="f-eq-ring" data-value="0"><span class="shop-picker-display empty">nothing</span><button type="button" class="btn-add-sm" style="margin-top:0" onclick="pickEquip('f-eq-ring')">Pick&hellip;</button><button type="button" class="btn-icon" title="Clear" onclick="clearEquip('f-eq-ring')">&times;</button></div>
-                    </div>
-                    <div class="field">
-                        <label>Legs</label>
-                        <div class="shop-picker-wrap" id="f-eq-legs" data-value="0"><span class="shop-picker-display empty">nothing</span><button type="button" class="btn-add-sm" style="margin-top:0" onclick="pickEquip('f-eq-legs')">Pick&hellip;</button><button type="button" class="btn-icon" title="Clear" onclick="clearEquip('f-eq-legs')">&times;</button></div>
-                    </div>
-                    <div class="field">
-                        <label>Feet</label>
-                        <div class="shop-picker-wrap" id="f-eq-feet" data-value="0"><span class="shop-picker-display empty">nothing</span><button type="button" class="btn-add-sm" style="margin-top:0" onclick="pickEquip('f-eq-feet')">Pick&hellip;</button><button type="button" class="btn-icon" title="Clear" onclick="clearEquip('f-eq-feet')">&times;</button></div>
-                    </div>
+                    <div id="equip-slots-grid"></div>
 
                     <div class="section-title" style="margin-top:0.5rem;">Inventory</div>
 
@@ -462,6 +480,15 @@
                         <div class="buff-ids-wrap" id="items-list"></div>
                         <button class="btn-add-sm" style="margin-top:0.4rem;" onclick="pickItem()">+ Add Item</button>
                         <div class="field-hint">Items the mob carries</div>
+                    </div>
+
+                    <div class="section-title" style="margin-top:0.5rem;">Spellbook</div>
+
+                    <div class="field span2">
+                        <label>Known Spells</label>
+                        <div class="buff-ids-wrap" id="spellbook-list"></div>
+                        <button class="btn-add-sm" style="margin-top:0.4rem;" onclick="pickSpell()">+ Add Spell</button>
+                        <div class="field-hint">Spells this mob knows. Value indicates cast count (positive = enabled, negative = disabled).</div>
                     </div>
 
                     <div class="section-title" style="margin-top:0.5rem;">Shop</div>
@@ -480,12 +507,20 @@
             </div>
 
             <!-- Script editor -->
-            <div style="margin-top:1.25rem; border-top: 1px solid #eee; padding-top: 1rem;">
-                <div class="script-toggle" id="script-toggle" onclick="toggleScript()">Script</div>
-                <div class="script-area" id="script-area">
-                    <textarea id="f-script" spellcheck="false" placeholder="// JavaScript for this mob's events (onAsk, onGive, onIdle, onShow)&#10;// Leave blank to delete the script file."></textarea>
-                    <div class="script-hint">Saved as a .js file alongside the mob's YAML. Clear the field and save to delete the script.</div>
+            <div class="script-section">
+                <div class="script-section-toolbar">
+                    <span class="script-section-label">Script</span>
+                    <span class="script-lang-mount"></span>
+                    <select id="script-selector" style="padding:0.3rem 0.5rem;border:1px solid var(--color-border-medium);border-radius:4px;font-size:0.85rem;background:var(--color-surface-white);" onchange="switchScript(this.value)"></select>
+                    <button class="btn btn-secondary" style="font-size:0.78rem;padding:0.25rem 0.7rem;" onclick="promptNewInstanceScript()">+ New Instance Script</button>
+                    <button class="btn btn-secondary" style="font-size:0.78rem;padding:0.25rem 0.7rem;" onclick="openScriptWizard()">+ Add Event Handler</button>
+                    <button class="btn btn-secondary" style="font-size:0.78rem;padding:0.25rem 0.7rem;" onclick="ScriptEditor.open('f-script')">&#x26F6; Pop Out</button>
                 </div>
+                <textarea id="f-script" spellcheck="false" style="display:none"></textarea>
+                <div style="display:flex;justify-content:flex-end;margin-top:0.5rem;">
+                    <button class="btn btn-danger" style="font-size:0.78rem;padding:0.25rem 0.7rem;" onclick="deleteScript()">&#x1F5D1; Delete Script</button>
+                </div>
+                <div id="script-hint" style="font-size:0.75rem;color:var(--color-text-faint);"></div>
             </div>
 
             <div class="action-bar">
@@ -509,13 +544,15 @@
     let currentMobId = null;
     let isNew = false;
     let scriptSync = null;
+    let currentScriptTag = null; // null = base script, string = instance script tag
 
     async function init() {
-        const [mobsRes, racesRes, buffsRes, itemsRes] = await AdminAPI.all([
+        const [mobsRes, racesRes, buffsRes, itemsRes, slotsRes] = await AdminAPI.all([
             AdminAPI.get('/admin/api/v1/mobs'),
             AdminAPI.get('/admin/api/v1/races'),
             AdminAPI.get('/admin/api/v1/buffs'),
             AdminAPI.get('/admin/api/v1/items'),
+            AdminAPI.get('/admin/api/v1/items/equip-slots'),
         ]);
 
         if (!mobsRes.ok) { showStatus('Failed to load mobs: ' + mobsRes.error, false); return; }
@@ -533,10 +570,15 @@
             allItems = (itemsRes.data.data || []).sort((a, b) => a.ItemId - b.ItemId);
             populateEquipSelects(allItems);
         }
+        if (slotsRes.ok) {
+            EQ_SLOTS = slotsRes.data.data || [];
+        }
+        buildEquipSlotsGrid();
 
         populateZoneFilter();
         renderList(allMobs);
-        scriptSync = ScriptEditor.init('f-script');
+        scriptSync = ScriptEditor.init('f-script', 'mob');
+        ScriptEditor.setDeleteHandler('f-script', deleteScript);
         const hashId = parseInt(location.hash.slice(1), 10);
         if (hashId) loadMob(hashId);
     }
@@ -548,16 +590,40 @@
         for (const r of sorted) {
             const o = document.createElement('option');
             o.value = r.RaceId;
-            o.textContent = '#' + r.RaceId + ' — ' + r.Name;
+            o.textContent = '#' + r.RaceId + ' - ' + r.Name;
             sel.appendChild(o);
         }
     }
 
     function populateEquipSelects(_items) {
-        // Equipment slots now use the Picker — no pre-population needed.
+        // Equipment slots now use the Picker - no pre-population needed.
     }
 
-    const EQ_SLOTS = ['weapon','offhand','head','neck','body','belt','gloves','ring','legs','feet'];
+    let EQ_SLOTS = [];
+
+    function buildEquipSlotsGrid() {
+        const grid = document.getElementById('equip-slots-grid');
+        if (!grid) return;
+        grid.innerHTML = '';
+        grid.style.display = 'contents';
+        for (const slot of EQ_SLOTS) {
+            const label = slot.charAt(0).toUpperCase() + slot.slice(1);
+            const id = 'f-eq-' + slot;
+            const field = document.createElement('div');
+            field.className = 'field';
+            field.innerHTML =
+                '<label>' + label + '</label>' +
+                '<div class="shop-picker-wrap" id="' + id + '" data-value="0">' +
+                    '<span class="shop-picker-display empty">nothing</span>' +
+                    '<span class="shop-picker-btns">' +
+                        '<button type="button" class="btn-add-sm" style="margin-top:0" onclick="pickEquip(\'' + id + '\')">Pick&hellip;</button>' +
+                        '<button type="button" class="btn-icon" title="Clear" onclick="clearEquip(\'' + id + '\')">\u00d7</button>' +
+                        '<button type="button" class="eq-lock-btn" data-locked="false" title="Item is removable. Click to permanently bind it to this mob." onclick="toggleEquipLock(\'' + id + '\')">\uD83D\uDD13</button>' +
+                    '</span>' +
+                '</div>';
+            grid.appendChild(field);
+        }
+    }
 
     function applyRaceEquipDisabled(raceId) {
         const race = allRaces[String(raceId)];
@@ -572,6 +638,14 @@
             wrap.querySelectorAll('button').forEach(btn => { btn.disabled = isDisabled; });
             const display = wrap.querySelector('.shop-picker-display');
             if (display && isDisabled) {
+                wrap.dataset.value = '0';
+                wrap.classList.remove('item-locked');
+                const lockBtn = wrap.querySelector('.eq-lock-btn');
+                if (lockBtn) {
+                    lockBtn.dataset.locked = 'false';
+                    lockBtn.textContent = '\uD83D\uDD13';
+                    lockBtn.title = 'Item is removable. Click to permanently bind it to this mob.';
+                }
                 display.textContent = 'DISABLED';
                 display.className = 'shop-picker-display';
             } else if (display && !isDisabled && wrap.dataset.value === '0') {
@@ -581,7 +655,7 @@
         }
     }
 
-    function setEquipSlot(slotId, itemId) {
+    function setEquipSlot(slotId, itemId, locked) {
         const wrap = document.getElementById(slotId);
         if (!wrap) return;
         wrap.dataset.value = itemId || 0;
@@ -590,11 +664,44 @@
         if (!itemId || itemId === 0) {
             display.textContent = 'nothing';
             display.className = 'shop-picker-display empty';
+            // Reset lock when slot is cleared
+            const lockBtn = wrap.querySelector('.eq-lock-btn');
+            if (lockBtn) {
+                lockBtn.dataset.locked = 'false';
+                lockBtn.textContent = '\uD83D\uDD13';
+                lockBtn.title = 'Item is removable. Click to permanently bind it to this mob.';
+            }
+            wrap.classList.remove('item-locked');
         } else {
             display.textContent = '#' + itemId + ' ' + itemName(itemId);
             display.className = 'shop-picker-display';
+            // Apply lock state if provided
+            const lockBtn = wrap.querySelector('.eq-lock-btn');
+            if (lockBtn && locked !== undefined) {
+                const isLocked = !!locked;
+                lockBtn.dataset.locked = isLocked ? 'true' : 'false';
+                lockBtn.textContent = isLocked ? '\uD83D\uDD12' : '\uD83D\uDD13';
+                lockBtn.title = isLocked
+                    ? 'Item is permanently bound. This item will NEVER be removed from this mob (not even on death). Click to unlock.'
+                    : 'Item is removable. Click to permanently bind it to this mob.';
+                wrap.classList.toggle('item-locked', isLocked);
+            }
         }
     }
+
+    window.toggleEquipLock = function (slotId) {
+        const wrap = document.getElementById(slotId);
+        if (!wrap || !wrap.dataset.value || wrap.dataset.value === '0') return;
+        const lockBtn = wrap.querySelector('.eq-lock-btn');
+        if (!lockBtn) return;
+        const nowLocked = lockBtn.dataset.locked !== 'true';
+        lockBtn.dataset.locked = nowLocked ? 'true' : 'false';
+        lockBtn.textContent = nowLocked ? '\uD83D\uDD12' : '\uD83D\uDD13';
+        lockBtn.title = nowLocked
+            ? 'Item is permanently bound. This item will NEVER be removed from this mob (not even on death). Click to unlock.'
+            : 'Item is removable. Click to permanently bind it to this mob.';
+        wrap.classList.toggle('item-locked', nowLocked);
+    };
 
     window.pickEquip = function (slotId) {
         Picker.open({
@@ -658,7 +765,7 @@
                 <span class="mob-id">#${mob.MobId}</span>
                 <span>${esc(name)}</span>
                 ${mob.Hostile ? '<span class="mob-hostile-badge">AGG</span>' : ''}
-                ${mob.HasScript ? '<span class="mob-script-badge">JS</span>' : ''}
+                ${mob.HasScript ? '<span class="mob-script-badge">{}</span>' : ''}
                 <span class="mob-zone-badge">${esc(mob.Zone || '')}</span>`;
             row.onclick = () => loadMob(mob.MobId);
             list.appendChild(row);
@@ -681,22 +788,31 @@
     // Load mob into editor
     // -------------------------------------------------------------------------
     async function loadMob(mobId) {
-        const [mobRes, scriptRes] = await AdminAPI.all([
+        const [mobRes, scriptsRes] = await AdminAPI.all([
             AdminAPI.get('/admin/api/v1/mobs/' + mobId),
-            AdminAPI.get('/admin/api/v1/mobs/' + mobId + '/script'),
+            AdminAPI.get('/admin/api/v1/mobs/' + mobId + '/scripts'),
         ]);
 
         if (!mobRes.ok) { showStatus('Failed to load mob: ' + mobRes.error, false); return; }
 
         const mob = mobRes.data.data;
-        const script = scriptRes.ok ? (scriptRes.data.data.script || '') : '';
+        const scriptTags = scriptsRes.ok ? (scriptsRes.data.data || []) : [];
 
         currentMobId = mobId;
         isNew = false;
         location.hash = mobId;
         setActiveRow(mobId);
         showEditor();
-        fillForm(mob, script);
+
+        // Default to base script (tag = '') if it exists, otherwise first available, otherwise none
+        let initialTag = null;
+        if (scriptTags.includes('')) {
+            initialTag = '';
+        } else if (scriptTags.length > 0) {
+            initialTag = scriptTags[0];
+        }
+
+        await fillForm(mob, scriptTags, initialTag);
     }
 
     function setActiveRow(mobId) {
@@ -711,34 +827,57 @@
         document.getElementById('delete-btn').style.display = isNew ? 'none' : '';
     }
 
-    function fillForm(mob, script) {
+    async function fillForm(mob, scriptTags, initialTag) {
         const ch = mob.Character || {};
 
         document.getElementById('editor-title').textContent = isNew ? 'New Mob' : (ch.Name || 'Mob');
         document.getElementById('editor-zone-badge').textContent = mob.Zone || '';
         document.getElementById('mob-id-display').textContent = isNew ? '' : 'ID: ' + mob.MobId;
+        var yamlBtn = document.getElementById('yaml-view-btn');
+        if (!isNew && mob.MobId) {
+            yamlBtn.dataset.url = '/admin/api/v1/mobs/' + mob.MobId + '/yaml';
+            yamlBtn.style.display = '';
+        } else {
+            yamlBtn.style.display = 'none';
+        }
 
         setVal('f-name', ch.Name || '');
         setVal('f-zone', mob.Zone || '');
         setVal('f-description', ch.Description || '');
         setVal('f-raceid', ch.RaceId || 0);
         applyRaceEquipDisabled(ch.RaceId || 0);
+        var formWrap = document.getElementById('f-formrace-wrap');
+        if (ch.FormRaceId > 0) {
+            var fr = allRaces[String(ch.FormRaceId)];
+            document.getElementById('f-formrace').value = fr ? fr.Name : 'Unknown (#' + ch.FormRaceId + ')';
+            formWrap.style.display = '';
+        } else {
+            formWrap.style.display = 'none';
+        }
         setVal('f-level', ch.Level || 1);
-        setVal('f-hostile', mob.Hostile ? 'true' : 'false');
+        setVal('f-hostile', mob.Hostile);
 
         const actLvl = mob.ActivityLevel || 10;
         setVal('f-activitylevel', actLvl);
         document.getElementById('f-activitylevel-val').textContent = actLvl;
 
-        setVal('f-maxwander', mob.MaxWander || 0);
-        setVal('f-itemdropchance', mob.ItemDropChance || 0);
+        const wander = mob.MaxWander != null ? mob.MaxWander : 0;
+        setVal('f-maxwander', wander);
+        updateWanderLabel(wander);
+
+        const dropChance = mob.ItemDropChance || 0;
+        setVal('f-itemdropchance', dropChance);
+        document.getElementById('f-itemdropchance-val').textContent = dropChance + '%';
+
+        const eliteChance = mob.EliteChance || 0;
+        setVal('f-elitechance', eliteChance);
+        document.getElementById('f-elitechance-val').textContent = eliteChance + '%';
 
         const align = ch.Alignment || 0;
         setVal('f-alignment', align);
         document.getElementById('f-alignment-val').textContent = align;
 
         setVal('f-gold', ch.Gold || 0);
-        setVal('f-scripttag', mob.ScriptTag || '');
 
         // Groups, Hates, QuestFlags
         renderTags('groups-list', mob.Groups || []);
@@ -753,6 +892,9 @@
         // Buff IDs
         renderBuffChips('buffids-list', mob.BuffIds || []);
 
+        // Spellbook
+        renderSpellChips('spellbook-list', ch.SpellBook || {});
+
         // Stats
         const st = ch.Stats || {};
         setVal('f-stat-strength', (st.Strength && st.Strength.Training) || 0);
@@ -764,16 +906,11 @@
 
         // Equipment
         const eq = ch.Equipment || {};
-        setEquipSlot('f-eq-weapon',  eqItemId(eq.Weapon));
-        setEquipSlot('f-eq-offhand', eqItemId(eq.Offhand));
-        setEquipSlot('f-eq-head',    eqItemId(eq.Head));
-        setEquipSlot('f-eq-neck',    eqItemId(eq.Neck));
-        setEquipSlot('f-eq-body',    eqItemId(eq.Body));
-        setEquipSlot('f-eq-belt',    eqItemId(eq.Belt));
-        setEquipSlot('f-eq-gloves',  eqItemId(eq.Gloves));
-        setEquipSlot('f-eq-ring',    eqItemId(eq.Ring));
-        setEquipSlot('f-eq-legs',    eqItemId(eq.Legs));
-        setEquipSlot('f-eq-feet',    eqItemId(eq.Feet));
+        for (const slot of EQ_SLOTS) {
+            const key = slot.charAt(0).toUpperCase() + slot.slice(1);
+            const slotData = eq[key] || {};
+            setEquipSlot('f-eq-' + slot, eqItemId(slotData), slotData.CanNeverBeRemoved || false);
+        }
 
         // Inventory items
         renderItemRows(ch.Items || []);
@@ -782,10 +919,7 @@
         renderShopEntries(ch.Shop || []);
 
         // Script
-        setVal('f-script', script);
-        if (scriptSync) scriptSync();
-        document.getElementById('script-toggle').classList.toggle('open', script.length > 0);
-        document.getElementById('script-area').classList.toggle('open', script.length > 0);
+        await loadScriptForTag(initialTag, scriptTags);
     }
 
     function eqItemId(slot) {
@@ -796,12 +930,12 @@
     // -------------------------------------------------------------------------
     // New mob
     // -------------------------------------------------------------------------
-    window.newMob = function () {
+    window.newMob = async function () {
         currentMobId = null;
         isNew = true;
         document.querySelectorAll('.mob-row').forEach(r => r.classList.remove('active'));
         showEditor();
-        fillForm({}, '');
+        await fillForm({}, [], null);
         document.getElementById('editor-title').textContent = 'New Mob';
         document.getElementById('mob-id-display').textContent = '';
         document.getElementById('delete-btn').style.display = 'none';
@@ -829,6 +963,9 @@
         const chip = document.createElement('span');
         chip.className = 'tag-chip';
         chip.dataset.value = value;
+        // Quest flags are quest tokens (questId-stepId); tag them so the shared
+        // QuestTooltip can show the quest name and step description on hover.
+        if (list.id === 'questflags-list') chip.dataset.questToken = value;
         chip.innerHTML = `${esc(value)} <button title="Remove" onclick="this.closest('.tag-chip').remove()">&times;</button>`;
         list.appendChild(chip);
     }
@@ -866,6 +1003,7 @@
         const chip = document.createElement('span');
         chip.className = 'buff-chip';
         chip.dataset.id = id;
+        chip.dataset.buffId = id;
         const label = name != null ? `#${id} ${esc(name)}` : `#${id} ${esc(buffName(id))}`;
         chip.innerHTML = `${label} <button title="Remove" onclick="this.closest('.buff-chip').remove()">&times;</button>`;
         list.appendChild(chip);
@@ -892,6 +1030,54 @@
     }
 
     // -------------------------------------------------------------------------
+    // Spell chips (spellbook)
+    // -------------------------------------------------------------------------
+    function renderSpellChips(listId, spellBook) {
+        const list = document.getElementById(listId);
+        list.innerHTML = '';
+        for (const [id, val] of Object.entries(spellBook)) {
+            appendSpellChip(list, id, val);
+        }
+    }
+
+    function appendSpellChip(list, spellId, val) {
+        const chip = document.createElement('span');
+        chip.className = 'buff-chip';
+        chip.dataset.id = spellId;
+        chip.dataset.spellId = spellId;
+        chip.dataset.val = val;
+        const label = esc(spellId);
+        chip.innerHTML = `${label} <button title="Remove" onclick="this.closest('.buff-chip').remove()">&times;</button>`;
+        list.appendChild(chip);
+    }
+
+    window.pickSpell = function () {
+        const listEl = document.getElementById('spellbook-list');
+        const existing = collectSpellBook();
+        const existingIds = Object.keys(existing);
+        Picker.open({
+            ...PickerConfigs.spells,
+            multi:    true,
+            selected: existingIds,
+            onSelect: (spells) => {
+                listEl.innerHTML = '';
+                for (const spell of spells) {
+                    const prev = existing[spell.SpellId];
+                    appendSpellChip(listEl, spell.SpellId, prev !== undefined ? prev : 1);
+                }
+            },
+        });
+    };
+
+    function collectSpellBook() {
+        const book = {};
+        document.querySelectorAll('#spellbook-list .buff-chip').forEach(c => {
+            book[c.dataset.id] = parseInt(c.dataset.val, 10) || 1;
+        });
+        return book;
+    }
+
+    // -------------------------------------------------------------------------
     // Inventory items
     // -------------------------------------------------------------------------
     function renderItemRows(items) {
@@ -906,6 +1092,7 @@
         const chip = document.createElement('span');
         chip.className = 'buff-chip';
         chip.dataset.id = itemId;
+        chip.dataset.itemId = itemId;
         const label = name != null ? `#${itemId} ${esc(name)}` : `#${itemId} ${esc(itemName(itemId))}`;
         chip.innerHTML = `${label} <button title="Remove" onclick="this.closest('.buff-chip').remove()">&times;</button>`;
         list.appendChild(chip);
@@ -935,10 +1122,32 @@
     // Shop entries
     // -------------------------------------------------------------------------
     function detectShopType(entry) {
-        if (entry.PetType) return 'pet';
-        if (entry.BuffId)  return 'buff';
-        if (entry.MobId)   return 'mob';
+        if (entry.PetType)  return 'pet';
+        if (entry.BuffId)   return 'buff';
+        if (entry.MobId)    return 'mob';
         return 'item';
+    }
+
+    const _shopNameCache = {};
+    async function resolveShopName(type, id) {
+        if (!id) return null;
+        const key = type + ':' + id;
+        if (_shopNameCache[key] !== undefined) return _shopNameCache[key];
+        if (type === 'item') {
+            const res = await AdminAPI.get('/admin/api/v1/items');
+            for (const e of (res.ok && res.data && res.data.data) || [])
+                _shopNameCache['item:' + e.ItemId] = e.Name;
+        } else if (type === 'buff') {
+            const res = await AdminAPI.get('/admin/api/v1/buffs');
+            const specs = (res.ok && res.data && res.data.data && res.data.data.specs) || {};
+            for (const e of Object.values(specs))
+                _shopNameCache['buff:' + e.BuffId] = e.Name;
+        } else if (type === 'mob') {
+            const res = await AdminAPI.get('/admin/api/v1/mobs');
+            for (const e of (res.ok && res.data && res.data.data) || [])
+                _shopNameCache['mob:' + e.MobId] = (e.Character && e.Character.Name) || '(unnamed)';
+        }
+        return _shopNameCache[key] || null;
     }
 
     const shopTypeMeta = {
@@ -981,6 +1190,14 @@
         display.textContent = initialId
             ? ('#' + initialId + (initialName ? ' ' + initialName : ''))
             : 'none selected';
+        // Tag item displays so the shared ItemTooltip can show an info card.
+        if (type === 'item' && initialId) display.dataset.itemId = initialId;
+
+        if (initialId && !initialName) {
+            resolveShopName(type, initialId).then(name => {
+                if (name) display.textContent = '#' + initialId + ' ' + name;
+            });
+        }
 
         const btn = document.createElement('button');
         btn.type = 'button';
@@ -1003,6 +1220,8 @@
                     wrap.dataset.value = id;
                     display.textContent = '#' + id + ' ' + name;
                     display.className = 'shop-picker-display';
+                    if (type === 'item') display.dataset.itemId = id;
+                    else delete display.dataset.itemId;
                 },
             });
         });
@@ -1024,6 +1243,13 @@
         display.textContent = initialId
             ? ('#' + initialId + (initialName ? ' ' + initialName : ''))
             : 'none';
+        if (initialId) display.dataset.itemId = initialId;
+
+        if (initialId && !initialName) {
+            resolveShopName('item', initialId).then(name => {
+                if (name) display.textContent = '#' + initialId + ' ' + name;
+            });
+        }
 
         const pickBtn = document.createElement('button');
         pickBtn.type = 'button';
@@ -1037,6 +1263,7 @@
                     wrap.dataset.value = item.ItemId;
                     display.textContent = '#' + item.ItemId + ' ' + item.Name;
                     display.className = 'shop-picker-display';
+                    display.dataset.itemId = item.ItemId;
                     // disable price when trade item is set
                     const card = wrap.closest('.shop-card');
                     if (card) {
@@ -1056,6 +1283,7 @@
             wrap.dataset.value = 0;
             display.textContent = 'none';
             display.className = 'shop-picker-display empty';
+            delete display.dataset.itemId;
             const card = wrap.closest('.shop-card');
             if (card) {
                 const priceInput = card.querySelector('[data-field="price"]');
@@ -1069,9 +1297,11 @@
         return wrap;
     }
 
-    function appendShopCard(list, entry) {
+    function appendShopCard(list, entry, forcedType) {
         const e = entry || {};
-        const type = detectShopType(e);
+        // New entries (from the +Item/+Mob/+Buff/+Pet buttons) pass an explicit
+        // type; loaded entries are detected from their populated id field.
+        const type = forcedType || detectShopType(e);
         const meta = shopTypeMeta[type];
 
         const card = document.createElement('div');
@@ -1098,7 +1328,7 @@
             restockOpts += `<option value="${esc(restockVal)}" selected>${esc(restockVal)}</option>`;
         }
 
-        // Static HTML skeleton (no id/trade fields yet — appended below)
+        // Static HTML skeleton (no id/trade fields yet - appended below)
         card.innerHTML = `
             <button class="shop-card-remove" title="Remove entry" onclick="this.closest('.shop-card').remove()">&times;</button>
             <div class="shop-card-header">
@@ -1108,12 +1338,12 @@
                 <div class="shop-field" data-slot="id">
                     <label>${esc(meta.idLabel)}</label>
                 </div>
-                <div class="shop-field">
+                <div class="shop-field shop-field--sm">
                     <label>Price</label>
                     <input type="number" data-field="price" value="${hasTrade ? 0 : (e.Price || 0)}" min="0" placeholder="0 = auto"${hasTrade ? ' disabled' : ''} />
                     <div class="field-hint">0 = calculated from item value</div>
                 </div>
-                <div class="shop-field">
+                <div class="shop-field shop-field--sm">
                     <label>Quantity Max</label>
                     <select data-field="qtymax">${qtyOpts}</select>
                 </div>
@@ -1152,12 +1382,7 @@
     }
 
     window.addShopEntry = function (type) {
-        const defaults = {};
-        if (type === 'item') defaults.ItemId = 0;
-        else if (type === 'mob') defaults.MobId = 0;
-        else if (type === 'buff') defaults.BuffId = 0;
-        else if (type === 'pet') defaults.PetType = '';
-        appendShopCard(document.getElementById('shop-list'), defaults);
+        appendShopCard(document.getElementById('shop-list'), {}, type);
     };
 
     function collectShop() {
@@ -1198,16 +1423,18 @@
         function eqSlot(id) {
             const el = document.getElementById(id);
             const val = el ? (parseInt(el.dataset.value, 10) || 0) : 0;
-            return { ItemId: val };
+            const lockBtn = el && el.querySelector('.eq-lock-btn');
+            const locked = lockBtn ? lockBtn.dataset.locked === 'true' : false;
+            return { ItemId: val, CanNeverBeRemoved: locked };
         }
 
         const payload = {
             Zone:           document.getElementById('f-zone').value.trim(),
-            Hostile:        document.getElementById('f-hostile').value === 'true',
+            Hostile:        document.getElementById('f-hostile').checked,
             ActivityLevel:  parseInt(document.getElementById('f-activitylevel').value, 10) || 10,
-            MaxWander:      parseInt(document.getElementById('f-maxwander').value, 10) || 0,
+            MaxWander:      parseInt(document.getElementById('f-maxwander').value, 10),
             ItemDropChance: parseInt(document.getElementById('f-itemdropchance').value, 10) || 0,
-            ScriptTag:      document.getElementById('f-scripttag').value.trim(),
+            EliteChance:    parseInt(document.getElementById('f-elitechance').value, 10) || 0,
             Groups:         collectTags('groups-list'),
             Hates:          collectTags('hates-list'),
             QuestFlags:     collectTags('questflags-list'),
@@ -1230,20 +1457,17 @@
                     Mysticism:  { Training: parseInt(document.getElementById('f-stat-mysticism').value, 10) || 0 },
                     Perception: { Training: parseInt(document.getElementById('f-stat-perception').value, 10) || 0 },
                 },
-                Equipment: {
-                    Weapon:  eqSlot('f-eq-weapon'),
-                    Offhand: eqSlot('f-eq-offhand'),
-                    Head:    eqSlot('f-eq-head'),
-                    Neck:    eqSlot('f-eq-neck'),
-                    Body:    eqSlot('f-eq-body'),
-                    Belt:    eqSlot('f-eq-belt'),
-                    Gloves:  eqSlot('f-eq-gloves'),
-                    Ring:    eqSlot('f-eq-ring'),
-                    Legs:    eqSlot('f-eq-legs'),
-                    Feet:    eqSlot('f-eq-feet'),
-                },
-                Items: collectItems(),
-                Shop:  collectShop(),
+                Equipment: (function () {
+                    const eq = {};
+                    for (const slot of EQ_SLOTS) {
+                        const key = slot.charAt(0).toUpperCase() + slot.slice(1);
+                        eq[key] = eqSlot('f-eq-' + slot);
+                    }
+                    return eq;
+                }()),
+                Items:     collectItems(),
+                Shop:      collectShop(),
+                SpellBook: collectSpellBook(),
             },
         };
 
@@ -1266,15 +1490,23 @@
         const saved = mobRes.data.data;
         const savedId = saved.MobId;
 
-        const scriptRes = await AdminAPI.put('/admin/api/v1/mobs/' + savedId + '/script', { script: scriptContent });
+        // Save the currently-selected script (base or tagged)
+        const scriptUrl = (currentScriptTag === null || currentScriptTag === '')
+            ? '/admin/api/v1/mobs/' + savedId + '/script'
+            : '/admin/api/v1/mobs/' + savedId + '/scripts/' + encodeURIComponent(currentScriptTag);
+        const scriptRes = await AdminAPI.put(scriptUrl, { script: scriptContent, lang: ScriptEditor.getLang('f-script') });
         if (!scriptRes.ok) {
             showStatus('Mob saved but script update failed: ' + scriptRes.error, false);
         } else {
             showStatus('Mob saved successfully.', true);
         }
+        // Lock the language once a file exists; unlock if the script was cleared.
+        ScriptEditor.lockLang('f-script', scriptContent.trim().length > 0);
 
-        // Refresh list
-        const listEntry = Object.assign({}, saved, { HasScript: scriptContent.length > 0 });
+        // Refresh list - HasScript: true if there's any script content or existing scripts
+        const existingTags = getAllSelectorTags();
+        const hasAnyScript = scriptContent.length > 0 || existingTags.some(t => t !== currentScriptTag);
+        const listEntry = Object.assign({}, saved, { HasScript: hasAnyScript });
         if (isNew) {
             allMobs.push(listEntry);
             allMobs.sort((a, b) => a.MobId - b.MobId);
@@ -1312,11 +1544,118 @@
     // -------------------------------------------------------------------------
     // Script toggle
     // -------------------------------------------------------------------------
-    window.toggleScript = function () {
-        const toggle = document.getElementById('script-toggle');
-        const area = document.getElementById('script-area');
-        toggle.classList.toggle('open');
-        area.classList.toggle('open');
+    window.openScriptWizard = function () {
+        ScriptWizard.open({ scriptType: 'mob', textareaId: 'f-script' });
+    };
+
+    // Blank the current (base or instance) script and save it. The backend
+    // deletes the script file when an empty script is saved.
+    window.deleteScript = async function () {
+        // Nothing persisted yet — just clear the editor locally.
+        if (isNew || currentMobId === null) {
+            if (scriptSync) scriptSync('');
+            ScriptEditor.lockLang('f-script', false);
+            return;
+        }
+        if (!confirm('Delete this script? This cannot be undone.')) return;
+
+        const scriptUrl = (currentScriptTag === null || currentScriptTag === '')
+            ? '/admin/api/v1/mobs/' + currentMobId + '/script'
+            : '/admin/api/v1/mobs/' + currentMobId + '/scripts/' + encodeURIComponent(currentScriptTag);
+        const res = await AdminAPI.put(scriptUrl, { script: '', lang: ScriptEditor.getLang('f-script') });
+        if (!res.ok) { showStatus('Script delete failed: ' + res.error, false); return; }
+
+        if (scriptSync) scriptSync('');
+        ScriptEditor.lockLang('f-script', false);
+        showStatus('Script deleted.', true);
+    };
+
+    // -------------------------------------------------------------------------
+    // Script selector / instance scripts
+    // -------------------------------------------------------------------------
+    function buildScriptSelector(tags) {
+        const sel = document.getElementById('script-selector');
+        sel.innerHTML = '';
+        if (tags.length === 0) {
+            const o = document.createElement('option');
+            o.value = '';
+            o.textContent = 'Base script (no file yet)';
+            sel.appendChild(o);
+        } else {
+            for (const tag of tags) {
+                const o = document.createElement('option');
+                o.value = tag;
+                o.textContent = tag === '' ? 'Base script' : 'Instance: ' + tag;
+                sel.appendChild(o);
+            }
+        }
+    }
+
+    async function loadScriptForTag(tag, tags) {
+        currentScriptTag = tag;
+        const resolvedTags = tags !== undefined ? tags : getAllSelectorTags();
+        buildScriptSelector(resolvedTags);
+        const sel = document.getElementById('script-selector');
+        if (sel) sel.value = tag === null ? '' : tag;
+
+        let script = '';
+        let lang = 'js';
+        if (!isNew && currentMobId !== null && tag !== null) {
+            const url = tag === ''
+                ? '/admin/api/v1/mobs/' + currentMobId + '/script'
+                : '/admin/api/v1/mobs/' + currentMobId + '/scripts/' + encodeURIComponent(tag);
+            const res = await AdminAPI.get(url);
+            if (res.ok) {
+                script = res.data.data.script || '';
+                lang = res.data.data.lang || 'js';
+            }
+        }
+
+        setVal('f-script', script);
+        if (scriptSync) scriptSync(undefined, lang);
+        // Lock the language to the existing file's type; a new (empty) script
+        // stays selectable until it is saved.
+        ScriptEditor.lockLang('f-script', script !== '');
+
+        const hint = document.getElementById('script-hint');
+        if (hint) {
+            hint.textContent = tag === '' || tag === null
+                ? 'Base script. Saved as a .js file alongside the mob YAML. Clear to delete.'
+                : 'Instance script for tag \"' + tag + '\". Used when a spawn sets scripttag: ' + tag + '. Clear to delete.';
+        }
+    }
+
+    function getAllSelectorTags() {
+        return Array.from(document.getElementById('script-selector').options).map(o => o.value);
+    }
+
+    window.switchScript = async function (tag) {
+        if (isNew) return;
+        await loadScriptForTag(tag);
+    };
+
+    window.promptNewInstanceScript = function () {
+        const tag = prompt('Enter a script tag name for the new instance script (e.g. "winterfire"):');
+        if (!tag || !tag.trim()) return;
+        const clean = tag.trim().toLowerCase().replace(/[^a-z0-9_-]/g, '');
+        if (!clean) { alert('Invalid tag name. Use letters, numbers, hyphens, or underscores.'); return; }
+
+        const existingTags = getAllSelectorTags();
+        if (existingTags.includes(clean)) {
+            // Already exists, just switch to it
+            document.getElementById('script-selector').value = clean;
+            switchScript(clean);
+            return;
+        }
+
+        // Add to selector and switch to it (content will be empty — user fills it in and saves)
+        const sel = document.getElementById('script-selector');
+        const o = document.createElement('option');
+        o.value = clean;
+        o.textContent = 'Instance: ' + clean;
+        sel.appendChild(o);
+        sel.value = clean;
+        loadScriptForTag(clean);
     };
 
     // -------------------------------------------------------------------------
@@ -1336,7 +1675,9 @@
     function setVal(id, val) {
         const el = document.getElementById(id);
         if (!el) return;
-        if (el.tagName === 'SELECT') {
+        if (el.type === 'checkbox') {
+            el.checked = (val === true || val === 'true');
+        } else if (el.tagName === 'SELECT') {
             el.value = String(val);
         } else {
             el.value = val;
@@ -1350,6 +1691,15 @@
     function textToArray(id) {
         return document.getElementById(id).value.split('\n').map(s => s.trim()).filter(Boolean);
     }
+
+    window.updateWanderLabel = function (val) {
+        const n = parseInt(val, 10);
+        const el = document.getElementById('f-maxwander-val');
+        if (!el) return;
+        if (n === -1)     el.textContent = 'unlimited';
+        else if (n === 0) el.textContent = 'stationary';
+        else              el.textContent = n + (n === 1 ? ' room' : ' rooms');
+    };
 
     init();
 })();

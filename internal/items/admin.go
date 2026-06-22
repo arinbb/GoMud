@@ -7,6 +7,7 @@ import (
 
 	"github.com/GoMudEngine/GoMud/internal/configs"
 	"github.com/GoMudEngine/GoMud/internal/fileloader"
+	"github.com/GoMudEngine/GoMud/internal/util"
 	"gopkg.in/yaml.v2"
 )
 
@@ -60,6 +61,64 @@ func AddAttackMessage(subtype ItemSubType, intensity Intensity, proximity, targe
 		}
 	default:
 		return fmt.Errorf("unknown proximity: %s (expected together or separate)", proximity)
+	}
+
+	group.Options[intensity] = opts
+
+	return SaveAttackMessageGroup(group)
+}
+
+func UpdateAttackMessage(subtype ItemSubType, intensity Intensity, proximity, target string, index int, message string) error {
+	group, ok := attackMessages[subtype]
+	if !ok {
+		return fmt.Errorf("unknown subtype: %s", subtype)
+	}
+
+	opts, ok := group.Options[intensity]
+	if !ok {
+		return fmt.Errorf("unknown intensity: %s", intensity)
+	}
+
+	update := func(sl MessageOptions, i int) (MessageOptions, error) {
+		if i < 0 || i >= len(sl) {
+			return nil, fmt.Errorf("index %d out of range (length %d)", i, len(sl))
+		}
+		sl[i] = ItemMessage(message)
+		return sl, nil
+	}
+
+	var err error
+	switch proximity {
+	case "together":
+		switch target {
+		case "toattacker":
+			opts.Together.ToAttacker, err = update(opts.Together.ToAttacker, index)
+		case "todefender":
+			opts.Together.ToDefender, err = update(opts.Together.ToDefender, index)
+		case "toroom":
+			opts.Together.ToRoom, err = update(opts.Together.ToRoom, index)
+		default:
+			return fmt.Errorf("unknown together target: %s", target)
+		}
+	case "separate":
+		switch target {
+		case "toattacker":
+			opts.Separate.ToAttacker, err = update(opts.Separate.ToAttacker, index)
+		case "todefender":
+			opts.Separate.ToDefender, err = update(opts.Separate.ToDefender, index)
+		case "toattackerroom":
+			opts.Separate.ToAttackerRoom, err = update(opts.Separate.ToAttackerRoom, index)
+		case "todefenderroom":
+			opts.Separate.ToDefenderRoom, err = update(opts.Separate.ToDefenderRoom, index)
+		default:
+			return fmt.Errorf("unknown separate target: %s", target)
+		}
+	default:
+		return fmt.Errorf("unknown proximity: %s (expected together or separate)", proximity)
+	}
+
+	if err != nil {
+		return err
 	}
 
 	group.Options[intensity] = opts
@@ -125,7 +184,7 @@ func DeleteAttackMessage(subtype ItemSubType, intensity Intensity, proximity, ta
 }
 
 func SaveAttackMessageGroup(group *WeaponAttackMessageGroup) error {
-	basePath := configs.GetFilePathsConfig().DataFiles.String() + `/combat-messages/`
+	basePath := util.FilePath(configs.GetFilePathsConfig().DataFiles.String() + `/combat-messages/`)
 	filePath := basePath + group.Filepath()
 
 	sectionComments := extractCombatComments(filePath)
@@ -137,7 +196,7 @@ func SaveAttackMessageGroup(group *WeaponAttackMessageGroup) error {
 
 	bytes = insertCombatComments(bytes, sectionComments)
 
-	if err := os.WriteFile(filePath, bytes, 0644); err != nil {
+	if err := util.WriteFile(filePath, bytes, 0644); err != nil {
 		return fmt.Errorf("writing attack messages file: %w", err)
 	}
 
@@ -232,7 +291,7 @@ func DeleteItemSpec(itemId int) error {
 		return fmt.Errorf("item %d not found", itemId)
 	}
 
-	basePath := configs.GetFilePathsConfig().DataFiles.String() + `/items/`
+	basePath := util.FilePath(configs.GetFilePathsConfig().DataFiles.String() + `/items/`)
 
 	yamlPath := basePath + spec.Filepath()
 	if err := os.Remove(yamlPath); err != nil && !os.IsNotExist(err) {
@@ -250,7 +309,7 @@ func DeleteItemSpec(itemId int) error {
 
 // SaveItemScript writes (or overwrites) the JavaScript file for an item.  If
 // content is empty the script file is deleted instead.
-func SaveItemScript(itemId int, content string) error {
+func SaveItemScript(itemId int, content string, lang string) error {
 	spec := GetItemSpec(itemId)
 	if spec == nil {
 		return fmt.Errorf("item %d not found", itemId)
@@ -265,5 +324,6 @@ func SaveItemScript(itemId int, content string) error {
 		return nil
 	}
 
-	return os.WriteFile(scriptPath, []byte(content), 0644)
+	scriptPath = util.ApplyScriptLang(scriptPath, lang)
+	return util.WriteFile(scriptPath, []byte(content), 0644)
 }

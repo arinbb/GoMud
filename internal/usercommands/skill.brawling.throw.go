@@ -4,14 +4,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/GoMudEngine/GoMud/internal/buffs"
 	"github.com/GoMudEngine/GoMud/internal/events"
 	"github.com/GoMudEngine/GoMud/internal/exit"
 	"github.com/GoMudEngine/GoMud/internal/items"
 	"github.com/GoMudEngine/GoMud/internal/keywords"
 	"github.com/GoMudEngine/GoMud/internal/mobs"
 	"github.com/GoMudEngine/GoMud/internal/rooms"
-	"github.com/GoMudEngine/GoMud/internal/skills"
 	"github.com/GoMudEngine/GoMud/internal/users"
 	"github.com/GoMudEngine/GoMud/internal/util"
 )
@@ -22,7 +20,7 @@ Level 2 - You can throw objects at NPCs or other rooms.
 */
 func Throw(rest string, user *users.UserRecord, room *rooms.Room, flags events.EventFlag) (bool, error) {
 
-	skillLevel := user.Character.GetSkillLevel(skills.Brawling)
+	skillLevel := user.Character.GetSkillLevel(`brawling`)
 	handled := false
 
 	// If they don't have a skill, act like it's not a valid command
@@ -48,13 +46,13 @@ func Throw(rest string, user *users.UserRecord, room *rooms.Room, flags events.E
 		return false, nil
 	}
 
-	if !user.Character.TryCooldown(skills.Brawling.String(`throw`), "4 rounds") {
+	if !user.Character.TryCooldown(`brawling:throw`, "4 rounds") {
 		user.SendText("You are too tired to throw objects again so soon!")
 		return true, nil
 	}
 
 	// Fire an event that a skill has been used
-	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: skills.Brawling, Details: `throw`})
+	events.AddToQueue(events.SkillUsed{UserId: user.UserId, Skill: `brawling`, Details: `throw`})
 
 	targetPlayerId, targetMobId := room.FindByName(throwWhere)
 
@@ -96,6 +94,9 @@ func Throw(rest string, user *users.UserRecord, room *rooms.Room, flags events.E
 	} else if targetPlayerId > 0 {
 
 		targetUser := users.GetByUserId(targetPlayerId)
+		if targetUser == nil {
+			return true, nil
+		}
 
 		if pvpErr := room.CanPvp(user, targetUser); pvpErr != nil {
 			user.SendText(pvpErr.Error())
@@ -116,7 +117,7 @@ func Throw(rest string, user *users.UserRecord, room *rooms.Room, flags events.E
 		)
 
 		targetUser.SendText(
-			fmt.Sprintf(`<ansi fg="username">%s</ansi> hurls their <ansi fg="itemname">%s</ansi> at you.`, itemMatch.DisplayName(), user.Character.Name),
+			fmt.Sprintf(`<ansi fg="username">%s</ansi> hurls their <ansi fg="itemname">%s</ansi> at you.`, user.Character.Name, itemMatch.DisplayName()),
 		)
 
 		// Tell the old room they are leaving
@@ -158,9 +159,12 @@ func Throw(rest string, user *users.UserRecord, room *rooms.Room, flags events.E
 				return true, nil
 			}
 
-			user.Character.CancelBuffsWithFlag(buffs.Hidden)
+			user.Character.CancelBuffsWithFlag("hidden")
 
 			throwToRoom := rooms.LoadRoom(throwRoomId)
+			if throwToRoom == nil {
+				return true, nil
+			}
 			returnExitName := throwToRoom.FindExitTo(user.Character.RoomId)
 
 			if len(returnExitName) < 1 {
@@ -228,10 +232,13 @@ func Throw(rest string, user *users.UserRecord, room *rooms.Room, flags events.E
 
 				if tempExitFound {
 
-					user.Character.CancelBuffsWithFlag(buffs.Hidden)
+					user.Character.CancelBuffsWithFlag("hidden")
 
 					// do something with tempExit
 					throwToRoom := rooms.LoadRoom(tempExit.RoomId)
+					if throwToRoom == nil {
+						return true, nil
+					}
 					returnExitName := throwToRoom.FindExitTo(user.Character.RoomId)
 
 					if len(returnExitName) < 1 {
